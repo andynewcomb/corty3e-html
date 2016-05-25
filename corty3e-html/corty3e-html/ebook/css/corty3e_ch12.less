@@ -1,0 +1,134 @@
+/* Chapter 12 CSS */
+
+// borrowed from book-level CSS
+@corty-blue: #168ca8;
+@box-bg-blue: #e0e8ef;
+
+div#corty3e-ch12-p2 {
+    margin-top: -5px;
+}
+
+// margin adjustments
+
+
+/* Figures */
+body.noUi {
+}
+
+/* Tables */
+body.noUi {
+    // almost all tables in this chapter follow this format, so it is the default
+    [data-block_type="un_table"] {
+        table {
+            tr:first-child {
+                background-color: @box-bg-blue;
+                td {
+                    color: @corty-blue;
+                    font-weight: bold;
+                }
+            }
+            tr > td:first-child {
+                text-align: left;
+                color: @corty-blue;
+                font-weight: bold;
+                span[data-block_type="TBN-SIDHD19"] {
+                    margin-left: 1em;
+                }
+            }
+        }
+    }
+    
+    div#corty3e-ch12-table3 {
+        table {
+            width: 300px;
+            tr > td {
+                width: 50%;
+                &:first-child {
+                    text-align: right;
+                }
+                &:last-child {
+                    text-align: left;
+                }
+            }
+            tr:first-child {
+                td {
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+
+/* Lists */
+ul#corty3e-ch12-list-17 p {
+    margin: 0;
+}
+ul#corty3e-ch12-list-21 p {
+    margin: 0;
+}
+
+ol#corty3e-ch12-list-4c {
+    font-weight: normal;
+}
+
+/* Equations */
+
+// equation box line adjustments
+
+// equation alignment
+
+// block equation move/resize
+
+// inline equation sizing
+    
+// page numbers caught in relative parent
+
+// other
+
+// remove extra border line in this case
+div#corty3e-ch12-bx2-3 {
+    border-bottom: 0;
+}
+
+/* equation feature box -- needs more room for equation number to left */
+[data-block_type="eq-t"] {
+    [data-type="title"] {
+        padding-left: 8em;
+    }
+}
+
+// question numbers get wider at 100, need more space, PDF does this, too
+// this chapter has a unique "cr_x_nl" value instead of "cr-x-nl-txt" used in previous chapters
+// questions
+[data-block_type="cr_x_nl"] {
+    position: relative;
+    p {
+        margin-left: 4em !important;
+    }
+}
+
+// "join" two gray boxes
+div#corty3e-ch12-p361 {
+    margin-bottom: 0;
+}
+div#corty3e-ch12-p363 {
+    margin-top: 0;
+}
+// 4 gray boxes into 1
+div#corty3e-ch12-p399 {
+    margin-bottom: 0;
+}
+div#corty3e-ch12-p400 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+div#corty3e-ch12-p401 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+div#corty3e-ch12-p402 {
+    margin-top: 0;
+}
+
+
+// intro chapter number

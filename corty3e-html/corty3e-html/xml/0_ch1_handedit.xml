@@ -1,0 +1,683 @@
+<chapter number="1" id="corty3e-ch1-chapter-1" title="1 Introduction to Statistics" start-numbering-at="01" numbered="true">
+<section id="corty3e-ch1-sec1-1a" block_type="intro" title="Chapter Introduction" numbered="false" level="1" print_page="3">
+<p id="corty3e_page_3" block_type="page_start">3</p>
+<p id="corty3e-ch1-p1" block_type="chapter_number">1</p>
+<p id="corty3e-ch1-p2" block_type="chapter_title">Introduction to Statistics</p>
+<box numbered="false" id="corty3e-ch1-ibx-1" block_type="intro_box">
+<p id="corty3e-ch1-p3" block_type="obj-h"><strong>LEARNING OBJECTIVES</strong></p>
+<list id="corty3e-ch1-list-1" type="unordered" block_type="bluesquare">
+<li><p id="corty3e-ch1-p4" block_type="obj-bl">Determine if a study is correlational, experimental, or quasi-experimental.</p></li>
+<li><p id="corty3e-ch1-p5" block_type="obj-bl">Classify variables and determine level of measurement.</p></li>
+<li><p id="corty3e-ch1-p6" block_type="obj-bl">Learn the language and rules of statistics.</p></li>
+</list>
+<p id="corty3e-ch1-p7" block_type="obj-h"><strong>CHAPTER OVERVIEW</strong></p>
+<p id="corty3e-ch1-p8" block_type="co-txt-ni">This first chapter is an introduction to statistics. The topics covered&#8212;types of experiments, types of variables, levels of measurement, statistical notation, order of operations, and rounding&#8212;will play a role in every chapter of this book.</p>
+<box numbered="false" id="corty3e-ch1-exp2-1" block_type="mn2">
+<p id="corty3e-ch1-p9" block_type="co-toc-h1-t"><link href="#corty3e-ch1-sec1-1"><phrase block_type="co-toc-h1-n-ri">1.1</phrase> The Purpose of Statistics</link></p>
+<p id="corty3e-ch1-p10" block_type="co-toc-h1-t"><link href="#corty3e-ch1-sec1-2"><phrase block_type="co-toc-h1-n-ri">1.2</phrase> Experiments and Variables</link></p>
+<p id="corty3e-ch1-p11" block_type="co-toc-h1-t"><link href="#corty3e-ch1-sec1-3"><phrase block_type="co-toc-h1-n-ri">1.3</phrase> Levels of Measurement</link></p>
+<p id="corty3e-ch1-p12" block_type="co-toc-h1-t"><link href="#corty3e-ch1-sec1-4"><phrase block_type="co-toc-h1-n-ri">1.4</phrase> The Language of Statistics</link></p>
+<p id="corty3e-ch1-p13" block_type="co-toc-h1-t"><link href="#corty3e-ch1-sec1-5"><phrase block_type="co-toc-h1-n-ri">1.5</phrase> Statistical Notation and Rounding</link></p>
+</box>
+</box>
+</section>
+<section id="corty3e-ch1-sec1-1" block_type="h1" chapter="1" title="" numbered="false" level="1" print_page="3">
+<section-metadata><section-title><phrase block_type="sec_num">1.1</phrase> <phrase block_type="sec_title">The Purpose of Statistics</phrase></section-title></section-metadata>
+<p id="corty3e-ch1-p14" block_type="txt-ni"><termref term="Statistics">Statistics</termref> are techniques used to summarize data in order to answer questions. Statistical techniques were developed because humans are limited information processors. Give a human a lot of numbers at once and that person will focus on just a handful of them&#8212;likely the most distinctive numbers, not the most typical ones. If Sara were applying to graduate school, would she want the admissions committee to see a list of grades (including the one D that will stick out like a sore thumb) or her GPA? In this case, GPA, which is a summary score&#8212;a statistic&#8212;is better than a hodgepodge of individual course grades.</p>
+<p id="corty3e-ch1-p15" block_type="txt">Statistics bring order to chaos (Dodge, 2003). On the following three pages are some data from the Statistical Abstract of the United States, showing the percentage of the 18- to 25-year-old population, for each state, that has engaged in binge drinking at least once in the past 30 days. (Binge drinking is defined as five or more drinks within a couple of hours.) <strong><link href="#corty3e-ch1-fig-1">Table 1.1</link></strong> is unorganized. It is hard to find a specific state, to figure out which state has the most/least binge drinking, or to figure out what the average is.</p>
+<p id="corty3e_page_4" block_type="page_start">4</p>
+<figure id="corty3e-ch1-fig-1" block_type="table" numbered="true" number="1.1" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="xlarge" border="true"/>
+<image asset-id="corty3e-ch1-img-1" alt="image" src="asset/ch1/corty3e_table01_01.jpg"/>
+</figure>
+<p id="corty3e-ch1-p16" block_type="txt">Such a chaotic arrangement of data is not very useful. Just by alphabetizing the states, as in <strong><link href="#corty3e-ch1-fig-2">Table 1.2</link></strong>, order is brought to the data, making it easier to find a state.</p>
+<figure id="corty3e-ch1-fig-2" block_type="table" numbered="true" number="1.2" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="xlarge" border="true"/>
+<image asset-id="corty3e-ch1-img-2" alt="image" src="asset/ch1/corty3e_table01_02.jpg"/>
+</figure>
+<p id="corty3e-ch1-p17" block_type="txt">In <strong><link href="#corty3e-ch1-fig-3">Table 1.3</link></strong>, the binge drinking data are arranged from low to high, bringing a different order to the information. As a result, it is easy to see the range of binge drinking rates. This arrangement may bring up some questions: Care to speculate why Utah has the lowest rate? With the data sorted from low to high, it is even possible to get some sense of what the average score is.</p>
+<figure id="corty3e-ch1-fig-3" block_type="table" numbered="true" number="1.3" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="large" border="true"/>
+<image asset-id="corty3e-ch1-img-3" alt="image" src="asset/ch1/corty3e_table01_03.jpg"/>
+</figure>
+<p id="corty3e_page_5" block_type="page_start">5</p>
+<p id="corty3e-ch1-p18" block_type="txt">For another way to summarize the data, see <strong><link href="#corty3e-ch1-fig-4">Table 1.4</link></strong>. Here, the states are grouped into the four U.S. census regions (and within region from low to high), giving us some idea if geographic differences in binge drinking rates exist across the United States. All three tables (1.2, 1.3, and 1.4) arrange the data differently and answer different questions. Statistics involves organizing and summarizing information to answer a question.</p>
+<figure id="corty3e-ch1-fig-4" block_type="table" numbered="true" number="1.4" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="xlarge" border="true"/>
+<image asset-id="corty3e-ch1-img-4" alt="image" src="asset/ch1/corty3e_table01_04.jpg"/>
+</figure>
+<box title="Practice Problems 1.1" numbered="false" id="corty3e-ch1-bx2-1" block_type="sr-h">
+<p id="corty3e-ch1-p19" block_type="sr-h1"><strong>Review Your Knowledge</strong></p>
+<p id="corty3e-ch1-p20" block_type="sr-que-nl"><phrase block_type="question_num">1.01</phrase> What is the purpose of statistics?</p>
+<p id="corty3e-ch1-p21" block_type="sr-h1"><strong>Apply Your Knowledge</strong></p>
+<p id="corty3e-ch1-p22" block_type="sr-que-nl"><phrase block_type="question_num">1.02</phrase> A researcher has collected IQ scores from a sample of sixth graders. What are some questions she might want to ask of the data? How would the data be arranged to answer the questions?</p>
+</box>
+</section>
+<section id="corty3e-ch1-sec1-2" block_type="h1" chapter="1" title="" numbered="false" level="1" print_page="6">
+<section-metadata><section-title><phrase block_type="sec_num">1.2</phrase> <phrase block_type="sec_title">Experiments and Variables</phrase></section-title></section-metadata>
+<p id="corty3e_page_6" block_type="page_start">6</p>
+<box id="corty3e-ch1-video-1" block_type="video">
+<p id="corty3e-ch1-videotxt-1" block_type="vidtxt"><link href="http://bcs.whfreeman.com/webpub/statistics/ips7e/student/Stat Videos/ch03/sc_typesofstudies.html" target="_pop" data-href-px=""><image asset-id="corty3e-ch1-vimg-1" alt="image" src="asset/images/video.jpg"/></link><em>StatClips: Types of Studies</em>Video on LaunchPad</p>
+</box>
+<p id="corty3e-ch1-p23" block_type="txt-ni">The characteristics measured by researchers are called <termref term="variables">variables</termref><strong>.</strong> They are called variables for a simple reason&#8212;they vary. Some characteristics commonly measured by psychologists are height, weight, intelligence, aggression, and neurotransmitter levels. In any group of people, there are differences on all these variables&#8212;people differ in their heights and weights, some are smarter than others, some exhibit more aggressive behavior, and not everyone has the same levels of neurotransmitters. No matter the variable, different people have different amounts of it or different types of it. Variables vary.</p>
+<p id="corty3e-ch1-p24" block_type="txt">The subjects of a study, the objects on whom these variables are being measured, are called <termref term="cases">cases</termref><strong>.</strong> In many psychological studies, cases are people who participate in the study. But psychologists also study other animals like rats, pigeons, monkeys, and even cockroaches&#8212;all of which would be called cases. Sometimes the object of study, the case, is smaller than a whole organism, such as nerve cells. And sometimes the cases being studied are larger, like cities or nations. For example, in the binge drinking tables shown earlier, the cases were states.</p>
+<p id="corty3e-ch1-p25" block_type="txt">The most common type of study done by psychologists asks a question about the relationship between two variables. Here are some examples:</p>
+<p id="corty3e_page_7" block_type="page_start">7</p>
+<list id="corty3e-ch1-list-2" type="unordered" block_type="bullet">
+<li><p id="corty3e-ch1-p26" block_type="bl-first">Is there a relationship between how much violent television children watch and how aggressive they are?</p></li>
+<li><p id="corty3e-ch1-p27" block_type="bl-mid">Is there a relationship between how one studies and how much one learns?</p></li>
+<li><p id="corty3e-ch1-p28" block_type="bl-mid">Is there a relationship between children&#8217;s attachment to their parents and their future mental health?</p></li>
+<li><p id="corty3e-ch1-p29" block_type="bl-mid">Is there a relationship between the intensity of a stimulus and whether a neuron fires?</p></li>
+<li><p id="corty3e-ch1-p30" block_type="bl-mid">Is there a relationship between sugar consumption and hyperactivity?</p></li>
+<li><p id="corty3e-ch1-p31" block_type="bl-last">Is there a relationship between the population density of cities and their suicide rates?</p></li>
+</list>
+<p id="corty3e-ch1-p32" block_type="txt">To answer a relationship question, a researcher obtains a sample of cases and measures each case&#8217;s level on each of the two variables. If a social psychologist were investigating a possible relationship between the amount of violent television watched and aggression, she would get a group of children and find some way to measure <em>both</em> how much violent TV they watched <em>and</em> how aggressive they were. She might, for example, find out what shows the children watched during a week, find out how many violent acts were in each show, and then total the number of violent acts seen during the week. To measure the children&#8217;s aggression, she might have their teachers complete an aggression inventory on them. In doing so, she would have measured two variables&#8212;the number of violent acts seen on television each week, and aggression level as rated by teachers&#8212;and could now look for a relationship between them.</p>
+</section>
+<section id="corty3e-ch1-sec2-1" block_type="h2" chapter="1" title="" numbered="false" level="2" print_page="7">
+<section-metadata><section-title>Correlational Designs</section-title></section-metadata>
+<p id="corty3e-ch1-p33" block_type="txt-ni">There is a formal name for the type of study that asks a relationship question&#8212;a <em>correlational design.</em> In a <termref term="correlational design">correlational design</termref><strong>,</strong> the two variables are simply measured, or observed, as they naturally occur. The two variables are not controlled or manipulated by the experimenter. In the TV and aggression study outlined above, for example, the researcher didn&#8217;t change or limit the type of TV the kids watched and she didn&#8217;t try to control their aggression. She simply took the cases as they were on the two variables.</p>
+<p id="corty3e-ch1-p34" block_type="txt">In a correlational study, the researcher measures the pairs of variables for the cases in the sample and determines if they vary together in a systematic way. If cases have a lot of one variable, do they also tend to have a lot of the other? In the TV and aggression study, imagine that the researcher found that kids who watched more violent TV were rated as more aggressive by their teachers. This relationship is shown in <strong><link href="#corty3e-ch1-fig-5">Figure 1.1</link></strong>. If this researcher thinks that watching violent TV has an influence on aggressive behavior, she would call the amount of violent TV watched the <termref term="predictor variable">predictor variable</termref> and the rating of aggression the <termref term="criterion variable">criterion variable</termref>. The predictor variable is the one that comes first chronologically or that is believed to drive the relationship. The criterion variable is the outcome variable; it is where the influence of the predictor variable is observed.</p>
+<figure id="corty3e-ch1-fig-5" block_type="figure" numbered="true" number="1.1" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="medium" border="true"/>
+<image asset-id="corty3e-ch1-img-5" alt="image" src="asset/ch1/corty3e_fig01_01.jpg"/>
+<caption><strong><phrase block_type="fig_num">Figure 1.1</phrase> Example of Correlational Design Results</strong> A correlational design examines the relationship between two variables without any attempt to manipulate them. The hypothetical results of this correlational study show that children who see more violent acts on TV are also rated as more aggressive by their teachers.</caption>
+</figure>
+<box numbered="false" id="corty3e-ch1-exp1-2" block_type="mn1">
+<p id="corty3e-ch1-p35" block_type="mn-ext-ni"><em>A correlational design allows researchers to study relationships between variables as they exist in real life&#8212;and that&#8217;s a big advantage.</em></p>
+</box>
+<p id="corty3e-ch1-p36" block_type="txt">A correlational design allows researchers to study relationships between variables as they exist in real life&#8212;and that&#8217;s a big advantage. But, there is a substantial disadvantage to correlational designs as well: correlational designs don&#8217;t allow a researcher to draw a conclusion about cause and effect, about whether one variable causes the other.</p>
+<p id="corty3e_page_8" block_type="page_start">8</p>
+<p id="corty3e-ch1-p37" block_type="txt">Statisticians and college professors love to go around saying, &#8220;Correlation is not causation.&#8221; Here&#8217;s why that&#8217;s true. Think about the relationship shown between watching violent TV and being aggressive in <link href="#corty3e-ch1-fig-5">Figure 1.1</link>. It makes sense that seeing violence modeled on TV leads one to imitate it and behave aggressively. So, it is tempting to conclude this study means that TV violence <em>causes</em> aggression. However, one can&#8217;t reach such a conclusion with certainty. If two variables (let&#8217;s call them <em>X</em> and <em>Y</em>) are correlated, three possible explanations exist. However, the correlation doesn&#8217;t reveal which of the explanations is the right one.</p>
+<list id="corty3e-ch1-list-3" type="ordered" block_type="numbered">
+<li><p id="corty3e-ch1-p38" block_type="nl-first">Does <em>X</em> cause <em>Y?</em></p></li>
+<li><p id="corty3e-ch1-p39" block_type="nl-mid">Or, does <em>Y</em> cause <em>X?</em></p></li>
+<li><p id="corty3e-ch1-p40" block_type="nl-last">Or, does a third variable cause both <em>X</em> and <em>Y?</em></p></li>
+</list>
+<p id="corty3e-ch1-p41" block_type="txt">Using the labels <em>X</em> and <em>Y,</em> one can label the amount of violent TV watched as <em>X</em> and the amount of aggressive behavior as <em>Y.</em> The <em>X</em> causes <em>Y</em> explanation for the relationship would be that watching violent TV causes children to behave aggressively. As discussed above, this is a plausible explanation. But, isn&#8217;t the <em>Y</em> causes <em>X</em> explanation just as plausible? Doesn&#8217;t it make sense that kids who are more aggressive, who like to hit and hurt other kids, would be drawn to watch TV shows that mimic their behavior? Looking at <link href="#corty3e-ch1-fig-5">Figure 1.1</link>, couldn&#8217;t one conclude that being aggressive leads to choosing to watch more violent TV? A correlation only tells that two variables are related. A correlation doesn&#8217;t tell anything about the direction of the relationship.</p>
+<p id="corty3e-ch1-p42" block_type="txt">There&#8217;s one more possible explanation for a relationship between <em>X</em> and <em>Y,</em> that a third variable causes <em>both</em> <em>X</em> and <em>Y.</em> This type of third variable has a formal name: <em>confounding variable.</em> In a correlational design, a <termref term="confounding variable">confounding variable</termref> has an impact on both variables (on <em>X</em> and on <em>Y</em>) and is the reason why the two variables covary. If there is a confounding variable, <em>X</em> doesn&#8217;t cause <em>Y</em> and <em>Y</em> doesn&#8217;t cause <em>X;</em> the confounding variable causes both.</p>
+<p id="corty3e-ch1-p43" block_type="txt">This can be confusing, so here&#8217;s an example to help clarify. There are parents who control their children&#8212;they limit what type of TV their kids watch, they restrict consumption of junk food, make sure homework is done before playtime, make sure their children are well-mannered, and so on. Wouldn&#8217;t the children of these parents watch very little violent TV? Wouldn&#8217;t these children also be more likely to be rated as less aggressive by teachers? If it were found that watching violent TV covaried with aggressiveness, couldn&#8217;t this be explained by the confounding variable of parenting style? That is, parenting style causes <em>both</em> the amount of violent TV watched <em>and</em> aggressive behavior.</p>
+<p id="corty3e_page_9" block_type="page_start">9</p>
+<p id="corty3e-ch1-p44" block_type="txt">There can be more than one confounding variable in a correlational study. Sex, whether one is a male or a female, could be another confounding variable for the TV and aggression study. Who will, in general, be rated as more aggressive by teachers, boys or girls? Probably boys. What if boys also tend to watch more violent television? Then, the observed relationship between watching violent TV and being aggressive could be explained by the confounding variable of sex.</p>
+<box title="A Common Question" numbered="false" id="corty3e-ch1-bx1-2" block_type="bx-1-h">
+<p id="corty3e-ch1-p45" block_type="bx1-que"><strong>Q</strong>	Can a confounding variable affect just one of the variables?</p>
+<p id="corty3e-ch1-p46" block_type="bx1-ans"><strong>A</strong>	No, a researcher has to make a case that the confounding variable has an impact on both <em>X</em> and <em>Y.</em></p>
+</box>
+</section>
+<section id="corty3e-ch1-sec2-2" block_type="h2" chapter="1" title="" numbered="false" level="2" print_page="9">
+<section-metadata><section-title>Experimental Designs</section-title></section-metadata>
+<p id="corty3e-ch1-p47" block_type="txt-ni">Not being able to draw cause-and-effect conclusions is a significant limitation of correlational designs. Luckily, there&#8217;s another type of study, called an <termref term="experimental design">experimental design</termref><strong>,</strong> that allows researchers to draw cause-and-effect conclusions. In an experimental design, one of the variables, called the <termref term="independent variable">independent variable</termref><strong>,</strong> is manipulated or controlled by the experimenter. The effect of this manipulation is measured on the other variable, the <termref term="dependent variable">dependent variable</termref><strong>.</strong> This sounds more complex than it is, so an example should help clarify.</p>
+<p id="corty3e-ch1-p48" block_type="txt">Let&#8217;s make the TV and aggression study into an experimental design. Suppose a different researcher obtained a group of kids, brought them into his laboratory, and separated them into two groups by flipping a coin for each kid. He called one group the &#8220;control&#8221; group and the other the &#8220;experimental&#8221; group. If the coin turned up heads, he assigned the kid to the control group and showed a nonviolent cartoon. If the coin turned up tails, he assigned the kid to the experimental group and showed a violent cartoon. Note that the researcher is controlling what type of cartoon, violent or nonviolent, each kid watches. This, the independent variable, is the only difference between the control group and the experimental group. Thus, the control group provides a comparison group for an examination of the effect of a violent cartoon.</p>
+<p id="corty3e-ch1-p49" block_type="txt">After watching the cartoon, the researcher has each kid play a video game that involves making choices between a cooperative response or an aggressive one. He keeps track of the number of aggressive responses each child makes as the dependent variable.</p>
+<p id="corty3e-ch1-p50" block_type="txt">The researcher completes the study by comparing the average number of aggressive responses in the group of kids who watched the violent cartoon to the average number in the group of kids who watched the nonviolent cartoon. If he found that watching the violent cartoon increased the number of aggressive responses, then the results might look like they do in <strong><link href="#corty3e-ch1-fig-6">Figure 1.2</link></strong>.</p>
+<figure id="corty3e-ch1-fig-6" block_type="figure" numbered="true" number="1.2" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="medium" border="true"/>
+<image asset-id="corty3e-ch1-img-6" alt="image" src="asset/ch1/corty3e_fig01_02.jpg"/>
+<caption><strong><phrase block_type="fig_num">Figure 1.2</phrase> Example of Experimental Design Results</strong> The hypothetical results of this experimental design study show that children who were randomly assigned to watch a violent cartoon made more aggressive responses in the video game than did children who had been assigned to watch the nonviolent cartoon.</caption>
+</figure>
+<p id="corty3e-ch1-p51" block_type="txt">Note that this experiment differs from the correlational study because the cases are in groups and the groups are being treated differently. What makes this a &#8220;true&#8221; experimental design is how the cases are assigned to groups, by <em>random assignment.</em> In <termref term="random assignment">random assignment</termref>, each case has an equal chance of being assigned to either group. When the researcher flipped a coin to determine which type of cartoon each kid would watch, that was random assignment. Random assignment is the hallmark of an experiment.</p>
+<p id="corty3e_page_10" block_type="page_start">10</p>
+<box numbered="false" id="corty3e-ch1-exp1-3" block_type="mn1">
+<p id="corty3e-ch1-p52" block_type="mn-ext-ni"><em>Why is random assignment so important? Random assignment means that the only difference between the two groups should be the independent variable that is controlled by the researcher.</em></p>
+</box>
+<p id="corty3e-ch1-p53" block_type="txt">Why is random assignment so important? Random assignment means that the two groups <em>should</em> be similar on all dimensions before the experiment begins. Thus, after the experiment is over, the only difference between the two groups should be the independent variable that was controlled by the researcher. And, if the only difference between the two groups is the independent variable <em>and</em> the two groups differ on the dependent variable, then the only cause for the observed difference is the independent variable. Confounding variables, which caused a problem with correlational designs, are taken out of contention by random assignment. Because of this, with experimental designs, one can draw a conclusion about cause and effect.</p>
+<p id="corty3e-ch1-p54" block_type="txt">To clarify how this works, think of the TV and aggression experiment in which random assignment was used to assign kids to groups. Remember the two confounding variables mentioned for the correlational design, parenting style and sex? Thanks to random assignment, these are no longer an issue in an experimental design. If a child has controlling parents, he or she has an equal chance of being assigned to either group. As a result, both groups should have roughly equal numbers of children who have controlling parents, which means parenting style can no longer be used as an explanation for the difference found in the number of aggressive responses. Similarly, the two groups should be roughly equal in the percentage of boys. In fact, no matter what the potential confounding variable is, the two groups should be close to equivalent on it.</p>
+<p id="corty3e-ch1-p55" block_type="txt">Here&#8217;s the logic of why the independent variable has to be the cause of any observed differences on the dependent variable when we use random assignment:</p>
+<list id="corty3e-ch1-list-4" type="ordered" block_type="loweralpha">
+<li><p id="corty3e-ch1-p56" block_type="nl-alpha-lc-first"><em>If</em> the two groups are alike in all ways except the independent variable (e.g., type of cartoon watched),</p>
+<p id="corty3e_page_11" block_type="page_start">11</p>
+</li>
+<li><p id="corty3e-ch1-p57" block_type="nl-alpha-lc-mid"><em>and</em> the two groups are found to differ on the dependent variable (e.g., number of aggressive responses),</p></li>
+<li><p id="corty3e-ch1-p58" block_type="nl-alpha-lc-mid"><em>then</em> the only plausible explanation for the difference on the dependent variable is the independent variable.</p></li>
+</list>
+</section>
+<section id="corty3e-ch1-sec2-3" block_type="h2" chapter="1" title="" numbered="false" level="2" print_page="11">
+<section-metadata><section-title>Quasi-Experimental Designs</section-title></section-metadata>
+<p id="corty3e-ch1-p59" block_type="txt-ni">There&#8217;s one more type of study to know about, a mash-up of a correlational design with an experimental design. It looks like an experimental study, but is like a correlational one and is called a <em>quasi-experimental design.</em> In a <termref term="quasi-experimental design">quasi-experimental design</termref><strong>,</strong> the cases are <em>classified</em> as being in different groups on the basis of some characteristic they already possess. They are not <em>assigned</em> to groups based on a variable that the researcher controls. In a quasi-experiment, the groups are naturally occurring groups. The naturally occurring groups are then compared on an outcome variable.</p>
+<p id="corty3e-ch1-p60" block_type="txt">Again, this sounds more complex than it is. To clarify, imagine a third researcher studying the television and aggression example, one using a quasi-experimental design. This researcher starts the same way the researcher did for the experimental design, by bringing kids to her laboratory. But she treats them differently than he did once they get to the lab. She tells them that they can pick a cartoon to watch from two options: (1) a violent cartoon with lots of hitting and fighting, or (2) a nonviolent cartoon with lots of cooperative acts. After each kid has watched his or her cartoon choice, she has him or her play the video game and records how many aggressive responses were made. This looks like the experimental design because she is comparing two groups. However, she is not controlling any of the variables, so it is actually similar to a correlational design.</p>
+<p id="corty3e-ch1-p61" block_type="txt">The results might turn out as shown in <strong><link href="#corty3e-ch1-fig-7">Figure 1.3</link></strong>, indicating that those who watched the violent cartoon engaged in more aggressive behavior. These results might tempt the researcher to draw a cause-and-effect conclusion&#8212;that watching violent TV leads to aggressive behavior&#8212;but a researcher can&#8217;t draw a cause-and-effect conclusion for a quasi-experimental design. Because a quasi-experimental design doesn&#8217;t utilize random assignment, confounding variables could exist. For instance, maybe the cooperative cartoon group has more children of controlling parents or maybe it has more girls. These would be confounding variables that could be the real cause of the results.</p>
+<figure id="corty3e-ch1-fig-7" block_type="figure" numbered="true" number="1.3" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="medium" border="true"/>
+<image asset-id="corty3e-ch1-img-7" alt="image" src="asset/ch1/corty3e_fig01_03.jpg"/>
+<caption><strong><phrase block_type="fig_num">Figure 1.3</phrase> Example of Quasi-Experimental Design Results</strong> The hypothetical results of the quasi-experimental design show that children who chose to watch the violent cartoon made more aggressive responses in the video game than did children who picked the nonviolent cartoon to watch.</caption>
+</figure>
+<p id="corty3e_page_12" block_type="page_start">12</p>
+<p id="corty3e-ch1-p62" block_type="txt">In quasi-experimental designs, the variable that defines the group in which a participant belongs is called the <termref term="grouping variable">grouping variable</termref>. The variable where the influence of the grouping variable is measured is called the <termref term="dependent variable">dependent variable</termref>, exactly the same name used in experimental designs. In the case above, cartoon choice is the grouping variable and number of aggressive responses is the dependent variable.</p>
+<p id="corty3e-ch1-p63" block_type="txt">Why would a researcher ever use a correlational design or a quasi-experimental design if they don&#8217;t allow one to draw a conclusion about cause and effect? Correlational designs and quasi-experimental designs allow researchers to study things that, for ethical or practical reasons, can&#8217;t be manipulated. If one wanted to know the impact of prenatal maternal cigarette smoking on children&#8217;s intellectual development, it wouldn&#8217;t be possible to take pregnant women and randomly assign some to smoke cigarettes and others not to smoke. One could, however, do a quasi-experiment in which women were classified as having smoked or not while they were pregnant and the intelligence of their kids was assessed.</p>
+</section>
+<section id="corty3e-ch1-sec2-4" block_type="h2" chapter="1" title="" numbered="false" level="2" print_page="12">
+<section-metadata><section-title>Explanatory and Outcome Variables</section-title></section-metadata>
+<p id="corty3e-ch1-p64" block_type="txt-ni">The term <em>independent variable</em> has a specific meaning: the independent variable is the variable in an experimental study that is controlled by the experimenter and has an effect on the dependent variable. To help remember the difference between independent variable and dependent variable, here&#8217;s a mnemonic: <em>iced</em> (see <strong><link href="#corty3e-ch1-fig-8">Figure 1.4</link></strong>). Iced stands for &#8220;independent &#61; cause; effect &#61; dependent.&#8221;</p>
+<figure id="corty3e-ch1-fig-8" block_type="figure" numbered="true" number="1.4" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="medium" border="true"/>
+<image asset-id="corty3e-ch1-img-8" alt="image" src="asset/ch1/corty3e_fig01_04.jpg"/>
+<caption><strong><phrase block_type="fig_num">Figure 1.4</phrase> ICED: Mnemonic for Types of Variables</strong> The mnemonic <em>iced</em> (independent &#61; cause, effect &#61; dependent) can be used to remember that the independent variable is the cause and the dependent variable the effect that is measured. Here, the sun is the cause of the melting of the ice cube.</caption>
+</figure>
+<p id="corty3e-ch1-p65" block_type="txt">A variable is only an independent variable if it is controlled by the experimenter. However, researchers sometimes use terms casually, generically referring to variables in correlational and quasi-experimental studies as independent and dependent. That can get confusing. In this book, the generic term for the variable that causes, influences, or precedes the other is <termref term="explanatory variable">explanatory variable</termref><strong>.</strong> <termref term="Outcome variable">Outcome variable</termref> is the generic term used here for the variable that is caused, influenced, or comes after the explanatory variable. The explanatory variables for correlational, experimental, and quasi-experimental designs, respectively, are predictor variable, independent variable, and grouping variable. The three outcome variables, respectively, are criterion variable, dependent variable, and dependent variable.</p>
+<p id="corty3e_page_13" block_type="page_start">13</p>
+<p id="corty3e-ch1-p66" block_type="txt"><strong><link href="#corty3e-ch1-fig-9">Table 1.5</link></strong> summarizes the three different types of studies. It is important to know what type of study&#8212;correlational, experimental, or quasi-experimental&#8212;is being conducted in order to choose the correct statistical test.</p>
+<figure id="corty3e-ch1-fig-9" block_type="table" numbered="true" number="1.5" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="xlarge" border="true"/>
+<image asset-id="corty3e-ch1-img-9" alt="image" src="asset/ch1/corty3e_table01_05.jpg"/>
+</figure>
+<p id="corty3e-ch1-p67" block_type="txt">To determine the type of study, one needs to know which variable is the explanatory variable and which variable is the outcome variable. Here are some guidelines to help:</p>
+<list id="corty3e-ch1-list-5" type="unordered" block_type="bullet">
+<li><p id="corty3e-ch1-p68" block_type="bl-first">Formulate a cause-and-effect statement (e.g., watching violent TV causes aggression). The &#8220;cause&#8221; is the explanatory variable and the &#8220;effect&#8221; is the outcome variable.</p></li>
+<li><p id="corty3e-ch1-p69" block_type="bl-mid">Think about chronological order. Does one variable come before the other? The explanatory variable is the one that comes first (e.g., first one watches a lot of violent TV, then one behaves aggressively).</p></li>
+<li><p id="corty3e-ch1-p70" block_type="bl-last">Sometimes it is easier to figure out the outcome variable first, the variable where the &#8220;effect&#8221; is being measured (e.g., what is being measured is how much aggression kids exhibit). The variable &#8220;left over&#8221; is the explanatory variable.</p></li>
+</list>
+<p id="corty3e-ch1-p71" block_type="txt">Once it is known which variable is the explanatory variable, use the flowchart in <strong><link href="#corty3e-ch1-fig-10">Figure 1.5</link></strong> to figure out the type of research design. Remember, if the study is correlational or quasi-experimental, consider the possibility of a confounding variable.</p>
+<figure id="corty3e-ch1-fig-10" block_type="figure" numbered="true" number="1.5" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="large" border="true"/>
+<image asset-id="corty3e-ch1-img-10" alt="image" src="asset/ch1/corty3e_fig01_05.jpg"/>
+<caption><strong><phrase block_type="fig_num">Figure 1.5</phrase> How to Choose: Type of Study</strong> Once someone has determined which variable is the explanatory variable, this flowchart can be used to determine whether the study is correlational, experimental, or quasi-experimental. It depends on whether the explanatory variable is controlled by the experimenter and, if not, whether cases are classified into groups.</caption>
+</figure>
+<p id="corty3e_page_14" block_type="page_start">14</p>
+<box title="A Common Question" numbered="false" id="corty3e-ch1-bx1-3" block_type="bx-1-h">
+<p id="corty3e-ch1-p72" block_type="bx1-que"><strong>Q</strong>	What do the different names for explanatory variables in correlational and quasi-experimental designs signify?</p>
+<p id="corty3e-ch1-p73" block_type="bx1-ans"><strong>A</strong>	In a quasi-experimental design, the explanatory variable is called a grouping variable because cases are grouped together. Cases aren&#8217;t put into groups for the predictor variable in a correlational design. Rather, typically, cases have a wide range of individual values on both the predictor variable and the criterion variable.</p>
+</box>
+<box title="Worked Example 1.1" numbered="false" id="corty3e-ch1-bx3-4" block_type="sr-exp-n">
+<p id="corty3e-ch1-p74" block_type="sr-ex-txt-ni">Let&#8217;s practice figuring out (a) which variable is the explanatory variable and which is the outcome variable, and (b) what type of study is being conducted. A health psychologist was interested in studying the effect of life stress on physical health. She administered a life-stress inventory to a group of college students and used their responses to classify them as being high or low on life stress. She also determined how many days in the past year each student had been sick. As shown in <strong><link href="#corty3e-ch1-fig-11">Figure 1.6</link></strong>, she found a relationship between the two variables: people in the high life-stress group had more days of illness than those in the low life-stress group.</p>
+<figure id="corty3e-ch1-fig-11" block_type="figure" numbered="true" number="1.6" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="medium" border="true"/>
+<image asset-id="corty3e-ch1-img-11" alt="image" src="asset/ch1/corty3e_fig01_06.jpg"/>
+<caption><strong><phrase block_type="fig_num">Figure 1.6</phrase> Life Stress and Days of Illness Results</strong> Hypothetical results showing that those with more life-stress experience more days of physical illness.</caption>
+</figure>
+<p id="corty3e-ch1-p75" block_type="sr-ex-txt">The two variables are life stress (high vs. low) and number of days of illness. The researcher believes that life stress causes/leads to/affects physical health, so the amount of stress is the explanatory variable and the number of sick days is the outcome variable.</p>
+<p id="corty3e_page_15" block_type="page_start">15</p>
+<p id="corty3e-ch1-p76" block_type="sr-ex-txt">Using the flowchart in <link href="#corty3e-ch1-fig-10">Figure 1.5</link>, one concludes that the study is quasi-experimental because the participants are placed in groups on the basis of how much life stress they naturally have. In quasi-experimental studies, the explanatory variable is called a grouping variable and the outcome variable a dependent variable.</p>
+<p id="corty3e-ch1-p77" block_type="sr-ex-txt">This is a quasi-experimental study, so the possibility of confounding variables exists. What other variables could affect both the grouping variable and the dependent variable in this study? Perhaps people with poor memories recall less stress and are placed in the low-stress group. They might also &#8220;forget&#8221; how much they were sick last year. These results would seem to suggest that people with more stress experience more illness, but the data really only show that people with better memories recall more stress and recall more illness. Another possible confounding variable is socioeconomic status&#8212;people with more money may have less stress and be healthier, as they can afford better medical care. The bottom line: the results show that the amount of stress and the number of sick days covary, but one can&#8217;t draw a conclusion about cause and effect from a correlation.</p>
+</box>
+<box title="Practice Problems 1.2" numbered="false" id="corty3e-ch1-bx2-5" block_type="sr-h">
+<p id="corty3e-ch1-p78" block_type="sr-h1"><strong>Review Your Knowledge</strong></p>
+<p id="corty3e-ch1-p79" block_type="sr-que-nl"><phrase block_type="question_num">1.03</phrase> Name the three different types of studies.</p>
+<p id="corty3e-ch1-p80" block_type="sr-que-nl"><phrase block_type="question_num">1.04</phrase> In which studies are cases assigned to groups?</p>
+<p id="corty3e-ch1-p81" block_type="sr-que-nl"><phrase block_type="question_num">1.05</phrase> In which type of study can one draw a conclusion about cause and effect?</p>
+<p id="corty3e-ch1-p82" block_type="sr-que-nl"><phrase block_type="question_num">1.06</phrase> In which types of studies does one need to worry about confounding variables?</p>
+<p id="corty3e-ch1-p83" block_type="sr-h1"><strong>Apply Your Knowledge</strong></p>
+<p id="corty3e-ch1-p84" block_type="sr-ex-txt"><strong><em>For Practice Problems 1.07&#8211;1.09:</em></strong></p>
+<list id="corty3e-ch1-list-6" type="ordered" block_type="loweralpha">
+<li><p id="corty3e-ch1-p85" block_type="co-toc-h1-t"><strong><em>Write a sentence that states the researcher&#8217;s question.</em></strong></p></li>
+<li><p id="corty3e-ch1-p86" block_type="co-toc-h1-t"><strong><em>Name the explanatory variable and the outcome variable. Label them as predictor variable and criterion variable, or independent variable and dependent variable, or grouping variable and dependent variable.</em></strong></p>
+<p id="corty3e_page_16" block_type="page_start">16</p>
+</li>
+<li><p id="corty3e-ch1-p87" block_type="co-toc-h1-t"><strong><em>Determine the type of study: correlational, experimental, or quasi-experimental.</em></strong></p></li>
+<li><p id="corty3e-ch1-p88" block_type="co-toc-h1-t"><strong><em>If the study is correlational or quasi-experimental, name a plausible confounding variable and explain how it affects both of the other variables.</em></strong></p></li>
+</list>
+<p id="corty3e-ch1-p89" block_type="sr-que-nl"><phrase block_type="question_num">1.07</phrase> A psychologist gets a group of college students to come to his lab and randomly divides them into two groups. He has each group study a list of nonsense syllables for 15 minutes. One group, the massed group, studies for 15 minutes in a row. The other group, the spaced group, studies for three 5-minute periods, each separated by 10 minutes of a distractor task. Immediately after each group completes the 15 minutes of studying, he measures recall of the nonsense syllables.</p>
+<p id="corty3e-ch1-p90" block_type="sr-que-nl"><phrase block_type="question_num">1.08</phrase> An educational researcher is interested in the effects of sleep on school performance. She classifies students as (a) getting an adequate amount of sleep or (b) not getting an adequate amount of sleep. Then she measures school performance by finding out their GPAs for a semester.</p>
+<p id="corty3e-ch1-p91" block_type="sr-que-nl"><phrase block_type="question_num">1.09</phrase> A nutritionist is examining the role of fiber in gastrointestinal (GI) health. He believes that consuming fiber is good for GI health. He gathers a group of college students and asks each one the number of grams of fiber consumed per day. He also asks each one how many episodes of GI distress (upset stomach, nausea, vomiting, diarrhea, etc.) he or she has experienced in the past year.</p>
+</box>
+</section>
+<section id="corty3e-ch1-sec1-3" block_type="h1" chapter="1" title="" numbered="false" level="1" print_page="16">
+<section-metadata><section-title><phrase block_type="sec_num">1.3</phrase> <phrase block_type="sec_title">Levels of Measurement</phrase></section-title></section-metadata>
+<p id="corty3e-ch1-p92" block_type="txt-ni">Statistical techniques are performed on data: numbers. All numbers may look alike, but there are different types of numbers that vary in how much information they contain. The type of number determines the statistics that can be used, so it is important to know about the different types of numbers, called levels of measurement.</p>
+<box numbered="false" id="corty3e-ch1-exp1-4" block_type="mn1">
+<p id="corty3e-ch1-p93" block_type="mn-ext-ni"><em>Statisticians divide numbers into four levels of measurement: nominal, ordinal, interval, and ratio. As the numbers move up the hierarchy, from nominal to ratio, they become more complex and contain more information.</em></p>
+</box>
+<p id="corty3e-ch1-p94" block_type="txt">Statisticians divide numbers into four levels of measurement: nominal, ordinal, interval, and ratio. As the numbers move up the hierarchy, from nominal to ratio, they become more complex and contain more information. Nominal numbers contain only one piece of information, while ratio numbers contain four pieces of information.</p>
+<p id="corty3e-ch1-p95" block_type="txt">Before learning about the four levels of measurement, <strong><link href="#corty3e-ch1-fig-12">Figure 1.7</link></strong> shows a mnemonic to help remember them in the correct order: <em>noir.</em> Noir is French for &#8220;black&#8221; and allows one to remember nominal, ordinal, interval, and ratio in order from least complex to most complex.</p>
+</section>
+<section id="corty3e-ch1-sec2-5" block_type="h2" chapter="1" title="" numbered="false" level="2" print_page="16">
+<section-metadata><section-title>Nominal Numbers</section-title></section-metadata>
+<figure id="corty3e-ch1-fig-12" block_type="figure" numbered="true" number="1.7" mmtype="image" mmsrc="" attr="">
+<layout align="right" width="small" border="true"/>
+<image asset-id="corty3e-ch1-img-12" alt="image" src="asset/ch1/corty3e_fig01_07.jpg"/>
+<caption><strong><phrase block_type="fig_num">Figure 1.7</phrase> Four Levels of Measurement</strong> The French word for &#8220;black,&#8221; <em>noir,</em> can be used as a mnemonic for the four levels of measurement&#8212;nominal, ordinal, interval, ratio.</caption>
+</figure>
+<p id="corty3e-ch1-p96" block_type="txt-ni"><termref term="Nominal-level numbers">Nominal-level numbers</termref><strong>,</strong> the simplest level of measurement, sort cases into categories. The numbers used for each category are arbitrary and provide no quantitative information. The numbers simply indicate whether two things are the same or different. Cases are assigned different numbers if they possess different qualities, and they are assigned the same number if they possess the same quality. For example, the race of participants in a study could be measured by assigning a 1 to whites, 2 to blacks, 3 to Native Americans, 4 to Asians, and 5 to Pacific Islanders. If Jack is a 1 and Jill is a 1, then both are white. If Simone is a 1 and Susanne is a 2, then they are of different races.</p>
+<p id="corty3e_page_17" block_type="page_start">17</p>
+<p id="corty3e-ch1-p97" block_type="txt">Race is a variable that social scientists regularly measure. Other variables psychologists use that are measured at the nominal level are factors like sex (male or female), handedness, and psychiatric diagnosis.</p>
+<p id="corty3e-ch1-p98" block_type="txt">There is not much math that can be done with nominal numbers because the numbers are arbitrary. The researcher studying race could just as easily assign the number 7 to whites, 22 to blacks, 0.78 to Native Americans, and so on. The numbers are arbitrary, so it doesn&#8217;t make sense to find the &#8220;average&#8221; race of a group of people. However, the researcher could count how many are 1s (white), 2s (black), 3s (Native American), and so on.</p>
+<p id="corty3e-ch1-p99" block_type="txt">If two cases receive different numbers, then those numbers reflect a <em>difference</em> in the attribute being measured. If the numbers also tell the <em>direction</em> of the difference, which case has more of the attribute and which has less, then one has moved to the next level of measurement, referred to as ordinal.</p>
+</section>
+<section id="corty3e-ch1-sec2-6" block_type="h2" chapter="1" title="" numbered="false" level="2" print_page="17">
+<section-metadata><section-title>Ordinal Numbers</section-title></section-metadata>
+<box id="corty3e-ch1-video-2" block_type="video">
+<p id="corty3e-ch1-videotxt-2" block_type="vidtxt"><link href="http://bcs.whfreeman.com/WebPub/Statistics/statvtk/Videos/StatClips/Types%20of%20Variables_clearSkinCap_3/Types%20of%20Variables.html" target="_pop" data-href-px=""><image asset-id="corty3e-ch1-vimg-2" alt="image" src="asset/images/video.jpg"/></link><em>StatClips: Types of Variables</em>Video on LaunchPad</p>
+</box>
+<box id="corty3e-ch1-video-3" block_type="video">
+<p id="corty3e-ch1-videotxt-3" block_type="vidtxt"><link href="http://bcs.whfreeman.com/WebPub/Statistics/statvtk/Videos/StatClips/Basic%20Principles%20of%20Exploring%20Data_clearSkinCap_3/Basic%20Principles%20of%20Exploring%20Data.html" target="_pop" data-href-px=""><image asset-id="corty3e-ch1-vimg-3" alt="image" src="asset/images/video.jpg"/></link><em>StatClips: Basic Principles of Exploring Data</em>Video on LaunchPad</p>
+</box>
+<p id="corty3e-ch1-p100" block_type="txt-ni"><termref term="Ordinal-level numbers">Ordinal-level numbers</termref> reveal whether cases possess more or less of some characteristic. In ordinal measurement, one might order the objects being measured from lowest to highest (or vice versa) in terms of how much of the characteristic each possesses. Then, ranks are assigned. For example, it is common to say that the person with the fastest time in a race came in first place, the next fastest person was in second place, and so on. Thus, ordinal numbers give information about the <em>direction</em> of differences, about which case possesses more or less of the attribute being measured.</p>
+<p id="corty3e-ch1-p101" block_type="txt">But, ordinal numbers don&#8217;t give any information about how much distance separates cases with different ranks. For example, the most populous state in the United States is California, with about 39 million people. It is followed by Texas (27 million) and Florida (20 million). Note that the distance between rank 1 and 2 is 12 million people and the distance from rank 2 to 3 is 7 million people, yet both are one rank apart. Sometimes the distance between two adjacent scores is large, and sometimes it is small. Ordinal numbers give no information about how far apart cases are.</p>
+<p id="corty3e-ch1-p102" block_type="txt">Though ordinal numbers are still limited in the math one can perform, there are special statistics developed to use with ordinal measures. Here are some ordinal variables psychologists use:</p>
+<list id="corty3e-ch1-list-7" type="unordered" block_type="bullet">
+<li><p id="corty3e-ch1-p103" block_type="bl-first">Class rank and birth order, two variables psychologists use, are ordinal. In fact, most variables with the term <em>rank</em> or <em>order</em> in them are ordinal.</p></li>
+<li><p id="corty3e-ch1-p104" block_type="bl-mid">Individual items on the Apgar scale, a way of measuring the health of newborns, are ordinal. For example, on the Apgar scale, a score of 0 means the pulse is less than 60, 1 is used if the pulse is from 60 to 100, and 2 means the pulse is greater than 100.</p>
+<p id="corty3e_page_18" block_type="page_start">18</p>
+</li>
+<li><p id="corty3e-ch1-p105" block_type="bl-last">Many rating scales are ordinal. For example, a question on a survey asking whether one drinks alcohol never (0), rarely (1), every month (2), every week (3), or every day (4) would be ordinal.</p></li>
+</list>
+</section>
+<section id="corty3e-ch1-sec2-7" block_type="h2" chapter="1" title="" numbered="false" level="2" print_page="18">
+<section-metadata><section-title>Interval Numbers</section-title></section-metadata>
+<figure id="corty3e-ch1-fig-13" block_type="figure" numbered="true" number="1.8" mmtype="image" mmsrc="" attr="">
+<layout align="right" width="small" border="true"/>
+<image asset-id="corty3e-ch1-img-13" alt="image" src="asset/ch1/corty3e_fig01_08.jpg"/>
+<caption><strong><phrase block_type="fig_num">Figure 1.8</phrase> Thermometer with Nonsensical Zero Point</strong> This thermometer shows that temperature in degrees Fahrenheit has an arbitrary zero point and is an interval measure. It doesn&#8217;t make sense to consider a temperature of 0 as &#8220;no temperature.&#8221;</caption>
+</figure>
+<p id="corty3e-ch1-p106" block_type="txt-ni"><termref term="Interval-level numbers">Interval-level numbers</termref> tell <em>how much</em> of the characteristic being measured a case possesses. They contain meaningful information about <em>distance</em> between cases in addition to information about same/different and more/less. That is, they reveal how much of a difference exists between two cases.</p>
+<p id="corty3e-ch1-p107" block_type="txt">Interval-level numbers can tell how far apart two cases are because there is equality of units. Equality of units means that the interval used on the scale is a consistent width along the whole length of the scale. For example, on a Fahrenheit temperature scale, the distance from 31&#176; to 32&#176; is the same as the distance from 211&#176; to 212&#176;.</p>
+<p id="corty3e-ch1-p108" block_type="txt">If an attribute is measured on an interval scale, one can add and subtract the numbers, as well as calculate averages. However, one can&#8217;t divide a specific interval-level measure by another interval-level measure. For example, it is not legitimate to say that an 80&#176; summer day is twice as warm as a 40&#176; winter day. Proportions can&#8217;t be calculated because interval-level scales have arbitrary zero points. On an interval scale, a value of zero does not mean the absence of the attribute being measured. If a person takes a paper-and-pencil IQ test and answers all the questions incorrectly, one wouldn&#8217;t say that he or she has no intelligence. Similarly, if the outside temperature on a winter day is 0&#176;F, shown in <strong><link href="#corty3e-ch1-fig-13">Figure 1.8</link></strong>, it would be silly to state that there is no temperature that day.</p>
+<p id="corty3e-ch1-p109" block_type="txt">A lot of the variables that psychologists measure, factors like intelligence and personality, are interval-level numbers. Statisticians prefer interval-level numbers over ordinal-level numbers and nominal-level numbers because interval-level numbers contain more information and more math can be done on them. For example, as already mentioned, one can find an average for a variable measured on an interval scale. More statistical techniques have been developed for interval-level data than for nominal and ordinal data.</p>
+</section>
+<section id="corty3e-ch1-sec2-8" block_type="h2" chapter="1" title="" numbered="false" level="2" print_page="18">
+<section-metadata><section-title>Ratio Numbers</section-title></section-metadata>
+<figure id="corty3e-ch1-fig-14" block_type="figure" numbered="true" number="1.9" mmtype="image" mmsrc="" attr="">
+<layout align="right" width="medium" border="true"/>
+<image asset-id="corty3e-ch1-img-14" alt="image" src="asset/ch1/corty3e_fig01_09.jpg"/>
+<caption><strong><phrase block_type="fig_num">Figure 1.9</phrase> Ratio Level of Measurement and Negative Numbers</strong> Even though they have absolute zero points, some ratio-level measures can have negative values.</caption>
+</figure>
+<p id="corty3e-ch1-p110" block_type="txt-ni"><termref term="Ratio-level numbers">Ratio-level numbers</termref> have everything interval-level numbers have, but they also have an absolute zero point, a real zero point. Absolute zero indicates that a score of 0 means none of the attribute being measured is present. A simple example is speed. On a speed scale, such as miles per hour (mph), a value of zero means that the object is not moving. It has zero speed. An absolute zero point means one can divide two ratio-level numbers, to turn them into a proportion. If Jos&#233; is driving a car at 10 mph and Celeste is driving at 20 mph, one can legitimately say that her car is going twice as fast.</p>
+<p id="corty3e_page_19" block_type="page_start">19</p>
+<p id="corty3e-ch1-p111" block_type="txt">Most of the time, absolute zero points exist only for physical variables, not psychological ones. For example, height, weight, speed, and population all have absolute zero points. Also, things like age, cholesterol level, and pollution level have absolute zero points. There are some psychologically relevant variables&#8212;heart rate, crime rate, and length of marriage&#8212;that are ratio level. But, many other psychological variables&#8212;for instance, intelligence, masculinity, and conscientiousness&#8212;are not ratio level.</p>
+<p id="corty3e-ch1-p112" block_type="txt">If a zero on a ratio scale means that none of the attribute is present, it seems like it would be impossible to have a negative ratio-level number. But, it is possible for ratio numbers to be negative. Anyone who&#8217;s ever overdrawn a checking account (see <strong><link href="#corty3e-ch1-fig-14">Figure 1.9</link></strong>) and had a negative balance has had firsthand experience with this phenomenon.</p>
+<p id="corty3e-ch1-p113" block_type="txt">An absolute zero point is necessary for a ratio-level measure, but a ratio-level measure must also have equality of units. <strong><link href="#corty3e-ch1-fig-15">Table 1.6</link></strong> shows that there is a hierarchy to the levels of measurement where each more complex level has all the qualities of the preceding one.</p>
+<figure id="corty3e-ch1-fig-15" block_type="table" numbered="true" number="1.6" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="xlarge" border="true"/>
+<image asset-id="corty3e-ch1-img-15" alt="image" src="asset/ch1/corty3e_table01_06.jpg"/>
+</figure>
+<p id="corty3e-ch1-p114" block_type="txt">Knowing the level of measurement of a variable is important. <strong><link href="#corty3e-ch1-fig-16">Figure 1.10</link></strong> is a flowchart that shows four successive questions that can be used to determine a variable&#8217;s level of measurement. As long as the answer to a question is yes, go on to ask the next question. When one hits a &#8220;no,&#8221; stop. The last &#8220;yes&#8221; gives the level of measurement.</p>
+<figure id="corty3e-ch1-fig-16" block_type="figure" numbered="true" number="1.10" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="xlarge" border="true"/>
+<image asset-id="corty3e-ch1-img-16" alt="image" src="asset/ch1/corty3e_fig01_10.jpg"/>
+<caption><strong><phrase block_type="fig_num">Figure 1.10</phrase> How to Choose: Level of Measurement</strong> Asking the four questions in this flowchart will lead to a decision regarding the level of measurement of a variable.</caption>
+</figure>
+<box title="A Common Question" numbered="false" id="corty3e-ch1-bx1-6" block_type="bx-1-h">
+<p id="corty3e-ch1-p115" block_type="bx1-que"><strong>Q</strong> How can variables like height and weight have absolute zero points?</p>
+<p id="corty3e-ch1-p116" block_type="bx1-ans"><strong>A</strong> No person will ever be zero inches tall or weigh zero pounds, so that value would never be assigned to a case, but that isn&#8217;t what absolute zero means. An absolute zero point means that the zero <em>on the scale</em> represents an absence of the characteristic.</p>
+</box>
+<p id="corty3e_page_20" block_type="page_start">20</p>
+<box title="Worked Example 1.2" numbered="false" id="corty3e-ch1-bx3-7" block_type="sr-exp-n">
+<p id="corty3e-ch1-p117" block_type="sr-ex-txt-ni">For practice figuring out level of measurement, imagine an end-of-semester test in an introductory psychology class that is meant to measure knowledge of psychology. It is 50 items long and each item is worth 2 points. Is this test measuring at the nominal, ordinal, interval, or ratio level?</p>
+<p id="corty3e-ch1-p118" block_type="sr-ex-txt">To figure out the problem, think of two students, with two different scores on the test, one with an 80 and one with a 90, as shown in <strong><link href="#corty3e-ch1-fig-17">Figure 1.11</link></strong>. The test scores tell same vs. different, 80 is different from 90, so this test is measuring knowledge of psychology at least at the nominal level. One can also tell the direction of the difference, that one student did better than the other (90 is more than 80), so this test is measuring at least at the ordinal level. There was equality of units (each question was worth 2 points), so one can speak meaningfully of how much better one student did than the other. The test is measuring at least at the interval level.</p>
+<p id="corty3e_page_21" block_type="page_start">21</p>
+<figure id="corty3e-ch1-fig-17" block_type="figure" numbered="true" number="1.11" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="large" border="true"/>
+<image asset-id="corty3e-ch1-img-17" alt="image" src="asset/ch1/corty3e_fig01_11.jpg"/>
+<caption><strong><phrase block_type="fig_num">Figure 1.11</phrase> Choosing Level of Measurement</strong> To choose the level of measure, think of two cases with different scores. Then ask these four questions: (1) Do the scores tell whether the two cases are the same or different? (2) Do the scores reveal the direction of the difference between the two cases? (3) Do the scores tell the size of the difference between the two cases? (4) Is there an absolute zero point on the scale?</caption>
+</figure>
+<p id="corty3e-ch1-p119" block_type="sr-ex-txt">The final question is whether there is an absolute zero point. It was stated earlier that this test was meant to measure knowledge of psychology. If someone got a zero on the test, would that mean this person has zero knowledge of psychology? No! It would just mean that the person didn&#8217;t answer those 50 questions correctly. There might be 50 other facts that the person knows. That means this test has an arbitrary zero point, not an absolute one. As the last &#8220;yes&#8221; answer was at the interval level, one should stop there and conclude that this test measures knowledge of psychology at the interval level.</p>
+<p id="corty3e-ch1-p120" block_type="sr-ex-txt">However, be aware that there is room for disagreement. Someone else may use this test to measure how many of the 50 questions were answered correctly. In that case, the zero point is absolute and the test is measuring at the ratio-level variable. Students don&#8217;t like this, but whether a zero point is real or arbitrary can depend on how a test is being used or interpreted.</p>
+</box>
+<box title="Practice Problems 1.3" numbered="false" id="corty3e-ch1-bx2-8" block_type="sr-h">
+<p id="corty3e-ch1-p121" block_type="sr-h1"><strong>Review Your Knowledge</strong></p>
+<p id="corty3e-ch1-p122" block_type="sr-que-nl"><phrase block_type="question_num">1.10</phrase> List the four levels of measurement, in order from simplest to most complex.</p>
+<p id="corty3e-ch1-p123" block_type="sr-que-nl"><phrase block_type="question_num">1.11</phrase> When a scale moves from ordinal to interval by adding equality of units, what additional information does that scale now provide?</p>
+<p id="corty3e-ch1-p124" block_type="sr-que-nl"><phrase block_type="question_num">1.12</phrase> If a scale has an absolute zero point, what does a zero on the scale represent?</p>
+<p id="corty3e-ch1-p125" block_type="sr-h1"><strong>Apply Your Knowledge</strong></p>
+<p id="corty3e-ch1-p126" block_type="sr-ex-txt"><strong><em>For Practice Problems 1.13&#8211;1.16, determine what level of measurement the variable is (nominal, ordinal, interval, or ratio).</em></strong></p>
+<p id="corty3e-ch1-p127" block_type="sr-que-nl"><phrase block_type="question_num">1.13</phrase> Ivan Pavlov gathers a group of dogs, exposes each to its favorite food for 5 minutes, and measures how many milliliters of saliva each dog produces during the 5-minute period. Salivation is being measured at what level?</p>
+<p id="corty3e-ch1-p128" block_type="sr-que-nl"><phrase block_type="question_num">1.14</phrase> At the end of the semester, a professor surveys his students using the following scale with regard to how much of the assigned reading was done: 0 &#61; none, 1 &#61; a bit, 2 &#61; about half, 3 &#61; most, 4 &#61; all. Amount of assigned reading completed is measured at what level?</p>
+<p id="corty3e_page_22" block_type="page_start">22</p>
+<p id="corty3e-ch1-p129" block_type="sr-que-nl"><phrase block_type="question_num">1.15</phrase> Infants who are being reared by heterosexual couples are observed and classified as (a) being attached to the mother, (b) being attached to the father, (c) being attached to both, or (d) being attached to neither. Attachment is being measured at what level?</p>
+<p id="corty3e-ch1-p130" block_type="sr-que-nl"><phrase block_type="question_num">1.16</phrase> A personality psychologist developed a femininity scale. From the list of hundreds of behaviors that are considered feminine, he selected 10. For each of these 10 behaviors, a person completing the scale indicates if he or she engages in the behavior. Each &#8220;yes&#8221; answer is worth 1 point. Scores on the scale can range from 0 to 10. Femininity is being measured at what level?</p>
+</box>
+</section>
+<section id="corty3e-ch1-sec1-4" block_type="h1" chapter="1" title="" numbered="false" level="1" print_page="22">
+<section-metadata><section-title><phrase block_type="sec_num">1.4</phrase> <phrase block_type="sec_title">The Language of Statistics</phrase></section-title></section-metadata>
+<box id="corty3e-ch1-video-4" block_type="video">
+<p id="corty3e-ch1-videotxt-4" block_type="vidtxt"><link href="http://bcs.whfreeman.com/webpub/statistics/ips7e/student/Stat Videos/ch01/sc_statsintro.html" target="_pop" data-href-px=""><image asset-id="corty3e-ch1-vimg-4" alt="image" src="asset/images/video.jpg"/></link><em>StatClips: Statistics Introduction</em>Video on LaunchPad</p>
+</box>
+<box id="corty3e-ch1-video-5" block_type="video">
+<p id="corty3e-ch1-videotxt-5" block_type="vidtxt"><link href="http://bcs.whfreeman.com/webpub/statistics/ips7e/student/Stat Videos/ch03/sc_statsintro_ppss.html" target="_pop" data-href-px=""><image asset-id="corty3e-ch1-vimg-5" alt="image" src="asset/images/video.jpg"/></link><em>StatClips: Statistics Introduction: Populations, Parameters, Samples, and Sample Statistics</em>Video on LaunchPad</p>
+</box>
+<p id="corty3e-ch1-p131" block_type="txt-ni">Like any discipline, statistics defines words in special ways to make communication easier. The names for different types of studies and levels of measurement have already been covered. Now it is time to learn some more terms that will be used throughout the book.</p>
+<p id="corty3e-ch1-p132" block_type="txt">The subjects in a study are drawn from a <termref term="population">population</termref><strong>,</strong> which is the larger group of cases a researcher is interested in studying. If a psychologist were interested in studying depression, the population could consist of all people in the world with depression. Such a large population may be too unwieldy to study, so the researcher might limit it by adding other criteria such as age (e.g., depression in adults) or a specific diagnosis (e.g., major depression).</p>
+<p id="corty3e-ch1-p133" block_type="txt">Even if the population is carefully defined (e.g., adult males in industrialized nations who are experiencing a major depression and do not have a substance abuse diagnosis), there is no way that the researcher could find and contact all the people who meet these criteria. As a result, researchers almost always conduct their research on a subset of the population, and this subset is called a <em>sample.</em> A <termref term="sample">sample</termref> is a group of cases that is selected from the population. A sample is always smaller in size than the population, as shown in <strong><link href="#corty3e-ch1-fig-18">Figure 1.12</link></strong>. If a sample is an accurate reflection of the larger population, it is called a representative sample.</p>
+<figure id="corty3e-ch1-fig-18" block_type="figure" numbered="true" number="1.12" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="large" border="true"/>
+<image asset-id="corty3e-ch1-img-18" alt="image" src="asset/ch1/corty3e_fig01_12.jpg"/>
+<caption><strong><phrase block_type="fig_num">Figure 1.12</phrase> Sampling from a Population</strong> A sample is a subset drawn from a population.</caption>
+</figure>
+<p id="corty3e-ch1-p134" block_type="txt">The data from a sample or population are often reduced to a single number, like an average, in order to summarize the group. This number has a different name depending on whether it is used to characterize a sample or a population. If the number characterizes a sample, it is called a <termref term="statistic">statistic</termref><strong>.</strong> If the number characterizes a population, it is called a <termref term="parameter">parameter</termref><strong>.</strong></p>
+<p id="corty3e-ch1-p135" block_type="txt">The difference between a statistic and a parameter is important, so different abbreviations indicate whether a value refers to a sample or a population. Statisticians use Latin letters to symbolize sample statistics and Greek letters to symbolize population parameters. When a researcher calculates the mean for a sample, it is called a statistic and symbolized by the letter <em>M.</em> For the population, a mean is a parameter and symbolized by the Greek letter mu (pronounced as &#8220;mew&#8221; and written like a script u, <em>&#956;</em>).</p>
+<p id="corty3e-ch1-p136" block_type="txt">Statisticians also distinguish between descriptive statistics and inferential statistics. A <termref term="descriptive statistic">descriptive statistic</termref> is a summary statement about a set of cases. It involves reducing a set of data to some meaningful value in order to describe the characteristics of that group of observations. If someone reported that 37&#37; of his or her class was male, that would be a descriptive statistic.</p>
+<p id="corty3e_page_23" block_type="page_start">23</p>
+<p id="corty3e-ch1-p137" block_type="txt">An <termref term="inferential statistic">inferential statistic</termref> uses a sample of cases to draw a conclusion about the larger population. Inferential statistics also involve reducing a set of data to a single meaningful value, but it is being done to make inferences about a population (rather than to describe a sample). In other words, an inferential statistic allows one to generalize from a sample to a population.</p>
+<p id="corty3e-ch1-p138" block_type="txt">For example, one might obtain a sample of students at a college, measure their depression level, and calculate the average depression level. If one stops there and makes a statement like, &#8220;The average depression level in the sample of students at the college was 12.75,&#8221; that would be a descriptive statistic. But, if one went on and generalized to college students with a statement such as, &#8220;College students have, on average, a depression level of 12.75,&#8221; that would be an inferential statistic. An inferential statistic is used to draw a conclusion about a larger set of cases.</p>
+<box title="Practice Problems 1.4" numbered="false" id="corty3e-ch1-bx2-9" block_type="sr-h">
+<p id="corty3e-ch1-p139" block_type="sr-h1"><strong>Review Your Knowledge</strong></p>
+<p id="corty3e-ch1-p140" block_type="sr-que-nl"><phrase block_type="question_num">1.17</phrase> What are Greek letters used as abbreviations for? Latin letters?</p>
+<p id="corty3e-ch1-p141" block_type="sr-que-nl"><phrase block_type="question_num">1.18</phrase> What is the name for a statistic that is used to draw a conclusion about a population from a sample?</p>
+<p id="corty3e-ch1-p142" block_type="sr-h1"><strong>Apply Your Knowledge</strong></p>
+<p id="corty3e-ch1-p143" block_type="sr-que-nl"><phrase block_type="question_num">1.19</phrase> The athletic director at a college is interested in how well female athletes perform academically. He interviews the women&#8217;s softball team, determines what their average GPA is, and reports that the women&#8217;s softball team has a GPA of 3.37. (a) Is this a statistic or a parameter? (b) Is this a descriptive or an inferential statistic?</p>
+<p id="corty3e-ch1-p144" block_type="sr-que-nl"><phrase block_type="question_num">1.20</phrase> A demographer is interested in the annual incomes of people who live in apartments. From the Census Bureau, she obtains a representative sample of 2,500 people living in apartments all across the United States and learns their annual incomes. She then reports that the average annual income of apartment dwellers in the United States is &#36;29,983. (a) Does this number come from a sample or a population? (b) Is it a descriptive or an inferential statistic?</p>
+</box>
+</section>
+<section id="corty3e-ch1-sec1-5" block_type="h1" chapter="1" title="" numbered="false" level="1" print_page="24">
+<section-metadata><section-title><phrase block_type="sec_num">1.5</phrase> <phrase block_type="sec_title">Statistical Notation and Rounding</phrase></section-title></section-metadata>
+<p id="corty3e_page_24" block_type="page_start">24</p>
+<p id="corty3e-ch1-p145" block_type="txt-ni">The data that statisticians work with are almost always in the form of numbers. When statisticians refer to the outcome variable that the numbers represent, they abbreviate it with the letter <em>X.</em> If they were measuring age in a group of children, they would say <em>X</em> &#61; age. Another common abbreviation is <em>N</em> to indicate the number of cases. If statisticians measured the ages of five children, they would say <em>N</em> &#61; 5.</p>
+<p id="corty3e-ch1-p146" block_type="txt">When adding together sets of scores, an uppercase Greek sigma (&#931;) is used as a summation sign. If the five kids had ages of 5, 7, 10, 11, and 15, then &#931;<em>X</em> means that one should add together all the <em>X</em> scores:</p>
+<p id="corty3e-ch1-p147" block_type="eq">&#931;<em>X</em> &#61; 5 &#43; 7 &#43; 10 &#43; 11 &#43; 15</p>
+<p id="corty3e-ch1-p148" block_type="eq">&#61; 48</p>
+<p id="corty3e-ch1-p149" block_type="txt-ni">The order of operations tells the order in which math is done. Following the order of operations is important for getting the right answer. Many students remember the acronym PEMDAS from elementary school. PEMDAS stands for parentheses, exponents, multiplication, division, addition, and subtraction. It is the order to be followed in equations. &#8220;Please excuse my dear Aunt Sally&#8221; is a mnemonic commonly used to remember PEMDAS.</p>
+<p id="corty3e-ch1-p150" block_type="txt">The PEMDAS order of operations means the math within parentheses and brackets is done first, then the exponents (numbers raised to a power like 3<sup>2</sup> and radicals like <image asset-id="corty3e-ch1-img-19" alt="image" src="asset/ch1/corty3e_ineqn01_24_01.jpg"/>) are computed. Next, the multiplication and division are calculated in order from left to right. Finally, the addition and subtraction are done, again in order from left to right. A problem like (7 &#43; 3) &#215; 3<sup>2</sup> &#247; 2 &#43; 3 &#8722; 2 &#215; 3 &#215; <image asset-id="corty3e-ch1-img-20" alt="image" src="asset/ch1/corty3e_ineqn01_24_02.jpg"/> would be completed as follows:</p>
+<list id="corty3e-ch1-list-8" type="unordered" block_type="bullet">
+<li><p id="corty3e-ch1-p151" block_type="bl-first">First the parentheses: (7 &#43; 3) &#215; 3<sup>2</sup> &#247; 2 &#43; 3 &#8722; 2 &#215; 3 &#215; <image asset-id="corty3e-ch1-img-21" alt="image" src="asset/ch1/corty3e_ineqn01_24_02.jpg"/> &#61; 10 &#215; 3<sup>2</sup> &#247; 2 &#43; 3 &#8722; 2 &#215; 3 &#215; <image asset-id="corty3e-ch1-img-22" alt="image" src="asset/ch1/corty3e_ineqn01_24_02.jpg"/></p></li>
+<li><p id="corty3e-ch1-p152" block_type="bl-mid">Then the exponents and radicals: 10 &#215; 3<sup>2</sup> &#247; 2 &#43; 3 &#8722; 2 &#215; 3 &#215; <image asset-id="corty3e-ch1-img-23" alt="image" src="asset/ch1/corty3e_ineqn01_24_02.jpg"/> &#61; 10 &#215; 9 &#247; 2 &#43; 3 &#8722; 2 &#215; 3 &#215; 3</p></li>
+<li><p id="corty3e-ch1-p153" block_type="bl-mid">Then the multiplication and division: 10 &#215; 9 &#247; 2 &#43; 3 &#8722; 2 &#215; 3 &#215; 3 &#61; 45 &#43; 3 &#8722; 18</p></li>
+<li><p id="corty3e-ch1-p154" block_type="bl-last">Finally, the addition and subtraction: 45 &#43; 3 &#8722; 18 &#61; 30</p></li>
+</list>
+<p id="corty3e-ch1-p155" block_type="txt">For another example of following the order of operations, see <strong><link href="#corty3e-ch1-fig-19">Figure 1.13</link></strong>. Each chalkboard in the figure shows another step in the order of operations.</p>
+<figure id="corty3e-ch1-fig-19" block_type="figure" numbered="true" number="1.13" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="large" border="true"/>
+<image asset-id="corty3e-ch1-img-24" alt="image" src="asset/ch1/corty3e_fig01_13.jpg"/>
+<caption><strong><phrase block_type="fig_num">Figure 1.13</phrase> Order of Operations</strong> Math in equations should be done following these four steps for order of operations: first the math within parentheses, then exponents and radicals, then multiplication and division, finishing with addition and subtraction.</caption>
+</figure>
+<p id="corty3e-ch1-p156" block_type="txt">Keep alert for summation signs in the order of operations. Using the order of operations correctly for the five ages, &#931;<em>X</em><sup>2</sup> means 5<sup>2</sup> &#43; 7<sup>2</sup> &#43; 10<sup>2</sup> &#43; 11<sup>2</sup> &#43; 15<sup>2</sup>, not 48<sup>2</sup>. Also, complete summations <em>before</em> doing other addition and subtraction. For example, with the age data, &#931;<em>X</em> &#43; 1 means 48 &#43; 1. It doesn&#8217;t mean add 1 to each age and then add them all up. That would be &#931;(<em>X</em> &#43; 1).</p>
+</section>
+<section id="corty3e-ch1-sec2-9" block_type="h2" chapter="1" title="" numbered="false" level="2" print_page="24">
+<section-metadata><section-title>Rules of Rounding</section-title></section-metadata>
+<p id="corty3e-ch1-p157" block_type="txt-ni">It is important to round correctly in order to obtain the right answer. Rounding involves making a number easier to work with by removing or simplifying digits on the right. A rounded number should accurately reflect the unrounded number. If someone reports her salary of &#36;35,400 as &#36;35,000, that&#8217;s rounding. Note that she rounded her salary to &#36;35,000, not &#36;36,000. That&#8217;s because &#36;35,000 is a more accurate reflection of the unrounded number than is &#36;36,000. It is a more accurate answer because it is closer to the original value. This is shown on a number line in <strong><link href="#corty3e-ch1-fig-20">Figure 1.14</link></strong>.</p>
+<figure id="corty3e-ch1-fig-20" block_type="figure" numbered="true" number="1.14" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="large" border="true"/>
+<image asset-id="corty3e-ch1-img-25" alt="image" src="asset/ch1/corty3e_fig01_14.jpg"/>
+<caption><strong><phrase block_type="fig_num">Figure 1.14</phrase> Number Line Showing How to Round &#36;35,400 to the Nearest Thousand Dollars</strong> The unrounded number (&#36;35,400) is closer to &#36;35,000 than to &#36;36,000, so it is rounded to the closer number.</caption>
+</figure>
+<p id="corty3e_page_25" block_type="page_start">25</p>
+<p id="corty3e-ch1-p158" block_type="txt">The American Psychological Association recommends reporting results to two decimal places (APA, 2010). So, Rounding Rule 1 is as follows: final answers should be rounded to two decimal places.</p>
+<p id="corty3e-ch1-p159" block_type="txt">Rounding Rule 2 is that numbers shouldn&#8217;t be rounded until the very end. Carry as many decimal places as possible through every calculation. Sometimes, though, it is unrealistic to carry all decimal places. If that&#8217;s the case, round intermediate steps to four decimal places, which is two more decimal places than the final answer will have. Problems worked in the book will carry four decimal places.</p>
+<p id="corty3e-ch1-p160" block_type="txt">Here&#8217;s an example of how not carrying enough decimal places can get one into trouble. Look at this equation and see if, without using a calculator, you can figure out the answer:</p>
+<p id="corty3e-ch1-fig-21" block_type="equation">
+<image asset-id="corty3e-ch1-img-26" alt="image" src="asset/ch1/corty3e_eqn01_25_01.jpg"/>
+</p>
+<p id="corty3e_page_26" block_type="page_start">26</p>
+<p id="corty3e-ch1-p161" block_type="txt">The divisor (789) and the multiplier (789) will cancel each other out and the result should be 123. If one were to violate the second rule of rounding and round the result of the initial division to two decimal places, the final result would be off:</p>
+<p id="corty3e-ch1-fig-22" block_type="equation">
+<image asset-id="corty3e-ch1-img-27" alt="image" src="asset/ch1/corty3e_eqn01_26_01.jpg"/>
+</p>
+<p id="corty3e-ch1-p162" block_type="txt">In contrast, if one had rounded the first step to four decimal places, the final answer would have been much closer to what it should have been:</p>
+<p id="corty3e-ch1-fig-23" block_type="equation">
+<image asset-id="corty3e-ch1-img-28" alt="image" src="asset/ch1/corty3e_eqn01_26_02.jpg"/>
+</p>
+<p id="corty3e-ch1-p163" block_type="txt-ni">The bottom line: don&#8217;t round to two decimal places until the end.</p>
+<p id="corty3e-ch1-p164" block_type="txt">Now that the first two rules of rounding have been stated, here&#8217;s how to round a number to two decimal places. For an example, use 34.568:</p>
+<list id="corty3e-ch1-list-9" type="unordered" block_type="bullet">
+<li><p id="corty3e-ch1-p165" block_type="bl-first">Start by cutting off the number at two decimal places: 34.56. That&#8217;s one option for the rounded number.</p></li>
+<li><p id="corty3e-ch1-p166" block_type="bl-mid">Get a second rounding option by adding one unit to the final digit, by going one higher in the hundredths column, to 34.57.</p></li>
+<li><p id="corty3e-ch1-p167" block_type="bl-last">Now it is time to decide which number, 34.56 or 34.57, is closer to the unrounded number. Look at the number line in <strong><link href="#corty3e-ch1-fig-24">Figure 1.15</link></strong>. The number 34.56 is 0.008 away from the unrounded number, while 34.57 is only 0.002 away. Because 34.57 is closer to the unrounded number, that is the answer.</p></li>
+</list>
+<figure id="corty3e-ch1-fig-24" block_type="figure" numbered="true" number="1.15" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="large" border="true"/>
+<image asset-id="corty3e-ch1-img-29" alt="image" src="asset/ch1/corty3e_fig01_15.jpg"/>
+<caption><strong><phrase block_type="fig_num">Figure 1.15</phrase> Number Line Showing How to Round 34.568 to Two Decimal Places</strong> The unrounded number (34.568) is closer to 34.57 than to 34.56, so it is rounded to the closer option.</caption>
+</figure>
+<p id="corty3e-ch1-p168" block_type="txt">If an unrounded number (e.g., 76.125) is exactly centered between the two options (76.12 and 76.13), then round up. That&#8217;s Rounding Rule 3: when the two options for the rounded number are the same distance from the unrounded number, round up. Thus, 76.125 would be rounded to 76.13, as explained in <strong><link href="#corty3e-ch1-fig-25">Figure 1.16</link></strong>. The rules of rounding are summarized in <strong><link href="#corty3e-ch1-fig-25">Table 1.7</link></strong>.</p>
+<figure id="corty3e-ch1-fig-25" block_type="figure" numbered="true" number="1.16" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="large" border="true"/>
+<image asset-id="corty3e-ch1-img-30" alt="image" src="asset/ch1/corty3e_fig01_16.jpg"/>
+<caption><strong><phrase block_type="fig_num">Figure 1.16</phrase> Number Line Showing an Unrounded Number Equally Close to Both Rounding Options</strong> The unrounded number (76.125) is equally distant from the two rounding options, 76.12 and 76.13, so round up to 76.13.</caption>
+</figure>
+<figure id="corty3e-ch1-fig-26" block_type="table" numbered="true" number="1.7" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="medium" border="true"/>
+<image asset-id="corty3e-ch1-img-31" alt="image" src="asset/ch1/corty3e_table01_07.jpg"/>
+</figure>
+<p id="corty3e_page_27" block_type="page_start">27</p>
+<box title="A Common Question" numbered="false" id="corty3e-ch1-bx1-10" block_type="bx-1-h">
+<p id="corty3e-ch1-p169" block_type="bx1-que"><strong>Q</strong> Why aren&#8217;t the rules of rounding followed when reporting <em>N,</em> sample size?</p>
+<p id="corty3e-ch1-p170" block_type="bx1-ans"><strong>A</strong> The number of cases, <em>N,</em> is always a whole number. One can&#8217;t have 57.8 cases in a study. So, <em>N</em> is always reported without any decimal places.</p>
+</box>
+<box title="Worked Example 1.3" numbered="false" id="corty3e-ch1-bx3-11" block_type="sr-exp-n">
+<p id="corty3e-ch1-p171" block_type="sr-ex-txt-ni">As practice for order of operations and rounding, here&#8217;s a tougher problem than we&#8217;ve encountered so far. By following the order of operations and breaking down the equation into pieces, it is possible to get the right answer. Note that after performing math on a number, follow the rules of rounding and carry four decimal places.</p>
+<p id="corty3e-ch1-fig-27" block_type="equation">
+p<image asset-id="corty3e-ch1-img-32" alt="image" src="asset/ch1/corty3e_eqn01_27_01.jpg"/>
+</p>
+<p id="corty3e-ch1-p172" block_type="sr-ex-txt">First come parentheses and brackets. Working from the inside out, doing the interior parentheses first and then the bracket on the right, one gets</p>
+<p id="corty3e-ch1-fig-28" block_type="equation">
+<image asset-id="corty3e-ch1-img-33" alt="image" src="asset/ch1/corty3e_eqn01_27_02.jpg"/>
+</p>
+<p id="corty3e-ch1-p173" block_type="sr-ex-txt">The bracket on the left can&#8217;t be attacked until the math inside it is done. Inside a parentheses or bracket, one still has to follow the order of operations, so do the multiplication and division first. Doing the multiplication gives</p>
+<p id="corty3e-ch1-fig-29" block_type="equation">
+<image asset-id="corty3e-ch1-img-34" alt="image" src="asset/ch1/corty3e_eqn01_27_03.jpg"/>
+</p>
+<p id="corty3e_page_28" block_type="page_start">28</p>
+<p id="corty3e-ch1-p174" block_type="sr-ex-txt">The next step is the addition and subtraction inside the brackets:</p>
+<p id="corty3e-ch1-fig-30" block_type="equation">
+<image asset-id="corty3e-ch1-img-35" alt="image" src="asset/ch1/corty3e_eqn01_28_01.jpg"/>
+</p>
+<p id="corty3e-ch1-p175" block_type="sr-ex-txt-ni">Now do the division within the brackets:</p>
+<p id="corty3e-ch1-fig-31" block_type="equation">
+<image asset-id="corty3e-ch1-img-36" alt="image" src="asset/ch1/corty3e_eqn01_28_02.jpg"/>
+</p>
+<p id="corty3e-ch1-p176" block_type="sr-ex-txt">When brackets or parentheses are next to each other, that means multiplication: (3)(2) is the same thing as 3 &#215; 2. So, as the next to last step, do the multiplication:</p>
+<p id="corty3e-ch1-fig-32" block_type="equation">
+<image asset-id="corty3e-ch1-img-37" alt="image" src="asset/ch1/corty3e_eqn01_28_03.jpg"/>
+</p>
+<p id="corty3e-ch1-p177" block_type="sr-ex-txt">Exponents were supposed to be completed at the second step in the order of operations. But, the math within the square root sign had to be completed first. So, finally, take the square root of 0.9799 to get 0.9899, which is rounded to 0.99 for the final answer.</p>
+</box>
+<box title="DIY" numbered="false" id="corty3e-ch1-bx4-12" block_type="bx4-h">
+<p id="corty3e-ch1-p178" block_type="bx4-txt-ni">In this do-it-yourself section, you will explore the power of rounding. Get a receipt from a trip to the grocery store, one where a lot of items were purchased. Find the total spent before taxes. Round each item to the nearest dollar. If something cost less than 50 cents, it would round to zero. Now, add up all the rounded numbers. Is the sum of the rounded numbers remarkably close to the sum of the unrounded numbers? Why?</p>
+<p id="corty3e-ch1-p179" block_type="bx4-txt">Does this approach still work if you round all items to the nearest &#36;2? (If something costs less than a dollar, round it to zero. From &#36;1.00 to &#36;2.99 rounds to &#36;2; from &#36;3.00 to &#36;4.99 rounds to 4; etc.) How about if you round to the nearest &#36;5? (&#36;0.00 to &#36;2.49 &#61; &#36;0; &#36;2.50 to &#36;7.49 &#61; &#36;5; etc.) What happens as you round more and more?</p>
+<p id="corty3e-ch1-p180" block_type="bx4-txt">Save the receipt because you will need it again in <link href="corty3e-ch03.xml">Chapter 3</link>.</p>
+</box>
+<box title="Practice Problems 1.5" numbered="false" id="corty3e-ch1-bx2-13" block_type="sr-h">
+<p id="corty3e-ch1-p181" block_type="sr-h1"><strong>Review Your Knowledge</strong></p>
+<p id="corty3e-ch1-p182" block_type="sr-que-nl"><phrase block_type="question_num">1.21</phrase> What abbreviation do statisticians use for a summation sign?</p>
+<p id="corty3e-ch1-p183" block_type="sr-que-nl"><phrase block_type="question_num">1.22</phrase> Following the order of operations, what does one do first in an equation?</p>
+<p id="corty3e-ch1-p184" block_type="sr-que-nl"><phrase block_type="question_num">1.23</phrase> According to the American Psychological Association, how many decimal places should a result have?</p>
+<p id="corty3e-ch1-p185" block_type="sr-h1"><strong>Apply Your Knowledge</strong></p>
+<p id="corty3e-ch1-p186" block_type="sr-que-nl"><phrase block_type="question_num">1.24</phrase> Given this data set (12, 8, 4, 6), calculate what is requested. Don&#8217;t forget the rules of rounding.</p>
+<list id="corty3e-ch1-list-10" type="ordered" block_type="loweralpha">
+<li><p id="corty3e-ch1-p187" block_type="sr-que-ll"><em>N</em></p></li>
+<li><p id="corty3e-ch1-p188" block_type="sr-que-ll">&#931;<em>X</em></p></li>
+<li><p id="corty3e-ch1-p189" block_type="sr-que-ll">&#931;<em>X</em><sup>2</sup></p></li>
+<li><p id="corty3e-ch1-p190" block_type="sr-que-ll">(&#931;<em>X</em>)<sup>2</sup></p></li>
+<li><p id="corty3e-ch1-p191" block_type="sr-que-ll">&#931;<em>X</em> &#43; 1</p></li>
+<li><p id="corty3e-ch1-p192" block_type="sr-que-ll">&#931; (<em>X</em> &#43;1)</p></li>
+</list>
+<p id="corty3e-ch1-p193" block_type="sr-que-nl"><phrase block_type="question_num">1.25</phrase> Round the following appropriately:</p>
+<list id="corty3e-ch1-list-11" type="ordered" block_type="loweralpha">
+<li><p id="corty3e-ch1-p194" block_type="sr-que-ll">17.7854</p></li>
+<li><p id="corty3e-ch1-p195" block_type="sr-que-ll">9.7432</p></li>
+<li><p id="corty3e-ch1-p196" block_type="sr-que-ll">12.9845</p></li>
+<li><p id="corty3e-ch1-p197" block_type="sr-que-ll">8.3450</p></li>
+<li><p id="corty3e-ch1-p198" block_type="sr-que-ll">7.1205</p></li>
+<li><p id="corty3e-ch1-p199" block_type="sr-que-ll"><image asset-id="corty3e-ch1-img-38" alt="image" src="asset/ch1/corty3e_ineqn01_28_01.jpg"/></p></li>
+<li><p id="corty3e-ch1-p200" block_type="sr-que-ll"><image asset-id="corty3e-ch1-img-39" alt="image" src="asset/ch1/corty3e_ineqn01_28_02.jpg"/></p></li>
+</list>
+</box>
+<p id="corty3e_page_29" block_type="page_start">29</p>
+<box title="Application Demonstration" numbered="false" id="corty3e-ch1-bx5-14" block_type="sr-x-h">
+<p id="corty3e-ch1-p201" block_type="sr-x-txt-ni">Here&#8217;s a study about memory that reviews everything from <link href="corty3e-ch01.xml">Chapter 1</link>. Two researchers investigated &#8220;use it or lose it&#8221; in relation to mental ability. They studied whether people lose mental ability if they don&#8217;t keep using their minds as they age (Rohwedder &#38; Willis, 2010).</p>
+<p id="corty3e-ch1-p202" block_type="sr-x-txt">The researchers used data from men and women who were 60 to 64 years old and from 13 countries (the United States and 12 European nations). The men and women had taken a recall test in which they were read a list of 10 words and then asked to recall as many as they could. Five minutes later, the participants were again asked to recall the words. The test was scored as the total number of words recalled in both conditions (the immediate and the delayed). So, memory scores could range from 0 to 20, with higher scores indicating better recall. It is important to know that the researchers consider this memory score to be a measure of cognitive functioning, not just a count of the number of words recalled.</p>
+<p id="corty3e-ch1-p203" block_type="sr-x-txt">The cases in this study are countries, so there were 13 scores, each one being the average score for a sample of men and women in that country. Each country also provided a second score. The men and women in the countries were also asked if they were working for pay. The percentage of the 60- to 64-year-olds not working for pay was calculated for each country. It ranged from about 40&#37; in Sweden to more than 90&#37; in Austria.</p>
+<p id="corty3e-ch1-p204" block_type="sr-x-txt">The researchers figured that people who were not working for pay were retired and less likely to use their minds in the way that people do at work. They examined the relationship between the percentage of respondents not working for pay and the average recall score and found a relationship&#8212;the <em>higher</em> the percentage of people not working for pay, the <em>lower</em> the cognitive functioning score. This suggests that if people don&#8217;t use it, they do lose it. That&#8217;s why the researchers called their paper &#8220;Mental Retirement.&#8221;</p>
+<p id="corty3e-ch1-p205" block_type="sr-x-h1"><strong>Levels of Measurement</strong></p>
+<p id="corty3e-ch1-p206" block_type="sr-x-txt-ni">First, what are the levels of measurement for the variables in the study? The two variables were cognitive function, as measured by the recall task, and the percentage of people not working. On the recall task, scores can range from 0 to 20. To figure out level of measurement, make up two scores&#8212;country A has an average score of 10 and country B a 12. The scores tell same/different, as one can tell that the average cognitive functioning is not the same in the two countries, so the score is at least nominal. One can also tell the direction of the difference, that country B has better average cognitive function than country A, so the score is at least ordinal. There is equality of units&#8212;each word recalled correctly is worth the same number of points&#8212;so one can tell the size of the difference&#8212;citizens of country B recall an average of two more words than citizens of country A&#8212;so the measure is at least interval. Now for the absolute zero point question: Does a zero on the scale mean an absence of cognitive functioning? A zero means that the participant recalled no words, which is different from an absence of cognitive functioning. So, there is not an absolute zero point. The answer to the absolute zero point question is a no, so the cognitive functioning score is measured at the interval level.</p>
+<p id="corty3e-ch1-p207" block_type="sr-x-txt">For the second variable, the percentage of people not working, make up two scores again&#8212;country C has a 40 and country D an 80. These two countries have different percentages of 60- to 64-year-olds not working, so the variable is at least nominal. The scores tell the direction of the difference, which country has a higher percentage not working, so the variable is at least ordinal. As percentages have equality of units, one can meaningfully speak of the 40-point distance between the two countries. As one can tell the size of the difference, the variable is at least interval. Finally, percentages have an absolute zero point, so one can form a ratio and say that country D has twice the percentage of people not working as country C; thus, the variable is measured at the ratio level.</p>
+<p id="corty3e_page_30" block_type="page_start">30</p>
+<p id="corty3e-ch1-p208" block_type="sr-x-h1"><strong>Explanatory Variable and Outcome Variable</strong></p>
+<p id="corty3e-ch1-p209" block_type="sr-x-txt-ni">Which of the two variables is the explanatory variable and which is the outcome variable? The researchers seem to believe that not working, being retired, causes a loss of cognitive functioning, so the percentage of people not working is the explanatory variable and cognitive functioning is the outcome variable. Another way to think about this is to look at chronological order: the explanatory variable, retirement, happens before the outcome variable, cognitive function, is measured. People were working or not working before their recall was measured.</p>
+<p id="corty3e-ch1-p210" block_type="sr-x-h1"><strong>Type of Study</strong></p>
+<p id="corty3e-ch1-p211" block_type="sr-x-txt-ni">What type of design have the researchers used for their study? Using the flowchart in <link href="#corty3e-ch1-fig-10">Figure 1.5</link>, the decision moves down the path of the explanatory variable <em>not</em> having been controlled by the researchers. After all, the researchers didn&#8217;t assign some countries to retire workers at an earlier age and others to retire them at a later age. Next, decide whether the explanatory variable was used to classify cases into groups. It wasn&#8217;t, so the study used a correlational design. Correlational studies have specific names for the explanatory and outcome variables. Percentage of people not working is the predictor variable and cognitive function is the criterion variable.</p>
+<p id="corty3e-ch1-p212" block_type="sr-x-txt">Because the study is a correlational design, one can&#8217;t conclude that retirement is the cause of lower cognitive function. (Remember, correlation is not causation.) Retirement might cause lower cognitive functioning, but the cause also might run the other way. Perhaps people decide to retire because they have declined cognitively. Also, one has to consider the possibility of confounding variables, third variables that affect both retirement and cognitive function. The economy might be a plausible confounding variable&#8212;the overall unemployment rate could affect both the percentage of 60- to 64-year-olds who are working and people&#8217;s mental state. Similarly, the quality of health care in the countries could be a confounding variable&#8212;poorer health care could lead to earlier retirement and poorer cognitive function.</p>
+<p id="corty3e-ch1-p213" block_type="sr-x-h1"><strong>The Language of Statistics</strong></p>
+<p id="corty3e-ch1-p214" block_type="sr-x-txt-ni">Did the researchers use a sample or a population in their study? The countries studied were the United States and 12 European nations, but there are more nations in North America than just the United States and there are more than 12 nations in the European Union. The study didn&#8217;t consist of every North American and European nation, so it used a sample.</p>
+<p id="corty3e-ch1-p215" block_type="sr-x-txt">Are the results meant to be descriptive or inferential? Do the researchers&#8217; findings describe the relationship between percentage retired and cognitive function for those 13 nations only? Or, do the researchers want to draw a general conclusion about the relationship between these two variables? It seems reasonable that they want the readers of their study to draw a conclusion that goes beyond these 13 nations. The researchers probably mean to suggest, for humans of all nations, that a relationship exists between these two variables. As they indicate the results to be generalized beyond the few cases in the sample, the researchers mean the results to be inferential, not descriptive.</p>
+</box>
+</section>
+<section id="corty3e-ch1-sec1-6" block_type="sum-h" chapter="1" title="" numbered="false" level="1" print_page="31">
+<section-metadata><section-title>SUMMARY</section-title></section-metadata>
+<p id="corty3e_page_31" block_type="page_start">31</p>
+<p id="corty3e-ch1-p216" block_type="sum-hd1"><strong>Determine if a study is correlational, experimental, or quasi-experimental.</strong></p>
+<list id="corty3e-ch1-list-12" type="unordered" block_type="bluebullet">
+<li><p id="corty3e-ch1-p217" block_type="sum-bl-first">Statistics summarize data collected in studies designed to answer research questions about relationships between variables. There are three types of research designs: correlations, experiments, and quasi-experiments.</p></li>
+<li><p id="corty3e-ch1-p218" block_type="sum-bl-mid">In correlational studies, the relationship is examined without manipulating any of the variables. Correlational studies address real-life questions, but can&#8217;t draw conclusions about cause and effect.</p></li>
+<li><p id="corty3e-ch1-p219" block_type="sum-bl-mid">Cause-and-effect conclusions can be drawn from experiments because they use random assignment to assign cases to groups. The independent variable, the cause, is controlled by the experimenter; its effect is measured in the dependent variable.</p></li>
+<li><p id="corty3e-ch1-p220" block_type="sum-bl-last">In quasi-experiments, cases are categorized on the basis of groups they naturally belong to and then compared on the dependent variable. Quasi-experiments look like experiments but have confounding variables like correlational studies.</p></li>
+</list>
+<p id="corty3e-ch1-p221" block_type="sum-hd1"><strong>Classify variables and determine levels of measurement.</strong></p>
+<list id="corty3e-ch1-list-13" type="unordered" block_type="bluebullet">
+<li><p id="corty3e-ch1-p222" block_type="sum-bl-first">Predictor variables (correlations), independent variables (experiments), and grouping variables (quasi-experiments) are explanatory variables, while criterion variables (correlations) and dependent variables (experiments and quasi-experiments) are outcome variables.</p></li>
+<li><p id="corty3e-ch1-p223" block_type="sum-bl-last">Variables are measured at nominal, ordinal, interval, or ratio levels. As the level of measurement moves up, information contained in the number increases from qualitative (nominal), to basic quantitative (rank order at the ordinal level), to more advanced quantitative (distance information for interval level), and finally proportionality at the ratio level.</p></li>
+</list>
+<p id="corty3e-ch1-p224" block_type="sum-hd1"><strong>Learn the language and rules of statistics.</strong></p>
+<list id="corty3e-ch1-list-14" type="unordered" block_type="bluebullet">
+<li><p id="corty3e-ch1-p225" block_type="sum-bl-first">A population is the larger group of cases that a researcher wishes to study. Researchers almost always study samples, which are subsets of populations.</p></li>
+<li><p id="corty3e-ch1-p226" block_type="sum-bl-mid">A statistic is a value calculated for a sample and a parameter is a value calculated for a population. Latin letters are used as abbreviations for statistics; Greek letters as abbreviations for populations.</p></li>
+<li><p id="corty3e-ch1-p227" block_type="sum-bl-mid">Descriptive statistics are numbers used to describe a group of cases; inferential statistics are used to draw conclusions about a population from a sample.</p></li>
+<li><p id="corty3e-ch1-p228" block_type="sum-bl-last">Following the order of operations for mathematical operations and applying the rules of rounding are necessary to get the right answer.</p></li>
+</list>
+</section>
+<section id="corty3e-ch1-sec1-7" block_type="cr-kt-t" chapter="1" title="" numbered="false" level="1" print_page="32">
+<section-metadata><section-title>KEY TERMS</section-title></section-metadata>
+<p id="corty3e_page_32" block_type="page_start">32</p>
+<p id="corty3e-ch1-kt-01" block_type="txt-ni">Match each of the terms on the left with its definition on the right. Click on the term first and then click on the matching definition. As you match them correctly they will move to the bottom of the activity.</p>
+<question id="corty3e-ch1-keyterms-ques1" numbered="false" title="" number="">
+<query id="corty3e-ch1-keyterms-ques1-qry">MA:
+a.cases:: the participants in or subjects of a study.
+a.confounding variable:: a third variable in correlational and quasi-experimental designs that is not controlled for and that has an impact on <em>both</em> of the other variables.
+a.correlational design:: a scientific study in which the relationship between two variables is examined without any attempt to manipulate or control them.
+a.criterion variable:: the outcome variable in a correlational design.
+a.dependent variable:: the variable where the effect is measured in an experimental or quasi-experimental study.
+a.descriptive statistic:: a summary statement about a set of cases.
+a.experimental design:: a scientific study in which an explanatory variable is manipulated or controlled by the experimenter and the effect is measured in a dependent variable.
+a.explanatory variable:: the variable that causes, predicts, or explains the outcome variable.
+a.independent variable:: the variable that is controlled by the experimenter in an experimental design.
+a.inferential statistic:: using observations from a sample to draw a conclusion about a population.
+a.interval-level numbers:: numbers that provide information about how much of an attribute is possessed, as well as information about same/different and more/less; interval-level numbers have equality of units and an arbitrary zero point.
+a.nominal-level numbers:: numbers used to place cases in categories; numbers are arbitrary and only provide information about same/different.
+a.ordinal-level numbers:: numbers used to indicate if more or less of an attribute is possessed; numbers provide information about same/different and more/less.
+a.outcome variable:: the variable that is caused, predicted, or influenced by the explanatory variable.
+a.parameter:: a value that summarizes a population.
+a.population:: the larger group of cases a researcher is interested in studying.
+a.predictor variable:: the explanatory variable in a correlational design.
+a.quasi-experimental design:: a scientific study in which cases are classified into naturally occurring groups and then compared on a dependent variable.
+a.random assignment:: every case has an equal chance of being assigned to either group in an experiment; random assignment is the hallmark of an experiment.
+a.ratio-level numbers:: numbers that have all the attributes of interval-level numbers, plus a real zero point; numbers that provide information about same/different, more/less, how much of an attribute is possessed, and that can be used to calculate a proportion.
+a.sample:: a group of cases selected from a population.
+a.statistic:: a value that summarizes data from a sample.
+a.statistics:: techniques used to summarize data in order to answer questions.
+a.variables:: characteristics measured by researchers.
+</query>
+</question>
+</section>
+<section id="corty3e-ch1-sec1-8" block_type="cr-x-h" chapter="1" title="" numbered="false" level="1" print_page="33">
+<section-metadata><section-title>CHAPTER EXERCISES</section-title></section-metadata>
+<p id="corty3e_page_33" block_type="page_start">33</p>
+<p id="corty3e-ch1-p254" block_type="cr-x-txt-ni"><strong><em>Answers to the odd-numbered exercises appear in <link href="corty3e-appb.xml">Appendix B</link>.</em></strong></p>
+<p id="corty3e-ch1-p255" block_type="cr-x-hd1"><strong>Review Your Knowledge</strong></p>
+<p id="corty3e-ch1-p256" block_type="cr-x-nl-txt"><phrase block_type="question_num">1.01</phrase> Statistics &#95;&#95;&#95;&#95;&#95;&#95;&#95; data in order to answer questions.</p>
+<p id="corty3e-ch1-p257" block_type="cr-x-nl-txt"><phrase block_type="question_num">1.02</phrase> The characteristics measured by a researcher are called &#95;&#95;&#95;&#95;&#95;&#95;&#95;.</p>
+<p id="corty3e-ch1-p258" block_type="cr-x-nl-txt"><phrase block_type="question_num">1.03</phrase> The objects being studied by a researcher are called &#95;&#95;&#95;&#95;&#95;&#95;&#95;.</p>
+<p id="corty3e-ch1-p259" block_type="cr-x-nl-txt"><phrase block_type="question_num">1.04</phrase> In a correlational design, the two variables are simply measured; they are not &#95;&#95;&#95;&#95;&#95;&#95;&#95; by the experimenter.</p>
+<p id="corty3e-ch1-p260" block_type="cr-x-nl-txt"><phrase block_type="question_num">1.05</phrase> If two variables, <em>X</em> and <em>Y,</em> are found to be related in a correlational design, the three possible explanations for the relationship are: (a) &#95;&#95;&#95;&#95;&#95;&#95;&#95;, (b) &#95;&#95;&#95;&#95;&#95;&#95;&#95;, and (c) &#95;&#95;&#95;&#95;&#95;&#95;&#95;.</p>
+<p id="corty3e-ch1-p261" block_type="cr-x-nl-txt"><phrase block_type="question_num">1.06</phrase> A third variable that could be the real cause of an apparent relationship between <em>X</em> and <em>Y</em> in correlational research is called &#95;&#95;&#95;&#95;&#95;&#95;&#95;.</p>
+<p id="corty3e-ch1-p262" block_type="cr-x-nl-txt"><phrase block_type="question_num">1.07</phrase> &#95;&#95;&#95;&#95;&#95;&#95;&#95; is the hallmark of an experimental design.</p>
+<p id="corty3e-ch1-p263" block_type="cr-x-nl-txt"><phrase block_type="question_num">1.08</phrase> In an experimental design, the &#95;&#95;&#95;&#95;&#95;&#95;&#95; variable is manipulated or controlled by the experimenter.</p>
+<p id="corty3e-ch1-p264" block_type="cr-x-nl-txt"><phrase block_type="question_num">1.09</phrase> The variable where the effect is measured in an experimental design is called the &#95;&#95;&#95;&#95;&#95;&#95;&#95;.</p>
+<p id="corty3e-ch1-p265" block_type="cr-x-nl-txt"><phrase block_type="question_num">1.10</phrase> Experimental designs allow one to draw a conclusion about &#95;&#95;&#95;&#95;&#95;&#95;&#95;.</p>
+<p id="corty3e-ch1-p266" block_type="cr-x-nl-txt"><phrase block_type="question_num">1.11</phrase> In a quasi-experimental design, cases are classified into &#95;&#95;&#95;&#95;&#95;&#95;&#95; based on characteristics they already possess.</p>
+<p id="corty3e-ch1-p267" block_type="cr-x-nl-txt"><phrase block_type="question_num">1.12</phrase> Though a quasi-experimental design looks like a (an) &#95;&#95;&#95;&#95;&#95;&#95;&#95; design, it is really a (an) &#95;&#95;&#95;&#95;&#95;&#95;&#95; design.</p>
+<p id="corty3e-ch1-p268" block_type="cr-x-nl-txt"><phrase block_type="question_num">1.13</phrase> The mnemonic <em>iced</em> stands for &#95;&#95;&#95;&#95;&#95;&#95;&#95;.</p>
+<p id="corty3e-ch1-p269" block_type="cr-x-nl-txt"><phrase block_type="question_num">1.14</phrase> The &#95;&#95;&#95;&#95;&#95;&#95;&#95; variable in &#95;&#95;&#95;&#95;&#95;&#95;&#95; is called the dependent variable.</p>
+<p id="corty3e-ch1-p270" block_type="cr-x-nl-txt"><phrase block_type="question_num">1.15</phrase> The explanatory variable in quasi-experimental designs is called the &#95;&#95;&#95;&#95;&#95;&#95;&#95; variable.</p>
+<p id="corty3e-ch1-p271" block_type="cr-x-nl-txt"><phrase block_type="question_num">1.16</phrase> A ratio-level number contains &#95;&#95;&#95;&#95;&#95;&#95;&#95; information than a nominal-level number.</p>
+<p id="corty3e-ch1-p272" block_type="cr-x-nl-txt"><phrase block_type="question_num">1.17</phrase> The mnemonic to help remember, in order, the four levels of measurement is &#95;&#95;&#95;&#95;&#95;&#95;&#95;.</p>
+<p id="corty3e-ch1-p273" block_type="cr-x-nl-txt"><phrase block_type="question_num">1.18</phrase> Nominal-level numbers contain information about &#95;&#95;&#95;&#95;&#95;&#95;&#95;.</p>
+<p id="corty3e-ch1-p274" block_type="cr-x-nl-txt"><phrase block_type="question_num">1.19</phrase> &#95;&#95;&#95;&#95;&#95;&#95;&#95;-level numbers contain information about same/different and direction.</p>
+<p id="corty3e-ch1-p275" block_type="cr-x-nl-txt"><phrase block_type="question_num">1.20</phrase> Because interval-level numbers have &#95;&#95;&#95;&#95;&#95;&#95;&#95;, we can meaningfully speak of the distance between two scores.</p>
+<p id="corty3e-ch1-p276" block_type="cr-x-nl-txt"><phrase block_type="question_num">1.21</phrase> Interval-level numbers have a (an) &#95;&#95;&#95;&#95;&#95;&#95;&#95; zero point, and ratio-level numbers have a (an) &#95;&#95;&#95;&#95;&#95;&#95;&#95; zero point.</p>
+<p id="corty3e-ch1-p277" block_type="cr-x-nl-txt"><phrase block_type="question_num">1.22</phrase> Proportions can be found for &#95;&#95;&#95;&#95;&#95;&#95;&#95;-level numbers.</p>
+<p id="corty3e-ch1-p278" block_type="cr-x-nl-txt"><phrase block_type="question_num">1.23</phrase> A (an) &#95;&#95;&#95;&#95;&#95;&#95;&#95; is the larger group of cases that a researcher is interested in studying.</p>
+<p id="corty3e-ch1-p279" block_type="cr-x-nl-txt"><phrase block_type="question_num">1.24</phrase> A sample is a (an) &#95;&#95;&#95;&#95;&#95;&#95;&#95; of a population.</p>
+<p id="corty3e-ch1-p280" block_type="cr-x-nl-txt"><phrase block_type="question_num">1.25</phrase> A number characterizing a sample is called a (an) &#95;&#95;&#95;&#95;&#95;&#95;&#95;; a number characterizing a population is called a (an) &#95;&#95;&#95;&#95;&#95;&#95;&#95;.</p>
+<p id="corty3e-ch1-p281" block_type="cr-x-nl-txt"><phrase block_type="question_num">1.26</phrase> We use &#95;&#95;&#95;&#95;&#95;&#95;&#95; letters as abbreviations for sample values and &#95;&#95;&#95;&#95;&#95;&#95;&#95; letters as abbreviations for population values.</p>
+<p id="corty3e-ch1-p282" block_type="cr-x-nl-txt"><phrase block_type="question_num">1.27</phrase> If a summary statement is used to describe a group of cases, it is a (an) &#95;&#95;&#95;&#95;&#95;&#95;&#95; statistic; if it is used to draw a conclusion about the larger population, it is a (an) &#95;&#95;&#95;&#95;&#95;&#95;&#95; statistic.</p>
+<p id="corty3e-ch1-p283" block_type="cr-x-nl-txt"><phrase block_type="question_num">1.28</phrase> The letter we use as an abbreviation for an outcome variable is &#95;&#95;&#95;&#95;&#95;&#95;&#95;. The abbreviation for the number of cases in a group is &#95;&#95;&#95;&#95;&#95;&#95;&#95;. The symbol for adding up a group of scores is &#95;&#95;&#95;&#95;&#95;&#95;&#95;, the uppercase Greek letter sigma.</p>
+<p id="corty3e-ch1-p284" block_type="cr-x-nl-txt"><phrase block_type="question_num">1.29</phrase> According to the American Psychological Association, final results should be rounded to &#95;&#95;&#95;&#95;&#95;&#95;&#95; decimal places.</p>
+<p id="corty3e-ch1-p285" block_type="cr-x-nl-txt"><phrase block_type="question_num">1.30</phrase> If you do round as you go, carry at least &#95;&#95;&#95;&#95;&#95;&#95;&#95; decimal places.</p>
+<p id="corty3e_page_34" block_type="page_start">34</p>
+<p id="corty3e-ch1-p286" block_type="cr-x-hd1-rule"><strong>Apply Your Knowledge</strong></p>
+<p id="corty3e-ch1-p287" block_type="cr-x-txt-ni"><strong><em>Figuring out types of studies and types of variables</em></strong></p>
+<p id="corty3e-ch1-p288" block_type="cr-x-txt-ni"><strong><em>For Exercises 1.31&#8211;1.38:</em></strong></p>
+<list id="corty3e-ch1-list-15" type="ordered" block_type="loweralpha">
+<li><p id="corty3e-ch1-p289" block_type="cr-x-nl-alpha-lc"><strong><em>Generate a sentence that states the question the researcher is trying to answer.</em></strong></p></li>
+<li><p id="corty3e-ch1-p290" block_type="cr-x-nl-alpha-lc"><strong><em>List the variables and label them as explanatory and outcome.</em></strong></p></li>
+<li><p id="corty3e-ch1-p291" block_type="cr-x-nl-alpha-lc"><strong><em>Determine what type of study is being done: correlational, experimental, or quasi-experimental.</em></strong></p></li>
+<li><p id="corty3e-ch1-p292" block_type="cr-x-nl-alpha-lc"><strong><em>If the study is correlational or quasi-experimental, come up with a plausible confounding variable and explain how it affects both variables.</em></strong></p></li>
+</list>
+<p id="corty3e-ch1-p293" block_type="cr-x-nl-txt"><phrase block_type="question_num">1.31</phrase> The local police department has come to a criminologist to help it evaluate a new type of disposable, plastic handcuffs. They are just as effective as metal handcuffs in terms of immobilizing someone who has been arrested and they are cheaper than metal handcuffs, but the police are concerned that the plastic ones might cause more abrasion to the skin of the wrist. The criminologist finds 20 volunteers, randomly divides them into two groups, cuffs one group with metal and the other with plastic, and then rides them around in a squad car for 20 minutes. After this, the criminologist measures the degree of abrasion on their wrists as the percentage of skin that is roughed up.</p>
+<p id="corty3e-ch1-p294" block_type="cr-x-nl-txt"><phrase block_type="question_num">1.32</phrase> Some football players put streaks of black paint under their eyes because they believe that it helps them see better in sunny conditions and react more quickly. A sensory psychologist wants to see if this is really true. He gathers a group of volunteers and randomly divides them in two. Half get black paint applied under their eyes and half get flesh-color. The players are not allowed to look in the mirror, so they don&#8217;t know which color has been applied below their eyes. The psychologist then gives them a reaction time task to measure, in milliseconds, how quickly they can respond to a change in a stimulus while bright lights are being shined at them.</p>
+<p id="corty3e-ch1-p295" block_type="cr-x-nl-txt"><phrase block_type="question_num">1.33</phrase> Ever notice that some college students buy all the books for class, complete all the readings, do all the homework, and so on? These students usually end up with better grades as well. An education professor decided to investigate if these more conscientious students received better grades because they worked harder or because they were innately smarter. The professor assembled (a) a group of conscientious students from a number of different colleges and (b) a group of nonconscientious students from the same colleges, and compared the two groups in terms of a standardized IQ test.</p>
+<p id="corty3e-ch1-p296" block_type="cr-x-nl-txt"><phrase block_type="question_num">1.34</phrase> A personality psychologist has kindergarten teachers use an empathy scale that ranges from 0 (not at all empathetic) to 100 (extremely high levels of empathy) to rate their students. Thirteen years later, when the students are ready to graduate from high school, he tracks them down and rates their level of mental health on a scale from 0 (very, very poor) to 100 (very, very good).</p>
+<p id="corty3e-ch1-p297" block_type="cr-x-nl-txt"><phrase block_type="question_num">1.35</phrase> An economist believed that as nations become wealthier, they produce more greenhouse gases. He took a country and found both its gross domestic product (GDP) and the total tons of CO<sub>2</sub> emissions for each year over the past 50 years.</p>
+<p id="corty3e-ch1-p298" block_type="cr-x-nl-txt"><phrase block_type="question_num">1.36</phrase> A consumer behavior researcher is curious as to whether, in terms of the monetary value of Christmas presents received, it makes a difference if a child is naughty or nice. She has parents classify their children as naughty or nice, then calculates how much the parents spent on Christmas presents for the two different groups of children.</p>
+<p id="corty3e-ch1-p299" block_type="cr-x-nl-txt"><phrase block_type="question_num">1.37</phrase> A political scientist is curious as to what influences voting behavior on taxes for school districts. She obtains a sample of voters and divides them, randomly, into three groups. One group serves as the control group, nothing is done to them. To one experimental group, she gives information about the school taxes that focuses on the positive&#8212;how the levy will improve student performance, make the community more attractive to young families, and so on. To the other experimental group, she gives negative information about the school taxes&#8212;how much overall taxes will increase, how school taxes will take away funding from other projects, how wasteful the school district has been, and so on. She then measures, for each group, the percentage voting in favor of the school taxes.</p>
+<p id="corty3e_page_35" block_type="page_start">35</p>
+<p id="corty3e-ch1-p300" block_type="cr-x-nl-txt"><phrase block_type="question_num">1.38</phrase> A neuroscientist believes that proteins form plaques in the brain that cause Alzheimer&#8217;s disease. He gets a sample of older adults, measures the nanograms per liter of protein in spinal fluid, and measures short-term memory as the percentage of words in a list that are recalled.</p>
+<p id="corty3e-ch1-p301" block_type="cr-x-txt-ni"><strong><em>Determining level of measurement</em></strong></p>
+<p id="corty3e-ch1-p302" block_type="cr-x-nl-txt"><phrase block_type="question_num">1.39</phrase> A meteorologist classifies cities in the United States in terms of winter weather: &#8220;dreary&#8221; (0) or &#8220;not dreary&#8221; (1). Type of winter weather (0 vs. 1) is measured at what level of measurement?</p>
+<p id="corty3e-ch1-p303" block_type="cr-x-nl-txt"><phrase block_type="question_num">1.40</phrase> A social worker obtains the suicide rates for students at colleges in the United States. If the college has a suicide rate that is below average, he classifies it as &#8722;1. If the suicide rate is average, the college gets a 0, and if the suicide rate is above average, it gets a &#43;1. The suicide rate (&#8722;1, 0, &#43;1) is being measured at what level of measurement?</p>
+<p id="corty3e-ch1-p304" block_type="cr-x-nl-txt"><phrase block_type="question_num">1.41</phrase> The owner of an automobile shipping company classifies cars in terms of size. If a car is a subcompact, she assigns it the value of 1. A compact car gets a 2, a mid-size car a 3, and a full-size car a 4. At what level is she measuring car size?</p>
+<p id="corty3e-ch1-p305" block_type="cr-x-nl-txt"><phrase block_type="question_num">1.42</phrase> The admissions committee at a college does not distinguish between different types of high school extracurricular activities. As far as it is concerned, being a member of the tiddlywinks club is equivalent to being student council president. On the admission form to the college, applicants are asked to report the number of extracurricular activities in which they were involved in high school. The college is measuring extracurricular activities at what level?</p>
+<p id="corty3e-ch1-p306" block_type="cr-x-nl-txt"><phrase block_type="question_num">1.43</phrase> The same college asks students to submit their SAT scores, but only on the math subtest. Subtest scores on the SAT range from a low of 200 to a high of 800, with 500 representing an average score. The SAT measures math skills at what level?</p>
+<p id="corty3e-ch1-p307" block_type="cr-x-nl-txt"><phrase block_type="question_num">1.44</phrase> A nurse researcher measures how many minutes patients must wait before being seen by the triage nurse after they enter an emergency room. Wait time is measured at what level?</p>
+<p id="corty3e-ch1-p308" block_type="cr-x-nl-txt"><phrase block_type="question_num">1.45</phrase> A housing developer advertises her houses as being fully carpeted (2), partially carpeted (1), or not carpeted (0). Amount of carpeting is measured at what level?</p>
+<p id="corty3e-ch1-p309" block_type="cr-x-nl-txt"><phrase block_type="question_num">1.46</phrase> A person&#8217;s knowledge of English grammar is measured by a 50-item multiple-choice test. Each correct answer is worth 2 points, so scores can range from 0 to 100. English grammar knowledge is being measured at what level?</p>
+<p id="corty3e-ch1-p310" block_type="cr-x-nl-txt"><phrase block_type="question_num">1.47</phrase> If a person reads books for pleasure, he or she is classified as a &#8220;1&#8221;; if a person doesn&#8217;t read books for pleasure, he or she is classified as &#8220;0.&#8221; Whether or not a person reads books for pleasure is being measured at what level?</p>
+<p id="corty3e-ch1-p311" block_type="cr-x-nl-txt"><phrase block_type="question_num">1.48</phrase> A person&#8217;s depression level is measured on a 20-item inventory where each item is a true/false item and is meant to measure depression. Each item endorsed in the &#8220;depressed&#8221; direction adds 1 point to the person&#8217;s score, so scores can range from 0 to 20. Depression level is being measured at what level?</p>
+<p id="corty3e-ch1-p312" block_type="cr-x-txt-ni"><strong><em>Using statistical terminology</em></strong></p>
+<p id="corty3e-ch1-p313" block_type="cr-x-nl-txt"><phrase block_type="question_num">1.49</phrase> A college dean wanted to find out which students were smarter: those seeking liberal arts degrees (like English or psychology) or those seeking professional degrees (like nursing, business, or engineering). From all the colleges in the United States, she picked 1,200 liberal arts majors and 1,000 professional degree majors. Each student took an IQ test and she calculated the average IQ for each group.</p>
+<list id="corty3e-ch1-list-16" type="ordered" block_type="loweralpha">
+<li><p id="corty3e-ch1-p314" block_type="cr-x-nl-alpha-lc">Is the group of 1,200 liberal arts majors a sample or a population?</p>
+<p id="corty3e_page_36" block_type="page_start">36</p>
+</li>
+<li><p id="corty3e-ch1-p315" block_type="cr-x-nl-alpha-lc">If the college dean uses the averages in statements like, &#8220;The average intelligence of liberal arts students in the United States is 115.67,&#8221; is she treating the averages as statistics or as parameters?</p></li>
+<li><p id="corty3e-ch1-p316" block_type="cr-x-nl-alpha-lc">If she uses the two averages to answer her question, is this an example of inferential statistics or descriptive statistics?</p></li>
+</list>
+<p id="corty3e-ch1-p317" block_type="cr-x-nl-txt"><phrase block_type="question_num">1.50</phrase> A political pollster calls 2,000 registered American voters and finds out whether they plan to vote for the Democratic or Republican candidate in an upcoming election. From this she predicts the outcome of the election. Is she using the information about the sample as a descriptive or as an inferential statistic?</p>
+<p id="corty3e-ch1-p318" block_type="cr-x-nl-txt"><phrase block_type="question_num">1.51</phrase> Every 10 years, the U.S. Census Bureau attempts to collect information from all Americans. Assuming that they are successful, would it be a statistic or a parameter if the Census Bureau reported that 12.2&#37; of Americans identify themselves as of African descent?</p>
+<p id="corty3e-ch1-p319" block_type="cr-x-nl-txt"><phrase block_type="question_num">1.52</phrase> A college president wants to know what the average quantitative SAT is for the first-year class at her college. She calls the registrar and the registrar accesses the database for the entire first-year class to calculate the average. Does the average the registrar calculated correspond to a sample or a population?</p>
+<p id="corty3e-ch1-p320" block_type="cr-x-txt-ni"><strong><em>Order of operations and rounding</em></strong></p>
+<p id="corty3e-ch1-p321" block_type="cr-x-txt-ni"><strong><em>For Exercises 1.53&#8211;1.56, use this data set: 8, 9, 5, 4, 7, and 8 to find the following:</em></strong></p>
+<p id="corty3e-ch1-p322" block_type="cr-x-nl-txt"><phrase block_type="question_num">1.53</phrase> <em>N</em></p>
+<p id="corty3e-ch1-p323" block_type="cr-x-nl-txt"><phrase block_type="question_num">1.54</phrase> &#931;<em>X</em></p>
+<p id="corty3e-ch1-p324" block_type="cr-x-nl-txt"><phrase block_type="question_num">1.55</phrase> &#931;X<sup>2</sup> &#61;</p>
+<p id="corty3e-ch1-p325" block_type="cr-x-nl-txt"><phrase block_type="question_num">1.56</phrase> &#931;<em>X</em> &#8722; 1</p>
+<p id="corty3e-ch1-p326" block_type="cr-x-txt-ni"><strong><em>For Exercises 1.57&#8211;1.60, use this data set: 13, 18, and 11 to find the following:</em></strong></p>
+<p id="corty3e-ch1-p327" block_type="cr-x-nl-txt"><phrase block_type="question_num">1.57</phrase> &#931;<em>X</em></p>
+<p id="corty3e-ch1-p328" block_type="cr-x-nl-txt"><phrase block_type="question_num">1.58</phrase> &#931;<em>X</em><sup>2</sup></p>
+<p id="corty3e-ch1-p329" block_type="cr-x-nl-txt"><phrase block_type="question_num">1.59</phrase> <image asset-id="corty3e-ch1-img-40" alt="image" src="asset/ch1/corty3e_ineqn01_36_01.jpg"/></p>
+<p id="corty3e-ch1-p330" block_type="cr-x-nl-txt"><phrase block_type="question_num">1.60</phrase> &#931;(<em>X</em> &#8722; 14) &#61;</p>
+<p id="corty3e-ch1-p331" block_type="cr-x-txt-ni"><strong><em>For Exercises 1.61&#8211;1.68, use the rounding rules to round the following:</em></strong></p>
+<p id="corty3e-ch1-p332" block_type="cr-x-nl-txt"><phrase block_type="question_num">1.61</phrase> 12.6845 &#61;</p>
+<p id="corty3e-ch1-p333" block_type="cr-x-nl-txt"><phrase block_type="question_num">1.62</phrase> 189.9895 &#61;</p>
+<p id="corty3e-ch1-p334" block_type="cr-x-nl-txt"><phrase block_type="question_num">1.63</phrase> 121.0056 &#61;</p>
+<p id="corty3e-ch1-p335" block_type="cr-x-nl-txt"><phrase block_type="question_num">1.64</phrase> 674.064005 &#61;</p>
+<p id="corty3e-ch1-p336" block_type="cr-x-nl-txt"><phrase block_type="question_num">1.65</phrase> 22.467 &#61;</p>
+<p id="corty3e-ch1-p337" block_type="cr-x-nl-txt"><phrase block_type="question_num">1.66</phrase> 37.97700001 &#61;</p>
+<p id="corty3e-ch1-p338" block_type="cr-x-nl-txt"><phrase block_type="question_num">1.67</phrase> 2.53200005 &#61;</p>
+<p id="corty3e-ch1-p339" block_type="cr-x-nl-txt"><phrase block_type="question_num">1.68</phrase> 99.995 &#61;</p>
+<p id="corty3e-ch1-p340" block_type="cr-x-hd1"><strong>Expand Your Knowledge</strong></p>
+<p id="corty3e-ch1-p341" block_type="cr-x-nl-txt"><phrase block_type="question_num">1.69</phrase> A researcher gives a different amount of <em>X</em> to different subjects and then measures how much <em>Y</em> each subject produces. She finds that subjects who got more <em>X</em> produce more <em>Y</em>, and subjects who got less <em>X</em> produce less <em>Y.</em> She also finds no other variable that can account for the different amounts of <em>Y</em> that the subjects produce. What conclusion should she draw?</p>
+<list id="corty3e-ch1-list-17" type="ordered" block_type="loweralpha">
+<li><p id="corty3e-ch1-p342" block_type="cr-x-nl-alpha-lc">There is a relationship between <em>X</em> and <em>Y.</em></p></li>
+<li><p id="corty3e-ch1-p343" block_type="cr-x-nl-alpha-lc">There is a relationship between <em>Y</em> and <em>X.</em></p></li>
+<li><p id="corty3e-ch1-p344" block_type="cr-x-nl-alpha-lc"><em>X</em> causes <em>Y</em>.</p></li>
+<li><p id="corty3e-ch1-p345" block_type="cr-x-nl-alpha-lc"><em>Y</em> causes <em>X</em>.</p></li>
+<li><p id="corty3e-ch1-p346" block_type="cr-x-nl-alpha-lc">A confounding variable, <em>Z</em>, causes both <em>X</em> and <em>Y</em>.</p></li>
+<li><p id="corty3e-ch1-p347" block_type="cr-x-nl-alpha-lc">There is not enough information to draw any conclusion.</p></li>
+</list>
+<p id="corty3e-ch1-p348" block_type="cr-x-nl-txt"><phrase block_type="question_num">1.70</phrase> Explanatory variable is to outcome variable as:</p>
+<list id="corty3e-ch1-list-18" type="ordered" block_type="loweralpha">
+<li><p id="corty3e-ch1-p349" block_type="cr-x-nl-alpha-lc">controlled is to manipulated.</p></li>
+<li><p id="corty3e-ch1-p350" block_type="cr-x-nl-alpha-lc">relationship is to cause and effect.</p></li>
+<li><p id="corty3e-ch1-p351" block_type="cr-x-nl-alpha-lc">statistic is to parameter.</p></li>
+<li><p id="corty3e-ch1-p352" block_type="cr-x-nl-alpha-lc">parameter is to statistic.</p></li>
+<li><p id="corty3e-ch1-p353" block_type="cr-x-nl-alpha-lc">none of the above</p></li>
+</list>
+<p id="corty3e_page_37" block_type="page_start">37</p>
+<p id="corty3e-ch1-p354" block_type="cr-x-nl-txt"><phrase block_type="question_num">1.71</phrase>A sociologist believes that physical distress in cities leads to social distress. She measures physical distress by seeing how much graffiti there is. Based on this, she classifies cities as being high, moderate, or low in terms of physical distress. She randomly samples cities in North America until she has 10 cities in each category. She then measures social distress by obtaining the teenage pregnancy rate for each of these cities.</p>
+<list id="corty3e-ch1-list-19" type="ordered" block_type="loweralpha">
+<li><p id="corty3e-ch1-p355" block_type="cr-x-nl-alpha-lc">What question is the researcher trying to answer?</p></li>
+<li><p id="corty3e-ch1-p356" block_type="cr-x-nl-alpha-lc">List the variables and label them as explanatory and outcome variables.</p></li>
+<li><p id="corty3e-ch1-p357" block_type="cr-x-nl-alpha-lc">Determine what type of study is being done: correlational, experimental, or quasi-experimental.</p></li>
+<li><p id="corty3e-ch1-p358" block_type="cr-x-nl-alpha-lc">If the study is correlational or quasi-experimental, name a plausible confounding variable and explain how it affects both variables.</p></li>
+</list>
+<p id="corty3e-ch1-p359" block_type="cr-x-nl-txt"><phrase block_type="question_num">1.72</phrase> A clinical psychologist administers a list of fears to measure how phobic people are. It has 10 items on it (such as spiders, snakes, height, darkness). For each item, a person answers &#8220;yes&#8221; or &#8220;no&#8221; as to whether he or she is afraid of it. Each yes equals 1 point, so scores can range from 0 to 10. The score on the fear survey is measured at what level of measurement?</p>
+</section>
+</chapter>

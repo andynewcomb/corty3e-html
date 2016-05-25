@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]> <html lang="en" class="no-js ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="no-js ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="no-js ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en" class="no-js ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+<head>
+    <title>corty3e_ch6</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <link href="css/boilerplate.css" media="screen" rel="stylesheet" type="text/css" >
+<link href="css/jquery-ui-custom.css" media="screen" rel="stylesheet" type="text/css" >
+<link href="css/manuscript.css" media="screen" rel="stylesheet" type="text/css" >
+<link href="css/digfir_ebook_fw.css" media="screen" rel="stylesheet" type="text/css" >
+<link href="css/corty3e.css" media="screen" rel="stylesheet" type="text/css" >
+<link href="css/corty3e_ch6.css" media="screen" rel="stylesheet" type="text/css" >    
+    
+    </head>
+<body class="noUi">
+<div id="manuscript" data-chapter-number="1">
+    <div data-type="section" data-block_type="h1" id="corty3e-ch6-sec1-3" level="1" data-print_page="198">
+<h2 class="section-title"><span data-type="title" data-title-for="corty3e-ch6-sec1-3"><span data-block_type="sec_num">6.3</span> <span data-block_type="sec_title">Type I Error, Type II Error, Beta, and Power</span>
+</span></h2>
+
+<div data-block_type="txt-ni" id="corty3e-ch6-p161"><p>Imagine a study in which a clinical psychologist, Dr. Cipriani, is investigating if a new treatment for depression works. One way that her study would be successful is if the treatment were an effective one and the data she collected showed that. But, her study would also be successful if the treatment did not help depression and her data showed that outcome.</p></div>
+<div data-block_type="txt" id="corty3e-ch6-p162"><p>Those are “good” outcomes; there are also two “bad” outcomes. Suppose the treatment really is an effective one, but her sample does not show this. As a result of such an outcome, this effective treatment for depression might never be “discovered.” Another bad outcome would occur if the treatment were in reality an ineffective one, but for some odd reason it worked on her subjects. As a result, this ineffective treatment would be offered to people who are depressed and they would not get better.</p></div>
+<div data-block_type="txt" id="corty3e-ch6-p163"><p><span data-type="link" data-href="#corty3e-ch6-fig-23"><strong>Table 6.5</strong></span> shows the four possible outcomes for hypothesis tests. The two columns represent the reality in the population. The column on the left says the null hypothesis is really true. In Dr. Cipriani’s terminology, this means treatment has no impact. The column on the right says the treatment does make a difference; the null hypothesis is not true. The two rows represent the conclusions based on the sample. The top row says that the results fell in the common zone, meaning that the researcher will fail to reject the null hypothesis. (Dr. Cipriani will conclude that her new treatment does not work.) The bottom row says that the results fell in the rare zone, so the researcher will reject the null hypothesis. (Dr. Cipriani will conclude that her treatment works.)</p></div>
+<div data-type="figure" data-figure-id="corty3e-ch6-fig-23" data-block_type="table" data-layout-align="center" data-layout-width="large" data-layout-border="true">
+
+<img id="" src="asset/ch6/corty3e_table06_05.jpg" data-figure-id="corty3e-ch6-fig-23" data-layout-width="large" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+</div>
+<div data-block_type="page_start" id="corty3e_page_199"><p>199</p></div>
+<div data-block_type="txt" id="corty3e-ch6-p164"><p>The two scenarios in which a study would be considered a success are Outcome A and Outcome D. In Outcome A, in the terminology of hypothesis testing, a researcher correctly fails to reject the null hypothesis. For Dr. Cipriani, this outcome means that treatment is ineffective and the evidence of her sample supports this. In Outcome D, the null hypothesis is correctly rejected. For Dr. Cipriani, the treatment does work and she finds evidence that it does.</p></div>
+<div data-block_type="txt" id="corty3e-ch6-p165"><p>The two other outcomes, Outcome B and Outcome C, are bad outcomes for a hypothesis test because the conclusions would be wrong. In Outcome B, the researcher fails to reject the null hypothesis when it should be rejected. If this happened to Dr. Cipriani, she would say that there is insufficient evidence to indicate the treatment works and she would be wrong as the treatment really does work. In Outcome C, a researcher erroneously rejects the null hypothesis. If Dr. Cipriani concluded that treatment works, but it really doesn’t, she would have erroneously rejected the null hypothesis.</p></div>
+<div data-block_type="txt" id="corty3e-ch6-p166"><p>A problem with hypothesis testing is that because the decision relies on probability, a researcher can’t be sure if the conclusion about the null hypothesis is right (Outcomes A or D) or wrong (Outcomes B or C). Luckily, a researcher can calculate the probability that the conclusion is in error and know how <em>probable</em> it is that the conclusion is true. With hypothesis testing, one can’t be sure the conclusion is true, but one can have a known degree of certainty.</p></div>
+</div>
+    <div data-type="section" data-block_type="h2" id="corty3e-ch6-sec2-4" level="2" data-print_page="199">
+<h2 class="section-title"><span data-type="title" data-title-for="corty3e-ch6-sec2-4">Type I Error
+</span></h2>
+
+<div data-block_type="txt-ni" id="corty3e-ch6-p167"><p>Let’s start the exploration of errors in hypothesis testing with Outcome C, a wrong decision. When a researcher rejects the null hypothesis and shouldn’t have, this is called a <span data-type="termref" data-term="Type I error">Type I error</span><strong>.</strong> In the depression treatment example, a Type I error occurs if Dr. Cipriani concludes that the treatment makes a difference when it really doesn’t. If that happened, psychologists would end up prescribing a treatment that doesn’t help.</p></div>
+<div data-type="box" data-block_type="mn1" id="corty3e-ch6-exp1-1"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="corty3e-ch6-exp1-1"></h3>
+<div data-block_type="mn-ext-ni" id="corty3e-ch6-p168"><p><em>Routinely, researchers decide they are willing to make a Type I error 5% of the time.</em></p></div>
+</div></div>
+<div data-block_type="txt" id="corty3e-ch6-p169"><p>Routinely, researchers decide they are willing to make a Type I error 5% of the time. Five percent is an arbitrarily chosen value, but over the years it has become the standard value. One doesn’t need to use 5%. If the consequences of making a Type I error seem particularly costly, one might be willing only to risk a 1% chance of this mistake. For example, imagine using a test to select technicians for a nuclear power plant. The potential catastrophe if the wrong person is hired is so great that the cut-off score on the test should be very high. On the other hand, if making a Type I error doesn’t seem consequential—for example, if one is hiring people for a task that doesn’t have serious consequences for failure—then one might be willing to live with a greater chance of this error.</p></div>
+<div data-block_type="page_start" id="corty3e_page_200"><p>200</p></div>
+<div data-block_type="txt" id="corty3e-ch6-p170"><p>The likelihood of Type I error is determined by setting the alpha level. As alpha gets larger, so does the rare zone. A larger rare zone makes it easier to reject the null hypothesis. <span data-type="link" data-href="#corty3e-ch6-fig-24"><strong>Figure 6.6</strong></span> shows the common and rare zones for a single-sample <em>z</em> test for three common alpha levels (α = .10, α = .05, and α = .01). Note that as alpha decreases, so does the size of the rare zone, making it more difficult to reject the null hypothesis.</p></div>
+<div data-type="figure" data-figure-id="corty3e-ch6-fig-24" data-block_type="figure" data-layout-align="center" data-layout-width="large" data-layout-border="true">
+
+<img id="" src="asset/ch6/corty3e_fig06_06.jpg" data-figure-id="corty3e-ch6-fig-24" data-layout-width="large" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+<div data-type="figure_text">
+<span data-type="number">Figure 1.11: </span><span data-type="caption"><strong><span data-block_type="fig_num">Figure 6.6</span> The Size of the Rare Zone and the Common Zone for Different Alpha Levels</strong> As the alpha level decreases from .10 to .05 to .01, the common zone increases in size and the rare zone shrinks. As alpha gets smaller, it is more difficult to reject the null hypothesis.</span>
+</div>
+</div>
+<div data-type="box" data-block_type="mn1" id="corty3e-ch6-exp1-2"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="corty3e-ch6-exp1-2"></h3>
+<div data-block_type="mn-ext-ni" id="corty3e-ch6-p171"><p><em>Setting alpha at .05 gives a modest chance of Type I error and a reasonable chance of being able to reject the null hypothesis.</em></p></div>
+</div></div>
+<div data-block_type="txt" id="corty3e-ch6-p172"><p>Making errors is never a good idea, so why isn’t alpha always set at .01 or even lower? The reason is simple. When alpha is set low, it is more difficult to reject the null hypothesis because the rare zone is smaller. Rejecting the null hypothesis is almost always the goal of a research study, so researchers would be working against themselves if they made it too hard to reject the null hypothesis. When setting an alpha level, a researcher tries to balance two competing objectives: (1) avoiding Type I error and (2) being able to reject the null hypothesis. The more likely one is to avoid Type I error, the less likely one is to reject the null hypothesis. The solution is a compromise. Setting alpha at .05 gives a modest chance of Type I error and a reasonable chance of being able to reject the null hypothesis.</p></div>
+</div>
+    <div data-type="section" data-block_type="h2" id="corty3e-ch6-sec2-5" level="2" data-print_page="200">
+<h2 class="section-title"><span data-type="title" data-title-for="corty3e-ch6-sec2-5">Type II Error and Beta
+</span></h2>
+
+<div data-block_type="txt-ni" id="corty3e-ch6-p173"><p>There’s another type of error possible, <em>Type II error.</em> This is Outcome B in <span data-type="link" data-href="#corty3e-ch6-fig-23">Table 6.5</span>. A <span data-type="termref" data-term="Type II error">Type II error</span> occurs when the null hypothesis should be rejected, but it isn’t. If Dr. Cipriani’s new treatment for depression really was effective, but she didn’t find evidence that it was effective, that would be a Type II error.</p></div>
+<div data-block_type="page_start" id="corty3e_page_201"><p>201</p></div>
+<div data-block_type="txt" id="corty3e-ch6-p174"><p>The probability of making a Type II error is known as <span data-type="termref" data-term="beta">beta</span><strong>,</strong> abbreviated with the lowercase Greek letter β. The consequences of making a Type II error can be as serious as the consequences of making a Type I error. But, when statisticians attend to beta, they commonly set it at .20. This gives a 20% chance for this error, not a 5% chance as is usually set for alpha.</p></div>
+<div data-block_type="txt" id="corty3e-ch6-p175"><p>A researcher only needs to worry about beta when failing to reject the null hypothesis. Let’s use the psychic blood pressure example from <span data-type="link" data-href="alias:page_195">Worked Example 6.1</span>—where the null hypothesis wasn’t rejected—to examine how Type II error may occur.</p></div>
+<div data-block_type="txt" id="corty3e-ch6-p176"><p>In that study, Dr. Levine studied a sample of 81 people whom a psychic believed had abnormal blood pressure. Their mean blood pressure was 127. The population mean was 124, with σ = 18. Dr. Levine tested the null hypothesis (<em>H</em><sub>0</sub>: μ = 124) vs. the alternative hypothesis (<em>H</em><sub>1</sub>: μ ≠ 124) using a two-tailed single-sample <em>z</em> test with σ = .05. The critical value of <em>z</em> was ±1.96. After calculating σ<em><sub>M</sub></em> = 2.00, he calculated <em>z</em> = 1.50. As <em>z</em> fell in the common zone, he failed to reject the null hypothesis. There was insufficient evidence to say that the psychic could discern people with abnormal blood pressure.</p></div>
+<div data-block_type="txt" id="corty3e-ch6-p177"><p>The null hypothesis was tested by assuming it was true and building a sampling distribution of the mean centered around μ = 124. In <span data-type="link" data-href="#corty3e-ch6-fig-25"><strong>Figure 6.7</strong></span>, note these four things about the sampling distribution:</p></div>
+<div data-type="figure" data-figure-id="corty3e-ch6-fig-25" data-block_type="figure" data-layout-align="center" data-layout-width="medium" data-layout-border="true">
+
+<img id="" src="asset/ch6/corty3e_fig06_07.jpg" data-figure-id="corty3e-ch6-fig-25" data-layout-width="medium" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+<div data-type="figure_text">
+<span data-type="number">Figure 1.12: </span><span data-type="caption"><strong><span data-block_type="fig_num">Figure 6.7</span> Sampling Distribution of the Mean for Blood Pressure if μ = 124</strong> The sampling distribution of the mean is centered at 124 and is normally distributed. The rare zones, where <em>z</em> ≤ –1.96 and <em>z</em> ≥ 1.96, are shaded in.</span>
+</div>
+</div>
+<ol data-block_type="numbered" id="corty3e-ch6-list-14">
+<li><div data-block_type="nl-first" id="corty3e-ch6-p178"><p>The midpoint—the vertical line in the middle—is marked on the <em>X</em>-axis both with a blood pressure of 124 and a <em>z</em> score of 0.</p></div>
+</li>
+<li><div data-block_type="nl-mid" id="corty3e-ch6-p179"><p>The other blood pressures marked on the <em>X</em>-axis are two points apart because σ<em><sub>M</sub></em> = 2. The <em>X</em>-axis is also marked at these spots with <em>z</em> scores from –3 to 3.</p></div>
+</li>
+<li><div data-block_type="nl-mid" id="corty3e-ch6-p180"><p>The rare zone, the area less than or equal to a <em>z</em> value of –1.96 and greater than or equal to a <em>z</em> value of 1.96, is shaded. If a result falls in the rare zone, the null hypothesis is rejected.</p></div>
+</li>
+<li><div data-block_type="nl-last" id="corty3e-ch6-p181"><p>A caret, ^, marks the spot where the sample mean, 127, falls. This is equivalent to a <em>z</em> score of 1.50 and falls in the common zone. The null hypothesis is not rejected.</p></div>
+</li>
+</ol>
+<div data-block_type="txt" id="corty3e-ch6-p182"><p>Now, imagine that the null hypothesis is not true. Imagine that the population mean is 127 instead of 124. Why pick 127? Because that was the sample mean and is the only objective evidence that we have for what the population mean might be for people the psychic says have high blood pressure.</p></div>
+<div data-block_type="txt" id="corty3e-ch6-p183"><p>With this in mind, look at <span data-type="link" data-href="#corty3e-ch6-fig-26"><strong>Figure 6.8</strong></span>. The top panel (A) is a repeat of the sampling distribution shown in <span data-type="link" data-href="#corty3e-ch6-fig-25">Figure 6.7</span>, the distribution centered around the mean of 124, the mean hypothesized by the null hypothesis. The bottom panel (B), the dotted line distribution, is new. This is what the sampling distribution would look like if μ = 127. Note these four characteristics about the sampling distribution in the bottom panel:</p></div>
+<div data-type="figure" data-figure-id="corty3e-ch6-fig-26" data-block_type="figure" data-layout-align="center" data-layout-width="large" data-layout-border="true">
+
+<img id="" src="asset/ch6/corty3e_fig06_08a_b.jpg" data-figure-id="corty3e-ch6-fig-26" data-layout-width="large" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+<div data-type="figure_text">
+<span data-type="number">Figure 1.13: </span><span data-type="caption"><strong><span data-block_type="fig_num">Figure 6.8</span> Sampling Distribution if μ = 127</strong> The top panel (A), centered at 124, is the same as the sampling distribution in <span data-type="link" data-href="#corty3e-ch6-fig-25">Figure 6.7</span>. The bottom panel (B) is centered at a blood pressure of 127 and shows what the sampling distribution would look like if that were the population mean. The vertical line in the bottom panel is an extension of the critical value, <em>z</em> = 1.96, from the top panel.</span>
+</div>
+</div>
+<div data-block_type="page_start" id="corty3e_page_202"><p>202</p></div>
+<ol data-block_type="numbered" id="corty3e-ch6-list-15">
+<li><div data-block_type="nl-first" id="corty3e-ch6-p184"><p>The dotted line sampling distribution has exactly the same shape as the one in the top panel; it is just shifted to the right so that the midpoint, represented by a dotted vertical line, occurs at a blood pressure of 127.</p></div>
+</li>
+<li><div data-block_type="nl-mid" id="corty3e-ch6-p185"><p>This midpoint, 127, is right under the spot marked by a caret in the top panel. That caret represents where the sample mean, 127, fell.</p></div>
+</li>
+<li><div data-block_type="nl-mid" id="corty3e-ch6-p186"><p>The other points on the <em>X</em>-axis are marked off by blood pressure scores ranging from 121 to 133, and <em>z</em> scores ranging from –3 to 3.</p></div>
+</li>
+<li><div data-block_type="nl-last" id="corty3e-ch6-p187"><p>There is a solid vertical line in the lower panel of <span data-type="link" data-href="#corty3e-ch6-fig-26">Figure 6.8</span>. The vertical line is drawn at the same point as the <em>z</em> score of 1.96 was in the top panel. This vertical line marks the point that was one of the critical values of <em>z</em> in the top panel. In the top panel, scores that fell to the left of this line fell in the common zone and scores that fell on or to the right of the line fell in the rare zone.</p></div>
+</li>
+</ol>
+<div data-block_type="txt" id="corty3e-ch6-p188"><p><span data-type="link" data-href="asset/ch6/corty3e_fig06_09a_b.html"><strong>Figure 6.9</strong></span> takes <span data-type="link" data-href="#corty3e-ch6-fig-26">Figure 6.8</span> and hatches in the area to the left of the vertical line with <span data-block_type="hatch">///</span> in the bottom panel (B). This area, which is more than 50% of the area under the curve, indicates the likelihood of a Type II error. How so? Well, if μ were really 127, then the null hypothesis that the population mean is 124 should be rejected! However, looking at the top panel (A) to make this decision, a researcher wouldn’t reject the null hypothesis after obtaining a mean that falls in the area hatched like <span data-block_type="hatch">///</span>. (Remember, the sample means will be spread around the population mean of 127 because of sampling error.) Whenever a sample mean falls in this hatched-in area, a Type II error is committed and a researcher fails to reject a null hypothesis that should be rejected.</p></div>
+<div data-type="figure" data-figure-id="corty3e-ch6-fig-27" data-block_type="figure" data-layout-align="center" data-layout-width="large" data-layout-border="true">
+
+<img id="" src="asset/ch6/corty3e_fig06_09a_b.jpg" data-figure-id="corty3e-ch6-fig-27" data-layout-width="large" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+<div data-type="figure_text">
+<span data-type="number">Figure 1.14: </span><span data-type="caption"><strong><span data-block_type="fig_num">Figure 6.9</span> The Probability of Type II Error (Beta) if μ = 127</strong> This figure is the same as <span data-type="link" data-href="#corty3e-ch6-fig-26">Figure 6.8</span>, but the area to the left of the solid vertical line in the bottom panel (B) has been hatched in. Note that the solid vertical line is directly below the critical value of <em>z,</em> 1.96, in the top panel (A). Any sample mean that falls in the hatched area of the bottom panel would fall in the common zone of the top panel, and the null hypothesis would not be rejected. But, as the bottom distribution has a population mean of 127, not 124, the null hypothesis of μ = 124 should be rejected. Note that more than half of the distribution is shaded in, meaning there is a large probability of Type II error if we hypothesize μ = 124 but the population mean is really 127.</span>
+</div>
+</div>
+<div data-block_type="page_start" id="corty3e_page_203"><p>203</p></div>
+<div data-block_type="txt" id="corty3e-ch6-p189"><p>Under these circumstances, the researcher would commit a Type II error fairly frequently if the population mean were really 127, but the null hypothesis claimed it was 124. The researcher would commit a Type II error less frequently if the population mean were greater than 127. Right now, the difference between the null hypothesis value (124) and the value that may be the population value (127) is fairly small, only 3 points. This suggests that if the psychic can read blood pressure, he has only a small ability to do so. If the effect were larger, say, the dotted line distribution shifted to a midpoint of 130, the size of the effect, the psychic’s ability to read blood pressure, would be larger. The bottom panel (C) of <span data-type="link" data-href="#corty3e-ch6-fig-28"><strong>Figure 6.10</strong></span> shows the sampling distribution made with a dashed line. This is the sampling distribution that would exist if the population mean were 130. Notice how much smaller the hatched-in error area is in this sampling distribution, indicating a much smaller probability of Type II error.</p></div>
+<div data-type="figure" data-figure-id="corty3e-ch6-fig-28" data-block_type="figure" data-layout-align="center" data-layout-width="xlarge" data-layout-border="true">
+
+<img id="" src="asset/ch6/corty3e_fig06_10a_c.jpg" data-figure-id="corty3e-ch6-fig-28" data-layout-width="xlarge" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+<div data-type="figure_text">
+<span data-type="number">Figure 1.15: </span><span data-type="caption"><strong><span data-block_type="fig_num">Figure 6.10</span> The Impact of Effect Size on the Probability of Type II Error</strong> The top panel (A) in this figure shows the sampling distribution if μ = 124, the middle panel (B) if μ = 127, and the bottom panel (C) if μ = 130. The shaded portion in the middle panel reflects beta, the probability of Type II error if it is hypothesized that the population mean is 124 but it really is 127. Note that the shaded portion in the bottom distribution, which represents beta if μ = 130, is smaller. When the effect is bigger, the probability of Type II error decreases.</span>
+</div>
+</div>
+<div data-block_type="txt" id="corty3e-ch6-p190"><p>The point is this: the probability of Type II error depends on the size of the effect, the difference between what the null hypothesis says is the population parameter and what the population parameter really is. When the difference between these values is small, the probability of a Type II error is large. Type II error can still occur when the effect size is large, but it is less likely.</p></div>
+<div data-block_type="page_start" id="corty3e_page_204"><p>204</p></div>
+<div data-block_type="txt" id="corty3e-ch6-p191"><p>When one is starting out in statistics, it is hard to remember the differences between Type I error and Type II error. <span data-type="link" data-href="#corty3e-ch6-fig-29"><strong>Table 6.6</strong></span> summarizes the differences between the two.</p></div>
+<div data-type="figure" data-figure-id="corty3e-ch6-fig-29" data-block_type="table" data-layout-align="center" data-layout-width="large" data-layout-border="true">
+
+<img id="" src="asset/ch6/corty3e_table06_06.jpg" data-figure-id="corty3e-ch6-fig-29" data-layout-width="large" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+</div>
+</div>
+    <div data-type="section" data-block_type="h2" id="corty3e-ch6-sec2-6" level="2" data-print_page="204">
+<h2 class="section-title"><span data-type="title" data-title-for="corty3e-ch6-sec2-6">Power
+</span></h2>
+
+<div data-block_type="txt-ni" id="corty3e-ch6-p192"><p>There’s one more concept to introduce before this chapter draws to a close and that is <em>power.</em> <span data-type="termref" data-term="Power">Power</span> refers to the probability of rejecting the null hypothesis when the null hypothesis should be rejected. Because the goal of most studies is to reject the null hypothesis and be forced to accept the alternative hypothesis (which is what the researcher really believes is true), researchers want power to be as high as possible.</p></div>
+<div data-block_type="txt" id="corty3e-ch6-p193"><p>The area that is hatched <span data-block_type="hatch">\\\</span> in the bottom panel (C) in <span data-type="link" data-href="#corty3e-ch6-fig-30"><strong>Figure 6.11</strong></span> demonstrates the power of the single-sample <em>z</em> test in Dr. Levine’s psychic blood pressure study. If the population mean is really 127, whenever a sample mean falls in this hatched-in area, the researcher will reject the null hypothesis. Why? Because a population mean in this hatched-in area falls in the shaded-in rare zone shown in the top panel (A).</p></div>
+<div data-type="figure" data-figure-id="corty3e-ch6-fig-30" data-block_type="figure" data-layout-align="center" data-layout-width="xlarge" data-layout-border="true">
+
+<img id="" src="asset/ch6/corty3e_fig06_11a_c.jpg" data-figure-id="corty3e-ch6-fig-30" data-layout-width="xlarge" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+<div data-type="figure_text">
+<span data-type="number">Figure 1.17: </span><span data-type="caption"><strong><span data-block_type="fig_num">Figure 6.11</span> The Relationship Between Beta and Power</strong> The shaded area on the top panel (A) is the rare zone. If a result falls there, the null hypothesis will be rejected. The area hatched <span data-block_type="hatch">///</span> on the middle panel (B) represents beta, the probability of Type II error. The area shaded <span data-block_type="hatch">\\\</span> on the bottom panel (C) represents power, the likelihood if the population mean is really 127, that the null hypothesis, which claims it is 124, will be rejected. Note that the areas shaded <span data-block_type="hatch">///</span> and <span data-block_type="hatch">\\\</span> incorporate the whole distribution. (The probability of beta plus the probability of power equals 1.)</span>
+</div>
+</div>
+<div data-block_type="page_start" id="corty3e_page_205"><p>205</p></div>
+<div data-block_type="page_start" id="corty3e_page_206"><p>206</p></div>
+<div data-block_type="txt" id="corty3e-ch6-p194"><p>Look at the area hatched in <span data-block_type="hatch">///</span> in the middle panel (B) of <span data-type="link" data-href="#corty3e-ch6-fig-30">Figure 6.11</span> and the area hatched in <span data-block_type="hatch">\\\</span> in the bottom panel (C) of <span data-type="link" data-href="#corty3e-ch6-fig-30">Figure 6.11</span>. The hatched-in area in the middle panel represents beta, the probability of Type II error, while the hatched-in area in the bottom panel represents power. Together, these two hatched-in areas shade in the entire dotted-line curve. This shows that beta and power are flip sides of the same coin. When the null hypothesis should be rejected, beta plus power equals 100% of the area under the dotted-line curve.</p></div>
+<div data-block_type="txt" id="corty3e-ch6-p195"><p>Statisticians refer to beta and power using probabilities, not percentages. They would say: β + power = 1.00. If either beta or power is known, the other can be figured out. If beta is set at .20, then power is .80. If power is .95, then beta is .05.</p></div>
+<div data-type="box" data-block_type="mn1" id="corty3e-ch6-exp1-3"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="corty3e-ch6-exp1-3"></h3>
+<div data-block_type="mn-ext-ni" id="corty3e-ch6-p196"><p><em>Type I error and Type II error are errors of the conclusion, not errors of the facts on which conclusions are based.</em></p></div>
+</div></div>
+<div data-block_type="txt" id="corty3e-ch6-p197"><p>There’s more to be learned about Type I and Type II errors, beta, and power in later chapters. For now, here’s a final point. If a Type I error or a Type II error occurs, this doesn’t mean the results of the study are wrong. After all, the sample mean <em>is</em> the mean that was found for the sample. What a Type I or Type II error means is that the <em>conclusion</em> drawn from the sample mean about the population mean is wrong. Type I error and Type II error are errors of the conclusion, not errors of the facts on which conclusions are based.</p></div>
+<div data-type="box" data-block_type="sr-h" id="corty3e-ch6-bx2-3"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="corty3e-ch6-bx2-3">Practice Problems 6.3</h3>
+<div data-block_type="sr-h1" id="corty3e-ch6-p198"><p><strong>Review Your Knowledge</strong></p></div>
+<div data-block_type="sr-que-nl" id="corty3e-ch6-p199"><p><span data-block_type="question_num">6.07</span> When does Type II error occur?</p></div>
+<div data-block_type="sr-que-nl" id="corty3e-ch6-p200"><p><span data-block_type="question_num">6.08</span> What is power?</p></div>
+<div data-block_type="sr-h1" id="corty3e-ch6-p201"><p><strong>Apply Your Knowledge</strong></p></div>
+<div data-block_type="sr-que-nl" id="corty3e-ch6-p202"><p><span data-block_type="question_num">6.09</span> What is a correct conclusion in hypothesis testing?</p></div>
+<div data-block_type="sr-que-nl" id="corty3e-ch6-p203"><p><span data-block_type="question_num">6.10</span> What is an incorrect conclusion in hypothesis testing?</p></div>
+</div></div>
+<div data-type="box" data-block_type="sr-x-h" id="corty3e-ch6-bx5-1"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="corty3e-ch6-bx5-1">Application Demonstration</h3>
+<div data-block_type="sr-x-txt-ni" id="corty3e-ch6-p204"><p>To see hypothesis testing in action, let’s leave numbers behind and turn to a simplified version of one way the sex of a baby is identified before it is born. Around the fifth month of pregnancy, an ultrasound can be used to identify whether a fetus is a boy or a girl. The test relies on hypothesis testing to decide “boy” or “girl,” and it is not 100% accurate. Both Type I errors and Type II errors are made. Here’s how it works.</p></div>
+<div data-block_type="sr-x-txt" id="corty3e-ch6-p205"><p>The null hypothesis, which is set up to be rejected, says that the fetus is a girl. Null hypotheses state a negative, and the negative statement here is that the fetus has no penis. Together, the null hypothesis and the alternative hypothesis have to be all-inclusive and mutually exclusive, so the alternative hypothesis is that the fetus has a penis.</p></div>
+<div data-block_type="sr-x-txt" id="corty3e-ch6-p206"><p>The sonographer, then, starts with the hypothesis that the fetus is a girl. If the sonographer sees a penis, the null hypothesis is rejected and the alternative hypothesis is accepted, that the fetus is a boy.</p></div>
+<div data-block_type="page_start" id="corty3e_page_207"><p>207</p></div>
+<div data-block_type="sr-x-txt" id="corty3e-ch6-p207"><p>Of course, mistakes are made. Suppose the fetus is a girl and a bit of her umbilical cord is artfully arranged so that it masquerades as a penis. The sonographer would say “Boy” and be wrong. This is a Type I error, where the null hypothesis is wrongly rejected.</p></div>
+<div data-block_type="sr-x-txt" id="corty3e-ch6-p208"><p>A Type II error can be made as well. Suppose the fetus is a shy boy who arranges his legs or hands to block the view. The sonographer doesn’t get a clear view of the area, says “Girl,” and would be wrong. This is a Type II error, wrongly failing to reject the null hypothesis.</p></div>
+<div data-block_type="sr-x-txt" id="corty3e-ch6-p209"><p>However, in this case, a smart sonographer doesn’t say “Girl.” Instead, the sonographer, failing to see male genitalia, indicates that there’s not enough evidence to conclude the fetus is a boy. That is, there’s not enough evidence to reject the hypothesis that it’s a girl. Absence of evidence is not evidence of absence.</p></div>
+</div></div>
+<div data-type="box" data-block_type="bx4-h" id="corty3e-ch6-bx4-1"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="corty3e-ch6-bx4-1">DIY</h3>
+<div data-block_type="bx4-txt-ni" id="corty3e-ch6-p210"><p>Grab a handful of coins, say, 25, and let’s investigate Type I error. Type I error occurs when one erroneously rejects the null hypothesis. In this exercise, the null hypothesis is going to be that a coin is a fair coin. This means that each coin has a heads and a tails, and there is a 50-50 chance on each toss that a heads will turn up.</p></div>
+<div data-block_type="bx4-txt" id="corty3e-ch6-p211"><p>For each coin in your handful, you will determine if it is a fair coin by tossing it, by observing its behavior. Imagine you toss the coin once and it turns out to be heads. Does that give you any information whether it is a fair coin or not? No, it doesn’t. A fair coin could certainly turn up heads on the first toss. So, you toss it again and again it turns up heads. Could a fair coin turn up heads 2 times in a row? Yes. There are four outcomes (HH, HT, TH, and TT), one of which is two heads, so two heads in a row should happen 25% of the time. How about three heads in a row? That will happen 12.5% of the time with a fair coin. Four heads? 6.25% of the time. Finally, if there are five heads in a row, we will step over the 5% rule. Five heads in a row, or five tails in a row, will happen only 3.125% of the time with a fair coin. It could happen, but it is a rare event, and when a rare event occurs—one that is unlikely to occur if the null hypothesis is true—we reject the null hypothesis.</p></div>
+<div data-block_type="bx4-txt" id="corty3e-ch6-p212"><p>So, here’s what you do. Test one coin at a time from your handful. Toss each coin 5 times in a row. If the result is a mixture of heads and tails, which is what you’d expect if the test were fair, there is not sufficient evidence to reject the null hypothesis. But, if it turns up five heads in a row or five tails in a row, you have to reject the null hypothesis and conclude the coin is not fair. If that happens to you, then pick up the coin and examine it. Does it have a heads and a tails? Toss it 5 more times. Did it turn up five heads or five tails again? This time, it probably behaved more like a fair coin.</p></div>
+<div data-block_type="bx4-txt" id="corty3e-ch6-p213"><p>There are two lessons here. First, occasionally, about 3% of the time, a fair coin will turn up heads 5 times in a row. If that happens, by the rules of hypothesis testing, we would declare the coin unfair. That conclusion would be wrong; it would be a Type I error. If you stopped there, if you did not replicate the experiment, you’d never know that you made a mistake. And that is a danger of hypothesis testing—your conclusion can be wrong and you don’t know it. So here’s the second lesson: replicate. When the same results occur 2 times in a row, you have a lot more faith in them.</p></div>
+</div></div>
+</div>
+<!-- #x-digfir-subsection-insertion-point --><!-- #x-digfir-subsection-insertion-point --><!-- #x-digfir-subsection-insertion-point --><!-- #x-digfir-subsection-insertion-point --></div><!-- /#manuscript -->
+<br class="clear" />
+<!-- end of material in original view -->
+
+	<!--[if IE]><script type="text/javascript" src="js/excanvas.compiled.js"></script><![endif]-->
+    
+<script type="text/javascript" src="js/utilities.js"></script>
+<script type="text/javascript" src="js/query_types.js"></script>
+<script type="text/javascript" src="js/player.js"></script>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/jquery-ui-1.8.16.custom.min.js"></script>
+<script type="text/javascript" src="js/jquery_extensions.js"></script>
+<script type="text/javascript" src="js/swfobject.js"></script>
+<script type="text/javascript" src="http://admin.brightcove.com/js/BrightcoveExperiences.js"></script>
+<script type="text/javascript" src="js/digfir_ebook_fw.js"></script>
+<script type="text/javascript" src="js/corty3e.js"></script>
+<script type="text/javascript" src="js/corty3e_ch6.js"></script>
+<script type="text/javascript">
+    //<!--
+    
+$(window).ready(function () {
+	player.initialize('56d62ba1757a2e7b52000004');
+});
+    //-->
+</script>
+</body>
+</html>
+

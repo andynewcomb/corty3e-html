@@ -1,0 +1,118 @@
+/* Chapter 9 CSS */
+
+// borrowed from book-level CSS
+@corty-blue: #168ca8;
+@box-bg-blue: #e0e8ef;
+
+// margin adjustments
+
+
+/* Figures */
+body.noUi {
+}
+
+/* Tables */
+body.noUi {
+    div#corty3e-ch9-table1 {
+        //width: 556px !important;
+        table {
+            tr:first-child {
+                background-color: @box-bg-blue;
+                td {
+                    border-left: 0;
+                    border-right: 0;
+                    color: @corty-blue;
+                    font-weight: bold;
+                    text-align: left;
+                }
+                + tr {
+                    color: @corty-blue;
+                    font-weight: bold !important;
+                }
+            }
+        }
+    }
+}
+
+/* Lists */
+
+/* Equations */
+
+// equation box line adjustments
+
+// equation alignment
+
+// block equation move/resize
+
+// inline equation sizing
+    
+// page numbers caught in relative parent
+
+// other
+// "join" two gray boxes
+div#corty3e-ch9-p154 {
+    margin-bottom: 0;
+}
+div#corty3e-ch9-p155 {
+    margin-top: 0;
+}
+
+div#corty3e-ch9-p182 {
+    margin-bottom: 0;
+}
+div#corty3e-ch9-p183 {
+    margin-top: 0;
+}
+
+// reuse of worked example feature without a title
+div#corty3e-ch9-bx3-4 {
+    margin-top: 2em;
+    [data-type="title"] {
+        display: none;
+    }
+}
+
+/* inline math image adjustments */
+// note that the default for the images marjed as math inline (ineqn) is 2em, which works
+// for those fractions with denomominator and numerator, making them double high
+// the changes below are for single-high math (symbols, etc., but not fractions)
+// special note for this chapter: some inline math has subscripts. The height has been adjusted to make them fit.
+// some of the rules below apply to several images
+img[src*="corty3e_ineqn"] {
+    height: 1.5em;
+    vertical-align: text-top;
+}
+// Page Numbers overlapping text
+div#corty3e_page_301 {
+    margin-top: -2em;
+}
+div#corty3e_page_302 {
+    margin-top: -2em;
+}
+div#corty3e_page_305 {
+    margin-top: -5px;
+}
+div#corty3e_page_312 {
+    margin-top: -5px;
+}
+div#corty3e_page_315 {
+    margin-top: -6em;
+}
+div#corty3e_page_317 {
+    margin-top: -2em;
+}
+div#corty3e_page_318 {
+    margin-top: -2em;
+}
+div#corty3e_page_319 {
+    margin-top: -1.5em;
+}
+div#corty3e_page_320 {
+    margin-top: -2em;
+}
+div#corty3e_page_321 {
+    margin-top: -2em;
+}
+div#corty3e_page_322 {
+    margin-top: -1.5em;
+}

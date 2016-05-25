@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]> <html lang="en" class="no-js ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="no-js ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="no-js ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en" class="no-js ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+<head>
+    <title>corty3e_ch10</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <link href="css/boilerplate.css" media="screen" rel="stylesheet" type="text/css" >
+<link href="css/jquery-ui-custom.css" media="screen" rel="stylesheet" type="text/css" >
+<link href="css/manuscript.css" media="screen" rel="stylesheet" type="text/css" >
+<link href="css/digfir_ebook_fw.css" media="screen" rel="stylesheet" type="text/css" >
+<link href="css/corty3e.css" media="screen" rel="stylesheet" type="text/css" >
+<link href="css/corty3e_ch10.css" media="screen" rel="stylesheet" type="text/css" >    
+    
+    </head>
+<body class="noUi">
+<div id="manuscript" data-chapter-number="10">
+    <div data-type="section" data-block_type="h1" id="corty3e-ch10-sec1-1" level="1" data-print_page="329">
+<h2 class="section-title"><span data-type="title" data-title-for="corty3e-ch10-sec1-1"><span data-block_type="sec_num">10.1</span> <span data-block_type="sec_title">Introduction to Analysis of Variance</span>
+</span></h2>
+
+<div data-type="box" data-block_type="video" id="corty3e-ch10-video-1"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="corty3e-ch10-video-1"></h3>
+<div data-block_type="vidtxt" id="corty3e-ch10-videotxt-1"><p><span data-type="link" data-href-px="" data-href="http://bcs.whfreeman.com/webpub/statistics/ips7e/student/Stat Videos/ch12/sc_anova_bi.html" data-target="_pop"><img id="" src="asset/images/video.jpg" data-figure-id="" data-layout-width="" data-mmtype="" alt="image"></span><em>StatClips: ANOVA – Background and Introduction</em>Video on LaunchPad</p></div>
+</div></div>
+</div>
+    <div data-type="section" data-block_type="h2" id="corty3e-ch10-sec2-1" level="2" data-print_page="329">
+<h2 class="section-title"><span data-type="title" data-title-for="corty3e-ch10-sec2-1">Analysis of Variance Terminology
+</span></h2>
+
+<div data-block_type="txt-ni" id="corty3e-ch10-p12"><p><span data-type="termref" data-term="analysis of variance (ANOVA)">Analysis of variance</span>, called <span data-type="termref" data-term="analysis of variance (ANOVA)">ANOVA</span> for short, is a family of statistical tests used for comparing the means of two or more groups. This chapter focuses on <strong>between-subjects, one-way ANOVA</strong>. Between-subjects, one-way ANOVA is an extension of the independent-samples <em>t</em> test, so it is used to compare means when there are two or more <em>independent</em> samples.</p></div>
+<ul data-block_type="bullet" id="corty3e-ch10-list-2">
+<li><div data-block_type="bl-first" id="corty3e-ch10-p13"><p><strong>Between-subjects</strong> is ANOVA terminology for independent samples.</p></div>
+</li>
+<li><div data-block_type="bl-mid" id="corty3e-ch10-p14"><p><strong>Way</strong> is ANOVA terminology for an explanatory variable. Ways can either be independent variables or grouping variables. (Independent variables are controlled by the experimenter, who assigns subjects to groups. Grouping variables are naturally occurring characteristics used to classify subjects into different groups.)</p></div>
+<div data-block_type="page_start" id="corty3e_page_330"><p>330</p></div>
+</li>
+<li><div data-block_type="bl-mid" id="corty3e-ch10-p15"><p>A one-way ANOVA has one explanatory variable, either an independent variable or a grouping variable. A two-way ANOVA would have two explanatory variables, a three-way ANOVA would have three, etc.</p></div>
+</li>
+<li><div data-block_type="bl-mid" id="corty3e-ch10-p16"><p>Though the explanatory variable in ANOVA is either a grouping variable or an independent variable, it becomes tedious to use both terms. Most statisticians get a bit casual with language and simply call it an independent variable; we’ll continue calling them, generically, explanatory variables. Of course, when it is an independent variable, we’ll call it that.</p></div>
+</li>
+<li><div data-block_type="bl-mid" id="corty3e-ch10-p17"><p>An explanatory variable in ANOVA is also called a <span data-type="termref" data-term="factor">factor</span><strong>,</strong> so a one-way ANOVA can also be called a one-factor ANOVA.</p></div>
+</li>
+<li><div data-block_type="bl-last" id="corty3e-ch10-p18"><p><strong>Level</strong> is the term in ANOVA for a category of an explanatory variable. The grouping variable sex, for example, has two levels—male and female.</p></div>
+</li>
+</ul>
+<div data-block_type="txt" id="corty3e-ch10-p19"><p>To clarify all this terminology, here’s a question where a between-subjects, one-way ANOVA would be used: Is there a difference in artistic ability among right-handed, left-handed, and ambidextrous people? This question could be answered by gathering a sample of people and classifying them into three groups: (1) right-handed people, (2) left-handed people, and (3) ambidextrous people.</p></div>
+<div data-block_type="txt" id="corty3e-ch10-p20"><p>Now there are three samples. The samples are independent samples as who is in one sample does not control or determine who is in another sample.</p></div>
+<div data-block_type="txt" id="corty3e-ch10-p21"><p>Next, artistic ability is measured with an interval-level scale. Because the dependent variable, artistic ability, is measured at the interval level, the mean level for each of the three groups can be calculated. Means can also be calculated for ratio-level variables, so ANOVA may be used when the outcome variable is measured at the interval or ratio level.</p></div>
+<div data-block_type="txt" id="corty3e-ch10-p22"><p><span data-type="link" data-href="#corty3e-ch10-fig-1"><strong>Table 10.1</strong></span> illustrates this experiment with one cell for each sample. There is one row with three columns. The row represents the explanatory variable of handedness, what in ANOVA terminology is called the <em>way</em> or the <em>factor.</em> The columns represent the three <em>levels</em> of the explanatory variable: right-handed, left-handed, and ambidextrous.</p></div>
+<div data-type="figure" data-figure-id="corty3e-ch10-fig-1" data-block_type="table" data-layout-align="center" data-layout-width="large" data-layout-border="true">
+
+<img id="" src="asset/ch10/corty3e_table10_01.jpg" data-figure-id="corty3e-ch10-fig-1" data-layout-width="large" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+</div>
+</div>
+    <div data-type="section" data-block_type="h2" id="corty3e-ch10-sec2-2" level="2" data-print_page="330">
+<h2 class="section-title"><span data-type="title" data-title-for="corty3e-ch10-sec2-2">Why ANOVA Is Needed
+</span></h2>
+
+<div data-block_type="txt-ni" id="corty3e-ch10-p23"><p><em>t</em> tests compare means between groups, so why is analysis of variance even needed? ANOVA is needed in order to keep the risk of Type I error at a reasonable level when comparing means of multiple groups. (Remember: Type I error occurs when a researcher erroneously concludes that there is a statistically significant difference.)</p></div>
+<div data-block_type="txt" id="corty3e-ch10-p24"><p>To see why this is a problem, consider a study with five conditions—for example, four different medications and a placebo being tested in treating some disease. It would be possible to analyze the data from these five conditions using a series of <em>t</em> tests. For example, a researcher could compare the mean of Condition 1 to Condition 2, the mean of Condition 1 to Condition 3, the mean of Condition 1 to Condition 4, and so on as shown in <span data-type="link" data-href="#corty3e-ch10-fig-2"><strong>Table 10.2</strong></span>. This would require completing 10 <em>t</em> tests.</p></div>
+<div data-block_type="page_start" id="corty3e_page_331"><p>331</p></div>
+<div data-type="figure" data-figure-id="corty3e-ch10-fig-2" data-block_type="table" data-layout-align="center" data-layout-width="large" data-layout-border="true">
+
+<img id="" src="asset/ch10/corty3e_table10_02.jpg" data-figure-id="corty3e-ch10-fig-2" data-layout-width="large" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+</div>
+<div data-block_type="txt" id="corty3e-ch10-p25"><p>It is tedious to do 10 <em>t</em> tests, but that is not why ANOVA is preferred. The real problem is that the likelihood of making a Type I error increases as the number of <em>t</em> tests increases. Scientists usually set alpha, the probability of a Type I error, at .05, so that they have a 5% chance of making this error. But, with 10 separate tests, the <em>overall</em> alpha level rises to be close to 50%. This means that there is close to a 50% chance that 1 of the 10 <em>t</em> tests will reach the wrong conclusion, rejecting the null hypothesis when it is true. Those are not good odds. And, the experimenter won’t know which, if any, of the statistically significant results is erroneous.</p></div>
+<div data-block_type="txt" id="corty3e-ch10-p26"><p>Analysis of variance solves the problem of having a large risk of Type I error, what statisticians call runaway alpha. With ANOVA, one test is completed with a specified chance of Type I error. As with <em>t</em> tests, the alpha level, the chance of committing a Type I error, is usually set at .05. One test—the ANOVA—compares all the means at once and determines if any two of the means have a statistically significant difference. If the ANOVA is statistically significant, then the researcher performs what is called a post-hoc test. A <span data-type="termref" data-term="post-hoc test">post-hoc test</span> is a follow-up test, engineered to find out which pairs of means differ while keeping the overall alpha level at a specified level, again, usually .05.</p></div>
+<div data-block_type="txt" id="corty3e-ch10-p27"><p>Here’s a metaphor for how analysis of variance and post-hoc tests work together. Imagine standing outside of a football stadium on the day of a big game and hearing a loud roar. From the roar, one would know that something significant has happened in the game. That’s analysis of variance—it indicates, in general, that something interesting has happened, but it doesn’t state specifically what happened. To find out what has happened at the game, one needs to buy a ticket and go into the stadium. Going into the stadium is like doing a post-hoc test. Post-hoc tests are only conducted in analysis of variance when one is sure there is something interesting to be found.</p></div>
+</div>
+    <div data-type="section" data-block_type="h2" id="corty3e-ch10-sec2-3" level="2" data-print_page="331">
+<h2 class="section-title"><span data-type="title" data-title-for="corty3e-ch10-sec2-3">What ANOVA Does
+</span></h2>
+
+<div data-block_type="txt-ni" id="corty3e-ch10-p28"><p>With this background on ANOVA, let’s learn why it is called analysis of variance and how it works. ANOVA works by analyzing a set of scores and separating out the different sources of variability in the scores.</p></div>
+<div data-block_type="txt" id="corty3e-ch10-p29"><p>To understand this, imagine investigating the effect of alcohol on intoxication. Suppose research participants come to a laboratory where each person consumes one beer. After 20 minutes, researchers measure the level of intoxication by observing the effects of the alcohol on each person’s performance on a behavioral task, say, walking a straight line. The higher the intoxication score, the poorer is the ability to walk in a straight line.</p></div>
+<div data-block_type="page_start" id="corty3e_page_332"><p>332</p></div>
+<div data-block_type="txt" id="corty3e-ch10-p30"><p><span data-type="link" data-href="#corty3e-ch10-fig-3"><strong>Figure 10.1</strong></span> shows the expected results—not everyone would have exactly the same intoxication score. Rather, there is variability in the scores—with some people acting quite intoxicated, some people not acting at all intoxicated, and most clustered around the average score. Even though everyone received <em>exactly</em> the same dose of alcohol, not everyone reacted in <em>exactly</em> the same way. This variability <em>within</em> a group that receives the same treatment is called <span data-type="termref" data-term="within-group variability">within-group variability</span><strong>.</strong> Within-group variability is primarily caused by individual differences, attributes that vary from case to case. So, how much one weighs, how recently one has eaten, and how much prior experience one has had with alcohol will all affect a person’s intoxication score. These are all individual difference factors.</p></div>
+<div data-type="figure" data-figure-id="corty3e-ch10-fig-3" data-block_type="figure" data-layout-align="center" data-layout-width="large" data-layout-border="true">
+
+<img id="" src="asset/ch10/corty3e_fig10_01.jpg" data-figure-id="corty3e-ch10-fig-3" data-layout-width="large" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+<div data-type="figure_text">
+<span data-type="number">Figure 10.3: </span><span data-type="caption"><strong><span data-block_type="fig_num">Figure 10.1</span> Distribution of Intoxication Scores for Participants Who Consumed One Beer</strong> Even though all participants received exactly the same dose of alcohol, there was variability in how it affected them. Some people exhibited very little intoxication and other people showed more. This variability within the group is accounted for by individual differences such as sex, weight, time since last meal, and prior experience with alcohol.</span>
+</div>
+</div>
+<div data-block_type="txt" id="corty3e-ch10-p31"><p>Within-group variability can be reduced by making the sample more homogeneous, but the effect of individual differences can’t be eliminated entirely. For example, if all participants were men who weighed 175 pounds, had eaten dinner 30 minutes ago, and had been consuming alcohol regularly for over a year, there would still be variability within that group on the intoxication scores.</p></div>
+<div data-block_type="txt" id="corty3e-ch10-p32"><p>Within-group variability is one type of variability in analysis of variance. The other type of variability for a one-way ANOVA is <em>between-group variability.</em> <span data-type="termref" data-term="Between-group variability">Between-group variability</span> is variability that is due to the different “treatments” that the different groups receive.</p></div>
+<div data-block_type="txt" id="corty3e-ch10-p33"><p><span data-type="link" data-href="#corty3e-ch10-fig-4"><strong>Figure 10.2</strong></span> shows the distribution of intoxication scores for two groups—one group where each participant drank one beer and one group where each participant drank a six-pack. Individual differences explain the variability within a group, but the different doses of alcohol explain the differences <em>between</em> groups, why one group is more intoxicated than the other. This is called the <strong>treatment effect</strong> because it refers to the different ways that groups are treated. The treatment effect shows up as an impact on the outcome variable (here, the intoxication score) and is associated with the explanatory variable (here, the dose of alcohol, which is controlled by the experimenter).</p></div>
+<div data-block_type="page_start" id="corty3e_page_333"><p>333</p></div>
+<div data-type="figure" data-figure-id="corty3e-ch10-fig-4" data-block_type="figure" data-layout-align="center" data-layout-width="large" data-layout-border="true">
+
+<img id="" src="asset/ch10/corty3e_fig10_02.jpg" data-figure-id="corty3e-ch10-fig-4" data-layout-width="large" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+<div data-type="figure_text">
+<span data-type="number">Figure 10.4: </span><span data-type="caption"><strong><span data-block_type="fig_num">Figure 10.2</span> Distributions of Intoxication Scores for Participants Who Consumed Different Amounts of Alcohol</strong> The curve on the left is the distribution of intoxication scores for participants who consumed one beer. The curve on the right is the distribution of scores for participants who consumed six beers. Note that within each group there is variability in the intoxication level, variability due to individual differences. There is also variability <em>between</em> the two groups. The easiest way to see this is to observe that the two curves have different midpoints, with one group having a higher average score than the other.</span>
+</div>
+</div>
+<div data-block_type="txt" id="corty3e-ch10-p34"><p>Between-group variability in one-way ANOVA is made up of two things: the treatment effect and individual differences. We’ve already covered how treatment plays a role in between-group variability. Now, let’s see how individual differences play a role in between-group variability.</p></div>
+<div data-block_type="txt" id="corty3e-ch10-p35"><p>Imagine a large group of people randomly divided into two groups. Because of random assignment, the two groups should be fairly similar in terms of sex, weight, time since last meal, experience with alcohol, and so on. Now, each person in each group consumes the same dose of alcohol and is measured for intoxication level. Both groups are similar in terms of their characteristics and receive exactly the same treatment. Will the mean intoxication scores of the two groups be exactly the same? No. Because individual differences exist, the two groups will have slightly different means. Between-group variability is due <em>both</em> to individual differences and treatment effect.</p></div>
+</div>
+    <div data-type="section" data-block_type="h2" id="corty3e-ch10-sec2-4" level="2" data-print_page="333">
+<h2 class="section-title"><span data-type="title" data-title-for="corty3e-ch10-sec2-4">How ANOVA Uses Variability
+</span></h2>
+
+<div data-block_type="txt-ni" id="corty3e-ch10-p36"><p>To understand how ANOVA uses within-group variability and between-group variability to see if there is a statistically significant difference, look at the two panels in <span data-type="link" data-href="#corty3e-ch10-fig-5"><strong>Figure 10.3</strong></span>. Each panel represents groups that are randomly assigned to receive three different treatments for some illness. Treatment, the explanatory variable, has three levels. The top panel (A) depicts an outcome where there is little impact of treatment on outcome.</p></div>
+<div data-type="figure" data-figure-id="corty3e-ch10-fig-5" data-block_type="figure" data-layout-align="center" data-layout-width="large" data-layout-border="true">
+
+<img id="" src="asset/ch10/corty3e_fig10_03a_b.jpg" data-figure-id="corty3e-ch10-fig-5" data-layout-width="large" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+<div data-type="figure_text">
+<span data-type="number">Figure 10.5: </span><span data-type="caption"><strong><span data-block_type="fig_num">Figure 10.3</span> Examples of Little Impact of Treatment on Outcome and a Lot of Impact of Treatment on Outcome</strong> In the top panel (A), the three different treatments have about the same average effect on outcome. Note that the three means (<em>M</em><sub>1</sub> to <em>M</em><sub>3</sub>) are very close to each other and that there is a lot of overlap in outcome from group to group. In contrast, the bottom panel (B) shows three treatments with very different effects on outcome. In it, the three means (<em>M</em><sub>4</sub> to <em>M</em><sub>6</sub>) are further apart from each other and there is no overlap in outcome from group to group.</span>
+</div>
+</div>
+<div data-block_type="txt" id="corty3e-ch10-p37"><p>The top panel shows little effect of the independent variable because the three means (<em>M</em><sub>1</sub>, <em>M</em><sub>2</sub>, and <em>M</em><sub>3</sub>) are very close to each other. In contrast, the bottom panel (B), where the means (<em>M</em><sub>4</sub>, <em>M</em><sub>5</sub>, and <em>M</em><sub>6</sub>) are far apart, shows that treatment has an impact on outcome because the different treatments lead to dramatically different outcomes.</p></div>
+<div data-block_type="page_start" id="corty3e_page_334"><p>334</p></div>
+<div data-block_type="txt" id="corty3e-ch10-p38"><p>Analysis of variance could be used to analyze these results. ANOVA would show that the results in the top panel are not statistically significant, while the results in the bottom panel are statistically significant. How does analysis of variance lead to these conclusions?</p></div>
+<div data-block_type="txt" id="corty3e-ch10-p39"><p>Look at the means in each panel. Note that there is little variability among the means in the top panel and a lot of variability among the means in the bottom panel. Little variability exists in the top panel as all the means are close to each other. The greater distance between the means in the bottom panel indicates more variability between the means there. In the language of ANOVA, there is more <em>between-group variability</em> when the effect of treatment is large (the bottom panel) than when the effect of treatment is small (the top panel).</p></div>
+<div data-type="box" data-block_type="mn1" id="corty3e-ch10-exp1-1"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="corty3e-ch10-exp1-1"></h3>
+<div data-block_type="mn-ext-ni" id="corty3e-ch10-p40"><p><em>One-way analysis of variance calculates the ratio of between-group variability to within-group variability.</em></p></div>
+</div></div>
+<div data-block_type="txt" id="corty3e-ch10-p41"><p><span data-type="link" data-href="#corty3e-ch10-fig-6"><strong>Figure 10.4</strong></span> shows how the total variability in the data is partitioned into between-group variability and within-group variability. To decide if the amount of between-group variability is large or small, ANOVA compares it to within-group variability. One-way analysis of variance calculates the ratio of between-group variability to within-group variability. This is called an <em>F</em> ratio, in honor of Sir Ronald Fisher, who developed the procedure.</p></div>
+<div data-type="figure" data-figure-id="corty3e-ch10-fig-6" data-block_type="figure" data-layout-align="center" data-layout-width="large" data-layout-border="true">
+
+<img id="" src="asset/ch10/corty3e_fig10_04.jpg" data-figure-id="corty3e-ch10-fig-6" data-layout-width="large" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+<div data-type="figure_text">
+<span data-type="number">Figure 10.6: </span><span data-type="caption"><strong><span data-block_type="fig_num">Figure 10.4</span> Partitioning Variability into Between-Group and Within-Group Variability</strong> The panel on the left shows little effect of treatment on outcome as only a small piece of the total variability is explained by differences between groups. In contrast, in the panel on the right, where a large piece of the total variability is accounted for by differences between groups, there is a large effect of treatment on outcome.</span>
+</div>
+</div>
+<div data-block_type="equation" id="corty3e-ch10-eqn-1"><p>
+<img id="" src="asset/ch10/corty3e_eqn10_334_01.jpg" data-figure-id="" data-layout-width="" data-mmtype="" alt="image"></p></div>
+<div data-block_type="txt" id="corty3e-ch10-p42"><p>The <em>F</em> ratio works because within-group variability is made up of individual differences, while between-group variability includes treatment effect <em>and</em> individual differences. So, the <em>F</em> ratio could be rewritten as</p></div>
+<div data-block_type="equation" id="corty3e-ch10-eqn-2"><p>
+<img id="" src="asset/ch10/corty3e_eqn10_334_02.jpg" data-figure-id="" data-layout-width="" data-mmtype="" alt="image"></p></div>
+<div data-block_type="page_start" id="corty3e_page_335"><p>335</p></div>
+<div data-block_type="txt" id="corty3e-ch10-p43"><p>Here’s what the <em>F</em> ratio, also known just as <em>F,</em> means:</p></div>
+<ul data-block_type="bullet" id="corty3e-ch10-list-3">
+<li><div data-block_type="bl-first" id="corty3e-ch10-p44"><p>If there is no treatment effect, then there is no variability due to treatment and the variability indicated by the numerator of the <em>F</em> ratio is due only to individual differences.</p></div>
+</li>
+<li><div data-block_type="bl-mid" id="corty3e-ch10-p45"><p>As a result, the <em>F</em> ratio has the same numerator (individual differences variability) and denominator (individual differences variability), so it will equal 1.</p></div>
+</li>
+<li><div data-block_type="bl-mid" id="corty3e-ch10-p46"><p>As the effect of treatment grows, the numerator becomes larger than the denominator, and the <em>F</em> ratio climbs above 1. (Remember, treatment effect refers to the impact of the explanatory variable.)</p></div>
+</li>
+<li><div data-block_type="bl-mid" id="corty3e-ch10-p47"><p>As the <em>F</em> ratio increases, as it climbs higher above 1, the results are more likely to be statistically significant.</p></div>
+</li>
+<li><div data-block_type="bl-last" id="corty3e-ch10-p48"><p>As variability is never negative, the <em>F</em> ratio can’t go below 0.</p></div>
+</li>
+</ul>
+<div data-block_type="txt" id="corty3e-ch10-p49"><p><span data-type="link" data-href="#corty3e-ch10-fig-9"><strong>Figure 10.5</strong></span> gives an example of what the <em>F</em> distribution looks like. Note that it starts at 0, has a mode near 1, and tails off to the right. <em>F</em> gets bigger when there is more between-group variability than within-group variability.</p></div>
+<div data-block_type="page_start" id="corty3e_page_336"><p>336</p></div>
+<div data-type="figure" data-figure-id="corty3e-ch10-fig-9" data-block_type="figure" data-layout-align="center" data-layout-width="large" data-layout-border="true">
+
+<img id="" src="asset/ch10/corty3e_fig10_05.jpg" data-figure-id="corty3e-ch10-fig-9" data-layout-width="large" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+<div data-type="figure_text">
+<span data-type="number">Figure 10.7: </span><span data-type="caption"><strong><span data-block_type="fig_num">Figure 10.5</span> An Example of a Sampling Distribution for the <em>F</em> Ratio</strong> This is an example of a sampling distribution for the <em>F</em> ratio, the ratio of between-group variability to within-group variability. Note that <em>F</em> can’t be lower than zero, that the high point of the curve is close to a value of 1 on the <em>X</em>-axis, that the distribution is positively skewed, and that the probability decreases as <em>F</em> gets larger than 1.</span>
+</div>
+</div>
+<div data-type="box" data-block_type="bx-1-h" id="corty3e-ch10-bx1-1"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="corty3e-ch10-bx1-1">A Common Question</h3>
+<div data-block_type="bx1-que" id="corty3e-ch10-p50"><p><strong>Q</strong> Looking at the ratio of between-group variability to within-group variability is a clever way to see if means differ. Could an ANOVA be used instead of a <em>t</em> test when there are just two groups?</p></div>
+<div data-block_type="bx1-ans" id="corty3e-ch10-p51"><p><strong>A</strong> Yes. ANOVA can be used when comparing <em>two</em> or more means. In fact, a <em>t</em> test is just a variation on ANOVA. If a researcher has two groups, calculates a <em>t</em> value, and then squares the <em>t</em> value, it will be equal to the <em>F</em> ratio obtained by analyzing the same data with an ANOVA.</p></div>
+</div></div>
+<div data-type="box" data-block_type="sr-h" id="corty3e-ch10-bx2-1"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="corty3e-ch10-bx2-1">Practice Problems 10.1</h3>
+<div data-block_type="sr-h1" id="corty3e-ch10-p52"><p><strong>Review Your Knowledge</strong></p></div>
+<div data-block_type="sr-que-nl" id="corty3e-ch10-p53"><p><span data-block_type="question_num">10.1</span> What makes up within-group variability?</p></div>
+<div data-block_type="sr-que-nl" id="corty3e-ch10-p54"><p><span data-block_type="question_num">10.2</span> What makes up between-group variability?</p></div>
+<div data-block_type="sr-que-nl" id="corty3e-ch10-p55"><p><span data-block_type="question_num">10.3</span> An <em>F</em> ratio is a ratio of what divided by what?</p></div>
+<div data-block_type="sr-que-nl" id="corty3e-ch10-p56"><p><span data-block_type="question_num">10.4</span> When is a post-hoc test used?</p></div>
+</div></div>
+</div>
+<!-- #x-digfir-subsection-insertion-point --><!-- #x-digfir-subsection-insertion-point --><!-- #x-digfir-subsection-insertion-point --><!-- #x-digfir-subsection-insertion-point --><!-- #x-digfir-subsection-insertion-point --></div><!-- /#manuscript -->
+<br class="clear" />
+<!-- end of material in original view -->
+
+	<!--[if IE]><script type="text/javascript" src="js/excanvas.compiled.js"></script><![endif]-->
+    
+<script type="text/javascript" src="js/utilities.js"></script>
+<script type="text/javascript" src="js/query_types.js"></script>
+<script type="text/javascript" src="js/player.js"></script>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/jquery-ui-1.8.16.custom.min.js"></script>
+<script type="text/javascript" src="js/jquery_extensions.js"></script>
+<script type="text/javascript" src="js/swfobject.js"></script>
+<script type="text/javascript" src="http://admin.brightcove.com/js/BrightcoveExperiences.js"></script>
+<script type="text/javascript" src="js/digfir_ebook_fw.js"></script>
+<script type="text/javascript" src="js/corty3e.js"></script>
+<script type="text/javascript" src="js/corty3e_ch10.js"></script>
+<script type="text/javascript">
+    //<!--
+    
+$(window).ready(function () {
+	player.initialize('56d62cd7757a2efe47000002');
+});
+    //-->
+</script>
+</body>
+</html>
+

@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]> <html lang="en" class="no-js ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="no-js ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="no-js ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en" class="no-js ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+<head>
+    <title>corty3e_ch12</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <link href="css/boilerplate.css" media="screen" rel="stylesheet" type="text/css" >
+<link href="css/jquery-ui-custom.css" media="screen" rel="stylesheet" type="text/css" >
+<link href="css/manuscript.css" media="screen" rel="stylesheet" type="text/css" >
+<link href="css/digfir_ebook_fw.css" media="screen" rel="stylesheet" type="text/css" >
+<link href="css/corty3e.css" media="screen" rel="stylesheet" type="text/css" >
+<link href="css/corty3e_ch12.css" media="screen" rel="stylesheet" type="text/css" >    
+    
+    </head>
+<body class="noUi">
+<div id="manuscript" data-chapter-number="12">
+    <div data-type="section" data-block_type="h1" id="corty3e-ch12-sec1-2" level="1" data-print_page="430">
+<h2 class="section-title"><span data-type="title" data-title-for="corty3e-ch12-sec1-2"><span data-block_type="sec_num">12.2</span> <span data-block_type="sec_title">Calculating a Between-Subjects, Two-Way ANOVA</span>
+</span></h2>
+
+<div data-block_type="txt-ni" id="corty3e-ch12-p90"><p>A two-way ANOVA allows a researcher to see, at one time, the effects of two explanatory variables by themselves (the main effects) and in combination (the interaction). A two-way ANOVA achieves this by partitioning the between-group variability differently. As shown in <strong><span data-type="link" data-href="#corty3e-ch12-fig-16">Figure 12.4</span></strong>, a two-way ANOVA takes the total variability and separates that into within-group variability and between-group variability. It then takes the between-group variability and divides that further into the two main effects, the effect of the row explanatory variable and the effect of the column explanatory variable, and the effect of the interaction of the two main effects. Each of these three effects is tested for statistical significance with its own <em>F</em> ratio.</p></div>
+<div data-type="figure" data-figure-id="corty3e-ch12-fig-16" data-block_type="figure" data-layout-align="center" data-layout-width="medium" data-layout-border="true">
+
+<img id="" src="asset/ch12/corty3e_fig12_04.jpg" data-figure-id="corty3e-ch12-fig-16" data-layout-width="medium" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+<div data-type="figure_text">
+<span data-type="number">Figure 12.10: </span><span data-type="caption"><strong><span data-block_type="fig_num">Figure 12.4</span> Partitioning Variability for Between-Subjects, Two-Way ANOVA</strong> This figure shows how the variability for a between-subjects, two-way ANOVA is initially partitioned into between-group variability and within-group variability, as for a between-subjects, one-way ANOVA. The between-group variability is then divided further into three parts: that due to the row variable, the column variable, and the interaction of the two.</span>
+</div>
+</div>
+<div data-block_type="txt" id="corty3e-ch12-p91"><p>To learn how to complete the calculations for a between-subjects, two-way ANOVA, here’s an example about the effect of caffeine consumption and sleep deprivation on mental alertness. Imagine that a sleep researcher, Dr. Ballard, obtained 30 participants who were students at his college. He gave each a mental alertness task one hour after waking. (Higher scores on this test indicate more mental alertness.) The participants were randomly assigned into six groups, with five in each group. Half the participants consumed a standard cup of coffee (150 mg of caffeine) 30 minutes after waking and half did not. One third of the participants were allowed a full night’s sleep (0-hours sleep deprivation), one third were awakened an hour early (1-hour sleep deprivation), and the final third were awakened two hours early (2-hours sleep deprivation).</p></div>
+<div data-block_type="page_start" id="corty3e_page_431"><p>431</p></div>
+<div data-block_type="txt" id="corty3e-ch12-p93"><p>The design of the study is shown in <strong><span data-type="link" data-href="#corty3e-ch12-fig-17">Table 12.7</span></strong>. Note that the six cells are laid out in a 3 × 2 format as the two explanatory variables are crossed. The two levels for dose of caffeine are the two rows and the three levels for sleep deprivation are the three columns. Each of the 30 participants is in one and only one cell.</p></div>
+<div data-type="figure" data-figure-id="corty3e-ch12-fig-17" data-block_type="table" data-layout-align="center" data-layout-width="large" data-layout-border="true">
+
+<img id="" src="asset/ch12/corty3e_table12_07.jpg" data-figure-id="corty3e-ch12-fig-17" data-layout-width="large" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+</div>
+<div data-block_type="txt" id="corty3e-ch12-p94"><p><span data-type="link" data-href="#corty3e-ch12-fig-17">Table 12.7</span> displays the cell means, row means, and column means, so Dr. Ballard can speculate about main effects. The graph in <strong><span data-type="link" data-href="#corty3e-ch12-fig-18">Figure 12.5</span></strong> allows him to consider the presence of an interaction.</p></div>
+<div data-type="figure" data-figure-id="corty3e-ch12-fig-18" data-block_type="figure" data-layout-align="center" data-layout-width="medium" data-layout-border="true">
+
+<img id="" src="asset/ch12/corty3e_fig12_05.jpg" data-figure-id="corty3e-ch12-fig-18" data-layout-width="medium" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+<div data-type="figure_text">
+<span data-type="number">Figure 12.12: </span><span data-type="caption"><strong><span data-block_type="fig_num">Figure 12.5</span> Effect of Caffeine Consumption and Sleep Deprivation on Mental Alertness</strong> This graph has nonparallel lines. That means there may be an interaction between consumption of caffeine and number of hours of sleep deprivation on mental alertness.</span>
+</div>
+</div>
+<div data-block_type="txt" id="corty3e-ch12-p95"><p>Looking at <span data-type="link" data-href="#corty3e-ch12-fig-17">Table 12.7</span> and <span data-type="link" data-href="#corty3e-ch12-fig-18">Figure 12.5</span>, three effects are apparent: (1) a main effect for caffeine, with those receiving caffeine performing better; (2) a main effect for sleep deprivation, with those who were more sleep-deprived performing worse; and (3) an interaction between the two variables. Of course, Dr. Ballard will need to do a statistical test to see if any of these results is statistically significant. And, if the interaction effect is statistically significant, that will take precedence over the main effects.</p></div>
+<div data-block_type="page_start" id="corty3e_page_432"><p>432</p></div>
+<div data-block_type="txt" id="corty3e-ch12-p97"><p>Conducting a between-subjects, two-way ANOVA requires following the same six steps for hypothesis testing as in previous hypothesis tests.</p></div>
+<div data-block_type="h4" id="corty3e-ch12-p98"><p><strong><span data-block_type="h4-N-ril">Step 1</span></strong> <strong>Pick a Test</strong></p></div>
+<div data-block_type="txt-ni" id="corty3e-ch12-p99"><p>Dr. Ballard is comparing the means of six groups, formed by the crossing of two independent variables (caffeine consumption and sleep deprivation). The groups are independent samples, so he’ll use a between-subjects, two-way ANOVA. Specifically, it is a 2 × 3 ANOVA, as there are two levels of caffeine consumption (consume caffeine or not consume caffeine) and three levels of sleep deprivation (0, 1, or 2 hours of deprivation).</p></div>
+<div data-block_type="page_start" id="corty3e_page_433"><p>433</p></div>
+<div data-block_type="h4" id="corty3e-ch12-p101"><p><strong><span data-block_type="h4-N-ril">Step 2</span></strong> <strong>Check the Assumptions</strong></p></div>
+<div data-type="figure" data-figure-id="corty3e-ch12-fig-19" data-block_type="un_figure" data-layout-align="right" data-layout-width="medium" data-layout-border="true">
+
+<img id="" src="asset/ch12/corty3e_fig12_un01.jpg" data-figure-id="corty3e-ch12-fig-19" data-layout-width="medium" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+<div data-type="figure_text"><span data-type="caption"><strong>T</strong>om <strong>a</strong>nd <strong>H</strong>arry <strong>d</strong>espise <strong>c</strong>rabby <strong>i</strong>nfants.</span></div>
+</div>
+<div data-block_type="txt-ni" id="corty3e-ch12-p102"><p>The assumptions for a two-way ANOVA are the same as they are for a between-subjects, one-way ANOVA: random samples, independence of observations, normality, and homogeneity of variance.</p></div>
+<ul data-block_type="bullet" id="corty3e-ch12-list-15">
+<li><div data-block_type="bl-first" id="corty3e-ch12-p103"><p><em>Random samples</em>. Dr. Ballard would love to be able to draw a conclusion from his study about humans in general. But, he doesn’t have a random sample of participants from the human population, so the random samples assumption is violated. This is a robust assumption, however, so he can proceed with the two-way ANOVA. He’ll need to be careful about generalizing the results.</p></div>
+</li>
+<li><div data-block_type="bl-first" id="corty3e-ch12-p104"><p><em>Independence of observations</em>. Each participant was tested individually, so their results don’t influence each other and the independence of samples assumption is not violated. This assumption is not robust, so if it had been violated, the analyses couldn’t proceed.</p></div>
+</li>
+<li><div data-block_type="bl-mid" id="corty3e-ch12-p105"><p><em>Normality</em>. Dr. Ballard is willing to assume that the dependent variable, mental alertness, is normally distributed in the larger population, so this assumption is not violated. This assumption is robust to violation, especially if the sample size is large.</p></div>
+</li>
+<li><div data-block_type="bl-last" id="corty3e-ch12-p106"><p><em>Homogeneity of variance</em>. All six of the cell standard deviations are about the same (see <span data-type="link" data-href="#corty3e-ch12-fig-17">Table 12.7</span>), which means that the variability in each group is about the same. This assumption is not violated in the study. (And, when the sample size is large, it is a robust assumption.)</p></div>
+</li>
+</ul>
+<div data-block_type="txt-ni" id="corty3e-ch12-p107"><p>For the caffeine/sleep deprivation study, no nonrobust assumptions were violated, so Dr. Ballard can proceed with the ANOVA.</p></div>
+<div data-block_type="h4" id="corty3e-ch12-p108"><p><strong><span data-block_type="h4-N-ril">Step 3</span></strong> <strong>List the Hypotheses</strong></p></div>
+<div data-block_type="txt-ni" id="corty3e-ch12-p109"><p>For a one-way ANOVA, there is one set of hypotheses. For a two-way ANOVA, with a null hypothesis and an alternative hypothesis for both of the main effects and for the interaction effect, there are three sets of hypotheses.</p></div>
+<ul data-block_type="bullet" id="corty3e-ch12-list-16">
+<li><div data-block_type="bl-first" id="corty3e-ch12-p110"><p>For the row main effect, the null hypothesis states that the population means for all levels of the row variable are equal to each other. The alternative hypothesis for the row main effect states that not all population means for the levels of the row variable are the same.</p></div>
+</li>
+<li><div data-block_type="bl-mid" id="corty3e-ch12-p111"><p>For the column main effect, the null hypothesis says that the population means for all levels of the column variable are the same. The alternative hypothesis for the column main effect says that not all population means for the levels of the column variable are the same.</p></div>
+</li>
+<li><div data-block_type="bl-last" id="corty3e-ch12-p112"><p>For the interaction effect, the null hypothesis says that there is no interaction effect in the population. This means that the impact of one main effect on the dependent variable is independent of the impact of the other main effect on the dependent variable for all the cells. The alternative hypothesis for the interaction effect says that there is an interaction effect for at least one cell.</p></div>
+</li>
+</ul>
+<div data-block_type="page_start" id="corty3e_page_434"><p>434</p></div>
+<div data-block_type="txt" id="corty3e-ch12-p114"><p>For the caffeine/sleep deprivation study, the row variable, caffeine consumption, has two levels, so Dr. Ballard writes the hypotheses:</p></div>
+<div data-block_type="eq" id="corty3e-ch12-p115"><p><em>H</em><sub>0 Rows</sub>: μ<sub>Row1</sub> = μ<sub>Row2</sub></p></div>
+<div data-block_type="eq" id="corty3e-ch12-p116"><p><em>H</em><sub>1 Rows</sub>: μ<sub>Row1</sub> ≠ μ<sub>Row2</sub></p></div>
+<div data-block_type="txt" id="corty3e-ch12-p117"><p>There are three levels of the column variable, sleep deprivation, so the column null hypothesis could be written two ways: (1) μ<sub>Column1</sub> = μ<sub>Column2</sub> = μ<sub>Column3</sub> or (2) all column population means are the same.</p></div>
+<div data-block_type="eq" id="corty3e-ch12-p118"><p><em>H</em><sub>0 Columns</sub>: All column population means are the same.</p></div>
+<div data-block_type="eq" id="corty3e-ch12-p119"><p><em>H</em><sub>1 Columns</sub>: At least one column population mean is different from at least one other column population mean.</p></div>
+<div data-block_type="txt" id="corty3e-ch12-p120"><p>There is no easy way to write the hypotheses for the interaction effect symbolically. So, using plain language, Dr. Ballard writes the hypotheses as</p></div>
+<div data-block_type="eq" id="corty3e-ch12-p121"><p><em>H</em><sub>0 Interaction</sub>: There is no interactive effect of the two independent variables on the dependent variable in the population.</p></div>
+<div data-block_type="eq" id="corty3e-ch12-p122"><p><em>H</em><sub>1 Interaction</sub>: The two independent variables in the population interact to affect the dependent variable in at least one cell.</p></div>
+<div data-block_type="h4" id="corty3e-ch12-p123"><p><strong><span data-block_type="h4-N-ril">Step 4</span></strong> <strong>Set the Decision Rules</strong></p></div>
+<div data-block_type="txt-ni" id="corty3e-ch12-p124"><p>Just as three sets of hypotheses exist, there will be three decision rules for a two-way ANOVA—one for the row effect, one for the column effect, and one for the interaction effect. Because this is an ANOVA, <em>F</em> ratios will be calculated for each of the three effects (<em>F</em><sub>Rows</sub>, <em>F</em><sub>Columns</sub>, and <em>F</em><sub>Interaction</sub>) and compared to their critical values of <em>F</em>(<em>F<sub>cv</sub></em> <sub>Rows</sub>, <em>F<sub>cv</sub></em> <sub>Columns</sub>, and <em>F<sub>cv</sub></em> <sub>Interaction</sub>). If the observed value of <em>F</em> is greater than or equal to <em>F</em><em><sub>cv</sub></em> for an effect, the null hypothesis is rejected for that effect, the alternative hypothesis accepted, and the effect is called statistically significant.</p></div>
+<div data-block_type="txt" id="corty3e-ch12-p125"><p>To find a critical value of <em>F</em> for an <em>F</em> ratio, a researcher needs to decide on the alpha level and know the degrees of freedom for the <em>F</em> ratio. The most commonly used alpha levels for ANOVA are .05 and .01, which correspond to a 5% chance and a 1% chance of making a Type I error. (Type I error occurs when the null hypothesis is erroneously rejected.) Typically, alpha is set at .05. When the consequences of a Type I error are more severe, alpha is set at .01 instead. Dr. Ballard, of course, wants to avoid Type I error, but he can live with a 5% chance of it occurring. So, he sets alpha at .05.</p></div>
+<div data-block_type="txt" id="corty3e-ch12-p126"><p>Now he needs to calculate degrees of freedom both for the numerator and the denominator of the <em>F</em> ratios. The degrees of freedom for the numerator will change from <em>F</em> ratio to <em>F</em> ratio, moving from <em>df</em><sub>Rows</sub> to <em>df</em><sub>Columns</sub> to <em>df</em><sub>Interaction</sub> as a researcher moves from effect to effect. The degrees of freedom for the denominator term for the between-subjects, two-way ANOVA is degrees of freedom within, <em>df</em><sub>Within</sub>, and it will remain so across all three of the hypothesis tests. Formulas for calculating all 4 of the degrees of freedom needed to find the critical values of <em>F</em> are shown in <span data-type="link" data-href="#corty3e-ch12-bx6-2">Equation 12.2</span>. <span data-type="link" data-href="#corty3e-ch12-fig-20">Table 12.9</span> (on page 437) shows how to calculate the other 2 degrees of freedom—between groups degrees of freedom and total degrees of freedom—that will be needed to complete the ANOVA summary table.</p></div>
+<div data-block_type="page_start" id="corty3e_page_435"><p>435</p></div>
+<div data-type="box" data-block_type="eq-t" id="corty3e-ch12-bx6-2"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="corty3e-ch12-bx6-2"><span data-block_type="sec_num">Equation 12.2</span> <span data-block_type="sec_title">Formulas for Calculating Degrees of Freedom for Between-Subjects, Two-Way ANOVA</span>
+</h3>
+
+<div data-block_type="eq" id="corty3e-ch12-p128"><p><em>df</em><sub>Rows</sub> = <em>R</em> – 1</p></div>
+<div data-block_type="eq" id="corty3e-ch12-p129"><p><em>df</em><sub>Columns</sub> = <em>C</em> – 1</p></div>
+<div data-block_type="eq" id="corty3e-ch12-p130"><p><em>df</em><sub>Interaction</sub> = <em>df</em><sub>Rows</sub> × <em>df</em><sub>Columns</sub></p></div>
+<div data-block_type="eq" id="corty3e-ch12-p131"><p><em>df</em><sub>Within</sub> = <em>N</em> – (<em>R</em> × <em>C</em> )</p></div>
+<div data-block_type="eq-txt-ni" id="corty3e-ch12-p132"><p>where <em>df</em><sub>Rows</sub> = degrees of freedom for the row main effect</p></div>
+<div data-block_type="eq-unl" id="corty3e-ch12-p133"><p><em>df</em><sub>Columns</sub> = degrees of freedom for the column main effect</p></div>
+<div data-block_type="eq-unl" id="corty3e-ch12-p134"><p><em>df</em><sub>Interaction</sub> = degrees of freedom for the interaction effect</p></div>
+<div data-block_type="eq-unl" id="corty3e-ch12-p135"><p><em>df</em><sub>Within</sub> = degrees of freedom for the within-group effect</p></div>
+<div data-block_type="eq-unl" id="corty3e-ch12-p136"><p><em>R</em> = number of rows</p></div>
+<div data-block_type="eq-unl" id="corty3e-ch12-p137"><p><em>C</em> = number of columns</p></div>
+<div data-block_type="eq-unl" id="corty3e-ch12-p138"><p><em>N</em> = total number of cases</p></div>
+</div></div>
+<div data-block_type="txt" id="corty3e-ch12-p139"><p>For the caffeine/sleep deprivation study, there are two rows. Here are Dr. Ballard’s calculations for the degrees of freedom for the row main effect:</p></div>
+<div data-block_type="eq" id="corty3e-ch12-p140"><p><em>df</em><sub>Rows</sub> = <em>R</em> – 1</p></div>
+<div data-block_type="eq" id="corty3e-ch12-p141"><p>= 2 – 1</p></div>
+<div data-block_type="eq" id="corty3e-ch12-p142"><p>= 1</p></div>
+<div data-block_type="txt-ni" id="corty3e-ch12-p143"><p>With three columns, his calculations for the degrees of freedom for the column main effect look like this:</p></div>
+<div data-block_type="eq" id="corty3e-ch12-p144"><p><em>df</em><sub>Columns</sub> = <em>C</em> – 1</p></div>
+<div data-block_type="eq" id="corty3e-ch12-p145"><p>= 3 – 1</p></div>
+<div data-block_type="eq" id="corty3e-ch12-p146"><p>= 2</p></div>
+<div data-block_type="txt-ni" id="corty3e-ch12-p147"><p>Once <em>df</em><sub>Rows</sub> and <em>df</em><sub>Columns</sub> are known, it is easy to calculate the numerator degrees of freedom for the interaction effect:</p></div>
+<div data-block_type="eq" id="corty3e-ch12-p148"><p><em>df</em><sub>Interaction</sub> = <em>df</em><sub>Rows</sub> × <em>df</em><sub>Columns</sub></p></div>
+<div data-block_type="eq" id="corty3e-ch12-p149"><p>= 1 × 2</p></div>
+<div data-block_type="eq" id="corty3e-ch12-p150"><p>= 2</p></div>
+<div data-block_type="txt-ni" id="corty3e-ch12-p151"><p>Finally, checking back and seeing that there were 30 cases, Dr. Ballard calculates the degrees of freedom for the within-group effect:</p></div>
+<div data-block_type="eq" id="corty3e-ch12-p152"><p><em>df</em><sub>Within</sub> = <em>N</em> – (<em>R</em> × <em>C</em> )</p></div>
+<div data-block_type="eq" id="corty3e-ch12-p153"><p>= 30 – (2 × 3)</p></div>
+<div data-block_type="eq" id="corty3e-ch12-p154"><p>= 30 – 6</p></div>
+<div data-block_type="eq" id="corty3e-ch12-p155"><p>= 24</p></div>
+<div data-block_type="txt" id="corty3e-ch12-p156"><p>Once all the degrees of freedom have been calculated, they can be used to find the three critical values of <em>F</em> (see <strong><span data-type="link" data-href="#corty3e-ch12-fig-21">Table 12.8</span></strong>). The row main effect has 1 degree of freedom in the numerator, that’s <em>df</em><sub>Rows</sub>, and 24 in the denominator, <em>df</em><sub>Within</sub>. Dr. Ballard looks in <span data-type="link" data-href="corty3e-appendix01.xml#corty3e-app1-fig-10">Appendix Table 4</span>, at the intersection of the column with 1 degree of freedom and the row with 24 degrees of freedom in the <em>F</em> critical values table for α = .05. There, he finds that the critical value of <em>F,</em> with α = .05, is 4.260 for the row main effect: <em>F<sub>cv</sub></em> <sub>Rows</sub> = 4.260.</p></div>
+<div data-type="figure" data-figure-id="corty3e-ch12-fig-21" data-block_type="table" data-layout-align="center" data-layout-width="large" data-layout-border="true">
+
+<img id="" src="asset/ch12/corty3e_table12_08.jpg" data-figure-id="corty3e-ch12-fig-21" data-layout-width="large" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+</div>
+<div data-block_type="page_start" id="corty3e_page_436"><p>436</p></div>
+<div data-block_type="txt" id="corty3e-ch12-p158"><p>Next, he finds the critical value of <em>F</em> for the column main effect. In <span data-type="link" data-href="corty3e-appendix01.xml#corty3e-app1-fig-10">Appendix Table 4</span>, he uses the column with 2 degrees of freedom and the row with 24 degrees of freedom to find that <em>F<sub>cv</sub></em> for the column effect is 3.403: <em>F<sub>cv</sub></em> <sub>Columns</sub> = 3.403. The interaction effect has the same numerator and denominator degrees of freedom as the column effect, 2 and 24. So, the critical value of <em>F</em> for the interaction effect is the same as the column effect: <em>F<sub>cv</sub></em> <sub>Interaction</sub> = 3.403.</p></div>
+<div data-block_type="txt" id="corty3e-ch12-p159"><p>Dr. Ballard can now write the decision rules for the three effects for the caffeine/sleep deprivation study as shown:</p></div>
+<ul data-block_type="bullet" id="corty3e-ch12-list-17">
+<li><div data-block_type="bl-first" id="corty3e-ch12-p160"><p>Row main effect (caffeine)</p></div>
+<ul data-block_type="bluebullet" id="corty3e-ch12-list-18">
+<li><div data-block_type="bl_lvl2" id="corty3e-ch12-p161"><p>If <em>F</em><sub>Rows</sub> ≥ 4.260, reject <em>H</em><sub>0 Rows</sub>.</p></div>
+</li>
+<li><div data-block_type="bl_lvl2" id="corty3e-ch12-p162"><p>If <em>F</em><sub>Rows</sub> &lt; 4.260, fail to reject <em>H</em><sub>0 Rows</sub>.</p></div>
+</li>
+</ul>
+</li>
+<li><div data-block_type="bl-mid" id="corty3e-ch12-p163"><p>Column main effect (sleep deprivation)</p></div>
+<ul data-block_type="bluebullet" id="corty3e-ch12-list-19">
+<li><div data-block_type="bl_lvl2" id="corty3e-ch12-p164"><p>If <em>F</em><sub>Columns</sub> ≥ 3.403, reject <em>H</em><sub>0 Columns</sub>.</p></div>
+</li>
+<li><div data-block_type="bl_lvl2" id="corty3e-ch12-p165"><p>If <em>F</em><sub>Columns</sub> &lt; 3.403, fail to reject <em>H</em><sub>0 Columns</sub>.</p></div>
+</li>
+</ul>
+</li>
+<li><div data-block_type="bl-last" id="corty3e-ch12-p166"><p>Interaction effect</p></div>
+<ul data-block_type="bluebullet" id="corty3e-ch12-list-20">
+<li><div data-block_type="bl_lvl2" id="corty3e-ch12-p167"><p>If <em>F</em><sub>Interaction</sub> ≥ 3.403, reject <em>H</em><sub>0 Interaction</sub>.</p></div>
+</li>
+<li><div data-block_type="bl_lvl2" id="corty3e-ch12-p168"><p>If <em>F</em><sub>Interaction</sub> &lt; 3.403, fail to reject <em>H</em><sub>0 Interaction</sub>.</p></div>
+</li>
+</ul>
+</li>
+</ul>
+<div data-block_type="h4" id="corty3e-ch12-p169"><p><strong><span data-block_type="h4-N-ril">Step 5</span></strong> <strong>Calculate the Test Statistics</strong></p></div>
+<div data-block_type="txt-ni" id="corty3e-ch12-p170"><p>Between-subjects, two-way ANOVA starts the same way between-subjects, one-way ANOVA does. It separates the total variability in a set of scores into between-group variability and within-group variability. Then it goes a step further and separates between-group variability into three subcomponents—variability due to the row effect, variability due to the column effect, and variability due to the interaction effect. Finally, each of these three effects is tested individually with its own <em>F</em> ratio.</p></div>
+<div data-block_type="txt" id="corty3e-ch12-p171"><p>The sources of variability in the data are separated out by calculating sums of squares, as was done for the one-way ANOVA. The sums of squares that need to be calculated are:</p></div>
+<ul data-block_type="bullet" id="corty3e-ch12-list-21">
+<li><div data-block_type="bl-first" id="corty3e-ch12-p172"><p>Sum of squares between groups (<em>SS</em><sub>Between</sub>)</p></div>
+</li>
+<li><div data-block_type="bl-mid" id="corty3e-ch12-p173"><p>Sum of squares rows (<em>SS</em><sub>Rows</sub>)</p></div>
+</li>
+<li><div data-block_type="bl-mid" id="corty3e-ch12-p174"><p>Sum of squares columns (<em>SS</em><sub>Columns</sub>)</p></div>
+</li>
+<li><div data-block_type="bl-mid" id="corty3e-ch12-p175"><p>Sum of squares interaction (<em>SS</em><sub>Interaction</sub>)</p></div>
+</li>
+<li><div data-block_type="bl-mid" id="corty3e-ch12-p176"><p>Sum of squares within groups (<em>SS</em><sub>Within</sub>)</p></div>
+</li>
+<li><div data-block_type="bl-last" id="corty3e-ch12-p177"><p>Sum of squares total (<em>SS</em><sub>Total</sub>)</p></div>
+</li>
+</ul>
+<div data-block_type="page_start" id="corty3e_page_437"><p>437</p></div>
+<div data-block_type="txt" id="corty3e-ch12-p179"><p>Remember that a sum of squares in an ANOVA is a sum of squared deviation scores (see <span data-type="link" data-href="corty3e-ch11.xml">Chapter 11</span>). What scores are used and what mean is subtracted from them vary depending on the source of variability being calculated. The sums of squares are arranged in an ANOVA summary table, <strong><span data-type="link" data-href="#corty3e-ch12-fig-20">Table 12.9</span>,</strong> along with the formulas to complete the other necessary values. Note that the same columns that were used for a one-way and repeated-measures ANOVA summary table—source of variability, sum of squares, degrees of freedom, mean square, and <em>F</em> ratio—are present in the same order in the summary table for the two-way ANOVA. But, the sources of variability are different. Making sure that the correct order is followed for the rows and columns in an ANOVA summary table is key to completing an ANOVA. The three effects that are being tested fall under the between-groups effect. Note how they are indented in our table to show that they are derived from the between-groups effect.</p></div>
+<div data-type="figure" data-figure-id="corty3e-ch12-fig-20" data-block_type="table" data-layout-align="center" data-layout-width="large" data-layout-border="true">
+
+<img id="" src="asset/ch12/corty3e_table12_09.jpg" data-figure-id="corty3e-ch12-fig-20" data-layout-width="large" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+</div>
+<div data-block_type="txt" id="corty3e-ch12-p180"><p>Here are the sums of squares for the row effect, the column effect, the interaction effect, and for within-group variability for the caffeine/sleep deprivation study (formulas for calculating sums of squares for a two-way ANOVA are given in an appendix to this chapter):</p></div>
+<ul data-block_type="bullet" id="corty3e-ch12-list-22">
+<li><div data-block_type="bl-first" id="corty3e-ch12-p181"><p><em>SS</em><sub>Rows</sub> = 3,630.00</p></div>
+</li>
+<li><div data-block_type="bl-mid" id="corty3e-ch12-p182"><p><em>SS</em><sub>Between</sub> = 5,950.00</p></div>
+</li>
+<li><div data-block_type="bl-mid" id="corty3e-ch12-p183"><p><em>SS</em><sub>Columns</sub> = 1,340.00</p></div>
+</li>
+<li><div data-block_type="bl-mid" id="corty3e-ch12-p184"><p><em>SS</em><sub>Interaction</sub> = 980.00</p></div>
+</li>
+<li><div data-block_type="bl-mid" id="corty3e-ch12-p185"><p><em>SS</em><sub>Within</sub> = 748.00</p></div>
+</li>
+<li><div data-block_type="bl-last" id="corty3e-ch12-p186"><p><em>SS</em><sub>Total</sub> = 6,698.00</p></div>
+</li>
+</ul>
+<div data-block_type="page_start" id="corty3e_page_438"><p>438</p></div>
+<div data-block_type="txt" id="corty3e-ch12-p188"><p><span data-type="link" data-href="#corty3e-ch12-bx6-2">Equation 12.2</span> has already been used to calculate four degrees of freedom—rows, columns, interaction, and within. <span data-type="link" data-href="#corty3e-ch12-fig-20">Table 12.9</span> shows how to calculate the other two degrees of freedom—between groups and total. Between-groups variability is broken down into variability for rows, columns, and interaction, so degrees of freedom between groups, <em>df</em><sub>Between</sub>, is found by adding up <em>df</em><sub>Rows</sub>, <em>df</em><sub>Columns</sub>, and <em>df</em><sub>Interaction</sub>. For the caffeine/sleep deprivation study, this is</p></div>
+<div data-block_type="eq" id="corty3e-ch12-p189"><p><em>df</em><sub>Between</sub> = <em>df</em><sub>Rows</sub> + <em>df</em><sub>Columns</sub> + <em>df</em><sub>Interaction</sub></p></div>
+<div data-block_type="eq" id="corty3e-ch12-p190"><p>= 1 + 2 + 2</p></div>
+<div data-block_type="eq" id="corty3e-ch12-p191"><p>= 5</p></div>
+<div data-block_type="txt" id="corty3e-ch12-p192"><p>As shown in <span data-type="link" data-href="#corty3e-ch12-fig-20">Table 12.9</span>, the degrees of freedom total, <em>df</em><sub>Total</sub>, is calculated by subtracting 1 from the total number of subjects:</p></div>
+<div data-block_type="eq" id="corty3e-ch12-p193"><p><em>df</em><sub>Total</sub> = <em>N</em> – 1</p></div>
+<div data-block_type="eq" id="corty3e-ch12-p194"><p>= 30 – 1</p></div>
+<div data-block_type="eq" id="corty3e-ch12-p195"><p>= 29</p></div>
+<div data-block_type="txt" id="corty3e-ch12-p196"><p>The next step is to calculate mean squares for rows, columns, interaction, and within groups. Following the instructions in <span data-type="link" data-href="#corty3e-ch12-fig-20">Table 12.9</span>:</p></div>
+<div data-block_type="equation" id="corty3e-ch12-eqn-7"><p>
+<img id="" src="asset/ch12/corty3e_eqn11_438_01.jpg" data-figure-id="" data-layout-width="" data-mmtype="" alt="image"></p></div>
+<div data-block_type="equation" id="corty3e-ch12-eqn-8"><p>
+<img id="" src="asset/ch12/corty3e_eqn11_438_02.jpg" data-figure-id="" data-layout-width="" data-mmtype="" alt="image"></p></div>
+<div data-block_type="equation" id="corty3e-ch12-eqn-9"><p>
+<img id="" src="asset/ch12/corty3e_eqn11_438_03.jpg" data-figure-id="" data-layout-width="" data-mmtype="" alt="image"></p></div>
+<div data-block_type="equation" id="corty3e-ch12-eqn-10"><p>
+<img id="" src="asset/ch12/corty3e_eqn11_438_04.jpg" data-figure-id="" data-layout-width="" data-mmtype="" alt="image"></p></div>
+<div data-block_type="page_start" id="corty3e_page_439"><p>439</p></div>
+<div data-block_type="txt" id="corty3e-ch12-p198"><p>As directed in <span data-type="link" data-href="#corty3e-ch12-fig-20">Table 12.9</span>, Dr. Ballard finds the three <em>F</em> ratios by dividing the mean squares for the row main effect, the column main effect, and the interaction effect by the mean square for within-group variability:</p></div>
+<div data-block_type="equation" id="corty3e-ch12-eqn-11"><p>
+<img id="" src="asset/ch12/corty3e_eqn11_439_01.jpg" data-figure-id="" data-layout-width="" data-mmtype="" alt="image"></p></div>
+<div data-block_type="equation" id="corty3e-ch12-eqn-12"><p>
+<img id="" src="asset/ch12/corty3e_eqn11_439_02.jpg" data-figure-id="" data-layout-width="" data-mmtype="" alt="image"></p></div>
+<div data-block_type="equation" id="corty3e-ch12-eqn-13"><p>
+<img id="" src="asset/ch12/corty3e_eqn11_439_03.jpg" data-figure-id="" data-layout-width="" data-mmtype="" alt="image"></p></div>
+<div data-block_type="txt" id="corty3e-ch12-p199"><p>With all the <em>F</em> ratios calculated, the ANOVA summary table is complete (see <strong><span data-type="link" data-href="#corty3e-ch12-fig-29">Table 12.10</span></strong>). We’ll come back to see how the results are interpreted after getting more practice with calculations.</p></div>
+<div data-type="figure" data-figure-id="corty3e-ch12-fig-29" data-block_type="table" data-layout-align="center" data-layout-width="large" data-layout-border="true">
+
+<img id="" src="asset/ch12/corty3e_table12_10.jpg" data-figure-id="corty3e-ch12-fig-29" data-layout-width="large" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+</div>
+<div data-block_type="page_start" id="corty3e_page_440"><p>440</p></div>
+<div data-type="box" data-block_type="sr-exp-n" id="corty3e-ch12-bx3-2"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="corty3e-ch12-bx3-2">Worked Example 12.2</h3>
+<div data-block_type="sr_exp_txt_ni" id="corty3e-ch12-p201"><p>The question “What makes relationships work?” fills the covers of supermarket magazines, but it also interests research psychologists. Dr. Larue, a social psychologist, conducted a study to investigate two variables that she believed were associated with relationship satisfaction. The variables were (1) arguing style and (2) type of parental relationship model.</p></div>
+<div data-block_type="sr_exp_txt" id="corty3e-ch12-p202"><p>Dr. Larue found college seniors who were in serious relationships and assessed their ability to argue in a positive or negative way. People who argue positively don’t become threatened or defensive, don’t attack their partners, and help arguments reach a successful conclusion that is satisfactory to both sides. Dr. Larue classified students as positive arguers, mixed arguers, or negative arguers.</p></div>
+<div data-block_type="sr_exp_txt" id="corty3e-ch12-p203"><p>Dr. Larue also asked these students to rate the quality of their parents’ marriage as being good, average, or bad. With three levels of parental marital quality and three levels of arguing style, there were nine cells in Dr. Larue’s design. Dr. Larue randomly selected eight students from each cell. That is, there were eight who perceived their parents’ marriages as good and who were positive arguers, eight who rated their parents’ marriages as good and who had a mixed arguing style, and so on. With nine cells and eight participants per cell, Dr. Larue had a total of 72 participants.</p></div>
+<div data-block_type="sr_exp_txt" id="corty3e-ch12-p204"><p>Dr. Larue then measured the second grouping variable by asking each student to rate his or her satisfaction with his or her current relationship. (Dr. Larue made sure that no one in the study was in a relationship with someone else in the study.) The interval-level satisfaction scores could range from a low of 5 to a high of 35.</p></div>
+<div data-block_type="sr_exp_txt" id="corty3e-ch12-p205"><p><strong><span data-type="link" data-href="#corty3e-ch12-fig-30">Table 12.11</span></strong> shows the mean (and standard deviation) for each cell, as well as the row means and the column means. <strong><span data-type="link" data-href="#corty3e-ch12-fig-30">Figure 12.6</span></strong> displays the data graphically. Looking at <span data-type="link" data-href="#corty3e-ch12-fig-30">Figure 12.6</span> and <span data-type="link" data-href="#corty3e-ch12-fig-30">Table 12.11</span> together, there are three things to note:</p></div>
+<div data-type="figure" data-figure-id="corty3e-ch12-fig-31" data-block_type="table" data-layout-align="center" data-layout-width="large" data-layout-border="true">
+
+<img id="" src="asset/ch12/corty3e_table12_11.jpg" data-figure-id="corty3e-ch12-fig-31" data-layout-width="large" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+</div>
+<div data-type="figure" data-figure-id="corty3e-ch12-fig-30" data-block_type="figure" data-layout-align="center" data-layout-width="large" data-layout-border="true">
+
+<img id="" src="asset/ch12/corty3e_fig12_06.jpg" data-figure-id="corty3e-ch12-fig-30" data-layout-width="large" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+<div data-type="figure_text">
+<span data-type="number">Figure 12.17: </span><span data-type="caption"><strong><span data-block_type="fig_num">Figure 12.6</span> Impact of Arguing Style and Perception of Parental Marriage on Relationship Satisfaction</strong> This graph shows a main effect of arguing style and a main effect of perception of parents’ marriage on relationship satisfaction. The lines are parallel, so there is no interaction between the two grouping variables.</span>
+</div>
+</div>
+<ol data-block_type="ordered" id="corty3e-ch12-list-4b">
+<li><div data-block_type="sr_exp_nl" id="corty3e-ch12-p206"><p>It appears that there is a row main effect for arguing style. Mean satisfaction scores decrease as the amount of negative arguing increases, from 27.92 for positive arguers, to 21.25 for mixed arguers, and 16.00 for negative arguers.</p></div>
+</li>
+<li><div data-block_type="sr_exp_nl" id="corty3e-ch12-p207"><p>It appears that there is a column main effect for perceived quality of parental marriage. Mean satisfaction scores decrease as the perception of parental marriage becomes more negative, from 24.42 for those with a positive perception, to 22.08 for those with an average perception, and down to 18.67 for those with a negative perception.</p></div>
+<div data-block_type="page_start" id="corty3e_page_441"><p>441</p></div>
+</li>
+<li><div data-block_type="sr_exp_nl" id="corty3e-ch12-p209"><p>The three lines are parallel, so there appears to be no interaction between arguing style and quality of parental marriage on relationship satisfaction. Of course, Dr. Larue needs to do a statistical test to see if her observations pan out statistically.</p></div>
+</li>
+</ol>
+<div data-block_type="sr_exp_h4_txt" id="corty3e-ch12-p210"><p><span data-block_type="sr-exp-h4-n-ni"><strong>Step 1</strong></span> <span data-block_type="sr-exp-h4-t-ri"><strong>Pick a Test.</strong></span> There are two grouping variables (arguing style and parental marriage). Each grouping variable has three levels (positive, mixed, and negative arguing style; good, average, or bad parental marriage). When three levels of arguing style are crossed with three levels of parental marriage, this forms nine groups. Each case is in just one group and each case is not paired with another case, so the groups are all independent. That means this is a between-subjects design. Comparing the means of groups defined by two grouping variables and of groups that are independent samples calls for a between-subjects, two-way ANOVA. Specifically, this is a 3 × 3 ANOVA.</p></div>
+<div data-block_type="sr_exp_h4_txt" id="corty3e-ch12-p211"><p><span data-block_type="sr-exp-h4-n-ni"><strong>Step 2</strong></span> <span data-block_type="sr-exp-h4-t-ri"><strong>Check the Assumptions.</strong></span></p></div>
+<ul data-block_type="bullet" id="corty3e-ch12-list-23">
+<li><div data-block_type="sr_exp_bl" id="corty3e-ch12-p212"><p><em>Random samples</em>. The cases used in this study are random samples from the populations of seniors at Dr. Larue’s university who are in relationships and fit in one of the nine cells. This assumption is not violated as long as that is the population to which she wishes to generalize her results.</p></div>
+</li>
+<li><div data-block_type="sr_exp_bl" id="corty3e-ch12-p213"><p><em>Independence of observations</em>. No person in the study was in a relationship with anyone else in the study, so this assumption is not violated.</p></div>
+</li>
+<li><div data-block_type="sr_exp_bl" id="corty3e-ch12-p214"><p><em>Normality</em>. Dr. Larue is willing to assume that relationship satisfaction is normally distributed within each of the nine populations represented here. Therefore, this assumption is not violated.</p></div>
+</li>
+<li><div data-block_type="sr_exp_bl" id="corty3e-ch12-p215"><p><em>Homogeneity of variance</em>. The standard deviations for all nine groups are shown in <span data-type="link" data-href="#corty3e-ch12-fig-30">Table 12.11</span> and they are all about the same. No standard deviation is twice another, so this assumption is not violated.</p></div>
+</li>
+</ul>
+<div data-block_type="sr_exp_txt_ni" id="corty3e-ch12-p216"><p>Dr. Larue can proceed with the planned statistical test.</p></div>
+<div data-block_type="page_start" id="corty3e_page_442"><p>442</p></div>
+<div data-block_type="sr_exp_h4_txt" id="corty3e-ch12-p218"><p><span data-block_type="sr-exp-h4-n-ni"><strong>Step 3</strong></span> <span data-block_type="sr-exp-h4-t-ri"><strong>List the Hypotheses.</strong></span> There are three hypotheses in a two-way ANOVA: one for the row main effect (arguing style), one for the column main effect (parental marriage quality), and one for the interaction effect (arguing style × parental marriage quality).</p></div>
+<ul data-block_type="bullet" id="corty3e-ch12-list-24">
+<li><div data-block_type="sr_exp_bl" id="corty3e-ch12-p219"><p>Row main effect:</p></div>
+<div data-block_type="sr-exp-eq" id="corty3e-ch12-p220"><p><em>H</em><sub>0 Rows</sub>: μ<sub>Row1</sub> = μ<sub>Row2</sub> = μ<sub>Row3</sub></p></div>
+<div data-block_type="sr-exp-eq" id="corty3e-ch12-p221"><p><em>H</em><sub>1 Rows</sub>: At least one row population mean is different from at least one other.</p></div>
+</li>
+<li><div data-block_type="sr_exp_bl" id="corty3e-ch12-p222"><p>Column main effect:</p></div>
+<div data-block_type="sr-exp-eq" id="corty3e-ch12-p223"><p><em>H</em><sub>0 Columns</sub>: μ<sub>Column1</sub> = μ<sub>Column2</sub> = μ<sub>Column3</sub></p></div>
+<div data-block_type="sr-exp-eq" id="corty3e-ch12-p224"><p><em>H</em><sub>1 Columns</sub>: At least one column population mean is different from at least one other.</p></div>
+</li>
+<li><div data-block_type="sr_exp_bl" id="corty3e-ch12-p225"><p>Interaction effect:</p></div>
+<div data-block_type="sr-exp-eq" id="corty3e-ch12-p226"><p><em>H</em><sub>0 Interaction</sub>: There is no interactive effect of the two grouping variables on the dependent variable in the population.</p></div>
+<div data-block_type="sr-exp-eq" id="corty3e-ch12-p227"><p><em>H</em><sub>1 Interaction</sub>: The two grouping variables interact to affect the dependent variable in at least one cell in the population.</p></div>
+</li>
+</ul>
+<div data-block_type="sr_exp_h4_txt" id="corty3e-ch12-p228"><p><span data-block_type="sr-exp-h4-n-ni"><strong>Step 4</strong></span> <span data-block_type="sr-exp-h4-t-ri"><strong>Set the Decision Rules.</strong></span> Setting the decision rules requires deciding on an alpha level and knowing the degrees of freedom for the numerator and the degrees of freedom for the denominator for each of the three effects being tested. Dr. Larue is comfortable having a 5% chance of Type I error, so she sets alpha at .05.</p></div>
+<div data-block_type="sr_exp_txt" id="corty3e-ch12-p229"><p>Next, to calculate degrees of freedom, she needs to know <em>R</em> (the number of rows), <em>C</em> (the number of columns), and <em>N</em> (the total number of cases):</p></div>
+<ul data-block_type="bullet" id="corty3e-ch12-list-25">
+<li><div data-block_type="sr-exp-bl-first" id="corty3e-ch12-p230"><p><em>R</em> = 3 (There are three levels of arguing style.)</p></div>
+</li>
+<li><div data-block_type="sr-exp-bl-mid" id="corty3e-ch12-p231"><p><em>C</em> = 3 (There are three levels of parental marriage quality.)</p></div>
+</li>
+<li><div data-block_type="sr-exp-bl-last" id="corty3e-ch12-p232"><p><em>N</em> = 72 (Each cell has eight cases and there are nine cells: 8 × 9 = 72.)</p></div>
+</li>
+</ul>
+<div data-block_type="sr_exp_txt_ni" id="corty3e-ch12-p233"><p>Using <span data-type="link" data-href="#corty3e-ch12-bx6-2">Equation 12.2</span>, Dr. Larue calculates the various degrees of freedom:</p></div>
+<div data-block_type="sr-exp-eq" id="corty3e-ch12-p234"><p><em>df</em><sub>Rows</sub> = <em>R</em> – 1</p></div>
+<div data-block_type="sr-exp-eq" id="corty3e-ch12-p235"><p>= 3 – 1</p></div>
+<div data-block_type="sr-exp-eq" id="corty3e-ch12-p236"><p>= 2</p></div>
+<div data-block_type="sr-exp-eq" id="corty3e-ch12-p237"><p><em>df</em><sub>Columns</sub> = <em>C</em> – 1</p></div>
+<div data-block_type="sr-exp-eq" id="corty3e-ch12-p238"><p>= 3 – 1</p></div>
+<div data-block_type="sr-exp-eq" id="corty3e-ch12-p239"><p>= 2</p></div>
+<div data-block_type="sr-exp-eq" id="corty3e-ch12-p240"><p><em>df</em><sub>Interaction</sub> = <em>df</em><sub>Rows</sub> × <em>df</em><sub>Columns</sub></p></div>
+<div data-block_type="sr-exp-eq" id="corty3e-ch12-p241"><p>= 2 × 2</p></div>
+<div data-block_type="sr-exp-eq" id="corty3e-ch12-p242"><p>= 4</p></div>
+<div data-block_type="sr-exp-eq" id="corty3e-ch12-p243"><p><em>df</em><sub>Within</sub> = <em>N</em> – (<em>R</em> × <em>C</em>)</p></div>
+<div data-block_type="sr-exp-eq" id="corty3e-ch12-p244"><p>= 72 – (3 × 3)</p></div>
+<div data-block_type="sr-exp-eq" id="corty3e-ch12-p245"><p>= 72 – 9</p></div>
+<div data-block_type="sr-exp-eq" id="corty3e-ch12-p246"><p>63</p></div>
+<div data-block_type="page_start" id="corty3e_page_443"><p>443</p></div>
+<div data-block_type="sr_exp_txt" id="corty3e-ch12-p248"><p><span data-type="link" data-href="#corty3e-ch12-fig-21">Table 12.8</span> offers guidance as to which source provides the numerator and denominator degrees of freedom for each effect. The critical value of <em>F</em> for the main effect of rows has 2 degrees of freedom in the numerator (<em>df</em><sub>Rows</sub>) and 63 degrees of freedom in the denominator (<em>df</em><sub>Within</sub>). Looking in <span data-type="link" data-href="corty3e-appendix01.xml#corty3e-app1-fig-10">Appendix Table 4</span> at the intersection of the column with 2 degrees of freedom and the row with 63 degrees of freedom, Dr. Larue discovers no such row exists. In these situations, apply <em>The Price Is Right</em> rule and use the degrees of freedom value that is closest without going over. Here, that is 60, which makes <em>F<sub>cv</sub></em> <sub>Rows</sub> = 3.150.</p></div>
+<div data-block_type="sr_exp_txt" id="corty3e-ch12-p249"><p>This study has the same degrees of freedom for the numerator and the denominator for the column main effect, 2 and 63. This means <em>F<sub>cv</sub></em> <sub>Columns</sub> = 3.150.</p></div>
+<div data-block_type="sr_exp_txt" id="corty3e-ch12-p250"><p>The degrees of freedom for the numerator for the interaction effect (<em>df</em><sub>Interaction</sub>) are 4 and the denominator degrees of freedom (<em>df</em><sub>Within</sub>) are 63. Using Table 4 in the Appendix and <em>The Price Is Right</em> rule, <em>F<sub>cv</sub></em> <sub>Interaction</sub> = 2.525.</p></div>
+<div data-block_type="sr_exp_txt" id="corty3e-ch12-p251"><p>Here are Dr. Larue’s three decision rules:</p></div>
+<ul data-block_type="bullet" id="corty3e-ch12-list-26">
+<li><div data-block_type="sr-exp-bl-first" id="corty3e-ch12-p252"><p>Main effect of rows:</p></div>
+<ul data-block_type="bluebullet" id="corty3e-ch12-list-27">
+<li><div data-block_type="sr_exp_bl_lvl2" id="corty3e-ch12-p253"><p>If <em>F</em><sub>Rows</sub> ≥ 3.150, reject <em>H</em><sub>0 Rows</sub>.</p></div>
+</li>
+<li><div data-block_type="sr_exp_bl_lvl2" id="corty3e-ch12-p254"><p>If <em>F</em><sub>Rows</sub> &lt; 3.150, fail to reject <em>H</em><sub>0 Rows</sub>.</p></div>
+</li>
+</ul>
+</li>
+<li><div data-block_type="sr-exp-bl-mid" id="corty3e-ch12-p255"><p>Main effect of columns:</p></div>
+<ul data-block_type="bluebullet" id="corty3e-ch12-list-28">
+<li><div data-block_type="sr_exp_bl_lvl2" id="corty3e-ch12-p256"><p>If <em>F</em><sub>Columns</sub> ≥ 3.150, reject <em>H</em><sub>0 Columns</sub>.</p></div>
+</li>
+<li><div data-block_type="sr_exp_bl_lvl2" id="corty3e-ch12-p257"><p>If <em>F</em><sub>Columns</sub> &lt; 3.150, fail to reject <em>H</em><sub>0 Columns</sub>.</p></div>
+</li>
+</ul>
+</li>
+<li><div data-block_type="sr-exp-bl-last" id="corty3e-ch12-p258"><p>Interaction effect:</p></div>
+<ul data-block_type="bluebullet" id="corty3e-ch12-list-29">
+<li><div data-block_type="sr_exp_bl_lvl2" id="corty3e-ch12-p259"><p>If <em>F</em><sub>Interaction</sub> ≥ 2.525, reject <em>H</em><sub>0 Interaction</sub>.</p></div>
+</li>
+<li><div data-block_type="sr_exp_bl_lvl2" id="corty3e-ch12-p260"><p>If <em>F</em><sub>Interaction</sub> &lt; 2.525, fail to reject <em>H</em><sub>0 Interaction</sub>.</p></div>
+</li>
+</ul>
+</li>
+</ul>
+<div data-block_type="sr_exp_h4_txt" id="corty3e-ch12-p261"><p><span data-block_type="sr-exp-h4-n-ni"><strong>Step 5</strong></span> <span data-block_type="sr-exp-h4-t-ri"><strong>Calculate the Test Statistics.</strong></span> Here are the sums of squares for Dr. Larue’s study, derived from the formulas provided in the chapter appendix:</p></div>
+<ul data-block_type="bullet" id="corty3e-ch12-list-30">
+<li><div data-block_type="sr-exp-bl-first" id="corty3e-ch12-p262"><p><em>SS</em><sub>Between</sub> = 2,117.00</p></div>
+</li>
+<li><div data-block_type="sr-exp-bl-mid" id="corty3e-ch12-p263"><p><em>SS</em><sub>Rows</sub> = 1,712.00</p></div>
+</li>
+<li><div data-block_type="sr-exp-bl-mid" id="corty3e-ch12-p264"><p><em>SS</em><sub>Columns</sub> = 401.00</p></div>
+</li>
+<li><div data-block_type="sr-exp-bl-mid" id="corty3e-ch12-p265"><p><em>SS</em><sub>Interaction</sub> = 4.00</p></div>
+</li>
+<li><div data-block_type="sr-exp-bl-mid" id="corty3e-ch12-p266"><p><em>SS</em><sub>Within</sub> = 469.00</p></div>
+</li>
+<li><div data-block_type="sr-exp-bl-last" id="corty3e-ch12-p267"><p><em>SS</em><sub>Total</sub> = 2,586.00</p></div>
+</li>
+</ul>
+<div data-block_type="sr_exp_txt" id="corty3e-ch12-p268"><p>Dr. Larue has already calculated degrees of freedom for rows, columns, interaction, and within groups (2, 2, 4, and 63, respectively), so she can now calculate degrees of freedom for between groups and total degrees of freedom as directed by <span data-type="link" data-href="#corty3e-ch12-fig-20">Table 12.9</span>:</p></div>
+<div data-block_type="sr-exp-eq" id="corty3e-ch12-p269"><p><em>df</em><sub>Between</sub> = <em>df</em><sub>Rows</sub> + <em>df</em><sub>Columns</sub> + <em>df</em><sub>Interaction</sub></p></div>
+<div data-block_type="sr-exp-eq" id="corty3e-ch12-p270"><p>= 2 + 2 + 4</p></div>
+<div data-block_type="sr-exp-eq" id="corty3e-ch12-p271"><p>= 8</p></div>
+<div data-block_type="sr-exp-eq" id="corty3e-ch12-p272"><p><em>df</em><sub>Total</sub> = <em>N</em> – 1</p></div>
+<div data-block_type="sr-exp-eq" id="corty3e-ch12-p273"><p>= 72 – 1</p></div>
+<div data-block_type="sr-exp-eq" id="corty3e-ch12-p274"><p>= 71</p></div>
+<div data-block_type="page_start" id="corty3e_page_444"><p>444</p></div>
+<div data-block_type="sr_exp_txt" id="corty3e-ch12-p276"><p>The next step is the calculation of the four mean squares. To do this, Dr. Larue divides each of the four sums of squares by its degrees of freedom:</p></div>
+<div data-block_type="equation" id="corty3e-ch12-eqn-14"><p>
+<img id="" src="asset/ch12/corty3e_eqn11_444_01.jpg" data-figure-id="" data-layout-width="" data-mmtype="" alt="image"></p></div>
+<div data-block_type="equation" id="corty3e-ch12-eqn-15"><p>
+<img id="" src="asset/ch12/corty3e_eqn11_444_02.jpg" data-figure-id="" data-layout-width="" data-mmtype="" alt="image"></p></div>
+<div data-block_type="equation" id="corty3e-ch12-eqn-16"><p>
+<img id="" src="asset/ch12/corty3e_eqn11_444_03.jpg" data-figure-id="" data-layout-width="" data-mmtype="" alt="image"></p></div>
+<div data-block_type="equation" id="corty3e-ch12-eqn-17"><p>
+<img id="" src="asset/ch12/corty3e_eqn11_444_04.jpg" data-figure-id="" data-layout-width="" data-mmtype="" alt="image"></p></div>
+<div data-block_type="sr_exp_txt" id="corty3e-ch12-p277"><p>Once the four mean squares have been calculated, all that is left is to find the three <em>F</em> ratios. To do this, Dr. Larue divides each of the mean squares—rows, columns, and interaction—by the mean square within groups:</p></div>
+<div data-block_type="equation" id="corty3e-ch12-eqn-18"><p>
+<img id="" src="asset/ch12/corty3e_eqn11_444_05.jpg" data-figure-id="" data-layout-width="" data-mmtype="" alt="image"></p></div>
+<div data-block_type="equation" id="corty3e-ch12-eqn-19"><p>
+<img id="" src="asset/ch12/corty3e_eqn11_444_06.jpg" data-figure-id="" data-layout-width="" data-mmtype="" alt="image"></p></div>
+<div data-block_type="page_start" id="corty3e_page_445"><p>445</p></div>
+<div data-block_type="equation" id="corty3e-ch12-eqn-20"><p>
+<img id="" src="asset/ch12/corty3e_eqn11_445_01.jpg" data-figure-id="" data-layout-width="" data-mmtype="" alt="image"></p></div>
+<div data-block_type="sr_exp_txt" id="corty3e-ch12-p279"><p>The completed ANOVA summary table is shown in <strong><span data-type="link" data-href="#corty3e-ch12-fig-39">Table 12.12</span></strong>. How to interpret the results found in a summary table is the next order of business.</p></div>
+<div data-type="figure" data-figure-id="corty3e-ch12-fig-39" data-block_type="table" data-layout-align="center" data-layout-width="large" data-layout-border="true">
+
+<img id="" src="asset/ch12/corty3e_table12_12.jpg" data-figure-id="corty3e-ch12-fig-39" data-layout-width="large" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+</div>
+</div></div>
+<div data-type="box" data-block_type="sr-h" id="corty3e-ch12-bx2-2"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="corty3e-ch12-bx2-2">Practice Problems 12.2</h3>
+<div data-block_type="sr-h1" id="corty3e-ch12-p280"><p><strong>Apply Your Knowledge</strong></p></div>
+<div data-block_type="sr-que-nl" id="corty3e-ch12-p281"><p><span data-block_type="question_num">12.04</span> Read each scenario and decide what statistical test should be used. Select from a single-sample <em>z</em> test; single-sample <em>t</em> test; independent-samples <em>t</em> test; paired-samples <em>t</em> test; between-subjects, one-way ANOVA; one-way, repeated-measures ANOVA; and between-subjects, two-way ANOVA.</p></div>
+<ol data-block_type="loweralpha" id="corty3e-ch12-list-4c">
+<li><div data-block_type="sr_que_nl_lvl2" id="corty3e-ch12-p282"><p>People who are classified as (1) overweight, (2) normal weight, or (3) underweight are randomly assigned to drink either (1) regular soda, (2) diet soda, or (3) water. Thirty minutes later they indicate, on an interval scale, how thirsty they are.</p></div>
+</li>
+<li><div data-block_type="sr_que_nl_lvl2" id="corty3e-ch12-p283"><p>Backpacks of elementary school students, middle school students, and high school students are weighed to see if there are differences in how heavy they are.</p></div>
+</li>
+</ol>
+<div data-block_type="sr-que-nl" id="corty3e-ch12-p284"><p><span data-block_type="question_num">12.05</span> List the hypotheses for a between-subjects, two-way ANOVA in which there are four rows and three columns.</p></div>
+<div data-block_type="sr-que-nl" id="corty3e-ch12-p285"><p><span data-block_type="question_num">12.06</span> Given <em>df</em><sub>Rows</sub> = 2, <em>df</em><sub>Columns</sub> = 4, <em>df</em><sub>Interaction</sub> = 8, and <em>df</em><sub>Within</sub> = 165, list the critical values of <em>F</em> for the three <em>F</em> ratios for a between-subjects, two-way ANOVA for α = .05.</p></div>
+<div data-block_type="sr-que-nl" id="corty3e-ch12-p286"><p><span data-block_type="question_num">12.07</span> Given <em>n</em> = 7, <em>R</em> = 2, <em>C</em> = 2, <em>SS</em><sub>Between</sub> = 650.00, <em>SS</em><sub>Rows</sub> = 250.00, <em>SS</em><sub>Columns</sub> = 300.00, <em>SS</em><sub>Interaction</sub> = 100.00, <em>SS</em><sub>Within</sub> = 800.00, and <em>SS</em><sub>Total</sub> = 1,450.00, complete an ANOVA summary table for a between-subjects, two-way ANOVA.</p></div>
+</div></div>
+</div>
+<!-- #x-digfir-subsection-insertion-point --></div><!-- /#manuscript -->
+<br class="clear" />
+<!-- end of material in original view -->
+
+	<!--[if IE]><script type="text/javascript" src="js/excanvas.compiled.js"></script><![endif]-->
+    
+<script type="text/javascript" src="js/utilities.js"></script>
+<script type="text/javascript" src="js/query_types.js"></script>
+<script type="text/javascript" src="js/player.js"></script>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/jquery-ui-1.8.16.custom.min.js"></script>
+<script type="text/javascript" src="js/jquery_extensions.js"></script>
+<script type="text/javascript" src="js/swfobject.js"></script>
+<script type="text/javascript" src="http://admin.brightcove.com/js/BrightcoveExperiences.js"></script>
+<script type="text/javascript" src="js/digfir_ebook_fw.js"></script>
+<script type="text/javascript" src="js/corty3e.js"></script>
+<script type="text/javascript" src="js/corty3e_ch12.js"></script>
+<script type="text/javascript">
+    //<!--
+    
+$(window).ready(function () {
+	player.initialize('56d62d49757a2e4546000005');
+});
+    //-->
+</script>
+</body>
+</html>
+

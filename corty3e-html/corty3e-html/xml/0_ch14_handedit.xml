@@ -1,0 +1,589 @@
+<chapter number="14" id="corty3e-ch14-chapter-14" title="14 Simple and Multiple Linear Regression" start-numbering-at="14" numbered="true">
+<section id="corty3e-ch14-sec1-1a" block_type="intro" title="Chapter Introduction" numbered="false" level="1" print_page="539">
+<p id="corty3e_page_539" block_type="page_start">539</p>
+<p id="corty3e-ch14-p1" block_type="chapter_number">14</p>
+<p id="corty3e-ch14-p2" block_type="chapter_title">Simple and Multiple Linear Regression</p>
+<box numbered="false" id="corty3e-ch14-ibx-1" block_type="intro_box">
+<p id="corty3e-ch14-p3" block_type="obj-h"><strong>LEARNING OBJECTIVES</strong></p>
+<list id="corty3e-ch14-list-1" type="unordered" block_type="bluesquare">
+<li><p id="corty3e-ch14-p4" block_type="obj-bl">Calculate and apply a linear regression equation.</p></li>
+<li><p id="corty3e-ch14-p5" block_type="obj-bl">Measure uncertainty in regression predictions.</p></li>
+<li><p id="corty3e-ch14-p6" block_type="obj-bl">Describe how multiple regression works.</p></li>
+</list>
+<p id="corty3e-ch14-p7" block_type="obj-h"><strong>CHAPTER OVERVIEW</strong></p>
+<p id="corty3e-ch14-p11" block_type="co-txt-ni">Psychology, the study of behavior and mental processes, has four goals. The first goal is to <em>describe</em> behavior and mental processes, and the second goal is to <em>understand</em> what causes them. If the causes are known, then the third goal is <em>predicting</em> how an organism will behave, think, or feel. Accurate predictions help with the fourth goal, <em>influencing</em> how an organism behaves, thinks, or feels.</p>
+<p id="corty3e-ch14-p12" block_type="co-txt">The difference between the second goal (understanding) and third goal (predicting) is the same as the difference between correlation (<link href="corty3e-ch13.xml">Chapter 13</link>) and regression (this chapter). Correlation is about finding associations between variables, about understanding how one variable relates to another variable. This chapter, on regression, looks at the procedure for predicting one variable from the other variable. The procedure is called linear regression, and it is used to make statements like, &#8220;A person with 18 years of education is predicted to earn an annual salary of &#36;72,000.&#8221;</p>
+<box numbered="false" id="corty3e-ch14-exp2-1" block_type="mn2">
+<p id="corty3e-ch14-p8" block_type="co-toc-h1-t"><link href="corty3e-ch14.xml#corty3e-ch14-sec1-1"><phrase block_type="co-toc-h1-n-ri">14.1</phrase> Simple Linear Regression</link></p>
+<p id="corty3e-ch14-p9" block_type="co-toc-h1-t"><link href="corty3e-ch14.xml#corty3e-ch14-sec1-2"><phrase block_type="co-toc-h1-n-ri">14.2</phrase> Error in Regression</link></p>
+<p id="corty3e-ch14-p10" block_type="co-toc-h1-t"><link href="corty3e-ch14.xml#corty3e-ch14-sec1-3"><phrase block_type="co-toc-h1-n-ri">14.3</phrase> Multiple Regression</link></p>
+</box>
+</box>
+</section>
+<section id="corty3e-ch14-sec1-1" block_type="h1" chapter="14" title="" numbered="false" level="1" print_page="539">
+<section-metadata><section-title><phrase block_type="sec_num">14.1</phrase> <phrase block_type="sec_title">Simple Linear Regression</phrase></section-title></section-metadata>
+<box id="corty3e-ch14-video-1" block_type="video">
+<p id="corty3e-ch14-videotxt-1" block_type="vidtxt"><link href="http://bcs.whfreeman.com/webpub/statistics/ess2e/Student/StatVideos/ch24/sc_regression_assump.htm" target="_pop" data-href-px=""><image asset-id="corty3e-ch14-vimg-1" alt="image" src="asset/images/video.jpg"/></link><em>StatClips:  Regression: Assumptions</em>Video on LaunchPad</p>
+</box>
+<box id="corty3e-ch14-video-1" block_type="video">
+<p id="corty3e-ch14-videotxt-1" block_type="vidtxt"><link href="http://bcs.whfreeman.com/webpub/statistics/ips7e/student/Stat Videos/ch10/sc_regression_inference.html" target="_pop" data-href-px=""><image asset-id="corty3e-ch14-vimg-1" alt="image" src="asset/images/video.jpg"/></link><em>StatClips: Regression: Inference</em>Video on LaunchPad</p>
+</box>
+<box id="corty3e-ch14-video-1" block_type="video">
+<p id="corty3e-ch14-videotxt-1" block_type="vidtxt"><link href="http://bcs.whfreeman.com/webpub/statistics/ips7e/student/Stat Videos/ch02/sc_regression_im.html" target="_pop" data-href-px=""><image asset-id="corty3e-ch14-vimg-1" alt="image" src="asset/images/video.jpg"/></link><em>StatClips: Regression - Introduction and Motivation</em>Video on LaunchPad</p>
+</box>
+<p id="corty3e-ch14-p13" block_type="txt-ni">In <termref term="linear regression">linear regression</termref>, one or more predictor variables are used to predict cases&#8217; scores on an outcome variable. For example:</p>
+<list id="corty3e-ch14-list-2" type="unordered" block_type="bullet">
+<li><p id="corty3e-ch14-p14" block_type="bl-first">If a person has X level of depression, what will be his or her level of depression after 12 sessions of cognitive-behavioral therapy?</p></li>
+<li><p id="corty3e-ch14-p15" block_type="bl-mid">If we reduce truancy by X amount, how much will the high school graduation rate improve?</p></li>
+<li><p id="corty3e-ch14-p16" block_type="bl-mid">If a child is bullied at age X, how will that affect her self-esteem?</p></li>
+<li><p id="corty3e-ch14-p17" block_type="bl-last">What effect does the height of the mother, the height of the father, and the annual family income have on the height of a child?</p></li>
+</list>
+<p id="corty3e_page_540" block_type="page_start">540</p>
+<p id="corty3e-ch14-p18" block_type="txt-ni">In <strong>simple linear regression,</strong> one predictor variable, <em>X,</em> is used to predict <em>Y,</em> the outcome variable.</p>
+<p id="corty3e-ch14-p19" block_type="txt">Simple linear regression uses the Pearson <em>r</em> to develop an equation, called a regression equation, to predict <em>Y</em> from <em>X</em>. All the predictions made by a regression equation won&#8217;t be perfectly accurate, but using a regression equation helps one to arrive at better decisions overall. Of course, making predictions only makes sense if there is evidence that a relationship exists between <em>X</em> and <em>Y.</em> That means simple linear regression should only be used with a statistically significant Pearson <em>r.</em></p>
+</section>
+<section id="corty3e-ch14-sec2-1" block_type="h2" chapter="14" title="" numbered="false" level="2" print_page="540">
+<section-metadata><section-title>Using a Regression Line for Prediction</section-title></section-metadata>
+<p id="corty3e-ch14-p20" block_type="txt-ni">To see how linear regression works, let&#8217;s start with a straightforward example. <link href="corty3e-ch14.xml#corty3e-ch14-fig-1"><strong>Figure 14.1</strong></link> shows a perfect correlation (<em>r</em> &#61; 1.00) between temperature measured in Fahrenheit and in Celsius. All six data points in <link href="corty3e-ch14.xml#corty3e-ch14-fig-1">Figure 14.1</link> fall on a straight line.</p>
+<figure id="corty3e-ch14-fig-1" block_type="figure" numbered="true" number="14.1" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="medium" border="true"/>
+<image asset-id="corty3e-ch14-img-1" alt="image" src="asset/ch14/corty3e_fig14_01.jpg"/>
+<caption><strong><phrase block_type="fig_num">Figure 14.1</phrase> Temperature Measured in Fahrenheit and Celsius</strong> In a perfect relationship, all points in a scatterplot fall on a straight line.</caption>
+</figure>
+<p id="corty3e-ch14-p21" block_type="txt">For these six data points, their values on <em>X</em> (Fahrenheit) and <em>Y</em> (Celsius) are known. For example, the point on the bottom left of the scatterplot has a Fahrenheit value of 32&#176; and a Celsius value of 0&#176;. These six are known, but what about all the other possible Fahrenheit values? If an object&#8217;s temperature is measured and found to be 86&#176; Fahrenheit, what would it be in Celsius?</p>
+<p id="corty3e-ch14-p22" block_type="txt"><link href="corty3e-ch14.xml#corty3e-ch14-fig-2"><strong>Figure 14.2</strong></link> shows how to estimate <em>Y</em> for a given value of <em>X,</em> like 86&#176;. In <link href="corty3e-ch14.xml#corty3e-ch14-fig-2"><strong>Figure 14.2</strong></link>, the six points have been connected with a line. This line, called the <termref term="regression line">regression line</termref>, allows one to find a <em>Y</em> value for any <em>X</em> value. Here&#8217;s how to do it:</p>
+<figure id="corty3e-ch14-fig-2" block_type="figure" numbered="true" number="14.2" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="medium" border="true"/>
+<image asset-id="corty3e-ch14-img-2" alt="image" src="asset/ch14/corty3e_fig14_02.jpg"/>
+<caption><strong><phrase block_type="fig_num">Figure 14.2</phrase> Regression Line for Predicting Celsius from Fahrenheit</strong> The regression line inserted in this scatterplot makes it easy to predict an object&#8217;s temperature in Celsius if we know its temperature in Fahrenheit. An object that is 86&#176;F would be about 30&#176;C.</caption>
+</figure>
+<list id="corty3e-ch14-list-3" type="unordered" block_type="bullet">
+<li><p id="corty3e-ch14-p23" block_type="bl-first">Draw a vertical line from 86&#176; on the <em>X</em>-axis up to the diagonal line.</p></li>
+<li><p id="corty3e-ch14-p24" block_type="bl-mid">Draw a horizontal line over to the <em>Y</em>-axis from the point on the diagonal line.</p></li>
+<li><p id="corty3e-ch14-p25" block_type="bl-mid">Estimate the value of <em>Y</em> where the horizontal line intersects the <em>Y</em>-axis, say, 30&#176;.</p></li>
+<li><p id="corty3e-ch14-p26" block_type="bl-last">Thus, the predicted value of <em>Y</em> is approximately 30&#176;.</p></li>
+</list>
+<p id="corty3e-ch14-p27" block_type="txt">Before moving on to the next example, let&#8217;s add some terminology. The six data points in <link href="corty3e-ch14.xml#corty3e-ch14-fig-1">Figure 14.1</link> have <em>X</em> scores and <em>Y</em> scores. In the case above, we had an <em>X</em> score (86&#176;F), but no <em>Y</em> score. The <em>Y</em> score that was found, 30&#176;C, is a predicted or estimated value. A predicted value of <em>Y</em> has a special name, <strong><em>Y</em> prime</strong>, abbreviated <em>Y&#8242;</em><em>.</em> (<em>&#374;</em>, called &#8220;Y hat,&#8221; is also commonly used as an abbreviation for the predicted value of <em>Y</em>.)</p>
+<p id="corty3e_page_541" block_type="page_start">541</p>
+<p id="corty3e-ch14-p28" block_type="txt">In <link href="corty3e-ch14.xml#corty3e-ch14-fig-1">Figure 14.1</link>, all the data points fall on a line, so it is clear where to place the regression line. It is less clear what to do in a situation like that found in <link href="corty3e-ch14.xml#corty3e-ch14-fig-3"><strong>Figure 14.3</strong></link>, which displays Dr. Paik&#8217;s marital satisfaction data from <link href="corty3e-ch13.xml">Chapter 13</link>. In that study, a marital therapist randomly selected eight couples and found a statistically significant, positive relationship between the husband&#8217;s gender role flexibility and the wife&#8217;s marital satisfaction [<em>r</em>(6) &#61; .76, <em>p</em> &#60; .05].</p>
+<figure id="corty3e-ch14-fig-3" block_type="figure" numbered="true" number="14.3" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="medium" border="true"/>
+<image asset-id="corty3e-ch14-img-3" alt="image" src="asset/ch14/corty3e_fig14_03.jpg"/>
+<caption><strong><phrase block_type="fig_num">Figure 14.3</phrase> Relationship Between Gender Role Flexibility and Marital Satisfaction</strong> Though there is a strong (<em>r</em> &#61; .76) relationship between the two variables in this scatterplot, it is not clear where the best place is to draw a regression line for predicting <em>Y</em> from <em>X.</em></caption>
+</figure>
+<p id="corty3e-ch14-p29" block_type="txt">The relationship between gender role flexibility and marital satisfaction is a strong one. And a look at <link href="corty3e-ch14.xml#corty3e-ch14-fig-3">Figure 14.3</link> shows that it is a linear relationship. But where the best place would be to draw the regression line is not clear. <link href="corty3e-ch14.xml#corty3e-ch14-fig-4"><strong>Figure 14.4</strong></link> illustrates the marital satisfaction data with three different potential lines (labeled I, II, and III). Which one is the best regression line? Which one is the worst?</p>
+<figure id="corty3e-ch14-fig-4" block_type="figure" numbered="true" number="14.4" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="medium" border="true"/>
+<image asset-id="corty3e-ch14-img-4" alt="image" src="asset/ch14/corty3e_fig14_04.jpg"/>
+<caption><strong><phrase block_type="fig_num">Figure 14.4</phrase> Three Potential Regression Lines for Predicting Marital Satisfaction</strong> Which of these three lines best &#8220;fits&#8221; the data in this scatterplot? By what criterion should one decide? Statisticians use the &#8220;least squares&#8221; criterion, which means the best-fitting line is the one that, overall, minimizes the discrepancies between actual <em>Y</em> scores and predicted <em>Y</em> scores.</caption>
+</figure>
+<p id="corty3e_page_542" block_type="page_start">542</p>
+</section>
+<section id="corty3e-ch14-sec2-2" block_type="h2" chapter="14" title="" numbered="false" level="2" print_page="542">
+<section-metadata><section-title>How to Judge Whether Prediction Is Good</section-title></section-metadata>
+<p id="corty3e-ch14-p30" block_type="txt-ni">To learn how statisticians decide which line is the best, imagine that a memory test is given to all the students at a college. Scores can range from 1.00 to 19.00, and the mean score is calculated to be 10.00. Further, the scores are normally distributed with a standard deviation of 3.00. A frequency distribution of the memory scores is shown in <link href="corty3e-ch14.xml#corty3e-ch14-fig-5"><strong>Figure 14.5</strong></link>.</p>
+<figure id="corty3e-ch14-fig-5" block_type="figure" numbered="true" number="14.5" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="large" border="true"/>
+<image asset-id="corty3e-ch14-img-5" alt="image" src="asset/ch14/corty3e_fig14_05.jpg"/>
+<caption><strong><phrase block_type="fig_num">Figure 14.5</phrase> Frequency Distribution of Memory Scores</strong> If memory scores are normally distributed with a mean of 10, then the most commonly occurring score is 10. If asked to guess what a randomly selected person&#8217;s memory score is, one is more likely to be right by guessing the mean than any other value.</caption>
+</figure>
+<p id="corty3e-ch14-p31" block_type="txt">Now, imagine 12 students are randomly selected from this college and a contest is held to guess what their scores on the memory test are. Any prediction from 1.00 to 19.00 is fair and there is a substantial prize for guessing correctly. Nothing is known about the selected students: not their GPAs, years in school, histories of head trauma, or any other fact. As a result, anyone making a prediction is guessing blindly. What to do? A statistician would say, &#8220;Guess the mean for each one.&#8221; That is, make the same guess, 10.00, twelve times in a row. This is the best strategy for two reasons:</p>
+<p id="corty3e_page_543" block_type="page_start">543</p>
+<list id="corty3e-ch14-list-4" type="ordered" block_type="ordered">
+<li><p id="corty3e-ch14-p32" block_type="nl-first">First, there is a greater chance of being right guessing the mean than guessing any other value. Look at <link href="corty3e-ch14.xml#corty3e-ch14-fig-5">Figure 14.5</link>&#8212;the score at the midpoint, the mean, occurs with the greatest frequency.</p></li>
+<li><p id="corty3e-ch14-p33" block_type="nl-last">Second, the errors will be smaller, on average, if the mean is guessed for each person. Here&#8217;s how to think of this. The scores on the memory test range from 1.00 to 19.00, so the most one can be off by guessing the mean (10.00) is 9.00 points. Guessing any other value increases the potential size of the error. For example, if the guess was 14.50 and the student&#8217;s score was 2.00, then the guess would be off by 12.50 points.</p></li>
+</list>
+<box numbered="false" id="corty3e-ch14-exp1-1" block_type="mn1">
+<p id="corty3e-ch14-p34" block_type="mn-ext-ni"><em>The best prediction is the one that yields the smallest errors between predicted outcomes and actual outcomes.</em></p>
+</box>
+<p id="corty3e-ch14-p35" block_type="txt">The second point, about minimizing errors, is important because it is how statisticians judge prediction. The best prediction is the one that yields the smallest errors between predicted outcomes and actual outcomes. In fact, minimizing errors is how the regression line is defined&#8212;it is the best-fitting straight line by the least squares criterion. The <termref term="least squares criterion">least squares criterion</termref> means that the prediction errors are squared and the best-fitting line is the one that has the smallest sum of squared errors. Why are we concerned with squared values? Let&#8217;s return to Dr. Paik&#8217;s study.</p>
+<p id="corty3e-ch14-p36" block_type="txt"><link href="corty3e-ch14.xml#corty3e-ch14-fig-6"><strong>Figure 14.6</strong></link> shows the scatterplot for the marital satisfaction data with line II from <link href="corty3e-ch14.xml#corty3e-ch14-fig-4">Figure 14.4</link>. In <link href="corty3e-ch14.xml#corty3e-ch14-fig-6">Figure 14.6</link>, double-headed arrows are used to mark the distance for the eight cases from their actual values (the dots) to the line. These distances represent errors in prediction: the distance from <em>Y</em> (the wives&#8217; real satisfaction scores) to <em>Y&#8242;</em> (their predicted satisfaction scores) is the error in prediction. Sometimes the errors are small, as for points A, B, and E. Sometimes the errors are large, as for point F.</p>
+<figure id="corty3e-ch14-fig-6" block_type="figure" numbered="true" number="14.6" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="medium" border="true"/>
+<image asset-id="corty3e-ch14-img-6" alt="image" src="asset/ch14/corty3e_fig14_06.jpg"/>
+<caption><strong><phrase block_type="fig_num">Figure 14.6</phrase> Errors in Prediction</strong> This figure compares the cases&#8217; actual marital satisfaction scores to their predicted scores for line II from <link href="corty3e-ch14.xml#corty3e-ch14-fig-4">Figure 14.4</link>. The double-headed arrows from the actual cases to the line show the sizes of the errors. Notice that for some cases (e.g., A, B, and E), the errors are small and the predicted values are close to the actual values. For other cases, like F, the error is large and the predicted value is far from the actual value.</caption>
+</figure>
+<p id="corty3e-ch14-p37" block_type="txt">Look at the top panel in <link href="corty3e-ch14.xml#corty3e-ch14-fig-7"><strong>Table 14.1</strong></link>. The top panel shows the <em>Y</em> scores for the eight marital satisfaction cases. The first column gives the actual <em>Y</em> value for each case and the next three columns give the predicted <em>Y</em> scores, one for each of the three lines in <link href="corty3e-ch14.xml#corty3e-ch14-fig-4">Figure 14.4</link>. The first row is for case A, where the wife&#8217;s marital satisfaction score is 0.80. Line I predicts her level of marital satisfaction to be higher, 1.32; line II also predicts high with <em>Y&#8242;</em> &#61; 1.03; line III underestimates her satisfaction with a predicted value of 0.30.</p>
+<figure id="corty3e-ch14-fig-7" block_type="table" numbered="true" number="14.1" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="xlarge" border="true"/>
+<image asset-id="corty3e-ch14-img-7" alt="image" src="asset/ch14/corty3e_table14_01.jpg"/>
+</figure>
+<p id="corty3e_page_544" block_type="page_start">544</p>
+<p id="corty3e-ch14-p38" block_type="txt">The bottom left panel in <link href="corty3e-ch14.xml#corty3e-ch14-fig-7">Table 14.1</link> shows the differences between the actual scores and the predicted scores. These values are sizes of the errors. They are what is left over after <em>Y&#8242;</em> is subtracted out, so they are called <termref term="residuals">residuals</termref>. For example, case A in the first row has a <em>Y&#8242;</em> for line I that is off by &#8211;0.52 points, for line II off by &#8211;0.23 points, and for line III off by 0.50 points. Notice that each column is a mixture of positive and negative residuals, of overestimates and underestimates. For these three lines, the residuals for each column sum to zero, meaning that the positive and negative errors balance each other out. Thus, comparing the sums of the error scores does not make one of these lines stand out over the others. So, how can one differentiate these three lines?</p>
+<p id="corty3e-ch14-p39" block_type="txt">The answer is to square the residual scores. As a result, the squared error scores are all positive (see the bottom panel of <link href="corty3e-ch14.xml#corty3e-ch14-fig-7">Table 14.1</link>) and sum to a positive number when added together. The squared error scores sum to 2.44 for line I, 2.17 for line II, and 3.88 for line III. Linear regression uses the least squares criterion, which minimizes the sum of the squared errors, so we can now conclude that line II is the best-fitting line of these three and line III is the worst-fitting line.</p>
+<p id="corty3e_page_545" block_type="page_start">545</p>
+<p id="corty3e-ch14-p40" block_type="txt">Line II is the best-fitting of these three lines, but is it the best-fitting line out of all other possible lines? The regression formula we are about to learn determines the equation for the best-fitting line.</p>
+</section>
+<section id="corty3e-ch14-sec2-3" block_type="h2" chapter="14" title="" numbered="false" level="2" print_page="545">
+<section-metadata><section-title>The Linear Regression Equation</section-title></section-metadata>
+<p id="corty3e-ch14-p41" block_type="txt-ni">Most students remember the formula for a straight line from algebra. The abbreviations may have been different, but it looked something like this:</p>
+<p id="corty3e-ch14-p42" block_type="eq"><em>Y</em> &#61; <em>bX</em> &#43; <em>a</em></p>
+<p id="corty3e-ch14-p43" block_type="txt">In this equation, <em>Y</em> is the value being calculated; <em>b</em> is the slope of the line; <em>X</em> is the value for which <em>Y</em> is being calculated; and <em>a</em> is the point where the line intersects the <em>Y</em>-axis, the <em>Y</em>-intercept.</p>
+<p id="corty3e-ch14-p44" block_type="txt">The regression line equation, <link href="#corty3e-ch14-bx6-1">Equation 14.1</link>, is similar, but it calculates <em>Y&#8242;</em><em>,</em> the predicted value of <em>Y,</em> not <em>Y.</em></p>
+<box title="" numbered="false" id="corty3e-ch14-bx6-1" block_type="eq-t">
+<box-metadata><box-title><phrase block_type="sec_num">Equation 14.1</phrase> <phrase block_type="sec_title">Formula for Calculating a Regression Line</phrase></box-title></box-metadata>
+<p id="corty3e-ch14-p45" block_type="eq"><em>Y&#8242;</em> &#61; <em>bX</em> &#43; <em>a</em></p>
+<p id="corty3e-ch14-p46" block_type="eq-txt-ni">where <em>Y&#8242;</em> &#61; predicted value of <em>Y</em></p>
+<p id="corty3e-ch14-p47" block_type="eq-unl"><em>b</em> &#61; slope of the regression line (<link href="#corty3e-ch14-bx6-2">Equation 14.2</link>)</p>
+<p id="corty3e-ch14-p48" block_type="eq-unl"><em>X</em> &#61; value of <em>X</em> for which one wants to find <em>Y&#8242;</em></p>
+<p id="corty3e-ch14-p49" block_type="eq-unl"><em>a</em> &#61; <em>Y</em>-intercept of the regression line (<link href="#corty3e-ch14-bx6-3">Equation 14.3</link>)</p>
+</box>
+<p id="corty3e-ch14-p50" block_type="txt">In order to apply the regression line formula, three factors need to be known: (1) the <em>X</em> value for which one wants to predict a <em>Y</em> value; (2) the slope, <em>b;</em> and (3) the <em>Y</em>-intercept, <em>a.</em> The first of these, <em>X,</em> does not need to be calculated. It will either be given to or determined by the researcher. But the other two values, the slope and the <em>Y</em>-intercept, need to be calculated in order to apply <link href="#corty3e-ch14-bx6-1">Equation 14.1</link>.</p>
+<p id="corty-ch14-chead-1" block_type="h3">Understanding Slope</p>
+<p id="corty3e-ch14-p51" block_type="txt-ni"><termref term="Slope">Slope</termref> represents the tilt of the line. It tells how much up or down change in <em>Y</em> is predicted for each 1-unit change in <em>X.</em> This is often called &#8220;rise over run.&#8221;</p>
+<list id="corty3e-ch14-list-5" type="unordered" block_type="bullet">
+<li><p id="corty3e-ch14-p52" block_type="bl-first">If the slope is positive, then the line is moving up and to the right. (The slope is positive for direct relationships where increases on one variable are associated with increases on the other variable.)</p></li>
+<li><p id="corty3e-ch14-p53" block_type="bl-mid">If the slope is negative, then the line is moving down and to the right. (The slope is negative for inverse relationships. In an inverse relationship, increases in <em>X</em> are associated with decreases in <em>Y.</em>)</p></li>
+<li><p id="corty3e-ch14-p54" block_type="bl-mid">If the slope is zero, then the line is horizontal.</p></li>
+</list>
+<p id="corty3e_page_546" block_type="page_start">546</p>
+<p id="corty3e-ch14-p55" block_type="txt">Here&#8217;s the formula for calculating the slope.</p>
+<box title="" numbered="false" id="corty3e-ch14-bx6-2" block_type="eq-t">
+<box-metadata><box-title><phrase block_type="sec_num">Equation 14.2</phrase> <phrase block_type="sec_title">Formula for the Slope, <em>b</em>, of the Regression Line</phrase></box-title></box-metadata>
+<p id="corty3e-ch14-eqn-1" block_type="equation">
+<image asset-id="corty3e-ch14-img-8" alt="image" src="asset/ch14/corty3e_eqn14_546_01.jpg"/></p>
+<p id="corty3e-ch14-p56" block_type="eq-txt-ni">where <em>b</em> &#61; slope of the regression line</p>
+<p id="corty3e-ch14-p57" block_type="eq-unl"><em>r</em> &#61; observed correlation between <em>X</em> and <em>Y</em></p>
+<p id="corty3e-ch14-p58" block_type="eq-unl"><em>s<sub>Y</sub></em> &#61; standard deviation of the <em>Y</em> scores</p>
+<p id="corty3e-ch14-p59" block_type="eq-unl"><em>s<sub>X</sub></em> &#61; standard deviation of the <em>X</em> scores</p>
+</box>
+<p id="corty3e-ch14-p60" block_type="txt">For Dr. Paik&#8217;s marital satisfaction study, <em>r</em> &#61; .76, <em>s<sub>Y</sub></em> &#61; 0.86, and <em>s<sub>X</sub></em> &#61; 11.49. He would calculate the slope as follows:</p>
+<p id="corty3e-ch14-eqn-2" block_type="equation">
+<image asset-id="corty3e-ch14-img-9" alt="image" src="asset/ch14/corty3e_eqn14_546_02.jpg"/></p>
+<p id="corty3e-ch14-p61" block_type="txt">The slope, 0.06, is positive. This was expected because the correlation coefficient, .76, was positive. The value of the slope, 0.06, means that, on average, for every 1-point increase in a husband&#8217;s level of gender role flexibility, there is a predicted increase of 0.06 points in the wife&#8217;s level of marital satisfaction. It also means that a 1-point <em>decrease</em> in gender role flexibility is associated with a 0.06-point <em>decrease</em> in marital satisfaction.</p>
+<p id="corty3e-ch14-p62" block_type="txt">It is important to note the careful use of language here. Correlational designs give information about association, not cause and effect. Dr. Paik is careful <em>not</em> to say that a 1-point increase in gender role flexibility causes a 0.06-point increase in marital satisfaction.</p>
+<p id="corty-ch14-chead-2" block_type="h3">Understanding the <em>Y</em>-Intercept</p>
+<p id="corty3e-ch14-p63" block_type="txt-ni">The slope was calculated first because it is needed to calculate <em>a,</em> the <em>Y</em>-intercept. The <termref term="Y-intercept"><em>Y</em>-intercept</termref> indicates the spot where the regression line would pass through the <em>Y</em>-axis. It gives information about the &#8220;altitude&#8221; of the line, how high or low it is:</p>
+<list id="corty3e-ch14-list-6" type="unordered" block_type="bullet">
+<li><p id="corty3e-ch14-p64" block_type="bl-first">If the <em>Y</em>-intercept is positive, the line passes through the <em>Y</em>-axis above zero.</p></li>
+<li><p id="corty3e-ch14-p65" block_type="bl-mid">If the <em>Y</em>-intercept is negative, the line passes through the <em>Y</em>-axis below zero.</p></li>
+<li><p id="corty3e-ch14-p66" block_type="bl-mid">If the <em>Y</em>-intercept is zero, the line passes through the <em>Y</em>-axis at zero.</p></li>
+<li><p id="corty3e-ch14-p67" block_type="bl-last">The bigger the absolute value of the <em>Y</em>-intercept, the further away from zero the intercept passes through the <em>Y</em>-axis.</p></li>
+</list>
+<p id="corty3e_page_547" block_type="page_start">547</p>
+<p id="corty3e-ch14-p68" block_type="txt">Here is the formula for calculating the <em>Y-</em>intercept.</p>
+<box title="" numbered="false" id="corty3e-ch14-bx6-3" block_type="eq-t">
+<box-metadata><box-title><phrase block_type="sec_num">Equation 14.3</phrase> <phrase block_type="sec_title">Formula for the Y-Intercept, a, for the Regression Line</phrase></box-title></box-metadata>
+<p id="corty3e-ch14-p69" block_type="eq"><em>a</em> &#61; <em>M<sub>Y</sub></em> &#8211; <em>bM<sub>X</sub></em></p>
+<p id="corty3e-ch14-p70" block_type="eq-txt-ni">where <em>a</em> &#61; <em>Y</em>-intercept for the regression line</p>
+<p id="corty3e-ch14-p71" block_type="eq-unl"><em>M<sub>Y</sub></em> &#61; mean of the <em>Y</em> scores</p>
+<p id="corty3e-ch14-p72" block_type="eq-unl"><em>b</em> &#61; slope of the regression line (<link href="#corty3e-ch14-bx6-2">Equation 14.2</link>)</p>
+<p id="corty3e-ch14-p73" block_type="eq-unl"><em>M<sub>X</sub></em> &#61; mean of the <em>X</em> scores</p>
+</box>
+<p id="corty3e-ch14-p74" block_type="txt">Dr. Paik has already calculated the slope and found it to be 0.0568, which he rounded to <em>b</em> &#61; 0.06. Consulting his data, he finds <em>M<sub>Y</sub></em> &#61; 2.00 and <em>M<sub>X</sub></em> &#61; 25.00. Using these values, the <em>Y</em>-intercept is calculated as follows:</p>
+<p id="corty3e-ch14-p75" block_type="eq"><em>a</em> &#61; <em>M<sub>Y</sub></em> &#8211; <em>bM<sub>X</sub></em></p>
+<p id="corty3e-ch14-p76" block_type="eq">&#61; 2.00 &#8211; (0.0568 &#215; 25.00)</p>
+<p id="corty3e-ch14-p77" block_type="eq">&#61; 2.00 &#8211; (1.4200)</p>
+<p id="corty3e-ch14-p78" block_type="eq">&#61; 0.5800</p>
+<p id="corty3e-ch14-p79" block_type="eq">&#61; 0.58</p>
+<p id="corty3e-ch14-p80" block_type="txt-ni">(<em>Note:</em> Because very precise numbers are needed for an example to work later in the chapter, this equation uses a value of the slope to four decimal places, <em>b</em> &#61; 0.0568.)</p>
+<p id="corty3e-ch14-p81" block_type="txt">The <em>Y</em>-intercept, the spot where the regression line would intersect the <em>Y</em>-axis, is 0.58. Now that the slope, <em>b</em> &#61; 0.06, and the <em>Y</em>-intercept, <em>a</em> &#61; 0.58, are known, Dr. Paik can complete the regression formula, <link href="#corty3e-ch14-bx6-1">Equation 14.1</link>:</p>
+<p id="corty3e-ch14-p82" block_type="eq"><em>Y&#8242;</em> &#61; <em>bX</em> &#43; <em>a</em></p>
+<p id="corty3e-ch14-p83" block_type="eq">&#61; 0.06<em>X</em> &#43; 0.58</p>
+<p id="corty-ch14-chead-3" block_type="h3">Predicting <em>Y</em></p>
+<p id="corty3e-ch14-p84" block_type="txt-ni">Here is how a researcher could apply the formula and use it to draw the regression line. Dr. Paik needs to select an <em>X</em> value for which to predict a <em>Y</em> score. He must select a value that is within the range used to develop the regression formula. So, he selects a gender role flexibility score of 30 and substitutes that for <em>X</em> in <link href="#corty3e-ch14-bx6-1">Equation 14.1</link>:</p>
+<p id="corty3e-ch14-p85" block_type="eq"><em>Y&#8242;</em> &#61; <em>bX</em> &#43; <em>a</em></p>
+<p id="corty3e-ch14-p86" block_type="eq">&#61; (0.06 &#215; 30) &#43; 0.58</p>
+<p id="corty3e-ch14-p87" block_type="eq">&#61; 1.8000 &#43; 0.58</p>
+<p id="corty3e-ch14-p88" block_type="eq">&#61; 2.3800</p>
+<p id="corty3e-ch14-p89" block_type="eq">&#61; 2.38</p>
+<p id="corty3e-ch14-p90" block_type="txt">Dr. Paik has just predicted that a man with a gender role flexibility score of 30 will have a partner who rates her level of marital satisfaction as 2.38. Given that marital satisfaction is rated on a 4-point scale like GPA, this means she&#8217;s predicted to rate her marriage at the C&#43; level.</p>
+<p id="corty3e_page_548" block_type="page_start">548</p>
+<p id="corty-ch14-chead-4" block_type="h3">Drawing the Regression Line</p>
+<p id="corty3e-ch14-p91" block_type="txt-ni">Putting a regression line into a scatterplot helps to highlight the relationship between the two variables. Any two points can be connected with a straight line, so the regression line can be drawn once two points are known. All Dr. Paik needs is the two points.</p>
+<p id="corty3e-ch14-p92" block_type="txt">The regression equation is meant to make predictions for the range of values it was based on. So, Dr. Paik will find <em>Y&#8242;</em> for the lowest <em>X</em> value (8), and <em>Y&#8242;</em> for the largest (38). (Again, because precise numbers are needed for an example later in the chapter, a four decimal place version of slope <em>b</em> &#61; 0.0568 instead of <em>b</em> &#61; .06 will be used.)</p>
+<p id="corty3e-ch14-p93" block_type="eq"><em>Y&#8242;</em> &#61; <em>bX</em> &#43; <em>a</em></p>
+<p id="corty3e-ch14-p94" block_type="eq">&#61; (0.0568 &#215; 8) &#43; 0.58</p>
+<p id="corty3e-ch14-p95" block_type="eq">&#61; 0.4544 &#43; 0.58</p>
+<p id="corty3e-ch14-p96" block_type="eq">&#61; 1.0344</p>
+<p id="corty3e-ch14-p97" block_type="eq">&#61; 1.03</p>
+<p id="corty3e-ch14-p98" block_type="eq"><em>Y&#8242;</em> &#61; <em>bX</em> &#43; <em>a</em></p>
+<p id="corty3e-ch14-p99" block_type="eq">&#61; (0.0568 &#215; 38) &#43; 0.58</p>
+<p id="corty3e-ch14-p100" block_type="eq">&#61; 2.1584 &#43; 0.58</p>
+<p id="corty3e-ch14-p101" block_type="eq">&#61; 2.7384</p>
+<p id="corty3e-ch14-p102" block_type="eq">&#61; 2.74</p>
+<p id="corty3e-ch14-p103" block_type="txt">Dr. Paik now knows two points that anchor the line: (8, 1.03) and (38, 2.74). <link href="corty3e-ch14.xml#corty3e-ch14-fig-10"><strong>Figure 14.7</strong></link> shows the scatterplot with the two points marked and a line drawn through them. Yes, this is the same as line II in <link href="corty3e-ch14.xml#corty3e-ch14-fig-4">Figure 14.4</link>.</p>
+<figure id="corty3e-ch14-fig-10" block_type="figure" numbered="true" number="14.7" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="medium" border="true"/>
+<image asset-id="corty3e-ch14-img-10" alt="image" src="asset/ch14/corty3e_fig14_07.jpg"/>
+<caption><strong><phrase block_type="fig_num">Figure 14.7</phrase> Regression Line for Predicting Marital Satisfaction</strong> Finding <em>Y&#8242;</em> for the two points at two ends of the range of <em>X</em> scores allows a researcher to draw a regression line. Remember, the regression line should only be used to predict <em>Y&#8242;</em> for the range of <em>X</em> scores used to derive the regression equation.</caption>
+</figure>
+<box title="Worked Example 14.1" numbered="false" id="corty3e-ch14-bx3-1" block_type="sr-exp-n">
+<p id="corty3e-ch14-p104" block_type="sr_exp_txt_ni">For another example of developing a regression equation from start to finish, imagine the following: A large and representative sample of cigarette smokers (<em>N</em> &#61; 2,500) was obtained in order to see if there were a relationship between how much a person smoked and his or her physical health. To measure amount of smoking, each person reported how many years he or she had been smoking cigarettes. The mean, <em>M<sub>X</sub>,</em> was 22 years, with a standard deviation of 9. As a measure of physical health, each person&#8217;s lung function was measured. This was reported as a percent of the predicted normal level, so lower scores mean worse functioning. A lung function score of 100 would mean that the person&#8217;s lung capacity was normal for his or her age and sex. A score of 50 would mean that the smoker&#8217;s level of lung function was only 50&#37; of what was expected for a person of the same age and sex. The mean level of function was 76&#37;, with a standard deviation of 13. The average person had been smoking for 22 years and had lungs functioning at 76&#37; of what was expected.</p>
+<p id="corty3e_page_549" block_type="page_start">549</p>
+<p id="corty3e-ch14-p105" block_type="sr_exp_txt">Not surprisingly, the relationship between years of smoking and degree of lung function was negative and strong: [<em>r</em>(2,498) &#61; &#8211;.68, <em>p</em> &#60; .05]. As years of smoking went up, the percent of normal lung function went down (see the scatterplot in <link href="corty3e-ch14.xml#corty3e-ch14-fig-11"><strong>Figure 14.8</strong></link>).</p>
+<figure id="corty3e-ch14-fig-11" block_type="figure" numbered="true" number="14.8" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="large" border="true"/>
+<image asset-id="corty3e-ch14-img-11" alt="image" src="asset/ch14/corty3e_fig14_08.jpg"/>
+<caption><strong><phrase block_type="fig_num">Figure 14.8</phrase> Relationship Between Years of Cigarette Smoking and Lung Function</strong> In this scatterplot, the relationship between years of smoking and loss of lung function is strong, statistically significant, and inverse.</caption>
+</figure>
+<p id="corty3e-ch14-p106" block_type="txt">To calculate the slope (<em>b</em>) for the regression line, plug <em>r</em> &#61; &#8211;.68, <em>s<sub>X</sub></em> &#61; 9, and <em>s<sub>Y</sub></em> &#61; 13 into <link href="#corty3e-ch14-bx6-2">Equation 14.2</link>:</p>
+<p id="corty3e-ch14-eqn-3" block_type="equation">
+<image asset-id="corty3e-ch14-img-12" alt="image" src="asset/ch14/corty3e_eqn14_549_01.jpg"/></p>
+<p id="corty3e_page_550" block_type="page_start">550</p>
+<p id="corty3e-ch14-p107" block_type="sr_exp_txt_ni">For the regression line for the years of smoking/lung function data, the slope is <em>b</em> &#61; &#8211;0.98. A slope of <em>negative</em> 0.98 means that for every 1-point <em>increase</em> in <em>X,</em> there&#8217;s a predicted <em>decrease</em> of 0.98 points in <em>Y.</em> To put this in the context of this example, every year of smoking is associated with an additional decrease of 0.98 percentage points from normal lung function. In this way, a slope can be a meaningful tool for interpreting regression.</p>
+<p id="corty3e-ch14-p108" block_type="sr_exp_txt">To calculate the <em>Y</em>-intercept, one needs the slope, which was just found to be &#8211;0.98, and the two means, <em>M<sub>X</sub></em> and <em>M<sub>Y</sub>.</em> The predictor variable is years of smoking so <em>M<sub>X</sub></em> &#61; 22; the predicted variable is percent of normal function and <em>M<sub>Y</sub></em> &#61; 76. These values can be plugged into <link href="#corty3e-ch14-bx6-3">Equation 14.3</link> to find the <em>Y</em>-intercept:</p>
+<p id="corty3e-ch14-p109" block_type="sr_exp_txt"><em>a</em> &#61; <em>M<sub>Y</sub></em> &#8211; <em>bM<sub>X</sub></em></p>
+<p id="corty3e-ch14-p110" block_type="sr_exp_txt">&#61; 76 &#8211; (&#8211;0.98 &#215; 22)</p>
+<p id="corty3e-ch14-p111" block_type="sr_exp_txt">&#61; 76 &#8211; (&#8211;21.5600)</p>
+<p id="corty3e-ch14-p112" block_type="sr_exp_txt">&#61; 76 &#43; (21.5600)</p>
+<p id="corty3e-ch14-p113" block_type="sr_exp_txt">&#61; 97.5600</p>
+<p id="corty3e-ch14-p114" block_type="sr_exp_txt">&#61; 97.56</p>
+<p id="corty3e-ch14-p115" block_type="txt">The <em>Y</em>-intercept for the regression line, which is the predicted value of <em>Y</em> when <em>X</em> &#61; 0, is 97.56. Given <em>b</em> &#61; &#8211;0.98 and <em>a</em> &#61; 97.56, it is now possible to complete the regression equation, <link href="#corty3e-ch14-bx6-1">Equation 14.1</link>:</p>
+<p id="corty3e-ch14-p116" block_type="sr-exp-eq"><em>Y&#8242;</em> &#61; <em>bX</em> &#43; <em>a</em></p>
+<p id="corty3e-ch14-p117" block_type="sr-exp-eq">&#61; &#8211;0.98<em>X</em> &#43; 97.56</p>
+<p id="corty3e-ch14-p118" block_type="sr_exp_txt">This is the regression equation. Regression equations are used to predict a <em>Y</em> score for a case from its score on <em>X.</em> In the present instance, it can be used to predict a smoker&#8217;s lung function (<em>Y&#8242;</em>) based on how many years he or she has been smoking (<em>X</em>). Let&#8217;s see it in action and predict the percentage of normal lung function for a person who has been smoking for eight years. Or, phrased mathematically, if <em>X</em> &#61; 8, what is <em>Y&#8242;</em>? Applying <link href="#corty3e-ch14-bx6-1">Equation 14.1</link> to answer that question, it is predicted that a person who has been smoking for eight years will have lungs that function at 89.72&#37; of normal capacity:</p>
+<p id="corty3e-ch14-p119" block_type="sr-exp-eq"><em>Y&#8242;</em> &#61; <em>bX</em> &#43; <em>a</em></p>
+<p id="corty3e-ch14-p120" block_type="sr-exp-eq">&#61; &#8211;0.98<em>X</em> &#43; 97.56</p>
+<p id="corty3e-ch14-p121" block_type="sr-exp-eq">&#61; (&#8211;0.98 &#215; 8) &#43; 97.56</p>
+<p id="corty3e-ch14-p122" block_type="sr-exp-eq">&#61; &#8211;7.8400 &#43; 97.56</p>
+<p id="corty3e-ch14-p123" block_type="sr-exp-eq">&#61; 89.7200</p>
+<p id="corty3e-ch14-p124" block_type="sr-exp-eq">&#61; 89.72</p>
+<p id="corty3e-ch14-p125" block_type="sr_exp_txt">Now let&#8217;s draw the regression line. The regression line should only span the range of existing <em>X</em> values. Look at the scatterplot in <link href="corty3e-ch14.xml#corty3e-ch14-fig-11">Figure 14.8</link> and see that the <em>X</em> values range from 1 to 65. Below, <em>Y&#8242;</em> scores for these two <em>X</em> values are calculated and they are used to draw the regression line seen in <link href="corty3e-ch14.xml#corty3e-ch14-fig-13"><strong>Figure 14.9</strong></link> from (1, 96.58) to (65, 33.86):</p>
+<figure id="corty3e-ch14-fig-13" block_type="figure" numbered="true" number="14.9" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="large" border="true"/>
+<image asset-id="corty3e-ch14-img-13" alt="image" src="asset/ch14/corty3e_fig14_09.jpg"/>
+<caption><strong><phrase block_type="fig_num">Figure 14.9</phrase> Regression Line for Years of Cigarette Smoking and Lung Function Study</strong> The regression line for this data set has a negative slope because the relationship is inverse&#8212;as the years of smoking go up, lung function goes down.</caption>
+</figure>
+<p id="corty3e_page_551" block_type="page_start">551</p>
+<p id="corty3e-ch14-p126" block_type="sr-exp-eq"><em>Y&#8242;</em> &#61; <em>bX</em> &#43; <em>a</em></p>
+<p id="corty3e-ch14-p127" block_type="sr-exp-eq">&#61; &#8211;0.98<em>X</em> &#43; 97.56</p>
+<p id="corty3e-ch14-p128" block_type="sr-exp-eq">&#61; (&#8211;0.98 &#215; 1) &#43; 97.56</p>
+<p id="corty3e-ch14-p129" block_type="sr-exp-eq">&#61; &#8211;0.9800 &#43; 97.56</p>
+<p id="corty3e-ch14-p130" block_type="sr-exp-eq">&#61; 96.5800</p>
+<p id="corty3e-ch14-p131" block_type="sr-exp-eq">&#61; 96.58</p>
+<p id="corty3e-ch14-p132" block_type="sr-exp-eq"><em>Y&#8242;</em> &#61; <em>bX</em> &#43; <em>a</em></p>
+<p id="corty3e-ch14-p133" block_type="sr-exp-eq">&#61; &#8211;0.98<em>X</em> &#43; 97.56</p>
+<p id="corty3e-ch14-p134" block_type="sr-exp-eq">&#61; (&#8211;0.98 &#215; 65) &#43; 97.56</p>
+<p id="corty3e-ch14-p135" block_type="sr-exp-eq">&#61; &#8211;63.7000 &#43; 97.56</p>
+<p id="corty3e-ch14-p136" block_type="sr-exp-eq">&#61; 33.8600</p>
+<p id="corty3e-ch14-p137" block_type="sr-exp-eq">&#61; 33.86</p>
+<box title="A Common Question" numbered="false" id="corty3e-ch14-bx1-1" block_type="bx-1-h">
+<p id="corty3e-ch14-p138" block_type="bx1-que"><strong>Q</strong> Predicting that a person who has smoked for eight years will have lungs that function at 89.72&#37; of normal capacity sounds quite exact. Is such a precise prediction accurate?</p>
+<p id="corty3e-ch14-p139" block_type="bx1-ans"><strong>A</strong> No. A prediction like 89.72&#37; is a point estimate. An interval estimate, which gives a range within which <em>Y&#8242;</em> probably falls, is a better way to go. We will discuss such an interval, called a predication interval, in the next section, though calculating the prediction interval is beyond the scope of this text.</p>
+</box>
+</box>
+<p id="corty3e_page_552" block_type="page_start">552</p>
+<box title="Practice Problems 14.1" numbered="false" id="corty3e-ch14-bx2-1" block_type="sr-h">
+<p id="corty3e-ch14-p140" block_type="sr-h1"><strong>Apply Your Knowledge</strong></p>
+<p id="corty3e-ch14-p141" block_type="sr-que-nl"><phrase block_type="question_num">14.01</phrase> Given <em>r</em> &#61; &#8211;.37, <em>s<sub>X</sub></em> &#61; 12.88, and <em>s<sub>Y</sub></em> &#61; 9.33, find the slope.</p>
+<p id="corty3e-ch14-p142" block_type="sr-que-nl"><phrase block_type="question_num">14.02</phrase> Given <em>M<sub>X</sub></em> &#61; 10.65, <em>M<sub>Y</sub></em> &#61; 45.64, and <em>b</em> &#61; 4.54, find the <em>Y</em>-intercept.</p>
+<p id="corty3e-ch14-p143" block_type="sr-que-nl"><phrase block_type="question_num">14.03</phrase> Given a slope of 1.80 and a <em>Y</em>-intercept of &#8211;12.42, form a regression equation.</p>
+<p id="corty3e-ch14-p144" block_type="sr-que-nl"><phrase block_type="question_num">14.04</phrase> Given <em>Y&#8242;</em> &#61; 1.50<em>X</em> &#43; 4.50, (a) find the predicted values of <em>Y</em> for <em>X</em> &#61; 2 and <em>X</em> &#61; 12, and (b) draw the regression line.</p>
+<p id="corty3e-ch14-p145" block_type="sr-que-nl"><phrase block_type="question_num">14.05</phrase> Given the regression line to the right, estimate <em>Y&#8242;</em> if <em>X</em> &#61; 40.</p>
+<figure id="corty3e-ch14-fig-14" block_type="un_figure" numbered="false" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="medium" border="true"/>
+<image asset-id="corty3e-ch14-img-14" alt="image" src="asset/ch14/corty3e_fig14_un01.jpg"/>
+</figure>
+</box>
+</section>
+<section id="corty3e-ch14-sec1-2" block_type="h1" chapter="14" title="" numbered="false" level="1" print_page="552">
+<section-metadata><section-title><phrase block_type="sec_num">14.2</phrase> <phrase block_type="sec_title">Errors in Regression</phrase></section-title></section-metadata>
+<p id="corty3e-ch14-p146" block_type="txt-ni">The goal of regression is to be able to predict <em>Y</em> values for <em>X</em> values. And the more accurately this can be done, the better. That&#8217;s why researchers need a way to measure how much error occurs in prediction. As we&#8217;ll soon learn, the measure for error in prediction is called the <termref term="standard error of the estimate">standard error of the estimate</termref>. Here&#8217;s how it works.</p>
+<p id="corty3e-ch14-p147" block_type="txt">With a perfect correlation, where all the data points fall on a line, each <em>X</em> value is associated with one and only one <em>Y</em> value. The story is more complex when <em>r</em> is not perfect. Look back at <link href="corty3e-ch14.xml#corty3e-ch14-fig-13">Figure 14.9</link>, which shows the scatterplot and regression line for the &#8211;.68 correlation between years of smoking and loss of lung function. Using the regression equation, it was predicted that a person with eight years of smoking would have 89.72&#37; of normal lung function. And that exact same prediction, 89.72&#37;, would be made for every person who had been smoking for eight years. Whether the person was male or female, whether the person exercised regularly or not, whether the person smoked five cigarettes a day or two packs&#8212;all those things don&#8217;t matter for the purposes of this estimate. If a person had been smoking for eight years, his or her lung capacity would be estimated at 89.72&#37;.</p>
+<p id="corty3e-ch14-p148" block_type="txt">But from the scatterplot in <link href="corty3e-ch14.xml#corty3e-ch14-fig-13">Figure 14.9</link>, it is apparent that people who smoke for eight years have lung function scores that range from about 70&#37; all the way up to 100&#37;. There is variability in the scores. How much the actual scores deviate from the predicted scores is a measure of the degree of error in prediction. The more deviation there is&#8212;the larger the error is&#8212;the less sure a researcher is of the accuracy of the prediction. The statistic that summarizes how much error exists is called the standard error of the estimate.</p>
+<p id="corty3e-ch14-p149" block_type="txt">Let&#8217;s use Dr. Paik&#8217;s marital satisfaction data set, with only eight cases, to calculate the standard error of the estimate. The first two columns in <link href="corty3e-ch14.xml#corty3e-ch14-fig-15"><strong>Table 14.2</strong></link> contain his data set and the third column the predicted <em>Y</em> values for each of the <em>X</em> values. Case A, for example, has a gender role flexibility score of 8 and a marital satisfaction score of 0.8. Using the linear regression equation, its predicted marital satisfaction score is 1.03. The final column is labeled residual scores. It shows the deviation of the predicted score from the actual score, calculated as <em>Y</em> &#8211; <em>Y&#8242;</em><em>.</em> The predicted <em>Y</em> score for case A was off by 0.23 points and, because of the direction of the difference, is reported as &#8211;0.23. This difference is a measure of how wrong the predicted score is, so it is a measure of error. Case B, for example, where the predicted score was off from the actual score by 0.07 points, had less error in its predicted score than case C, where <em>Y</em> &#8211; <em>Y&#8242;</em> was off by 0.57 points.</p>
+<figure id="corty3e-ch14-fig-15" block_type="table" numbered="true" number="14.2" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="xlarge" border="true"/>
+<image asset-id="corty3e-ch14-img-15" alt="image" src="asset/ch14/corty3e_table14_02.jpg"/>
+</figure>
+<p id="corty3e_page_553" block_type="page_start">553</p>
+<p id="corty3e-ch14-p150" block_type="txt">The last column contains deviation scores (error scores), which sum to zero. So, how can the average amount of error be represented? With a standard deviation! And that is what a standard error of the estimate is, the standard deviation of the residual scores. As can be seen at the bottom of the column, for Dr. Paik&#8217;s data, the standard deviation of the residual scores, the standard error of the estimate, is 0.56.</p>
+<p id="corty3e-ch14-p151" block_type="txt">The definitional formula requires that we calculate the standard error of the estimate as the standard deviation of the residual scores. <link href="#corty3e-ch14-bx6-4">Equation 14.4</link> gives the easier-to-use computational formula, a formula that can be used as long as one knows <em>r</em> and <em>s<sub>Y </sub>.</em></p>
+<box title="" numbered="false" id="corty3e-ch14-bx6-4" block_type="eq-t">
+<box-metadata><box-title><phrase block_type="sec_num">Equation 14.4</phrase> <phrase block_type="sec_title">Formula for the Standard Error of the Estimate</phrase></box-title></box-metadata>
+<p id="corty3e-ch14-eqn-4" block_type="equation">
+<image asset-id="corty3e-ch14-img-16" alt="image" src="asset/ch14/corty3e_eqn14_553_01.jpg"/></p>
+<p id="corty3e-ch14-p152" block_type="eq-txt-ni">where <em>s<sub>Y&#8211;Y&#8242;</sub></em> &#61; standard error of the estimate</p>
+<p id="corty3e-ch14-p153" block_type="eq-unl"><em>s<sub>Y</sub></em> &#61; standard deviation of the <em>Y</em> scores</p>
+<p id="corty3e-ch14-p154" block_type="eq-unl"><em>r</em> &#61; the Pearson <em>r</em> value</p>
+</box>
+<p id="corty3e-ch14-p155" block_type="txt">This equation says that the standard error of the estimate may be calculated by (1) squaring the correlation coefficient, (2) subtracting the square from 1, (3) taking the square root of the difference, and (4) multiplying this square root by the standard deviation of the <em>Y</em> scores. Here are the calculations for Dr. Paik&#8217;s data. The value about to be calculated, <em>s<sub>Y&#8211;Y&#8242;</sub></em> &#61; 0.56, is exactly the same value that was found as the standard deviation of the difference scores in <link href="corty3e-ch14.xml#corty3e-ch14-fig-15">Table 14.2</link>:</p>
+<p id="corty3e_page_554" block_type="page_start">554</p>
+<p id="corty3e-ch14-eqn-5" block_type="equation">
+<image asset-id="corty3e-ch14-img-17" alt="image" src="asset/ch14/corty3e_eqn14_554_01.jpg"/></p>
+<p id="corty3e-ch14-p156" block_type="txt">What does a standard error of the estimate of 0.56 mean? Loosely, one can think of standard error of the estimate as the average residual score, the average difference between the actual <em>Y</em> scores and the predicted <em>Y</em> scores. Is 0.56 a lot of error? It depends on the possible range of scores. Here the variable being predicted is marital satisfaction, which is measured on a scale ranging from 0 to 4. Being off by 0.56 points, on average, on a 4-point scale means being off, on average, by 14&#37;. That&#8217;s not good.</p>
+<p id="corty3e-ch14-p157" block_type="txt">Want a concrete example? Suppose Neil goes to a county fair and stops at an &#8220;I&#8217;ll Guess Your Weight&#8221; booth. The carny guesses Neil&#8217;s weight as 150 pounds. But, if he&#8217;s off by 14&#37;, Neil could weigh 171 pounds and the carny underestimated his weight. The error could go the other way as well. The carny could have overestimated Neil&#8217;s weight. Maybe Neil only weighs 129 pounds, which is off from 150 by 14&#37; in the opposite direction.</p>
+<p id="corty3e-ch14-p158" block_type="txt">This range, from 129 pounds to 171 pounds, gives the general idea of what a prediction interval is. A <termref term="prediction interval">prediction interval</termref> gives a range within which there is some certainty that a case&#8217;s real <em>Y</em> score falls. The calculation of the interval is based on the estimated <em>Y</em> score and the standard error of the estimate. The smaller the standard error of the estimate, the narrower the prediction interval and the better the prediction.</p>
+<box title="Worked Example 14.2" numbered="false" id="corty3e-ch14-bx3-2" block_type="sr-exp-n">
+<p id="corty3e-ch14-p159" block_type="sr_exp_txt_ni">For another example of calculating the standard error of the estimate, a return to the cigarette smoking and lung function study is in order. In that study, 2,500 smokers reported how many years they had been smoking (<em>M</em> &#61; 22, <em>s</em> &#61; 9) and had their lung function measured as a percentage of normal (<em>M</em> &#61; 76, <em>s</em> =13). There was a strong and statistically significant inverse relationship, <em>r</em> &#61; &#8211;.68: the longer people smoked, the lower their lung function. After a regression equation was developed, it was used to predict that a person who had been smoking for eight years would have lungs functioning at 89.72&#37; of normal capacity. How much confidence should we have that this estimate is accurate?</p>
+<p id="corty3e_page_555" block_type="page_start">555</p>
+<p id="corty3e-ch14-p160" block_type="sr_exp_txt">The way to answer this is by calculating <em>s<sub>Y&#8211;Y</sub>&#8242;</em> using <link href="#corty3e-ch14-bx6-4">Equation 14.4</link>:</p>
+<p id="corty3e-ch14-eqn-6" block_type="equation">
+<image asset-id="corty3e-ch14-img-18" alt="image" src="asset/ch14/corty3e_eqn14_555_01.jpg"/></p>
+<p id="corty3e-ch14-p161" block_type="sr_exp_txt">This standard error of the estimate of 9.53 means that the actual <em>Y</em> scores and <em>Y&#8242;</em> scores for the 2,500 people in the sample differed by almost 10 points, on average, on a 100-point scale. That seems like a fair amount of error. This suggests that predictions based on this regression equation aren&#8217;t very accurate.</p>
+<box title="A Common Question" numbered="false" id="corty3e-ch14-bx1-2" block_type="bx-1-h">
+<p id="corty3e-ch14-p162" block_type="bx1-que"><strong>Q</strong> So far, both examples have had standard errors of the estimate that are large, suggesting prediction is not very good. What does it take to have a small standard error of the estimate?</p>
+<p id="corty3e-ch14-p163" block_type="bx1-ans"><strong>A</strong> As <em>r</em> grows larger and <em>s<sub>Y</sub></em> becomes smaller, <em>s<sub>Y&#8211;Y&#8242;</sub></em> gets smaller.</p>
+</box>
+</box>
+<box title="Practice Problems 14.2" numbered="false" id="corty3e-ch14-bx2-2" block_type="sr-h">
+<p id="corty3e-ch14-p164" block_type="sr-h1"><strong>Apply Your Knowledge</strong></p>
+<p id="corty3e-ch14-p165" block_type="sr-que-nl"><phrase block_type="question_num">14.06</phrase> Given <em>r</em> &#61; .42 and <em>s<sub>Y</sub></em> &#61; 5.64, find <em>s<sub>Y&#8211;Y&#8242;</sub>.</em></p>
+<p id="corty3e-ch14-p166" block_type="sr-que-nl"><phrase block_type="question_num">14.07</phrase> Dr. Binet developed a regression equation to predict adult IQ from childhood language abilities. IQ can range from 55 to 145. The standard error of the estimate for the regression equation is 14. Is that a large error of the estimate?</p>
+</box>
+</section>
+<section id="corty3e-ch14-sec1-3" block_type="h1" chapter="14" title="" numbered="false" level="1" print_page="555">
+<section-metadata><section-title><phrase block_type="sec_num">14.3</phrase> <phrase block_type="sec_title">Multiple Regression</phrase></section-title></section-metadata>
+<p id="corty3e-ch14-p167" block_type="txt-ni">Here&#8217;s a thought experiment. In which scenario could one more accurately predict a student&#8217;s GPA?</p>
+<list id="corty3e-ch14-list-7" type="ordered" block_type="upperalpha">
+<li><p id="corty3e-ch14-p168" block_type="nl-first">Knowing how many hours the student spends on schoolwork each week</p></li>
+<li><p id="corty3e-ch14-p169" block_type="nl-last">Knowing how many hours the student spends on schoolwork each week <em>plus</em> his or her high school GPA, his or her IQ, and how much alcohol the student consumes each week</p></li>
+</list>
+<p id="corty3e-ch14-p170" block_type="txt">Most people believe the additional information in Scenario B is relevant to predicting academic performance and they are correct. In Scenario B, the prediction should be more accurate because more factors are taken into account.</p>
+<p id="corty3e_page_556" block_type="page_start">556</p>
+<p id="corty3e-ch14-p171" block_type="txt">The difference between Scenario A and Scenario B is the difference between simple regression and multiple regression. The previous section focused on simple linear regression. <termref term="Simple regression">Simple regression</termref> uses just one predictor variable to calculate <em>Y&#8242;</em><em>.</em> <strong>Multiple regression</strong> uses several predictor variables to calculate <em>Y&#8242;</em><em>.</em> If the different <em>X</em> variables have different influences on the outcome variable being predicted, when they are combined, they will do a better job of prediction than any one variable by itself.</p>
+<p id="corty3e-ch14-p172" block_type="txt"><em>r</em><sup>2,</sup> the percentage of variability in the outcome variable that is accounted for by the predictor variable(s), is called <em>R</em> <sup>2</sup> in multiple regression. Better prediction means a higher percentage of variability is accounted for with multiple regression than with simple regression. In this way, multiple regression is a more powerful technique than simple regression.</p>
+<p id="corty3e-ch14-p173" block_type="txt">Deriving a multiple regression equation is beyond the scope of this text. But, here is an example to show how it works. Every year, colleges have many more applicants than they can admit. Part of the admissions process involves deciding which applicants can do college-level work. Multiple regression plays a role in predicting which applicants will fare well in college.</p>
+<p id="corty3e-ch14-p174" block_type="txt">The College Board, the folks who created the SAT, provide a service to colleges that it calls ACES, the Admitted Class Evaluation Service. ACES uses admissions information from a first-year class to develop a multiple regression equation to predict first-year GPA. Once this equation is developed, the college can apply it in subsequent years to applicants to predict what their GPAs will be. The college can decide whom to admit, objectively, on the basis of predicted GPA.</p>
+<p id="corty3e-ch14-p175" block_type="txt">The College Board offers a sample ACES report on its website (<link href="http://www.collegeboard.com">collegeboard.com</link>). Using hypothetical data, the Board examines how well four variables&#8212;SAT reading subtest scores, SAT writing subtest scores, SAT math subtest scores, and high school class rank&#8212;predict first-year GPA for about a thousand students at one college.<termref term="fn-ch14-1"><sup>*</sup></termref> [High school class rank is transformed to range from 100 (the best student) to 0 (the worst student).] Here are the Pearson <em>r</em> correlation coefficients for each of these variables predicting GPA by itself:</p>
+<p id="corty3e-ch14-p176" block_type="fn"><link href="corty3e-ch14.xml#corty3e-ch14-p175"><sup>*</sup></link> Note: This example is based on the three-section SAT in use prior to 2016. Beginning March 2016, the SAT includes only two sections, Reading/Writing and Math.</p>
+<list id="corty3e-ch14-list-8" type="unordered" block_type="bullet">
+<li><p id="corty3e-ch14-p177" block_type="bl-first">SAT reading test, <em>r</em> &#61; .42</p></li>
+<li><p id="corty3e-ch14-p178" block_type="bl-mid">SAT writing test, <em>r</em> &#61; .42</p></li>
+<li><p id="corty3e-ch14-p179" block_type="bl-mid">SAT math test, <em>r</em> &#61; .39</p></li>
+<li><p id="corty3e-ch14-p180" block_type="bl-last">High school class rank, <em>r</em> &#61; .52</p></li>
+</list>
+<p id="corty3e-ch14-p181" block_type="txt">These <em>r</em>&#8217;s are all fairly close to each other in terms of size. The <em>r</em> with the strongest correlation with GPA, meaning the one that is the strongest predictor, is high school class rank. There is certainly some overlap in what these four variables measure and how well they predict GPA. For example, general intelligence level plays a role in all four scores and intelligence plays a role in determining GPA. But, each of the four variables also measures something unique. For example, part of how well one does on the math test is not a result of one&#8217;s general level of intelligence or the reading and writing skills that help on any test. But, to some degree, performance on a math test is determined by specialized math skills. And, to some degree, these same specialized math skills play a role in some of the courses that determine the GPA. Multiple regression adds together the unique predictive power of each variable. As a result, multiple regression usually accounts for a bigger percentage of the variability in the outcome variable than is accounted for by any single variable.</p>
+<p id="corty3e_page_557" block_type="page_start">557</p>
+<p id="corty3e-ch14-p182" block_type="txt">When the four College Board variables are combined together to predict GPA in a multiple regression, the correlation climbs to <em>R</em> &#61; .57. (The abbreviation for the correlation coefficient for multiple regression is <em>R,</em> not <em>r.</em>) This doesn&#8217;t sound like much of an increase from the .52 correlation between class rank and GPA. But, it is. The percentage of variance explained changes from 27.04&#37; to 32.49&#37;. Predicting an extra 5 percentage points of variability is very worthwhile.</p>
+<p id="corty3e-ch14-p183" block_type="txt">The multiple regression equation the College Board develops for a college can be used to predict GPA from SAT scores and high school rank for a potential student. Their equation is a more complex version of the linear regression equation from earlier in this chapter. The equation has &#8220;weights&#8221; for each of the predictor variables. The weights are like the slope in the linear regression equation. And there is a constant that is like the <em>Y</em>-intercept. When all of this information is put together, it makes for a long equation. Here is how estimated GPA, <em>GPA&#8242;</em><em>,</em> would be calculated:</p>
+<p id="corty3e-ch14-p184" block_type="eq"><em>GPA&#8242;</em> &#61; (<em>SAT</em><sub>ReadingScore </sub>&#215; <em>Weight</em><sub>ReadingScore</sub>) &#43; (<em>SAT</em><sub>WritingScore</sub> &#215; <em>Weight</em><sub>WritingScore</sub>) &#43; (<em>SAT</em><sub>MathScore</sub> &#215; <em>Weight</em><sub>MathScore</sub>) &#43; (<em>HSRank</em> &#215; <em>Weight</em><sub>HSRank</sub>) &#43; <em>Constant</em></p>
+<p id="corty3e-ch14-p185" block_type="txt">Here are the four weights and the constant for the College Board example:</p>
+<list id="corty3e-ch14-list-9" type="unordered" block_type="bullet">
+<li><p id="corty3e-ch14-p186" block_type="bl-first">Reading weight &#61; 0.0012</p></li>
+<li><p id="corty3e-ch14-p187" block_type="bl-mid">Writing weight &#61; 0.0013</p></li>
+<li><p id="corty3e-ch14-p188" block_type="bl-mid">Math weight &#61; 0.0006</p></li>
+<li><p id="corty3e-ch14-p189" block_type="bl-mid">HS rank weight &#61; 0.0029</p></li>
+<li><p id="corty3e-ch14-p190" block_type="bl-last">Constant &#61; 0.7821</p></li>
+</list>
+<p id="corty3e-ch14-p191" block_type="txt">If an applicant were good at reading (SAT score &#61; 600), not so good at writing (SAT score &#61; 450), very good at math (SAT score &#61; 760), and had a very good class rank (90), then her predicted GPA would be</p>
+<p id="corty3e-ch14-p192" block_type="eq"><em>GPA&#8242;</em> &#61; (<em>SAT</em><sub>ReadingScore </sub>&#215; <em>Weight</em><sub>ReadingScore</sub>) &#43; (<em>SAT</em><sub>WritingScore</sub> &#215; <em>Weight</em><sub>WritingScore</sub>) &#43; (<em>SAT</em><sub>MathScore</sub> &#215; <em>Weight</em><sub>MathScore</sub>) &#43; (<em>HSRank</em> &#215; <em>Weight</em><sub>HSRank</sub>) &#43; <em>Constant</em></p>
+<p id="corty3e-ch14-p193" block_type="eq">&#61; (600 &#215; 0.0012) &#43; (450 &#215; 0.0013) &#43; (760 &#215; 0.0006) &#43; (90 &#215; 0.0029) &#43; 0.7821 &#61; 0.7200 &#43; 0.5850 &#43; 0.4560 &#43; 0.2610 &#43; 0.7821 &#61; 2.8041 &#61; 2.80</p>
+<p id="corty3e-ch14-p194" block_type="txt-ni">A person with those SAT scores and class rank would be predicted to end up with a GPA of 2.80 at the end of her first year.</p>
+<p id="corty3e-ch14-p195" block_type="txt">The multiple regression equation is built from cases where the first-year GPA is known. The equation can be used to predict first-year GPA for these students. As a result, the students have both actual and predicted GPAs, and it is possible to see how well the predicted GPA predicts the actual GPA. The correlation between the two is .46. Multiple regression makes objective predictions that minimize errors in prediction <em>overall.</em> In that sense, it makes better decisions. But, unless <em>R</em> &#61; 1.00, it doesn&#8217;t make perfect predictions.</p>
+<box title="Worked Example 14.3" numbered="false" id="corty3e-ch14-bx3-3" block_type="sr-exp-n">
+<p id="corty3e-ch14-p196" block_type="sr_exp_txt_ni">Many Americans are trying to lose weight, either by counting calories or by using Weight Watchers<sup>&#174;</sup>. One of the two Weight Watchers plans counts points, not calories. In its system, foods are assigned a point value based on a mysterious combination of how much protein, carbohydrates, fat, and fiber the food contains. The number of calories in the food is not part of the equation. With the point system, a cup of lettuce is worth 0.3 points and a McDonald&#8217;s Quarter Pounder is worth 13.4 points.</p>
+<p id="corty3e_page_558" block_type="page_start">558</p>
+<p id="corty3e-ch14-p197" block_type="sr_exp_txt">Imagine that a nutritionist, Dr. Feldman, wanted to crack the secret equation that Weight Watchers uses and figure out how these four variables&#8212;protein, carbs, fat, and fiber&#8212;are combined to generate a point score. This calls for multiple regression.</p>
+<p id="corty3e-ch14-p198" block_type="sr_exp_txt">First, Dr. Feldman draws a random sample of foods and for each one he finds out how much protein, carbs, fat, and fiber the food contains. He also consults the Weight Watchers Web site and locates the point value for each food. Armed with these four predictor variables (protein, carbs, fat, and fiber) and the one outcome variable (points), he uses SPSS to find the multiple regression equation. The equation that calculates <em>Points&#8242;</em><em>,</em> the estimated number of points, is</p>
+<p id="corty3e-ch14-p199" block_type="sr-exp-eq"><em>Points&#8242;</em> &#61; (<em>Grams</em><sub>Protein</sub> &#215; <em>Weight</em><sub>Protein</sub>) &#43; (<em>Grams</em><sub>Carbs</sub> &#215; <em>Weight</em><sub>Carbs</sub>) &#43; (<em>Grams</em><sub>Fat</sub> &#215; <em>Weight</em><sub>Fat</sub>) &#43; (<em>Grams</em><sub>Fiber</sub> &#215; <em>Weight</em><sub>Fiber</sub>) &#43; <em>Constant</em></p>
+<p id="corty3e-ch14-p200" block_type="sr-exp-eq">&#61; (<em>Grams</em><sub>Protein</sub> &#215; 0.074) &#43; (<em>Grams</em><sub>Carbs</sub> &#215; 0.096) &#43; (<em>Grams</em><sub>Fat</sub> &#215; 0.279) &#43; (<em>Grams</em><sub>Fiber</sub> &#215; &#8211;0.101) &#43; 0.112</p>
+<p id="corty3e-ch14-p201" block_type="sr_exp_txt">Note that three of the weights are positive, but the weight for fiber is negative. This reveals that fiber plays a different role in determining points than do the other three variables. As the levels of proteins, carbohydrates, and fats in a food go up, so does the point value for the food. However, as the amount of fiber in a food goes up, the point value goes down.</p>
+<p id="corty3e-ch14-p202" block_type="sr_exp_txt">An important use of a regression equation is to predict a value for a new case. Suppose Dr. Feldman is about to eat a BLT and wants to know how many points it is worth. From the menu, he learns that the sandwich has 15 grams of protein, 28 grams of carbohydrates, 17 grams of fat, and 3 grams of fiber. Here&#8217;s how he would calculate its points:</p>
+<p id="corty3e-ch14-p203" block_type="sr-exp-eq"><em>Points BLT&#8242;</em> &#61; (<em>Grams</em><sub>Protein</sub> &#215; 0.074) &#43; (<em>Grams</em><sub>Carbs</sub> &#215; 0.096) &#43; (<em>Grams</em><sub>Fat</sub> &#215; 0.279) &#43; (<em>Grams</em><sub>Fiber</sub> &#215; &#8211;0.101) &#43; 0.112 &#61; (15 &#215; 0.074) &#43; (28 &#215; 0.096) &#43; (17 &#215; 0.279) &#43; (3 &#215; &#8211;0.101) &#43; 0.112</p>
+<p id="corty3e-ch14-p204" block_type="sr-exp-eq">&#61; 1.1100 &#43; 2.6880 &#43; 4.7430 &#8211; 0.3030 &#43; 0.112 &#61; 8.3500 &#61; 8.35</p>
+<p id="corty3e-ch14-p205" block_type="sr_exp_txt">Dr. Feldman has now estimated (predicted) that eating a BLT at lunch will use up 8.35 of a person&#8217;s daily point allowance.</p>
+</box>
+<box title="Practice Problems 14.3" numbered="false" id="corty3e-ch14-bx2-3" block_type="sr-h">
+<p id="corty3e-ch14-p206" block_type="sr-h1"><strong>Review Your Knowledge</strong></p>
+<p id="corty3e-ch14-p207" block_type="sr-que-nl"><phrase block_type="question_num">14.08</phrase> Explain why multiple regression explains a larger percentage of variability in the predicted variable than does simple regression.</p>
+<p id="corty3e-ch14-p208" block_type="sr-h1"><strong>Apply Your Knowledge</strong></p>
+<p id="corty3e-ch14-p209" block_type="sr-que-nl"><phrase block_type="question_num">14.09</phrase> A multiple regression equation has a constant of 55.12, a weight of 13.17 for variable 1, and a weight of 4.55 for variable 2. If a case has a score of 12 on variable 1 and a score of 33 on variable 2, what is <em>Y&#8242;</em>?</p>
+</box>
+<p id="corty3e_page_559" block_type="page_start">559</p>
+<box title="Application Demonstration" numbered="false" id="corty3e-ch14-bx5-1" block_type="sr-x-h">
+<p id="corty3e-ch14-p210" block_type="sr-x-txt-ni">Let&#8217;s see multiple regression in action. In this cost-conscious era, hospitals try to save money by reducing the length of stay of their patients. It would be beneficial to a hospital if it could predict a patient&#8217;s length of stay at the time of admission. If so, therapeutic resources could be directed to the patients predicted to be in the hospital for a long time, in order to help them get better more quickly.</p>
+<p id="corty3e-ch14-p211" block_type="sr-x-txt">Some researchers turned their attention to predicting length of stay for patients admitted to a large, metropolitan psychiatric hospital (Huntley, Cho, Christman, &#38; Csernansky, 1998). In a six-month period, almost 800 patients were admitted to the facility and they spent an average of 16.3 days in the hospital. The hospital database contained a lot of information about each patient, including each patient&#8217;s sex, age, primary and secondary diagnoses, number of prior admissions, and legal status. The researchers combined these variables using multiple regression to see if length of stay could be predicted.</p>
+<p id="corty3e-ch14-p212" block_type="sr-x-txt">There turned out to be five variables that played a statistically significant role in predicting a patient&#8217;s length of stay: (1) a primary diagnosis of schizophrenia, (2) the number of previous admissions, (3) a primary diagnosis of a mood disorder, (4) age, and (5) an alcohol or drug problem as a secondary diagnosis. These variables can be thought of as reflecting difficult cases. For example, someone with five previous psychiatric admissions probably has a more severe problem, one that may take longer to treat, than a patient for whom this admission is the first hospitalization.</p>
+<p id="corty3e-ch14-p213" block_type="sr-x-txt">Together, these five variables predicted 17&#37; of the variance in length of stay. This may not sound like much, but Cohen (1988) would call it a medium effect. Is it enough to be useful?</p>
+<p id="corty3e-ch14-p214" block_type="sr-x-txt">So far, what these researchers did is not unusual. But, now their work took an interesting direction. They used their regression equation to calculate the predicted length of stay for each patient. As a result, there were two pieces of data for each patient&#8212;the actual length of stay and the predicted length of stay. The researchers then added a third variable for each patient&#8212;the psychiatrist in charge of the patient&#8217;s care. There were 12 psychiatrists at this hospital and newly admitted patients were assigned to their care on a rotating basis. In essence, patients were randomly assigned to psychiatrists.</p>
+<p id="corty3e-ch14-p215" block_type="sr-x-txt">If patients are randomly assigned to psychiatrists and if all psychiatrists provide equivalent care, then the mean length of stay should be roughly the same for each psychiatrist. The blue bars in <link href="corty3e-ch14.xml#corty3e-ch14-fig-19"><strong>Figure 14.10</strong></link> show the mean length of stay of the patients for each of the psychiatrists&#8212;it ranges from less than 10 days (Psychiatrist 1) to more than 25 days (Psychiatrist 12). Either differences in the effectiveness of the psychiatrists exist or some psychiatrists had more or less than their fair share of hard-to-treat patients.</p>
+<figure id="corty3e-ch14-fig-19" block_type="figure" numbered="true" number="14.10" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="large" border="true"/>
+<image asset-id="corty3e-ch14-img-19" alt="image" src="asset/ch14/corty3e_fig14_10.jpg"/>
+<caption><strong><phrase block_type="fig_num">Figure 14.10</phrase> Actual and Predicted Length of Stay for Patients Treated by Different Psychiatrists</strong> Multiple regression was used to calculate the predicted length of stay for each patient. Comparing the two means allows one to speculate about a psychiatrist&#8217;s skills.</caption>
+<asset_source>(Data from Huntley, Cho, Christman, &#38; Csernansky, 1998.) </asset_source>
+</figure>
+<p id="corty3e-ch14-p216" block_type="sr-x-txt">How could one tell if a psychiatrist were assigned difficult or easy patients? Difficult patients should have a longer predicted length of stay. So, calculating the mean predicted length of stay for each psychiatrist should answer that question. The grey bars in <link href="corty3e-ch14.xml#corty3e-ch14-fig-19">Figure 14.10</link> show the mean predicted length of stay corresponding to each psychiatrist.</p>
+<p id="corty3e-ch14-p217" block_type="sr-x-txt">Look at Psychiatrist 1. Earlier, when the focus was only on the blue bars showing actual length of stay, he appeared to be doing a good job because his patients had the shortest length of stay. Now, looking at the grey bar, it is apparent that this psychiatrist was assigned the healthiest patients. No wonder he discharged them quickly.</p>
+<p id="corty3e_page_560" block_type="page_start">560</p>
+<p id="corty3e-ch14-p218" block_type="sr-x-txt">The two bars, one the actual length of stay and the other predicted by multiple regression, allow us to think about this psychiatrist&#8217;s performance in a more complex fashion. Psychiatrist 1&#8217;s patients have a mean length of stay around 8 days but are predicted to need approximately 11 days. Why the difference? There are three likely explanations, two of which involve his skills and one that involves multiple regression. First, perhaps he is a phenomenal psychiatrist and cures people quickly. It could happen. Second, maybe he is a terrible psychiatrist who can&#8217;t assess patients&#8217; progress and discharges them before they are ready. That could happen, too. Third, maybe there are errors in prediction. Maybe this is especially true for the healthier cases and their lengths of stay are overestimated.</p>
+<p id="corty3e-ch14-p219" block_type="sr-x-txt">Whatever the explanation turns out to be, this study shows how multiple regression is used in psychology and how predictions are made and utilized. Regression, either simple or multiple, is a useful tool that helps researchers understand their results in more detail.</p>
+</box>
+</section>
+<section id="corty3e-ch14-sec1-4" block_type="sum-h" chapter="14" title="" numbered="false" level="1" print_page="560">
+<section-metadata><section-title>SUMMARY</section-title></section-metadata>
+<p id="corty3e-ch14-p220" block_type="sum-hd1"><strong>Calculate and apply a linear regression equation for a Pearson correlation coefficient.</strong></p>
+<list id="corty3e-ch14-list-10" type="unordered" block_type="bluebullet">
+<li><p id="corty3e-ch14-p221" block_type="sum-bl-first">Linear regression predicts a value of <em>Y,</em> <em>Y&#8242;</em><em>,</em> for <em>X</em> when there is a statistically significant relationship between <em>X</em> and <em>Y.</em> The prediction equation uses the slope and <em>Y</em>-intercept to generate a regression line, the best-fitting line that minimizes the errors between <em>Y</em> and <em>Y&#8242;</em><em>.</em> Slope indicates how much change in <em>Y</em> is predicted for each 1-unit change in <em>X</em>, and the <em>Y</em>-intercept tells where the line passes through the <em>Y</em>-axis.</p></li>
+<li><p id="corty3e-ch14-p222" block_type="sum-bl-first">As <em>r</em> approaches zero, the regression line becomes horizontal and predicted <em>Y</em> values approach <em>M<sub>Y</sub>.</em> When <em>r</em> &#61; 0, then <em>X</em> doesn&#8217;t predict <em>Y</em> and the best prediction that can be made for <em>Y&#8242;</em> is <em>M<sub>Y</sub></em>.</p></li>
+</list>
+<p id="corty3e_page_561" block_type="page_start">561</p>
+<p id="corty3e-ch14-p223" block_type="sum-hd1"><strong>Measure uncertainty in regression predictions.</strong></p>
+<list id="corty3e-ch14-list-11" type="unordered" block_type="bluebullet">
+<li><p id="corty3e-ch14-p224" block_type="sum-bl-first">Error in prediction is the difference between the actual score, <em>Y,</em> and the predicted score, <em>Y&#8242;</em>.</p></li>
+<li><p id="corty3e-ch14-p225" block_type="sum-bl-first">The average amount of error is summarized in a statistic called the standard error of the estimate, which is the standard deviation of the residual scores.</p></li>
+</list>
+<p id="corty3e-ch14-p226" block_type="sum-hd1"><strong>Describe how multiple regression works.</strong></p>
+<list id="corty3e-ch14-list-12" type="unordered" block_type="bluebullet">
+<li><p id="corty3e-ch14-p227" block_type="sum-bl-first">Simple regression uses a single predictor variable to predict <em>Y&#8242;</em><em>;</em> multiple regression uses two or more predictor variables. By combining the unique predictive ability of multiple predictor variables, multiple regression accounts for more variability in the outcome variable.</p></li>
+</list>
+</section>
+<section id="corty3e-ch14-sec1-5" block_type="cr-kt-t" chapter="14" title="" numbered="false" level="1" print_page="561">
+<section-metadata><section-title>KEY TERMS</section-title></section-metadata>
+<question id="corty3e-ch14-keyterms-ques1" numbered="false" title="" number="">
+<query id="corty3e-ch14-keyterms-ques1-qry">MA:
+a.least squares criterion:: prediction errors are squared and the best-fitting regression line is the one that has the smallest sum of squared errors.
+a.linear regression:: a predictor variable is used to predict a case&#8217;s score on another variable and the prediction equation takes the form of a straight line.
+a.multiple linear regression:: prediction in which multiple predictor variables are combined to predict an outcome variable.
+a.prediction interval:: a range around <em>Y&#8242;</em> within which there is some certainty that a case&#8217;s real value of <em>Y</em> falls.
+a.regression line:: the best-fitting straight line for predicting <em>Y</em> from <em>X.</em>
+a.residual:: the difference between an actual score and a predicted score; the size of the error in prediction.
+a.simple linear regression:: prediction in which <em>Y&#8242;</em> is predicted from a single predictor variable.
+a.slope:: the tilt of the line; rise over run; how much up or down change in <em>Y</em> is predicted for each 1-unit change in <em>X.</em>
+a.standard error of the estimate:: the standard deviation of the residual scores, a measure of error in regression.
+a.Y-intercept:: the spot where the regression line would pass through the <em>Y</em>-axis.
+a.Y prime:: the value of <em>Y</em> predicted from <em>X</em> by a regression equation; <em>Y&#8242;</em><em>.</em>
+</query>
+</question>
+<box title="DIY" numbered="false" id="corty3e-ch14-bx4-1" block_type="bx4-h">
+<p id="corty3e-ch14-p239" block_type="bx4-txt-ni">In the DIY of <link href="corty3e-ch13.xml">Chapter 13</link>, you calculated the correlation between foot size and height. Now, take that same correlation coefficient and generate the regression equation to predict height from foot size. When you have arrived at the equation, use it to calculate <em>Y&#8242;</em> for the students on whom the equation was based. For each of the cases, calculate residual scores. Do they sum to zero? Now, find the standard deviation of the residual scores. Then, use <link href="#corty3e-ch14-bx6-4">Equation 14.4</link> to calculate the standard error of the estimate. Is that the same value you calculated for the standard deviation?</p>
+<p id="corty3e-ch14-p240" block_type="bx4-txt">Want more fun? Select 10 new cases and use the regression equation to calculate <em>Y&#8242;</em> scores for them. Will the regression equation be as accurate for them as it was for the original group? Investigate this by calculating residual scores and finding their standard deviation. Is it larger or smaller than the first standard deviation? Why?</p>
+</box>
+
+</section>
+<section id="corty3e-ch14-sec1-6" block_type="cr-x-h" chapter="14" title="" numbered="false" level="1" print_page="562">
+<section-metadata><section-title>CHAPTER EXERCISES</section-title></section-metadata>
+<p id="corty3e_page_562" block_type="page_start">562</p>
+<p id="corty3e-ch14-p240b" block_type="cr-x-txt-ni"><strong><em>Answers to the odd-numbered exercises appear in <link href="corty3e-appb.xml">Appendix B</link>.</em></strong></p>
+<p id="corty3e-ch14-p241" block_type="cr-x-hd1"><strong>Review Your Knowledge</strong></p>
+<p id="corty3e-ch14-p242" block_type="cr_x_nl"><phrase block_type="question_num">14.01</phrase> The correlation chapter was about understanding &#95;&#95;&#95;&#95; between variables; this chapter, on regression, is about &#95;&#95;&#95;&#95; one &#95;&#95;&#95;&#95; from another &#95;&#95;&#95;&#95;.</p>
+<p id="corty3e-ch14-p243" block_type="cr_x_nl"><phrase block_type="question_num">14.02</phrase> In linear regression, the &#95;&#95;&#95;&#95; variable is <em>X</em> and <em>Y</em> is the &#95;&#95;&#95;&#95; variable.</p>
+<p id="corty3e-ch14-p244" block_type="cr_x_nl"><phrase block_type="question_num">14.03</phrase> It is reasonable to do linear regression if the correlation between <em>X</em> and <em>Y</em> is &#95;&#95;&#95;&#95;.</p>
+<p id="corty3e-ch14-p245" block_type="cr_x_nl"><phrase block_type="question_num">14.04</phrase> &#95;&#95;&#95;&#95; is the abbreviation for a predicted value of <em>Y.</em></p>
+<p id="corty3e-ch14-p246" block_type="cr_x_nl"><phrase block_type="question_num">14.05</phrase> If blindly guessing a person&#8217;s score, the best guess is the &#95;&#95;&#95;&#95;.</p>
+<p id="corty3e-ch14-p247" block_type="cr_x_nl"><phrase block_type="question_num">14.06</phrase> Statisticians use the &#95;&#95;&#95;&#95; criterion to judge the regression line.</p>
+<p id="corty3e-ch14-p248" block_type="cr_x_nl"><phrase block_type="question_num">14.07</phrase> On the basis of least squares, the best-fitting line is the one that &#95;&#95;&#95;&#95; the sum of the &#95;&#95;&#95;&#95;.</p>
+<p id="corty3e-ch14-p249" block_type="cr_x_nl"><phrase block_type="question_num">14.08</phrase> The difference between a case&#8217;s actual <em>Y</em> score and its predicted <em>Y</em> score is called a &#95;&#95;&#95;&#95;.</p>
+<p id="corty3e-ch14-p250" block_type="cr_x_nl"><phrase block_type="question_num">14.09</phrase> A residual score is a measure of &#95;&#95;&#95;&#95;.</p>
+<p id="corty3e-ch14-p251" block_type="cr_x_nl"><phrase block_type="question_num">14.10</phrase> In the linear regression equation, <em>b</em> is the &#95;&#95;&#95;&#95; and <em>a</em> is the &#95;&#95;&#95;&#95;.</p>
+<p id="corty3e-ch14-p252" block_type="cr_x_nl"><phrase block_type="question_num">14.11</phrase> <em>Y&#8242;</em> in the regression equation is &#95;&#95;&#95;&#95; and <em>X</em> is the &#95;&#95;&#95;&#95;.</p>
+<p id="corty3e-ch14-p253" block_type="cr_x_nl"><phrase block_type="question_num">14.12</phrase> A &#95;&#95;&#95;&#95; slope means the line is moving down and to the right.</p>
+<p id="corty3e-ch14-p254" block_type="cr_x_nl"><phrase block_type="question_num">14.13</phrase> If the correlation is positive, the slope of the regression line is &#95;&#95;&#95;&#95;.</p>
+<p id="corty3e-ch14-p255" block_type="cr_x_nl"><phrase block_type="question_num">14.14</phrase> If a slope is &#8211;0.50, then for every 1-point increase in <em>X,</em> there is a 0.5-point &#95;&#95;&#95;&#95; in <em>Y.</em></p>
+<p id="corty3e-ch14-p256" block_type="cr_x_nl"><phrase block_type="question_num">14.15</phrase> The spot where the regression line would pass through the &#95;&#95;&#95;&#95; is called the <em>Y</em>-intercept.</p>
+<p id="corty3e-ch14-p257" block_type="cr_x_nl"><phrase block_type="question_num">14.16</phrase> Predictions of <em>Y</em> from <em>X</em> should only be made for <em>X</em> values that fall within the range of &#95;&#95;&#95;&#95; used to develop the regression equation.</p>
+<p id="corty3e-ch14-p258" block_type="cr_x_nl"><phrase block_type="question_num">14.17</phrase> If <em>X</em> &#61; 17 and <em>Y&#8242;</em> &#61; 29.37, then the value 29.37 is a &#95;&#95;&#95;&#95; estimate.</p>
+<p id="corty3e-ch14-p259" block_type="cr_x_nl"><phrase block_type="question_num">14.18</phrase> An &#95;&#95;&#95;&#95; estimate is better than a &#95;&#95;&#95;&#95; estimate.</p>
+<p id="corty3e-ch14-p260" block_type="cr_x_nl"><phrase block_type="question_num">14.19</phrase> If one uses a regression equation to predict <em>Y&#8242;</em> from <em>X,</em> and several cases have the same <em>X</em> value, then each time <em>Y&#8242;</em> is predicted for these cases, <em>Y&#8242;</em> will be <em>the same / different</em>.</p>
+<p id="corty3e-ch14-p261" block_type="cr_x_nl"><phrase block_type="question_num">14.20</phrase> The standard deviation of the residual scores is called the &#95;&#95;&#95;&#95;.</p>
+<p id="corty3e-ch14-p262" block_type="cr_x_nl"><phrase block_type="question_num">14.21</phrase> The standard error of the estimate can be thought of as the average &#95;&#95;&#95;&#95; in prediction.</p>
+<p id="corty3e-ch14-p263" block_type="cr_x_nl"><phrase block_type="question_num">14.22</phrase> A prediction interval gives the range within which it is likely that a case&#8217;s <em>Y / Y&#8242;</em>value falls.</p>
+<p id="corty3e-ch14-p264" block_type="cr_x_nl"><phrase block_type="question_num">14.23</phrase> The standard error of the estimate has an impact on the &#95;&#95;&#95;&#95; of a prediction interval.</p>
+<p id="corty3e-ch14-p265" block_type="cr_x_nl"><phrase block_type="question_num">14.24</phrase> Simple regression uses &#95;&#95;&#95;&#95; predictor variable to predict <em>Y&#8242;</em><em>;</em> multiple regression uses &#95;&#95;&#95;&#95;.</p>
+<p id="corty3e-ch14-p266" block_type="cr_x_nl"><phrase block_type="question_num">14.25</phrase> Comparing multiple regression to simple regression, &#95;&#95;&#95;&#95; usually accounts for a higher percentage of variability in <em>Y</em> than does &#95;&#95;&#95;&#95;.</p>
+<p id="corty3e-ch14-p267" block_type="cr_x_nl"><phrase block_type="question_num">14.26</phrase> Multiple regression is often used in college &#95;&#95;&#95;&#95; decisions.</p>
+<p id="corty3e-ch14-p268" block_type="cr-x-hd1"><strong>Apply Your Knowledge</strong></p>
+<p id="corty3e-ch14-p269" block_type="cr-x-txt-ni"><strong><em>Using regression lines to predict Y</em></strong></p>
+<p id="corty3e-ch14-p270" block_type="cr_x_nl"><phrase block_type="question_num">14.27</phrase> Given this regression line, predict <em>Y</em> for an <em>X</em> value of 30:</p>
+<figure id="corty3e-ch14-fig-20" block_type="un_figure" numbered="false" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="medium" border="true"/>
+<image asset-id="corty3e-ch14-img-20" alt="image" src="asset/ch14/corty3e_fig14_un02.jpg"/>
+</figure>
+<p id="corty3e_page_563" block_type="page_start">563</p>
+<p id="corty3e-ch14-p271" block_type="cr_x_nl"><phrase block_type="question_num">14.28</phrase> Given this regression line, predict <em>Y</em> for <em>X</em> &#61; 25:</p>
+<figure id="corty3e-ch14-fig-21" block_type="un_figure" numbered="false" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="medium" border="true"/>
+<image asset-id="corty3e-ch14-img-21" alt="image" src="asset/ch14/corty3e_fig14_un03.jpg"/>
+</figure>
+<p id="corty3e-ch14-p272" block_type="cr-x-txt-ni"><strong><em>Calculating slope</em></strong></p>
+<p id="corty3e-ch14-p273" block_type="cr_x_nl"><phrase block_type="question_num">14.29</phrase> If <em>r</em> &#61; &#8211;.47, <em>s<sub>Y</sub></em> &#61; 3.65, and <em>s<sub>X</sub></em> &#61; 9.66, what is <em>b</em>?</p>
+<p id="corty3e-ch14-p274" block_type="cr_x_nl"><phrase block_type="question_num">14.30</phrase> If <em>r</em> &#61; .28, <em>s<sub>Y</sub></em> &#61; 0.34, and <em>s<sub>X</sub></em> &#61; 0.28, what is <em>b</em>?</p>
+<p id="corty3e-ch14-p275" block_type="cr-x-txt-ni"><strong><em>Interpreting slope</em></strong></p>
+<p id="corty3e-ch14-p276" block_type="cr_x_nl"><phrase block_type="question_num">14.31</phrase> An automotive magazine used the price of gas in cents per gallon to predict the number of miles families drove on their summer vacations. The slope of the regression line was &#8211;35. Use the slope to interpret the impact of gas prices on vacation driving.</p>
+<p id="corty3e-ch14-p277" block_type="cr_x_nl"><phrase block_type="question_num">14.32</phrase> An exercise physiologist used the number of hours of TV watched per week at age 30 to predict the number of pounds gained over the next 10 years. The slope of the regression line was 1.25. Use the slope to interpret the impact of watching TV on weight gain.</p>
+<p id="corty3e-ch14-p278" block_type="cr-x-txt-ni"><strong><em>Calculating the Y-intercept</em></strong></p>
+<p id="corty3e-ch14-p279" block_type="cr_x_nl"><phrase block_type="question_num">14.33</phrase> If <em>b</em> &#61; 4.33, <em>M<sub>X</sub></em> &#61; 5.00, and <em>M<sub>Y</sub></em> &#61; 17.50, what is <em>a</em>?</p>
+<p id="corty3e-ch14-p280" block_type="cr_x_nl"><phrase block_type="question_num">14.34</phrase> If <em>b</em> &#61; &#8211;2.45, <em>M<sub>X</sub></em> &#61; 53.45, and <em>M<sub>Y</sub></em> &#61; 112.23, what is <em>a</em>?</p>
+<p id="corty3e-ch14-p281" block_type="cr-x-txt-ni"><strong><em>Forming a regression equation</em></strong></p>
+<p id="corty3e-ch14-p282" block_type="cr_x_nl"><phrase block_type="question_num">14.35</phrase> Given <em>b</em> &#61; 12.98 and <em>a</em> &#61; &#8211;5.00, write a regression equation.</p>
+<p id="corty3e-ch14-p283" block_type="cr_x_nl"><phrase block_type="question_num">14.36</phrase> Given <em>b</em> &#61; &#8211;0.68 and <em>a</em> &#61; 7.50, write a regression equation.</p>
+<p id="corty3e-ch14-p284" block_type="cr_x_nl"><phrase block_type="question_num">14.37</phrase> Given <em>r</em> &#61; &#8211;.24, <em>M<sub>X</sub></em> &#61; 55.00, <em>s<sub>X</sub></em> &#61; 11.00, <em>M<sub>Y</sub></em> &#61; 25.00, and <em>s<sub>Y</sub></em> &#61; 3.98, write a regression equation.</p>
+<p id="corty3e-ch14-p285" block_type="cr_x_nl"><phrase block_type="question_num">14.38</phrase> Given <em>r</em> &#61; .33, <em>M<sub>X</sub></em> &#61; 2.50, <em>s<sub>X</sub></em> &#61; 1.50, <em>M<sub>Y</sub></em> &#61; 112.50, and <em>s<sub>Y</sub></em> &#61; 21.50, write a regression equation.</p>
+<p id="corty3e-ch14-p286" block_type="cr-x-txt-ni"><strong><em>Predicting Y</em></strong></p>
+<p id="corty3e-ch14-p287" block_type="cr_x_nl"><phrase block_type="question_num">14.39</phrase> Find <em>Y&#8242;</em> if <em>X</em> &#61; 25 for <em>Y&#8242;</em> &#61; 0.37<em>X</em> &#43; 15.</p>
+<p id="corty3e-ch14-p288" block_type="cr_x_nl"><phrase block_type="question_num">14.40</phrase> Find <em>Y&#8242;</em> if <em>X</em> &#61; &#8211;10 for <em>Y&#8242;</em> &#61; 13<em>X</em> &#43; 88.</p>
+<p id="corty3e-ch14-p289" block_type="cr-x-txt-ni"><strong><em>Drawing a regression line</em></strong></p>
+<p id="corty3e-ch14-p290" block_type="cr_x_nl"><phrase block_type="question_num">14.41</phrase> (a) Given the endpoints of (10, 20) and (80, 50), draw a regression line. (b) What is the range of <em>X</em> values for which <em>Y&#8242;</em> can be calculated?</p>
+<p id="corty3e-ch14-p291" block_type="cr_x_nl"><phrase block_type="question_num">14.42</phrase> (a) Given the endpoints of (0, 70) and (50, 0), draw a regression line. (b) What is the range of <em>X</em> values for which <em>Y&#8242;</em> can be calculated?</p>
+<p id="corty3e-ch14-p292" block_type="cr_x_nl"><phrase block_type="question_num">14.43</phrase> Here is a regression equation: <em>Y&#8242;</em> &#61; 2.50 <em>X</em> &#8211; 12.50. If <em>X</em> values can range from 30 to 70, draw the regression line.</p>
+<p id="corty3e-ch14-p293" block_type="cr_x_nl"><phrase block_type="question_num">14.44</phrase> Here is a regression equation: <em>Y&#8242;</em> &#61; &#8211;1.10<em>X</em> &#43; 115. If <em>X</em> values can range from 70 to 130, draw the regression line.</p>
+<p id="corty3e-ch14-p294" block_type="cr-x-txt-ni"><strong><em>Calculating residual scores</em></strong></p>
+<p id="corty3e-ch14-p295" block_type="cr_x_nl"><phrase block_type="question_num">14.45</phrase> If <em>X</em> &#61; 75.45, <em>Y</em> &#61; 12.96, and <em>Y&#8242;</em> &#61; 13.43, what is the residual score?</p>
+<p id="corty3e-ch14-p296" block_type="cr_x_nl"><phrase block_type="question_num">14.46</phrase> If <em>X</em> &#61; 24.77, <em>Y</em> &#61; 33.43, and <em>Y&#8242;</em> &#61; 31.22, what is the residual score?</p>
+<p id="corty3e-ch14-p297" block_type="cr-x-txt-ni"><strong><em>Calculating standard error of the estimate</em></strong></p>
+<p id="corty3e-ch14-p298" block_type="cr_x_nl"><phrase block_type="question_num">14.47</phrase> If <em>r</em> &#61; .28 and <em>s<sub>Y</sub></em> &#61; 10.55, what is the standard error of the estimate?</p>
+<p id="corty3e-ch14-p299" block_type="cr_x_nl"><phrase block_type="question_num">14.48</phrase> If <em>r</em> &#61; .20 and <em>s<sub>Y</sub></em> &#61; 30.42, what is the standard error of the estimate?</p>
+<p id="corty3e-ch14-p300" block_type="cr-x-txt-ni"><strong><em>Interpreting standard error of the estimate</em></strong></p>
+<p id="corty3e-ch14-p301" block_type="cr_x_nl"><phrase block_type="question_num">14.49</phrase> Dr. Lansing is using high school GPA to predict combined SAT scores. Combined SAT scores from the two SAT subtests can range from 400 to 1600. He calculated the standard error of the estimate as 40. Interpret this error of the estimate.</p>
+<p id="corty3e-ch14-p302" block_type="cr_x_nl"><phrase block_type="question_num">14.50</phrase> Dr. Pallas is predicting severity of depression in adulthood from a childhood behavior checklist. The severity of depression scale ranges from 0 to 50 and the standard error of the estimate is 2.25. Interpret this error of the estimate.</p>
+<p id="corty3e_page_564" block_type="page_start">564</p>
+<p id="corty3e-ch14-p303" block_type="cr-x-txt-ni"><strong><em>Calculating Y&#8242; in multiple regression</em></strong></p>
+<p id="corty3e-ch14-p304" block_type="cr_x_nl"><phrase block_type="question_num">14.51</phrase> A multiple regression equation has a constant of 5.74, a weight of 3.42 for variable 1, and a weight of &#8211;0.76 for variable 2. If a case has a score of 56.66 on variable 1 and a score of 88.99 on variable 2, what is <em>Y&#8242;</em>?</p>
+<p id="corty3e-ch14-p305" block_type="cr_x_nl"><phrase block_type="question_num">14.52</phrase> A multiple regression equation has a constant of 25.12, a weight of &#8211;4.55 for variable 1, a weight of &#8211;8.86 for variable 2, and a weight of 10.76 for variable 3. If a case has a score of 7.33 on variable 1, a score of 12.20 on variable 2, and a score of 18.85 on variable 3, what is <em>Y&#8242;</em>?</p>
+<p id="corty3e-ch14-p306" block_type="cr-x-hd1"><strong>Expand Your Knowledge</strong></p>
+<p id="corty3e-ch14-p307" block_type="cr_x_nl"><phrase block_type="question_num">14.53</phrase> Jeff is an above-average golfer. He decides to change sports and take up ping pong. If there is a strong, positive correlation between golf ability and ping pong ability, predict how he&#8217;ll perform as a ping pong player?</p>
+<list id="corty3e-ch14-list-13" type="ordered" block_type="loweralpha">
+<li><p id="corty3e-ch14-p308" block_type="cr-x-nl-alpha-lc">Excellent</p></li>
+<li><p id="corty3e-ch14-p309" block_type="cr-x-nl-alpha-lc">Above average</p></li>
+<li><p id="corty3e-ch14-p310" block_type="cr-x-nl-alpha-lc">Average</p></li>
+<li><p id="corty3e-ch14-p311" block_type="cr-x-nl-alpha-lc">Below average</p></li>
+<li><p id="corty3e-ch14-p312" block_type="cr-x-nl-alpha-lc">Terrible</p></li>
+<li><p id="corty3e-ch14-p313" block_type="cr-x-nl-alpha-lc">Not enough information given to reach a conclusion.</p></li>
+<li><p id="corty3e-ch14-p314" block_type="cr-x-nl-alpha-lc">Ping pong and golf are different sports and one can&#8217;t be predicted from the other.</p></li>
+</list>
+<p id="corty3e-ch14-p315" block_type="cr_x_nl"><phrase block_type="question_num">14.54</phrase> Sue is an above-average golfer. She decides to change sports and take up archery. If a strong, negative correlation exists between golf ability and archery ability, predict how she&#8217;ll perform as an archer?</p>
+<list id="corty3e-ch14-list-14" type="ordered" block_type="loweralpha">
+<li><p id="corty3e-ch14-p316" block_type="cr-x-nl-alpha-lc">Excellent</p></li>
+<li><p id="corty3e-ch14-p317" block_type="cr-x-nl-alpha-lc">Above average</p></li>
+<li><p id="corty3e-ch14-p318" block_type="cr-x-nl-alpha-lc">Average</p></li>
+<li><p id="corty3e-ch14-p319" block_type="cr-x-nl-alpha-lc">Below average</p></li>
+<li><p id="corty3e-ch14-p320" block_type="cr-x-nl-alpha-lc">Terrible</p></li>
+<li><p id="corty3e-ch14-p321" block_type="cr-x-nl-alpha-lc">Not enough information given to reach a conclusion.</p></li>
+<li><p id="corty3e-ch14-p322" block_type="cr-x-nl-alpha-lc">Archery and golf are different sports and one can&#8217;t be predicted from the other.</p></li>
+</list>
+<p id="corty3e-ch14-p323" block_type="cr_x_nl"><phrase block_type="question_num">14.55</phrase> David is an above-average golfer. He decides to change sports and take up wrestling. If there is a no correlation between golf ability and wrestling ability, predict how he&#8217;ll rate as a wrestler?</p>
+<list id="corty3e-ch14-list-15" type="ordered" block_type="loweralpha">
+<li><p id="corty3e-ch14-p324" block_type="cr-x-nl-alpha-lc">Excellent</p></li>
+<li><p id="corty3e-ch14-p325" block_type="cr-x-nl-alpha-lc">Above average</p></li>
+<li><p id="corty3e-ch14-p326" block_type="cr-x-nl-alpha-lc">Average</p></li>
+<li><p id="corty3e-ch14-p327" block_type="cr-x-nl-alpha-lc">Below average</p></li>
+<li><p id="corty3e-ch14-p328" block_type="cr-x-nl-alpha-lc">Terrible</p></li>
+<li><p id="corty3e-ch14-p329" block_type="cr-x-nl-alpha-lc">Not enough information given to reach a conclusion.</p></li>
+</list>
+<p id="corty3e-ch14-p330" block_type="cr_x_nl"><phrase block_type="question_num">14.56</phrase> Shemekia applied to a college that uses multiple regression to select students. This college only considers students whose predicted first-year GPA is 3.0 or higher. Shemekia&#8217;s predicted GPA was 2.9, and she did not get accepted. The correlation between the predictor variable and GPA is .30 and the standard deviation for GPA is .40. Based on this, what argument could Shemekia make to the college for why she should be considered?</p>
+<p id="corty3e-ch14-p331" block_type="cr_x_nl"><phrase block_type="question_num">14.57</phrase> Continue with <link href="#corty3e-ch14-p330">Exercise 14.56</link>. The college responds to Shemekia. Based on the same information, what argument could the college make for why she shouldn&#8217;t be offered admission?</p>
+<p id="corty3e-ch14-p332" block_type="cr_x_nl"><phrase block_type="question_num">14.58</phrase> If <em>Y&#8242;</em> and <em>s<sub>Y&#8211;Y</sub>&#8242;</em> are known, make an educated guess as to what the 95&#37; prediction interval would be.</p>
+<p id="corty3e-ch14-p333" block_type="cr_x_nl"><phrase block_type="question_num">14.59</phrase> There is a graph with a regression line for predicting <em>Y.</em> Could it be used to predict <em>X</em>?</p>
+<p id="corty3e_page_565" block_type="page_start">565</p>
+<box title="SPSS" numbered="false" id="corty3e-ch14-bx3-4" block_type="bx3-h">
+<p id="corty3e-ch14-p334" block_type="bx3-txt-ni">SPSS does calculate linear regression. We&#8217;ll use Dr. Paik&#8217;s marital satisfaction data to show how it works. <link href="corty3e-ch14.xml#corty3e-ch14-fig-22"><strong>Figure 14.11</strong></link> illustrates how the data are arranged with each variable (role flexibility and marital satisfaction) in its own column and each case in its own row.</p>
+<figure id="corty3e-ch14-fig-22" block_type="figure" numbered="true" number="14.11" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="medium" border="true"/>
+<image asset-id="corty3e-ch14-img-22" alt="image" src="asset/ch14/corty3e_fig14_11.jpg"/>
+<caption><strong><phrase block_type="fig_num">Figure 14.11</phrase> Data Entry for Linear Regression in SPSS</strong> Each variable is in a separate column and each case appears on its own row.</caption>
+</figure>
+<p id="corty3e-ch14-p335" block_type="bx3-txt"><link href="corty3e-ch14.xml#corty3e-ch14-fig-23"><strong>Figure 14.12</strong></link> shows how to access the linear regression commands in SPSS. Click on &#8220;Analyze,&#8221; then &#8220;Regression,&#8221; and finally &#8220;Linear.&#8221; SPSS calls the predictor variable &#8220;independent&#8221; and the outcome variable &#8220;dependent.&#8221;</p>
+<figure id="corty3e-ch14-fig-23" block_type="figure" numbered="true" number="14.12" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="medium" border="true"/>
+<image asset-id="corty3e-ch14-img-23" alt="image" src="asset/ch14/corty3e_fig14_12.jpg"/>
+<caption><strong><phrase block_type="fig_num">Figure 14.12</phrase> Starting Regression Line Analysis in SPSS</strong> Linear regression is started in SPSS by clicking on &#8220;Analyze,&#8221; then &#8220;Regression,&#8221; and &#8220;Linear.&#8221;</caption>
+</figure>
+<p id="corty3e-ch14-p336" block_type="bx3-txt">Clicking on &#8220;Linear&#8221; opens up the commands seen in <link href="corty3e-ch14.xml#corty3e-ch14-fig-24"><strong>Figure 14.13</strong></link>. Notice that <em>Y,</em> the dependent variable &#8220;Marital&#95;Sat,&#8221; has been moved over to be the dependent variable. Also, <em>X,</em> the independent variable &#8220;Role&#95;Flex,&#8221; has been moved over to be an independent variable. Clicking on &#8220;OK&#8221; in the lower right starts the calculations.</p>
+<figure id="corty3e-ch14-fig-24" block_type="figure" numbered="true" number="14.13" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="medium" border="true"/>
+<image asset-id="corty3e-ch14-img-24" alt="image" src="asset/ch14/corty3e_fig14_13.jpg"/>
+<caption><strong><phrase block_type="fig_num">Figure 14.13</phrase> Selecting Variables for Regression Analysis in SPSS</strong> The predicted variable&#8212;here, &#8220;Marital&#95;Sat&#8221;&#8212;is the dependent variable and the predictor variable&#8212;here, &#8220;Role&#95;Flex&#8221;&#8212; is an independent variable.</caption>
+</figure>
+<p id="corty3e_page_566" block_type="page_start">566</p>
+<p id="corty3e-ch14-p337" block_type="txt">The output, of which SPSS generates a lot, is shown in <link href="corty3e-ch14.xml#corty3e-ch14-fig-25"><strong>Figure 14.14</strong></link>. First, look in the table named &#8220;Model Summary.&#8221; There, it says &#8220;R &#61; .762.&#8221; R is the value of the correlation coefficient. (R is the abbreviation for a multiple regression. We&#8217;ve borrowed it to do a simple regression and SPSS can&#8217;t tell.)</p>
+<figure id="corty3e-ch14-fig-25" block_type="figure" numbered="true" number="14.14" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="large" border="true"/>
+<image asset-id="corty3e-ch14-img-25" alt="image" src="asset/ch14/corty3e_fig14_14.jpg"/>
+<caption><strong><phrase block_type="fig_num">Figure 14.14</phrase> SPSS Regression Output</strong> In this SPSS output, look at the last table, &#8220;Coefficients,&#8221; where the slope, .057, is listed as B, the unstandardized coefficient for the predictor variable, and the <em>Y</em>-intercept, .574, is the unstandardized B coefficient for the constant.</caption>
+</figure>
+<p id="corty3e-ch14-p338" block_type="txt">SPSS carries many more decimal places than this text does, so its answers will differ from the answers here. The slope of the line, which was calculated as 0.06 in the text, is 0.057 in SPSS and is found next to the predictor variable, &#8220;Role&#95;Flex&#8221; under the &#8220;B&#8221; column under &#8220;Unstandardized coefficients.&#8221; The <em>Y</em>-intercept, which was calculated as 0.50 in the text, is 0.574 in SPSS and is found in the same column in the row labeled &#8220;(Constant).&#8221;</p>
+</box>
+</section>
+</chapter>

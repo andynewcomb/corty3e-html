@@ -1,0 +1,81 @@
+/* Chapter 12 CSS */
+div#corty3e-ch12-p2 {
+  margin-top: -5px;
+}
+/* Figures */
+/* Tables */
+body.noUi [data-block_type="un_table"] table tr:first-child {
+  background-color: #e0e8ef;
+}
+body.noUi [data-block_type="un_table"] table tr:first-child td {
+  color: #168ca8;
+  font-weight: bold;
+}
+body.noUi [data-block_type="un_table"] table tr > td:first-child {
+  text-align: left;
+  color: #168ca8;
+  font-weight: bold;
+}
+body.noUi [data-block_type="un_table"] table tr > td:first-child span[data-block_type="TBN-SIDHD19"] {
+  margin-left: 1em;
+}
+body.noUi div#corty3e-ch12-table3 table {
+  width: 300px;
+}
+body.noUi div#corty3e-ch12-table3 table tr > td {
+  width: 50%;
+}
+body.noUi div#corty3e-ch12-table3 table tr > td:first-child {
+  text-align: right;
+}
+body.noUi div#corty3e-ch12-table3 table tr > td:last-child {
+  text-align: left;
+}
+body.noUi div#corty3e-ch12-table3 table tr:first-child td {
+  text-align: center;
+}
+/* Lists */
+ul#corty3e-ch12-list-17 p {
+  margin: 0;
+}
+ul#corty3e-ch12-list-21 p {
+  margin: 0;
+}
+ol#corty3e-ch12-list-4c {
+  font-weight: normal;
+}
+/* Equations */
+div#corty3e-ch12-bx2-3 {
+  border-bottom: 0;
+}
+/* equation feature box -- needs more room for equation number to left */
+[data-block_type="eq-t"] [data-type="title"] {
+  padding-left: 8em;
+}
+[data-block_type="cr_x_nl"] {
+  position: relative;
+}
+[data-block_type="cr_x_nl"] p {
+  margin-left: 4em !important;
+}
+div#corty3e-ch12-p361 {
+  margin-bottom: 0;
+}
+div#corty3e-ch12-p363 {
+  margin-top: 0;
+}
+div#corty3e-ch12-p399 {
+  margin-bottom: 0;
+}
+div#corty3e-ch12-p400 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+div#corty3e-ch12-p401 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+div#corty3e-ch12-p402 {
+  margin-top: 0;
+}
+/*# sourceMappingURL=corty3e_ch12.css.map */

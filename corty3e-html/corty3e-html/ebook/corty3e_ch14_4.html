@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]> <html lang="en" class="no-js ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="no-js ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="no-js ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en" class="no-js ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+<head>
+    <title>corty3e_ch14</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <link href="css/boilerplate.css" media="screen" rel="stylesheet" type="text/css" >
+<link href="css/jquery-ui-custom.css" media="screen" rel="stylesheet" type="text/css" >
+<link href="css/manuscript.css" media="screen" rel="stylesheet" type="text/css" >
+<link href="css/digfir_ebook_fw.css" media="screen" rel="stylesheet" type="text/css" >
+<link href="css/corty3e.css" media="screen" rel="stylesheet" type="text/css" >
+<link href="css/corty3e_ch14.css" media="screen" rel="stylesheet" type="text/css" >    
+    
+    </head>
+<body class="noUi">
+<div id="manuscript" data-chapter-number="14">
+    <div data-type="section" data-block_type="h1" id="corty3e-ch14-sec1-3" level="1" data-print_page="555">
+<h2 class="section-title"><span data-type="title" data-title-for="corty3e-ch14-sec1-3"><span data-block_type="sec_num">14.3</span> <span data-block_type="sec_title">Multiple Regression</span>
+</span></h2>
+
+<div data-block_type="txt-ni" id="corty3e-ch14-p167"><p>Here’s a thought experiment. In which scenario could one more accurately predict a student’s GPA?</p></div>
+<ol data-block_type="upperalpha" id="corty3e-ch14-list-7">
+<li><div data-block_type="nl-first" id="corty3e-ch14-p168"><p>Knowing how many hours the student spends on schoolwork each week</p></div>
+</li>
+<li><div data-block_type="nl-last" id="corty3e-ch14-p169"><p>Knowing how many hours the student spends on schoolwork each week <em>plus</em> his or her high school GPA, his or her IQ, and how much alcohol the student consumes each week</p></div>
+</li>
+</ol>
+<div data-block_type="txt" id="corty3e-ch14-p170"><p>Most people believe the additional information in Scenario B is relevant to predicting academic performance and they are correct. In Scenario B, the prediction should be more accurate because more factors are taken into account.</p></div>
+<div data-block_type="page_start" id="corty3e_page_556"><p>556</p></div>
+<div data-block_type="txt" id="corty3e-ch14-p171"><p>The difference between Scenario A and Scenario B is the difference between simple regression and multiple regression. The previous section focused on simple linear regression. <span data-type="termref" data-term="Simple regression">Simple regression</span> uses just one predictor variable to calculate <em>Y′</em><em>.</em> <strong>Multiple regression</strong> uses several predictor variables to calculate <em>Y′</em><em>.</em> If the different <em>X</em> variables have different influences on the outcome variable being predicted, when they are combined, they will do a better job of prediction than any one variable by itself.</p></div>
+<div data-block_type="txt" id="corty3e-ch14-p172"><p><em>r</em><sup>2,</sup> the percentage of variability in the outcome variable that is accounted for by the predictor variable(s), is called <em>R</em> <sup>2</sup> in multiple regression. Better prediction means a higher percentage of variability is accounted for with multiple regression than with simple regression. In this way, multiple regression is a more powerful technique than simple regression.</p></div>
+<div data-block_type="txt" id="corty3e-ch14-p173"><p>Deriving a multiple regression equation is beyond the scope of this text. But, here is an example to show how it works. Every year, colleges have many more applicants than they can admit. Part of the admissions process involves deciding which applicants can do college-level work. Multiple regression plays a role in predicting which applicants will fare well in college.</p></div>
+<div data-block_type="txt" id="corty3e-ch14-p174"><p>The College Board, the folks who created the SAT, provide a service to colleges that it calls ACES, the Admitted Class Evaluation Service. ACES uses admissions information from a first-year class to develop a multiple regression equation to predict first-year GPA. Once this equation is developed, the college can apply it in subsequent years to applicants to predict what their GPAs will be. The college can decide whom to admit, objectively, on the basis of predicted GPA.</p></div>
+<div data-block_type="txt" id="corty3e-ch14-p175"><p>The College Board offers a sample ACES report on its website (<span data-type="link" data-href="http://www.collegeboard.com">collegeboard.com</span>). Using hypothetical data, the Board examines how well four variables—SAT reading subtest scores, SAT writing subtest scores, SAT math subtest scores, and high school class rank—predict first-year GPA for about a thousand students at one college.<span data-type="termref" data-term="fn-ch14-1"><sup>*</sup></span> [High school class rank is transformed to range from 100 (the best student) to 0 (the worst student).] Here are the Pearson <em>r</em> correlation coefficients for each of these variables predicting GPA by itself:</p></div>
+<div data-block_type="fn" id="corty3e-ch14-p176"><p><span data-type="link" data-href="corty3e-ch14.xml#corty3e-ch14-p175"><sup>*</sup></span> Note: This example is based on the three-section SAT in use prior to 2016. Beginning March 2016, the SAT includes only two sections, Reading/Writing and Math.</p></div>
+<ul data-block_type="bullet" id="corty3e-ch14-list-8">
+<li><div data-block_type="bl-first" id="corty3e-ch14-p177"><p>SAT reading test, <em>r</em> = .42</p></div>
+</li>
+<li><div data-block_type="bl-mid" id="corty3e-ch14-p178"><p>SAT writing test, <em>r</em> = .42</p></div>
+</li>
+<li><div data-block_type="bl-mid" id="corty3e-ch14-p179"><p>SAT math test, <em>r</em> = .39</p></div>
+</li>
+<li><div data-block_type="bl-last" id="corty3e-ch14-p180"><p>High school class rank, <em>r</em> = .52</p></div>
+</li>
+</ul>
+<div data-block_type="txt" id="corty3e-ch14-p181"><p>These <em>r</em>’s are all fairly close to each other in terms of size. The <em>r</em> with the strongest correlation with GPA, meaning the one that is the strongest predictor, is high school class rank. There is certainly some overlap in what these four variables measure and how well they predict GPA. For example, general intelligence level plays a role in all four scores and intelligence plays a role in determining GPA. But, each of the four variables also measures something unique. For example, part of how well one does on the math test is not a result of one’s general level of intelligence or the reading and writing skills that help on any test. But, to some degree, performance on a math test is determined by specialized math skills. And, to some degree, these same specialized math skills play a role in some of the courses that determine the GPA. Multiple regression adds together the unique predictive power of each variable. As a result, multiple regression usually accounts for a bigger percentage of the variability in the outcome variable than is accounted for by any single variable.</p></div>
+<div data-block_type="page_start" id="corty3e_page_557"><p>557</p></div>
+<div data-block_type="txt" id="corty3e-ch14-p182"><p>When the four College Board variables are combined together to predict GPA in a multiple regression, the correlation climbs to <em>R</em> = .57. (The abbreviation for the correlation coefficient for multiple regression is <em>R,</em> not <em>r.</em>) This doesn’t sound like much of an increase from the .52 correlation between class rank and GPA. But, it is. The percentage of variance explained changes from 27.04% to 32.49%. Predicting an extra 5 percentage points of variability is very worthwhile.</p></div>
+<div data-block_type="txt" id="corty3e-ch14-p183"><p>The multiple regression equation the College Board develops for a college can be used to predict GPA from SAT scores and high school rank for a potential student. Their equation is a more complex version of the linear regression equation from earlier in this chapter. The equation has “weights” for each of the predictor variables. The weights are like the slope in the linear regression equation. And there is a constant that is like the <em>Y</em>-intercept. When all of this information is put together, it makes for a long equation. Here is how estimated GPA, <em>GPA′</em><em>,</em> would be calculated:</p></div>
+<div data-block_type="eq" id="corty3e-ch14-p184"><p><em>GPA′</em> = (<em>SAT</em><sub>ReadingScore </sub>× <em>Weight</em><sub>ReadingScore</sub>) + (<em>SAT</em><sub>WritingScore</sub> × <em>Weight</em><sub>WritingScore</sub>) + (<em>SAT</em><sub>MathScore</sub> × <em>Weight</em><sub>MathScore</sub>) + (<em>HSRank</em> × <em>Weight</em><sub>HSRank</sub>) + <em>Constant</em></p></div>
+<div data-block_type="txt" id="corty3e-ch14-p185"><p>Here are the four weights and the constant for the College Board example:</p></div>
+<ul data-block_type="bullet" id="corty3e-ch14-list-9">
+<li><div data-block_type="bl-first" id="corty3e-ch14-p186"><p>Reading weight = 0.0012</p></div>
+</li>
+<li><div data-block_type="bl-mid" id="corty3e-ch14-p187"><p>Writing weight = 0.0013</p></div>
+</li>
+<li><div data-block_type="bl-mid" id="corty3e-ch14-p188"><p>Math weight = 0.0006</p></div>
+</li>
+<li><div data-block_type="bl-mid" id="corty3e-ch14-p189"><p>HS rank weight = 0.0029</p></div>
+</li>
+<li><div data-block_type="bl-last" id="corty3e-ch14-p190"><p>Constant = 0.7821</p></div>
+</li>
+</ul>
+<div data-block_type="txt" id="corty3e-ch14-p191"><p>If an applicant were good at reading (SAT score = 600), not so good at writing (SAT score = 450), very good at math (SAT score = 760), and had a very good class rank (90), then her predicted GPA would be</p></div>
+<div data-block_type="eq" id="corty3e-ch14-p192"><p><em>GPA′</em> = (<em>SAT</em><sub>ReadingScore </sub>× <em>Weight</em><sub>ReadingScore</sub>) + (<em>SAT</em><sub>WritingScore</sub> × <em>Weight</em><sub>WritingScore</sub>) + (<em>SAT</em><sub>MathScore</sub> × <em>Weight</em><sub>MathScore</sub>) + (<em>HSRank</em> × <em>Weight</em><sub>HSRank</sub>) + <em>Constant</em></p></div>
+<div data-block_type="eq" id="corty3e-ch14-p193"><p>= (600 × 0.0012) + (450 × 0.0013) + (760 × 0.0006) + (90 × 0.0029) + 0.7821 = 0.7200 + 0.5850 + 0.4560 + 0.2610 + 0.7821 = 2.8041 = 2.80</p></div>
+<div data-block_type="txt-ni" id="corty3e-ch14-p194"><p>A person with those SAT scores and class rank would be predicted to end up with a GPA of 2.80 at the end of her first year.</p></div>
+<div data-block_type="txt" id="corty3e-ch14-p195"><p>The multiple regression equation is built from cases where the first-year GPA is known. The equation can be used to predict first-year GPA for these students. As a result, the students have both actual and predicted GPAs, and it is possible to see how well the predicted GPA predicts the actual GPA. The correlation between the two is .46. Multiple regression makes objective predictions that minimize errors in prediction <em>overall.</em> In that sense, it makes better decisions. But, unless <em>R</em> = 1.00, it doesn’t make perfect predictions.</p></div>
+<div data-type="box" data-block_type="sr-exp-n" id="corty3e-ch14-bx3-3"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="corty3e-ch14-bx3-3">Worked Example 14.3</h3>
+<div data-block_type="sr_exp_txt_ni" id="corty3e-ch14-p196"><p>Many Americans are trying to lose weight, either by counting calories or by using Weight Watchers<sup>®</sup>. One of the two Weight Watchers plans counts points, not calories. In its system, foods are assigned a point value based on a mysterious combination of how much protein, carbohydrates, fat, and fiber the food contains. The number of calories in the food is not part of the equation. With the point system, a cup of lettuce is worth 0.3 points and a McDonald’s Quarter Pounder is worth 13.4 points.</p></div>
+<div data-block_type="page_start" id="corty3e_page_558"><p>558</p></div>
+<div data-block_type="sr_exp_txt" id="corty3e-ch14-p197"><p>Imagine that a nutritionist, Dr. Feldman, wanted to crack the secret equation that Weight Watchers uses and figure out how these four variables—protein, carbs, fat, and fiber—are combined to generate a point score. This calls for multiple regression.</p></div>
+<div data-block_type="sr_exp_txt" id="corty3e-ch14-p198"><p>First, Dr. Feldman draws a random sample of foods and for each one he finds out how much protein, carbs, fat, and fiber the food contains. He also consults the Weight Watchers Web site and locates the point value for each food. Armed with these four predictor variables (protein, carbs, fat, and fiber) and the one outcome variable (points), he uses SPSS to find the multiple regression equation. The equation that calculates <em>Points′</em><em>,</em> the estimated number of points, is</p></div>
+<div data-block_type="sr-exp-eq" id="corty3e-ch14-p199"><p><em>Points′</em> = (<em>Grams</em><sub>Protein</sub> × <em>Weight</em><sub>Protein</sub>) + (<em>Grams</em><sub>Carbs</sub> × <em>Weight</em><sub>Carbs</sub>) + (<em>Grams</em><sub>Fat</sub> × <em>Weight</em><sub>Fat</sub>) + (<em>Grams</em><sub>Fiber</sub> × <em>Weight</em><sub>Fiber</sub>) + <em>Constant</em></p></div>
+<div data-block_type="sr-exp-eq" id="corty3e-ch14-p200"><p>= (<em>Grams</em><sub>Protein</sub> × 0.074) + (<em>Grams</em><sub>Carbs</sub> × 0.096) + (<em>Grams</em><sub>Fat</sub> × 0.279) + (<em>Grams</em><sub>Fiber</sub> × –0.101) + 0.112</p></div>
+<div data-block_type="sr_exp_txt" id="corty3e-ch14-p201"><p>Note that three of the weights are positive, but the weight for fiber is negative. This reveals that fiber plays a different role in determining points than do the other three variables. As the levels of proteins, carbohydrates, and fats in a food go up, so does the point value for the food. However, as the amount of fiber in a food goes up, the point value goes down.</p></div>
+<div data-block_type="sr_exp_txt" id="corty3e-ch14-p202"><p>An important use of a regression equation is to predict a value for a new case. Suppose Dr. Feldman is about to eat a BLT and wants to know how many points it is worth. From the menu, he learns that the sandwich has 15 grams of protein, 28 grams of carbohydrates, 17 grams of fat, and 3 grams of fiber. Here’s how he would calculate its points:</p></div>
+<div data-block_type="sr-exp-eq" id="corty3e-ch14-p203"><p><em>Points BLT′</em> = (<em>Grams</em><sub>Protein</sub> × 0.074) + (<em>Grams</em><sub>Carbs</sub> × 0.096) + (<em>Grams</em><sub>Fat</sub> × 0.279) + (<em>Grams</em><sub>Fiber</sub> × –0.101) + 0.112 = (15 × 0.074) + (28 × 0.096) + (17 × 0.279) + (3 × –0.101) + 0.112</p></div>
+<div data-block_type="sr-exp-eq" id="corty3e-ch14-p204"><p>= 1.1100 + 2.6880 + 4.7430 – 0.3030 + 0.112 = 8.3500 = 8.35</p></div>
+<div data-block_type="sr_exp_txt" id="corty3e-ch14-p205"><p>Dr. Feldman has now estimated (predicted) that eating a BLT at lunch will use up 8.35 of a person’s daily point allowance.</p></div>
+</div></div>
+<div data-type="box" data-block_type="sr-h" id="corty3e-ch14-bx2-3"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="corty3e-ch14-bx2-3">Practice Problems 14.3</h3>
+<div data-block_type="sr-h1" id="corty3e-ch14-p206"><p><strong>Review Your Knowledge</strong></p></div>
+<div data-block_type="sr-que-nl" id="corty3e-ch14-p207"><p><span data-block_type="question_num">14.08</span> Explain why multiple regression explains a larger percentage of variability in the predicted variable than does simple regression.</p></div>
+<div data-block_type="sr-h1" id="corty3e-ch14-p208"><p><strong>Apply Your Knowledge</strong></p></div>
+<div data-block_type="sr-que-nl" id="corty3e-ch14-p209"><p><span data-block_type="question_num">14.09</span> A multiple regression equation has a constant of 55.12, a weight of 13.17 for variable 1, and a weight of 4.55 for variable 2. If a case has a score of 12 on variable 1 and a score of 33 on variable 2, what is <em>Y′</em>?</p></div>
+</div></div>
+<div data-block_type="page_start" id="corty3e_page_559"><p>559</p></div>
+<div data-type="box" data-block_type="sr-x-h" id="corty3e-ch14-bx5-1"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="corty3e-ch14-bx5-1">Application Demonstration</h3>
+<div data-block_type="sr-x-txt-ni" id="corty3e-ch14-p210"><p>Let’s see multiple regression in action. In this cost-conscious era, hospitals try to save money by reducing the length of stay of their patients. It would be beneficial to a hospital if it could predict a patient’s length of stay at the time of admission. If so, therapeutic resources could be directed to the patients predicted to be in the hospital for a long time, in order to help them get better more quickly.</p></div>
+<div data-block_type="sr-x-txt" id="corty3e-ch14-p211"><p>Some researchers turned their attention to predicting length of stay for patients admitted to a large, metropolitan psychiatric hospital (Huntley, Cho, Christman, &amp; Csernansky, 1998). In a six-month period, almost 800 patients were admitted to the facility and they spent an average of 16.3 days in the hospital. The hospital database contained a lot of information about each patient, including each patient’s sex, age, primary and secondary diagnoses, number of prior admissions, and legal status. The researchers combined these variables using multiple regression to see if length of stay could be predicted.</p></div>
+<div data-block_type="sr-x-txt" id="corty3e-ch14-p212"><p>There turned out to be five variables that played a statistically significant role in predicting a patient’s length of stay: (1) a primary diagnosis of schizophrenia, (2) the number of previous admissions, (3) a primary diagnosis of a mood disorder, (4) age, and (5) an alcohol or drug problem as a secondary diagnosis. These variables can be thought of as reflecting difficult cases. For example, someone with five previous psychiatric admissions probably has a more severe problem, one that may take longer to treat, than a patient for whom this admission is the first hospitalization.</p></div>
+<div data-block_type="sr-x-txt" id="corty3e-ch14-p213"><p>Together, these five variables predicted 17% of the variance in length of stay. This may not sound like much, but Cohen (1988) would call it a medium effect. Is it enough to be useful?</p></div>
+<div data-block_type="sr-x-txt" id="corty3e-ch14-p214"><p>So far, what these researchers did is not unusual. But, now their work took an interesting direction. They used their regression equation to calculate the predicted length of stay for each patient. As a result, there were two pieces of data for each patient—the actual length of stay and the predicted length of stay. The researchers then added a third variable for each patient—the psychiatrist in charge of the patient’s care. There were 12 psychiatrists at this hospital and newly admitted patients were assigned to their care on a rotating basis. In essence, patients were randomly assigned to psychiatrists.</p></div>
+<div data-block_type="sr-x-txt" id="corty3e-ch14-p215"><p>If patients are randomly assigned to psychiatrists and if all psychiatrists provide equivalent care, then the mean length of stay should be roughly the same for each psychiatrist. The blue bars in <span data-type="link" data-href="corty3e-ch14.xml#corty3e-ch14-fig-19"><strong>Figure 14.10</strong></span> show the mean length of stay of the patients for each of the psychiatrists—it ranges from less than 10 days (Psychiatrist 1) to more than 25 days (Psychiatrist 12). Either differences in the effectiveness of the psychiatrists exist or some psychiatrists had more or less than their fair share of hard-to-treat patients.</p></div>
+<div data-type="figure" data-figure-id="corty3e-ch14-fig-19" data-block_type="figure" data-layout-align="center" data-layout-width="large" data-layout-border="true">
+
+<img id="" src="asset/ch14/corty3e_fig14_10.jpg" data-figure-id="corty3e-ch14-fig-19" data-layout-width="large" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+<div data-type="figure_text">
+<span data-type="number">Figure 14.12: </span><span data-type="caption"><strong><span data-block_type="fig_num">Figure 14.10</span> Actual and Predicted Length of Stay for Patients Treated by Different Psychiatrists</strong> Multiple regression was used to calculate the predicted length of stay for each patient. Comparing the two means allows one to speculate about a psychiatrist’s skills.</span>
+</div>
+<div data-type="asset_source">(Data from Huntley, Cho, Christman, &amp; Csernansky, 1998.) </div>
+</div>
+<div data-block_type="sr-x-txt" id="corty3e-ch14-p216"><p>How could one tell if a psychiatrist were assigned difficult or easy patients? Difficult patients should have a longer predicted length of stay. So, calculating the mean predicted length of stay for each psychiatrist should answer that question. The grey bars in <span data-type="link" data-href="corty3e-ch14.xml#corty3e-ch14-fig-19">Figure 14.10</span> show the mean predicted length of stay corresponding to each psychiatrist.</p></div>
+<div data-block_type="sr-x-txt" id="corty3e-ch14-p217"><p>Look at Psychiatrist 1. Earlier, when the focus was only on the blue bars showing actual length of stay, he appeared to be doing a good job because his patients had the shortest length of stay. Now, looking at the grey bar, it is apparent that this psychiatrist was assigned the healthiest patients. No wonder he discharged them quickly.</p></div>
+<div data-block_type="page_start" id="corty3e_page_560"><p>560</p></div>
+<div data-block_type="sr-x-txt" id="corty3e-ch14-p218"><p>The two bars, one the actual length of stay and the other predicted by multiple regression, allow us to think about this psychiatrist’s performance in a more complex fashion. Psychiatrist 1’s patients have a mean length of stay around 8 days but are predicted to need approximately 11 days. Why the difference? There are three likely explanations, two of which involve his skills and one that involves multiple regression. First, perhaps he is a phenomenal psychiatrist and cures people quickly. It could happen. Second, maybe he is a terrible psychiatrist who can’t assess patients’ progress and discharges them before they are ready. That could happen, too. Third, maybe there are errors in prediction. Maybe this is especially true for the healthier cases and their lengths of stay are overestimated.</p></div>
+<div data-block_type="sr-x-txt" id="corty3e-ch14-p219"><p>Whatever the explanation turns out to be, this study shows how multiple regression is used in psychology and how predictions are made and utilized. Regression, either simple or multiple, is a useful tool that helps researchers understand their results in more detail.</p></div>
+</div></div>
+</div>
+<!-- #x-digfir-subsection-insertion-point --></div><!-- /#manuscript -->
+<br class="clear" />
+<!-- end of material in original view -->
+
+	<!--[if IE]><script type="text/javascript" src="js/excanvas.compiled.js"></script><![endif]-->
+    
+<script type="text/javascript" src="js/utilities.js"></script>
+<script type="text/javascript" src="js/query_types.js"></script>
+<script type="text/javascript" src="js/player.js"></script>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/jquery-ui-1.8.16.custom.min.js"></script>
+<script type="text/javascript" src="js/jquery_extensions.js"></script>
+<script type="text/javascript" src="js/swfobject.js"></script>
+<script type="text/javascript" src="http://admin.brightcove.com/js/BrightcoveExperiences.js"></script>
+<script type="text/javascript" src="js/digfir_ebook_fw.js"></script>
+<script type="text/javascript" src="js/corty3e.js"></script>
+<script type="text/javascript" src="js/corty3e_ch14.js"></script>
+<script type="text/javascript">
+    //<!--
+    
+$(window).ready(function () {
+	player.initialize('56d62de6757a2efb47000003');
+});
+    //-->
+</script>
+</body>
+</html>
+

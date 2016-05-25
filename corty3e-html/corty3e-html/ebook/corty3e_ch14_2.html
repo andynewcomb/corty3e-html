@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]> <html lang="en" class="no-js ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="no-js ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="no-js ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en" class="no-js ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+<head>
+    <title>corty3e_ch14</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <link href="css/boilerplate.css" media="screen" rel="stylesheet" type="text/css" >
+<link href="css/jquery-ui-custom.css" media="screen" rel="stylesheet" type="text/css" >
+<link href="css/manuscript.css" media="screen" rel="stylesheet" type="text/css" >
+<link href="css/digfir_ebook_fw.css" media="screen" rel="stylesheet" type="text/css" >
+<link href="css/corty3e.css" media="screen" rel="stylesheet" type="text/css" >
+<link href="css/corty3e_ch14.css" media="screen" rel="stylesheet" type="text/css" >    
+    
+    </head>
+<body class="noUi">
+<div id="manuscript" data-chapter-number="14">
+    <div data-type="section" data-block_type="h1" id="corty3e-ch14-sec1-1" level="1" data-print_page="539">
+<h2 class="section-title"><span data-type="title" data-title-for="corty3e-ch14-sec1-1"><span data-block_type="sec_num">14.1</span> <span data-block_type="sec_title">Simple Linear Regression</span>
+</span></h2>
+
+<div data-type="box" data-block_type="video" id="corty3e-ch14-video-1"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="corty3e-ch14-video-1"></h3>
+<div data-block_type="vidtxt" id="corty3e-ch14-videotxt-1"><p><span data-type="link" data-href-px="" data-href="http://bcs.whfreeman.com/webpub/statistics/ess2e/Student/StatVideos/ch24/sc_regression_assump.htm" data-target="_pop"><img id="" src="asset/images/video.jpg" data-figure-id="" data-layout-width="" data-mmtype="" alt="image"></span><em>StatClips:  Regression: Assumptions</em>Video on LaunchPad</p></div>
+</div></div>
+<div data-type="box" data-block_type="video" id="idp4902560"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="idp4902560"></h3>
+<div data-block_type="vidtxt" id="idp4903360"><p><span data-type="link" data-href-px="" data-href="http://bcs.whfreeman.com/webpub/statistics/ips7e/student/Stat Videos/ch10/sc_regression_inference.html" data-target="_pop"><img id="" src="asset/images/video.jpg" data-figure-id="" data-layout-width="" data-mmtype="" alt="image"></span><em>StatClips: Regression: Inference</em>Video on LaunchPad</p></div>
+</div></div>
+<div data-type="box" data-block_type="video" id="idp4906688"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="idp4906688"></h3>
+<div data-block_type="vidtxt" id="idp4907488"><p><span data-type="link" data-href-px="" data-href="http://bcs.whfreeman.com/webpub/statistics/ips7e/student/Stat Videos/ch02/sc_regression_im.html" data-target="_pop"><img id="" src="asset/images/video.jpg" data-figure-id="" data-layout-width="" data-mmtype="" alt="image"></span><em>StatClips: Regression - Introduction and Motivation</em>Video on LaunchPad</p></div>
+</div></div>
+<div data-block_type="txt-ni" id="corty3e-ch14-p13"><p>In <span data-type="termref" data-term="linear regression">linear regression</span>, one or more predictor variables are used to predict cases’ scores on an outcome variable. For example:</p></div>
+<ul data-block_type="bullet" id="corty3e-ch14-list-2">
+<li><div data-block_type="bl-first" id="corty3e-ch14-p14"><p>If a person has X level of depression, what will be his or her level of depression after 12 sessions of cognitive-behavioral therapy?</p></div>
+</li>
+<li><div data-block_type="bl-mid" id="corty3e-ch14-p15"><p>If we reduce truancy by X amount, how much will the high school graduation rate improve?</p></div>
+</li>
+<li><div data-block_type="bl-mid" id="corty3e-ch14-p16"><p>If a child is bullied at age X, how will that affect her self-esteem?</p></div>
+</li>
+<li><div data-block_type="bl-last" id="corty3e-ch14-p17"><p>What effect does the height of the mother, the height of the father, and the annual family income have on the height of a child?</p></div>
+</li>
+</ul>
+<div data-block_type="page_start" id="corty3e_page_540"><p>540</p></div>
+<div data-block_type="txt-ni" id="corty3e-ch14-p18"><p>In <strong>simple linear regression,</strong> one predictor variable, <em>X,</em> is used to predict <em>Y,</em> the outcome variable.</p></div>
+<div data-block_type="txt" id="corty3e-ch14-p19"><p>Simple linear regression uses the Pearson <em>r</em> to develop an equation, called a regression equation, to predict <em>Y</em> from <em>X</em>. All the predictions made by a regression equation won’t be perfectly accurate, but using a regression equation helps one to arrive at better decisions overall. Of course, making predictions only makes sense if there is evidence that a relationship exists between <em>X</em> and <em>Y.</em> That means simple linear regression should only be used with a statistically significant Pearson <em>r.</em></p></div>
+</div>
+    <div data-type="section" data-block_type="h2" id="corty3e-ch14-sec2-1" level="2" data-print_page="540">
+<h2 class="section-title"><span data-type="title" data-title-for="corty3e-ch14-sec2-1">Using a Regression Line for Prediction
+</span></h2>
+
+<div data-block_type="txt-ni" id="corty3e-ch14-p20"><p>To see how linear regression works, let’s start with a straightforward example. <span data-type="link" data-href="corty3e-ch14.xml#corty3e-ch14-fig-1"><strong>Figure 14.1</strong></span> shows a perfect correlation (<em>r</em> = 1.00) between temperature measured in Fahrenheit and in Celsius. All six data points in <span data-type="link" data-href="corty3e-ch14.xml#corty3e-ch14-fig-1">Figure 14.1</span> fall on a straight line.</p></div>
+<div data-type="figure" data-figure-id="corty3e-ch14-fig-1" data-block_type="figure" data-layout-align="center" data-layout-width="medium" data-layout-border="true">
+
+<img id="" src="asset/ch14/corty3e_fig14_01.jpg" data-figure-id="corty3e-ch14-fig-1" data-layout-width="medium" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+<div data-type="figure_text">
+<span data-type="number">Figure 14.1: </span><span data-type="caption"><strong><span data-block_type="fig_num">Figure 14.1</span> Temperature Measured in Fahrenheit and Celsius</strong> In a perfect relationship, all points in a scatterplot fall on a straight line.</span>
+</div>
+</div>
+<div data-block_type="txt" id="corty3e-ch14-p21"><p>For these six data points, their values on <em>X</em> (Fahrenheit) and <em>Y</em> (Celsius) are known. For example, the point on the bottom left of the scatterplot has a Fahrenheit value of 32° and a Celsius value of 0°. These six are known, but what about all the other possible Fahrenheit values? If an object’s temperature is measured and found to be 86° Fahrenheit, what would it be in Celsius?</p></div>
+<div data-block_type="txt" id="corty3e-ch14-p22"><p><span data-type="link" data-href="corty3e-ch14.xml#corty3e-ch14-fig-2"><strong>Figure 14.2</strong></span> shows how to estimate <em>Y</em> for a given value of <em>X,</em> like 86°. In <span data-type="link" data-href="corty3e-ch14.xml#corty3e-ch14-fig-2"><strong>Figure 14.2</strong></span>, the six points have been connected with a line. This line, called the <span data-type="termref" data-term="regression line">regression line</span>, allows one to find a <em>Y</em> value for any <em>X</em> value. Here’s how to do it:</p></div>
+<div data-type="figure" data-figure-id="corty3e-ch14-fig-2" data-block_type="figure" data-layout-align="center" data-layout-width="medium" data-layout-border="true">
+
+<img id="" src="asset/ch14/corty3e_fig14_02.jpg" data-figure-id="corty3e-ch14-fig-2" data-layout-width="medium" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+<div data-type="figure_text">
+<span data-type="number">Figure 14.2: </span><span data-type="caption"><strong><span data-block_type="fig_num">Figure 14.2</span> Regression Line for Predicting Celsius from Fahrenheit</strong> The regression line inserted in this scatterplot makes it easy to predict an object’s temperature in Celsius if we know its temperature in Fahrenheit. An object that is 86°F would be about 30°C.</span>
+</div>
+</div>
+<ul data-block_type="bullet" id="corty3e-ch14-list-3">
+<li><div data-block_type="bl-first" id="corty3e-ch14-p23"><p>Draw a vertical line from 86° on the <em>X</em>-axis up to the diagonal line.</p></div>
+</li>
+<li><div data-block_type="bl-mid" id="corty3e-ch14-p24"><p>Draw a horizontal line over to the <em>Y</em>-axis from the point on the diagonal line.</p></div>
+</li>
+<li><div data-block_type="bl-mid" id="corty3e-ch14-p25"><p>Estimate the value of <em>Y</em> where the horizontal line intersects the <em>Y</em>-axis, say, 30°.</p></div>
+</li>
+<li><div data-block_type="bl-last" id="corty3e-ch14-p26"><p>Thus, the predicted value of <em>Y</em> is approximately 30°.</p></div>
+</li>
+</ul>
+<div data-block_type="txt" id="corty3e-ch14-p27"><p>Before moving on to the next example, let’s add some terminology. The six data points in <span data-type="link" data-href="corty3e-ch14.xml#corty3e-ch14-fig-1">Figure 14.1</span> have <em>X</em> scores and <em>Y</em> scores. In the case above, we had an <em>X</em> score (86°F), but no <em>Y</em> score. The <em>Y</em> score that was found, 30°C, is a predicted or estimated value. A predicted value of <em>Y</em> has a special name, <strong><em>Y</em> prime</strong>, abbreviated <em>Y′</em><em>.</em> (<em>Ŷ</em>, called “Y hat,” is also commonly used as an abbreviation for the predicted value of <em>Y</em>.)</p></div>
+<div data-block_type="page_start" id="corty3e_page_541"><p>541</p></div>
+<div data-block_type="txt" id="corty3e-ch14-p28"><p>In <span data-type="link" data-href="corty3e-ch14.xml#corty3e-ch14-fig-1">Figure 14.1</span>, all the data points fall on a line, so it is clear where to place the regression line. It is less clear what to do in a situation like that found in <span data-type="link" data-href="corty3e-ch14.xml#corty3e-ch14-fig-3"><strong>Figure 14.3</strong></span>, which displays Dr. Paik’s marital satisfaction data from <span data-type="link" data-href="corty3e-ch13.xml">Chapter 13</span>. In that study, a marital therapist randomly selected eight couples and found a statistically significant, positive relationship between the husband’s gender role flexibility and the wife’s marital satisfaction [<em>r</em>(6) = .76, <em>p</em> &lt; .05].</p></div>
+<div data-type="figure" data-figure-id="corty3e-ch14-fig-3" data-block_type="figure" data-layout-align="center" data-layout-width="medium" data-layout-border="true">
+
+<img id="" src="asset/ch14/corty3e_fig14_03.jpg" data-figure-id="corty3e-ch14-fig-3" data-layout-width="medium" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+<div data-type="figure_text">
+<span data-type="number">Figure 14.3: </span><span data-type="caption"><strong><span data-block_type="fig_num">Figure 14.3</span> Relationship Between Gender Role Flexibility and Marital Satisfaction</strong> Though there is a strong (<em>r</em> = .76) relationship between the two variables in this scatterplot, it is not clear where the best place is to draw a regression line for predicting <em>Y</em> from <em>X.</em></span>
+</div>
+</div>
+<div data-block_type="txt" id="corty3e-ch14-p29"><p>The relationship between gender role flexibility and marital satisfaction is a strong one. And a look at <span data-type="link" data-href="corty3e-ch14.xml#corty3e-ch14-fig-3">Figure 14.3</span> shows that it is a linear relationship. But where the best place would be to draw the regression line is not clear. <span data-type="link" data-href="corty3e-ch14.xml#corty3e-ch14-fig-4"><strong>Figure 14.4</strong></span> illustrates the marital satisfaction data with three different potential lines (labeled I, II, and III). Which one is the best regression line? Which one is the worst?</p></div>
+<div data-type="figure" data-figure-id="corty3e-ch14-fig-4" data-block_type="figure" data-layout-align="center" data-layout-width="medium" data-layout-border="true">
+
+<img id="" src="asset/ch14/corty3e_fig14_04.jpg" data-figure-id="corty3e-ch14-fig-4" data-layout-width="medium" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+<div data-type="figure_text">
+<span data-type="number">Figure 14.4: </span><span data-type="caption"><strong><span data-block_type="fig_num">Figure 14.4</span> Three Potential Regression Lines for Predicting Marital Satisfaction</strong> Which of these three lines best “fits” the data in this scatterplot? By what criterion should one decide? Statisticians use the “least squares” criterion, which means the best-fitting line is the one that, overall, minimizes the discrepancies between actual <em>Y</em> scores and predicted <em>Y</em> scores.</span>
+</div>
+</div>
+<div data-block_type="page_start" id="corty3e_page_542"><p>542</p></div>
+</div>
+    <div data-type="section" data-block_type="h2" id="corty3e-ch14-sec2-2" level="2" data-print_page="542">
+<h2 class="section-title"><span data-type="title" data-title-for="corty3e-ch14-sec2-2">How to Judge Whether Prediction Is Good
+</span></h2>
+
+<div data-block_type="txt-ni" id="corty3e-ch14-p30"><p>To learn how statisticians decide which line is the best, imagine that a memory test is given to all the students at a college. Scores can range from 1.00 to 19.00, and the mean score is calculated to be 10.00. Further, the scores are normally distributed with a standard deviation of 3.00. A frequency distribution of the memory scores is shown in <span data-type="link" data-href="corty3e-ch14.xml#corty3e-ch14-fig-5"><strong>Figure 14.5</strong></span>.</p></div>
+<div data-type="figure" data-figure-id="corty3e-ch14-fig-5" data-block_type="figure" data-layout-align="center" data-layout-width="large" data-layout-border="true">
+
+<img id="" src="asset/ch14/corty3e_fig14_05.jpg" data-figure-id="corty3e-ch14-fig-5" data-layout-width="large" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+<div data-type="figure_text">
+<span data-type="number">Figure 14.5: </span><span data-type="caption"><strong><span data-block_type="fig_num">Figure 14.5</span> Frequency Distribution of Memory Scores</strong> If memory scores are normally distributed with a mean of 10, then the most commonly occurring score is 10. If asked to guess what a randomly selected person’s memory score is, one is more likely to be right by guessing the mean than any other value.</span>
+</div>
+</div>
+<div data-block_type="txt" id="corty3e-ch14-p31"><p>Now, imagine 12 students are randomly selected from this college and a contest is held to guess what their scores on the memory test are. Any prediction from 1.00 to 19.00 is fair and there is a substantial prize for guessing correctly. Nothing is known about the selected students: not their GPAs, years in school, histories of head trauma, or any other fact. As a result, anyone making a prediction is guessing blindly. What to do? A statistician would say, “Guess the mean for each one.” That is, make the same guess, 10.00, twelve times in a row. This is the best strategy for two reasons:</p></div>
+<div data-block_type="page_start" id="corty3e_page_543"><p>543</p></div>
+<ol data-block_type="ordered" id="corty3e-ch14-list-4">
+<li><div data-block_type="nl-first" id="corty3e-ch14-p32"><p>First, there is a greater chance of being right guessing the mean than guessing any other value. Look at <span data-type="link" data-href="corty3e-ch14.xml#corty3e-ch14-fig-5">Figure 14.5</span>—the score at the midpoint, the mean, occurs with the greatest frequency.</p></div>
+</li>
+<li><div data-block_type="nl-last" id="corty3e-ch14-p33"><p>Second, the errors will be smaller, on average, if the mean is guessed for each person. Here’s how to think of this. The scores on the memory test range from 1.00 to 19.00, so the most one can be off by guessing the mean (10.00) is 9.00 points. Guessing any other value increases the potential size of the error. For example, if the guess was 14.50 and the student’s score was 2.00, then the guess would be off by 12.50 points.</p></div>
+</li>
+</ol>
+<div data-type="box" data-block_type="mn1" id="corty3e-ch14-exp1-1"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="corty3e-ch14-exp1-1"></h3>
+<div data-block_type="mn-ext-ni" id="corty3e-ch14-p34"><p><em>The best prediction is the one that yields the smallest errors between predicted outcomes and actual outcomes.</em></p></div>
+</div></div>
+<div data-block_type="txt" id="corty3e-ch14-p35"><p>The second point, about minimizing errors, is important because it is how statisticians judge prediction. The best prediction is the one that yields the smallest errors between predicted outcomes and actual outcomes. In fact, minimizing errors is how the regression line is defined—it is the best-fitting straight line by the least squares criterion. The <span data-type="termref" data-term="least squares criterion">least squares criterion</span> means that the prediction errors are squared and the best-fitting line is the one that has the smallest sum of squared errors. Why are we concerned with squared values? Let’s return to Dr. Paik’s study.</p></div>
+<div data-block_type="txt" id="corty3e-ch14-p36"><p><span data-type="link" data-href="corty3e-ch14.xml#corty3e-ch14-fig-6"><strong>Figure 14.6</strong></span> shows the scatterplot for the marital satisfaction data with line II from <span data-type="link" data-href="corty3e-ch14.xml#corty3e-ch14-fig-4">Figure 14.4</span>. In <span data-type="link" data-href="corty3e-ch14.xml#corty3e-ch14-fig-6">Figure 14.6</span>, double-headed arrows are used to mark the distance for the eight cases from their actual values (the dots) to the line. These distances represent errors in prediction: the distance from <em>Y</em> (the wives’ real satisfaction scores) to <em>Y′</em> (their predicted satisfaction scores) is the error in prediction. Sometimes the errors are small, as for points A, B, and E. Sometimes the errors are large, as for point F.</p></div>
+<div data-type="figure" data-figure-id="corty3e-ch14-fig-6" data-block_type="figure" data-layout-align="center" data-layout-width="medium" data-layout-border="true">
+
+<img id="" src="asset/ch14/corty3e_fig14_06.jpg" data-figure-id="corty3e-ch14-fig-6" data-layout-width="medium" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+<div data-type="figure_text">
+<span data-type="number">Figure 14.6: </span><span data-type="caption"><strong><span data-block_type="fig_num">Figure 14.6</span> Errors in Prediction</strong> This figure compares the cases’ actual marital satisfaction scores to their predicted scores for line II from <span data-type="link" data-href="corty3e-ch14.xml#corty3e-ch14-fig-4">Figure 14.4</span>. The double-headed arrows from the actual cases to the line show the sizes of the errors. Notice that for some cases (e.g., A, B, and E), the errors are small and the predicted values are close to the actual values. For other cases, like F, the error is large and the predicted value is far from the actual value.</span>
+</div>
+</div>
+<div data-block_type="txt" id="corty3e-ch14-p37"><p>Look at the top panel in <span data-type="link" data-href="corty3e-ch14.xml#corty3e-ch14-fig-7"><strong>Table 14.1</strong></span>. The top panel shows the <em>Y</em> scores for the eight marital satisfaction cases. The first column gives the actual <em>Y</em> value for each case and the next three columns give the predicted <em>Y</em> scores, one for each of the three lines in <span data-type="link" data-href="corty3e-ch14.xml#corty3e-ch14-fig-4">Figure 14.4</span>. The first row is for case A, where the wife’s marital satisfaction score is 0.80. Line I predicts her level of marital satisfaction to be higher, 1.32; line II also predicts high with <em>Y′</em> = 1.03; line III underestimates her satisfaction with a predicted value of 0.30.</p></div>
+<div data-type="figure" data-figure-id="corty3e-ch14-fig-7" data-block_type="table" data-layout-align="center" data-layout-width="xlarge" data-layout-border="true">
+
+<img id="" src="asset/ch14/corty3e_table14_01.jpg" data-figure-id="corty3e-ch14-fig-7" data-layout-width="xlarge" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+</div>
+<div data-block_type="page_start" id="corty3e_page_544"><p>544</p></div>
+<div data-block_type="txt" id="corty3e-ch14-p38"><p>The bottom left panel in <span data-type="link" data-href="corty3e-ch14.xml#corty3e-ch14-fig-7">Table 14.1</span> shows the differences between the actual scores and the predicted scores. These values are sizes of the errors. They are what is left over after <em>Y′</em> is subtracted out, so they are called <span data-type="termref" data-term="residuals">residuals</span>. For example, case A in the first row has a <em>Y′</em> for line I that is off by –0.52 points, for line II off by –0.23 points, and for line III off by 0.50 points. Notice that each column is a mixture of positive and negative residuals, of overestimates and underestimates. For these three lines, the residuals for each column sum to zero, meaning that the positive and negative errors balance each other out. Thus, comparing the sums of the error scores does not make one of these lines stand out over the others. So, how can one differentiate these three lines?</p></div>
+<div data-block_type="txt" id="corty3e-ch14-p39"><p>The answer is to square the residual scores. As a result, the squared error scores are all positive (see the bottom panel of <span data-type="link" data-href="corty3e-ch14.xml#corty3e-ch14-fig-7">Table 14.1</span>) and sum to a positive number when added together. The squared error scores sum to 2.44 for line I, 2.17 for line II, and 3.88 for line III. Linear regression uses the least squares criterion, which minimizes the sum of the squared errors, so we can now conclude that line II is the best-fitting line of these three and line III is the worst-fitting line.</p></div>
+<div data-block_type="page_start" id="corty3e_page_545"><p>545</p></div>
+<div data-block_type="txt" id="corty3e-ch14-p40"><p>Line II is the best-fitting of these three lines, but is it the best-fitting line out of all other possible lines? The regression formula we are about to learn determines the equation for the best-fitting line.</p></div>
+</div>
+    <div data-type="section" data-block_type="h2" id="corty3e-ch14-sec2-3" level="2" data-print_page="545">
+<h2 class="section-title"><span data-type="title" data-title-for="corty3e-ch14-sec2-3">The Linear Regression Equation
+</span></h2>
+
+<div data-block_type="txt-ni" id="corty3e-ch14-p41"><p>Most students remember the formula for a straight line from algebra. The abbreviations may have been different, but it looked something like this:</p></div>
+<div data-block_type="eq" id="corty3e-ch14-p42"><p><em>Y</em> = <em>bX</em> + <em>a</em></p></div>
+<div data-block_type="txt" id="corty3e-ch14-p43"><p>In this equation, <em>Y</em> is the value being calculated; <em>b</em> is the slope of the line; <em>X</em> is the value for which <em>Y</em> is being calculated; and <em>a</em> is the point where the line intersects the <em>Y</em>-axis, the <em>Y</em>-intercept.</p></div>
+<div data-block_type="txt" id="corty3e-ch14-p44"><p>The regression line equation, <span data-type="link" data-href="#corty3e-ch14-bx6-1">Equation 14.1</span>, is similar, but it calculates <em>Y′</em><em>,</em> the predicted value of <em>Y,</em> not <em>Y.</em></p></div>
+<div data-type="box" data-block_type="eq-t" id="corty3e-ch14-bx6-1"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="corty3e-ch14-bx6-1"><span data-block_type="sec_num">Equation 14.1</span> <span data-block_type="sec_title">Formula for Calculating a Regression Line</span>
+</h3>
+
+<div data-block_type="eq" id="corty3e-ch14-p45"><p><em>Y′</em> = <em>bX</em> + <em>a</em></p></div>
+<div data-block_type="eq-txt-ni" id="corty3e-ch14-p46"><p>where <em>Y′</em> = predicted value of <em>Y</em></p></div>
+<div data-block_type="eq-unl" id="corty3e-ch14-p47"><p><em>b</em> = slope of the regression line (<span data-type="link" data-href="#corty3e-ch14-bx6-2">Equation 14.2</span>)</p></div>
+<div data-block_type="eq-unl" id="corty3e-ch14-p48"><p><em>X</em> = value of <em>X</em> for which one wants to find <em>Y′</em></p></div>
+<div data-block_type="eq-unl" id="corty3e-ch14-p49"><p><em>a</em> = <em>Y</em>-intercept of the regression line (<span data-type="link" data-href="#corty3e-ch14-bx6-3">Equation 14.3</span>)</p></div>
+</div></div>
+<div data-block_type="txt" id="corty3e-ch14-p50"><p>In order to apply the regression line formula, three factors need to be known: (1) the <em>X</em> value for which one wants to predict a <em>Y</em> value; (2) the slope, <em>b;</em> and (3) the <em>Y</em>-intercept, <em>a.</em> The first of these, <em>X,</em> does not need to be calculated. It will either be given to or determined by the researcher. But the other two values, the slope and the <em>Y</em>-intercept, need to be calculated in order to apply <span data-type="link" data-href="#corty3e-ch14-bx6-1">Equation 14.1</span>.</p></div>
+<div data-block_type="h3" id="corty-ch14-chead-1"><p>Understanding Slope</p></div>
+<div data-block_type="txt-ni" id="corty3e-ch14-p51"><p><span data-type="termref" data-term="Slope">Slope</span> represents the tilt of the line. It tells how much up or down change in <em>Y</em> is predicted for each 1-unit change in <em>X.</em> This is often called “rise over run.”</p></div>
+<ul data-block_type="bullet" id="corty3e-ch14-list-5">
+<li><div data-block_type="bl-first" id="corty3e-ch14-p52"><p>If the slope is positive, then the line is moving up and to the right. (The slope is positive for direct relationships where increases on one variable are associated with increases on the other variable.)</p></div>
+</li>
+<li><div data-block_type="bl-mid" id="corty3e-ch14-p53"><p>If the slope is negative, then the line is moving down and to the right. (The slope is negative for inverse relationships. In an inverse relationship, increases in <em>X</em> are associated with decreases in <em>Y.</em>)</p></div>
+</li>
+<li><div data-block_type="bl-mid" id="corty3e-ch14-p54"><p>If the slope is zero, then the line is horizontal.</p></div>
+</li>
+</ul>
+<div data-block_type="page_start" id="corty3e_page_546"><p>546</p></div>
+<div data-block_type="txt" id="corty3e-ch14-p55"><p>Here’s the formula for calculating the slope.</p></div>
+<div data-type="box" data-block_type="eq-t" id="corty3e-ch14-bx6-2"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="corty3e-ch14-bx6-2"><span data-block_type="sec_num">Equation 14.2</span> <span data-block_type="sec_title">Formula for the Slope, <em>b</em>, of the Regression Line</span>
+</h3>
+
+<div data-block_type="equation" id="corty3e-ch14-eqn-1"><p>
+<img id="" src="asset/ch14/corty3e_eqn14_546_01.jpg" data-figure-id="" data-layout-width="" data-mmtype="" alt="image"></p></div>
+<div data-block_type="eq-txt-ni" id="corty3e-ch14-p56"><p>where <em>b</em> = slope of the regression line</p></div>
+<div data-block_type="eq-unl" id="corty3e-ch14-p57"><p><em>r</em> = observed correlation between <em>X</em> and <em>Y</em></p></div>
+<div data-block_type="eq-unl" id="corty3e-ch14-p58"><p><em>s<sub>Y</sub></em> = standard deviation of the <em>Y</em> scores</p></div>
+<div data-block_type="eq-unl" id="corty3e-ch14-p59"><p><em>s<sub>X</sub></em> = standard deviation of the <em>X</em> scores</p></div>
+</div></div>
+<div data-block_type="txt" id="corty3e-ch14-p60"><p>For Dr. Paik’s marital satisfaction study, <em>r</em> = .76, <em>s<sub>Y</sub></em> = 0.86, and <em>s<sub>X</sub></em> = 11.49. He would calculate the slope as follows:</p></div>
+<div data-block_type="equation" id="corty3e-ch14-eqn-2"><p>
+<img id="" src="asset/ch14/corty3e_eqn14_546_02.jpg" data-figure-id="" data-layout-width="" data-mmtype="" alt="image"></p></div>
+<div data-block_type="txt" id="corty3e-ch14-p61"><p>The slope, 0.06, is positive. This was expected because the correlation coefficient, .76, was positive. The value of the slope, 0.06, means that, on average, for every 1-point increase in a husband’s level of gender role flexibility, there is a predicted increase of 0.06 points in the wife’s level of marital satisfaction. It also means that a 1-point <em>decrease</em> in gender role flexibility is associated with a 0.06-point <em>decrease</em> in marital satisfaction.</p></div>
+<div data-block_type="txt" id="corty3e-ch14-p62"><p>It is important to note the careful use of language here. Correlational designs give information about association, not cause and effect. Dr. Paik is careful <em>not</em> to say that a 1-point increase in gender role flexibility causes a 0.06-point increase in marital satisfaction.</p></div>
+<div data-block_type="h3" id="corty-ch14-chead-2"><p>Understanding the <em>Y</em>-Intercept</p></div>
+<div data-block_type="txt-ni" id="corty3e-ch14-p63"><p>The slope was calculated first because it is needed to calculate <em>a,</em> the <em>Y</em>-intercept. The <span data-type="termref" data-term="Y-intercept"><em>Y</em>-intercept</span> indicates the spot where the regression line would pass through the <em>Y</em>-axis. It gives information about the “altitude” of the line, how high or low it is:</p></div>
+<ul data-block_type="bullet" id="corty3e-ch14-list-6">
+<li><div data-block_type="bl-first" id="corty3e-ch14-p64"><p>If the <em>Y</em>-intercept is positive, the line passes through the <em>Y</em>-axis above zero.</p></div>
+</li>
+<li><div data-block_type="bl-mid" id="corty3e-ch14-p65"><p>If the <em>Y</em>-intercept is negative, the line passes through the <em>Y</em>-axis below zero.</p></div>
+</li>
+<li><div data-block_type="bl-mid" id="corty3e-ch14-p66"><p>If the <em>Y</em>-intercept is zero, the line passes through the <em>Y</em>-axis at zero.</p></div>
+</li>
+<li><div data-block_type="bl-last" id="corty3e-ch14-p67"><p>The bigger the absolute value of the <em>Y</em>-intercept, the further away from zero the intercept passes through the <em>Y</em>-axis.</p></div>
+</li>
+</ul>
+<div data-block_type="page_start" id="corty3e_page_547"><p>547</p></div>
+<div data-block_type="txt" id="corty3e-ch14-p68"><p>Here is the formula for calculating the <em>Y-</em>intercept.</p></div>
+<div data-type="box" data-block_type="eq-t" id="corty3e-ch14-bx6-3"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="corty3e-ch14-bx6-3"><span data-block_type="sec_num">Equation 14.3</span> <span data-block_type="sec_title">Formula for the Y-Intercept, a, for the Regression Line</span>
+</h3>
+
+<div data-block_type="eq" id="corty3e-ch14-p69"><p><em>a</em> = <em>M<sub>Y</sub></em> – <em>bM<sub>X</sub></em></p></div>
+<div data-block_type="eq-txt-ni" id="corty3e-ch14-p70"><p>where <em>a</em> = <em>Y</em>-intercept for the regression line</p></div>
+<div data-block_type="eq-unl" id="corty3e-ch14-p71"><p><em>M<sub>Y</sub></em> = mean of the <em>Y</em> scores</p></div>
+<div data-block_type="eq-unl" id="corty3e-ch14-p72"><p><em>b</em> = slope of the regression line (<span data-type="link" data-href="#corty3e-ch14-bx6-2">Equation 14.2</span>)</p></div>
+<div data-block_type="eq-unl" id="corty3e-ch14-p73"><p><em>M<sub>X</sub></em> = mean of the <em>X</em> scores</p></div>
+</div></div>
+<div data-block_type="txt" id="corty3e-ch14-p74"><p>Dr. Paik has already calculated the slope and found it to be 0.0568, which he rounded to <em>b</em> = 0.06. Consulting his data, he finds <em>M<sub>Y</sub></em> = 2.00 and <em>M<sub>X</sub></em> = 25.00. Using these values, the <em>Y</em>-intercept is calculated as follows:</p></div>
+<div data-block_type="eq" id="corty3e-ch14-p75"><p><em>a</em> = <em>M<sub>Y</sub></em> – <em>bM<sub>X</sub></em></p></div>
+<div data-block_type="eq" id="corty3e-ch14-p76"><p>= 2.00 – (0.0568 × 25.00)</p></div>
+<div data-block_type="eq" id="corty3e-ch14-p77"><p>= 2.00 – (1.4200)</p></div>
+<div data-block_type="eq" id="corty3e-ch14-p78"><p>= 0.5800</p></div>
+<div data-block_type="eq" id="corty3e-ch14-p79"><p>= 0.58</p></div>
+<div data-block_type="txt-ni" id="corty3e-ch14-p80"><p>(<em>Note:</em> Because very precise numbers are needed for an example to work later in the chapter, this equation uses a value of the slope to four decimal places, <em>b</em> = 0.0568.)</p></div>
+<div data-block_type="txt" id="corty3e-ch14-p81"><p>The <em>Y</em>-intercept, the spot where the regression line would intersect the <em>Y</em>-axis, is 0.58. Now that the slope, <em>b</em> = 0.06, and the <em>Y</em>-intercept, <em>a</em> = 0.58, are known, Dr. Paik can complete the regression formula, <span data-type="link" data-href="#corty3e-ch14-bx6-1">Equation 14.1</span>:</p></div>
+<div data-block_type="eq" id="corty3e-ch14-p82"><p><em>Y′</em> = <em>bX</em> + <em>a</em></p></div>
+<div data-block_type="eq" id="corty3e-ch14-p83"><p>= 0.06<em>X</em> + 0.58</p></div>
+<div data-block_type="h3" id="corty-ch14-chead-3"><p>Predicting <em>Y</em></p></div>
+<div data-block_type="txt-ni" id="corty3e-ch14-p84"><p>Here is how a researcher could apply the formula and use it to draw the regression line. Dr. Paik needs to select an <em>X</em> value for which to predict a <em>Y</em> score. He must select a value that is within the range used to develop the regression formula. So, he selects a gender role flexibility score of 30 and substitutes that for <em>X</em> in <span data-type="link" data-href="#corty3e-ch14-bx6-1">Equation 14.1</span>:</p></div>
+<div data-block_type="eq" id="corty3e-ch14-p85"><p><em>Y′</em> = <em>bX</em> + <em>a</em></p></div>
+<div data-block_type="eq" id="corty3e-ch14-p86"><p>= (0.06 × 30) + 0.58</p></div>
+<div data-block_type="eq" id="corty3e-ch14-p87"><p>= 1.8000 + 0.58</p></div>
+<div data-block_type="eq" id="corty3e-ch14-p88"><p>= 2.3800</p></div>
+<div data-block_type="eq" id="corty3e-ch14-p89"><p>= 2.38</p></div>
+<div data-block_type="txt" id="corty3e-ch14-p90"><p>Dr. Paik has just predicted that a man with a gender role flexibility score of 30 will have a partner who rates her level of marital satisfaction as 2.38. Given that marital satisfaction is rated on a 4-point scale like GPA, this means she’s predicted to rate her marriage at the C+ level.</p></div>
+<div data-block_type="page_start" id="corty3e_page_548"><p>548</p></div>
+<div data-block_type="h3" id="corty-ch14-chead-4"><p>Drawing the Regression Line</p></div>
+<div data-block_type="txt-ni" id="corty3e-ch14-p91"><p>Putting a regression line into a scatterplot helps to highlight the relationship between the two variables. Any two points can be connected with a straight line, so the regression line can be drawn once two points are known. All Dr. Paik needs is the two points.</p></div>
+<div data-block_type="txt" id="corty3e-ch14-p92"><p>The regression equation is meant to make predictions for the range of values it was based on. So, Dr. Paik will find <em>Y′</em> for the lowest <em>X</em> value (8), and <em>Y′</em> for the largest (38). (Again, because precise numbers are needed for an example later in the chapter, a four decimal place version of slope <em>b</em> = 0.0568 instead of <em>b</em> = .06 will be used.)</p></div>
+<div data-block_type="eq" id="corty3e-ch14-p93"><p><em>Y′</em> = <em>bX</em> + <em>a</em></p></div>
+<div data-block_type="eq" id="corty3e-ch14-p94"><p>= (0.0568 × 8) + 0.58</p></div>
+<div data-block_type="eq" id="corty3e-ch14-p95"><p>= 0.4544 + 0.58</p></div>
+<div data-block_type="eq" id="corty3e-ch14-p96"><p>= 1.0344</p></div>
+<div data-block_type="eq" id="corty3e-ch14-p97"><p>= 1.03</p></div>
+<div data-block_type="eq" id="corty3e-ch14-p98"><p><em>Y′</em> = <em>bX</em> + <em>a</em></p></div>
+<div data-block_type="eq" id="corty3e-ch14-p99"><p>= (0.0568 × 38) + 0.58</p></div>
+<div data-block_type="eq" id="corty3e-ch14-p100"><p>= 2.1584 + 0.58</p></div>
+<div data-block_type="eq" id="corty3e-ch14-p101"><p>= 2.7384</p></div>
+<div data-block_type="eq" id="corty3e-ch14-p102"><p>= 2.74</p></div>
+<div data-block_type="txt" id="corty3e-ch14-p103"><p>Dr. Paik now knows two points that anchor the line: (8, 1.03) and (38, 2.74). <span data-type="link" data-href="corty3e-ch14.xml#corty3e-ch14-fig-10"><strong>Figure 14.7</strong></span> shows the scatterplot with the two points marked and a line drawn through them. Yes, this is the same as line II in <span data-type="link" data-href="corty3e-ch14.xml#corty3e-ch14-fig-4">Figure 14.4</span>.</p></div>
+<div data-type="figure" data-figure-id="corty3e-ch14-fig-10" data-block_type="figure" data-layout-align="center" data-layout-width="medium" data-layout-border="true">
+
+<img id="" src="asset/ch14/corty3e_fig14_07.jpg" data-figure-id="corty3e-ch14-fig-10" data-layout-width="medium" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+<div data-type="figure_text">
+<span data-type="number">Figure 14.8: </span><span data-type="caption"><strong><span data-block_type="fig_num">Figure 14.7</span> Regression Line for Predicting Marital Satisfaction</strong> Finding <em>Y′</em> for the two points at two ends of the range of <em>X</em> scores allows a researcher to draw a regression line. Remember, the regression line should only be used to predict <em>Y′</em> for the range of <em>X</em> scores used to derive the regression equation.</span>
+</div>
+</div>
+<div data-type="box" data-block_type="sr-exp-n" id="corty3e-ch14-bx3-1"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="corty3e-ch14-bx3-1">Worked Example 14.1</h3>
+<div data-block_type="sr_exp_txt_ni" id="corty3e-ch14-p104"><p>For another example of developing a regression equation from start to finish, imagine the following: A large and representative sample of cigarette smokers (<em>N</em> = 2,500) was obtained in order to see if there were a relationship between how much a person smoked and his or her physical health. To measure amount of smoking, each person reported how many years he or she had been smoking cigarettes. The mean, <em>M<sub>X</sub>,</em> was 22 years, with a standard deviation of 9. As a measure of physical health, each person’s lung function was measured. This was reported as a percent of the predicted normal level, so lower scores mean worse functioning. A lung function score of 100 would mean that the person’s lung capacity was normal for his or her age and sex. A score of 50 would mean that the smoker’s level of lung function was only 50% of what was expected for a person of the same age and sex. The mean level of function was 76%, with a standard deviation of 13. The average person had been smoking for 22 years and had lungs functioning at 76% of what was expected.</p></div>
+<div data-block_type="page_start" id="corty3e_page_549"><p>549</p></div>
+<div data-block_type="sr_exp_txt" id="corty3e-ch14-p105"><p>Not surprisingly, the relationship between years of smoking and degree of lung function was negative and strong: [<em>r</em>(2,498) = –.68, <em>p</em> &lt; .05]. As years of smoking went up, the percent of normal lung function went down (see the scatterplot in <span data-type="link" data-href="corty3e-ch14.xml#corty3e-ch14-fig-11"><strong>Figure 14.8</strong></span>).</p></div>
+<div data-type="figure" data-figure-id="corty3e-ch14-fig-11" data-block_type="figure" data-layout-align="center" data-layout-width="large" data-layout-border="true">
+
+<img id="" src="asset/ch14/corty3e_fig14_08.jpg" data-figure-id="corty3e-ch14-fig-11" data-layout-width="large" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+<div data-type="figure_text">
+<span data-type="number">Figure 14.9: </span><span data-type="caption"><strong><span data-block_type="fig_num">Figure 14.8</span> Relationship Between Years of Cigarette Smoking and Lung Function</strong> In this scatterplot, the relationship between years of smoking and loss of lung function is strong, statistically significant, and inverse.</span>
+</div>
+</div>
+<div data-block_type="txt" id="corty3e-ch14-p106"><p>To calculate the slope (<em>b</em>) for the regression line, plug <em>r</em> = –.68, <em>s<sub>X</sub></em> = 9, and <em>s<sub>Y</sub></em> = 13 into <span data-type="link" data-href="#corty3e-ch14-bx6-2">Equation 14.2</span>:</p></div>
+<div data-block_type="equation" id="corty3e-ch14-eqn-3"><p>
+<img id="" src="asset/ch14/corty3e_eqn14_549_01.jpg" data-figure-id="" data-layout-width="" data-mmtype="" alt="image"></p></div>
+<div data-block_type="page_start" id="corty3e_page_550"><p>550</p></div>
+<div data-block_type="sr_exp_txt_ni" id="corty3e-ch14-p107"><p>For the regression line for the years of smoking/lung function data, the slope is <em>b</em> = –0.98. A slope of <em>negative</em> 0.98 means that for every 1-point <em>increase</em> in <em>X,</em> there’s a predicted <em>decrease</em> of 0.98 points in <em>Y.</em> To put this in the context of this example, every year of smoking is associated with an additional decrease of 0.98 percentage points from normal lung function. In this way, a slope can be a meaningful tool for interpreting regression.</p></div>
+<div data-block_type="sr_exp_txt" id="corty3e-ch14-p108"><p>To calculate the <em>Y</em>-intercept, one needs the slope, which was just found to be –0.98, and the two means, <em>M<sub>X</sub></em> and <em>M<sub>Y</sub>.</em> The predictor variable is years of smoking so <em>M<sub>X</sub></em> = 22; the predicted variable is percent of normal function and <em>M<sub>Y</sub></em> = 76. These values can be plugged into <span data-type="link" data-href="#corty3e-ch14-bx6-3">Equation 14.3</span> to find the <em>Y</em>-intercept:</p></div>
+<div data-block_type="sr_exp_txt" id="corty3e-ch14-p109"><p><em>a</em> = <em>M<sub>Y</sub></em> – <em>bM<sub>X</sub></em></p></div>
+<div data-block_type="sr_exp_txt" id="corty3e-ch14-p110"><p>= 76 – (–0.98 × 22)</p></div>
+<div data-block_type="sr_exp_txt" id="corty3e-ch14-p111"><p>= 76 – (–21.5600)</p></div>
+<div data-block_type="sr_exp_txt" id="corty3e-ch14-p112"><p>= 76 + (21.5600)</p></div>
+<div data-block_type="sr_exp_txt" id="corty3e-ch14-p113"><p>= 97.5600</p></div>
+<div data-block_type="sr_exp_txt" id="corty3e-ch14-p114"><p>= 97.56</p></div>
+<div data-block_type="txt" id="corty3e-ch14-p115"><p>The <em>Y</em>-intercept for the regression line, which is the predicted value of <em>Y</em> when <em>X</em> = 0, is 97.56. Given <em>b</em> = –0.98 and <em>a</em> = 97.56, it is now possible to complete the regression equation, <span data-type="link" data-href="#corty3e-ch14-bx6-1">Equation 14.1</span>:</p></div>
+<div data-block_type="sr-exp-eq" id="corty3e-ch14-p116"><p><em>Y′</em> = <em>bX</em> + <em>a</em></p></div>
+<div data-block_type="sr-exp-eq" id="corty3e-ch14-p117"><p>= –0.98<em>X</em> + 97.56</p></div>
+<div data-block_type="sr_exp_txt" id="corty3e-ch14-p118"><p>This is the regression equation. Regression equations are used to predict a <em>Y</em> score for a case from its score on <em>X.</em> In the present instance, it can be used to predict a smoker’s lung function (<em>Y′</em>) based on how many years he or she has been smoking (<em>X</em>). Let’s see it in action and predict the percentage of normal lung function for a person who has been smoking for eight years. Or, phrased mathematically, if <em>X</em> = 8, what is <em>Y′</em>? Applying <span data-type="link" data-href="#corty3e-ch14-bx6-1">Equation 14.1</span> to answer that question, it is predicted that a person who has been smoking for eight years will have lungs that function at 89.72% of normal capacity:</p></div>
+<div data-block_type="sr-exp-eq" id="corty3e-ch14-p119"><p><em>Y′</em> = <em>bX</em> + <em>a</em></p></div>
+<div data-block_type="sr-exp-eq" id="corty3e-ch14-p120"><p>= –0.98<em>X</em> + 97.56</p></div>
+<div data-block_type="sr-exp-eq" id="corty3e-ch14-p121"><p>= (–0.98 × 8) + 97.56</p></div>
+<div data-block_type="sr-exp-eq" id="corty3e-ch14-p122"><p>= –7.8400 + 97.56</p></div>
+<div data-block_type="sr-exp-eq" id="corty3e-ch14-p123"><p>= 89.7200</p></div>
+<div data-block_type="sr-exp-eq" id="corty3e-ch14-p124"><p>= 89.72</p></div>
+<div data-block_type="sr_exp_txt" id="corty3e-ch14-p125"><p>Now let’s draw the regression line. The regression line should only span the range of existing <em>X</em> values. Look at the scatterplot in <span data-type="link" data-href="corty3e-ch14.xml#corty3e-ch14-fig-11">Figure 14.8</span> and see that the <em>X</em> values range from 1 to 65. Below, <em>Y′</em> scores for these two <em>X</em> values are calculated and they are used to draw the regression line seen in <span data-type="link" data-href="corty3e-ch14.xml#corty3e-ch14-fig-13"><strong>Figure 14.9</strong></span> from (1, 96.58) to (65, 33.86):</p></div>
+<div data-type="figure" data-figure-id="corty3e-ch14-fig-13" data-block_type="figure" data-layout-align="center" data-layout-width="large" data-layout-border="true">
+
+<img id="" src="asset/ch14/corty3e_fig14_09.jpg" data-figure-id="corty3e-ch14-fig-13" data-layout-width="large" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+<div data-type="figure_text">
+<span data-type="number">Figure 14.10: </span><span data-type="caption"><strong><span data-block_type="fig_num">Figure 14.9</span> Regression Line for Years of Cigarette Smoking and Lung Function Study</strong> The regression line for this data set has a negative slope because the relationship is inverse—as the years of smoking go up, lung function goes down.</span>
+</div>
+</div>
+<div data-block_type="page_start" id="corty3e_page_551"><p>551</p></div>
+<div data-block_type="sr-exp-eq" id="corty3e-ch14-p126"><p><em>Y′</em> = <em>bX</em> + <em>a</em></p></div>
+<div data-block_type="sr-exp-eq" id="corty3e-ch14-p127"><p>= –0.98<em>X</em> + 97.56</p></div>
+<div data-block_type="sr-exp-eq" id="corty3e-ch14-p128"><p>= (–0.98 × 1) + 97.56</p></div>
+<div data-block_type="sr-exp-eq" id="corty3e-ch14-p129"><p>= –0.9800 + 97.56</p></div>
+<div data-block_type="sr-exp-eq" id="corty3e-ch14-p130"><p>= 96.5800</p></div>
+<div data-block_type="sr-exp-eq" id="corty3e-ch14-p131"><p>= 96.58</p></div>
+<div data-block_type="sr-exp-eq" id="corty3e-ch14-p132"><p><em>Y′</em> = <em>bX</em> + <em>a</em></p></div>
+<div data-block_type="sr-exp-eq" id="corty3e-ch14-p133"><p>= –0.98<em>X</em> + 97.56</p></div>
+<div data-block_type="sr-exp-eq" id="corty3e-ch14-p134"><p>= (–0.98 × 65) + 97.56</p></div>
+<div data-block_type="sr-exp-eq" id="corty3e-ch14-p135"><p>= –63.7000 + 97.56</p></div>
+<div data-block_type="sr-exp-eq" id="corty3e-ch14-p136"><p>= 33.8600</p></div>
+<div data-block_type="sr-exp-eq" id="corty3e-ch14-p137"><p>= 33.86</p></div>
+<div data-type="box" data-block_type="bx-1-h" id="corty3e-ch14-bx1-1"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="corty3e-ch14-bx1-1">A Common Question</h3>
+<div data-block_type="bx1-que" id="corty3e-ch14-p138"><p><strong>Q</strong> Predicting that a person who has smoked for eight years will have lungs that function at 89.72% of normal capacity sounds quite exact. Is such a precise prediction accurate?</p></div>
+<div data-block_type="bx1-ans" id="corty3e-ch14-p139"><p><strong>A</strong> No. A prediction like 89.72% is a point estimate. An interval estimate, which gives a range within which <em>Y′</em> probably falls, is a better way to go. We will discuss such an interval, called a predication interval, in the next section, though calculating the prediction interval is beyond the scope of this text.</p></div>
+</div></div>
+</div></div>
+<div data-block_type="page_start" id="corty3e_page_552"><p>552</p></div>
+<div data-type="box" data-block_type="sr-h" id="corty3e-ch14-bx2-1"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="corty3e-ch14-bx2-1">Practice Problems 14.1</h3>
+<div data-block_type="sr-h1" id="corty3e-ch14-p140"><p><strong>Apply Your Knowledge</strong></p></div>
+<div data-block_type="sr-que-nl" id="corty3e-ch14-p141"><p><span data-block_type="question_num">14.01</span> Given <em>r</em> = –.37, <em>s<sub>X</sub></em> = 12.88, and <em>s<sub>Y</sub></em> = 9.33, find the slope.</p></div>
+<div data-block_type="sr-que-nl" id="corty3e-ch14-p142"><p><span data-block_type="question_num">14.02</span> Given <em>M<sub>X</sub></em> = 10.65, <em>M<sub>Y</sub></em> = 45.64, and <em>b</em> = 4.54, find the <em>Y</em>-intercept.</p></div>
+<div data-block_type="sr-que-nl" id="corty3e-ch14-p143"><p><span data-block_type="question_num">14.03</span> Given a slope of 1.80 and a <em>Y</em>-intercept of –12.42, form a regression equation.</p></div>
+<div data-block_type="sr-que-nl" id="corty3e-ch14-p144"><p><span data-block_type="question_num">14.04</span> Given <em>Y′</em> = 1.50<em>X</em> + 4.50, (a) find the predicted values of <em>Y</em> for <em>X</em> = 2 and <em>X</em> = 12, and (b) draw the regression line.</p></div>
+<div data-block_type="sr-que-nl" id="corty3e-ch14-p145"><p><span data-block_type="question_num">14.05</span> Given the regression line to the right, estimate <em>Y′</em> if <em>X</em> = 40.</p></div>
+<div data-type="figure" data-figure-id="corty3e-ch14-fig-14" data-block_type="un_figure" data-layout-align="center" data-layout-width="medium" data-layout-border="true">
+
+<img id="" src="asset/ch14/corty3e_fig14_un01.jpg" data-figure-id="corty3e-ch14-fig-14" data-layout-width="medium" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+</div>
+</div></div>
+</div>
+<!-- #x-digfir-subsection-insertion-point --><!-- #x-digfir-subsection-insertion-point --><!-- #x-digfir-subsection-insertion-point --><!-- #x-digfir-subsection-insertion-point --></div><!-- /#manuscript -->
+<br class="clear" />
+<!-- end of material in original view -->
+
+	<!--[if IE]><script type="text/javascript" src="js/excanvas.compiled.js"></script><![endif]-->
+    
+<script type="text/javascript" src="js/utilities.js"></script>
+<script type="text/javascript" src="js/query_types.js"></script>
+<script type="text/javascript" src="js/player.js"></script>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/jquery-ui-1.8.16.custom.min.js"></script>
+<script type="text/javascript" src="js/jquery_extensions.js"></script>
+<script type="text/javascript" src="js/swfobject.js"></script>
+<script type="text/javascript" src="http://admin.brightcove.com/js/BrightcoveExperiences.js"></script>
+<script type="text/javascript" src="js/digfir_ebook_fw.js"></script>
+<script type="text/javascript" src="js/corty3e.js"></script>
+<script type="text/javascript" src="js/corty3e_ch14.js"></script>
+<script type="text/javascript">
+    //<!--
+    
+$(window).ready(function () {
+	player.initialize('56d62de6757a2efb47000003');
+});
+    //-->
+</script>
+</body>
+</html>
+

@@ -1,0 +1,294 @@
+/* Appendix C CSS */
+
+// predominant color used throughout for fonts and backgrounds
+@corty-blue: #168ca8;
+@background-white: #fff;
+
+[data-block_type="bm-ct-1"] {
+    background-color: @corty-blue;
+    color: @background-white;
+    font-size: 3em;
+    padding: 75px 0 0 40px;
+    margin-left: -40px;
+    width: 845px;
+    p {
+        margin: 0;
+        line-height: 30px;
+    }
+}
+[data-block_type="ans-t"] {
+    color: @corty-blue;
+    font-size: 1.8em;
+    margin: 14px 0 9px 0;
+    width: 800px;
+}
+[data-block_type="ans-h1-s"] {
+    color: @corty-blue;
+    margin: 10px 0;
+}
+[data-block_type="ans-tb-t"] {
+    color: @corty-blue;
+}
+// question list
+[data-block_type="ans"] {
+    font-family: serif;
+    p {
+        margin-left: 3em !important;
+        [data-block_type="question_num"] {
+            font-family: serif;
+            position: absolute;
+            left: 88px;
+        }
+    }
+}
+[data-block_type="ans-cont"] {
+    p {
+        margin-left: 3em !important;
+        font-family: serif;
+        text-indent: 2em;
+    }
+}
+[data-block_type="ans-cont-ni"] {
+    p {
+        margin-left: 3em !important;
+        font-family: serif;
+    }
+}
+[data-block_type="ans-bl"] {
+    p {
+        margin-left: 3em !important;
+        font-family: serif;
+    }
+}
+[data-block_type="ans-cont-bl"] {
+    p {
+        font-family: serif;
+    }
+}
+[data-block_type="ans-nl-txt-ni"] {
+    p {
+        margin-left: 3em !important;
+        font-family: serif;
+    }
+}
+[data-block_type="ans-eq"] {
+    p {
+        margin-left: 3em !important;
+        font-family: serif;
+    }
+}
+
+[data-block_type="ans-h2"] {
+    margin: 6px 0;
+}
+
+// step paragraphs within questions
+@font-black: #222;
+
+[data-block_type="ans-h3"] {
+    font-family: sans-serif;
+    p {
+        margin-left: 3em !important;
+        color: @font-black;
+        [data-block_type="question_num"] {
+            font-family: sans-serif;
+            color: @font-black;
+            position: absolute;
+            left: 88px;
+        }
+        [data-block_type="h4-n-ri"] + strong {
+            color: @font-black;
+            font-family: sans-serif;
+            margin-left: 5px;
+        }
+    }
+}
+// lower alpha lists
+[data-block_type="loweralpha"] {
+    margin: 1px 42px 1px 40px !important;
+    counter-reset: alpha-list;
+    list-style: none;
+    > li {
+        counter-increment: alpha-list;
+        margin: 4px 0;
+        list-style: none;
+        font-family: serif;
+        &:before {
+            content: "(" counter(alpha-list, lower-alpha) ")";
+            margin-right: 4px;
+            font-family: serif;
+        }
+        > div,
+        [data-block_type="ans"] {
+            display: inline;
+            p {
+                // override ans for these lists
+                margin-left: 0 !important;
+                display: inline;
+            }
+        }
+        //change margin-top from first p tag in li, to line up text with marker
+        > div > p {
+            padding-top:2px;
+        }
+        ul[data-block_type="bullet"] {
+            margin: 0 1em;
+            list-style-type: initial;
+        }
+    }
+}
+// bullet lists
+ul[data-block_type="bullet"] {
+    margin: 0 4em;
+    li [data-block_type="ans-bl"] {
+        p {
+            margin-left: 0 !important;
+            font-family: serif;
+        }
+    }
+}
+// numbered lists
+ol[data-block_type="numbered"] {
+    margin-left: 4em;
+    li [data-block_type="ans"] p {
+        margin: 0 !important;
+    }
+}
+
+
+@box-bg-blue: #e0e8ef;
+// tables - most styling handled with CSS classes in HTML
+table {
+    td {
+        font-family: serif;
+        vertical-align: bottom !important;
+    }
+    .tbl-blue-bg td {
+        font-family: sans-serif;
+    }
+    td.tbl-blue-font {
+        color: @corty-blue;
+        font-family: sans-serif;
+    }
+    span[data-block_type="TBN-SIDHD19"] {
+        margin-left: 1em;
+    }
+}
+
+
+// inline equation image size adjustments
+// this one is ineqn image, but not inline
+div#corty3e-app3-fig-9 img {
+    height: initial;
+}
+div#corty3e-app3-fig-18 img {
+    height: initial;
+}
+div#corty3e-app3-fig-19 img {
+    height: initial;
+}
+
+// question number adjustments due to overlap
+div#corty3e-app3-p394 {
+    margin-bottom: .5em;
+}
+
+// Individual one off adjustments
+[data-block_type="loweralpha"] > li > div#corty3e-app3-p360 {
+	display: block;
+}
+img[src="asset/appc/corty3e_ineqn_app_c-4_03.jpg"] {
+	height: 3.5em;
+	vertical-align: top;
+	margin-top: 1em;
+}
+img[src="asset/appc/corty3e_ineqn_app_c-4_05.jpg"] {
+	height: 3.5em;
+	vertical-align: top;
+	margin-top: 1em;
+}
+img[src="asset/appc/corty3e_ineqn_app_c-5_03.jpg"] {
+	height: 10.5em;
+	vertical-align: top;
+	margin-top: 1em;
+}
+img[src="asset/appc/corty3e_ineqn_app_c-5_04.jpg"] {
+	height: 10.5em;
+	vertical-align: top;
+	margin-top: 1em;
+}
+img[src="asset/appc/corty3e_ineqn_app_c-6_01.jpg"] {
+	height: 2.5em;
+	vertical-align: top;
+	margin-top: 1em;
+}
+img[src="asset/appc/corty3e_ineqn_app_c-6_02.jpg"] {
+	height: 3em;
+	vertical-align: top;
+	margin-top: 1em;
+}
+img[src="asset/appc/corty3e_ineqn_app_c-6_03.jpg"] {
+	height: 6.5em;
+	vertical-align: top;
+	margin-top: 1em;
+}
+img[src="asset/appc/corty3e_ineqn_app_c-6_04.jpg"] {
+	height: 1em;
+	vertical-align: top;
+	margin-top: 1em;
+}
+img[src="asset/appc/corty3e_ineqn_app_c-7_01.jpg"] {
+	height: 18em;
+	vertical-align: top;
+	margin-top: 1em;
+}
+img[src="asset/appc/corty3e_ineqn_app_c-7_02.jpg"] {
+	height: 4.5em;
+	vertical-align: top;
+	margin-top: 1em;
+}
+img[src="asset/appc/corty3e_ineqn_app_c-7_03.jpg"] {
+	height: 11em;
+	vertical-align: top;
+	margin-top: 1em;
+}
+img[src="asset/appc/corty3e_ineqn_app_c-7_05.jpg"] {
+	height: 4.5em;
+	vertical-align: top;
+	margin-top: 1em;
+}
+img[src="asset/appc/corty3e_ineqn_app_c-8_01.jpg"] {
+	height: 21em;
+	vertical-align: top;
+	margin-top: 1em;
+}
+img[src="asset/appc/corty3e_ineqn_app_c-9_01.jpg"] {
+	height: 4.5em;
+	vertical-align: top;
+	margin-top: 1em;
+}
+img[src="asset/appc/corty3e_ineqn_app_c-9_02.jpg"] {
+	height: 4em;
+	vertical-align: top;
+	margin-top: 1em;
+}
+img[src="asset/appc/corty3e_ineqn_app_c-10_01.jpg"] {
+	height: 4.5em;
+	vertical-align: top;
+	margin-top: 1em;
+}
+img[src="asset/appc/corty3e_ineqn_app_c-10_01.jpg"] {
+	height: 4.5em;
+	vertical-align: top;
+	margin-top: 1em;
+}
+img[src="asset/appc/corty3e_ineqn_app_c-14_01.jpg"] {
+	height: 2.5em;
+	vertical-align: top;
+	margin-top: 1em;
+}
+img[src="asset/appc/corty3e_fig_app_c_un06.jpg"] {
+	height: 22em;
+	vertical-align: top;
+	margin-top: 1em;
+}

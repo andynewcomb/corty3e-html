@@ -1,0 +1,601 @@
+<?xml version="1.0"?>
+<manifest id="corty3e" timestamp="1464217591" supp_win="0"><manuscript id="56ddd74f757a2e4938000000" title="Using and Interpreting Statistics, THIRD EDITION" question-delivery-method="ARGA">
+    <section id="corty3e-fm1-sec1-1" folder="false" filename="corty3e_fm_1.html" dlapFilename="corty3e_fm_1_dlap.xml" numquestions="0">
+      <title>Credits</title>
+    </section>
+    <section id="corty3e-fm1-sec1-2" folder="false" filename="corty3e_fm_2.html" dlapFilename="corty3e_fm_2_dlap.xml" numquestions="0">
+      <title>ABOUT THE AUTHOR</title>
+    </section>
+    <section id="corty3e-fm1-sec1-3" folder="false" filename="corty3e_fm_3.html" dlapFilename="corty3e_fm_3_dlap.xml" numquestions="0">
+      <title>TO THE STUDENT</title>
+    </section>
+    <section id="corty3e-fm1-sec1-4" folder="false" filename="corty3e_fm_4.html" dlapFilename="corty3e_fm_4_dlap.xml" numquestions="0">
+      <title>TO THE INSTRUCTOR</title>
+    </section>
+  </manuscript><manuscript id="56c744b6757a2eea61000000" title="1 Introduction to Statistics" question-delivery-method="ARGA" number="1">
+    <section title="Chapter Introduction" id="corty3e-ch1-sec1-1a" folder="false" filename="corty3e_ch1_1.html" dlapFilename="corty3e_ch1_1_dlap.xml" numquestions="0"/>
+    <section id="corty3e-ch1-sec1-1" folder="false" filename="corty3e_ch1_2.html" dlapFilename="corty3e_ch1_2_dlap.xml" numquestions="0">
+      <title><phrase block_type="sec_num">1.1</phrase> <phrase block_type="sec_title">The Purpose of Statistics</phrase></title>
+    </section>
+    <section id="corty3e-ch1-sec1-2" folder="true" filename="corty3e_ch1_3.html" dlapFilename="corty3e_ch1_3_dlap.xml" numquestions="0" hasEmbeddedHeads="true">
+      <title><phrase block_type="sec_num">1.2</phrase> <phrase block_type="sec_title">Experiments and Variables</phrase></title>
+      <section id="corty3e-ch1-sec2-1" folder="false">
+        <title>Correlational Designs</title>
+      </section>
+      <section id="corty3e-ch1-sec2-2" folder="false">
+        <title>Experimental Designs</title>
+      </section>
+      <section id="corty3e-ch1-sec2-3" folder="false">
+        <title>Quasi-Experimental Designs</title>
+      </section>
+      <section id="corty3e-ch1-sec2-4" folder="false">
+        <title>Explanatory and Outcome Variables</title>
+      </section>
+    </section>
+    <section id="corty3e-ch1-sec1-3" folder="true" filename="corty3e_ch1_4.html" dlapFilename="corty3e_ch1_4_dlap.xml" numquestions="0" hasEmbeddedHeads="true">
+      <title><phrase block_type="sec_num">1.3</phrase> <phrase block_type="sec_title">Levels of Measurement</phrase></title>
+      <section id="corty3e-ch1-sec2-5" folder="false">
+        <title>Nominal Numbers</title>
+      </section>
+      <section id="corty3e-ch1-sec2-6" folder="false">
+        <title>Ordinal Numbers</title>
+      </section>
+      <section id="corty3e-ch1-sec2-7" folder="false">
+        <title>Interval Numbers</title>
+      </section>
+      <section id="corty3e-ch1-sec2-8" folder="false">
+        <title>Ratio Numbers</title>
+      </section>
+    </section>
+    <section id="corty3e-ch1-sec1-4" folder="false" filename="corty3e_ch1_5.html" dlapFilename="corty3e_ch1_5_dlap.xml" numquestions="0">
+      <title><phrase block_type="sec_num">1.4</phrase> <phrase block_type="sec_title">The Language of Statistics</phrase></title>
+    </section>
+    <section id="corty3e-ch1-sec1-5" folder="true" filename="corty3e_ch1_6.html" dlapFilename="corty3e_ch1_6_dlap.xml" numquestions="0" hasEmbeddedHeads="true">
+      <title><phrase block_type="sec_num">1.5</phrase> <phrase block_type="sec_title">Statistical Notation and Rounding</phrase></title>
+      <section id="corty3e-ch1-sec2-9" folder="false">
+        <title>Rules of Rounding</title>
+      </section>
+    </section>
+    <section id="corty3e-ch1-sec1-6" folder="false" filename="corty3e_ch1_7.html" dlapFilename="corty3e_ch1_7_dlap.xml" numquestions="0">
+      <title>SUMMARY</title>
+    </section>
+    <section id="corty3e-ch1-sec1-7" folder="false" filename="corty3e_ch1_8.html" dlapFilename="corty3e_ch1_8_dlap.xml" numquestions="1">
+      <title>KEY TERMS</title>
+    </section>
+    <section id="corty3e-ch1-sec1-8" folder="false" filename="corty3e_ch1_9.html" dlapFilename="corty3e_ch1_9_dlap.xml" numquestions="0">
+      <title>CHAPTER EXERCISES</title>
+    </section>
+  </manuscript><manuscript id="56d62a44757a2ebf47000005" title="2 Frequency Distributions" question-delivery-method="ARGA" number="2">
+    <section title="Chapter Introduction" id="corty3e-ch2-sec1-1a" folder="false" filename="corty3e_ch2_1.html" dlapFilename="corty3e_ch2_1_dlap.xml" numquestions="0"/>
+    <section id="corty3e-ch2-sec1-1" folder="true" filename="corty3e_ch2_2.html" dlapFilename="corty3e_ch2_2_dlap.xml" numquestions="0" hasEmbeddedHeads="true">
+      <title><phrase block_type="sec_num">2.1</phrase> <phrase block_type="sec_title">Frequency Distributions</phrase></title>
+      <section id="corty3e-ch2-sec2-1" folder="false">
+        <title>Ungrouped vs. Grouped Frequency Distributions</title>
+      </section>
+      <section id="corty3e-ch2-sec2-2" folder="false">
+        <title>Ungrouped Frequency Distributions</title>
+      </section>
+      <section id="corty3e-ch2-sec2-3" folder="false">
+        <title>Grouped Frequency Distributions</title>
+      </section>
+    </section>
+    <section id="corty3e-ch2-sec1-2" folder="false" filename="corty3e_ch2_3.html" dlapFilename="corty3e_ch2_3_dlap.xml" numquestions="0">
+      <title><phrase block_type="sec_num">2.2</phrase> <phrase block_type="sec_title">Discrete Numbers and Continuous Numbers</phrase></title>
+    </section>
+    <section id="corty3e-ch2-sec1-3" folder="true" filename="corty3e_ch2_4.html" dlapFilename="corty3e_ch2_4_dlap.xml" numquestions="0" hasEmbeddedHeads="true">
+      <title><phrase block_type="sec_num">2.3</phrase> <phrase block_type="sec_title">Graphing Frequency Distributions</phrase></title>
+      <section id="corty3e-ch2-sec2-4" folder="false">
+        <title>Bar Graphs</title>
+      </section>
+      <section id="corty3e-ch2-sec2-5" folder="false">
+        <title>Histograms</title>
+      </section>
+      <section id="corty3e-ch2-sec2-6" folder="false">
+        <title>Frequency Polygon</title>
+      </section>
+    </section>
+    <section id="corty3e-ch2-sec1-4" folder="true" filename="corty3e_ch2_5.html" dlapFilename="corty3e_ch2_5_dlap.xml" numquestions="0" hasEmbeddedHeads="true">
+      <title><phrase block_type="sec_num">2.4</phrase> <phrase block_type="sec_title">Shapes of Frequency Distributions</phrase></title>
+      <section id="corty3e-ch2-sec2-7" folder="false">
+        <title>Stem-and-Leaf Displays</title>
+      </section>
+    </section>
+    <section id="corty3e-ch2-sec1-5" folder="false" filename="corty3e_ch2_6.html" dlapFilename="corty3e_ch2_6_dlap.xml" numquestions="0">
+      <title>SUMMARY</title>
+    </section>
+    <section id="corty3e-ch2-sec1-6" folder="false" filename="corty3e_ch2_7.html" dlapFilename="corty3e_ch2_7_dlap.xml" numquestions="1">
+      <title>KEY TERMS</title>
+    </section>
+    <section id="corty3e-ch2-sec1-7" folder="false" filename="corty3e_ch2_8.html" dlapFilename="corty3e_ch2_8_dlap.xml" numquestions="0">
+      <title>CHAPTER EXERCISES</title>
+    </section>
+  </manuscript><manuscript id="56d62ac4757a2ebf47000006" title="3 Measures of Central Tendency and Variability" question-delivery-method="ARGA" number="3">
+    <section title="Chapter Introduction" id="corty3e-ch3-sec1-1a" folder="false" filename="corty3e_ch3_1.html" dlapFilename="corty3e_ch3_1_dlap.xml" numquestions="0"/>
+    <section id="corty3e-ch3-sec1-1" folder="true" filename="corty3e_ch3_2.html" dlapFilename="corty3e_ch3_2_dlap.xml" numquestions="0" hasEmbeddedHeads="true">
+      <title><phrase block_type="sec_num">3.1</phrase> <phrase block_type="sec_title">Central Tendency</phrase></title>
+      <section id="corty3e-ch3-sec2-1" folder="false">
+        <title>Mean</title>
+      </section>
+      <section id="corty3e-ch3-sec2-2" folder="false">
+        <title>Median</title>
+      </section>
+      <section id="corty3e-ch3-sec2-3" folder="false">
+        <title>Mode</title>
+      </section>
+      <section id="corty3e-ch3-sec2-4" folder="false">
+        <title>Choosing a Measure of Central Tendency</title>
+      </section>
+    </section>
+    <section id="corty3e-ch3-sec1-2" folder="true" filename="corty3e_ch3_3.html" dlapFilename="corty3e_ch3_3_dlap.xml" numquestions="0" hasEmbeddedHeads="true">
+      <title><phrase block_type="sec_num">3.2</phrase> <phrase block_type="sec_title">Variability</phrase></title>
+      <section id="corty3e-ch3-sec2-5" folder="false">
+        <title>Range and Interquartile Range</title>
+      </section>
+      <section id="corty3e-ch3-sec2-6" folder="false">
+        <title>Variability in Populations</title>
+      </section>
+      <section id="corty3e-ch3-sec2-7" folder="false">
+        <title>Population Variance</title>
+      </section>
+      <section id="corty3e-ch3-sec2-8" folder="false">
+        <title>Population Standard Deviation</title>
+      </section>
+      <section id="corty3e-ch3-sec2-9" folder="false">
+        <title>Calculating Variance and Standard Deviation for a Sample</title>
+      </section>
+    </section>
+    <section id="corty3e-ch3-sec1-3" folder="false" filename="corty3e_ch3_4.html" dlapFilename="corty3e_ch3_4_dlap.xml" numquestions="0">
+      <title>SUMMARY</title>
+    </section>
+    <section id="corty3e-ch3-sec1-4" folder="false" filename="corty3e_ch3_5.html" dlapFilename="corty3e_ch3_5_dlap.xml" numquestions="1">
+      <title>KEY TERMS</title>
+    </section>
+    <section id="corty3e-ch3-sec1-5" folder="false" filename="corty3e_ch3_6.html" dlapFilename="corty3e_ch3_6_dlap.xml" numquestions="0">
+      <title>CHAPTER EXERCISES</title>
+    </section>
+  </manuscript><manuscript id="56d62b1d757a2e4f46000001" title="4 Standard Scores, the Normal Distribution, and Probability" question-delivery-method="ARGA" number="2">
+    <section title="Chapter Introduction" id="corty3e-ch4-sec1-1a" folder="false" filename="corty3e_ch4_1.html" dlapFilename="corty3e_ch4_1_dlap.xml" numquestions="0"/>
+    <section id="corty3e-ch4-sec1-1" folder="false" filename="corty3e_ch4_2.html" dlapFilename="corty3e_ch4_2_dlap.xml" numquestions="0">
+      <title><phrase block_type="sec_num">4.1</phrase> <phrase block_type="sec_title">Standard Scores (<em>z</em> Scores)</phrase></title>
+    </section>
+    <section id="corty3e-ch4-sec1-2" folder="true" filename="corty3e_ch4_3.html" dlapFilename="corty3e_ch4_3_dlap.xml" numquestions="0" hasEmbeddedHeads="true">
+      <title><phrase block_type="sec_num">4.2</phrase> <phrase block_type="sec_title">The Normal Distribution</phrase></title>
+      <section id="corty3e-ch4-sec2-1" folder="false">
+        <title>Column A</title>
+      </section>
+      <section id="corty3e-ch4-sec2-2" folder="false">
+        <title>Column B</title>
+      </section>
+      <section id="corty3e-ch4-sec2-3" folder="false">
+        <title>Column C</title>
+      </section>
+    </section>
+    <section id="corty3e-ch4-sec1-3" folder="false" filename="corty3e_ch4_4.html" dlapFilename="corty3e_ch4_4_dlap.xml" numquestions="0">
+      <title><phrase block_type="sec_num">4.3</phrase> <phrase block_type="sec_title">Percentile Ranks</phrase></title>
+    </section>
+    <section id="corty3e-ch4-sec1-4" folder="false" filename="corty3e_ch4_5.html" dlapFilename="corty3e_ch4_5_dlap.xml" numquestions="0">
+      <title><phrase block_type="sec_num">4.4</phrase> <phrase block_type="sec_title">Probability</phrase></title>
+    </section>
+    <section id="corty3e-ch4-sec1-5" folder="false" filename="corty3e_ch4_6.html" dlapFilename="corty3e_ch4_6_dlap.xml" numquestions="0">
+      <title>SUMMARY</title>
+    </section>
+    <section id="corty3e-ch4-sec1-6" folder="false" filename="corty3e_ch4_7.html" dlapFilename="corty3e_ch4_7_dlap.xml" numquestions="1">
+      <title>KEY TERMS</title>
+    </section>
+    <section id="corty3e-ch4-sec1-7" folder="false" filename="corty3e_ch4_8.html" dlapFilename="corty3e_ch4_8_dlap.xml" numquestions="0">
+      <title>CHAPTER EXERCISES</title>
+    </section>
+  </manuscript><manuscript id="56d62b57757a2e7b52000003" title="5 Sampling and Confidence Intervals" question-delivery-method="ARGA" number="5">
+    <section title="Chapter Introduction" id="corty3e-ch5-sec1-1a" folder="false" filename="corty3e_ch5_1.html" dlapFilename="corty3e_ch5_1_dlap.xml" numquestions="0"/>
+    <section id="corty3e-ch5-sec1-1" folder="true" filename="corty3e_ch5_2.html" dlapFilename="corty3e_ch5_2_dlap.xml" numquestions="0" hasEmbeddedHeads="true">
+      <title><phrase block_type="sec_num">5.1</phrase> <phrase block_type="sec_title">Sampling and Sampling Error</phrase></title>
+      <section id="corty3e-ch5-sec2-1" folder="false">
+        <title>Types of Samples</title>
+      </section>
+      <section id="corty3e-ch5-sec2-2" folder="false">
+        <title>Problems with Sampling</title>
+      </section>
+    </section>
+    <section id="corty3e-ch5-sec1-2" folder="true" filename="corty3e_ch5_3.html" dlapFilename="corty3e_ch5_3_dlap.xml" numquestions="0" hasEmbeddedHeads="true">
+      <title><phrase block_type="sec_num">5.2</phrase> <phrase block_type="sec_title">Sampling Distributions and the Central Limit Theorem</phrase></title>
+      <section id="corty3e-ch5-sec2-3" folder="false">
+        <title>Sampling Distributions</title>
+      </section>
+      <section id="corty3e-ch5-sec2-4" folder="false">
+        <title>The Central Limit Theorem</title>
+      </section>
+      <section id="corty3e-ch5-sec2-5" folder="false">
+        <title>When &#x3C3; Is Not Known</title>
+      </section>
+    </section>
+    <section id="corty3e-ch5-sec1-3" folder="false" filename="corty3e_ch5_4.html" dlapFilename="corty3e_ch5_4_dlap.xml" numquestions="0">
+      <title><phrase block_type="sec_num">5.3</phrase> <phrase block_type="sec_title">The 95% Confidence Interval for a Population Mean</phrase></title>
+    </section>
+    <section id="corty3e-ch5-sec1-4" folder="false" filename="corty3e_ch5_5.html" dlapFilename="corty3e_ch5_5_dlap.xml" numquestions="0">
+      <title>SUMMARY</title>
+    </section>
+    <section id="corty3e-ch5-sec1-5" folder="false" filename="corty3e_ch5_6.html" dlapFilename="corty3e_ch5_6_dlap.xml" numquestions="1">
+      <title>KEY TERMS</title>
+    </section>
+    <section id="corty3e-ch5-sec1-6" folder="false" filename="corty3e_ch5_7.html" dlapFilename="corty3e_ch5_7_dlap.xml" numquestions="0">
+      <title>CHAPTER EXERCISES</title>
+    </section>
+  </manuscript><manuscript id="56d62ba1757a2e7b52000004" title="6 Introduction to Hypothesis Testing" question-delivery-method="ARGA" number="1">
+    <section title="Chapter Introduction" id="corty3e-ch6-sec1-1a" folder="false" filename="corty3e_ch6_1.html" dlapFilename="corty3e_ch6_1_dlap.xml" numquestions="0"/>
+    <section id="corty3e-ch6-sec1-1" folder="true" filename="corty3e_ch6_2.html" dlapFilename="corty3e_ch6_2_dlap.xml" numquestions="0" hasEmbeddedHeads="true">
+      <title><phrase block_type="sec_num">6.1</phrase> <phrase block_type="sec_title">The Logic of Hypothesis Testing</phrase></title>
+      <section id="corty3e-ch6-sec2-1" folder="false">
+        <title>Ten Facts About Hypotheses and Hypothesis Testing</title>
+      </section>
+    </section>
+    <section id="corty3e-ch6-sec1-2" folder="true" filename="corty3e_ch6_3.html" dlapFilename="corty3e_ch6_3_dlap.xml" numquestions="0" hasEmbeddedHeads="true">
+      <title><phrase block_type="sec_num">6.2</phrase> <phrase block_type="sec_title">Hypothesis Testing in Action</phrase></title>
+      <section id="corty3e-ch6-sec2-2" folder="false">
+        <title>The Six Steps of Hypothesis Testing</title>
+      </section>
+      <section id="corty3e-ch6-sec2-3" folder="false">
+        <title>The Single-Sample <em>z</em> Test</title>
+      </section>
+    </section>
+    <section id="corty3e-ch6-sec1-3" folder="true" filename="corty3e_ch6_4.html" dlapFilename="corty3e_ch6_4_dlap.xml" numquestions="0" hasEmbeddedHeads="true">
+      <title><phrase block_type="sec_num">6.3</phrase> <phrase block_type="sec_title">Type I Error, Type II Error, Beta, and Power</phrase></title>
+      <section id="corty3e-ch6-sec2-4" folder="false">
+        <title>Type I Error</title>
+      </section>
+      <section id="corty3e-ch6-sec2-5" folder="false">
+        <title>Type II Error and Beta</title>
+      </section>
+      <section id="corty3e-ch6-sec2-6" folder="false">
+        <title>Power</title>
+      </section>
+    </section>
+    <section id="corty3e-ch6-sec1-4" folder="false" filename="corty3e_ch6_5.html" dlapFilename="corty3e_ch6_5_dlap.xml" numquestions="0">
+      <title>SUMMARY</title>
+    </section>
+    <section id="corty3e-ch6-sec1-5" folder="false" filename="corty3e_ch6_6.html" dlapFilename="corty3e_ch6_6_dlap.xml" numquestions="1">
+      <title>KEY TERMS</title>
+    </section>
+    <section id="corty3e-ch6-sec1-6" folder="false" filename="corty3e_ch6_7.html" dlapFilename="corty3e_ch6_7_dlap.xml" numquestions="0">
+      <title>CHAPTER EXERCISES</title>
+    </section>
+  </manuscript><manuscript id="56d62bcb757a2efb47000002" title="7 The Single-Sample t Test" question-delivery-method="ARGA" number="7">
+    <section title="Chapter Introduction" id="corty3e-ch7-sec1-1a" folder="false" filename="corty3e_ch7_1.html" dlapFilename="corty3e_ch7_1_dlap.xml" numquestions="0"/>
+    <section id="corty3e-ch7-sec1-1" folder="true" filename="corty3e_ch7_2.html" dlapFilename="corty3e_ch7_2_dlap.xml" numquestions="0" hasEmbeddedHeads="true">
+      <title><phrase block_type="sec_num">7.1</phrase> <phrase block_type="sec_title">Calculating the Single-Sample <em>t</em> Test</phrase></title>
+      <section id="corty3e-ch7-sec2-1" folder="false">
+        <title>The Six Steps of Hypothesis Testing</title>
+      </section>
+      <section id="corty3e-ch7-sec2-2" folder="false">
+        <title>The Critical Value of <em>t</em></title>
+      </section>
+    </section>
+    <section id="corty3e-ch7-sec1-2" folder="true" filename="corty3e_ch7_3.html" dlapFilename="corty3e_ch7_3_dlap.xml" numquestions="0" hasEmbeddedHeads="true">
+      <title><phrase block_type="sec_num">7.2</phrase> <phrase block_type="sec_title">Interpreting the Single-Sample <em>t</em> Test</phrase></title>
+      <section id="corty3e-ch7-sec2-3" folder="false">
+        <title>Putting It All Together</title>
+      </section>
+    </section>
+    <section id="corty3e-ch7-sec1-3" folder="false" filename="corty3e_ch7_4.html" dlapFilename="corty3e_ch7_4_dlap.xml" numquestions="0">
+      <title>SUMMARY</title>
+    </section>
+    <section id="corty3e-ch7-sec1-4" folder="false" filename="corty3e_ch7_5.html" dlapFilename="corty3e_ch7_5_dlap.xml" numquestions="1">
+      <title>KEY TERMS</title>
+    </section>
+    <section id="corty3e-ch7-sec1-5" folder="false" filename="corty3e_ch7_6.html" dlapFilename="corty3e_ch7_6_dlap.xml" numquestions="0">
+      <title>CHAPTER EXERCISES</title>
+    </section>
+  </manuscript><manuscript id="56d62c10757a2e350d000000" title="8 Independent-Samples t Test" question-delivery-method="ARGA" number="2">
+    <section title="Chapter Introduction" id="corty3e-ch8-sec1-1a" folder="false" filename="corty3e_ch8_1.html" dlapFilename="corty3e_ch8_1_dlap.xml" numquestions="0"/>
+    <section id="corty3e-ch8-sec1-1" folder="false" filename="corty3e_ch8_2.html" dlapFilename="corty3e_ch8_2_dlap.xml" numquestions="0">
+      <title><phrase block_type="sec_num">8.1</phrase> <phrase block_type="sec_title">Types of Two-Sample <em>t</em> Tests</phrase></title>
+    </section>
+    <section id="corty3e-ch8-sec1-2" folder="false" filename="corty3e_ch8_3.html" dlapFilename="corty3e_ch8_3_dlap.xml" numquestions="0">
+      <title><phrase block_type="sec_num">8.2</phrase> <phrase block_type="sec_title">Calculating the Independent-Samples <em>t</em> Test</phrase></title>
+    </section>
+    <section id="corty3e-ch8-sec1-3" folder="true" filename="corty3e_ch8_4.html" dlapFilename="corty3e_ch8_4_dlap.xml" numquestions="0" hasEmbeddedHeads="true">
+      <title><phrase block_type="sec_num">8.3</phrase> <phrase block_type="sec_title">Interpreting the Independent-Samples <em>t</em> Test</phrase></title>
+      <section id="corty3e-ch8-sec2-1" folder="false">
+        <title>Was the Null Hypothesis Rejected?</title>
+      </section>
+      <section id="corty3e-ch8-sec2-2" folder="false">
+        <title>How Big Is the Effect?</title>
+      </section>
+      <section id="corty3e-ch8-sec2-3" folder="false">
+        <title>How Wide Is the Confidence Interval?</title>
+      </section>
+      <section id="corty3e-ch8-sec2-4" folder="false">
+        <title>Putting It All Together</title>
+      </section>
+    </section>
+    <section id="corty3e-ch8-sec1-4" folder="false" filename="corty3e_ch8_5.html" dlapFilename="corty3e_ch8_5_dlap.xml" numquestions="0">
+      <title>SUMMARY</title>
+    </section>
+    <section id="corty3e-ch8-sec1-5" folder="false" filename="corty3e_ch8_6.html" dlapFilename="corty3e_ch8_6_dlap.xml" numquestions="1">
+      <title>KEY TERMS</title>
+    </section>
+    <section id="corty3e-ch8-sec1-6" folder="false" filename="corty3e_ch8_7.html" dlapFilename="corty3e_ch8_7_dlap.xml" numquestions="0">
+      <title>CHAPTER EXERCISES</title>
+    </section>
+  </manuscript><manuscript id="56d62ca3757a2e370d000000" title="9 The Paired-Samples t Test" question-delivery-method="ARGA" number="9">
+    <section title="Chapter Introduction" id="corty3e-ch9-sec1-1a" folder="false" filename="corty3e_ch9_1.html" dlapFilename="corty3e_ch9_1_dlap.xml" numquestions="0"/>
+    <section id="corty3e-ch9-sec1-1" folder="false" filename="corty3e_ch9_2.html" dlapFilename="corty3e_ch9_2_dlap.xml" numquestions="0">
+      <title><phrase block_type="sec_num">9.1</phrase> <phrase block_type="sec_title">Paired Samples</phrase></title>
+    </section>
+    <section id="corty3e-ch9-sec1-2" folder="false" filename="corty3e_ch9_3.html" dlapFilename="corty3e_ch9_3_dlap.xml" numquestions="0">
+      <title><phrase block_type="sec_num">9.2</phrase> <phrase block_type="sec_title">Calculating the Paired-Samples <em>t</em> Test</phrase></title>
+    </section>
+    <section id="corty3e-ch9-sec1-3" folder="true" filename="corty3e_ch9_4.html" dlapFilename="corty3e_ch9_4_dlap.xml" numquestions="0" hasEmbeddedHeads="true">
+      <title><phrase block_type="sec_num">9.3</phrase> <phrase block_type="sec_title">Interpreting the Paired-Samples <em>t</em> Test</phrase></title>
+      <section id="corty3e-ch9-sec2-1" folder="false">
+        <title>Was the Null Hypothesis Rejected?</title>
+      </section>
+      <section id="corty3e-ch9-sec2-2" folder="false">
+        <title>How Wide Is the Confidence Interval and How Big Is the Effect?</title>
+      </section>
+      <section id="corty3e-ch9-sec2-3" folder="false">
+        <title>Putting It All Together</title>
+      </section>
+    </section>
+    <section id="corty3e-ch9-sec1-4" folder="false" filename="corty3e_ch9_5.html" dlapFilename="corty3e_ch9_5_dlap.xml" numquestions="0">
+      <title>SUMMARY</title>
+    </section>
+    <section id="corty3e-ch9-sec1-5" folder="false" filename="corty3e_ch9_6.html" dlapFilename="corty3e_ch9_6_dlap.xml" numquestions="1">
+      <title>KEY TERMS</title>
+    </section>
+    <section id="corty3e-ch9-sec1-6" folder="false" filename="corty3e_ch9_7.html" dlapFilename="corty3e_ch9_7_dlap.xml" numquestions="0">
+      <title>CHAPTER EXERCISES</title>
+    </section>
+  </manuscript><manuscript id="56d62cd7757a2efe47000002" title="10 Between-Subjects, One-Way Analysis of Variance" question-delivery-method="ARGA" number="10">
+    <section title="Chapter Introduction" id="corty3e-ch10-sec1-1a" folder="false" filename="corty3e_ch10_1.html" dlapFilename="corty3e_ch10_1_dlap.xml" numquestions="0"/>
+    <section id="corty3e-ch10-sec1-1" folder="true" filename="corty3e_ch10_2.html" dlapFilename="corty3e_ch10_2_dlap.xml" numquestions="0" hasEmbeddedHeads="true">
+      <title><phrase block_type="sec_num">10.1</phrase> <phrase block_type="sec_title">Introduction to Analysis of Variance</phrase></title>
+      <section id="corty3e-ch10-sec2-1" folder="false">
+        <title>Analysis of Variance Terminology</title>
+      </section>
+      <section id="corty3e-ch10-sec2-2" folder="false">
+        <title>Why ANOVA Is Needed</title>
+      </section>
+      <section id="corty3e-ch10-sec2-3" folder="false">
+        <title>What ANOVA Does</title>
+      </section>
+      <section id="corty3e-ch10-sec2-4" folder="false">
+        <title>How ANOVA Uses Variability</title>
+      </section>
+    </section>
+    <section id="corty3e-ch10-sec1-2" folder="false" filename="corty3e_ch10_3.html" dlapFilename="corty3e_ch10_3_dlap.xml" numquestions="0">
+      <title><phrase block_type="sec_num">10.2</phrase> <phrase block_type="sec_title">Calculating Between-Subjects, One-Way ANOVA</phrase></title>
+    </section>
+    <section id="corty3e-ch10-sec1-3" folder="true" filename="corty3e_ch10_4.html" dlapFilename="corty3e_ch10_4_dlap.xml" numquestions="0" hasEmbeddedHeads="true">
+      <title><phrase block_type="sec_num">10.3</phrase> <phrase block_type="sec_title">Interpreting Between-Subjects, One-Way ANOVA</phrase></title>
+      <section id="corty3e-ch10-sec2-5" folder="false">
+        <title>Was the Null Hypothesis Rejected?</title>
+      </section>
+      <section id="corty3e-ch10-sec2-6" folder="false">
+        <title>How Big Is the Effect?</title>
+      </section>
+      <section id="corty3e-ch10-sec2-7" folder="false">
+        <title>Where Is the Effect?</title>
+      </section>
+    </section>
+    <section id="corty3e-ch10-sec1-4" folder="false" filename="corty3e_ch10_5.html" dlapFilename="corty3e_ch10_5_dlap.xml" numquestions="0">
+      <title>SUMMARY</title>
+    </section>
+    <section id="corty3e-ch10-sec1-5" folder="false" filename="corty3e_ch10_6.html" dlapFilename="corty3e_ch10_6_dlap.xml" numquestions="1">
+      <title>KEY TERMS</title>
+    </section>
+    <section id="corty3e-ch10-sec1-6" folder="false" filename="corty3e_ch10_7.html" dlapFilename="corty3e_ch10_7_dlap.xml" numquestions="0">
+      <title>CHAPTER EXERCISES</title>
+    </section>
+  </manuscript><manuscript id="56d62d1e757a2e370d000001" title="11 One-Way, Repeated- Measures ANOVA" question-delivery-method="ARGA" number="11">
+    <section title="Chapter Introduction" id="corty3e-ch11-sec1-1a" folder="false" filename="corty3e_ch11_1.html" dlapFilename="corty3e_ch11_1_dlap.xml" numquestions="0"/>
+    <section id="corty3e-ch11-sec1-1" folder="false" filename="corty3e_ch11_2.html" dlapFilename="corty3e_ch11_2_dlap.xml" numquestions="0">
+      <title><phrase block_type="sec_num">11.1</phrase> <phrase block_type="sec_title">Introduction to Repeated-Measures ANOVA</phrase></title>
+    </section>
+    <section id="corty3e-ch11-sec1-2" folder="false" filename="corty3e_ch11_3.html" dlapFilename="corty3e_ch11_3_dlap.xml" numquestions="0">
+      <title><phrase block_type="sec_num">11.2</phrase> <phrase block_type="sec_title">Calculating One-Way, Repeated-Measures ANOVA</phrase></title>
+    </section>
+    <section id="corty3e-ch11-sec1-3" folder="true" filename="corty3e_ch11_4.html" dlapFilename="corty3e_ch11_4_dlap.xml" numquestions="0" hasEmbeddedHeads="true">
+      <title><phrase block_type="sec_num">11.3</phrase> <phrase block_type="sec_title">Interpreting One-Way, Repeated-Measures ANOVA</phrase></title>
+      <section id="corty3e-ch11-sec2-1" folder="false">
+        <title>Was the Null Hypothesis Rejected?</title>
+      </section>
+      <section id="corty3e-ch11-sec2-2" folder="false">
+        <title>How Big Is the Effect?</title>
+      </section>
+      <section id="corty3e-ch11-sec2-3" folder="false">
+        <title>Where Are the Effects and What Is Their Direction?</title>
+      </section>
+      <section id="corty3e-ch11-sec2-4" folder="false">
+        <title>Putting It All Together</title>
+      </section>
+    </section>
+    <section id="corty3e-ch11-sec1-4" folder="false" filename="corty3e_ch11_5.html" dlapFilename="corty3e_ch11_5_dlap.xml" numquestions="0">
+      <title>SUMMARY</title>
+    </section>
+    <section id="corty3e-ch11-sec1-5" folder="false" filename="corty3e_ch11_6.html" dlapFilename="corty3e_ch11_6_dlap.xml" numquestions="1">
+      <title>KEY TERMS</title>
+    </section>
+    <section id="corty3e-ch11-sec1-6" folder="false" filename="corty3e_ch11_7.html" dlapFilename="corty3e_ch11_7_dlap.xml" numquestions="0">
+      <title>CHAPTER EXERCISES</title>
+    </section>
+    <section id="corty3e-ch11-sec1-7" folder="true" filename="corty3e_ch11_8.html" dlapFilename="corty3e_ch11_8_dlap.xml" numquestions="0" hasEmbeddedHeads="true">
+      <title>Appendix</title>
+      <section id="corty3e-ch11-sec2-9" folder="false">
+        <title>Calculating Sums of Squares for One-Way Repeated-Measures ANOVA</title>
+      </section>
+    </section>
+  </manuscript><manuscript id="56d62d49757a2e4546000005" title="12 Between-Subjects, Two-Way Analysis of Variance" question-delivery-method="ARGA" number="12">
+    <section title="Chapter Introduction" id="corty3e-ch12-sec1-1a" folder="false" filename="corty3e_ch12_1.html" dlapFilename="corty3e_ch12_1_dlap.xml" numquestions="0"/>
+    <section id="corty3e-ch12-sec1-1" folder="false" filename="corty3e_ch12_2.html" dlapFilename="corty3e_ch12_2_dlap.xml" numquestions="0">
+      <title><phrase block_type="sec_num">12.1</phrase> <phrase block_type="sec_title">Introduction to Two-Way ANOVA</phrase></title>
+    </section>
+    <section id="corty3e-ch12-sec1-2" folder="false" filename="corty3e_ch12_3.html" dlapFilename="corty3e_ch12_3_dlap.xml" numquestions="0">
+      <title><phrase block_type="sec_num">12.2</phrase> <phrase block_type="sec_title">Calculating a Between-Subjects, Two-Way ANOVA</phrase></title>
+    </section>
+    <section id="corty3e-ch12-sec1-3" folder="true" filename="corty3e_ch12_4.html" dlapFilename="corty3e_ch12_4_dlap.xml" numquestions="0" hasEmbeddedHeads="true">
+      <title><phrase block_type="sec_num">12.3</phrase> <phrase block_type="sec_title">Interpreting a Between-Subjects, Two-Way ANOVA</phrase></title>
+      <section id="corty3e-ch12-sec2-1" folder="false">
+        <title>Were the Null Hypotheses Rejected?</title>
+      </section>
+      <section id="corty3e-ch12-sec2-2" folder="false">
+        <title>How Big Are the Effects?</title>
+      </section>
+      <section id="corty3e-ch12-sec2-3" folder="false">
+        <title>Where Are the Effects, and What Is Their Direction?</title>
+      </section>
+      <section id="corty3e-ch12-sec2-4" folder="false">
+        <title>Putting It All Together</title>
+      </section>
+    </section>
+    <section id="corty3e-ch12-sec1-4" folder="false" filename="corty3e_ch12_5.html" dlapFilename="corty3e_ch12_5_dlap.xml" numquestions="0">
+      <title>SUMMARY</title>
+    </section>
+    <section id="corty3e-ch12-sec1-5" folder="false" filename="corty3e_ch12_6.html" dlapFilename="corty3e_ch12_6_dlap.xml" numquestions="1">
+      <title>KEY TERMS</title>
+    </section>
+    <section id="corty3e-ch12-sec1-6" folder="false" filename="corty3e_ch12_7.html" dlapFilename="corty3e_ch12_7_dlap.xml" numquestions="0">
+      <title>CHAPTER EXERCISES</title>
+    </section>
+    <section id="corty3e-ch12-sec1-7" folder="true" filename="corty3e_ch12_8.html" dlapFilename="corty3e_ch12_8_dlap.xml" numquestions="0" hasEmbeddedHeads="true">
+      <title>Appendix</title>
+      <section id="corty3e-ch12-sec2-5" folder="false">
+        <title>Calculating Sums of Squares for Between-Subjects, Two-Way ANOVA</title>
+      </section>
+    </section>
+  </manuscript><manuscript id="56d62d76757a2ebf47000007" title="Using and Interpreting Statistics, THIRD EDITION" question-delivery-method="ARGA">
+    <section id="corty3e-fm1-sec1-1" folder="false" filename="corty3e_ch13_1.html" dlapFilename="corty3e_ch13_1_dlap.xml" numquestions="0">
+      <title>Credits</title>
+    </section>
+    <section id="corty3e-fm1-sec1-2" folder="false" filename="corty3e_ch13_2.html" dlapFilename="corty3e_ch13_2_dlap.xml" numquestions="0">
+      <title>ABOUT THE AUTHOR</title>
+    </section>
+    <section id="corty3e-fm1-sec1-3" folder="false" filename="corty3e_ch13_3.html" dlapFilename="corty3e_ch13_3_dlap.xml" numquestions="0">
+      <title>TO THE STUDENT</title>
+    </section>
+    <section id="corty3e-fm1-sec1-4" folder="false" filename="corty3e_ch13_4.html" dlapFilename="corty3e_ch13_4_dlap.xml" numquestions="0">
+      <title>TO THE INSTRUCTOR</title>
+    </section>
+  </manuscript><manuscript id="56d62de6757a2efb47000003" title="14 Simple and Multiple Linear Regression" question-delivery-method="ARGA" number="14">
+    <section title="Chapter Introduction" id="corty3e-ch14-sec1-1a" folder="false" filename="corty3e_ch14_1.html" dlapFilename="corty3e_ch14_1_dlap.xml" numquestions="0"/>
+    <section id="corty3e-ch14-sec1-1" folder="true" filename="corty3e_ch14_2.html" dlapFilename="corty3e_ch14_2_dlap.xml" numquestions="0" hasEmbeddedHeads="true">
+      <title><phrase block_type="sec_num">14.1</phrase> <phrase block_type="sec_title">Simple Linear Regression</phrase></title>
+      <section id="corty3e-ch14-sec2-1" folder="false">
+        <title>Using a Regression Line for Prediction</title>
+      </section>
+      <section id="corty3e-ch14-sec2-2" folder="false">
+        <title>How to Judge Whether Prediction Is Good</title>
+      </section>
+      <section id="corty3e-ch14-sec2-3" folder="false">
+        <title>The Linear Regression Equation</title>
+      </section>
+    </section>
+    <section id="corty3e-ch14-sec1-2" folder="false" filename="corty3e_ch14_3.html" dlapFilename="corty3e_ch14_3_dlap.xml" numquestions="0">
+      <title><phrase block_type="sec_num">14.2</phrase> <phrase block_type="sec_title">Errors in Regression</phrase></title>
+    </section>
+    <section id="corty3e-ch14-sec1-3" folder="false" filename="corty3e_ch14_4.html" dlapFilename="corty3e_ch14_4_dlap.xml" numquestions="0">
+      <title><phrase block_type="sec_num">14.3</phrase> <phrase block_type="sec_title">Multiple Regression</phrase></title>
+    </section>
+    <section id="corty3e-ch14-sec1-4" folder="false" filename="corty3e_ch14_5.html" dlapFilename="corty3e_ch14_5_dlap.xml" numquestions="0">
+      <title>SUMMARY</title>
+    </section>
+    <section id="corty3e-ch14-sec1-5" folder="false" filename="corty3e_ch14_6.html" dlapFilename="corty3e_ch14_6_dlap.xml" numquestions="1">
+      <title>KEY TERMS</title>
+    </section>
+    <section id="corty3e-ch14-sec1-6" folder="false" filename="corty3e_ch14_7.html" dlapFilename="corty3e_ch14_7_dlap.xml" numquestions="0">
+      <title>CHAPTER EXERCISES</title>
+    </section>
+  </manuscript><manuscript id="56d62e13757a2ebf47000008" title="15 Nonparametric Statistical Tests: Chi-Square" question-delivery-method="ARGA" number="15">
+    <section title="Chapter Introduction" id="corty3e-ch15-sec1-1a" folder="false" filename="corty3e_ch15_1.html" dlapFilename="corty3e_ch15_1_dlap.xml" numquestions="0"/>
+    <section id="corty3e-ch15-sec1-1" folder="false" filename="corty3e_ch15_2.html" dlapFilename="corty3e_ch15_2_dlap.xml" numquestions="0">
+      <title><phrase block_type="sec_num">15.1</phrase> <phrase block_type="sec_title">Introduction to Nonparametric Tests</phrase></title>
+    </section>
+    <section id="corty3e-ch15-sec1-2" folder="true" filename="corty3e_ch15_3.html" dlapFilename="corty3e_ch15_3_dlap.xml" numquestions="0" hasEmbeddedHeads="true">
+      <title><phrase block_type="sec_num">15.2</phrase> <phrase block_type="sec_title">The Chi-Square Goodness-of-Fit Test</phrase></title>
+      <section id="corty3e-ch15-sec2-1" folder="false">
+        <title>Was the Null Hypothesis Rejected?</title>
+      </section>
+      <section id="corty3e-ch15-sec2-2" folder="false">
+        <title>What Is the Direction of the Results?</title>
+      </section>
+      <section id="corty3e-ch15-sec2-3" folder="false">
+        <title>Putting It All Together</title>
+      </section>
+    </section>
+    <section id="corty3e-ch15-sec1-3" folder="false" filename="corty3e_ch15_4.html" dlapFilename="corty3e_ch15_4_dlap.xml" numquestions="0">
+      <title><phrase block_type="sec_num">15.3</phrase> <phrase block_type="sec_title">Calculating the Chi-Square Test of Independence</phrase></title>
+    </section>
+    <section id="corty3e-ch15-sec1-4" folder="true" filename="corty3e_ch15_5.html" dlapFilename="corty3e_ch15_5_dlap.xml" numquestions="0" hasEmbeddedHeads="true">
+      <title><phrase block_type="sec_num">15.4</phrase> <phrase block_type="sec_title">Interpreting the Chi-Square Test of Independence</phrase></title>
+      <section id="corty3e-ch15-sec2-4" folder="false">
+        <title>Was the Null Hypothesis Rejected?</title>
+      </section>
+      <section id="corty3e-ch15-sec2-5" folder="false">
+        <title>What Is the Direction of the Difference?</title>
+      </section>
+      <section id="corty3e-ch15-sec2-6" folder="false">
+        <title>How Big Is the Effect?</title>
+      </section>
+      <section id="corty3e-ch15-sec2-7" folder="false">
+        <title>Putting It All Together</title>
+      </section>
+    </section>
+    <section id="corty3e-ch15-sec1-5" folder="true" filename="corty3e_ch15_6.html" dlapFilename="corty3e_ch15_6_dlap.xml" numquestions="0" hasEmbeddedHeads="true">
+      <title><phrase block_type="sec_num">15.5</phrase> <phrase block_type="sec_title">Other Nonparametric Tests</phrase></title>
+      <section id="corty3e-ch15-sec2-8" folder="false">
+        <title>The Spearman Rank-Order Correlation Coefficient</title>
+      </section>
+      <section id="corty3e-ch15-sec2-9" folder="false">
+        <title>The Mann&#x2013;Whitney <em>U</em> Test</title>
+      </section>
+    </section>
+    <section id="corty3e-ch15-sec1-6" folder="false" filename="corty3e_ch15_7.html" dlapFilename="corty3e_ch15_7_dlap.xml" numquestions="0">
+      <title>SUMMARY</title>
+    </section>
+    <section id="corty3e-ch15-sec1-7" folder="false" filename="corty3e_ch15_8.html" dlapFilename="corty3e_ch15_8_dlap.xml" numquestions="1">
+      <title>KEY TERMS</title>
+    </section>
+    <section id="corty3e-ch15-sec1-8" folder="false" filename="corty3e_ch15_9.html" dlapFilename="corty3e_ch15_9_dlap.xml" numquestions="0">
+      <title>CHAPTER EXERCISES</title>
+    </section>
+  </manuscript><manuscript id="56d62e3f757a2e8852000004" title="16 Selecting the Right Statistical Test" question-delivery-method="ARGA" number="16">
+    <section title="Chapter Introduction" id="corty3e-ch16-sec1-1a" folder="false" filename="corty3e_ch16_1.html" dlapFilename="corty3e_ch16_1_dlap.xml" numquestions="0"/>
+    <section id="corty3e-ch16-sec1-1" folder="false" filename="corty3e_ch16_2.html" dlapFilename="corty3e_ch16_2_dlap.xml" numquestions="0">
+      <title><phrase block_type="sec_num">16.1</phrase> <phrase block_type="sec_title">Review of Statistical Tasks</phrase></title>
+    </section>
+    <section id="corty3e-ch16-sec1-2" folder="true" filename="corty3e_ch16_3.html" dlapFilename="corty3e_ch16_3_dlap.xml" numquestions="0" hasEmbeddedHeads="true">
+      <title><phrase block_type="sec_num">16.2</phrase> <phrase block_type="sec_title">Descriptive Statistics</phrase></title>
+      <section id="corty3e-ch16-sec2-1" folder="false">
+        <title>Describing Individual Cases</title>
+      </section>
+      <section id="corty3e-ch16-sec2-2" folder="false">
+        <title>Describing a Sample of Cases</title>
+      </section>
+    </section>
+    <section id="corty3e-ch16-sec1-3" folder="false" filename="corty3e_ch16_4.html" dlapFilename="corty3e_ch16_4_dlap.xml" numquestions="0">
+      <title><phrase block_type="sec_num">16.3</phrase> <phrase block_type="sec_title">Hypothesis Tests I: Difference Tests</phrase></title>
+    </section>
+    <section id="corty3e-ch16-sec1-4" folder="false" filename="corty3e_ch16_5.html" dlapFilename="corty3e_ch16_5_dlap.xml" numquestions="0">
+      <title><phrase block_type="sec_num">16.4</phrase> <phrase block_type="sec_title">Hypothesis Tests II: Relationship Tests</phrase></title>
+    </section>
+    <section id="corty3e-ch16-sec1-5" folder="false" filename="corty3e_ch16_6.html" dlapFilename="corty3e_ch16_6_dlap.xml" numquestions="0">
+      <title>SUMMARY</title>
+    </section>
+    <section id="corty3e-ch16-sec1-6" folder="false" filename="corty3e_ch16_7.html" dlapFilename="corty3e_ch16_7_dlap.xml" numquestions="1">
+      <title>KEY TERMS</title>
+    </section>
+    <section id="corty3e-ch16-sec1-7" folder="false" filename="corty3e_ch16_8.html" dlapFilename="corty3e_ch16_8_dlap.xml" numquestions="0">
+      <title>CHAPTER EXERCISES</title>
+    </section>
+  </manuscript><manuscript id="56ddc7ba757a2ea003000002" title="APPENDIX A Statistical Tables" question-delivery-method="ARGA">
+    <section title="Appendix A" id="corty3e-app1-sec1-1a" folder="false" filename="corty3e_app1_1.html" dlapFilename="corty3e_app1_1_dlap.xml" numquestions="0"/>
+  </manuscript><manuscript id="56ddc826757a2ea403000001" title="APPENDIX B Solutions to Odd-Numbered End-of-Chapter Exercises" question-delivery-method="ARGA">
+    <section title="Appendix B" id="corty3e-app2-sec1-1a" folder="false" filename="corty3e_app2_1.html" dlapFilename="corty3e_app2_1_dlap.xml" numquestions="0"/>
+  </manuscript><manuscript id="56ddc8c5757a2e810c000000" title="APPENDIX C Solutions to Practice Problems" question-delivery-method="ARGA">
+    <section title="Appendix C" id="corty3e-AppC-sec1-1a" folder="false" filename="corty3e_app3_1.html" dlapFilename="corty3e_app3_1_dlap.xml" numquestions="0"/>
+  </manuscript><manuscript id="56e2fe84757a2e9e6e000000" title="APPENDIX D Solutions to Part Tests" question-delivery-method="ARGA">
+    <section title="Appendix D" id="corty3e-app4-sec1-1a" folder="false" filename="corty3e_app4_1.html" dlapFilename="corty3e_app4_1_dlap.xml" numquestions="0"/>
+  </manuscript><manuscript id="56ddcf73757a2ef819000000" title="Glossary" question-delivery-method="ARGA">
+    <section title="Glossary" id="corty3e-gls1-sec1-1a" folder="false" filename="corty3e_glossary_1.html" dlapFilename="corty3e_glossary_1_dlap.xml" numquestions="0"/>
+  </manuscript><manuscript id="56ddc91c757a2e810c000001" title="REFERENCES" question-delivery-method="ARGA">
+    <section title="References" id="corty3e-ref01-sec1-1a" folder="false" filename="corty3e_ref_1.html" dlapFilename="corty3e_ref_1_dlap.xml" numquestions="0"/>
+  </manuscript></manifest>

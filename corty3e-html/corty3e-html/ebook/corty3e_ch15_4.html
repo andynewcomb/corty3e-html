@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]> <html lang="en" class="no-js ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="no-js ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="no-js ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en" class="no-js ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+<head>
+    <title>corty3e_ch15</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <link href="css/boilerplate.css" media="screen" rel="stylesheet" type="text/css" >
+<link href="css/jquery-ui-custom.css" media="screen" rel="stylesheet" type="text/css" >
+<link href="css/manuscript.css" media="screen" rel="stylesheet" type="text/css" >
+<link href="css/digfir_ebook_fw.css" media="screen" rel="stylesheet" type="text/css" >
+<link href="css/corty3e.css" media="screen" rel="stylesheet" type="text/css" >
+<link href="css/corty3e_ch15.css" media="screen" rel="stylesheet" type="text/css" >    
+    
+    </head>
+<body class="noUi">
+<div id="manuscript" data-chapter-number="15">
+    <div data-type="section" data-block_type="h1" id="corty3e-ch15-sec1-3" level="1" data-print_page="581">
+<h2 class="section-title"><span data-type="title" data-title-for="corty3e-ch15-sec1-3"><span data-block_type="sec_num">15.3</span> <span data-block_type="sec_title">Calculating the Chi-Square Test of Independence</span>
+</span></h2>
+
+<div data-block_type="txt-ni" id="corty3e-ch15-p154"><p>There’s a second chi-square test to learn about, the <em>chi-square test of independence.</em> Like the chi-square goodness-of-fit test, it uses nominal data (or higher-level data treated as categorical), but it is not a single-sample test. The <span data-type="termref" data-term="chi-square test of independence">chi-square test of independence</span> is a nonparametric test that answers the question of whether two or more samples of cases differ on some nominal-level variable. For example, comparing a sample of boys to a sample of girls to see if the nominal variable of having an eating disorder differs between the two sexes calls for a chi-square test of independence. The chi-square test of independence is also known as the chi-square test of association or the chi-square test for contingency tables.</p></div>
+<div data-block_type="page_start" id="corty3e_page_582"><p>582</p></div>
+<div data-block_type="txt" id="corty3e-ch15-p155"><p>This chi-square test is called a test of “independence” because it answers the question of whether two variables are related to each other or are independent. The chi-square test of independence functions like a difference test (“Do the sexes differ in the prevalence of eating disorders?”) and like a relationship test (“Is there a relationship between sex and the presence of an eating disorder?”). This shows that though relationship tests and difference tests may look different, at their core they are the same.</p></div>
+<div data-block_type="txt" id="corty3e-ch15-p156"><p>To learn how to conduct a hypothesis test with a chi-square test of independence, imagine the following example: An educational psychologist, Dr. Pradesh, wants to explore whether a student reads a textbook before or after class has an impact on how well he or she does in that class. Dr. Pradesh puts together a random sample of 50 students from introductory psychology classes at her university, then randomly assigns 26 to read the textbook chapters before class and the other 24 to read them after the lectures. At the end of the semester, the students’ grades are classified as high (A or B) or low (C, D, or F). The question she asks can be phrased as a relationship question (“Is there a <em>relationship</em> between when one reads the text and how well one does in the class?”) or a difference question (“Does class performance <em>differ</em> depending on when one reads the text?”). These two questions are really the same and both are appropriate for a chi-square test of independence.</p></div>
+<div data-block_type="txt" id="corty3e-ch15-p157"><p><span data-type="link" data-href="#corty3e-ch15-fig-20"><strong>Table 15.7</strong></span> shows the results of Dr. Pradesh’s study. The matrix in <span data-type="link" data-href="#corty3e-ch15-fig-20">Table 15.7</span> is called a <span data-type="termref" data-term="contingency table">contingency table</span>, because it shows how the values of the cases on the dependent variable depend on the category of the independent variable. This table illustrates the degree to which students’ grades are <em>contingent on</em> when they read the text. It is also called a cross-tabulation table because it indicates how the levels of one variable intersect with the levels of the other variable.</p></div>
+<div data-type="figure" data-figure-id="corty3e-ch15-fig-20" data-block_type="table" data-layout-align="center" data-layout-width="large" data-layout-border="true">
+
+<img id="" src="asset/ch15/corty3e_table15_07.jpg" data-figure-id="corty3e-ch15-fig-20" data-layout-width="large" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+</div>
+<div data-block_type="txt" id="corty3e-ch15-p158"><p>There are four cells in this table and each student fits in only one cell. Following convention, the independent variable (when the text is read) is the row variable and the dependent variable (high or low grade) is the column variable. Here is what each of the four cells tallies:</p></div>
+<div data-block_type="page_start" id="corty3e_page_583"><p>583</p></div>
+<ul data-block_type="bullet" id="corty3e-ch15-list-18">
+<li><div data-block_type="bl-first" id="corty3e-ch15-p159"><p>Cell A counts the students who were in the “read before” group and received a high grade.</p></div>
+</li>
+<li><div data-block_type="bl-mid" id="corty3e-ch15-p160"><p>Cell B counts the students who were in the “read before” group and received a low grade.</p></div>
+</li>
+<li><div data-block_type="bl-mid" id="corty3e-ch15-p161"><p>Cell C counts the students who were in the “read after” group and received a high grade.</p></div>
+</li>
+<li><div data-block_type="bl-last" id="corty3e-ch15-p162"><p>Cell D counts the students who were in the “read after” group and received a low grade.</p></div>
+</li>
+</ul>
+<div data-block_type="txt" id="corty3e-ch15-p163"><p>Contingency tables allow researchers to calculate and compare percentages. 20/26 students who read the text before class (76.92%,) received high grades compared to only 12/24 who read the text after class (50.00%). This difference, 76.92% vs. 50.00%, suggests that reading the text before class makes it more likely one will receive a high grade. However, is the difference statistically significant? To answer that question, Dr. Pradesh needs to use a hypothesis test.</p></div>
+<div data-block_type="h4" id="corty3e-ch15-p164"><p><span data-block_type="h4-n-ri"><strong>Step 1</strong></span> <strong>Pick a Test</strong></p></div>
+<div data-block_type="txt-ni" id="corty3e-ch15-p165"><p>This scenario involves comparing two groups (read text before class vs. read text after class) to see if a difference exists for a variable used to categorize people as good performers vs. poor performers. This calls for a chi-square test of independence.</p></div>
+<div data-block_type="h4" id="corty3e-ch15-p166"><p><span data-block_type="h4-n-ri"><strong>Step 2</strong></span> <strong>Check the Assumptions</strong></p></div>
+<div data-block_type="txt-ni" id="corty3e-ch15-p167"><p>The three assumptions for the chi-square test of independence are the same as for the chi-square goodness-of-fit test:</p></div>
+<ol data-block_type="numbered" id="corty3e-ch15-list-19">
+<li><div data-block_type="nl-first" id="corty3e-ch15-p168"><p><em>Random samples</em>. The samples should be random samples from their populations. The random samples assumption is a robust assumption. If it is violated, one can proceed with the chi-square test of independence, but must be careful about the population to which the results are generalized. In the example, the participants in the read before class vs. read after class study are a random sample from introductory psychology classes who are then randomly assigned to the two groups. The random samples assumption was not violated and the results can be generalized to intro psych classes at this university.</p></div>
+</li>
+<li><div data-block_type="nl-mid" id="corty3e-ch15-p169"><p><em>Independence of observations</em>. The cases in the sample should be independent of each other. That is, the same case can’t be in the sample twice. The independence of observations assumption is not robust, so one can’t proceed with the planned test if it is violated. In the example, who was in which group was up to chance thanks to random sampling and random assignment, and each student fits in only one cell. The independence of observations assumption was not violated.</p></div>
+</li>
+<li><div data-block_type="nl-last" id="corty3e-ch15-p170"><p><em>Expected frequencies</em>. All cells must have expected frequencies of at least 5. This assumption is not robust, so the chi-square can’t be calculated if the expected frequencies in the cells are small. Until expected frequencies are calculated, this assumption can’t be evaluated.</p></div>
+</li>
+</ol>
+<div data-block_type="h4" id="corty3e-ch15-p171"><p><span data-block_type="h4-n-ri"><strong>Step 3</strong></span> <strong>List the Hypotheses</strong></p></div>
+<div data-block_type="txt-ni" id="corty3e-ch15-p172"><p>The chi-square test of independence tests to see if two variables are independent. Two variables are independent of each other when no relationship exists between them. So, the null hypothesis for a chi-square test of independence states that the two variables are independent of each other <em>in the population.</em> The alternative hypothesis for a chi-square test of independence states that, in the population, the two variables are not independent of each other. Notice several things about the alternative hypothesis:</p></div>
+<div data-block_type="page_start" id="corty3e_page_584"><p>584</p></div>
+<ul data-block_type="bullet" id="corty3e-ch15-list-20">
+<li><div data-block_type="bl-first" id="corty3e-ch15-p173"><p>It doesn’t say what direction the relationship goes, whether one variable has a positive or negative impact on the other.</p></div>
+</li>
+<li><div data-block_type="bl-mid" id="corty3e-ch15-p174"><p>It doesn’t say whether the relationship between the two variables is small or large.</p></div>
+</li>
+<li><div data-block_type="bl-last" id="corty3e-ch15-p175"><p>It just says there is something other than a zero relationship between the two variables in the population.</p></div>
+</li>
+</ul>
+<div data-block_type="txt" id="corty3e-ch15-p176"><p>The simplest way to express the null and alternative hypotheses for the chi-square test of independence is the same way they were expressed for the Pearson <em>r,</em> using ρ, the abbreviation for the population value of a correlation, to say whether there is a relationship between the variables:</p></div>
+<div data-block_type="eq" id="corty3e-ch15-p177"><p><em>H</em><sub>0</sub>: ρ = 0</p></div>
+<div data-block_type="eq" id="corty3e-ch15-p178"><p><em>H</em><sub>1</sub>: ρ ≠ 0</p></div>
+<div data-block_type="h4" id="corty3e-ch15-p179"><p><span data-block_type="h4-n-ri"><strong>Step 4</strong></span> <strong>Set the Decision Rule</strong></p></div>
+<div data-block_type="txt-ni" id="corty3e-ch15-p180"><p>Setting the decision rule for a chi-square test depends on the alpha level and the number of degrees of freedom (<em>df</em> ). For the read before class vs. read after class experiment, Dr. Pradesh was willing to have a 5% chance of making a Type I error, so she set α = .05.</p></div>
+<div data-block_type="txt" id="corty3e-ch15-p181"><p>Determining <em>df</em> for a chi-square test of independence depends on how many rows (<em>R</em>) and how many columns (<em>C</em> ) are in the contingency table. Look back to <span data-type="link" data-href="#corty3e-ch15-fig-20">Table 15.7</span>:</p></div>
+<ul data-block_type="bullet" id="corty3e-ch15-list-21">
+<li><div data-block_type="bl" id="corty3e-ch15-p182"><p>There are two rows, one for the students who read the text before class and one for the students who read the text after class, so <em>R</em> = 2.</p></div>
+</li>
+<li><div data-block_type="bl" id="corty3e-ch15-p183"><p>There are two columns, one for students with high grades and one for students with low grades, so <em>C</em> = 2.</p></div>
+</li>
+</ul>
+<div data-block_type="txt" id="corty3e-ch15-p184"><p><span data-type="link" data-href="#corty3e-ch15-bx6-4">Equation 15.4</span> uses <em>R</em> (the number of rows in the contingency table) and <em>C</em> (the number of columns in the contingency table) to calculate the degrees of freedom for a chi-square test of independence.</p></div>
+<div data-type="box" data-block_type="eq-t" id="corty3e-ch15-bx6-4"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="corty3e-ch15-bx6-4"><span data-block_type="sec_num">Equation 15.4</span> <span data-block_type="sec_title">Formula for Degrees of Freedom (<em>df</em>) for a Chi-Square Test of Independence</span>
+</h3>
+
+<div data-block_type="eq" id="corty3e-ch15-p185"><p><em>df</em> = (<em>R</em> – 1) × (<em>C</em> – 1)</p></div>
+<div data-block_type="eq-txt-ni" id="corty3e-ch15-p186"><p>where <em>df</em> = degrees of freedom</p></div>
+<div data-block_type="eq-unl" id="corty3e-ch15-p187"><p><em>R</em> = number of rows in the contingency table</p></div>
+<div data-block_type="eq-unl" id="corty3e-ch15-p188"><p><em>C</em> = number of columns in the contingency table</p></div>
+</div></div>
+<div data-block_type="txt-ni" id="corty3e-ch15-p189"><p>For the textbook reading data, there is 1 degree of freedom:</p></div>
+<div data-block_type="eq" id="corty3e-ch15-p190"><p><em>df</em> = (<em>R</em> – 1) × (<em>C</em> – 1)</p></div>
+<div data-block_type="eq" id="corty3e-ch15-p191"><p>= (2 – 1) × (2 – 1)</p></div>
+<div data-block_type="eq" id="corty3e-ch15-p192"><p>= 1 × 1</p></div>
+<div data-block_type="eq" id="corty3e-ch15-p193"><p>= 1</p></div>
+<div data-block_type="page_start" id="corty3e_page_585"><p>585</p></div>
+<div data-block_type="txt-ni" id="corty3e-ch15-p194"><p>Now that the degrees of freedom are known, Dr. Pradesh can find the critical value of chi-square in <span data-type="link" data-href="corty3e-appendix01.xml#corty3e-app1-fig-26">Appendix Table 9</span>. The intersection of the column where α = .05 and the row where <em>df</em> = 1 shows that χ<sup>2</sup><sub>cv</sub> = 3.841. If the value of chi-square calculated for the data in the sample is greater than or equal to this critical value, then the results will fall in the rare zone, the null hypothesis is rejected, and the results are called statistically significant. If χ<sup>2</sup> is less than χ<sup>2</sup><sub>cv </sub>, then χ<sup>2</sup> falls in the common zone, the null hypothesis is not rejected, and the results are called not statistically significant. Here is the decision rule:</p></div>
+<ul data-block_type="bullet" id="corty3e-ch15-list-22">
+<li><div data-block_type="bl-first" id="corty3e-ch15-p195"><p>If χ<sup>2</sup> ≥ 3.841, reject <em>H</em><sub>0</sub>.</p></div>
+</li>
+<li><div data-block_type="bl-last" id="corty3e-ch15-p196"><p>If χ<sup>2</sup> &lt; 3.841, fail to reject <em>H</em><sub>0</sub>.</p></div>
+</li>
+</ul>
+<div data-block_type="h4" id="corty3e-ch15-p197"><p><span data-block_type="h4-n-ri"><strong>Step 5</strong></span> <strong>Calculate the Test Statistic</strong></p></div>
+<div data-block_type="txt-ni" id="corty3e-ch15-p198"><p>χ<sup>2</sup> for a chi-square test of independence is calculated with the same formula (<span data-type="link" data-href="#corty3e-ch15-bx6-3">Equation 15.3</span>) used to calculate a chi-square goodness-of-fit test. Here it is again.</p></div>
+<div data-type="box" data-block_type="eq-t" id="corty3e-ch15-bx6-5"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="corty3e-ch15-bx6-5"><span data-block_type="sec_num">Equation 15.3</span> <span data-block_type="sec_title">Formula for Calculating Chi-Square (χ2)</span>
+</h3>
+
+<div data-block_type="equation" id="corty3e-ch15-eqn-10"><p>
+<img id="" src="asset/ch15/corty3e_eqn15_585_01.jpg" data-figure-id="" data-layout-width="" data-mmtype="" alt="image"></p></div>
+<div data-block_type="eq-txt-ni" id="corty3e-ch15-p199"><p>where χ<sup>2</sup> = chi-square value</p></div>
+<div data-block_type="eq-unl" id="corty3e-ch15-p200"><p><em>f</em><sub>Observed</sub> = observed frequency for a category</p></div>
+<div data-block_type="eq-unl" id="corty3e-ch15-p201"><p><em>f</em><sub>Expected</sub> = expected frequency for a category</p></div>
+</div></div>
+<div data-block_type="txt" id="corty3e-ch15-p202"><p>To apply the formula, two values are needed for each cell: (1) the observed frequency, <em>f</em><sub>Observed</sub>, and (2) the expected frequency, <em>f</em><sub>Expected</sub>. The contingency table in <span data-type="link" data-href="#corty3e-ch15-fig-20">Table 15.7</span> gives the observed frequencies for the cells, so those are known. Finding the expected frequencies takes <span data-type="link" data-href="#corty3e-ch15-bx6-5">Equation 15.5</span>.</p></div>
+<div data-type="box" data-block_type="eq-t" id="corty3e-ch15-bx6-6"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="corty3e-ch15-bx6-6"><span data-block_type="sec_num">Equation 15.5</span> <span data-block_type="sec_title">Formula for Calculating Cell Expected Frequencies (<em>f</em><sub>Expected</sub>)</span>
+</h3>
+
+<div data-block_type="equation" id="corty3e-ch15-eqn-11"><p>
+<img id="" src="asset/ch15/corty3e_eqn15_585_02.jpg" data-figure-id="" data-layout-width="" data-mmtype="" alt="image"></p></div>
+<div data-block_type="eq-txt-ni" id="corty3e-ch15-p203"><p>where <em>f</em><sub>Expected</sub> = the expected frequency for a cell</p></div>
+<div data-block_type="eq-unl" id="corty3e-ch15-p204"><p><em>N</em><sub>Row</sub> = number of cases in the row with that cell</p></div>
+<div data-block_type="eq-unl" id="corty3e-ch15-p205"><p><em>N</em><sub>Column</sub> = number of cases in the column with that cell</p></div>
+<div data-block_type="eq-unl" id="corty3e-ch15-p206"><p><em>N</em> = total number of cases in the contingency table</p></div>
+</div></div>
+<div data-block_type="txt" id="corty3e-ch15-p207"><p>This formula says that the expected frequency for a cell is found by multiplying together the <em>N</em> for the row that contains the cell by the <em>N</em> for the column that contains the cell. This product is then divided by the total sample size.</p></div>
+<div data-block_type="txt" id="corty3e-ch15-p208"><p>Dr. Pradesh applies <span data-type="link" data-href="#corty3e-ch15-bx6-5">Equation 15.5</span> to the read before class vs. read after class data. From <span data-type="link" data-href="#corty3e-ch15-fig-20">Table 15.7</span>, the following is known:</p></div>
+<ul data-block_type="bullet" id="corty3e-ch15-list-23">
+<li><div data-block_type="bl-first" id="corty3e-ch15-p209"><p>For the first row, <em>N</em><sub>Row</sub> = 26. For the second row, <em>N</em><sub>Row</sub> = 24.</p></div>
+</li>
+<li><div data-block_type="bl-mid" id="corty3e-ch15-p210"><p>For the first column, <em>N</em><sub>Column</sub> = 32. For the second column, <em>N</em><sub>Column</sub> = 18.</p></div>
+</li>
+<li><div data-block_type="bl-last" id="corty3e-ch15-p211"><p><em>N</em> = 50.</p></div>
+</li>
+</ul>
+<div data-block_type="page_start" id="corty3e_page_586"><p>586</p></div>
+<div data-block_type="txt" id="corty3e-ch15-p212"><p>Using <span data-type="link" data-href="#corty3e-ch15-bx6-5">Equation 15.5</span> to calculate the expected frequency for Cell A finds:</p></div>
+<div data-block_type="equation" id="corty3e-ch15-eqn-12"><p>
+<img id="" src="asset/ch15/corty3e_eqn15_586_01.jpg" data-figure-id="" data-layout-width="" data-mmtype="" alt="image"></p></div>
+<div data-block_type="txt-ni" id="corty3e-ch15-p213"><p>Continuing to use <span data-type="link" data-href="#corty3e-ch15-bx6-5">Equation 15.5</span>, the expected frequencies for the other three cells are found in a similar way.</p></div>
+<div data-block_type="equation" id="corty3e-ch15-eqn-13"><p>
+<img id="" src="asset/ch15/corty3e_eqn15_586_02.jpg" data-figure-id="" data-layout-width="" data-mmtype="" alt="image"></p></div>
+<div data-block_type="equation" id="corty3e-ch15-eqn-14"><p>
+<img id="" src="asset/ch15/corty3e_eqn15_586_03.jpg" data-figure-id="" data-layout-width="" data-mmtype="" alt="image"></p></div>
+<div data-block_type="equation" id="corty3e-ch15-eqn-15"><p>
+<img id="" src="asset/ch15/corty3e_eqn15_586_04.jpg" data-figure-id="" data-layout-width="" data-mmtype="" alt="image"></p></div>
+<div data-block_type="page_start" id="corty3e_page_587"><p>587</p></div>
+<div data-block_type="txt" id="corty3e-ch15-p214"><p>The four expected frequencies are shown in <span data-type="link" data-href="#corty3e-ch15-fig-27"><strong>Table 15.8.</strong></span> There are five things to note:</p></div>
+<div data-type="figure" data-figure-id="corty3e-ch15-fig-27" data-block_type="table" data-layout-align="center" data-layout-width="large" data-layout-border="true">
+
+<img id="" src="asset/ch15/corty3e_table15_08.jpg" data-figure-id="corty3e-ch15-fig-27" data-layout-width="large" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+</div>
+<ol data-block_type="numbered" id="corty3e-ch15-list-24">
+<li><div data-block_type="nl-first" id="corty3e-ch15-p215"><p>Expected frequencies don’t have to be whole numbers. Don’t be bothered by saying, for example, that 16.64 cases are expected to fall in the read before/get high grades cell.</p></div>
+</li>
+<li><div data-block_type="nl-mid" id="corty3e-ch15-p216"><p>The row frequencies for the <em>expected</em> frequencies (<span data-type="link" data-href="#corty3e-ch15-fig-27">Table 15.8</span>) are exactly the same as those found for the <em>observed</em> frequencies (<span data-type="link" data-href="#corty3e-ch15-fig-20">Table 15.7</span>).</p></div>
+</li>
+<li><div data-block_type="nl-mid" id="corty3e-ch15-p217"><p>Similarly, the column frequencies for the expected frequencies are the same as the column frequencies for the observed frequencies.</p></div>
+</li>
+<li><div data-block_type="nl-mid" id="corty3e-ch15-p218"><p>Finally, the total number of cases in the expected frequency cells is the same as the total number of cases in the observed frequency cells.</p></div>
+</li>
+<li><div data-block_type="nl-last" id="corty3e-ch15-p219"><p>All the expected frequencies were at least 5, so Dr. Pradesh now knows that the third assumption was not violated.</p></div>
+</li>
+</ol>
+<div data-type="box" data-block_type="bx-1-h" id="corty3e-ch15-bx1-2"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="corty3e-ch15-bx1-2">A Common Question</h3>
+<div data-block_type="bx1-que" id="corty3e-ch15-p220"><p><strong>Q</strong> Does one have to use <span data-type="link" data-href="#corty3e-ch15-bx6-5">Equation 15.5</span> to calculate an expected frequency for each cell?</p></div>
+<div data-block_type="bx1-ans" id="corty3e-ch15-p221"><p><strong>A</strong> No. <span data-type="link" data-href="#corty3e-ch15-bx6-5">Equation 15.5</span> is only needed to calculate expected frequencies for as many cells as there are degrees of freedom. For the read before class vs. read after class study, where <em>df</em> = 1, once the first cell is known, the other three can be figured out. If the frequency for the first row is 26 and <em>f</em><sub>Expected</sub> = 16.64 for Cell A, then Cell B must have an expected frequency of 26 – 16.64, or 9.36.</p></div>
+</div></div>
+<div data-block_type="txt" id="corty3e-ch15-p222"><p>Now that the expected frequencies have been found, <span data-type="link" data-href="#corty3e-ch15-bx6-3">Equation 15.3</span> may be used to calculate χ<sup>2</sup>. Using the observed frequencies for the read before class vs. read after class data (see <span data-type="link" data-href="#corty3e-ch15-fig-20">Table 15.7</span>) and the expected frequencies (see <span data-type="link" data-href="#corty3e-ch15-fig-27">Table 15.8</span>), the formula finds χ<sup>2</sup> = 3.93:</p></div>
+<div data-block_type="page_start" id="corty3e_page_588"><p>588</p></div>
+<div data-block_type="equation" id="corty3e-ch15-eqn-16"><p>
+<img id="" src="asset/ch15/corty3e_eqn15_588_01.jpg" data-figure-id="" data-layout-width="" data-mmtype="" alt="image"></p></div>
+<div data-block_type="txt-ni" id="corty3e-ch15-p223"><p>The value of the test statistic, χ<sup>2</sup>, for the text-reading data is 3.93. After some more practice with the first five steps, we’ll move on to the sixth step of hypothesis testing, interpretation.</p></div>
+<div data-type="box" data-block_type="sr-exp-n" id="corty3e-ch15-bx3-2"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="corty3e-ch15-bx3-2">Worked Example 15.2</h3>
+<div data-block_type="sr_exp_txt_ni" id="corty3e-ch15-p224"><p>Imagine an elementary school teacher, Mr. Conaway, who is a follower of Carl Rogers and believes that unconditional positive regard leads to psychological health and positive behavior. He obtains a simple random sample of 40 children from other teachers’ classrooms at his school and, through home observation, he categorizes each child as receiving unconditional positive regard (1) frequently, (2) sometimes, or (3) rarely. He then has each child’s teacher classify the child as a behavior problem or not.</p></div>
+<div data-block_type="sr_exp_txt" id="corty3e-ch15-p225"><p>The contingency table for the relationship between the two variables—the grouping variable of frequency of unconditional positive regard and the dependent variable of being a behavior problem—is shown in <span data-type="link" data-href="#corty3e-ch15-fig-29"><strong>Table 15.9</strong></span>:</p></div>
+<div data-type="figure" data-figure-id="corty3e-ch15-fig-29" data-block_type="table" data-layout-align="center" data-layout-width="large" data-layout-border="true">
+
+<img id="" src="asset/ch15/corty3e_table15_09.jpg" data-figure-id="corty3e-ch15-fig-29" data-layout-width="large" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+</div>
+<ul data-block_type="bullet" id="corty3e-ch15-list-25">
+<li><div data-block_type="sr_exp_bl" id="corty3e-ch15-p226"><p>Five of the 15 frequent recipients of unconditional positive regard (33.33%) were behavior problems.</p></div>
+<div data-block_type="page_start" id="corty3e_page_589"><p>589</p></div>
+</li>
+<li><div data-block_type="sr-exp-bl-mid" id="corty3e-ch15-p227"><p>Five of the 13 sometimes recipients of unconditional positive regard (38.46%) were behavior problems.</p></div>
+</li>
+<li><div data-block_type="sr-exp-bl-last" id="corty3e-ch15-p228"><p>Eight of the 12 students who rarely received unconditional positive regard (66.67%) were behavior problems.</p></div>
+</li>
+</ul>
+<div data-block_type="sr_exp_txt" id="corty3e-ch15-p229"><p>These results are graphed in <span data-type="link" data-href="#corty3e-ch15-fig-30"><strong>Figure 15.4</strong></span>, which shows that the likelihood of being a behavior problem increases as the frequency of receiving unconditional positive regard decreases. To determine if this is a real effect—or can be explained by sampling error—Mr. Conaway will need a statistical test.</p></div>
+<div data-type="figure" data-figure-id="corty3e-ch15-fig-30" data-block_type="figure" data-layout-align="center" data-layout-width="medium" data-layout-border="true">
+
+<img id="" src="asset/ch15/corty3e_fig15_04.jpg" data-figure-id="corty3e-ch15-fig-30" data-layout-width="medium" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+<div data-type="figure_text">
+<span data-type="number">Figure 15.12: </span><span data-type="caption"><strong><span data-block_type="fig_num">Figure 15.4</span> Relationship Between Being a Behavior Problem in School and Frequency of Receiving Unconditional Positive Regard</strong> These data show that the likelihood of being a behavior problem goes up as the frequency of receiving unconditional positive regard goes down. Whether the effect is a statistically significant one or can be explained by sampling error will require the completion of a chi-square test of independence.</span>
+</div>
+</div>
+<div data-block_type="sr_exp_h4_txt" id="corty3e-ch15-p230"><p><span data-block_type="h4-n-ri"><strong>Step 1</strong></span> <strong>Pick a Test.</strong> A chi-square test of independence is appropriate to determine if there is a relationship between three categories of one variable (frequency of receiving unconditional positive regard) and two categories of another variable (behavior problem or not a behavior problem) in a sample of elementary school children.</p></div>
+<div data-block_type="sr_exp_h4_txt" id="corty3e-ch15-p231"><p><span data-block_type="h4-n-ri"><strong>Step 2</strong></span> <strong>Check the Assumptions.</strong> There are three assumptions for the chi-square test of independence:</p></div>
+<ol data-block_type="numbered" id="corty3e-ch15-list-26">
+<li><div data-block_type="sr_exp_nl" id="corty3e-ch15-p232"><p><em>Random samples</em>. The cases come from a number of classrooms at the school, but it is not stated that the sample is a random sample. The random samples assumption is violated, but it is robust so the teacher can still proceed with the chi-square test of independence. However, he should be careful about generalizing the results beyond this sample.</p></div>
+</li>
+<li><div data-block_type="sr_exp_nl" id="corty3e-ch15-p233"><p><em>Independence of observations</em>. Each child is in the sample only once, so this assumption is not violated.</p></div>
+</li>
+<li><div data-block_type="sr_exp_nl" id="corty3e-ch15-p234"><p><em>Adequate expected frequencies</em>. All cells must have expected frequencies of at least 5. Until the expected frequencies are calculated, one can’t be sure that this assumption is met. If it turns out not to be met, one could collapse some categories and, for example, the frequent recipients of unconditional positive regard could be compared to a combined group of the sometimes and rare recipients of unconditional positive regard.</p></div>
+</li>
+</ol>
+<div data-block_type="page_start" id="corty3e_page_590"><p>590</p></div>
+<div data-block_type="sr_exp_h4_txt" id="corty3e-ch15-p235"><p><span data-block_type="h4-n-ri"><strong>Step 3</strong></span> <strong>List the Hypotheses.</strong> The hypotheses are listed below. The null hypothesis says that no relation exists in the population between the amount of unconditional positive regard one receives and the likelihood of being a behavior problem. The alternative hypothesis states there is some relationship in the population.</p></div>
+<div data-block_type="sr-exp-eq" id="corty3e-ch15-p236"><p><em>H</em><sub>0</sub>: ρ = 0</p></div>
+<div data-block_type="sr-exp-eq" id="corty3e-ch15-p237"><p><em>H</em><sub>1</sub>: ρ ≠ 0</p></div>
+<div data-block_type="sr_exp_h4_txt" id="corty3e-ch15-p238"><p><span data-block_type="h4-n-ri"><strong>Step 4</strong></span> <strong>Set the Decision Rule.</strong> To set the decision rule, a researcher needs to know the alpha and degrees of freedom. Mr. Conaway has set alpha at .05. He uses <span data-type="link" data-href="#corty3e-ch15-bx6-4">Equation 15.4</span> to calculate the degrees of freedom:</p></div>
+<div data-block_type="sr-exp-eq" id="corty3e-ch15-p239"><p><em>df</em> = (<em>R</em> –1) × (<em>C</em> – 1)</p></div>
+<div data-block_type="sr-exp-eq" id="corty3e-ch15-p240"><p>= (3 – 1) × (2 – 1)</p></div>
+<div data-block_type="sr-exp-eq" id="corty3e-ch15-p241"><p>= 2 × 1</p></div>
+<div data-block_type="sr-exp-eq" id="corty3e-ch15-p242"><p>= 2</p></div>
+<div data-block_type="sr_exp_txt" id="corty3e-ch15-p243"><p>Looking in the table of critical values of chi-square, <span data-type="link" data-href="corty3e-appendix01.xml#corty3e-app1-fig-26">Appendix Table 9</span>, at the intersection of the column for α = .05 and the row for <em>df</em> = 2, he finds χ<sup>2</sup><sub>cv</sub> = 5.991. The decision rule is:</p></div>
+<ul data-block_type="bullet" id="corty3e-ch15-list-27">
+<li><div data-block_type="sr-exp-bl-first" id="corty3e-ch15-p244"><p>If χ<sup>2</sup> ≥ 5.991, reject <em>H</em><sub>0</sub>.</p></div>
+</li>
+<li><div data-block_type="sr-exp-bl-last" id="corty3e-ch15-p245"><p>If χ<sup>2</sup> &lt; 5.991, fail to reject <em>H</em><sub>0</sub>.</p></div>
+</li>
+</ul>
+<div data-block_type="sr_exp_h4_txt" id="corty3e-ch15-p246"><p><span data-block_type="h4-n-ri"><strong>Step 5</strong></span> <strong>Calculate the Test Statistic.</strong> The first step in calculating a chi-square test for independence (χ<sup>2</sup>) is using <span data-type="link" data-href="#corty3e-ch15-bx6-5">Equation 15.5</span> to calculate expected frequencies. This contingency table has six cells and it is a bit tedious to perform <span data-type="link" data-href="#corty3e-ch15-bx6-5">Equation 15.5</span> six times. So, Mr. Conaway will use a bit of logic and just use <span data-type="link" data-href="#corty3e-ch15-bx6-5">Equation 15.5</span> twice. Why twice? Because the contingency table has 2 degrees of freedom, and once two cells are known, the rest can be calculated. The two to be calculated have to be chosen a little carefully, so Mr. Conaway has picked Cells A and C.</p></div>
+<div data-block_type="equation" id="corty3e-ch15-eqn-17"><p>
+<img id="" src="asset/ch15/corty3e_eqn15_590_01.jpg" data-figure-id="" data-layout-width="" data-mmtype="" alt="image"></p></div>
+<div data-block_type="equation" id="corty3e-ch15-eqn-18"><p>
+<img id="" src="asset/ch15/corty3e_eqn15_590_02.jpg" data-figure-id="" data-layout-width="" data-mmtype="" alt="image"></p></div>
+<div data-block_type="page_start" id="corty3e_page_591"><p>591</p></div>
+<div data-block_type="sr_exp_txt_ni" id="corty3e-ch15-p247"><p><span data-type="link" data-href="#corty3e-ch15-fig-33"><strong>Table 15.10</strong></span> contains the results so far. Now comes the logic.</p></div>
+<div data-type="figure" data-figure-id="corty3e-ch15-fig-33" data-block_type="table" data-layout-align="center" data-layout-width="large" data-layout-border="true">
+
+<img id="" src="asset/ch15/corty3e_table15_10.jpg" data-figure-id="corty3e-ch15-fig-33" data-layout-width="large" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+</div>
+<ul data-block_type="bullet" id="corty3e-ch15-list-28">
+<li><div data-block_type="sr_exp_bl" id="corty3e-ch15-p248"><p>If the first row has a total of 15 cases and Cell A has 6.75 of them, then Cell B contains 15 – 6.75 cases, or 8.25 cases.</p></div>
+</li>
+<li><div data-block_type="sr_exp_bl" id="corty3e-ch15-p249"><p>The same logic applies to Cell D: 13 – 5.85 = 7.15 cases.</p></div>
+</li>
+<li><div data-block_type="sr_exp_bl" id="corty3e-ch15-p250"><p>To find the expected frequency for Cell E, look at the total number of cases in the column, 18. Subtracting the expected frequencies for Cells A and C from this yields the expected frequency of 5.40 for Cell E.</p></div>
+</li>
+<li><div data-block_type="sr_exp_bl" id="corty3e-ch15-p251"><p>Finally, for Cell F, subtract Cell E (5.40) from 12, the total number of cases in the row to find 6.60.</p></div>
+</li>
+</ul>
+<div data-block_type="tbl_num" id="corty3e-ch15-p252"><p>The expected frequencies for all six cells are shown in <span data-type="link" data-href="#corty3e-ch15-fig-34"><strong>Table 15.11</strong></span>. Note that all the expected frequencies are greater than 5. Mr. Conaway can finally determine that the remaining assumption, that all expected frequencies were large enough, was not violated. The expected frequencies, in conjunction with the observed frequencies (<span data-type="link" data-href="#corty3e-ch15-fig-29">Table 15.9</span>), are needed to calculate the value of the test statistic using <span data-type="link" data-href="#corty3e-ch15-bx6-3">Equation 15.3</span>:</p></div>
+<div data-type="figure" data-figure-id="corty3e-ch15-fig-34" data-block_type="table" data-layout-align="center" data-layout-width="large" data-layout-border="true">
+
+<img id="" src="asset/ch15/corty3e_table15_11.jpg" data-figure-id="corty3e-ch15-fig-34" data-layout-width="large" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+</div>
+<div data-block_type="equation" id="corty3e-ch15-eqn-19"><p>
+<img id="" src="asset/ch15/corty3e_eqn15_591_01.jpg" data-figure-id="" data-layout-width="" data-mmtype="" alt="image"></p></div>
+<div data-block_type="page_start" id="corty3e_page_592"><p>592</p></div>
+<div data-block_type="sr_exp_txt" id="corty3e-ch15-p253"><p>The chi-square test of independence value for the unconditional positive regard study is 3.33. Now it is time to learn how to interpret the results of a chi-square test of independence.</p></div>
+</div></div>
+<div data-type="box" data-block_type="sr-h" id="corty3e-ch15-bx2-2"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="corty3e-ch15-bx2-2">Practice Problems 15.2</h3>
+<div data-block_type="sr-que-nl" id="corty3e-ch15-p254"><p><span data-block_type="question_num">15.06</span> Given a chi-square test of independence where the explanatory variable has four categories and the dependent variable has three, (a) How many degrees of freedom are there? (b) If α = .05, what is χ<sup>2</sup><sub>cv</sub>?</p></div>
+<div data-block_type="sr-que-nl" id="corty3e-ch15-p255"><p><span data-block_type="question_num">15.07</span> Given the cell frequencies below, calculate (a) the row totals and (b) the column totals.</p></div>
+<div data-type="table" data-block_type="un_table" id="corty3e-ch15-table1" data-layout-align="center" data-layout-width="medium" data-layout-border="true" data-mmsrc="" data-attr=""><table><tbody>
+<tr>
+<td><span data-block_type="tbn-txt">5</span></td>
+<td><span data-block_type="tbn-txt">10</span></td>
+<td><span data-block_type="tbn-txt">12</span></td>
+</tr>
+<tr>
+<td><span data-block_type="tbn-txt">5</span></td>
+<td><span data-block_type="tbn-txt">8</span></td>
+<td><span data-block_type="tbn-txt">10</span></td>
+</tr>
+</tbody></table></div>
+<div data-block_type="sr-que-nl" id="corty3e-ch15-p256"><p><span data-block_type="question_num">15.08</span> The row and column totals are shown below. Calculate the expected frequencies for the cells.</p></div>
+<div data-type="table" data-block_type="un_table" id="corty3e-ch15-table2" data-layout-align="center" data-layout-width="medium" data-layout-border="true" data-mmsrc="" data-attr=""><table><tbody>
+<tr>
+<td><span data-block_type="tbn-txt">A</span></td>
+<td><span data-block_type="tbn-txt">B</span></td>
+<td><span data-block_type="tbn-txt">39</span></td>
+</tr>
+<tr>
+<td><span data-block_type="tbn-txt">C</span></td>
+<td><span data-block_type="tbn-txt">D</span></td>
+<td><span data-block_type="tbn-txt">49</span></td>
+</tr>
+<tr>
+<td><span data-block_type="tbn-txt">28</span></td>
+<td><span data-block_type="tbn-txt">60</span></td>
+<td></td>
+</tr>
+</tbody></table></div>
+<div data-block_type="sr-que-nl" id="corty3e-ch15-p257"><p><span data-block_type="question_num">15.09</span> Given the information below, calculate χ<sup>2</sup>.</p></div>
+<div data-type="table" data-block_type="un_table" id="corty3e-ch15-table3" data-layout-align="center" data-layout-width="medium" data-layout-border="true" data-mmsrc="" data-attr=""><table><tbody>
+<tr>
+<td><span data-block_type="tbn-txt"><em>f</em><sub>Observed</sub> = 50</span></td>
+<td><span data-block_type="tbn-txt"><em>f</em><sub>Observed</sub> = 36</span></td>
+</tr>
+<tr>
+<td><span data-block_type="tbn-txt"><em>f</em><sub>Expected</sub> = 47.22</span></td>
+<td><span data-block_type="tbn-txt"><em>f</em><sub>Expected</sub> = 38.78</span></td>
+</tr>
+<tr>
+<td><span data-block_type="tbn-txt"><em>f</em><sub>Observed</sub> = 45</span></td>
+<td><span data-block_type="tbn-txt"><em>f</em><sub>Observed</sub> = 42</span></td>
+</tr>
+<tr>
+<td><span data-block_type="tbn-txt"><em>f</em><sub>Expected</sub> = 47.77</span></td>
+<td><span data-block_type="tbn-txt"><em>f</em><sub>Expected</sub> = 39.23</span></td>
+</tr>
+</tbody></table></div>
+</div></div>
+</div>
+<!-- #x-digfir-subsection-insertion-point --></div><!-- /#manuscript -->
+<br class="clear" />
+<!-- end of material in original view -->
+
+	<!--[if IE]><script type="text/javascript" src="js/excanvas.compiled.js"></script><![endif]-->
+    
+<script type="text/javascript" src="js/utilities.js"></script>
+<script type="text/javascript" src="js/query_types.js"></script>
+<script type="text/javascript" src="js/player.js"></script>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/jquery-ui-1.8.16.custom.min.js"></script>
+<script type="text/javascript" src="js/jquery_extensions.js"></script>
+<script type="text/javascript" src="js/swfobject.js"></script>
+<script type="text/javascript" src="http://admin.brightcove.com/js/BrightcoveExperiences.js"></script>
+<script type="text/javascript" src="js/digfir_ebook_fw.js"></script>
+<script type="text/javascript" src="js/corty3e.js"></script>
+<script type="text/javascript" src="js/corty3e_ch15.js"></script>
+<script type="text/javascript">
+    //<!--
+    
+$(window).ready(function () {
+	player.initialize('56d62e13757a2ebf47000008');
+});
+    //-->
+</script>
+</body>
+</html>
+

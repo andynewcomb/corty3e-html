@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]> <html lang="en" class="no-js ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="no-js ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="no-js ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en" class="no-js ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+<head>
+    <title>corty3e_ch11</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <link href="css/boilerplate.css" media="screen" rel="stylesheet" type="text/css" >
+<link href="css/jquery-ui-custom.css" media="screen" rel="stylesheet" type="text/css" >
+<link href="css/manuscript.css" media="screen" rel="stylesheet" type="text/css" >
+<link href="css/digfir_ebook_fw.css" media="screen" rel="stylesheet" type="text/css" >
+<link href="css/corty3e.css" media="screen" rel="stylesheet" type="text/css" >
+<link href="css/corty3e_ch11.css" media="screen" rel="stylesheet" type="text/css" >    
+    
+    </head>
+<body class="noUi">
+<div id="manuscript" data-chapter-number="11">
+    <div data-type="section" data-block_type="h1" id="corty3e-ch11-sec1-1" level="1" data-print_page="381">
+<h2 class="section-title"><span data-type="title" data-title-for="corty3e-ch11-sec1-1"><span data-block_type="sec_num">11.1</span> <span data-block_type="sec_title">Introduction to Repeated-Measures ANOVA</span>
+</span></h2>
+
+<div data-block_type="txt-ni" id="corty3e-ch11-p12"><p>In this chapter, we learn about <em>within-subjects</em> ANOVA, commonly called <span data-type="termref" data-term="repeated-measures ANOVA">repeated-measures ANOVA</span>. Repeated-measures ANOVA is an extension of the paired-samples <em>t</em> test. The paired-samples <em>t</em> test can only be used when comparing the means of two dependent samples. But, a repeated-measures ANOVA can be used when there are two or more dependent samples.</p></div>
+<div data-block_type="txt" id="corty3e-ch11-p13"><p>There are many different types of experiments that use repeated measures. What they have in common is a connection between the cases in one cell and the cases in the other cells. Repeated measures may involve:</p></div>
+<ul data-block_type="bullet" id="corty3e-ch11-list-2">
+<li><div data-block_type="bl-first" id="corty3e-ch11-p14"><p><em>The same cases measured at multiple points of time.</em> For example, to examine how weight changes over college, a group of first-year college students might be weighed at the start and the end of each of the four years of college.</p></div>
+<div data-block_type="page_start" id="corty3e_page_382"><p>382</p></div>
+</li>
+<li><div data-block_type="bl-mid" id="corty3e-ch11-p15"><p><em>The same cases measured under multiple conditions.</em> For example, to examine how alcohol affects one’s ability to walk a straight line, 21-year-olds might be asked to walk a straight line before drinking anything, after drinking a placebo beer, after drinking one beer, after two, after four, and after six.</p></div>
+</li>
+<li><div data-block_type="bl-last" id="corty3e-ch11-p16"><p><em>Different cases, matched so that they are similar in some dimension(s).</em> For example, a researcher comparing murder rates for cities with high, medium, and low numbers of sunny days per year might be concerned that population density and poverty level could affect the results. To account for these other factors, he could group cities with the same populations and unemployment rates into sets of three: one with a high number of sunshine days, one low on the number of sunshine days, and one in the middle.</p></div>
+</li>
+</ul>
+<div data-block_type="txt" id="corty3e-ch11-p17"><p>In all these examples of dependent samples, we’re looking at differences within the same subjects (or matched subjects) over time or across conditions (the treatment). Thus, it is important to make sure that the subjects are arrayed in the same order from cell to cell to cell. If a participant’s data point is listed first in one cell, then it should be first in the other cells.</p></div>
+<div data-block_type="txt" id="corty3e-ch11-p18"><p>The beauty of analysis of variance is that it partitions the variability in the dependent variable into the components that account for the variability. Between-subjects, one-way ANOVA, covered in the last chapter, distinguishes variability due to how the groups are treated (between-group variability) from variability due to individual differences among subjects (within-group variability). With between-subjects ANOVA, it doesn’t matter how subjects in a cell are arrayed. In our example, the three rats that ran the maze to reach low-calorie food ran it in 30, 31, and 32 seconds. And that is how the data showed up in the first cell of <span data-type="link" data-href="corty3e-ch10.xml#corty3e-ch10-fig-11">Table 10.3</span>. But, the data could just as easily have been listed as 31, 32, and 30 or as 31, 30, and 32. These cases are independent of each other. No matter the order that the results are listed, the results of the between-subjects ANOVA will be the same. This is not true of repeated-measures ANOVA. Because the samples in repeated-measures ANOVA are dependent samples, the order in which they are arranged matters very much. Changing the order, unless it is changed consistently in all cells, will change the outcome.</p></div>
+<div data-block_type="txt" id="corty3e-ch11-p19"><p>In repeated-measures ANOVA, the levels of the independent variable, for example, the different times or conditions, make up the columns and the subjects make up the rows. By having each subject on a row by itself, subjects can be treated as a second explanatory variable, as a second factor. Treating subjects as a factor allows repeated-measures ANOVA to measure—to account for—variability due to them. By partitioning out this variability, repeated-measures ANOVA obtains a purer measure of the effect of treatment and is a more statistically powerful test than is between-subjects ANOVA. What does it mean to be a statistically more powerful test? It means that this test gives us a greater likelihood of being able to reject the null hypothesis.</p></div>
+<div data-block_type="txt" id="corty3e-ch11-p20"><p><span data-type="link" data-href="#corty3e-ch11-fig-1"><strong>Figure 11.1</strong></span> shows the similarities and differences between the sources of variability for between-subjects and repeated-measures ANOVA. With between-subjects ANOVA, total variability is partitioned into between and within. For repeated-measures ANOVA, total variability is also partitioned into between and within. But, within-group variability is then broken down further. First, variability due to subjects is removed. Then, the variability left over, labeled “residual,” is used as the denominator in the <em>F</em> ratio.</p></div>
+<div data-type="figure" data-figure-id="corty3e-ch11-fig-1" data-block_type="figure" data-layout-align="center" data-layout-width="medium" data-layout-border="true">
+
+<img id="" src="asset/ch11/corty3e_fig11_01.jpg" data-figure-id="corty3e-ch11-fig-1" data-layout-width="medium" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+<div data-type="figure_text">
+<span data-type="number">Figure 11.1: </span><span data-type="caption"><strong><span data-block_type="fig_num">Figure 11.1</span> Partitioning Variability for One-Way ANOVA</strong> Variability in the dependent variable in one-way ANOVA is divided into between-groups and within-groups factors. For between-subjects, one-way ANOVA, the partitioning stops there. For a within-subjects design, the within-groups variability is further divided into that due to subjects and that which still remains.</span>
+</div>
+</div>
+<div data-block_type="page_start" id="corty3e_page_383"><p>383</p></div>
+<div data-block_type="txt" id="corty3e-ch11-p21"><p>The statistical power of repeated-measures ANOVA comes from the fact that it partitions out the variability due to subjects. Between-subjects ANOVA divides between-group variability by within-group variability to find the <em>F</em> ratio. Repeated-measures ANOVA calculates between-group variability the same way, so it will have the same numerator for the <em>F</em> ratio. But the denominator, which has variability due to subjects removed, will be smaller. This means that the <em>F</em> ratio will be larger—meaning it is more likely to fall in the rare zone, and therefore more likely to result in a rejection of the null hypothesis than for between-subjects, one-way ANOVA.</p></div>
+<div data-block_type="txt" id="corty3e-ch11-p22"><p>To see what this means, let’s analyze the same set of data two ways—one way that doesn’t partition out the subject variability and one that does. Let’s compare two neighboring cities, Erie, PA, and Cleveland, OH, to see if they differ in how hot they get. From weather archives, we have obtained the average high temperature for each city for each month of the year. The data are seen in <span data-type="link" data-href="#corty3e-ch11-fig-2"><strong>Figure 11.2</strong></span>. Two things are readily apparent in this graph:</p></div>
+<div data-type="figure" data-figure-id="corty3e-ch11-fig-2" data-block_type="figure" data-layout-align="center" data-layout-width="medium" data-layout-border="true">
+
+<img id="" src="asset/ch11/corty3e_fig11_02.jpg" data-figure-id="corty3e-ch11-fig-2" data-layout-width="medium" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+<div data-type="figure_text">
+<span data-type="number">Figure 11.2: </span><span data-type="caption"><strong><span data-block_type="fig_num">Figure 11.2</span> Average High Temperature per Month in Cleveland, OH, and Erie, PA</strong> Notice how little difference there is in temperature between the two cities each month and how much variability exists from month to month.</span>
+</div>
+</div>
+<ul data-block_type="bullet" id="corty3e-ch11-list-3">
+<li><div data-block_type="bl-first" id="corty3e-ch11-p23"><p>The high temperatures in the two cities are very similar to each other.</p></div>
+</li>
+<li><div data-block_type="bl-last" id="corty3e-ch11-p24"><p>Both cities share a strong seasonal trend to temperature—it is hottest in the summer and coldest in the winter.</p></div>
+</li>
+</ul>
+<div data-block_type="page_start" id="corty3e_page_384"><p>384</p></div>
+<div data-block_type="txt" id="corty3e-ch11-p25"><p>The paired-samples <em>t</em> test is appropriate to use to see if there is a statistically significant difference in temperature between the two cities. The <em>t</em> value turns out to be 5.38 and the difference between the two cities is a statistically significant one—Cleveland with a mean high temperature of 59.6°F is statistically significantly hotter than Erie with a mean of 57.7°F. A difference of 1.9°F doesn’t sound like much, but it is enough to be statistically significant when analyzed with a paired-samples <em>t</em> test.</p></div>
+<div data-block_type="txt" id="corty3e-ch11-p26"><p>The reasonable next question to ask is what the size of the effect is. How much of the variability in the dependent variable of temperature is explained by the grouping variable of city? Judging by <span data-type="link" data-href="#corty3e-ch11-fig-2">Figure 11.2</span>, it shouldn’t be much, right? Well, be surprised—72% of the variability in temperature is accounted for by city status! (This book does NOT advocate calculating either <em>d</em> or <em>r</em><sup>2</sup> for a paired-samples <em>t</em> test. In this one instance, however, and just for this one example, I calculated <em>r</em><sup>2</sup>.)</p></div>
+<div data-block_type="txt" id="corty3e-ch11-p27"><p>An <em>r</em><sup>2</sup> of 72% is a huge effect, a whopping effect. Look at <span data-type="link" data-href="#corty3e-ch11-fig-2">Figure 11.2</span> again. How can we account for the variability in temperature? Is there more variability in temperature due to differences between the cities each month or is there more variability in temperature due to changes from month to month? Clearly, more variability exists from month to month, which is due to individual differences among our cases, which are months. Regardless of city, months like July and August differ by 40 to 50 degrees F from months like January and February.</p></div>
+<div data-block_type="txt" id="corty3e-ch11-p28"><p>Does it make sense that the variability in temperature accounted for by the between-groups factor, city, is 72%? No! And it can’t be so. If we just agreed that more of the variability in <span data-type="link" data-href="#corty3e-ch11-fig-2">Figure 11.2</span> is due to the within-group factor (month) than the between-group factor, and the between-group factor accounted for 72% of the variability, then the within-group factor must explain at least 73% of the variability. That’s impossible—we have just accounted for at least 145% of the variability!</p></div>
+<div data-block_type="txt" id="corty3e-ch11-p29"><p>So, what is going on? Because a paired-samples <em>t</em> test doesn’t partition out the variability due to subjects, it mixes in variability due to individual differences with variability due to the grouping variable when calculating <em>r</em><sup>2</sup>. Thus, <em>r</em><sup>2</sup> is an overestimate of the percentage of variability due to the grouping variable and should not be used with paired-samples <em>t</em> tests. The same is true for Cohen’s <em>d</em> for a paired-samples <em>t</em> test—it also overestimates the size of the effect.</p></div>
+<div data-block_type="txt" id="corty3e-ch11-p30"><p>How much of the variability in temperature is really due to the grouping variable of city? To answer that, we need a repeated-measures ANOVA, which treats variability due to the independent variable and that due to the subjects separately. ANOVA, which can be used when comparing <em>two</em> or more means, can be used in place of a <em>t</em> test. As we are about to see, there is a distinct advantage to using a repeated-measures ANOVA over a paired-samples <em>t</em> test.</p></div>
+<div data-block_type="txt" id="corty3e-ch11-p31"><p>When these temperature data are analyzed with a repeated-measures ANOVA, the difference between the mean temperatures due to location is still a statistically significant one. But now, because the variance due to subjects has been removed, the effect size will be a purer measure of the effect of the independent variable. By removing individual subject variability, the explanatory power of the city where the measurement was taken is reduced from 72% to1%. Yes, 1%. Look at <span data-type="link" data-href="#corty3e-ch11-fig-2">Figure 11.2</span> again. Doesn’t a measure of 1% of the variability due to location reflect reality a lot better than 72%? If you are comparing the means of two dependent samples, use repeated-measures ANOVA, not a paired-samples <em>t</em> test .</p></div>
+<div data-block_type="page_start" id="corty3e_page_385"><p>385</p></div>
+<div data-block_type="txt" id="corty3e-ch11-p32"><p>We’ll use the following example throughout the chapter to learn how to complete a repeated-measures ANOVA. Imagine that Dr. King wanted to determine if a new treatment for ADHD was effective. He took four children with ADHD and measured their level of distraction on an interval-level scale where higher scores mean a higher level of distraction. Next, each child received individual behavior therapy for three months, after which the child’s level of distraction was assessed again. Finally, to determine if the effects of treatment are long-lasting, each child had his or her level of distraction measured again six months later.</p></div>
+<div data-block_type="txt" id="corty3e-ch11-p33"><p><span data-type="link" data-href="#corty3e-ch11-fig-3"><strong>Table 11.1</strong></span> contains the data, each case in its own row and each phase of treatment in a separate column. The effects of treatment are found in the column means. <span data-type="link" data-href="#corty3e-ch11-fig-4"><strong>Figure 11.3</strong></span> shows that the mean level of distraction is highest before the treatment starts, lowest at the end of treatment, and somewhere in the middle at follow-up. This suggests that treatment has an effect on reducing distraction and that the effect lingers, though in a weakened form, for six months. Of course, Dr. King needs to do a statistical test to determine if the treatment effect is statistically significant or if the differences can be accounted for by sampling error.</p></div>
+<div data-type="figure" data-figure-id="corty3e-ch11-fig-3" data-block_type="table" data-layout-align="center" data-layout-width="large" data-layout-border="true">
+
+<img id="" src="asset/ch11/corty3e_table11_01.jpg" data-figure-id="corty3e-ch11-fig-3" data-layout-width="large" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+</div>
+<div data-type="figure" data-figure-id="corty3e-ch11-fig-4" data-block_type="figure" data-layout-align="center" data-layout-width="medium" data-layout-border="true">
+
+<img id="" src="asset/ch11/corty3e_fig11_03.jpg" data-figure-id="corty3e-ch11-fig-4" data-layout-width="medium" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+<div data-type="figure_text">
+<span data-type="number">Figure 11.4: </span><span data-type="caption"><strong><span data-block_type="fig_num">Figure 11.3</span> ADHD Study Pre-Treatment, Post-Treatment, and Six-Month Follow-Up Distraction Scores</strong> The mean level of distraction decreases with treatment and increases when treatment is over. To determine if these changes in level of distraction are statistically significant, a one-way, repeated-measures ANOVA needs to be completed.</span>
+</div>
+</div>
+<div data-block_type="page_start" id="corty3e_page_386"><p>386</p></div>
+<div data-block_type="txt" id="corty3e-ch11-p34"><p>The differences between rows are due to individual differences, uncontrolled characteristics that vary from case to case. For example, case 1 has the lowest level of distraction pre-treatment. This could be due to the participant’s having a less severe form of ADHD, having eaten a good breakfast on the day of the test, having been taught by a teacher who stressed the skills on the test, or a whole host of other uncontrolled factors.</p></div>
+<div data-block_type="txt" id="corty3e-ch11-p35"><p>To reiterate the message of this introduction, the effect of individual differences is intertwined with the effect of treatment. Is the first case’s low score at the end of treatment due to the effect of treatment or due to individual differences like a less severe form of ADHD? One-way, repeated-measures ANOVA is statistically powerful because it divides the variability in scores into these two factors. Repeated-measures ANOVA determines (1) how much variability is due to the column effect (the effect of treatment), and (2) how much variability is due to the row effect (individual differences). Let’s see it in action in the next section.</p></div>
+<div data-type="box" data-block_type="sr-h" id="corty3e-ch11-bx2-1"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="corty3e-ch11-bx2-1">Practice Problems 11.1</h3>
+<div data-block_type="sr-h1" id="corty3e-ch11-p36"><p><strong>Review Your Knowledge</strong></p></div>
+<div data-block_type="sr-que-nl" id="corty3e-ch11-p37"><p><span data-block_type="question_num">11.01</span> When is repeated-measures ANOVA used?</p></div>
+<div data-block_type="sr-que-nl" id="corty3e-ch11-p38"><p><span data-block_type="question_num">11.02</span> Into what two factors does one-way, repeated-measures ANOVA divide variability in a set of scores?</p></div>
+<div data-block_type="sr-que-nl" id="corty3e-ch11-p39"><p><span data-block_type="question_num">11.03</span> When comparing the means of two dependent samples, what test should be used? Why?</p></div>
+</div></div>
+</div>
+<!-- #x-digfir-subsection-insertion-point --></div><!-- /#manuscript -->
+<br class="clear" />
+<!-- end of material in original view -->
+
+	<!--[if IE]><script type="text/javascript" src="js/excanvas.compiled.js"></script><![endif]-->
+    
+<script type="text/javascript" src="js/utilities.js"></script>
+<script type="text/javascript" src="js/query_types.js"></script>
+<script type="text/javascript" src="js/player.js"></script>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/jquery-ui-1.8.16.custom.min.js"></script>
+<script type="text/javascript" src="js/jquery_extensions.js"></script>
+<script type="text/javascript" src="js/swfobject.js"></script>
+<script type="text/javascript" src="http://admin.brightcove.com/js/BrightcoveExperiences.js"></script>
+<script type="text/javascript" src="js/digfir_ebook_fw.js"></script>
+<script type="text/javascript" src="js/corty3e.js"></script>
+<script type="text/javascript" src="js/corty3e_ch11.js"></script>
+<script type="text/javascript">
+    //<!--
+    
+$(window).ready(function () {
+	player.initialize('56d62d1e757a2e370d000001');
+});
+    //-->
+</script>
+</body>
+</html>
+

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]> <html lang="en" class="no-js ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="no-js ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="no-js ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en" class="no-js ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+<head>
+    <title>corty3e_ch14</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <link href="css/boilerplate.css" media="screen" rel="stylesheet" type="text/css" >
+<link href="css/jquery-ui-custom.css" media="screen" rel="stylesheet" type="text/css" >
+<link href="css/manuscript.css" media="screen" rel="stylesheet" type="text/css" >
+<link href="css/digfir_ebook_fw.css" media="screen" rel="stylesheet" type="text/css" >
+<link href="css/corty3e.css" media="screen" rel="stylesheet" type="text/css" >
+<link href="css/corty3e_ch14.css" media="screen" rel="stylesheet" type="text/css" >    
+    
+    </head>
+<body class="noUi">
+<div id="manuscript" data-chapter-number="14">
+    <div data-type="section" data-block_type="h1" id="corty3e-ch14-sec1-2" level="1" data-print_page="552">
+<h2 class="section-title"><span data-type="title" data-title-for="corty3e-ch14-sec1-2"><span data-block_type="sec_num">14.2</span> <span data-block_type="sec_title">Errors in Regression</span>
+</span></h2>
+
+<div data-block_type="txt-ni" id="corty3e-ch14-p146"><p>The goal of regression is to be able to predict <em>Y</em> values for <em>X</em> values. And the more accurately this can be done, the better. That’s why researchers need a way to measure how much error occurs in prediction. As we’ll soon learn, the measure for error in prediction is called the <span data-type="termref" data-term="standard error of the estimate">standard error of the estimate</span>. Here’s how it works.</p></div>
+<div data-block_type="txt" id="corty3e-ch14-p147"><p>With a perfect correlation, where all the data points fall on a line, each <em>X</em> value is associated with one and only one <em>Y</em> value. The story is more complex when <em>r</em> is not perfect. Look back at <span data-type="link" data-href="corty3e-ch14.xml#corty3e-ch14-fig-13">Figure 14.9</span>, which shows the scatterplot and regression line for the –.68 correlation between years of smoking and loss of lung function. Using the regression equation, it was predicted that a person with eight years of smoking would have 89.72% of normal lung function. And that exact same prediction, 89.72%, would be made for every person who had been smoking for eight years. Whether the person was male or female, whether the person exercised regularly or not, whether the person smoked five cigarettes a day or two packs—all those things don’t matter for the purposes of this estimate. If a person had been smoking for eight years, his or her lung capacity would be estimated at 89.72%.</p></div>
+<div data-block_type="txt" id="corty3e-ch14-p148"><p>But from the scatterplot in <span data-type="link" data-href="corty3e-ch14.xml#corty3e-ch14-fig-13">Figure 14.9</span>, it is apparent that people who smoke for eight years have lung function scores that range from about 70% all the way up to 100%. There is variability in the scores. How much the actual scores deviate from the predicted scores is a measure of the degree of error in prediction. The more deviation there is—the larger the error is—the less sure a researcher is of the accuracy of the prediction. The statistic that summarizes how much error exists is called the standard error of the estimate.</p></div>
+<div data-block_type="txt" id="corty3e-ch14-p149"><p>Let’s use Dr. Paik’s marital satisfaction data set, with only eight cases, to calculate the standard error of the estimate. The first two columns in <span data-type="link" data-href="corty3e-ch14.xml#corty3e-ch14-fig-15"><strong>Table 14.2</strong></span> contain his data set and the third column the predicted <em>Y</em> values for each of the <em>X</em> values. Case A, for example, has a gender role flexibility score of 8 and a marital satisfaction score of 0.8. Using the linear regression equation, its predicted marital satisfaction score is 1.03. The final column is labeled residual scores. It shows the deviation of the predicted score from the actual score, calculated as <em>Y</em> – <em>Y′</em><em>.</em> The predicted <em>Y</em> score for case A was off by 0.23 points and, because of the direction of the difference, is reported as –0.23. This difference is a measure of how wrong the predicted score is, so it is a measure of error. Case B, for example, where the predicted score was off from the actual score by 0.07 points, had less error in its predicted score than case C, where <em>Y</em> – <em>Y′</em> was off by 0.57 points.</p></div>
+<div data-type="figure" data-figure-id="corty3e-ch14-fig-15" data-block_type="table" data-layout-align="center" data-layout-width="xlarge" data-layout-border="true">
+
+<img id="" src="asset/ch14/corty3e_table14_02.jpg" data-figure-id="corty3e-ch14-fig-15" data-layout-width="xlarge" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+</div>
+<div data-block_type="page_start" id="corty3e_page_553"><p>553</p></div>
+<div data-block_type="txt" id="corty3e-ch14-p150"><p>The last column contains deviation scores (error scores), which sum to zero. So, how can the average amount of error be represented? With a standard deviation! And that is what a standard error of the estimate is, the standard deviation of the residual scores. As can be seen at the bottom of the column, for Dr. Paik’s data, the standard deviation of the residual scores, the standard error of the estimate, is 0.56.</p></div>
+<div data-block_type="txt" id="corty3e-ch14-p151"><p>The definitional formula requires that we calculate the standard error of the estimate as the standard deviation of the residual scores. <span data-type="link" data-href="#corty3e-ch14-bx6-4">Equation 14.4</span> gives the easier-to-use computational formula, a formula that can be used as long as one knows <em>r</em> and <em>s<sub>Y </sub>.</em></p></div>
+<div data-type="box" data-block_type="eq-t" id="corty3e-ch14-bx6-4"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="corty3e-ch14-bx6-4"><span data-block_type="sec_num">Equation 14.4</span> <span data-block_type="sec_title">Formula for the Standard Error of the Estimate</span>
+</h3>
+
+<div data-block_type="equation" id="corty3e-ch14-eqn-4"><p>
+<img id="" src="asset/ch14/corty3e_eqn14_553_01.jpg" data-figure-id="" data-layout-width="" data-mmtype="" alt="image"></p></div>
+<div data-block_type="eq-txt-ni" id="corty3e-ch14-p152"><p>where <em>s<sub>Y–Y′</sub></em> = standard error of the estimate</p></div>
+<div data-block_type="eq-unl" id="corty3e-ch14-p153"><p><em>s<sub>Y</sub></em> = standard deviation of the <em>Y</em> scores</p></div>
+<div data-block_type="eq-unl" id="corty3e-ch14-p154"><p><em>r</em> = the Pearson <em>r</em> value</p></div>
+</div></div>
+<div data-block_type="txt" id="corty3e-ch14-p155"><p>This equation says that the standard error of the estimate may be calculated by (1) squaring the correlation coefficient, (2) subtracting the square from 1, (3) taking the square root of the difference, and (4) multiplying this square root by the standard deviation of the <em>Y</em> scores. Here are the calculations for Dr. Paik’s data. The value about to be calculated, <em>s<sub>Y–Y′</sub></em> = 0.56, is exactly the same value that was found as the standard deviation of the difference scores in <span data-type="link" data-href="corty3e-ch14.xml#corty3e-ch14-fig-15">Table 14.2</span>:</p></div>
+<div data-block_type="page_start" id="corty3e_page_554"><p>554</p></div>
+<div data-block_type="equation" id="corty3e-ch14-eqn-5"><p>
+<img id="" src="asset/ch14/corty3e_eqn14_554_01.jpg" data-figure-id="" data-layout-width="" data-mmtype="" alt="image"></p></div>
+<div data-block_type="txt" id="corty3e-ch14-p156"><p>What does a standard error of the estimate of 0.56 mean? Loosely, one can think of standard error of the estimate as the average residual score, the average difference between the actual <em>Y</em> scores and the predicted <em>Y</em> scores. Is 0.56 a lot of error? It depends on the possible range of scores. Here the variable being predicted is marital satisfaction, which is measured on a scale ranging from 0 to 4. Being off by 0.56 points, on average, on a 4-point scale means being off, on average, by 14%. That’s not good.</p></div>
+<div data-block_type="txt" id="corty3e-ch14-p157"><p>Want a concrete example? Suppose Neil goes to a county fair and stops at an “I’ll Guess Your Weight” booth. The carny guesses Neil’s weight as 150 pounds. But, if he’s off by 14%, Neil could weigh 171 pounds and the carny underestimated his weight. The error could go the other way as well. The carny could have overestimated Neil’s weight. Maybe Neil only weighs 129 pounds, which is off from 150 by 14% in the opposite direction.</p></div>
+<div data-block_type="txt" id="corty3e-ch14-p158"><p>This range, from 129 pounds to 171 pounds, gives the general idea of what a prediction interval is. A <span data-type="termref" data-term="prediction interval">prediction interval</span> gives a range within which there is some certainty that a case’s real <em>Y</em> score falls. The calculation of the interval is based on the estimated <em>Y</em> score and the standard error of the estimate. The smaller the standard error of the estimate, the narrower the prediction interval and the better the prediction.</p></div>
+<div data-type="box" data-block_type="sr-exp-n" id="corty3e-ch14-bx3-2"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="corty3e-ch14-bx3-2">Worked Example 14.2</h3>
+<div data-block_type="sr_exp_txt_ni" id="corty3e-ch14-p159"><p>For another example of calculating the standard error of the estimate, a return to the cigarette smoking and lung function study is in order. In that study, 2,500 smokers reported how many years they had been smoking (<em>M</em> = 22, <em>s</em> = 9) and had their lung function measured as a percentage of normal (<em>M</em> = 76, <em>s</em> =13). There was a strong and statistically significant inverse relationship, <em>r</em> = –.68: the longer people smoked, the lower their lung function. After a regression equation was developed, it was used to predict that a person who had been smoking for eight years would have lungs functioning at 89.72% of normal capacity. How much confidence should we have that this estimate is accurate?</p></div>
+<div data-block_type="page_start" id="corty3e_page_555"><p>555</p></div>
+<div data-block_type="sr_exp_txt" id="corty3e-ch14-p160"><p>The way to answer this is by calculating <em>s<sub>Y–Y</sub>′</em> using <span data-type="link" data-href="#corty3e-ch14-bx6-4">Equation 14.4</span>:</p></div>
+<div data-block_type="equation" id="corty3e-ch14-eqn-6"><p>
+<img id="" src="asset/ch14/corty3e_eqn14_555_01.jpg" data-figure-id="" data-layout-width="" data-mmtype="" alt="image"></p></div>
+<div data-block_type="sr_exp_txt" id="corty3e-ch14-p161"><p>This standard error of the estimate of 9.53 means that the actual <em>Y</em> scores and <em>Y′</em> scores for the 2,500 people in the sample differed by almost 10 points, on average, on a 100-point scale. That seems like a fair amount of error. This suggests that predictions based on this regression equation aren’t very accurate.</p></div>
+<div data-type="box" data-block_type="bx-1-h" id="corty3e-ch14-bx1-2"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="corty3e-ch14-bx1-2">A Common Question</h3>
+<div data-block_type="bx1-que" id="corty3e-ch14-p162"><p><strong>Q</strong> So far, both examples have had standard errors of the estimate that are large, suggesting prediction is not very good. What does it take to have a small standard error of the estimate?</p></div>
+<div data-block_type="bx1-ans" id="corty3e-ch14-p163"><p><strong>A</strong> As <em>r</em> grows larger and <em>s<sub>Y</sub></em> becomes smaller, <em>s<sub>Y–Y′</sub></em> gets smaller.</p></div>
+</div></div>
+</div></div>
+<div data-type="box" data-block_type="sr-h" id="corty3e-ch14-bx2-2"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="corty3e-ch14-bx2-2">Practice Problems 14.2</h3>
+<div data-block_type="sr-h1" id="corty3e-ch14-p164"><p><strong>Apply Your Knowledge</strong></p></div>
+<div data-block_type="sr-que-nl" id="corty3e-ch14-p165"><p><span data-block_type="question_num">14.06</span> Given <em>r</em> = .42 and <em>s<sub>Y</sub></em> = 5.64, find <em>s<sub>Y–Y′</sub>.</em></p></div>
+<div data-block_type="sr-que-nl" id="corty3e-ch14-p166"><p><span data-block_type="question_num">14.07</span> Dr. Binet developed a regression equation to predict adult IQ from childhood language abilities. IQ can range from 55 to 145. The standard error of the estimate for the regression equation is 14. Is that a large error of the estimate?</p></div>
+</div></div>
+</div>
+<!-- #x-digfir-subsection-insertion-point --></div><!-- /#manuscript -->
+<br class="clear" />
+<!-- end of material in original view -->
+
+	<!--[if IE]><script type="text/javascript" src="js/excanvas.compiled.js"></script><![endif]-->
+    
+<script type="text/javascript" src="js/utilities.js"></script>
+<script type="text/javascript" src="js/query_types.js"></script>
+<script type="text/javascript" src="js/player.js"></script>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/jquery-ui-1.8.16.custom.min.js"></script>
+<script type="text/javascript" src="js/jquery_extensions.js"></script>
+<script type="text/javascript" src="js/swfobject.js"></script>
+<script type="text/javascript" src="http://admin.brightcove.com/js/BrightcoveExperiences.js"></script>
+<script type="text/javascript" src="js/digfir_ebook_fw.js"></script>
+<script type="text/javascript" src="js/corty3e.js"></script>
+<script type="text/javascript" src="js/corty3e_ch14.js"></script>
+<script type="text/javascript">
+    //<!--
+    
+$(window).ready(function () {
+	player.initialize('56d62de6757a2efb47000003');
+});
+    //-->
+</script>
+</body>
+</html>
+

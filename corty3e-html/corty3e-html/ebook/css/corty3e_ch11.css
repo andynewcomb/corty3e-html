@@ -1,0 +1,42 @@
+/* Chapter 11 CSS */
+div#corty3e-ch11-p1 {
+  margin-top: -5px;
+}
+/* Figures */
+body.noUi div#corty3e-ch11-fig-1 img {
+  max-width: 400px !important;
+}
+/* Tables */
+body.noUi div#corty3e-ch11-table13 table tr:first-child,
+body.noUi div#corty3e-ch11-table14 table tr:first-child {
+  background-color: #e0e8ef;
+}
+body.noUi div#corty3e-ch11-table13 table tr:first-child td,
+body.noUi div#corty3e-ch11-table14 table tr:first-child td {
+  color: #168ca8;
+  font-weight: bold;
+}
+body.noUi div#corty3e-ch11-table13 table tr > td:first-child,
+body.noUi div#corty3e-ch11-table14 table tr > td:first-child {
+  color: #168ca8;
+  font-weight: bold;
+  white-space: nowrap;
+  text-align: left;
+}
+/* Lists */
+ol#corty3e-ch11-list-12,
+ol#corty3e-ch11-list-13 {
+  font-weight: normal;
+}
+/* Equations */
+/* equation feature box -- needs more room for equation number to left */
+[data-block_type="eq-t"] [data-type="title"] {
+  padding-left: 8em;
+}
+[data-block_type="cr-x-nl-txt"] {
+  position: relative;
+}
+[data-block_type="cr-x-nl-txt"] p {
+  margin-left: 4em !important;
+}
+/*# sourceMappingURL=corty3e_ch11.css.map */

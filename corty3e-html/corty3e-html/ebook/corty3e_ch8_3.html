@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]> <html lang="en" class="no-js ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="no-js ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="no-js ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en" class="no-js ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+<head>
+    <title>corty3e_ch8</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <link href="css/boilerplate.css" media="screen" rel="stylesheet" type="text/css" >
+<link href="css/jquery-ui-custom.css" media="screen" rel="stylesheet" type="text/css" >
+<link href="css/manuscript.css" media="screen" rel="stylesheet" type="text/css" >
+<link href="css/digfir_ebook_fw.css" media="screen" rel="stylesheet" type="text/css" >
+<link href="css/corty3e.css" media="screen" rel="stylesheet" type="text/css" >
+<link href="css/corty3e_ch8.css" media="screen" rel="stylesheet" type="text/css" >    
+    
+    </head>
+<body class="noUi">
+<div id="manuscript" data-chapter-number="2">
+    <div data-type="section" data-block_type="h1" id="corty3e-ch8-sec1-2" level="1" data-print_page="259">
+<h2 class="section-title"><span data-type="title" data-title-for="corty3e-ch8-sec1-2"><span data-block_type="sec_num">8.2</span> <span data-block_type="sec_title">Calculating the Independent-Samples <em>t</em> Test</span>
+</span></h2>
+
+<div data-block_type="txt-ni" id="corty3e-ch8-p27"><p>The two-sample <em>t</em> test covered in this chapter is the independent-samples <em>t</em> test. The <span data-type="termref" data-term="independent-samples test">independent-samples test</span> is used when seeing if there is a difference between the means of two independent populations. For our example, let’s imagine following Dr. Villanova as he replicates part of a classic experiment about factors that influence how well one remembers information (Craik &amp; Tulving, 1975).</p></div>
+<div data-block_type="page_start" id="corty3e_page_260"><p>260</p></div>
+<div data-block_type="txt" id="corty3e-ch8-p28"><p>Dr. Villanova’s participants were 38 introductory psychology students, randomly assigned to two groups. He ended up with 18 in the control group (<em>n</em><sub>1</sub>) and 20 in the experimental group (<em>n</em><sub>2</sub>). The lowercase <em>n</em> is a new abbreviation that will be used to indicate the sample size for a specific group. Subscripts are used to distinguish the two groups. Here, one might say <em>n</em><sub>1</sub> =18 and <em>n</em><sub>2</sub> = 20 or <em>n</em><sub>Control</sub> = 18 and <em>n</em><sub>Experimental</sub> = 20. An uppercase <em>N</em> will still be used to indicate the total sample size. For this experiment, <em>N</em> = <em>n</em><sub>1</sub> + <em>n</em><sub>2</sub> = 18 + 20 = 38.</p></div>
+<div data-block_type="txt" id="corty3e-ch8-p29"><p>Each participant was tested individually. All participants were shown 20 words (e.g., <em>giraffe,</em> <em>DOG,</em> <em>mirror</em>), one at a time, and asked a question about each word. The control group was asked whether the word appeared in capital letters or not. The experimental group was asked whether the word would make sense in this sentence, “The passenger carried a __________ onto the bus.” The first question doesn’t require much thought, so the control group was called the “shallow” processing group. Answering the second question required more mental effort, so the experimental group was called the “deep” processing group. After all 20 words had been presented, the participants were asked to write down as many words as they could remember. This recall task was unexpected and the number of words recalled was the dependent variable. The shallow processing group recalled a mean of 3.50 words (<em>s</em> = 1.54 words), and the deep processing group a mean of 8.30 words (<em>s</em> = 2.74 words). Here is Dr. Villanova’s research question: Does deep processing lead to better recall than shallow processing?</p></div>
+<div data-block_type="txt" id="corty3e-ch8-p30"><p>Box-and-whisker plots are an excellent way to provide a visual comparison of two or more groups. Box-and-whisker plots are data-rich, providing information about central tendency and variability. In <strong><span data-type="link" data-href="corty3e-ch08.xml#corty3e-ch8-fig-4">Figure 8.2</span></strong>, the number of words recalled is the dependent variable on the <em>Y</em>-axis and the two groups, shallow and deep, are on the <em>X</em>-axis. Both groups are in the same graph, making it easy to compare them on three things, the median, the interquartile range, and the range:</p></div>
+<div data-type="figure" data-figure-id="corty3e-ch8-fig-4" data-block_type="figure" data-layout-align="center" data-layout-width="medium" data-layout-border="true">
+
+<img id="" src="asset/ch8/corty3e_fig08_02.jpg" data-figure-id="corty3e-ch8-fig-4" data-layout-width="medium" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+<div data-type="figure_text">
+<span data-type="number">Figure 2.3: </span><span data-type="caption"><strong><span data-block_type="fig_num">Figure 8.2</span> Box-and-Whisker Plots Showing the Results of the Depth of Processing Study</strong> Note that the middle 50% of cases, represented by the box for the deep processors, recalled more words than the average cases for the shallow processors. This graph appears to show that deep processing leads to better recall than shallow processing. To make sure that the result is a statistically significant one, a researcher would need to complete the appropriate hypothesis test, an independent-samples <em>t</em> test.</span>
+</div>
+</div>
+<ul data-block_type="bullet" id="corty3e-ch8-list-3">
+<li><div data-block_type="bl-first" id="corty3e-ch8-p31"><p>The line in the middle of the box is the median, a measure of central tendency. The median number of words recalled is around 8 for the deep processing group and around 4 for the shallow processing group.</p></div>
+</li>
+<li><div data-block_type="bl-mid" id="corty3e-ch8-p32"><p>The box that surrounds the line for the median represents the interquartile range, the range within which the middle 50% of scores fall. These middle 50% of scores are often referred to as the average scores for a group, so the interquartile range is a measure of central tendency. Note that in this study, no overlap occurs between these average scores for the two groups.</p></div>
+</li>
+<li><div data-block_type="bl-mid" id="corty3e-ch8-p33"><p>The interquartile range is also a measure of variability, measured by the distance from the bottom to the top of the box. Taller boxes mean more variability. The box for the deep processing group looks a little taller than the box for the shallow processing group, indicating more variability for the experimental group than for the control group.</p></div>
+</li>
+<li><div data-block_type="bl-last" id="corty3e-ch8-p34"><p>The whiskers that extend from the box represent the range of scores, another measure of variability. One can see that participants in the shallow processing group recalled from 1 to 6 words and those in the deep processing group recalled from 4 to 12 words. The whiskers show that there is some overlap in the number of words recalled between the two groups and that there is more variability in the deep processing group than in the shallow processing group.</p></div>
+</li>
+</ul>
+<div data-block_type="page_start" id="corty3e_page_261"><p>261</p></div>
+<div data-block_type="txt" id="corty3e-ch8-p35"><p>It certainly appears as if deeper processing leads to better memory, and this was the result that Craik and Tulving found back in 1975. But, in order to see if he replicated their results, Dr. Villanova will need to complete a hypothesis test to see if the difference is a statistically significant one.</p></div>
+<div data-block_type="h4-txt-ni" id="corty3e-ch8-p36"><p><span data-block_type="h4-n-ri"><strong>Step 1</strong></span> <strong>Pick a Test.</strong> The first step in completing a hypothesis test is choosing the correct test. Here, Dr. Villanova is comparing the mean of one population to the mean of another population, so he will use a two-sample <em>t</em> test. The two sample sizes are different (<em>n</em><sub>Shallow</sub> = 18 and <em>n</em><sub>Deep</sub> = 20), which means they are independent samples (see <span data-type="link" data-href="corty3e-ch08.xml#corty3e-ch8-fig-3">Table 8.1</span>). In addition, the cases in one sample aren’t paired with the cases in the other sample, another indicator of independent samples. As the samples are independent, his planned test is the independent-samples <em>t</em> test.</p></div>
+<div data-block_type="h4-txt-ni" id="corty3e-ch8-p37"><p><span data-block_type="h4-n-ri"><strong>Step 2</strong></span> <strong>Check the Assumptions.</strong> Several of the assumptions for the independent-samples <em>t</em> test, listed in <strong><span data-type="link" data-href="corty3e-ch08.xml#corty3e-ch8-fig-5">Table 8.2</span></strong>, are familiar from the single-sample <em>t</em> test, but one is new.</p></div>
+<div data-type="figure" data-figure-id="corty3e-ch8-fig-5" data-block_type="table" data-layout-align="center" data-layout-width="large" data-layout-border="true">
+
+<img id="" src="asset/ch8/corty3e_table08_02.jpg" data-figure-id="corty3e-ch8-fig-5" data-layout-width="large" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+</div>
+<div data-block_type="page_start" id="corty3e_page_262"><p>262</p></div>
+<div data-block_type="txt" id="corty3e-ch8-p38"><p>The first assumption, random samples, is one seen before. For the depth of processing study, the participants are intro psych students, specifically ones who volunteered to participate in this study. Dr. Villanova may have used random <em>assignment</em> to place the participants into a control group and an experimental group, but he doesn’t have a random <em>sample</em> of participants. Thus, this assumption was violated and this will have an impact on interpreting the results. However, such an assumption is robust, so he can proceed with the <em>t</em> test.</p></div>
+<div data-block_type="txt" id="corty3e-ch8-p39"><p>With participants being randomly assigned to groups, each case participating by him- or herself, and no one participating twice, the second assumption, that each participant’s responding was not influenced by any other participant, was not violated. Dr. Villanova was willing to assume that the third assumption, normality, is not violated. He’s willing to make this assumption because memory is a cognitive ability and most psychological variables like this are considered to be normally distributed. In addition, this assumption is robust as long as <em>N</em> &gt; 30.<span data-type="termref" data-term="fn-ch8-1"><sup>1</sup></span></p></div>
+<div data-block_type="txt" id="corty3e-ch8-p40"><p>The final assumption is new, homogeneity of variance. This fourth assumption says that the amounts of variability in the two populations should be about equal. Dr. Villanova will assess this by comparing the two sample standard deviations. If the larger standard deviation is not more than twice the smaller standard deviation, then the amounts of variability are considered about equal (Bartz, 1999). For the depth of processing study, the larger standard deviation is 2.74, and the smaller standard deviation is 1.54. The larger standard deviation is not more than twice the smaller standard deviation, so the fourth assumption has not been violated. Dr. Villanova can proceed with the planned independent-samples <em>t</em> test.</p></div>
+<div data-type="box" data-block_type="bx-1-h" id="corty3e-ch8-bx1-1"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="corty3e-ch8-bx1-1">A Common Question</h3>
+<div data-block_type="bx1-que" id="corty3e-ch8-p41"><p><strong>Q</strong>	What’s the point of the homogeneity of variance assumption? What can I do if it is violated?</p></div>
+<div data-block_type="bx1-ans" id="corty3e-ch8-p42"><p><strong>A</strong>	As a step in calculating the independent-samples <em>t</em> test, the two sample variances are averaged together. This only gives a meaningful result if the two variances are about the same, homogeneous, to begin with. If the only two siblings in a family are a 192-pound 15-year-old and an 8-pound newborn, it doesn’t mean much to report that the average weight of kids in that family is 100 pounds.</p></div>
+<div data-block_type="bx1-ans" id="corty3e-ch8-p43"><p>If this assumption is violated, there is a way to reduce the degrees of freedom. This correction causes the critical value of <em>t</em> to fall further out in the rare zone, making it harder to reject the null hypothesis.</p></div>
+</div></div>
+<div data-block_type="h4-txt-ni" id="corty3e-ch8-p44"><p><span data-block_type="h4-n-ri"><strong>Step 3</strong></span> <strong>List the Hypotheses.</strong> Nondirectional, or two-tailed, hypotheses are more common than directional, one-tailed hypotheses, so let’s mention those first. Nondirectional hypotheses are used when there is no prediction about which group will have a higher score than the other. In this situation, the null hypothesis will be a negative statement about the two <em>populations</em> represented by the two samples. It will say that no difference exists between the mean of one population, μ<sub>1</sub>, and the mean of the other population, μ<sub>2</sub>.</p></div>
+<div data-block_type="fn" id="corty3e-ch8-p45"><p><sup>1</sup> There are objective ways to assess the normality assumption, but they are beyond the scope of an introductory statistics book like this one. Those who go on to take more classes in statistics will learn these techniques and will be freed from having to assume that variables are normally distributed.</p></div>
+<div data-block_type="page_start" id="corty3e_page_263"><p>263</p></div>
+<div data-block_type="txt" id="corty3e-ch8-p46"><p>This doesn’t mean that the two sample means, <em>M</em><sub>1</sub> and <em>M</em><sub>2</sub>, will be exactly the same. But, the difference between the sample means should be small enough that it can be explained by sampling error if the two samples were drawn from the same population.</p></div>
+<div data-block_type="txt" id="corty3e-ch8-p47"><p>The alternative hypothesis will state that the two <em>population</em> means are different. When using a two-tailed test, the alternative hypothesis will just say that the two population means are different from each other; it won’t state the direction of the difference. The implication of the alternative hypothesis is that the two <em>sample</em> means will be different enough that sampling error is not a likely explanation for the difference.</p></div>
+<div data-block_type="txt" id="corty3e-ch8-p48"><p>Written mathematically and using the names of the conditions, the hypotheses are</p></div>
+<div data-block_type="eq" id="corty3e-ch8-p49"><p><em>H</em><sub>0</sub>: μ<sub>Shallow</sub> = μ<sub>Deep</sub></p></div>
+<div data-block_type="eq" id="corty3e-ch8-p50"><p><em>H</em><sub>1</sub>: μ<sub>Shallow</sub> ≠ μ<sub>Deep</sub></p></div>
+<div data-block_type="txt-ni" id="corty3e-ch8-p51"><p>Hypotheses like these will always be the null and alternative hypotheses used for a two-tailed independent-samples <em>t</em> test.</p></div>
+<div data-block_type="txt" id="corty3e-ch8-p52"><p>Dr. Villanova, however, has directional hypotheses and is doing a one-tailed test. Why is he doing a one-tailed test? Because the original study by Craik and Tulving in 1975 found that deep processing worked better than shallow processing, and Dr. Villanova expects that to be the case in his replication. He has made a prediction about the direction of the results in advance of collecting data, so he can do a one-tailed test.</p></div>
+<div data-block_type="txt" id="corty3e-ch8-p53"><p>One-tailed tests require a little more thought on the experimenter’s part in formulating the hypotheses. With one-tailed tests, it is easier to state the alternative hypothesis first. Dr. Villanova’s theory is that deep processing leads to better recall and the alternative hypothesis should reflect this: <em>H</em><sub>1</sub>: μ<sub>Deep</sub> &gt; μ<sub>Shallow</sub>.</p></div>
+<div data-block_type="txt" id="corty3e-ch8-p54"><p>Once the alternative hypothesis is stated, the null hypothesis is formed by making sure that the two hypotheses are all-inclusive and mutually exclusive. If the alternative hypothesis says that deep processing is better than shallow, then the null hypothesis has to say that shallow processing is as good as, or better than, deep processing. The null hypothesis for the one-tailed independent-samples <em>t</em> test would be <em>H</em><sub>0</sub>: μ<sub>Deep</sub> ≤ μ<sub>Shallow</sub>.</p></div>
+<div data-block_type="txt" id="corty3e-ch8-p55"><p>Dr. Villanova, then, would state his hypotheses as</p></div>
+<div data-block_type="eq" id="corty3e-ch8-p56"><p><em>H</em><sub>0</sub>: μ<sub>Deep</sub> ≤ μ<sub>Shallow</sub></p></div>
+<div data-block_type="eq" id="corty3e-ch8-p57"><p><em>H</em><sub>1</sub>: μ<sub>Deep</sub> ≤ μ<sub>Shallow</sub></p></div>
+<div data-block_type="h4-txt-ni" id="corty3e-ch8-p58"><p><span data-block_type="h4-n-ri"><strong>Step 4</strong></span> <strong>Set the Decision Rule.</strong> The critical value of <em>t,</em> <em>t<sub>cv</sub>,</em> is the border between the rare and common zone for the sampling distribution of <em>t.</em> <em>t<sub>cv</sub></em> is used to set the decision rule and decide whether to reject the null hypothesis for an independent-samples <em>t</em> test.</p></div>
+<div data-block_type="txt" id="corty3e-ch8-p59"><p>To find the critical value of <em>t,</em> Dr. Villanova will use <span data-type="link" data-href="corty3e-appendix01.xml#corty3e-app1-fig-8">Appendix Table 3</span>. To use this table of critical values of <em>t,</em> he needs to know three things: (1) whether he is doing a one-tailed test or a two-tailed test, (2) what alpha level he wants to use, and (3) how many degrees of freedom the test has.</p></div>
+<div data-block_type="txt" id="corty3e-ch8-p60"><p>Dr. Villanova predicted in advance of collecting the data that the deep processing participants would do better than the shallow processing participants. And, because he had directional hypotheses, he has a one-tailed test. So, he will be looking at one-tailed values of <em>t<sub>cv</sub>.</em></p></div>
+<div data-block_type="page_start" id="corty3e_page_264"><p>264</p></div>
+<div data-block_type="txt" id="corty3e-ch8-p61"><p>By convention, most researchers are willing to have a 5% chance of making a Type I error and set alpha at .05. (Type I error occurs when one erroneously rejects the null hypothesis.) As Dr. Villanova is replicating previous work, he wants to make sure that if he rejects the null hypothesis, it should have been rejected. He wants to have only a 1% chance of Type I error, so he’s setting α = .01.</p></div>
+<div data-block_type="txt" id="corty3e-ch8-p62"><p>Finally, the degrees of freedom need to be determined. The formula for calculating degrees of freedom (<em>df</em>) for an independent-samples <em>t</em> test is given in <span data-type="link" data-href="#corty3e-ch8-bx6-1">Equation 8.1</span>.</p></div>
+<div data-type="box" data-block_type="eq-t" id="corty3e-ch8-bx6-1"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="corty3e-ch8-bx6-1"><span data-block_type="sec_num">Equation 8.1</span> <span data-block_type="sec_title">Formula for Calculating Degrees of Freedom (<em>df</em>) for an Independent-Samples <em>t</em> Test</span>
+</h3>
+
+<div data-block_type="eq" id="corty3e-ch8-p63"><p><em>df</em> = <em>N</em> – 2</p></div>
+<div data-block_type="eq-txt-ni" id="corty3e-ch8-p64"><p>where <em>df</em> = degrees of freedom</p></div>
+<div data-block_type="eq-unl" id="corty3e-ch8-p65"><p><em>N</em> = total number of cases in the two groups</p></div>
+</div></div>
+<div data-block_type="txt" id="corty3e-ch8-p66"><p>For the depth of processing study, Dr. Villanova calculates <em>df</em> = 38 – 2 = 36. Looking in <span data-type="link" data-href="corty3e-appendix01.xml#corty3e-app1-fig-8">Appendix Table 3</span> at the row where <em>df</em> = 36 and under the column where α = .01, one-tailed, we find <em>t<sub>cv</sub></em> = 2.434.</p></div>
+<div data-block_type="txt" id="corty3e-ch8-p67"><p>The <em>t</em> distribution is symmetric, so this value could be either –2.434 or +2.434. As Dr. Villanova is doing a one-tailed test, he needs to decide whether his critical value of <em>t</em> will be a positive or a negative number. To do so requires knowing: (1) which mean will be subtracted from which in the numerator of <span data-type="link" data-href="#corty3e-ch8-bx6-1">Equation 8.1</span> when it is used to find the <em>t</em> value; and (2) what the sign of the difference <em>should</em> be. The expected sign of the difference is the sign to be associated with the critical value of <em>t</em> for a one-tailed test.</p></div>
+<div data-block_type="txt" id="corty3e-ch8-p68"><p>Dr. Villanova has decided that he’ll subtract the shallow processing group’s mean from the deep processing group’s mean. That is, it will be <em>M</em><sub>Deep</sub> – <em>M</em><sub>Shallow</sub>. If his theory is correct, the deep processing group will remember more words than the shallow group, and the difference will have a positive sign. This means that the critical value of <em>t</em> will be positive: 2.434. This value separates the rare zone of the sampling distribution of <em>t</em> from the common zone. The decision rule is shown in <strong><span data-type="link" data-href="corty3e-ch08.xml#corty3e-ch8-fig-6">Figure 8.3</span>,</strong> with the rare and common zones labeled. Here is how Dr. Villanova states the decision rule for his one-tailed test:</p></div>
+<div data-type="figure" data-figure-id="corty3e-ch8-fig-6" data-block_type="figure" data-layout-align="center" data-layout-width="large" data-layout-border="true">
+
+<img id="" src="asset/ch8/corty3e_fig08_03.jpg" data-figure-id="corty3e-ch8-fig-6" data-layout-width="large" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+<div data-type="figure_text">
+<span data-type="number">Figure 2.5: </span><span data-type="caption"><strong><span data-block_type="fig_num">Figure 8.3</span> The Decision Rule for an Independent-Samples <em>t</em> Test, df = 36</strong> For a one-tailed <em>t</em> test with the alpha set at .01 and 36 degrees of freedom, the critical value of <em>t</em> is 2.434.</span>
+</div>
+</div>
+<div data-block_type="page_start" id="corty3e_page_265"><p>265</p></div>
+<ul data-block_type="bullet" id="corty3e-ch8-list-4">
+<li><div data-block_type="bl-first" id="corty3e-ch8-p69"><p>If <em>t</em> ≥ 2.434, reject the null hypothesis.</p></div>
+</li>
+<li><div data-block_type="bl-last" id="corty3e-ch8-p70"><p>If <em>t</em> &lt; 2.434, fail to reject the null hypothesis.</p></div>
+</li>
+</ul>
+<div data-block_type="txt" id="corty3e-ch8-p71"><p>How would things be different if Dr. Villanova were doing a two-tailed test and had set alpha at .05? The degrees of freedom would still be 36, but <em>t<sub>cv</sub></em> would be 2.028 and the decision rule would be:</p></div>
+<ul data-block_type="bullet" id="corty3e-ch8-list-5">
+<li><div data-block_type="bl-first" id="corty3e-ch8-p72"><p>If <em>t</em> –2.028 <em>or</em> if <em>t</em> ≥ 2.028, reject the null hypothesis.</p></div>
+</li>
+<li><div data-block_type="bl-last" id="corty3e-ch8-p73"><p>If –2.028 &lt; <em>t</em> &lt; 2.028, fail to reject the null hypothesis.</p></div>
+</li>
+</ul>
+<div data-block_type="txt" id="corty3e-ch8-p74"><p>This critical value of <em>t,</em> 2.028, is closer to zero, the midpoint of the <em>t</em> distribution, than is the critical value of <em>t</em> that Dr. Villanova is actually using, 2.434. This means it would be easier to reject the null hypothesis if Dr. Villanova were using the two-tailed test with α = .05 than with the one-tailed test set at .01 that he is actually using because the rare zone would be larger. He wanted to reduce the likelihood of Type I error, so he has achieved his goal. <strong><span data-type="link" data-href="corty3e-ch08.xml#corty3e-ch8-fig-7">Table 8.3</span></strong> summarizes the decision rules for one-tailed and two-tailed two-sample <em>t</em> tests.</p></div>
+<div data-type="figure" data-figure-id="corty3e-ch8-fig-7" data-block_type="table" data-layout-align="center" data-layout-width="large" data-layout-border="true">
+
+<img id="" src="asset/ch8/corty3e_table08_03.jpg" data-figure-id="corty3e-ch8-fig-7" data-layout-width="large" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+</div>
+<div data-block_type="h4-txt-ni" id="corty3e-ch8-p75"><p><span data-block_type="h4-n-ri"><strong>Step 5</strong></span> <strong>Calculate the Test Statistic.</strong> It is now time for Dr. Villanova to calculate the test statistic, <em>t.</em> In the last chapter, it was pointed out that the formula for a single-sample <em>t</em> test, <img id="" src="asset/ch8/corty3e_ineqn08_265_01.jpg" data-figure-id="" data-layout-width="" data-mmtype="" alt="image">, was similar to the <em>z</em> score formula, <img id="" src="asset/ch8/corty3e_ineqn08_265_02.jpg" data-figure-id="" data-layout-width="" data-mmtype="" alt="image">. Though it won’t look like it by the time we see it, the independent-samples <em>t</em> test formula is also like a <em>z</em> score formula. The numerator is a deviation score, the deviation of the difference between the two sample means from the difference between the two population means: (<em>M</em><sub>1</sub> – <em>M</em><sub>2</sub>) – (μ<sub>1</sub> – μ<sub>2</sub>). Because hypothesis testing proceeds under the assumption that the null hypothesis is true, if we assume μ<sub>1</sub> = μ<sub>2</sub>, we can simplify the numerator to <em>M</em><sub>1</sub> – <em>M</em><sub>2</sub>.</p></div>
+<div data-block_type="txt" id="corty3e-ch8-p76"><p>The denominator is a standard deviation, the standard deviation of the sampling distribution of the difference scores. Standard deviations of sampling distributions are called standard errors and this one, called the standard error of the difference, is abbreviated <img id="" src="asset/ch8/corty3e_ineqn08_272_01.jpg" data-figure-id="" data-layout-width="" data-mmtype="" alt="image">. Calculating the standard error of the difference proceeds in two steps. First we need to calculate variance for the two samples combined, or pooled, and then we need to adjust this <span data-type="termref" data-term="pooled variance">pooled variance</span> to turn it into a standard error. <span data-type="link" data-href="#corty3e-ch8-bx6-2">Equation 8.2</span> gives the formula for calculating the pooled variance.</p></div>
+<div data-type="box" data-block_type="eq-t" id="corty3e-ch8-bx6-2"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="corty3e-ch8-bx6-2"><span data-block_type="sec_num">Equation 8.2</span> <span data-block_type="sec_title">Formula for Calculating the Pooled Variance for an Independent-Samples <em>t</em> Test</span>
+</h3>
+
+<div data-block_type="page_start" id="corty3e_page_266"><p>266</p></div>
+<div data-block_type="equation" id="corty3e-ch8-eqn-1"><p>
+<img id="" src="asset/ch8/corty3e_eqn08_266_05.jpg" data-figure-id="" data-layout-width="" data-mmtype="" alt="image"></p></div>
+<div data-block_type="equation" id="corty3e-ch8-eqn-2"><p>
+<img id="" src="asset/ch8/corty3e_eqn08_266_01.jpg" data-figure-id="" data-layout-width="" data-mmtype="" alt="image"></p></div>
+<div data-block_type="eq-unl" id="corty3e-ch8-p77"><p><em>n</em><sub>1</sub> = the sample size for Group (sample) 1</p></div>
+<div data-block_type="equation" id="corty3e-ch8-eqn-3"><p>
+<img id="" src="asset/ch8/corty3e_eqn08_266_02.jpg" data-figure-id="" data-layout-width="" data-mmtype="" alt="image"></p></div>
+<div data-block_type="eq-unl" id="corty3e-ch8-p78"><p><em>n</em><sub>2</sub> = the sample size for Group (sample) 2</p></div>
+<div data-block_type="equation" id="corty3e-ch8-eqn-4"><p>
+<img id="" src="asset/ch8/corty3e_eqn08_266_03.jpg" data-figure-id="" data-layout-width="" data-mmtype="" alt="image"></p></div>
+<div data-block_type="eq-unl" id="corty3e-ch8-p79"><p><em>df</em> = the degrees of freedom (<em>N</em> – 2)</p></div>
+</div></div>
+<div data-block_type="txt" id="corty3e-ch8-p80"><p>This equation says the pooled variance is calculated by multiplying each sample variance by 1 less than the number of cases that are in its sample and adding together these products. That sum is then divided by 2 less than the total number of cases, which is the same as the degrees of freedom.</p></div>
+<div data-block_type="txt" id="corty3e-ch8-p81"><p>Let’s follow Dr. Villanova as he plugs in the values from his depth of processing study into <span data-type="link" data-href="#corty3e-ch8-bx6-2">Equation 8.2</span>. Remember, the shallow processing group had 18 cases, with a standard deviation of 1.54; the sample size and standard deviation for the deep processing group were 20 and 2.74, respectively. The equation calls for variances, not standard deviations, but a variance is simply a squared standard deviation, so we are OK. And the equation calls for the degrees of freedom, which we calculated in the previous step as <em>N</em> – 2 = 38 – 2 = 36:</p></div>
+<div data-block_type="equation" id="corty3e-ch8-eqn-5"><p>
+<img id="" src="asset/ch8/corty3e_eqn08_266_06.jpg" data-figure-id="" data-layout-width="" data-mmtype="" alt="image"></p></div>
+<div data-block_type="txt" id="corty3e-ch8-p82"><p>The pooled variance is 5.08. We can now use the pooled variance to find the standard error of the mean by using <span data-type="link" data-href="#corty3e-ch8-bx6-3">Equation 8.3</span>.</p></div>
+<div data-type="box" data-block_type="eq-t" id="corty3e-ch8-bx6-3"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="corty3e-ch8-bx6-3"><span data-block_type="sec_num">Equation 8.3</span> <span data-block_type="sec_title">Formula for the Standard Error of the Mean, <em>s</em><sub>M<sub>1</sub>-M<sub>2</sub></sub>, for an Independent-Samples <em>t</em> test</span>
+</h3>
+
+<div data-block_type="equation" id="corty3e-ch8-eqn-6"><p>
+<img id="" src="asset/ch8/corty3e_eqn08_266_07.jpg" data-figure-id="" data-layout-width="" data-mmtype="" alt="image"></p></div>
+<div data-block_type="equation" id="corty3e-ch8-eqn-7"><p>
+<img id="" src="asset/ch8/corty3e_eqn08_266_08.jpg" data-figure-id="" data-layout-width="" data-mmtype="" alt="image"></p></div>
+<div data-block_type="eq-unl" id="corty3e-ch8-p83"><p><em>s</em><sup>2</sup><sub>Pooled</sub> = the pooled variance (from <span data-type="link" data-href="#corty3e-ch8-bx6-2">Equation 8.2</span>)</p></div>
+<div data-block_type="eq-unl" id="corty3e-ch8-p84"><p><em>N</em> = the total number of cases</p></div>
+<div data-block_type="eq-unl" id="corty3e-ch8-p85"><p><em>n</em><sub>1</sub> = the number of cases in Group 1</p></div>
+<div data-block_type="eq-unl" id="corty3e-ch8-p86"><p><em>n</em><sub>2</sub> = the number of cases in Group 2</p></div>
+</div></div>
+<div data-block_type="page_start" id="corty3e_page_267"><p>267</p></div>
+<div data-block_type="txt" id="corty3e-ch8-p87"><p>This formula says that to find the standard error of the difference, one finds the quotient of the total sample size divided by the two individual sample sizes multiplied together. This quotient is multiplied by the pooled variance. Finally, in a step that is often overlooked, the square root of the product is found. In essence, this is similar to what was done in calculating the standard error of the mean, where the standard deviation was divided by the square root of <em>N</em>.</p></div>
+<div data-block_type="txt" id="corty3e-ch8-p88"><p>Let’s do the math for the shallow vs. deep processing study:</p></div>
+<div data-block_type="equation" id="corty3e-ch8-eqn-8"><p>
+<img id="" src="asset/ch8/corty3e_eqn08_267_01.jpg" data-figure-id="" data-layout-width="" data-mmtype="" alt="image"></p></div>
+<div data-block_type="txt" id="corty3e-ch8-p89"><p>At this point, the hardest part of calculating an independent-samples <em>t</em> test is over and Dr. Villanova knows that the standard error of the mean is 0.73. All that is left to do is use the formula in <span data-type="link" data-href="#corty3e-ch8-bx6-4">Equation 8.4</span> to find <em>t.</em></p></div>
+<div data-type="box" data-block_type="eq-t" id="corty3e-ch8-bx6-4"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="corty3e-ch8-bx6-4"><span data-block_type="sec_num">Equation 8.4</span> <span data-block_type="sec_title">Formula for an Independent-Samples <em>t</em> Test</span>
+</h3>
+
+<div data-block_type="equation" id="corty3e-ch8-eqn-9"><p>
+<img id="" src="asset/ch8/corty3e_eqn08_267_02.jpg" data-figure-id="" data-layout-width="" data-mmtype="" alt="image"></p></div>
+<div data-block_type="eq-txt-ni" id="corty3e-ch8-p90"><p>where <em>t</em> = the independent-samples <em>t</em> test value</p></div>
+<div data-block_type="eq-unl" id="corty3e-ch8-p91"><p><em>M</em><sub>1</sub> = the mean of Group (sample) 1</p></div>
+<div data-block_type="eq-unl" id="corty3e-ch8-p92"><p><em>M</em><sub>2</sub> = the mean of Group (sample) 2</p></div>
+<div data-block_type="equation" id="corty3e-ch8-eqn-10"><p>
+<img id="" src="asset/ch8/corty3e_eqn08_267_03.jpg" data-figure-id="" data-layout-width="" data-mmtype="" alt="image"></p></div>
+</div></div>
+<div data-block_type="txt" id="corty3e-ch8-p93"><p><span data-type="link" data-href="#corty3e-ch8-bx6-4">Equation 8.4</span> says that an independent-samples <em>t</em> value is calculated by dividing the numerator, the difference between the two sample means, by the denominator, the standard error of the difference. Dr. Villanova, because he is doing a one-tailed test, has already decided that he will be subtracting the shallow processing group’s mean, 3.50, from the deep processing group’s mean, 8.30:</p></div>
+<div data-block_type="equation" id="corty3e-ch8-eqn-11"><p>
+<img id="" src="asset/ch8/corty3e_eqn08_267_04.jpg" data-figure-id="" data-layout-width="" data-mmtype="" alt="image"></p></div>
+<div data-block_type="page_start" id="corty3e_page_268"><p>268</p></div>
+<div data-block_type="txt" id="corty3e-ch8-p94"><p>The test statistic <em>t</em> that Dr. Villanova calculated for his independent-samples <em>t</em> test is 6.58 and Step 5 of the hypothesis test is over. We’ll follow Dr. Villanova as he covers Step 6, interpretation, after working through the first five steps with another example.</p></div>
+<div data-type="box" data-block_type="sr-exp-n" id="corty3e-ch8-bx3-1"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="corty3e-ch8-bx3-1">Worked Example 8.1</h3>
+<div data-block_type="sr-ex-txt-ni" id="corty3e-ch8-p95"><p>For practice with an independent-samples <em>t</em> test, let’s use an urban example. Dr. Risen, an environmental psychologist, wondered if temperature affected the pace of life. She went to Fifth Avenue in New York City, randomly selected pedestrians who were walking alone, timed how long it took them to walk a block, and converted this into miles per hour (mph).</p></div>
+<div data-block_type="sr_exp_txt" id="corty3e-ch8-p96"><p>She did this on two days, one a 20°F day in January and the other a 72°F day in June. Each time, she used the same day of the week and the same hour of the day. She also made sure that on both days there were blue skies and no obstructions, like snow or trash, on the sidewalk. On the cold day she timed 33 people, and on the warm day she timed 28. Her total sample size, <em>N,</em> was 61.</p></div>
+<div data-block_type="sr_exp_txt" id="corty3e-ch8-p97"><p>The results, displayed in <strong><span data-type="link" data-href="corty3e-ch08.xml#corty3e-ch8-fig-19">Figure 8.4</span></strong>, show that people walked faster on the cold day (<em>M</em> = 3.05 mph, <em>s</em> = 0.40 mph) than on the warm day (<em>M</em> = 2.90 mph, <em>s</em> = 0.39 mph). The results suggest that people pick up their pace when it is cold outside. Let’s follow Dr. Risen as she determines if the effect is a statistically significant one. To do so, she’ll use the six steps of hypothesis testing. We’ll follow her through the first five steps in this section and then tag along for the sixth step, interpretation, in the next part of this chapter.</p></div>
+<div data-type="figure" data-figure-id="corty3e-ch8-fig-19" data-block_type="figure" data-layout-align="center" data-layout-width="medium" data-layout-border="true">
+
+<img id="" src="asset/ch8/corty3e_fig08_04.jpg" data-figure-id="corty3e-ch8-fig-19" data-layout-width="medium" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+<div data-type="figure_text">
+<span data-type="number">Figure 2.7: </span><span data-type="caption"><strong><span data-block_type="fig_num">Figure 8.4</span> Box-and-Whisker Plots Showing the Effect of Temperature on Walking Time</strong> The middle 50% of cases (those in the box) look like they are walking a little faster on cold days than on warm days. In order to determine if the effect is a statistically significant one, however, a hypothesis test will need to be completed.</span>
+</div>
+</div>
+<div data-block_type="sr_exp_h4_txt" id="corty3e-ch8-p98"><p><span data-block_type="h4-n-ri"><strong>Step 1</strong></span> <strong>Pick a Test.</strong> Two groups of people, those walking on a cold day vs. those walking on a warm day, are being compared in terms of mean walking speed. This calls for a two-sample <em>t</em> test. Using <span data-type="link" data-href="corty3e-ch08.xml#corty3e-ch8-fig-5">Table 8.2</span>, Dr. Risen concludes that the samples are independent—each sample is a random sample from its respective population, the cases in the two samples aren’t paired, and the two sample sizes are different. Thus, the appropriate test is the independent-samples <em>t</em> test.</p></div>
+<div data-block_type="page_start" id="corty3e_page_269"><p>269</p></div>
+<div data-block_type="sr_exp_h4_txt" id="corty3e-ch8-p99"><p><span data-block_type="h4-n-ri"><strong>Step 2</strong></span> <strong>Check the Assumptions.</strong></p></div>
+<ul data-block_type="bullet" id="corty3e-ch8-list-6">
+<li><div data-block_type="sr-exp-bl-first" id="corty3e-ch8-p100"><p>The random samples assumption is not violated as pedestrians were randomly selected.</p></div>
+</li>
+<li><div data-block_type="sr-exp-bl-mid" id="corty3e-ch8-p101"><p>The independence of observations assumption is not violated. Only one case was observed at a time, each person was walking alone, and no person was timed twice. So, no other cases influenced a case.</p></div>
+</li>
+<li><div data-block_type="sr-exp-bl-mid" id="corty3e-ch8-p102"><p>The normality assumption is not violated. Dr. Risen is willing to assume that a physical trait, like walking speed, is normally distributed. Plus, her sample size is large, greater than 50, and this assumption is robust if the sample size is large.</p></div>
+</li>
+<li><div data-block_type="sr-exp-bl-last" id="corty3e-ch8-p103"><p>The homogeneity of variance assumption is not violated. The two standard deviations are almost exactly the same (<em>s</em><sub>Cold</sub> = 0.40 mph and <em>s</em><sub>Warm</sub> = 0.39 mph).</p></div>
+</li>
+</ul>
+<div data-block_type="sr_exp_h4_txt" id="corty3e-ch8-p104"><p><span data-block_type="h4-n-ri"><strong>Step 3</strong></span> <strong>List the Hypotheses.</strong> Dr. Risen is doing an exploratory study. She’s investigating whether temperature affects the pace of life. Hence, her test is two-tailed, and her hypotheses are nondirectional:</p></div>
+<div data-block_type="sr-exp-eq" id="corty3e-ch8-p105"><p><em>H</em><sub>0</sub>: μ<sub>Cold</sub> = μ<sub>Warm</sub></p></div>
+<div data-block_type="sr-exp-eq" id="corty3e-ch8-p106"><p><em>H</em><sub>1</sub>: μ<sub>Cold</sub> ≠ μ<sub>Warm</sub></p></div>
+<div data-block_type="sr_exp_txt" id="corty3e-ch8-p107"><p>The null hypothesis says that there is no difference in walking speed in cold weather vs. walking speed in warm weather for the two populations. The alternative hypothesis says that the two population means—walking speed in cold weather vs. walking speed in warm weather—are different.</p></div>
+<div data-block_type="sr_exp_h4_txt" id="corty3e-ch8-p108"><p><span data-block_type="h4-n-ri"><strong>Step 4</strong></span> <strong>Set the Decision Rule.</strong> To set the decision rule, Dr. Risen must find a critical value of <em>t</em> in <span data-type="link" data-href="corty3e-appendix01.xml#corty3e-app1-fig-8">Appendix Table 3</span>. To do so, she needs three pieces of information: (1) whether the test is one-tailed or two-tailed, (2) what alpha level is selected, and (3) how many degrees of freedom there are.</p></div>
+<ol data-block_type="numbered" id="corty3e-ch8-list-7">
+<li><div data-block_type="sr-exp-nl-first" id="corty3e-ch8-p109"><p>The hypotheses were nondirectional, so she’s doing a two-tailed test.</p></div>
+</li>
+<li><div data-block_type="sr-exp-nl-mid" id="corty3e-ch8-p110"><p>She’s willing to run the standard, 5%, risk of making a Type I error, so α = .05.</p></div>
+</li>
+<li><div data-block_type="sr-exp-nl-last" id="corty3e-ch8-p111"><p>Applying <span data-type="link" data-href="#corty3e-ch8-bx6-1">Equation 8.1</span> to her total sample size, <em>N</em> = 61, she calculates degrees of freedom as <em>df</em> = 61 – 2 = 59.</p></div>
+</li>
+</ol>
+<div data-block_type="sr_exp_txt" id="corty3e-ch8-p112"><p>Turning to the table of critical values of <em>t,</em> she looks for the intersection of the column for a two-tailed test with α = .05, the bolded column, and the row for <em>df</em> = 59. However, there is no row for <em>df</em> = 59. What should she do? She’ll follow <em>The</em> <em>Price Is Right</em> rule (see <span data-type="link" data-href="corty3e-ch07.xml">Chapter 7</span>) and use the critical value found in the row for the degrees of freedom that are closest to her actual degrees of freedom without going over it. In this instance, that means the row with <em>df</em> = 55. The critical value of <em>t</em> is ±2.004. The sampling distribution of <em>t</em> with this critical value of <em>t</em> is shown in <strong><span data-type="link" data-href="corty3e-ch08.xml#corty3e-ch8-fig-20">Figure 8.5</span></strong>.</p></div>
+<div data-type="figure" data-figure-id="corty3e-ch8-fig-20" data-block_type="figure" data-layout-align="center" data-layout-width="large" data-layout-border="true">
+
+<img id="" src="asset/ch8/corty3e_fig08_05.jpg" data-figure-id="corty3e-ch8-fig-20" data-layout-width="large" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+<div data-type="figure_text">
+<span data-type="number">Figure 2.8: </span><span data-type="caption"><strong><span data-block_type="fig_num">Figure 8.5</span> The Critical Value of <em>t</em> for the Walking Speed Study</strong> For a two-tailed <em>t</em> test with the alpha set at .05 and 55 degrees of freedom, the critical value of <em>t</em> is ±2.004. Note that the critical value associated with <em>df</em> = 55 is being used because this is the value closest to, without going over, the actual degrees of freedom of 59.</span>
+</div>
+</div>
+<div data-block_type="sr_exp_txt" id="corty3e-ch8-p113"><p>Here’s her decision rule:</p></div>
+<ul data-block_type="bullet" id="corty3e-ch8-list-8">
+<li><div data-block_type="sr-exp-bl-first" id="corty3e-ch8-p114"><p>If <em>t</em> ≤ –2.004 <em>or</em> if <em>t</em> ≥ 2.004, reject the null hypothesis.</p></div>
+</li>
+<li><div data-block_type="sr-exp-bl-last" id="corty3e-ch8-p115"><p>If –2.004 &lt; <em>t</em> &lt; 2.004, fail to reject the null hypothesis.</p></div>
+</li>
+</ul>
+<div data-block_type="page_start" id="corty3e_page_270"><p>270</p></div>
+<div data-type="box" data-block_type="bx-1-h" id="corty3e-ch8-bx1-2"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="corty3e-ch8-bx1-2">A Common Question</h3>
+<div data-block_type="bx1-que" id="corty3e-ch8-p116"><p><strong>Q</strong> Why do statisticians use <em>The Price Is Right</em> rule and, if the actual degrees of freedom aren’t in the table of critical values, use the value that is closest without going over the actual value?</p></div>
+<div data-block_type="bx1-ans" id="corty3e-ch8-p117"><p><strong>A</strong> Statisticians like to make it difficult to reject the null hypothesis. Using a critical value associated with a smaller number of degrees of freedom means that the rare zone is smaller and so it is harder to reject the null hypothesis.</p></div>
+</div></div>
+<div data-block_type="sr_exp_h4_txt" id="corty3e-ch8-p118"><p><span data-block_type="h4-n-ri"><strong>Step 5</strong></span> <strong>Calculate the Test Statistic.</strong> The first step in finding the <em>t</em> value is to use <span data-type="link" data-href="#corty3e-ch8-bx6-2">Equation 8.2</span> to calculate the pooled variance. Once that is done, Dr. Risen can use <span data-type="link" data-href="#corty3e-ch8-bx6-3">Equation 8.3</span> to find the standard error of the difference and <span data-type="link" data-href="#corty3e-ch8-bx6-4">Equation 8.4</span> to calculate the value of the test statistic.</p></div>
+<div data-block_type="sr_exp_txt" id="corty3e-ch8-p119"><p>As a reminder, here is the information Dr. Risen has to work with:</p></div>
+<ul data-block_type="bullet" id="corty3e-ch8-list-9">
+<li><div data-block_type="sr-exp-bl-first" id="corty3e-ch8-p120"><p>Cold day: <em>n</em> = 33, <em>M</em> = 3.05 (mph), <em>s</em> = 0.40 (mph)</p></div>
+</li>
+<li><div data-block_type="sr-exp-bl-last" id="corty3e-ch8-p121"><p>Warm day: <em>n</em> = 28, <em>M</em> = 2.90 (mph), <em>s</em> = 0.39 (mph)</p></div>
+</li>
+</ul>
+<div data-block_type="sr_exp_txt_ni" id="corty3e-ch8-p122"><p>Let’s follow as Dr. Risen plugs the values into <span data-type="link" data-href="#corty3e-ch8-bx6-2">Equation 8.2</span> to find <img id="" src="asset/ch8/corty3e_ineqn08_270_01.jpg" data-figure-id="" data-layout-width="" data-mmtype="" alt="image">:</p></div>
+<div data-block_type="equation" id="corty3e-ch8-eqn-12"><p>
+<img id="" src="asset/ch8/corty3e_eqn08_270_01.jpg" data-figure-id="" data-layout-width="" data-mmtype="" alt="image"></p></div>
+<div data-block_type="page_start" id="corty3e_page_271"><p>271</p></div>
+<div data-block_type="sr_exp_txt_ni" id="corty3e-ch8-p123"><p>The next step is to use <span data-type="link" data-href="#corty3e-ch8-bx6-3">Equation 8.3</span> to find the standard error of the difference:</p></div>
+<div data-block_type="equation" id="corty3e-ch8-eqn-13"><p>
+<img id="" src="asset/ch8/corty3e_eqn08_271_01.jpg" data-figure-id="" data-layout-width="" data-mmtype="" alt="image"></p></div>
+<div data-block_type="sr_exp_txt" id="corty3e-ch8-p124"><p>Now that she knows <img id="" src="asset/ch8/corty3e_ineqn08_271_01.jpg" data-figure-id="" data-layout-width="" data-mmtype="" alt="image">, Dr. Risen can go on to complete <span data-type="link" data-href="#corty3e-ch8-bx6-4">Equation 8.4</span> and find the <em>t</em> value:</p></div>
+<div data-block_type="equation" id="corty3e-ch8-eqn-14"><p>
+<img id="" src="asset/ch8/corty3e_eqn08_271_02.jpg" data-figure-id="" data-layout-width="" data-mmtype="" alt="image"></p></div>
+<div data-block_type="sr_exp_txt_ni" id="corty3e-ch8-p125"><p>The value of the test statistic, <em>t,</em> is 1.50. This completes Step 5.</p></div>
+<div data-type="box" data-block_type="bx-1-h" id="corty3e-ch8-bx1-3"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="corty3e-ch8-bx1-3">A Common Question</h3>
+<div data-block_type="bx1-que" id="corty3e-ch8-p126"><p><strong>Q</strong> Is it possible to calculate the standard error of the estimate without computing the pooled variance first?</p></div>
+<div data-block_type="bx1-ans" id="corty3e-ch8-p127"><p><strong>A</strong> With a little algebraic rearranging, almost anything is possible. Here is the combination of <span data-type="link" data-href="#corty3e-ch8-bx6-2">Equations 8.2</span> and <span data-type="link" data-href="#corty3e-ch8-bx6-3">8.3</span>:</p></div>
+<div data-block_type="equation" id="corty3e-ch8-eqn-15"><p>
+<img id="" src="asset/ch8/corty3e_eqn08_271_03.jpg" data-figure-id="" data-layout-width="" data-mmtype="" alt="image"></p></div>
+</div></div>
+</div></div>
+<div data-type="box" data-block_type="sr-h" id="corty3e-ch8-bx2-2"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="corty3e-ch8-bx2-2">Practice Problems 8.2</h3>
+<div data-block_type="sr-h1" id="corty3e-ch8-p128"><p><strong>Apply Your Knowledge</strong></p></div>
+<div data-block_type="sr-que-nl" id="corty3e-ch8-p129"><p><span data-block_type="question_num">8.04</span> Previous research has shown that people who have served in the U.S. Armed Forces feel more patriotic about America. A researcher obtains a sample of veterans and a sample of nonveterans, and administers the interval level Sense of Patriotism Scale (SPS). Higher scores on the SPS indicate greater patriotism. The researcher expects to replicate previous research. Write the researcher’s null and alternative hypotheses.</p></div>
+<div data-block_type="page_start" id="corty3e_page_272"><p>272</p></div>
+<div data-block_type="sr-que-nl" id="corty3e-ch8-p130"><p><span data-block_type="question_num">8.05</span> If <em>n</em><sub>1</sub> = 12, <em>s</em><sub>1</sub> = 4, <em>n</em><sub>2</sub> = 16, and <em>s</em><sub>2</sub> = 3, calculate <img id="" src="asset/ch8/corty3e_ineqn08_270_01.jpg" data-figure-id="" data-layout-width="" data-mmtype="" alt="image"> and <img id="" src="asset/ch8/corty3e_ineqn08_272_01.jpg" data-figure-id="" data-layout-width="" data-mmtype="" alt="image">.</p></div>
+<div data-block_type="sr-que-nl" id="corty3e-ch8-p131"><p><span data-block_type="question_num">8.06</span> If <em>M</em><sub>1</sub> = 99, <em>M</em><sub>2</sub> = 86, and <img id="" src="asset/ch8/corty3e_ineqn08_272_02.jpg" data-figure-id="" data-layout-width="" data-mmtype="" alt="image"> calculate <em>t.</em></p></div>
+</div></div>
+</div>
+<!-- #x-digfir-subsection-insertion-point --></div><!-- /#manuscript -->
+<br class="clear" />
+<!-- end of material in original view -->
+
+	<!--[if IE]><script type="text/javascript" src="js/excanvas.compiled.js"></script><![endif]-->
+    
+<script type="text/javascript" src="js/utilities.js"></script>
+<script type="text/javascript" src="js/query_types.js"></script>
+<script type="text/javascript" src="js/player.js"></script>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/jquery-ui-1.8.16.custom.min.js"></script>
+<script type="text/javascript" src="js/jquery_extensions.js"></script>
+<script type="text/javascript" src="js/swfobject.js"></script>
+<script type="text/javascript" src="http://admin.brightcove.com/js/BrightcoveExperiences.js"></script>
+<script type="text/javascript" src="js/digfir_ebook_fw.js"></script>
+<script type="text/javascript" src="js/corty3e.js"></script>
+<script type="text/javascript" src="js/corty3e_ch8.js"></script>
+<script type="text/javascript">
+    //<!--
+    
+$(window).ready(function () {
+	player.initialize('56d62c10757a2e350d000000');
+});
+    //-->
+</script>
+</body>
+</html>
+

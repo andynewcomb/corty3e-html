@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]> <html lang="en" class="no-js ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="no-js ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="no-js ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en" class="no-js ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+<head>
+    <title>corty3e_ch6</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <link href="css/boilerplate.css" media="screen" rel="stylesheet" type="text/css" >
+<link href="css/jquery-ui-custom.css" media="screen" rel="stylesheet" type="text/css" >
+<link href="css/manuscript.css" media="screen" rel="stylesheet" type="text/css" >
+<link href="css/digfir_ebook_fw.css" media="screen" rel="stylesheet" type="text/css" >
+<link href="css/corty3e.css" media="screen" rel="stylesheet" type="text/css" >
+<link href="css/corty3e_ch6.css" media="screen" rel="stylesheet" type="text/css" >    
+    
+    </head>
+<body class="noUi">
+<div id="manuscript" data-chapter-number="1">
+    <div data-type="section" data-block_type="h1" id="corty3e-ch6-sec1-2" level="1" data-print_page="182">
+<h2 class="section-title"><span data-type="title" data-title-for="corty3e-ch6-sec1-2"><span data-block_type="sec_num">6.2</span> <span data-block_type="sec_title">Hypothesis Testing in Action</span>
+</span></h2>
+
+<div data-type="box" data-block_type="video" id="corty3e-ch6-video-2"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="corty3e-ch6-video-2"></h3>
+<div data-block_type="vidtxt" id="corty3e-ch6-videotxt-2"><p><span data-type="link" data-href-px="" data-href="http://bcs.whfreeman.com/webpub/statistics/ips7e/student/Stat Videos/ch06/sc_hypothesistest_introII.html" data-target="_pop"><img id="" src="asset/images/video.jpg" data-figure-id="" data-layout-width="" data-mmtype="" alt="image"></span><em>StatClips: Hypothesis Testing Introduction, Part II, Acid Rain Example</em>Video on LaunchPad</p></div>
+</div></div>
+<div data-type="box" data-block_type="video" id="corty3e-ch6-video-3"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="corty3e-ch6-video-3"></h3>
+<div data-block_type="vidtxt" id="corty3e-ch6-videotxt-3"><p><span data-type="link" data-href-px="" data-href="http://bcs.whfreeman.com/webpub/statistics/ips7e/student/Stat Videos/ch06/sc_pvalue.html" data-target="_pop"><img id="" src="asset/images/video.jpg" data-figure-id="" data-layout-width="" data-mmtype="" alt="image"></span><em>StatClips: p-Value Interpretation</em>Video on LaunchPad</p></div>
+</div></div>
+<div data-block_type="txt-ni" id="corty3e-ch6-p35"><p>Let’s put the 10 facts about hypothesis testing to work. Let’s suppose a psychologist, Dr. Pell, wonders whether children who are adopted differ in intelligence from nonadopted children. To explore this, she obtains a random sample of 72 children from the population of adopted children in the United States and gives each of them an IQ test. She finds that the mean IQ of these 72 children is 104.5. Knowing that the average IQ for children in the United States is 100 with a standard deviation of 15, can she conclude that adopted kids differ in intelligence from the general population?</p></div>
+<div data-block_type="page_start" id="corty3e_page_183"><p>183</p></div>
+<div data-block_type="txt" id="corty3e-ch6-p36"><p>It is tempting to say that the answer is obvious. 104.5 is a bigger number than 100, so it is true that adopted kids differ from the general population of kids. But, that’s not how statisticians think.</p></div>
+<div data-block_type="txt" id="corty3e-ch6-p37"><p>Remember sampling error, introduced in <span data-type="link" data-href="corty3e-ch05.xml">Chapter 5</span>? Because of sampling error, researchers don’t expect a sample mean to be exactly the same as the population mean. With a population mean for IQ of 100, Dr. Pell can expect the sample mean to be close to 100, but not exactly 100.</p></div>
+<div data-block_type="txt" id="corty3e-ch6-p38"><p>So, here’s the question for Dr. Pell to ask: Is 104.5 close enough to 100 that sampling error can explain it? If so, then there’s no reason to think adopted kids differ from the average IQ. However, if sampling error fails as a reasonable explanation for the difference, then she can conclude that adopted kids differ in intelligence.</p></div>
+</div>
+    <div data-type="section" data-block_type="h2" id="corty3e-ch6-sec2-2" level="2" data-print_page="183">
+<h2 class="section-title"><span data-type="title" data-title-for="corty3e-ch6-sec2-2">The Six Steps of Hypothesis Testing
+</span></h2>
+
+<div data-block_type="txt-ni" id="corty3e-ch6-p39"><p>Learning how to complete a statistical test is like learning how to cook—it’s better to follow a recipe. That’s why we’re going to use a six-step “recipe” for hypothesis testing. Here are the six steps:</p></div>
+<div data-block_type="h4-txt-ni" id="corty3e-ch6-p40"><p><span data-block_type="h4-N-ri1"><strong>Step 1</strong></span> <span data-block_type="SR-X-h4-T-ri"><strong>Test:</strong></span> Pick the right statistical test.</p></div>
+<div data-block_type="h4-txt-ni" id="corty3e-ch6-p41"><p><span data-block_type="h4-N-ri1"><strong>Step 2</strong></span> <span data-block_type="SR-X-h4-T-ri"><strong>Assumptions:</strong></span> Check the assumptions to make sure it is OK to do the test.</p></div>
+<div data-block_type="h4-txt-ni" id="corty3e-ch6-p42"><p><span data-block_type="h4-N-ri1"><strong>Step 3</strong></span> <span data-block_type="SR-X-h4-T-ri"><strong>Hypotheses:</strong></span> List the null and alternative hypotheses.</p></div>
+<div data-block_type="h4-txt-ni" id="corty3e-ch6-p43"><p><span data-block_type="h4-N-ri1"><strong>Step 4</strong></span> <span data-block_type="SR-X-h4-T-ri"><strong>Decision rule:</strong></span> Find the critical value of the statistic that determines when to reject the null hypothesis.</p></div>
+<div data-block_type="h4-txt-ni" id="corty3e-ch6-p44"><p><span data-block_type="h4-N-ri1"><strong>Step 5</strong></span> <span data-block_type="SR-X-h4-T-ri"><strong>Calculation:</strong></span> Calculate the value of the test statistic.</p></div>
+<div data-block_type="h4-txt-ni" id="corty3e-ch6-p45"><p><span data-block_type="h4-N-ri1"><strong>Step 6</strong></span> <span data-block_type="SR-X-h4-T-ri"><strong>Interpretation:</strong></span> State in plain language what the results mean.</p></div>
+<div data-block_type="txt" id="corty3e-ch6-p46"><p>Here’s a mnemonic to help remember the six steps in order: “Tom and Harry despise crabby infants.” The first letters of the six words in the mnemonic stand for “<strong>T</strong>est,” “<strong>A</strong>ssumptions,” “<strong>H</strong>ypotheses,” “<strong>D</strong>ecision rule,” “<strong>C</strong>alculation,” and “<strong>I</strong>nterpretation.” First, let’s walk through the steps, then follow Dr. Pell as she applies them to the adoption IQ study.</p></div>
+<div data-type="figure" data-figure-id="corty3e-ch6-fig-3" data-block_type="un_figure" data-layout-align="center" data-layout-width="large" data-layout-border="true">
+
+<img id="" src="asset/ch6/corty3e_fig06_un02.jpg" data-figure-id="corty3e-ch6-fig-3" data-layout-width="large" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+<div data-type="figure_text"><span data-type="caption">A mnemonic to remember the six steps of hypothesis testing (<strong>t</strong>est, <strong>a</strong>ssumptions, <strong>h</strong>ypotheses, <strong>d</strong>ecision rule, <strong>c</strong>alculation, <strong>i</strong>nterpretation): “Tom and Harry despise crabby infants.”</span></div>
+</div>
+<div data-block_type="page_start" id="corty3e_page_184"><p>184</p></div>
+<div data-block_type="h4-txt-ni" id="corty3e-ch6-p47"><p><span data-block_type="h4-N-ri1"><strong>Step 1</strong></span> <span data-block_type="SR-X-h4-T-ri"><strong>Pick a Test</strong></span></p></div>
+<div data-type="figure" data-figure-id="corty3e-ch6-fig-4" data-block_type="un_figure" data-layout-align="right" data-layout-width="small" data-layout-border="true">
+
+<img id="" src="asset/ch6/corty3e_fig06_un03.jpg" data-figure-id="corty3e-ch6-fig-4" data-layout-width="small" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+<div data-type="figure_text"><span data-type="caption">Picking the right test requires thought.</span></div>
+</div>
+<div data-block_type="txt-ni" id="corty3e-ch6-p48"><p>The first step in hypothesis testing is picking which test to use. There are hundreds of statistical tests, each designed for a specific purpose. Choosing the correct test depends on a variety of factors such as the question being asked, the type of study being done, and the level of measurement of the data. In <span data-type="link" data-href="corty3e-ch16.xml">Chapter 16</span>, there are flowcharts that guide one through choosing the correct hypothesis test. Feel free to peek ahead and take a look at them.</p></div>
+<div data-block_type="h4-txt-ni" id="corty3e-ch6-p49"><p><span data-block_type="h4-N-ri1"><strong>Step 2</strong></span> <span data-block_type="SR-X-h4-T-ri"><strong>Check the Assumptions</strong></span></p></div>
+<div data-block_type="txt-ni" id="corty3e-ch6-p50"><p>All statistical tests have assumptions, conditions that need to be met before a test is completed. If the assumptions aren’t met, then researchers can’t be sure what the results of the test mean.</p></div>
+<div data-block_type="txt" id="corty3e-ch6-p51"><p>Here’s a nonstatistics explanation about the role of assumptions. In this day and age, athletes are tested for performance-enhancing substances. The drug test depends on a number of assumptions. For the test to be meaningful, it is assumed that the sample being tested is the athlete’s, that the sample was stored at the right temperature after it was taken, that no one has tampered with the sample, and that the machine being used to test it is correctly calibrated.</p></div>
+<div data-block_type="txt" id="corty3e-ch6-p52"><p>Imagine that an athlete wins a race, provides a urine sample, and it is tested on an incorrectly calibrated machine. The assumption that the machine is calibrated correctly has been violated. Suppose the results indicate that the urine does not test positive for performance-enhancing substances. Is that true? Maybe it is, maybe it isn’t. When an assumption is violated, it is still physically possible to complete the test. But, one should not because it is impossible to interpret the results.</p></div>
+<div data-block_type="txt" id="corty3e-ch6-p53"><p>As hypothesis tests are covered, their assumptions will be listed to make sure one knows the conditions that must be met to proceed with the test. There are two types of assumptions: <em>not robust</em> and <em>robust.</em> A <span data-type="termref" data-term="nonrobust assumption">nonrobust assumption</span> has to be met for the test to proceed. If a nonrobust assumption is violated, a researcher should stop proceeding with the planned statistical test. A <span data-type="termref" data-term="robust assumption">robust assumption</span> can be violated, to some degree, and the test can still be completed and interpreted.</p></div>
+<div data-block_type="txt" id="corty3e-ch6-p54"><p>Here is a way to think about the difference between the two assumptions. People can be described as being in “robust” health or not. Imagine that Carl is not in robust health––he has a compromised immune system. In fact, his health is so bad that he is in an isolation ward in the hospital. One day he gets a visitor who has the flu and who sneezes while in the room. Carl, whose health has just been violated, is likely to get the flu. In contrast, Bethany is in robust health. One day her roommate, who has the flu, sneezes directly in her face. Bethany, with a strong immune system, is able to fight off this violation and stay healthy. However, there is a limit to what Bethany's immune system can handle. If one roommate with the flu sneezes in her face, by mistake Bethany uses the toothbrush of another roommate with the flu, and it turns out that Bethany's significant other—whom she spends a lot of time kissing—also has the flu, well, that may be too many violations for her immune system to handle. Even a robust assumption will break if it is violated too much.</p></div>
+<div data-block_type="h4-txt-ni" id="corty3e-ch6-p55"><p><span data-block_type="h4-N-ri1"><strong>Step 3</strong></span> <span data-block_type="SR-X-h4-T-ri"><strong>List the Hypotheses</strong></span></p></div>
+<div data-block_type="txt-ni" id="corty3e-ch6-p56"><p>Step 3 involves listing the null hypothesis and the alternative hypothesis. Hypotheses can be for <em>two-tailed tests</em> (also called nondirectional tests) or <em>one-tailed tests</em> (directional tests). A <span data-type="termref" data-term="two-tailed hypothesis test">two-tailed hypothesis test</span> doesn’t indicate whether the explanatory variable (adoption in our example) has a positive or negative impact on the outcome variable (IQ), just that it has an impact. An advantage of a two-tailed test is that it allows a researcher to test for an effect in either direction, that children who are adopted end up as more intelligent than average or as less intelligent than average. Two-tailed tests are the norm and are used much more frequently than one-tailed tests.</p></div>
+<div data-block_type="page_start" id="corty3e_page_185"><p>185</p></div>
+<div data-type="figure" data-figure-id="corty3e-ch6-fig-5" data-block_type="un_figure" data-layout-align="center" data-layout-width="large" data-layout-border="true">
+
+<img id="" src="asset/ch6/corty3e_fig06_un04.jpg" data-figure-id="corty3e-ch6-fig-5" data-layout-width="large" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+<div data-type="figure_text"><span data-type="caption">Before one can proceed with a test, one needs to make sure that its assumptions have been met.</span></div>
+</div>
+<div data-type="figure" data-figure-id="corty3e-ch6-fig-6" data-block_type="un_figure" data-layout-align="right" data-layout-width="small" data-layout-border="true">
+
+<img id="" src="asset/ch6/corty3e_fig06_un05.jpg" data-figure-id="corty3e-ch6-fig-6" data-layout-width="small" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+<div data-type="figure_text"><span data-type="caption">The null and alternative hypotheses need to be specified for every statistical test.</span></div>
+</div>
+<div data-block_type="txt" id="corty3e-ch6-p57"><p>When, in advance of collecting any data, a researcher has an expectation about the direction of the impact of the explanatory variable, a <span data-type="termref" data-term="one-tailed hypothesis test">one-tailed hypothesis test</span> is called for. One-tailed tests predict that the results will turn out in a certain direction. An advantage to using one-tailed tests is that it is easier to reject the null hypothesis and be forced to accept the alternative hypothesis.</p></div>
+<div data-block_type="txt" id="corty3e-ch6-p58"><p>With the current example, it seems reasonable to think a one-tailed test is called for because it is already known that the mean IQ of this sample of adopted children is above average. But the question—do adopted children differ in intelligence from the average—was formulated before any data were collected. The question doesn’t specify a direction for the difference, so a two-tailed test is called for. Changing the question after looking at the data is not how statisticians operate.</p></div>
+<div data-block_type="h4-txt-ni" id="corty3e-ch6-p59"><p><span data-block_type="h4-N-ri1"><strong>Step 4</strong></span> <span data-block_type="SR-X-h4-T-ri"><strong>Set the Decision Rule</strong></span></p></div>
+<div data-block_type="txt-ni" id="corty3e-ch6-p60"><p>Setting the decision rule involves finding the <em>critical value</em> of the test statistic. The <span data-type="termref" data-term="critical value">critical value</span> is the value that the test statistic must meet or exceed in order to reject the null hypothesis. What the critical value is depends on a number of factors, such as how willing the researcher is to draw the wrong conclusion and how many cases there are.</p></div>
+<div data-block_type="page_start" id="corty3e_page_186"><p>186</p></div>
+<div data-type="figure" data-figure-id="corty3e-ch6-fig-7" data-block_type="un_figure" data-layout-align="center" data-layout-width="large" data-layout-border="true">
+
+<img id="" src="asset/ch6/corty3e_fig06_un06.jpg" data-figure-id="corty3e-ch6-fig-7" data-layout-width="large" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+<div data-type="figure_text"><span data-type="caption">Setting the decision rule in advance means that one knows what to do when a choice point is reached.</span></div>
+</div>
+<div data-block_type="txt" id="corty3e-ch6-p61"><p>Just as it is not fair to change from a two-tailed test to a one-tailed test after looking at the results, the decision rule is made in advance. That way, if the results are just short of the point where the null hypothesis is rejected, the researcher won’t be tempted to slide the critical value over a bit to get the results he or she desires.</p></div>
+<div data-block_type="h4-txt-ni" id="corty3e-ch6-p62"><p><span data-block_type="h4-N-ri1"><strong>Step 5</strong></span> <span data-block_type="SR-X-h4-T-ri"><strong>Calculate the Test Statistic</strong></span></p></div>
+<div data-type="figure" data-figure-id="corty3e-ch6-fig-8" data-block_type="un_figure" data-layout-align="right" data-layout-width="medium" data-layout-border="true">
+
+<img id="" src="asset/ch6/corty3e_fig06_un07.jpg" data-figure-id="corty3e-ch6-fig-8" data-layout-width="medium" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+<div data-type="figure_text"><span data-type="caption">Calculating the value for a test statistic is the fifth step in hypothesis testing.</span></div>
+</div>
+<div data-block_type="txt-ni" id="corty3e-ch6-p63"><p>Calculating the test statistic is the most straightforward of the six steps for hypothesis testing. Plug the right numbers into a formula, and push the right buttons in the right order on the calculator: that’s how to calculate the test statistic.</p></div>
+<div data-block_type="h4-txt-ni" id="corty3e-ch6-p64"><p><span data-block_type="h4-N-ri1"><strong>Step 6</strong></span> <span data-block_type="SR-X-h4-T-ri"><strong>Interpret the Results</strong></span></p></div>
+<div data-block_type="txt-ni" id="corty3e-ch6-p65"><p>Interpreting the results is the reason statistical tests are done. In Step 6, the researcher explains, in plain language, what the results are and what they mean. Interpretation is a human skill.</p></div>
+<div data-block_type="txt" id="corty3e-ch6-p66"><p>Interpretation involves answering questions about the results. For example, in this chapter, we’ll ask whether the null hypothesis was rejected. In future chapters, more interpretation questions will be added and the questions will change slightly from hypothesis test to hypothesis test. When there are multiple questions, they build on each other, so a researcher gains a greater understanding of the results. It is possible to stop after any question with enough information to offer an interpretation, but the more questions answered, the better a researcher will understand the results.</p></div>
+<div data-block_type="page_start" id="corty3e_page_187"><p>187</p></div>
+<div data-type="figure" data-figure-id="corty3e-ch6-fig-9" data-block_type="un_figure" data-layout-align="center" data-layout-width="large" data-layout-border="true">
+
+<img id="" src="asset/ch6/corty3e_fig06_un08.jpg" data-figure-id="corty3e-ch6-fig-9" data-layout-width="large" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+<div data-type="figure_text"><span data-type="caption">Interpretation, explaining what the results mean, is the goal of statistics.</span></div>
+</div>
+<div data-block_type="txt" id="corty3e-ch6-p67"><p>There are four parts to writing an interpretation:</p></div>
+<ol data-block_type="numbered" id="corty3e-ch6-list-3">
+<li><div data-block_type="nl-first" id="corty3e-ch6-p68"><p>Recap why the study was done.</p></div>
+</li>
+<li><div data-block_type="nl-mid" id="corty3e-ch6-p69"><p>Provide the main factual results, for example, the mean scores for the control group and the experimental group.</p></div>
+</li>
+<li><div data-block_type="nl-mid" id="corty3e-ch6-p70"><p>Explain what the results mean.</p></div>
+</li>
+<li><div data-block_type="nl-last" id="corty3e-ch6-p71"><p>Make suggestions for future research.</p></div>
+</li>
+</ol>
+<div data-block_type="txt" id="corty3e-ch6-p72"><p>This four-part guide to writing an interpretation is presented in <span data-type="link" data-href="#corty3e-ch6-fig-10"><strong>Table 6.2</strong></span>. It may look like interpretations will be long and detailed, but short and clear is better. For many studies, a good interpretation can be accomplished in one paragraph of four or five sentences.</p></div>
+<div data-type="figure" data-figure-id="corty3e-ch6-fig-10" data-block_type="table" data-layout-align="center" data-layout-width="large" data-layout-border="true">
+
+<img id="" src="asset/ch6/corty3e_table06_02.jpg" data-figure-id="corty3e-ch6-fig-10" data-layout-width="large" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+</div>
+</div>
+    <div data-type="section" data-block_type="h2" id="corty3e-ch6-sec2-3" level="2" data-print_page="188">
+<h2 class="section-title"><span data-type="title" data-title-for="corty3e-ch6-sec2-3">The Single-Sample <em>z</em> Test
+</span></h2>
+
+<div data-block_type="page_start" id="corty3e_page_188"><p>188</p></div>
+<div data-block_type="txt-ni" id="corty3e-ch6-p73"><p>Now that we’ve covered the general logic behind hypothesis testing, let’s move on to the specific steps of the single-sample <em>z</em> test.</p></div>
+<div data-block_type="h4-txt-ni" id="corty3e-ch6-p74"><p><span data-block_type="h4-N-ri1"><strong>Step 1</strong></span> <span data-block_type="SR-X-h4-T-ri"><strong>Pick a Test.</strong></span> The single-sample <em>z</em> test is the test to use to see whether adopted children differ in intelligence from the general population. Dr. Pell has selected it because the single-sample <em>z</em> test is used to compare a sample mean to a population mean when the standard deviation of the population is known. (It is known that the population standard deviation, σ, for IQ is 15.)</p></div>
+<div data-block_type="h4-txt-ni" id="corty3e-ch6-p75"><p><span data-block_type="h4-N-ri1"><strong>Step 2</strong></span> <span data-block_type="SR-X-h4-T-ri"><strong>Check the Assumptions.</strong></span> The assumptions for the single-sample <em>z</em> test are listed in <span data-type="link" data-href="#corty3e-ch6-fig-11"><strong>Table 6.3</strong></span>. The table also notes whether the assumptions are robust or not.</p></div>
+<div data-type="figure" data-figure-id="corty3e-ch6-fig-11" data-block_type="table" data-layout-align="center" data-layout-width="large" data-layout-border="true">
+
+<img id="" src="asset/ch6/corty3e_table06_03.jpg" data-figure-id="corty3e-ch6-fig-11" data-layout-width="large" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+</div>
+<ul data-block_type="bullet" id="corty3e-ch6-list-4">
+<li><div data-block_type="bl-first" id="corty3e-ch6-p76"><p><span data-block_type="BL-H-ri"><strong>Random sample:</strong></span> The first assumption, that the sample is a random sample from the population, is not violated. In the IQ example, the sample was a random sample from the population of adopted children. This is a robust assumption, so even if the sample were not a random one, we could still proceed with the test. One just needs to be careful about the population to which one generalizes the results.</p></div>
+</li>
+<li><div data-block_type="bl-mid" id="corty3e-ch6-p77"><p><span data-block_type="BL-H-ri"><strong>Independence of observations:</strong></span> The second assumption is that the observations within the group are independent. This assumption means that the scores of cases in the sample aren’t influenced by other cases in the sample. In the IQ example, the participants were randomly sampled, each case was in the sample only once, and each case was tested individually, so this assumption was not violated. This is not a robust assumption, so if the cases were not independent, we would not be able to proceed with the test.</p></div>
+</li>
+<li><div data-block_type="bl-last" id="corty3e-ch6-p78"><p><span data-block_type="BL-H-ri"><strong>Normality:</strong></span> The third assumption is that the dependent variable is normally distributed in the population. Intelligence is one of the many variables that psychologists assume to be normally distributed, so that assumption is not violated. This is also a robust assumption. So if it were violated, as long as the violation is not too great, we would still be able to proceed with the test.</p></div>
+</li>
+</ul>
+<div data-block_type="page_start" id="corty3e_page_189"><p>189</p></div>
+<div data-block_type="txt-ni" id="corty3e-ch6-p79"><p>With no assumptions violated, Dr. Pell can proceed with the planned test.</p></div>
+<div data-type="box" data-block_type="bx-1-h" id="corty3e-ch6-bx1-1"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="corty3e-ch6-bx1-1">A Common Question</h3>
+<div data-block_type="bx1-que" id="corty3e-ch6-p80"><p><strong>Q</strong> Suppose a teacher has developed a new way of teaching math and then tests the new method with three different groups, each with five students being taught together. When he uses the final exam to evaluate his new method, should he treat the data as 15 scores, one from each student, or three scores, one from each group?</p></div>
+<div data-block_type="bx1-ans" id="corty3e-ch6-p81"><p><strong>A</strong> To avoid violating the independence of observations assumption, this should be treated as three scores, each score the mean of the five students taught together in a group. However, few researchers are this rigorous. Researchers worry more about violating this assumption by including the same participant in a study twice.</p></div>
+</div></div>
+<div data-block_type="h4-txt-ni" id="corty3e-ch6-p82"><p><span data-block_type="h4-N-ri1"><strong>Step 3</strong></span> <span data-block_type="SR-X-h4-T-ri"><strong>List the Hypotheses.</strong></span> With a two-tailed test, it is easier to generate the null hypothesis first and the alternative hypothesis second. The null hypothesis is going to be (1) a statement about the population, (2) a negative statement, and (3) a specific statement. All of these conditions are met by</p></div>
+<div data-block_type="eq" id="corty3e-ch6-p83"><p><em>H</em><sub>0</sub>: μ<sub>AdoptedChildren</sub> = 100</p></div>
+<div data-block_type="txt-ni" id="corty3e-ch6-p84"><p>Dr. Pell’s null hypothesis says that the population of adopted children has a mean IQ of 100.</p></div>
+<ul data-block_type="bullet" id="corty3e-ch6-list-5">
+<li><div data-block_type="bl-first" id="corty3e-ch6-p85"><p>Because it is about μ, the population mean, it is a statement about a population.</p></div>
+</li>
+<li><div data-block_type="bl-mid" id="corty3e-ch6-p86"><p>It is a negative statement because it says that the intelligence of adopted children is <em>not</em> different from the mean IQ for the population of children in general.</p></div>
+</li>
+<li><div data-block_type="bl-last" id="corty3e-ch6-p87"><p>It is a specific statement because it says the population mean is exactly 100.</p></div>
+</li>
+</ul>
+<div data-block_type="txt" id="corty3e-ch6-p88"><p>Next, Dr. Pell needs to state the alternative hypothesis. The alternative hypothesis has to be mutually exclusive to the null hypothesis, and the two hypotheses together have to be all-inclusive. Further, the alternative hypothesis is not going to make a specific prediction. The alternative hypothesis is just going to say that the null hypothesis is wrong. This means that the alternative hypothesis states the population mean for adopted children is something other than 100:</p></div>
+<div data-block_type="eq" id="corty3e-ch6-p89"><p><em>H</em><sub>1</sub>: μ<sub>AdoptedChildren</sub> ≠ 100</p></div>
+<div data-block_type="h4-txt-ni" id="corty3e-ch6-p90"><p><span data-block_type="h4-N-ri1"><strong>Step 4</strong></span> <span data-block_type="SR-X-h4-T-ri"><strong>Set the Decision Rule.</strong></span> Hypothesis testing works by assuming that the null hypothesis is true. Assume that the null hypothesis, μ = 100, is true and imagine taking hundreds and hundreds of repeated random samples of size 72 from the population of adopted children. For each sample, calculate a mean and then make a sampling distribution for all the means from all the samples. Thanks to the central limit theorem, three things are known about this sampling distribution: (1) the sampling distribution of the mean will be centered at 100, (2) it will have a normal shape, and (3) its standard deviation, called the standard error of the mean, can be calculated using <span data-type="link" data-href="corty3e_ch5_3.html#corty3e-ch5-bx6-1">Equation 5.1</span>. For the adoption IQ example, this would be</p></div>
+<div data-block_type="page_start" id="corty3e_page_190"><p>190</p></div>
+<div data-block_type="equation" id="corty3e-ch6-eqn-1"><p>
+<img id="" src="asset/ch6/corty3e_eqn06_190_01.jpg" data-figure-id="" data-layout-width="" data-mmtype="" alt="image">
+</p></div>
+<div data-block_type="txt" id="corty3e-ch6-p91"><p>The sampling distribution of the mean that should occur if the null hypothesis is true is shown in <span data-type="link" data-href="#corty3e-ch6-fig-13"><strong>Figure 6.1</strong></span>. Note that it has a normal shape, is centered around the population mean of 100, and that IQ scores on the <em>X</em>-axis are marked off by the size of the standard error of the mean, 1.77.</p></div>
+<div data-type="figure" data-figure-id="corty3e-ch6-fig-13" data-block_type="figure" data-layout-align="center" data-layout-width="large" data-layout-border="true">
+
+<img id="" src="asset/ch6/corty3e_fig06_01.jpg" data-figure-id="corty3e-ch6-fig-13" data-layout-width="large" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+<div data-type="figure_text">
+<span data-type="number">Figure 1.4: </span><span data-type="caption"><strong><span data-block_type="fig_num">Figure 6.1</span> Sampling Distribution of the Mean</strong> This distribution shows what the sampling distribution of the mean would look like for repeated random samples of size 72 from a population with a mean IQ of 100. Note that it is normally distributed and centered around the population mean. The standard error of the mean, σ<em><sub>M</sub>,</em> is 1.77 and is being used to mark off IQ scores by standard deviation units on the <em>X</em>-axis.</span>
+</div>
+</div>
+<div data-block_type="txt" id="corty3e-ch6-p92"><p>Now, divide the sampling distribution into two parts (<span data-type="link" data-href="#corty3e-ch6-fig-14"><strong>Figure 6.2</strong></span>). The middle section is called the <span data-type="termref" data-term="common zone">common zone</span><strong>,</strong> because it is the section in which sample means commonly fall. The two extreme sections form the <span data-type="termref" data-term="rare zone">rare zone</span> because it is the part of the sampling distribution in which it is rare that a sample mean falls.</p></div>
+<div data-type="figure" data-figure-id="corty3e-ch6-fig-14" data-block_type="figure" data-layout-align="center" data-layout-width="large" data-layout-border="true">
+
+<img id="" src="asset/ch6/corty3e_fig06_02.jpg" data-figure-id="corty3e-ch6-fig-14" data-layout-width="large" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+<div data-type="figure_text">
+<span data-type="number">Figure 1.5: </span><span data-type="caption"><strong><span data-block_type="fig_num">Figure 6.2</span> Sampling Distribution of the Mean with the Common Zone and Rare Zone Marked for IQ Data</strong> When the alpha level is set at .05 and the hypotheses are nondirectional, the common zone captures the middle 95% of the sampling distribution, and the rare zone captures the extreme 5%. The border between the rare zone and common zone occurs at <em>z</em> scores of –1.96 and 1.96, respectively, because they are the <em>z</em> values that separate the middle 95% of a normal distribution from the extreme 5%.</span>
+</div>
+</div>
+<div data-block_type="txt" id="corty3e-ch6-p93"><p>Next, place the observed sample mean, 104.5, in the sampling distribution of the mean.</p></div>
+<ul data-block_type="bullet" id="corty3e-ch6-list-6">
+<li><div data-block_type="bl-first" id="corty3e-ch6-p94"><p>If the observed sample mean falls in the common zone, there’s no reason to question the null hypothesis. A common result, what is expected to happen if the null hypothesis is true, did happen.</p></div>
+<div data-block_type="page_start" id="corty3e_page_191"><p>191</p></div>
+</li>
+<li><div data-block_type="bl-last" id="corty3e-ch6-p95"><p>If the observed sample mean falls in the rare zone, then an unusual event has happened. In this situation, by the logic of hypothesis testing, the null hypothesis is rejected and the researcher is forced to accept the alternative hypothesis as true. As the alternative hypothesis is what the researcher believes to be true, he or she is happy to be “forced” to accept it.</p></div>
+</li>
+</ul>
+<div data-block_type="txt" id="corty3e-ch6-p96"><p>The line drawn between the common zone and the rare zone is called, as was noted above, the critical value. The critical value of <em>z,</em> abbreviated <em>z<sub>cv</sub>,</em> depends on how small the researcher wants the rare zone to be. The convention most commonly used in statistics is to say that something that happens 95% of the time is common and something that happens 5% of the time or less is rare. This means that the common zone is the middle 95% of the sampling distribution, and the rare zone is the extreme 5% of the sampling distribution. Notice that the rare zone is two-tailed, with 2.5% at the very top (the right-hand side) of the sampling distribution and 2.5% at the very bottom (the left-hand side) of the distribution. This is why the test is called a two-tailed test—the rare zone falls in both sides (tails) of the sampling distribution.</p></div>
+<div data-block_type="txt" id="corty3e-ch6-p97"><p>In <span data-type="link" data-href="corty3e-ch04.xml">Chapter 4</span>, it was found that the <em>z</em> scores of ±1.96 marked off the middle 95% of a normal distribution from the extreme 5%. Now, the <em>z</em> scores of ±1.96 will be used as the critical values, <em>z<sub>cv</sub>,</em> for the single-sample <em>z</em> test. <span data-type="link" data-href="#corty3e-ch6-fig-14">Figure 6.2</span> shows how the critical values divide the sampling distribution of the expected outcomes into common and rare zones. Here is the decision rule:</p></div>
+<ul data-block_type="bullet" id="corty3e-ch6-list-7">
+<li><div data-block_type="bl-first" id="corty3e-ch6-p98"><p>If the <em>z</em> score calculated in Step 5 (the next step) is less than or equal to –1.96 <em>or</em> if the <em>z</em> score is greater than or equal to 1.96, the researcher will reject the null hypothesis.</p></div>
+<ul data-block_type="bluebullet" id="corty3e-ch6-list-8">
+<li><div data-block_type="bl_lvl2" id="corty3e-ch6-p99"><p>Written mathematically, this is: if <em>z</em> ≤ –1.96 <em>or</em> if <em>z</em> ≥ 1.96, then reject <em>H</em><sub>0</sub>.</p></div>
+</li>
+</ul>
+</li>
+<li>If the <em>z</em> score calculated in Step 5 is greater than –1.96 <em>and</em> less than 1.96, then the researcher will fail to reject the null hypothesis.
+<ul data-block_type="bluebullet" id="corty3e-ch6-list-9">
+<li><div data-block_type="bl_lvl2" id="corty3e-ch6-p101"><p>Written mathematically: if –1.96 &lt; <em>z</em> &lt; 1.96, then fail to reject <em>H</em><sub>0</sub>.</p></div>
+</li>
+</ul>
+</li>
+<li><div data-block_type="bl-last" id="corty3e-ch6-p102"><p>Notice that the critical value itself is part of the rare zone. If <em>z</em> = –1.96 or <em>z</em> = 1.96, then the researcher will reject the null hypothesis.</p></div>
+</li>
+</ul>
+<div data-block_type="page_start" id="corty3e_page_192"><p>192</p></div>
+<div data-block_type="txt" id="corty3e-ch6-p103"><p>The size of the rare zone, expressed as a probability, is the <em>alpha level</em> of the test. The <span data-type="termref" data-term="alpha level">alpha level</span><strong>,</strong> or <span data-type="termref" data-term="alpha">alpha</span><strong>,</strong> is the probability that a result will fall in the rare zone and the null hypothesis will be rejected when the null hypothesis is really true. Alpha levels are also called <span data-type="termref" data-term="significance levels">significance levels</span><strong>.</strong></p></div>
+<div data-block_type="txt" id="corty3e-ch6-p104"><p>When statisticians discuss alpha levels, they use proportions, not percentages. So in this example, alpha is set at .05. Alpha is abbreviated with a lowercase Greek letter, α, so one would write, “α = .05.” This means that the researcher considers a rare event something that happens no more than 5% of the time.</p></div>
+<div data-block_type="txt" id="corty3e-ch6-p105"><p>The critical value that is the dividing line between the rare zone and the common zone depends on (1) whether the researcher is doing a one-tailed or a two-tailed test and (2) what alpha level is selected. The most commonly used options for a single-sample <em>z</em> test are shown in <span data-type="link" data-href="#corty3e-ch6-fig-15"><strong>Table 6.4</strong></span>.</p></div>
+<div data-type="figure" data-figure-id="corty3e-ch6-fig-15" data-block_type="table" data-layout-align="center" data-layout-width="xlarge" data-layout-border="true">
+
+<img id="" src="asset/ch6/corty3e_table06_04.jpg" data-figure-id="corty3e-ch6-fig-15" data-layout-width="xlarge" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+</div>
+<div data-block_type="h4-txt-ni" id="corty3e-ch6-p106"><p><span data-block_type="h4-N-ri1"><strong>Step 5</strong></span> <span data-block_type="SR-X-h4-T-ri"><strong>Calculate the Test Statistic.</strong></span> The test statistic to be calculated is a <em>z</em> value. So, Step 5 involves turning the observed sample mean of 104.50 into a <em>z</em> score. The formula for calculating the <em>z</em> value for a single-sample test is shown in <span data-type="link" data-href="#corty3e-ch6-bx6-1">Equation 6.1</span>.</p></div>
+<div data-type="box" data-block_type="eq-t" id="corty3e-ch6-bx6-1"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="corty3e-ch6-bx6-1"><span data-block_type="sec_num">Equation 6.1</span> <span data-block_type="sec_title">Formula for the Single-Sample <em>z</em> Test</span>
+</h3>
+
+<div data-block_type="equation" id="corty3e-ch6-eqn-2"><p>
+<img id="" src="asset/ch6/corty3e_eqn06_192_01.jpg" data-figure-id="" data-layout-width="" data-mmtype="" alt="image">
+</p></div>
+<div data-block_type="eq-txt-ni" id="corty3e-ch6-p107"><p>where <em>z</em> = the <em>z</em> score</p></div>
+<div data-block_type="eq-unl" id="corty3e-ch6-p108"><p><em>M</em> = the sample mean</p></div>
+<div data-block_type="eq-unl" id="corty3e-ch6-p109"><p>μ = the population mean</p></div>
+<div data-block_type="eq-unl" id="corty3e-ch6-p110"><p>σ<em><sub>M</sub></em> = the standard error of the mean (<span data-type="link" data-href="corty3e_ch5_3.html#corty3e-ch5-bx6-1">Equation 5.1</span>)</p></div>
+</div></div>
+<div data-block_type="txt" id="corty3e-ch6-p111"><p>Earlier, using <span data-type="link" data-href="corty3e_ch5_3.html#corty3e-ch5-bx6-1">Equation 5.1</span>, the standard error of the mean for the adoption IQ example was calculated as σ<em><sub>M</sub></em> = 1.77. With that value, and with <em>M</em> = 104.5 and μ = 100, Dr. Pell can calculate the value of <em>z</em> for the single-sample <em>z</em> test for the adoption IQ study:</p></div>
+<div data-block_type="page_start" id="corty3e_page_193"><p>193</p></div>
+<div data-block_type="equation" id="corty3e-ch6-eqn-3"><p>
+<img id="" src="asset/ch6/corty3e_eqn06_193_01.jpg" data-figure-id="" data-layout-width="" data-mmtype="" alt="image">
+</p></div>
+<div data-block_type="txt-ni" id="corty3e-ch6-p112"><p>Having calculated <em>z</em> = 2.54, this step is over.</p></div>
+<div data-block_type="h4-txt-ni" id="corty3e-ch6-p113"><p><span data-block_type="h4-N-ri1"><strong>Step 6</strong></span> <span data-block_type="SR-X-h4-T-ri"><strong>Interpret the Results.</strong></span> In interpreting the results, plain language is used to explain what the results mean. In this chapter, we’ll start with the most basic interpretative question, “Was the null hypothesis rejected?”</p></div>
+<div data-block_type="txt" id="corty3e-ch6-p114"><p>This is addressed by comparing the observed value of the test statistic, 2.54, to the critical value, ±1.96. Which of the following statements generated in Step 4 is true?</p></div>
+<ul data-block_type="bullet" id="corty3e-ch6-list-10">
+<li><div data-block_type="bl-first" id="corty3e-ch6-p115"><p>Is either 2.54 ≤ –1.96, or is 2.54 ≥ 1.96?</p></div>
+</li>
+<li><div data-block_type="bl-last" id="corty3e-ch6-p116"><p>Is –1.96 &lt; 2.54 &lt; 1.96?</p></div>
+</li>
+</ul>
+<div data-block_type="txt" id="corty3e-ch6-p117"><p>The first statement is true as 2.54 is greater than or equal to 1.96. This means that the results fall in the rare zone and the null hypothesis is rejected. (To help visualize the results falling in the rare zone, see <span data-type="link" data-href="#corty3e-ch6-fig-18"><strong>Figure 6.3</strong></span>.) By rejecting the null hypothesis, Dr. Pell must accept the alternative hypothesis and conclude that the population mean is something other than 100.</p></div>
+<div data-type="figure" data-figure-id="corty3e-ch6-fig-18" data-block_type="figure" data-layout-align="center" data-layout-width="large" data-layout-border="true">
+
+<img id="" src="asset/ch6/corty3e_fig06_03.jpg" data-figure-id="corty3e-ch6-fig-18" data-layout-width="large" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+<div data-type="figure_text">
+<span data-type="number">Figure 1.7: </span><span data-type="caption"><strong><span data-block_type="fig_num">Figure 6.3</span> Sampling Distribution of the Mean, Marked with Observed z Score, for IQ Data</strong> The observed mean of 104.5 has been converted to a <em>z</em> score of 2.54. Note that it falls in the rare zone, which means the null hypothesis is rejected, and the alternative hypothesis has to be accepted.</span>
+</div>
+</div>
+<div data-block_type="txt" id="corty3e-ch6-p118"><p>It is possible to go a step beyond just saying that the population mean of IQ for adopted children is something other than 100. It is possible to comment on the direction of the difference by comparing the sample mean to the population mean. The sample mean of 104.5 was above the general population mean of 100, so Dr. Pell can conclude that the population of adopted children has an average intelligence that is higher than 100.</p></div>
+<div data-block_type="page_start" id="corty3e_page_194"><p>194</p></div>
+<div data-block_type="txt" id="corty3e-ch6-p119"><p>The terms “statistically significant” and “not statistically significant” are commonly used in reporting results. <span data-type="termref" data-term="Statistically significant">Statistically significant</span> means that a researcher concludes the observed sample results are more different from the null-hypothesized population value than would be expected by chance. With the adoption IQ example, Dr. Pell could state that the observed mean of 104.5 is “statistically significant” or “statistically different from 100.”</p></div>
+<div data-block_type="txt" id="corty3e-ch6-p120"><p>It is also common to report the results in APA format. APA format indicates what test was done, how many cases there were, what the value of the test statistic was, what alpha level was selected, and whether the null hypothesis was rejected. In APA format, Dr. Pell would report the results for the adoption IQ study as</p></div>
+<div data-block_type="eq" id="corty3e-ch6-p121"><p><em>z</em> (<em>N</em> = 72) = 2.54, <em>p</em> &lt; .05</p></div>
+<ul data-block_type="bullet" id="corty3e-ch6-list-11">
+<li><div data-block_type="bl-first" id="corty3e-ch6-p122"><p><em>z</em> tells what test was done, a <em>z</em> test.</p></div>
+</li>
+<li><div data-block_type="bl-mid" id="corty3e-ch6-p123"><p><em>N</em> = 72 gives the sample size.</p></div>
+</li>
+<li><div data-block_type="bl-mid" id="corty3e-ch6-p124"><p>2.54 is the value of the test statistic that was calculated.</p></div>
+</li>
+<li><div data-block_type="bl-mid" id="corty3e-ch6-p125"><p>.05 refers to the alpha level. (Because it is associated in APA format with the letter <em>p,</em> for probability, it is often referred to as the <span data-type="termref" data-term="p value"><em>p</em> value</span><strong>.</strong>)</p></div>
+</li>
+<li><div data-block_type="bl-last" id="corty3e-ch6-p126"><p><em>p</em> &lt; .05 informs the reader that the null hypothesis was rejected.</p></div>
+</li>
+</ul>
+<div data-type="box" data-block_type="bx-1-h" id="corty3e-ch6-bx1-2"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="corty3e-ch6-bx1-2">A Common Question</h3>
+<div data-block_type="bx1-que" id="corty3e-ch6-p127"><p><strong>Q</strong> What does <em>p</em> &lt; .05 mean?</p></div>
+<div data-block_type="bx1-ans" id="corty3e-ch6-p128"><p><strong>A</strong> <em>p</em> &lt; .05 means that the observed result is a rare result as the probability of it happening is less than .05 if the null hypothesis is true. If a researcher fails to reject the null hypothesis, he or she would write <em>p</em> &gt; .05. This means that the result is a common occurrence—it happens more than 5% of the time—when the null hypothesis is true.</p></div>
+</div></div>
+<div data-block_type="txt" id="corty3e-ch6-p129"><p>Here is what the psychologist, Dr. Pell, wrote for her interpretation. Note how she follows the four-point interpretation template from <span data-type="link" data-href="#corty3e-ch6-fig-10">Table 6.2</span>: (1) indicating what was done, (2) providing some facts (the sample and population means as well as the <em>z</em> test results), (3) telling what the results mean, and (4) making a suggestion for future research:</p></div>
+<div data-block_type="sr_exp_txt_v1_ni" id="corty3e-ch6-p130"><p>In this study, the intelligence of adopted children was compared to the IQ of the general population of children in the United States. The mean IQ of a random sample of 72 adopted children in the United States was 104.5. Using a single-sample z test, their mean of 104.5 was statistically significantly different from the population mean of 100 (<em>z</em> (<em>N</em> = 72) = 2.54, <em>p</em> &lt; .05). This study shows that adopted children have a higher average IQ than children in general. As adoptive parents are carefully screened before they are allowed to adopt, future research may want to explore the role that this plays in the higher intelligence of their children.</p></div>
+<div data-block_type="page_start" id="corty3e_page_195"><p>195</p></div>
+<div data-type="box" data-block_type="sr-exp-n" id="corty3e-ch6-bx3-1"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="corty3e-ch6-bx3-1">Worked Example 6.1</h3>
+<div data-block_type="sr-ex-txt-ni" id="corty3e-ch6-p131"><p>Let’s practice with hypothesis testing and the single-sample <em>z</em> test, this time with an example where the null hypothesis is not rejected. Imagine a psychic who claimed he could “read” blood pressure. A public health researcher, Dr. Levine, tested the man’s claim by asking him to select people with abnormal blood pressure. The psychic picked out 81 people. Dr. Levine took their blood pressures and the average systolic blood pressure for the sample, <em>M,</em> was 127. From previous research, Dr. Levine knew that the population mean, μ, for systolic blood pressure was 124 with a population standard deviation, σ, of 18.</p></div>
+<div data-block_type="sr-ex-txt" id="corty3e-ch6-p132"><p>The sample mean in this study, 127, is three points higher than the population mean. Is this different enough from normal blood pressure to support the psychic’s claim that he can read blood pressure? Did he find people with higher than average blood pressure? Or, can the deviation of 127 from 124 be explained by sampling error?</p></div>
+<div data-block_type="sr_exp_h4_txt" id="corty3e-ch6-p133"><p><span data-block_type="SR-EXP-h4-N-ni"><strong>Step 1</strong></span> <span data-block_type="SR-EXP-h4-T-ri"><strong>Pick a Test.</strong></span> Comparing a sample mean to a population mean when the population standard deviation is known calls for a single-sample <em>z</em> test.</p></div>
+<div data-block_type="sr_exp_h4_txt" id="corty3e-ch6-p134"><p><span data-block_type="SR-EXP-h4-N-ni"><strong>Step 2</strong></span> <span data-block_type="SR-EXP-h4-T-ri"><strong>Check the Assumptions.</strong></span> <span data-type="link" data-href="#corty3e-ch6-fig-11">Table 6.3</span> lists the assumptions for the single-sample <em>z</em> test:</p></div>
+<ul data-block_type="bullet" id="corty3e-ch6-list-12">
+<li><div data-block_type="sr-exp-bl-first" id="corty3e-ch6-p135"><p>The sample is not a random sample from the population of people the psychic considers to have high blood pressure, so the first assumption is violated. This is a robust assumption, however, so it can be violated and the test still completed. Dr. Levine will need to be careful about the population to which he generalizes the results.</p></div>
+</li>
+<li><div data-block_type="sr-exp-bl-mid" id="corty3e-ch6-p136"><p>Each participant takes part in the study only once. There’s no evidence that the 81 observations influence the measurement of each other’s blood pressure. The second assumption, independence of observations, is not violated.</p></div>
+</li>
+<li><div data-block_type="sr-exp-bl-last" id="corty3e-ch6-p137"><p>Eighty-one cases is a large enough sample to graph its frequency distribution. If the distribution looks normal-ish, it seems reasonable to assume that blood pressure is normally distributed in the larger population. In this scenario, the third assumption, normality, is not violated.</p></div>
+</li>
+</ul>
+<div data-block_type="txt" id="corty3e-ch6-p138"><p>With no nonrobust assumptions violated, Dr. Levine can proceed with the planned test.</p></div>
+<div data-block_type="sr_exp_h4_txt" id="corty3e-ch6-p139"><p><span data-block_type="SR-EXP-h4-N-ni"><strong>Step 3</strong></span> <span data-block_type="SR-EXP-h4-T-ri"><strong>List the Hypotheses.</strong></span> The null hypothesis states that the psychic is <em>not</em> able to read blood pressure. As a result, the mean blood pressure of the people he picks should be no different from the mean blood pressure of those with normal pressure. This is stated mathematically as</p></div>
+<div data-block_type="sr-exp-eq" id="corty3e-ch6-p140"><p><em>H</em><sub>0</sub>: μ<sub>PsychicSelected</sub> = 124</p></div>
+<div data-block_type="sr-ex-txt" id="corty3e-ch6-p141"><p>The null hypothesis and the alternative hypothesis, together, have to be all-inclusive and mutually exclusive. The alternative hypothesis will state that the mean blood pressure in the population of people the psychic selects is different from the mean normal systolic blood pressure of 124:</p></div>
+<div data-block_type="sr-exp-eq" id="corty3e-ch6-p142"><p><em>H</em><sub>1</sub>: μ<sub>PsychicSelected</sub> ≠ 124</p></div>
+<div data-block_type="page_start" id="corty3e_page_196"><p>196</p></div>
+<div data-block_type="sr_exp_h4_txt" id="corty3e-ch6-p143"><p><span data-block_type="SR-EXP-h4-N-ni"><strong>Step 4</strong></span> <strong>Set the Decision Rule.</strong> Dr. Levine wants to do a two-tailed test and has set alpha at .05. According to <span data-type="link" data-href="#corty3e-ch6-fig-15">Table 6.4</span>, the critical value of <em>z</em> is ±1.96. If the value of <em>z</em> calculated in the next step is less than or equal to –1.96 <em>or</em> greater than or equal to 1.96, the researcher will reject the null hypothesis. If <em>z</em> is greater than –1.96 <em>and</em> less than 1.96, he will fail to reject the null hypothesis. <span data-type="link" data-href="#corty3e-ch6-fig-19"><strong>Figure 6.4</strong></span> displays the rare and common zones for this decision.</p></div>
+<div data-type="figure" data-figure-id="corty3e-ch6-fig-19" data-block_type="figure" data-layout-align="center" data-layout-width="large" data-layout-border="true">
+
+<img id="" src="asset/ch6/corty3e_fig06_04.jpg" data-figure-id="corty3e-ch6-fig-19" data-layout-width="large" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+<div data-type="figure_text">
+<span data-type="number">Figure 1.8: </span><span data-type="caption"><strong><span data-block_type="fig_num">Figure 6.4</span> Sampling Distribution of the Mean, Marked with the Rare Zone and Common Zone, for Psychic Blood Pressure Data</strong> This is the sampling distribution of the mean for the blood pressure data with a population mean of 124 and a standard error of the mean of 2.00.</span>
+</div>
+</div>
+<div data-block_type="sr_exp_h4_txt" id="corty3e-ch6-p144"><p><span data-block_type="SR-EXP-h4-N-ni"><strong>Step 5</strong></span> <span data-block_type="SR-EXP-h4-T-ri"><strong>Calculate the Test Statistic.</strong></span> In order to calculate the <em>z</em> value, Dr. Levine will first use <span data-type="link" data-href="corty3e_ch5_3.html#corty3e-ch5-bx6-1">Equation 5.1</span> to calculate the standard error of the mean:</p></div>
+<div data-block_type="equation" id="corty3e-ch6-eqn-4"><p>
+<img id="" src="asset/ch6/corty3e_eqn06_196_01.jpg" data-figure-id="" data-layout-width="" data-mmtype="" alt="image">
+</p></div>
+<div data-block_type="sr-ex-txt" id="corty3e-ch6-p145"><p>Now that the standard error of the mean is known, Dr. Levine can use <span data-type="link" data-href="#corty3e-ch6-bx6-1">Equation 6.1</span> to calculate the <em>z</em> value:</p></div>
+<div data-block_type="equation" id="corty3e-ch6-eqn-5"><p>
+<img id="" src="asset/ch6/corty3e_eqn06_196_02.jpg" data-figure-id="" data-layout-width="" data-mmtype="" alt="image">
+</p></div>
+<div data-block_type="page_start" id="corty3e_page_197"><p>197</p></div>
+<div data-block_type="sr_exp_h4_txt" id="corty3e-ch6-p146"><p><span data-block_type="SR-EXP-h4-N-ni"><strong>Step 6</strong></span> <span data-block_type="SR-EXP-h4-T-ri"><strong>Interpret the Results.</strong></span> Which of the following two statements is true?</p></div>
+<ul data-block_type="bullet" id="corty3e-ch6-list-13">
+<li><div data-block_type="sr-exp-bl-first" id="corty3e-ch6-p147"><p>Is either 1.50 ≤ –1.96, or is 1.50 ≥ 1.96?</p></div>
+</li>
+<li><div data-block_type="sr-exp-bl-mid" id="corty3e-ch6-p148"><p>Or, is –1.96 &lt; 1.50 &lt; 1.96?</p></div>
+</li>
+</ul>
+<div data-block_type="sr-ex-txt" id="corty3e-ch6-p149"><p>The second statement is true as 1.50 falls between –1.96 and 1.96. Dr. Levine has failed to reject the null hypothesis. <span data-type="link" data-href="#corty3e-ch6-fig-22"><strong>Figure 6.5</strong></span> shows how the observed value of the test statistic, 1.50, falls in the common zone.</p></div>
+<div data-type="figure" data-figure-id="corty3e-ch6-fig-22" data-block_type="figure" data-layout-align="center" data-layout-width="large" data-layout-border="true">
+
+<img id="" src="asset/ch6/corty3e_fig06_05.jpg" data-figure-id="corty3e-ch6-fig-22" data-layout-width="large" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+<div data-type="figure_text">
+<span data-type="number">Figure 1.9: </span><span data-type="caption"><strong><span data-block_type="fig_num">Figure 6.5</span> Sampling Distribution of the Mean for the Blood Pressure Data, Marked with Observed Value of <em>z</em></strong> The sample mean of 127 is equivalent to a <em>z</em> value of 1.50. Note that this falls in the common zone, meaning that one fails to reject the null hypothesis.</span>
+</div>
+</div>
+<div data-block_type="sr_exp_txt" id="corty3e-ch6-p150"><p>The results are not statistically significant. Not enough evidence exists to conclude that this sample mean, 127, is statistically different from 124. Because there is not sufficient evidence of a difference, the direction of the difference doesn’t matter.</p></div>
+<div data-block_type="sr_exp_txt" id="corty3e-ch6-p151"><p>In APA format, a researcher indicates failure to reject the null hypothesis by writing “<em>p</em> &gt;.05.” (.05 is used because alpha was set at .05.) This indicates that the value of the test statistic fell in the common zone as it is a value that happens more than 5% of the time when the null hypothesis is true. In APA format for these results, Dr. Levine would write</p></div>
+<div data-block_type="sr-exp-eq" id="corty3e-ch6-p152"><p><em>z</em> (<em>N</em> = 81) = 1.50, <em>p</em> &gt; .05</p></div>
+<div data-block_type="sr-ex-txt" id="corty3e-ch6-p153"><p>Here is what Dr. Levine wrote for an interpretation. Note that he follows the template in <span data-type="link" data-href="#corty3e-ch6-fig-10">Table 6.2</span>: (1) telling what was done, (2) providing some facts, (3) explaining what the results mean, and (4) making a suggestion for future research. Again, the interpretation takes just a paragraph:</p></div>
+<div data-block_type="page_start" id="corty3e_page_198"><p>198</p></div>
+<div data-block_type="sr_exp_txt_v1_ni" id="corty3e-ch6-p154"><p>This study was set up to determine if a psychic could “read” blood pressure as he claimed. The psychic selected 81 people whom he believed had abnormal blood pressure. Their systolic blood pressures were measured (<em>M</em> = 127) and compared to the population mean (μ = 124) using a single-sample z test. No statistically significant difference was found (<em>z (N</em> = 81) = 1.50, <em>p</em> &gt; .05), indicating there was no evidence that this group of people selected for having high blood pressure had above-average blood pressure. Based on these data, there is not enough evidence to suggest that this psychic has any ability to read blood pressure. Though the results from this study seem conclusive, if one wanted to test this psychic’s ability again, it would be advisable to use a larger sample size.</p></div>
+</div></div>
+<div data-type="box" data-block_type="sr-h" id="corty3e-ch6-bx2-2"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="corty3e-ch6-bx2-2">Practice Problems 6.2</h3>
+<div data-block_type="sr-h1" id="corty3e-ch6-p155"><p><strong>Review Your Knowledge</strong></p></div>
+<div data-block_type="sr-que-nl" id="corty3e-ch6-p156"><p><span data-block_type="question_num">6.03</span> What are the six steps of hypothesis testing?</p></div>
+<div data-block_type="sr-h1" id="corty3e-ch6-p157"><p><strong>Apply Your Knowledge</strong></p></div>
+<div data-block_type="sr-que-nl" id="corty3e-ch6-p158"><p><span data-block_type="question_num">6.04</span> If <em>N</em> = 55 and σ = 12, what is σ<em><sub>M</sub></em>?</p></div>
+<div data-block_type="sr-que-nl" id="corty3e-ch6-p159"><p><span data-block_type="question_num">6.05</span> If <em>M</em> = 19.40, μ is 22.80, and σ<em><sub>M</sub></em> = 4.60, what is <em>z</em>?</p></div>
+<div data-block_type="sr-que-nl" id="corty3e-ch6-p160"><p><span data-block_type="question_num">6.06</span> A researcher believes the population mean is 20 and the population standard deviation is 4. He takes a random sample of 64 cases from the population and calculates <em>M</em> = 20.75. (a) Do the calculations for a single-sample <em>z</em> test and (b) report the results in APA format.</p></div>
+</div></div>
+</div>
+<!-- #x-digfir-subsection-insertion-point --><!-- #x-digfir-subsection-insertion-point --><!-- #x-digfir-subsection-insertion-point --></div><!-- /#manuscript -->
+<br class="clear" />
+<!-- end of material in original view -->
+
+	<!--[if IE]><script type="text/javascript" src="js/excanvas.compiled.js"></script><![endif]-->
+    
+<script type="text/javascript" src="js/utilities.js"></script>
+<script type="text/javascript" src="js/query_types.js"></script>
+<script type="text/javascript" src="js/player.js"></script>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/jquery-ui-1.8.16.custom.min.js"></script>
+<script type="text/javascript" src="js/jquery_extensions.js"></script>
+<script type="text/javascript" src="js/swfobject.js"></script>
+<script type="text/javascript" src="http://admin.brightcove.com/js/BrightcoveExperiences.js"></script>
+<script type="text/javascript" src="js/digfir_ebook_fw.js"></script>
+<script type="text/javascript" src="js/corty3e.js"></script>
+<script type="text/javascript" src="js/corty3e_ch6.js"></script>
+<script type="text/javascript">
+    //<!--
+    
+$(window).ready(function () {
+	player.initialize('56d62ba1757a2e7b52000004');
+});
+    //-->
+</script>
+</body>
+</html>
+

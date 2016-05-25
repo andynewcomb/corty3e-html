@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]> <html lang="en" class="no-js ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="no-js ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="no-js ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en" class="no-js ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+<head>
+    <title>corty3e_ch6</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <link href="css/boilerplate.css" media="screen" rel="stylesheet" type="text/css" >
+<link href="css/jquery-ui-custom.css" media="screen" rel="stylesheet" type="text/css" >
+<link href="css/manuscript.css" media="screen" rel="stylesheet" type="text/css" >
+<link href="css/digfir_ebook_fw.css" media="screen" rel="stylesheet" type="text/css" >
+<link href="css/corty3e.css" media="screen" rel="stylesheet" type="text/css" >
+<link href="css/corty3e_ch6.css" media="screen" rel="stylesheet" type="text/css" >    
+    
+    </head>
+<body class="noUi">
+<div id="manuscript" data-chapter-number="1">
+    <div data-type="section" data-block_type="h1" id="corty3e-ch6-sec1-1" level="1" data-print_page="180">
+<h2 class="section-title"><span data-type="title" data-title-for="corty3e-ch6-sec1-1"><span data-block_type="sec_num">6.1</span> <span data-block_type="sec_title">The Logic of Hypothesis Testing</span>
+</span></h2>
+
+<div data-block_type="page_start" id="corty3e_page_180"><p>180</p></div>
+<div data-type="box" data-block_type="video" id="corty3e-ch6-video-1"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="corty3e-ch6-video-1"></h3>
+<div data-block_type="vidtxt" id="corty3e-ch6-videotxt-1"><p><span data-type="link" data-href-px="" data-href="http://bcs.whfreeman.com/webpub/statistics/ips7e/student/Stat Videos/ch06/sc_hypothesistest_introI.html" data-target="_pop"><img id="" src="asset/images/video.jpg" data-figure-id="" data-layout-width="" data-mmtype="" alt="image"></span><em>StatClips: Hypothesis Testing Introduction, Part I, Acid Rain Example</em>Video on LaunchPad</p></div>
+</div></div>
+<div data-block_type="txt-ni" id="corty3e-ch6-p16"><p>A <span data-type="termref" data-term="hypothesis">hypothesis</span> is a proposed explanation for observed facts. If, for example, a psychologist noted that people living in sunny climates were happy and people living in cloudy climates were sad, this might lead to the hypothesis that a lack of sun leads to depression.</p></div>
+<div data-block_type="txt" id="corty3e-ch6-p17"><p>Science involves gathering observations, generating hypotheses to explain them, and then testing the hypotheses to see if the predictions they make hold true. In statistics, <span data-type="termref" data-term="hypothesis testing">hypothesis testing</span> is the procedure in which data from a <em>sample</em> are used to evaluate a hypothesis about a <em>population.</em></p></div>
+<div data-block_type="txt" id="corty3e-ch6-p18"><p>Here’s how hypothesis testing works. A cognitive psychologist might hypothesize that the mean IQ in a population is 100. If she gathered a representative sample of people from that population and found that the mean IQ of her sample was 100 or close to 100, there would be little reason to question the hypothesis. However, if the observed mean in the sample were far from the expected mean of 100, then she would have to wonder if the population mean were really 100.</p></div>
+<div data-block_type="txt" id="corty3e-ch6-p19"><p>Here’s another example that shows how humans already use hypothesis testing in everyday life. Amie has a boyfriend, Allen, and she believes (hypothesizes) that Allen loves her. Based on this hypothesis, she expects that Allen will behave in certain ways. If he loves her, then he should want to spend time with her, do nice things for her, hold her hand, and so on. And if Allen does these things, then there’s no reason for Amie to question his love for her. But, if Allen doesn’t do these things—if the observed behavior doesn’t match the expected behavior—then she’ll to start wondering if he truly loves her.</p></div>
+</div>
+    <div data-type="section" data-block_type="h2" id="corty3e-ch6-sec2-1" level="2" data-print_page="180">
+<h2 class="section-title"><span data-type="title" data-title-for="corty3e-ch6-sec2-1">Ten Facts About Hypotheses and Hypothesis Testing
+</span></h2>
+
+<div data-block_type="txt-ni" id="corty3e-ch6-p20"><p>The love example shows how humans use hypothesis testing intuitively. Now, let’s see how scientists have formalized the process with 10 facts about hypothesis testing (<span data-type="link" data-href="#corty3e-ch6-fig-1"><strong>Table 6.1</strong></span>):</p></div>
+<div data-block_type="page_start" id="corty3e_page_181"><p>181</p></div>
+<div data-type="figure" data-figure-id="corty3e-ch6-fig-1" data-block_type="table" data-layout-align="center" data-layout-width="large" data-layout-border="true">
+
+<img id="" src="asset/ch6/corty3e_table06_01.jpg" data-figure-id="corty3e-ch6-fig-1" data-layout-width="large" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+</div>
+<ol data-block_type="numbered" id="corty3e-ch6-list-2">
+<li><div data-block_type="nl-first" id="corty3e-ch6-p21"><p>A hypothesis is a statement about a <em>population,</em> not a sample. This is because a researcher wants to draw a conclusion about the larger population and not about the specific sample being studied.</p></div>
+</li>
+<li><div data-block_type="nl-mid" id="corty3e-ch6-p22"><p>There will be two hypotheses—one called the null hypothesis, <em>H</em><sub>0</sub>, and the other called the alternative hypothesis, <em>H</em><sub>1</sub>.</p></div>
+</li>
+<li><div data-block_type="nl-mid" id="corty3e-ch6-p23"><p>The two hypotheses must be <em>all-inclusive,</em> which means they cover all possible outcomes. For example, if one hypothesis said that all cars in the world were white and the other that all cars were black, those two hypotheses wouldn’t be all-inclusive because red and green and yellow cars also exist. However, if one hypothesis stated, “All cars are white” and the other hypothesis, “Not all cars are white,” then the two hypotheses would be all-inclusive.</p></div>
+</li>
+<li><div data-block_type="nl-mid" id="corty3e-ch6-p24"><p>The two hypotheses must be <em>mutually exclusive,</em> which means that only one hypothesis at a time can be true. For example, a coin can land on heads or on tails, but not on both sides at once. Heads and tails are mutually exclusive outcomes.</p></div>
+</li>
+<li><div data-block_type="nl-mid" id="corty3e-ch6-p25"><p>The null hypothesis is a negative statement. The <span data-type="termref" data-term="null hypothesis">null hypothesis</span> says that in the population the explanatory variable does <em>not</em> have an impact on the outcome variable. For example, if a researcher were testing a technique to improve intelligence, the null hypothesis would state that the technique does <em>not</em> improve intelligence. Because the null hypothesis makes a specific prediction, it would say that the technique has zero impact and does not improve intelligence <em>at all.</em></p></div>
+</li>
+<li><div data-block_type="nl-mid" id="corty3e-ch6-p26"><p>The <span data-type="termref" data-term="alternative hypothesis">alternative hypothesis</span> is what the researcher believes is true; it states that, in the population, the explanatory variable has an impact on the outcome variable. For the researcher testing the intelligence-improving technique, the alternative hypothesis would state that the technique has <em>some</em> impact on intelligence. Notice that the alternative hypothesis doesn’t specify how much impact. Unlike the null hypothesis, the alternative hypothesis doesn’t make a specific prediction.</p></div>
+</li>
+<li><div data-block_type="nl-mid" id="corty3e-ch6-p27"><p>A negative statement, like the null hypothesis, can’t be proven true. Suppose an adult wants to prove the negative statement “There are no unicorns” to a child who believes in unicorns. No matter what evidence the adult offers (e.g., “I looked all through Ohio and didn’t find one”), the child will counter that the adult wasn’t looking in the right place, or that the unicorns heard the adult coming and fled. A negative can’t be proven.</p></div>
+</li>
+<li><div data-block_type="nl-mid" id="corty3e-ch6-p28"><p>However, a negative can be disproven. It just takes one example. If the child ever walks up leading a unicorn on a leash, the adult can no longer claim, “There are no unicorns.” Because the null hypothesis makes a specific prediction, it is used to predict how a researcher’s experiment will turn out. If the experiment doesn’t turn out as the null hypothesis predicted, the researcher disproves, or “rejects,” the null hypothesis. The null hypothesis can be nullified.</p></div>
+</li>
+<li><div data-block_type="nl-mid" id="corty3e-ch6-p29"><p>If the null hypothesis is rejected, then one has to accept the mutually exclusive alternative hypothesis as true. This happens because the null hypothesis and the alternative hypothesis are all-inclusive and mutually exclusive. If one hypothesis is not true, then the other hypothesis has to be true. As the researcher usually believes that the alternative hypothesis is true, the objective of a study is almost always to reject the null hypothesis.</p></div>
+<div data-block_type="page_start" id="corty3e_page_182"><p>182</p></div>
+</li>
+<li><div data-block_type="nl-last" id="corty3e-ch6-p30"><p>However, if a researcher fails to disprove the null hypothesis, he or she can’t say that the null hypothesis is true. Remember, a negative statement, like the null hypothesis, can’t be proven true. The best the researcher can say is that he or she hasn’t found enough evidence to reject the null hypothesis. This is different from saying the null hypothesis is true, just as a not guilty verdict in a trial is different from saying that the defendant is innocent. Not guilty just means that there wasn’t enough evidence to persuade the jury that the defendant was guilty.</p></div>
+</li>
+</ol>
+<div data-type="figure" data-figure-id="corty3e-ch6-fig-2" data-block_type="un_figure" data-layout-align="center" data-layout-width="large" data-layout-border="true">
+
+<img id="" src="asset/ch6/corty3e_fig06_un01.jpg" data-figure-id="corty3e-ch6-fig-2" data-layout-width="large" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+</div>
+<div data-block_type="txt" id="corty3e-ch6-p36a"><p>It is impossible to prove a negative hypothesis, but one positive example will disprove it.</p></div>
+<div data-type="box" data-block_type="sr-h" id="corty3e-ch6-bx2-1"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="corty3e-ch6-bx2-1">Practice Problems 6.1</h3>
+<div data-block_type="sr-h1" id="corty3e-ch6-p31"><p><strong>Review Your Knowledge</strong></p></div>
+<div data-block_type="sr-que-nl" id="corty3e-ch6-p32"><p><span data-block_type="question_num">6.01</span> How do the null hypothesis and the alternative hypothesis differ?</p></div>
+<div data-block_type="sr-h1" id="corty3e-ch6-p33"><p><strong>Apply Your Knowledge</strong></p></div>
+<div data-block_type="sr-que-nl" id="corty3e-ch6-p34"><p><span data-block_type="question_num">6.02</span> Explain this statement: “Hypothesis testing involves comparing what is observed to happen in an experiment to what is expected to happen.”</p></div>
+</div></div>
+</div>
+<!-- #x-digfir-subsection-insertion-point --><!-- #x-digfir-subsection-insertion-point --></div><!-- /#manuscript -->
+<br class="clear" />
+<!-- end of material in original view -->
+
+	<!--[if IE]><script type="text/javascript" src="js/excanvas.compiled.js"></script><![endif]-->
+    
+<script type="text/javascript" src="js/utilities.js"></script>
+<script type="text/javascript" src="js/query_types.js"></script>
+<script type="text/javascript" src="js/player.js"></script>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/jquery-ui-1.8.16.custom.min.js"></script>
+<script type="text/javascript" src="js/jquery_extensions.js"></script>
+<script type="text/javascript" src="js/swfobject.js"></script>
+<script type="text/javascript" src="http://admin.brightcove.com/js/BrightcoveExperiences.js"></script>
+<script type="text/javascript" src="js/digfir_ebook_fw.js"></script>
+<script type="text/javascript" src="js/corty3e.js"></script>
+<script type="text/javascript" src="js/corty3e_ch6.js"></script>
+<script type="text/javascript">
+    //<!--
+    
+$(window).ready(function () {
+	player.initialize('56d62ba1757a2e7b52000004');
+});
+    //-->
+</script>
+</body>
+</html>
+

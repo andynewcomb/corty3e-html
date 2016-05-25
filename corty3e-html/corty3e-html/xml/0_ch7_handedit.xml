@@ -1,0 +1,962 @@
+<chapter number="7" id="corty3e-ch7-chapter-7" title="7 The Single-Sample t Test" start-numbering-at="07" numbered="true">
+<section id="corty3e-ch7-sec1-1a" block_type="intro" title="Chapter Introduction" numbered="false" level="1" print_page="215">
+<p id="corty3e_page_215" block_type="page_start">215</p>
+<p id="corty3e-ch7-p1" block_type="chapter_number">7</p>
+<p id="corty3e-ch7-p2" block_type="chapter_title">The Single-Sample <em>t</em> Test</p>
+<box numbered="false" id="corty3e-ch7-ibx-1" block_type="intro_box">
+<p id="corty3e-ch7-p3" block_type="obj-h"><strong>LEARNING OBJECTIVES</strong></p>
+<list id="corty3e-ch7-list-1" type="unordered" block_type="bluesquare">
+<li><p id="corty3e-ch7-p4" block_type="obj-bl">Choose when to use a single-sample <em>t</em> test.</p></li>
+<li><p id="corty3e-ch7-p5" block_type="obj-bl">Calculate the test statistic for a single-sample <em>t</em> test.</p></li>
+<li><p id="corty3e-ch7-p6" block_type="obj-bl">Interpret the results of a single-sample <em>t</em> test.</p></li>
+</list>
+<p id="corty3e-ch7-p7" block_type="obj-h"><strong>CHAPTER OVERVIEW</strong></p>
+<p id="corty3e-ch7-p10" block_type="co-txt-ni">In the last chapter, the logic of hypothesis testing was introduced with the single-sample <em>z</em> test. The single-sample <em>z</em> test was great as a prototype of hypothesis testing, but it is rarely used because it requires knowing the population standard deviation of the dependent variable. For most psychological variables&#8212;for example, reaction time in a driving simulator, number of words recalled from a list of 20, how close one is willing to get to a snake&#8212;the population standard deviation isn&#8217;t known. In this chapter, we&#8217;ll learn the single-sample <em>t</em> test, a test that like the single-sample <em>z</em> test allows one to compare a sample mean to a population mean. The single-sample <em>t</em> test, unlike the single-sample <em>z</em> test, can be used when a researcher doesn&#8217;t know the population standard deviation. Thus, it is a more commonly used test.</p>
+<box numbered="false" id="corty3e-ch7-exp2-1" block_type="mn2">
+<p id="corty3e-ch7-p8" block_type="co-toc-h1-t"><link href="#corty3e-ch7-sec1-1"><phrase block_type="co-toc-h1-n-ri">7.1</phrase> Calculating the Single-Sample <em>t</em> Test</link></p>
+<p id="corty3e-ch7-p9" block_type="co-toc-h1-t"><link href="#corty3e-ch7-sec1-2"><phrase block_type="co-toc-h1-n-ri">7.2</phrase> Interpreting the Single-Sample <em>t</em> Test</link></p>
+</box>
+</box>
+</section>
+<section id="corty3e-ch7-sec1-1" block_type="h1" chapter="7" title="" numbered="false" level="1" print_page="215">
+<section-metadata><section-title><phrase block_type="sec_num">7.1</phrase> <phrase block_type="sec_title">Calculating the Single-Sample <em>t</em> Test</phrase></section-title></section-metadata>
+<box id="corty3e-ch7-video-1" block_type="video">
+<p id="corty3e-ch7-videotxt-1" block_type="vidtxt"><link href="http://bcs.whfreeman.com/WebPub/Statistics/statvtk/Videos/StatClips/One_Sample_Hypothesis_Testing_clearSkinCap_3/One_Sample_Hypothesis_Testing.html" target="_pop" data-href-px=""><image asset-id="corty3e-ch7-vimg-1" alt="image" src="asset/images/video.jpg"/></link><em>StatClips: One Sample Hypothesis Testing</em>Video on LaunchPad</p>
+</box>
+<box id="corty3e-ch7-video-2" block_type="video">
+<p id="corty3e-ch7-videotxt-2" block_type="vidtxt"><link href="http://bcs.whfreeman.com/webpub/statistics/ips7e/Student/Stat Videos/ch07/sc_onesamptest_twosampletest_ch07.html" target="_pop" data-href-px=""><image asset-id="corty3e-ch7-vimg-2" alt="image" src="asset/images/video.jpg"/></link><em>StatClips: One Sample Test of Proportions, Two Sample Tests of Means</em>Video on LaunchPad</p>
+</box>
+<p id="corty3e-ch7-p11" block_type="txt-ni">The <termref term="single-sample t test">single-sample <em>t</em> test</termref> is used to compare a sample mean to a specific value like a population mean. As it deals with means, it is used when the dependent variable is measured at the interval or ratio level. It does the same thing as a single-sample <em>z</em> test, but it is more commonly used because it doesn&#8217;t require knowing the population standard deviation, &#963;. Instead, the single-sample <em>t</em> test uses the sample standard deviation, <em>s.</em> As long as there is access to the sample, it is possible to calculate <em>s.</em></p>
+<p id="corty3e-ch7-p12" block_type="txt">For an example, imagine the following scenario. Dr. Farshad, a clinical psychologist, wondered whether adults with attention deficit hyperactivity disorder (ADHD) had reflexes that differed in speed from those of the general population. She located a test for reaction time that was normed on adults in the United States. The average reaction time was 200 milliseconds (msec). This is a population mean, so the Greek letter mu is used to represent it and one would write &#956; &#61; 200.</p>
+<p id="corty3e-ch7-p13" block_type="txt">From the various ADHD treatment centers in her home state of Illinois, Dr. Farshad obtained a random sample of 141 adults who had been diagnosed with ADHD. Each adult was tested individually on the reaction-time test. The mean reaction time for the <em>sample</em> of 141 was 220 msec (<em>M</em> &#61; 220), with a standard deviation of 27 msec (<em>s</em> &#61; 27). (Note that because these are values calculated from a sample, the abbreviations for the mean and standard deviation are Roman, not Greek, letters.)</p>
+<p id="corty3e_page_216" block_type="page_start">216</p>
+<p id="corty3e-ch7-p14" block_type="txt">Dr. Farshad&#8217;s question is whether adults with ADHD differ in reaction time from the general population. 220 msec is definitely different from 200 msec, so the mean reaction time of this sample of adults with ADHD is different from the population mean. However, Dr. Farshad doesn&#8217;t know if the difference is a statistically significant one! It&#8217;s possible that the sample mean is different from the population mean due to sampling error. To answer her question, she&#8217;s going to need hypothesis testing.</p>
+</section>
+<section id="corty3e-ch7-sec2-1" block_type="h2" chapter="7" title="" numbered="false" level="2" print_page="216">
+<section-metadata><section-title>The Six Steps of Hypothesis Testing</section-title></section-metadata>
+<p id="corty3e-ch7-p15" block_type="txt-ni">Let&#8217;s follow Dr. Farshad through the six steps of hypothesis testing for the single-sample <em>t</em> test: (1) picking a <em>test;</em> (2) checking the <em>assumptions;</em> (3) listing the <em>hypotheses;</em> (4) setting the <em>decision rule;</em> (5) <em>calculating</em> the test statistic; and (6) <em>interpreting</em> the results. Remember the mnemonic: &#8220;Tom and Harry despise crabby infants.&#8221;</p>
+<figure id="corty3e-ch7-fig-1" block_type="un_figure" numbered="false" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="medium" border="true"/>
+<image asset-id="corty3e-ch7-img-1" alt="image" src="asset/ch7/corty3e_fig07_un01.jpg"/>
+<caption>The six steps for hypothesis testing are captured in the mnemonic &#8220;<strong>T</strong>om <strong>a</strong>nd <strong>H</strong>arry <strong>d</strong>espise <strong>c</strong>rabby <strong>i</strong>nfants.&#8221;</caption>
+</figure>
+<p id="corty3e-ch7-p16" block_type="h4"><phrase block_type="h4-n-ri"><strong>Step 1</strong></phrase> <strong>Pick a Test</strong></p>
+<p id="corty3e-ch7-p17" block_type="txt-ni">The first step in hypothesis testing involves selecting the appropriate statistical test. Dr. Farshad is comparing the mean of a sample to the mean of a population, so she could use either a single-sample <em>z</em> test or a single-sample <em>t</em> test. However, she doesn&#8217;t know the population standard deviation. She&#8217;ll have to use the single-sample <em>t</em> test to figure out whether the mean reaction time of the sample of adults with ADHD is statistically different from the mean reaction time of the general population.</p>
+<p id="corty3e-ch7-p18" block_type="h4"><phrase block_type="h4-n-ri"><strong>Step 2</strong></phrase> <strong>Check the Assumptions</strong></p>
+<p id="corty3e-ch7-p19" block_type="txt-ni">To determine if the sample mean is statistically different from the population mean, Dr. Farshad plans to use a single-sample <em>t</em> test. However, a single-sample <em>t</em> test can only be used if its assumptions are met. The three assumptions for the single-sample <em>t</em> test are the same as they were for the single-sample <em>z</em> test and are listed in <link href="#corty3e-ch7-fig-2"><strong>Table 7.1</strong></link>.</p>
+<figure id="corty3e-ch7-fig-2" block_type="table" numbered="true" number="7.1" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="large" border="true"/>
+<image asset-id="corty3e-ch7-img-2" alt="image" src="asset/ch7/corty3e_table07_01.jpg"/>
+</figure>
+<p id="corty3e_page_217" block_type="page_start">217</p>
+<p id="corty3e-ch7-p20" block_type="txt">The first assumption involves whether the sample is a random sample from the population. This is a robust assumption. So if it is violated&#8212;and it often is&#8212;the analysis can still be completed. One just has to be careful about the population to which one generalizes the results. In this example, the sample is a random sample from the population of adults with ADHD in one state. This means that Dr. Farshad should only generalize her results to that state.</p>
+<p id="corty3e-ch7-p21" block_type="txt">The second assumption is that the observations within the sample are independent. This assumption is not robust. If it is violated, one cannot proceed with the single-sample <em>t</em> test. In this example, each participant is in the sample only once and the reaction time of each case is not influenced by any other case. The cases were selected randomly and tested individually, so they are independent and the second assumption is not violated.</p>
+<p id="corty3e-ch7-p22" block_type="txt">The third assumption is that the dependent variable, reaction time, is normally distributed in the population. This assumption is robust and the analysis can be completed if the assumption is violated as long as the sample size is large, say, 30 or more, and the deviation from normality is not too large. How does one test this assumption? One way is simply assuming that it is true&#8212;it is generally accepted that psychological characteristics (like personality) and physical characteristics (like height) are normally distributed. So, Dr. Farshad is willing to assume that reaction time is normally distributed. Another way is to make a graph of the data. In <link href="#corty3e-ch7-fig-3"><strong>Figure 7.1</strong></link>, the histogram that Dr. Farshad made for the frequency distribution of the reaction-time data can be seen. Though not perfectly normal, it has a normal-ish shape. That, combined with a large sample size, leads Dr. Farshad to feel sure that this assumption has not been violated.</p>
+<figure id="corty3e-ch7-fig-3" block_type="figure" numbered="true" number="7.1" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="medium" border="true"/>
+<image asset-id="corty3e-ch7-img-3" alt="image" src="asset/ch7/corty3e_fig07_01.jpg"/>
+<caption><strong><phrase block_type="fig_num">Figure 7.1</phrase> Histogram Showing Reaction Time for 141 Adults with Diagnosis of ADHD</strong> One way to check the normality assumption, if the sample size is large enough, is to make a histogram and examine it to see if it appears normally distributed. This graph of Dr. Farshad&#8217;s reaction-time data looks reasonably normal-ish.</caption>
+</figure>
+<box title="A Common Question" numbered="false" id="corty3e-ch7-bx1-1" block_type="bx-1-h">
+<p id="corty3e-ch7-p23" block_type="bx1-que"><strong>Q</strong> Why does the normality assumption exist?</p>
+<p id="corty3e-ch7-p24" block_type="bx1-ans"><strong>A</strong> Hypothesis testing works by comparing the calculated value of the statistic to the expected value. The expected value comes from the sampling distribution, so the normality assumption is really about the shape of the sampling distribution. We know from the central limit theorem that the sampling distribution of the mean will be normal if <em>N</em> is large. If <em>N</em> is small, the sampling distribution will be normal if the population from which the samples are drawn is normal. And that is why the normality assumption exists.</p>
+</box>
+<p id="corty3e_page_218" block_type="page_start">218</p>
+<p id="corty3e-ch7-p25" block_type="txt">The assumptions have been met, so she can proceed with the planned statistical test, the single-sample <em>t</em> test.</p>
+<p id="corty3e-ch7-p26" block_type="h4"><phrase block_type="h4-n-ri"><strong>Step 3</strong></phrase> <strong>List the Hypotheses</strong></p>
+<p id="corty3e-ch7-p27" block_type="txt-ni">Before writing the hypotheses, the researcher has to know if he or she is doing a one-tailed test or a two-tailed test. Two-tailed tests, called nondirectional tests, are more commonly used and they are a bit more conservative, in the sense that they make it harder to reject the null hypothesis. So, a two-tailed test is the &#8220;default&#8221; option&#8212;if in doubt, choose to do a two-tailed test. But, here&#8217;s the difference between the two types of tests:</p>
+<list id="corty3e-ch7-list-2" type="unordered" block_type="bullet">
+<li><p id="corty3e-ch7-p28" block_type="bl-first">A two-tailed test is used when the researcher is testing for a difference in either direction. Before collecting her data, Dr. Farshad didn&#8217;t know whether adults with ADHD had faster or slower reaction times. This calls for a nondirectional test and nondirectional hypotheses.</p></li>
+<li><p id="corty3e-ch7-p29" block_type="bl-last">A one-tailed test is used when the researcher has a prediction about the direction of the difference <em>in advance</em> of collecting the data. As long as the difference is in the expected direction, a one-tailed test makes it easier to obtain statistically significant results.</p></li>
+</list>
+<p id="corty3e-ch7-p30" block_type="txt-ni">The hypotheses for the nondirectional (two-tailed) single-sample <em>t</em> test for Dr. Farshad&#8217;s study are</p>
+<p id="corty3e-ch7-p31" block_type="eq"><em>H</em><sub>0</sub>: &#956;<sub>ADHD-Adults</sub> &#61; 200</p>
+<p id="corty3e-ch7-p32" block_type="eq"><em>H</em><sub>1</sub>: &#956;<sub>ADHD-Adults</sub> &#8800; 200</p>
+<p id="corty3e-ch7-p33" block_type="txt">The null hypothesis (<em>H</em><sub>0</sub>) says that the mean reaction time for the population of adults with ADHD is <em>not</em> different from some specified value. In this case, that value is the mean reaction time, 200 msec, of Americans in general. (The null hypothesis could be phrased as &#956;<sub>ADHD-Adults</sub> &#61; &#956;<sub>Americans</sub> &#61; 200.)</p>
+<p id="corty3e-ch7-p34" block_type="txt">The alternative hypothesis (<em>H</em><sub>1</sub>) says that the mean reaction time for the population of adults with ADHD is something other than the specified value of 200 msec. It doesn&#8217;t say whether it is faster or slower, just that the mean reaction time is different. This means that the observed sample mean should be different enough from 200 msec that sampling error does not explain the difference. (The alternative hypothesis could be phrased as &#956;<sub>ADHD-Adults</sub> &#8800; &#956;<sub>Americans</sub>.)</p>
+<p id="corty3e_page_219" block_type="page_start">219</p>
+<p id="corty3e-ch7-p35" block_type="txt">If Dr. Farshad had believed that adults with ADHD had, for example, slower reaction times than the general population, then she would have planned a one-tailed test. In such a situation, the hypotheses would have been</p>
+<p id="corty3e-ch7-p36" block_type="eq"><em>H</em><sub>0</sub>: &#956;<sub>ADHD-Adults</sub> &#8804; 200</p>
+<p id="corty3e-ch7-p37" block_type="eq"><em>H</em><sub>1</sub>: &#956;<sub>ADHD-Adults</sub> &#62; 200</p>
+<p id="corty3e-ch7-p38" block_type="txt">Never forget that the alternative hypothesis expresses what the researcher believes to be true and that the researcher wants to be forced to reject the null hypothesis, so he or she has to accept the alternative hypothesis. In this one-tailed test example, the researcher&#8217;s belief is that the reaction time is longer (i.e., slower) for people with ADHD. Once the alternative hypothesis is formed, the null hypothesis is written to make both hypotheses all-inclusive and mutually exclusive. Here, the null hypothesis would be that people with ADHD have reaction times the same as or faster than those of the general population.</p>
+<p id="corty3e-ch7-p39" block_type="h4"><phrase block_type="h4-n-ri"><strong>Step 4</strong></phrase> <strong>Set the Decision Rule</strong></p>
+<p id="corty3e-ch7-p40" block_type="txt-ni">Setting the decision rule involves determining when to reject the null hypothesis and when to fail to reject the null hypothesis. To set the decision rule, find the critical value of the test statistic, the boundary between the rare zone and the common zone of the sampling distribution. For the single-sample <em>t</em> test, this will be a critical value of <em>t.</em></p>
+<p id="corty3e-ch7-p41" block_type="txt">What is <em>t</em>? <em>t</em> is the statistic that is calculated in the next step of the six-step hypothesis test procedure. The statistic <em>t</em> is a lot like the statistic <em>z</em> in the single-sample <em>z</em> test:</p>
+<list id="corty3e-ch7-list-3" type="unordered" block_type="bullet">
+<li><p id="corty3e-ch7-p42" block_type="bl-first">If the null hypothesis is true and the sample mean is <em>exactly</em> equal to the specified value, <em>t</em> will equal zero.</p></li>
+<li><p id="corty3e-ch7-p43" block_type="bl-mid">As the difference between the sample mean and the specified value grows, so does the <em>t</em> value.</p></li>
+<li><p id="corty3e-ch7-p44" block_type="bl-last">When the value of <em>t</em> that is calculated (the observed value of <em>t</em>) differs enough from zero (the expected value of <em>t</em>), then the null hypothesis is rejected.</p></li>
+</list>
+</section>
+<section id="corty3e-ch7-sec2-2" block_type="h2" chapter="7" title="" numbered="false" level="2" print_page="219">
+<section-metadata><section-title>The Critical Value of <em>t</em></section-title></section-metadata>
+<p id="corty3e-ch7-p45" block_type="txt-ni">The point that separates &#8220;differs enough from zero&#8221; from &#8220;doesn&#8217;t differ enough from zero&#8221; is called the <termref term="critical value of t">critical value of <em>t</em></termref>, abbreviated <em>t<sub>cv</sub>.</em> To find <em>t<sub>cv</sub>,</em> three pieces of information are needed:</p>
+<list id="corty3e-ch7-list-4" type="ordered" block_type="numbered">
+<li><p id="corty3e-ch7-p46" block_type="nl-first">Is the test one-tailed or two-tailed?</p></li>
+<li><p id="corty3e-ch7-p47" block_type="nl-mid">How willing is one to make a Type I error?</p></li>
+<li><p id="corty3e-ch7-p48" block_type="nl-last">How large is the sample size?</p></li>
+</list>
+<p id="corty3e-ch7-p49" block_type="txt">The first question, whether a one-tailed or a two-tailed test is being done, was already answered when writing the hypotheses. Dr. Farshad is examining whether adults with ADHD have faster <em>or</em> slower reaction times than the general population. The reaction-time study calls for a two-tailed test because the hypotheses didn&#8217;t specify a direction for the difference.</p>
+<p id="corty3e-ch7-p50" block_type="txt">The second question in determining <em>t<sub>cv</sub></em> involves how willing one is to make a Type I error. A Type I error occurs when the researcher concludes, mistakenly, that the null hypothesis should be rejected. A common convention in statistics is to choose to have no more than a 5&#37; chance of making a Type I error. As alpha (&#945;) is the probability of a Type I error, statisticians phrase this as &#8220;setting alpha at .05&#8221; or as &#8220;&#945; &#61; .05.&#8221; Dr. Farshad has chosen to follow convention and set alpha at .05.</p>
+<p id="corty3e_page_220" block_type="page_start">220</p>
+<p id="corty3e-ch7-p51" block_type="txt">Overall, she wants her chance of making a Type I error to be no more than 5&#37;. She has chosen to do a two-tailed test, so she will need to split that 5&#37; in two and put 2.5&#37; in each tail of the sampling distribution. This means Dr. Farshad will have two critical values of <em>t,</em> one positive and one negative. (If the test were one-tailed, all 5&#37; of the rare zone would fall on one side and there would be only one critical value of <em>t.</em>)</p>
+<p id="corty3e-ch7-p52" block_type="txt">The third question for determining <em>t<sub>cv</sub>,</em> how large the sample size is, matters because the shape of the <em>t</em> distribution changes as the sample size changes. The tail of a <em>t</em> distribution is larger when the sample size is smaller. As a result, the critical value of <em>t</em> is farther away from zero when the sample size is small.</p>
+<p id="corty3e-ch7-p53" block_type="txt">This is difficult to visualize without a concrete example, so look at <link href="#corty3e-ch7-fig-4"><strong>Figure 7.2</strong></link> in which two sampling distributions of <em>t</em> are superimposed&#8212;one for <em>N</em> &#61; 6 (the dotted line) and one for <em>N</em> &#61; 60 (the solid line). Which line is on top&#8212;the dotted line or the solid line&#8212;depends on whether one is looking at the center of the distribution or the tails.</p>
+<figure id="corty3e-ch7-fig-4" block_type="figure" numbered="true" number="7.2" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="large" border="true"/>
+<image asset-id="corty3e-ch7-img-4" alt="image" src="asset/ch7/corty3e_fig07_02.jpg"/>
+<caption><strong><phrase block_type="fig_num">Figure 7.2</phrase> Shape of Sampling Distribution of <em>t</em> as a Function of Sample Size</strong> This figure shows how the shape of the sampling distribution of <em>t</em> changes with the sample size. When the sample size is small, there is more variability and more samples have means that fall farther out in a tail. As a result, the critical value of <em>t</em> falls farther away from the midpoint when the sample size is small, making it more difficult to reject the null hypothesis.</caption>
+</figure>
+<p id="corty3e-ch7-p54" block_type="txt">Look at the tails. There, the dotted line (the one for the <em>t</em> distribution when <em>N</em> &#61; 6) is above the solid line for the <em>t</em> distribution when <em>N</em> &#61; 60. What does it mean for one line to be on top of the other? The <em>y</em>-axis measures frequency, so when one line is above another, this means it has a higher frequency at that point.</p>
+<p id="corty3e-ch7-p55" block_type="txt">Focus on the positive side, the right-hand side, of the distribution. (Because the <em>t</em> distribution is symmetric, both sides are the same.) Note that around <em>t</em> &#61; 1.5, the two lines cross. From that point on, the frequencies at each <em>t</em> value are higher for the <em>N</em> &#61; 6 distribution than for the <em>N</em> &#61; 60 distribution. Which distribution has more cases with <em>t</em> values above 1.50, <em>N</em> &#61; 6 or <em>N</em> &#61; 60? The answer is that the <em>N</em> &#61; 6 distribution has a higher percentage of cases in the tail.</p>
+<p id="corty3e-ch7-p56" block_type="txt">The implication of this is important: the total frequency of scores in the tail is higher for the distribution with the smaller sample size (<em>N</em> &#61; 6). To cut off the extreme 2.5&#37; of the scores for each distribution, the cut-off point will fall farther away from zero for the <em>N</em> &#61; 6 distribution than for the <em>N</em> &#61; 60 distribution. In this example, the cut-off points (the critical values of <em>t</em>) are 2.57 for <em>N</em> &#61; 6 and 2.00 for <em>N</em> &#61; 60. The critical value falls closer to zero when the sample size is larger, and it falls farther away from zero when the sample size is smaller.</p>
+<p id="corty3e_page_221" block_type="page_start">221</p>
+<p id="corty3e-ch7-p57" block_type="txt">Sample size affects the critical value of <em>t,</em> and the critical value determines the rare and common zones in the sampling distribution. (Remember, when a result falls in the rare zone, the null hypothesis is rejected; when a result falls in the common zone, the null hypothesis is not rejected.) So, sample size affects the ability to reject the null hypothesis:</p>
+<list id="corty3e-ch7-list-5" type="unordered" block_type="bullet">
+<li><p id="corty3e-ch7-p58" block_type="bl-first">When the sample size is small, the critical value of <em>t</em> falls farther away from zero, making the rare zone harder to reach, making it more difficult to reject the null hypothesis.</p></li>
+<li><p id="corty3e-ch7-p59" block_type="bl-last">Larger sample sizes have the opposite effect. When a sample size is large, the critical value of <em>t</em> falls closer to zero. As a result, the rare zone is easier to reach, which makes it easier to reject the null hypothesis.</p></li>
+</list>
+<p id="corty3e-ch7-p60" block_type="txt">The goal of research almost always is to reject the null hypothesis, so having a larger sample size is an advantage.</p>
+<p id="corty3e-ch7-p61" block_type="txt">To find the critical value of <em>t</em> for a given sample size, use <link href="corty3e-appendix01.xml#corty3e-app1-fig-8">Appendix Table 3</link>, a table of critical values of <em>t.</em> A portion of <link href="corty3e-appendix01.xml#corty3e-app1-fig-8">Appendix Table 3</link> is shown in <link href="#corty3e-ch7-fig-5"><strong>Table 7.2</strong></link>.</p>
+<figure id="corty3e-ch7-fig-5" block_type="table" numbered="true" number="7.2" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="xlarge" border="true"/>
+<image asset-id="corty3e-ch7-img-5" alt="image" src="asset/ch7/corty3e_table07_02.jpg"/>
+</figure>
+<p id="corty3e-ch7-p62" block_type="txt">There are several things to note in <link href="#corty3e-ch7-fig-5">Table 7.2</link>. First, note that there are different <em>rows</em> for the critical values. The rows represent different critical values of <em>t</em> based on sample size. The heading for the rows is &#8220;<em>df</em>,&#8221; which stands for <em>degrees of freedom.</em> <termref term="Degrees of freedom">Degrees of freedom</termref> represent the number of values in a sample that are free to vary. For example, if the mean of three cases is 10, then the values for only two cases are free to vary. If one case has a score of 9 and another case has a score of 11, then the third case has to have a score of 10. In that example, there are three values, and 2 degrees of freedom&#8212;once two values are known, the third is determined.</p>
+<p id="corty3e_page_222" block_type="page_start">222</p>
+<p id="corty3e-ch7-p63" block_type="txt">Degrees of freedom and sample size are yoked together. As the sample size becomes larger, the degrees of freedom increase. And, other things being equal, larger sample sizes are better because there is a greater likelihood that the sample represents the population. In fact, when the sample size is infinitely large, the <em>t</em> distribution is the same as the <em>z</em> distribution because the whole population is being sampled.</p>
+<p id="corty3e-ch7-p64" block_type="txt">For a single-sample <em>t</em> test, the degrees of freedom are calculated as the sample size minus 1. This is shown in <link href="#corty3e-ch7-bx6-1">Equation 7.1</link>.</p>
+<box title="" numbered="false" id="corty3e-ch7-bx6-1" block_type="eq-t">
+<box-metadata><box-title><phrase block_type="sec_num">Equation 7.1</phrase> <phrase block_type="sec_title">Degrees of Freedom (<em>df</em>) for a Single-Sample <em>t</em> Test</phrase></box-title></box-metadata>
+<p id="corty3e-ch7-p65" block_type="eq"><em>df</em> &#61; <em>N</em> &#8211; 1</p>
+<p id="corty3e-ch7-p66" block_type="eq-txt-ni">where <em>df</em> &#61; degrees of freedom</p>
+<p id="corty3e-ch7-p67" block_type="eq-unl"><em>N</em> &#61; sample size</p>
+</box>
+<p id="corty3e-ch7-p68" block_type="txt">For the reaction-time study, there are 141 participants in the sample, so degrees of freedom are calculated like this:</p>
+<p id="corty3e-ch7-p69" block_type="eq"><em>df</em> &#61; 141 &#8211; 1</p>
+<p id="corty3e-ch7-p70" block_type="eq">&#61; 140</p>
+<p id="corty3e-ch7-p71" block_type="txt-ni">Look at <link href="#corty3e-ch7-fig-5">Table 7.2</link> again. The second thing to note in the table of critical values of <em>t</em> is that there are four columns of critical values. Which column to use depends on two factors: (1) if a one-tailed test or two-tailed test is being done, and (2) where alpha, the willingness to make a Type I error, is set.</p>
+<p id="corty3e-ch7-p72" block_type="txt">The critical values of <em>t</em> in the column for a two-tailed test with a 5&#37; chance of Type I error (i.e., &#945; &#61; .05) have been bolded to make them easier to find because they are the most commonly used.</p>
+<p id="corty3e-ch7-p73" block_type="txt">With the reaction-time study as a two-tailed test, Dr. Farshad would reject the null hypothesis if adults with ADHD had slower reaction times than the general population <em>or</em> if adults with ADHD had faster reaction times than the general population. That is what a two-tailed test means.</p>
+<p id="corty3e-ch7-p74" block_type="txt">Under these conditions (<em>df</em> &#61; 140, &#945; &#61; .05, two-tailed), Dr. Farshad finds that the critical value of <em>t</em> is &#177;1.977 (i.e., &#8211;1.977 and 1.977). These values are marked in <link href="#corty3e-ch7-p75"><strong>Figure 7.3</strong></link>, along with the rare and common zones.</p>
+<p id="corty3e-ch7-p75" block_type="txt">The critical value of <em>t</em> would be different if this were a one-tailed test. If Dr. Farshad had reason, in advance of collecting data, to believe that adults with ADHD had slower reaction times, then she could do a one-tailed test. In such a case, she would only reject the null hypothesis if adults with ADHD had slower reaction times than the general population. For <em>df</em> &#61; 140 and with &#945; &#61; .05, the one-tailed critical value of <em>t</em> would be 1.656. This critical value of 1.656 is closer to zero, the midpoint of the sampling distribution, than was the critical value (1.977) for the two-tailed test. This means the rare zone is more easily reached and makes it easier to reject the null hypothesis for the one-tailed test.</p>
+<figure id="corty3e-ch7-fig-6" block_type="figure" numbered="true" number="7.3" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="large" border="true"/>
+<image asset-id="corty3e-ch7-img-6" alt="image" src="asset/ch7/corty3e_fig07_03.jpg"/>
+<caption><strong><phrase block_type="fig_num">Figure 7.3</phrase> Setting the Decision Rule: Two-Tailed, Single-Sample <em>t</em> Test</strong> In this sampling distribution of <em>t</em> values (<em>df</em> &#61; 140, &#945; &#61; .05, two-tailed), the border between the rare and common zones is &#177;1.977. If the observed value of <em>t</em> falls in the rare zone, the null hypothesis is rejected; one fails to reject it if the observed value falls in the common zone. Note that the rare zone is split into two parts, half in each tail of the distribution.</caption>
+</figure>
+<p id="corty3e-ch7-p76" block_type="txt"><link href="#corty3e-ch7-fig-7"><strong>Figure 7.4</strong></link> shows the larger rare zone on the right for the one-tailed test. The rare zone for the two-tailed test is marked with /// and the rare zone for the one-tailed test is marked with \\\. Though the total <em>percentage</em> of the curve that is the rare zone is the same for the two tests, notice how more <em>area</em> of the rare zone is marked off on one side by the one-tailed test (\\\) than by the two-tailed test (///). As a result, it is easier to reject the null hypothesis with a one-tailed test than a two-tailed test, as long as the difference is in the expected direction. This is an advantage for one-tailed tests. The advantage disappears if there is a difference, but it is not in the hypothesized direction.</p>
+<figure id="corty3e-ch7-fig-7" block_type="figure" numbered="true" number="7.4" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="large" border="true"/>
+<image asset-id="corty3e-ch7-img-7" alt="image" src="asset/ch7/corty3e_fig07_04.jpg"/>
+<caption><strong><phrase block_type="fig_num">Figure 7.4</phrase> Comparing Rare Zones for One-Tailed and Two-Tailed Tests</strong> The rare zone of the sampling distribution of <em>t</em> with <em>df</em> &#61; 140 and &#945; &#61; .05 for a one-tailed test is the section marked \\\ to the right of <em>t</em> &#61; 1.656. For a two-tailed test, if the difference between the sample and population mean falls in the same direction, it is the area marked /// to the right of <em>t</em> &#61; 1.977 (The rare zone for the two-tailed test also includes the /// area on the left). Notice the area of the rare zone is larger for the one-tailed test on one side of the curve, making it that much easier to reject the null hypothesis for a one-tailed test.</caption>
+</figure>
+<p id="corty3e_page_223" block_type="page_start">223</p>
+<p id="corty3e-ch7-p77" block_type="txt">Dr. Farshad was conducting an exploratory study to see if adults with ADHD differed in reaction time&#8212;in either direction&#8212;from the general population. So, she&#8217;s doing a two-tailed test. Here&#8217;s the general version of the decision rule for a two-tailed test:</p>
+<p id="corty3e-ch7-p78" block_type="eq">If <em>t</em> &#8804; &#8211;<em>t<sub>cv</sub></em> <em>or</em> if <em>t</em> &#8805; <em>t<sub>cv</sub>,</em> reject <em>H</em><sub>0</sub>.</p>
+<p id="corty3e-ch7-p79" block_type="eq">If &#8211;<em>t<sub>cv</sub></em> &#60; <em>t</em> &#60; <em>t<sub>cv</sub>,</em> fail to reject <em>H</em><sub>0</sub>.</p>
+<p id="corty3e_page_224" block_type="page_start">224</p>
+<p id="corty3e-ch7-p80" block_type="txt">When the first statement is true, the observed value of <em>t</em> falls in the rare zone, and the null hypothesis is rejected. When the second statement is true, <em>t</em> falls in the common zone, and the researcher will fail to reject the null hypothesis.</p>
+<p id="corty3e-ch7-p81" block_type="txt">For the reaction-time study, the specific decision rule is:</p>
+<list id="corty3e-ch7-list-6" type="unordered" block_type="bullet">
+<li><p id="corty3e-ch7-p82" block_type="bl-first">Reject the null hypothesis if <em>t</em> &#8804; &#8211;1.977 <em>or</em> if <em>t</em> &#8805; 1.977.</p></li>
+<li><p id="corty3e-ch7-p83" block_type="bl-last">Fail to reject the null hypothesis if &#8211;1.977 &#60; <em>t</em> &#60; 1.977.</p></li>
+</list>
+<box title="A Common Question" numbered="false" id="corty3e-ch7-bx1-2" block_type="bx-1-h">
+<p id="corty3e-ch7-p84" block_type="bx1-que"><strong>Q</strong> <link href="corty3e-appendix01.xml#corty3e-app1-fig-8">Appendix Table 3</link> doesn&#8217;t contain degrees of freedom for all possible values. What does one do if <em>df</em> &#61; 54, for example?</p>
+<p id="corty3e-ch7-p85" block_type="bx1-ans"><strong>A</strong> In the TV game show <em>The Price Is Right,</em> the person who comes closest to guessing the price of an object without exceeding the price wins. Follow that rule and use the degrees of freedom that are closest without going over. If <em>df</em> &#61; 54 and the table only contains critical values of <em>t</em> for 50 and 55 degrees of freedom, use <em>t<sub>cv</sub></em> for <em>df</em> &#61; 50.</p>
+</box>
+<p id="corty3e-ch7-p86" block_type="h4"><phrase block_type="h4-n-ri"><strong>Step 5</strong></phrase> <strong>Calculate the Test Statistic</strong></p>
+<p id="corty3e-ch7-p87" block_type="txt-ni">It is time to calculate the <em>t</em> value that compares the sample mean for reaction time (220 msec) to the specified value, the population mean for a reaction time of 200 msec. The formula is shown in <link href="#corty3e-ch7-bx6-2">Equation 7.2</link>.</p>
+<box title="" numbered="false" id="corty3e-ch7-bx6-2" block_type="eq-t">
+<box-metadata><box-title><phrase block_type="sec_num">Equation 7.2</phrase> <phrase block_type="sec_title">Formula for Calculating a Single-Sample <em>t</em> Test</phrase></box-title></box-metadata>
+<p id="corty3e-ch7-eqn-1" block_type="equation">
+<image asset-id="corty3e-ch7-img-8" alt="image" src="asset/ch7/corty3e_eqn07_224_01.jpg"/></p>
+<p id="corty3e-ch7-p88" block_type="eq-txt-ni">where <em>t</em> &#61; <em>t</em> value</p>
+<p id="corty3e-ch7-p89" block_type="eq-unl"><em>M</em> &#61; sample mean</p>
+<p id="corty3e-ch7-p90" block_type="eq-unl">&#956; &#61; population mean (or a specified value)</p>
+<p id="corty3e-ch7-p91" block_type="eq-unl"><em>s<sub>M</sub></em> &#61; estimated standard error of the mean (Equation 5.2)</p>
+</box>
+<p id="corty3e-ch7-p92" block_type="txt">The numerator in the single-sample <em>t</em> test formula subtracts the population mean (&#956;) from the sample mean (<em>M</em>). The difference is then divided by the estimated standard error of the mean (<em>s<sub>M</sub></em>). Before using <link href="#corty3e-ch7-bx6-2">Equation 7.2</link>, one needs to know the estimated standard error of the mean. This is calculated using Equation 5.2:</p>
+<p id="corty3e-ch7-eqn-2" block_type="equation">
+<image asset-id="corty3e-ch7-img-9" alt="image" src="asset/ch7/corty3e_eqn07_224_02.jpg"/></p>
+<p id="corty3e_page_225" block_type="page_start">225</p>
+<p id="corty3e-ch7-p93" block_type="txt">Once the estimated standard error of the mean has been calculated, all the values needed to complete <link href="#corty3e-ch7-bx6-2">Equation 7.2</link> are available: <em>M</em> &#61; 220, &#956; &#61; 200, and <em>s<sub>M</sub></em> &#61; 2.27. Here are the calculations to find the <em>t</em> value:</p>
+<p id="corty3e-ch7-eqn-3" block_type="equation">
+<image asset-id="corty3e-ch7-img-10" alt="image" src="asset/ch7/corty3e_eqn07_225_01.jpg"/></p>
+<p id="corty3e-ch7-p94" block_type="txt">Step 5 is done and Dr. Farshad knows the <em>t</em> value: <em>t</em> &#61; 8.81. The sixth and final step of hypothesis testing is interpretation. We&#8217;ll turn to that after a little more practice with the first five steps of hypothesis testing in <link href="#corty3e-ch7-bx3-1">Worked Example 7.1</link>.</p>
+<box title="A Common Question" numbered="false" id="corty3e-ch7-bx1-3" block_type="bx-1-h">
+<p id="corty3e-ch7-p95" block_type="bx1-que"><strong>Q</strong> The equation for <em>t</em>, <image asset-id="corty3e-ch7-img-11" alt="image" src="asset/ch7/corty3e_ineqn07_225_01.jpg"/> looks a lot like the equation for <em>z</em>, <image asset-id="corty3e-ch7-img-12" alt="image" src="asset/ch7/corty3e_ineqn07_225_02.jpg"/>. Are they similar?</p>
+<p id="corty3e-ch7-p96" block_type="bx1-ans"><strong>A</strong> Yes they are. Both serve to standardize deviation scores, so we can tell how common they are.</p>
+</box>
+<box title="Worked Example 7.1" numbered="false" id="corty3e-ch7-bx3-1" block_type="sr-exp-n">
+<p id="corty3e-ch7-p97" block_type="sr-ex-txt-ni">Adjusting to the first year of college can be hard, especially if something traumatic happens back at home. A veterinarian in an imaginary college town, Dr. Richman, wondered if the GPA went down for students who lost a family pet while they were away at college. The vet found 11 students at the college who indicated that their pets at home had died during the year. He had each student report his or her GPA for the year and found the mean was 2.58, with a standard deviation of 0.50. From the college registrar, Dr. Richman learned that the mean GPA for all students for the year was 2.68. Thus, <em>M</em> &#61; 2.58 and &#956; &#61; 2.68. Does losing a pet have a negative impact on GPA?</p>
+<p id="corty3e-ch7-p98" block_type="sr_exp_txt">The answer appears to be yes, because the sample of students who have lost a pet has a GPA lower than the population&#8217;s GPA. But, isn&#8217;t it possible, due to sampling error, that a random sample of 11 people from a population where &#956; &#61; 2.68 could have a sample mean of 2.58? The vet is going to need hypothesis testing to determine if the difference between the sample and the population is statistically significant.</p>
+<p id="corty3e-ch7-p99" block_type="sr_exp_h4_txt"><phrase block_type="SR-EXP-h4-N-ni"><strong>Step 1</strong></phrase> <phrase block_type="SR-EXP-h4-T-ri"><strong>Pick a Test.</strong></phrase> Either a single-sample <em>z</em> test or a single-sample <em>t</em> test can be used to compare the mean of a sample to a specified value like the mean of a population. However, when the population standard deviation is unknown, a single-sample <em>t</em> test must be used. This situation, with &#963; unknown, calls for a single-sample <em>t</em> test.</p>
+<p id="corty3e_page_226" block_type="page_start">226</p>
+<p id="corty3e-ch7-p100" block_type="sr_exp_h4_txt"><phrase block_type="SR-EXP-h4-N-ni"><strong>Step 2</strong></phrase> <phrase block_type="SR-EXP-h4-T-ri"><strong>Check the Assumptions.</strong></phrase> The population is college students who have lost their pets. The sample is not a random sample from the population because all participants self-selected and come from only one college. It is possible that the students who lost pets and who chose not to participate differed in some way from those who volunteered. So, the first assumption is violated. Luckily, the first assumption is robust and can be violated, though Dr. Richman will need to be careful about generalizing from the results.</p>
+<p id="corty3e-ch7-p101" block_type="sr_exp_txt">There&#8217;s no reason to believe that the second assumption is violated. The observations seem to be independent. No participants are siblings who would have lost the same pet. Further, participants did not come from a support group for people who had lost a pet, where people might have influenced each other in coping with their losses. And each participant was in the sample only once.</p>
+<p id="corty3e-ch7-p102" block_type="sr_exp_txt">The third assumption is not violated because Dr. Richman is willing to assume that GPA, like intelligence, is normally distributed. (The sample size, 11, is too small to provide a meaningful histogram.) None of the nonrobust assumptions was violated, so Dr. Richman can proceed with the single-sample <em>t</em> test.</p>
+<p id="corty3e-ch7-p103" block_type="sr_exp_h4_txt"><phrase block_type="SR-EXP-h4-N-ni"><strong>Step 3</strong></phrase> <phrase block_type="SR-EXP-h4-T-ri"><strong>List the Hypotheses.</strong></phrase> Dr. Richman believes that losing a pet will harm adjustment, so he is doing a one-tailed test. Here are the null and alternative hypotheses:</p>
+<p id="corty3e-ch7-p104" block_type="sr-exp-eq"><em>H</em><sub>0</sub>: &#956;<sub>StudentswithPetLoss</sub> &#8805; 2.68</p>
+<p id="corty3e-ch7-p105" block_type="sr-exp-eq"><em>H</em><sub>1</sub>: &#956;<sub>StudentswithPetLoss</sub> &#60; 2.68</p>
+<p id="corty3e-ch7-p106" block_type="sr_exp_txt">The null hypothesis (<em>H</em><sub>0</sub>) says that the mean GPA of the population of first-year students who have lost a pet during the year is the same or greater than the mean GPA of students in general for that year. If the null hypothesis is true, when the vet takes a sample of college students who have lost a pet, their mean should be close enough to 2.68 that the difference can be explained by sampling error.</p>
+<p id="corty3e-ch7-p107" block_type="sr_exp_txt">The alternative hypothesis (<em>H</em><sub>1</sub>) says that what the veterinarian believes to be true is true: the population of students with pet loss has a mean GPA lower than the mean GPA of all students. Therefore, a mean for a sample of pet-loss students should be far enough below 2.68 that sampling error is not a plausible explanation for the difference.</p>
+<p id="corty3e-ch7-p108" block_type="sr_exp_h4_txt"><phrase block_type="SR-EXP-h4-N-ni"><strong>Step 4</strong></phrase> <phrase block_type="SR-EXP-h4-T-ri"><strong>Set the Decision Rule.</strong></phrase> Dr. Richman has directional hypotheses and is using the default value of 5&#37; for his willingness to make a Type I error. This means that it is a one-tailed test and that alpha is set at .05. The sample size is 11, and the vet will use <link href="#corty3e-ch7-bx6-1">Equation 7.1</link> to determine the degrees of freedom:</p>
+<p id="corty3e-ch7-p109" block_type="sr-exp-eq"><em>df</em> &#61; <em>N</em> &#8211; 1</p>
+<p id="corty3e-ch7-p110" block_type="sr-exp-eq">&#61; 11 &#8211; 1</p>
+<p id="corty3e-ch7-p111" block_type="sr-exp-eq">&#61; 10</p>
+<p id="corty3e-ch7-p112" block_type="sr_exp_txt">Using <link href="corty3e-appendix01.xml#corty3e-app1-fig-8">Appendix Table 3</link>, Dr. Richman finds <em>t<sub>cv</sub></em> &#61; 1.812. Because he is doing a one-tailed test, he has to decide whether the critical value of <em>t</em> is &#8211;1.812 or &#43;1.812. If his theory is correct and losing a pet hurts students&#8217; GPAs, then the numerator of the single-sample <em>t</em> test formula (<link href="#corty3e-ch7-bx6-2">Equation 7.2</link>), which is <em>M</em> &#8211; &#956;, will be a negative number because <em>M</em> should be below 2.68. Hence, <em>t<sub>cv</sub></em> is a negative value, &#8211;1.812. Here, and in <link href="#corty3e-ch7-fig-11"><strong>Figure 7.5</strong></link>, is the vet&#8217;s decision rule:</p>
+<figure id="corty3e-ch7-fig-11" block_type="figure" numbered="true" number="7.5" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="large" border="true"/>
+<image asset-id="corty3e-ch7-img-13" alt="image" src="asset/ch7/corty3e_fig07_05.jpg"/>
+<caption><strong><phrase block_type="fig_num">Figure 7.5</phrase> One-Tailed Decision Rule for Sampling Distribution of <em>t</em>, <em>df</em></strong> &#61; <strong>10</strong> This is a one-tailed test with 10 degrees of freedom. The critical value of <em>t</em> is &#8211;1.812. Note that the entire rare zone falls on one side of the sampling distribution.</caption>
+</figure>
+<list id="corty3e-ch7-list-7" type="unordered" block_type="bullet">
+<li><p id="corty3e-ch7-p113" block_type="sr-exp-bl-first">If <em>t</em> &#8804; &#8211;1.812, reject <em>H</em><sub>0</sub>.</p></li>
+<li><p id="corty3e-ch7-p114" block_type="sr-exp-bl-last">If <em>t</em> &#62; &#8211;1.812, fail to reject <em>H</em><sub>0</sub>.</p></li>
+</list>
+<p id="corty3e_page_227" block_type="page_start">227</p>
+<p id="corty3e-ch7-p115" block_type="sr_exp_h4_txt"><phrase block_type="SR-EXP-h4-N-ni"><strong>Step 5</strong></phrase> <phrase block_type="SR-EXP-h4-T-ri"><strong>Calculate the Test Statistic.</strong></phrase> Before calculating <em>t,</em> the vet needs to calculate <em>s<sub>M</sub></em> using Equation 5.2:</p>
+<p id="corty3e-ch7-eqn-4" block_type="equation">
+<image asset-id="corty3e-ch7-img-14" alt="image" src="asset/ch7/corty3e_eqn07_227_01.jpg"/></p>
+<p id="corty3e-ch7-p116" block_type="sr_exp_txt_ni">Next, he&#8217;ll use <em>s<sub>M</sub></em> in <link href="#corty3e-ch7-bx6-2">Equation 7.2</link> to calculate <em>t:</em></p>
+<p id="corty3e-ch7-eqn-5" block_type="equation">
+<image asset-id="corty3e-ch7-img-15" alt="image" src="asset/ch7/corty3e_eqn07_227_02.jpg"/></p>
+<p id="corty3e-ch7-p117" block_type="sr_exp_txt_ni">Step 5 is completed and the vet now knows the value of the test statistic: <em>t</em> &#61; &#8211;0.67. In the next section, we&#8217;ll learn how to explain what this means with regard to the impact of the loss of a pet on GPA.</p>
+</box>
+<p id="corty3e_page_228" block_type="page_start">228</p>
+<box title="Practice Problems 7.1" numbered="false" id="corty3e-ch7-bx2-1" block_type="sr-h">
+<p id="corty3e-ch7-p118" block_type="sr-h1"><strong>Review Your Knowledge</strong></p>
+<p id="corty3e-ch7-p119" block_type="sr-que-nl"><phrase block_type="question_num">7.01</phrase> A researcher draws a sample from a population and finds that the sample mean is different from what he thought the population mean was. One explanation for the discrepancy is that he was wrong about what the population mean is. What&#8217;s another explanation for the discrepancy?</p>
+<p id="corty3e-ch7-p120" block_type="sr-que-nl"><phrase block_type="question_num">7.02</phrase> What are the six steps to be followed in conducting a hypothesis test?</p>
+<p id="corty3e-ch7-p121" block_type="sr-que-nl"><phrase block_type="question_num">7.03</phrase> When should a single-sample <em>t</em> test be used?</p>
+<p id="corty3e-ch7-p122" block_type="sr-que-nl"><phrase block_type="question_num">7.04</phrase> What are the assumptions for a single-sample <em>t</em> test?</p>
+<p id="corty3e-ch7-p123" block_type="sr-que-nl"><phrase block_type="question_num">7.05</phrase> Which rare zone is larger if the observed difference is in the expected direction&#8212;for a one-tailed test or a two-tailed test?</p>
+<p id="corty3e-ch7-p124" block_type="sr-h1"><strong>Apply Your Knowledge</strong></p>
+<p id="corty3e-ch7-p125" block_type="sr-que-nl"><phrase block_type="question_num">7.06</phrase> A researcher has a sample of Nobel Prize winners. She thinks that they may be smarter than average. If the average IQ is 100, what are the null and alternative hypotheses for a single-sample <em>t</em> test?</p>
+<p id="corty3e-ch7-p126" block_type="sr-que-nl"><phrase block_type="question_num">7.07</phrase> A researcher has drawn a random sample of 48 cases from a population. He plans to use a single-sample <em>t</em> test to compare the sample mean to the population mean. He has set &#945; at .05 and is doing a two-tailed test. Write out the decision rule regarding the null hypothesis.</p>
+<p id="corty3e-ch7-p127" block_type="sr-que-nl"><phrase block_type="question_num">7.08</phrase> If <em>N</em> &#61; 17 and <em>s</em> &#61; 6, what is <em>s<sub>M</sub></em>?</p>
+<p id="corty3e-ch7-p128" block_type="sr-que-nl"><phrase block_type="question_num">7.09</phrase> If <em>M</em> &#61; 24, &#956; &#61; 30, and <em>s<sub>M</sub></em> &#61; 8, what is <em>t</em>?</p>
+</box>
+</section>
+<section id="corty3e-ch7-sec1-2" block_type="h1" chapter="7" title="" numbered="false" level="1" print_page="228">
+<section-metadata><section-title><phrase block_type="sec_num">7.2</phrase> <phrase block_type="sec_title">Interpreting the Single-Sample <em>t</em> Test</phrase></section-title></section-metadata>
+<box id="corty3e-ch7-video-3" block_type="video">
+<p id="corty3e-ch7-videotxt-3" block_type="vidtxt"><link href="http://bcs.whfreeman.com/webpub/statistics/ips7e/student/Stat Videos/ch06/sc_confidenceint_intro_I.html" target="_pop" data-href-px=""><image asset-id="corty3e-ch7-vimg-3" alt="image" src="asset/images/video.jpg"/></link><em>StatClips: Confidence Interval Intro Part I</em>Video on LaunchPad</p>
+</box>
+<box id="corty3e-ch7-video-4" block_type="video">
+<p id="corty3e-ch7-videotxt-4" block_type="vidtxt"><link href="http://bcs.whfreeman.com/webpub/statistics/ips7e/student/Stat Videos/ch06/sc_confidenceint_intro_II.html" target="_pop" data-href-px=""><image asset-id="corty3e-ch7-vimg-4" alt="image" src="asset/images/video.jpg"/></link><em>StatClips: Confidence Interval Intro Part II</em>Video on LaunchPad</p>
+</box>
+<box id="corty3e-ch7-video-5" block_type="video">
+<p id="corty3e-ch7-videotxt-5" block_type="vidtxt"><link href="http://bcs.whfreeman.com/webpub/statistics/ips7e/student/Stat Videos/ch06/sc_confidenceint_interpretation.html" target="_pop" data-href-px=""><image asset-id="corty3e-ch7-vimg-5" alt="image" src="asset/images/video.jpg"/></link><em>StatClips: Confidence Intervals: Interpretation</em>Video on LaunchPad</p>
+</box>
+<box id="corty3e-ch7-video-6" block_type="video">
+<p id="corty3e-ch7-videotxt-6" block_type="vidtxt"><link href="http://bcs.whfreeman.com/webpub/statistics/ips7e/student/Stat Videos/ch07/sc_confidenceint_intro_III_ch07.html" target="_pop" data-href-px=""><image asset-id="corty3e-ch7-vimg-6" alt="image" src="asset/images/video.jpg"/></link><em>StatClips: Confidence Interval Intro Part III</em>Video on LaunchPad</p>
+</box>
+<box id="corty3e-ch7-video-7" block_type="video">
+<p id="corty3e-ch7-videotxt-7" block_type="vidtxt"><link href="http://bcs.whfreeman.com/webpub/statistics/ips7e/student/Stat Videos/ch06/sc_usingconfidenceintervals.html" target="_pop" data-href-px=""><image asset-id="corty3e-ch7-vimg-7" alt="image" src="asset/images/video.jpg"/></link><em>StatClips: Using Confidence Intervals to Make Decisions</em>Video on LaunchPad</p>
+</box>
+<p id="corty3e-ch7-p129" block_type="txt-ni">Computers are great for statistics. They can crunch numbers and do math faster and more accurately than humans can. But even a NASA supercomputer couldn&#8217;t do what we are about to do: use common sense to explain the results of a single-sample <em>t</em> test in plain English. Interpretation is the most human part of statistics.</p>
+<box numbered="false" id="corty3e-ch7-exp1-1" block_type="mn1">
+<p id="corty3e-ch7-p130" block_type="mn-ext-ni"><em>Interpretation is the most human part of statistics.</em></p>
+</box>
+<p id="corty3e-ch7-p131" block_type="txt">To some degree, interpretation is a subjective process. The researcher takes objective facts&#8212;like the means and the test statistic&#8212;and explains them in his or her own words. How one researcher interprets the results of a hypothesis test might differ from how another researcher interprets them. Reasonable people can disagree. But, there are guidelines that researchers need to follow. An interpretation needs to be supported by facts. One person may perceive a glass of water as half full and another as half empty, but they should agree that it contains roughly equal volumes of water and air.</p>
+<figure id="corty3e-ch7-fig-14" block_type="un_figure" numbered="false" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="medium" border="true"/>
+<image asset-id="corty3e-ch7-img-16" alt="image" src="asset/ch7/corty3e_fig07_un02.jpg"/>
+<caption>Interpretation is subjective, but should be based on facts. Confidence intervals, introduced later in the chapter, provide a little wiggle room.</caption>
+</figure>
+<p id="corty3e_page_229" block_type="page_start">229</p>
+<p id="corty3e-ch7-p132" block_type="txt">Interpreting the results of a hypothesis test starts with questions to be answered. The answers will provide the material to be used in a written interpretation. For a single-sample <em>t</em> test, our three questions are:</p>
+<list id="corty3e-ch7-list-8" type="ordered" block_type="numbered">
+<li><p id="corty3e-ch7-p133" block_type="nl-first">Was the null hypothesis rejected?</p></li>
+<li><p id="corty3e-ch7-p134" block_type="nl-mid">How big is the effect?</p></li>
+<li><p id="corty3e-ch7-p135" block_type="nl-last">How wide is the confidence interval?</p></li>
+</list>
+<p id="corty3e-ch7-p136" block_type="txt">The questions are sequential. Each one gives new information that is useful in understanding the results from a different perspective. Answering only the first question, as was done in the last chapter, will provide enough information for completing a basic interpretation. However, answering all three questions leads to a more nuanced understanding of the results and a better interpretation.</p>
+<p id="corty3e-ch7-p137" block_type="txt">Let&#8217;s follow Dr. Farshad as she interprets the results of her study, question by question. But, first, let&#8217;s review what she did. Dr. Farshad wondered if adults with ADHD differed in reaction time from the general population. To test this, she obtained a random sample, from her state, of 141 adults who had been diagnosed with ADHD. She had each participant take a reaction time test and found the sample mean and sample standard deviation (<em>M</em> &#61; 220 msec, <em>s</em> &#61; 27 msec). She planned to use a single-sample <em>t</em> test to compare the sample mean to the population mean for adult Americans (&#956; &#61; 200 msec).</p>
+<p id="corty3e-ch7-p138" block_type="txt">Dr. Farshad&#8217;s hypotheses for the single-sample <em>t</em> test were nondirectional as she was testing whether adults with ADHD had faster or slower reaction times than the general population. She was willing to make a Type I error no more than 5&#37; of the time, she was doing a two-tailed test, and she had 140 degrees of freedom, so the critical value of <em>t</em> was &#177;1.977. The first step in calculating <em>t</em> was to find the estimated standard error of the mean (<em>s<sub>M</sub></em> &#61; 2.21) and she used that in order to go on and find <em>t</em> &#61; 8.81.</p>
+<p id="corty3e-ch7-p139" block_type="h4-txt-ni"><phrase block_type="h4-N-ri1"><strong>Step 6</strong></phrase> <phrase block_type="SR-X-h4-T-ri"><strong>Interpret the Results</strong></phrase></p>
+<p id="corty-ch7-chead-1" block_type="h3">Was the Null Hypothesis Rejected?</p>
+<p id="corty3e-ch7-p140" block_type="txt-ni">In Dr. Farshad&#8217;s study, the <em>t</em> value was calculated as 8.81. Now it is time to decide whether the null hypothesis was rejected or not. To do so, Dr. Farshad puts the <em>t</em> value, 8.81, into the decision rule that was generated for the critical value of <em>t,</em> &#177;1.977, in Step 4. Which of the following statements is true?</p>
+<list id="corty3e-ch7-list-9" type="unordered" block_type="bullet">
+<li><p id="corty3e-ch7-p141" block_type="bl-first">Is 8.81 &#8804; &#8211;1.977 <em>or</em> is 8.81 &#8805; 1.977?</p></li>
+<li><p id="corty3e-ch7-p142" block_type="bl-last">Is &#8211;1.977 &#60; 8.81 &#60; 1.977?</p></li>
+</list>
+<p id="corty3e-ch7-p143" block_type="txt">The second part of the first statement is true: 8.81 is greater than or equal to 1.977. The observed value of <em>t,</em> 8.81, falls in the rare zone of the sampling distribution, so the null hypothesis is rejected (see <link href="#corty3e-ch7-fig-15"><strong>Figure 7.6</strong></link>). She can conclude that there is a statistically significant difference between the sample mean of the adults with ADHD and the general population mean.</p>
+<figure id="corty3e-ch7-fig-15" block_type="figure" numbered="true" number="7.6" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="xlarge" border="true"/>
+<image asset-id="corty3e-ch7-img-17" alt="image" src="asset/ch7/corty3e_fig07_06.jpg"/>
+<caption><strong><phrase block_type="fig_num">Figure 7.6</phrase> Single-Sample <em>t</em> Test: Results from ADHD Reaction-Time Study</strong> The value of the test statistic (<em>t</em>) is 8.81. This is greater than or equal to the critical value of <em>t</em> of 1.977, so it falls in the rare zone. The null hypothesis is rejected.</caption>
+</figure>
+<p id="corty3e-ch7-p144" block_type="txt">Rejecting the null hypothesis means that Dr. Farshad has to accept the alternative hypothesis and conclude that the mean reaction time for adults with ADHD is <em>different</em> from the mean reaction time for the general population. Now she needs to determine the <em>direction</em> of the difference. By comparing the sample mean (220) to the population mean (200), she can conclude that adults with ADHD take a longer time to react and so have a <em>slower</em> reaction time than adults in general.</p>
+<p id="corty3e-ch7-p145" block_type="txt">Dr. Farshad should also report the results in APA format. APA format provides five pieces of information: (1) what test was done, (2) the number of cases, (3) the value of the test statistic, (4) the alpha level used, and (5) whether the null hypothesis was or wasn&#8217;t rejected.</p>
+<p id="corty3e_page_230" block_type="page_start">230</p>
+<p id="corty3e-ch7-p146" block_type="txt">In APA format, the results would be <em>t</em>(140) &#61; 8.81, <em>p</em> &#60; .05:</p>
+<list id="corty3e-ch7-list-10" type="ordered" block_type="numbered">
+<li><p id="corty3e-ch7-p147" block_type="nl-first">The initial <em>t</em> says that the statistical test was a <em>t</em> test.</p></li>
+<li><p id="corty3e-ch7-p148" block_type="nl-mid">The sample size, 141, is present in disguised form. The number 140, in parentheses, is the degrees of freedom for the <em>t</em> test. For a single-sample <em>t</em> test, <em>df</em> &#61; <em>N</em> &#8211; 1. That means <em>N</em> &#61; <em>df</em> &#43; 1. So, if <em>df</em> &#61; 140, <em>N</em> &#61; 140 &#43; 1 &#61; 141.</p></li>
+<li><p id="corty3e-ch7-p149" block_type="nl-mid">The observed <em>t</em> value, 8.81, is reported. This number is the value of <em>t</em> calculated, <em>not</em> the critical value of <em>t</em> found in <link href="corty3e-appendix01.xml#corty3e-app1-fig-8">Appendix Table 3</link>. Note that APA format requires the value to be reported to two decimal places, no more and no fewer.</p></li>
+<li><p id="corty3e-ch7-p150" block_type="nl-mid">The .05 tells that alpha was set at .05.</p></li>
+<li><p id="corty3e-ch7-p151" block_type="nl-last">The final part, <em>p</em> &#60; .05, reveals that the null hypothesis was rejected. It means that the observed result (8.81) is a rare result&#8212;it has a probability of less than .05 of occurring when the null hypothesis is true.</p></li>
+</list>
+<p id="corty3e-ch7-p152" block_type="txt">If Dr. Farshad stopped after answering only the first interpretation question, this is what she could write for an interpretation:</p>
+<p id="corty3e-ch7-p153" block_type="sr_exp_txt_v1_ni">There is a statistically significant difference between the mean reaction time of adults in Illinois with ADHD and the reaction time found in the general U.S. population, <em>t</em>(140) &#61; 8.81, <em>p</em> &#60; .05. Adults with ADHD (<em>M</em> &#61; 220 msec) have a slower mean reaction time than does the general public (&#956; &#61; 200).</p>
+<box title="Practice Problems 7.2" numbered="false" id="corty3e-ch7-bx2-2" block_type="sr-h">
+<p id="corty3e-ch7-p154" block_type="sr-h1"><strong>Apply Your Knowledge</strong></p>
+<p id="corty3e-ch7-p155" block_type="sr-que-txt-ni"><strong><em>For these problems, use</em></strong> &#945; <strong><em>&#61; .05, two-tailed.</em></strong></p>
+<p id="corty3e-ch7-p156" block_type="sr-que-nl"><phrase block_type="question_num">7.10</phrase> If <em>N</em> &#61; 19 and <em>t</em> &#61; 2.231, write the results in APA format.</p>
+<p id="corty3e-ch7-p157" block_type="sr-que-nl"><phrase block_type="question_num">7.11</phrase> If <em>N</em> &#61; 7 and <em>t</em> &#61; 2.309, write the results in APA format.</p>
+<p id="corty3e-ch7-p158" block_type="sr-que-nl"><phrase block_type="question_num">7.12</phrase> If <em>N</em> &#61; 36 and <em>t</em> &#61; 2.030, write the results in APA format.</p>
+<p id="corty3e-ch7-p159" block_type="sr-que-nl"><phrase block_type="question_num">7.13</phrase> If <em>N</em> &#61; 340 and <em>t</em> &#61; 3.678, write the results in APA format.</p>
+</box>
+<p id="corty-ch7-chead-2" block_type="h3">How Big Is the Effect?</p>
+<p id="corty3e_page_231" block_type="page_start">231</p>
+<p id="corty3e-ch7-p160" block_type="txt-ni">All we know so far is that there is a statistically significant difference, such that we can conclude that adults with ADHD in Illinois have slower reaction times than the general American adult population does. We know there&#8217;s a 20-msec difference, but we are hard-pressed to know how much of a difference that really is.</p>
+<p id="corty3e-ch7-p161" block_type="txt">Thus, the next question to address when interpreting the results is <termref term="effect size">effect size</termref><strong>,</strong> how large the impact of the explanatory variable is on the outcome variable. With the reaction-time study, the explanatory variable is ADHD status (adults with ADHD vs. the general population) and the outcome variable is reaction time. Asking what the effect size is, is asking how much impact ADHD has on a person&#8217;s reaction time.</p>
+<p id="corty3e-ch7-p162" block_type="txt">In this section, we cover two ways to measure effect size: Cohen&#8217;s <em>d</em> and <em>r</em><sup>2</sup>. Both can be used to determine if the effect is small, medium, or large. Both standardize the effect size, so outcome variables measured on different metrics can be compared. A 2-point change in GPA would be huge, while a 2-point change in total SAT score would be trivial. Both Cohen&#8217;s <em>d</em> and <em>r</em><sup>2</sup> take the unit of measurement into account. And, finally, both will be used as measures of effect size for other statistical tests in other chapters.</p>
+<p id="corty-ch7-chead-3" block_type="h3">Cohen&#8217;s <em>d</em></p>
+<p id="corty3e-ch7-p163" block_type="txt-ni">The formula for <termref term="Cohens">Cohen&#8217;s <strong><em>d</em></strong></termref> is shown in <link href="#corty3e-ch7-bx6-3">Equation 7.3</link>. It takes the difference between the two means and standardizes it by dividing it by the sample standard deviation. Thus, <em>d</em> is like a <em>z</em> score&#8212;it is a standard score that allows different effects measured by different variables in different studies to be expressed&#8212;and compared&#8212;with a common unit of measurement.</p>
+<box title="" numbered="false" id="corty3e-ch7-bx6-3" block_type="eq-t">
+<box-metadata><box-title><phrase block_type="sec_num">Equation 7.3</phrase> <phrase block_type="sec_title">Formula for Cohen&#8217;s <em>d</em> for a Single-Sample <em>t</em> Test</phrase></box-title></box-metadata>
+<p id="corty3e-ch7-eqn-6" block_type="equation">
+<image asset-id="corty3e-ch7-img-18" alt="image" src="asset/ch7/corty3e_eqn07_231_01.jpg"/></p>
+<p id="corty3e-ch7-p164" block_type="eq-txt-ni">where <em>d</em> &#61; the effect size</p>
+<p id="corty3e-ch7-p165" block_type="eq-unl"><em>M</em> &#61; sample mean</p>
+<p id="corty3e-ch7-p166" block_type="eq-unl">&#956; &#61; hypothesized population mean</p>
+<p id="corty3e-ch7-p167" block_type="eq-unl"><em>s</em> &#61; sample standard deviation</p>
+</box>
+<p id="corty3e-ch7-p168" block_type="txt">To calculate <em>d,</em> Dr. Farshad needs to know the sample mean, the population mean, and the sample standard deviation. For the reaction-time data, <em>M</em> &#61; 220, &#956; &#61; 200, and <em>s</em> &#61; 27. Here are her calculations for <em>d:</em></p>
+<p id="corty3e-ch7-eqn-7" block_type="equation">
+<image asset-id="corty3e-ch7-img-19" alt="image" src="asset/ch7/corty3e_eqn07_231_02.jpg"/></p>
+<p id="corty3e_page_232" block_type="page_start">232</p>
+<p id="corty3e-ch7-p169" block_type="txt">Cohen&#8217;s <em>d</em> &#61; 0.74 for the ADHD reaction-time study. Follow APA format and use two decimal places when reporting <em>d.</em> And, because <em>d</em> values can be greater than 1, values of <em>d</em> from &#8211;0.99 to 0.99 get zeros before the decimal point.</p>
+<p id="corty3e-ch7-p170" block_type="txt">In terms of the <em>size</em> of the effect, it doesn&#8217;t matter whether <em>d</em> is positive or negative. A <em>d</em> value of 0.74 indicates that the two means are 0.74 standardized units apart. This is an equally strong effect whether it is 0.74 or &#8211;0.74. But the sign associated with <em>d</em> is important for knowing the direction of the difference, so make sure to keep it straight.</p>
+<p id="corty3e-ch7-p171" block_type="txt">Here&#8217;s how Cohen&#8217;s <em>d</em> works:</p>
+<list id="corty3e-ch7-list-11" type="unordered" block_type="bullet">
+<li><p id="corty3e-ch7-p172" block_type="bl-first">A value of 0 for Cohen&#8217;s <em>d</em> means that the explanatory variable has absolutely no effect on the outcome variable.</p></li>
+<li><p id="corty3e-ch7-p173" block_type="bl-last">As Cohen&#8217;s <em>d</em> gets farther away from zero, the size of the effect increases.</p></li>
+</list>
+<p id="corty3e-ch7-p174" block_type="txt">Cohen (1988), the developer of <em>d,</em> has offered standards for what small, medium, and large effect sizes are in the social and behavioral sciences. Cohen&#8217;s <em>d</em> values for these are shown in <link href="#corty3e-ch7-fig-19"><strong>Table 7.3</strong></link>. In <link href="#corty3e-ch7-fig-18"><strong>Figure 7.7</strong></link>, the different effect sizes are illustrated by comparing the IQ of a control group (<em>M</em> &#61; 100) to the IQ of an experimental group that is smarter by the amount of a small effect (3 IQ points), a medium effect (7.5 IQ points), or a large effect (12 IQ points).</p>
+<figure id="corty3e-ch7-fig-19" block_type="table" numbered="true" number="7.3" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="large" border="true"/>
+<image asset-id="corty3e-ch7-img-21" alt="image" src="asset/ch7/corty3e_table07_03.jpg"/>
+</figure>
+<figure id="corty3e-ch7-fig-18" block_type="figure" numbered="true" number="7.7" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="large" border="true"/>
+<image asset-id="corty3e-ch7-img-20" alt="image" src="asset/ch7/corty3e_fig07_07.jpg"/>
+<caption><strong><phrase block_type="fig_num">Figure 7.7</phrase> Examples of Small, Medium, and Large Effect Sizes</strong> This figure uses the distribution of IQ scores for two different groups to show effect sizes. In each panel, the solid-line curve shows the set of scores for the control group and the dotted-line curve shows the set of scores for the experimental group. In each panel, the experimental group has a higher mean IQ. The top panel (Small effect) shows what Cohen (1988) calls a small effect size (<em>d</em> &#61; 0.20), the middle panel (Medium effect) a medium effect size (<em>d</em> &#61; 0.50), and the bottom panel (Large effect) a large effect size (<em>d</em> &#61; 0.80). These are mean differences, respectively, of 3, 7.5, and 12 IQ points. Notice how the differentiation between the two groups in each panel increases as the size of the effect increases, both in terms of increasing distance between the two means and decreasing overlap between the two distributions.</caption>
+</figure>
+<p id="corty3e-ch7-p175" block_type="txt">Cohen describes a small effect as a <em>d</em> of around 0.20. This occurs when there is a small difference between means, a difference in performance that would not be readily apparent in casual observation. Look at the top panel in <link href="#corty3e-ch7-fig-18">Figure 7.7</link>. That&#8217;s what a small effect size looks like. Though the two groups differ by 3 points on intelligence (<em>M</em> &#61; 100 vs. <em>M</em> &#61; 103), it wouldn&#8217;t be obvious that one group is smarter than the other without using a sensitive measure like an IQ test (Cohen, 1988).</p>
+<p id="corty3e-ch7-p176" block_type="txt">Another way to visualize the size of the effect is to consider how much overlap exists between the two groups. If the curve for one group fits exactly over the curve for the other, then the two groups are exactly the same and there is no effect. As the amount of overlap decreases, the effect size increases. For the small effect in <link href="#corty3e-ch7-fig-18">Figure 7.7</link>, about 85&#37; of the total area overlaps.</p>
+<p id="corty3e-ch7-p177" block_type="txt">A medium effect size, a Cohen&#8217;s <em>d</em> of around 0.50, is large enough to be observable, according to Cohen. Look at the middle panel in <link href="#corty3e-ch7-fig-18">Figure 7.7</link>. One group has a mean IQ of 100, and the other group has a mean IQ of 107.5, a 7.5 IQ point difference. Notice the amount of differentiation between groups for a medium effect size. In this example, about two-thirds of the total area overlaps, a decrease from the 85&#37; overlap seen with a small effect size.</p>
+<p id="corty3e_page_233" block_type="page_start">233</p>
+<p id="corty3e-ch7-p178" block_type="txt">A large effect size is a Cohen&#8217;s <em>d</em> of 0.80 or larger. This is shown in the bottom panel of <link href="#corty3e-ch7-fig-18">Figure 7.7</link>. One group has a mean IQ of 100, and the other group has a mean IQ of 112, a 12 IQ point difference. Here, there is a lot of differentiation between the two groups with only about half of the area overlapping. The increased differentiation can be seen in the large section of the control group that has IQs lower than the experimental group and the large section of the experimental group that has IQs higher than the control group.</p>
+<p id="corty3e-ch7-p179" block_type="txt">The Cohen&#8217;s <em>d</em> calculated for the reaction-time study by Dr. Farshad was 0.74, which means it is a medium to large effect. If she stopped her interpretation after calculating this effect size, she could add the following sentence to her interpretation: &#8220;The effect of ADHD status on reaction time falls in the medium to large range, suggesting that the slower mean reaction time associated with having ADHD may impair performance.&#8221;</p>
+<p id="corty3e_page_234" block_type="page_start">234</p>
+<p id="corty-ch7-chead-4" block_type="h3"><em>r</em> Squared</p>
+<p id="corty3e-ch7-p180" block_type="txt-ni">The other commonly used measure of effect size is <em>r</em><sup>2</sup>. Its formal name is coefficient of determination, but everyone calls it <em>r</em> squared. <em>r</em><sup>2</sup><em>,</em> like <em>d</em>, tells how much impact the explanatory variable has on the outcome variable.</p>
+<box title="" numbered="false" id="corty3e-ch7-bx6-4" block_type="eq-t">
+<box-metadata><box-title><phrase block_type="sec_num">Equation 7.4</phrase> <phrase block_type="sec_title">Formula for <em>r</em><sup>2</sup>, the Percentage of Variability in the Outcome Variable Accounted for by the Explanatory Variable</phrase></box-title></box-metadata>
+<p id="corty3e-ch7-eqn-8" block_type="equation">
+<image asset-id="corty3e-ch7-img-22" alt="image" src="asset/ch7/corty3e_eqn07_234_01.jpg"/></p>
+<p id="corty3e-ch7-p181" block_type="eq-txt-ni">where <em>r</em><sup>2</sup> &#61; the percentage of variability in the outcome variable that is accounted for by the explanatory variable</p>
+<p id="corty3e-ch7-p182" block_type="eq-unl"><em>t</em><sup>2</sup> &#61; the squared value of <em>t</em> from <link href="#corty3e-ch7-bx6-2">Equation 7.2</link></p>
+<p id="corty3e-ch7-p183" block_type="eq-unl"><em>df</em> &#61; the degrees of freedom for the <em>t</em> value</p>
+</box>
+<p id="corty3e-ch7-p184" block_type="txt">This formula says that <em>r</em><sup>2</sup> is calculated as the squared <em>t</em> value divided by the sum of the squared <em>t</em> value plus the degrees of freedom for the <em>t</em> value. Then, to turn it into a percentage, the ratio is multiplied by 100. <em>r</em><sup>2</sup> can range from 0&#37; to 100&#37;. These calculations reveal the percentage of variability in the outcome scores that is accounted for (or predicted) by the explanatory variable. For the ADHD data, these calculations would lead to the conclusion that <em>r</em><sup>2</sup> &#61; 36&#37;:</p>
+<p id="corty3e-ch7-eqn-9" block_type="equation">
+<image asset-id="corty3e-ch7-img-23" alt="image" src="asset/ch7/corty3e_eqn07_234_02.jpg"/></p>
+<box numbered="false" id="corty3e-ch7-exp1-2" block_type="mn1">
+<p id="corty3e-ch7-p185" block_type="mn-ext-ni"><em>r<sup>2</sup> tells the percentage of variability in the outcome variable that is accounted for (or predicted) by the explanatory variable.</em></p>
+</box>
+<p id="corty3e-ch7-p186" block_type="txt">What does <em>r</em><sup>2</sup> tell us? Imagine that someone took a large sample of people and timed them running a mile. There would be a lot of variability in time, with some runners taking 5 minutes and others 20 minutes or more. What are some factors that influence running speed? Certainly, physical fitness and age play important roles, as do physical health and weight. Which of these four factors has the most influence on running speed? That could be determined by calculating <em>r</em><sup>2</sup> for each variable. The factor that has the largest <em>r</em><sup>2</sup>, the one that explains the largest percentage of variability in time, has the most influence.</p>
+<p id="corty3e-ch7-p187" block_type="txt">The question addressed by <em>r</em><sup>2</sup> in the reaction-time study is how much of the variability in reaction time is accounted for by the explanatory variable (ADHD status) and how much is left unaccounted for:</p>
+<list id="corty3e-ch7-list-12" type="unordered" block_type="bullet">
+<li><p id="corty3e-ch7-p188" block_type="bl-first">The closer <em>r</em><sup>2</sup> is to 100&#37;, the stronger the effect of the explanatory variable is and the less variability in the outcome variable remains to be explained by other variables.</p>
+<p id="corty3e_page_235" block_type="page_start">235</p></li>
+<li><p id="corty3e-ch7-p189" block_type="bl-last">The closer <em>r</em><sup>2</sup> is to 0&#37;, the weaker the effect of the explanatory variable and the more variability in the dependent variable exists to be explained by other variables.</p></li>
+</list>
+<p id="corty3e-ch7-p190" block_type="txt">Cohen (1988), who provided standards for <em>d</em> values, also provides standards for <em>r</em><sup>2</sup>:</p>
+<list id="corty3e-ch7-list-13" type="unordered" block_type="bullet">
+<li><p id="corty3e-ch7-p191" block_type="bl-first">A small effect is an <em>r</em><sup>2</sup> &#8776; 1&#37;.</p></li>
+<li><p id="corty3e-ch7-p192" block_type="bl-mid">A medium effect is an <em>r</em><sup>2</sup> &#8776; 9&#37;.</p></li>
+<li><p id="corty3e-ch7-p193" block_type="bl-last">A large effect is an <em>r</em><sup>2</sup> &#8776; 25&#37;.</p></li>
+</list>
+<p id="corty3e-ch7-p194" block_type="txt">By Cohen&#8217;s standards, an <em>r</em><sup>2</sup> of 36&#37;, as is the case in our ADHD study, is a large effect. This means that as far as explanatory variables in the social and behavioral sciences go, this one accounts for a lot of the variability in the outcome variable. <link href="#corty3e-ch7-fig-22"><strong>Figure 7.8</strong></link> is a visual demonstration of what explaining 36&#37; of the variability means. Note that although a majority of the variability, 64&#37;, in reaction time remains unaccounted for, this is still considered a large effect. Here is what Dr. Farshad could add to her interpretation now that <em>r</em><sup>2</sup> is known: &#8220;Having ADHD has a large effect on one&#8217;s reaction time. In the present study, knowing ADHD status explains more than a third of the variability in reaction time.&#8221;</p>
+<figure id="corty3e-ch7-fig-22" block_type="figure" numbered="true" number="7.8" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="medium" border="true"/>
+<image asset-id="corty3e-ch7-img-24" alt="image" src="asset/ch7/corty3e_fig07_08.jpg"/>
+<caption><strong><phrase block_type="fig_num">Figure 7.8</phrase> Percentage of Variability in Reaction Time Accounted for by ADHD Status</strong> The darkly shaded section of this square represents the 36&#37; of the variability in reaction time that is accounted for by ADHD status. The nonshaded part of the square represents the 64&#37; of variability that is still not accounted for.</caption>
+</figure>
+<p id="corty3e-ch7-p195" block_type="txt">One important thing to note is that even though Dr. Farshad went to the trouble of calculating both <em>d</em> and <em>r</em><sup>2</sup>, it is not appropriate to report both. These two provide overlapping information and it does not make a case stronger to say that the effect was a really strong one, because both <em>d</em> and <em>r</em><sup>2</sup> are large. This would be like testing boiling water and reporting that it was really, really boiling because it registered 212 degrees on a Fahrenheit thermometer and 100 degrees on a Celsius thermometer.</p>
+<p id="corty3e-ch7-p196" block_type="txt">Here&#8217;s a heads up for future chapters and for reading results sections in psychology articles&#8212;there are other measures of effect size that are similar to <em>r</em><sup>2</sup>. Both &#951;<sup>2</sup> (eta squared) and &#969;<sup>2</sup> (omega squared) provide the same information, how much of the variability in the outcome variable is explained by the explanatory variable.</p>
+<p id="corty3e_page_236" block_type="page_start">236</p>
+<box title="Practice Problems 7.3" numbered="false" id="corty3e-ch7-bx2-3" block_type="sr-h">
+<p id="corty3e-ch7-p197" block_type="sr-h1"><strong>Apply Your Knowledge</strong></p>
+<p id="corty3e-ch7-p198" block_type="sr-que-nl"><phrase block_type="question_num">7.14</phrase> If <em>M</em> &#61; 66, &#956; &#61; 50, and <em>s</em> &#61; 10, what is <em>d</em>?</p>
+<p id="corty3e-ch7-p199" block_type="sr-que-nl"><phrase block_type="question_num">7.15</phrase> If <em>M</em> &#61; 93, &#956; &#61; 100, and <em>s</em> &#61; 30, what is <em>d</em>?</p>
+<p id="corty3e-ch7-p200" block_type="sr-que-nl"><phrase block_type="question_num">7.16</phrase> If <em>N</em> &#61; 18 and <em>t</em> &#61; 2.37, what is <em>r</em><sup>2</sup>?</p>
+<p id="corty3e-ch7-p201" block_type="sr-que-nl"><phrase block_type="question_num">7.17</phrase> If <em>r</em> &#61; .32, how much of the variability in the outcome variable, <em>Y</em>, is accounted for by the explanatory variable, <em>X</em>?</p>
+</box>
+<p id="corty-ch7-chead-5" block_type="h3">How Wide Is the Confidence Interval?</p>
+<p id="corty3e-ch7-p202" block_type="txt-ni">In <link href="corty3e-ch05.xml">Chapter 5</link>, we encountered confidence intervals for the first time. There, they were used to take a sample mean, <em>M</em>, and estimate a range of values that was likely to capture the population mean, &#956;. Now, for the single-sample <em>t</em> test, the confidence interval will be used to calculate the range for how big the difference is between two population means. Two populations? Dr. Farshad&#8217;s confidence interval, in the ADHD reaction-time study, will tell how large (or small) the mean difference in reaction time might be between the <em>population of adults with ADHD</em> and the general population of Americans.</p>
+<p id="corty3e-ch7-p203" block_type="txt">The difference between population means can be thought of as an effect size. If the distance between two population means is small, then the size of the effect (i.e., the impact of ADHD on reaction time) is not great. If the two population means are far apart, then the size of the effect is large.</p>
+<p id="corty3e-ch7-p204" block_type="txt"><link href="#corty3e-ch7-bx6-5">Equation 7.5</link> is the formula for calculating a confidence interval for the difference between two population means. It calculates the most commonly used confidence interval, the 95&#37; confidence interval.</p>
+<box title="" numbered="false" id="corty3e-ch7-bx6-5" block_type="eq-t">
+<box-metadata><box-title><phrase block_type="sec_num">Equation 7.5</phrase> <phrase block_type="sec_title">95&#37; Confidence Interval for the Difference Between Population Means</phrase></box-title></box-metadata>
+<p id="corty3e-ch7-p205" block_type="eq">95&#37; CI&#956;<sub>Diff</sub> &#61; (<em>M</em> &#8211; &#956;) &#177; (<em>t<sub>cv</sub></em> &#215; <em>s<sub>M</sub></em>)</p>
+<p id="corty3e-ch7-p206" block_type="eq-txt-ni">where 95&#37; CI&#956;<sub>Diff</sub> &#61; the 95&#37; confidence interval for the difference between two population means</p>
+<p id="corty3e-ch7-p207" block_type="eq-unl"><em>M</em> &#61; sample mean from one population</p>
+<p id="corty3e-ch7-p208" block_type="eq-unl">&#956; &#61; mean for other population</p>
+<p id="corty3e-ch7-p209" block_type="eq-unl"><em>t<sub>cv</sub></em> &#61; critical value of <em>t,</em> two-tailed, &#945; &#61; .05, <em>df</em> &#61; <em>N</em> &#8211; 1 (<link href="corty3e-appendix01.xml#corty3e-app1-fig-8">Appendix Table 3</link>)</p>
+<p id="corty3e-ch7-p210" block_type="eq-unl"><em>s<sub>M</sub></em> &#61; estimated standard error of the mean (Equation 5.2)</p>
+</box>
+<p id="corty3e-ch7-p211" block_type="txt">Here are all the numbers Dr. Farshad needs to calculate the 95&#37; confidence interval:</p>
+<list id="corty3e-ch7-list-14" type="unordered" block_type="bullet">
+<li><p id="corty3e-ch7-p212" block_type="bl-first"><em>M,</em> the mean for the sample of adults with ADHD, is 220.</p></li>
+<li><p id="corty3e-ch7-p213" block_type="bl-mid">&#956;, the population mean for adults in general, is 200.</p></li>
+<li><p id="corty3e-ch7-p214" block_type="bl-mid"><em>s<sub>M</sub></em> &#61; 2.27, a value obtained earlier via <link href="corty3e-ch05.xml#corty3e-ch5-bx6-2">Equation 5.2</link> for use in <link href="#corty3e-ch7-bx6-2">Equation 7.2</link>.</p></li>
+<li><p id="corty3e-ch7-p215" block_type="bl-last"><em>t<sub>cv</sub>,</em> the critical value of <em>t,</em> is 1.977.</p></li>
+</list>
+<p id="corty3e_page_237" block_type="page_start">237</p>
+<p id="corty3e-ch7-p216" block_type="txt-ni">Applying <link href="#corty3e-ch7-bx6-5">Equation 7.5</link>, she would calculate</p>
+<p id="corty3e-ch7-p217" block_type="eq">95&#37; CI&#956;<sub>Diff</sub> &#61; (<em>M</em> &#8211; &#956;) &#177; (<em>t<sub>cv</sub></em> &#215; <em>s<sub>M</sub></em>)</p>
+<p id="corty3e-ch7-p218" block_type="eq">&#61; (220 &#8211; 200) &#177; (1.977 &#215; 2.27)</p>
+<p id="corty3e-ch7-p219" block_type="eq">&#61; 20.0000 &#177; 4.4878</p>
+<p id="corty3e-ch7-p220" block_type="eq">&#61; from 15.5122 to 24.4878</p>
+<p id="corty3e-ch7-p221" block_type="eq">&#61; from 15.51 to 24.49</p>
+<p id="corty3e-ch7-p222" block_type="txt">The 95&#37; confidence interval for the difference between population means ranges from 15.51 msec to 24.49 msec. In APA format, this confidence interval would be reported as 95&#37; CI [15.51, 24.49].</p>
+<p id="corty3e-ch7-p223" block_type="txt">What information does a confidence interval provide? The technical definition is that if one drew sample after sample and calculated a 95&#37; confidence interval for each one, 95&#37; of the confidence intervals would capture the population value. But, that&#8217;s not very useful as an interpretative statement. Two confidence interval experts have offered their thoughts on interpreting confidence intervals (Cumming and Finch, 2005). With a 95&#37; confidence interval, one interpretation is that a researcher can be 95&#37; confident that the population value falls within the interval. Another way of saying this is that the confidence interval gives a range of <em>plausible</em> values for the population value. That means it is possible, but unlikely, that the population value falls outside of the confidence interval. A final implication is that the ends of the confidence interval are reasonable estimates of how large or how small the population value is. The end of the confidence interval closer to zero can be taken as an estimate of how small the population value might be, while the end of the confidence interval further from zero estimates how large the population value might be.</p>
+<p id="corty3e-ch7-p224" block_type="txt">Dr. Farshad&#8217;s confidence interval tells her that there&#8217;s a 95&#37; chance that the difference between the two population means falls somewhere in the interval from 15.51 msec to 24.49 msec. It means that the best prediction of how much slower reaction times are for the population of adults with ADHD than for the general population of Americans ranges from 15.51 msec slower to 24.49 msec slower (<link href="#corty3e-ch7-fig-23"><strong>Figure 7.9</strong></link>).</p>
+<figure id="corty3e-ch7-fig-23" block_type="figure" numbered="true" number="7.9" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="medium" border="true"/>
+<image asset-id="corty3e-ch7-img-25" alt="image" src="asset/ch7/corty3e_fig07_09.jpg"/>
+<caption><strong><phrase block_type="fig_num">Figure 7.9</phrase> 95&#37; Confidence Interval for the Difference Between Population Means for the Reaction-Time Study</strong> Imagine a race in which a person representing the average American crosses the finish line first, followed by a person representing the average adult with ADHD. How much slower is the average adult with ADHD? The confidence interval says that the average adult with ADHD <em>probably</em> trails the average American by anywhere from 15.51 msec to 24.49 msec, but it doesn&#8217;t specify where in that range the average adult with ADHD is.</caption>
+</figure>
+<p id="corty3e-ch7-p225" block_type="txt">Our interpretation of confidence intervals will focus on three aspects: (1) whether the value of 0 falls within the confidence interval; (2) how close the confidence interval comes to zero or how far from zero it goes, and (3) how wide the confidence interval is. These three aspects are explained below and summarized in <link href="#corty3e-ch7-fig-24"><strong>Table 7.4</strong></link>.</p>
+<figure id="corty3e-ch7-fig-24" block_type="table" numbered="true" number="7.4" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="xlarge" border="true"/>
+<image asset-id="corty3e-ch7-img-26" alt="image" src="asset/ch7/corty3e_table07_04.jpg"/>
+</figure>
+<p id="corty3e_page_238" block_type="page_start">238</p>
+<list id="corty3e-ch7-list-15" type="ordered" block_type="numbered">
+<li><p id="corty3e-ch7-p226" block_type="nl-first">Does the confidence interval capture zero? The 95&#37; confidence interval for the difference between population means gives the range within which it is likely that the actual difference between two population means lies. If the null hypothesis is rejected for a single-sample <em>t</em> test, the conclusion reached is that this sample probably did not come from that population; rather, that there are two populations with two different means. In such a situation, the difference between the two population means is not thought to be zero, and the confidence interval shouldn&#8217;t include zero. When the null hypothesis is rejected, the 95&#37; confidence interval won&#8217;t capture zero. (This assumes that the researcher was using a two-tailed test with &#945; &#61; .05.)</p>
+<p id="corty3e-ch7-p227" block_type="nl_cont">However, when a researcher fails to reject the null hypothesis, the confidence interval should include zero in its range. All that a zero falling in the range of the confidence interval means is that it is <em>possible</em> the difference between the two population means is zero. It doesn&#8217;t mean that the difference <em>is</em> zero, just that it may be. In a similar fashion, when one fails to reject the null hypothesis, the conclusion is that there isn&#8217;t enough evidence to say the null hypothesis is wrong. It may be right, it may be wrong; the researcher just can&#8217;t say.</p>
+<p id="corty3e-ch7-p228" block_type="nl_cont">Having already determined earlier that the null hypothesis was rejected and the results were statistically significant, Dr. Farshad knew that her confidence interval wouldn&#8217;t capture zero. And, as the interval ranged from 15.51 to 24.49, she was right.</p></li>
+<li><p id="corty3e-ch7-p229" block_type="nl-first">How close does the confidence interval come to zero? How far away from zero does it go? If the confidence interval doesn&#8217;t capture zero, how close one end of the confidence interval comes to zero can be thought of as providing information about how weak the effect may be. If one end of the confidence interval is very close to zero, then the effect size may be small, as there could be little difference between the population means.</p>
+<p id="corty3e-ch7-p230" block_type="nl_cont">Similarly, how far away the other end of the confidence interval is from zero can be thought of as providing information about how strong the effect may be. The farther away from zero the confidence interval ranges, the larger the effect size may be.</p>
+<p id="corty3e_page_239" block_type="page_start">239</p></li>
+<li><p id="corty3e-ch7-p231" block_type="nl-first">How wide is the confidence interval? The width of the confidence interval also provides information. Narrower confidence intervals provide a more precise estimate of the population value and are more useful.</p>
+<p id="corty3e-ch7-p233" block_type="nl_cont">When the confidence interval is wide, the size of the effect in the population is uncertain. It might be a small effect, a large effect, or anywhere in between. In these instances, replication of the study with a larger sample size will yield a narrower confidence interval.</p>
+<p id="corty3e-ch7-p234" block_type="nl_cont">When evaluating the width of a confidence interval, one should take into account the variable being measured. A confidence interval that is 1 point wide would be wide if the variable were GPA, but narrow if the variable were SAT. Interpretation relies on our human common sense.</p>
+<p id="corty3e-ch7-p235" block_type="nl_cont">Dr. Farshad&#8217;s confidence interval ranges from 15.51 to 24.49. The width can be determined by subtracting the lower limit from the upper limit, as shown in <link href="#corty3e-ch7-bx6-6">Equation 7.6</link>.</p></li>
+</list>
+<box title="" numbered="false" id="corty3e-ch7-bx6-6" block_type="eq-t">
+<box-metadata><box-title><phrase block_type="sec_num">Equation 7.6</phrase> <phrase block_type="sec_title">Formula for Calculating the Width of a Confidence Interval</phrase></box-title></box-metadata>
+<p id="corty3e-ch7-p236" block_type="eq"><em>CI<sub>W</sub></em> &#61; <em>CI<sub>UL</sub></em> &#8211; <em>CI<sub>LL</sub></em></p>
+<p id="corty3e-ch7-p237" block_type="eq-txt-ni">where <em>CI<sub>W</sub></em> &#61; the width of the confidence interval</p>
+<p id="corty3e-ch7-p238" block_type="eq-unl"><em>CI<sub>UL</sub></em> &#61; the upper limit of the confidence interval</p>
+<p id="corty3e-ch7-p239" block_type="eq-unl"><em>CI<sub>LL</sub></em> &#61; the lower limit of the confidence interval</p>
+</box>
+<p id="corty3e-ch7-p240" block_type="txt">Applying <link href="#corty3e-ch7-bx6-6">Equation 7.6</link> to her data, Dr. Farshad calculates 24.49 &#8211; 15.51 &#61; 8.98. The confidence interval is almost 9 msec wide. Is this wide or narrow?</p>
+<p id="corty3e-ch7-p241" block_type="txt">Evaluating the width of a confidence interval often requires expertise. It takes a reaction-time researcher like Dr. Farshad to tell us whether a 9-msec range for a confidence interval is a narrow range and sufficiently precise. Here, given the width of the confidence interval, she feels little need to replicate the study with a larger sample size to narrow the confidence interval.</p>
+</section>
+<section id="corty3e-ch7-sec2-3" block_type="h2" chapter="7" title="" numbered="false" level="2" print_page="239">
+<section-metadata><section-title>Putting It All Together</section-title></section-metadata>
+<p id="corty3e-ch7-p242" block_type="txt-ni">Dr. Farshad has completed her study using a single-sample <em>t</em> test to see if adults with ADHD had a reaction time that differed from that for the general population. By addressing the three questions in <link href="#corty3e-ch7-fig-25"><strong>Table 7.5</strong></link>, Dr. Farshad has gathered all the pieces she needs to write an interpretation. There are four points she addresses in her interpretation:</p>
+<figure id="corty3e-ch7-fig-25" block_type="table" numbered="true" number="7.5" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="large" border="true"/>
+<image asset-id="corty3e-ch7-img-27" alt="image" src="asset/ch7/corty3e_table07_05.jpg"/>
+</figure>
+<list id="corty3e-ch7-list-16" type="ordered" block_type="numbered">
+<li><p id="corty3e-ch7-p243" block_type="nl-first">Dr. Farshad starts with a brief explanation of the study.</p></li>
+<li><p id="corty3e-ch7-p244" block_type="nl-mid">She presents some facts, such as the means of the sample and the population. But, she does not report all the values she calculated just because she calculated them. Rather, she is selective and only reports what she believes is most relevant.</p></li>
+<li><p id="corty3e-ch7-p245" block_type="nl-mid">She explains what she believes the results mean.</p></li>
+<li><p id="corty3e-ch7-p246" block_type="nl-last">Finally, she offers some suggestions for future research. Having been involved in the study from start to finish, she knows its strengths and weaknesses better than anyone else. She is in a perfect position to offer advice to other researchers about ways to redress the limitations of her study. In her suggestions, she uses the word &#8220;replicate.&#8221; To <termref term="replicate">replicate</termref> a study is to repeat it, usually introducing some change in procedure to make it better.</p></li>
+</list>
+<p id="corty3e_page_240" block_type="page_start">240</p>
+<p id="corty3e-ch7-p247" block_type="tbl_num">Here is Dr. Farshad&#8217;s interpretation:</p>
+<p id="corty3e-ch7-p248" block_type="sr_exp_txt_v1_ni">A study compared the reaction time of a random sample of Illinois adults who had been diagnosed with ADHD (<em>M</em> &#61; 220 msec) to the known reaction time for the American population (&#956; &#61; 200 msec). The reaction time of adults with ADHD was statistically significantly slower than the reaction time found in the general population [<em>t</em>(140) &#61; 8.81, <em>p</em> &#60; .05]. The size of the difference in the larger population probably ranges on this task from a 16- to a 24-msec decrement in performance. This is not a small difference&#8212;these results suggest that ADHD in adults is associated with a medium to large level of impairment on tasks that require fast reactions. If one were to replicate this study, it would be advisable to obtain a broader sample of adults with ADHD, not just limiting it to one state. This would increase the generalizability of the results.</p>
+<box title="Worked Example 7.2" numbered="false" id="corty3e-ch7-bx3-2" block_type="sr-exp-n">
+<p id="corty3e-ch7-p249" block_type="sr_exp_txt_ni">For practice in interpreting the results of a single-sample <em>t</em> test when the null hypothesis is not rejected, let&#8217;s return to Dr. Richman&#8217;s study.</p>
+<p id="corty3e-ch7-p250" block_type="sr_exp_txt">In his study, Dr. Richman studied the effect of losing a pet during the year on college performance. Dr. Richman located 11 students who had lost a pet. Their mean GPA for the year was 2.58 (<em>s</em> &#61; 0.50) compared to a population mean of 2.68. Because he expected pet loss to have a negative effect, Dr. Richman used a one-tailed test. With the alpha set at .05, <em>t<sub>cv</sub></em> was &#8211;1.812. He calculated <em>s<sub>M</sub></em> &#61; 0.15 and found <em>t</em> &#61; &#8211;0.67. Now it is time for Dr. Richman to interpret the results.</p>
+<p id="corty3e_page_241" block_type="page_start">241</p>
+<p id="corty3e-ch7-p251" block_type="sr_exp_txt"><em>Was the null hypothesis rejected?</em> The vet was doing a one-tailed test and his hypotheses were</p>
+<p id="corty3e-ch7-p252" block_type="sr-exp-eq"><em>H</em><sub>0</sub>: &#956;<sub>StudentsWithPetLoss</sub> &#8805; 2.68</p>
+<p id="corty3e-ch7-p253" block_type="sr-exp-eq"><em>H</em><sub>1</sub>: &#956;<sub>StudentsWithPetLoss</sub> &#60; 2.68</p>
+<p id="corty3e-ch7-p254" block_type="sr_exp_txt">Inserting the observed value of <em>t,</em> &#8211;0.67, into the decision rule he had generated in Step 4, he has to decide which statement is true:</p>
+<p id="corty3e-ch7-p255" block_type="sr-exp-eq">Is &#8211;0.67 &#8804; &#8211;1.812? If so, reject <em>H</em><sub>0</sub>.</p>
+<p id="corty3e-ch7-p256" block_type="sr-exp-eq">Is &#8211;0.67 &#62; &#8211;1.812? If so, fail to reject <em>H</em><sub>0</sub>.</p>
+<p id="corty3e-ch7-p257" block_type="sr_exp_txt">As the second statement is true, Dr. Richman has failed to reject the null hypothesis. <link href="#corty3e-ch7-fig-26"><strong>Figure 7.10</strong></link> shows how the <em>t</em> value of &#8211;0.67 falls in the common zone of the sampling distribution.</p>
+<figure id="corty3e-ch7-fig-26" block_type="figure" numbered="true" number="7.10" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="large" border="true"/>
+<image asset-id="corty3e-ch7-img-28" alt="image" src="asset/ch7/corty3e_fig07_10.jpg"/>
+<caption><strong><phrase block_type="fig_num">Figure 7.10</phrase> Failing to Reject the Null Hypothesis, One-Tailed Test</strong> The critical value of <em>t</em> (one-tailed, &#945; &#61; .05, <em>df</em> &#61; 10) is &#8211;1.812. This means that the value of the test statistic, &#8211;0.67, falls in the common zone, and the null hypothesis is not rejected.</caption>
+</figure>
+<p id="corty3e-ch7-p258" block_type="sr_exp_txt">Having failed to reject the null hypothesis, the results are called not statistically significant. Just like finding a defendant not guilty doesn&#8217;t mean that the defendant is innocent, failing to reject the null hypothesis does not mean that it is true. All the vet can conclude is that there&#8217;s not enough evidence to conclude that college students who lose a pet do worse in school that year. Because he failed to reject the null hypothesis, there&#8217;s no reason to believe a difference exists between the two populations, and there&#8217;s no reason for him to worry about the direction of the difference between them.</p>
+<p id="corty3e-ch7-p259" block_type="sr_exp_txt">In APA format, the results would be written as <em>t</em>(10) &#61; &#8211;0.67, <em>p</em> &#62; .05 (one-tailed):</p>
+<list id="corty3e-ch7-list-17" type="unordered" block_type="bullet">
+<li><p id="corty3e-ch7-p260" block_type="sr-exp-bl-first">The <em>t</em> tells what statistical test was done.</p></li>
+<li><p id="corty3e-ch7-p261" block_type="sr-exp-bl-mid">The 10 in parentheses, which is the degrees of freedom, reveals there were 11 cases as <em>N</em> &#61; <em>df</em> &#43; 1 for a single-sample <em>t</em> test.</p></li>
+<li><p id="corty3e-ch7-p262" block_type="sr-exp-bl-mid">&#8211;0.67 is the observed value of the statistic.</p></li>
+<li><p id="corty3e-ch7-p263" block_type="sr-exp-bl-mid">The .05 indicates that this was the alpha level selected.</p></li>
+<li><p id="corty3e-ch7-p264" block_type="sr-exp-bl-mid"><em>p</em> &#62; .05 indicates that the researcher failed to reject the null hypothesis. The observed <em>t</em> value is a common one when the null hypothesis is true. &#8220;Common&#8221; is defined as occurring more than 5&#37; of the time.</p>
+<p id="corty3e_page_242" block_type="page_start">242</p></li>
+<li><p id="corty3e-ch7-p265" block_type="sr-exp-bl-last">The final parenthetical expression (one-tailed) is something new. It indicates, obviously, that the test was a one-tailed test. Unless told that the test is a one-tailed test, assume it is two-tailed.</p></li>
+</list>
+<p id="corty3e-ch7-p266" block_type="sr_exp_txt"><em>How big is the effect?</em> Calculating an effect size like Cohen&#8217;s <em>d</em> or <em>r</em><sup>2</sup> when one has failed to reject the null hypothesis is a controversial topic in statistics. If one fails to reject the null hypothesis, not enough evidence exists to state there&#8217;s an effect. Some researchers say that there is no need to calculate an effect size if no evidence that an effect exists is found. Other researchers believe that examining the effect size when one has failed to reject the null hypothesis alerts the researcher to the possibility of a Type II error (Cohen, 1994; Wilkinson, 1999). (Remember, a Type II error occurs when the null hypothesis should be rejected, but it isn&#8217;t.) In this book, we&#8217;re going to side with calculating an effect size when one fails to reject the null hypothesis as doing so gives additional information useful in understanding the results.</p>
+<p id="corty3e-ch7-p267" block_type="sr_exp_txt">In the pet-loss study, the mean GPA for the 11 students who had lost a pet was 2.58 (<em>s</em> &#61; 0.50) and the population mean for all first-year students was 2.68. Applying <link href="#corty3e-ch7-bx6-3">Equation 7.3</link>, here are the calculations for <em>d:</em></p>
+<p id="corty3e-ch7-eqn-10" block_type="equation">
+<image asset-id="corty3e-ch7-img-29" alt="image" src="asset/ch7/corty3e_eqn07_242_01.jpg"/></p>
+<p id="corty3e-ch7-p268" block_type="sr_exp_txt">And, applying <link href="#corty3e-ch7-bx6-4">Equation 7.4</link>, here are the calculations for <em>r</em><sup>2</sup>:</p>
+<p id="corty3e-ch7-eqn-11" block_type="equation">
+<image asset-id="corty3e-ch7-img-30" alt="image" src="asset/ch7/corty3e_eqn07_242_02.jpg"/></p>
+<p id="corty3e-ch7-p269" block_type="sr_exp_txt">The effect size <em>d</em>, &#8211;0.20, is a small effect according to Cohen, while <em>r</em><sup>2</sup> of 4.30&#37; would be classified as a small to medium effect. Why, when we fail to reject the null hypothesis, does there seem to be some effect? There are two explanations for this:</p>
+<list id="corty3e-ch7-list-18" type="ordered" block_type="numbered">
+<li><p id="corty3e-ch7-p270" block_type="sr-exp-nl-first">Even if the null hypothesis is true, in which case the size of the effect in the population is zero, it is possible, due to sampling error, that a nonzero effect would be observed in the sample. So, it shouldn&#8217;t be surprising to find a small effect.</p>
+<p id="corty3e_page_243" block_type="page_start">243</p></li>
+<li><p id="corty3e-ch7-p271" block_type="sr-exp-nl-last">It is also possible that the observed effect size represents the size of the effect in the population. If this were true, it would mean a Type II error is being made.</p></li>
+</list>
+<p id="corty3e-ch7-p272" block_type="sr_exp_txt">When a researcher has concern about Type II error, he or she can suggest replication with a larger sample size. A larger sample size has a number of benefits. First, it makes it easier to reject the null hypothesis because a larger sample size, with more degrees of freedom, moves the rare zone closer to the midpoint. It is also easier to reject the null hypothesis because a larger sample makes the standard error of the mean smaller, which makes the <em>t</em> value larger. In fact, if the sample size had been 75 in the pet-loss study, not 11, <em>d</em> would still be &#8211;0.20, but the vet would have rejected the null hypothesis.</p>
+<p id="corty3e-ch7-p273" block_type="sr_exp_txt">A statistician would call this study underpowered. To be <termref term="underpowered">underpowered</termref> means that a study doesn&#8217;t include enough cases to have a reasonable chance of detecting an effect that exists. As was mentioned in <link href="corty3e-ch06.xml">Chapter 6</link>, if power is low, then beta, the chance of a Type II error, is high. So, raising a concern about one (Type II error) raises a concern about the other (power).</p>
+<p id="corty3e-ch7-p274" block_type="sr_exp_txt"><em>How wide is the confidence interval?</em> The final calculation Dr. Richman should make in order to understand his results is to calculate a 95&#37; confidence interval for the difference between population means. This requires <link href="#corty3e-ch7-bx6-5">Equation 7.5</link>:</p>
+<p id="corty3e-ch7-p275" block_type="sr-exp-eq">95&#37; CI&#956;<sub>Diff</sub> &#61; (<em>M</em> &#8211; &#956;) &#177; (<em>t<sub>cv</sub></em> &#215; <em>s<sub>M</sub></em>)</p>
+<p id="corty3e-ch7-p276" block_type="sr-exp-eq">&#61; (2.58 &#8211; 2.68) &#177; (2.228 &#215; 0.15)</p>
+<p id="corty3e-ch7-p277" block_type="sr-exp-eq">&#61; &#8211;0.1000 &#177; 0.3342</p>
+<p id="corty3e-ch7-p278" block_type="sr-exp-eq">&#61; from &#8211;0.4342 to 0.2342</p>
+<p id="corty3e-ch7-p279" block_type="sr-exp-eq">&#61; from &#8211;0.43 to 0.23</p>
+<p id="corty3e-ch7-p280" block_type="sr_exp_txt">Before interpreting this confidence interval, remember that the null hypothesis was not rejected and there is no evidence that pet loss has an effect on GPA. The confidence interval should show this, and it does.</p>
+<p id="corty3e-ch7-p281" block_type="sr_exp_txt">This 95&#37; confidence interval ranges from &#8211;0.43 to 0.23. First, note that it includes the value of 0. A value of 0 indicates no difference between the two population means and so it is a <em>possibility,</em> like the null hypothesis said, that there is no difference between the two populations. The confidence interval for the difference between population means should capture zero whenever the null hypothesis is not rejected. (This is true for a 95&#37; confidence interval as long as the hypothesis test is two-tailed with &#945; &#61; .05.)</p>
+<p id="corty3e-ch7-p282" block_type="sr_exp_txt">Next, Dr. Richman looks at the upper and lower ends of the confidence interval, <phrase block_type="nowrap">&#8211;0.43</phrase> and 0.23. This confidence interval tells him that it is possible the average GPA for the population of students who have lost a pet could be as low as 0.43 points worse than the general student average, or as high as 0.23 points better than the general student average. This doesn&#8217;t provide much information about the effect of pet loss on academic performance&#8212;maybe it helps, maybe it hurts.</p>
+<p id="corty3e-ch7-p283" block_type="sr_exp_txt">Finally, he looks at the width of the confidence interval using <link href="#corty3e-ch7-bx6-6">Equation 7.6</link>:</p>
+<p id="corty3e-ch7-p284" block_type="sr-exp-eq"><em>CI<sub>W</sub></em> &#61; <em>CI<sub>UL</sub> &#8211; CI<sub>LL</sub></em></p>
+<p id="corty3e-ch7-p285" block_type="sr-exp-eq">&#61; 0.23 &#8211; (&#8211;0.43)</p>
+<p id="corty3e-ch7-p286" block_type="sr-exp-eq">&#61; 0.23 &#43; 0.43</p>
+<p id="corty3e-ch7-p287" block_type="sr-exp-eq">&#61; 0.6600</p>
+<p id="corty3e-ch7-p288" block_type="sr-exp-eq">&#61; 0.66</p>
+<p id="corty3e_page_244" block_type="page_start">244</p>
+<p id="corty3e-ch7-p289" block_type="sr_exp_txt">The confidence interval is 0.66 points wide. This is a fairly wide confidence interval for a variable like GPA, a variable that has a maximum range of 4 points.</p>
+<p id="corty3e-ch7-p290" block_type="sr_exp_txt">A confidence interval is better when it is narrower, because a narrower one gives a more precise estimate of the population value. How does a researcher narrow a confidence interval? By increasing sample size. Dr. Richman should recommend replicating with a larger sample size to get a better sense of what the effect of pet loss is in the larger population. Increasing the sample size also increases the power, making it more likely that an effect will be found statistically significant.</p>
+<p id="corty3e-ch7-p291" block_type="sr_exp_txt"><em>Putting it all together.</em> Here&#8217;s Dr. Richman&#8217;s interpretation. Note that (1) he starts with a brief explanation of the study, (2) reports some facts but doesn&#8217;t report everything he calculated, (3) gives his interpretation of the results, and (4) makes suggestions for improving the study.</p>
+<p id="corty3e-ch7-p292" block_type="sr_exp_txt_v1_ni">This study explored whether losing a pet while at college had a negative impact on academic performance. The GPA of 11 students who lost a pet (<em>M</em> &#61; 2.58) was compared to the GPA of the population of students at that college (&#956; &#61; 2.68). The students who had lost a pet did not have GPAs that were statistically significantly lower [<em>t</em>(10) &#61; &#8211;0.67, <em>p</em> &#62; .05 (one-tailed)].</p>
+<p id="corty3e-ch7-p293" block_type="sr_exp_txt_v1_ni">Though there was not sufficient evidence in this study to show that loss of a pet has a negative impact on college performance, the sample size was small and the study did not have enough power to find a small effect. Therefore, it would be advisable to replicate the study with a larger sample size to have a better chance of determining the effect of pet loss and to get a better estimate of the size of the effect.</p>
+</box>
+<box title="Practice Problems 7.4" numbered="false" id="corty3e-ch7-bx2-4" block_type="sr-h">
+<p id="corty3e-ch7-p294" block_type="sr-h1"><strong>Apply Your Knowledge</strong></p>
+<p id="corty3e-ch7-p295" block_type="sr-que-nl"><phrase block_type="question_num">7.18</phrase> If <em>M</em> &#61; 70, &#956; &#61; 60, <em>t<sub>cv</sub></em> &#61; &#177;2.086, and <em>s<sub>M</sub></em> &#61; 4.36, what is the 95&#37; confidence interval for the difference between population means?</p>
+<p id="corty3e-ch7-p296" block_type="sr-que-nl"><phrase block_type="question_num">7.19</phrase> If <em>M</em> &#61; 55, &#956; &#61; 50, <em>t<sub>cv</sub></em> &#61; &#177;2.052, and <em>s<sub>M</sub></em> &#61; 1.89, what is the 95&#37; confidence interval for the difference between population means?</p>
+<p id="corty3e-ch7-p297" block_type="sr-que-nl"><phrase block_type="question_num">7.20</phrase> A college president has obtained a sample of 81 students at her school. She plans to survey them regarding some potential changes in academic policies. But, first, she wants to make sure that the sample is representative of the school in terms of academic performance. She knows from the registrar that the mean GPA for the entire school is 3.02. She calculates the mean of her sample as 3.16, with a standard deviation of 0.36. She used a single-sample <em>t</em> test to compare the sample mean (3.16) to the population mean (3.02). Using her findings below, determine if the sample is representative of the population in terms of academic performance:</p>
+<list id="corty3e-ch7-list-19" type="unordered" block_type="bullet">
+<li><p id="corty3e-ch7-p298" block_type="sr_que_nl_lvl2"><em>s<sub>M</sub></em> &#61; 0.04</p></li>
+<li><p id="corty3e-ch7-p299" block_type="sr_que_nl_lvl2"><em>t</em> &#61; 3.50</p></li>
+<li><p id="corty3e-ch7-p300" block_type="sr_que_nl_lvl2"><em>d</em> &#61; 0.39</p></li>
+<li><p id="corty3e-ch7-p301" block_type="sr_que_nl_lvl2"><em>r</em><sup>2</sup> &#61; 13.28&#37;</p></li>
+<li><p id="corty3e-ch7-p302" block_type="sr_que_nl_lvl2">95&#37; CI&#956;<sub>Diff</sub> &#61; from 0.06 to 0.22</p></li>
+</list>
+</box>
+<box title="Application Demonstration" numbered="false" id="corty3e-ch7-bx5-1" block_type="sr-x-h">
+<p id="corty3e-ch7-p303" block_type="sr-x-txt-ni">Chips Ahoy is a great cookie. In 1997 Nabisco came out with a clever advertising campaign, the Chips Ahoy Challenge. Its cookies had so many chocolate chips that Nabisco guaranteed there were more than a thousand chips in every bag. And the company challenged consumers to count. It&#8217;s almost two decade later, but do Chips Ahoy cookies still have more than a thousand chocolate chips in every bag? Let&#8217;s investigate.</p>
+<p id="corty3e_page_245" block_type="page_start">245</p>
+<p id="corty3e-ch7-p304" block_type="sr-x-txt">It is easier to count the number of chips in a single cookie than to count the number of chips in a whole bag of cookies. If a bag has at least 1,000 chips and there are 36 cookies in a bag, then each cookie should have an average of 27.78 chips. So, here is the challenge rephrased: &#8220;Chips Ahoy cookies are so full of chocolate chips that each one contains an average of 27.78 chips. We challenge you to count them.&#8221;</p>
+<p id="corty3e-ch7-p305" block_type="sr_x_h4_txt"><phrase block_type=" SR-X-h4-N-ri"><strong>Step 1</strong></phrase> This challenge calls for a statistical test. The population value is known: &#956; &#61; 27.78. All that is left is to obtain a sample of cookies; find the sample mean, <em>M;</em> and see if there is a statistically significant difference between <em>M</em> and &#956;. Unfortunately, Nabisco has not reported &#963;, the population standard deviation, so the single-sample <em>z</em> test can&#8217;t be used. However, it is possible to calculate the standard deviation (<em>s</em>) from a sample, which means the single-sample <em>t</em> test can be used.</p>
+<p id="corty3e-ch7-p306" block_type="sr-x-txt">Ten cookies were taken from a bag of Chips Ahoy cookies. Each cookie was soaked in cold water, the cookie part washed away, and the chips counted. The cookies contained from 22 to 29 chips, with a mean of 26.10 and a standard deviation of 2.69.</p>
+<p id="corty3e-ch7-p307" block_type="sr_x_h4_txt"><phrase block_type=" SR-X-h4-N-ri"><strong>Step 2</strong></phrase> The next step is to check the assumptions. The random sample assumption was violated as the sample was not a random sample from the population of Chips Ahoy cookies being manufactured. Perhaps the cookies being manufactured on the day this bag was produced were odd. Given the focus on quality control that a manufacturer like Nabisco maintains, this seems unlikely. So, though this assumption is violated, it still seems reasonable to generalize the results to the larger population of Chips Ahoy cookies.</p>
+<p id="corty3e-ch7-p308" block_type="sr-x-txt">We&#8217;ll operationalize the independence of observations assumption as most researchers do and consider it not violated as no case is in the sample twice and each cookie is assessed individually. Similarly, the normality assumption will be considered not violated under the belief that characteristics controlled by random processes are normally distributed.</p>
+<p id="corty3e-ch7-p309" block_type="sr_x_h4_txt"><phrase block_type=" SR-X-h4-N-ri"><strong>Step 3</strong></phrase> The hypotheses should be formulated before any data are collected. It seems reasonable to do a nondirectional (two-tailed) test in order to allow for the possibilities of more chips than promised as well as fewer chips than promised. Here are the two hypotheses:</p>
+<p id="corty3e-ch7-p310" block_type="sr-x-eq"><em>H</em><sub>0</sub>: &#956;<sub>Chips</sub> &#61; 27.28</p>
+<p id="corty3e-ch7-p311" block_type="sr-x-eq"><em>H</em><sub>1</sub>: &#956;<sub>Chips</sub> &#8800; 27.78</p>
+<p id="corty3e-ch7-p312" block_type="sr_x_h4_txt"><phrase block_type=" SR-X-h4-N-ri"><strong>Step 4</strong></phrase> The consequences of making a Type I error in this study are not catastrophic, so it seems reasonable to use the traditional alpha level of .05. As already decided, a two-tailed test is being used. Thus, the critical value of <em>t,</em> with 9 degrees of freedom, is &#177;2.262. Here is the decision rule:</p>
+<p id="corty3e-ch7-p313" block_type="sr-x-eq">If <em>t</em> &#8804; &#8211;2.262 <em>or</em> if <em>t</em> &#8805; 2.262, reject <em>H</em><sub>0</sub>.</p>
+<p id="corty3e-ch7-p314" block_type="sr-x-eq">If &#8211;2.262 &#60; <em>t</em> &#60; 2.262, fail to reject <em>H</em><sub>0</sub>.</p>
+<p id="corty3e_page_246" block_type="page_start">246</p>
+<p id="corty3e-ch7-p315" block_type="sr_x_h4_txt"><phrase block_type=" SR-X-h4-N-ri"><strong>Step 5</strong></phrase> The first step in calculating a single-sample <em>t</em> test is to calculate what will be used as the denominator, the estimated standard error of the mean:</p>
+<p id="corty3e-ch7-eqn-12" block_type="equation">
+<image asset-id="corty3e-ch7-img-31" alt="image" src="asset/ch7/corty3e_eqn07_246_01.jpg"/></p>
+<p id="corty3e-ch7-p316" block_type="sr-x-txt">The estimated standard error of the mean is then used to calculate the test statistic, <em>t:</em></p>
+<p id="corty3e-ch7-eqn-13" block_type="equation">
+<image asset-id="corty3e-ch7-img-32" alt="image" src="asset/ch7/corty3e_eqn07_246_02.jpg"/></p>
+<p id="corty3e-ch7-p317" block_type="sr_x_h4_txt"><phrase block_type=" SR-X-h4-N-ri"><strong>Step 6</strong></phrase> The first step in interpreting the results is to determine if the null hypothesis should be rejected. The second statement in the decision rule is true: &#8211;2.262 &#60; &#8211;1.98 &#60; 2.262, the null hypothesis is not rejected. The difference between 26.10, the mean number of chips found in the cookies, and 27.78, the number of chips expected per cookie, is not statistically significant. From this study, even though the cookies in the bag at <em>M</em> &#61; 26.10 chips per cookie fell short of the expected 27.78 chips per cookie, not enough evidence exists to question Nabisco&#8217;s assertion that there are 27.78 chips per cookie and a thousand chips in every bag. And, there&#8217;s not enough evidence to suggest that, since 1997, Nabisco&#8217;s recipe has changed and/or its quality control has slipped.</p>
+<p id="corty3e-ch7-p318" block_type="sr-x-txt">Having answered the challenge, it is tempting to stop here. But forging ahead&#8212;going on to find Cohen&#8217;s <em>d</em>, <em>r</em><sup>2</sup>, and the 95&#37; confidence interval&#8212;will give additional information and help clarify the results.</p>
+<p id="corty3e-ch7-p319" block_type="sr-x-txt">Finding Cohen&#8217;s <em>d,</em> the size of the effect, provides a different perspective on the results:</p>
+<p id="corty3e-ch7-eqn-14" block_type="equation">
+<image asset-id="corty3e-ch7-img-33" alt="image" src="asset/ch7/corty3e_eqn07_246_03.jpg"/></p>
+<p id="corty3e-ch7-p320" block_type="sr-x-txt">Though the <em>t</em> test says there is not enough evidence to find an effect, Cohen&#8217;s <em>d</em> says <em>d</em> &#61; &#8211;0.62, a medium effect. This seems contradictory&#8212;is there an effect or isn&#8217;t there? Perhaps the study doesn&#8217;t have enough power and a Type II error is being made. This means that the study should be replicated with a larger sample size before concluding that Chips Ahoy hasn&#8217;t failed the thousand chip challenge. Calculating <em>r</em><sup>2</sup> &#61; 30&#37; leads to a similar conclusion.</p>
+<p id="corty3e-ch7-p321" block_type="sr-x-txt">Does the confidence interval tell a similar story? Here are the calculations for the confidence interval:</p>
+<p id="corty3e-ch7-p322" block_type="sr-x-eq">95&#37; CI&#956;<sub>Diff</sub> &#61; (<em>M</em> &#8211; &#956;) &#177; (<em>t<sub>cv</sub></em> &#215; <em>s<sub>M</sub></em>)</p>
+<p id="corty3e-ch7-p323" block_type="sr-x-eq">&#61; (26.10 &#8211; 27.78) &#177; (2.262 &#215; 0.85)</p>
+<p id="corty3e-ch7-p324" block_type="sr-x-eq">&#61; &#8211;1.6800 &#177; 1.9227</p>
+<p id="corty3e-ch7-p325" block_type="sr-x-eq">&#61; from &#8211;3.6027 to 0.2427</p>
+<p id="corty3e-ch7-p326" block_type="sr-x-eq">&#61; from &#8211;3.60 to 0.24</p>
+<p id="corty3e_page_247" block_type="page_start">247</p>
+<p id="corty3e-ch7-p327" block_type="sr-x-txt">The confidence interval says that the range from &#8211;3.60 to 0.24 probably contains the difference between 27.78 (the expected number of chips per cookie) and the number really found in each cookie. As this range captures zero, it is possible that there is no difference, the null hypothesis is true, and bags of cookies really do contain 1,000 chips.</p>
+<p id="corty3e-ch7-p328" block_type="sr-x-txt">Positive numbers in the confidence interval suggest that the difference lies in the direction of there being more than 27.78 chips per cookie. Negative numbers suggest the difference is in the direction of there being fewer than 27.78 chips per cookie. Most of the confidence interval lies in negative territory. A betting person would wager that the difference is more likely to rest with bags containing fewer than a thousand chips.</p>
+<p id="corty3e-ch7-p329" block_type="sr-x-txt">The <em>t</em> test left open the possibility that Nabisco still ruled the 1,000 chip challenge. But, thanks to going beyond <em>t,</em> to calculating <em>d</em> and a confidence interval, it no longer seems clear that Nabisco would win the Chips Ahoy challenge. For a complete interpretation of the results of this Chips Ahoy challenge, see <link href="#corty3e-ch7-fig-32"><strong>Figure 7.11</strong></link>.</p>
+<figure id="corty3e-ch7-fig-32" block_type="figure" numbered="true" number="7.11" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="large" border="true"/>
+<image asset-id="corty3e-ch7-img-34" alt="image" src="asset/ch7/corty3e_fig07_11.jpg"/>
+<caption><strong><phrase block_type="fig_num">Figure 7.11</phrase> Interpretation of Results of the Chips Ahoy Challenge</strong></caption>
+</figure>
+</box>
+</section>
+<section id="corty3e-ch7-sec1-3" block_type="sum-h" chapter="7" title="" numbered="false" level="1" print_page="248">
+<section-metadata><section-title>SUMMARY</section-title></section-metadata>
+<p id="corty3e_page_248" block_type="page_start">248</p>
+<p id="corty3e-ch7-p330" block_type="sum-hd1"><strong>Choose when to use a single-sample <em>t</em> test.</strong></p>
+<list id="corty3e-ch7-list-20" type="unordered" block_type="bluebullet">
+<li><p id="corty3e-ch7-p331" block_type="sum-bl-first">A single-sample <em>t</em> test is used to compare a sample mean to some specified value, like a population mean, when the population standard deviation is not known. Like all statistical tests, it has assumptions that must be met, hypotheses to be listed, and a decision rule to be set in advance of calculating the value of the test statistic.</p></li>
+</list>
+<p id="corty3e-ch7-p332" block_type="sum-hd1"><strong>Calculate the test statistic for a single-sample <em>t</em> test.</strong></p>
+<list id="corty3e-ch7-list-21" type="unordered" block_type="bluebullet">
+<li><p id="corty3e-ch7-p333" block_type="sum-bl-first">The single-sample <em>t</em> test calculates a <em>t</em> value. <em>t</em> is distributed very much like <em>z</em>&#8212;if the null hypothesis for a two-tailed test is true, the <em>t</em> distribution is symmetrical and centered on zero. The <em>t</em> value is based on the size of the difference between the sample mean and the specified value. If the difference, when standardized as a <em>t</em> score, is too large to be explained by sampling error, the null hypothesis is rejected.</p></li>
+</list>
+<p id="corty3e-ch7-p334" block_type="sum-hd1"><strong>Interpret the results of a single-sample <em>t</em> test.</strong></p>
+<list id="corty3e-ch7-list-22" type="unordered" block_type="bluebullet">
+<li><p id="corty3e-ch7-p335" block_type="sum-bl-first">Interpretation explains the results of a statistical test in plain language. An interpretation is subjective, but it is based on facts. Interpretation proceeds by asking questions of the data (e.g., was the null hypothesis rejected, how big is the effect) and then using the answers to address four points: (1) what was the study about, (2) what were the results, (3) what do the results mean, and (4) what should be done in future research.</p></li>
+<li><p id="corty3e-ch7-p336" block_type="sum-bl-mid">Cohen&#8217;s <em>d</em> and <em>r</em><sup>2</sup> were introduced in this chapter and confidence intervals made a return appearance. All can be used to measure the size of the effect, the impact of the explanatory variable on the outcome variable. A confidence interval uses a sample value to estimate the range within which a population value falls; narrower confidence intervals give a more precise estimate. Cohen&#8217;s <em>d</em> takes the difference between two means and standardizes it. Cohen has suggested <em>d</em> values, for the social and behavioral sciences, representing small, medium, and large effects. <em>r</em><sup>2</sup> tells how much of the variability in the outcome variable is explained by or accounted for by, the explanatory variable.</p></li>
+</list>
+<box title="DIY" numbered="false" id="corty3e-ch7-bx4-1" block_type="bx4-h">
+<p id="corty3e-ch7-p337" block_type="bx4-txt-ni">Every year the Centers for Disease Control (CDC) conducts a survey of health practices and risk behaviors in American adults. The survey is called the BRFSS, the Behavioral Risk Factor Surveillance System. In 2013, the most recent year for which data are available, the sample consisted of almost 500,000 Americans, 18 and older, from all 50 states, Washington, D.C., Guam, and Puerto Rico.</p>
+<table id="corty3e-ch7-table1" block_type="un_table">
+<layout align="center" width="medium" border="true"/>
+<tbody>
+<tr>
+<td></td>
+<td><phrase block_type=" TBN-COLHD"><strong>Hours of Sleep</strong></phrase></td>
+<td><phrase block_type="TBN-COLHD"><strong>Weight in Pounds</strong></phrase></td>
+<td><phrase block_type=" TBN-COLHD"><strong>Drinks per Drinking Day</strong></phrase></td>
+</tr>
+<tr>
+<td><phrase block_type="TBN-SIDHD"><strong>Men and women</strong></phrase></td>
+<td><phrase block_type="tbn-txt">7.05</phrase></td>
+<td><phrase block_type="tbn-txt">176.54</phrase></td>
+<td><phrase block_type="tbn-txt">2.21</phrase></td>
+</tr>
+<tr>
+<td><phrase block_type="TBN-SIDHD"><strong>Men</strong></phrase></td>
+<td><phrase block_type="tbn-txt">7.03</phrase></td>
+<td><phrase block_type="tbn-txt">196.88</phrase></td>
+<td><phrase block_type="tbn-txt">2.66</phrase></td>
+</tr>
+<tr>
+<td><phrase block_type="TBN-SIDHD"><strong>Women</strong></phrase></td>
+<td><phrase block_type="tbn-txt">7.06</phrase></td>
+<td><phrase block_type="tbn-txt">161.79</phrase></td>
+<td><phrase block_type="tbn-txt">1.80</phrase></td>
+</tr>
+</tbody>
+</table>
+<p id="corty3e-ch7-p338" block_type="bx4-txt">I picked three variables in the data set&#8212;number of hours of sleep per night, weight in pounds, and number of alcoholic drinks consumed per day during the past month, on days that at least one drink was consumed&#8212;and found the mean for each for men, for women, and for both sexes combined.</p>
+<p id="corty3e-ch7-p339" block_type="bx4-txt">Pick one of these variables and survey about 10 of your friends. Calculate the mean and the standard deviation. Then complete a single-sample <em>t</em> test to see whether your sample differs in its behavior from the U.S. population.</p>
+</box>
+</section>
+<section id="corty3e-ch7-sec1-4" block_type="cr-kt-t" chapter="7" title="" numbered="false" level="1" print_page="249">
+<section-metadata><section-title>KEY TERMS</section-title></section-metadata>
+<p id="corty3e_page_249" block_type="page_start">249</p>
+<question id="corty3e-ch7-keyterms-ques1" numbered="false" title="" number="">
+<query id="corty3e-ch7-keyterms-ques1-qry">MA:
+a.Cohen&#8217;s <em>d</em>:: a standardized measure of effect used to measure the difference between means.
+a.critical value of <em>t</em>:: value of <em>t</em> used to determine whether a null hypothesis is rejected or not; abbreviated <em>t<sub>cv</sub>.</em>
+a.degrees of freedom (<em>df</em>):: the number of values in a sample that are free to vary.
+a.effect size (<em>d</em>):: a measure of the degree of impact of the independent variable on the dependent variable.
+a.replicate:: to repeat a study, usually introducing some change in procedure to make it better.
+a.<em>r</em><sup>2</sup>:: an effect size that calculates how much of the variability in the outcome variable is accounted for by the predictor variable.
+a.single-sample <em>t</em> test:: a statistical test that compares a sample mean to a population mean when the population standard deviation is not known.
+a.underpowered:: term for a study with a sample size too small for the study to have a reasonable chance to reject the null hypothesis given the size of the effect.
+</query>
+</question>
+</section>
+<section id="corty3e-ch7-sec1-5" block_type="cr-x-h" chapter="7" title="" numbered="false" level="1" print_page="249">
+<section-metadata><section-title>CHAPTER EXERCISES</section-title></section-metadata>
+<p id="corty3e-ch7-p348" block_type="cr-x-txt-ni"><strong><em>Answers to the odd-numbered exercises appear in <link href="corty3e-appb.xml">Appendix B</link>.</em></strong></p>
+<p id="corty3e-ch7-p349" block_type="cr-x-hd1"><strong>Review Your Knowledge</strong></p>
+<p id="corty3e-ch7-p350" block_type="cr-x-nl-txt"><phrase block_type="question_num">7.01</phrase> In order to use a single-sample <em>t</em> test, one <em>does / does not</em> need to know the population standard deviation.</p>
+<p id="corty3e-ch7-p351" block_type="cr-x-nl-txt"><phrase block_type="question_num">7.02</phrase> The single-sample <em>t</em> test compares a sample &#95;&#95;&#95;&#95; to a population &#95;&#95;&#95;&#95;.</p>
+<p id="corty3e-ch7-p352" block_type="cr-x-nl-txt"><phrase block_type="question_num">7.03</phrase> A sample, selected at random from a population, may have a sample mean that differs from the population mean due to &#95;&#95;&#95;&#95;.</p>
+<p id="corty3e-ch7-p353" block_type="cr-x-nl-txt"><phrase block_type="question_num">7.04</phrase> Tom &#95;&#95;&#95;&#95; Harry &#95;&#95;&#95;&#95; &#95;&#95;&#95;&#95; infants.</p>
+<p id="corty3e-ch7-p354" block_type="cr-x-nl-txt"><phrase block_type="question_num">7.05</phrase> One assumption of the single-sample <em>t</em> test is that the sample is a random sample from the population. This <em>is / is not</em> robust to violation.</p>
+<p id="corty3e-ch7-p355" block_type="cr-x-nl-txt"><phrase block_type="question_num">7.06</phrase> The population that the sample comes from determines the population to which the results can be &#95;&#95;&#95;&#95;.</p>
+<p id="corty3e-ch7-p356" block_type="cr-x-nl-txt"><phrase block_type="question_num">7.07</phrase> A second assumption of the single-sample <em>t</em> test is that observations within the sample are &#95;&#95;&#95;&#95;.</p>
+<p id="corty3e-ch7-p357" block_type="cr-x-nl-txt"><phrase block_type="question_num">7.08</phrase> The third assumption of the single-sample <em>t</em> test is called the &#95;&#95;&#95;&#95; assumption for short.</p>
+<p id="corty3e-ch7-p358" block_type="cr-x-nl-txt"><phrase block_type="question_num">7.09</phrase> If a &#95;&#95;&#95;&#95; assumption is violated, a researcher can still proceed with the test as long as the violation is not too great.</p>
+<p id="corty3e-ch7-p359" block_type="cr-x-nl-txt"><phrase block_type="question_num">7.10</phrase> In order to write the null and alternative hypotheses for a single-sample <em>t</em> test, the researcher needs to know whether the test has one or two &#95;&#95;&#95;&#95;.</p>
+<p id="corty3e-ch7-p360" block_type="cr-x-nl-txt"><phrase block_type="question_num">7.11</phrase> The default option in hypothesis testing is a &#95;&#95;&#95;&#95;-tailed test.</p>
+<p id="corty3e-ch7-p361" block_type="cr-x-nl-txt"><phrase block_type="question_num">7.12</phrase> If a researcher is doing a one-tailed test, he or she should predict the &#95;&#95;&#95;&#95; of the results before collecting any data.</p>
+<p id="corty3e-ch7-p362" block_type="cr-x-nl-txt"><phrase block_type="question_num">7.13</phrase> The null hypothesis for a nondirectional, single-sample <em>t</em> test says that the sample <em>does / does not</em> come from the population.</p>
+<p id="corty3e-ch7-p363" block_type="cr-x-nl-txt"><phrase block_type="question_num">7.14</phrase> The null hypothesis for a two-tailed, single-sample <em>t</em> test could be written as &#95;&#95;&#95;&#95; &#61; &#956;<sub>2</sub>.</p>
+<p id="corty3e-ch7-p364" block_type="cr-x-nl-txt"><phrase block_type="question_num">7.15</phrase> The alternative hypothesis for a two-tailed, single-sample <em>t</em> test could be written as &#956;<sub>1</sub> &#95;&#95;&#95;&#95; &#956;<sub>2</sub>.</p>
+<p id="corty3e-ch7-p365" block_type="cr-x-nl-txt"><phrase block_type="question_num">7.16</phrase> If the null hypothesis for a two-tailed, single-sample <em>t</em> test is true, <em>t</em> &#61; &#95;&#95;&#95;&#95;.</p>
+<p id="corty3e-ch7-p366" block_type="cr-x-nl-txt"><phrase block_type="question_num">7.17</phrase> As the distance between the sample mean and the population mean grows, the value of <em>t</em> &#95;&#95;&#95;&#95;.</p>
+<p id="corty3e_page_250" block_type="page_start">250</p>
+<p id="corty3e-ch7-p367" block_type="cr-x-nl-txt"><phrase block_type="question_num">7.18</phrase> he abbreviation for the critical value of <em>t</em> is &#95;&#95;&#95;&#95;.</p>
+<p id="corty3e-ch7-p368" block_type="cr-x-nl-txt"><phrase block_type="question_num">7.19</phrase> Determining the critical value depends on (a) how many &#95;&#95;&#95;&#95; the test has, (b) how willing one is to make a Type &#95;&#95;&#95;&#95; error, and (c) the &#95;&#95;&#95;&#95;.</p>
+<p id="corty3e-ch7-p369" block_type="cr-x-nl-txt"><phrase block_type="question_num">7.20</phrase> If the hypotheses are nondirectional, then the researcher is doing a &#95;&#95;&#95;&#95;-tailed test.</p>
+<p id="corty3e-ch7-p370" block_type="cr-x-nl-txt"><phrase block_type="question_num">7.21</phrase> If the alternative hypothesis is &#956; &#62; 173, then the test is a &#95;&#95;&#95;&#95;-tailed test.</p>
+<p id="corty3e-ch7-p371" block_type="cr-x-nl-txt"><phrase block_type="question_num">7.22</phrase> If the researcher wants a 5&#37; chance of Type I error, then alpha is set at &#95;&#95;&#95;&#95;.</p>
+<p id="corty3e-ch7-p372" block_type="cr-x-nl-txt"><phrase block_type="question_num">7.23</phrase> For a two-tailed test with &#945; &#61; .05, the rare zone has &#95;&#95;&#95;&#95;&#37; of the sampling distribution in each tail.</p>
+<p id="corty3e-ch7-p373" block_type="cr-x-nl-txt"><phrase block_type="question_num">7.24</phrase> When the sample size is large, the rare zone gets &#95;&#95;&#95;&#95; and it is &#95;&#95;&#95;&#95; to reject the null hypothesis.</p>
+<p id="corty3e-ch7-p374" block_type="cr-x-nl-txt"><phrase block_type="question_num">7.25</phrase> Degrees of freedom, for a single-sample <em>t</em> test, equal &#95;&#95;&#95;&#95; minus 1.</p>
+<p id="corty3e-ch7-p375" block_type="cr-x-nl-txt"><phrase block_type="question_num">7.26</phrase> For a two-tailed, single-sample <em>t</em> test, the null hypothesis is rejected if <em>t</em> &#8804; &#95;&#95;&#95;&#95; or if <em>t</em> &#8805; &#95;&#95;&#95;&#95;.</p>
+<p id="corty3e-ch7-p376" block_type="cr-x-nl-txt"><phrase block_type="question_num">7.27</phrase> <em>t</em> for a single-sample <em>t</em> test is calculated by dividing the difference between <em>M</em> and &#956; by &#95;&#95;&#95;&#95;.</p>
+<p id="corty3e-ch7-p377" block_type="cr-x-nl-txt"><phrase block_type="question_num">7.28</phrase> Interpretation uses human &#95;&#95;&#95;&#95; to make meaning out of the results.</p>
+<p id="corty3e-ch7-p378" block_type="cr-x-nl-txt"><phrase block_type="question_num">7.29</phrase> Interpretation is subjective, but needs to be supported by &#95;&#95;&#95;&#95;.</p>
+<p id="corty3e-ch7-p379" block_type="cr-x-nl-txt"><phrase block_type="question_num">7.30</phrase> The first question asked in interpretation is about whether the &#95;&#95;&#95;&#95; hypothesis is &#95;&#95;&#95;&#95;.</p>
+<p id="corty3e-ch7-p380" block_type="cr-x-nl-txt"><phrase block_type="question_num">7.31</phrase> For the second interpretation question, one calculates &#95;&#95;&#95;&#95;, and for the third, one calculates a &#95;&#95;&#95;&#95;.</p>
+<p id="corty3e-ch7-p381" block_type="cr-x-nl-txt"><phrase block_type="question_num">7.32</phrase> A decision is made about rejecting the null hypothesis by comparing the &#95;&#95;&#95;&#95; value of <em>t</em> to the value calculated from the sample mean.</p>
+<p id="corty3e-ch7-p382" block_type="cr-x-nl-txt"><phrase block_type="question_num">7.33</phrase> If a researcher rejects the null hypothesis, then he or she is forced to accept the &#95;&#95;&#95;&#95;.</p>
+<p id="corty3e-ch7-p383" block_type="cr-x-nl-txt"><phrase block_type="question_num">7.34</phrase> If the null hypothesis is rejected, it is concluded that the mean for the population the &#95;&#95;&#95;&#95; came from differs from the hypothesized value.</p>
+<p id="corty3e-ch7-p384" block_type="cr-x-nl-txt"><phrase block_type="question_num">7.35</phrase> To determine the direction of a statistically significant difference, compare the &#95;&#95;&#95;&#95; to the &#95;&#95;&#95;&#95;.</p>
+<p id="corty3e-ch7-p385" block_type="cr-x-nl-txt"><phrase block_type="question_num">7.36</phrase> Sample size is reported in APA format for a single-sample <em>t</em> test by reporting &#95;&#95;&#95;&#95;.</p>
+<p id="corty3e-ch7-p386" block_type="cr-x-nl-txt"><phrase block_type="question_num">7.37</phrase> APA format uses the inequality &#95;&#95;&#95;&#95; to indicate that the null hypothesis was rejected when &#945; &#61; .05.</p>
+<p id="corty3e-ch7-p387" block_type="cr-x-nl-txt"><phrase block_type="question_num">7.38</phrase> If a result is reported in APA format as <em>p</em> &#60; .05, that means the observed value of the test statistic fell in the &#95;&#95;&#95;&#95; zone.</p>
+<p id="corty3e-ch7-p388" block_type="cr-x-nl-txt"><phrase block_type="question_num">7.39</phrase> If one fails to reject the null hypothesis, one can say that there is &#95;&#95;&#95;&#95; to conclude a difference exists between the population means.</p>
+<p id="corty3e-ch7-p389" block_type="cr-x-nl-txt"><phrase block_type="question_num">7.40</phrase> APA format uses the inequality &#95;&#95;&#95;&#95; to indicate that the null hypothesis was not rejected when &#945; &#61; .05.</p>
+<p id="corty3e-ch7-p390" block_type="cr-x-nl-txt"><phrase block_type="question_num">7.41</phrase> Effect sizes are used to quantify the impact of the &#95;&#95;&#95;&#95; on the &#95;&#95;&#95;&#95;.</p>
+<p id="corty3e-ch7-p391" block_type="cr-x-nl-txt"><phrase block_type="question_num">7.42</phrase> Cohen&#8217;s <em>d</em> is an &#95;&#95;&#95;&#95;.</p>
+<p id="corty3e-ch7-p392" block_type="cr-x-nl-txt"><phrase block_type="question_num">7.43</phrase> A value of 0 for Cohen&#8217;s <em>d</em> means that the independent variable had &#95;&#95;&#95;&#95; impact on the dependent variable.</p>
+<p id="corty3e-ch7-p393" block_type="cr-x-nl-txt"><phrase block_type="question_num">7.44</phrase> Cohen considers a <em>d</em> of &#95;&#95;&#95;&#95; a small effect, &#95;&#95;&#95;&#95; a medium effect, and &#95;&#95;&#95;&#95; or higher a large effect.</p>
+<p id="corty3e-ch7-p394" block_type="cr-x-nl-txt"><phrase block_type="question_num">7.45</phrase> As the effect size <em>d</em> increases, the degree of overlap between the distributions for two populations &#95;&#95;&#95;&#95;.</p>
+<p id="corty3e-ch7-p395" block_type="cr-x-nl-txt"><phrase block_type="question_num">7.46</phrase> When one fails to reject the null hypothesis, one should &#95;&#95;&#95;&#95; calculate Cohen&#8217;s <em>d.</em></p>
+<p id="corty3e-ch7-p396" block_type="cr-x-nl-txt"><phrase block_type="question_num">7.47</phrase> Calculating <em>d</em> when one has failed to reject the null hypothesis alerts one to the possibility of a Type &#95;&#95;&#95;&#95; error.</p>
+<p id="corty3e-ch7-p397" block_type="cr-x-nl-txt"><phrase block_type="question_num">7.48</phrase> To &#95;&#95;&#95;&#95; a study is to repeat it.</p>
+<p id="corty3e-ch7-p398" block_type="cr-x-nl-txt"><phrase block_type="question_num">7.49</phrase> <em>r</em><sup>2</sup> measures how much variability in the &#95;&#95;&#95;&#95;&#95; is explained by the &#95;&#95;&#95;&#95;&#95;&#95;&#95;.</p>
+<p id="corty3e-ch7-p399" block_type="cr-x-nl-txt"><phrase block_type="question_num">7.50</phrase> <em>d</em> and <em>r</em><sup>2</sup> should lead to similar conclusions about the size of an effect. Though both may have been calculated, it is &#95;&#95;&#95;&#95;&#95; to report both.</p>
+<p id="corty3e_page_251" block_type="page_start">251</p>
+<p id="corty3e-ch7-p400" block_type="cr-x-nl-txt"><phrase block_type="question_num">7.51</phrase> If a researcher calculates a 95&#37; confidence interval, he or she can be &#95;&#95;&#95;&#95;&#37; confident that it captures the &#95;&#95;&#95;&#95; value.</p>
+<p id="corty3e-ch7-p401" block_type="cr-x-nl-txt"><phrase block_type="question_num">7.52</phrase> The 95&#37; confidence interval for the difference between population means tells how far apart or how close the two &#95;&#95;&#95;&#95; means might be.</p>
+<p id="corty3e-ch7-p402" block_type="cr-x-nl-txt"><phrase block_type="question_num">7.53</phrase> The size of the difference between population means can be thought of as another &#95;&#95;&#95;&#95;.</p>
+<p id="corty3e-ch7-p403" block_type="cr-x-nl-txt"><phrase block_type="question_num">7.54</phrase> If a 95&#37; confidence interval for the difference between population means does not capture zero, and the researcher is doing a two-tailed test with &#945; &#61; .05, then the null hypothesis <em>was / was not</em> rejected.</p>
+<p id="corty3e-ch7-p404" block_type="cr-x-nl-txt"><phrase block_type="question_num">7.55</phrase> If the 95&#37; confidence interval for the difference between population means falls close to zero, this means the size of the effect may be &#95;&#95;&#95;&#95;.</p>
+<p id="corty3e-ch7-p405" block_type="cr-x-nl-txt"><phrase block_type="question_num">7.56</phrase> A wide 95&#37; confidence interval for the difference between population means leaves a researcher unsure of &#95;&#95;&#95;&#95;.</p>
+<p id="corty3e-ch7-p406" block_type="cr-x-hd1-rule"><strong>Apply Your Knowledge</strong></p>
+<p id="corty3e-ch7-p407" block_type="cr-x-txt-ni"><strong><em>Picking the right test</em></strong></p>
+<p id="corty3e-ch7-p408" block_type="cr-x-nl-txt"><phrase block_type="question_num">7.57</phrase> A researcher has a sample (<em>N</em> &#61; 38, <em>M</em> &#61; 35, <em>s</em> &#61; 7) that he thinks came from a population where &#956; &#61; 42. What statistical test should he use?</p>
+<p id="corty3e-ch7-p409" block_type="cr-x-nl-txt"><phrase block_type="question_num">7.58</phrase> A researcher has a sample (<em>N</em> &#61; 52, <em>M</em> &#61; 17, <em>s</em> &#61; 3) that she believes came from a population where &#956; &#61; 20 and &#963; &#61; 4. What statistical test should she use?</p>
+<p id="corty3e-ch7-p410" block_type="cr-x-txt-ni"><strong><em>Checking the assumptions</em></strong></p>
+<p id="corty3e-ch7-p411" block_type="cr-x-nl-txt"><phrase block_type="question_num">7.59</phrase> A researcher wants to compare the mean weight of a convenience sample of students from a college to the national mean weight of 18- to 22-year-olds. (a) Check the assumptions and decide whether it is OK to proceed with a single-sample <em>t</em> test. (b) Can the researcher generalize the results to all the students at the college?</p>
+<p id="corty3e-ch7-p412" block_type="cr-x-nl-txt"><phrase block_type="question_num">7.60</phrase> There is a random sample of students from a large public high school. Each person, individually, takes a paper-and-pencil measure of introversion. (a) Check the assumptions and decide whether it is OK to proceed with a single-sample <em>t</em> test to compare the sample mean to the population mean of introversion for U.S. teenagers. (b) To what population can one generalize the results? (The same introversion measure was used for the national sample.)</p>
+<p id="corty3e-ch7-p413" block_type="cr-x-txt-ni"><strong><em>Writing nondirectional hypotheses</em></strong></p>
+<p id="corty3e-ch7-p414" block_type="cr-x-nl-txt"><phrase block_type="question_num">7.61</phrase> The population mean on a test of paranoia is 25. A psychologist obtained a random sample of nuns and found <em>M</em> &#61; 22. Write the null and alternative hypotheses.</p>
+<p id="corty3e-ch7-p415" block_type="cr-x-nl-txt"><phrase block_type="question_num">7.62</phrase> A researcher wants to compare a random sample of left-handed people in terms of IQ to the population mean of IQ. Given <em>M</em> &#61; 108 and assuming &#956; &#61; 100, write the null and alternative hypotheses.</p>
+<p id="corty3e-ch7-p416" block_type="cr-x-txt-ni"><strong><em>Writing directional hypotheses</em></strong></p>
+<p id="corty3e-ch7-p417" block_type="cr-x-nl-txt"><phrase block_type="question_num">7.63</phrase> In America, the average length of time the flu lasts is 6.30 days. An infectious disease physician has developed a treatment that he believes will treat the flu more quickly. Write the null and alternative hypotheses.</p>
+<p id="corty3e-ch7-p418" block_type="cr-x-nl-txt"><phrase block_type="question_num">7.64</phrase> An SAT-tutoring company claims that its students perform above the national average on SAT subtests. If the national average on SAT subtests is 500 and the tutoring company obtains SAT scores from a random sample of 626 of its students, write the null and alternative hypotheses.</p>
+<p id="corty3e-ch7-p419" block_type="cr-x-txt-ni"><strong><em>Finding t<sub>cv</sub> (assume the test is two-tailed and alpha is set at .05)</em></strong></p>
+<p id="corty3e-ch7-p420" block_type="cr-x-nl-txt"><phrase block_type="question_num">7.65</phrase> If <em>N</em> &#61; 17, find <em>t<sub>cv</sub></em> and use it to draw a <em>t</em> distribution with the rare and common zones labeled.</p>
+<p id="corty3e-ch7-p421" block_type="cr-x-nl-txt"><phrase block_type="question_num">7.66</phrase> If <em>N</em> &#61; 48, find <em>t<sub>cv</sub></em> and use it to draw a <em>t</em> distribution with the rare and common zones labeled.</p>
+<p id="corty3e-ch7-p422" block_type="cr-x-txt-ni"><strong><em>Writing the decision rule (assume the test is two-tailed and alpha is set at .05)</em></strong></p>
+<p id="corty3e-ch7-p423" block_type="cr-x-nl-txt"><phrase block_type="question_num">7.67</phrase> If <em>N</em> &#61; 64, write the decision rules for a single-sample <em>t</em> test.</p>
+<p id="corty3e_page_252" block_type="page_start">252</p>
+<p id="corty3e-ch7-p424" block_type="cr-x-nl-txt"><phrase block_type="question_num">7.68</phrase> If <em>N</em> &#61; 56, write the decision rules for a single-sample <em>t</em> test.</p>
+<p id="corty3e-ch7-p425" block_type="cr-x-txt-ni"><strong><em>Calculating s<sub>M</sub></em></strong></p>
+<p id="corty3e-ch7-p426" block_type="cr-x-nl-txt"><phrase block_type="question_num">7.69</phrase> If <em>N</em> &#61; 23 and <em>s</em> &#61; 12, calculate <em>s<sub>M</sub>.</em></p>
+<p id="corty3e-ch7-p427" block_type="cr-x-nl-txt"><phrase block_type="question_num">7.70</phrase> If <em>N</em> &#61; 44 and <em>s</em> &#61; 7, calculate <em>s<sub>M</sub>.</em></p>
+<p id="corty3e-ch7-p428" block_type="cr-x-txt-ni"><strong><em>Given s<sub>M</sub>, calculating t</em></strong></p>
+<p id="corty3e-ch7-p429" block_type="cr-x-nl-txt"><phrase block_type="question_num">7.71</phrase> If <em>M</em> &#61; 10, &#956; &#61; 12, and <em>s<sub>M</sub></em> &#61; 1.25, what is <em>t</em>?</p>
+<p id="corty3e-ch7-p430" block_type="cr-x-nl-txt"><phrase block_type="question_num">7.72</phrase> If <em>M</em> &#61; 8, &#956; &#61; 6, and <em>s<sub>M</sub></em> &#61; 0.68, what is <em>t</em>?</p>
+<p id="corty3e-ch7-p431" block_type="cr-x-txt-ni"><strong><em>Calculating t</em></strong></p>
+<p id="corty3e-ch7-p432" block_type="cr-x-nl-txt"><phrase block_type="question_num">7.73</phrase> If <em>N</em> &#61; 18, <em>M</em> &#61; 12, &#956; &#61; 10, and <em>s</em> &#61; 1, what is <em>t</em>?</p>
+<p id="corty3e-ch7-p433" block_type="cr-x-nl-txt"><phrase block_type="question_num">7.74</phrase> If <em>N</em> &#61; 25, <em>M</em> &#61; 18, &#956; &#61; 13, and <em>s</em> &#61; 2, what is <em>t</em>?</p>
+<p id="corty3e-ch7-p434" block_type="cr-x-txt-ni"><strong><em>Was the null hypothesis rejected? (Assume the test is two-tailed.)</em></strong></p>
+<p id="corty3e-ch7-p435" block_type="cr-x-nl-txt"><phrase block_type="question_num">7.75</phrase> If <em>t<sub>cv</sub></em> &#61; &#177;2.012 and <em>t</em> &#61; &#8211;8.31, is the null hypothesis rejected?</p>
+<p id="corty3e-ch7-p436" block_type="cr-x-nl-txt"><phrase block_type="question_num">7.76</phrase> If <em>t<sub>cv</sub></em> &#61; &#177;2.030 and <em>t</em> &#61; 2.16, is the null hypothesis rejected?</p>
+<p id="corty3e-ch7-p437" block_type="cr-x-nl-txt"><phrase block_type="question_num">7.77</phrase> If <em>t<sub>cv</sub></em> &#61; &#177;2.776 and <em>t</em> &#61; 1.12, is the null hypothesis rejected?</p>
+<p id="corty3e-ch7-p438" block_type="cr-x-nl-txt"><phrase block_type="question_num">7.78</phrase> If <em>t<sub>cv</sub></em> &#61; &#177;1.984 and <em>t</em> &#61; &#8211;1.00, is the null hypothesis rejected?</p>
+<p id="corty3e-ch7-p439" block_type="cr-x-txt-ni"><strong><em>Writing results in APA format (Assume the test is two-tailed and alpha is set at .05.)</em></strong></p>
+<p id="corty3e-ch7-p440" block_type="cr-x-nl-txt"><phrase block_type="question_num">7.79</phrase> Given <em>N</em> &#61; 15 and <em>t</em> &#61; 2.145, write the results in APA format.</p>
+<p id="corty3e-ch7-p441" block_type="cr-x-nl-txt"><phrase block_type="question_num">7.80</phrase> Given <em>N</em> &#61; 28 and <em>t</em> &#61; 2.050, write the results in APA format.</p>
+<p id="corty3e-ch7-p442" block_type="cr-x-nl-txt"><phrase block_type="question_num">7.81</phrase> Given <em>N</em> &#61; 69 and <em>t</em> &#61; 1.992, write the results in APA format.</p>
+<p id="corty3e-ch7-p443" block_type="cr-x-nl-txt"><phrase block_type="question_num">7.82</phrase> Given <em>N</em> &#61; 84 and <em>t</em> &#61; 1.998, write the results in APA format.</p>
+<p id="corty3e-ch7-p444" block_type="cr-x-txt-ni"><strong><em>Calculating Cohen&#8217;s d</em></strong></p>
+<p id="corty3e-ch7-p445" block_type="cr-x-nl-txt"><phrase block_type="question_num">7.83</phrase> Given <em>M</em> &#61; 90, &#956; &#61; 100, and <em>s</em> &#61; 15, calculate Cohen&#8217;s <em>d.</em></p>
+<p id="corty3e-ch7-p446" block_type="cr-x-nl-txt"><phrase block_type="question_num">7.84</phrase> Given <em>M</em> &#61; 98, &#956; &#61; 100, and <em>s</em> &#61; 15, calculate Cohen&#8217;s <em>d.</em></p>
+<p id="corty3e-ch7-p447" block_type="cr-x-txt-ni"><strong><em>Calculating r</em><sup>2</sup></strong></p>
+<p id="corty3e-ch7-p448" block_type="cr-x-nl-txt"><phrase block_type="question_num">7.85</phrase> Given <em>N</em> &#61; 17 and <em>t</em> &#61; 3.45, what is <em>r</em><sup>2</sup>?</p>
+<p id="corty3e-ch7-p449" block_type="cr-x-nl-txt"><phrase block_type="question_num">7.86</phrase> If <em>N</em> &#61; 29 and <em>t</em> &#61; 1.64, what is <em>r</em><sup>2</sup>?</p>
+<p id="corty3e-ch7-p450" block_type="cr-x-txt-ni"><strong><em>Calculating a 95&#37; confidence interval</em></strong></p>
+<p id="corty3e-ch7-p451" block_type="cr-x-nl-txt"><phrase block_type="question_num">7.87</phrase> Given <em>M</em> &#61; 45, &#956; &#61; 50, <em>t<sub>cv</sub></em> &#61; &#177;2.093, and <em>s<sub>M</sub></em> &#61; 2.24, calculate the 95&#37; confidence interval for the difference between population means.</p>
+<p id="corty3e-ch7-p452" block_type="cr-x-nl-txt"><phrase block_type="question_num">7.88</phrase> Given <em>M</em> &#61; 55, &#956; &#61; 50, <em>t<sub>cv</sub></em> &#61; &#177;2.093, and <em>s<sub>M</sub></em> &#61; 2.24, calculate the 95&#37; confidence interval for the difference between population means.</p>
+<p id="corty3e-ch7-p453" block_type="cr-x-txt-ni"><strong><em>Given effect size and confidence interval, interpret the results. Be sure to (1) tell what was done, (2) present some facts, (3) interpret the results, and (4) make a suggestion for future research. (Assume the test is two-tailed and &#945; &#61; .05.)</em></strong></p>
+<p id="corty3e-ch7-p454" block_type="cr-x-nl-txt"><phrase block_type="question_num">7.89</phrase> Given the supplied information, interpret the results. A nurse practitioner has compared the blood pressure of a sample (<em>N</em> &#61; 24) of people who are heavy salt users (<em>M</em> &#61; 138, <em>s</em> &#61; 16) to blood pressure in the general population (&#956; &#61; 120) to see if high salt consumption were related to raised or lowered blood pressure. She found:</p>
+<list id="corty3e-ch7-list-23" type="unordered" block_type="bullet">
+<li><p id="corty3e-ch7-p455" block_type="cr_x_nl_lvl2_v1"><em>t<sub>cv</sub></em> &#61; 2.069</p></li>
+<li><p id="corty3e-ch7-p456" block_type="cr_x_nl_lvl2_v1"><em>t</em> &#61; 5.50</p></li>
+<li><p id="corty3e-ch7-p457" block_type="cr_x_nl_lvl2_v1"><em>d</em> &#61; 1.13</p></li>
+<li><p id="corty3e-ch7-p458" block_type="cr_x_nl_lvl2_v1"><em>r</em><sup>2</sup> &#61; 57&#37;</p></li>
+<li><p id="corty3e-ch7-p459" block_type="cr_x_nl_lvl2_v1">95&#37; CI [11.23, 24.77]</p></li>
+</list>
+<p id="corty3e-ch7-p460" block_type="cr-x-nl-txt"><phrase block_type="question_num">7.90</phrase> Given the supplied information, interpret the results. A dean compared the GPA of a sample (<em>N</em> &#61; 20) of students who spent more than two hours a night on homework (<em>M</em> =3.20, <em>s</em> &#61; 0.50) to the average GPA at her college (&#956; &#61; 2.80). She was curious if homework had any relationship, either positive or negative, with GPA. She found:</p>
+<list id="corty3e-ch7-list-24" type="unordered" block_type="bullet">
+<li><p id="corty3e-ch7-p461" block_type="cr_x_nl_lvl3"><em>t<sub>cv</sub></em> &#61; 2.093</p></li>
+<li><p id="corty3e-ch7-p462" block_type="cr_x_nl_lvl3"><em>t</em> &#61; 3.64</p></li>
+<li><p id="corty3e-ch7-p463" block_type="cr_x_nl_lvl3"><em>d</em> &#61; 0.80</p></li>
+<li><p id="corty3e-ch7-p464" block_type="cr_x_nl_lvl3"><em>r</em><sup>2</sup> &#61; 41&#37;</p></li>
+<li><p id="corty3e-ch7-p465" block_type="cr_x_nl_lvl3">95&#37; CI [0.17, 0.63]</p></li>
+</list>
+<p id="corty3e-ch7-p466" block_type="cr-x-txt-ni"><strong><em>Completing all six steps of a hypothesis test</em></strong></p>
+<p id="corty3e-ch7-p467" block_type="cr-x-nl-txt"><phrase block_type="question_num">7.91</phrase> An educational psychologist was interested in time management by students. She had a theory that students who did well in school spent less time involved with online social media. She found out, from the American Social Media Research Collective, that the average American high school student spends 18.68 hours per week using online social media. She then obtained a sample of 31 students, each of whom had been named the valedictorian of his or her high school. These valedictorians spent an average of 16.24 hours using online social media every week. Their standard deviation was 6.80. Complete the analyses and write a paragraph of interpretation.</p>
+<p id="corty3e_page_253" block_type="page_start">253</p>
+<p id="corty3e-ch7-p468" block_type="cr-x-nl-txt"><phrase block_type="question_num">7.92</phrase> A psychology professor was curious how psychology majors fared economically compared to business majors. Did they do better, or did they do worse five years after graduation? She did some research and learned that the national mean for the salary of business majors five years after graduation was &#36;55,000. She surveyed 22 recent psychology graduates at her school and found <em>M</em> &#61; &#36;43,000, <em>s</em> &#61; 12,000. Complete the analyses and write a paragraph of interpretation.</p>
+<p id="corty3e-ch7-p469" block_type="cr-x-hd1"><strong>Expand Your Knowledge</strong></p>
+<p id="corty3e-ch7-p470" block_type="cr-x-nl-txt"><phrase block_type="question_num">7.93</phrase> Imagine a researcher has taken two random samples from two populations (A and B). Each sample is the same size (<em>N</em> &#61; 71), has the same sample mean (<em>M</em> &#61; 50), and comes from a population with the same mean (&#956; &#61; 52). The two populations differ in how much variability exists. As a result, one sample has a smaller standard deviation (<em>s</em> &#61; 2) than the other (<em>s</em> &#61; 12). The researcher went on to calculate single-sample <em>t</em> values for each sample. Based on the information provided below, how does the size of the sample standard deviation affect the results of a single-sample <em>t</em> test?</p>
+<table id="corty3e-ch7-table2" block_type="un_table">
+<layout align="center" width="xlarge" border="true"/>
+<tbody>
+<tr>
+<td></td>
+<td><phrase block_type="TBN-COLHD"><strong><em>s<sub>M</sub></em></strong></phrase></td>
+<td><phrase block_type="TBN-COLHD"><strong><em>t<sub>cv</sub></em></strong></phrase></td>
+<td><phrase block_type="TBN-COLHD"><strong><em>t</em></strong></phrase></td>
+<td><phrase block_type="TBN-COLHD"><strong><em>d</em></strong></phrase></td>
+<td><phrase block_type="TBN-COLHD"><strong><em>r</em><sup>2</sup></strong></phrase></td>
+<td><phrase block_type="TBN-COLHD"><strong>CI</strong></phrase></td>
+<td><phrase block_type="TBN-COLHD"><strong>Width of CI</strong></phrase></td>
+</tr>
+<tr>
+<td><phrase block_type="tbn-txt">A: Less variability (<em>s</em> &#61; 2)</phrase></td>
+<td><phrase block_type="tbn-txt">0.24</phrase></td>
+<td><phrase block_type="tbn-txt">1.994</phrase></td>
+<td><phrase block_type="tbn-txt">&#8211;8.33</phrase></td>
+<td><phrase block_type="tbn-txt">&#8211;1.00</phrase></td>
+<td><phrase block_type="tbn-txt">50&#37;</phrase></td>
+<td><phrase block_type="tbn-txt">&#8211;2.48 to &#8211;1.52</phrase></td>
+<td><phrase block_type="tbn-txt">0.96</phrase></td>
+</tr>
+<tr>
+<td><phrase block_type="tbn-txt">B: More variability (<em>s</em> &#61; 12)</phrase></td>
+<td><phrase block_type="tbn-txt">1.42</phrase></td>
+<td><phrase block_type="tbn-txt">1.994</phrase></td>
+<td><phrase block_type="tbn-txt">&#8211;1.41</phrase></td>
+<td><phrase block_type="tbn-txt">&#8211;0.17</phrase></td>
+<td><phrase block_type="tbn-txt">3&#37;</phrase></td>
+<td><phrase block_type="tbn-txt">&#8211;4.83 to 0.83</phrase></td>
+<td><phrase block_type="tbn-txt">5.66</phrase></td>
+</tr>
+</tbody>
+</table>
+<p id="corty3e-ch7-p471" block_type="cr-x-nl-txt"><phrase block_type="question_num">7.94</phrase> Another researcher selected two random samples from one population. This population has a mean of 63 (&#956; &#61; 63). It turned out that each sample had the same mean (<em>M</em> &#61; 60) and standard deviation (<em>s</em> &#61; 5). The only way the two samples differed was in terms of size: one, C, was smaller (<em>N</em> &#61; 10) and one, D, was larger (<em>N</em> &#61; 50). The researcher went on to conduct a single-sample <em>t</em> test for each sample. Based on the information provided below, how does sample size affect the results of a single-sample <em>t</em> test?</p>
+<table id="corty3e-ch7-table3" block_type="un_table">
+<layout align="center" width="xlarge" border="true"/>
+<tbody>
+<tr>
+<td></td>
+<td><phrase block_type="TBN-COLHD"><strong><em>s<sub>M</sub></em></strong></phrase></td>
+<td><phrase block_type="TBN-COLHD"><strong><em>t<sub>cv</sub></em></strong></phrase></td>
+<td><phrase block_type="TBN-COLHD"><strong><em>t</em></strong></phrase></td>
+<td><phrase block_type="TBN-COLHD"><strong><em>d</em></strong></phrase></td>
+<td><phrase block_type="TBN-COLHD"><strong><em>r</em><sup>2</sup></strong></phrase></td>
+<td><phrase block_type="TBN-COLHD"><strong>CI</strong></phrase></td>
+<td><phrase block_type="TBN-COLHD"><strong>Width of CI</strong></phrase></td>
+</tr>
+<tr>
+<td><phrase block_type="tbn-txt">C: Smaller <em>N</em> (<em>N</em> &#61; 10)</phrase></td>
+<td><phrase block_type="tbn-txt">1.58</phrase></td>
+<td><phrase block_type="tbn-txt">2.262</phrase></td>
+<td><phrase block_type="tbn-txt">&#8211;1.90</phrase></td>
+<td><phrase block_type="tbn-txt">&#8211;0.60</phrase></td>
+<td><phrase block_type="tbn-txt">29&#37;</phrase></td>
+<td><phrase block_type="tbn-txt">6.57 to 0.57</phrase></td>
+<td><phrase block_type="tbn-txt">7.14</phrase></td>
+</tr>
+<tr>
+<td><phrase block_type="tbn-txt">D: Larger <em>N</em> (<em>N</em> &#61; 50)</phrase></td>
+<td><phrase block_type="tbn-txt">0.71</phrase></td>
+<td><phrase block_type="tbn-txt">2.010</phrase></td>
+<td><phrase block_type="tbn-txt">&#8211;4.23</phrase></td>
+<td><phrase block_type="tbn-txt">&#8211;0.60</phrase></td>
+<td><phrase block_type="tbn-txt">27&#37;</phrase></td>
+<td><phrase block_type="tbn-txt">4.43 to &#8211;1.57</phrase></td>
+<td><phrase block_type="tbn-txt">2.86</phrase></td>
+</tr>
+</tbody>
+</table>
+<p id="corty3e-ch7-p472" block_type="cr-x-nl-txt"><phrase block_type="question_num">7.95</phrase> A third researcher obtained two random samples from another population. The mean for this population is 50 (&#956; &#61; 50). Each sample was the same size (<em>N</em> &#61; 10) and each had the same standard deviation (<em>s</em> &#61; 20). But one, sample E, had a mean of 80 (<em>M</em> &#61; 80) and the other, sample F, a mean of 60 (<em>M</em> &#61; 60). Based on the information provided below, how does the distance from the sample mean to the population mean affect the results of a single-sample <em>t</em> test?</p>
+<table id="corty3e-ch7-table4" block_type="un_table">
+<layout align="center" width="xlarge" border="true"/>
+<tbody>
+<tr>
+<td></td>
+<td><phrase block_type="TBN-COLHD"><strong><em>s<sub>M</sub></em></strong></phrase></td>
+<td><phrase block_type="TBN-COLHD"><strong><em>t<sub>cv</sub></em></strong></phrase></td>
+<td><phrase block_type="TBN-COLHD"><strong><em>t</em></strong></phrase></td>
+<td><phrase block_type="TBN-COLHD"><strong><em>d</em></strong></phrase></td>
+<td><phrase block_type="TBN-COLHD"><strong><em>r</em><sup>2</sup></strong></phrase></td>
+<td><phrase block_type="TBN-COLHD"><strong>CI</strong></phrase></td>
+<td><phrase block_type="TBN-COLHD"><strong>Width of CI</strong></phrase></td>
+</tr>
+<tr>
+<td><phrase block_type="tbn-txt">E: <em>M</em> farther from &#956;(<em>M</em> &#61; 80)</phrase></td>
+<td><phrase block_type="tbn-txt">6.32</phrase></td>
+<td><phrase block_type="tbn-txt">2.262</phrase></td>
+<td><phrase block_type="tbn-txt">4.75</phrase></td>
+<td><phrase block_type="tbn-txt">1.50</phrase></td>
+<td><phrase block_type="tbn-txt">71&#37;</phrase></td>
+<td><phrase block_type="tbn-txt">15.70 to 44.30</phrase></td>
+<td><phrase block_type="tbn-txt">28.60</phrase></td>
+</tr>
+<tr>
+<td><phrase block_type="tbn-txt">F: <em>M</em> closer to &#956;(<em>M</em> &#61; 60)</phrase></td>
+<td><phrase block_type="tbn-txt">6.32</phrase></td>
+<td><phrase block_type="tbn-txt">2.262</phrase></td>
+<td><phrase block_type="tbn-txt">1.58</phrase></td>
+<td><phrase block_type="tbn-txt">0.50</phrase></td>
+<td><phrase block_type="tbn-txt">22&#37;</phrase></td>
+<td><phrase block_type="tbn-txt">&#8211;4.30 to 24.30</phrase></td>
+<td><phrase block_type="tbn-txt">28.60</phrase></td>
+</tr>
+</tbody>
+</table>
+<p id="corty3e-ch7-p473" block_type="cr-x-nl-txt"><phrase block_type="question_num">7.96</phrase> Based on the answers to Exercises 7.93 to 7.95, what factors have an impact on a researcher&#8217;s ability to reject the null hypothesis? Which one(s) can he or she control?</p>
+<p id="corty3e-ch7-p474" block_type="cr-x-nl-txt"><phrase block_type="question_num">7.97</phrase> A researcher is conducting a two-tailed, single-sample <em>t</em> test with alpha set at .05. What is the largest value of <em>t</em> that one could have that, no matter how big <em>N</em> is, will guarantee failing to reject the null hypothesis?</p>
+<p id="corty3e_page_254" block_type="page_start">254</p>
+<p id="corty3e-ch7-p475" block_type="cr-x-nl-txt"><phrase block_type="question_num">7.98</phrase> If <em>t<sub>cv</sub></em> for a two-tailed test with &#945; &#61; .05 is &#177;2.228, what would the alpha level be for the critical value of 2.228 as a one-tailed test?</p>
+<p id="corty3e-ch7-p476" block_type="cr-x-nl-txt"><phrase block_type="question_num">7.99</phrase> If <em>N</em> &#61; 21 and <em>s<sub>M</sub></em> &#61; 1, write as much of the equation as possible for calculating the 90&#37; CI&#956;<sub>Diff</sub> and the 99&#37; CI&#956;<sub>Diff</sub>. Use <link href="#corty3e-ch7-bx6-4">Equation 7.4</link> as a guide.</p>
+<p id="corty3e-ch7-p477" block_type="cr-x-nl-txt"><phrase block_type="question_num">7.100</phrase> Which confidence interval in <link href="#corty3e-ch7-question-115">Exercise 7.95</link> is wider: 90&#37; or 99&#37;? Explain why.</p>
+<box title="SPSS" numbered="false" id="corty3e-ch7-bx3-3" block_type="bx3-h">
+<p id="corty3e-ch7-p478" block_type="bx3-txt-ni">Let&#8217;s use SPSS to analyze the Chips Ahoy data from the Application Demonstration at the end of the chapter. The first step is data entry. <link href="#corty3e-ch7-fig-33"><strong>Figure 7.12</strong></link> shows the data for the 10 cookies. Note that the variable is labeled &#8220;Num&#95;chips&#8221; at the top of the column, and that the value for each case appears in a separate row.</p>
+<figure id="corty3e-ch7-fig-33" block_type="figure" numbered="true" number="7.12" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="medium" border="true"/>
+<image asset-id="corty3e-ch7-img-35" alt="image" src="asset/ch7/corty3e_fig07_12.jpg"/>
+<caption><strong><phrase block_type="fig_num">Figure 7.12</phrase> Data Entry for Single-Sample <em>t</em> Test in SPSS</strong> The number of chips in each cookie is entered on its own row.</caption>
+
+</figure>
+<p id="corty3e-ch7-p479" block_type="bx3-txt">SPSS calls a single-sample <em>t</em> test the &#8220;One-Sample T Test.&#8221; It is found by clicking on &#8220;Analyze&#8221; on the top line (<link href="#corty3e-ch7-fig-34"><strong>Figure 7.13</strong></link>). Then click on &#8220;Compare Means&#8221; and &#8220;One-Sample T Test. . . .&#8221;</p>
+<figure id="corty3e-ch7-fig-34" block_type="figure" numbered="true" number="7.13" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="medium" border="true"/>
+<image asset-id="corty3e-ch7-img-36" alt="image" src="asset/ch7/corty3e_fig07_13.jpg"/>
+<caption><strong><phrase block_type="fig_num">Figure 7.13</phrase> The Single-Sample <em>t</em> Test in SPSS</strong> SPSS calls the single-sample <em>t</em> test the &#8220;One-Sample T Test.&#8221;</caption>
+
+</figure>
+<p id="corty3e-ch7-p480" block_type="bx3-txt">This pulls up the box seen in <link href="#corty3e-ch7-fig-35"><strong>Figure 7.14</strong></link>. Note that the variable &#8220;Num&#95;chips,&#8221; which we wish to analyze, has already been moved over from the box on the left (which is now empty) to the box labeled &#8220;Test Variable(s).&#8221; The population mean, 27.78, has been entered into the box labeled &#8220;Test Value.&#8221; Once this is done, it is time to click the &#8220;OK&#8221; button on the lower right.</p>
+<figure id="corty3e-ch7-fig-35" block_type="figure" numbered="true" number="7.14" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="medium" border="true"/>
+<image asset-id="corty3e-ch7-img-37" alt="image" src="asset/ch7/corty3e_fig07_14.jpg"/>
+<caption><strong><phrase block_type="fig_num">Figure 7.14</phrase> Selecting the Dependent Variable and Entering the Population Mean for a Single-Sample <em>t</em> Test in SPSS</strong> The dependent variable being tested is listed in the box labeled &#8220;Test Variable(s).&#8221; The population value it is being compared to is entered in the box labeled &#8220;Test Value.&#8221;</caption>
+
+</figure>
+<p id="corty3e_page_255" block_type="page_start">255</p>
+<p id="corty3e-ch7-p481" block_type="bx3-txt"><link href="#corty3e-ch7-fig-36"><strong>Figure 7.15</strong></link> shows the output that SPSS produces. There are a number of things to note:</p>
+<figure id="corty3e-ch7-fig-36" block_type="figure" numbered="true" number="7.15" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="medium" border="true"/>
+<image asset-id="corty3e-ch7-img-38" alt="image" src="asset/ch7/corty3e_fig07_15.jpg"/>
+<caption><strong><phrase block_type="fig_num">Figure 7.15</phrase> SPSS Output for a Single-Sample <em>t</em> Test</strong> SPSS provides descriptive statistics, the <em>t</em> value, an exact significance level, and the 95&#37; confidence interval for the difference between population means. It does not calculate Cohen&#8217;s <em>d</em> or <em>r</em><sup>2</sup> but provides enough information that these can be done by hand.</caption>
+
+</figure>
+<list id="corty3e-ch7-list-25" type="unordered" block_type="bullet">
+<li><p id="corty3e-ch7-p482" block_type="bx3_bl">The first box provides descriptive statistics, including the standard error of the mean, <em>s<sub>M</sub>,</em> the denominator for <em>t.</em></p></li>
+<li><p id="corty3e-ch7-p483" block_type="bx3_bl">At the top of the second output box, &#8220;Test Value &#61; 27.78&#8221; indicates that this is the value against which the sample mean is being compared.</p></li>
+<li><p id="corty3e-ch7-p484" block_type="bx3_bl">Next, SPSS reports the <em>t</em> value (&#8211;1.978) and the degrees of freedom (9).</p></li>
+<li><p id="corty3e-ch7-p485" block_type="bx3_bl">SPSS then reports what it calls &#8220;Sig. (2-tailed)&#8221; as .079.</p></li>
+<li><p id="corty3e-ch7-p486" block_type="bx3_bl_lvl2">The important thing for us is whether this value is &#8804; .05 or &#62; .05.</p></li>
+<li><p id="corty3e-ch7-p487" block_type="bx3_bl_lvl3">If it is &#8804; .05, the null hypothesis is rejected and the results are reported in APA format as <em>p</em> &#60; .05.</p></li>
+<li><p id="corty3e-ch7-p488" block_type="bx3_bl_lvl3">If it is &#62; .05, the null hypothesis is not rejected and the results are reported in APA format as <em>p</em> &#62; .05.</p></li>
+<li><p id="corty3e-ch7-p489" block_type="bx3_bl_lvl2">This value, .079, is the exact significance level for this test with these data. It indicates what the two-tailed probability is of obtaining a <em>t</em> value of &#8211;1.978 <em>or larger</em> if the null hypothesis is true. In the present situation, it says that a <em>t</em> value of &#8211;1.978 is a common one&#8212;it happens 7.9&#37; of the time when 10 cases are sampled from a population where &#956; &#61; 27.78. APA format calls for the exact significance level to be used. Thus, these results should be reported as <em>t</em> (9) &#61; &#8211;1.98, <em>p</em> &#61; .079.</p></li>
+<li><p id="corty3e-ch7-p490" block_type="bx3_bl_lvl2">The next bit of output reports the mean difference, &#8211;1.68, between the sample mean (26.10) and the test value (27.78).</p></li>
+<li><p id="corty3e-ch7-p491" block_type="bx3_bl_lvl2">SPSS reports what it calls the &#8220;95&#37; Confidence Interval of the Difference,&#8221; what is called in the book the 95&#37; confidence interval for the difference between population means, ranging from a &#8220;Lower&#8221; bound of &#8211;3.60 to an &#8220;Upper&#8221; bound of 0.24.</p></li>
+<li><p id="corty3e-ch7-p492" block_type="bx3_bl_lvl2">Note that SPSS does not report Cohen&#8217;s <em>d.</em> Similarly, there is not enough information to calculate <em>r</em><sup>2</sup>. However, it provides enough information, the mean difference (&#8211;1.68) and the standard deviation (2.685), that it can be done by hand with <link href="#corty3e-ch7-bx6-3">Equation 7.3</link>.</p></li>
+</list>
+</box>
+
+</section>
+</chapter>

@@ -1,0 +1,1478 @@
+<chapter number="11" id="corty3e-ch11-chapter-11" title="11 One-Way, Repeated- Measures ANOVA" start-numbering-at="11" numbered="true">
+<section id="corty3e-ch11-sec1-1a" block_type="intro" title="Chapter Introduction" numbered="false" level="1" print_page="381">
+<p id="corty3e_page_381" block_type="page_start">381</p>
+<p id="corty3e-ch11-p1" block_type="chapter_number">11</p>
+<p id="corty3e-ch11-p2" block_type="chapter_title">One-Way, Repeated-<br/>Measures ANOVA</p>
+<box numbered="false" id="corty3e-ch11-ibx-1" block_type="intro_box">
+<p id="corty3e-ch11-p3" block_type="obj-h"><strong>LEARNING OBJECTIVES</strong></p>
+<list id="corty3e-ch11-list-1" type="unordered" block_type="bluesquare">
+<li><p id="corty3e-ch11-p4" block_type="obj-bl">Describe what repeated-measures ANOVA does.</p></li>
+<li><p id="corty3e-ch11-p5" block_type="obj-bl">Complete a one-way, repeated-measures ANOVA.<termref term="fn-ch11-1"><sup>*</sup></termref></p>
+<p id="corty3e-ch11-p6" block_type="fn"><em>*Note:</em> Formulas for calculating sums of squares appear in an appendix at the end of the chapter.</p></li>
+<li><p id="corty3e-ch11-p7" block_type="obj-bl">Interpret a one-way, repeated-measures ANOVA.</p></li>
+</list>
+<p id="corty3e-ch11-p8" block_type="obj-h"><strong>CHAPTER OVERVIEW</strong></p>
+<p id="corty3e-ch11-p11" block_type="co-txt-ni">The last chapter introduced between-subjects, one-way ANOVA, an extension of the independent-samples <em>t</em> test to situations in which more than two independent samples are being compared. Just as the chapter on independent-samples <em>t</em> tests was followed by a chapter on paired-samples <em>t</em> tests, the chapter on <em>between-subjects</em>, one-way ANOVA is followed by a chapter on <em>within-subjects</em>, measures one-way ANOVA. Said another way, the chapter on ANOVA for independent samples is followed by this chapter on ANOVA for dependent samples. Repeated-measures, one-way ANOVA is an extension of paired-samples <em>t</em> tests to situations in which there are more than two dependent samples.</p>
+<box numbered="false" id="corty3e-ch11-exp2-1" block_type="mn2">
+<p id="corty3e-ch11-p9" block_type="co-toc-h1-t"><link href="#corty3e-ch11-sec1-1"><phrase block_type="co-toc-h1-n-ri">11.1</phrase> Introduction to Repeated-Measures ANOVA</link></p>
+<p id="corty3e-ch11-p10" block_type="co-toc-h1-t"><link href="#corty3e-ch11-sec1-2"><phrase block_type="co-toc-h1-n-ri">11.2</phrase> Calculating One-Way, Repeated-Measures ANOVA</link></p>
+<p id="corty3e-ch11-p11a" block_type="co-toc-h1-t"><link href="#corty3e-ch11-sec1-3"><phrase block_type="co-toc-h1-n-ri">11.3</phrase> Interpreting One-Way, Repeated-Measures ANOVA</link></p>
+</box>
+</box>
+</section>
+<section id="corty3e-ch11-sec1-1" block_type="h1" chapter="11" title="" numbered="false" level="1" print_page="381">
+<section-metadata><section-title><phrase block_type="sec_num">11.1</phrase> <phrase block_type="sec_title">Introduction to Repeated-Measures ANOVA</phrase></section-title></section-metadata>
+<p id="corty3e-ch11-p12" block_type="txt-ni">In this chapter, we learn about <em>within-subjects</em> ANOVA, commonly called <termref term="repeated-measures ANOVA">repeated-measures ANOVA</termref>. Repeated-measures ANOVA is an extension of the paired-samples <em>t</em> test. The paired-samples <em>t</em> test can only be used when comparing the means of two dependent samples. But, a repeated-measures ANOVA can be used when there are two or more dependent samples.</p>
+<p id="corty3e-ch11-p13" block_type="txt">There are many different types of experiments that use repeated measures. What they have in common is a connection between the cases in one cell and the cases in the other cells. Repeated measures may involve:</p>
+<list id="corty3e-ch11-list-2" type="unordered" block_type="bullet">
+<li><p id="corty3e-ch11-p14" block_type="bl-first"><em>The same cases measured at multiple points of time.</em> For example, to examine how weight changes over college, a group of first-year college students might be weighed at the start and the end of each of the four years of college.</p>
+<p id="corty3e_page_382" block_type="page_start">382</p></li>
+<li><p id="corty3e-ch11-p15" block_type="bl-mid"><em>The same cases measured under multiple conditions.</em> For example, to examine how alcohol affects one&#8217;s ability to walk a straight line, 21-year-olds might be asked to walk a straight line before drinking anything, after drinking a placebo beer, after drinking one beer, after two, after four, and after six.</p></li>
+<li><p id="corty3e-ch11-p16" block_type="bl-last"><em>Different cases, matched so that they are similar in some dimension(s).</em> For example, a researcher comparing murder rates for cities with high, medium, and low numbers of sunny days per year might be concerned that population density and poverty level could affect the results. To account for these other factors, he could group cities with the same populations and unemployment rates into sets of three: one with a high number of sunshine days, one low on the number of sunshine days, and one in the middle.</p></li>
+</list>
+<p id="corty3e-ch11-p17" block_type="txt">In all these examples of dependent samples, we&#8217;re looking at differences within the same subjects (or matched subjects) over time or across conditions (the treatment). Thus, it is important to make sure that the subjects are arrayed in the same order from cell to cell to cell. If a participant&#8217;s data point is listed first in one cell, then it should be first in the other cells.</p>
+<p id="corty3e-ch11-p18" block_type="txt">The beauty of analysis of variance is that it partitions the variability in the dependent variable into the components that account for the variability. Between-subjects, one-way ANOVA, covered in the last chapter, distinguishes variability due to how the groups are treated (between-group variability) from variability due to individual differences among subjects (within-group variability). With between-subjects ANOVA, it doesn&#8217;t matter how subjects in a cell are arrayed. In our example, the three rats that ran the maze to reach low-calorie food ran it in 30, 31, and 32 seconds. And that is how the data showed up in the first cell of <link href="corty3e-ch10.xml#corty3e-ch10-fig-11">Table 10.3</link>. But, the data could just as easily have been listed as 31, 32, and 30 or as 31, 30, and 32. These cases are independent of each other. No matter the order that the results are listed, the results of the between-subjects ANOVA will be the same. This is not true of repeated-measures ANOVA. Because the samples in repeated-measures ANOVA are dependent samples, the order in which they are arranged matters very much. Changing the order, unless it is changed consistently in all cells, will change the outcome.</p>
+<p id="corty3e-ch11-p19" block_type="txt">In repeated-measures ANOVA, the levels of the independent variable, for example, the different times or conditions, make up the columns and the subjects make up the rows. By having each subject on a row by itself, subjects can be treated as a second explanatory variable, as a second factor. Treating subjects as a factor allows repeated-measures ANOVA to measure&#8212;to account for&#8212;variability due to them. By partitioning out this variability, repeated-measures ANOVA obtains a purer measure of the effect of treatment and is a more statistically powerful test than is between-subjects ANOVA. What does it mean to be a statistically more powerful test? It means that this test gives us a greater likelihood of being able to reject the null hypothesis.</p>
+<p id="corty3e-ch11-p20" block_type="txt"><link href="#corty3e-ch11-fig-1"><strong>Figure 11.1</strong></link> shows the similarities and differences between the sources of variability for between-subjects and repeated-measures ANOVA. With between-subjects ANOVA, total variability is partitioned into between and within. For repeated-measures ANOVA, total variability is also partitioned into between and within. But, within-group variability is then broken down further. First, variability due to subjects is removed. Then, the variability left over, labeled &#8220;residual,&#8221; is used as the denominator in the <em>F</em> ratio.</p>
+<figure id="corty3e-ch11-fig-1" block_type="figure" numbered="true" number="11.1" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="medium" border="true"/>
+<image asset-id="corty3e-ch11-img-1" alt="image" src="asset/ch11/corty3e_fig11_01.jpg"/>
+<caption><strong><phrase block_type="fig_num">Figure 11.1</phrase> Partitioning Variability for One-Way ANOVA</strong> Variability in the dependent variable in one-way ANOVA is divided into between-groups and within-groups factors. For between-subjects, one-way ANOVA, the partitioning stops there. For a within-subjects design, the within-groups variability is further divided into that due to subjects and that which still remains.</caption>
+</figure>
+<p id="corty3e_page_383" block_type="page_start">383</p>
+<p id="corty3e-ch11-p21" block_type="txt">The statistical power of repeated-measures ANOVA comes from the fact that it partitions out the variability due to subjects. Between-subjects ANOVA divides between-group variability by within-group variability to find the <em>F</em> ratio. Repeated-measures ANOVA calculates between-group variability the same way, so it will have the same numerator for the <em>F</em> ratio. But the denominator, which has variability due to subjects removed, will be smaller. This means that the <em>F</em> ratio will be larger&#8212;meaning it is more likely to fall in the rare zone, and therefore more likely to result in a rejection of the null hypothesis than for between-subjects, one-way ANOVA.</p>
+<p id="corty3e-ch11-p22" block_type="txt">To see what this means, let&#8217;s analyze the same set of data two ways&#8212;one way that doesn&#8217;t partition out the subject variability and one that does. Let&#8217;s compare two neighboring cities, Erie, PA, and Cleveland, OH, to see if they differ in how hot they get. From weather archives, we have obtained the average high temperature for each city for each month of the year. The data are seen in <link href="#corty3e-ch11-fig-2"><strong>Figure 11.2</strong></link>. Two things are readily apparent in this graph:</p>
+<figure id="corty3e-ch11-fig-2" block_type="figure" numbered="true" number="11.2" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="medium" border="true"/>
+<image asset-id="corty3e-ch11-img-2" alt="image" src="asset/ch11/corty3e_fig11_02.jpg"/>
+<caption><strong><phrase block_type="fig_num">Figure 11.2</phrase> Average High Temperature per Month in Cleveland, OH, and Erie, PA</strong> Notice how little difference there is in temperature between the two cities each month and how much variability exists from month to month.</caption>
+</figure>
+<list id="corty3e-ch11-list-3" type="unordered" block_type="bullet">
+<li><p id="corty3e-ch11-p23" block_type="bl-first">The high temperatures in the two cities are very similar to each other.</p></li>
+<li><p id="corty3e-ch11-p24" block_type="bl-last">Both cities share a strong seasonal trend to temperature&#8212;it is hottest in the summer and coldest in the winter.</p></li>
+</list>
+<p id="corty3e_page_384" block_type="page_start">384</p>
+<p id="corty3e-ch11-p25" block_type="txt">The paired-samples <em>t</em> test is appropriate to use to see if there is a statistically significant difference in temperature between the two cities. The <em>t</em> value turns out to be 5.38 and the difference between the two cities is a statistically significant one&#8212;Cleveland with a mean high temperature of 59.6&#176;F is statistically significantly hotter than Erie with a mean of 57.7&#176;F. A difference of 1.9&#176;F doesn&#8217;t sound like much, but it is enough to be statistically significant when analyzed with a paired-samples <em>t</em> test.</p>
+<p id="corty3e-ch11-p26" block_type="txt">The reasonable next question to ask is what the size of the effect is. How much of the variability in the dependent variable of temperature is explained by the grouping variable of city? Judging by <link href="#corty3e-ch11-fig-2">Figure 11.2</link>, it shouldn&#8217;t be much, right? Well, be surprised&#8212;72&#37; of the variability in temperature is accounted for by city status! (This book does NOT advocate calculating either <em>d</em> or <em>r</em><sup>2</sup> for a paired-samples <em>t</em> test. In this one instance, however, and just for this one example, I calculated <em>r</em><sup>2</sup>.)</p>
+<p id="corty3e-ch11-p27" block_type="txt">An <em>r</em><sup>2</sup> of 72&#37; is a huge effect, a whopping effect. Look at <link href="#corty3e-ch11-fig-2">Figure 11.2</link> again. How can we account for the variability in temperature? Is there more variability in temperature due to differences between the cities each month or is there more variability in temperature due to changes from month to month? Clearly, more variability exists from month to month, which is due to individual differences among our cases, which are months. Regardless of city, months like July and August differ by 40 to 50 degrees F from months like January and February.</p>
+<p id="corty3e-ch11-p28" block_type="txt">Does it make sense that the variability in temperature accounted for by the between-groups factor, city, is 72&#37;? No! And it can&#8217;t be so. If we just agreed that more of the variability in <link href="#corty3e-ch11-fig-2">Figure 11.2</link> is due to the within-group factor (month) than the between-group factor, and the between-group factor accounted for 72&#37; of the variability, then the within-group factor must explain at least 73&#37; of the variability. That&#8217;s impossible&#8212;we have just accounted for at least 145&#37; of the variability!</p>
+<p id="corty3e-ch11-p29" block_type="txt">So, what is going on? Because a paired-samples <em>t</em> test doesn&#8217;t partition out the variability due to subjects, it mixes in variability due to individual differences with variability due to the grouping variable when calculating <em>r</em><sup>2</sup>. Thus, <em>r</em><sup>2</sup> is an overestimate of the percentage of variability due to the grouping variable and should not be used with paired-samples <em>t</em> tests. The same is true for Cohen&#8217;s <em>d</em> for a paired-samples <em>t</em> test&#8212;it also overestimates the size of the effect.</p>
+<p id="corty3e-ch11-p30" block_type="txt">How much of the variability in temperature is really due to the grouping variable of city? To answer that, we need a repeated-measures ANOVA, which treats variability due to the independent variable and that due to the subjects separately. ANOVA, which can be used when comparing <em>two</em> or more means, can be used in place of a <em>t</em> test. As we are about to see, there is a distinct advantage to using a repeated-measures ANOVA over a paired-samples <em>t</em> test.</p>
+<p id="corty3e-ch11-p31" block_type="txt">When these temperature data are analyzed with a repeated-measures ANOVA, the difference between the mean temperatures due to location is still a statistically significant one. But now, because the variance due to subjects has been removed, the effect size will be a purer measure of the effect of the independent variable. By removing individual subject variability, the explanatory power of the city where the measurement was taken is reduced from 72&#37; to1&#37;. Yes, 1&#37;. Look at <link href="#corty3e-ch11-fig-2">Figure 11.2</link> again. Doesn&#8217;t a measure of 1&#37; of the variability due to location reflect reality a lot better than 72&#37;? If you are comparing the means of two dependent samples, use repeated-measures ANOVA, not a paired-samples <em>t</em> test .</p>
+<p id="corty3e_page_385" block_type="page_start">385</p>
+<p id="corty3e-ch11-p32" block_type="txt">We&#8217;ll use the following example throughout the chapter to learn how to complete a repeated-measures ANOVA. Imagine that Dr. King wanted to determine if a new treatment for ADHD was effective. He took four children with ADHD and measured their level of distraction on an interval-level scale where higher scores mean a higher level of distraction. Next, each child received individual behavior therapy for three months, after which the child&#8217;s level of distraction was assessed again. Finally, to determine if the effects of treatment are long-lasting, each child had his or her level of distraction measured again six months later.</p>
+<p id="corty3e-ch11-p33" block_type="txt"><link href="#corty3e-ch11-fig-3"><strong>Table 11.1</strong></link> contains the data, each case in its own row and each phase of treatment in a separate column. The effects of treatment are found in the column means. <link href="#corty3e-ch11-fig-4"><strong>Figure 11.3</strong></link> shows that the mean level of distraction is highest before the treatment starts, lowest at the end of treatment, and somewhere in the middle at follow-up. This suggests that treatment has an effect on reducing distraction and that the effect lingers, though in a weakened form, for six months. Of course, Dr. King needs to do a statistical test to determine if the treatment effect is statistically significant or if the differences can be accounted for by sampling error.</p>
+<figure id="corty3e-ch11-fig-3" block_type="table" numbered="true" number="11.1" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="large" border="true"/>
+<image asset-id="corty3e-ch11-img-3" alt="image" src="asset/ch11/corty3e_table11_01.jpg"/>
+</figure>
+<figure id="corty3e-ch11-fig-4" block_type="figure" numbered="true" number="11.3" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="medium" border="true"/>
+<image asset-id="corty3e-ch11-img-4" alt="image" src="asset/ch11/corty3e_fig11_03.jpg"/>
+<caption><strong><phrase block_type="fig_num">Figure 11.3</phrase> ADHD Study Pre-Treatment, Post-Treatment, and Six-Month Follow-Up Distraction Scores</strong> The mean level of distraction decreases with treatment and increases when treatment is over. To determine if these changes in level of distraction are statistically significant, a one-way, repeated-measures ANOVA needs to be completed.</caption>
+</figure>
+<p id="corty3e_page_386" block_type="page_start">386</p>
+<p id="corty3e-ch11-p34" block_type="txt">The differences between rows are due to individual differences, uncontrolled characteristics that vary from case to case. For example, case 1 has the lowest level of distraction pre-treatment. This could be due to the participant&#8217;s having a less severe form of ADHD, having eaten a good breakfast on the day of the test, having been taught by a teacher who stressed the skills on the test, or a whole host of other uncontrolled factors.</p>
+<p id="corty3e-ch11-p35" block_type="txt">To reiterate the message of this introduction, the effect of individual differences is intertwined with the effect of treatment. Is the first case&#8217;s low score at the end of treatment due to the effect of treatment or due to individual differences like a less severe form of ADHD? One-way, repeated-measures ANOVA is statistically powerful because it divides the variability in scores into these two factors. Repeated-measures ANOVA determines (1) how much variability is due to the column effect (the effect of treatment), and (2) how much variability is due to the row effect (individual differences). Let&#8217;s see it in action in the next section.</p>
+<box title="Practice Problems 11.1" numbered="false" id="corty3e-ch11-bx2-1" block_type="sr-h">
+<p id="corty3e-ch11-p36" block_type="sr-h1"><strong>Review Your Knowledge</strong></p>
+<p id="corty3e-ch11-p37" block_type="sr-que-nl"><phrase block_type="question_num">11.01</phrase> When is repeated-measures ANOVA used?</p>
+<p id="corty3e-ch11-p38" block_type="sr-que-nl"><phrase block_type="question_num">11.02</phrase> Into what two factors does one-way, repeated-measures ANOVA divide variability in a set of scores?</p>
+<p id="corty3e-ch11-p39" block_type="sr-que-nl"><phrase block_type="question_num">11.03</phrase> When comparing the means of two dependent samples, what test should be used? Why?</p>
+</box>
+</section>
+<section id="corty3e-ch11-sec1-2" block_type="h1" chapter="11" title="" numbered="false" level="1" print_page="386">
+<section-metadata><section-title><phrase block_type="sec_num">11.2</phrase> <phrase block_type="sec_title">Calculating One-Way, Repeated-Measures ANOVA</phrase></section-title></section-metadata>
+<p id="corty3e-ch11-p40" block_type="h4"><phrase block_type="h4-n-ri"><strong>Step 1</strong></phrase> <strong>Pick a Test</strong></p>
+<p id="corty3e-ch11-p41" block_type="txt-ni">Dr. King&#8217;s ADHD/distraction study compares the means of three samples, so it calls for an ANOVA to analyze the data. Because there is only one explanatory variable (time), it will be a one-way ANOVA. There are three levels of the explanatory variable&#8212; pre-treatment, post-treatment, and follow-up&#8212;so there are three groups. This is a longitudinal study in which the same participants are being assessed at three points in time. This means the samples are dependent. The dependent variable (level of distraction) is measured at the interval level, so a mean for each group can be calculated. Comparing the means of three dependent samples calls for a one-way, repeated-measures ANOVA.</p>
+<p id="corty3e-ch11-p42" block_type="h4"><phrase block_type="h4-n-ri"><strong>Step 2</strong></phrase> <strong>Check the Assumptions</strong></p>
+<p id="corty3e-ch11-p43" block_type="txt-ni">Assumptions for the one-way, repeated-measures ANOVA are similar to those for the paired-samples <em>t</em> test: (1) each sample is a random sample from its population, (2) cases within samples are independent and don&#8217;t influence each other, and (3) the dependent variable is normally distributed in the population. There is a fourth assumption, which is beyond the scope of this book to assess. It is called the sphericity assumption, and it is a form of the homogeneity of variance assumption: If difference scores were calculated, would variability be the same in each set of difference scores?</p>
+<p id="corty3e_page_387" block_type="page_start">387</p>
+<figure id="corty3e-ch11-fig-5" block_type="un_figure" numbered="false" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="medium" border="true"/>
+<image asset-id="corty3e-ch11-img-5" alt="image" src="asset/ch11/corty3e_fig11_un01.jpg"/>
+<caption>Don&#8217;t forget: <strong>T</strong>om <strong>a</strong>nd <strong>H</strong>arry <strong>d</strong>espise <strong>c</strong>rabby <strong>i</strong>nfants is a mnemonic to remember the six steps of hypothesis testing.</caption>
+</figure>
+<p id="corty3e-ch11-p44" block_type="txt">Dr. King makes the following evaluation of the first three assumptions.</p>
+<list id="corty3e-ch11-list-4" type="ordered" block_type="numbered">
+<li><p id="corty3e-ch11-p45" block_type="nl-first"><em>Random samples.</em> There is no evidence that the sample is a random sample of children with ADHD, so this assumption is violated. However, the assumption is robust to violation, so the child psychologist can proceed. He will need to be careful about the population to which the results are generalized.</p></li>
+<li><p id="corty3e-ch11-p46" block_type="nl-mid"><em>Independence of observations.</em> There is no evidence that the cases within a group influence each other, so this assumption is not violated.</p></li>
+<li><p id="corty3e-ch11-p47" block_type="nl-last"><em>Normality.</em> Dr. King assumes that distraction scores are normally distributed in the larger population of people with ADHD.</p></li>
+</list>
+<p id="corty3e-ch11-p48" block_type="txt">Only the random samples assumption is violated (and it&#8217;s robust to violation), so Dr. King can proceed with the one-way, repeated-measures ANOVA.</p>
+<p id="corty3e-ch11-p49" block_type="h4"><phrase block_type="h4-n-ri"><strong>Step 3</strong></phrase> <strong>List the Hypotheses</strong></p>
+<p id="corty3e-ch11-p50" block_type="txt-ni">For a one-way, repeated-measures ANOVA, the null hypothesis states that all the population means are the same. The alternative hypothesis states that at least one population mean is different from at least one other. As with between-subjects one-way ANOVA, the null hypothesis is easy to state using mathematical symbols, but not the alternative hypothesis, so words are used to express the alternative hypothesis. For the ADHD/level of distraction data with three samples, the null and alternative hypotheses are</p>
+<p id="corty3e-ch11-p51" block_type="eq"><em>H</em><sub>0</sub>: &#181;<sub>1</sub> &#61; &#181;<sub>2</sub> &#61; &#181;<sub>3</sub>.</p>
+<p id="corty3e-ch11-p52" block_type="eq"><em>H</em><sub>1</sub>: At least one population mean is different from at least one of the others.</p>
+<p id="corty3e-ch11-p53" block_type="h4"><phrase block_type="h4-n-ri"><strong>Step 4</strong></phrase> <strong>Set the Decision Rule</strong></p>
+<p id="corty3e-ch11-p54" block_type="txt-ni">To set the decision rule with repeated-measures ANOVA, Dr. King needs to find <em>F<sub>cv</sub>,</em> the critical value of <em>F.</em></p>
+<p id="corty3e_page_388" block_type="page_start">388</p>
+<p id="corty3e-ch11-p55" block_type="txt">As with the other tests we&#8217;ve covered up to this point, to find <em>F<sub>cv</sub>,</em> a researcher needs (a) to set the alpha level on the basis of willingness to make a Type I error and (b) to know the degrees of freedom for the numerator and the denominator of the <em>F</em> ratio. These are then used in <link href="corty3e-appendix01.xml#corty3e-app1-fig-10">Appendix Table 4</link> to find <em>F<sub>cv</sub>.</em> (One thing a researcher doesn&#8217;t need to worry about is whether to do a one-tailed or a two-tailed test&#8212;ANOVA is always nondirectional.)</p>
+<p id="corty3e-ch11-p56" block_type="txt">In a one-way, repeated-measures ANOVA, the numerator, where the effect of the independent variable is isolated, is called the treatment effect and the denominator is called the residual effect. The formulas for finding degrees of freedom treatment (<em>df</em><sub>Treatment</sub>) and degrees of freedom residual (<em>df</em><sub>Residual</sub>) for a one-way, repeated-measures ANOVA are given in <link href="#corty3e-ch11-bx6-1">Equation 11.1</link>. <link href="#corty3e-ch11-bx6-1">Equation 11.1</link> also shows how to calculate two other degrees of freedom that will be necessary to complete the ANOVA summary table for repeated-measures ANOVA: (1) degrees of freedom subjects, <em>df</em><sub>Subjects</sub>, and (2) degrees of freedom total, <em>df</em><sub>Total</sub>.</p>
+<box title="" numbered="false" id="corty3e-ch11-bx6-1" block_type="eq-t">
+<box-metadata><box-title><phrase block_type="sec_num">Equation 11.1</phrase> <phrase block_type="sec_title">Degrees of Freedom for a One-Way, Repeated-Measures ANOVA</phrase></box-title></box-metadata>
+<p id="corty3e-ch11-p57" block_type="eq"><em>df</em><sub>Subjects</sub> &#61; <em>n</em> &#8722; 1</p>
+<p id="corty3e-ch11-p58" block_type="eq"><em>df</em><sub>Treatment</sub> &#61; <em>k</em> &#8722; 1</p>
+<p id="corty3e-ch11-p59" block_type="eq"><em>df</em><sub>Residual</sub> &#61; <em>df</em><sub>Subjects</sub> &#215; <em>df</em><sub>Treatment</sub></p>
+<p id="corty3e-ch11-p60" block_type="eq"><em>df</em><sub>Total</sub> &#61; <em>N</em> &#8722; 1</p>
+<p id="corty3e-ch11-p61" block_type="eq-txt-ni">where <em>df</em><sub>Subjects</sub> &#61; degrees of freedom for variability due to subjects</p>
+<p id="corty3e-ch11-p62" block_type="eq-unl"><em>df</em><sub>Treatment</sub> &#61; degrees of freedom for the treatment effect</p>
+<p id="corty3e-ch11-p63" block_type="eq-unl"><em>df</em><sub>Residual</sub> &#61; degrees of freedom for residual variability</p>
+<p id="corty3e-ch11-p64" block_type="eq-unl"><em>df</em><sub>Total</sub> &#61; degrees of freedom total</p>
+<p id="corty3e-ch11-p65" block_type="eq-unl"><em>n</em> &#61; sample size per group</p>
+<p id="corty3e-ch11-p66" block_type="eq-unl"><em>k</em> &#61; number of groups</p>
+<p id="corty3e-ch11-p67" block_type="eq-unl"><em>N</em> &#61; total number of observations (<em>n</em> &#215; <em>k</em>)</p>
+</box>
+<p id="corty3e-ch11-p68" block_type="txt">Dr. King sets alpha at .05. He is willing to run a 5&#37; chance of making a Type I error. To calculate degrees of freedom for the level of distraction/ADHD data, Dr. King needs to know <em>n</em> &#61; 4, <em>k</em> &#61; 3, and <em>N</em> &#61; 12. That is, there are four cases per group and three groups, for a total of 12 cases. These three values are then used in <link href="#corty3e-ch11-bx6-1">Equation 11.1</link> to calculate the 4 degrees of freedom:</p>
+<p id="corty3e-ch11-p69" block_type="eq"><em>df</em><sub>Subjects</sub> &#61; <em>n</em> &#8722; 1</p>
+<p id="corty3e-ch11-p70" block_type="eq">&#61; 4 &#8722; 1</p>
+<p id="corty3e-ch11-p71" block_type="eq">&#61; 3</p>
+<p id="corty3e-ch11-p72" block_type="eq"><em>df</em><sub>Treatment</sub> &#61; <em>k</em> &#8722; 1</p>
+<p id="corty3e-ch11-p73" block_type="eq">&#61; 3 &#8722; 1</p>
+<p id="corty3e-ch11-p74" block_type="eq">&#61; 2</p>
+<p id="corty3e_page_389" block_type="page_start">389</p>
+<p id="corty3e-ch11-p75" block_type="eq"><em>df</em><sub>Residual</sub> &#61; <em>df</em><sub>Subjects</sub> &#215; <em>df</em><sub>Treatment</sub></p>
+<p id="corty3e-ch11-p76" block_type="eq">&#61; 3 &#215; 2</p>
+<p id="corty3e-ch11-p77" block_type="eq">&#61; 6</p>
+<p id="corty3e-ch11-p78" block_type="eq"><em>df</em><sub>Total</sub> &#61; <em>N</em> &#8722; 1</p>
+<p id="corty3e-ch11-p79" block_type="eq">&#61; 12 &#8722; 1</p>
+<p id="corty3e-ch11-p80" block_type="eq">&#61; 11</p>
+<p id="corty3e-ch11-p81" block_type="txt">In this example, note that 3 &#43; 2 &#43; 6 &#61; 11. For one-way, repeated-measures ANOVA, <em>df</em><sub>Subjects</sub> &#43; <em>df</em><sub>Treatment</sub> &#43; <em>df</em><sub>Residual</sub> &#61; <em>df</em><sub>Total</sub>. This means that the total degrees of freedom in a repeated-measures ANOVA are divided into subcomponents for variability due to individual differences (<em>df</em><sub>Subjects</sub>), due to the explanatory variable (<em>df</em><sub>Treatment</sub>), and remaining variability (<em>df</em><sub>Residual</sub>).</p>
+<p id="corty3e-ch11-p82" block_type="txt">To find the critical value of <em>F,</em> the only degrees of freedom needed are <em>df</em><sub>Treatment</sub> and <em>df</em><sub>Residual</sub>, the numerator and the denominator, respectively, of the <em>F</em> ratio. For the level of distraction data, those degrees of freedom are 2 and 6. Using <link href="corty3e-appendix01.xml#corty3e-app1-fig-10">Appendix Table 4</link> with &#945; &#61; .05, Dr. King finds the intersection of the column for 2 degrees of freedom and the row with 6 degrees of freedom and arrives at <em>F<sub>cv</sub></em> &#61; 5.143. Hence, the decision rule for the ADHD/level of distraction data for a one-way, repeated-measures ANOVA is:</p>
+<list id="corty3e-ch11-list-5" type="unordered" block_type="bullet">
+<li><p id="corty3e-ch11-p83" block_type="bl-first">If <em>F</em> &#8805; <em>F<sub>cv</sub></em> of 5.143, reject <em>H</em><sub>0</sub>.</p></li>
+<li><p id="corty3e-ch11-p84" block_type="bl-last">If <em>F</em> &#60; <em>F<sub>cv</sub></em> of 5.143, fail to reject <em>H</em><sub>0</sub>.</p></li>
+</list>
+<p id="corty3e-ch11-p85" block_type="txt"><link href="#corty3e-ch11-fig-6"><strong>Figure 11.4</strong></link> uses <em>F<sub>cv</sub></em> to show the sampling distribution of <em>F</em> with the rare and common zones marked. If the value of <em>F</em> that Dr. King will calculate in the next step falls in the rare zone or on the line that separates the rare zone from the common zone, then (a) the null hypothesis is rejected, (b) the alternative hypothesis is accepted, (c) the results are called statistically significant, and (d) there is reason to believe that at least one difference exists among the population means. If <em>F</em> falls in the common zone, then (a) Dr. King will have failed to reject the null hypothesis, (b) the results will be called not statistically significant, and (c) he concludes there is not enough evidence to conclude any difference exists among any of these population means.</p>
+<figure id="corty3e-ch11-fig-6" block_type="figure" numbered="true" number="11.4" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="xlarge" border="true"/>
+<image asset-id="corty3e-ch11-img-6" alt="image" src="asset/ch11/corty3e_fig11_04.jpg"/>
+<caption><strong><phrase block_type="fig_num">Figure 11.4</phrase> Sampling Distribution of <em>F</em> for ADHD Distractibility Study</strong> This is the sampling distribution of <em>F</em> at the .05 level with 2 and 6 degrees of freedom. If the observed value of <em>F</em> falls in the rare zone, then the null hypothesis is rejected.</caption>
+</figure>
+<p id="corty3e_page_390" block_type="page_start">390</p>
+<p id="corty3e-ch11-p86" block_type="h4"><phrase block_type="h4-n-ri"><strong>Step 5</strong></phrase> <strong>Calculate the Test Statistic</strong></p>
+<p id="corty3e-ch11-p87" block_type="txt-ni">To calculate the <em>F</em> ratio, a researcher completes an ANOVA summary table. <link href="#corty3e-ch11-fig-7"><strong>Table 11.2</strong></link> is a guide to completing the cells in an ANOVA summary table for one-way, repeated-measures ANOVA. Though column labels in this table are identical to the ones for between-subjects, one-way ANOVA, the sources of variability (the rows) are different.</p>
+<figure id="corty3e-ch11-fig-7" block_type="table" numbered="true" number="11.2" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="large" border="true"/>
+<image asset-id="corty3e-ch11-img-7" alt="image" src="asset/ch11/corty3e_table11_02.jpg"/>
+</figure>
+<list id="corty3e-ch11-list-6" type="unordered" block_type="bullet">
+<li><p id="corty3e-ch11-p88" block_type="bl-mid"><em>First column: Source of variability.</em> In the summary table, the sources of variability are listed in the first column in this order: variability due to subjects, variability due to treatment, residual variability, and total variability. Residual variability is the portion of total variability that is not accounted for by variability due to subjects or treatment.</p></li>
+<li><p id="corty3e-ch11-p89" block_type="bl-mid"><em>Second column: Sum of squares.</em> Each source of variability is represented by a sum of squares in the second column. In order to focus on understanding repeated-measures ANOVA and not get slowed down by calculations, the necessary sums of squares&#8212;<em>SS</em><sub>Subjects</sub>, <em>SS</em><sub>Treatment</sub>, <em>SS</em><sub>Residual</sub>, and <em>SS</em><sub>Total</sub> &#8212; will be supplied in this chapter. (For those who wish to learn how to calculate sums of squares, or who have instructors who wish them to learn, formulas are given in an appendix at the end of the chapter.)</p></li>
+<li><p id="corty3e-ch11-p90" block_type="bl-mid"><em>Third column: Degrees of freedom.</em> The third column shows the degrees of freedom for each source of variability. The degrees of freedom are calculated through <link href="#corty3e-ch11-bx6-1">Equation 11.1</link>.</p></li>
+<li><p id="corty3e-ch11-p91" block_type="bl-mid"><em>Fourth column: Mean squares.</em> In the fourth column, mean squares for the treatment effect and the residual effect are calculated. These are abbreviated <em>MS</em><sub>Treatment</sub> and <em>MS</em><sub>Residual</sub>. They are calculated by dividing a sum of squares by its degrees of freedom.</p></li>
+<li><p id="corty3e-ch11-p92" block_type="bl-last"><em>Fifth column:</em> <em>F</em> ratio. In the fifth column, the <em>F</em> ratio for the effect of treatment is calculated by dividing the numerator term (<em>MS</em><sub>Treatment</sub>) by the denominator term (<em>MS</em><sub>Residual</sub>).</p>
+<p id="corty3e_page_391" block_type="page_start">391</p>
+<p id="corty3e-ch11-p93" block_type="txt">The sums of squares for the ADHD/distraction data follow:</p>
+<list id="corty3e-ch11-list-7" type="unordered" block_type="bullet">
+<li><p id="corty3e-ch11-p94" block_type="bl-first"><em>SS</em><sub>Subjects </sub>&#61; 308.67</p></li>
+<li><p id="corty3e-ch11-p95" block_type="bl-mid"><em>SS</em><sub>Treatment</sub> &#61; 105.17</p></li>
+<li><p id="corty3e-ch11-p96" block_type="bl-mid"><em>SS</em><sub>Residual</sub> &#61; 16.83</p></li>
+<li><p id="corty3e-ch11-p97" block_type="bl-last"><em>SS</em><sub>Total</sub> &#61; 430.67</p></li>
+</list>
+<p id="corty3e-ch11-p98" block_type="txt">Then Dr. King retrieves the degrees of freedom he calculated earlier and enters them in the summary table:</p>
+<list id="corty3e-ch11-list-8" type="unordered" block_type="bullet">
+<li><p id="corty3e-ch11-p99" block_type="bl-first"><em>df</em><sub>Subjects</sub> &#61; 3</p></li>
+<li><p id="corty3e-ch11-p100" block_type="bl-mid"><em>df</em><sub>Treatment </sub>&#61; 2</p></li>
+<li><p id="corty3e-ch11-p101" block_type="bl-mid"><em>df</em><sub>Residual</sub> &#61; 6</p></li>
+<li><p id="corty3e-ch11-p102" block_type="bl-last"><em>df</em><sub>Total</sub> &#61; 11</p></li>
+</list></li>
+</list>
+<p id="corty3e-ch11-p103" block_type="txt">The next step is to calculate the two mean squares, <em>MS</em><sub>Treatment</sub> and <em>MS</em><sub>Residual</sub>. To do so, Dr. King divides each sum of squares by its respective degrees of freedom:</p>
+<p id="corty3e-ch11-eqn-1" block_type="equation">
+<image asset-id="corty3e-ch11-img-8" alt="image" src="asset/ch11/corty3e_eqn11_391_01.jpg"/></p>
+<p id="corty3e-ch11-p104" block_type="txt">Finally, Dr. King divides the mean square for the numerator (<em>MS</em><sub>Treatment</sub>) by the mean square for the demoninator (<em>MS</em><sub>Residual</sub>) to find the <em>F</em> ratio:</p>
+<p id="corty3e-ch11-eqn-2" block_type="equation">
+<image asset-id="corty3e-ch11-img-9" alt="image" src="asset/ch11/corty3e_eqn11_391_02.jpg"/></p>
+<p id="corty3e-ch11-p105" block_type="txt">At this point, the calculation phase for one-way, repeated-measures ANOVA is over. The complete ANOVA summary table for the ADHD/distraction study is shown in <link href="#corty3e-ch11-fig-10"><strong>Table 11.3</strong></link>. The next section of the chapter, after more practice with calculation, focuses on interpreting the results.</p>
+<figure id="corty3e-ch11-fig-10" block_type="table" numbered="true" number="11.3" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="large" border="true"/>
+<image asset-id="corty3e-ch11-img-10" alt="image" src="asset/ch11/corty3e_table11_03.jpg"/>
+</figure>
+<p id="corty3e_page_392" block_type="page_start">392</p>
+<box title="Worked Example 11.1" numbered="false" id="corty3e-ch11-bx3-1" block_type="sr-exp-n">
+<p id="corty3e-ch11-p106" block_type="sr_exp_txt_ni">Imagine that Dr. Agosto, an orthopedic surgeon, decided to test the effectiveness of the standard surgical treatment for back pain. She found 30 people with chronic back pain and matched them into groups of three on the basis of age, sex, number of years of pain, and degree of physical impairment. She then randomly assigned members of each group to receive one of three different levels of treatment: (1) standard surgery and physical therapy, (2) sham surgery and physical therapy, or (3) physical therapy alone. (In sham surgery, the patient undergoes anesthesia and has an incision made in his or her back, but is sewn up without any real surgical intervention.) This was a double-blind study for the patients who received surgery&#8212;they did not know if they received standard surgery or sham surgery, and neither they did the medical staff who provided follow-up care. After receiving surgery or no surgery, all patients received physical therapy for six months. At this point, the outcome was measured on a quality-of-life scale. Higher scores mean that a person has a better quality of life and is more able to enjoy the regular activities of daily living.</p>
+<box title="A Common Question" numbered="false" id="corty3e-ch11-bx1-1" block_type="bx-1-h">
+<p id="corty3e-ch11-p107" block_type="bx1-que"><strong>Q</strong> Is sham surgery ever really used as a control group?</p>
+<p id="corty3e-ch11-p108" block_type="bx1-ans"><strong>A</strong> Yes. Sham surgery controls for the placebo effect of having a surgical procedure. As long as informed consent is used, there is nothing unethical about using it in a study.</p>
+</box>
+<p id="corty3e-ch11-p109" block_type="sr-ex-txt"><link href="#corty3e-ch11-fig-11"><strong>Figure 11.5</strong></link> shows the outcome of the experiment. Patients in Group 1, real surgery, had a better outcome than the sham surgery patients in Group 2, or the physical therapy patients in Group 3. But, the differences are slight: <em>M</em><sub>RealSurgery</sub> &#61; 51.00, <em>M</em><sub>ShamSurgery</sub> &#61; 48.00, and <em>M</em><sub>PhysicalTherapy</sub> &#61; 45.00. Dr. Agosto suspects that the differences between groups could be explained with sampling error and don&#8217;t represent an advantage of surgery. She&#8217;ll need a statistical test to find out.</p>
+<figure id="corty3e-ch11-fig-11" block_type="figure" numbered="true" number="11.5" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="medium" border="true"/>
+<image asset-id="corty3e-ch11-img-11" alt="image" src="asset/ch11/corty3e_fig11_05.jpg"/>
+<caption><strong><phrase block_type="fig_num">Figure 11.5</phrase> Results of Surgery, Sham Surgery, and Physical Therapy on the Quality of Life for People with Chronic Back Pain</strong> The surgery patients reported the highest mean for quality of life. However, the degree of improvement seems small and unlikely to be statistically significant. One-way, repeated-measures ANOVA can be used to determine this.</caption>
+</figure>
+<p id="corty3e_page_393" block_type="page_start">393</p>
+<p id="corty3e-ch11-p110" block_type="h4"><phrase block_type="h4-n-ri"><strong>Step 1</strong></phrase> <strong>Pick a Test</strong></p>
+<p id="corty3e-ch11-p111" block_type="sr_exp_txt_ni">Dr. Agosto is comparing the means of three groups (real surgery vs. sham surgery vs. physical therapy). This calls for an ANOVA. There is only one independent variable (type of treatment), so this is a one-way ANOVA. The cases are made up of matched participants&#8212;each one assigned to one type of treatment, so the groups are dependent. That means Dr. Agosto is doing a one-way, repeated-measures ANOVA.</p>
+<p id="corty3e-ch11-p112" block_type="h4"><phrase block_type="h4-n-ri"><strong>Step 2</strong></phrase> <strong>Check the Assumptions</strong></p>
+<list id="corty3e-ch11-list-9" type="unordered" block_type="bullet">
+<li><p id="corty3e-ch11-p113" block_type="sr-exp-bl-first"><em>Random samples</em>. It was not stated that the 30 participants were a random sample from the population of people with back pain, so it is unlikely they are. Almost certainly the sample is a convenience sample and the random samples assumption has been violated. The random samples assumption is robust, though, so Dr. Agosto can proceed with the one-way, repeated-measures ANOVA. She will just need to be cautious about the population to which she generalizes the results.</p></li>
+<li><p id="corty3e-ch11-p114" block_type="sr-exp-bl-last"><em>Independence of observations</em>. This assumption is about independence within a group, not between groups. Within groups, there is no connection between participants and how one participant performs does not influence the performance of others. Each participant participates only once. This assumption is not violated.</p></li>
+<li><p id="corty3e-ch11-p115" block_type="sr-exp-bl-last"><em>Normality</em>. Dr. Agosto, from her review of the literature, knows that quality-of-life scores are normally distributed when quality of life is measured in the population of people receiving treatment for back pain.</p></li>
+</list>
+<p id="corty3e-ch11-p116" block_type="sr_exp_txt_ni">Only the random samples assumption is violated, which is robust, so Dr. Agosto can proceed with the planned one-way, repeated-measures ANOVA.</p>
+<p id="corty3e-ch11-p117" block_type="h4"><phrase block_type="h4-n-ri"><strong>Step 3</strong> </phrase> <strong>List the Hypotheses</strong></p>
+<p id="corty3e-ch11-p118" block_type="sr-exp-eq"><em>H</em><sub>0</sub>: &#181;<sub>1</sub> &#61; &#181;<sub>2</sub> &#61; &#181;<sub>3</sub>.</p>
+<p id="corty3e-ch11-p119" block_type="sr-exp-eq"><em>H</em><sub>1</sub>: At least one of the three population means is different from at least one of the others.</p>
+<p id="corty3e-ch11-p120" block_type="h4"><phrase block_type="h4-n-ri"><strong>Step 4</strong></phrase> <strong>Set the Decision Rule</strong></p>
+<p id="corty3e-ch11-p121" block_type="sr-ex-txt">To determine the decision rule, Dr. Agosto needs to find the degrees of freedom for the numerator in the <em>F</em> ratio (the treatment effect) and for the denominator (the residual effect). Later on, to complete the ANOVA summary table, she&#8217;ll need to know the other 2 degrees of freedom&#8212;subjects and total&#8212;so she might as well use <link href="#corty3e-ch11-bx6-1">Equation 11.1</link> to calculate all the degrees of freedom now. To do so, she&#8217;ll need to know the number of cases per group (<em>n</em> &#61; 10), the number of groups (<em>k</em> &#61; 3), and the total number of observations (<em>N</em> &#61; 30):</p>
+<p id="corty3e-ch11-p122" block_type="sr-exp-eq"><em>df</em><sub>Subjects</sub> &#61; <em>n</em> &#8722; 1</p>
+<p id="corty3e-ch11-p123" block_type="sr-exp-eq">&#61; 10 &#8722; 1</p>
+<p id="corty3e-ch11-p124" block_type="sr-exp-eq">&#61; 9</p>
+<p id="corty3e-ch11-p125" block_type="sr-exp-eq"><em>df</em><sub>Treatment</sub>&#61; <em>k</em> &#8722; 1</p>
+<p id="corty3e-ch11-p126" block_type="sr-exp-eq">&#61; 3 &#8722; 1</p>
+<p id="corty3e-ch11-p127" block_type="sr-exp-eq">&#61; 2</p>
+<p id="corty3e_page_394" block_type="page_start">394</p>
+<p id="corty3e-ch11-p128" block_type="sr-exp-eq"><em>df</em><sub>Residual</sub> &#61; <em>df</em><sub>Subjects</sub> &#215; <em>df</em><sub>Treatment</sub></p>
+<p id="corty3e-ch11-p129" block_type="sr-exp-eq">&#61; 9 &#215; 2</p>
+<p id="corty3e-ch11-p130" block_type="sr-exp-eq">&#61; 18</p>
+<p id="corty3e-ch11-p131" block_type="sr-exp-eq"><em>df</em><sub>Total</sub> &#61; <em>N</em> &#8722; 1</p>
+<p id="corty3e-ch11-p132" block_type="sr-exp-eq">&#61; 30 &#8722; 1</p>
+<p id="corty3e-ch11-p133" block_type="sr-exp-eq">&#61; 29</p>
+<p id="corty3e-ch11-p134" block_type="sr_exp_txt">Knowing that <em>df</em><sub>Treatment</sub> (the numerator degrees of freedom) &#61; 2 and <em>df</em><sub>Residual</sub> (the denominator degrees of freedom) &#61; 18, Dr. Agosto can look in <link href="corty3e-appendix01.xml#corty3e-app1-fig-10">Appendix Table 4</link> to find the critical value of <em>F</em>. But first, she has to decide how willing she is to make a Type I error.</p>
+<p id="corty3e-ch11-p135" block_type="sr_exp_txt">A Type I error occurs when the null hypothesis is mistakenly rejected. In this study, that would mean concluding there is a treatment effect when such is not the case. Dr. Agosto wants to avoid this error, so she sets alpha at .01, not .05. This means that there is a 1&#37; chance of this error occurring, not a 5&#37; chance.</p>
+<p id="corty3e-ch11-p136" block_type="sr_exp_txt">Using <link href="corty3e-appendix01.xml#corty3e-app1-fig-10">Appendix Table 4</link>, Dr. Agosto finds <em>F<sub>cv</sub></em> &#61; 6.013. <link href="#corty3e-ch11-fig-12"><strong>Figure 11.6</strong></link> shows the sampling distribution of <em>F</em> with the rare zone marked. The decision rule is:</p>
+<figure id="corty3e-ch11-fig-12" block_type="figure" numbered="true" number="11.6" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="large" border="true"/>
+<image asset-id="corty3e-ch11-img-12" alt="image" src="asset/ch11/corty3e_fig11_06.jpg"/>
+<caption><strong><phrase block_type="fig_num">Figure 11.6</phrase> Sampling Distribution of <em>F</em> for Effect of Surgery and Physical Therapy on Back Pain</strong> <em>F<sub>cv</sub></em> of 6.013 is the boundary between the common zone and the rare zone for this sampling distribution of <em>F</em> with 2 and 18 degrees of freedom and &#945; &#61; .01. The null hypothesis is not rejected if the results fall in the common zone; it is rejected if results fall on the line or in the rare zone.</caption>
+</figure>
+<list id="corty3e-ch11-list-10" type="unordered" block_type="bullet">
+<li><p id="corty3e-ch11-p137" block_type="sr-exp-bl-first">If <em>F</em> &#8805; 6.013, reject <em>H</em><sub>0</sub>.</p></li>
+<li><p id="corty3e-ch11-p138" block_type="sr-exp-bl-first">If <em>F</em> &#60; 6.013, fail to reject <em>H</em><sub>0</sub>.</p></li>
+</list>
+<p id="corty3e-ch11-p139" block_type="h4"><phrase block_type="h4-n-ri"><strong>Step 5</strong></phrase> <strong>Calculate the Test Statistic</strong></p>
+<p id="corty3e-ch11-p140" block_type="sr_exp_txt_ni">To calculate the test statistic, Dr. Agosto calculated the sums of squares using the formulas provided in the appendix at the end of this chapter. She calculated:</p>
+<list id="corty3e-ch11-list-11" type="unordered" block_type="bullet">
+<li><p id="corty3e-ch11-p141" block_type="sr-exp-bl-first"><em>SS</em><sub>Subjects</sub> &#61; 2,193.33</p></li>
+<li><p id="corty3e-ch11-p142" block_type="sr-exp-bl-first"><em>SS</em><sub>Treatment</sub> &#61; 180.00</p></li>
+<li><p id="corty3e-ch11-p143" block_type="sr-exp-bl-first"><em>SS</em><sub>Residual </sub>&#61; 50.67</p></li>
+<li><p id="corty3e-ch11-p144" block_type="sr-exp-bl-first"><em>SS</em><sub>Total</sub> &#61; 2,424.00</p></li>
+</list>
+<p id="corty3e-ch11-p145" block_type="sr_exp_txt">Next, she uses the degrees of freedom for treatment, 2, and for the residual, 18, to calculate <em>MS</em><sub>Treatment</sub> and <em>MS</em><sub>Residual</sub>.</p>
+<p id="corty3e_page_395" block_type="page_start">395</p>
+<p id="corty3e-ch11-eqn-3" block_type="equation">
+<image asset-id="corty3e-ch11-img-13" alt="image" src="asset/ch11/corty3e_eqn11_395_01.jpg"/></p>
+<p id="corty3e-ch11-p146" block_type="sr_exp_txt">Finally, to find the <em>F</em> ratio, the surgeon divides the numerator term (<em>MS</em><sub>Treatment</sub>) by the denominator term (<em>MS</em><sub>Residual</sub>):</p>
+<p id="corty3e-ch11-eqn-4" block_type="equation">
+<image asset-id="corty3e-ch11-img-14" alt="image" src="asset/ch11/corty3e_eqn11_395_02.jpg"/></p>
+<p id="corty3e-ch11-p147" block_type="sr_exp_txt">The complete ANOVA summary table for the back surgery/quality-of-life one-way, repeated-measures ANOVA can be seen in <link href="#corty3e-ch11-fig-15"><strong>Table 11.4</strong></link>. In the next section, we&#8217;ll see how Dr. Agosto might interpret her results.</p>
+<figure id="corty3e-ch11-fig-15" block_type="table" numbered="true" number="11.4" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="large" border="true"/>
+<image asset-id="corty3e-ch11-img-15" alt="image" src="asset/ch11/corty3e_table11_04.jpg"/>
+</figure>
+</box>
+<box title="Practice Problems 11.2" numbered="false" id="corty3e-ch11-bx2-2" block_type="sr-h">
+<p id="corty3e-ch11-p148" block_type="sr-h1"><strong>Apply Your Knowledge</strong></p>
+<p id="corty3e-ch11-p149" block_type="sr-que-ll"><phrase block_type="question_num">11.04</phrase> What test should be used to analyze these two studies? Select from the single-sample <em>z</em> test; single-sample <em>t</em> test; independent-samples <em>t</em> test; paired-samples <em>t</em> test; between-subjects, one-way ANOVA; and one-way, repeated-measures ANOVA.</p>
+<list id="corty3e-ch11-list-12" type="ordered" block_type="loweralpha">
+<li><p id="corty3e-ch11-p150" block_type="sr-que-ll">High school seniors who plan to (i) not go to college, (ii) go to a community college, or (iii) go to a four-year college are matched in terms of intelligence. Ten years later, the three matched groups are compared in terms of mean annual income.</p></li>
+<li><p id="corty3e-ch11-p151" block_type="sr-que-ll">A random sample of people with a family history of Alzheimer&#8217;s disease is compared to a random sample of people from the general population in terms of their mean score on an interval-level measure of fear of dementia.</p></li>
+</list>
+<p id="corty3e-ch11-p152" block_type="sr-que-nl"><phrase block_type="question_num">11.05</phrase> List the assumptions for a one-way, repeated-measures ANOVA.</p>
+<p id="corty3e-ch11-p153" block_type="sr-que-nl"><phrase block_type="question_num">11.06</phrase> State the hypotheses for a one-way, repeated-measures ANOVA.</p>
+<p id="corty3e-ch11-p154" block_type="sr-que-nl"><phrase block_type="question_num">11.07</phrase> There&#8217;s a sample of 12 cases that is measured on an interval-level variable at four points in time. The data will be analyzed with a one-way, repeated-measures ANOVA.</p>
+<list id="corty3e-ch11-list-13" type="ordered" block_type="loweralpha">
+<li><p id="corty3e-ch11-p155" block_type="sr-que-ll">What are the numerator degrees of freedom for the <em>F</em> ratio?</p></li>
+<li><p id="corty3e-ch11-p156" block_type="sr-que-ll">What are the denominator degrees of freedom for the <em>F</em> ratio?</p></li>
+</list>
+<p id="corty3e-ch11-p157" block_type="sr-que-nl"><phrase block_type="question_num">11.08</phrase> If <em>df</em><sub>Treatment</sub> &#61; 3, <em>df</em><sub>Residual</sub> &#61; 21, and &#945; &#61; .05, what is the decision rule?</p>
+<p id="corty3e-ch11-p158" block_type="sr-que-nl"><phrase block_type="question_num">11.09</phrase> Given <em>SS</em><sub>Subjects</sub> &#61; 123.00, <em>SS</em><sub>Treatment</sub> &#61; 216.00, <em>SS</em><sub>Residual</sub> &#61; 410.40, <em>SS</em><sub>Total</sub> &#61; 749.40, <em>df</em><sub>Subjects</sub> =19, <em>df</em><sub>Treatment</sub> &#61; 3, <em>df</em><sub>Residual</sub> &#61; 57, and <em>df</em><sub>Total</sub> &#61; 79, complete a one-way, repeated-measures ANOVA summary table.</p>
+</box>
+</section>
+<section id="corty3e-ch11-sec1-3" block_type="h1" chapter="11" title="" numbered="false" level="1" print_page="396">
+<section-metadata><section-title><phrase block_type="sec_num">11.3</phrase> <phrase block_type="sec_title">Interpreting One-Way, Repeated-Measures ANOVA</phrase></section-title></section-metadata>
+<p id="corty3e_page_396" block_type="page_start">396</p>
+<p id="corty3e-ch11-p159" block_type="txt-ni">Statistical tests are used to help answer questions and make decisions. It is in the sixth step of hypothesis testing, the interpretation of results, that clear language is used to tell what was found and what it means. In the ADHD/level of distraction study, for example, repeated-measures ANOVA is being used to determine if treatment decreases the level of distraction and if the improvement is maintained when treatment stops.</p>
+<p id="corty3e-ch11-p160" block_type="txt">For a one-way, repeated-measures ANOVA, just as with a between-subjects, one-way ANOVA, there are three tasks involved in interpretation:</p>
+<list id="corty3e-ch11-list-14" type="ordered" block_type="numbered">
+<li><p id="corty3e-ch11-p161" block_type="nl-first">Determine whether the null hypothesis is rejected.</p></li>
+<li><p id="corty3e-ch11-p162" block_type="nl-mid">Determine how big the <em>overall</em> effect is. That is, how much of the variability in the dependent variable is explained by the independent variable.</p></li>
+<li><p id="corty3e-ch11-p163" block_type="nl-last">Determine where the effect is found. All a statistically significant ANOVA reveals is that at least one sample mean differs statistically from at least one other sample mean. Post-hoc tests are needed to find out which pair(s) of means differ and what the direction of the difference is.</p></li>
+</list>
+<p id="corty3e-ch11-p164" block_type="h4"><phrase block_type="h4-n-ri"><strong>Step 6</strong></phrase> <strong>Interpret the Results</strong></p>
+</section>
+<section id="corty3e-ch11-sec2-1" block_type="h2" chapter="11" title="" numbered="false" level="2" print_page="396">
+<section-metadata><section-title>Was the Null Hypothesis Rejected?</section-title></section-metadata>
+<p id="corty3e-ch11-p165" block_type="txt-ni">As with previous tests, a researcher determines if the null hypothesis was rejected by checking the decision rule generated in Step 4 against the value of the test statistic calculated in Step 5. For the ADHD/level of distraction data, <em>F<sub>cv</sub></em> &#61; 5.143 and <em>F</em> &#61; 18.72. (The <em>F</em> value can be found in the ANOVA summary table, <link href="#corty3e-ch11-fig-10">Table 11.3</link>. There will be several other values in the ANOVA summary table needed for interpretation, so it is reprinted here as <link href="#corty3e-ch11-fig-16"><strong>Table 11.5</strong></link>.)</p>
+<figure id="corty3e-ch11-fig-16" block_type="table" numbered="true" number="11.5" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="large" border="true"/>
+<image asset-id="corty3e-ch11-img-16" alt="image" src="asset/ch11/corty3e_table11_05.jpg"/>
+</figure>
+<p id="corty3e-ch11-p166" block_type="txt">In Step 4, the decision rule Dr. King generated was:</p>
+<list id="corty3e-ch11-list-15" type="unordered" block_type="bullet">
+<li><p id="corty3e-ch11-p167" block_type="bl-first">If <em>F</em> &#8805; 5.143, reject <em>H</em><sub>0</sub>.</p></li>
+<li><p id="corty3e-ch11-p168" block_type="bl-last">If <em>F</em> &#60; 5.143, fail to reject <em>H</em><sub>0</sub>.</p></li>
+</list>
+<p id="corty3e_page_397" block_type="page_start">397</p>
+<p id="corty3e-ch11-p169" block_type="txt">Because 18.72 &#8805; 5.143, the first statement is true and Dr. King rejects the null hypothesis. <link href="#corty3e-ch11-fig-17"><strong>Figure 11.7</strong></link> shows that the <em>F</em> ratio fell in the rare zone. This means that the results are called statistically significant and the alternative hypothesis is accepted. The psychologist can conclude that at least one of the population means&#8212;either the pre-treatment level of distraction, or the post-treatment level of distraction, or the six-month follow-up level of distraction&#8212;probably differs from at least one other population mean. It isn&#8217;t possible yet to talk about the direction of the difference because which pair(s) differs is still unknown. Discussing the direction of the difference needs to wait until post-hoc tests have been completed.</p>
+<figure id="corty3e-ch11-fig-17" block_type="figure" numbered="true" number="11.7" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="xlarge" border="true"/>
+<image asset-id="corty3e-ch11-img-17" alt="image" src="asset/ch11/corty3e_fig11_07.jpg"/>
+<caption><strong><phrase block_type="fig_num">Figure 11.7</phrase> Results of ANOVA for Level of Distraction/ADHD Study</strong> This sampling distribution shows that the observed <em>F</em> value of 18.72 falls in the rare zone. The null hypothesis is rejected and the results are called statistically significant.</caption>
+</figure>
+<p id="corty3e-ch11-p170" block_type="txt">To report the analysis of variance results in APA format, Dr. King would write <em>F</em> (2, 6) &#61; 18.72, <em>p</em> &#60; .05. This gives five pieces of information:</p>
+<list id="corty3e-ch11-list-16" type="ordered" block_type="numbered">
+<li><p id="corty3e-ch11-p171" block_type="nl-first">What test was done (an <em>F</em> test).</p></li>
+<li><p id="corty3e-ch11-p172" block_type="nl-mid">The degrees of freedom for the numerator (<em>df</em><sub>Treatment</sub> &#61; 2) and the denominator (<em>df</em><sub>Residual</sub> &#61; 6) of the <em>F</em> ratio. From these, it is possible to figure out <em>n,</em> how many cases there are in each group by using this equation: <image asset-id="corty3e-ch11-img-18" alt="image" src="asset/ch11/corty3e_ineqn11_397_01.jpg"/>. For the ADHD study, this would be <image asset-id="corty3e-ch11-img-19" alt="image" src="asset/ch11/corty3e_ineqn11_397_02.jpg"/>.</p></li>
+<li><p id="corty3e-ch11-p173" block_type="nl-mid">The observed value of the test statistic (18.72).</p></li>
+<li><p id="corty3e-ch11-p174" block_type="nl-mid">What alpha level was used (.05). (This indicates how likely a Type I error is.)</p></li>
+<li><p id="corty3e-ch11-p175" block_type="nl-last">Whether the null hypothesis was rejected (<em>p</em> &#60; .05) or not (<em>p</em> > .05).</p></li>
+</list>
+</section>
+<section id="corty3e-ch11-sec2-2" block_type="h2" chapter="11" title="" numbered="false" level="2" print_page="397">
+<section-metadata><section-title>How Big Is the Effect?</section-title></section-metadata>
+<p id="corty3e-ch11-p176" block_type="txt-ni">The next step in interpretation involves how big the effect is. This should be calculated whether or not the null hypothesis is rejected.</p>
+<list id="corty3e-ch11-list-17" type="unordered" block_type="bullet">
+<li><p id="corty3e-ch11-p177" block_type="bl-first">If the null hypothesis is rejected, the researcher needs to calculate the size of the effect to quantify how much impact the independent variable has on the dependent variable. In the ADHD/level of distraction example, the question is to what degree time/treatment affects the level of distraction.</p></li>
+<li><p id="corty3e-ch11-p178" block_type="bl-last">If the null hypothesis is not rejected, it is still important to calculate the effect size. If the effect of the independent variable on the dependent variable is more than small, that alerts the researcher to the possibility of a Type II error. He or she will likely end up suggesting a replication with a larger sample size.</p></li>
+</list>
+<p id="corty3e_page_398" block_type="page_start">398</p>
+<p id="corty3e-ch11-p179" block_type="txt-ni">Whereas <em>r</em><sup>2</sup> was used to quantify the size of the treatment effect for a between- subjects, one-way ANOVA, we will use eta squared(&#951;<sup>2</sup>) for a one-way, repeated- measures ANOVA. The formula is given in <link href="#corty3e-ch11-bx6-2">Equation 11.2</link>.</p>
+<box title="" numbered="false" id="corty3e-ch11-bx6-2" block_type="eq-t">
+<box-metadata><box-title><phrase block_type="sec_num">Equation 11.2</phrase> <phrase block_type="sec_title">Formula for Calculating Eta Squared for the Effect of Treatment for a One-Way, Repeated-Measures ANOVA</phrase></box-title></box-metadata>
+<p id="corty3e-ch11-eqn-5" block_type="equation">
+<image asset-id="corty3e-ch11-img-20" alt="image" src="asset/ch11/corty3e_eqn11_398_01.jpg"/></p>
+<p id="corty3e-ch11-p180" block_type="eq-txt-ni">where &#951;<sup>2</sup> &#61; eta squared for the treatment effect, the percentage of variability in the dependent variable that is explained by the explanatory (treatment) variable</p>
+<p id="corty3e-ch11-p181" block_type="eq-unl"><em>SS</em><sub>Treatment</sub> &#61; sum of squares treatment from the ANOVA summary table</p>
+<p id="corty3e-ch11-p182" block_type="eq-unl"><em>SS</em><sub>Total</sub> &#61; sum of squares total from the ANOVA summary table</p>
+</box>
+<p id="corty3e-ch11-p183" block_type="txt">For the ADHD data, where it is known that <em>SS</em><sub>Treatment</sub> &#61; 105.17 and <em>SS</em><sub>Total</sub> &#61; 430.67 (see <link href="#corty3e-ch11-fig-16">Table 11.5</link>), Dr. King calculated &#951;<sup>2</sup> this way:</p>
+<figure id="corty3e-ch11-fig-19" block_type="un_figure" numbered="false" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="large" border="true"/>
+<image asset-id="corty3e-ch11-img-21" alt="image" src="asset/ch11/corty3e_eqn11_398_02.jpg"/>
+</figure>
+<p id="corty3e-ch11-p184" block_type="txt">Eta squared for the treatment effect in the level of distraction data is 24.42&#37;. <termref term="Eta squared">Eta squared</termref> tells the percentage of the variability in the dependent variable that is accounted for by the explanatory variable. It can range from 0&#37; (meaning the explanatory variable has no impact on the dependent variable) to 100&#37; (meaning the explanatory variable wholly determines the dependent variable).</p>
+<p id="corty3e-ch11-p185" block_type="txt">For the ADHD/level of distraction data, eta squared shows how well the explanatory variable of treatment status&#8212;pre-treatment, post-treatment, or follow-up&#8212;predicts outcome as measured by the dependent variable of level of distractibility. If &#951;<sup>2</sup> &#61; 0&#37;, then knowing the treatment status doesn&#8217;t provide any information about a child&#8217;s level of distraction. If &#951;<sup>2</sup> &#61; 100&#37;, then knowing the treatment status precisely predicts a child&#8217;s level of distraction.</p>
+<p id="corty3e-ch11-p186" block_type="txt">Explaining 100&#37; of the variability never happens and it is all too common to explain only a small percentage of the variability. As a guide to interpreting eta squared, use Cohen&#8217;s guidelines for <em>r</em><sup>2</sup>:</p>
+<list id="corty3e-ch11-list-18" type="unordered" block_type="bullet">
+<li><p id="corty3e-ch11-p187" block_type="bl-first">&#951;<sup>2</sup> &#8776; 1&#37; is a small effect.</p></li>
+<li><p id="corty3e-ch11-p188" block_type="bl-mid">&#951;<sup>2</sup> &#8776; 9&#37; is a medium effect.</p></li>
+<li><p id="corty3e-ch11-p189" block_type="bl-last">&#951;<sup>2</sup> &#8776; 25&#37; is a large effect.</p></li>
+</list>
+<p id="corty3e-ch11-p190" block_type="txt-ni"><link href="#corty3e-ch11-fig-20"><strong>Figure 11.8</strong></link> shows graphically what small, medium, and large effect sizes look like and how much variability they leave unexplained.</p>
+<figure id="corty3e-ch11-fig-20" block_type="figure" numbered="true" number="11.8" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="large" border="true"/>
+<image asset-id="corty3e-ch11-img-22" alt="image" src="asset/ch11/corty3e_fig11_08.jpg"/>
+<caption><strong><phrase block_type="fig_num">Figure 11.8</phrase> Graphic Representations of Cohen&#8217;s Small, Medium, and Large Effect Sizes</strong> Cohen (1988) considers a small effect one that explains about 1&#37; of the variability in a dependent variable. A medium effect explains about 9&#37; and a large effect about 25&#37;. Each figure represents all 100&#37; of the variability that is available to be explained in a dependent variable. The shaded portions represent the percentage of variability that is explained by the different effect sizes and the unshaded portions are left unexplained.</caption>
+</figure>
+<p id="corty3e-ch11-p191" block_type="txt">As &#951;<sup>2</sup> &#61; 24.42&#37; in the ADHD study, Dr. King can conclude that treatment status has a large effect on the level of distraction. It is now time to find out specifically which group&#8212;pre-treatment, post-treatment, or follow-up&#8212;has the effect.</p>
+</section>
+<section id="corty3e-ch11-sec2-3" block_type="h2" chapter="11" title="" numbered="false" level="2" print_page="399">
+<section-metadata><section-title>Where Are the Effects and What Is Their Direction?</section-title></section-metadata>
+<p id="corty3e_page_399" block_type="page_start">399</p>
+<p id="corty3e-ch11-p192" block_type="txt-ni">Once again, the Tukey <em>HSD</em> will be used as the post-hoc test. <em>HSD</em> stands for &#8220;honestly significant difference&#8221; and any two sample means that differ by at least the <em>HSD</em> value represent two populations that are honestly likely to have different means. The formula for the <em>HSD</em> value is given in <link href="#corty3e-ch11-bx6-3">Equation 11.3</link>. Please remember, post-hoc tests are only performed when the results of the ANOVA are statistically significant!</p>
+<box title="" numbered="false" id="corty3e-ch11-bx6-3" block_type="eq-t">
+<box-metadata><box-title><phrase block_type="sec_num">Equation 11.3</phrase> <phrase block_type="sec_title">Formula for Calculating Tukey <em>HSD</em> Values for Post-hoc Tests for One-Way, Repeated-Measures ANOVA</phrase></box-title></box-metadata>
+<p id="corty3e-ch11-eqn-6" block_type="equation">
+<image asset-id="corty3e-ch11-img-23" alt="image" src="asset/ch11/corty3e_eqn11_399_01.jpg"/></p>
+<p id="corty3e-ch11-p193" block_type="eq-txt-ni">where <em>HSD</em> &#61; <em>HSD</em> value being calculated</p>
+<p id="corty3e-ch11-p194" block_type="eq-unl"><em>q</em> &#61; <em>q</em> value from <link href="corty3e-appendix01.xml#corty3e-app1-fig-18">Appendix Table 5</link>, where <em>k</em> &#61; the number of groups and <em>df</em> &#61; <em>df</em><sub>Residual</sub></p>
+<p id="corty3e-ch11-p195" block_type="eq-unl"><em>MS</em><sub>Residual</sub> &#61; mean square residual, from the ANOVA summary table</p>
+<p id="corty3e-ch11-p196" block_type="eq-unl"><em>n</em> &#61; number of cases per group</p>
+</box>
+<p id="corty3e-ch11-p197" block_type="txt">Dr. King needs three values in order to apply <link href="#corty3e-ch11-bx6-3">Equation 11.3</link>: <em>q,</em> <em>MS</em><sub>Residual</sub>, and <em>n.</em></p>
+<list id="corty3e-ch11-list-19" type="unordered" block_type="bullet">
+<li><p id="corty3e-ch11-p198" block_type="bl-first">To find the <em>q</em> value, Dr. King uses <link href="corty3e-appendix01.xml#corty3e-app1-fig-18">Appendix Table 5</link>. <em>k</em> &#61; 3 as there are three groups in the ADHD study, so he looks in that column. The row is based on the residual degrees of freedom, which are 6 for the ADHD data. At the intersection of the column for <em>k</em> &#61; 3 and the row for <em>df</em> &#61; 6, he finds the <em>q</em> value, <em>q</em> &#61; 4.34.</p></li>
+<li><p id="corty3e-ch11-p199" block_type="bl-mid">In the ANOVA summary table (<link href="#corty3e-ch11-fig-10">Table 11.3</link> and <link href="#corty3e-ch11-fig-16">Table 11.5</link>), he finds <em>MS</em><sub>Residual</sub> &#61; 2.81.</p></li>
+<li><p id="corty3e-ch11-p200" block_type="bl-last">There are four cases in each group, so <em>n</em> &#61; 4.</p></li>
+</list>
+<p id="corty3e_page_400" block_type="page_start">400</p>
+<p id="corty3e-ch11-p201" block_type="txt-ni">Given those three values, here are Dr. King&#8217;s calculations to find the <em>HSD</em> value using <link href="#corty3e-ch11-bx6-3">Equation 11.3</link>:</p>
+<p id="corty3e-ch11-eqn-7" block_type="equation">
+<image asset-id="corty3e-ch11-img-24" alt="image" src="asset/ch11/corty3e_eqn11_400_01.jpg"/></p>
+<p id="corty3e-ch11-p202" block_type="txt">The Tukey <em>HSD</em> value is 3.64. Any pair of sample means for the ADHD/level of distraction study that differs by this much or more has a statistically significant difference. It doesn&#8217;t matter which mean is subtracted from which in order to compare the difference to the <em>HSD</em> value, so Dr. King has arranged the comparisons to give positive numbers. The post-hoc test results are summarized in <link href="#corty3e-ch11-fig-23"><strong>Table 11.6</strong></link> and explained in detail below.</p>
+<figure id="corty3e-ch11-fig-23" block_type="table" numbered="true" number="11.6" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="large" border="true"/>
+<image asset-id="corty3e-ch11-img-25" alt="image" src="asset/ch11/corty3e_table11_06.jpg"/>
+</figure>
+<list id="corty3e-ch11-list-20" type="unordered" block_type="bullet">
+<li><p id="corty3e-ch11-p203" block_type="bl-first">Pre-treatment mean level of distraction vs. post-treatment mean level of distraction:</p>
+<list id="corty3e-ch11-list-21" type="unordered" block_type="bluebullet">
+<li><p id="corty3e-ch11-p204" block_type="bl_lvl2">22.25 &#8722; 15.00 &#61; 7.25.</p></li>
+<li><p id="corty3e-ch11-p205" block_type="bl_lvl2">7.25 &#8805; 3.64, so Dr. King concludes that there is a statistically significant difference between the level of distraction from pre-treatment to post-treatment.</p></li>
+<li><p id="corty3e-ch11-p206" block_type="bl_lvl2">The sample means can be used to comment on the direction of the difference: the <em>reduction</em> in level of distraction from pre-treatment to post-treatment is a statistically significant one. Phrased simply: treatment works.</p></li>
+</list></li>
+<li><p id="corty3e-ch11-p207" block_type="bl-mid">Pre-treatment mean level of distraction vs. six-month follow-up mean level of distraction:</p>
+<list id="corty3e-ch11-list-22" type="unordered" block_type="bluebullet">
+<li><p id="corty3e-ch11-p208" block_type="bl_lvl2">22.25 &#8722; 18.75 &#61; 3.50.</p></li>
+<li><p id="corty3e-ch11-p209" block_type="bl_lvl2">3.50 &#60; 3.64, so this difference is not statistically significant. For this population of children with ADHD, there&#8217;s not enough evidence to conclude that any difference exists in the level of distraction between the start of treatment and six months after treatment. Phrased simply: there&#8217;s not enough evidence to show that treatment has a long-term impact.</p></li>
+<li><p id="corty3e-ch11-p210" block_type="bl_lvl2">However, be aware of two things: (1) the difference was close to being statistically significant, and (2) the sample size was small. These values alert Dr. King to the risk of making a Type II error, so he&#8217;s going to end up recommending replication with a larger sample size.</p></li>
+</list></li>
+<li><p id="corty3e-ch11-p211" block_type="bl-last">Post-treatment mean level of distraction vs. six-month follow-up mean level of distraction:</p>
+<list id="corty3e-ch11-list-23" type="unordered" block_type="bluebullet">
+<li><p id="corty3e-ch11-p212" block_type="bl_lvl2">18.75 &#8722; 15.00 &#61; 3.75.</p></li>
+<li><p id="corty3e-ch11-p213" block_type="bl_lvl2">3.75 &#8805; 3.64, so this difference is statistically significant. For this population of children with ADHD, one can conclude that the level of distraction is statistically significantly higher six months after treatment than it is at the end of treatment. Phrased simply: some relapse seems to occur when treatment is over.</p></li>
+</list></li>
+</list>
+</section>
+<section id="corty3e-ch11-sec2-4" block_type="h2" chapter="11" title="" numbered="false" level="2" print_page="401">
+<section-metadata><section-title>Putting It All Together</section-title></section-metadata>
+<p id="corty3e_page_401" block_type="page_start">401</p>
+<p id="corty3e-ch11-p214" block_type="txt-ni">Here is Dr. King&#8217;s four-point interpretation in which he (1) states what was done, (2) presents the main findings, (3) explains the results, and (4) makes suggestions for future research:</p>
+<p id="corty3e-ch11-p215" block_type="sr_exp_txt_v1_ni">This study was conducted to evaluate the long-term effectiveness of individual behavior therapy in treating children with ADHD. Four children with ADHD had their levels of distraction assessed before treatment started (<em>M</em> &#61; 22.25), at the end of treatment (<em>M</em> &#61; 15.00), and again six months later (<em>M</em> &#61; 18.75). Using a one-way, repeated-measures ANOVA, there was a large and statistically significant effect on distractibility as a function of when the outcome was assessed [<em>F</em>(2, 6) &#61; 18.72, <em>p</em> &#60; .01]. Post-hoc tests showed that the mean level of distraction significantly improved from pre-treatment to the end of treatment. Unfortunately, a statistically significant amount of relapse occurred over the next six months, with the mean distractibility level getting worse from the end of treatment to the six-month follow-up. The change in the mean level of distraction from pre-treatment to six-month follow-up was not statistically significant, meaning there was insufficient evidence to show that ADHD symptoms were any better six months after treatment than they were before treatment started. Individual behavior therapy appears effective in treating ADHD, but the results don&#8217;t remain fully in effect for six months when treatment is over. However, the present study only had four participants and it is possible that the small sample size prevented some effects from being found. To get a better sense of the long-term impact of individual behavior therapy on distractibility, the study should be replicated with a larger sample size.</p>
+<box title="Worked Example 11.2" numbered="false" id="corty3e-ch11-bx3-2" block_type="sr-exp-n">
+<p id="corty3e-ch11-p216" block_type="sr-ex-txt-ni">For practice interpreting a one-way, repeated-measures ANOVA, let&#8217;s use the results from the back pain surgery study. In that study, Dr. Agosto, an orthopedic surgeon, took 30 people with chronic back pain and divided them into groups of three that were matched on age, sex, years of pain, and degree of impairment. One of the three people in each group was randomly assigned to receive real surgery, one sham surgery, and one no surgery. Each participant then received physical therapy for six months, at which point his or her quality of life was measured (with higher scores indicating better functioning). The mean was 51.00 for the 10 surgery patients, 48.00 for the sham surgery patients, and 45.00 for the physical therapy only patients. <em>F<sub>cv</sub></em> was 3.555 and the ANOVA summary table for the one-way, repeated-measures ANOVA is presented here again as <link href="#corty3e-ch11-fig-24"><strong>Table 11.7</strong></link>.</p>
+<figure id="corty3e-ch11-fig-24" block_type="table" numbered="true" number="11.7" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="large" border="true"/>
+<image asset-id="corty3e-ch11-img-26" alt="image" src="asset/ch11/corty3e_table11_07.jpg"/>
+</figure>
+<p id="corty3e_page_402" block_type="page_start">402</p>
+<p id="corty3e-ch11-p186a" block_type="h2"><strong>Was the Null Hypothesis Rejected?</strong></p>
+<p id="corty3e-ch11-p218" block_type="sr_exp_txt">The decision rule was:</p>
+<list id="corty3e-ch11-list-20a" type="unordered" block_type="bullet">
+<li><p id="corty3e-ch11-p219" block_type="sr-exp-bl-mid">If <em>F</em> &#8805; 3.555, reject <em>H</em><sub>0</sub>.</p></li>
+<li><p id="corty3e-ch11-p220" block_type="sr-exp-bl-mid">If <em>F</em> &#60; 3.555, fail to reject <em>H</em><sub>0</sub>.</p></li>
+</list>
+<p id="corty3e-ch11-p221" block_type="sr_exp_txt">The observed value of <em>F</em> (see <link href="#corty3e-ch11-fig-16">Table 11.5</link>) is 31.91, which is greater than 3.555. <link href="#corty3e-ch11-fig-25"><strong>Figure 11.9</strong></link> shows how the <em>F</em> value landed in the rare zone of the sampling distribution. As a result, the null hypothesis is rejected, the alternative hypothesis is accepted, and the results are called statistically significant. This means it is concluded that at least one of these three treatments is different from at least one other for this population of patients with back pain. In APA format, the results are written <em>F</em>(2, 18) &#61; 31.91, <em>p</em> &#60; .05.</p>
+<figure id="corty3e-ch11-fig-25" block_type="figure" numbered="true" number="11.9" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="xlarge" border="true"/>
+<image asset-id="corty3e-ch11-img-27" alt="image" src="asset/ch11/corty3e_fig11_09.jpg"/>
+<caption><strong><phrase block_type="fig_num">Figure 11.9</phrase> ANOVA Results for the Effect of Surgery and Physical Therapy on Back Pain</strong> The observed value of <em>F,</em> 31.91, falls in the rare zone of the sampling distribution. The null hypothesis is rejected and the results are called statistically significant. At least one treatment group had an outcome statistically different from at least one other.</caption>
+</figure>
+<box numbered="false" id="corty3e-ch11-exp1-1" block_type="mn1">
+<p id="corty3e-ch11-p222" block_type="mn-ext-ni"><em>Repeated-measures tests are more powerful than between-subjects tests.</em></p>
+</box>
+<p id="corty3e-ch11-p223" block_type="sr_exp_txt">The three means (51.00, 48.00, and 45.00) all seemed close to one another and Dr. Agosto had speculated that the ANOVA would not be statistically significant. The fact that the results are statistically significant shows the power of a repeated-measures design. By isolating the variability due to treatment from variability due to individual differences, it is easier to reject the null hypothesis with a repeated-measures design. If one had, erroneously, used a one-way, between-subjects ANOVA to analyze the ADHD data, the results would not have been statistically significant. Repeated-measures tests are more powerful than between-subjects tests.</p>
+<p id="corty3e-ch11-p224" block_type="h2"><strong>How Big Is the Effect?</strong></p>
+<p id="corty3e-ch11-p225" block_type="sr-ex-txt-ni">To determine effect size, h<sup>2</sup>, Dr. Agosto used <link href="#corty3e-ch11-bx6-2">Equation 11.2</link>. Eta squared quantifies the percentage of variability in quality of life (the dependent variable) that is accounted for by which treatment cases receive (the independent variable.) To calculate eta squared, a researcher needs to know sum of squares treatment and sum of squares total. Looking in <link href="#corty3e-ch11-fig-24">Table 11.7</link>, Dr. Agosto finds <em>SS</em><sub>Treatment</sub> =180.00 and <em>SS</em><sub>Total</sub> &#61; 2,424.00. Substituting those into <link href="#corty3e-ch11-bx6-2">Equation 11.2</link> gives</p>
+<p id="corty3e-ch11-eqn-8" block_type="equation">
+<image asset-id="corty3e-ch11-img-28" alt="image" src="asset/ch11/corty3e_eqn11_402_01.jpg"/></p>
+<p id="corty3e-ch11-p226" block_type="sr-ex-txt-ni">An &#951;<sup>2</sup> of 7.43&#37; qualifies as a medium effect.</p>
+<p id="corty3e-ch11-p227" block_type="h2"><strong>Where Are the Effects and What Is Their Direction?</strong></p>
+<p id="corty3e-ch11-p228" block_type="sr_exp_txt_ni">The ANOVA was statistically significant, so Dr. Agosto will need post-hoc tests to pinpoint where the effect occurred. To use <link href="#corty3e-ch11-bx6-3">Equation 11.3</link> to calculate the Tukey <em>HSD,</em> she will need to know <em>q,</em> <em>MS</em><sub>Residual</sub>, and <em>n.</em></p>
+<p id="corty3e_page_403" block_type="page_start">403</p>
+<list id="corty3e-ch11-list-24" type="unordered" block_type="bullet">
+<li><p id="corty3e-ch11-p229" block_type="sr-exp-bl-mid">With <em>k</em> &#61; 3 and <em>df</em><sub>Residual</sub> =18, <em>q</em> &#61; 4.70. (<em>Note:</em> Dr. Agosto had set alpha at .01 for the repeated-measures ANOVA to reduce the risk of Type I error. To be consistent, she is using the Appendix 5 <em>q</em> table with <em>&#945;</em> &#61; .01.)</p></li>
+<li><p id="corty3e-ch11-p230" block_type="sr-exp-bl-mid"><em>MS</em><sub>Residual</sub> &#61; 2.82.</p></li>
+<li><p id="corty3e-ch11-p231" block_type="sr-exp-bl-mid"><em>n</em> &#61; 10.</p></li>
+</list>
+<p id="corty3e-ch11-p232" block_type="sr-ex-txt-ni">Now she can calculate Tukey <em>HSD</em> using <link href="#corty3e-ch11-bx6-3">Equation 11.3</link>:</p>
+<p id="corty3e-ch11-eqn-9" block_type="equation">
+<image asset-id="corty3e-ch11-img-29" alt="image" src="asset/ch11/corty3e_eqn11_403_01.jpg"/></p>
+<p id="corty3e-ch11-p233" block_type="sr_exp_txt">Dr. Agosto has three comparisons to make. Any pairs of means that differ by at least 2.50 points have a statistically significant difference.</p>
+<list id="corty3e-ch11-list-24a" type="unordered" block_type="bullet">
+<li><p id="corty3e-ch11-p234" block_type="sr-exp-bl-first">Group 1 vs. Group 2: Real surgery plus physical therapy vs. sham surgery plus physical therapy.</p>
+<list id="corty3e-ch11-list-25" type="unordered" block_type="bullet">
+<li><p id="corty3e-ch11-p235" block_type="sr-exp-bl-first">51.00 &#8722; 48.00 &#61; 3.00.</p></li>
+<li><p id="corty3e-ch11-p236" block_type="sr-exp-bl-first">3.00 &#8805; 2.50, so the difference is statistically significant. For this population of people with back pain, Dr. Agosto can conclude that people who receive real surgery have a statistically better outcome, in terms of quality of life, than do people who receive sham surgery.</p></li>
+</list></li>
+<li><p id="corty3e-ch11-p237" block_type="sr-exp-bl-mid">Group 1 vs. Group 3: Real surgery plus physical therapy vs. physical therapy alone.</p>
+<list id="corty3e-ch11-list-26" type="unordered" block_type="bullet">
+<li><p id="corty3e-ch11-p238" block_type="sr-exp-bl-first">51.00 &#8722; 45.00 &#61; 6.00.</p></li>
+<li><p id="corty3e-ch11-p239" block_type="sr-exp-bl-first">6.00 &#8805; 2.50, so the difference is statistically significant. For this population of people with back pain, Dr. Agosto can conclude that people who receive real surgery and physical therapy have a statistically better outcome, in terms of quality of life, than do people who receive physical therapy alone.</p></li>
+</list></li>
+<li><p id="corty3e-ch11-p240" block_type="sr-exp-bl-last">Group 2 vs. Group 3: Sham surgery plus physical therapy vs. physical therapy alone.</p>
+<list id="corty3e-ch11-list-27" type="unordered" block_type="bullet">
+<li><p id="corty3e-ch11-p241" block_type="sr-exp-bl-first">48.00 &#8722; 45.00 &#61; 3.00.</p></li>
+<li><p id="corty3e-ch11-p242" block_type="sr-exp-bl-first">3.00 &#8805; 2.50, so the difference is statistically significant. For this population of people with back pain, Dr. Agosto can conclude that people who receive sham surgery plus physical therapy have a statistically better outcome, in terms of quality of life, than do people who receive physical therapy alone.</p></li>
+</list></li>
+</list>
+<p id="corty3e-ch11-p243" block_type="sr-ex-txt">There&#8217;s a lot here to keep track of, so Dr. Agosto uses inequality signs to keep the effects straight: Real surgery > Sham surgery > Physical therapy.</p>
+<p id="corty3e-ch11-p244" block_type="h2"><strong>Putting It All Together</strong></p>
+<p id="corty3e-ch11-p245" block_type="sr-ex-txt-ni">Here is Dr. Agosto&#8217;s four-point interpretation:</p>
+<p id="corty3e-ch11-p246" block_type="sr_exp_txt_v1_ni">I conducted a study investigating how effective surgery is as a treatment for chronic back pain. Thirty people with chronic back pain were matched into groups of three on the basis of age, sex, length of illness, and severity of illness. One member of each group was randomly assigned to receive real surgery, one to receive sham surgery, and one to receive no surgery. Each participant then received six months of physical therapy. Using a one-way, repeated-measures ANOVA, there was a small to modest, statistically significant effect for type of treatment on quality of life [<em>F</em>(2, 18) &#61; 31.91, <em>p</em> &#60; .05]. People receiving real surgery had a statistically higher quality of life (<em>M</em> &#61; 51.00) than people receiving sham surgery (<em>M</em> &#61; 48.00), and people receiving sham surgery had a statistically better quality of life than people just receiving physical therapy (<em>M</em> &#61; 45.00). These results show that though there is a placebo effect for having surgery for back pain, there is a benefit to receiving surgery that is above and beyond the placebo effect. Future research should investigate which types of back problems are helped by which type of treatment.</p>
+</box>
+<p id="corty3e_page_404" block_type="page_start">404</p>
+<box title="Practice Problems 11.3" numbered="false" id="corty3e-ch11-bx2-3" block_type="sr-h">
+<p id="corty3e-ch11-p247" block_type="sr-h1"><strong>Apply Your Knowledge</strong></p>
+<p id="corty3e-ch11-p248" block_type="sr-que-nl"><phrase block_type="question_num">11.10</phrase> Given <em>F<sub>cv</sub></em> &#61; 2.866, <em>df</em><sub>Treatment</sub> &#61; 3, <em>df</em><sub>Residual</sub> &#61; 36, <em>F</em> &#61; 4.36, and &#945; &#61; .05, (a) write the results in APA format. (b) Are the results statistically significant?</p>
+<p id="corty3e-ch11-p249" block_type="sr-que-nl"><phrase block_type="question_num">11.11</phrase> Given <em>SS</em><sub>Treatment</sub> &#61; 35.76 and <em>SS</em><sub>Total</sub> &#61; 124.64, (a) calculate h<sup>2</sup>. (b) Is this considered a small, medium, or large effect?</p>
+<p id="corty3e-ch11-p250" block_type="sr-que-nl"><phrase block_type="question_num">11.12</phrase> Given <em>k</em> &#61; 5, <em>n</em> &#61; 16, <em>MS</em><sub>Residual</sub> &#61; 12.98, and &#945; .05, (a) find <em>q</em> and (b) calculate Tukey&#8217;s <em>HSD.</em></p>
+<p id="corty3e-ch11-p251" block_type="sr-que-nl"><phrase block_type="question_num">11.13</phrase> A software designer was curious as to how comfort with technology varied across generations. He obtained 10 families and brought in a teenager, a parent, and a grandparent from each family. Then he had each of them, individually, install a new piece of software. For each one, he timed how long it took to click on the &#8220;Agree to Terms of Installation&#8221; button. The mean time for the teens was 1.50 seconds, for the parents 4.50 seconds, and for the grandparents 20.00 seconds. No assumptions were violated and he conducted a one-way, repeated-measures ANOVA with &#945; &#61; .05. He calculated &#951;<sup>2</sup> &#61; 94.53&#37; and <em>HSD</em> &#61; 2.42. Below is the one-way, repeated-measures ANOVA summary table. Write a four-point interpretation for the results.</p>
+<table id="corty3e-ch11-table1" block_type="un_table">
+<layout align="center" width="medium" border="true"/>
+<tbody>
+<tr>
+<td><phrase block_type="tbn-colhd"><strong>Source of Variability</strong></phrase></td>
+<td><phrase block_type="tbn-colhd"><strong>Sum of Squares</strong></phrase></td>
+<td><phrase block_type="tbn-colhd"><strong>Degrees of Freedom</strong></phrase></td>
+<td><phrase block_type="tbn-colhd"><strong>Mean Square</strong></phrase></td>
+<td><phrase block_type="tbn-colhd"><strong><em>F</em> ratio</strong></phrase></td>
+</tr>
+<tr>
+<td><phrase block_type="TBN-SIDHD"><strong>Subjects</strong></phrase></td>
+<td><phrase block_type="tbn-txt">33.03</phrase></td>
+<td><phrase block_type="tbn-txt">9</phrase></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><phrase block_type="TBN-SIDHD"><strong>Treatment</strong></phrase></td>
+<td><phrase block_type="tbn-txt">1,971.67</phrase></td>
+<td><phrase block_type="tbn-txt">2</phrase></td>
+<td><phrase block_type="tbn-txt">985.84</phrase></td>
+<td><phrase block_type="tbn-txt">219.08</phrase></td>
+</tr>
+<tr>
+<td><phrase block_type="TBN-SIDHD"><strong>Residual</strong></phrase></td>
+<td><phrase block_type="tbn-txt">81.05</phrase></td>
+<td><phrase block_type="tbn-txt">18</phrase></td>
+<td><phrase block_type="tbn-txt">4.50</phrase></td>
+<td></td>
+</tr>
+<tr>
+<td><phrase block_type="TBN-SIDHD"><strong>Total</strong></phrase></td>
+<td><phrase block_type="tbn-txt">2,085.75</phrase></td>
+<td><phrase block_type="tbn-txt">29</phrase></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</box>
+<box title="Application Demonstration" numbered="false" id="corty3e-ch11-bx5-1" block_type="sr-x-h">
+<p id="corty3e-ch11-p252" block_type="sr-x-txt-ni">In the most famous example of classical conditioning, a conditioned stimulus (a bell) was repeatedly paired with an unconditioned stimulus (meat) until a dog learned to salivate to the sound of the bell. Salivation to the bell is called a conditioned response. The process of then teaching the dog <em>not</em> to salivate to the bell is called extinction. In extinction, the dog hears the bell but doesn&#8217;t see the meat and eventually the bell no longer elicits salivation. If a researcher then waits a few days after extinction has occurred and rings the bell around the dog again, the dog will salivate to the sound of the bell again. This is called spontaneous recovery.</p>
+<p id="corty3e-ch11-p253" block_type="sr-x-txt">Let&#8217;s imagine a researcher who wanted to see if extinction and spontaneous recovery occurred in humans with naturally occurring classical conditioning. That is, he wanted to see if these phenomena occurred when the conditioned response hadn&#8217;t been taught in a laboratory, but had naturally developed.</p>
+<p id="corty3e_page_405" block_type="page_start">405</p>
+<p id="corty3e-ch11-p254" block_type="sr-x-txt">Dr. Brian had noticed that many people salivate when they see a lemon, so he decided to use this conditioned reaction. (Try this thought experiment: Think of someone cutting open a juicy yellow lemon, right in front of you. You watch as she takes a slice of lemon, bites into it, and grimaces a little at the sourness of it. Just thinking of this, do you feel salivation happening in your mouth? That&#8217;s a conditioned response.)</p>
+<p id="corty3e-ch11-p255" block_type="sr-x-txt">Dr. Brian brought 35 participants from the experiment participation pool into his lab, one at a time, and measured how many grams of saliva each one produced in 2 minutes (as a baseline). How is salivation measured? Weigh some cotton balls, put them in a mouth for 2 minutes, and then weigh them again. The gain in weight reflects the amount of salivation.</p>
+<p id="corty3e-ch11-p256" block_type="sr-x-txt">After this, Dr. Brian had the participants smell a lemon for a 2-minute period, during which salivation was measured again. This was the first extinction trial. There was then a 3-minute break, after which the second extinction trial occurred (sniffing a lemon but not tasting it). This continued for seven more extinction trials. Salivation during extinction wasn&#8217;t measured again until the tenth (and last) extinction trial. The next day, participants came back to the lab and, for the last time, sniffed a lemon for 2 minutes while salivation was measured. This was the spontaneous recovery trial.</p>
+<p id="corty3e-ch11-p257" block_type="sr-x-txt">The mean grams of saliva for the four trials are shown in <link href="#corty3e-ch11-fig-28"><strong>Figure 11.10</strong></link>.</p>
+<figure id="corty3e-ch11-fig-28" block_type="figure" numbered="true" number="11.10" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="large" border="true"/>
+<image asset-id="corty3e-ch11-img-30" alt="image" src="asset/ch11/corty3e_fig11_10.jpg"/>
+<caption><strong><phrase block_type="fig_num">Figure 11.10</phrase> Extinction and Spontaneous Recovery of a Conditioned Response in Humans</strong> This figure appears to show that there&#8217;s a conditioned response to smelling a lemon, that this conditioned response can be extinguished, and that spontaneous recovery occurs.</caption>
+</figure>
+<list id="corty3e-ch11-list-28" type="unordered" block_type="bullet">
+<li><p id="corty3e-ch11-p258" block_type="sr-x-bl-first">It looks as if there is a conditioned response of salivation to a lemon. The amount of saliva increased from the first baseline measurement to when a lemon is smelled on the first extinction trial.</p></li>
+<li><p id="corty3e-ch11-p259" block_type="sr-x-bl-first">It looks as if extinction works. The amount of saliva measured decreases from the first extinction trial to the last trial.</p></li>
+<li><p id="corty3e-ch11-p260" block_type="sr-x-bl-first">It looks as if some spontaneous recovery occurs. The amount of saliva increases from the last extinction trial to the next day.</p></li>
+</list>
+<p id="corty3e-ch11-p261" block_type="sr-x-txt">Of course, Dr. Brian can&#8217;t know if these effects indicate an effect in the larger population until he conducts a statistical test. The first question is, &#8220;What test?&#8221;</p>
+<p id="corty3e_page_406" block_type="page_start">406</p>
+<p id="corty3e-ch11-p262" block_type="sr_x_h4_txt"><phrase block_type="h4-n-ri"><strong>Step 1</strong></phrase> <strong>Pick a Test.</strong> The same participants are measured at four points in time, so the samples are dependent samples. There are more than two groups being compared on a ratio-level variable. Comparing the means of four dependent samples calls for a one-way, repeated-measures ANOVA.</p>
+<p id="corty3e-ch11-p263" block_type="sr_x_h4_txt"><phrase block_type="h4-n-ri"><strong>Step 2</strong></phrase> <strong>Check the Assumptions.</strong> As is common in psychological research, the random samples assumption was violated. This did not concern Dr. Brian much, because repeated-measures ANOVA is robust to violations of this assumption and because he has no reason to believe that the response of these participants to a lemon would be much different from anyone else&#8217;s response to a lemon. The other two assumptions, independence of observations and normality, were not violated. So, Dr. Brian can proceed.</p>
+<p id="corty3e-ch11-p264" block_type="sr_x_h4_txt"><phrase block_type="h4-n-ri"><strong>Step 3</strong></phrase> <strong>List the Hypotheses.</strong></p>
+<p id="corty3e-ch11-p265" block_type="sr-x-eq"><em>H</em><sub>0</sub>: &#181;<sub>Baseline</sub> &#61; &#181;<sub>Lemon</sub> &#61; &#181;<sub>Extinction</sub> &#61; &#181;<sub>SpontaneousRecovery</sub>.</p>
+<p id="corty3e-ch11-p266" block_type="sr-x-eq"><em>H</em><sub>1</sub>: At least one of the four population means differs from at least one other population mean.</p>
+<p id="corty3e-ch11-p267" block_type="sr_x_h4_txt"><phrase block_type="h4-n-ri"><strong>Step 4</strong></phrase> <strong>Set the Decision Rule.</strong> First, calculate the degrees of freedom:</p>
+<p id="corty3e-ch11-p268" block_type="sr-x-eq"><em>df</em><sub>Subjects</sub> &#61; <em>n</em> &#8722; 1</p>
+<p id="corty3e-ch11-p269" block_type="sr-x-eq">&#61; 35 &#8722; 1</p>
+<p id="corty3e-ch11-p270" block_type="sr-x-eq">&#61; 34</p>
+<p id="corty3e-ch11-p271" block_type="sr-x-eq"><em>df</em><sub>Treatment</sub> &#61; <em>k</em> &#8722; 1</p>
+<p id="corty3e-ch11-p272" block_type="sr-x-eq">&#61; 4 &#8722; 1</p>
+<p id="corty3e-ch11-p273" block_type="sr-x-eq">&#61; 3</p>
+<p id="corty3e-ch11-p274" block_type="sr-x-eq"><em>df</em><sub>Residual</sub> &#61; <em>df</em><sub>Subjects</sub> &#215; df<sub>Treatment</sub></p>
+<p id="corty3e-ch11-p275" block_type="sr-x-eq">&#61; 34 &#215; 3</p>
+<p id="corty3e-ch11-p276" block_type="sr-x-eq">&#61; 102</p>
+<p id="corty3e-ch11-p277" block_type="sr-x-eq"><em>df</em><sub>Total</sub> &#61; <em>N</em> &#8722; 1</p>
+<p id="corty3e-ch11-p278" block_type="sr-x-eq">&#61; 140 &#8722; 1</p>
+<p id="corty3e-ch11-p279" block_type="sr-x-eq">&#61; 139</p>
+<p id="corty3e-ch11-p280" block_type="sr-x-txt">The numerator degrees of freedom, <em>df</em><sub>Numerator</sub>, for the <em>F</em> ratio is <em>df</em><sub>Treatment</sub>, which is 3, and the denominator degrees of freedom, <em>df</em><sub>Denominator</sub> is <em>df</em><sub>Residual</sub>, which is 102. In order to find the critical value of <em>F,</em> <em>F<sub>cv</sub>,</em> Dr. Brian has to decide how willing he is to make a Type I error. He can accept having a 5&#37; chance of a Type I error, so &#945; &#61; .05. Looking in <link href="corty3e-appendix01.xml#corty3e-app1-fig-10">Appendix Table 4</link> for the column with 3 degrees of freedom and the row with 102 degrees of freedom, Dr. Brian discovers that there is no such row. In such a situation, the row with the degrees of freedom that is closest without going over is used. (Remember, this is called <em>The Price Is Right</em> rule.) This is the row with 100 degrees of freedom. <em>F<sub>cv</sub></em> &#61; 2.696 with &#945; &#61; .05. The decision rule is:</p>
+<list id="corty3e-ch11-list-29" type="unordered" block_type="bullet">
+<li><p id="corty3e-ch11-p281" block_type="sr-x-bl-first">If <em>F</em> &#8805; 2.696, reject <em>H</em><sub>0</sub>.</p></li>
+<li><p id="corty3e-ch11-p282" block_type="sr-x-bl-first">If <em>F</em> &#60; 2.696, fail to reject <em>H</em><sub>0</sub>.</p></li>
+</list>
+<p id="corty3e_page_407" block_type="page_start">407</p>
+<p id="corty3e-ch11-p283" block_type="sr_x_h4_txt"><phrase block_type="h4-n-ri"><strong>Step 5</strong></phrase> <strong>Calculate the Test Statistic.</strong> Using the formulas from the appendix to this chapter, Dr. Brian calculated <em>SS</em><sub>Subjects</sub> &#61; 83.25, <em>SS</em><sub>Treatment</sub> &#61; 6.28, <em>SS</em><sub>Residual</sub> &#61; 24.35, and <em>SS</em><sub>Total</sub> &#61; 113.88. With the sums of squares and with the degrees of freedom calculated in Step 4, Dr. Brian can complete the ANOVA summary table seen in <link href="#corty3e-ch11-fig-29"><strong>Table 11.8</strong></link> by following the template in <link href="#corty3e-ch11-fig-7">Table 11.2</link>.</p>
+<figure id="corty3e-ch11-fig-29" block_type="table" numbered="true" number="11.8" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="large" border="true"/>
+<image asset-id="corty3e-ch11-img-31" alt="image" src="asset/ch11/corty3e_table11_08.jpg"/>
+</figure>
+<p id="corty3e-ch11-p284" block_type="sr_x_h4_txt"><phrase block_type="h4-n-ri"><strong>Step 6</strong></phrase> <strong>Interpret the Results.</strong> <em>Was the null hypothesis rejected?</em> The first interpretation question is answered by implementing the decision rule. The observed <em>F</em> ratio of 8.71 is greater than or equal to the critical value of <em>F,</em> 2.696, so the null hypothesis is rejected. The alternative hypothesis is accepted&#8212;it is probably true that at least one of the population means differs from at least one other population mean. Dr. Brian knows that there is a difference in the level of salivation between at least two of these conditions: baseline, the first extinction trial, the last extinction trial, or the spontaneous recovery trial. There may be more than two means that differ. To learn which mean or means differ will have to await post-hoc tests. For now, though, Dr. Brian can write the results in APA format:</p>
+<p id="corty3e-ch11-p285" block_type="sr-x-eq"><em>F</em>(3, 102) &#61; 8.71, <em>p &#60; .05</em></p>
+<p id="corty3e-ch11-p286" block_type="sr-x-txt"><em>How big is the effect?</em> The second interpretation question for one-way, repeated-measures ANOVA is answered by using <link href="#corty3e-ch11-bx6-2">Equation 11.2</link> to calculate &#951;<sup>2</sup>. Eta squared provides information about how much of the variability in the amount of salivation is explained by the four different conditions (baseline, first extinction trial, last extinction trial, and spontaneous recovery trial). Below are the calculations, resulting in &#951;<sup>2</sup> &#61; 5.51&#37;. Following Cohen&#8217;s guidelines, Dr. Brian considers explaining 5.51&#37; of the effect in salivation by the treatment condition to be a small to medium effect:</p>
+<p id="corty3e-ch11-eqn-10" block_type="equation">
+<image asset-id="corty3e-ch11-img-32" alt="image" src="asset/ch11/corty3e_eqn11_407_01.jpg"/></p>
+<p id="corty3e-ch11-p287" block_type="sr-x-txt"><em>Where are the effects and what is their direction?</em> This is the question Dr. Brian has been waiting to answer. With four groups, there are six possible comparisons, as shown in <link href="#corty3e-ch11-fig-31"><strong>Table 11.9</strong></link>. In fact, arranging the comparisons this way is very helpful for a researcher thinking about the results, because different comparisons address different questions.</p>
+<figure id="corty3e-ch11-fig-31" block_type="table" numbered="true" number="11.9" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="large" border="true"/>
+<image asset-id="corty3e-ch11-img-33" alt="image" src="asset/ch11/corty3e_table11_09.jpg"/>
+</figure>
+<p id="corty3e-ch11-p288" block_type="sr-x-txt">Dr. Brian has three questions he wants to address:</p>
+<list id="corty3e-ch11-list-30" type="ordered" block_type="numbered">
+<li><p id="corty3e-ch11-p289" block_type="sr_x_nl_first">Is there a conditioned response of salivation to the sight and smell of a lemon? This is addressed by Comparison 1, which compares baseline salivation to the first time the participants smelled a lemon, which was the first extinction trial.</p>
+<p id="corty3e_page_408" block_type="page_start">408</p></li>
+<li><p id="corty3e-ch11-p290" block_type="sr_x_nl_first">Does extinction occur? This question is broken down into two subquestions. Is there a decrease in salivation from the first extinction trial to the last extinction trial (Comparison 4)? If there is a decrease in salivation, does it go all the way back to baseline levels (Comparison 2)?</p></li>
+<li><p id="corty3e-ch11-p291" block_type="sr_x_nl_first">Does spontaneous recovery occur? This also has two subquestions. Is there more salivation on the spontaneous recovery trial than at the last extinction trial (Comparison 6)? If so, does the increase go all the way back to the level of salivation at the first extinction trial (Comparison 5)?</p></li>
+</list>
+<p id="corty3e-ch11-p292" block_type="sr-x-txt">Note that Comparison 3 is not mentioned. Dr. Brian is not interested in comparing the amount of spontaneous recovery salivation to baseline salivation, so he&#8217;ll ignore it.</p>
+<p id="corty3e-ch11-p293" block_type="sr-x-txt">In order to complete the comparisons he has planned, Dr. Brian needs to find the <em>HSD</em> value for the Tukey post-hoc test. The first step in using <link href="#corty3e-ch11-bx6-3">Equation 11.3</link> is to find the <em>q</em> value in <link href="corty3e-appendix01.xml#corty3e-app1-fig-18">Appendix Table 5</link>. With <em>k</em> &#61; 4 and <em>df</em><sub>Residual</sub> &#61; 102, <em>q</em> &#61; 3.74. (Note that <em>The Price Is Right</em> rule was applied.) After he retrieves <em>MS</em><sub>Residual</sub> &#61; 0.24 from the ANOVA summary table (<link href="#corty3e-ch11-fig-29">Table 11.8</link>) and notes that as he had 35 participants <em>n</em> &#61; 35, he can complete <link href="#corty3e-ch11-bx6-3">Equation 11.3</link>:</p>
+<p id="corty3e-ch11-eqn-11" block_type="equation">
+<image asset-id="corty3e-ch11-img-34" alt="image" src="asset/ch11/corty3e_eqn11_408_01.jpg"/></p>
+<p id="corty3e-ch11-p294" block_type="sr-x-txt">Any pair of means that differs by at least 0.31 grams is a statistically significant difference. <link href="#corty3e-ch11-fig-33"><strong>Table 11.10</strong></link> shows the differences between the means, with the statistically significant ones circled. Dr. Brian can now answer his three questions.</p>
+<p id="corty3e_page_409" block_type="page_start">409</p>
+<figure id="corty3e-ch11-fig-33" block_type="table" numbered="true" number="11.10" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="large" border="true"/>
+<image asset-id="corty3e-ch11-img-35" alt="image" src="asset/ch11/corty3e_table11_10.jpg"/>
+</figure>
+<list id="corty3e-ch11-list-31" type="ordered" block_type="numbered">
+<li><p id="corty3e-ch11-p295" block_type="sr_x_nl_first">Is there a conditioned response of salivation to the sight and smell of a lemon? Yes. Smelling a lemon causes a statistically significant increase in mean salivation from baseline.</p></li>
+<li><p id="corty3e-ch11-p296" block_type="sr_x_nl_first">Does extinction occur? Yes. There is a statistically significant decrease in mean salivation from the first extinction trial to the last. In fact, by the last extinction trial, the mean amount of salivation can&#8217;t be differentiated from baseline salivation, suggesting that extinction was complete. (This is one of the rare instances where nonsignificant results are informative.)</p></li>
+<li><p id="corty3e-ch11-p297" block_type="sr_x_nl_first">Does spontaneous recovery occur? There is not much evidence for spontaneous recovery. There is not statistically significantly more salivation at the spontaneous recovery trial than there was on the last extinction trial.</p></li>
+</list>
+<p id="corty3e-ch11-p298" block_type="sr-x-txt"><em>Putting it all together.</em></p>
+<p id="corty3e-ch11-p299" block_type="sr-x-txt">This study investigated whether humans show a naturally occurring response of salivation to the smell of a lemon and whether such a conditioned response can be extinguished and then spontaneously recovered. Thirty-five volunteers measured their baseline salivation and then had 10 extinction trials during which they held and smelled a lemon. Amount of salivation to a lemon was measured on the first and last extinction trials and again, at a spontaneous recovery trial, 24 hours later.</p>
+<p id="corty3e-ch11-p300" block_type="sr-x-txt">There were statistically significant differences among the means <em>F</em> (3, 102) &#61; 8.71, <em>p &#60;</em> .05. Post-hoc tests showed that there was a naturally occurring response of salivation to the sight/smell of a lemon and that this response could be extinguished. In this way a naturally occurring conditioned response behaves like an experimentally induced conditioned response. However, the naturally occurring conditioned response did not behave like an experimentally induced conditioned response in terms of spontaneous recovery. Whether naturally occurring conditioned responses really don&#8217;t show spontaneous recovery, or not a long enough period of time was given for spontaneous recovery is a fruitful area for future research.</p>
+</box>
+<p id="corty3e_page_410" block_type="page_start">410</p>
+<box title="DIY" numbered="false" id="corty3e-ch11-bx4-1" block_type="bx4-h">
+<p id="corty3e-ch11-p301" block_type="bx4-txt-ni">Do you have three grocery stores in your area: maybe a big chain grocery; a smaller, locally owned one; and a discount super-store? Any three will do. Make a list of four or five items you buy regularly&#8212;every week or month, such as milk or bread. Go to each store and record the prices of those items. Make sure you find exactly the same items (brand and size/quantity) at each store. Then calculate the sums of squares (following the directions in the appendix to this chapter), complete an ANOVA summary table, and interpret your results. In terms of price, does it matter where you shop?</p>
+</box>
+</section>
+<section id="corty3e-ch11-sec1-4" block_type="sum-h" chapter="11" title="" numbered="false" level="1" print_page="410">
+<section-metadata><section-title>SUMMARY</section-title></section-metadata>
+<p id="corty3e-ch11-p302" block_type="sum-hd1"><strong>Identify what repeated-measures ANOVA does.</strong></p>
+<list id="corty3e-ch11-list-32" type="unordered" block_type="bluebullet">
+<li><p id="corty3e-ch11-p303" block_type="sum-bl-first">Within-subjects, one-way ANOVA, called repeated-measures ANOVA, is a one-way ANOVA for dependent samples. It divides variability in a set of scores into two factors: (1) variability due to individual differences and (2) variability due to treatment. Thus, repeated-measures ANOVA provides a more pure measure of the effect of treatment than a paired-samples <em>t</em> test because it separates out variability due to individual differences.</p></li>
+</list>
+<p id="corty3e-ch11-p304" block_type="sum-hd1"><strong>Complete a one-way, repeated-measures ANOVA.</strong></p>
+<list id="corty3e-ch11-list-32a" type="unordered" block_type="bluebullet">
+<li><p id="corty3e-ch11-p305" block_type="sum-bl-first">Check the assumptions (random samples, independence of observations, normality) and form the null and alternative hypotheses.</p></li>
+<li><p id="corty3e-ch11-p306" block_type="sum-bl-first">Calculate degrees of freedom, find the critical value of <em>F,</em> and set the decision rule.</p></li>
+<li><p id="corty3e-ch11-p307" block_type="sum-bl-first">Given sums of squares, complete an ANOVA summary table.</p></li>
+</list>
+<p id="corty3e-ch11-p308" block_type="sum-hd1"><strong>Interpret a one-way, repeated-measures ANOVA.</strong></p>
+<list id="corty3e-ch11-list-32b" type="unordered" block_type="bluebullet">
+<li><p id="corty3e-ch11-p309" block_type="sum-bl-first">Determine if the null hypothesis was rejected and write the results in APA format.</p></li>
+<li><p id="corty3e-ch11-p310" block_type="sum-bl-first">Calculate an effect size, eta squared.</p></li>
+<li><p id="corty3e-ch11-p311" block_type="sum-bl-first">If the null hypothesis was rejected, complete post-hoc tests (Tukey <em>HSD</em>) to determine where effects are and what their direction is.</p></li>
+<li><p id="corty3e-ch11-p312" block_type="sum-bl-first">Write a four-point interpretation (What was done? What was found? What does it mean? What suggestions are there for future research?).</p></li>
+</list>
+</section>
+<section id="corty3e-ch11-sec1-5" block_type="cr-kt-t" chapter="11" title="" numbered="false" level="1" print_page="410">
+<section-metadata><section-title>KEY TERMS</section-title></section-metadata>
+<question id="corty3e-ch11-keyterms-ques1" numbered="false" title="" number="">
+<query id="corty3e-ch11-keyterms-ques1-qry">MA:
+a.eta squared (&#951;<sup>2</sup>):: an effect size that calculates the percentage of variability in the dependent variable accounted for by the independent variable.
+a.repeated-measures ANOVA:: a statistical test used to compare three or more dependent samples on an interval- or ratio-level&#8211;dependent variable; also called within-subjects ANOVA, dependent-samples ANOVA, or related-samples ANOVA.
+</query>
+</question>
+</section>
+<section id="corty3e-ch11-sec1-6" block_type="cr-x-h" chapter="11" title="" numbered="false" level="1" print_page="410">
+<section-metadata><section-title>CHAPTER EXERCISES</section-title></section-metadata>
+<p id="corty3e-ch11-p314b" block_type="cr-x-txt-ni"><strong><em>Answers to the odd-numbered exercises appear in <link href="corty3e-appb.xml">Appendix B</link>.</em></strong></p>
+<p id="corty3e-ch11-p315" block_type="cr-x-hd1"><strong>Review Your Knowledge</strong></p>
+<p id="corty3e-ch11-p316" block_type="cr_x_nl"><phrase block_type="question_num">11.01</phrase> Between-subjects, one-way ANOVA extends the &#95;&#95;&#95;&#95; to situations in which there are more than two independent samples.</p>
+<p id="corty3e-ch11-p317" block_type="cr_x_nl"><phrase block_type="question_num">11.02</phrase> Within-subjects, one-way ANOVA is like between-subjects, one-way ANOVA but is for &#95;&#95;&#95;&#95; samples.</p>
+<p id="corty3e_page_411" block_type="page_start">411</p>
+<p id="corty3e-ch11-p318" block_type="cr_x_nl"><phrase block_type="question_num">11.03</phrase> &#95;&#95;&#95;&#95; ANOVA is the common name for within-subjects, one-way ANOVA.</p>
+<p id="corty3e-ch11-p319" block_type="cr_x_nl"><phrase block_type="question_num">11.04</phrase> Repeated-measures ANOVA is used to compare the &#95;&#95;&#95;&#95; of &#95;&#95;&#95;&#95; or more dependent samples.</p>
+<p id="corty3e-ch11-p320" block_type="cr_x_nl"><phrase block_type="question_num">11.05</phrase> The data used in repeated-measures ANOVA are arranged with cases on &#95;&#95;&#95;&#95; and levels of the explanatory variable in &#95;&#95;&#95;&#95;.</p>
+<p id="corty3e-ch11-p321" block_type="cr_x_nl"><phrase block_type="question_num">11.06</phrase> In repeated-measures ANOVA, the cases should be in the &#95;&#95;&#95;&#95; order in each cell.</p>
+<p id="corty3e-ch11-p322" block_type="cr_x_nl"><phrase block_type="question_num">11.07</phrase> Because a repeated-measures ANOVA is more &#95;&#95;&#95;&#95;&#95;&#95; than a between-subjects, one-way ANOVA, there is a &#95;&#95;&#95;&#95; likelihood of being able to reject the null hypothesis.</p>
+<p id="corty3e-ch11-p323" block_type="cr_x_nl"><phrase block_type="question_num">11.08</phrase> What is called the between-groups effect in between-subjects, one-way ANOVA is called the &#95;&#95;&#95;&#95;&#95; effect in repeated-measures ANOVA.</p>
+<p id="corty3e-ch11-p324" block_type="cr_x_nl"><phrase block_type="question_num">11.09</phrase> Because variability due to subjects is removed from within-groups variability in repeated-measures ANOVA, the <em>numerator/denominator</em> of the <em>F</em> ratio is smaller than it is in between-subjects, one-way ANOVA.</p>
+<p id="corty3e-ch11-p325" block_type="cr_x_nl"><phrase block_type="question_num">11.10</phrase> If <em>r</em><sup>2</sup> is calculated for a paired-samples <em>t</em> test, it will <em>over / under</em>estimate the effect size.</p>
+<p id="corty3e-ch11-p326" block_type="cr_x_nl"><phrase block_type="question_num">11.11</phrase> When comparing the means of two dependent samples, the author advocates using &#95;&#95;&#95;&#95;, not &#95;&#95;&#95;&#95;.</p>
+<p id="corty3e-ch11-p327" block_type="cr_x_nl"><phrase block_type="question_num">11.12</phrase> The random samples assumption says that the samples in a repeated-measures ANOVA are &#95;&#95;&#95;&#95; samples from the population to which one wishes to generalize the results.</p>
+<p id="corty3e-ch11-p328" block_type="cr_x_nl"><phrase block_type="question_num">11.13</phrase> The random samples assumption is &#95;&#95;&#95;&#95; to violation.</p>
+<p id="corty3e-ch11-p329" block_type="cr_x_nl"><phrase block_type="question_num">11.14</phrase> If cases within a sample influence each other&#8217;s scores on the dependent variable, then the &#95;&#95;&#95;&#95; assumption is &#95;&#95;&#95;&#95;.</p>
+<p id="corty3e-ch11-p330" block_type="cr_x_nl"><phrase block_type="question_num">11.15</phrase> It is often assumed that the dependent variable, if it is of a psychological attribute, is &#95;&#95;&#95;&#95; in the &#95;&#95;&#95;&#95;.</p>
+<p id="corty3e-ch11-p331" block_type="cr_x_nl"><phrase block_type="question_num">11.16</phrase> &#8220;All population means are equal.&#8221; This is the &#95;&#95;&#95;&#95; hypothesis.</p>
+<p id="corty3e-ch11-p332" block_type="cr_x_nl"><phrase block_type="question_num">11.17</phrase> &#181;<sub>1</sub> &#8800; &#181;<sub>2</sub> &#8800; &#181;<sub>3</sub> <em>is / is not</em> an accurate statement of the alternative hypothesis.</p>
+<p id="corty3e-ch11-p333" block_type="cr_x_nl"><phrase block_type="question_num">11.18</phrase> The abbreviation for the critical value of <em>F</em> is &#95;&#95;&#95;&#95;.</p>
+<p id="corty3e-ch11-p334" block_type="cr_x_nl"><phrase block_type="question_num">11.19</phrase> The null hypothesis is rejected if <em>F</em> is &#95;&#95;&#95;&#95; the critical value of <em>F.</em></p>
+<p id="corty3e-ch11-p335" block_type="cr_x_nl"><phrase block_type="question_num">11.20</phrase> The null hypothesis is not rejected if <em>F</em> is &#95;&#95;&#95;&#95; the critical value of <em>F.</em></p>
+<p id="corty3e-ch11-p336" block_type="cr_x_nl"><phrase block_type="question_num">11.21</phrase> If the results are called statistically significant, then the null hypothesis <em>was / was not</em> rejected.</p>
+<p id="corty3e-ch11-p337" block_type="cr_x_nl"><phrase block_type="question_num">11.22</phrase> If the conclusion of a repeated-measures ANOVA is that there is no evidence of a difference among population means, then the null hypothesis <em>was / was not</em> rejected.</p>
+<p id="corty3e-ch11-p338" block_type="cr_x_nl"><phrase block_type="question_num">11.23</phrase> If one was forced to accept the alternative hypothesis, then the null hypothesis <em>was / was not</em> rejected.</p>
+<p id="corty3e-ch11-p339" block_type="cr_x_nl"><phrase block_type="question_num">11.24</phrase> Values of <em>F<sub>cv</sub></em> depend on the numerator and denominator &#95;&#95;&#95;&#95;.</p>
+<p id="corty3e-ch11-p340" block_type="cr_x_nl"><phrase block_type="question_num">11.25</phrase> <em>df</em> &#95;&#95;&#95;&#95; are the numerator degrees of freedom for a one-way, repeated-measures ANOVA and <em>df</em> &#95;&#95;&#95;&#95; are the denominator degrees of freedom.</p>
+<p id="corty3e-ch11-p342" block_type="cr_x_nl"><phrase block_type="question_num">11.26</phrase> <em>df</em> &#95;&#95;&#95;&#95; and <em>df</em> &#95;&#95;&#95;&#95; are not needed to find <em>F<sub>cv</sub></em> for a one-way, repeated-measures ANOVA.</p>
+<p id="corty3e-ch11-p343" block_type="cr_x_nl"><phrase block_type="question_num">11.27</phrase> To apply <link href="#corty3e-ch11-bx6-1">Equation 11.1</link> to calculate all 4 degrees of freedom, one needs to know &#95;&#95;&#95;&#95;, &#95;&#95;&#95;&#95;, and &#95;&#95;&#95;&#95;.</p>
+<p id="corty3e-ch11-p344" block_type="cr_x_nl"><phrase block_type="question_num">11.28</phrase> To calculate <em>N,</em> one multiplies together &#95;&#95;&#95;&#95; and &#95;&#95;&#95;&#95;.</p>
+<p id="corty3e-ch11-p345" block_type="cr_x_nl"><phrase block_type="question_num">11.29</phrase> If one adds together <em>df</em><sub>Subjects</sub>, <em>df</em><sub>Treatment</sub>, and <em>df</em><sub>Residual</sub>, this equals &#95;&#95;&#95;&#95;.</p>
+<p id="corty3e-ch11-p346" block_type="cr_x_nl"><phrase block_type="question_num">11.30</phrase> One-way, repeated-measures ANOVA divides <em>df</em><sub>Total</sub> into subcomponents for two different sources of &#95;&#95;&#95;&#95;.</p>
+<p id="corty3e-ch11-p347" block_type="cr_x_nl"><phrase block_type="question_num">11.31</phrase> The effect of individual differences in repeated-measures ANOVA is called the effect of &#95;&#95;&#95;&#95; in the ANOVA summary table.</p>
+<p id="corty3e-ch11-p348" block_type="cr_x_nl"><phrase block_type="question_num">11.32</phrase> After <em>df</em><sub>Subjects</sub> and <em>df</em><sub>Treatment</sub> are removed from <em>df</em><sub>Total</sub>, what is left is called &#95;&#95;&#95;&#95;.</p>
+<p id="corty3e_page_412" block_type="page_start">412</p>
+<p id="corty3e-ch11-p349" block_type="cr_x_nl"><phrase block_type="question_num">11.33</phrase> If the observed value of <em>F</em> falls in the &#95;&#95;&#95;&#95; zone of the sampling distribution, the null hypothesis is rejected.</p>
+<p id="corty3e-ch11-p350" block_type="cr_x_nl"><phrase block_type="question_num">11.34</phrase> If <em>F</em> falls on the line that separates the rare zone from the common zone, the null hypothesis <em>is / is not</em> rejected.</p>
+<p id="corty3e-ch11-p351" block_type="cr_x_nl"><phrase block_type="question_num">11.35</phrase> The first column in an ANOVA summary table lists the sources of &#95;&#95;&#95;&#95;.</p>
+<p id="corty3e-ch11-p352" block_type="cr_x_nl"><phrase block_type="question_num">11.36</phrase> If one knows <em>SS</em><sub>Subjects</sub>, <em>SS</em><sub>Treatment</sub>, and <em>SS</em><sub>Residual</sub>, one can calculate <em>SS</em>&#95;&#95;&#95;&#95;.</p>
+<p id="corty3e-ch11-p353" block_type="cr_x_nl"><phrase block_type="question_num">11.37</phrase> To calculate a mean square, one divides a &#95;&#95;&#95;&#95; by its &#95;&#95;&#95;&#95;.</p>
+<p id="corty3e-ch11-p354" block_type="cr_x_nl"><phrase block_type="question_num">11.38</phrase> The only mean squares one needs to calculate for a one-way, repeated-measures ANOVA are <em>MS</em> &#95;&#95;&#95;&#95; and <em>MS</em> &#95;&#95;&#95;&#95;.</p>
+<p id="corty3e-ch11-p355" block_type="cr_x_nl"><phrase block_type="question_num">11.39</phrase> The <em>F</em> ratio for one-way, repeated-measures ANOVA is &#95;&#95;&#95;&#95; divided by &#95;&#95;&#95;&#95;.</p>
+<p id="corty3e-ch11-p356" block_type="cr_x_nl"><phrase block_type="question_num">11.40</phrase> The first question to be addressed in an interpretation of a one-way, repeated-measures ANOVA is &#95;&#95;&#95;&#95;.</p>
+<p id="corty3e-ch11-p357" block_type="cr_x_nl"><phrase block_type="question_num">11.41</phrase> By implementing the &#95;&#95;&#95;&#95; from Step 4, one can determine if the results of a statistical test are statistically significant.</p>
+<p id="corty3e-ch11-p358" block_type="cr_x_nl"><phrase block_type="question_num">11.42</phrase> If one knows that the null hypothesis for a one-way, repeated-measures ANOVA was rejected, one <em>does / does not</em> know which pairs of sample means had statistically significant differences.</p>
+<p id="corty3e-ch11-p359" block_type="cr_x_nl"><phrase block_type="question_num">11.43</phrase> Results were reported in APA format as <em>F</em>(2, 12) &#61; 7.89, <em>p</em> &#60; .05. The null hypothesis <em>was / was not</em> rejected.</p>
+<p id="corty3e-ch11-p360" block_type="cr_x_nl"><phrase block_type="question_num">11.44</phrase> Results were reported in APA format as <em>F</em>(2, 22) &#61; 0.89, <em>p</em> > .01. The alpha level was &#95;&#95;&#95;&#95;.</p>
+<p id="corty3e-ch11-p361" block_type="cr_x_nl"><phrase block_type="question_num">11.45</phrase> If the null hypothesis is not rejected, one <em>should / should not</em> calculate an effect size.</p>
+<p id="corty3e-ch11-p362" block_type="cr_x_nl"><phrase block_type="question_num">11.46</phrase> Eta squared provides information about the size of the &#95;&#95;&#95;&#95;.</p>
+<p id="corty3e-ch11-p363" block_type="cr_x_nl"><phrase block_type="question_num">11.47</phrase> A researcher ends up suggesting replication of study with a larger sample size. The null hypothesis probably <em>was / was not</em> rejected.</p>
+<p id="corty3e-ch11-p364" block_type="cr_x_nl"><phrase block_type="question_num">11.48</phrase> If a researcher suggests replication with a larger sample size, then he or she is probably worried about Type &#95;&#95;&#95;&#95; error.</p>
+<p id="corty3e-ch11-p365" block_type="cr_x_nl"><phrase block_type="question_num">11.49</phrase> The effect size used with one-way, repeated-measures ANOVA is &#95;&#95;&#95;&#95;.</p>
+<p id="corty3e-ch11-p366" block_type="cr_x_nl"><phrase block_type="question_num">11.50</phrase> Eta squared tells the percentage of variability in the &#95;&#95;&#95;&#95; variable that is explained by the &#95;&#95;&#95;&#95; variable.</p>
+<p id="corty3e-ch11-p367" block_type="cr_x_nl"><phrase block_type="question_num">11.51</phrase> Eta squared, like &#95;&#95;&#95;&#95;, ranges from 0&#37; to100&#37;.</p>
+<p id="corty3e-ch11-p368" block_type="cr_x_nl"><phrase block_type="question_num">11.52</phrase> The closer eta squared is to &#95;&#95;&#95;&#95;&#37;, the bigger the effect.</p>
+<p id="corty3e-ch11-p369" block_type="cr_x_nl"><phrase block_type="question_num">11.53</phrase> If the treatment effect explained 10&#37; of the variability in a set of scores, Cohen would consider this a &#95;&#95;&#95;&#95; effect.</p>
+<p id="corty3e-ch11-p370" block_type="cr_x_nl"><phrase block_type="question_num">11.54</phrase> The &#95;&#95;&#95;&#95; is a post-hoc test for use with one-way, repeated-measures ANOVA.</p>
+<p id="corty3e-ch11-p371" block_type="cr_x_nl"><phrase block_type="question_num">11.55</phrase> Post-hoc tests for ANOVA should only be calculated when the null hypothesis is &#95;&#95;&#95;&#95;.</p>
+<p id="corty3e-ch11-p372" block_type="cr_x_nl"><phrase block_type="question_num">11.56</phrase> To calculate an <em>HSD</em> value, one needs to find a &#95;&#95;&#95;&#95; value in <link href="corty3e-appendix01.xml#corty3e-app1-fig-18">Appendix Table 5</link>.</p>
+<p id="corty3e-ch11-p373" block_type="cr_x_nl"><phrase block_type="question_num">11.57</phrase> If a pair of sample means differ by less than the <em>HSD</em> value, the difference is considered &#95;&#95;&#95;&#95; significant.</p>
+<p id="corty3e-ch11-p374" block_type="cr_x_nl"><phrase block_type="question_num">11.58</phrase> If a difference in a post-hoc test is statistically significant, the two sample means can be used to determine the &#95;&#95;&#95;&#95; of the difference for the two population means.</p>
+<p id="corty3e-ch11-p375" block_type="cr-x-hd1"><strong>Apply Your Knowledge</strong></p>
+<p id="corty3e-ch11-p376" block_type="cr-x-txt-ni"><strong><em>Selecting the appropriate statistical test.</em></strong></p>
+<p id="corty3e-ch11-p377" block_type="cr-x-txt-ni"><strong><em>(For 11.59&#8211;11.62, select from the single-sample <em>z</em> test; single-sample <em>t</em> test; independent-samples <em>t</em> test; paired-samples <em>t</em> test; between-subjects, one-way ANOVA; and one-way, repeated-measures ANOVA.)</em></strong></p>
+<p id="corty3e-ch11-p378" block_type="cr_x_nl"><phrase block_type="question_num">11.59</phrase> People who traveled between Philadelphia and New York City by different vehicles (train, car, bus, or plane) were surveyed to see how pleasant the experience had been. Pleasantness was measured on an interval scale. What statistical test should be used to analyze these data to see if different modes of travel were associated with different mean levels of pleasantness?</p>
+<p id="corty3e_page_413" block_type="page_start">413</p>
+<p id="corty3e-ch11-p379" block_type="cr_x_nl"><phrase block_type="question_num">11.60</phrase> First-year college students were surveyed about how much they liked their roommates (a) within five minutes of meeting them, (b) after the first week of classes, and (c) at the end of the semester. An interval measure of liking was used. What statistical test should be used to see if the mean degree of liking changed over the course of the semester?</p>
+<p id="corty3e-ch11-p380" block_type="cr_x_nl"><phrase block_type="question_num">11.61</phrase> When making purchases with cash, some people drop their pennies in the &#8220;penny cup&#8221; next to the cash register and some don&#8217;t. A social psychologist wondered if those who did were more altruistic. She obtained a sample of people who dropped their pennies into penny cups and a sample who didn&#8217;t. To each person, she administered an interval-level measure of altruism. What statistical test should she use to see if the groups differ on the mean level of altruism?</p>
+<p id="corty3e-ch11-p381" block_type="cr_x_nl"><phrase block_type="question_num">11.62</phrase> A recreational therapist knows the U.S. population mean and standard deviation for scores on an interval-level risk-taking scale. She obtains a random sample of people who enjoy riding roller coasters at amusement parks and has them complete the risk-taking scale. What statistical test should she use to see if roller coaster riders differ in the mean level of sensation-seeking from the general population?</p>
+<p id="corty3e-ch11-p382" block_type="cr-x-txt-ni"><strong><em>Checking the assumptions for a one-way, repeated-measures ANOVA and deciding if it is OK to proceed with the test</em></strong></p>
+<p id="corty3e-ch11-p383" block_type="cr_x_nl"><phrase block_type="question_num">11.63</phrase> The dean of retention at a college wanted to find out if academic problems or social problems caused students to drop out at her college. She took a random sample of first-year students at her college and, on the basis of SAT scores, matched them into groups of three. One member of each group was then randomly assigned to be in (a) the control group, (b) the academic enhancement group, or (c) the social enhancement group. Nothing was done to the control participants. The academic enhancement participants met together as a group 10 times over the course of the semester, to cover study skills, time management, test anxiety, and so on. The social enhancement participants also met together as a group 10 times over the course of the semester, though the focus was on social skills, dating, alcohol safety, and the like. At the end of the semester, she compared the three group means on the interval-level Adjustment to College Inventory.</p>
+<list id="corty3e-ch11-list-33" type="ordered" block_type="loweralpha">
+<li><p id="corty3e-ch11-p384" block_type="cr-x-nl-alpha-lc">For each of the three assumptions for a one-way, repeated-measures ANOVA, determine if it was violated.</p></li>
+<li><p id="corty3e-ch11-p385" block_type="cr-x-nl-alpha-lc">Decide if the dean can proceed with the one-way, repeated-measures ANOVA.</p></li>
+</list>
+<p id="corty3e-ch11-p386" block_type="cr_x_nl"><phrase block_type="question_num">11.64</phrase> A clinical psychologist wanted to compare three treatments for generalized anxiety disorder (GAD). She put an ad in the local paper to find people with GAD. She matched them into groups of three, based on severity of symptoms, and randomly assigned each of the matched cases to one of the three treatments. Treatment was administered individually. Outcome was assessed at the end of treatment using an interval-level measure of generalized anxiety.</p>
+<list id="corty3e-ch11-list-34" type="ordered" block_type="loweralpha">
+<li><p id="corty3e-ch11-p387" block_type="cr-x-nl-alpha-lc">For each of the three assumptions for a one-way, repeated-measures ANOVA, determine if it was violated.</p></li>
+<li><p id="corty3e-ch11-p388" block_type="cr-x-nl-alpha-lc">Decide if the psychologist can proceed with the one-way, repeated-measures ANOVA.</p></li>
+</list>
+<p id="corty3e-ch11-p389" block_type="cr-x-txt-ni"><strong><em>Stating the hypotheses for a one-way, repeated-measures ANOVA</em></strong></p>
+<p id="corty3e-ch11-p395b" block_type="cr_x_nl"><phrase block_type="question_num">11.65</phrase></p>
+<list id="corty3e-ch11-list-35" type="ordered" block_type="loweralpha">
+<li><p id="corty3e-ch11-p390" block_type="cr_x_nl">What is the null hypothesis for a one-way, repeated-measures ANOVA?</p></li>
+<li><p id="corty3e-ch11-p391" block_type="cr_x_nl">What is the alternative hypothesis for a one-way, repeated-measures ANOVA?</p></li>
+</list>
+<p id="corty3e-ch11-p395a" block_type="cr_x_nl"><phrase block_type="question_num">11.66</phrase></p>
+<list id="corty3e-ch11-list-36" type="ordered" block_type="loweralpha">
+<li><p id="corty3e-ch11-p392" block_type="cr_x_nl">What is the null hypothesis for <link href="#corty3e-ch11-p386">Exercise 11.64</link>?</p></li>
+<li><p id="corty3e-ch11-p393" block_type="cr_x_nl">What is the alternative hypothesis for <link href="#corty3e-ch11-p386">Exercise 11.64</link>?</p></li>
+</list>
+<p id="corty3e-ch11-p394" block_type="cr-x-txt-ni"><strong><em>Calculating degrees of freedom for one-way, repeated-measures ANOVA</em></strong></p>
+<p id="corty3e-ch11-p395" block_type="cr_x_nl"><phrase block_type="question_num">11.67</phrase> If <em>k</em> &#61; 3, <em>n</em> &#61; 8, and <em>N</em> &#61; 24, what are <em>df</em><sub>Subjects</sub>, <em>df</em><sub>Treatment</sub>, <em>df</em><sub>Residual</sub>, and <em>df</em><sub>Total</sub>?</p>
+<p id="corty3e-ch11-p396" block_type="cr_x_nl"><phrase block_type="question_num">11.68</phrase> If <em>k</em> &#61; 5, <em>n</em> &#61; 20, and <em>N</em> &#61; 100, what are <em>df</em><sub>Subjects</sub>, <em>df</em><sub>Treatment</sub>, <em>df</em><sub>Residual</sub>, and <em>df</em><sub>Total</sub>?</p>
+<p id="corty3e-ch11-p397" block_type="cr_x_nl"><phrase block_type="question_num">11.69</phrase> If <em>k</em> &#61; 4 and <em>n</em> &#61; 15, what are <em>df</em><sub>Subjects</sub>, <em>df</em><sub>Treatment</sub>, <em>df</em><sub>Residual</sub>, and <em>df</em><sub>Total</sub>?</p>
+<p id="corty3e_page_414" block_type="page_start">414</p>
+<p id="corty3e-ch11-p398" block_type="cr_x_nl"><phrase block_type="question_num">11.70</phrase> If <em>k</em> &#61; 3 and <em>n</em> &#61; 30, what are <em>df</em><sub>Subjects</sub>, <em>df</em><sub>Treatment</sub>, <em>df</em><sub>Residual</sub>, and <em>df</em><sub>Total</sub>?</p>
+<p id="corty3e-ch11-p399" block_type="cr-x-txt-ni"><strong><em>Setting the decision rule for one-way, repeated- measures ANOVA (assume</em> &#945; &#61; <em>.05)</em></strong></p>
+<p id="corty3e-ch11-p400" block_type="cr_x_nl"><phrase block_type="question_num">11.71</phrase> Given <em>df</em><sub>Treatment</sub> &#61; 2 and <em>df</em><sub>Residual</sub> &#61; 10, (a) what is <em>F<sub>cv</sub></em>? (b) Draw the sampling distribution of <em>F,</em> being sure to label the common zone, the rare zone, and <em>F<sub>cv</sub>.</em></p>
+<p id="corty3e-ch11-p401" block_type="cr_x_nl"><phrase block_type="question_num">11.72</phrase> Given <em>df</em><sub>Treatment</sub> &#61; 3 and <em>df</em><sub>Residual</sub> &#61; 36, (a) what is <em>F<sub>cv</sub></em>? (b) Draw the sampling distribution of <em>F,</em> being sure to label the common zone, the rare zone, and <em>F<sub>cv</sub>.</em></p>
+<p id="corty3e-ch11-p402" block_type="cr_x_nl"><phrase block_type="question_num">11.73</phrase> If <em>df</em><sub>Treatment</sub> &#61; 3 and <em>df</em><sub>Residual</sub> &#61; 15, state the decision rule.</p>
+<p id="corty3e-ch11-p403" block_type="cr_x_nl"><phrase block_type="question_num">11.74</phrase> If <em>df</em><sub>Treatment</sub> &#61; 2 and <em>df</em><sub>Residual</sub> &#61; 76, state the decision rule.</p>
+<p id="corty3e-ch11-p404" block_type="cr-x-txt-ni"><strong><em>Calculating F</em></strong></p>
+<p id="corty3e-ch11-p405" block_type="cr_x_nl"><phrase block_type="question_num">11.75</phrase> Given the following, complete an ANOVA summary table for a one-way, repeated-measures ANOVA: <em>df</em><sub>Subjects</sub> &#61; 11, <em>df</em><sub>Treatment</sub> &#61; 2, <em>df</em><sub>Residual</sub> &#61; 22, <em>df</em><sub>Total</sub> &#61; 35, <em>SS</em><sub>Subjects</sub> &#61; 137.50, <em>SS</em><sub>Treatment</sub> &#61; 48.48, <em>SS</em><sub>Residual</sub> &#61; 115.50, and <em>SS</em><sub>Total</sub> &#61; 301.48.</p>
+<p id="corty3e-ch11-p406" block_type="cr_x_nl"><phrase block_type="question_num">11.76</phrase> Given the following, complete an ANOVA summary table for a one-way, repeated-measures ANOVA: <em>df</em><sub>Subjects</sub> &#61; 19, <em>df</em><sub>Treatment</sub> &#61; 3, <em>df</em><sub>Residual</sub> &#61; 57, <em>df</em><sub>Total</sub> &#61; 79, <em>SS</em><sub>Subjects</sub> &#61; 101.27, <em>SS</em><sub>Treatment</sub> &#61; 99.81, <em>SS</em><sub>Residual</sub> &#61; 957.48. and <em>SS</em><sub>Total</sub> &#61; 1,158.56.</p>
+<p id="corty3e-ch11-p407" block_type="cr-x-txt-ni"><strong><em>Rejecting the null hypothesis?</em></strong></p>
+<p id="corty3e-ch11-p408" block_type="cr_x_nl"><phrase block_type="question_num">11.77</phrase> If <em>F<sub>cv</sub></em> &#61; 3.259 and <em>F</em> &#61; 3.259, was <em>H</em><sub>0</sub> rejected?</p>
+<p id="corty3e-ch11-p395c" block_type="cr_x_nl"><phrase block_type="question_num">11.78</phrase> If <em>F<sub>cv</sub></em> &#61; 2.310 and <em>F</em> &#61; 1.96, was <em>H</em><sub>0</sub> rejected?</p>
+<p id="corty3e-ch11-p410" block_type="cr_x_nl"><phrase block_type="question_num">11.79</phrase> Using the information in this ANOVA summary table, determine if the null hypothesis is rejected if alpha is set at .05:</p>
+<table id="corty3e-ch11-table2" block_type="un_table">
+<layout align="center" width="medium" border="true"/>
+<tbody>
+<tr>
+<td><phrase block_type="tbn-colhd"><strong>Source of Variability</strong></phrase></td>
+<td><phrase block_type="tbn-colhd"><strong>Sum of Squares</strong></phrase></td>
+<td><phrase block_type="tbn-colhd"><strong>Degrees of Freedom</strong></phrase></td>
+<td><phrase block_type="tbn-colhd"><strong>Mean Square</strong></phrase></td>
+<td><phrase block_type="tbn-colhd"><strong><em>F</em></strong> ratio</phrase></td>
+</tr>
+<tr>
+<td><phrase block_type="TBN-SIDHD"><strong>Subjects</strong></phrase></td>
+<td><phrase block_type="TBN-SIDHD">5.00</phrase></td>
+<td><phrase block_type="TBN-SIDHD">20</phrase></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><phrase block_type="TBN-SIDHD"><strong>Treatment</strong></phrase></td>
+<td><phrase block_type="TBN-SIDHD">5.00</phrase></td>
+<td><phrase block_type="TBN-SIDHD">2</phrase></td>
+<td><phrase block_type="TBN-SIDHD">2.50</phrase></td>
+<td><phrase block_type="TBN-SIDHD">5.00</phrase></td>
+</tr>
+<tr>
+<td><phrase block_type="TBN-SIDHD"><strong>Residual</strong></phrase></td>
+<td><phrase block_type="TBN-SIDHD">20.00</phrase></td>
+<td><phrase block_type="TBN-SIDHD">40</phrase></td>
+<td><phrase block_type="TBN-SIDHD">0.50</phrase></td>
+</tr>
+<tr>
+<td><phrase block_type="TBN-SIDHD"><strong>Total</strong></phrase></td>
+<td><phrase block_type="TBN-SIDHD">30.00</phrase></td>
+<td><phrase block_type="TBN-SIDHD">62</phrase></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p id="corty3e-ch11-p411" block_type="cr_x_nl"><phrase block_type="question_num">11.80</phrase> Using the information in this summary table, determine if the null hypothesis is rejected if alpha is set at .05:</p>
+<table id="corty3e-ch11-table3" block_type="un_table">
+<layout align="center" width="medium" border="true"/>
+<tbody>
+<tr>
+<td><phrase block_type="tbn-colhd"><strong>Source of Variability</strong></phrase></td>
+<td><phrase block_type="tbn-colhd"><strong>Sum of Squares</strong></phrase></td>
+<td><phrase block_type="tbn-colhd"><strong>Degrees of Freedom</strong></phrase></td>
+<td><phrase block_type="tbn-colhd"><strong>Mean Square</strong></phrase></td>
+<td><phrase block_type="tbn-colhd"><strong><em>F</em></strong> ratio</phrase></td>
+</tr>
+<tr>
+<td><phrase block_type="TBN-SIDHD"><strong>Subjects</strong></phrase></td>
+<td><phrase block_type="TBN-SIDHD">12.50</phrase></td>
+<td><phrase block_type="TBN-SIDHD">17</phrase></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><phrase block_type="TBN-SIDHD"><strong>Treatment</strong></phrase></td>
+<td><phrase block_type="TBN-SIDHD">5.00</phrase></td>
+<td><phrase block_type="TBN-SIDHD">3</phrase></td>
+<td><phrase block_type="TBN-SIDHD">1.67</phrase></td>
+<td><phrase block_type="TBN-SIDHD">1.78</phrase></td>
+</tr>
+<tr>
+<td><phrase block_type="TBN-SIDHD"><strong>Residual</strong></phrase></td>
+<td><phrase block_type="TBN-SIDHD">48.00</phrase></td>
+<td><phrase block_type="TBN-SIDHD">51</phrase></td>
+<td><phrase block_type="TBN-SIDHD">0.94</phrase></td>
+<td></td>
+</tr>
+<tr>
+<td><phrase block_type="TBN-SIDHD"><strong>Total</strong></phrase></td>
+<td><phrase block_type="TBN-SIDHD">65.50</phrase></td>
+<td><phrase block_type="TBN-SIDHD">71</phrase></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p id="corty3e-ch11-p412" block_type="cr-x-txt-ni"><strong><em>Writing results in APA format</em></strong></p>
+<p id="corty3e-ch11-p413" block_type="cr_x_nl"><phrase block_type="question_num">11.81</phrase> Given &#945; &#61; .05, <em>df</em><sub>Treatment</sub> &#61; 5, <em>df</em><sub>Residual</sub> &#61; 45, <em>F</em> &#61; 7.84, and <em>F<sub>cv</sub></em> &#61; 2.579, (a) write the results in APA format, and (b) state if the results are statistically significant or not.</p>
+<p id="corty3e-ch11-p414" block_type="cr_x_nl"><phrase block_type="question_num">11.82</phrase> Given &#945; &#61; .05, <em>df</em><sub>Treatment</sub> &#61; 3, <em>df</em><sub>Residual</sub> &#61; 24, <em>F</em> &#61; 2.76, and <em>F<sub>cv</sub></em> &#61; 3.009, (a) write the results in APA format, and (b) state if the results are statistically significant or not.</p>
+<p id="corty3e-ch11-p415" block_type="cr_x_nl"><phrase block_type="question_num">11.83</phrase> Given &#945; &#61; .05 and the information in this summary table, (a) write the results in APA format, and (b) state if the results are statistically significant or not:</p>
+<table id="corty3e-ch11-table4" block_type="un_table">
+<layout align="center" width="medium" border="true"/>
+<tbody>
+<tr>
+<td><phrase block_type="tbn-colhd"><strong>Source of Variability</strong></phrase></td>
+<td><phrase block_type="tbn-colhd"><strong>Sum of Squares</strong></phrase></td>
+<td><phrase block_type="tbn-colhd"><strong>Degrees of Freedom</strong></phrase></td>
+<td><phrase block_type="tbn-colhd"><strong>Mean Square</strong></phrase></td>
+<td><phrase block_type="tbn-colhd"><strong><em>F</em></strong> ratio</phrase></td>
+</tr>
+<tr>
+<td><phrase block_type="TBN-SIDHD"><strong>Subjects</strong></phrase></td>
+<td><phrase block_type="TBN-SIDHD">88.00</phrase></td>
+<td><phrase block_type="TBN-SIDHD">9</phrase></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><phrase block_type="TBN-SIDHD"><strong>Treatment</strong></phrase></td>
+<td><phrase block_type="TBN-SIDHD">60.00</phrase></td>
+<td><phrase block_type="TBN-SIDHD">2</phrase></td>
+<td><phrase block_type="TBN-SIDHD">30.00</phrase></td>
+<td><phrase block_type="TBN-SIDHD">11.24</phrase></td>
+</tr>
+<tr>
+<td><phrase block_type="TBN-SIDHD"><strong>Residual</strong></phrase></td>
+<td><phrase block_type="TBN-SIDHD">48.00</phrase></td>
+<td><phrase block_type="TBN-SIDHD">18</phrase></td>
+<td><phrase block_type="TBN-SIDHD">2.67</phrase></td>
+<td></td>
+</tr>
+<tr>
+<td><phrase block_type="TBN-SIDHD"><strong>Total</strong></phrase></td>
+<td><phrase block_type="TBN-SIDHD">196.00</phrase></td>
+<td><phrase block_type="TBN-SIDHD">29</phrase></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p id="corty3e-ch11-p416" block_type="cr_x_nl"><phrase block_type="question_num">11.84</phrase> Given &#945; &#61; .05 and the information in this summary table, (a) write the results in APA format, and (b) state if the results are statistically significant or not:</p>
+<table id="corty3e-ch11-table5" block_type="un_table">
+<layout align="center" width="medium" border="true"/>
+<tbody>
+<tr>
+<td><phrase block_type="tbn-colhd"><strong>Source of Variability</strong></phrase></td>
+<td><phrase block_type="tbn-colhd"><strong>Sum of Squares</strong></phrase></td>
+<td><phrase block_type="tbn-colhd"><strong>Degrees of Freedom</strong></phrase></td>
+<td><phrase block_type="tbn-colhd"><strong>Mean Square</strong></phrase></td>
+<td><phrase block_type="tbn-colhd"><strong><em>F</em></strong> ratio</phrase></td>
+</tr>
+<tr>
+<td><phrase block_type="TBN-SIDHD"><strong>Subjects</strong></phrase></td>
+<td><phrase block_type="TBN-SIDHD">120.00</phrase></td>
+<td><phrase block_type="TBN-SIDHD">21</phrase></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><phrase block_type="TBN-SIDHD"><strong>Treatment</strong></phrase></td>
+<td><phrase block_type="TBN-SIDHD">32.00</phrase></td>
+<td><phrase block_type="TBN-SIDHD">2</phrase></td>
+<td><phrase block_type="TBN-SIDHD">16.00</phrase></td>
+<td><phrase block_type="TBN-SIDHD">1.00</phrase></td>
+</tr>
+<tr>
+<td><phrase block_type="TBN-SIDHD"><strong>Residual</strong></phrase></td>
+<td><phrase block_type="TBN-SIDHD">674.00</phrase></td>
+<td><phrase block_type="TBN-SIDHD">42</phrase></td>
+<td><phrase block_type="TBN-SIDHD">16.05</phrase></td>
+<td></td>
+</tr>
+<tr>
+<td><phrase block_type="TBN-SIDHD"><strong>Total</strong></phrase></td>
+<td><phrase block_type="TBN-SIDHD">826.00</phrase></td>
+<td><phrase block_type="TBN-SIDHD">65</phrase></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p id="corty3e_page_415" block_type="page_start">415</p>
+<p id="corty3e-ch11-p417" block_type="txt"><strong><em>Interpreting results</em></strong></p>
+<p id="corty3e-ch11-p418" block_type="cr_x_nl"><phrase block_type="question_num">11.85</phrase> Given the results of a one-way, repeated-measures ANOVA in APA format, <em>F</em>(2, 40) &#61; 1.52, <em>p</em> > .05, interpret them based only on this.</p>
+<p id="corty3e-ch11-p419" block_type="cr_x_nl"><phrase block_type="question_num">11.86</phrase> Given the results of a one-way, repeated-measures ANOVA in APA format, <em>F</em>(3, 36) &#61; 12.56, <em>p</em> &#60; .05, interpret them based only on this.</p>
+<p id="corty3e-ch11-p420" block_type="cr-x-txt-ni"><strong><em>Calculating effect size</em></strong></p>
+<p id="corty3e-ch11-p395d" block_type="cr_x_nl"><phrase block_type="question_num">11.87</phrase></p>
+<list id="corty3e-ch11-list-37" type="ordered" block_type="loweralpha">
+<li><p id="corty3e-ch11-p421" block_type="cr_x_nl">Given <em>SS</em><sub>Treatment</sub> &#61; 9.89 and <em>SS</em><sub>Total</sub> &#61; 86.98, what is &#951;<sup>2</sup>?</p></li>
+<li><p id="corty3e-ch11-p422" block_type="cr_x_nl">Classify it as small, medium, or large.</p></li>
+</list>
+<p id="corty3e-ch11-p395e" block_type="cr_x_nl"><phrase block_type="question_num">11.88</phrase></p>
+<list id="corty3e-ch11-list-38" type="ordered" block_type="loweralpha">
+<li><p id="corty3e-ch11-p423" block_type="cr_x_nl">Given <em>SS</em><sub>Treatment</sub> &#61; 45.55 and <em>SS</em><sub>Total</sub> &#61; 1,893.44, what is &#951;<sup>2</sup>?</p></li>
+<li><p id="corty3e-ch11-p424" block_type="cr_x_nl">Classify it as small, medium, or large.</p></li>
+</list>
+<p id="corty3e-ch11-p395f" block_type="cr_x_nl"><phrase block_type="question_num">11.89</phrase></p>
+<list id="corty3e-ch11-list-39" type="ordered" block_type="loweralpha">
+<li><p id="corty3e-ch11-p425" block_type="cr_x_nl">Given the information in this summary table, what is &#951;<sup>2</sup>?</p></li>
+<li><p id="corty3e-ch11-p426" block_type="cr_x_nl">Classify it as small, medium, or large.</p></li>
+</list>
+<table id="corty3e-ch11-table6" block_type="un_table">
+<layout align="center" width="medium" border="true"/>
+<tbody>
+<tr>
+<td><phrase block_type="TBN-COLHD"><strong>Source of Variability</strong></phrase></td>
+<td><phrase block_type="TBN-COLHD"><strong>Sum of Squares</strong></phrase></td>
+<td><phrase block_type="TBN-COLHD"><strong>Degrees of Freedom</strong></phrase></td>
+<td><phrase block_type="TBN-COLHD"><strong>Mean Square</strong></phrase></td>
+<td><phrase block_type="TBN-COLHD"><strong><em>F</em> ratio</strong></phrase></td>
+</tr>
+<tr>
+<td><phrase block_type="TBN-SIDHD"><strong>Subjects</strong></phrase></td>
+<td><phrase block_type="TBN-SIDHD">76.00</phrase></td>
+<td><phrase block_type="TBN-SIDHD">14</phrase></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><phrase block_type="TBN-SIDHD"><strong>Treatment</strong></phrase></td>
+<td><phrase block_type="TBN-SIDHD">46.00</phrase></td>
+<td><phrase block_type="TBN-SIDHD">2</phrase></td>
+<td><phrase block_type="TBN-SIDHD">23.00</phrase></td>
+<td><phrase block_type="TBN-SIDHD">3.01</phrase></td>
+</tr>
+<tr>
+<td><phrase block_type="TBN-SIDHD"><strong>Residual</strong></phrase></td>
+<td><phrase block_type="TBN-SIDHD">214.00</phrase></td>
+<td><phrase block_type="TBN-SIDHD">28</phrase></td>
+<td><phrase block_type="TBN-SIDHD">7.64</phrase></td>
+<td></td>
+</tr>
+<tr>
+<td><phrase block_type="TBN-SIDHD"><strong>Total</strong></phrase></td>
+<td><phrase block_type="TBN-SIDHD">336.00</phrase></td>
+<td><phrase block_type="TBN-SIDHD">44</phrase></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p id="corty3e-ch11-p395g" block_type="cr_x_nl"><phrase block_type="question_num">11.90</phrase></p>
+<list id="corty3e-ch11-list-40" type="ordered" block_type="loweralpha">
+<li><p id="corty3e-ch11-p427" block_type="cr_x_nl">Given the information in this summary table, what is &#951;<sup>2</sup>?</p></li>
+<li><p id="corty3e-ch11-p428" block_type="cr_x_nl">Classify it as small, medium, or large.</p></li>
+</list>
+<table id="corty3e-ch11-table7" block_type="un_table">
+<layout align="center" width="medium" border="true"/>
+<tbody>
+<tr>
+<td><phrase block_type="tbn-colhd"><strong>Source of Variability</strong></phrase></td>
+<td><phrase block_type="tbn-colhd"><strong>Sum of Squares</strong></phrase></td>
+<td><phrase block_type="tbn-colhd"><strong>Degrees of Freedom</strong></phrase></td>
+<td><phrase block_type="tbn-colhd"><strong>Mean Square</strong></phrase></td>
+<td><phrase block_type="tbn-colhd"><strong><em>F</em> ratio</strong></phrase></td>
+</tr>
+<tr>
+<td><phrase block_type="TBN-SIDHD"><strong>Subjects</strong></phrase></td>
+<td><phrase block_type="TBN-SIDHD">233.00</phrase></td>
+<td><phrase block_type="TBN-SIDHD">16</phrase></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><phrase block_type="TBN-SIDHD"><strong>Treatment</strong></phrase></td>
+<td><phrase block_type="TBN-SIDHD">111.00</phrase></td>
+<td><phrase block_type="TBN-SIDHD">2</phrase></td>
+<td><phrase block_type="TBN-SIDHD">55.50</phrase></td>
+<td><phrase block_type="TBN-SIDHD">5.35</phrase></td>
+</tr>
+<tr>
+<td><phrase block_type="TBN-SIDHD"><strong>Residual</strong></phrase></td>
+<td><phrase block_type="TBN-SIDHD">332.00</phrase></td>
+<td><phrase block_type="TBN-SIDHD">32</phrase></td>
+<td><phrase block_type="TBN-SIDHD">10.38</phrase></td>
+<td></td>
+</tr>
+<tr>
+<td><phrase block_type="TBN-SIDHD"><strong>Total</strong></phrase></td>
+<td><phrase block_type="TBN-SIDHD">676.00</phrase></td>
+<td><phrase block_type="TBN-SIDHD">50</phrase></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p id="corty3e-ch11-p429" block_type="cr-x-txt-ni"><strong><em>Worrying about Type II error</em></strong></p>
+<p id="corty3e-ch11-p430" block_type="cr_x_nl"><phrase block_type="question_num">11.91</phrase> If the results of a one-way, repeated-measures ANOVA are <em>F</em>(2, 42) &#61; 0.63, <em>p</em> > .05 and if &#951;<sup>2</sup> &#61; 2.12&#37;, (a) how worried should the researcher be about having made a Type II error? (b) Should he or she recommend replication with a larger sample size?</p>
+<p id="corty3e-ch11-p431" block_type="cr_x_nl"><phrase block_type="question_num">11.92</phrase> If the results of a one-way, repeated-measures ANOVA are <em>F</em>(2, 58) &#61; 3.00, <em>p</em> > .05 and if &#951;<sup>2</sup> &#61; 8.11&#37;, (a) how worried should the researcher be about having made a Type II error? (b) Should he or she recommend replication with a larger sample size?</p>
+<p id="corty3e-ch11-p432" block_type="cr-x-txt-ni"><strong><em>Finding q</em></strong></p>
+<p id="corty3e-ch11-p433" block_type="cr_x_nl"><phrase block_type="question_num">11.93</phrase> If <em>k</em> &#61; 3 and <em>df</em><sub>Residual</sub> &#61; 16, what is <em>q</em> if &#945; &#61; .01?</p>
+<p id="corty3e-ch11-p434" block_type="cr_x_nl"><phrase block_type="question_num">11.94</phrase> If <em>k</em> &#61; 4 and <em>df</em><sub>Residual</sub> &#61; 87, what is <em>q</em> if &#945; &#61; .05?</p>
+<p id="corty3e-ch11-p435" block_type="cr-x-txt-ni"><strong><em>Calculating HSD</em></strong></p>
+<p id="corty3e-ch11-p436" block_type="cr_x_nl"><phrase block_type="question_num">11.95</phrase> If <em>q</em> &#61; 2.90, <em>MS</em><sub>Residual</sub> &#61; 12.27, and <em>n</em> &#61; 8, what is <em>HSD</em>?</p>
+<p id="corty3e-ch11-p437" block_type="cr_x_nl"><phrase block_type="question_num">11.96</phrase> If <em>q</em> &#61; 3.70, <em>MS</em><sub>Residual</sub> &#61; 122.98, and <em>n</em> &#61; 30, what is <em>HSD</em>?</p>
+<p id="corty3e-ch11-p438" block_type="cr-x-txt-ni"><strong><em>Interpreting HSD</em></strong></p>
+<p id="corty3e-ch11-p439" block_type="cr_x_nl"><phrase block_type="question_num">11.97</phrase> If <em>M</em><sub>1</sub> &#61; 12.83, <em>M</em><sub>2</sub> &#61; 14.98, <em>M</em><sub>3</sub> &#61; 8.22, and <em>HSD</em> &#61; 3.78, (a) determine for each possible pair of means if the difference is statistically significant, and (b) comment on the direction of the difference for the populations.</p>
+<p id="corty3e-ch11-p440" block_type="cr_x_nl"><phrase block_type="question_num">11.98</phrase> If <em>M</em><sub>1</sub> &#61; 115.54, <em>M</em><sub>2</sub> &#61; 98.98, <em>M</em><sub>3</sub> &#61; 118.22, and <em>HSD</em> &#61; 14.78, (a) determine for each possible pair of means if the difference is statistically significant, and (b) comment on the direction of the difference for the populations.</p>
+<p id="corty3e-ch11-p441" block_type="cr-x-txt-ni"><strong><em>Writing a complete interpretation</em></strong></p>
+<p id="corty3e-ch11-p442" block_type="cr_x_nl"><phrase block_type="question_num">11.99</phrase> Researchers from PETA and NIH collaborated on a study to examine the effect, on rats, of being reared in laboratory settings. Sets of 3 rats from 8 litters were randomly assigned to three conditions: (1) being reared in a standard laboratory setting, (2) being reared in an enriched laboratory setting, and (3) being reared in a setting that mimics the wild (e.g., the rats have to forage for their own food; food is occasionally sparse and of poor quality). When the rats reached adulthood, they were given a series of behavioral tasks from which their rat IQ (RIQ) scores were calculated. RIQ scores are interval-level and are scored like human IQ scores. The three means were 95.00 (normal lab), 108.00 (enriched lab), and 94.00 (mimicked wild). No nonrobust assumptions were violated and a one-way, repeated-measures ANOVA was completed with &#945; &#61; .05. The results are shown below. <em>F<sub>cv</sub></em> was 3.739, &#951;<sup>2</sup> was calculated as 37.14&#37;, and <em>HSD</em> was found to be 9.32. Write a four-point interpretation.</p>
+<p id="corty3e_page_416" block_type="page_start">416</p>
+<table id="corty3e-ch11-table8" block_type="un_table">
+<layout align="center" width="medium" border="true"/>
+<tbody>
+<tr>
+<td><phrase block_type="tbn-colhd"><strong>Source of Variability</strong></phrase></td>
+<td><phrase block_type="tbn-colhd"><strong>Sum of Squares</strong></phrase></td>
+<td><phrase block_type="tbn-colhd"><strong>Degrees of Freedom</strong></phrase></td>
+<td><phrase block_type="tbn-colhd"><strong>Mean Square</strong></phrase></td>
+<td><phrase block_type="tbn-colhd"><strong><em>F</em> ratio</strong></phrase></td>
+</tr>
+<tr>
+<td><phrase block_type="TBN-SIDHD"><strong>Subjects</strong></phrase></td>
+<td><phrase block_type="TBN-SIDHD">941.33</phrase></td>
+<td><phrase block_type="TBN-SIDHD">7</phrase></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><phrase block_type="TBN-SIDHD"><strong>Treatment</strong></phrase></td>
+<td><phrase block_type="TBN-SIDHD">976.00</phrase></td>
+<td><phrase block_type="TBN-SIDHD">2</phrase></td>
+<td><phrase block_type="TBN-SIDHD">488.00</phrase></td>
+<td><phrase block_type="TBN-SIDHD">9.61</phrase></td>
+</tr>
+<tr>
+<td><phrase block_type="TBN-SIDHD"><strong>Residual</strong></phrase></td>
+<td><phrase block_type="TBN-SIDHD">710.67</phrase></td>
+<td><phrase block_type="TBN-SIDHD">14</phrase></td>
+<td><phrase block_type="TBN-SIDHD">50.76</phrase></td>
+<td></td>
+</tr>
+<tr>
+<td><phrase block_type="TBN-SIDHD"><strong>Total</strong></phrase></td>
+<td><phrase block_type="TBN-SIDHD">2,628.00</phrase></td>
+<td><phrase block_type="TBN-SIDHD">23</phrase></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p id="corty3e-ch11-p443" block_type="cr_x_nl"><phrase block_type="question_num">11.100</phrase> A women&#8217;s studies professor was curious about the long-term effect, on men, of taking a women&#8217;s studies class. She thought that it would make them more open-minded and less sexist. She obtained a random sample of 10 first-year male students at her university and assigned them to take Introduction to Women&#8217;s Studies. She administered a scale that measures sexist beliefs before the class started, again at the end of the semester, and again 10 years later. The scale measures at the interval level and has a mean of 50, with a standard deviation of 10. Scores above 50 indicate a person has more sexist beliefs than average; scores below 50 indicate a person has fewer sexist beliefs than average. Here are the mean scores for her 10 participants: 54.00 (pre-class), 46.00 (post-class), 38.00 (10 years later). No assumptions were violated and a one-way, repeated-measures ANOVA, with the alpha set at .05, was completed. Results are shown below. <em>F<sub>cv</sub></em> &#61; 3.555, &#951;<sup>2</sup> &#61; 33.21&#37;, <em>HSD</em> &#61; 5.10. Given this information, complete a four-point interpretation.</p>
+<table id="corty3e-ch11-table9" block_type="un_table">
+<layout align="center" width="medium" border="true"/>
+<tbody>
+<tr>
+<td><phrase block_type="tbn-colhd"><strong>Source of Variability</strong></phrase></td>
+<td><phrase block_type="tbn-colhd"><strong>Sum of Squares</strong></phrase></td>
+<td><phrase block_type="tbn-colhd"><strong>Degrees of Freedom</strong></phrase></td>
+<td><phrase block_type="tbn-colhd"><strong>Mean Square</strong></phrase></td>
+<td><phrase block_type="tbn-colhd"><strong><em>F</em> ratio</strong></phrase></td>
+</tr>
+<tr>
+<td><phrase block_type="TBN-SIDHD"><strong>Subjects</strong></phrase></td>
+<td><phrase block_type="TBN-SIDHD">2,215.33</phrase></td>
+<td><phrase block_type="TBN-SIDHD">9</phrase></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><phrase block_type="TBN-SIDHD"><strong>Treatment</strong></phrase></td>
+<td><phrase block_type="TBN-SIDHD">1,280.00</phrase></td>
+<td><phrase block_type="TBN-SIDHD">2</phrase></td>
+<td><phrase block_type="TBN-SIDHD">640.00</phrase></td>
+<td><phrase block_type="TBN-SIDHD">32.11</phrase></td>
+</tr>
+<tr>
+<td><phrase block_type="TBN-SIDHD"><strong>Residual</strong></phrase></td>
+<td><phrase block_type="TBN-SIDHD">358.67</phrase></td>
+<td><phrase block_type="TBN-SIDHD">18</phrase></td>
+<td><phrase block_type="TBN-SIDHD">19.93</phrase></td>
+<td></td>
+</tr>
+<tr>
+<td><phrase block_type="TBN-SIDHD"><strong>Total</strong></phrase></td>
+<td><phrase block_type="TBN-SIDHD">3,854.00</phrase></td>
+<td><phrase block_type="TBN-SIDHD">29</phrase></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p id="corty3e-ch11-p444" block_type="[basicparagraph]"><strong><em>Completing all six steps of hypothesis testing</em></strong></p>
+<p id="corty3e-ch11-p445" block_type="cr_x_nl"><phrase block_type="question_num">11.101</phrase> A psychologist studying addictions investigated the effectiveness of three different treatments for alcoholism on the number of strong urges to drink alcohol that were experienced at the end of treatment. He compared three treatments: (1) Alcoholics Anonymous, (2) individual psychotherapy, and (3) a medication that is supposed to reduce urges. He matched 30 alcoholics into groups of three based on the severity of their addiction and then randomly assigned them to the three different treatments. (Each person assigned to Alcoholics Anonymous attended a different group.) At the end of treatment, he had the participants keep a diary of how many strong urges to drink alcohol they experienced each day. Here are the results:</p>
+<table id="corty3e-ch11-table10" block_type="un_table">
+<layout align="center" width="medium" border="true"/>
+<tbody>
+<tr>
+<td></td>
+<td><phrase block_type="tbn-colhd"><strong>Alcoholics Anonymous</strong></phrase></td>
+<td><phrase block_type="tbn-colhd"><strong>Individual Psychotherapy</strong></phrase></td>
+<td><phrase block_type="tbn-colhd"><strong>Medication</strong></phrase></td>
+</tr>
+<tr>
+<td><phrase block_type="TBN-SIDHD"><strong>M</strong></phrase></td>
+<td><phrase block_type="TBN-SIDHD">8.00</phrase></td>
+<td><phrase block_type="TBN-SIDHD">6.00</phrase></td>
+<td><phrase block_type="TBN-SIDHD">6.00</phrase></td>
+</tr>
+<tr>
+<td><phrase block_type="TBN-SIDHD"><strong><em>s</em></strong></phrase></td>
+<td><phrase block_type="TBN-SIDHD">5.42</phrase></td>
+<td><phrase block_type="TBN-SIDHD">4.52</phrase></td>
+<td><phrase block_type="TBN-SIDHD">4.37</phrase></td>
+</tr>
+</tbody>
+</table>
+<p id="corty3e-ch11-p446" block_type="cr_x_nl">Given <em>SS</em><sub>Subjects</sub> &#61; 532.00, <em>SS</em><sub>Treatment</sub> &#61; 26.67, <em>SS</em><sub>Residual</sub> &#61; 88.00, and <em>SS</em><sub>Total</sub> &#61; 646.67, complete the appropriate statistical test and interpret the results. (Don&#8217;t forget to follow all six steps of the hypothesis test.)</p>
+<p id="corty3e-ch11-p447" block_type="cr_x_nl"><phrase block_type="question_num">11.102</phrase> A psychologist teaching introductory psychology wanted to demonstrate the effects of mere exposure on liking. On the first day of class, each of her 20 students went to a private booth to view a very abstract piece of modern art. Each was asked to rate how much he or she liked it on a scale ranging from &#8722;10 (extremely dislike) to &#43;10 (extremely like). She followed the same procedure once a week for the rest of the semester. At the middle, and again at the end, of the semester, she had the students individually rate their liking of the picture. Here are the results:</p>
+<table id="corty3e-ch11-table11" block_type="un_table">
+<layout align="center" width="medium" border="true"/>
+<tbody>
+<tr>
+<td></td>
+<td><phrase block_type="tbn-colhd"><strong>First Class</strong></phrase></td>
+<td><phrase block_type="tbn-colhd"><strong>Mid-Semester</strong></phrase></td>
+<td><phrase block_type="tbn-colhd"><strong>Last Class</strong></phrase></td>
+</tr>
+<tr>
+<td><phrase block_type="TBN-SIDHD"><strong><em>M</em></strong></phrase></td>
+<td><phrase block_type="TBN-SIDHD">&#8722;6.30</phrase></td>
+<td><phrase block_type="TBN-SIDHD">&#8722;2.40</phrase></td>
+<td><phrase block_type="TBN-SIDHD">1.70</phrase></td>
+</tr>
+<tr>
+<td><phrase block_type="TBN-SIDHD"><strong><em>s</em></strong></phrase></td>
+<td><phrase block_type="TBN-SIDHD">2.85</phrase></td>
+<td><phrase block_type="TBN-SIDHD">2.35</phrase></td>
+<td><phrase block_type="TBN-SIDHD">1.75</phrase></td>
+</tr>
+</tbody>
+</table>
+<p id="corty3e_page_417" block_type="page_start">417</p>
+<p id="corty3e-ch11-p448" block_type="cr_x_nl">Given <em>SS</em><sub>Subjects</sub> &#61; 176.67, <em>SS</em><sub>Treatment</sub> &#61; 640.13, <em>SS</em><sub>Residual</sub> &#61; 140.53, and <em>SS</em><sub>Total</sub> &#61; 957.33, complete the appropriate statistical test and interpret the results. (Don&#8217;t forget to follow all six steps of the hypothesis test.)</p>
+<p id="corty3e-ch11-p449" block_type="cr-x-hd1"><strong>Expand Your Knowledge</strong></p>
+<p id="corty3e-ch11-p450" block_type="cr_x_nl"><phrase block_type="question_num">11.103</phrase> If the results of a one-way, repeated-measures ANOVA are <em>F</em>(3, 45) &#61; 12.56, <em>p</em> &#60; .05, what is <em>N</em>?</p>
+<p id="corty3e-ch11-p451" block_type="cr_x_nl"><phrase block_type="question_num">11.104</phrase> Is it possible, in a one-way, repeated-measures ANOVA, for <em>df</em><sub>Treatment</sub> to be 2 and <em>df</em><sub>Residual</sub> to be 75?</p>
+<p id="corty3e-ch11-p452" block_type="cr_x_nl"><phrase block_type="question_num">11.105</phrase> If the results of a one-way, repeated-measures ANOVA are <em>F</em>(3, 45) &#61; 12.50, <em>p</em> &#60; .05, and &#951;<sup>2</sup> &#61; 28.30, how concerned should one be about Type II error?</p>
+<p id="corty3e-ch11-p453" block_type="cr_x_nl"><phrase block_type="question_num">11.106</phrase> A group of students had their IQs measured at the start, middle, and end of a school year. The three means, respectively, were 125.5, 127.5, and 130.5. A one-way, repeated-measures ANOVA was used to analyze the data and the results were <em>F</em>(2, 18) &#61; 0.12, <em>p</em> > .05. Use the summary table below to conduct post-hoc tests as appropriate.</p>
+<table id="corty3e-ch11-table12" block_type="un_table">
+<layout align="center" width="medium" border="true"/>
+<tbody>
+<tr>
+<td><phrase block_type="tbn-colhd"><strong>Source of Variability</strong></phrase></td>
+<td><phrase block_type="tbn-colhd"><strong>Sum of Squares</strong></phrase></td>
+<td><phrase block_type="tbn-colhd"><strong>Degrees of Freedom</strong></phrase></td>
+<td><phrase block_type="tbn-colhd"><strong>Mean Square</strong></phrase></td>
+<td><phrase block_type="tbn-colhd"><strong><em>F</em> ratio</strong></phrase></td>
+</tr>
+<tr>
+<td><phrase block_type="TBN-SIDHD"><strong>Subjects</strong></phrase></td>
+<td><phrase block_type="TBN-SIDHD">4,917.50</phrase></td>
+<td><phrase block_type="TBN-SIDHD">9</phrase></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><phrase block_type="TBN-SIDHD"><strong>Treatment</strong></phrase></td>
+<td><phrase block_type="TBN-SIDHD">126.67</phrase></td>
+<td><phrase block_type="TBN-SIDHD">2</phrase></td>
+<td><phrase block_type="TBN-SIDHD">63.34</phrase></td>
+<td><phrase block_type="TBN-SIDHD">0.12</phrase></td>
+</tr>
+<tr>
+<td><phrase block_type="TBN-SIDHD"><strong>Residual</strong></phrase></td>
+<td><phrase block_type="TBN-SIDHD">9,590.00</phrase></td>
+<td><phrase block_type="TBN-SIDHD">18</phrase></td>
+<td><phrase block_type="TBN-SIDHD">532.78</phrase></td>
+<td></td>
+</tr>
+<tr>
+<td><phrase block_type="TBN-SIDHD"><strong>Total</strong></phrase></td>
+<td><phrase block_type="TBN-SIDHD">14,634.17</phrase></td>
+<td><phrase block_type="TBN-SIDHD">29</phrase></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p id="corty3e-ch11-p454" block_type="cr_x_nl"><phrase block_type="question_num">11.107</phrase> Which <em>HSD</em> value will be larger: one for &#945; &#61; .01 or one for .05? Why?</p>
+<box title="SPSS" numbered="false" id="corty3e-ch11-bx3-3" block_type="bx3-h">
+<p id="corty3e-ch11-p455" block_type="bx3-txt-ni">Data entry in SPSS for one-way, repeated-measures ANOVA is similar to data entry for a paired-samples <em>t</em> test&#8212;each case has a row to itself and the repeated measures each have a column. <link href="#corty3e-ch11-fig-34"><strong>Figure 11.11</strong></link> shows the data from the ADHD/level of distraction study in the SPSS Data Editor.</p>
+<figure id="corty3e-ch11-fig-34" block_type="figure" numbered="true" number="11.11" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="large" border="true"/>
+<image asset-id="corty3e-ch11-img-36" alt="image" src="asset/ch11/corty3e_fig11_11.jpg"/>
+<caption><strong><phrase block_type="fig_num">Figure 11.11</phrase> Data Entry in SPSS for One-Way, Repeated-Measures ANOVA</strong> Data for a repeated-measures ANOVA in SPSS are arranged with each case on a separate line and each level of the independent variable in a separate column. </caption>
+<asset_source>(Source: SPSS)</asset_source>
+</figure>
+<p id="corty3e-ch11-p456" block_type="bx3-txt">The repeated-measures ANOVA commands are not easy to find in SPSS. They are found under &#8220;Analyze&#8221; and then &#8220;General Linear Model&#8221; (see <link href="#corty3e-ch11-fig-35"><strong>Figure 11.12</strong></link>).</p>
+<figure id="corty3e-ch11-fig-35" block_type="figure" numbered="true" number="11.12" mmtype="image" mmsrc="" attr="">
+<layout align="right" width="medium" border="true"/>
+<image asset-id="corty3e-ch11-img-37" alt="image" src="asset/ch11/corty3e_fig11_12.jpg"/>
+<caption><strong><phrase block_type="fig_num">Figure 11.12</phrase> Finding Repeated-Measures ANOVA in SPSS</strong> The commands for conducting a repeated-measures ANOVA in SPSS are initiated within &#8220;General Linear Model.&#8221; </caption>
+<asset_source>(Source: SPSS)</asset_source>
+</figure>
+<p id="corty3e-ch11-p457" block_type="bx3-txt">Clicking on &#8220;Repeated Measures&#8221; opens up a new dialog box, seen in <link href="#corty3e-ch11-fig-36"><strong>Figure 11.13</strong></link>. &#8220;Treatment&#8221; is named as the &#8220;Within-Subject Factor.&#8221; There are three levels of treatment, so the &#8220;Number of Levels&#8221; is &#8220;3.&#8221;</p>
+<p id="corty3e-ch11-p458" block_type="bx3-txt">After clicking on the &#8220;Add&#8221; button (see <link href="#corty3e-ch11-fig-36">Figure 11.13</link>), the commands seen in <link href="#corty3e-ch11-fig-37"><strong>Figure 11.14</strong></link> open by clicking the &#8220;Define&#8221; button. Notice that two of the three levels of the &#8220;Within-Subjects Variables&#8221; are already defined (the variables &#8220;pre&#8221; and &#8220;post&#8221;). The third level, &#8220;f&#95;u,&#8221; is highlighted prior to using the arrow key to send it over.</p>
+<p id="corty3e_page_418" block_type="page_start">418</p>
+<figure id="corty3e-ch11-fig-36" block_type="figure" numbered="true" number="11.13" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="medium" border="true"/>
+<image asset-id="corty3e-ch11-img-38" alt="image" src="asset/ch11/corty3e_fig11_13.jpg"/>
+<caption><strong><phrase block_type="fig_num">Figure 11.13</phrase> Defining the Within-Subjects Factor in SPSS</strong> In this step, the effect is given a name and the number of levels of the independent variable is indicated.</caption>
+<asset_source>(Source: SPSS)</asset_source>
+</figure>
+<figure id="corty3e-ch11-fig-37" block_type="figure" numbered="true" number="11.14" mmtype="image" mmsrc="" attr="">
+<layout align="right" width="medium" border="true"/>
+<image asset-id="corty3e-ch11-img-39" alt="image" src="asset/ch11/corty3e_fig11_14.jpg"/>
+<caption><strong><phrase block_type="fig_num">Figure 11.14</phrase> Defining the Within-Subjects Variables for a Repeated-Measures ANOVA in SPSS</strong> Once the third level of the within-subjects variable, &#8220;follow,&#8221; is moved over to the box where the other two are, the &#8220;OK&#8221; button will become active and the ANOVA can be completed. </caption>
+<asset_source>(Source: SPSS)</asset_source>
+</figure>
+<p id="corty3e-ch11-p459" block_type="bx3-txt">When all three variables have been defined, the &#8220;OK&#8221; button on the bottom right becomes active. Clicking the OK button causes SPSS to complete the analysis. The printout that SPSS generates for a repeated-measures ANOVA is fairly detailed, but most of the data is not relevant for introductory statistics. <link href="#corty3e-ch11-fig-38"><strong>Figure 11.15</strong></link> shows the printout that is most similar to the ANOVA summary table found in <link href="#corty3e-ch11-fig-16">Table 11.5</link>.</p>
+<figure id="corty3e-ch11-fig-38" block_type="figure" numbered="true" number="11.15" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="xlarge" border="true"/>
+<image asset-id="corty3e-ch11-img-40" alt="image" src="asset/ch11/corty3e_fig11_15.jpg"/>
+<caption><strong><phrase block_type="fig_num">Figure 11.15</phrase> ANOVA Summary Table for One-Way, Repeated-Measures ANOVA in SPSS</strong> The <em>F</em> ratio for the effect of treatment is displayed on the first line, the line for the effect with &#8220;Sphericity Assumed.&#8221; </caption>
+<asset_source>(Source: SPSS)</asset_source>
+</figure>
+<p id="corty3e_page_419" block_type="page_start">419</p>
+<p id="corty3e-ch11-p460" block_type="bx3-txt">In this summary table, SPSS reports only two sources of variability, the one called treatment and the one called residual. Here, treatment is called &#8220;treatment&#8221; because it was labeled that way in <link href="#corty3e-ch11-fig-36">Figure 11.13</link>. Residual is called &#8220;error.&#8221; For a basic repeated-measures ANOVA, only pay attention to the first row (of the four rows) for each source, the one labeled &#8220;Sphericity Assumed.&#8221; The first rows are the only lines with integer values for the degrees of freedom. (The slight differences between values calculated in the text and by SPSS are due to the number of decimal places carried.)</p>
+<p id="corty3e-ch11-p461" block_type="bx3-txt">Remember, SPSS reports exact significance levels. Here, the significance level for the <em>F</em> ratio of 18.743 is .003. And .003 &#8804; .05, so the results are statistically significant. APA format prefers the use of exact significance levels, so the results would be reported as <em>F</em> (2, 6) &#61; 18.74, <em>p</em> &#61; .003.</p>
+</box>
+</section>
+<section id="corty3e-ch11-sec1-7" chapter="11" title="h1" numbered="false" level="1" print_page="419">
+<section-metadata><section-title>Appendix</section-title></section-metadata>
+</section>
+<section id="corty3e-ch11-sec2-9" block_type="h2" chapter="11" title="" numbered="false" level="2" print_page="419">
+<section-metadata><section-title>Calculating Sums of Squares for One-Way Repeated-Measures ANOVA</section-title></section-metadata>
+<p id="corty3e-ch11-p462" block_type="ca_txt_ni">Calculating sums of squares for a one-way repeated-measures ANOVA is quite similar to calculating sums of squares for a between-subjects, one-way ANOVA. Here are the pre-treatment, post-treatment, and follow-up distraction scores, squared and summed just as they were in <link href="corty3e-ch10.xml">Chapter 10</link> for a between-subjects, one-way ANOVA:</p>
+<table id="corty3e-ch11-table13" block_type="un_table">
+<layout align="center" width="large" border="true"/>
+<tbody>
+<tr class="tbl-blue-bg">
+<td></td>
+<td colspan="2"><phrase block_type="TB1-STRHD"><strong>Pre-Treatment</strong></phrase></td>
+<td colspan="2"><phrase block_type="TB1-STRHD"><strong>Post-Treatment</strong></phrase></td>
+<td colspan="2"><phrase block_type="TB1-STRHD"><strong>Follow-Up</strong></phrase></td>
+<td colspan="2"></td>
+</tr>
+<tr class="tbl-blue-bg">
+<td></td>
+<td><phrase block_type="TB1-STRHD"><strong><em>X</em></strong></phrase></td>
+<td><phrase block_type="TB1-STRHD"><strong><em>X</em><sup>2</sup></strong></phrase></td>
+<td><phrase block_type="TB1-STRHD"><strong><em>X</em></strong></phrase></td>
+<td><phrase block_type="TB1-STRHD"><strong><em>X</em><sup>2</sup></strong></phrase></td>
+<td><phrase block_type="TB1-STRHD"><strong><em>X</em></strong></phrase></td>
+<td><phrase block_type="TB1-STRHD"><strong><em>X</em><sup>2</sup></strong></phrase></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><phrase block_type="TBN-STRHD"><strong>Case 1</strong></phrase></td>
+<td><phrase block_type="TBN-STRHD">13</phrase></td>
+<td><phrase block_type="TBN-STRHD">169</phrase></td>
+<td><phrase block_type="TBN-STRHD">10</phrase></td>
+<td><phrase block_type="TBN-STRHD">100</phrase></td>
+<td><phrase block_type="TBN-STRHD">12</phrase></td>
+<td><phrase block_type="TBN-STRHD">144</phrase></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><phrase block_type="TBN-STRHD"><strong>Case 2</strong></phrase></td>
+<td><phrase block_type="TBN-STRHD">30</phrase></td>
+<td><phrase block_type="TBN-STRHD">900</phrase></td>
+<td><phrase block_type="TBN-STRHD">20</phrase></td>
+<td><phrase block_type="TBN-STRHD">400</phrase></td>
+<td><phrase block_type="TBN-STRHD">26</phrase></td>
+<td><phrase block_type="TBN-STRHD">676</phrase></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><phrase block_type="TBN-STRHD"><strong>Case 3</strong></phrase></td>
+<td><phrase block_type="TBN-STRHD">20</phrase></td>
+<td><phrase block_type="TBN-STRHD">400</phrase></td>
+<td><phrase block_type="TBN-STRHD">13</phrase></td>
+<td><phrase block_type="TBN-STRHD">169</phrase></td>
+<td><phrase block_type="TBN-STRHD">17</phrase></td>
+<td><phrase block_type="TBN-STRHD">289</phrase></td>
+<td colspan="2" class="tbl-blue-bg"><phrase block_type="TBN-STRHD"><strong>Grand</strong></phrase></td>
+</tr>
+<tr>
+<td><phrase block_type="TBN-STRHD"><strong>Case 4</strong></phrase></td>
+<td><phrase block_type="TBN-STRHD">26</phrase></td>
+<td><phrase block_type="TBN-STRHD">676</phrase></td>
+<td><phrase block_type="TBN-STRHD">17</phrase></td>
+<td><phrase block_type="TBN-STRHD">289</phrase></td>
+<td><phrase block_type="TBN-STRHD">20</phrase></td>
+<td><phrase block_type="TBN-STRHD">400</phrase></td>
+<td class="tbl-blue-bg"><phrase block_type="TBN-STRHD"><strong><em>X</em></strong></phrase></td>
+<td class="tbl-blue-bg"><phrase block_type="TBN-STRHD"><strong><em>X</em><sup>2</sup></strong></phrase></td>
+</tr>
+<tr>
+<td><phrase block_type="TBN-STRHD"><strong>Sum</strong></phrase></td>
+<td><phrase block_type="TBN-STRHD">89.00</phrase></td>
+<td><phrase block_type="TBN-STRHD">2,145.00</phrase></td>
+<td><phrase block_type="TBN-STRHD">60.00</phrase></td>
+<td><phrase block_type="TBN-STRHD">958.00</phrase></td>
+<td><phrase block_type="TBN-STRHD">75.00</phrase></td>
+<td><phrase block_type="TBN-STRHD">1,509.00</phrase></td>
+<td><phrase block_type="TBN-STRHD">224.00</phrase></td>
+<td><phrase block_type="TBN-STRHD">4,612.00</phrase></td>
+</tr>
+<tr>
+<td><phrase block_type="TBN-STRHD"><strong><em>n</em></strong></phrase></td>
+<td><phrase block_type="TBN-STRHD">4</phrase></td>
+<td></td>
+<td><phrase block_type="TBN-STRHD">4</phrase></td>
+<td></td>
+<td><phrase block_type="TBN-STRHD">4</phrase></td>
+<td></td>
+<td><phrase block_type="TBN-STRHD">12</phrase></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p id="corty3e-ch11-p463" block_type="ca_txt">Once this is done, the values can be plugged into Equations 10.2, 10.3, and 10.4. <em>SS</em><sub>Total</sub> is calculated using Equation 10.2:</p>
+<p id="corty3e-ch11-eqn-12" block_type="equation">
+<image asset-id="corty3e-ch11-img-41" alt="image" src="asset/ch11/corty3e_eqn11_419_01.jpg"/></p>
+<p id="corty3e-ch11-p464" block_type="ca_txt_ni">Next, we obtain <em>SS</em><sub>Between</sub> via Equation 10.3. This is called <em>SS</em><sub>Treatment</sub> for repeated-measures ANOVA.</p>
+<p id="corty3e-ch11-eqn-13" block_type="equation">
+<image asset-id="corty3e-ch11-img-42" alt="image" src="asset/ch11/corty3e_eqn11_419_02.jpg"/></p>
+<p id="corty3e_page_420" block_type="page_start">420</p>
+<p id="corty3e-ch11-p465" block_type="ca_txt_ni">Then, using Equation 10.4, calculate <em>SS</em><sub>Within</sub>:</p>
+<p id="corty3e-ch11-eqn-14" block_type="equation">
+<image asset-id="corty3e-ch11-img-43" alt="image" src="asset/ch11/corty3e_eqn11_420_01.jpg"/></p>
+<p id="corty3e-ch11-p466" block_type="ca_txt">So far, all has been the same as for a between-subjects, one-way ANOVA. Now, it is time to diverge and calculate <em>SS</em><sub>Between</sub>. To do so, we need to add two new columns to the data table:</p>
+<table id="corty3e-ch11-table14" block_type="un_table">
+<layout align="center" width="xlarge" border="true"/>
+<tbody>
+<tr class="tbl-blue-bg">
+<td class="tbl-bborder-none"></td>
+<td colspan="2"><phrase block_type="TB1-STRHD"><strong>Pre-Treatment</strong></phrase></td>
+<td colspan="2"><phrase block_type="TB1-STRHD"><strong>Post-Treatment</strong></phrase></td>
+<td colspan="2" class="tbl-bborder-none"><phrase block_type="TB1-STRHD"><strong>Follow-Up</strong></phrase></td>
+<td colspan="2" class="tbl-bborder-none"></td>
+<td class="tbl-bborder-none"></td>
+<td class="tbl-bborder-none"></td>
+</tr>
+<tr class="tbl-blue-bg">
+<td class="tbl-tborder-none"></td>
+<td><phrase block_type="TB1-STRHD"><strong><em>X</em></strong></phrase></td>
+<td><phrase block_type="TB1-STRHD"><strong><em>X</em><sup>2</sup></strong></phrase></td>
+<td><phrase block_type="TB1-STRHD"><strong><em>X</em></strong></phrase></td>
+<td><phrase block_type="TB1-STRHD"><strong><em>X</em><sup>2</sup></strong></phrase></td>
+<td><phrase block_type="TB1-STRHD"><strong><em>X</em></strong></phrase></td>
+<td><phrase block_type="TB1-STRHD"><strong><em>X</em><sup>2</sup></strong></phrase></td>
+<td colspan="2" class="tbl-tborder-none"></td>
+<td class="tbl-tborder-none"><phrase block_type="TB1-STRHD"><strong>Case Total</strong></phrase></td>
+<td class="tbl-tborder-none"><phrase block_type="TB1-STRHD"><strong><em>T</em><sup>2</sup>/<em>k</em></strong></phrase></td>
+</tr>
+<tr>
+<td><phrase block_type="TBN-SIDHD"><strong>Case 1</strong></phrase></td>
+<td><phrase block_type="tbn-txt">13</phrase></td>
+<td><phrase block_type="tbn-txt">169</phrase></td>
+<td><phrase block_type="tbn-txt">10</phrase></td>
+<td><phrase block_type="tbn-txt">100</phrase></td>
+<td><phrase block_type="tbn-txt">12</phrase></td>
+<td><phrase block_type="tbn-txt">144</phrase></td>
+<td></td>
+<td></td>
+<td><phrase block_type="tbn-txt">35</phrase></td>
+<td><phrase block_type="tbn-txt">408.33</phrase></td>
+</tr>
+<tr>
+<td><phrase block_type="TBN-SIDHD"><strong>Case 2</strong></phrase></td>
+<td><phrase block_type="tbn-txt">30</phrase></td>
+<td><phrase block_type="tbn-txt">900</phrase></td>
+<td><phrase block_type="tbn-txt">20</phrase></td>
+<td><phrase block_type="tbn-txt">400</phrase></td>
+<td><phrase block_type="tbn-txt">26</phrase></td>
+<td><phrase block_type="tbn-txt">676</phrase></td>
+<td></td>
+<td></td>
+<td><phrase block_type="tbn-txt">76</phrase></td>
+<td><phrase block_type="tbn-txt">1,925.33</phrase></td>
+</tr>
+<tr>
+<td><phrase block_type="TBN-SIDHD"><strong>Case 3</strong></phrase></td>
+<td><phrase block_type="tbn-txt">20</phrase></td>
+<td><phrase block_type="tbn-txt">400</phrase></td>
+<td><phrase block_type="tbn-txt">13</phrase></td>
+<td><phrase block_type="tbn-txt">169</phrase></td>
+<td><phrase block_type="tbn-txt">17</phrase></td>
+<td><phrase block_type="tbn-txt">289</phrase></td>
+<td colspan="2" class="tbl-blue-bg"><phrase block_type="tbn-txt"><strong>Grand</strong></phrase></td>
+<td><phrase block_type="tbn-txt">50</phrase></td>
+<td><phrase block_type="tbn-txt">833.33</phrase></td>
+</tr>
+<tr>
+<td><phrase block_type="TBN-SIDHD"><strong>Case 4</strong></phrase></td>
+<td><phrase block_type="tbn-txt">26</phrase></td>
+<td><phrase block_type="tbn-txt">676</phrase></td>
+<td><phrase block_type="tbn-txt">17</phrase></td>
+<td><phrase block_type="tbn-txt">289</phrase></td>
+<td><phrase block_type="tbn-txt">20</phrase></td>
+<td><phrase block_type="tbn-txt">400</phrase></td>
+<td class="tbl-blue-bg"><phrase block_type="tbn-txt"><strong><em>X</em></strong></phrase></td>
+<td class="tbl-blue-bg"><phrase block_type="tbn-txt"><strong><em>X</em></strong></phrase><sup><strong>2</strong></sup></td>
+<td><phrase block_type="tbn-txt">63</phrase></td>
+<td><phrase block_type="tbn-txt">1,323.00</phrase></td>
+</tr>
+<tr>
+<td><phrase block_type="TBN-SIDHD"><strong>Sum</strong></phrase></td>
+<td><phrase block_type="tbn-txt">89.00</phrase></td>
+<td><phrase block_type="tbn-txt">2,145.00</phrase></td>
+<td><phrase block_type="tbn-txt">60.00</phrase></td>
+<td><phrase block_type="tbn-txt">958.00</phrase></td>
+<td><phrase block_type="tbn-txt">75.00</phrase></td>
+<td><phrase block_type="tbn-txt">1,509.00</phrase></td>
+<td><phrase block_type="tbn-txt">224.00</phrase></td>
+<td><phrase block_type="tbn-txt">4,612.00</phrase></td>
+<td><phrase block_type="tbn-txt">224.00</phrase></td>
+<td><phrase block_type="tbn-txt">4,490.00</phrase></td>
+</tr>
+<tr>
+<td><phrase block_type="TBN-SIDHD"><strong><em>n</em></strong></phrase></td>
+<td><phrase block_type="tbn-txt">4</phrase></td>
+<td></td>
+<td><phrase block_type="tbn-txt">4</phrase></td>
+<td></td>
+<td><phrase block_type="tbn-txt">4</phrase></td>
+<td></td>
+<td><phrase block_type="tbn-txt">12</phrase></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p id="corty3e-ch11-p467" block_type="[basicparagraph]">The two new columns are on the far right. The first, labeled &#8220;Case Total,&#8221; is the sum of all the scores for each case. For case 1, this is <em>T</em> &#61; 13 &#43; 10 &#43; 12. The next column is that case total squared and then divided by <em>k</em>, the number of conditions. For case 1, this is 35<sup>2</sup>/3. Note that all of these values are summed. <em>SS</em><sub>Subjects</sub> is calculated:</p>
+<p id="corty3e-ch11-eqn-15" block_type="equation">
+<image asset-id="corty3e-ch11-img-44" alt="image" src="asset/ch11/corty3e_eqn11_420_02.jpg"/></p>
+<p id="corty3e-ch11-p468" block_type="ca_txt">Finally, <em>SS</em><sub>Residual</sub> is needed. <em>SS</em><sub>Residual</sub> is what remains after <em>SS</em><sub>Subjects</sub> is removed from <em>SS</em><sub>Within</sub>:</p>
+<p id="corty3e-ch11-p469" block_type="ca_txt"><em>SS</em><sub>Residual</sub> &#61; <em>SS</em><sub>Within</sub> &#8211; <em>SS</em><sub>Subjects</sub></p>
+<p id="corty3e-ch11-p470" block_type="ca_txt">&#61; 325.50 &#8211; 308.67</p>
+<p id="corty3e-ch11-p471" block_type="ca_txt">&#61; 16.83</p>
+</section>
+</chapter>

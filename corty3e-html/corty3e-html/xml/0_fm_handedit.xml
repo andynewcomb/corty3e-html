@@ -1,0 +1,99 @@
+<chapter number="fm1" id="corty3e-fm1-fm1" title="Using and Interpreting Statistics, THIRD EDITION" start-numbering-at="vi" numbered="true">
+<section id="corty3e-fm1-sec1-1" block_type="copyright" title="" numbered="false" level="1" print_page="vi">
+<section-metadata><section-title>Credits</section-title></section-metadata>
+<p id="corty3e_page_vi" block_type="page_start">vi</p>
+<table id="corty3e-fm1-table1" block_type="un_table">
+<layout align="center" width="medium" border="true"/>
+<tbody>
+<tr><td class="credit-left"><em>Publisher, Psychology and Sociology:</em></td>
+<td class="credit-right">Rachel Losh</td></tr>
+<tr><td class="credit-left"><em>Executive Acquisitions Editor:</em></td>
+<td class="credit-right">Daniel McDonough</td></tr>
+<tr><td class="credit-left"><em>Development Editor:</em></td>
+<td class="credit-right">Andrew Sylvester</td></tr>
+<tr><td class="credit-left"><em>Assistant Editor:</em></td>
+<td class="credit-right">Kimberly Morgan</td></tr>
+<tr><td class="credit-left"><em>Executive Marketing Manager:</em></td>
+<td class="credit-right">Katherine Nurre</td></tr>
+<tr><td class="credit-left"><em>Marketing Assistant:</em></td>
+<td class="credit-right">Allison Greco</td></tr>
+<tr><td class="credit-left"><em>Director, Content Standards:</em></td>
+<td class="credit-right">Rachel Comerford</td></tr>
+<tr><td class="credit-left"><em>Associate Media Editor:</em></td>
+<td class="credit-right">Anthony Casciano</td></tr>
+<tr><td class="credit-left"><em>Director, Content Management Enhancement:</em></td>
+<td class="credit-right">Tracey Kuehn</td></tr>
+<tr><td class="credit-left"><em>Managing Editor, Sciences and Social Sciences:</em></td>
+<td class="credit-right">Lisa Kinne</td></tr>
+<tr><td class="credit-left"><em>Senior Project Editor:</em></td>
+<td class="credit-right">Jane O&#8217;Neill</td></tr>
+<tr><td class="credit-left"><em>Media Producer:</em></td>
+<td class="credit-right">Elizabeth Dougherty</td></tr>
+<tr><td class="credit-left"><em>Senior Production Supervisor:</em></td>
+<td class="credit-right">Paul Rohloff</td></tr>
+<tr><td class="credit-left"><em>Photo Editors:</em></td>
+<td class="credit-right">Sheena Goldstein, Robin Fadool</td></tr>
+<tr><td class="credit-left"><em>Director of Design, Content Management:</em></td>
+<td class="credit-right">Diana Blume</td></tr>
+<tr><td class="credit-left">><em>Art Manager:</em></td>
+<td class="credit-right">Matt McAdams</td></tr>
+<tr><td class="credit-left"><em>Interior Designer:</em></td>
+<td class="credit-right">Cambraia Fernandez</td></tr>
+<tr><td class="credit-left"><em>Cover Designer:</em></td>
+<td class="credit-right">Vicki Tomaselli</td></tr>
+<tr><td class="credit-left"><em>Composition:</em></td>
+<td class="credit-right">codeMantra</td></tr>
+<tr><td class="credit-left"><em>Printing and Binding:</em></td>
+<td class="credit-right">RR Donnelley</td></tr>
+<tr><td class="credit-left"><em>Cover Art:</em></td>
+<td class="credit-right">Leslie Wayne</td></tr>
+</tbody>
+</table>
+<p id="corty3e-fm1-p85" block_type="txt">Library of Congress Control Number: 2015957307</p>
+<p id="corty3e-fm1-p86" block_type="txt">ISBN-13: 978-1-4641-0779-5</p>
+<p id="corty3e-fm1-p87" block_type="txt">ISBN-10: 1-4641-0779-3</p>
+<p id="corty3e-fm1-p88" block_type="txt">&#169; 2016, 2014 by Worth Publishers</p>
+<p id="corty3e-fm1-p89" block_type="txt">All rights reserved</p>
+<p id="corty3e-fm1-p90" block_type="txt">Printed in the United States of America</p>
+<p id="corty3e-fm1-p91" block_type="txt">First Printing</p>
+<p id="corty3e-fm1-p92" block_type="txt">Worth Publishers</p>
+<p id="corty3e-fm1-p93" block_type="txt">One New York Plaza</p>
+<p id="corty3e-fm1-p94" block_type="txt">Suite 4500</p>
+<p id="corty3e-fm1-p95" block_type="txt">New York, NY 10004-1562</p>
+<p id="corty3e-fm1-p96" block_type="txt"><link href="http://www.macmillanlearning.com">www.macmillanlearning.com/</link></p>
+</section>
+<section id="corty3e-fm1-sec1-2" block_type="cr-sum-t" chapter="fm1" title="" numbered="false" level="1" print_page="ix">
+<section-metadata><section-title>ABOUT THE AUTHOR</section-title></section-metadata>
+<figure id="corty3e-fm1-fig-7" block_type="un_figure" numbered="false" number="false" mmtype="image" mmsrc="images" attr="">
+<layout align="right" width="small" border="true"/>
+<image asset-id="corty3e-fm1-img-24" alt="image" src="asset/fm/corty3e_fm_un01.jpg"/>
+<asset_source>David Corty</asset_source>
+</figure>
+<p id="corty3e-fm1-p98" block_type="fm-aau"><strong>ERIC W. CORTY</strong> has a bachelor&#8217;s degree in psychology from Vassar College, a doctorate in clinical psychology from Indiana University, and two postdoctoral fellowships, one in neuropsychopharmacology (University of Pennsylvania) and one in human sexuality (Case Western Reserve University). Since 1993, Corty has been a member of the psychology faculty at Penn State Erie, the Behrend College. There, he teaches principles of measurements, abnormal psychology, human sexuality, introductory psychology, and, of course, statistics. The quality of his teaching was recognized in 1997 when he received the Council of Fellows Excellence in Teaching Award and in 2001 when he became a Penn State Teaching Fellow. At present, Corty is the Interim Director of the School of Humanities &#38; Social Sciences at Penn State Behrend.</p>
+<p id="corty3e-fm1-p99" block_type="fm-aau">Corty&#8217;s work has appeared in more than three dozen peer-reviewed publications. His research on ejaculatory latencies received worldwide attention, including being made fun of on the <em>Late Show with David Letterman</em>. His statistics textbook was recognized as Book of the Year by the <em>American Journal of Nursing</em> in 1997. Corty serves as a member of the editorial board for <em>The Journal of Sex &#38; Marital Therapy</em> and previously was on the editorial board for <em>The Journal of Consulting and Clinical Psychology</em>.</p>
+<p id="corty3e-fm1-p100" block_type="fm-aau">Corty was born in Wilmington, Delaware, and still celebrates Delaware Day every December 7th. He now lives in Beachwood, Ohio. He likes to eat and to cook, loves to ride his bicycles, and is sad to report that he has not made much progress on his pool game since the second edition.</p>
+<p id="corty3e_page_x" block_type="page_start">x</p>
+</section>
+<section id="corty3e-fm1-sec1-3" block_type="fm-prf-hd1" chapter="fm1" title="" numbered="false" level="1" print_page="xvii">
+<section-metadata><section-title>TO THE STUDENT</section-title></section-metadata>
+<p id="corty3e-fm1-p357" block_type="fm-txt">If you are like many students, this is not a course you have been looking forward to taking. And you probably don&#8217;t feel like reading a long message about how important this course is. So, I&#8217;ll be brief and say just five things to introduce the book to you:</p>
+<list id="corty3e-fm1-list-2" type="ordered" block_type="numbered">
+<li><p id="corty3e-fm1-p358" block_type="fm-txt-nl">When the semester is over, you&#8217;ll find that statistics wasn&#8217;t as hard as you feared. Learning statistics is like learning a foreign language&#8212;the concepts build on each other and require regular practice. The best way to practice is just like the best way to eat: Take small bites, chew thoroughly, and swallow thoughtfully. Work through the &#8220;Practice Problems&#8221; as they pop up. Make sure you can do them before moving on to new material.</p></li>
+<li><p id="corty3e-fm1-p359" block_type="fm-txt-nl">The &#8220;Review Your Knowledge&#8221; exercises at the end of the chapter are just that, a review of the chapter. Do them when you&#8217;ve finished the chapter to make sure that you&#8217;re comfortable with all of the material in the chapter. Then, do them again before a test as a refresher.</p></li>
+<li><p id="corty3e-fm1-p360" block_type="fm-txt-nl">The questions in the &#8220;Apply Your Knowledge&#8221; exercises at the end of the chapter have at least two questions on each topic. Each odd-numbered question is followed by an even-numbered question that asks the same thing. Answers for the odd-numbered questions appear in the back of the book. So if you struggle with an odd-numbered question, you can turn there for help. And then, with that guidance, you should be able to work through the even-numbered question on your own.</p></li>
+<li><p id="corty3e-fm1-p361" block_type="fm-txt-nl">The book is divided into four parts. At the end of each, you&#8217;ll find a test that covers the techniques from all chapters in that part. Working these problems can be a great way to determine whether you have truly mastered the material.</p></li>
+<li><p id="corty3e-fm1-p362" block_type="fm-txt-nl">One last thing: In each chapter, you&#8217;ll find a boxed feature called &#8220;DIY.&#8221; I&#8217;ve crafted these projects as a way for you to gain experience gathering data and conducting experiments. I encourage you to work the projects on your own, even if your teacher doesn&#8217;t assign them.</p></li>
+</list>
+<p id="corty3e-fm1-p363" block_type="nl">I hope you enjoy this book half as much as I enjoyed writing it. If you have any comments about it that you&#8217;d like to share with me, please write to me at <link href="mailto:ewc2@psu.edu">ewc2@psu.edu</link>.</p>
+<figure id="corty3e-fm1-fig-8" block_type="un_figure" numbered="false" number="false" mmtype="image" mmsrc="images" attr="">
+<layout align="right" width="large" border="true"/>
+<image asset-id="corty3e-fm1-img-25" alt="image" src="asset/fm/corty3e_fm_un03.jpg"/>
+</figure>
+<p id="corty3e_page_xviii" block_type="page_start">xviii</p>
+</section>
+<section id="corty3e-fm1-sec1-4" block_type="fm-prf-hd1" chapter="fm1" title="" numbered="false" level="1" print_page="xviii">
+<section-metadata><section-title>TO THE INSTRUCTOR</section-title></section-metadata>
+<p id="corty3e-fm1-p364" block_type="fm-prf-txt-3">Welcome to the third edition of <em>Using and Interpreting Statistics.</em> I wrote this book because I couldn&#8217;t find a text that presented the right amount of material in a straightforward manner that engaged students. My approach is applied&#8212;I want students to walk away from a first course in statistics with an ability to do what I call the &#8220;human side&#8221; of statistics, the things that computers can&#8217;t do. Yes, I teach the math of statistics&#8212;how to calculate <em>t, F, r,</em> &#967;<sup>2</sup>, confidence intervals, and a variety of effect sizes&#8212;but my overall focus is on leading students to an understanding of the logic (and the beauty) of statistics. At the end of the course, I want students to be able to select the appropriate statistical test for a research question. For the statistical tests, I want them to be able to write, in simple language, a complete interpretative statement and to explain what the results mean. In line with the recommendations from the American Statistical Association&#8217;s <em>Guidelines for Assessment and Instruction in Statistics Education: College Report</em> (2010), I aim for a conceptual understanding, not just procedural knowledge.</p>
+<p id="corty3e-fm1-p365" block_type="fm-prf-txt">There are a number of techniques that I use to achieve these goals. The first technique is my clear and approachable writing style, which makes it easier for students to engage with, and actually read, the book. Next, my organization within chapters breaks complex concepts into component parts, so they can be learned in much the same manner as a behavior is shaped. To aid learning, chapters are sprinkled with mnemonic and organizational devices. For example, there are &#8220;How to Choose&#8221; flowcharts that help students pick the correct statistical procedure, and each statistical test has a series of questions that lead students through the main concepts that need to be covered in an interpretation.</p>
+</section>
+</chapter>

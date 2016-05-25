@@ -1,0 +1,100 @@
+/* Chapter 10 CSS */
+div#corty3e-ch10-p1 {
+  margin-top: -5px;
+}
+/* Figures */
+body.noUi div#corty3e-ch10-fig-10 {
+  margin-top: -38px;
+}
+body.noUi div#corty3e-ch10-fig-29 img {
+  max-width: 200px !important;
+}
+body.noUi div#corty3e-ch10-fig-45 img {
+  max-width: 200px !important;
+}
+/* Tables */
+body.noUi div#corty3e-ch10-table2 table tr:first-child,
+body.noUi div#corty3e-ch10-table4 table tr:first-child,
+body.noUi div#corty3e-ch10-table5 table tr:first-child,
+body.noUi div#corty3e-ch10-table14 table tr:first-child,
+body.noUi div#corty3e-ch10-table15 table tr:first-child {
+  background-color: #e0e8ef;
+}
+body.noUi div#corty3e-ch10-table2 table tr:first-child td,
+body.noUi div#corty3e-ch10-table4 table tr:first-child td,
+body.noUi div#corty3e-ch10-table5 table tr:first-child td,
+body.noUi div#corty3e-ch10-table14 table tr:first-child td,
+body.noUi div#corty3e-ch10-table15 table tr:first-child td {
+  color: #168ca8;
+  font-weight: bold;
+}
+body.noUi div#corty3e-ch10-table3 table tr:first-child,
+body.noUi div#corty3e-ch10-table8 table tr:first-child,
+body.noUi div#corty3e-ch10-table9 table tr:first-child,
+body.noUi div#corty3e-ch10-table10 table tr:first-child,
+body.noUi div#corty3e-ch10-table11 table tr:first-child,
+body.noUi div#corty3e-ch10-table12 table tr:first-child,
+body.noUi div#corty3e-ch10-table13 table tr:first-child {
+  background-color: #e0e8ef;
+}
+body.noUi div#corty3e-ch10-table3 table tr:first-child td,
+body.noUi div#corty3e-ch10-table8 table tr:first-child td,
+body.noUi div#corty3e-ch10-table9 table tr:first-child td,
+body.noUi div#corty3e-ch10-table10 table tr:first-child td,
+body.noUi div#corty3e-ch10-table11 table tr:first-child td,
+body.noUi div#corty3e-ch10-table12 table tr:first-child td,
+body.noUi div#corty3e-ch10-table13 table tr:first-child td {
+  color: #168ca8;
+  font-weight: bold;
+}
+body.noUi div#corty3e-ch10-table3 table tr > td:first-child,
+body.noUi div#corty3e-ch10-table8 table tr > td:first-child,
+body.noUi div#corty3e-ch10-table9 table tr > td:first-child,
+body.noUi div#corty3e-ch10-table10 table tr > td:first-child,
+body.noUi div#corty3e-ch10-table11 table tr > td:first-child,
+body.noUi div#corty3e-ch10-table12 table tr > td:first-child,
+body.noUi div#corty3e-ch10-table13 table tr > td:first-child {
+  text-align: left;
+  color: #168ca8;
+  font-weight: bold;
+}
+body.noUi div#corty3e-ch10-table6 table,
+body.noUi div#corty3e-ch10-table7 table {
+  width: 702px !important;
+}
+body.noUi div#corty3e-ch10-table6 table tr:first-child,
+body.noUi div#corty3e-ch10-table7 table tr:first-child {
+  background-color: #e0e8ef;
+}
+body.noUi div#corty3e-ch10-table6 table tr:first-child td,
+body.noUi div#corty3e-ch10-table7 table tr:first-child td {
+  color: #168ca8;
+  font-weight: bold;
+}
+body.noUi div#corty3e-ch10-table6 table tr > td:first-child,
+body.noUi div#corty3e-ch10-table7 table tr > td:first-child {
+  color: #168ca8;
+  font-weight: bold;
+}
+/* Lists */
+ol#corty3e-ch10-list-28 {
+  font-weight: normal;
+}
+/* Equations */
+/* equation feature box -- needs more room for equation number to left */
+[data-block_type="eq-t"] [data-type="title"] {
+  padding-left: 8em;
+}
+[data-block_type="cr-x-nl-txt"] {
+  position: relative;
+}
+[data-block_type="cr-x-nl-txt"] p {
+  margin-left: 4em !important;
+}
+div#corty3e-ch10-p292 {
+  margin-bottom: 0;
+}
+div#corty3e-ch10-p293 {
+  margin-top: 0;
+}
+/*# sourceMappingURL=corty3e_ch10.css.map */

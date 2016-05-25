@@ -1,0 +1,171 @@
+/* Chapter 7 CSS */
+
+// borrowed from book-level CSS
+@corty-blue: #168ca8;
+@box-bg-blue: #e0e8ef;
+
+// margin adjustments
+/* Figures */
+body.noUi {
+    // fig 7.12
+    div#corty3e-ch7-fig-33 img {
+        max-width: 200px !important;
+    }
+}
+
+/* Tables */
+body.noUi {
+    div#corty3e-ch7-table1 {
+        width: 556px !important;
+        table {
+            tr:first-child {
+                background-color: @box-bg-blue;
+                td {
+                    border-left: 0;
+                    border-right: 0;
+                    color: @corty-blue;
+                }
+            }
+            tr > td:first-child {
+                color: @corty-blue;
+                text-align: left;
+            }
+        }
+    }
+    div#corty3e-ch7-table2,
+    div#corty3e-ch7-table3,
+    div#corty3e-ch7-table4 {
+        width: 556px !important;
+        table {
+            tr:first-child {
+                background-color: @box-bg-blue;
+                td {
+                    border-left: 0;
+                    border-right: 0;
+                    color: @corty-blue;
+                }
+            }
+            tr > td:first-child {
+                text-align: left;
+            }
+            td {
+                vertical-align: top;
+            }
+        }
+    }
+}
+
+/* Lists */
+
+/* Equations */
+
+// equation box line adjustments
+div#corty3e-ch7-p205 {
+    margin-left: -22px;
+}
+div#corty3e-ch7-p206 {
+    margin-left: 61px;
+    text-indent: -124px;
+}
+div#corty3e-ch7-p209 {
+    margin-left: 59px;
+    text-indent: -34px;
+}
+
+div#corty3e-ch7-p236 {
+    margin-left: 37px;
+}
+
+// equation alignment
+div#corty3e-ch7-p65 {
+    margin-left: 39px;
+}
+div#corty3e-ch7-p69 {
+    margin: 1em 0 0 6px;
+    + div {
+        margin-top: 0;
+    }
+}
+
+
+div#corty3e-ch7-p326 {
+    margin-bottom: 1em;
+}
+
+// block equation move/resize
+div#corty3e-ch7-fig-9,
+div#corty3e-ch7-fig-10,
+div#corty3e-ch7-fig-17,
+div#corty3e-ch7-fig-21,
+div#corty3e-ch7-fig-29,
+div#corty3e-ch7-fig-30,
+div#corty3e-ch7-fig-31 {
+    margin-left: 0;
+}
+// inline equation sizing
+img[src$="corty3e_ineqn07_225_01.jpg"],
+img[src$="corty3e_ineqn07_225_02.jpg"] {
+    height: 2.5em;
+    vertical-align: middle;
+}
+    
+// page numbers caught in relative parent
+
+// other
+
+// "join" two gray boxes
+div#corty3e-ch7-p292 {
+    margin-bottom: 0;
+}
+div#corty3e-ch7-p293 {
+    margin-top: 0;
+}
+
+// video icons must start lower to avoid other margin content
+div#corty3e-ch7-video-3 {
+    margin-top: 180px;
+}
+
+// Page Numbers overlapping text
+div#corty3e_page_231 {
+    margin-top: -5em;
+}
+div#corty3e_page_234 {
+    margin-top: -3px;
+}
+div#corty3e_page_237 {
+    margin-top: -2em;
+}
+div#corty3e_page_238 {
+    margin-top: -2em;
+}
+div#corty3e_page_239 {
+    margin-top: -2em;
+}
+div#corty3e_page_240 {
+    margin-top: -2em;
+}
+div#corty3e_page_243 {
+    margin-top: 3em;
+}
+div#corty3e_page_246 {
+    margin-top: -2em;
+}
+div#corty3e_page_250 {
+    margin-top: -2em;
+}
+div#corty3e_page_251 {
+    margin-top: -2em;
+}
+div#corty3e_page_252 {
+    margin-top: -20px;
+}
+div#corty3e_page_253 {
+    margin-top: -2em;
+}
+div#corty3e_page_254 {
+    margin-top: -2em;
+}
+div#corty3e_page_255 {
+    margin-top: -2em;
+}

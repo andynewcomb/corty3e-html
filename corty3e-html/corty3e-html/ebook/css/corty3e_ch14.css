@@ -1,0 +1,16 @@
+/* Chapter 14 CSS */
+div#corty3e-ch14-p1 {
+  margin-top: -5px;
+}
+/* Figures */
+/* Tables */
+/* Lists */
+ol#corty3e-ch14-list-7 {
+  margin-left: 18px;
+}
+/* Equations */
+/* equation feature box -- needs more room for equation number to left */
+[data-block_type="eq-t"] [data-type="title"] {
+  padding-left: 8em;
+}
+/*# sourceMappingURL=corty3e_ch14.css.map */

@@ -1,0 +1,84 @@
+/* Chapter 8 CSS */
+/* Figures */
+div#corty3e-ch8-fig-1 {
+  position: absolute;
+  left: 484px;
+  top: 237px;
+  float: none;
+  width: 250px !important;
+}
+div#corty3e-ch8-fig-1 img {
+  max-width: 250px;
+}
+body#supp_win div#corty3e-ch8-fig-1 {
+  position: static;
+  left: 0;
+  top: 0;
+  width: 800px !important;
+}
+body#supp_win div#corty3e-ch8-fig-1 img {
+  max-width: 800px;
+}
+/* Tables */
+/* Lists */
+/* Equations */
+/* inline math image adjustments */
+img[src*="corty3e_ineqn08_270"],
+img[src*="corty3e_ineqn08_271"],
+img[src*="corty3e_ineqn08_272"],
+img[src*="corty3e_ineqn08_278"],
+img[src*="corty3e_ineqn08_281"],
+img[src*="corty3e_ineqn08_282"],
+img[src*="corty3e_ineqn08_287"],
+img[src*="corty3e_ineqn08_289"] {
+  height: 1.5em;
+  vertical-align: text-top;
+}
+div#corty3e_page_266 {
+  margin-top: -8em;
+}
+div#corty3e_page_269 {
+  margin-top: -6px;
+}
+div#corty3e_page_270 {
+  margin-top: -2em;
+}
+div#corty3e_page_271 {
+  margin-top: -2em;
+}
+div#corty3e_page_272 {
+  margin-top: -2em;
+}
+div#corty3e_page_273 {
+  margin-top: -2em;
+}
+div#corty3e_page_274 {
+  margin-top: -7.5em;
+}
+div#corty3e_page_275 {
+  margin-top: -1.5em;
+}
+div#corty3e_page_282 {
+  margin-top: -2em;
+}
+div#corty3e_page_283 {
+  margin-top: -5.7em;
+}
+div#corty3e_page_285 {
+  margin-top: -2em;
+}
+div#corty3e_page_286 {
+  margin-top: -2em;
+}
+div#corty3e_page_287 {
+  margin-top: -2em;
+}
+div#corty3e_page_288 {
+  margin-top: -2em;
+}
+div#corty3e_page_290 {
+  margin-top: -2em;
+}
+div#corty3e_page_292 {
+  margin-top: -2em;
+}

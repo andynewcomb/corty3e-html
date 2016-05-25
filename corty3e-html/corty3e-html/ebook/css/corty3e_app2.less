@@ -1,0 +1,539 @@
+/* Appendix B CSS */
+
+// predominant color used throughout for fonts and backgrounds
+@corty-blue: #168ca8;
+@background-white: #fff;
+
+[data-block_type="bm-ct-1"] {
+    background-color: @corty-blue;
+    color: @background-white;
+    font-size: 3em;
+    padding: 75px 0 0 40px;
+    margin-left: -40px;
+    width: 845px;
+    p {
+        margin: 0;
+        line-height: 30px;
+    }
+}
+[data-block_type="ans-t"] {
+    color: @corty-blue;
+    font-size: 1.8em;
+    margin: 14px 0 9px 0;
+    width: 800px;
+}
+[data-block_type="ans-h1-s"] {
+    color: @corty-blue;
+    margin: 10px 0;
+}
+[data-block_type="ans-tb-t"] {
+    color: @corty-blue;
+}
+// question list
+[data-block_type="ans"] {
+    font-family: serif;
+    p {
+        margin-left: 3em !important;
+        [data-block_type="question_num"] {
+            font-family: serif;
+            position: absolute;
+            left: 60px;
+        }
+    }
+}
+[data-block_type="ans-cont"] {
+    p {
+        margin-left: 3em !important;
+        font-family: serif;
+        text-indent: 2em;
+    }
+}
+[data-block_type="ans-cont-ni"] {
+    p {
+        margin-left: 3em !important;
+        font-family: serif;
+    }
+}
+[data-block_type="ans-bl"] {
+    p {
+        margin-left: 3em !important;
+        font-family: serif;
+    }
+}
+[data-block_type="ans-cont-bl"] {
+    p {
+        font-family: serif;
+    }
+}
+[data-block_type="ans-nl-txt-ni"] {
+    p {
+        margin-left: 3em !important;
+        font-family: serif;
+    }
+}
+[data-block_type="ans-eq"] {
+    p {
+        margin-left: 3em !important;
+        font-family: serif;
+    }
+}
+
+
+// step paragraphs within questions
+@font-black: #222;
+
+[data-block_type="ans-h3"] {
+    font-family: sans-serif;
+    p {
+        margin-left: 3em !important;
+        color: @font-black;
+        [data-block_type="question_num"] {
+            font-family: sans-serif;
+            color: @font-black;
+            position: absolute;
+            left: 60px;
+        }
+        [data-block_type="h4-n-ri"] + strong {
+            color: @font-black;
+            font-family: sans-serif;
+            margin-left: 5px;
+        }
+    }
+}
+// lower alpha lists
+[data-block_type="loweralpha"] {
+    margin: 4px 42px 4px 40px !important;
+    counter-reset: alpha-list;
+    list-style: none;
+    > li {
+        counter-increment: alpha-list;
+        margin: 4px 0;
+        list-style: none;
+        font-family: serif;
+        &:before {
+            content: "(" counter(alpha-list, lower-alpha) ")";
+            margin-right: 4px;
+            font-family: serif;
+        }
+        > div,
+        [data-block_type="ans"] {
+            display: inline;
+            p {
+                // override ans for these lists
+                margin-left: 0 !important;
+                display: inline;
+            }
+        }
+        //change margin-top from first p tag in li, to line up text with marker
+        > div > p {
+            padding-top:2px;
+        }
+        ul[data-block_type="bullet"] {
+            margin: 0 1em;
+            list-style-type: initial;
+        }
+    }
+}
+// bullet lists
+ul[data-block_type="bullet"] {
+    margin: 1em 4em;
+    li [data-block_type="ans-bl"] {
+        p {
+            margin-left: 0 !important;
+            font-family: serif;
+        }
+    }
+}
+// numbered lists
+ol[data-block_type="numbered"] {
+    margin-left: 4em;
+    li [data-block_type="ans"] p {
+        margin: 0 !important;
+    }
+}
+
+
+// special cases
+div#corty3e-app2-p88 {
+    margin-bottom: 1em;
+}
+div#corty3e-app2-p96 {
+    margin-bottom: 2em;
+}
+div#corty3e-app2-p97 {
+    margin-top: 50px;
+    position: absolute;
+    left: 0;
+}
+body.noUi div#corty3e-app2-fig-1 {
+    margin-top: -2em;
+}
+div#corty3e-app2-p100 {
+    margin-left: 3em;
+}
+ol#corty3e-app2-list-24 li:first-child {
+    margin-bottom: 166px;
+}
+div#corty3e-app2-fig-15 {
+    img {
+        width: 350px;
+         position: absolute;
+   }
+}
+div#corty3e-app2-p523 img {
+    height: 6em;
+}
+div#corty3e-app2-p612 {
+    margin-bottom: 2em;
+}
+ul#corty3e-app2-list-30 {
+    margin-top: 0;
+}
+div#corty3e-app2-p996 {
+    margin-bottom: 2.5em;
+}
+div#corty3e-app2-p998 {
+    margin-bottom: 1.5em;
+}
+div#corty3e-app2-p999 {
+    margin-bottom: 2em;
+}
+div#corty3e-app2-p1161 {
+    margin-bottom: 1.5em;
+}
+div#corty3e-app2-p1196 {
+    margin-bottom: 1.5em;
+}
+div#corty3e-app2-p606 {
+    margin-bottom: 2.5em;
+}
+
+@box-bg-blue: #e0e8ef;
+
+// tables
+[data-type="table"] {
+    margin: 0;
+    padding: 0;
+    // default style for this appendix
+    table {
+        width: 702px !important;
+        tr:first-child {
+            background-color: @box-bg-blue;
+            td {
+                color: @corty-blue;
+                font-weight: bold;
+                vertical-align: bottom;
+            }
+        }
+        tr > td:first-child {
+            color: @corty-blue;
+            font-weight: bold;
+            text-align: left;
+        }
+    }
+}
+// first column not left -> centered
+div#corty3e-app2-table1,
+div#corty3e-app2-table2 {
+    table {
+        tr > td:first-child {
+            text-align: center;
+        }
+    }
+}
+div#corty3e-app2-table4 {
+    table {
+        tr > td:first-child {
+            text-align: center;
+        }
+    }
+}
+// no left column not special
+div#corty3e-app2-table3,
+div#corty3e-app2-table11,
+div#corty3e-app2-table12,
+div#corty3e-app2-table13,
+div#corty3e-app2-table14,
+div#corty3e-app2-table15,
+div#corty3e-app2-table16 {
+        tr > td:first-child {
+            color: @font-black;
+            font-weight: normal;
+            text-align: center;
+        }
+        // but keep styling of first row, first cell
+        tr:first-child {
+            background-color: @box-bg-blue;
+            td {
+                color: @corty-blue;
+                font-weight: bold;
+                vertical-align: bottom;
+            }
+        }
+}
+div#corty3e-app2-table16 {
+    table {
+        width: 600px !important;
+        tr > td:first-child {
+            width: 10%;
+        }
+        tr:first-child > td {
+            width: 50%;
+        }
+    }
+}
+div#corty3e-app2-table17 {
+    table {
+        width: 300px !important;
+        border-top: 1px solid black;
+        td {
+            font-weight: normal;
+            text-align: center;
+            color: @font-black;
+        }
+        tr:first-child {
+            background-color: transparent;
+            border-left: 1px solid black;
+            + tr {
+                border-left: 1px solid black;
+            }
+        }
+        tr:last-child > td {
+            border-bottom: 0;
+        }
+    }
+}
+span[data-block_type="TBN-SIDHD19"] {
+    margin-left: 1em;
+}
+// inline equation image size adjustments
+div#corty3e-app2-p136 img {
+    height: 7em;
+}
+div#corty3e-app2-p137 img {
+    height: 11em;
+}
+div#corty3e-app2-p138 img {
+    height: 1em;
+}
+div#corty3e-app2-p139 img {
+    height: 9em;
+}
+div#corty3e-app2-p167 img {
+    height: 5em;
+}
+div#corty3e-app2-p220 img {
+    height: 11em;
+}
+[data-block_type="ans"] {
+    font-family: serif;
+}
+div#corty3e-app2-fig-6 img {
+    height: 6em;
+}
+div#corty3e-app2-p434 img {
+    height: 9em;
+}
+div#corty3e-app2-p435 img {
+    height: 13em;
+}
+div#corty3e-app2-p436 img {
+    height: 3em;
+}
+div#corty3e-app2-p437 img {
+    height: 12em;
+}
+div#corty3e-app2-p516 img {
+    height: 6em;
+}
+div#corty3e-app2-fig-52 img {
+    height: 19em;
+}
+div#corty3e-app2-fig-53 img {
+    height: 13em;
+}
+div#corty3e-app2-fig-55 img {
+    height: 13em;
+}
+
+//One off style adjustments
+img[src="asset/appb/corty3e_ineqn_app_b-6_01.jpg"] {
+	height: 12em;
+	vertical-align: top;
+	margin-top: 1em;
+}
+img[src="asset/appb/corty3e_ineqn_app_b-8_03.jpg"] {
+	height: 5em;
+	vertical-align: top;
+	margin-top: 1em;
+}
+img[src="asset/appb/corty3e_ineqn_app_b-15_01.jpg"] {
+	height: 7em;
+	vertical-align: top;
+	margin-top: 1em;
+}
+img[src="asset/appb/corty3e_ineqn_app_b-15_02.jpg"] {
+	height: 3em;
+	vertical-align: top;
+	margin-top: 1em;
+}
+img[src="asset/appb/corty3e_ineqn_app_b-15_03.jpg"] {
+	height: 3em;
+	vertical-align: top;
+	margin-top: 1em;
+}
+img[src="asset/appb/corty3e_ineqn_app_b-15_04.jpg"] {
+	height: 3em;
+	vertical-align: top;
+	margin-top: 1em;
+}
+img[src="asset/appb/corty3e_ineqn_app_b-15_05.jpg"] {
+	height: 2.5em;
+	vertical-align: top;
+	margin-top: 1em;
+}
+img[src="asset/appb/corty3e_ineqn_app_b-15_06.jpg"] {
+	height: 2.5em;
+	vertical-align: top;
+	margin-top: 1em;
+}
+img[src="asset/appb/corty3e_ineqn_app_b-15_07.jpg"] {
+	height: 2.5em;
+	vertical-align: top;
+	margin-top: 1em;
+}
+img[src="asset/appb/corty3e_ineqn_app_b-22_02.jpg"] {
+	height: 2.5em;
+	vertical-align: top;
+	margin-top: 1em;
+}
+img[src="asset/appb/corty3e_ineqn_app_b-20_01.jpg"] {
+	height: 5.5em;
+	vertical-align: top;
+	margin-top: 1em;
+}
+img[src="asset/appb/corty3e_eqn_app_b-20_01.jpg"] {
+	height: 5.5em;
+	vertical-align: top;
+	margin-top: 1em;
+}
+img[src="asset/appb/corty3e_eqn_app_b-20_02.jpg"] {
+	height: 18em;
+	vertical-align: top;
+	margin-top: 1em;
+}
+img[src="asset/appb/corty3e_ineqn_app_b-21_01.jpg"] {
+	height: 2.5em;
+	vertical-align: top;
+	margin-top: 1em;
+}
+img[src="asset/appb/corty3e_ineqn_app_b-21_02.jpg"] {
+	height: 2.5em;
+	vertical-align: top;
+	margin-top: 1em;
+}
+img[src="asset/appb/corty3e_ineqn_app_b-21_03.jpg"] {
+	height: 6em;
+	vertical-align: top;
+	margin-top: 1em;
+}
+img[src="asset/appb/corty3e_ineqn_app_b-21_04.jpg"] {
+	height: 6em;
+	vertical-align: top;
+	margin-top: 1em;
+}
+img[src="asset/appb/corty3e_ineqn_app_b-21_05.jpg"] {
+	height: 6em;
+	vertical-align: top;
+	margin-top: 1em;
+}
+img[src="asset/appb/corty3e_ineqn_app_b-22_01.jpg"] {
+	height: 6em;
+	vertical-align: top;
+	margin-top: 1em;
+}
+img[src="asset/appb/corty3e_ineqn_app_b-24_01.jpg"] {
+	height: 4.5em;
+	vertical-align: top;
+	margin-top: 1em;
+}
+img[src="asset/appb/corty3e_ineqn_app_b-24_02.jpg"] {
+	height: 4.5em;
+	vertical-align: top;
+	margin-top: 1em;
+}
+img[src="asset/appb/corty3e_ineqn_app_b-24_03.jpg"] {
+	height: 6em;
+	vertical-align: top;
+	margin-top: 1em;
+}
+img[src="asset/appb/corty3e_ineqn_app_b-24_07.jpg"] {
+	height: 7em;
+	vertical-align: top;
+	margin-top: 1em;
+}
+img[src="asset/appb/corty3e_ineqn_app_b-26_01.jpg"] {
+	height: 2.5em;
+	vertical-align: top;
+	margin-top: 1em;
+}
+img[src="asset/appb/corty3e_ineqn_app_b-26_02.jpg"] {
+	height: 7em;
+	vertical-align: top;
+	margin-top: 1em;
+}
+img[src="asset/appb/corty3e_ineqn_app_b-26_04.jpg"] {
+	height: 4.5em;
+	vertical-align: top;
+	margin-top: 1em;
+}
+img[src="asset/appb/corty3e_ineqn_app_b-26_05.jpg"] {
+	height: 7em;
+	vertical-align: top;
+	margin-top: 1em;
+}
+img[src="asset/appb/corty3e_ineqn_app_b-28_01.jpg"] {
+	height: 4.5em;
+	vertical-align: top;
+	margin-top: 1em;
+}
+img[src="asset/appb/corty3e_ineqn_app_b-29_01.jpg"] {
+	height: 5.5em;
+	vertical-align: top;
+	margin-top: 1em;
+}
+img[src="asset/appb/corty3e_ineqn_app_b-29_02.jpg"] {
+	height: 12em;
+	vertical-align: top;
+	margin-top: 1em;
+}
+img[src="asset/appb/corty3e_ineqn_app_b-29_03.jpg"] {
+	height: 9em;
+	vertical-align: top;
+	margin-top: 1em;
+}
+img[src="asset/appb/corty3e_ineqn_app_b-29_04.jpg"] {
+	height: 13em;
+	vertical-align: top;
+	margin-top: 1em;
+}
+img[src="asset/appb/corty3e_ineqn_app_b-31_04.jpg"] {
+	height: 27em;
+	vertical-align: top;
+	margin-top: 1em;
+}
+img[src="asset/appb/corty3e_ineqn_app_b-31_06.jpg"] {
+	height: 2.5em;
+	vertical-align: top;
+	margin-top: 1em;
+}
+img[src="asset/appb/corty3e_ineqn_app_b-11_02.jpg"] {
+	height: 2.5em;
+	vertical-align: top;
+	margin-top: 1em;
+}
+img[src="asset/appb/corty3e_ineqn_app_b-13_02.jpg"] {
+	height: 2.5em;
+	vertical-align: top;
+	margin-top: 1em;
+}

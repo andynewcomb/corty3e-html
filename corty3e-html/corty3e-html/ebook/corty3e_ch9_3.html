@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]> <html lang="en" class="no-js ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="no-js ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="no-js ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en" class="no-js ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+<head>
+    <title>corty3e_ch9</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <link href="css/boilerplate.css" media="screen" rel="stylesheet" type="text/css" >
+<link href="css/jquery-ui-custom.css" media="screen" rel="stylesheet" type="text/css" >
+<link href="css/manuscript.css" media="screen" rel="stylesheet" type="text/css" >
+<link href="css/digfir_ebook_fw.css" media="screen" rel="stylesheet" type="text/css" >
+<link href="css/corty3e.css" media="screen" rel="stylesheet" type="text/css" >
+<link href="css/corty3e_ch9.css" media="screen" rel="stylesheet" type="text/css" >    
+    
+    </head>
+<body class="noUi">
+<div id="manuscript" data-chapter-number="9">
+    <div data-type="section" data-block_type="h1" id="corty3e-ch9-sec1-2" level="1" data-print_page="295">
+<h2 class="section-title"><span data-type="title" data-title-for="corty3e-ch9-sec1-2"><span data-block_type="sec_num">9.2</span> <span data-block_type="sec_title">Calculating the Paired-Samples <em>t</em> Test</span>
+</span></h2>
+
+<div data-block_type="txt-ni" id="corty3e-ch9-p22"><p>Here are some data that are appropriate for analysis with a paired-samples <em>t</em> test. Imagine that a sensory psychologist, Dr. Keim, wanted to examine the effect of humidity on perceived temperature. She obtained six volunteers at her college and tested them, individually, in a temperature- and humidity-controlled chamber. Each participant was tested twice and the tests were separated by 24 hours. For both tests, the temperature in the chamber was set at 76°F. For one test the humidity level was “low,” and for the other test the humidity level was “high.” In order to avoid any effects due to the order of the tests, which humidity level each participant would experience first was randomly determined. For a test, a participant spent 15 minutes in the chamber, after which he or she was asked what the temperature was inside it. This “perceived temperature” is the study’s dependent variable.</p></div>
+<div data-block_type="txt" id="corty3e-ch9-p23"><p>The data from the humidity study are shown in <strong><span data-type="link" data-href="corty3e-ch09.xml#corty3e-ch9-fig-1">Table 9.1</span></strong>, where each case appears on a row and each condition (sample) in a column. <span data-type="link" data-href="corty3e-ch09.xml#corty3e-ch9-fig-1">Table 9.1</span> also contains the means and standard deviations for both conditions. Remember, in both conditions the actual temperature was the same, 76°F. The mean perceived temperature on the low-humidity test was 75.00°F, and in the high-humidity condition it was 82.50°F. Between the two test conditions, there was a 7.50°F difference in the means.</p></div>
+<div data-type="figure" data-figure-id="corty3e-ch9-fig-1" data-block_type="table" data-layout-align="center" data-layout-width="large" data-layout-border="true">
+
+<img id="" src="asset/ch9/corty3e_table09_01.jpg" data-figure-id="corty3e-ch9-fig-1" data-layout-width="large" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+</div>
+<div data-block_type="txt" id="corty3e-ch9-p24"><p><strong><span data-type="link" data-href="corty3e-ch09.xml#corty3e-ch9-fig-2">Figure 9.1</span></strong> is a pair of box-and-whisker plots, showing the median, interquartile range, and minimum/maximum for each condition. When looking at the graph, the difference seems clear—temperature does appear to be perceived as higher when the humidity is higher. But, looks can be deceiving and the sample size is low, so hypothesis testing is necessary to find out if the difference is a statistically significant one or if it can be explained by sampling error.</p></div>
+<div data-type="figure" data-figure-id="corty3e-ch9-fig-2" data-block_type="figure" data-layout-align="center" data-layout-width="medium" data-layout-border="true">
+
+<img id="" src="asset/ch9/corty3e_fig09_01.jpg" data-figure-id="corty3e-ch9-fig-2" data-layout-width="medium" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+<div data-type="figure_text">
+<span data-type="number">Figure 9.2: </span><span data-type="caption"><strong><span data-block_type="fig_num">Figure 9.1</span> Box-and-Whisker Plots Showing Perceived Temperature in Low- and High-Humidity Conditions</strong> This graphic appears to show that temperature is perceived as hotter when the humidity is higher. To determine whether the difference between the two conditions is a statistically significant one, a paired-samples <em>t</em> test is needed.</span>
+</div>
+</div>
+<div data-block_type="h4-txt-ni" id="corty3e-ch9-p25"><p><span data-block_type="h4-n-ri"><strong>Step 1</strong></span> <strong>Pick a Test.</strong> Dr. Keim, using a within-subjects design, is comparing the means for a sample of people measured in two different conditions, low humidity and high humidity. Remember, when one sample is measured in two different conditions, as happens here, statisticians consider this <em>two</em> dependent samples. This situation, comparing the means of dependent samples, calls for a paired-samples <em>t</em> test.</p></div>
+<div data-block_type="page_start" id="corty3e_page_296"><p>296</p></div>
+<div data-type="figure" data-figure-id="corty3e-ch9-fig-3" data-block_type="un_figure" data-layout-align="center" data-layout-width="medium" data-layout-border="true">
+
+<img id="" src="asset/ch9/corty3e_fig09_un01.jpg" data-figure-id="corty3e-ch9-fig-3" data-layout-width="medium" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+<div data-type="figure_text"><span data-type="caption"><strong>T</strong>om <strong>a</strong>nd <strong>H</strong>arry <strong>d</strong>espise <strong>c</strong>rabby <strong>i</strong>nfants</span></div>
+</div>
+<div data-block_type="h4-txt-ni" id="corty3e-ch9-p26"><p><span data-block_type="h4-n-ri"><strong>Step 2</strong></span> <strong>Check the Assumptions.</strong> There are three assumptions for the paired-samples <em>t</em> test (<strong><span data-type="link" data-href="corty3e-ch09.xml#corty3e-ch9-fig-4">Table 9.2</span></strong>), and they are familiar. The first assumption is that the sample is a random sample from the population to which the results will be generalized. Dr. Keim would like to be able to generalize her results to people in general, that is, to all the people in the world. She recognizes that she has a convenience sample not a random sample from this population, so this assumption is violated. The random samples assumption is robust, however, so she can continue with the test. She is aware of no one who suggests that Americans and/or college students perceive heat differently from others, so she will be willing to generalize her results more broadly than just to U.S. college students.</p></div>
+<div data-type="figure" data-figure-id="corty3e-ch9-fig-4" data-block_type="table" data-layout-align="center" data-layout-width="large" data-layout-border="true">
+
+<img id="" src="asset/ch9/corty3e_table09_02.jpg" data-figure-id="corty3e-ch9-fig-4" data-layout-width="large" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+</div>
+<div data-block_type="txt" id="corty3e-ch9-p27"><p>The second assumption is that the observations are independent within a sample. Be careful in assessing this assumption: it refers to independence <em>within</em> a sample, not <em>between</em> samples. Since the same cases are in both samples, or conditions, <em>the two samples</em> are not independent. However, each person in each sample is tested individually and each person is only tested once in each condition. The independence of observations assumption is not violated.</p></div>
+<div data-block_type="page_start" id="corty3e_page_297"><p>297</p></div>
+<div data-block_type="txt" id="corty3e-ch9-p28"><p>The third assumption, the normality assumption, says that in the larger population <em>the difference scores</em> are normally distributed. Look at <span data-type="link" data-href="corty3e-ch09.xml#corty3e-ch9-fig-1">Table 9.1</span> and note that there’s a third column listing the difference between the value a case had in one condition (high humidity) and its score in the other condition (low humidity). This is called a difference score, abbreviated <em>D,</em> and is needed to calculate a paired-samples <em>t</em> test. The formula for <em>D</em> is shown in <span data-type="link" data-href="#corty3e-ch9-bx6-1">Equation 9.1</span>.</p></div>
+<div data-type="box" data-block_type="eq-t" id="corty3e-ch9-bx6-1"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="corty3e-ch9-bx6-1"><span data-block_type="sec_num">Equation 9.1</span> <span data-block_type="sec_title">Formula for Calculating Difference Score, <em>D</em></span>
+</h3>
+
+<div data-block_type="eq" id="corty3e-ch9-p29"><p><em>D</em> = <em>X</em><sub>1</sub> – <em>X</em><sub>2</sub></p></div>
+<div data-block_type="eq-txt-ni" id="corty3e-ch9-p30"><p>where <em>D</em> = the difference score being calculated</p></div>
+<div data-block_type="eq-unl" id="corty3e-ch9-p31"><p><em>X</em><sub>1</sub> = a case’s score in Condition 1</p></div>
+<div data-block_type="eq-unl" id="corty3e-ch9-p32"><p><em>X</em><sub>2</sub> = a case’s score in Condition 2</p></div>
+</div></div>
+<div data-block_type="txt" id="corty3e-ch9-p33"><p>In calculating <em>D</em>, it matters little which value is subtracted from the other, as long as the same order is followed for all cases. Most people prefer to work with positive numbers, so feel free to decide the order for the subtraction to maximize the number of positive values. Dr. Keim chose to subtract the low-humidity scores from the high-humidity scores in order to have positive difference scores.</p></div>
+<div data-block_type="txt" id="corty3e-ch9-p34"><p>For the first case, the person who perceived the low-humidity condition as 76° and the high-humidity condition as 81°F, the difference score is calculated as</p></div>
+<div data-block_type="eq" id="corty3e-ch9-p35"><p><em>D</em> = <em>X</em><sub>HighHumidity</sub> – <em>X</em><sub>LowHumidity</sub></p></div>
+<div data-block_type="eq" id="corty3e-ch9-p36"><p>= 81 – 76</p></div>
+<div data-block_type="eq" id="corty3e-ch9-p37"><p>= 5.0000</p></div>
+<div data-block_type="eq" id="corty3e-ch9-p38"><p>= 5.00</p></div>
+<div data-block_type="txt" id="corty3e-ch9-p39"><p>A sample size of 6 is a little small for making decisions about the shape of a parent population. However, based on her previous research, Dr. Keim is willing to assume that the difference scores are normally distributed in the population, so the normality assumption is not violated.</p></div>
+<div data-block_type="h4-txt-ni" id="corty3e-ch9-p40"><p><span data-block_type="h4-n-ri"><strong>Step 3</strong></span> <strong>List the Hypotheses.</strong> The hypotheses, which are statements about populations, are going to be the same as they were for the independent-samples <em>t</em> test. The null hypothesis is going to say that the two population means are the same. The alternative hypothesis will state that the two population means differ, but it won’t indicate whether the difference is large or small, positive or negative. These hypotheses are nondirectional or two-tailed, so they don’t specify a direction for the difference. Thus, Dr. Keim is testing for two possibilities: (1) low humidity is perceived as hotter than high humidity, or (2) high humidity is perceived as hotter than low humidity. The generic form of two-tailed hypotheses is</p></div>
+<div data-block_type="page_start" id="corty3e_page_298"><p>298</p></div>
+<div data-block_type="eq" id="corty3e-ch9-p41"><p><em>H</em><sub>0</sub>: µ<sub>1</sub> = µ<sub>2</sub></p></div>
+<div data-block_type="eq" id="corty3e-ch9-p42"><p><em>H</em><sub>1</sub>: µ<sub>1</sub> ≠ µ<sub>2</sub></p></div>
+<div data-block_type="txt-ni" id="corty3e-ch9-p43"><p>The specific form of the two hypotheses for this study is</p></div>
+<div data-block_type="eq" id="corty3e-ch9-p44"><p><em>H</em><sub>0</sub>: µ<sub>LowHumidity</sub> = µ<sub>HighHumidity</sub></p></div>
+<div data-block_type="eq" id="corty3e-ch9-p45"><p><em>H</em><sub>1</sub>: µ<sub>LowHumidity</sub> ≠ µ<sub>HighHumidity</sub></p></div>
+<div data-block_type="txt" id="corty3e-ch9-p46"><p>Of course, it is possible to have directional hypotheses for a paired-samples <em>t</em> test. If Dr. Keim had predicted, in advance, that high humidity would lead to a higher perceived temperature, her hypotheses would have been</p></div>
+<div data-block_type="eq" id="corty3e-ch9-p47"><p><em>H</em><sub>0</sub>: µ<sub>LowHumidity</sub> ≥ µ<sub>HighHumidity</sub></p></div>
+<div data-block_type="eq" id="corty3e-ch9-p48"><p><em>H</em><sub>1</sub>: µ<sub>LowHumidity</sub> &lt; µ<sub>HighHumidity</sub></p></div>
+<div data-block_type="h4-txt-ni" id="corty3e-ch9-p49"><p><span data-block_type="h4-n-ri"><strong>Step 4</strong></span> <strong>Set the Decision Rule.</strong> The decision rule for a paired-samples <em>t</em> test is formulated the same way as it was for the independent-samples <em>t</em> test. The critical value of <em>t,</em> <em>t<sub>cv</sub> ,</em> found in <span data-type="link" data-href="corty3e-appendix01.xml#corty3e-app1-fig-8">Appendix Table 3</span>, is based on (1) the number of tails for the test, (2) how willing one is to make a Type I error (i.e., the alpha level), and (3) how many degrees of freedom there are. The default option, or the most common form of the paired-samples <em>t</em> test, as for other statistical tests, is a two-tailed test with alpha set at .05.</p></div>
+<div data-block_type="txt" id="corty3e-ch9-p50"><p>Once the observed value of <em>t</em> is calculated (Step 5), it is compared to the critical value in order to decide whether or not to reject the null hypothesis. For a two-tailed test, the general form of the decision rule is:</p></div>
+<ul data-block_type="bullet" id="corty3e-ch9-list-2">
+<li><div data-block_type="bl-first" id="corty3e-ch9-p51"><p>If <em>t</em> ≤ –<em>t<sub>cv</sub></em> <em>or</em> t ≥ <em>t<sub>cv</sub> ,</em> reject the null hypothesis.</p></div>
+</li>
+<li><div data-block_type="bl-last" id="corty3e-ch9-p52"><p>If –<em>t<sub>cv</sub></em> &lt; <em>t</em> &lt; t<em><sub>cv</sub></em> , fail to reject the null hypothesis.</p></div>
+</li>
+</ul>
+<div data-block_type="txt" id="corty3e-ch9-p53"><p>Dr. Keim is doing a two-tailed test and is content to use the default alpha level of .05. All that she needs to do is calculate degrees of freedom. <span data-type="link" data-href="#corty3e-ch9-bx6-2">Equation 9.2</span> is the formula for calculating degrees of freedom for a paired-samples <em>t</em> test.</p></div>
+<div data-type="box" data-block_type="eq-t" id="corty3e-ch9-bx6-2"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="corty3e-ch9-bx6-2"><span data-block_type="sec_num">Equation 9.2</span> <span data-block_type="sec_title">Degrees of Freedom (<em>df</em>) for a Paired-Samples <em>t</em> Test</span>
+</h3>
+
+<div data-block_type="eq" id="corty3e-ch9-p54"><p><em>df</em> = <em>N</em> – 1</p></div>
+<div data-block_type="eq-txt-ni" id="corty3e-ch9-p55"><p>where <em>df</em> = the degrees of freedom</p></div>
+<div data-block_type="eq-unl" id="corty3e-ch9-p56"><p><em>N</em> = the number of <em>pairs</em> of cases</p></div>
+</div></div>
+<div data-block_type="txt" id="corty3e-ch9-p57"><p>Dr. Keim’s study involves six <em>pairs</em> of cases, so degrees of freedom are calculated as</p></div>
+<div data-block_type="eq" id="corty3e-ch9-p58"><p><em>df</em> = 6 – 1</p></div>
+<div data-block_type="eq" id="corty3e-ch9-p59"><p>= 5</p></div>
+<div data-block_type="txt-ni" id="corty3e-ch9-p60"><p>Look in Appendix 3 and find the intersection of the column for a two-tailed hypothesis test with the alpha set at .05 and the row for <em>df</em> = 5. There, the critical value of <em>t,</em> ±2.571, is found. <strong><span data-type="link" data-href="corty3e-ch09.xml#corty3e-ch9-fig-5">Figure 9.2</span></strong> uses the critical values to mark the rare zone, where the null hypothesis is rejected, and the common zone, where it is not.</p></div>
+<div data-type="figure" data-figure-id="corty3e-ch9-fig-5" data-block_type="figure" data-layout-align="center" data-layout-width="large" data-layout-border="true">
+
+<img id="" src="asset/ch9/corty3e_fig09_02.jpg" data-figure-id="corty3e-ch9-fig-5" data-layout-width="large" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+<div data-type="figure_text">
+<span data-type="number">Figure 9.4: </span><span data-type="caption"><strong><span data-block_type="fig_num">Figure 9.2</span> Critical Value of t, Two-Tailed, α = .05, <em>df</em> = 5</strong> This is the sampling distribution of <em>t</em> that would occur if the null hypothesis were true and µ<sub>1</sub> = µ<sub>2</sub>. When the null hypothesis is true, the observed value will fall in the common zone 95% of the time and it will fall in the rare zone only 5% of the time.</span>
+</div>
+</div>
+<div data-block_type="page_start" id="corty3e_page_299"><p>299</p></div>
+<div data-block_type="txt" id="corty3e-ch9-p61"><p>Here is the decision rule for Dr. Keim’s study:</p></div>
+<ul data-block_type="bullet" id="corty3e-ch9-list-3">
+<li><div data-block_type="bl-first" id="corty3e-ch9-p62"><p>If <em>t</em> ≤ –2.571 <em>or</em> t ≥ 2.571, reject the null hypothesis.</p></div>
+</li>
+<li><div data-block_type="bl-last" id="corty3e-ch9-p63"><p>If –2.571 &lt; <em>t</em> &lt; 2.571, fail to reject the null hypothesis.</p></div>
+</li>
+</ul>
+<div data-block_type="h4-txt-ni" id="corty3e-ch9-p64"><p><span data-block_type="h4-n-ri">Step 5</span> <strong>Calculate the Test Statistic.</strong> The same general procedure is used for calculating the paired-samples <em>t</em> value as was used for the independent-samples <em>t:</em> divide the difference between the two sample means by the standard error of the difference. This standard error of the difference is the standard error of the difference for difference scores and will be abbreviated <img id="" src="asset/ch9/corty3e_ineqn09_302_01.jpg" data-figure-id="" data-layout-width="" data-mmtype="" alt="image"> to differentiate it from the other denominators for <em>t</em> tests. The <span data-type="termref" data-term="standard error of the mean difference for difference scores">standard error of the mean difference for difference scores</span> is the standard deviation of the sampling distribution of difference scores.</p></div>
+<div data-type="box" data-block_type="eq-t" id="corty3e-ch9-bx6-3"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="corty3e-ch9-bx6-3"><span data-block_type="sec_num">Equation 9.3</span> <span data-block_type="sec_title">Formula for the Standard Error of the Mean Difference for Difference Scores (<em>s<sub>M<sub>D</sub></sub></em>)</span>
+</h3>
+
+<div data-block_type="equation" id="corty3e-ch9-eqn-1"><p>
+<img id="" src="asset/ch9/corty3e_eqn09_299_01.jpg" data-figure-id="" data-layout-width="" data-mmtype="" alt="image"></p></div>
+<div data-block_type="equation" id="corty3e-ch9-eqn-2"><p>
+<img id="" src="asset/ch9/corty3e_eqn09_299_03.jpg" data-figure-id="" data-layout-width="" data-mmtype="" alt="image"></p></div>
+<div data-block_type="eq-unl" id="corty3e-ch9-p66"><p><em>s<sub>D</sub></em> = the standard deviation (<em>s</em>) of the difference scores</p></div>
+<div data-block_type="eq-unl" id="corty3e-ch9-p67"><p><em>N</em> = the number of pairs of cases</p></div>
+</div></div>
+<div data-block_type="txt" id="corty3e-ch9-p68"><p>Using Equations 3.6 and 3.7, Dr. Keim has calculated the standard deviation of the difference scores and found <em>s<sub>D</sub></em> = 2.07. There are six pairs of cases, so <em>N</em> = 6. Plugging these values into <span data-type="link" data-href="#corty3e-ch9-bx6-3">Equation 9.3</span> gives</p></div>
+<div data-block_type="equation" id="corty3e-ch9-eqn-3"><p>
+<img id="" src="asset/ch9/corty3e_eqn09_299_02.jpg" data-figure-id="" data-layout-width="" data-mmtype="" alt="image"></p></div>
+<div data-block_type="page_start" id="corty3e_page_300"><p>300</p></div>
+<div data-block_type="txt" id="corty3e-ch9-p69"><p>The standard error of the mean difference for the difference scores is 0.85. This value will be used in <span data-type="link" data-href="#corty3e-ch9-bx6-4">Equation 9.4</span>, the formula for calculating <em>t,</em> the value of the test statistic for the paired-samples <em>t</em> test.</p></div>
+<div data-type="box" data-block_type="eq-t" id="corty3e-ch9-bx6-4"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="corty3e-ch9-bx6-4"><span data-block_type="sec_num">Equation 9.4</span> <span data-block_type="sec_title">Formula for Calculating <em>t</em>, the Value of the Test Statistic for a Paired-Samples <em>t</em> Test</span>
+</h3>
+
+<div data-block_type="equation" id="corty3e-ch9-eqn-4"><p>
+<img id="" src="asset/ch9/corty3e_eqn09_300_01.jpg" data-figure-id="" data-layout-width="" data-mmtype="" alt="image"></p></div>
+<div data-block_type="eq-txt-ni" id="corty3e-ch9-p70"><p>where <em>t</em> = the value of the test statistic for a paired-samples <em>t</em> test</p></div>
+<div data-block_type="eq-unl" id="corty3e-ch9-p71"><p><em>M</em><sub>1</sub> = the mean of one sample</p></div>
+<div data-block_type="eq-unl" id="corty3e-ch9-p72"><p><em>M</em><sub>2</sub> = the mean of the other sample</p></div>
+<div data-block_type="eq-unl" id="corty3e-ch9-p73"><p><img id="" src="asset/ch9/corty3e_ineqn09_302_01.jpg" data-figure-id="" data-layout-width="" data-mmtype="" alt="image"> = standard error of the mean difference for difference scores (<span data-type="link" data-href="#corty3e-ch9-bx6-3">Equation 9.3</span>)</p></div>
+</div></div>
+<div data-block_type="txt" id="corty3e-ch9-p74"><p>Given <img id="" src="asset/ch9/corty3e_ineqn09_300_01.jpg" data-figure-id="" data-layout-width="" data-mmtype="" alt="image">, <em>M</em><sub>LowHumidity</sub> = 75.00, and <em>M</em><sub>HighHumidity</sub> = 82.50, Dr. Keim is ready to calculate <em>t.</em> Again, it matters little which mean is called <em>M</em><sub>1</sub> and which is <em>M</em><sub>2</sub>, so Dr. Keim has arranged the calculations to end up with a positive number in the numerator, assuring a positive <em>t</em> value:</p></div>
+<div data-block_type="equation" id="corty3e-ch9-eqn-5"><p>
+<img id="" src="asset/ch9/corty3e_eqn09_300_02.jpg" data-figure-id="" data-layout-width="" data-mmtype="" alt="image"></p></div>
+<div data-block_type="txt" id="corty3e-ch9-p75"><p>Dr. Keim’s <em>t</em> value is 8.82, and she is done with Step 5. In the next section of the chapter, after more practice with the first five steps, we’ll follow Dr. Keim as she applies the decision rule and interprets the results.</p></div>
+<div data-type="box" data-block_type="sr-exp-n" id="corty3e-ch9-bx3-1"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="corty3e-ch9-bx3-1">Worked Example 9.1</h3>
+<div data-block_type="sr-ex-txt-ni" id="corty3e-ch9-p76"><p>A clinical psychologist, Dr. Althof, was studying the long-term effectiveness of psychodynamic psychotherapy for depression. He obtained a sample of 16 people with moderate to severe depression and assigned each to receive 20 sessions of psychodynamic therapy from a trained therapist. At the end of treatment, he administered a depression scale to each person and determined that the mean level of depression was 14.00. Scores on this depression scale can range from 0 to 50, and higher scores indicate greater depression. Six months later, Dr. Althof tracked down all 16 participants and readministered the depression scale, finding the mean was now 15.00. <strong><span data-type="link" data-href="corty3e-ch09.xml#corty3e-ch9-fig-10">Figure 9.3</span></strong> is a pair of box-and-whisker plots showing the depression scores at the two points in time. A 1-point increase on a 50-point scale doesn’t sound like very much, but the box-and-whisker plots suggest an increase in the depression level in the six months following the end of treatment. Dr. Althof needs hypothesis testing to find out if the change is a statistically significant one.</p></div>
+<div data-type="figure" data-figure-id="corty3e-ch9-fig-10" data-block_type="figure" data-layout-align="center" data-layout-width="medium" data-layout-border="true">
+
+<img id="" src="asset/ch9/corty3e_fig09_03.jpg" data-figure-id="corty3e-ch9-fig-10" data-layout-width="medium" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+<div data-type="figure_text">
+<span data-type="number">Figure 9.5: </span><span data-type="caption"><strong><span data-block_type="fig_num">Figure 9.3</span> Box-and-Whisker Plots Showing Depression Level after Treatment and at Six-Month Follow-Up</strong> In this graph, there is some increase in the depression level in the six months following treatment. It will take a paired-samples <em>t</em> test to determine if the difference is statistically significant.</span>
+</div>
+</div>
+<div data-block_type="page_start" id="corty3e_page_301"><p>301</p></div>
+<div data-block_type="h4-txt-ni" id="corty3e-ch9-p77"><p><span data-block_type="h4-n-ri"><strong>Step 1</strong></span> <strong>Pick a Test.</strong> Dr. Althof is comparing the mean of a sample at one time to the mean of the sample at a second time. Though it is one sample of people, they are measured at two points in time, making it appropriate for a paired-samples <em>t</em> test.</p></div>
+<div data-block_type="h4-txt-ni" id="corty3e-ch9-p78"><p><span data-block_type="h4-n-ri"><strong>Step 2</strong></span> <strong>Check the Assumptions.</strong> The assumptions for the paired-samples <em>t</em> test are listed in <span data-type="link" data-href="corty3e-ch09.xml#corty3e-ch9-fig-4">Table 9.2</span>.</p></div>
+<ul data-block_type="bullet" id="corty3e-ch9-list-4">
+<li><div data-block_type="sr-exp-bl-first" id="corty3e-ch9-p79"><p>The random samples assumption is violated. It is not reported that the 16 cases were a random sample from the population of all the people in the world with moderate to severe depression, so it is safe to assume this is not a random sample from that population. When this robust assumption is violated, however, a researcher can still proceed with the test. Dr. Althof just has to be careful about the population to which he generalizes the results.</p></div>
+</li>
+<li><div data-block_type="sr-exp-bl-mid" id="corty3e-ch9-p80"><p>The independence of observations assumption is not violated. Each participant received individual therapy, so the participants within a sample didn’t influence each other.</p></div>
+</li>
+<li><div data-block_type="sr-exp-bl-last" id="corty3e-ch9-p81"><p>The assumption for the normality of difference scores is not violated. Dr. Althof knows from his review of the literature that depression scores are normally distributed. He is willing to assume that the difference scores (six-month follow-up depression score minus end-of-treatment depression score) will be normally distributed in the larger population.</p></div>
+</li>
+</ul>
+<div data-block_type="h4-txt-ni" id="corty3e-ch9-p82"><p><span data-block_type="h4-n-ri"><strong>Step 3</strong></span> <strong>List the Hypotheses.</strong> Sometimes the effect of treatment increases over time, but more often the effect of treatment decreases over time, so Dr. Althof was open to both options when he planned the study. As a result, his hypotheses are nondirectional (two-tailed). The null hypothesis states that the two population means (end-of-treatment mean vs. six-month follow-up mean) are the same, and the alternative hypothesis says that the two population means differ:</p></div>
+<div data-block_type="sr-exp-eq" id="corty3e-ch9-p83"><p><em>H</em><sub>0</sub>: µ<sub>EOT</sub> = µ<sub>6MFU</sub></p></div>
+<div data-block_type="sr-exp-eq" id="corty3e-ch9-p84"><p><em>H</em><sub>1</sub>: µ<sub>EOT</sub> ≠ µ<sub>6MFU</sub></p></div>
+<div data-block_type="page_start" id="corty3e_page_302"><p>302</p></div>
+<div data-block_type="h4-txt-ni" id="corty3e-ch9-p85"><p><span data-block_type="h4-n-ri"><strong>Step 4</strong></span> <strong>Set the Decision Rule.</strong> The critical value of <em>t</em> depends on the number of tails, alpha, and degrees of freedom. With nondirectional hypotheses, the test is two-tailed. Dr. Althof is comfortable setting the alpha at the usual level, .05, and having a 5% chance of Type I error. Finally, using <span data-type="link" data-href="#corty3e-ch9-bx6-2">Equation 9.2</span>, he calculates degrees of freedom for the paired-samples <em>t</em> test:</p></div>
+<div data-block_type="sr-exp-eq" id="corty3e-ch9-p86"><p><em>df</em> = <em>N</em> – 1</p></div>
+<div data-block_type="sr-exp-eq" id="corty3e-ch9-p87"><p>= 16 – 1</p></div>
+<div data-block_type="sr-exp-eq" id="corty3e-ch9-p88"><p>= 15</p></div>
+<div data-block_type="sr_exp_txt" id="corty3e-ch9-p89"><p>Consulting <span data-type="link" data-href="corty3e-appendix01.xml#corty3e-app1-fig-8">Appendix Table 3</span> in the column for a two-tailed test with an alpha of .05 and the row with 15 degrees of freedom, Dr. Althof finds that the critical value of <em>t</em> is ±2.131. The common and rare zones for his decision rule are shown in <strong><span data-type="link" data-href="corty3e-ch09.xml#corty3e-ch9-fig-11">Figure 9.4</span></strong>. The decision rule is:</p></div>
+<div data-type="figure" data-figure-id="corty3e-ch9-fig-11" data-block_type="figure" data-layout-align="center" data-layout-width="large" data-layout-border="true">
+
+<img id="" src="asset/ch9/corty3e_fig09_04.jpg" data-figure-id="corty3e-ch9-fig-11" data-layout-width="large" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+<div data-type="figure_text">
+<span data-type="number">Figure 9.6: </span><span data-type="caption"><strong><span data-block_type="fig_num">Figure 9.4</span> Critical Value of <em>t</em>, Two-Tailed, α = .05, <em>df</em> = 15</strong> This is the sampling distribution of <em>t</em> for 15 degrees of freedom. Compare this to the sampling distribution of <em>t</em> in <span data-type="link" data-href="corty3e-ch09.xml#corty3e-ch9-fig-5">Figure 9.2</span>, where <em>df</em> = 5. Note that this sampling distribution is more peaked, packed more closely around zero. As a result, <em>t<sub>cv</sub></em> here, 2.131, is closer to zero, making the rare zone larger. When the rare zone is larger, which occurs when the sample size is larger, it is easier to reject the null hypothesis.</span>
+</div>
+</div>
+<ul data-block_type="bullet" id="corty3e-ch9-list-5">
+<li><div data-block_type="sr-exp-bl-first" id="corty3e-ch9-p90"><p>If <em>t</em> ≤ –2.131 <em>or</em> <em>t</em> ≥ 2.131, reject the null hypothesis.</p></div>
+</li>
+<li><div data-block_type="sr-exp-bl-last" id="corty3e-ch9-p91"><p>If –2.131 &lt; <em>t</em> &lt; 2.131, fail to reject the null hypothesis.</p></div>
+</li>
+</ul>
+<div data-block_type="h4-txt-ni" id="corty3e-ch9-p92"><p><span data-block_type="h4-n-ri"><strong>Step 5</strong></span> <strong>Calculate the Test Statistic.</strong> The data set, with depression scores at the end of treatment and six months later, is shown in <strong><span data-type="link" data-href="corty3e-ch09.xml#corty3e-ch9-fig-12">Table 9.3</span>.</strong> Also shown are the difference scores and the standard deviation of the difference scores (<em>s<sub>D</sub></em> = 2.31).</p></div>
+<div data-type="figure" data-figure-id="corty3e-ch9-fig-12" data-block_type="table" data-layout-align="center" data-layout-width="large" data-layout-border="true">
+
+<img id="" src="asset/ch9/corty3e_table09_03.jpg" data-figure-id="corty3e-ch9-fig-12" data-layout-width="large" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+</div>
+<div data-block_type="sr_exp_txt" id="corty3e-ch9-p93"><p>The first step in the calculations is applying <span data-type="link" data-href="#corty3e-ch9-bx6-3">Equation 9.3</span> to find the standard error of the difference, <img id="" src="asset/ch9/corty3e_ineqn09_302_01.jpg" data-figure-id="" data-layout-width="" data-mmtype="" alt="image">:</p></div>
+<div data-block_type="equation" id="corty3e-ch9-eqn-6"><p>
+<img id="" src="asset/ch9/corty3e_eqn09_302_01.jpg" data-figure-id="" data-layout-width="" data-mmtype="" alt="image"></p></div>
+<div data-block_type="sr_exp_txt" id="corty3e-ch9-p94"><p>The value for the standard error of the difference, 0.58, is then used in <span data-type="link" data-href="#corty3e-ch9-bx6-4">Equation 9.4</span> to find <em>t.</em> It doesn’t matter which mean is subtracted from which, so Dr. Althof arranged them to end up with a positive value by subtracting the follow-up mean (14.00) from the end-of-treatment mean (15.00):</p></div>
+<div data-block_type="page_start" id="corty3e_page_303"><p>303</p></div>
+<div data-block_type="equation" id="corty3e-ch9-eqn-7"><p>
+<img id="" src="asset/ch9/corty3e_eqn09_303_01.jpg" data-figure-id="" data-layout-width="" data-mmtype="" alt="image"></p></div>
+<div data-block_type="sr_exp_txt" id="corty3e-ch9-p95"><p>Having found <em>t</em> = 1.72, Step 5 is complete. All that’s left is the interpretation, which we’ll turn to in the next section.</p></div>
+</div></div>
+<div data-type="box" data-block_type="sr-h" id="corty3e-ch9-bx2-1"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="corty3e-ch9-bx2-1">Practice Problems 9.1</h3>
+<div data-block_type="sr-h1" id="corty3e-ch9-p96"><p><strong>Apply Your Knowledge</strong></p></div>
+<div data-block_type="sr-que-nl" id="corty3e-ch9-p97"><p><span data-block_type="question_num">9.01</span> Given the following pairs of scores, calculate difference scores: 72 and 75; 69 and 45; 42 and 39; 47 and 46; 55 and 61; 50 and 61; 71 and 69; 55 and 69.</p></div>
+<div data-block_type="sr-que-nl" id="corty3e-ch9-p98"><p><span data-block_type="question_num">9.02</span> Given <em>s<sub>D</sub></em> = 8.43 and <em>N</em> = 64, calculate <img id="" src="asset/ch9/corty3e_ineqn09_302_01.jpg" data-figure-id="" data-layout-width="" data-mmtype="" alt="image">.</p></div>
+<div data-block_type="sr-que-nl" id="corty3e-ch9-p99"><p><span data-block_type="question_num">9.03</span> Given <em>M</em><sub>1</sub> = 19.98, <em>M</em><sub>2</sub> = 18.65, and <img id="" src="asset/ch9/corty3e_ineqn09_303_01.jpg" data-figure-id="" data-layout-width="" data-mmtype="" alt="image">, calculate <em>t.</em></p></div>
+</div></div>
+</div>
+<!-- #x-digfir-subsection-insertion-point --></div><!-- /#manuscript -->
+<br class="clear" />
+<!-- end of material in original view -->
+
+	<!--[if IE]><script type="text/javascript" src="js/excanvas.compiled.js"></script><![endif]-->
+    
+<script type="text/javascript" src="js/utilities.js"></script>
+<script type="text/javascript" src="js/query_types.js"></script>
+<script type="text/javascript" src="js/player.js"></script>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/jquery-ui-1.8.16.custom.min.js"></script>
+<script type="text/javascript" src="js/jquery_extensions.js"></script>
+<script type="text/javascript" src="js/swfobject.js"></script>
+<script type="text/javascript" src="http://admin.brightcove.com/js/BrightcoveExperiences.js"></script>
+<script type="text/javascript" src="js/digfir_ebook_fw.js"></script>
+<script type="text/javascript" src="js/corty3e.js"></script>
+<script type="text/javascript" src="js/corty3e_ch9.js"></script>
+<script type="text/javascript">
+    //<!--
+    
+$(window).ready(function () {
+	player.initialize('56d62ca3757a2e370d000000');
+});
+    //-->
+</script>
+</body>
+</html>
+

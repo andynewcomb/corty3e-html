@@ -1,0 +1,61 @@
+/* Chapter 1 CSS */
+
+/* intro adjustments */
+div#corty3e-ch1-ibx-1 {
+    padding-bottom: 3em;
+}
+
+body.noUi {
+    // keep margin note in section b-head
+    div#corty3e-ch1-exp1-4 {
+        margin-top: -77px;
+    }
+    // margin Figure 1.7 -- smaller to fit section
+    div#corty3e-ch1-fig-12 img {
+        max-width: 121px;
+    }
+    // margin thermometer needs to be smaller
+    div#corty3e-ch1-fig-13 {
+        width: 125px !important;
+        img {
+            max-width: 80px !important;
+        }
+    }
+    // margin silhouette image needs to come up a little
+    div#corty3e-ch1-fig-14 {
+        margin-top: -23px;
+    }
+}
+// block math statements
+
+// page numbers caught in relative parent
+div#corty3e_page_15,
+div#corty3e_page_16,
+div#corty3e_page_21,
+div#corty3e_page_22,
+div#corty3e_page_28,
+div#corty3e_page_30 {
+    position: absolute;
+    left: -60px;
+}
+// image extending down into next section
+div#digfir_section_2,
+div#digfir_section_4 {
+    clear: none;
+}
+
+// enlarge certain math equation images
+div#corty3e-ch1-p329 img {
+    height: 30px;
+}
+
+/* inline math image adjustments */
+// note that the default for the images marjed as math inline (ineqn) is 2em, which works
+// for those fractions with denomominator and numerator, making them double high
+// the changes below are for single-high math (symbols, etc., but not fractions)
+img[src*="corty3e_ineqn01_24_01"],
+img[src*="corty3e_ineqn01_24_02"] {
+    height: 1em;
+    vertical-align: text-top;
+}
+

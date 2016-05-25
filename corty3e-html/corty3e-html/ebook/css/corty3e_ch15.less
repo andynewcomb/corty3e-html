@@ -1,0 +1,244 @@
+/* Chapter 15 CSS */
+
+// borrowed from book-level CSS
+@corty-blue: #168ca8;
+@box-bg-blue: #e0e8ef;
+
+div#corty3e-ch15-p1 {
+    margin-top: 25px;
+}
+
+// margin adjustments
+
+
+/* Figures */
+body.noUi {
+}
+
+/* Tables */
+body.noUi {
+    div#corty3e-ch15-table1 {
+        table {
+            tr {
+                td {
+                    border: 1px solid black;
+                    text-align: left;
+                    padding-right: 40px;
+                }
+            }
+        }
+    }
+    div#corty3e-ch15-table2 {
+        table {
+            tr {
+                td {
+                    border: 1px solid black;
+                    text-align: center;
+                    padding: 2px 27px;
+                    &:last-child {
+                        border-right: 0;
+                        text-align: left;
+                        padding: 2px 40px 2px 14px;
+                    }
+                }
+                &:last-child {
+                    td {
+                        border-bottom: 0;
+                    }
+                }
+            }
+        }
+    }
+    div#corty3e-ch15-table3 {
+        table {
+            border: 1px solid black;
+            tr {
+                td {
+                    border: 0;
+                    text-align: left;
+                    padding-right: 75px;
+                    &:first-child {
+                        border-right: 1px solid black;
+                    }
+                }
+            }
+            tr:nth-child(2) {
+                border-bottom: 1px solid black;
+            }
+        }
+    }
+    div#corty3e-ch15-table4,
+    div#corty3e-ch15-table6,
+    div#corty3e-ch15-table17,
+    div#corty3e-ch15-table18,
+    div#corty3e-ch15-table19,
+    div#corty3e-ch15-table20,
+    div#corty3e-ch15-table21,
+    div#corty3e-ch15-table22,
+    div#corty3e-ch15-table23,
+    div#corty3e-ch15-table24 {
+        table {
+            tr:first-child {
+                background-color: @box-bg-blue;
+                td {
+                    color: @corty-blue;
+                    font-weight: bold;
+                }
+            }
+            tr > td:first-child {
+                text-align: left;
+                color: @corty-blue;
+                font-weight: bold;
+            }
+        }
+    }
+    div#corty3e-ch15-table5 {
+        width: 575px !important;
+        table {
+            td {
+                color: @corty-blue;
+                font-weight: bold;
+                text-align: left;
+                vertical-align: top;
+            }
+            tr:first-child {
+                background-color: @box-bg-blue;
+                td {
+                    text-align: center;
+                }
+            }
+        }
+    }
+    div#corty3e-ch15-table7,
+    div#corty3e-ch15-table8,
+    div#corty3e-ch15-table9,
+    div#corty3e-ch15-table10,
+    div#corty3e-ch15-table11,
+    div#corty3e-ch15-table12 {
+        table {
+            border: 1px solid black;
+        }
+    }
+    div#corty3e-ch15-table13,
+    div#corty3e-ch15-table14,
+    div#corty3e-ch15-table15,
+    div#corty3e-ch15-table16 {
+        table {
+            tr > td:first-child {
+                text-align: left;
+                color: @corty-blue;
+            }
+        }
+    }
+    div#corty3e-ch15-table25,
+    div#corty3e-ch15-table26,
+    div#corty3e-ch15-table27,
+    div#corty3e-ch15-table28,
+    div#corty3e-ch15-table29,
+    div#corty3e-ch15-table30,
+    div#corty3e-ch15-table31,
+    div#corty3e-ch15-table32,
+    div#corty3e-ch15-table33,
+    div#corty3e-ch15-table34,
+    div#corty3e-ch15-table35,
+    div#corty3e-ch15-table36,
+    div#corty3e-ch15-table37,
+    div#corty3e-ch15-table38,
+    div#corty3e-ch15-table39,
+    div#corty3e-ch15-table40 {
+        table {
+            tr:first-child {
+                background-color: @box-bg-blue;
+                td {
+                    color: @corty-blue;
+                    font-weight: bold;
+                    &:first-child {
+                        border-bottom: 0;
+                    }
+                }
+            }
+            tr:first-child + tr {
+                background-color: @box-bg-blue;
+                td {
+                    color: @corty-blue;
+                    font-weight: bold;
+                    &:first-child {
+                        border-top: 0;
+                    }
+                }
+            }
+            tr:first-child + tr + tr {
+                td {
+                    &:last-child {
+                        border-right: 1px solid black;
+                    }
+                }
+            }
+            tr:last-child {
+                td {
+                    &:last-child {
+                        border-right: 1px solid black;
+                    }
+                }
+            }
+            tr > td:first-child {
+                text-align: left;
+                color: @corty-blue;
+                font-weight: bold;
+            }
+        }
+    }
+    div#corty3e-ch15-table41,
+    div#corty3e-ch15-table42,
+    div#corty3e-ch15-table43,
+    div#corty3e-ch15-table44 {
+        table {
+            border-top: 1px solid black;
+            tr > td:first-child {
+                border-left: 1px solid black;
+            }
+            tr:last-child {
+                td {
+                    border-bottom: 0;
+                    &:first-child {
+                        border-left: 0;
+                    }
+                }
+            }
+        }
+    }
+    div#corty3e-ch15-table44 {
+        td {
+            padding: 1em 2em;
+        }
+        tr:last-child > td {
+            padding: 3px;
+        }
+    }
+}
+
+/* Lists */
+
+/* Equations */
+
+// equation box line adjustments
+
+// equation alignment
+
+// block equation move/resize
+
+// inline equation sizing
+    
+// page numbers caught in relative parent
+
+// other
+
+/* equation feature box -- needs more room for equation number to left */
+[data-block_type="eq-t"] {
+    [data-type="title"] {
+        padding-left: 8em;
+    }
+}
+
+
+// intro chapter number

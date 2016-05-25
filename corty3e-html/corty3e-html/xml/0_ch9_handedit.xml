@@ -1,0 +1,667 @@
+<chapter number="9" id="corty3e-ch9-chapter-9" title="9 The Paired-Samples t Test" start-numbering-at="09" numbered="true">
+<section id="corty3e-ch9-sec1-1a" block_type="intro" title="Chapter Introduction" numbered="false" level="1" print_page="293">
+<p id="corty3e_page_293" block_type="page_start">293</p>
+<p id="corty3e-ch9-p1" block_type="chapter_number">9</p>
+<p id="corty3e-ch9-p2" block_type="chapter_title">The Paired-Samples <em>t</em> Test</p>
+<box numbered="false" id="corty3e-ch9-ibx-1" block_type="intro_box">
+<p id="corty3e-ch9-p3" block_type="obj-h"><strong>LEARNING OBJECTIVES</strong></p>
+<list id="corty3e-ch9-list-1" type="unordered" block_type="bluesquare">
+<li><p id="corty3e-ch9-p4" block_type="obj-bl">Recognize the different types of dependent samples.</p></li>
+<li><p id="corty3e-ch9-p5" block_type="obj-bl">Calculate and interpret a paired-samples <em>t</em> test.</p></li>
+</list>
+<p id="corty3e-ch9-p6" block_type="obj-h"><strong>CHAPTER OVERVIEW</strong></p>
+<p id="corty3e-ch9-p10" block_type="co-txt-ni">This is the third, and final, chapter on <em>t</em> tests. <link href="corty3e-ch07.xml">Chapter 7</link> covered a <em>t</em> test for comparing a sample mean to a specified value, the single-sample <em>t</em> test. <link href="corty3e-ch08.xml">Chapter 8</link> moved to a <em>t</em> test for comparing the means of two <em>independent</em> samples. Now, in <link href="corty3e-ch09.xml">Chapter 9</link>, we add a <termref term="paired-samples t test">paired-samples <em>t</em> test</termref>, for comparing the means of two <em>dependent</em> samples.</p>
+<box numbered="false" id="corty3e-ch9-exp2-1" block_type="mn2">
+<p id="corty3e-ch9-p7" block_type="co-toc-h1-t"><link href="corty3e-ch09.xml#corty3e-ch9-sec1-1"><phrase block_type="co-toc-h1-n-ri">9.1</phrase> Paired Samples</link></p>
+<p id="corty3e-ch9-p8" block_type="co-toc-h1-t"><link href="corty3e-ch09.xml#corty3e-ch9-sec1-2"><phrase block_type="co-toc-h1-n-ri">9.2</phrase> Calculating the Paired-Samples <em>t</em> Test</link></p>
+<p id="corty3e-ch9-p9" block_type="co-toc-h1-t"><link href="corty3e-ch09.xml#corty3e-ch9-sec1-3"><phrase block_type="co-toc-h1-n-ri">9.3</phrase> Interpreting the Paired-Samples <em>t</em> Test</link></p>
+</box>
+</box>
+</section>
+<section id="corty3e-ch9-sec1-1" block_type="h1" chapter="9" title="" numbered="false" level="1" print_page="293">
+<section-metadata><section-title><phrase block_type="sec_num">9.1</phrase> <phrase block_type="sec_title">Paired Samples</phrase></section-title></section-metadata>
+<p id="corty3e-ch9-p11" block_type="txt-ni">When samples are dependent, each case consists of a pair of data points, one data point from each of two samples. In dependent samples, also called paired samples, the data points may be paired in a variety of ways. One pairing, called a <termref term="repeated-measures design">repeated-measures design</termref>, means the same participants provide data at two points in time. (This is also called <strong>longitudinal research</strong> because it follows participants over time or a <strong>pre-post design</strong> as participants are measured on the outcome variable before and after an intervention.) An example of a repeated-measures design would be measuring the level of anxiety in people before and after learning relaxation techniques.</p>
+<p id="corty3e-ch9-p12" block_type="txt">Another type of pairing, called a <strong>within-subjects design,</strong> involves the same participants being measured in two different situations or under two different conditions. For example, a cognitive psychologist might measure how much information people retain when studying in silence and then measure information retention <em>for the same participants</em> when they study while listening to music.</p>
+<p id="corty3e-ch9-p13" block_type="txt">Repeated-measures and within-subjects designs involve one sample of cases measured at two points in time or under two conditions. Find this confusing. &#8220;Why,&#8221; they ask, &#8220;is it called a <em>two</em>-sample test when there is just <em>one</em> sample of cases?&#8221; Unfortunately, this is statistical terminology that just needs to be learned. To a statistician, each condition in a dependent samples study is considered a &#8220;sample.&#8221;</p>
+<p id="corty3e_page_294" block_type="page_start">294</p>
+<p id="corty3e-ch9-p14" block_type="txt">Repeated-measures and within-subjects designs have a significant advantage over independent-samples designs. These dependent-samples designs control for <strong>individual differences,</strong> attributes that vary from case to case. Because the same participants are in both groups, the researcher can be sure that the two samples are comparable in terms of background characteristics. As a result of this, the researcher can be more confident that any observed difference between the groups on the outcome variable is due to the explanatory variable and not some confounding variable.</p>
+<p id="corty3e-ch9-p15" block_type="txt">In an attempt to derive this benefit, researchers have developed a number of other paired-samples techniques in which different participants are in two conditions. In one, the pairs have some similarity because of some connection, either biological (such as that between two siblings), or formed (such as that between a romantic couple). Another is called <em>matched pairs.</em> In <termref term="matched pairs">matched pairs</termref>, participants are grouped, by the researcher, into sets of two based on their being similar on potential confounding variables. For example, if a dean were comparing the GPAs of male and female students, she might want to match them, based on IQ, into male&#8211;female pairs. That way, a researcher couldn&#8217;t argue that intelligence was a confounding variable if one sex had a higher GPA.</p>
+<p id="corty3e-ch9-p16" block_type="txt">Because there are so many different types of paired samples, the paired-samples <em>t</em> test has more names than any other test in statistics. But, whether it is called a paired-samples <em>t</em> test, dependent-samples <em>t</em> test, correlated-samples <em>t</em> test, related-samples <em>t</em> test, matched-pairs <em>t</em> test, within-subjects <em>t</em> test, or repeated-measures <em>t</em> test, it is all the same test.</p>
+<box numbered="false" id="corty3e-ch9-exp1-1" block_type="mn1">
+<p id="corty3e-ch9-p17" block_type="mn-ext-ni"><em>If a researcher is studying a rare phenomenon or one where participants are hard to come by, a dependent-samples design is the way to go.</em></p>
+</box>
+<p id="corty3e-ch9-p18" block_type="txt">The wide number of different names reflects how commonly used the paired-samples <em>t</em> test is. It is a commonly used test for several reasons. One reason is that many experimental situations are of a pre-post design where the outcome variable is measured before and after the explanatory variable is applied. Another reason is that controlling individual differences makes studies that use paired samples more powerful than studies that use independent samples. In a statistical sense, being more powerful means that the probability of being able to reject the null hypothesis, when it is false, is higher. As a result, a researcher needs a smaller sample size for a paired-samples <em>t</em> test than for an independent-samples <em>t</em> test. This is a big advantage of paired-samples <em>t</em> tests. If a researcher is studying a rare phenomenon or one where participants are hard to come by, a dependent-samples design is the way to go.</p>
+<p id="corty3e-ch9-p19" block_type="txt">Here is an example of research that used paired samples to investigate how stress affects recovery from a physical wound (Kiecolt-Glaser et al., 1995). One sample, the people who were under stress, consisted of women who were caring for a husband or mother with Alzheimer&#8217;s disease. Because the researchers believed that age and socioeconomic status might influence physical recovery, they matched each caregiver with a control participant of the same sex, age, and family income who was not a caregiver. So, the participants were matched pairs of women, one a caregiver (the experimental group) and one a control.</p>
+<p id="corty3e-ch9-p20" block_type="txt">Using a dermatology procedure, the researchers made a small wound on each participant&#8217;s forearm and timed how long it took to heal. The wound took almost 10 days longer on average to heal in the caregivers (<em>M</em> &#61; 48.7) than in the controls (<em>M</em> &#61; 39.3), and this difference was statistically significant. Why did this difference exist? Well, because the pairs were matched on age and socioeconomic status, it can&#8217;t be argued that the caregivers were older or poorer. With these confounding variables removed, it seems more plausible that it is the stress of caring for someone who is deteriorating with a chronic illness that affects how quickly one heals from a physical wound.</p>
+<p id="corty3e_page_295" block_type="page_start">295</p>
+<p id="corty3e-ch9-p21" block_type="txt">Now, having seen paired-samples in action and observed their advantages, it&#8217;s time to learn how to perform a paired-samples <em>t</em> test.</p>
+</section>
+<section id="corty3e-ch9-sec1-2" block_type="h1" chapter="9" title="" numbered="false" level="1" print_page="295">
+<section-metadata><section-title><phrase block_type="sec_num">9.2</phrase> <phrase block_type="sec_title">Calculating the Paired-Samples <em>t</em> Test</phrase></section-title></section-metadata>
+<p id="corty3e-ch9-p22" block_type="txt-ni">Here are some data that are appropriate for analysis with a paired-samples <em>t</em> test. Imagine that a sensory psychologist, Dr. Keim, wanted to examine the effect of humidity on perceived temperature. She obtained six volunteers at her college and tested them, individually, in a temperature- and humidity-controlled chamber. Each participant was tested twice and the tests were separated by 24 hours. For both tests, the temperature in the chamber was set at 76&#176;F. For one test the humidity level was &#8220;low,&#8221; and for the other test the humidity level was &#8220;high.&#8221; In order to avoid any effects due to the order of the tests, which humidity level each participant would experience first was randomly determined. For a test, a participant spent 15 minutes in the chamber, after which he or she was asked what the temperature was inside it. This &#8220;perceived temperature&#8221; is the study&#8217;s dependent variable.</p>
+<p id="corty3e-ch9-p23" block_type="txt">The data from the humidity study are shown in <strong><link href="corty3e-ch09.xml#corty3e-ch9-fig-1">Table 9.1</link></strong>, where each case appears on a row and each condition (sample) in a column. <link href="corty3e-ch09.xml#corty3e-ch9-fig-1">Table 9.1</link> also contains the means and standard deviations for both conditions. Remember, in both conditions the actual temperature was the same, 76&#176;F. The mean perceived temperature on the low-humidity test was 75.00&#176;F, and in the high-humidity condition it was 82.50&#176;F. Between the two test conditions, there was a 7.50&#176;F difference in the means.</p>
+<figure id="corty3e-ch9-fig-1" block_type="table" numbered="true" number="9.1" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="large" border="true"/>
+<image asset-id="corty3e-ch9-img-1" alt="image" src="asset/ch9/corty3e_table09_01.jpg"/>
+</figure>
+<p id="corty3e-ch9-p24" block_type="txt"><strong><link href="corty3e-ch09.xml#corty3e-ch9-fig-2">Figure 9.1</link></strong> is a pair of box-and-whisker plots, showing the median, interquartile range, and minimum/maximum for each condition. When looking at the graph, the difference seems clear&#8212;temperature does appear to be perceived as higher when the humidity is higher. But, looks can be deceiving and the sample size is low, so hypothesis testing is necessary to find out if the difference is a statistically significant one or if it can be explained by sampling error.</p>
+<figure id="corty3e-ch9-fig-2" block_type="figure" numbered="true" number="9.1" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="medium" border="true"/>
+<image asset-id="corty3e-ch9-img-2" alt="image" src="asset/ch9/corty3e_fig09_01.jpg"/>
+<caption><strong><phrase block_type="fig_num">Figure 9.1</phrase> Box-and-Whisker Plots Showing Perceived Temperature in Low- and High-Humidity Conditions</strong> This graphic appears to show that temperature is perceived as hotter when the humidity is higher. To determine whether the difference between the two conditions is a statistically significant one, a paired-samples <em>t</em> test is needed.</caption>
+</figure>
+<p id="corty3e-ch9-p25" block_type="h4-txt-ni"><phrase block_type="h4-n-ri"><strong>Step 1</strong></phrase> <strong>Pick a Test.</strong> Dr. Keim, using a within-subjects design, is comparing the means for a sample of people measured in two different conditions, low humidity and high humidity. Remember, when one sample is measured in two different conditions, as happens here, statisticians consider this <em>two</em> dependent samples. This situation, comparing the means of dependent samples, calls for a paired-samples <em>t</em> test.</p>
+<p id="corty3e_page_296" block_type="page_start">296</p>
+<figure id="corty3e-ch9-fig-3" block_type="un_figure" numbered="false" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="medium" border="true"/>
+<image asset-id="corty3e-ch9-img-3" alt="image" src="asset/ch9/corty3e_fig09_un01.jpg"/>
+<caption><strong>T</strong>om <strong>a</strong>nd <strong>H</strong>arry <strong>d</strong>espise <strong>c</strong>rabby <strong>i</strong>nfants</caption>
+</figure>
+<p id="corty3e-ch9-p26" block_type="h4-txt-ni"><phrase block_type="h4-n-ri"><strong>Step 2</strong></phrase> <strong>Check the Assumptions.</strong> There are three assumptions for the paired-samples <em>t</em> test (<strong><link href="corty3e-ch09.xml#corty3e-ch9-fig-4">Table 9.2</link></strong>), and they are familiar. The first assumption is that the sample is a random sample from the population to which the results will be generalized. Dr. Keim would like to be able to generalize her results to people in general, that is, to all the people in the world. She recognizes that she has a convenience sample not a random sample from this population, so this assumption is violated. The random samples assumption is robust, however, so she can continue with the test. She is aware of no one who suggests that Americans and/or college students perceive heat differently from others, so she will be willing to generalize her results more broadly than just to U.S. college students.</p>
+<figure id="corty3e-ch9-fig-4" block_type="table" numbered="true" number="9.2" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="large" border="true"/>
+<image asset-id="corty3e-ch9-img-4" alt="image" src="asset/ch9/corty3e_table09_02.jpg"/>
+</figure>
+<p id="corty3e-ch9-p27" block_type="txt">The second assumption is that the observations are independent within a sample. Be careful in assessing this assumption: it refers to independence <em>within</em> a sample, not <em>between</em> samples. Since the same cases are in both samples, or conditions, <em>the two samples</em> are not independent. However, each person in each sample is tested individually and each person is only tested once in each condition. The independence of observations assumption is not violated.</p>
+<p id="corty3e_page_297" block_type="page_start">297</p>
+<p id="corty3e-ch9-p28" block_type="txt">The third assumption, the normality assumption, says that in the larger population <em>the difference scores</em> are normally distributed. Look at <link href="corty3e-ch09.xml#corty3e-ch9-fig-1">Table 9.1</link> and note that there&#8217;s a third column listing the difference between the value a case had in one condition (high humidity) and its score in the other condition (low humidity). This is called a difference score, abbreviated <em>D,</em> and is needed to calculate a paired-samples <em>t</em> test. The formula for <em>D</em> is shown in <link href="#corty3e-ch9-bx6-1">Equation 9.1</link>.</p>
+<box title="" numbered="false" id="corty3e-ch9-bx6-1" block_type="eq-t">
+<box-metadata><box-title><phrase block_type="sec_num">Equation 9.1</phrase> <phrase block_type="sec_title">Formula for Calculating Difference Score, <em>D</em></phrase></box-title></box-metadata>
+<p id="corty3e-ch9-p29" block_type="eq"><em>D</em> &#61; <em>X</em><sub>1</sub> &#8211; <em>X</em><sub>2</sub></p>
+<p id="corty3e-ch9-p30" block_type="eq-txt-ni">where <em>D</em> &#61; the difference score being calculated</p>
+<p id="corty3e-ch9-p31" block_type="eq-unl"><em>X</em><sub>1</sub> &#61; a case&#8217;s score in Condition 1</p>
+<p id="corty3e-ch9-p32" block_type="eq-unl"><em>X</em><sub>2</sub> &#61; a case&#8217;s score in Condition 2</p>
+</box>
+<p id="corty3e-ch9-p33" block_type="txt">In calculating <em>D</em>, it matters little which value is subtracted from the other, as long as the same order is followed for all cases. Most people prefer to work with positive numbers, so feel free to decide the order for the subtraction to maximize the number of positive values. Dr. Keim chose to subtract the low-humidity scores from the high-humidity scores in order to have positive difference scores.</p>
+<p id="corty3e-ch9-p34" block_type="txt">For the first case, the person who perceived the low-humidity condition as 76&#176; and the high-humidity condition as 81&#176;F, the difference score is calculated as</p>
+<p id="corty3e-ch9-p35" block_type="eq"><em>D</em> &#61; <em>X</em><sub>HighHumidity</sub> &#8211; <em>X</em><sub>LowHumidity</sub></p>
+<p id="corty3e-ch9-p36" block_type="eq">&#61; 81 &#8211; 76</p>
+<p id="corty3e-ch9-p37" block_type="eq">&#61; 5.0000</p>
+<p id="corty3e-ch9-p38" block_type="eq">&#61; 5.00</p>
+<p id="corty3e-ch9-p39" block_type="txt">A sample size of 6 is a little small for making decisions about the shape of a parent population. However, based on her previous research, Dr. Keim is willing to assume that the difference scores are normally distributed in the population, so the normality assumption is not violated.</p>
+<p id="corty3e-ch9-p40" block_type="h4-txt-ni"><phrase block_type="h4-n-ri"><strong>Step 3</strong></phrase> <strong>List the Hypotheses.</strong> The hypotheses, which are statements about populations, are going to be the same as they were for the independent-samples <em>t</em> test. The null hypothesis is going to say that the two population means are the same. The alternative hypothesis will state that the two population means differ, but it won&#8217;t indicate whether the difference is large or small, positive or negative. These hypotheses are nondirectional or two-tailed, so they don&#8217;t specify a direction for the difference. Thus, Dr. Keim is testing for two possibilities: (1) low humidity is perceived as hotter than high humidity, or (2) high humidity is perceived as hotter than low humidity. The generic form of two-tailed hypotheses is</p>
+<p id="corty3e_page_298" block_type="page_start">298</p>
+<p id="corty3e-ch9-p41" block_type="eq"><em>H</em><sub>0</sub>: &#181;<sub>1</sub> &#61; &#181;<sub>2</sub></p>
+<p id="corty3e-ch9-p42" block_type="eq"><em>H</em><sub>1</sub>: &#181;<sub>1</sub> &#8800; &#181;<sub>2</sub></p>
+<p id="corty3e-ch9-p43" block_type="txt-ni">The specific form of the two hypotheses for this study is</p>
+<p id="corty3e-ch9-p44" block_type="eq"><em>H</em><sub>0</sub>: &#181;<sub>LowHumidity</sub> &#61; &#181;<sub>HighHumidity</sub></p>
+<p id="corty3e-ch9-p45" block_type="eq"><em>H</em><sub>1</sub>: &#181;<sub>LowHumidity</sub> &#8800; &#181;<sub>HighHumidity</sub></p>
+<p id="corty3e-ch9-p46" block_type="txt">Of course, it is possible to have directional hypotheses for a paired-samples <em>t</em> test. If Dr. Keim had predicted, in advance, that high humidity would lead to a higher perceived temperature, her hypotheses would have been</p>
+<p id="corty3e-ch9-p47" block_type="eq"><em>H</em><sub>0</sub>: &#181;<sub>LowHumidity</sub> &#8805; &#181;<sub>HighHumidity</sub></p>
+<p id="corty3e-ch9-p48" block_type="eq"><em>H</em><sub>1</sub>: &#181;<sub>LowHumidity</sub> &#60; &#181;<sub>HighHumidity</sub></p>
+<p id="corty3e-ch9-p49" block_type="h4-txt-ni"><phrase block_type="h4-n-ri"><strong>Step 4</strong></phrase> <strong>Set the Decision Rule.</strong> The decision rule for a paired-samples <em>t</em> test is formulated the same way as it was for the independent-samples <em>t</em> test. The critical value of <em>t,</em> <em>t<sub>cv</sub> ,</em> found in <link href="corty3e-appendix01.xml#corty3e-app1-fig-8">Appendix Table 3</link>, is based on (1) the number of tails for the test, (2) how willing one is to make a Type I error (i.e., the alpha level), and (3) how many degrees of freedom there are. The default option, or the most common form of the paired-samples <em>t</em> test, as for other statistical tests, is a two-tailed test with alpha set at .05.</p>
+<p id="corty3e-ch9-p50" block_type="txt">Once the observed value of <em>t</em> is calculated (Step 5), it is compared to the critical value in order to decide whether or not to reject the null hypothesis. For a two-tailed test, the general form of the decision rule is:</p>
+<list id="corty3e-ch9-list-2" type="unordered" block_type="bullet">
+<li><p id="corty3e-ch9-p51" block_type="bl-first">If <em>t</em> &#8804; &#8211;<em>t<sub>cv</sub></em> <em>or</em> t &#8805; <em>t<sub>cv</sub> ,</em> reject the null hypothesis.</p></li>
+<li><p id="corty3e-ch9-p52" block_type="bl-last">If &#8211;<em>t<sub>cv</sub></em> &#60; <em>t</em> &#60; t<em><sub>cv</sub></em> , fail to reject the null hypothesis.</p></li>
+</list>
+<p id="corty3e-ch9-p53" block_type="txt">Dr. Keim is doing a two-tailed test and is content to use the default alpha level of .05. All that she needs to do is calculate degrees of freedom. <link href="#corty3e-ch9-bx6-2">Equation 9.2</link> is the formula for calculating degrees of freedom for a paired-samples <em>t</em> test.</p>
+<box title="" numbered="false" id="corty3e-ch9-bx6-2" block_type="eq-t">
+<box-metadata><box-title><phrase block_type="sec_num">Equation 9.2</phrase> <phrase block_type="sec_title">Degrees of Freedom (<em>df</em>) for a Paired-Samples <em>t</em> Test</phrase></box-title></box-metadata>
+<p id="corty3e-ch9-p54" block_type="eq"><em>df</em> &#61; <em>N</em> &#8211; 1</p>
+<p id="corty3e-ch9-p55" block_type="eq-txt-ni">where <em>df</em> &#61; the degrees of freedom</p>
+<p id="corty3e-ch9-p56" block_type="eq-unl"><em>N</em> &#61; the number of <em>pairs</em> of cases</p>
+</box>
+<p id="corty3e-ch9-p57" block_type="txt">Dr. Keim&#8217;s study involves six <em>pairs</em> of cases, so degrees of freedom are calculated as</p>
+<p id="corty3e-ch9-p58" block_type="eq"><em>df</em> &#61; 6 &#8211; 1</p>
+<p id="corty3e-ch9-p59" block_type="eq">&#61; 5</p>
+<p id="corty3e-ch9-p60" block_type="txt-ni">Look in Appendix 3 and find the intersection of the column for a two-tailed hypothesis test with the alpha set at .05 and the row for <em>df</em> &#61; 5. There, the critical value of <em>t,</em> &#177;2.571, is found. <strong><link href="corty3e-ch09.xml#corty3e-ch9-fig-5">Figure 9.2</link></strong> uses the critical values to mark the rare zone, where the null hypothesis is rejected, and the common zone, where it is not.</p>
+<figure id="corty3e-ch9-fig-5" block_type="figure" numbered="true" number="9.2" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="large" border="true"/>
+<image asset-id="corty3e-ch9-img-5" alt="image" src="asset/ch9/corty3e_fig09_02.jpg"/>
+<caption><strong><phrase block_type="fig_num">Figure 9.2</phrase> Critical Value of t, Two-Tailed, &#945; &#61; .05, <em>df</em> &#61; 5</strong> This is the sampling distribution of <em>t</em> that would occur if the null hypothesis were true and &#181;<sub>1</sub> &#61; &#181;<sub>2</sub>. When the null hypothesis is true, the observed value will fall in the common zone 95&#37; of the time and it will fall in the rare zone only 5&#37; of the time.</caption>
+</figure>
+<p id="corty3e_page_299" block_type="page_start">299</p>
+<p id="corty3e-ch9-p61" block_type="txt">Here is the decision rule for Dr. Keim&#8217;s study:</p>
+<list id="corty3e-ch9-list-3" type="unordered" block_type="bullet">
+<li><p id="corty3e-ch9-p62" block_type="bl-first">If <em>t</em> &#8804; &#8211;2.571 <em>or</em> t &#8805; 2.571, reject the null hypothesis.</p></li>
+<li><p id="corty3e-ch9-p63" block_type="bl-last">If &#8211;2.571 &#60; <em>t</em> &#60; 2.571, fail to reject the null hypothesis.</p></li>
+</list>
+<p id="corty3e-ch9-p64" block_type="h4-txt-ni"><phrase block_type="h4-n-ri">Step 5</phrase> <strong>Calculate the Test Statistic.</strong> The same general procedure is used for calculating the paired-samples <em>t</em> value as was used for the independent-samples <em>t:</em> divide the difference between the two sample means by the standard error of the difference. This standard error of the difference is the standard error of the difference for difference scores and will be abbreviated <image asset-id="corty3e-ch9-img-6" alt="image" src="asset/ch9/corty3e_ineqn09_302_01.jpg"/> to differentiate it from the other denominators for <em>t</em> tests. The <termref term="standard error of the mean difference for difference scores">standard error of the mean difference for difference scores</termref> is the standard deviation of the sampling distribution of difference scores.</p>
+<box title="" numbered="false" id="corty3e-ch9-bx6-3" block_type="eq-t">
+<box-metadata><box-title><phrase block_type="sec_num">Equation 9.3</phrase> <phrase block_type="sec_title">Formula for the Standard Error of the Mean Difference for Difference Scores (<em>s<sub>M<sub>D</sub></sub></em>)</phrase></box-title></box-metadata>
+<p id="corty3e-ch9-eqn-1" block_type="equation">
+<image asset-id="corty3e-ch9-img-7" alt="image" src="asset/ch9/corty3e_eqn09_299_01.jpg"/></p>
+<p id="corty3e-ch9-eqn-2" block_type="equation">
+<image asset-id="corty3e-ch9-img-7a" alt="image" src="asset/ch9/corty3e_eqn09_299_03.jpg"/></p>
+<p id="corty3e-ch9-p66" block_type="eq-unl"><em>s<sub>D</sub></em> &#61; the standard deviation (<em>s</em>) of the difference scores</p>
+<p id="corty3e-ch9-p67" block_type="eq-unl"><em>N</em> &#61; the number of pairs of cases</p>
+</box>
+<p id="corty3e-ch9-p68" block_type="txt">Using Equations 3.6 and 3.7, Dr. Keim has calculated the standard deviation of the difference scores and found <em>s<sub>D</sub></em> &#61; 2.07. There are six pairs of cases, so <em>N</em> &#61; 6. Plugging these values into <link href="#corty3e-ch9-bx6-3">Equation 9.3</link> gives</p>
+<p id="corty3e-ch9-eqn-3" block_type="equation">
+<image asset-id="corty3e-ch9-img-9" alt="image" src="asset/ch9/corty3e_eqn09_299_02.jpg"/></p>
+<p id="corty3e_page_300" block_type="page_start">300</p>
+<p id="corty3e-ch9-p69" block_type="txt">The standard error of the mean difference for the difference scores is 0.85. This value will be used in <link href="#corty3e-ch9-bx6-4">Equation 9.4</link>, the formula for calculating <em>t,</em> the value of the test statistic for the paired-samples <em>t</em> test.</p>
+<box title="" numbered="false" id="corty3e-ch9-bx6-4" block_type="eq-t">
+<box-metadata><box-title><phrase block_type="sec_num">Equation 9.4</phrase> <phrase block_type="sec_title">Formula for Calculating <em>t</em>, the Value of the Test Statistic for a Paired-Samples <em>t</em> Test</phrase></box-title></box-metadata>
+<p id="corty3e-ch9-eqn-4" block_type="equation">
+<image asset-id="corty3e-ch9-img-10" alt="image" src="asset/ch9/corty3e_eqn09_300_01.jpg"/></p>
+<p id="corty3e-ch9-p70" block_type="eq-txt-ni">where <em>t</em> &#61; the value of the test statistic for a paired-samples <em>t</em> test</p>
+<p id="corty3e-ch9-p71" block_type="eq-unl"><em>M</em><sub>1</sub> &#61; the mean of one sample</p>
+<p id="corty3e-ch9-p72" block_type="eq-unl"><em>M</em><sub>2</sub> &#61; the mean of the other sample</p>
+<p id="corty3e-ch9-p73" block_type="eq-unl"><image asset-id="corty3e-ch9-img-11" alt="image" src="asset/ch9/corty3e_ineqn09_302_01.jpg"/> &#61; standard error of the mean difference for difference scores (<link href="#corty3e-ch9-bx6-3">Equation 9.3</link>)</p>
+</box>
+<p id="corty3e-ch9-p74" block_type="txt">Given <image asset-id="corty3e-ch9-img-12" alt="image" src="asset/ch9/corty3e_ineqn09_300_01.jpg"/>, <em>M</em><sub>LowHumidity</sub> &#61; 75.00, and <em>M</em><sub>HighHumidity</sub> &#61; 82.50, Dr. Keim is ready to calculate <em>t.</em> Again, it matters little which mean is called <em>M</em><sub>1</sub> and which is <em>M</em><sub>2</sub>, so Dr. Keim has arranged the calculations to end up with a positive number in the numerator, assuring a positive <em>t</em> value:</p>
+<p id="corty3e-ch9-eqn-5" block_type="equation">
+<image asset-id="corty3e-ch9-img-13" alt="image" src="asset/ch9/corty3e_eqn09_300_02.jpg"/></p>
+<p id="corty3e-ch9-p75" block_type="txt">Dr. Keim&#8217;s <em>t</em> value is 8.82, and she is done with Step 5. In the next section of the chapter, after more practice with the first five steps, we&#8217;ll follow Dr. Keim as she applies the decision rule and interprets the results.</p>
+<box title="Worked Example 9.1" numbered="false" id="corty3e-ch9-bx3-1" block_type="sr-exp-n">
+<p id="corty3e-ch9-p76" block_type="sr-ex-txt-ni">A clinical psychologist, Dr. Althof, was studying the long-term effectiveness of psychodynamic psychotherapy for depression. He obtained a sample of 16 people with moderate to severe depression and assigned each to receive 20 sessions of psychodynamic therapy from a trained therapist. At the end of treatment, he administered a depression scale to each person and determined that the mean level of depression was 14.00. Scores on this depression scale can range from 0 to 50, and higher scores indicate greater depression. Six months later, Dr. Althof tracked down all 16 participants and readministered the depression scale, finding the mean was now 15.00. <strong><link href="corty3e-ch09.xml#corty3e-ch9-fig-10">Figure 9.3</link></strong> is a pair of box-and-whisker plots showing the depression scores at the two points in time. A 1-point increase on a 50-point scale doesn&#8217;t sound like very much, but the box-and-whisker plots suggest an increase in the depression level in the six months following the end of treatment. Dr. Althof needs hypothesis testing to find out if the change is a statistically significant one.</p>
+<figure id="corty3e-ch9-fig-10" block_type="figure" numbered="true" number="9.3" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="medium" border="true"/>
+<image asset-id="corty3e-ch9-img-14" alt="image" src="asset/ch9/corty3e_fig09_03.jpg"/>
+<caption><strong><phrase block_type="fig_num">Figure 9.3</phrase> Box-and-Whisker Plots Showing Depression Level after Treatment and at Six-Month Follow-Up</strong> In this graph, there is some increase in the depression level in the six months following treatment. It will take a paired-samples <em>t</em> test to determine if the difference is statistically significant.</caption>
+</figure>
+<p id="corty3e_page_301" block_type="page_start">301</p>
+<p id="corty3e-ch9-p77" block_type="h4-txt-ni"><phrase block_type="h4-n-ri"><strong>Step 1</strong></phrase> <strong>Pick a Test.</strong> Dr. Althof is comparing the mean of a sample at one time to the mean of the sample at a second time. Though it is one sample of people, they are measured at two points in time, making it appropriate for a paired-samples <em>t</em> test.</p>
+<p id="corty3e-ch9-p78" block_type="h4-txt-ni"><phrase block_type="h4-n-ri"><strong>Step 2</strong></phrase> <strong>Check the Assumptions.</strong> The assumptions for the paired-samples <em>t</em> test are listed in <link href="corty3e-ch09.xml#corty3e-ch9-fig-4">Table 9.2</link>.</p>
+<list id="corty3e-ch9-list-4" type="unordered" block_type="bullet">
+<li><p id="corty3e-ch9-p79" block_type="sr-exp-bl-first">The random samples assumption is violated. It is not reported that the 16 cases were a random sample from the population of all the people in the world with moderate to severe depression, so it is safe to assume this is not a random sample from that population. When this robust assumption is violated, however, a researcher can still proceed with the test. Dr. Althof just has to be careful about the population to which he generalizes the results.</p></li>
+<li><p id="corty3e-ch9-p80" block_type="sr-exp-bl-mid">The independence of observations assumption is not violated. Each participant received individual therapy, so the participants within a sample didn&#8217;t influence each other.</p></li>
+<li><p id="corty3e-ch9-p81" block_type="sr-exp-bl-last">The assumption for the normality of difference scores is not violated. Dr. Althof knows from his review of the literature that depression scores are normally distributed. He is willing to assume that the difference scores (six-month follow-up depression score minus end-of-treatment depression score) will be normally distributed in the larger population.</p></li>
+</list>
+<p id="corty3e-ch9-p82" block_type="h4-txt-ni"><phrase block_type="h4-n-ri"><strong>Step 3</strong></phrase> <strong>List the Hypotheses.</strong> Sometimes the effect of treatment increases over time, but more often the effect of treatment decreases over time, so Dr. Althof was open to both options when he planned the study. As a result, his hypotheses are nondirectional (two-tailed). The null hypothesis states that the two population means (end-of-treatment mean vs. six-month follow-up mean) are the same, and the alternative hypothesis says that the two population means differ:</p>
+<p id="corty3e-ch9-p83" block_type="sr-exp-eq"><em>H</em><sub>0</sub>: &#181;<sub>EOT</sub> &#61; &#181;<sub>6MFU</sub></p>
+<p id="corty3e-ch9-p84" block_type="sr-exp-eq"><em>H</em><sub>1</sub>: &#181;<sub>EOT</sub> &#8800; &#181;<sub>6MFU</sub></p>
+<p id="corty3e_page_302" block_type="page_start">302</p>
+<p id="corty3e-ch9-p85" block_type="h4-txt-ni"><phrase block_type="h4-n-ri"><strong>Step 4</strong></phrase> <strong>Set the Decision Rule.</strong> The critical value of <em>t</em> depends on the number of tails, alpha, and degrees of freedom. With nondirectional hypotheses, the test is two-tailed. Dr. Althof is comfortable setting the alpha at the usual level, .05, and having a 5&#37; chance of Type I error. Finally, using <link href="#corty3e-ch9-bx6-2">Equation 9.2</link>, he calculates degrees of freedom for the paired-samples <em>t</em> test:</p>
+<p id="corty3e-ch9-p86" block_type="sr-exp-eq"><em>df</em> &#61; <em>N</em> &#8211; 1</p>
+<p id="corty3e-ch9-p87" block_type="sr-exp-eq">&#61; 16 &#8211; 1</p>
+<p id="corty3e-ch9-p88" block_type="sr-exp-eq">&#61; 15</p>
+<p id="corty3e-ch9-p89" block_type="sr_exp_txt">Consulting <link href="corty3e-appendix01.xml#corty3e-app1-fig-8">Appendix Table 3</link> in the column for a two-tailed test with an alpha of .05 and the row with 15 degrees of freedom, Dr. Althof finds that the critical value of <em>t</em> is &#177;2.131. The common and rare zones for his decision rule are shown in <strong><link href="corty3e-ch09.xml#corty3e-ch9-fig-11">Figure 9.4</link></strong>. The decision rule is:</p>
+<figure id="corty3e-ch9-fig-11" block_type="figure" numbered="true" number="9.4" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="large" border="true"/>
+<image asset-id="corty3e-ch9-img-15" alt="image" src="asset/ch9/corty3e_fig09_04.jpg"/>
+<caption><strong><phrase block_type="fig_num">Figure 9.4</phrase> Critical Value of <em>t</em>, Two-Tailed, &#945; &#61; .05, <em>df</em> &#61; 15</strong> This is the sampling distribution of <em>t</em> for 15 degrees of freedom. Compare this to the sampling distribution of <em>t</em> in <link href="corty3e-ch09.xml#corty3e-ch9-fig-5">Figure 9.2</link>, where <em>df</em> &#61; 5. Note that this sampling distribution is more peaked, packed more closely around zero. As a result, <em>t<sub>cv</sub></em> here, 2.131, is closer to zero, making the rare zone larger. When the rare zone is larger, which occurs when the sample size is larger, it is easier to reject the null hypothesis.</caption>
+</figure>
+<list id="corty3e-ch9-list-5" type="unordered" block_type="bullet">
+<li><p id="corty3e-ch9-p90" block_type="sr-exp-bl-first">If <em>t</em> &#8804; &#8211;2.131 <em>or</em> <em>t</em> &#8805; 2.131, reject the null hypothesis.</p></li>
+<li><p id="corty3e-ch9-p91" block_type="sr-exp-bl-last">If &#8211;2.131 &#60; <em>t</em> &#60; 2.131, fail to reject the null hypothesis.</p></li>
+</list>
+<p id="corty3e-ch9-p92" block_type="h4-txt-ni"><phrase block_type="h4-n-ri"><strong>Step 5</strong></phrase> <strong>Calculate the Test Statistic.</strong> The data set, with depression scores at the end of treatment and six months later, is shown in <strong><link href="corty3e-ch09.xml#corty3e-ch9-fig-12">Table 9.3</link>.</strong> Also shown are the difference scores and the standard deviation of the difference scores (<em>s<sub>D</sub></em> &#61; 2.31).</p>
+<figure id="corty3e-ch9-fig-12" block_type="table" numbered="true" number="9.3" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="large" border="true"/>
+<image asset-id="corty3e-ch9-img-16" alt="image" src="asset/ch9/corty3e_table09_03.jpg"/>
+</figure>
+<p id="corty3e-ch9-p93" block_type="sr_exp_txt">The first step in the calculations is applying <link href="#corty3e-ch9-bx6-3">Equation 9.3</link> to find the standard error of the difference, <image asset-id="corty3e-ch9-img-17" alt="image" src="asset/ch9/corty3e_ineqn09_302_01.jpg"/>:</p>
+<p id="corty3e-ch9-eqn-6" block_type="equation">
+<image asset-id="corty3e-ch9-img-18" alt="image" src="asset/ch9/corty3e_eqn09_302_01.jpg"/></p>
+<p id="corty3e-ch9-p94" block_type="sr_exp_txt">The value for the standard error of the difference, 0.58, is then used in <link href="#corty3e-ch9-bx6-4">Equation 9.4</link> to find <em>t.</em> It doesn&#8217;t matter which mean is subtracted from which, so Dr. Althof arranged them to end up with a positive value by subtracting the follow-up mean (14.00) from the end-of-treatment mean (15.00):</p>
+<p id="corty3e_page_303" block_type="page_start">303</p>
+<p id="corty3e-ch9-eqn-7" block_type="equation">
+<image asset-id="corty3e-ch9-img-19" alt="image" src="asset/ch9/corty3e_eqn09_303_01.jpg"/></p>
+<p id="corty3e-ch9-p95" block_type="sr_exp_txt">Having found <em>t</em> &#61; 1.72, Step 5 is complete. All that&#8217;s left is the interpretation, which we&#8217;ll turn to in the next section.</p>
+</box>
+<box title="Practice Problems 9.1" numbered="false" id="corty3e-ch9-bx2-1" block_type="sr-h">
+<p id="corty3e-ch9-p96" block_type="sr-h1"><strong>Apply Your Knowledge</strong></p>
+<p id="corty3e-ch9-p97" block_type="sr-que-nl"><phrase block_type="question_num">9.01</phrase> Given the following pairs of scores, calculate difference scores: 72 and 75; 69 and 45; 42 and 39; 47 and 46; 55 and 61; 50 and 61; 71 and 69; 55 and 69.</p>
+<p id="corty3e-ch9-p98" block_type="sr-que-nl"><phrase block_type="question_num">9.02</phrase> Given <em>s<sub>D</sub></em> &#61; 8.43 and <em>N</em> &#61; 64, calculate <image asset-id="corty3e-ch9-img-20" alt="image" src="asset/ch9/corty3e_ineqn09_302_01.jpg"/>.</p>
+<p id="corty3e-ch9-p99" block_type="sr-que-nl"><phrase block_type="question_num">9.03</phrase> Given <em>M</em><sub>1</sub> &#61; 19.98, <em>M</em><sub>2</sub> &#61; 18.65, and <image asset-id="corty3e-ch9-img-21" alt="image" src="asset/ch9/corty3e_ineqn09_303_01.jpg"/>, calculate <em>t.</em></p>
+</box>
+</section>
+<section id="corty3e-ch9-sec1-3" block_type="h1" chapter="9" title="" numbered="false" level="1" print_page="304">
+<section-metadata><section-title><phrase block_type="sec_num">9.3</phrase> <phrase block_type="sec_title">Interpreting the Paired-Samples <em>t</em> Test</phrase></section-title></section-metadata>
+<p id="corty3e_page_304" block_type="page_start">304</p>
+<p id="corty3e-ch9-p100" block_type="txt-ni">Interpreting a paired-samples <em>t</em> test starts by addressing the same questions that were used in interpreting the single-sample <em>t</em> test and the independent-samples <em>t</em> test:</p>
+<list id="corty3e-ch9-list-6" type="ordered" block_type="numbered">
+<li><p id="corty3e-ch9-p101" block_type="nl-first">Was the null hypothesis rejected?</p></li>
+<li><p id="corty3e-ch9-p102" block_type="nl-mid">How big is the effect?</p></li>
+<li><p id="corty3e-ch9-p103" block_type="nl-last">How wide is the confidence interval?</p></li>
+</list>
+<p id="corty3e-ch9-p104" block_type="txt">And the interpretation ends the same way as well, with a written statement that covers four points:</p>
+<list id="corty3e-ch9-list-7" type="ordered" block_type="numbered">
+<li><p id="corty3e-ch9-p105" block_type="nl-first">What was the study about?</p></li>
+<li><p id="corty3e-ch9-p106" block_type="nl-mid">What were its main results?</p></li>
+<li><p id="corty3e-ch9-p107" block_type="nl-mid">What do these results mean?</p></li>
+<li><p id="corty3e-ch9-p108" block_type="nl-last">Are there specific suggestions for future research?</p></li>
+</list>
+<p id="corty3e-ch9-p109" block_type="txt">Before Dr. Keim starts the interpretation, let&#8217;s review her study on the effect of humidity on perceived temperature. She used six participants in a within-subjects design, where each person was tested twice in a 76&#176; room, once at low humidity and once at high humidity. The mean perceived temperature in the low-humidity condition was 75.00&#176;F (<em>s</em> &#61; 4.34&#176;F) and 82.50&#176;F (<em>s</em> &#61; 4.93&#176;F) in the high-humidity condition. The mean difference score was 7.50 (<em>s<sub>D</sub></em> &#61; 2.07&#176;F). For a two-tailed test with &#945; &#61; .05 and <em>df</em> &#61; 5, <em>t<sub>cv</sub></em> was &#177;2.571&#176;F. Dr. Keim calculated <image asset-id="corty3e-ch9-img-22" alt="image" src="asset/ch9/corty3e_ineqn09_302_01.jpg"/> &#61; 0.85&#176;F and <em>t</em> &#61; 8.82&#176;F.</p>
+</section>
+<section id="corty3e-ch9-sec2-1" block_type="h2" chapter="9" title="" numbered="false" level="2" print_page="304">
+<section-metadata><section-title>Was the Null Hypothesis Rejected?</section-title></section-metadata>
+<p id="corty3e-ch9-p110" block_type="txt-ni">This first interpretation question can be answered by plugging the observed value of the test statistic, <em>t</em> &#61; 8.82, into the decision rule Dr. Keim formulated in Step 4:</p>
+<list id="corty3e-ch9-list-8" type="unordered" block_type="bullet">
+<li><p id="corty3e-ch9-p111" block_type="bl-first">Is 8.82 &#8804; &#8211;2.571 <em>or</em> 8.82 &#8805; 2.571?</p></li>
+<li><p id="corty3e-ch9-p112" block_type="bl-last">Or, is &#8211;2.571 &#60; 8.82 &#60; 2.571?</p></li>
+</list>
+<p id="corty3e-ch9-p113" block_type="txt">The first statement is true because 8.82 is greater than or equal to 2.571. This can be seen in <strong><link href="corty3e-ch09.xml#corty3e-ch9-fig-15">Figure 9.5</link></strong>, where it is clear that the value of the test statistic falls in the rare zone. Dr. Keim has rejected the null hypothesis.</p>
+<figure id="corty3e-ch9-fig-15" block_type="figure" numbered="true" number="9.5" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="xlarge" border="true"/>
+<image asset-id="corty3e-ch9-img-23" alt="image" src="asset/ch9/corty3e_fig09_05.jpg"/>
+<caption><strong><phrase block_type="fig_num">Figure 9.5</phrase> Observed Value of <em>t</em> from Humidity Study</strong> The observed value of <em>t,</em> 8.82, falls in the rare zone, so the null hypothesis is rejected.</caption>
+</figure>
+<p id="corty3e-ch9-p114" block_type="txt">Rejecting the null hypothesis that the two population means are the same leads to accepting the alternative hypothesis that the two population means are different. Dr. Keim can say that a statistically significant difference exists between the perceived temperature in low humidity vs. high humidity.</p>
+<p id="corty3e_page_305" block_type="page_start">305</p>
+<p id="corty-ch9-chead-1" block_type="h3">The Direction of the Difference</p>
+<p id="corty3e-ch9-p115" block_type="txt-ni">Reporting that there is a difference is true, but it is not very useful. The logical follow-up question is, &#8220;What is the direction of the difference?&#8221; By examining the two sample means, 75.00&#176; for the low-humidity condition vs. 82.50&#176; for the high-humidity condition, Dr. Keim can conclude that 76&#176; feels significantly hotter with high humidity than with low humidity.</p>
+<p id="corty3e-ch9-p116" block_type="txt">A researcher only needs to worry about the direction of the difference when the null hypothesis is rejected. If Dr. Keim had failed to reject the null hypothesis, then there would not have been enough evidence to conclude that a difference exists between the two means, so there would have been no reason to consider the direction of the difference.</p>
+<p id="corty-ch8-chead-2" block_type="h3">APA Format</p>
+<p id="corty3e-ch9-p117" block_type="txt-ni">Reporting the results in APA format for the humidity results, Dr. Keim would write</p>
+<p id="corty3e-ch9-p118" block_type="eq"><em>t</em> (5) &#61; 8.82, <em>p</em> &#60; .05</p>
+<p id="corty3e-ch9-p119" block_type="txt-ni">For a <em>t</em>-test, APA format contains five pieces of information: (1) what test was done, (2) the number of cases, (3) the value of the test statistic, (4) the alpha level chosen, and (5) whether the null hypothesis was rejected.</p>
+<list id="corty3e-ch9-list-9" type="ordered" block_type="numbered">
+<li><p id="corty3e-ch9-p120" block_type="nl-first">The initial <em>t</em> says that this was a <em>t</em> test.</p></li>
+<li><p id="corty3e-ch9-p121" block_type="nl-mid">The number in parentheses, 5, is the degrees of freedom. By adding 1 to the number in the parentheses (i.e., 5 &#43; 1 &#61; 6), one can determine the number of pairs of cases.</p></li>
+<li><p id="corty3e-ch9-p122" block_type="nl-mid">The number after the equals sign, 8.82, gives the value of the test statistic.</p></li>
+<li><p id="corty3e-ch9-p123" block_type="nl-mid">The final value, .05, shows that there is a 5&#37; chance of making a Type I error because alpha was set at .05.</p></li>
+<li><p id="corty3e-ch9-p124" block_type="nl-last"><em>p</em> &#60; .05 is how APA says that the null hypothesis has been rejected. It means that the results are rare, they happen less than 5&#37; of the time, when the null hypothesis is true. (If alpha had been set at something other than .05, say .10, then write <em>p</em> &#60; .10 instead.)</p></li>
+</list>
+<p id="corty-ch8-chead-3" block_type="h3">Cohen&#8217;s <em>d</em> and <em>r</em><sup>2</sup> for the Paired-Samples <em>t</em> Test</p>
+<figure id="corty3e-ch9-fig-16" block_type="un_figure" numbered="false" mmtype="image" mmsrc="" attr="">
+<layout align="right" width="small" border="true"/>
+<image asset-id="corty3e-ch9-img-24" alt="image" src="asset/ch9/corty3e_fig09_un02.jpg"/>
+</figure>
+<p id="corty3e-ch9-p125" block_type="txt-ni">In the last two chapters, for the single-sample <em>t</em> test and the independent-samples <em>t</em> test, we calculated Cohen&#8217;s <em>d</em> and <em>r</em><sup>2</sup> in order to quantify how much impact the explanatory variable had on the outcome variable. It is possible to calculate Cohen&#8217;s <em>d</em> and <em>r</em><sup>2</sup> for a paired-samples <em>t</em> test, but doing so is <em>not</em> advisable.</p>
+<p id="corty3e-ch9-p126" block_type="txt">The reason that these effect sizes are inappropriate for a paired-samples <em>t</em> test is that they measure more than just the impact of the explanatory variable on the dependent variable. Cohen&#8217;s <em>d</em> and <em>r</em><sup>2</sup> for a paired-samples <em>t</em> test also include the effect of individual differences. As a result, they overestimate the size of the effect of the independent variable on the dependent variable. For example, <em>r</em><sup>2</sup> would be 94&#37; for the humidity data if it were calculated. If true, it would mean that humidity status explains 94&#37; of the variability in perceived temperature. That would be a huge effect for the explanatory variable of humidity level. Unfortunately, it is not true. Here&#8217;s why.</p>
+<p id="corty3e_page_306" block_type="page_start">306</p>
+<p id="corty3e-ch9-p127" block_type="txt">Look at <link href="corty3e-ch09.xml#corty3e-ch9-fig-1">Table 9.1</link>, which presents the data for each case in each of the two conditions. Notice that there&#8217;s variability within a condition: not everyone perceives the temperature the same way. As everyone in a condition receives the same treatment, the variability within a condition results from individual differences among the participants. Look at case 6 who perceived the low-humidity condition as the coldest, 68&#176;. Case 6 also gives the lowest rating of the temperature in the high-humidity condition. Case 6 differs from the other individuals in this study in that he or she always feels cold. Case 2, in contrast, differs in the perception of temperature, feeling the warmest in both conditions.</p>
+<p id="corty3e-ch9-p128" block_type="txt">The type of participant, cold-sensitive or heat-sensitive, has a large effect on the temperature the environment is perceived to be. Whether a person is cold-sensitive or heat-sensitive is an individual differences variable. When <em>r</em><sup>2</sup> or Cohen&#8217;s <em>d</em> is calculated for a paired-samples <em>t</em> test, they mix in the impact of these individual differences on temperature <em>with</em> the impact of the different conditions (high vs. low humidity) on temperature. This means that they give an inflated effect size and are not appropriate to estimate effect size for a paired-samples <em>t</em> test.</p>
+<p id="corty3e-ch9-p129" block_type="txt">So, how does a researcher measure effect size for a paired-samples <em>t</em> test? One way is to calculate the confidence interval for the difference between population means and then use professional expertise&#8212;and common sense&#8212;to translate it into an effect size. Another approach, not possible until <link href="corty3e-ch12.xml">Chapter 12</link>, is to use a test called the repeated-measures ANOVA instead of a paired-samples <em>t</em> test. The repeated-measures ANOVA, unlike the paired-samples <em>t</em> test, separates out the impact of individual differences from the effect of the explanatory variable, allowing the effect of the explanatory variable alone to be assessed.</p>
+</section>
+<section id="corty3e-ch9-sec2-2" block_type="h2" chapter="9" title="" numbered="false" level="2" print_page="306">
+<section-metadata><section-title>How Wide Is the Confidence Interval and How Big Is the Effect?</section-title></section-metadata>
+<p id="corty3e-ch9-p130" block_type="txt-ni">The confidence interval for the difference between population means reveals how small or how large the difference between the population means might be. For the humidity data set, the confidence interval will tell, at a population level, how much hotter the temperature is perceived when the humidity rises. A confidence interval of any percentage could be calculated, but the most common is the 95&#37; confidence interval. <link href="#corty3e-ch9-bx6-5">Equation 9.5</link> gives the formula for the 95&#37; confidence interval for the difference between population means for the paired-samples <em>t</em> test.</p>
+<box title="" numbered="false" id="corty3e-ch9-bx6-5" block_type="eq-t">
+<box-metadata><box-title><phrase block_type="sec_num">Equation 9.5</phrase> <phrase block_type="sec_title">Formula for the 95&#37; Confidence Interval for the Difference Between Population Means for a Paired-Samples <em>t</em> Test</phrase></box-title></box-metadata>
+<p id="corty3e-ch9-eqn-8" block_type="equation">
+<image asset-id="corty3e-ch9-img-25" alt="image" src="asset/ch9/corty3e_eqn09_306_01.jpg"/></p>
+<p id="corty3e-ch9-p131" block_type="eq-txt-ni">where 95&#37;CI&#181;<sub>Diff</sub> &#61; the 95&#37; confidence interval for the</p>
+<p id="corty3e-ch9-p132" block_type="eq-txt-ni">difference between population means for a paired-samples <em>t</em> test</p>
+<p id="corty3e-ch9-p133" block_type="eq-unl"><em>M</em><sub>1</sub> &#61; the mean of one sample</p>
+<p id="corty3e-ch9-p134" block_type="eq-unl"><em>M</em><sub>2</sub> &#61; the mean of the other sample</p>
+<p id="corty3e-ch9-p135" block_type="eq-unl"><em>t<sub>cv</sub></em> &#61; the critical value of <em>t,</em> two-tailed, &#945; &#61; .05, <em>df</em> &#61; <em>N</em> &#8211; 1</p>
+<p id="corty3e-ch9-p136" block_type="eq-unl"><image asset-id="corty3e-ch9-img-26" alt="image" src="asset/ch9/corty3e_ineqn09_302_01.jpg"/> &#61; the standard error of the mean difference for the difference scores (<link href="#corty3e-ch9-bx6-3">Equation 9.3</link>)</p>
+</box>
+<p id="corty3e_page_307" block_type="page_start">307</p>
+<p id="corty3e-ch9-p137" block_type="txt">Applying this to her humidity data, Dr. Keim would calculate the 95&#37; confidence interval as follows:</p>
+<p id="corty3e-ch9-p138" block_type="eq">95&#37;CI&#181;<sub>Diff</sub> &#61; (82.50 &#8211; 75.00) &#177; (2.571 &#215; 0.85)</p>
+<p id="corty3e-ch9-p139" block_type="eq">&#61; 7.5000 &#177; 2.1854</p>
+<p id="corty3e-ch9-p140" block_type="eq">&#61; from 5.3146 to 9.6854</p>
+<p id="corty3e-ch9-p141" block_type="eq">&#61; [5.31, 9.69]</p>
+<p id="corty3e-ch9-p142" block_type="txt-ni">Her confidence interval ranges from a lower limit of 5.31&#176; to an upper limit of 9.69&#176;. To make the interpretation more accessible, Dr. Keim has rounded each end to a whole number, making the confidence interval range from 5 to 10 degrees. In interpreting this confidence interval, Dr. Keim will pay attention to three points: (1) whether the confidence interval captures zero, (2) how close it comes to zero, and (3) how wide it is.</p>
+<list id="corty3e-ch9-list-10" type="ordered" block_type="numbered">
+<li><p id="corty3e-ch9-p143" block_type="nl-first">If a confidence interval captures zero, this means it is possible that the difference between the means of the populations is zero. When such happens, it is plausible that the null hypothesis is true. (This assumes that the confidence interval and the alpha level of the hypothesis test are synchronized.)</p></li>
+<li><p id="corty3e-ch9-p144" block_type="nl-mid">How close the confidence interval comes to zero provides information about the effect size in the larger population. If both ends of the confidence interval are close to zero, then the effect size is probably small. If both ends of the confidence interval are far from zero, then the effect size is probably large. If one end of the confidence interval is close to zero and the other end is far away, then the researcher will be left unsure of how strong or weak the effect actually is in the population.</p></li>
+<li><p id="corty3e-ch9-p145" block_type="nl-last">The width of the confidence interval provides information about how precisely the effect can be specified in the population. Narrower confidence intervals are preferred because they give a more precise sense of the size of the effect in the population. If the confidence interval is wide, the researcher will usually recommend replicating with a larger sample size in order to determine the parameter value more precisely.</p></li>
+</list>
+<p id="corty3e-ch9-p146" block_type="txt">For the humidity study, the confidence interval, from 5 to 10 degrees, does not capture zero. This is to be expected as the null hypothesis was rejected. The confidence interval reiterates what is already known&#8212;it is unlikely, in the larger population, that there is no difference in how 76&#176; is perceived in low humidity vs. how it is perceived in high humidity. Instead, in the population, the high-humidity condition is probably perceived as 5&#8211;10 degrees hotter, on average, than the same temperature at low humidity.</p>
+<p id="corty3e-ch9-p147" block_type="txt">The second step, determining how small and how large the effect may be, takes more thought and expertise for the paired-samples <em>t</em> test than it did for the independent-samples <em>t</em> test. With an independent-samples <em>t</em> test, the researcher could calculate Cohen&#8217;s <em>d</em> or <em>r</em><sup>2</sup> and rely on Cohen&#8217;s standards for small, medium, and large effects. The end of the confidence interval closer to zero (the lower limit) is 5 and the end farther away (the upper limit) is 10. In the larger population, will people perceive the temperature to be a lot hotter or a little hotter if they perceive 76&#176; in conditions of high humidity as 5 degrees hotter than in low humidity? Dr. Keim believes this to be a meaningful effect. She reasons that, on a summer day, there is a noticeable difference in comfort level between being in an air-conditioned room at 71&#176; and one at 76&#176;, so a 5-degree difference is a meaningful one. If a 5-degree difference is meaningful, then a 10-degree difference is even more so. In understanding what a 10-degree difference means, Dr. Keim thinks of how a 76&#176; summer day feels pleasant and an 86&#176; day feels hot.</p>
+<p id="corty3e_page_308" block_type="page_start">308</p>
+<p id="corty3e-ch9-p148" block_type="txt">Finally, she uses Equation 7.5 to calculate the width of the confidence interval. To avoid rounding error, she uses the real limits of the confidence interval, 5.31 to 9.69, not her rounded version of 5 to 10:</p>
+<p id="corty3e-ch9-p149" block_type="eq">CI<em><sub>W</sub></em> &#61; CI<em><sub>UL</sub></em> &#8211; CI<em><sub>LL</sub></em></p>
+<p id="corty3e-ch9-p150" block_type="eq">&#61; 9.69 &#8211; 5.31</p>
+<p id="corty3e-ch9-p151" block_type="eq">&#61; 4.38</p>
+<p id="corty3e-ch9-p152" block_type="txt">The confidence interval is 4.38&#176; wide. This seems sufficiently narrow to Dr. Keim. She would like to replicate the study in order to make sure the same effect is observed again, and she would like to increase the sample size in order to have a better sample, but she feels no need to replicate with a larger sample size in order to narrow the confidence interval. Given that both a 5-degree difference and a 10-degree difference seem meaningful and that the confidence interval is narrow, Dr. Keim is inclined to focus on the observed difference of 7.50 degrees in her interpretation.</p>
+</section>
+<section id="corty3e-ch9-sec2-3" block_type="h2" chapter="9" title="" numbered="false" level="2" print_page="308">
+<section-metadata><section-title>Putting It All Together</section-title></section-metadata>
+<p id="corty3e-ch9-p153" block_type="txt-ni">Here is Dr. Keim&#8217;s four-point interpretation in which she states: (1) what the study was about; (2) the main results; (3) what the results mean; and (4) her suggestions for future research. This interpretation is a little longer than previous ones. It takes Dr. Keim two paragraphs to say all that she wants to.</p>
+<p id="corty3e-ch9-p154" block_type="txt_v1">The impact of humidity on perceived temperature was examined. Using a within-subjects design, six participants judged the temperature after being in a 76&#176; room under conditions of low humidity and high humidity. In the low-humidity condition, they judged the temperature fairly accurately (<em>M</em> &#61; 75.00&#176;F), but they judged it as hotter (<em>M</em> &#61; 82.50&#176;F) under conditions of high humidity. This 7.50&#176;F difference was statistically significant [<em>t</em> (5) &#61; 8.82&#176;F, <em>p</em> &#60; .05]. Humidity appears to make people feel hotter. According to this study, people feel almost 8 degrees hotter under conditions of high humidity. This is a noticeable increase in perceived temperature and can move a person from feeling comfortable to being uncomfortable.</p>
+<p id="corty3e-ch9-p155" block_type="txt_v1">There were several limitations to this study that can be rectified in future research. All participants were college students in the United States, people who have experience with heated and cooled environments. It would be interesting to see if the same effect were observed among people with less control over their indoor environments. A second limitation is that only one temperature, 76&#176;, was tested. The effect of humidity on perceived temperature should be observed at both higher and lower temperatures. Finally, there were only six participants in this study. Replicating the study would increase confidence in the robustness of the finding that humidity level affects the perception of temperature.</p>
+<box title="Worked Example 9.2" numbered="false" id="corty3e-ch9-bx3-2" block_type="sr-exp-n">
+<p id="corty3e-ch9-p156" block_type="sr-ex-txt-ni">For more practice with interpretation, let&#8217;s return to the study where Dr. Althof followed patients with depression for six months following treatment. At the end of treatment, the mean depression level for the 16 participants was 14.00, and six months later it had climbed to 15.00. The mean difference score was 1.00 (<em>s<sub>D</sub></em> &#61; 2.31). Dr. Althof had nondirectional hypotheses and a 5&#37; chance of making a Type I error. <em>t<sub>cv</sub></em> was 2.131, <image asset-id="corty3e-ch9-img-27" alt="image" src="asset/ch9/corty3e_ineqn09_302_01.jpg"/> was calculated to be 0.58, and <em>t</em> was 1.72.</p>
+<p id="corty3e_page_309" block_type="page_start">309</p>
+<p id="corty3e-ch9-p157" block_type="sr_exp_txt"><em>Was the null hypothesis rejected?</em> The first step in interpretation is to determine if the null hypothesis is rejected. To do so, Dr. Althof substitutes the observed value of <em>t,</em> 1.72, into the decision rule he had generated in Step 4:</p>
+<list id="corty3e-ch9-list-11" type="unordered" block_type="bullet">
+<li><p id="corty3e-ch9-p158" block_type="sr-exp-bl-first">Is 1.72 &#8804; &#8211;2.131 <em>or</em> 1.72 &#8805; 2.131?</p></li>
+<li><p id="corty3e-ch9-p159" block_type="sr-exp-bl-last">Or, is &#8211;2.131 &#60; 1.72 &#60; 2.131?</p></li>
+</list>
+<p id="corty3e-ch9-p160" block_type="sr_exp_txt">The second statement, is true: 1.72 falls between &#8211;2.131 and 2.131. Look at <strong><link href="corty3e-ch09.xml#corty3e-ch9-fig-18">Figure 9.6</link></strong>, where it is clear that the value of the test statistic falls in the common zone. Dr. Althof has failed to reject the null hypothesis. There is not enough evidence to conclude that depression level changes, in either a positive or negative direction, in the six months after the end of psychodynamic therapy. In APA format, the results would be written as</p>
+<figure id="corty3e-ch9-fig-18" block_type="figure" numbered="true" number="9.6" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="large" border="true"/>
+<image asset-id="corty3e-ch9-img-28" alt="image" src="asset/ch9/corty3e_fig09_06.jpg"/>
+<caption><strong><phrase block_type="fig_num">Figure 9.6</phrase> Observed Value of <em>t</em> from the Depression Follow-Up Study</strong> The observed value of <em>t,</em> 1.72, falls in the common zone. The null hypothesis is not rejected.</caption>
+</figure>
+<p id="corty3e-ch9-p161" block_type="sr-exp-eq"><em>t</em> (15) &#61; 1.72, <em>p</em> > .05</p>
+<p id="corty3e-ch9-p162" block_type="sr_exp_txt">Remember, &#8220;<em>p</em> > .05&#8221; signifies that the result (<em>t</em> &#61; 1.72) is an expected, or common, occurrence when the null hypothesis is true. It means that the null hypothesis was not rejected.</p>
+<p id="corty3e-ch9-p163" block_type="sr_exp_txt">This failure to reject the null hypothesis can be taken as good news. Dr. Althof thinks of it as lack of evidence that relapse to depression occurs within six months of ending psychodynamic treatment for depression. The effectiveness of this treatment seems fairly long-lasting.</p>
+<p id="corty3e-ch9-p164" block_type="sr_exp_txt"><em>How wide is the confidence interval? How big is the effect?</em> The second step in interpretation for a paired-samples <em>t</em> test is to use the confidence interval to evaluate the size of the effect. Dr. Althof used <link href="#corty3e-ch9-bx6-5">Equation 9.5</link> to calculate the confidence interval:</p>
+<p id="corty3e-ch9-eqn-9" block_type="equation">
+<image asset-id="corty3e-ch9-img-29" alt="image" src="asset/ch9/corty3e_eqn09_309_01.jpg"/></p>
+<p id="corty3e-ch9-p165" block_type="sr-exp-eq">&#61; (15.00 &#8211; 14.00) &#177; (2.131 &#215; 0.58)</p>
+<p id="corty3e-ch9-p166" block_type="sr-exp-eq">&#61; 1.0000 &#177; 1.2360</p>
+<p id="corty3e-ch9-p167" block_type="sr-exp-eq">&#61; from &#8211;0.2360 to 2.2360</p>
+<p id="corty3e-ch9-p168" block_type="sr-exp-eq">&#61; [&#8211;0.24, 2.24]</p>
+<p id="corty3e-ch9-p169" block_type="sr_exp_txt">For the larger population of people with moderate to severe depression, this confidence interval tells Dr. Althof what the mean difference is in their level of depression from the end of treatment to six months later. It tells him that the mean difference could be anywhere from an average of being 2.24 points <em>more</em> depressed six months after treatment to being 0.24 points <em>less</em> depressed six months after treatment. And, there is a 5&#37; chance that this interval does not capture the actual mean difference.</p>
+<p id="corty3e_page_310" block_type="page_start">310</p>
+<p id="corty3e-ch9-p170" block_type="sr_exp_txt">There are three points to consider in interpreting a confidence interval: (1) whether it captures zero, (2) how close it comes to zero, and (3) how wide it is.</p>
+<list id="corty3e-ch9-list-12" type="ordered" block_type="numbered">
+<li><p id="corty3e-ch9-p171" block_type="sr_exp_txt_ni">As expected, because Dr. Althof had failed to reject the null hypothesis, zero falls within this interval. This means that the value of zero is a viable option for how much difference occurs in the mean depression level from the end of treatment to six months later. In the larger population, there may be no loss in the effect of treatment in the six months following treatment.</p></li>
+<li><p id="corty3e-ch9-p172" block_type="sr_exp_txt_ni">One end of the confidence interval (&#8211;0.24) falls quite near zero and would be a trivial decrease in depression if it were true. The other end (2.24) doesn&#8217;t fall far away from zero, considering that the depression scale ranges over 50 points. If the effect in the population were a mean increase of 2.24 depression points on a 50-point scale over six months, that is not much of an effect.</p></li>
+<li><p id="corty3e-ch9-p173" block_type="sr_exp_txt_ni">The confidence interval is not very wide, being a total of 2.48 points wide, from &#8211;0.24 to 2.24. Based on this, Dr. Althof does not feel a great need to replicate the study with a larger sample size. Note, however, that the vast majority of the confidence interval falls on one side of zero. If the sample size had been larger and the confidence interval narrower, then it would have failed to capture zero and Dr. Althof would have rejected the null hypothesis. This makes him worry that a Type II error may have occurred. Perhaps there is a small effect that was not found. For this reason, Dr. Althof is going to suggest replicating with a larger sample size.</p></li>
+</list>
+</box>
+<p id="corty3e-ch9-p174" block_type="txt">This is a good opportunity to talk about the difference between <em>statistical significance</em> and <em>practical significance.</em> <termref term="Statistical significance">Statistical significance</termref> indicates that the observed difference between <em>sample</em> means is large enough to conclude that there is a difference between <em>population</em> means. It doesn&#8217;t mean that the difference is a meaningful one.</p>
+<p id="corty3e-ch9-p175" block_type="txt">Statistical significance is heavily influenced by sample size: the larger the sample size, the more likely it is that results will be statistically significant. If the sample size were increased in the depression follow-up study from 16 to 23, the results would be statistically significant and the confidence interval would range from 0.004 to 2.00, not capturing zero.</p>
+<box numbered="false" id="corty3e-ch9-exp1-2" block_type="mn1">
+<p id="corty3e-ch9-p176" block_type="mn-ext-ni"><em>A statistically significant result is no guarantee of a practically significant effect.</em></p>
+</box>
+<p id="corty3e-ch9-p177" block_type="txt">Think about the larger population. In the larger population, if the mean depression score were 14.00 at the end of treatment and 14.004 six months later, then the null hypothesis would be wrong and should be rejected. But a population difference of such a small amount, 0.004, would be so small as to be meaningless. It is of no practical significance. A result is of <strong>practical significance</strong> (also called <strong>clinical significance</strong>) if the size of the effect is large enough to make a real difference. Practical significance means that the explanatory variable has a meaningful impact on the outcome variable. A statistically significant result is no guarantee of a practically significant effect.</p>
+<p id="corty3e-ch9-p178" block_type="txt">Judging practical significance requires expertise in and familiarity with a specific area of research. Unless one has experience with a scale, it is hard to know how meaningful a 2-point change on the Beck Depression Inventory. For now, the best option is to use Cohen&#8217;s small, medium, and large effect sizes as an initial, and very rough, guide to practical and clinical significance.</p>
+<p id="corty3e_page_311" block_type="page_start">311</p>
+<box title="A Common Question" numbered="false" id="corty3e-ch9-bx1-1" block_type="bx-1-h">
+<p id="corty3e-ch9-p179" block_type="bx1-que"><strong>Q</strong> Is it possible for a result to be practically significant but not statistically significant?</p>
+<p id="corty3e-ch9-p180" block_type="bx1-ans"><strong>A</strong> No. When a result is not statistically significant, there is no evidence of a difference between the populations. The observed difference may be unique to the two samples in a study and wouldn&#8217;t be found again. If an effect doesn&#8217;t occur consistently, it can&#8217;t be of practical use.</p>
+</box>
+<box id="corty3e-ch9-bx3-4" block_type="sr-exp-n">
+<p id="corty3e-ch9-p181" block_type="sr_exp_txt"><em>Putting it all together.</em> Here&#8217;s what Dr. Althof wrote for an interpretation. He followed the four-point plan for interpretations: (1) stating what the study was about, (2) giving the main results, (3) explaining them, and (4) making suggestions for future research.</p>
+<p id="corty3e-ch9-p182" block_type="sr_exp_txt_v1_ni">A study was conducted that followed 16 people who had received psychodynamic therapy for severe to moderate depression for six months after treatment was complete. Their mean depression level was 14.00 at the end of treatment and 15.00 six months later. This 1-point increase in depression was not a statistically significant change [<em>t</em> (15) &#61; 1.72, <em>p</em> > .05]. Thus, there is no evidence from this study to conclude that a relapse to depression occurs, for this population of patients, in the six months following treatment with psychodynamic therapy. The effects of psychodynamic therapy seem to be long-lasting.</p>
+<p id="corty3e-ch9-p183" block_type="sr_exp_txt_v1_ni">To increase confidence in the robustness of these results, it would be a good idea to replicate this study. Additionally, it would be a good idea to add another form of therapy for depression to a study in order to see if lack of relapse after treatment ends is unique to psychodynamic therapy.</p>
+</box>
+<box title="Application Demonstration" numbered="false" id="corty3e-ch9-bx5-1" block_type="sr-x-h">
+<p id="corty3e-ch9-p184" block_type="sr-x-txt-ni">Here are some analyses based on a real data set to end our investigation of the paired-samples <em>t</em> test. A student, Kristin Brown, wondered whether there was a difference in cigarette smoking rates between men and women. Kristin found data reporting the rates of smoking for men and for women by state, and we&#8217;ll use them to select 10 random states and determine if a difference exists in smoking rates between men and women. <strong><link href="corty3e-ch09.xml#corty3e-ch9-fig-20">Figure 9.7</link></strong> shows the results for the 10 states.</p>
+<figure id="corty3e-ch9-fig-20" block_type="figure" numbered="true" number="9.7" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="medium" border="true"/>
+<image asset-id="corty3e-ch9-img-30" alt="image" src="asset/ch9/corty3e_fig09_07.jpg"/>
+<caption><strong><phrase block_type="fig_num">Figure 9.7</phrase> Smoking Rates for Males and Females in Sample of 10 States</strong> In this graph, it appears as if the smoking rate by state is higher for men than for women. However, to make sure the effect can&#8217;t be explained by sampling error, hypothesis testing is needed.</caption>
+</figure>
+<p id="corty3e-ch9-p185" block_type="sr_x_h4_txt"><phrase block_type="h4-n-ri"><strong>Step 1</strong></phrase> <strong>Pick a Test.</strong> The data are paired together by state&#8212;one rate for men and one rate for women. This seems sensible. Individual differences between states (such as whether the state produces tobacco or has active antismoking campaigns) might affect its smoking rate, but should affect both sexes in a state. The men and women are dependent samples, so this situation calls for a paired-samples <em>t</em> test.</p>
+<p id="corty3e_page_312" block_type="page_start">312</p>
+<p id="corty3e-ch9-p186" block_type="sr_x_h4_txt"><phrase block_type="h4-n-ri"><strong>Step 2</strong></phrase> <strong>Check the Assumptions.</strong> <link href="corty3e-ch09.xml#corty3e-ch9-fig-4">Table 9.2</link> lists the assumptions.</p>
+<list id="corty3e-ch9-list-13" type="unordered" block_type="bullet">
+<li><p id="corty3e-ch9-p187" block_type="sr-x-bl-first">The random samples assumption is not violated. This is a random sample of 10 of the 50 states. The results can be generalized to all 50 states.</p></li>
+<li><p id="corty3e-ch9-p188" block_type="sr-x-bl-mid">The independence of observations assumption is not violated. The states were measured independently, so cases within a sample don&#8217;t influence each other. Each state was only in each sample once.</p></li>
+<li><p id="corty3e-ch9-p189" block_type="sr-x-bl-last">The normality assumption is not violated. It seems reasonable to assume that there is a normal distribution of difference scores in the larger population. In addition, if this assumption is wrong, it is robust to violations.</p></li>
+</list>
+<p id="corty3e-ch9-p190" block_type="sr-x-txt-ni">None of the assumptions (<link href="corty3e-ch09.xml#corty3e-ch9-fig-4">Table 9.2</link>) was violated, so we can proceed with the paired-samples <em>t</em> test.</p>
+<p id="corty3e-ch9-p191" block_type="sr_x_h4_txt"><phrase block_type="h4-n-ri"><strong>Step 3</strong></phrase> <strong>List the Hypotheses.</strong> Hypotheses should be generated before any data are collected. The question being addressed is whether there is a difference in the smoking rates of men and women. The direction doesn&#8217;t matter. This calls for a two-tailed test. The hypotheses are</p>
+<p id="corty3e-ch9-p192" block_type="sr-x-eq"><em>H</em><sub>0</sub>: &#181;<sub>Men</sub> &#61; &#181;<sub>Women</sub></p>
+<p id="corty3e-ch9-p193" block_type="sr-x-eq"><em>H</em><sub>1</sub>: &#181;<sub>Men</sub> &#8800; &#181;<sub>Women</sub></p>
+<p id="corty3e-ch9-p194" block_type="sr_x_h4_txt"><phrase block_type="h4-n-ri"><strong>Step 4</strong></phrase> <strong>Set the Decision Rule.</strong> For a two-tailed test with alpha set at .05 and 10 &#8211; 1 degrees of freedom, the critical value of <em>t</em> is &#177;2.262. The decision rule is:</p>
+<list id="corty3e-ch9-list-14" type="unordered" block_type="bullet">
+<li><p id="corty3e-ch9-p195" block_type="sr-x-bl-first">If <em>t</em> &#8804; &#8211;2.262 <em>or</em> t &#8805; 2.262, reject the null hypothesis.</p></li>
+<li><p id="corty3e-ch9-p196" block_type="sr-x-bl-last">If &#8211;2.262 &#60; <em>t</em> &#60; 2.262, fail to reject the null hypothesis.</p></li>
+</list>
+<p id="corty3e-ch9-p197" block_type="sr_x_h4_txt"><phrase block_type="h4-n-ri"><strong>Step 5</strong></phrase> <strong>Calculate the Test Statistic. <link href="corty3e-ch09.xml#corty3e-ch9-fig-21">Table 9.4</link></strong> displays the means and standard deviations for men and women, and the difference scores for the 10 states. Using the standard deviation of the difference scores (1.98) and the number of pairs of cases (10), the standard error of the difference is calculated (<link href="#corty3e-ch9-bx6-3">Equation 9.3</link>):</p>
+<figure id="corty3e-ch9-fig-21" block_type="table" numbered="true" number="9.4" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="large" border="true"/>
+<image asset-id="corty3e-ch9-img-31" alt="image" src="asset/ch9/corty3e_table09_04.jpg"/>
+</figure>
+<p id="corty3e-ch9-eqn-10" block_type="equation">
+<image asset-id="corty3e-ch9-img-32" alt="image" src="asset/ch9/corty3e_eqn09_313_01.jpg"/></p>
+<p id="corty3e_page_313" block_type="page_start">313</p>
+<p id="corty3e-ch9-p198" block_type="sr-x-txt">The standard error of the mean difference is used to calculate the <em>t</em> value (<link href="#corty3e-ch9-bx6-4">Equation 9.4</link>). Remember, it doesn&#8217;t make a difference which mean is subtracted from the other mean, so subtract the mean for the women (18.23&#37;) from the mean for the men (23.00&#37;) to obtain a positive number:</p>
+<p id="corty3e-ch9-eqn-11" block_type="equation">
+<image asset-id="corty3e-ch9-img-33" alt="image" src="asset/ch9/corty3e_eqn09_313_02.jpg"/></p>
+<p id="corty3e-ch9-p199" block_type="sr_x_h4_txt"><phrase block_type="h4-n-ri"><strong>Step 6</strong></phrase> <strong>Interpret the Results.</strong> <em>Was the null hypothesis rejected?</em></p>
+<list id="corty3e-ch9-list-15" type="unordered" block_type="bullet">
+<li><p id="corty3e-ch9-p200" block_type="sr-x-bl-first">Is 7.57 &#8804; &#8211;2.262 <em>or</em> 7.57 &#8805; 2.262?</p></li>
+<li><p id="corty3e-ch9-p201" block_type="sr-x-bl-last">Or, is &#8211;2.262 &#60; 7.57 &#60; 2.262?</p></li>
+</list>
+<p id="corty3e-ch9-p202" block_type="sr-x-txt">7.57 is greater than or equal to 2.262, so the first statement is true. <strong><link href="corty3e-ch09.xml#corty3e-ch9-fig-24">Figure 9.8</link></strong> shows that the observed value of <em>t,</em> 7.57, falls in the rare zone, so the null hypothesis is rejected.</p>
+<figure id="corty3e-ch9-fig-24" block_type="figure" numbered="true" number="9.8" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="large" border="true"/>
+<image asset-id="corty3e-ch9-img-34" alt="image" src="asset/ch9/corty3e_fig09_08.jpg"/>
+<caption><strong><phrase block_type="fig_num">Figure 9.8</phrase> Observed Value of <em>t</em> from the Smoking Rate Study</strong> Note that the observed value of <em>t</em> falls in the rare zone. This means that the null hypothesis is rejected. It appears that the population mean for men differs from the population mean for women.</caption>
+</figure>
+<p id="corty3e-ch9-p203" block_type="sr-x-txt">The conclusion is that in the larger population of states, there is a difference in the smoking rate between men and women. Examining the sample means, 18.23&#37; for the women and 23.00&#37; for the men, leads to the conclusion that the smoking rate per state is higher for men than it is for women. In APA format, one would report</p>
+<p id="corty3e-ch9-p204" block_type="sr-x-eq"><em>t</em>(9) &#61; 7.57, <em>p</em> &#60; .05</p>
+<p id="corty3e-ch9-p205" block_type="sr-x-txt"><em>How wide is the confidence interval? How big is the effect?</em> To calculate the 95&#37; confidence interval for the difference between population means, <link href="#corty3e-ch9-bx6-5">Equation 9.5</link> is used. Arrange the subtraction of one mean (the women at 18.23&#37;) from the other (the men at 23.00&#37;) to end up with a positive value. The other numbers in the equation, 2.262 and 0.63, are the critical value of <em>t</em> and the standard error of the difference, respectively:</p>
+<p id="corty3e_page_314" block_type="page_start">314</p>
+<p id="corty3e-ch9-eqn-12" block_type="equation">
+<image asset-id="corty3e-ch9-img-35" alt="image" src="asset/ch9/corty3e_eqn09_314_01.jpg"/></p>
+<p id="corty3e-ch9-p206" block_type="sr-x-eq">&#61; (23.00 &#8211; 18.23) &#177; (2.262 <strong>&#215;</strong> 0.63)</p>
+<p id="corty3e-ch9-p207" block_type="sr-x-eq">&#61; 4.7700 &#177; 1.4251</p>
+<p id="corty3e-ch9-p208" block_type="sr-x-eq">&#61; from 3.3449 to 6.1951</p>
+<p id="corty3e-ch9-p209" block_type="sr-x-eq">&#61; [3.34, 6.20]</p>
+<p id="corty3e-ch9-p210" block_type="sr-x-txt">The confidence interval says that in the larger population of states, the mean male smoking rate is higher than the mean female smoking rate, by 3.34&#37; to 6.20&#37;.</p>
+<list id="corty3e-ch9-list-16" type="unordered" block_type="bullet">
+<li><p id="corty3e-ch9-p211" block_type="sr-x-bl-first"><em>Did the confidence interval capture zero?</em> As expected, because the null hypothesis was rejected, this confidence interval doesn&#8217;t capture zero. It is unlikely that the difference in the smoking rates of men and women is zero.</p></li>
+<li><p id="corty3e-ch9-p212" block_type="sr-x-bl-mid"><em>How close does the confidence interval come to zero?</em> The lower end (3.34&#37; difference in smoking rates) is not very close to zero and the upper end (6.20&#37;) is a good distance from zero. It seems reasonable to conclude that the effect is of a moderate size.</p></li>
+<li><p id="corty3e-ch9-p213" block_type="sr-x-bl-last"><em>How wide is the confidence interval?</em> At 2.86 percentage points, the confidence interval isn&#8217;t too wide.</p></li>
+</list>
+<p id="corty3e-ch9-p214" block_type="sr-x-txt"><em>Putting it all together.</em> Here&#8217;s the four-point interpretation:</p>
+<p id="corty3e-ch9-p215" block_type="sr-x-txt">Data were analyzed from a study comparing the smoking rates of men to those of women for 10 randomly selected states. A mean of 23.00&#37; of men in these states smoked, compared to 18.23&#37; of the women. This 4.77 percentage points higher rate among the men was statistically significant [<em>t</em>(9) &#61; 7.57, <em>p</em> &#60; .05] and seems to show a reasonably strong effect of sex on the smoking rate. In the United States, men smoke at a higher rate. In future research, it would be interesting to see if the difference in rates between men and women has changed over time and to examine male/female differences in other countries.</p>
+</box>
+<box title="Practice Problems 9.2" numbered="false" id="corty3e-ch9-bx2-2" block_type="sr-h">
+<p id="corty3e_page_315" block_type="page_start">315</p>
+<p id="corty3e-ch9-p216" block_type="sr-h1"><strong>Apply Your Knowledge</strong></p>
+<p id="corty3e-ch9-p217" block_type="sr-que-nl"><phrase block_type="question_num">9.04</phrase> Given <em>N</em> &#61; 46, <em>M</em><sub>1</sub> &#61; 23, <em>M</em><sub>2</sub> &#61; 32, and <em>t</em> &#61; 3.67, (a) write the results in APA format and (b) comment on the direction of the difference. Use &#945; &#61; .05, two-tailed.</p>
+<p id="corty3e-ch9-p218" block_type="sr-que-nl"><phrase block_type="question_num">9.05</phrase> Given <em>N</em> &#61; 20, <em>M</em><sub>1</sub> &#61; 68, <em>M</em><sub>2</sub> &#61; 64, and <em>t</em> &#61; 2.01, (a) write the results in APA format and (b) comment on the direction of the difference. Use &#945; &#61; .05, two-tailed.</p>
+<p id="corty3e-ch9-p219" block_type="sr-que-nl"><phrase block_type="question_num">9.06</phrase> Given <em>M</em><sub>1</sub> &#61; 55, <em>M</em><sub>2</sub> &#61; 48, <em>t<sub>cv</sub></em> &#61; 2.023, and <image asset-id="corty3e-ch9-img-36" alt="image" src="asset/ch9/corty3e_ineqn09_315_01.jpg"/>, calculate the 95&#37;CI&#181;<sub>Diff</sub> .</p>
+<p id="corty3e-ch9-p220" block_type="sr-que-nl"><phrase block_type="question_num">9.07</phrase> A tennis instructor compared two homework methods. She took beginning students at her tennis camp and matched them in pairs in terms of their tennis abilities. She then randomly assigned the players to two conditions. Those in the control condition had to practice for half an hour every day with another player. Those in the experimental condition had to practice against a wall for half an hour every day. After two weeks of practice, the instructor measured how often each player could hit targets in different locations on the tennis court. The higher the percentage, the better the player had become. Given the results below, interpret the study:</p>
+<list id="corty3e-ch9-list-17" type="unordered" block_type="bullet">
+<li><p id="corty3e-ch9-p221" block_type="sr-que-nl"><em>M<sub>C</sub></em> &#61; 48.00, <em>M<sub>E</sub></em> &#61; 57.00, <em>N</em> &#61; 12, <em>s<sub>D</sub></em> &#61; 6.00</p></li>
+<li><p id="corty3e-ch9-p222" block_type="sr-que-nl"><image asset-id="corty3e-ch9-img-37" alt="image" src="asset/ch9/corty3e_ineqn09_315_02.jpg"/>, <em>t</em> &#61; 5.20, &#37;CI&#181;<sub>Diff</sub> &#61; [5.19, 12.81]</p></li>
+</list>
+</box>
+</section>
+<section id="corty3e-ch9-sec1-4" block_type="sum-h" chapter="9" title="" numbered="false" level="1" print_page="315">
+<section-metadata><section-title>SUMMARY</section-title></section-metadata>
+<p id="corty3e-ch9-p223" block_type="sum-hd1"><strong>Recognize the different types of dependent samples.</strong></p>
+<list id="corty3e-ch9-list-18" type="unordered" block_type="bluebullet">
+<li><p id="corty3e-ch9-p224" block_type="sum-bl-first">In dependent samples, also called paired samples, cases are pairs of data points. Examples include (a) cases measured at two points in time (repeated measures, longitudinal, or pre-post designs); (b) cases measured in two different conditions (within-subjects designs); or (c) cases matched on some variable, so they are similar (matched-pairs designs).</p></li>
+</list>
+<p id="corty3e-ch9-p225" block_type="sum-hd1"><strong>Calculate and interpret a paired-samples <em>t</em> test.</strong></p>
+<list id="corty3e-ch9-list-19" type="unordered" block_type="bluebullet">
+<li><p id="corty3e-ch9-p226" block_type="sum-bl-first">A paired-samples <em>t</em> test is used to compare the means of two dependent samples. Because paired-samples <em>t</em> tests control for the effects of individual differences, they have more statistical power, need a smaller sample size to reject <em>H</em><sub>0</sub>, and are useful for studying rare phenomena or those for which cases are hard to come by.</p></li>
+<li><p id="corty3e-ch9-p227" block_type="sum-bl-mid">To conduct a paired-samples <em>t</em> test, the assumptions must be met, hypotheses stated, and decision rule set before calculating the actual <em>t</em> value.</p></li>
+<li><p id="corty3e-ch9-p228" block_type="sum-bl-mid">In interpreting the results of a paired-samples <em>t</em> test, first apply the decision rule to determine if the null hypothesis was rejected, then write the results in APA format. If the null hypothesis was rejected, comment on the direction of the difference between the population means.</p></li>
+<li><p id="corty3e-ch9-p229" block_type="sum-bl-mid">Next, to find the effect size, calculate the 95&#37; confidence interval for the difference between population means. Interpret the confidence interval, paying attention to (a) whether it captures zero, (b) how close it comes to zero, and (c) how wide it is. Do not calculate <em>r</em><sup>2</sup> or <em>d</em>.</p></li>
+<li><p id="corty3e-ch9-p230" block_type="sum-bl-mid">Finally, in a four-point interpretation: (1) explain what the study was about, (2) present the main results, (3) interpret them, and (4) make suggestions for future research.</p></li>
+</list>
+<box title="DIY" numbered="false" id="corty3e-ch9-bx4-1" block_type="bx4-h">
+<p id="corty3e_page_316" block_type="page_start">316</p>
+<p id="corty3e-ch9-p231" block_type="bx4-txt-ni">Is there a difference in the ages at which men and women get married? Has there been a change in this statistic over time?</p>
+<p id="corty3e-ch9-p232" block_type="bx4-txt">Go online or get a newspaper from a recent Sunday and find the wedding section. Note the ages of each bride and groom. Are these paired data?</p>
+<p id="corty3e-ch9-p233" block_type="bx4-txt">Check the assumptions and complete a paired-samples <em>t</em> test. Is there a difference? In what direction? What do the results tell us?</p>
+<p id="corty3e-ch9-p234" block_type="bx4-txt">Want to do some extra work? Go to your school library and have the reference librarian help you find a Sunday newspaper from a decade or two ago. Collect and analyze the data for the ages of the brides and grooms back then. Has a change in the age difference occurred over the years?</p>
+</box>
+</section>
+<section id="corty3e-ch9-sec1-5" block_type="cr-kt-t" chapter="9" title="" numbered="false" level="1" print_page="316">
+<section-metadata><section-title>KEY TERMS</section-title></section-metadata>
+<question id="corty3e-ch9-keyterms-ques1" numbered="false" title="" number="">
+<query id="corty3e-ch9-keyterms-ques1-qry">MA:
+a.clinical significance (or practical significance):: the size of the effect is large enough to say the independent variable has a meaningful impact on clinical outcome.
+a.individual differences:: attributes that vary from case to case.
+a.longitudinal research (or repeated-measures design):: a study in which the same participants are measured at two or more points in time.
+a.matched pairs:: participants are grouped into sets of two based on their being similar on potential confounding variables.
+a.paired-samples t test:: hypothesis test used to compare the means of two dependent samples; also known as dependent-samples <em>t</em> test, correlated-samples <em>t</em> test, related-samples <em>t</em> test, matched-pairs <em>t</em> test, within-subjects <em>t</em> test, or repeated-measures <em>t</em> test.
+a.practical significance (or clinical significance):: the size of the effect is large enough to say the independent variable has a meaningful impact on the dependent variable (or the clinical outcome).
+a.pre-post design:: participants are measured on the dependent variable before and after an intervention.
+a.repeated-measures design (or longitudinal research):: a study in which the same participants are measured at two or more points in time.
+a.standard error of the mean difference for difference scores:: the standard deviation of the sampling distribution of difference scores, abbreviated <image asset-id="corty3e-ch9-img-38" alt="image" src="asset/ch9/corty3e_ineqn09_302_01.jpg"/>; used as the denominator in the paired-samples <em>t</em> test equation.
+a.statistical significance:: the observed difference between sample means is large enough to conclude that it represents a difference between population means.
+a.within-subjects design:: the same participants are measured in two different situations or under two different conditions.
+</query>
+</question>
+</section>
+<section id="corty3e-ch9-sec1-6" block_type="cr-x-h" chapter="9" title="" numbered="false" level="1" print_page="316">
+<section-metadata><section-title>CHAPTER EXERCISES</section-title></section-metadata>
+<p id="corty3e-ch9-p245b" block_type="cr-x-txt-ni"><strong><em>Answers to the odd-numbered exercises appear in <link href="corty3e-appb.xml">Appendix B</link>.</em></strong></p>
+<p id="corty3e-ch9-p246" block_type="cr-x-hd1"><strong>Review Your Knowledge</strong></p>
+<p id="corty3e-ch9-p247" block_type="cr-x-nl-txt"><phrase block_type="question_num">9.01</phrase> The independent-samples <em>t</em> test is used to compare means of two &#95;&#95;&#95;&#95;&#95;&#95;&#95; samples; the &#95;&#95;&#95;&#95;&#95;&#95;&#95; is used to compare means of two dependent samples.</p>
+<p id="corty3e-ch9-p248" block_type="cr-x-nl-txt"><phrase block_type="question_num">9.02</phrase> The cases in the two samples in a paired-samples <em>t</em> test may be paired because they are the same cases measured at two different points in &#95;&#95;&#95;&#95;&#95;&#95;&#95; or under two different conditions.</p>
+<p id="corty3e_page_317" block_type="page_start">317</p>
+<p id="corty3e-ch9-p249" block_type="cr-x-nl-txt"><phrase block_type="question_num">9.03</phrase> With matched samples, cases are paired together in order to control for &#95;&#95;&#95;&#95;&#95;&#95;&#95; variables.</p>
+<p id="corty3e-ch9-p250" block_type="cr-x-nl-txt"><phrase block_type="question_num">9.04</phrase> Two other names for a paired-samples <em>t</em> test are &#95;&#95;&#95;&#95;&#95;&#95;&#95; and &#95;&#95;&#95;&#95;&#95;&#95;&#95;.</p>
+<p id="corty3e-ch9-p251" block_type="cr-x-nl-txt"><phrase block_type="question_num">9.05</phrase> An advantage of a paired-samples <em>t</em> test is that it controls for &#95;&#95;&#95;&#95;&#95;&#95;&#95;.</p>
+<p id="corty3e-ch9-p252" block_type="cr-x-nl-txt"><phrase block_type="question_num">9.06</phrase> An individual difference is an attribute, such as intelligence or weight, that varies from &#95;&#95;&#95;&#95;&#95;&#95;&#95;.</p>
+<p id="corty3e-ch9-p253" block_type="cr-x-nl-txt"><phrase block_type="question_num">9.07</phrase> Paired-samples <em>t</em> tests are more powerful statistically. This means they have a &#95;&#95;&#95;&#95;&#95;&#95;&#95; probability of being able to reject the null hypothesis if the null hypothesis was false.</p>
+<p id="corty3e-ch9-p254" block_type="cr-x-nl-txt"><phrase block_type="question_num">9.08</phrase> Paired-samples <em>t</em> tests are good to use when &#95;&#95;&#95;&#95;&#95;&#95;&#95; are hard to come by.</p>
+<p id="corty3e-ch9-p255" block_type="cr-x-nl-txt"><phrase block_type="question_num">9.09</phrase> Paired-samples <em>t</em> tests can be used to determine if a difference between two sample means is statistically significant, or if it could be explained by &#95;&#95;&#95;&#95;&#95;&#95;&#95;.</p>
+<p id="corty3e-ch9-p256" block_type="cr-x-nl-txt"><phrase block_type="question_num">9.10</phrase> If the random samples assumption for a paired-samples <em>t</em> test is not violated, the results can be &#95;&#95;&#95;&#95;&#95;&#95;&#95; to the population.</p>
+<p id="corty3e-ch9-p257" block_type="cr-x-nl-txt"><phrase block_type="question_num">9.11</phrase> The independence assumption for a paired-samples <em>t</em> test refers to independence &#95;&#95;&#95;&#95;&#95;&#95;&#95; a sample, not &#95;&#95;&#95;&#95;&#95;&#95;&#95; samples.</p>
+<p id="corty3e-ch9-p258" block_type="cr-x-nl-txt"><phrase block_type="question_num">9.12</phrase> The normality assumption for a paired-samples <em>t</em> test refers to the &#95;&#95;&#95;&#95;&#95;&#95;&#95; being normally distributed.</p>
+<p id="corty3e-ch9-p259" block_type="cr-x-nl-txt"><phrase block_type="question_num">9.13</phrase> The hypotheses for a paired-samples <em>t</em> test are statements about the two &#95;&#95;&#95;&#95;&#95;&#95;&#95;, not the two &#95;&#95;&#95;&#95;&#95;&#95;&#95;.</p>
+<p id="corty3e-ch9-p260" block_type="cr-x-nl-txt"><phrase block_type="question_num">9.14</phrase> The null hypothesis for a nondirectional paired-samples <em>t</em> test says there is &#95;&#95;&#95;&#95;&#95;&#95;&#95; between population means.</p>
+<p id="corty3e-ch9-p261" block_type="cr-x-nl-txt"><phrase block_type="question_num">9.15</phrase> The alternative hypothesis for a two-tailed, paired-samples <em>t</em> test says that the difference between population means could be positive or &#95;&#95;&#95;&#95;&#95;&#95;&#95;, large or &#95;&#95;&#95;&#95;&#95;&#95;&#95;.</p>
+<p id="corty3e-ch9-p262" block_type="cr-x-nl-txt"><phrase block_type="question_num">9.16</phrase> The decision rule for a paired-samples <em>t</em> test compares the &#95;&#95;&#95;&#95;&#95;&#95;&#95; value of <em>t</em> to the &#95;&#95;&#95;&#95;&#95;&#95;&#95; value of <em>t.</em></p>
+<p id="corty3e-ch9-p263" block_type="cr-x-nl-txt"><phrase block_type="question_num">9.17</phrase> The degrees of freedom for a paired-samples <em>t</em> test are calculated by subtracting &#95;&#95;&#95;&#95;&#95;&#95;&#95; from the number of pairs.</p>
+<p id="corty3e-ch9-p264" block_type="cr-x-nl-txt"><phrase block_type="question_num">9.18</phrase> The default option for a paired-samples <em>t</em> test is to set alpha at &#95;&#95;&#95;&#95;&#95;&#95;&#95; and to do a &#95;&#95;&#95;&#95;&#95;&#95;&#95;-tailed test.</p>
+<p id="corty3e-ch9-p265" block_type="cr-x-nl-txt"><phrase block_type="question_num">9.19</phrase> The abbreviation for the standard error of the mean difference scores in a paired-samples <em>t</em> test is &#95;&#95;&#95;&#95;&#95;&#95;&#95;.</p>
+<p id="corty3e-ch9-p266" block_type="cr-x-nl-txt"><phrase block_type="question_num">9.20</phrase> The value of the test statistic for a paired-samples <em>t</em> test is obtained by dividing &#95;&#95;&#95;&#95;&#95;&#95;&#95; by the standard error of the mean difference of the difference scores.</p>
+<p id="corty3e-ch9-p267" block_type="cr-x-nl-txt"><phrase block_type="question_num">9.21</phrase> It <em>does/does not</em> make a difference which sample mean is subtracted from the other mean when calculating a paired-samples <em>t</em> value.</p>
+<p id="corty3e-ch9-p268" block_type="cr-x-nl-txt"><phrase block_type="question_num">9.22</phrase> If <em>t</em> &#8805; <em>t<sub>cv</sub> ,</em> one would &#95;&#95;&#95;&#95;&#95;&#95;&#95; the null hypothesis.</p>
+<p id="corty3e-ch9-p269" block_type="cr-x-nl-txt"><phrase block_type="question_num">9.23</phrase> If results are written in APA format as <em>p</em> &#95;&#95;&#95;&#95;&#95;&#95;&#95; .05, then the researcher has failed to reject the null hypothesis.</p>
+<p id="corty3e-ch9-p270" block_type="cr-x-nl-txt"><phrase block_type="question_num">9.24</phrase> If one fails to reject the null hypothesis, there is no need to comment on the &#95;&#95;&#95;&#95;&#95;&#95;&#95; of the difference between the population means.</p>
+<p id="corty3e-ch9-p271" block_type="cr-x-nl-txt"><phrase block_type="question_num">9.25</phrase> The direction of the difference between the population means is determined by comparing the two &#95;&#95;&#95;&#95;&#95;&#95;&#95; means.</p>
+<p id="corty3e-ch9-p272" block_type="cr-x-nl-txt"><phrase block_type="question_num">9.26</phrase> If the degrees of freedom for a paired-samples <em>t</em> test are 11, then there were &#95;&#95;&#95;&#95;&#95;&#95;&#95; pairs of data.</p>
+<p id="corty3e-ch9-p273" block_type="cr-x-nl-txt"><phrase block_type="question_num">9.27</phrase> Cohen&#8217;s <em>d,</em> when calculated for a paired-samples <em>t</em> test, includes the effect of &#95;&#95;&#95;&#95;&#95;&#95;&#95; as well as the effect of the explanatory variable on the &#95;&#95;&#95;&#95;&#95;&#95;&#95;.</p>
+<p id="corty3e-ch9-p274" block_type="cr-x-nl-txt"><phrase block_type="question_num">9.28</phrase> <em>r</em><sup>2</sup> <em>should/should not</em> be used as an effect size for a paired-samples <em>t</em> test.</p>
+<p id="corty3e-ch9-p275" block_type="cr-x-nl-txt"><phrase block_type="question_num">9.29</phrase> To measure effect size for a paired-samples <em>t</em> test, use the &#95;&#95;&#95;&#95;&#95;&#95;&#95;.</p>
+<p id="corty3e-ch9-p276" block_type="cr-x-nl-txt"><phrase block_type="question_num">9.30</phrase> Whether the 95&#37; confidence interval captures zero for a two-tailed, paired-samples <em>t</em> test with alpha set at .05 provides information about whether the null hypothesis is &#95;&#95;&#95;&#95;&#95;&#95;&#95;.</p>
+<p id="corty3e-ch9-p277" block_type="cr-x-nl-txt"><phrase block_type="question_num">9.31</phrase> If the confidence interval for a paired-samples <em>t</em> test does not capture zero, but both ends of it are close to zero, then the size of the effect is probably &#95;&#95;&#95;&#95;&#95;&#95;&#95;.</p>
+<p id="corty3e_page_318" block_type="page_start">318</p>
+<p id="corty3e-ch9-p278" block_type="cr-x-nl-txt"><phrase block_type="question_num">9.32</phrase> When the confidence interval for a paired-samples <em>t</em> test is &#95;&#95;&#95;&#95;&#95;&#95;&#95;, one has fairly precisely specified the size of the effect in the population.</p>
+<p id="corty3e-ch9-p279" block_type="cr-x-hd1-rule"><strong>Apply Your Knowledge</strong></p>
+<p id="corty3e-ch9-p280" block_type="cr-x-txt-ni"><strong><em>Picking a test</em></strong></p>
+<p id="corty3e-ch9-p281" block_type="cr-x-nl-txt"><phrase block_type="question_num">9.33</phrase> A sensory psychologist had participants rate the taste of two coffees, caffeinated and decaffeinated versions of the same brand. Each participant rated both types of coffee. What statistical test should the psychologist use to see if caffeinated and decaffeinated coffees differ in taste?</p>
+<p id="corty3e-ch9-p282" block_type="cr-x-nl-txt"><phrase block_type="question_num">9.34</phrase> A nutritionist wanted to find out if coffee and tea, as served in restaurants, differed in caffeine content. She went to 30 restaurants. In 15 randomly selected restaurants, she ordered coffee; in the other 15 restaurants, she ordered tea. What statistical test should the nutritionist use to see if coffee and tea differ in mean caffeine content?</p>
+<p id="corty3e-ch9-p283" block_type="cr-x-nl-txt"><phrase block_type="question_num">9.35</phrase> A researcher for a health magazine compared the mean caffeine content for a sample of coffees served at coffee houses to the USDA standard for the mean amount of caffeine in a cup of coffee. What statistical test should she use?</p>
+<p id="corty3e-ch9-p284" block_type="cr-x-nl-txt"><phrase block_type="question_num">9.36</phrase> A developmental psychologist wondered if birth order had an impact on academic performance. She found families with two children and compared the mean high school GPA of first-born children to second-born children. What statistical test should she use?</p>
+<p id="corty3e-ch9-p285" block_type="cr-x-txt-ni"><strong><em>Checking the assumptions</em></strong></p>
+<p id="corty3e-ch9-p286" block_type="cr-x-nl-txt"><phrase block_type="question_num">9.37</phrase> A group of high school students were in the same math, English, social studies, and science classes. A researcher monitored how much time, during a week, they spent online in school activities (doing homework) vs. how much time they spent online in social activities (on Facebook, chatting, playing multiplayer games). The researcher planned to use a paired-samples <em>t</em> test to analyze the data to see if there was a difference in time spent on the two activities. Based on the assumptions, is it OK to proceed with the test?</p>
+<p id="corty3e-ch9-p287" block_type="cr-x-nl-txt"><phrase block_type="question_num">9.38</phrase> Elementary school teachers who did and did not have children of their own were matched in terms of the number of years of experience they had teaching. They were then asked how many minutes of homework a child should complete per night. The researcher planned to use a paired-samples <em>t</em> test to determine if having children of one&#8217;s own was related to this response. Based on the assumptions for the test, is it OK to proceed?</p>
+<p id="corty3e-ch9-p288" block_type="cr-x-txt-ni"><strong><em>Writing the hypotheses</em></strong></p>
+<p id="corty3e-ch9-p289" block_type="cr-x-nl-txt"><phrase block_type="question_num">9.39</phrase> Write the hypotheses for a paired-samples <em>t</em> test for <link href="#corty3e-ch9-question-44">Exercise 9.37</link>.</p>
+<p id="corty3e-ch9-p290" block_type="cr-x-nl-txt"><phrase block_type="question_num">9.40</phrase> Write the hypotheses for a paired-samples <em>t</em> test for <link href="#corty3e-ch9-question-45">Exercise 9.38</link>.</p>
+<p id="corty3e-ch9-p291" block_type="cr-x-txt-ni"><strong><em>Calculating difference scores</em></strong></p>
+<p id="corty3e-ch9-p292" block_type="cr-x-nl-txt"><phrase block_type="question_num">9.41</phrase> Calculate difference scores for the following pairs of scores: 5, 10; 7, 3; 6, 8; 4, 3; 7, 8.</p>
+<p id="corty3e-ch9-p293" block_type="cr-x-nl-txt"><phrase block_type="question_num">9.42</phrase> Calculate difference scores for the following pairs of scores: 12, 13; 14, 12; 7, 4; 2, 4; 8, 6.</p>
+<p id="corty3e-ch9-p294" block_type="cr-x-txt-ni"><strong><em>Calculating degrees of freedom</em></strong></p>
+<p id="corty3e-ch9-p295" block_type="cr-x-nl-txt"><phrase block_type="question_num">9.43</phrase> A researcher plans to use a paired-samples <em>t</em> test for two dependent samples, each with 10 cases. How many degrees of freedom are there?</p>
+<p id="corty3e-ch9-p296" block_type="cr-x-nl-txt"><phrase block_type="question_num">9.44</phrase> If a consumer researcher compares the mean price of 25 items purchased at one store to the mean price for the same 25 items purchased at a second store, how many degrees of freedom are there?</p>
+<p id="corty3e-ch9-p297" block_type="cr-x-txt-ni"><strong><em>Finding t<sub>cv</sub> for a two-tailed test with</em></strong> &#945; &#61; <strong><em>.05</em></strong></p>
+<p id="corty3e-ch9-p298" block_type="cr-x-nl-txt"><phrase block_type="question_num">9.45</phrase> If there are 19 cases in a paired-samples <em>t</em> test, what is <em>t<sub>cv</sub></em>?</p>
+<p id="corty3e-ch9-p299" block_type="cr-x-nl-txt"><phrase block_type="question_num">9.46</phrase> If there are 33 pairs of data in a paired-samples <em>t</em> test, what is <em>t<sub>cv</sub></em>?</p>
+<p id="corty3e-ch9-p300" block_type="cr-x-nl-txt"><phrase block_type="question_num">9.47</phrase> If <em>N</em> &#61; 118 for a paired-samples <em>t</em> test, what is <em>t<sub>cv</sub></em>?</p>
+<p id="corty3e-ch9-p301" block_type="cr-x-nl-txt"><phrase block_type="question_num">9.48</phrase> Given 2,012 cases in a paired-samples <em>t</em> test, what is <em>t<sub>cv</sub></em>?</p>
+<p id="corty3e_page_319" block_type="page_start">319</p>
+<p id="corty3e-ch9-p302" block_type="cr-x-txt-ni"><strong><em>Calculating standard error of the mean difference</em></strong></p>
+<p id="corty3e-ch9-p303" block_type="cr-x-nl-txt"><phrase block_type="question_num">9.49</phrase> Given <em>s<sub>D</sub></em> &#61; 2.57 and <em>N</em> &#61; 17, calculate <image asset-id="corty3e-ch9-img-39" alt="image" src="asset/ch9/corty3e_ineqn09_302_01.jpg"/>.</p>
+<p id="corty3e-ch9-p304" block_type="cr-x-nl-txt"><phrase block_type="question_num">9.50</phrase> Given <em>s<sub>D</sub></em> &#61; 12.78 and <em>N</em> &#61; 49, calculate <image asset-id="corty3e-ch9-img-40" alt="image" src="asset/ch9/corty3e_ineqn09_302_01.jpg"/>.</p>
+<p id="corty3e-ch9-p305" block_type="cr-x-txt-ni"><strong><em>Given</em></strong> <image asset-id="corty3e-ch9-img-41" alt="image" src="asset/ch9/corty3e_ineqn09_302_01.jpg"/><strong><em>, finding t</em></strong></p>
+<p id="corty3e-ch9-p306" block_type="cr-x-nl-txt"><phrase block_type="question_num">9.51</phrase> If <em>M</em><sub>1</sub> &#61; 18, <em>M</em><sub>2</sub> &#61; 14, and<image asset-id="corty3e-ch9-img-42" alt="image" src="asset/ch9/corty3e_ineqn09_319_01.jpg"/> , what is <em>t</em>?</p>
+<p id="corty3e-ch9-p307" block_type="cr-x-nl-txt"><phrase block_type="question_num">9.52</phrase> If <em>M</em><sub>1</sub> &#61; &#8211;12, <em>M</em><sub>2</sub> &#61; &#8211;15, and <image asset-id="corty3e-ch9-img-43" alt="image" src="asset/ch9/corty3e_ineqn09_319_02.jpg"/> , what is <em>t</em>?</p>
+<p id="corty3e-ch9-p308" block_type="cr-x-txt-ni"><strong><em>Calculating t</em></strong></p>
+<p id="corty3e-ch9-p309" block_type="cr-x-nl-txt"><phrase block_type="question_num">9.53</phrase> Given <em>M</em><sub>1</sub> &#61; 25, <em>M</em><sub>2</sub> &#61; 28, <em>N</em> &#61; 5, and <em>s<sub>D</sub></em> &#61; 7.00, calculate <em>t.</em></p>
+<p id="corty3e-ch9-p310" block_type="cr-x-nl-txt"><phrase block_type="question_num">9.54</phrase> Given <em>M</em><sub>1</sub> &#61; &#8211;7, <em>M</em><sub>2</sub> &#61; &#8211;9, <em>N</em> &#61; 28, and <em>s<sub>D</sub></em> &#61; 2.90, calculate <em>t.</em></p>
+<p id="corty3e-ch9-p311" block_type="cr-x-txt-ni"><strong><em>Implementing the decision rule</em></strong></p>
+<p id="corty3e-ch9-p312" block_type="cr-x-nl-txt"><phrase block_type="question_num">9.55</phrase> If <em>t</em> &#61; 2.30 and <em>t<sub>cv</sub></em> &#61; &#177;2.017, (a) draw a sampling distribution of <em>t,</em> marking <em>t</em> and <em>t<sub>cv</sub> ,</em> and label the rare and common zones, then (b) report whether or not the null hypothesis was rejected.</p>
+<p id="corty3e-ch9-p313" block_type="cr-x-nl-txt"><phrase block_type="question_num">9.56</phrase> If <em>t</em> &#61; 1.65 and <em>t<sub>cv</sub></em> &#61; &#177;2.145, (a) draw a sampling distribution of <em>t,</em> marking <em>t</em> and <em>t<sub>cv</sub> ,</em> and labeling the rare and common zones, then (b) report whether or not the null hypothesis was rejected.</p>
+<p id="corty3e-ch9-p314" block_type="cr-x-txt-ni"><strong><em>Writing results in APA format (use</em></strong> &#945; &#61; <em>.05, two-tailed)</em></p>
+<p id="corty3e-ch9-p315" block_type="cr-x-nl-txt"><phrase block_type="question_num">9.57</phrase> Given <em>N</em> &#61; 5 and <em>t</em> &#61; 3.211, write the results of this paired-samples <em>t</em> test in APA format.</p>
+<p id="corty3e-ch9-p316" block_type="cr-x-nl-txt"><phrase block_type="question_num">9.58</phrase> Given <em>N</em> &#61; 27 and <em>t</em> &#61; 2.033, write the results of this paired-samples <em>t</em> test in APA format.</p>
+<p id="corty3e-ch9-p317" block_type="cr-x-nl-txt"><phrase block_type="question_num">9.59</phrase> Given <em>N</em> &#61; 69 and <em>t</em> &#61; 1.994, write the results of this paired-samples <em>t</em> test in APA format.</p>
+<p id="corty3e-ch9-p318" block_type="cr-x-nl-txt"><phrase block_type="question_num">9.60</phrase> Given <em>N</em> &#61; 181 and <em>t</em> &#61; 1.981, write the results of this paired-samples <em>t</em> test in APA format.</p>
+<p id="corty3e-ch9-p319" block_type="cr-x-txt-ni"><strong><em>Determining the direction of the difference</em></strong></p>
+<p id="corty3e-ch9-p320" block_type="cr-x-nl-txt"><phrase block_type="question_num">9.61</phrase> Given these results, comment on the direction of the difference between the population means: <em>M</em><sub>1</sub> &#61; 72, <em>M</em><sub>2</sub> &#61; 73, <em>t</em>(26) &#61; 2.08, <em>p</em> &#60; .05.</p>
+<p id="corty3e-ch9-p321" block_type="cr-x-nl-txt"><phrase block_type="question_num">9.62</phrase> Given these results, comment on the direction of the difference between the population means: <em>M</em><sub>1</sub> &#61; 17, <em>M</em><sub>2</sub> &#61; 24. <em>t</em>(35) &#61; 2.01, <em>p</em> > .05.</p>
+<p id="corty3e-ch9-p322" block_type="cr-x-nl-txt"><phrase block_type="question_num">9.63</phrase> Given these results, comment on the direction of the difference between the population means: <em>M</em><sub>1</sub> &#61; 50, <em>M</em><sub>2</sub> &#61; 53, <em>t</em>(17) &#61; 1.54, <em>p</em> > .05.</p>
+<p id="corty3e-ch9-p323" block_type="cr-x-nl-txt"><phrase block_type="question_num">9.64</phrase> Given these results, comment on the direction of the difference between the population means: <em>M</em><sub>1</sub> &#61; 28, <em>M</em><sub>2</sub> &#61; 31, <em>t</em>(72) &#61; 7.42, <em>p</em> &#60; .05.</p>
+<p id="corty3e-ch9-p324" block_type="cr-x-txt-ni"><strong><em>Calculating a confidence interval</em></strong></p>
+<p id="corty3e-ch9-p325" block_type="cr-x-nl-txt"><phrase block_type="question_num">9.65</phrase> Given the following, calculate the 95&#37; confidence interval for the difference between population means: <em>M</em><sub>1</sub> &#61; 108, <em>M</em><sub>2</sub> &#61; 100, <em>t<sub>cv</sub></em> &#61; 2.052, and <image asset-id="corty3e-ch9-img-44" alt="image" src="asset/ch9/corty3e_ineqn09_319_03.jpg"/>.</p>
+<p id="corty3e-ch9-p326" block_type="cr-x-nl-txt"><phrase block_type="question_num">9.66</phrase> Given the following, calculate the 95&#37; confidence interval for the difference between population means: <em>M</em><sub>1</sub> &#61; 40, <em>M</em><sub>2</sub> &#61; 50, <em>t<sub>cv</sub></em> &#61; 2.010, and <image asset-id="corty3e-ch9-img-45" alt="image" src="asset/ch9/corty3e_ineqn09_319_04.jpg"/>.</p>
+<p id="corty3e-ch9-p327" block_type="cr-x-txt-ni"><strong><em>Interpreting confidence intervals (if necessary, assume the test was two-tailed with</em></strong> &#945; &#61; <em>.05)</em></p>
+<p id="corty3e-ch9-p328" block_type="cr-x-nl-txt"><phrase block_type="question_num">9.67</phrase> Based on the confidence interval 18.00 to 27.00, decide if the null hypothesis was rejected for the paired-samples <em>t</em> test.</p>
+<p id="corty3e-ch9-p329" block_type="cr-x-nl-txt"><phrase block_type="question_num">9.68</phrase> Based on the confidence interval &#8211;0.40 to 0.50, decide if the null hypothesis was rejected for the paired-samples <em>t</em> test.</p>
+<p id="corty3e-ch9-p330" block_type="cr-x-txt-ni"><strong><em>Interpreting the results of a paired-samples t test</em></strong></p>
+<p id="corty3e-ch9-p331" block_type="cr-x-nl-txt"><phrase block_type="question_num">9.69</phrase> A sleep therapist wanted to see if an herbal tea advertised as a sleep aid really worked. He located 46 people with sleep problems and matched them into pairs on the basis of (a) how long they had suffered from insomnia, (b) how long it usually took them to go to sleep at night, (c) how much sleep onset anxiety they experienced, and (d) how suggestible they were. He then randomly assigned one person from each pair to drink the tea at bedtime (the experimental group), while the control group went to sleep as they normally did. He used an EEG to measure the minutes to sleep onset (the fewer the minutes to sleep onset, the better). He found <em>M<sub>C</sub></em> &#61; 21.20, <em>M<sub>E</sub></em> &#61; 19.70, <em>s<sub>D</sub></em> &#61; 5.47, <image asset-id="corty3e-ch9-img-46" alt="image" src="asset/ch9/corty3e_ineqn09_319_05.jpg"/>, <em>t</em> &#61; 1.32, and 95&#37;CI&#181;<sub>Diff</sub> &#61; from &#8211;3.86 to 0.86. Write a four-point interpretation.</p>
+<p id="corty3e_page_320" block_type="page_start">320</p>
+<p id="corty3e-ch9-p332" block_type="cr-x-nl-txt"><phrase block_type="question_num">9.70</phrase> A sportswriter was curious if football teams gained more yards rushing (the control condition) or passing (the experimental condition). She randomly selected nine teams and calculated the mean yards gained per game through rushing (101) and through passing (221). <em>s<sub>D</sub></em> was 27.99. She calculated <image asset-id="corty3e-ch9-img-47" alt="image" src="asset/ch9/corty3e_ineqn09_320_01.jpg"/>, <em>t</em> &#61; 12.86, and 95&#37;CI&#181;<sub>Diff</sub> &#61; from 98.49 to 141.51. Write a four-point interpretation.</p>
+<p id="corty3e-ch9-p333" block_type="cr-x-txt-ni"><strong><em>Completing all six steps of hypothesis testing</em></strong></p>
+<p id="corty3e-ch9-p334" block_type="cr-x-nl-txt"><phrase block_type="question_num">9.71</phrase> A dermatologist compared a new treatment for athlete&#8217;s foot (the experimental condition) to the standard treatment (the control condition). He tracked down 30 people with athlete&#8217;s foot on both feet and, for each participant, randomly assigned one foot to receive the new treatment and the other foot to receive the standard treatment. After three weeks of treatment, he measured the percentage of reduction in symptoms (the larger the number, the better the outcome). He found <em>M<sub>E</sub></em> &#61; 88, <em>M<sub>C</sub></em> &#61; 72, and <em>s<sub>D</sub></em> &#61; 8.65. Analyze and interpret.</p>
+<p id="corty3e-ch9-p335" block_type="cr-x-nl-txt"><phrase block_type="question_num">9.72</phrase> A college president wanted to know how 10-year-after-graduation salaries for academic majors (English, psychology, math, etc.) compared to salaries for career-oriented majors (business, engineering, computer science, etc.). She matched 84 academic majors at her college with 84 career-oriented majors on the basis of SAT scores and GPA. She found <em>M</em><sub>Academic</sub> &#61; &#36;59,250, <em>M</em><sub>Career</sub> &#61; &#36;61,000, <em>s<sub>D</sub></em> &#61; 9,500. Analyze and interpret.</p>
+<p id="corty3e-ch9-p336" block_type="cr-x-hd1-rule"><strong>Expand Your Knowledge</strong></p>
+<p id="corty3e-ch9-p337" block_type="cr-x-nl-txt"><phrase block_type="question_num">9.73</phrase> If <em>N</em> &#61; 24 and <image asset-id="corty3e-ch9-img-48" alt="image" src="asset/ch9/corty3e_ineqn09_320_10.jpg"/>, for which situation is the 95&#37; confidence interval for the difference between population means the widest?</p>
+<list id="corty3e-ch9-list-20" type="ordered" block_type="loweralpha">
+<li><p id="corty3e-ch9-p338" block_type="cr-x-nl-alpha-lc"><em>M<sub>C</sub></em> &#61; 0 and <em>M<sub>E</sub></em> &#61; 2</p></li>
+<li><p id="corty3e-ch9-p339" block_type="cr-x-nl-alpha-lc"><em>M<sub>C</sub></em> &#61; 0 and <em>M<sub>E</sub></em> &#61; 5</p></li>
+<li><p id="corty3e-ch9-p340" block_type="cr-x-nl-alpha-lc"><em>M<sub>C</sub></em> &#61; 0 and <em>M<sub>E</sub></em> &#61; 10</p></li>
+<li><p id="corty3e-ch9-p341" block_type="cr-x-nl-alpha-lc"><em>M<sub>C</sub></em> &#61; 0 and <em>M<sub>E</sub></em> &#61; &#8211;2</p></li>
+<li><p id="corty3e-ch9-p342" block_type="cr-x-nl-alpha-lc">All confidence intervals are equally wide.</p></li>
+<li><p id="corty3e-ch9-p343" block_type="cr-x-nl-alpha-lc">Not enough information was presented to answer this question.</p></li>
+</list>
+<p id="corty3e-ch9-p344" block_type="cr-x-nl-txt"><phrase block_type="question_num">9.74</phrase> If <em>M<sub>C</sub></em> &#61; 5 and <em>M<sub>E</sub></em> &#61; 10, for which situation is the 95&#37; confidence interval for the difference between population means the widest?</p>
+<list id="corty3e-ch9-list-21" type="ordered" block_type="loweralpha">
+<li><p id="corty3e-ch9-p345" block_type="cr-x-nl-alpha-lc"><image asset-id="corty3e-ch9-img-49" alt="image" src="asset/ch9/corty3e_ineqn09_320_02.jpg"/></p></li>
+<li><p id="corty3e-ch9-p346" block_type="cr-x-nl-alpha-lc"><image asset-id="corty3e-ch9-img-50" alt="image" src="asset/ch9/corty3e_ineqn09_320_03.jpg"/></p></li>
+<li><p id="corty3e-ch9-p347" block_type="cr-x-nl-alpha-lc"><image asset-id="corty3e-ch9-img-51" alt="image" src="asset/ch9/corty3e_ineqn09_320_04.jpg"/></p></li>
+<li><p id="corty3e-ch9-p348" block_type="cr-x-nl-alpha-lc">All confidence intervals are equally wide.</p></li>
+<li><p id="corty3e-ch9-p349" block_type="cr-x-nl-alpha-lc">Not enough information was presented to answer this question.</p></li>
+</list>
+<p id="corty3e-ch9-p350" block_type="cr-x-nl-txt"><phrase block_type="question_num">9.75</phrase> If <em>M<sub>C</sub></em> &#61; 51 and <em>M<sub>E</sub></em> &#61; 43, for which situation is the 95&#37; confidence interval for the difference between population means the widest?</p>
+<list id="corty3e-ch9-list-22" type="ordered" block_type="loweralpha">
+<li><p id="corty3e-ch9-p351" block_type="cr-x-nl-alpha-lc"><image asset-id="corty3e-ch9-img-52" alt="image" src="asset/ch9/corty3e_ineqn09_320_05.jpg"/></p></li>
+<li><p id="corty3e-ch9-p352" block_type="cr-x-nl-alpha-lc"><image asset-id="corty3e-ch9-img-53" alt="image" src="asset/ch9/corty3e_ineqn09_320_06.jpg"/></p></li>
+<li><p id="corty3e-ch9-p353" block_type="cr-x-nl-alpha-lc"><image asset-id="corty3e-ch9-img-54" alt="image" src="asset/ch9/corty3e_ineqn09_320_07.jpg"/></p></li>
+<li><p id="corty3e-ch9-p354" block_type="cr-x-nl-alpha-lc"><image asset-id="corty3e-ch9-img-55" alt="image" src="asset/ch9/corty3e_ineqn09_320_08.jpg"/></p></li>
+<li><p id="corty3e-ch9-p355" block_type="cr-x-nl-alpha-lc">All confidence intervals are equally wide.</p></li>
+<li><p id="corty3e-ch9-p356" block_type="cr-x-nl-alpha-lc">Not enough information was presented to answer this question.</p></li>
+</list>
+<p id="corty3e-ch9-p357" block_type="cr-x-nl-txt"><phrase block_type="question_num">9.76</phrase> If the 95&#37; confidence interval for the difference between population means ranges from 1.00 to 9.00, what is <em>M<sub>E</sub></em> &#8211; <em>M<sub>C</sub></em>?</p>
+<p id="corty3e-ch9-p358" block_type="cr-x-nl-txt"><phrase block_type="question_num">9.77</phrase> If the 95&#37; confidence interval for the difference between population means ranges from &#8211;5.00 to 1.00 and <image asset-id="corty3e-ch9-img-56" alt="image" src="asset/ch9/corty3e_ineqn09_320_09.jpg"/>, what is <em>t</em> ?</p>
+<p id="corty3e-ch9-p359" block_type="cr-x-nl-txt"><phrase block_type="question_num">9.78</phrase> A nurse at a health clinic wanted to see if its ear thermometers and oral thermometers registered the same body temperatures. She selected six healthy staff members and took their temperatures with both thermometers. Apply the six steps of hypothesis testing to the data collected. Is body temperature measured similarly by ear thermometers and oral thermometers?</p>
+<table id="corty3e-ch9-table1" block_type="un_table">
+<layout align="center" width="large" border="true"/>
+<tbody>
+<tr>
+<td colspan="7"><phrase block_type="tbn-colhd">Body Temperature, Measured in &#176;F</phrase></td>
+</tr>
+<tr>
+<td><phrase block_type="tbn-colhd">Case</phrase></td>
+<td><phrase block_type="tbn-colhd">1</phrase></td>
+<td><phrase block_type="tbn-colhd">2</phrase></td>
+<td><phrase block_type="tbn-colhd">3</phrase></td>
+<td><phrase block_type="tbn-colhd">4</phrase></td>
+<td><phrase block_type="tbn-colhd">5</phrase></td>
+<td><phrase block_type="tbn-colhd">6</phrase></td>
+</tr>
+<tr>
+<td><phrase block_type="tbn-txt">Ear</phrase></td>
+<td><phrase block_type="tbn-txt">97.8</phrase></td>
+<td><phrase block_type="tbn-txt">98.6</phrase></td>
+<td><phrase block_type="tbn-txt">98.9</phrase></td>
+<td><phrase block_type="tbn-txt">97.9</phrase></td>
+<td><phrase block_type="tbn-txt">99.0</phrase></td>
+<td><phrase block_type="tbn-txt">98.2</phrase></td>
+</tr>
+<tr>
+<td><phrase block_type="tbn-txt">Oral</phrase></td>
+<td><phrase block_type="tbn-txt">97.4</phrase></td>
+<td><phrase block_type="tbn-txt">97.9</phrase></td>
+<td><phrase block_type="tbn-txt">98.3</phrase></td>
+<td><phrase block_type="tbn-txt">97.4</phrase></td>
+<td><phrase block_type="tbn-txt">98.1</phrase></td>
+<td><phrase block_type="tbn-txt">97.7</phrase></td>
+</tr>
+</tbody>
+</table>
+<p id="corty3e_page_321" block_type="page_start">321</p>
+<box title="SPSS" numbered="false" id="corty3e-ch9-bx3-3" block_type="bx3-h">
+<p id="corty3e-ch9-p360" block_type="bx3-txt-ni">When entering data for a paired-samples <em>t</em> test into the data editor in SPSS, each pair of scores is on a row and the two data points are in separate columns. This means that the data for the humidity study would be entered as shown in <strong><link href="corty3e-ch09.xml#corty3e-ch9-fig-26">Figure 9.9</link></strong>. Note that there is no column for a difference score since SPSS will calculate that internally and automatically.</p>
+<figure id="corty3e-ch9-fig-26" block_type="figure" numbered="true" number="9.9" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="medium" border="true"/>
+<image asset-id="corty3e-ch9-img-57" alt="image" src="asset/ch9/corty3e_fig09_09.jpg"/>
+<caption><strong><phrase block_type="fig_num">Figure 9.9</phrase> SPSS Data Entry for a Paired-Samples <em>t</em> Test</strong> Note that each case has its own row and that the variables (high&#95;humid and low&#95;humid) are in the columns.</caption>
+</figure>
+<p id="corty3e-ch9-p361" block_type="bx3-txt">The command for a paired-samples <em>t</em> test, as shown in <strong><link href="corty3e-ch09.xml#corty3e-ch9-fig-27">Figure 9.10</link></strong>, is found under &#8220;Analyze&#8221; and then &#8220;Compare Means.&#8221;</p>
+<figure id="corty3e-ch9-fig-27" block_type="figure" numbered="true" number="9.10" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="medium" border="true"/>
+<image asset-id="corty3e-ch9-img-58" alt="image" src="asset/ch9/corty3e_fig09_10.jpg"/>
+<caption><strong><phrase block_type="fig_num">Figure 9.10</phrase> SPSS Paired-Samples <em>t</em> Test Command</strong> The paired-samples <em>t</em> test command in SPSS falls among the &#8220;Compare Means&#8221; commands.</caption>
+</figure>
+<p id="corty3e-ch9-p362" block_type="bx3-txt">The commands for completing the paired-samples <em>t</em> test in SPSS are shown in <strong><link href="corty3e-ch09.xml#corty3e-ch9-fig-28">Figure 9.11</link></strong>.</p>
+<figure id="corty3e-ch9-fig-28" block_type="figure" numbered="true" number="9.11" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="medium" border="true"/>
+<image asset-id="corty3e-ch9-img-59" alt="image" src="asset/ch9/corty3e_fig09_11.jpg"/>
+<caption><strong><phrase block_type="fig_num">Figure 9.11</phrase> Picking the Variables to Analyze with a Paired-Samples <em>t</em> Test in SPSS</strong> The arrow button was used to move the two variables from the box on the left into the box labeled &#8220;Paired Variables.&#8221; Notice how SPSS puts together the variables as a pair.</caption>
+
+</figure>
+<p id="corty3e-ch9-p363" block_type="bx3-txt">The SPSS output for the paired-samples <em>t</em> test is shown in <strong><link href="corty3e-ch09.xml#corty3e-ch9-fig-29">Figure 9.12</link></strong>. The first of the three output tables provides descriptive statistics for the two samples. The second table reports the correlation between the two variables. Correlations will be covered in <link href="corty3e-ch13.xml">Chapter 13</link>, so ignore this output for now.</p>
+<figure id="corty3e-ch9-fig-29" block_type="figure" numbered="true" number="9.12" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="large" border="true"/>
+<image asset-id="corty3e-ch9-img-60" alt="image" src="asset/ch9/corty3e_fig09_12.jpg"/>
+<caption><strong><phrase block_type="fig_num">Figure 9.12</phrase> SPSS Output for a Paired-Samples <em>t</em> Test</strong> The top table provides descriptive statistics for the two samples. The bottom table provides the <em>t</em> value, the significance level, and the 95&#37; confidence interval for the difference between the population means. (Ignore the middle table for now.)</caption>
+
+</figure>
+<p id="corty3e-ch9-p364" block_type="bx3-txt">The meat of the output appears after the first two tables. SPSS calculated the <em>t</em> value as &#8211;8.859, whereas in the chapter discussion it is 8.82. The sign is different because SPSS subtracted the two sample means in a different order. SPSS also carries more decimal places in its calculations, so its answer is more exact.</p>
+<p id="corty3e-ch9-p365" block_type="bx3-txt">SPSS reports exact significance levels, seen in the last column of the final table. The value for this <em>t</em> test is .000. This means that if the null hypothesis is true, a result like the one found here, where <em>t</em> &#61; &#8211;8.859, is a rare result; it has a probability of less than .001 of occurring. In percentage terms, a result such as this happens less than 0.1&#37; of the time when the null hypothesis is true. The likelihood of a Type I error is very low.</p>
+<p id="corty3e_page_322" block_type="page_start">322</p>
+<p id="corty3e-ch9-p366" block_type="bx3-txt">For our purposes, if the exact significance value for a test as reported by SPSS is less than or equal to .05, then the null hypothesis is rejected. If the exact significance value for a test is greater than .05, then fail to reject the null hypothesis. Since .001 is less than or equal to .05, the null hypothesis is rejected.</p>
+<p id="corty3e-ch9-p367" block_type="bx3-txt">APA format prefers reporting exact significance levels when possible. Here, the exact significance level is reported as .000. APA format would report this as <em>t</em>(5) &#61; &#8211;8.86, <em>p</em> &#8804; .001.</p>
+<p id="corty3e-ch9-p368" block_type="bx3-txt">The final thing to note is that SPSS calculates the 95&#37; confidence interval for the difference between population means. Here, SPSS reports the difference between population means as ranging from &#8211;9.676 to &#8211;5.324. Again, the sign is different because of the order in which SPSS subtracted one mean from the other. Otherwise, the numbers calculated by SPSS and in the chapter (5.31 to 9.69) differ slightly because of the number of decimal places carried. Again, SPSS offers the more exact answer because it carries more decimal places.</p>
+</box>
+</section>
+</chapter>

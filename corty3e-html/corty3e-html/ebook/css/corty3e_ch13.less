@@ -1,0 +1,177 @@
+/* Chapter 13 CSS */
+
+// borrowed from book-level CSS
+@corty-blue: #168ca8;
+@box-bg-blue: #e0e8ef;
+
+div#corty3e-ch13-p1 {
+    margin-top: -5px;
+}
+
+// margin adjustments
+
+
+/* Figures */
+body.noUi {
+}
+
+/* Tables */
+body.noUi {
+    div#corty3e-ch13-table1,
+    div#corty3e-ch13-table5,
+    div#corty3e-ch13-table6,
+    div#corty3e-ch13-table7,
+    div#corty3e-ch13-table8,
+    div#corty3e-ch13-table9,
+    div#corty3e-ch13-table10,
+    div#corty3e-ch13-table11,
+    div#corty3e-ch13-table12,
+    div#corty3e-ch13-table13,
+    div#corty3e-ch13-table14 {
+        width: 556px !important;
+        table {
+            tr:first-child {
+                background-color: @box-bg-blue;
+                td {
+                    color: @corty-blue;
+                    vertical-align: bottom;
+                    &:first-child {
+                        border-left: 0;
+                    }
+                    &:last-child {
+                        border-right: 0;
+                    }
+                }
+            }
+        }
+    }
+    div#corty3e-ch13-table2 {
+        width: 556px !important;
+        table {
+            tr:first-child {
+                background-color: @box-bg-blue;
+                td {
+                    color: @corty-blue;
+                    &:first-child {
+                        border-left: 0;
+                    }
+                    &:last-child {
+                        border-right: 0;
+                    }
+                }
+            }
+            tr:first-child + tr {
+                background-color: @box-bg-blue;
+                td {
+                    color: @corty-blue;
+                    &:first-child {
+                        border-left: 0;
+                    }
+                    &:last-child {
+                        border-right: 0;
+                    }
+                }
+            }
+            td {
+                white-space: nowrap;
+            }
+        }
+    }
+    div#corty3e-ch13-table3,
+    div#corty3e-ch13-table4,
+    div#corty3e-ch13-table15,
+    div#corty3e-ch13-table16,
+    div#corty3e-ch13-table17 {
+        width: 556px !important;
+        table {
+            tr:first-child {
+                background-color: @box-bg-blue;
+                td {
+                    color: @corty-blue;
+                    &:first-child {
+                        border-left: 0;
+                    }
+                    &:last-child {
+                        border-right: 0;
+                    }
+                }
+            }
+            tr > td:first-child {
+                color: @corty-blue;
+                text-align: left;
+            }
+        }
+    }
+}
+
+/* Lists */
+
+/* Equations */
+
+// equation box line adjustments
+
+// equation alignment
+
+// block equation move/resize
+
+// inline equation sizing
+    
+// page numbers caught in relative parent
+
+// other
+
+/* equation feature box -- needs more room for equation number to left */
+[data-block_type="eq-t"] {
+    [data-type="title"] {
+        padding-left: 8em;
+    }
+}
+
+// question numbers get wider at 100, need more space, PDF does this, too
+// questions
+[data-block_type="cr-x-nl-txt"] {
+    position: relative;
+    p {
+        margin-left: 4em !important;
+    }
+}
+
+// "join" two gray boxes
+div#corty3e-ch13-p292 {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+div#corty3e-ch13-p293 {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+div#corty3e-ch13-p382 {
+    margin-bottom: 0;
+}
+div#corty3e-ch13-p383 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+div#corty3e-ch13-p384 {
+    margin-top: 0;
+}
+
+// remove phantom border on empty title
+div#corty3e-ch13-exp1-3 {
+    left: 6:33px;
+    h3 {
+        display: none;
+    }
+}
+
+/* inline math image adjustments */
+// note that the default for the images marjed as math inline (ineqn) is 2em, which works
+// for those fractions with denomominator and numerator, making them double high
+// the changes below are for single-high math (symbols, etc., but not fractions)
+// set all to 1em for this chapter -- no fractions found
+img[src*="corty3e_ineqn"] {
+    height: 1em;
+    vertical-align: text-top;
+}
+

@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]> <html lang="en" class="no-js ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="no-js ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="no-js ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en" class="no-js ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+<head>
+    <title>corty3e_ch12</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <link href="css/boilerplate.css" media="screen" rel="stylesheet" type="text/css" >
+<link href="css/jquery-ui-custom.css" media="screen" rel="stylesheet" type="text/css" >
+<link href="css/manuscript.css" media="screen" rel="stylesheet" type="text/css" >
+<link href="css/digfir_ebook_fw.css" media="screen" rel="stylesheet" type="text/css" >
+<link href="css/corty3e.css" media="screen" rel="stylesheet" type="text/css" >
+<link href="css/corty3e_ch12.css" media="screen" rel="stylesheet" type="text/css" >    
+    
+    </head>
+<body class="noUi">
+<div id="manuscript" data-chapter-number="12">
+    <div data-type="section" data-block_type="h1" id="corty3e-ch12-sec1-3" level="1" data-print_page="446">
+<h2 class="section-title"><span data-type="title" data-title-for="corty3e-ch12-sec1-3"><span data-block_type="sec_num">12.3</span> <span data-block_type="sec_title">Interpreting a Between-Subjects, Two-Way ANOVA</span>
+</span></h2>
+
+<div data-block_type="page_start" id="corty3e_page_446"><p>446</p></div>
+<div data-block_type="txt-ni" id="corty3e-ch12-p288"><p>Interpretation of a statistical test involves stating in plain language what the results mean. The interpretation plan for a two-way ANOVA addresses the same three questions as were addressed for a one-way ANOVA but for more effects: (1) Were the null hypotheses rejected? (2) How large are the effects? (3) Where are the effects and what is their direction?</p></div>
+<div data-block_type="txt" id="corty3e-ch12-p289"><p>Let’s start with Dr. Ballard’s study about the impact of caffeine and sleep deprivation on mental alertness. In this study, 30 college students were randomly assigned to six groups. Before completing a mental alertness task one hour after waking up, half the participants consumed a cup of caffeinated coffee and half didn’t. Further, one third of the participants had a full night’s sleep, one third were sleep-deprived by one hour, and one third by two hours. The results of the study are shown in <span data-type="link" data-href="#corty3e-ch12-fig-18">Figure 12.5</span> (see page 432) and <strong><span data-type="link" data-href="#corty3e-ch12-fig-41">Figure 12.7</span></strong>, and in <strong><span data-type="link" data-href="#corty3e-ch12-fig-40">Table 12.13</span></strong>.</p></div>
+<div data-type="figure" data-figure-id="corty3e-ch12-fig-41" data-block_type="figure" data-layout-align="center" data-layout-width="medium" data-layout-border="true">
+
+<img id="" src="asset/ch12/corty3e_fig12_07.jpg" data-figure-id="corty3e-ch12-fig-41" data-layout-width="medium" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+<div data-type="figure_text">
+<span data-type="number">Figure 12.19: </span><span data-type="caption"><strong><span data-block_type="fig_num">Figure 12.7</span> Mean Mental Alertness for Row Main Effect (Caffeine Consumption) and Column Main Effect (Sleep Deprivation)</strong> The row means and column means appear to show that caffeine improves performance and that sleep deprivation harms it.</span>
+</div>
+</div>
+<div data-type="figure" data-figure-id="corty3e-ch12-fig-40" data-block_type="table" data-layout-align="center" data-layout-width="large" data-layout-border="true">
+
+<img id="" src="asset/ch12/corty3e_table12_13.jpg" data-figure-id="corty3e-ch12-fig-40" data-layout-width="large" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+</div>
+<ul data-block_type="bullet" id="corty3e-ch12-list-31">
+<li><div data-block_type="bl-first" id="corty3e-ch12-p290"><p><span data-type="link" data-href="#corty3e-ch12-fig-41">Figure 12.7</span> graphs the row means for the main effect of caffeine and the column means for the main effect of sleep deprivation.</p></div>
+</li>
+<li><div data-block_type="bl-mid" id="corty3e-ch12-p291"><p><span data-type="link" data-href="#corty3e-ch12-fig-18">Figure 12.5</span> uses the cell means to show what appears to be an interaction effect.</p></div>
+</li>
+<li><div data-block_type="bl-last" id="corty3e-ch12-p292"><p><span data-type="link" data-href="#corty3e-ch12-fig-40">Table 12.13</span> shows the ANOVA summary table, from which Dr. Ballard will need a number of values as he interprets the results.</p></div>
+</li>
+</ul>
+</div>
+    <div data-type="section" data-block_type="h2" id="corty3e-ch12-sec2-1" level="2" data-print_page="447">
+<h2 class="section-title"><span data-type="title" data-title-for="corty3e-ch12-sec2-1">Were the Null Hypotheses Rejected?
+</span></h2>
+
+<div data-block_type="page_start" id="corty3e_page_447"><p>447</p></div>
+<div data-block_type="txt-ni" id="corty3e-ch12-p294"><p>To determine if any of the three null hypotheses was rejected—one for the row main effect, one for the column main effect, and one for the interaction effect—Dr. Ballard needs the decision rules generated in Step 4 and the <em>F</em> ratios calculated in Step 5. The critical values of <em>F</em> were <em>F<sub>cv</sub></em> <sub>Rows</sub> = 4.260, <em>F<sub>cv</sub></em> <sub>Columns</sub> = 3.403, and <em>F<sub>cv</sub></em> <sub>Interaction</sub> = 3.403. The values of <em>F</em> calculated were <em>F</em><sub>Rows</sub> = 116.46, <em>F</em><sub>Columns</sub> = 21.50, and <em>F</em><sub>Interaction</sub> = 15.72 (see <span data-type="link" data-href="#corty3e-ch12-fig-40">Table 12.13</span>). Applying the three decision rules:</p></div>
+<ul data-block_type="bullet" id="corty3e-ch12-list-32">
+<li><div data-block_type="bl-first" id="corty3e-ch12-p295"><p>116.46 ≥ 4.260, so reject <em>H</em><sub>0 Rows</sub>, accept <em>H</em><sub>1 Rows</sub>, and call the row effect statistically significant.</p></div>
+</li>
+<li><div data-block_type="bl-mid" id="corty3e-ch12-p296"><p>21.50 ≥ 3.403, so reject <em>H</em><sub>0 Columns</sub>, accept <em>H</em><sub>1 Columns</sub>, and call the column effect statistically significant.</p></div>
+</li>
+<li><div data-block_type="bl-last" id="corty3e-ch12-p297"><p>15.72 ≥ 3.403, so reject <em>H</em><sub>0 Interaction</sub>, accept <em>H</em><sub>1 Interaction</sub>, and call the interaction effect statistically significant.</p></div>
+</li>
+</ul>
+<div data-block_type="txt" id="corty3e-ch12-p298"><p>The next step is to write the results in APA format. APA format for the results of an ANOVA means reporting five pieces of information: (1) stating what test was done (an <em>F</em> test), (2) indicating the numerator and denominator degrees of freedom for the <em>F</em> ratio, (3) reporting the observed value of the test statistic, (4) naming the selected alpha level, and (5) telling whether the observed <em>F</em> fell in the rare zone (<em>p</em> &lt; .05, i.e., null hypothesis was rejected) or in the common zone (<em>p</em> &gt; .05, the null hypothesis was not rejected).</p></div>
+<div data-block_type="txt" id="corty3e-ch12-p299"><p>APA format for the main effect of rows is</p></div>
+<div data-block_type="eq" id="corty3e-ch12-p300"><p><em>F</em>(1, 24) = 116.46, <em>p</em> &lt; .05</p></div>
+<div data-block_type="txt-ni" id="corty3e-ch12-p301"><p>For the main effect of columns, APA format is</p></div>
+<div data-block_type="eq" id="corty3e-ch12-p302"><p><em>F</em>(2, 24) = 21.50, <em>p</em> &lt; .05</p></div>
+<div data-block_type="txt-ni" id="corty3e-ch12-p303"><p>For the interaction effect, APA format is</p></div>
+<div data-block_type="eq" id="corty3e-ch12-p304"><p><em>F</em>(2, 24) = 15.72, <em>p</em> &lt; .05</p></div>
+<div data-block_type="txt" id="corty3e-ch12-p305"><p>After determining the status—statistically significant or not—of each <em>F</em> ratio, a researcher can begin to interpret the results. It is tempting to start the interpretation with one of the main effects displayed in <span data-type="link" data-href="#corty3e-ch12-fig-41">Figure 12.7</span>, but remember—with a two-way ANOVA and a statistically significant interaction effect, the interaction takes precedence.</p></div>
+<div data-block_type="txt" id="corty3e-ch12-p306"><p>When the interaction effect is statistically significant, the null hypothesis that each main effect has an independent effect on the dependent variable is rejected. The alternative hypothesis that the two independent variables interact to affect the dependent variable in at least one cell is accepted. As a result, the main effects are less relevant. To explore further what the interaction means, Dr. Ballard will need to use a post-hoc test to compare individual cell means.</p></div>
+<div data-block_type="txt" id="corty3e-ch12-p307"><p>Dr. Ballard can’t be sure which mean differences are statistically significant until the post-hoc tests are completed, but inspecting <span data-type="link" data-href="#corty3e-ch12-fig-18">Figure 12.5</span> gives some sense of the interaction. <span data-type="link" data-href="#corty3e-ch12-fig-18">Figure 12.5</span> suggests that the amount of sleep deprivation has little effect on mental alertness when people are dosed with caffeine. However, for those who don’t receive caffeine, alertness declines as sleep deprivation increases.</p></div>
+<div data-block_type="page_start" id="corty3e_page_448"><p>448</p></div>
+<div data-block_type="txt" id="corty3e-ch12-p309"><p>What about the statistically significant main effects? Does sleep deprivation affect mental alertness? Does caffeine? Both answers are of the “it depends” variety. Look at <span data-type="link" data-href="#corty3e-ch12-fig-18">Figure 12.5</span>. Whether sleep deprivation affects performance depends on whether one has consumed caffeine. And, whether caffeine affects performance depends on whether a person is sleep-deprived. It doesn’t look like the main effects will add much to our interpretation.</p></div>
+</div>
+    <div data-type="section" data-block_type="h2" id="corty3e-ch12-sec2-2" level="2" data-print_page="448">
+<h2 class="section-title"><span data-type="title" data-title-for="corty3e-ch12-sec2-2">How Big Are the Effects?
+</span></h2>
+
+<div data-block_type="txt-ni" id="corty3e-ch12-p310"><p>The same measure of effect, eta squared, is used for two-way ANOVA as was used for repeated-measures ANOVA. For a two-way ANOVA, eta squared can be calculated for each main effect and for the interaction. Eta squared, like <em>r</em><sup>2</sup>, calculates the percentage of variability in the dependent variable that is explained by an explanatory variable or by the interaction of the explanatory variables.</p></div>
+<div data-block_type="txt" id="corty3e-ch12-p311"><p>The formulas for calculating eta squared for the row main effect, the column main effect, and the interaction effect are given in <span data-type="link" data-href="#corty3e-ch12-bx6-3">Equation 12.3</span>.</p></div>
+<div data-type="box" data-block_type="eq-t" id="corty3e-ch12-bx6-3"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="corty3e-ch12-bx6-3"><span data-block_type="sec_num">Equation 12.3</span> <span data-block_type="sec_title">Formulas for Calculating Eta Squared (η<sup>2</sup>) for Row Main Effect, Column Main Effect, and Interaction Effect</span>
+</h3>
+
+<div data-block_type="equation" id="corty3e-ch12-eqn-21"><p>
+<img id="" src="asset/ch12/corty3e_eqn11_448_01.jpg" data-figure-id="" data-layout-width="" data-mmtype="" alt="image"></p></div>
+<div data-block_type="eq-txt-ni" id="corty3e-ch12-p312"><p>where η<sup>2</sup><sub>Rows</sub> = eta squared for the row main effect, the percentage of variability in the dependent variable that is explained by the row explanatory variable</p></div>
+<div data-block_type="eq-unl" id="corty3e-ch12-p313"><p>η<sup>2</sup><sub>Columns</sub> = eta squared for the column main effect, the percentage of variability in the dependent variable that is explained by the column explanatory variable</p></div>
+<div data-block_type="eq-unl" id="corty3e-ch12-p314"><p>η<sup>2</sup><sub>Interaction</sub> = eta squared for the interaction effect, the percentage of variability in the dependent variable that is explained by the interaction between the row explanatory variable and the column explanatory variable</p></div>
+<div data-block_type="eq-unl" id="corty3e-ch12-p315"><p><em>SS</em><sub>Rows</sub> = sum of squares rows</p></div>
+<div data-block_type="eq-unl" id="corty3e-ch12-p316"><p><em>SS</em><sub>Columns</sub> = sum of squares columns</p></div>
+<div data-block_type="eq-unl" id="corty3e-ch12-p317"><p><em>SS</em><sub>Interaction</sub> = sum of squares interaction</p></div>
+<div data-block_type="eq-unl" id="corty3e-ch12-p318"><p><em>SS</em><sub>Total</sub> = sum of squares total</p></div>
+</div></div>
+<div data-block_type="txt" id="corty3e-ch12-p319"><p>For the caffeine/sleep deprivation study, let’s start with η<sup>2</sup> for the statistically significant interaction.</p></div>
+<div data-block_type="page_start" id="corty3e_page_449"><p>449</p></div>
+<div data-block_type="txt" id="corty3e-ch12-p321"><p>Dr. Ballard calculates eta squared for the interaction effect as follows:</p></div>
+<div data-block_type="equation" id="corty3e-ch12-eqn-22"><p>
+<img id="" src="asset/ch12/corty3e_eqn11_449_01.jpg" data-figure-id="" data-layout-width="" data-mmtype="" alt="image"></p></div>
+<div data-block_type="equation" id="corty3e-ch12-eqn-23"><p>
+<img id="" src="asset/ch12/corty3e_eqn11_449_02.jpg" data-figure-id="" data-layout-width="" data-mmtype="" alt="image"></p></div>
+<div data-block_type="equation" id="corty3e-ch12-eqn-24"><p>
+<img id="" src="asset/ch12/corty3e_eqn11_449_03.jpg" data-figure-id="" data-layout-width="" data-mmtype="" alt="image"></p></div>
+<div data-block_type="txt" id="corty3e-ch12-p322"><p>The same standards are used for interpreting eta squared as were used for <em>r</em><sup>2</sup> for one-way ANOVA:</p></div>
+<ul data-block_type="bullet" id="corty3e-ch12-list-33">
+<li><div data-block_type="bl-first" id="corty3e-ch12-p323"><p>η<sup>2</sup> ≈ 1% is a small effect.</p></div>
+</li>
+<li><div data-block_type="bl-mid" id="corty3e-ch12-p324"><p>η<sup>2</sup> ≈ 9% is a medium effect.</p></div>
+</li>
+<li><div data-block_type="bl-last" id="corty3e-ch12-p325"><p>η<sup>2</sup> ≈ 25% is a large effect.</p></div>
+</li>
+</ul>
+<div data-block_type="txt" id="corty3e-ch12-p326"><p>Even though the rows (caffeine) effect is very large at 54% and the column (sleep deprivation) effect at 20% is stronger than the interaction effect, the focus of the interpretation will be on the interaction. The interaction of the two variables, which explains about 15% of the variability in mental alertness, is a medium effect. Most of the variability that sleep deprivation explains is due to the effect on the no caffeine participants. The line for the caffeine-receiving participants in <span data-type="link" data-href="#corty3e-ch12-fig-18">Figure 12.5</span> is mostly flat, indicating that degree of sleep deprivation explains little of the variability in mental alertness for these subjects. In contrast, the line for the no caffeine participants is on a downward trajectory as sleep deprivation increases, suggesting that amount of sleep deprivation explains a lot of the variability in mental alertness for these subjects. Does the amount of sleep deprivation explain a lot of the variability in mental alertness? It depends. The main effects are trumped by the interaction effect.</p></div>
+</div>
+    <div data-type="section" data-block_type="h2" id="corty3e-ch12-sec2-3" level="2" data-print_page="449">
+<h2 class="section-title"><span data-type="title" data-title-for="corty3e-ch12-sec2-3">Where Are the Effects, and What Is Their Direction?
+</span></h2>
+
+<div data-block_type="txt-ni" id="corty3e-ch12-p327"><p>Just as with the other ANOVA tests, finding where the effects lie for two-way ANOVA involves the use of post-hoc tests. And, just as with the other ANOVAs, post-hoc tests for two-way ANOVA should be used only when the effect is statistically significant.</p></div>
+<div data-block_type="page_start" id="corty3e_page_450"><p>450</p></div>
+<ul data-block_type="bullet" id="corty3e-ch12-list-34">
+<li><div data-block_type="bl-first" id="corty3e-ch12-p329"><p>If the row main effect is statistically significant, and if there are three or more levels of the row explanatory variable, then a post-hoc test for the row effect can be used to find which pairs of <em>row</em> means differ statistically. (If there are only two row means and the row main effect is statistically significant, then the two existing row means must differ statistically.)</p></div>
+</li>
+<li><div data-block_type="bl-mid" id="corty3e-ch12-p330"><p>If the column main effect is statistically significant, and if there are three or more levels of the column explanatory variable, then a post-hoc test for the column effect can be used to find which pairs of <em>column</em> means differ statistically. (If there are only two column means and the column main effect is statistically significant, then the two existing column means must differ statistically.)</p></div>
+</li>
+<li><div data-block_type="bl-last" id="corty3e-ch12-p331"><p>If the interaction effect was statistically significant, then a post-hoc test for the interaction effect can be used to find which pair(s) of <em>cell</em> means differ statistically.</p></div>
+</li>
+</ul>
+<div data-block_type="txt" id="corty3e-ch12-p332"><p>The post-hoc test for the between-subjects, two-way ANOVA is the same one used for other ANOVAs, the Tukey <em>HSD.</em> <em>HSD,</em> remember, stands for “honestly significant difference.” If a pair of means differs by the <em>HSD</em> value or more than the <em>HSD</em> value, then the difference is a statistically significant one. The formulas for the calculation of <em>HSD</em> values are found in <span data-type="link" data-href="#corty3e-ch12-bx6-4">Equation 12.4</span>.</p></div>
+<div data-type="box" data-block_type="eq-t" id="corty3e-ch12-bx6-4"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="corty3e-ch12-bx6-4"><span data-block_type="sec_num">Equation 12.4</span> <span data-block_type="sec_title">Formulas for Calculating Tukey <em>HSD</em> Values for Post-Hoc Tests for Between-Subjects, Two-Way ANOVA</span>
+</h3>
+
+<div data-block_type="equation" id="corty3e-ch12-eqn-25"><p>
+<img id="" src="asset/ch12/corty3e_eqn11_450_01.jpg" data-figure-id="" data-layout-width="" data-mmtype="" alt="image"></p></div>
+<div data-block_type="eq-txt-ni" id="corty3e-ch12-p333"><p>where <em>HSD</em><sub>Rows</sub> = <em>HSD</em> value for the row main effect</p></div>
+<div data-block_type="eq-unl" id="corty3e-ch12-p334"><p><em>q</em><sub>Rows</sub> = <em>q</em> value for the row main effect, from <span data-type="link" data-href="corty3e-appendix01.xml#corty3e-app1-fig-18">Appendix Table 5</span>, where <em>k</em> = number of rows and <em>df</em> = <em>df</em><sub>Within</sub></p></div>
+<div data-block_type="eq-unl" id="corty3e-ch12-p335"><p><em>MS</em><sub>Within</sub> = within-groups mean square</p></div>
+<div data-block_type="eq-unl" id="corty3e-ch12-p336"><p><em>n</em><sub>Rows</sub> = number of cases in a row</p></div>
+<div data-block_type="eq-unl" id="corty3e-ch12-p337"><p><em>HSD</em><sub>Columns</sub> = <em>HSD</em> value for the column main effect</p></div>
+<div data-block_type="eq-unl" id="corty3e-ch12-p338"><p><em>q</em><sub>Columns</sub> = <em>q</em> value for the column main effect, from <span data-type="link" data-href="corty3e-appendix01.xml#corty3e-app1-fig-18">Appendix Table 5</span>, where <em>k</em> = the number of columns and <em>df</em> = <em>df</em><sub>Within</sub></p></div>
+<div data-block_type="eq-unl" id="corty3e-ch12-p339"><p><em>n</em><sub>Columns</sub> = number of cases in a column</p></div>
+<div data-block_type="eq-unl" id="corty3e-ch12-p340"><p><em>HSD</em><sub>Cells</sub> = <em>HSD</em> value for the interaction effect</p></div>
+<div data-block_type="eq-unl" id="corty3e-ch12-p341"><p><em>q</em><sub>Cells</sub> = <em>q</em> value for the interaction effect, from <span data-type="link" data-href="corty3e-appendix01.xml#corty3e-app1-fig-18">Appendix Table 5</span>, where <em>k</em> = the number of cells and <em>df</em> = <em>df</em><sub>Within</sub></p></div>
+<div data-block_type="eq-unl" id="corty3e-ch12-p342"><p><em>n</em><sub>Cells</sub> = number of cases in a cell</p></div>
+</div></div>
+<div data-block_type="page_start" id="corty3e_page_451"><p>451</p></div>
+<div data-block_type="txt" id="corty3e-ch12-p344"><p>For the caffeine/sleep deprivation data, there is little need to do post-hoc tests for the statistically significant main effects as our focus will be on the interaction. Instead, the <em>HSD</em> test will be used to interpret the interaction effect only.</p></div>
+<div data-block_type="txt" id="corty3e-ch12-p345"><p>The <em>HSD</em> to be calculated will be used to compare cell means—any two cell means that differ by the <em>HSD</em><sub>Cells</sub> value have a difference that is large enough to represent a statistically significant difference. And statistically significant sample differences provide evidence for population differences.</p></div>
+<div data-block_type="txt" id="corty3e-ch12-p346"><p>Here’s what one needs to calculate <em>HSD</em><sub>Cells</sub>:</p></div>
+<ul data-block_type="bullet" id="corty3e-ch12-list-35">
+<li><div data-block_type="bl-first" id="corty3e-ch12-p347"><p>Determine the alpha level, .05 or .01. Typically, the same alpha level as used in the decision rule for the <em>F</em> ratio is utilized. For Dr. Ballard’s study, this means α = .05.</p></div>
+</li>
+<li><div data-block_type="bl-mid" id="corty3e-ch12-p348"><p>To find the <em>q</em><sub>Cells</sub> value in <span data-type="link" data-href="corty3e-appendix01.xml#corty3e-app1-fig-18">Appendix Table 5</span>, know that <em>k</em> = 6, because there are six cells, and that <em>df</em> = 24, because <em>df</em><sub>Within</sub> = 24. The intersection of the column for <em>k</em> = 6 and the row for <em>df</em> = 24 gives <em>q</em><sub>Cells</sub> = 4.37.</p></div>
+</li>
+<li><div data-block_type="bl-mid" id="corty3e-ch12-p349"><p>From the ANOVA summary table, note that <em>MS</em><sub>Within</sub> = 31.17.</p></div>
+</li>
+<li><div data-block_type="bl-last" id="corty3e-ch12-p350"><p>Each cell has five cases, so <em>n</em><sub>Cells</sub> = 5.</p></div>
+</li>
+</ul>
+<div data-block_type="txt-ni" id="corty3e-ch12-p351"><p>Here is <span data-type="link" data-href="#corty3e-ch12-bx6-4">Equation 12.4</span>, with those values substituted:</p></div>
+<div data-block_type="equation" id="corty3e-ch12-eqn-26"><p>
+<img id="" src="asset/ch12/corty3e_eqn11_451_01.jpg" data-figure-id="" data-layout-width="" data-mmtype="" alt="image"></p></div>
+<div data-block_type="txt" id="corty3e-ch12-p352"><p>The <em>HSD</em><sub>Cells</sub> value is 10.91 and any two cell sample means that differ by that much or more have a statistically significant difference. <strong><span data-type="link" data-href="#corty3e-ch12-fig-48">Table 12.14</span></strong> contains all six cell means and there are 15 possible cell-by-cell comparisons (see <strong><span data-type="link" data-href="#corty3e-ch12-fig-48">Table 12.15</span></strong>). Note, in the points below, how Dr. Ballard approaches the comparisons in an organized fashion and indicates the directions of the difference.</p></div>
+<div data-type="figure" data-figure-id="corty3e-ch12-fig-48" data-block_type="table" data-layout-align="center" data-layout-width="large" data-layout-border="true">
+
+<img id="" src="asset/ch12/corty3e_table12_14.jpg" data-figure-id="corty3e-ch12-fig-48" data-layout-width="large" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+</div>
+<div data-type="figure" data-figure-id="corty3e-ch12-fig-49" data-block_type="table" data-layout-align="center" data-layout-width="large" data-layout-border="true">
+
+<img id="" src="asset/ch12/corty3e_table12_15.jpg" data-figure-id="corty3e-ch12-fig-49" data-layout-width="large" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+</div>
+<ul data-block_type="bullet" id="corty3e-ch12-list-36">
+<li><div data-block_type="bl-first" id="corty3e-ch12-p353"><p>For participants who consumed no caffeine, each increase in sleep deprivation—from 0 hours (<em>M</em> = 80.00) to 1 hour (<em>M</em> = 68.00), and from 1 hour to 2 hours (<em>M</em> = 50.00)—caused a statistically significant decline in mental alertness.</p></div>
+</li>
+<li><div data-block_type="bl-mid" id="corty3e-ch12-p354"><p>Consuming caffeine seems to protect against the negative effects of sleep deprivation as there was no statistically significant change in cell means for the caffeine group. (The means for 0, 1, and 2 hours of sleep deprivation were, respectively, 88.00, 90.00, and 86.00.)</p></div>
+</li>
+<li><div data-block_type="bl-last" id="corty3e-ch12-p355"><p>Looking at differences between the caffeine and no-caffeine groups, there is no evidence that caffeine consumption helped performance if no sleep deprivation occurred (means of 88.00 vs. 80.00). But, it did help performance with 1 hour of sleep deprivation (90.00 vs. 68.00) and 2 hours of sleep deprivation (86.00 vs. 50.00).</p></div>
+</li>
+</ul>
+<div data-block_type="page_start" id="corty3e_page_452"><p>452</p></div>
+<div data-type="table" data-block_type="un_table" id="corty3e-ch12-table3" data-layout-align="center" data-layout-width="medium" data-layout-border="true" data-mmsrc="" data-attr=""><table><tbody>
+<tr>
+<td colspan="2"><span data-block_type="TBN-COLHD"><strong>Possible Cell-to-Cell Comparisons</strong></span></td>
+</tr>
+<tr>
+<td><span data-block_type="tbn-txt">A vs.</span></td>
+<td><span data-block_type="tbn-txt">B, C, D, E, and F</span></td>
+</tr>
+<tr>
+<td><span data-block_type="tbn-txt">B vs.</span></td>
+<td><span data-block_type="tbn-txt">C, D, E, and F</span></td>
+</tr>
+<tr>
+<td><span data-block_type="tbn-txt">C vs.</span></td>
+<td><span data-block_type="tbn-txt">D, E, and F</span></td>
+</tr>
+<tr>
+<td><span data-block_type="tbn-txt">D vs.</span></td>
+<td><span data-block_type="tbn-txt">E and F</span></td>
+</tr>
+<tr>
+<td><span data-block_type="tbn-txt">E vs.</span></td>
+<td><span data-block_type="tbn-txt">F</span></td>
+</tr>
+</tbody></table></div>
+</div>
+    <div data-type="section" data-block_type="h2" id="corty3e-ch12-sec2-4" level="2" data-print_page="452">
+<h2 class="section-title"><span data-type="title" data-title-for="corty3e-ch12-sec2-4">Putting It All Together
+</span></h2>
+
+<div data-block_type="txt-ni" id="corty3e-ch12-p357"><p>Before writing an interpretation of a two-way ANOVA, it is helpful to review the interaction graph, <span data-type="link" data-href="#corty3e-ch12-fig-18">Figure 12.5</span>. The graph shows two things:</p></div>
+<ul data-block_type="bullet" id="corty3e-ch12-list-37">
+<li><div data-block_type="bl-first" id="corty3e-ch12-p358"><p>For those who don’t consume caffeine, mental alertness decreases as sleep deprivation moves from 0 hours of deprivation to 1 hour and to 2 hours.</p></div>
+</li>
+<li><div data-block_type="bl-last" id="corty3e-ch12-p359"><p>Consuming caffeine keeps mental alertness from deteriorating, at least with 1 or 2 hours of sleep deprivation.</p></div>
+</li>
+</ul>
+<div data-block_type="txt" id="corty3e-ch12-p360"><p>Here’s Dr. Ballard’s interpretation in which he addresses the following four points: What was done? What was found? What does it mean? What suggestions exist for future research?</p></div>
+<div data-block_type="txt_v1_ni" id="corty3e-ch12-p361"><p>This study explored the effects of caffeine consumption and sleep deprivation on mental alertness. Using a between-subjects design, 30 college students were assigned to six groups and then had their mental alertness tested. Half received caffeine before testing and half didn’t; one third had a full night’s sleep, one third were awakened 1 hour early, and one third 2 hours early. There was a statistically significant interaction effect of the two variables on mental alertness <em>F</em>(2, 24) = 15.72, <em>p</em> &lt; .05 as well as statistically significant main effects for caffeine <em>F</em>(1, 24) = 116.46, <em>p</em> &lt; .05 and sleep deprivation <em>F</em>(2, 24) = 21.50, <em>p</em> &lt; .05. In general, caffeine consumption kept mental alertness elevated and, as sleep deprivation increased, performance deteriorated. However, these two variables did not independently affect mental alertness.</p></div>
+<div data-block_type="page_start" id="corty3e_page_453"><p>453</p></div>
+<div data-block_type="txt_v1_ni" id="corty3e-ch12-p363"><p>The interaction effect was moderately strong and showed that the impact of sleep deprivation on mental alertness depended on whether one consumed caffeine before testing or not. Further, how caffeine affected mental alertness depended on how sleep-deprived one was. For people who did not consume caffeine, increasing sleep deprivation caused a worsening of mental alertness. In contrast, consuming caffeine kept sleep deprivation from affecting mental alertness. This study suggests that a person can compensate for the mental alertness deficit caused by an hour or two of sleep deprivation by drinking a cup of coffee. It would be wise to replicate this study, to see if the effect is found in a different population. If it is, future research should investigate the effect of different doses of caffeine on different amounts of sleep deprivation.</p></div>
+<div data-block_type="txt" id="corty3e-ch12-p364"><p>(By the way, the data in this example were made up. Don’t put too much faith in caffeine being an effective antidote to sleep deprivation. Sorry.)</p></div>
+<div data-type="box" data-block_type="sr-exp-n" id="corty3e-ch12-bx3-3"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="corty3e-ch12-bx3-3">Worked Example 12.3</h3>
+<div data-block_type="sr_exp_txt_ni" id="corty3e-ch12-p365"><p>For practice in interpreting two-way ANOVA, a return to Dr. Larue’s study of factors affecting relationship satisfaction is in order. In that study, there were three levels of arguing style—positive, mixed, and negative—crossed with three different perceptions of the quality of one’s parents’ marriage—good, average, and bad. The mean level of relationship satisfaction for each of the nine conditions, measured on a scale ranging from 5 (very low) to 35 (very high), is shown in <strong><span data-type="link" data-href="#corty3e-ch12-fig-51">Table 12.16</span></strong>. The apparent lack of interaction is shown graphically in <span data-type="link" data-href="#corty3e-ch12-fig-30">Figure 12.6</span>. And, <strong><span data-type="link" data-href="#corty3e-ch12-fig-50">Figure 12.8</span></strong> displays the main effects for arguing style and parental marital quality.</p></div>
+<div data-type="figure" data-figure-id="corty3e-ch12-fig-50" data-block_type="figure" data-layout-align="center" data-layout-width="medium" data-layout-border="true">
+
+<img id="" src="asset/ch12/corty3e_fig12_08.jpg" data-figure-id="corty3e-ch12-fig-50" data-layout-width="medium" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+<div data-type="figure_text">
+<span data-type="number">Figure 12.23: </span><span data-type="caption"><strong><span data-block_type="fig_num">Figure 12.8</span> Main Effects of Arguing Style and Perception of Parental Marriage on Relationship Satisfaction</strong> According to this graph, it looks like there are two main effects: (1) relationship satisfaction decreases as arguing style becomes more negative; (2) relationship satisfaction decreases as perception of quality of parental marriage worsens.</span>
+</div>
+</div>
+<div data-type="figure" data-figure-id="corty3e-ch12-fig-51" data-block_type="table" data-layout-align="center" data-layout-width="large" data-layout-border="true">
+
+<img id="" src="asset/ch12/corty3e_table12_16.jpg" data-figure-id="corty3e-ch12-fig-51" data-layout-width="large" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+</div>
+<div data-block_type="sr_exp_txt_ni" id="corty3e-ch12-p366"><p>The three critical values of <em>F</em> were <em>F</em><sub>cv Rows</sub> = 3.150, <em>F</em><sub>cv Columns</sub> = 3.150, and <em>F</em><sub>cv Interaction</sub> = 2.525. The ANOVA summary table, which makes a return appearance in <strong><span data-type="link" data-href="#corty3e-ch12-fig-52">Table 12.17</span></strong>, shows that the observed values of <em>F</em> for the three effects were <em>F</em><sub>Rows</sub> = 115.05, <em>F</em><sub>Columns</sub> = 26.95, and <em>F</em><sub>Interaction</sub> = 0.13.</p></div>
+<div data-type="figure" data-figure-id="corty3e-ch12-fig-52" data-block_type="table" data-layout-align="center" data-layout-width="large" data-layout-border="true">
+
+<img id="" src="asset/ch12/corty3e_table12_17.jpg" data-figure-id="corty3e-ch12-fig-52" data-layout-width="large" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+</div>
+<div data-block_type="page_start" id="corty3e_page_454"><p>454</p></div>
+<div data-block_type="sr_exp_txt" id="corty3e-ch12-p368"><p><em>Were the null hypotheses rejected?</em></p></div>
+<ul data-block_type="bullet" id="corty3e-ch12-list-38">
+<li><div data-block_type="sr-exp-bl-first" id="corty3e-ch12-p369"><p>Row main effect: 115.05 ≥ 3.150, so reject <em>H</em><sub>0 Rows</sub> and accept <em>H</em><sub>1 Rows</sub>.</p></div>
+<ul data-block_type="bluebullet" id="corty3e-ch12-list-39">
+<li><div data-block_type="sr_exp_bl_lvl2" id="corty3e-ch12-p370"><p>In APA format: <em>F</em>(2, 63) = 115.05, <em>p</em> &lt; .05.</p></div>
+</li>
+<li><div data-block_type="sr_exp_bl_lvl2" id="corty3e-ch12-p371"><p>The row effect, arguing style, is statistically significant.</p></div>
+</li>
+<li><div data-block_type="sr_exp_bl_lvl2" id="corty3e-ch12-p372"><p>It is reasonable to conclude, in the larger population, that at least one arguing style differs from at least one other in mean relationship satisfaction.</p></div>
+</li>
+</ul>
+</li>
+<li><div data-block_type="sr-exp-bl-mid" id="corty3e-ch12-p373"><p>Column main effect: 26.95 ≥ 3.150, so reject <em>H</em><sub>0</sub> <sub>Columns</sub> and accept <em>H</em><sub>1 Columns</sub>.</p></div>
+<ul data-block_type="bluebullet" id="corty3e-ch12-list-40">
+<li><div data-block_type="sr_exp_bl_lvl2" id="corty3e-ch12-p374"><p>In APA format: <em>F</em>(2, 63) = 26.95, <em>p</em> &lt; .05.</p></div>
+</li>
+<li><div data-block_type="sr_exp_bl_lvl2" id="corty3e-ch12-p375"><p>The column effect, perception of parental marital quality, is statistically significant.</p></div>
+</li>
+<li><div data-block_type="sr_exp_bl_lvl2" id="corty3e-ch12-p376"><p>It is reasonable to conclude, in the larger population, that at least one level of perceived marital quality differs from at least one other in mean relationship satisfaction.</p></div>
+</li>
+</ul>
+</li>
+<li><div data-block_type="sr-exp-bl-last" id="corty3e-ch12-p377"><p>Interaction effect: 0.13 &lt; 2.525, so fail to reject <em>H</em><sub>0 Interaction</sub>.</p></div>
+<ul data-block_type="bluebullet" id="corty3e-ch12-list-41">
+<li><div data-block_type="sr_exp_bl_lvl2" id="corty3e-ch12-p378"><p>In APA format: <em>F</em>(4, 63) = 0.13, <em>p</em> &gt; .05.</p></div>
+</li>
+<li><div data-block_type="sr_exp_bl_lvl2" id="corty3e-ch12-p379"><p>The interaction effect is not statistically significant.</p></div>
+</li>
+<li><div data-block_type="sr_exp_bl_lvl2" id="corty3e-ch12-p380"><p>There is not enough evidence to conclude, in the larger population, that the effect of arguing style interacts with the effect of perceived parental marital quality to affect relationship satisfaction.</p></div>
+</li>
+</ul>
+</li>
+</ul>
+<div data-block_type="page_start" id="corty3e_page_455"><p>455</p></div>
+<div data-block_type="sr_exp_txt" id="corty3e-ch12-p382"><p>In the caffeine/sleep deprivation study, the interaction effect was statistically significant and, as a result, the statistically significant main effects were ignored. Now, in the relationship satisfaction study, the two main effects are statistically significant and the interaction is not. How does interpretation work with this set of results?</p></div>
+<div data-block_type="sr_exp_txt" id="corty3e-ch12-p383"><p><em>How big are the effects?</em> Effect size is measured by calculating eta squared (<span data-type="link" data-href="#corty3e-ch12-bx6-3">Equation 12.3</span>):</p></div>
+<div data-block_type="equation" id="corty3e-ch12-eqn-27"><p>
+<img id="" src="asset/ch12/corty3e_eqn11_455_01.jpg" data-figure-id="" data-layout-width="" data-mmtype="" alt="image"></p></div>
+<div data-block_type="equation" id="corty3e-ch12-eqn-28"><p>
+<img id="" src="asset/ch12/corty3e_eqn11_455_02.jpg" data-figure-id="" data-layout-width="" data-mmtype="" alt="image"></p></div>
+<div data-block_type="equation" id="corty3e-ch12-eqn-29"><p>
+<img id="" src="asset/ch12/corty3e_eqn11_455_03.jpg" data-figure-id="" data-layout-width="" data-mmtype="" alt="image"></p></div>
+<div data-block_type="sr_exp_txt" id="corty3e-ch12-p384"><p>Note that eta squared for the not-statistically-significant interaction effect was calculated. Even though the interaction effect was not significant, it is possible for eta squared to be sizable. If that happened, it would serve to alert a researcher to the possibility of Type II error. In the current situation, with the percentage of variability near zero, there is nothing to make Dr. Larue think she missed finding an interaction effect that really exists. From here on out, it is safe to ignore the interaction effect.</p></div>
+<div data-block_type="sr_exp_txt" id="corty3e-ch12-p385"><p>Eta squared for the rows effect was about 66% and for the columns effect it was about 16%. Both main effects have an impact on relationship satisfaction, but one more than the other. The impact of arguing style on relationship satisfaction is quite strong. The impact of perceived parental marital quality is smaller but still meaningful. These results suggest that higher levels of relationship satisfaction are associated more with being a positive arguer than with perceiving one’s parents’ marriage as good, though having a good model of a marriage is associated meaningfully with relationship satisfaction.</p></div>
+<div data-block_type="sr_exp_txt" id="corty3e-ch12-p386"><p><em>Where are the effects, and what is their direction?</em> Now it is time to use <span data-type="link" data-href="#corty3e-ch12-bx6-4">Equation 12.4</span> to conduct some post-hoc tests and find out what is causing the statistically significant effects. Remember, only conduct a post-hoc test when the effect is statistically significant. With the current example, Dr. Larue has no need to find out what caused the interaction effect because there is no evidence that an interaction effect exists.</p></div>
+<div data-block_type="page_start" id="corty3e_page_456"><p>456</p></div>
+<div data-block_type="sr_exp_txt" id="corty3e-ch12-p388"><p>To apply <span data-type="link" data-href="#corty3e-ch12-bx6-4">Equation 12.4</span>, first find the <em>q</em> value from <span data-type="link" data-href="corty3e-appendix01.xml#corty3e-app1-fig-18">Appendix Table 5</span>. This depends on α (.05), how many means are being compared, and what the degrees of freedom are. For both the row effect and column effect, there are three means, so <em>k</em> = 3 in both instances. Both instances have the same degrees of freedom as well: <em>df</em><sub>Within</sub> = 63. Turning to <span data-type="link" data-href="corty3e-appendix01.xml#corty3e-app1-fig-18">Appendix Table 5</span>, there is a column with <em>k</em> = 3, but no row for <em>df</em> = 63. In these situations, apply <em>The Price Is Right</em> rule and use the <em>df</em> value that is closest to 63 without going over. Here, that is <em>df</em> = 60. The <em>q</em> value, at the intersection of <em>k</em> = 3 and <em>df</em> = 60, is 3.40 for α = .05.</p></div>
+<div data-block_type="sr_exp_txt" id="corty3e-ch12-p389"><p>To apply <span data-type="link" data-href="#corty3e-ch12-bx6-4">Equation 12.4</span>, one also needs to know <em>MS</em><sub>Within</sub>, which is 7.44, and how many cases are in a row and a column. Each row contains 24 cases, as does each column. All the values are the same for our calculations for <em>HSD</em><sub>Rows</sub> and <em>HSD</em><sub>Columns</sub>: <em>q</em> = 3.40, <em>MS</em><sub>Within</sub> = 7.44, and <em>n</em> = 24, so both <em>HSD</em> values can be calculated in one pass:</p></div>
+<div data-block_type="equation" id="corty3e-ch12-eqn-30"><p>
+<img id="" src="asset/ch12/corty3e_eqn11_456_01.jpg" data-figure-id="" data-layout-width="" data-mmtype="" alt="image"></p></div>
+<div data-block_type="sr_exp_txt" id="corty3e-ch12-p390"><p>With an <em>HSD</em> value of 1.89, any two row means or any two column means that differ by that amount or more are statistically significantly different.</p></div>
+<div data-block_type="sr_exp_txt" id="corty3e-ch12-p391"><p>For the row main effect, relationship satisfaction grows statistically significantly worse as there is less positive arguing and more negative arguing:</p></div>
+<ul data-block_type="bullet" id="corty3e-ch12-list-42">
+<li><div data-block_type="sr-exp-bl-first" id="corty3e-ch12-p392"><p>Positive arguers (<em>M</em> = 27.92) have statistically significantly more relationship satisfaction than do mixed arguers (<em>M</em> = 21.25). The difference, 6.67, is greater than the <em>HSD</em> value of 1.89.</p></div>
+</li>
+<li><div data-block_type="sr-exp-bl-last" id="corty3e-ch12-p393"><p>Mixed arguers (<em>M</em> = 21.25) have statistically significantly more relationship satisfaction than do negative arguers (<em>M</em> = 16.00). The difference, 5.25. is greater than the <em>HSD</em> value.</p></div>
+</li>
+</ul>
+<div data-block_type="sr_exp_txt" id="corty3e-ch12-p394"><p>For the column main effect, relationship satisfaction gets statistically significantly worse as the perception of the parents’ marriage worsens:</p></div>
+<ul data-block_type="bullet" id="corty3e-ch12-list-43">
+<li><div data-block_type="sr-exp-bl-first" id="corty3e-ch12-p395"><p>Students who rated their parents’ marriage as good (<em>M</em> = 24.42) rated their own relationship as statistically significantly more satisfying than those who rated their parents’ marriage as average (<em>M</em> = 22.08). The difference, 2.34, is greater than the <em>HSD</em> value of 1.89.</p></div>
+</li>
+<li><div data-block_type="sr-exp-bl-mid" id="corty3e-ch12-p396"><p>Rating one’s parents’ marriage as average (<em>M</em> = 22.08) is associated with a statistically significantly higher score on relationship satisfaction than rating it as bad (<em>M</em> = 18.67). The difference, 3.41, is greater than the <em>HSD</em> value.</p></div>
+<div data-block_type="page_start" id="corty3e_page_457"><p>457</p></div>
+</li>
+<li><div data-block_type="sr-exp-bl-mid" id="corty3e-ch12-p398"><p><em>Putting it all together.</em> Before writing her four-point interpretation, Dr. Larue reviewed the graph displaying the main effects (<span data-type="link" data-href="#corty3e-ch12-fig-50">Figure 12.8</span>), so she had a clear picture of the results in her mind. Here’s what she wrote (notice, this is a quasi-experimental study in which nothing is manipulated, so she avoids cause-and-effect language to describe the results):</p></div>
+</li>
+</ul>
+<div data-block_type="sr_exp_txt_v1_ni" id="corty3e-ch12-p399"><p>In this social psychology study, the abilities of two variables, arguing style and perceived quality of parental marriage, to predict relationship satisfaction in college students were examined. Students were classified into three categories of arguing style (positive, negative, or mixed) and with three different perceptions of their parents’ marriages (good, average, or bad). Eight students from each of these possible combinations who were in current relationships were randomly selected and completed a survey measuring degree of satisfaction with their current relationship.</p></div>
+<div data-block_type="sr_exp_txt_v1" id="corty3e-ch12-p400"><p>Using a between-subjects, two-way ANOVA, both arguing style and parental marital perception had statistically significant effects on relationship satisfaction [respectively, <em>F</em>(2, 63) = 115.05, <em>p</em> &lt; .05, and <em>F</em>(2, 63) = 26.95, <em>p</em> &lt; .05]. There was no interaction effect for the two variables <em>F</em>(4, 63) = 0.13, <em>p</em> &gt; .05.</p></div>
+<div data-block_type="sr_exp_txt_v1" id="corty3e-ch12-p401"><p>Arguing style was the stronger predictor of relationship satisfaction. As students’ arguing style moved from positive to negative, there was a decrease in relationship satisfaction. The role played by perceived parental marriage, though less powerful, was still meaningful. A more negative view of parents’ marriages was associated with lower relationship satisfaction.</p></div>
+<div data-block_type="sr_exp_txt_v1" id="corty3e-ch12-p402"><p>This study suggests that the relationships one sees as a child influence one’s future relationship satisfaction. The good news is that a more powerful influence on relationship satisfaction is arguing style and a positive arguing style is a skill that can be learned. Future research should examine whether teaching positive arguing skills improves relationship satisfaction.</p></div>
+</div></div>
+<div data-type="box" data-block_type="sr-h" id="corty3e-ch12-bx2-3"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="corty3e-ch12-bx2-3">Practice Problems 12.3</h3>
+<div data-block_type="sr-que-nl" id="corty3e-ch12-p403"><p><span data-block_type="question_num">12.08</span> Given α = .05, <em>df</em><sub>Rows</sub> = 3, <em>df</em><sub>Columns</sub> = 2, <em>df</em><sub>Interaction</sub> = 6, <em>df</em><sub>Within</sub> = 60, <em>F</em><sub>Rows</sub> = 3.25, <em>F</em><sub>Columns</sub> = 1.22, and <em>F</em><sub>Interaction</sub> = 0.83, (a) write each result for this between-subjects, two-way ANOVA in APA format and (b) for each result report whether the effect is statistically significant.</p></div>
+<div data-block_type="sr-que-nl" id="corty3e-ch12-p404"><p><span data-block_type="question_num">12.09</span> Given this ANOVA summary table, (a) calculate η<sup>2</sup> for each effect and (b) classify each effect as small, medium, or large. Use α = .05.</p></div>
+<div data-type="table" data-block_type="un_table" id="corty3e-ch12-table4" data-layout-align="center" data-layout-width="medium" data-layout-border="true" data-mmsrc="" data-attr=""><table><tbody>
+<tr>
+<td><span data-block_type="TBN-COLHD"><strong>Source of Variability</strong></span></td>
+<td><span data-block_type="TBN-COLHD"><strong>Sum of Squares</strong></span></td>
+<td><span data-block_type="TBN-COLHD"><strong>Degrees of Freedom</strong></span></td>
+<td><span data-block_type="TBN-COLHD"><strong>Mean Square</strong></span></td>
+<td><span data-block_type="TBN-COLHD"><strong><em>F</em> ratio</strong></span></td>
+</tr>
+<tr>
+<td><span data-block_type="TBN-SIDHD1"><strong>Between groups</strong></span></td>
+<td><span data-block_type="TBN-SIDHD1">5,357.00</span></td>
+<td><span data-block_type="TBN-SIDHD1">15</span></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><span data-block_type="TBN-SIDHD19"><strong>Rows</strong></span></td>
+<td><span data-block_type="TBN-SIDHD1">3,725.00</span></td>
+<td><span data-block_type="TBN-SIDHD1">3</span></td>
+<td><span data-block_type="TBN-SIDHD1">1,241.67</span></td>
+<td><span data-block_type="TBN-SIDHD1">37.63</span></td>
+</tr>
+<tr>
+<td><span data-block_type="TBN-SIDHD19"><strong>Columns</strong></span></td>
+<td><span data-block_type="TBN-SIDHD1">1,312.00</span></td>
+<td><span data-block_type="TBN-SIDHD1">3</span></td>
+<td><span data-block_type="TBN-SIDHD1">437.33</span></td>
+<td><span data-block_type="TBN-SIDHD1">13.25</span></td>
+</tr>
+<tr>
+<td><span data-block_type="TBN-SIDHD19"><strong>Interaction</strong></span></td>
+<td><span data-block_type="TBN-SIDHD1">320.00</span></td>
+<td><span data-block_type="TBN-SIDHD1">9</span></td>
+<td><span data-block_type="TBN-SIDHD1">35.56</span></td>
+<td><span data-block_type="TBN-SIDHD1">1.08</span></td>
+</tr>
+<tr>
+<td><span data-block_type="TBN-SIDHD1"><strong>Within groups</strong></span></td>
+<td><span data-block_type="TBN-SIDHD1">7,392.00</span></td>
+<td><span data-block_type="TBN-SIDHD1">224</span></td>
+<td><span data-block_type="TBN-SIDHD1">33.00</span></td>
+<td></td>
+</tr>
+<tr>
+<td><span data-block_type="TBN-SIDHD1"><strong>Total</strong></span></td>
+<td><span data-block_type="TBN-SIDHD1">12,749.00</span></td>
+<td><span data-block_type="TBN-SIDHD1">239</span></td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table></div>
+<div data-block_type="page_start" id="corty3e_page_458"><p>458</p></div>
+<div data-block_type="sr-que-nl" id="corty3e-ch12-p406"><p><span data-block_type="question_num">12.10</span> Here is a table of cell means for a 3 × 2 between-subjects, two-way ANOVA with seven cases in each cell. Note that the row means and column means have been calculated.</p></div>
+<div data-type="table" data-block_type="un_table" id="corty3e-ch12-table5" data-layout-align="center" data-layout-width="medium" data-layout-border="true" data-mmsrc="" data-attr=""><table><tbody>
+<tr>
+<td></td>
+<td><span data-block_type="TBN-COLHD"><strong>Column 1</strong></span></td>
+<td><span data-block_type="TBN-COLHD"><strong>Column 2</strong></span></td>
+<td><span data-block_type="TBN-COLHD"><strong>Column 3</strong></span></td>
+<td></td>
+</tr>
+<tr>
+<td><span data-block_type="TBN-SIDHD1"><strong>Row 1</strong></span></td>
+<td><span data-block_type="tbn-txt">26.00</span></td>
+<td><span data-block_type="tbn-txt">30.00</span></td>
+<td><span data-block_type="tbn-txt">34.00</span></td>
+<td><span data-block_type="tbn-txt">30.00</span></td>
+</tr>
+<tr>
+<td><span data-block_type=" TBN-SIDHD1"><strong>Row 2</strong></span></td>
+<td><span data-block_type="tbn-txt">18.00</span></td>
+<td><span data-block_type="tbn-txt">22.00</span></td>
+<td><span data-block_type="tbn-txt">26.00</span></td>
+<td><span data-block_type="tbn-txt">22.00</span></td>
+</tr>
+<tr>
+<td></td>
+<td><span data-block_type="tbn-txt">22.00</span></td>
+<td><span data-block_type="tbn-txt">26.00</span></td>
+<td><span data-block_type="tbn-txt">30.00</span></td>
+<td></td>
+</tr>
+</tbody></table></div>
+<div data-block_type="txt" id="corty3e-ch12-p407"><p>Here is the between-subjects, two-way ANOVA summary table for these data:</p></div>
+<div data-type="table" data-block_type="un_table" id="corty3e-ch12-table6" data-layout-align="center" data-layout-width="medium" data-layout-border="true" data-mmsrc="" data-attr=""><table><tbody>
+<tr>
+<td><span data-block_type="tbn-colhd"><strong>Source of Variability</strong></span></td>
+<td><span data-block_type="tbn-colhd"><strong>Sum of Squares</strong></span></td>
+<td><span data-block_type="tbn-colhd"><strong>Degrees of<br>Freedom</strong></span></td>
+<td><span data-block_type="tbn-colhd"><strong>Mean Square</strong></span></td>
+<td><span data-block_type="tbn-colhd"><strong><em>F</em> ratio</strong></span></td>
+</tr>
+<tr>
+<td><span data-block_type="TBN-SIDHD1"><strong>Between groups</strong></span></td>
+<td><span data-block_type="tbn-colhd">1,120.00</span></td>
+<td><span data-block_type="tbn-colhd">5</span></td>
+<td><span data-block_type="tbn-colhd">224.00</span></td>
+<td></td>
+</tr>
+<tr>
+<td><span data-block_type="TBN-SIDHD19"><strong>Rows</strong></span></td>
+<td><span data-block_type="tbn-colhd">672.00</span></td>
+<td><span data-block_type="tbn-colhd">1</span></td>
+<td><span data-block_type="tbn-colhd">672.00</span></td>
+<td><span data-block_type="tbn-colhd">35.99</span></td>
+</tr>
+<tr>
+<td><span data-block_type="TBN-SIDHD19"><strong>Columns</strong></span></td>
+<td><span data-block_type="tbn-colhd">448.00</span></td>
+<td><span data-block_type="tbn-colhd">2</span></td>
+<td><span data-block_type="tbn-colhd">224.00</span></td>
+<td><span data-block_type="tbn-colhd">12.00</span></td>
+</tr>
+<tr>
+<td><span data-block_type="TBN-SIDHD19"><strong>Interaction</strong></span></td>
+<td><span data-block_type="tbn-colhd">0.00</span></td>
+<td><span data-block_type="tbn-colhd">2</span></td>
+<td><span data-block_type="tbn-colhd">0.00</span></td>
+<td><span data-block_type="tbn-colhd">0.00</span></td>
+</tr>
+<tr>
+<td><span data-block_type="TBN-SIDHD1"><strong>Within groups</strong></span></td>
+<td><span data-block_type="tbn-colhd">672.00</span></td>
+<td><span data-block_type="tbn-colhd">36</span></td>
+<td><span data-block_type="tbn-colhd">18.67</span></td>
+<td></td>
+</tr>
+<tr>
+<td><span data-block_type="TBN-SIDHD1"><strong>Total</strong></span></td>
+<td><span data-block_type="tbn-colhd">1,792.00</span></td>
+<td><span data-block_type="tbn-colhd">41</span></td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table></div>
+<div data-block_type="sr-que-nl" id="corty3e-ch12-p408"><p>As appropriate, calculate <em>HSD</em> values and comment on the direction of the differences for the effects.</p></div>
+<div data-block_type="sr-que-nl" id="corty3e-ch12-p409"><p><span data-block_type="question_num">12.11</span> A kinesiologist wanted to investigate the effect of temperature and humidity on human performance. He found 28 college students and randomly assigned them to four different conditions, during which they were to walk at their normal pace on a treadmill for 60 minutes. He measured how far, in miles, they walked. The conditions varied in temperature and humidity: (1) normal temperature and normal humidity; (2) normal temperature and high humidity; (3) high temperature and normal humidity; (4) high temperature and high humidity. The results looked like this:</p></div>
+<div data-type="table" data-block_type="un_table" id="corty3e-ch12-table7" data-layout-align="center" data-layout-width="medium" data-layout-border="true" data-mmsrc="" data-attr=""><table><tbody>
+<tr>
+<td></td>
+<td><span data-block_type="tbn-colhd"><strong>Normal Humidity</strong></span></td>
+<td><span data-block_type="tbn-colhd"><strong>High Humidity</strong></span></td>
+<td></td>
+</tr>
+<tr>
+<td><span data-block_type="TBN-SIDHD1"><strong>Normal Temperature</strong></span></td>
+<td><span data-block_type="tbn-txt">3.00 miles</span></td>
+<td><span data-block_type="tbn-txt">2.80 miles</span></td>
+<td><span data-block_type="tbn-txt">2.90</span></td>
+</tr>
+<tr>
+<td><span data-block_type="TBN-SIDHD1"><strong>High Temperature</strong></span></td>
+<td><span data-block_type="tbn-txt">2.80 miles</span></td>
+<td><span data-block_type="tbn-txt">2.00 miles</span></td>
+<td><span data-block_type="tbn-txt">2.40</span></td>
+</tr>
+<tr>
+<td></td>
+<td><span data-block_type="tbn-txt">2.90</span></td>
+<td><span data-block_type="tbn-txt">2.40</span></td>
+<td></td>
+</tr>
+</tbody></table></div>
+<div data-block_type="txt" id="corty3e-ch12-p410"><p>Here is the ANOVA summary table:</p></div>
+<div data-type="table" data-block_type="un_table" id="corty3e-ch12-table8" data-layout-align="center" data-layout-width="medium" data-layout-border="true" data-mmsrc="" data-attr=""><table><tbody>
+<tr>
+<td><span data-block_type="tbn-colhd"><strong>Source of Variability</strong></span></td>
+<td><span data-block_type="tbn-colhd"><strong>Sum of Squares</strong></span></td>
+<td><span data-block_type="tbn-colhd"><strong>Degrees of<br>Freedom</strong></span></td>
+<td><span data-block_type="tbn-colhd"><strong>Mean Square</strong></span></td>
+<td><span data-block_type="tbn-colhd"><strong><em>F</em> ratio</strong></span></td>
+</tr>
+<tr>
+<td><span data-block_type="TBN-SIDHD1"><strong>Between groups</strong></span></td>
+<td><span data-block_type="tbn-txt">4.13</span></td>
+<td><span data-block_type="tbn-txt">3</span></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><span data-block_type="TBN-SIDHD19"><strong>Rows</strong></span></td>
+<td><span data-block_type="tbn-txt">1.75</span></td>
+<td><span data-block_type="tbn-txt">1</span></td>
+<td><span data-block_type="tbn-txt">1.75</span></td>
+<td><span data-block_type="tbn-txt">25.00</span></td>
+</tr>
+<tr>
+<td><span data-block_type="TBN-SIDHD19"><strong>Columns</strong></span></td>
+<td><span data-block_type="tbn-txt">1.75</span></td>
+<td><span data-block_type="tbn-txt">1</span></td>
+<td><span data-block_type="tbn-txt">1.75</span></td>
+<td><span data-block_type="tbn-txt">25.00</span></td>
+</tr>
+<tr>
+<td><span data-block_type="TBN-SIDHD19"><strong>Interaction</strong></span></td>
+<td><span data-block_type="tbn-txt">0.63</span></td>
+<td><span data-block_type="tbn-txt">1</span></td>
+<td><span data-block_type="tbn-txt">0.63</span></td>
+<td><span data-block_type="tbn-txt">9.00</span></td>
+</tr>
+<tr>
+<td><span data-block_type="TBN-SIDHD1"><strong>Within groups</strong></span></td>
+<td><span data-block_type="tbn-txt">1.58</span></td>
+<td><span data-block_type="tbn-txt">24</span></td>
+<td><span data-block_type="tbn-txt">0.07</span></td>
+<td></td>
+</tr>
+<tr>
+<td><span data-block_type="TBN-SIDHD1"><strong>Total</strong></span></td>
+<td><span data-block_type="tbn-txt">5.71</span></td>
+<td><span data-block_type="tbn-txt">27</span></td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table></div>
+<div data-block_type="sr-que-nl" id="corty3e-ch12-p411"><p>The critical value of <em>F</em> for each effect is 4.260. Eta squared for the row, column, and interaction effects, respectively, are 30.65%, 30.65%, and 11.03%. The <em>HSD</em> value for comparing cells is 0.39. Given all this information, write a four-point interpretation.</p></div>
+</div></div>
+<div data-type="box" data-block_type="sr-x-h" id="corty3e-ch12-bx5-1"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="corty3e-ch12-bx5-1">Application Demonstration</h3>
+<div data-block_type="sr-x-txt-ni" id="corty3e-ch12-p412"><p>The two examples offered in this chapter so far—Dr. Ballard’s caffeine/sleep deprivation study and Dr. Larue’s relationship satisfaction study—have both involved statistically significant results. Unfortunately, research doesn’t always turn out that way. Here’s an example of a two-way ANOVA study in which not one of the three null hypotheses is rejected. How are results interpreted in this situation?</p></div>
+<div data-block_type="sr-x-txt" id="corty3e-ch12-p413"><p>Imagine a sensory psychologist, Dr. Porter, who wanted to explore the threshold for perceiving low-frequency sounds. She tested six men and six women to see how low a sound they could perceive. Half the participants were tested in their left ears and half in their right ears. Sounds were measured in hertz (Hz), and the lower the hertz the better a person’s hearing. (Want to see how well you do? Search for “Ultimate Sound Test [10000 Hz–1 Hz]” on YouTube.)</p></div>
+<div data-block_type="page_start" id="corty3e_page_459"><p>459</p></div>
+<div data-block_type="sr-x-txt" id="corty3e-ch12-p415"><p><strong><span data-type="link" data-href="#corty3e-ch12-fig-58">Table 12.18</span></strong> and <strong><span data-type="link" data-href="#corty3e-ch12-fig-57">Figure 12.9</span></strong> show the results. There appears to be no interaction and slightly better performance exists (a) for women and (b) for the left ear. Whether the effects are statistically significant or can be explained by sampling error remains to be seen.</p></div>
+<div data-type="figure" data-figure-id="corty3e-ch12-fig-58" data-block_type="table" data-layout-align="center" data-layout-width="large" data-layout-border="true">
+
+<img id="" src="asset/ch12/corty3e_table12_18.jpg" data-figure-id="corty3e-ch12-fig-58" data-layout-width="large" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+</div>
+<div data-type="figure" data-figure-id="corty3e-ch12-fig-57" data-block_type="figure" data-layout-align="center" data-layout-width="medium" data-layout-border="true">
+
+<img id="" src="asset/ch12/corty3e_fig12_09.jpg" data-figure-id="corty3e-ch12-fig-57" data-layout-width="medium" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+<div data-type="figure_text">
+<span data-type="number">Figure 12.27: </span><span data-type="caption"><strong><span data-block_type="fig_num">Figure 12.9</span> Impact of Sex and Ear Tested on Lowest Frequency Perceived</strong> With the lines being parallel, there is no interaction between sex and ear tested. This graph also shows a slightly better performance by women and for the left ear.</span>
+</div>
+</div>
+<div data-block_type="sr-x-txt" id="corty3e-ch12-p416"><p>The appropriate statistical test to compare the four means from these two independent variables is a two-way ANOVA. The four groups are all independent samples, so the test is a between-subjects, two-way ANOVA, specifically a 2 × 2 ANOVA.</p></div>
+<div data-block_type="sr-x-txt" id="corty3e-ch12-p417"><p>No assumptions were violated and the ANOVA summary table is presented in <strong><span data-type="link" data-href="#corty3e-ch12-fig-59">Table 12.19</span></strong>. The critical value of <em>F</em> for all three effects was 5.318 and no effect was statistically significant.</p></div>
+<div data-type="figure" data-figure-id="corty3e-ch12-fig-59" data-block_type="table" data-layout-align="center" data-layout-width="large" data-layout-border="true">
+
+<img id="" src="asset/ch12/corty3e_table12_19.jpg" data-figure-id="corty3e-ch12-fig-59" data-layout-width="large" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+</div>
+<ul data-block_type="bullet" id="corty3e-ch12-list-44">
+<li><div data-block_type="sr-x-bl-first" id="corty3e-ch12-p418"><p>There is not enough evidence to conclude that men and women differ in their ability to hear low-frequency sounds.</p></div>
+</li>
+<li><div data-block_type="sr-x-bl-mid" id="corty3e-ch12-p419"><p>There is not enough evidence to conclude that the right ear differs from the left ear in its ability to hear low-frequency sounds.</p></div>
+</li>
+<li><div data-block_type="sr-x-bl-last" id="corty3e-ch12-p420"><p>There is not enough evidence to conclude that a person’s sex and which ear is tested interact to influence the perception of low-frequency sounds.</p></div>
+</li>
+</ul>
+<div data-block_type="page_start" id="corty3e_page_460"><p>460</p></div>
+<div data-block_type="sr-x-txt" id="corty3e-ch12-p422"><p>With no statistically significant effect, no need exists to do any post-hoc testing. A researcher would be wise, however, to calculate eta squared in order to consider the possibility of a Type II error, the possibility of having failed to find an effect that does occur.</p></div>
+<div data-block_type="sr-x-txt" id="corty3e-ch12-p423"><p>Applying <span data-type="link" data-href="#corty3e-ch12-bx6-3">Equation 12.3</span>, Dr. Porter finds</p></div>
+<div data-block_type="equation" id="corty3e-ch12-eqn-31"><p>
+<img id="" src="asset/ch12/corty3e_eqn11_460_01.jpg" data-figure-id="" data-layout-width="" data-mmtype="" alt="image"></p></div>
+<div data-block_type="equation" id="corty3e-ch12-eqn-32"><p>
+<img id="" src="asset/ch12/corty3e_eqn11_460_02.jpg" data-figure-id="" data-layout-width="" data-mmtype="" alt="image"></p></div>
+<div data-block_type="equation" id="corty3e-ch12-eqn-33"><p>
+<img id="" src="asset/ch12/corty3e_eqn11_460_03.jpg" data-figure-id="" data-layout-width="" data-mmtype="" alt="image"></p></div>
+<div data-block_type="sr-x-txt" id="corty3e-ch12-p424"><p>These results show that the row main effect, η<sup>2</sup> = 13.48%, is medium. The column main effect, η<sup>2</sup> = 3.37%, is small. There is no interaction effect. Not enough evidence exists to say that the row effect of sex—male vs. female—affects the perception of low frequencies, but there is enough of a hint here that Dr. Porter might want to draw attention to it. As always, looking at a picture of the effects, like that shown in <span data-type="link" data-href="#corty3e-ch12-fig-57">Figure 12.9</span>, helps to clarify what the effects were. Here’s her four-point interpretation:</p></div>
+<div data-block_type="page_start" id="corty3e_page_461"><p>461</p></div>
+<div data-block_type="sr_exp_txt_v1_ni" id="corty3e-ch12-p426"><p>A sensory psychologist conducted a study testing the ears (left vs. right) of both men and women to see if one ear or one sex had a lower threshold for low-frequency sounds. According to this study, there was not enough evidence to conclude that either one sex or one ear was better than the other at perceiving low-frequency sounds. However, the results suggested that women (<em>M</em> = 125.00 Hz) may have an edge over men (<em>M</em> = 145.00 Hz) in perceiving low-frequency sounds. To investigate this, it would be advisable to replicate the study with a larger sample size.</p></div>
+</div></div>
+</div>
+<!-- #x-digfir-subsection-insertion-point --><!-- #x-digfir-subsection-insertion-point --><!-- #x-digfir-subsection-insertion-point --><!-- #x-digfir-subsection-insertion-point --><!-- #x-digfir-subsection-insertion-point --></div><!-- /#manuscript -->
+<br class="clear" />
+<!-- end of material in original view -->
+
+	<!--[if IE]><script type="text/javascript" src="js/excanvas.compiled.js"></script><![endif]-->
+    
+<script type="text/javascript" src="js/utilities.js"></script>
+<script type="text/javascript" src="js/query_types.js"></script>
+<script type="text/javascript" src="js/player.js"></script>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/jquery-ui-1.8.16.custom.min.js"></script>
+<script type="text/javascript" src="js/jquery_extensions.js"></script>
+<script type="text/javascript" src="js/swfobject.js"></script>
+<script type="text/javascript" src="http://admin.brightcove.com/js/BrightcoveExperiences.js"></script>
+<script type="text/javascript" src="js/digfir_ebook_fw.js"></script>
+<script type="text/javascript" src="js/corty3e.js"></script>
+<script type="text/javascript" src="js/corty3e_ch12.js"></script>
+<script type="text/javascript">
+    //<!--
+    
+$(window).ready(function () {
+	player.initialize('56d62d49757a2e4546000005');
+});
+    //-->
+</script>
+</body>
+</html>
+

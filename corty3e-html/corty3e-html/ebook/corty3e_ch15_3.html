@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]> <html lang="en" class="no-js ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="no-js ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="no-js ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en" class="no-js ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+<head>
+    <title>corty3e_ch15</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <link href="css/boilerplate.css" media="screen" rel="stylesheet" type="text/css" >
+<link href="css/jquery-ui-custom.css" media="screen" rel="stylesheet" type="text/css" >
+<link href="css/manuscript.css" media="screen" rel="stylesheet" type="text/css" >
+<link href="css/digfir_ebook_fw.css" media="screen" rel="stylesheet" type="text/css" >
+<link href="css/corty3e.css" media="screen" rel="stylesheet" type="text/css" >
+<link href="css/corty3e_ch15.css" media="screen" rel="stylesheet" type="text/css" >    
+    
+    </head>
+<body class="noUi">
+<div id="manuscript" data-chapter-number="15">
+    <div data-type="section" data-block_type="h1" id="corty3e-ch15-sec1-2" level="1" data-print_page="568">
+<h2 class="section-title"><span data-type="title" data-title-for="corty3e-ch15-sec1-2"><span data-block_type="sec_num">15.2</span> <span data-block_type="sec_title">The Chi-Square Goodness-of-Fit Test</span>
+</span></h2>
+
+<div data-block_type="txt-ni" id="corty3e-ch15-p22"><p>The <span data-type="termref" data-term="chi-square goodness-of-fit test">chi-square goodness-of-fit test</span> is a nonparametric, single-sample test that can be used with a nominal dependent variable or a higher-level variable treated as categorical, such as turning actual scores on an exam into letter grades. This type of test is called a <span data-type="termref" data-term="single-sample test">single-sample test</span> because it compares the results from a single sample to a specific value, usually a population value. The chi-square goodness-of-fit test is the nonparametric version of the single-sample <em>z</em> test and single-sample <em>t</em> test.</p></div>
+<div data-block_type="txt" id="corty3e-ch15-p23"><p>Here’s an example of how the chi-square goodness-of-fit test might be used. Suppose a university administrator wants to survey a sample of students to get their opinion about a planned decrease in the intramural sports program. The administrator wants to make sure that the sample represents the university population, particularly in terms of gender. His sample is 59% female. From the registrar, he learns that 52% of the students at the university are female. A chi-square goodness-of-fit test could be used to compare the percentage of women in the sample to the percentage of women in the population. This allows the researcher to determine if obtaining a sample that is 59% female is a common occurrence if the population is 52% female. If it is a common occurrence, then he’ll decide that the sample may be representative of the population on this variable and he’ll be more likely to trust the results. If it is an uncommon occurrence, then the sample may be an odd one and its results unrepresentative.</p></div>
+<div data-block_type="txt" id="corty3e-ch15-p24"><p>To learn how to calculate and interpret the chi-square goodness-of-fit test, imagine this example from a small community where teenagers believe that the local police single them out more often than adult drivers for traffic stops. To investigate this, a traffic researcher, Dr. Koenig, randomly selected 72 tickets from all the tickets issued during a calendar year. As the age of the driver was recorded on each ticket, Dr. Koenig determined that 11 of the tickets went to teen drivers and 61 went to adults. The results are displayed in two cells, shown in <span data-type="link" data-href="#corty3e-ch15-fig-1"><strong>Table 15.1</strong></span>.</p></div>
+<div data-type="figure" data-figure-id="corty3e-ch15-fig-1" data-block_type="table" data-layout-align="center" data-layout-width="medium" data-layout-border="true">
+
+<img id="" src="asset/ch15/corty3e_table15_01.jpg" data-figure-id="corty3e-ch15-fig-1" data-layout-width="medium" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+</div>
+<div data-block_type="page_start" id="corty3e_page_569"><p>569</p></div>
+<div data-block_type="txt" id="corty3e-ch15-p25"><p>Teenagers received 11 of the 72 traffic tickets (15.28%) in the sample. Dr. Koenig found, from the Department of Motor Vehicles, that 8% of licensed drivers in the population of the town are teenagers. She reasoned that if teens were treated the same as adults, 8% of the traffic tickets should go to teens. Yet, the teens received more than 15% of the tickets. Do teens get more than their fair share of traffic tickets? Or, can the difference between what is expected (8%) and what is observed (15.28%) be explained by sampling error?</p></div>
+<div data-block_type="h4" id="corty3e-ch15-p26"><p><span data-block_type="h4-n-ri"><strong>Step 1</strong></span> <strong>Pick a Test</strong></p></div>
+<div data-block_type="txt-ni" id="corty3e-ch15-p27"><p>This scenario calls for a single-sample test because a sample value, 15.28%, is being compared to a specific value, 8%. It may seem as if there are two samples (a sample of teens and a sample of adults), but it is just one sample (a sample of ticketed drivers) where the age status of each case is being measured (teen or adult) as the outcome variable. The outcome variable (the category of who gets a ticket, teen or adult) is a nominal-level variable, so the appropriate test is a chi-square goodness-of-fit test. Goodness-of-fit is abbreviated GOF.</p></div>
+<div data-type="figure" data-figure-id="corty3e-ch15-fig-2" data-block_type="un_figure" data-layout-align="right" data-layout-width="medium" data-layout-border="true">
+
+<img id="" src="asset/ch15/corty3e_fig15_un01.jpg" data-figure-id="corty3e-ch15-fig-2" data-layout-width="medium" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+<div data-type="figure_text"><span data-type="caption">“<strong>T</strong>om <strong>a</strong>nd <strong>H</strong>arry <strong>d</strong>espise <strong>c</strong>rabby <strong>i</strong>nfants” is the mnemonic for the six steps of hypothesis testing for a chi-square goodness-of-fit test: (1) Pick the <strong>test,</strong> (2) check the <strong>assumptions,</strong> (3) list the <strong>hypotheses,</strong> (4) set the <strong>decision rule,</strong> (5) <strong>calculate</strong> the test statistic, and (6) <strong>interpret</strong> the results.</span></div>
+</div>
+<div data-block_type="h4" id="corty3e-ch15-p28"><p><span data-block_type="h4-n-ri"><strong>Step 2</strong></span> <strong>Check the Assumptions</strong></p></div>
+<div data-block_type="txt-ni" id="corty3e-ch15-p29"><p>The chi-square goodness-of-fit test has three assumptions:</p></div>
+<ol data-block_type="numbered" id="corty3e-ch15-list-3">
+<li><div data-block_type="nl-first" id="corty3e-ch15-p30"><p><em>Random sample</em>. The sample should be a random sample from the population. This is a robust assumption, so it can be—and usually is—violated. As with parametric tests, if the random sample assumption is violated, then the researcher needs to be careful about generalizing the results from the sample. For the ticket data, there is a random sample of tickets, so the first assumption is not violated. But, the sample is only from tickets given in this town, so generalizability is limited.</p></div>
+</li>
+<li><div data-block_type="nl-mid" id="corty3e-ch15-p31"><p><em>Independence of observations</em>. The cases in the sample should be independent of each other. This means that the observations don’t influence each other. This assumption is not robust, so one can’t proceed with the planned test if it is violated. With the ticket data, random sampling was used, so the cases within the sample aren’t connected to each other. In addition, no case was in the sample more than once. The independence of observations assumption is not violated.</p></div>
+</li>
+<li><div data-block_type="nl-last" id="corty3e-ch15-p32"><p><em>Expected frequencies</em>. In order to conduct a chi-square test, all cells must have expected frequencies of at least 5. The chi-square test only works if there are enough cases in each cell. We will cover the method for calculating expected frequencies later in this chapter. Just know that the expected frequencies assumption is not robust, so the chi-square can’t be calculated if each cell doesn’t have enough cases. (For this example, expected frequencies will be large enough and this assumption isn’t violated.)</p></div>
+</li>
+</ol>
+<div data-block_type="page_start" id="corty3e_page_570"><p>570</p></div>
+<div data-block_type="h4" id="corty3e-ch15-p33"><p><span data-block_type="h4-n-ri"><strong>Step 3</strong></span> <strong>List the Hypotheses</strong></p></div>
+<div data-block_type="txt-ni" id="corty3e-ch15-p34"><p>The hypotheses for the chi-square goodness-of-fit test are easier to express in words than in mathematical symbols:</p></div>
+<ul data-block_type="bullet" id="corty3e-ch15-list-4">
+<li><div data-block_type="bl-first" id="corty3e-ch15-p35"><p>The null hypothesis states that the proportion of each category in the population matches specified values. This means that since the sample comes from the population, the proportions in the sample should match the specified values. But, as sampling error exists, one shouldn’t expect the sample to match the specified values exactly.</p></div>
+</li>
+<li><div data-block_type="bl-mid" id="corty3e-ch15-p36"><p>The alternative hypothesis says that the distribution of the characteristic in the population is different from the specified values. The alternative hypothesis means that the difference between the percentages in the sample and the specified values is too large to be explained by sampling error.</p></div>
+</li>
+</ul>
+<div data-block_type="eq" id="corty3e-ch15-p37"><p><em>H</em><sub>0</sub>: In the population, the percentage of tickets received by teenage drivers = 8%.</p></div>
+<div data-block_type="eq" id="corty3e-ch15-p38"><p><em>H</em><sub>1</sub>: In the population, the percentage of tickets received by teenage drivers ≠ 8%.</p></div>
+<div data-block_type="h4" id="corty3e-ch15-p39"><p><span data-block_type="h4-n-ri"><strong>Step 4</strong></span> <strong>Set the Decision Rule</strong></p></div>
+<div data-block_type="txt-ni" id="corty3e-ch15-p40"><p>The decision rule for a chi-square goodness-of-fit test follows the same format as the decision rules for <em>z,</em> <em>t,</em> <em>F,</em> and <em>r:</em></p></div>
+<ul data-block_type="bullet" id="corty3e-ch15-list-5">
+<li><div data-block_type="bl-first" id="corty3e-ch15-p41"><p>Find the critical value of chi-square, χ<sup>2</sup><sub>cv </sub><sup>,</sup> using a table of critical values of chi-square (<span data-type="link" data-href="corty3e-appendix01.xml#corty3e-app1-fig-26">Appendix Table 9</span>).</p></div>
+<ul data-block_type="bluebullet" id="corty3e-ch15-list-6">
+<li><div data-block_type="bl_lvl2" id="corty3e-ch15-p42"><p>The critical value is the value that separates the rare zone from the common zone in the sampling distribution of chi-square.</p></div>
+</li>
+<li><div data-block_type="bl_lvl2" id="corty3e-ch15-p43"><p>The sampling distribution of chi-square is the distribution of chi-square values that would occur if the null hypothesis were true.</p></div>
+</li>
+</ul>
+</li>
+<li><div data-block_type="bl-first" id="corty3e-ch15-p44"><p>Compare χ<sup>2</sup>, the observed value of the chi-square statistic to χ<sup>2</sup><sub>cv</sub><sup>.</sup></p></div>
+<ul data-block_type="bluebullet" id="corty3e-ch15-list-7">
+<li><div data-block_type="bl_lvl2" id="corty3e-ch15-p45"><p>If χ<sup>2</sup> ≥ χ<sup>2</sup><sub>cv </sub><sup>,</sup> then the observed value of chi-square falls in the rare zone, and reject the null hypothesis.</p></div>
+</li>
+<li><div data-block_type="bl_lvl2" id="corty3e-ch15-p46"><p>If χ<sup>2</sup> &lt; χ<sup>2</sup><sub>cv </sub><sup>,</sup> then the observed value of chi-square falls in the common zone, so fail to reject the null hypothesis.</p></div>
+</li>
+</ul>
+</li>
+</ul>
+<div data-block_type="txt" id="corty3e-ch15-p47"><p>A portion of <span data-type="link" data-href="corty3e-appendix01.xml#corty3e-app1-fig-26">Appendix Table 9</span>, the table of critical values of chi-square, is shown in <span data-type="link" data-href="#corty3e-ch15-fig-3"><strong>Table 15.2</strong></span>. There are three characteristics to note about the table of critical values of chi-square:</p></div>
+<div data-type="figure" data-figure-id="corty3e-ch15-fig-3" data-block_type="table" data-layout-align="center" data-layout-width="medium" data-layout-border="true">
+
+<img id="" src="asset/ch15/corty3e_table15_02.jpg" data-figure-id="corty3e-ch15-fig-3" data-layout-width="medium" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+</div>
+<ol data-block_type="numbered" id="corty3e-ch15-list-8">
+<li><div data-block_type="nl-first" id="corty3e-ch15-p48"><p>The chi-square is always a two-tailed test. Because chi-square is calculated using squared values, it is always positive. If the results are statistically significant, the researcher will need to look at the direction of the difference in the sample to figure out the direction of the difference in the population.</p></div>
+</li>
+<li><div data-block_type="nl-mid" id="corty3e-ch15-p49"><p>There are three alpha levels: .01, .05, and .10. The alpha level most commonly used, the column where α = .05, appears in bold. That alpha level represents a 5% chance of making a Type I error. (Type I error occurs when the null hypothesis is rejected by mistake.)</p></div>
+</li>
+<li><div data-block_type="nl-last" id="corty3e-ch15-p50"><p>The critical value of chi-square also depends on how many degrees of freedom there are. Each row in the table of critical values represents a different number of degrees of freedom. The critical value of chi-square is found at the intersection of the column for the desired alpha level with the row for the correct number of degrees of freedom.</p></div>
+</li>
+</ol>
+<div data-block_type="page_start" id="corty3e_page_571"><p>571</p></div>
+<div data-block_type="txt-ni" id="corty3e-ch15-p51"><p>The next step is to find the degrees of freedom, which can be calculated using <span data-type="link" data-href="#corty3e-ch15-bx6-1">Equation 15.1</span>.</p></div>
+<div data-type="box" data-block_type="eq-t" id="corty3e-ch15-bx6-1"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="corty3e-ch15-bx6-1"><span data-block_type="sec_num">Equation 15.1</span> <span data-block_type="sec_title">Degrees of Freedom for a Chi-Square Goodness-of-fit Test</span>
+</h3>
+
+<div data-block_type="eq" id="corty3e-ch15-p52"><p><em>df</em> = <em>k</em> – 1</p></div>
+<div data-block_type="eq-txt-ni" id="corty3e-ch15-p53"><p>where <em>df</em> = degrees of freedom</p></div>
+<div data-block_type="eq-unl" id="corty3e-ch15-p54"><p><em>k</em> = number of categories</p></div>
+</div></div>
+<div data-block_type="txt" id="corty3e-ch15-p55"><p><span data-type="link" data-href="#corty3e-ch15-bx6-1">Equation 15.1</span> says to calculate degrees of freedom (<em>df</em>) for a chi-square goodness-of-fit test as the number of categories, <em>k,</em> minus 1. For the ticket data, the variable is age of drivers and it has two categories—adults and teens. This can be seen in the two cells in <span data-type="link" data-href="#corty3e-ch15-fig-1">Table 15.1</span>. With <em>k</em> = 2, degrees of freedom is calculated as follows:</p></div>
+<div data-block_type="eq" id="corty3e-ch15-p56"><p><em>df</em> = <em>k</em> – 1</p></div>
+<div data-block_type="eq" id="corty3e-ch15-p57"><p>= 2 – 1</p></div>
+<div data-block_type="eq" id="corty3e-ch15-p58"><p>= 1</p></div>
+<div data-block_type="txt" id="corty3e-ch15-p59"><p>Dr. Koenig is willing to have a 5% chance of making a Type I error, so she sets alpha at .05. Looking in the table of critical values of chi-square at the intersection of the row with α = .05 and the row with <em>df</em> = 1, she finds χ<sup>2</sup><sub>cv</sub> = 3.841. The sampling distribution of chi-square, with the rare and common zones marked, is seen in <span data-type="link" data-href="#corty3e-ch15-fig-4"><strong>Figure 15.1</strong></span>.</p></div>
+<div data-type="figure" data-figure-id="corty3e-ch15-fig-4" data-block_type="figure" data-layout-align="center" data-layout-width="medium" data-layout-border="true">
+
+<img id="" src="asset/ch15/corty3e_fig15_01.jpg" data-figure-id="corty3e-ch15-fig-4" data-layout-width="medium" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+<div data-type="figure_text">
+<span data-type="number">Figure 15.3: </span><span data-type="caption"><strong><span data-block_type="fig_num">Figure 15.1</span> Sampling Distribution of Chi-Square with 1 Degree of Freedom</strong> When <em>df</em> = 1, the critical value of chi-square is 3.841 if α = .05.</span>
+</div>
+</div>
+<div data-block_type="txt" id="corty3e-ch15-p60"><p>Now that χ<sup>2</sup><sub>cv</sub> is known, the decision rule can be written:</p></div>
+<ul data-block_type="bullet" id="corty3e-ch15-list-9">
+<li><div data-block_type="bl-first" id="corty3e-ch15-p61"><p>If χ<sup>2</sup> ≥ 3.841, reject <em>H</em><sub>0</sub>.</p></div>
+</li>
+<li><div data-block_type="bl-last" id="corty3e-ch15-p62"><p>If χ<sup>2</sup> &lt; 3.841, fail to reject <em>H</em><sub>0</sub>.</p></div>
+</li>
+</ul>
+<div data-block_type="page_start" id="corty3e_page_572"><p>572</p></div>
+<div data-block_type="h4" id="corty3e-ch15-p63"><p><span data-block_type="h4-n-ri"><strong>Step 5</strong></span> <strong>Calculate the Test Statistic</strong></p></div>
+<div data-block_type="txt-ni" id="corty3e-ch15-p64"><p>Calculating the test statistic, χ<sup>2</sup>, involves comparing the <em>observed</em> frequency of each category of the dependent variable in the sample to the frequency that would be <em>expected</em> if the null hypothesis were true:</p></div>
+<ul data-block_type="bullet" id="corty3e-ch15-list-10">
+<li><div data-block_type="bl-first" id="corty3e-ch15-p65"><p>If the differences between observed and expected are small enough to be accounted for by sampling error, then the χ<sup>2</sup> value will be small, it will land in the common zone of the sampling distribution, and the null hypothesis won’t be rejected.</p></div>
+</li>
+<li><div data-block_type="bl-last" id="corty3e-ch15-p66"><p>If the differences between observed and expected are too large to be accounted for by sampling error, then the χ<sup>2</sup> value will be large, it will land in the rare zone, and the null hypothesis will be rejected.</p></div>
+</li>
+</ul>
+<div data-block_type="txt" id="corty3e-ch15-p67"><p>In order to calculate chi-square, one needs to know the observed frequency for each category and the expected frequency for each category. In <span data-type="link" data-href="corty3e-ch02.xml">Chapter 2</span>, <em>f</em> was introduced as the abbreviation for frequency. Now <em>f</em><sub>Observed</sub> will be used as the abbreviation for observed frequency and <em>f</em><sub>Expected</sub> for expected frequency.</p></div>
+<div data-block_type="txt" id="corty3e-ch15-p68"><p>The observed frequencies for each cell (category) of the dependent variable in the sample are already known—there were 11 teens with tickets and 61 adults with tickets. Those are the observed frequencies and <span data-type="link" data-href="#corty3e-ch15-fig-5"><strong>Table 15.3</strong></span> organizes them with each observed frequency in a cell.</p></div>
+<div data-type="figure" data-figure-id="corty3e-ch15-fig-5" data-block_type="table" data-layout-align="center" data-layout-width="medium" data-layout-border="true">
+
+<img id="" src="asset/ch15/corty3e_table15_03.jpg" data-figure-id="corty3e-ch15-fig-5" data-layout-width="medium" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+</div>
+<div data-block_type="txt" id="corty3e-ch15-p69"><p>The next step is to calculate the expected frequencies for each cell. It is already known that 8% of drivers are teens. The total percentage of drivers is 100%. So, 100% – 8%, or 92%, of drivers must be adults. These two percentages, 8% for teens and 92% for adults, are the expected <em>percentages,</em> abbreviated %<sub>Expected</sub>, for the two cells. If the null hypothesis is true, one would expect that 8% of tickets would go to teens and 92% to adults. These expected percentages are used to calculate the expected frequencies, as shown in <span data-type="link" data-href="#corty3e-ch15-bx6-2">Equation 15.2</span>.</p></div>
+<div data-block_type="page_start" id="corty3e_page_573"><p>573</p></div>
+<div data-type="box" data-block_type="eq-t" id="corty3e-ch15-bx6-2"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="corty3e-ch15-bx6-2"><span data-block_type="sec_num">Equation 15.2</span> <span data-block_type="sec_title">Formula for Calculating Expected Frequency</span>
+</h3>
+
+<div data-block_type="equation" id="corty3e-ch15-eqn-1"><p>
+<img id="" src="asset/ch15/corty3e_eqn15_573_01.jpg" data-figure-id="" data-layout-width="" data-mmtype="" alt="image"></p></div>
+<div data-block_type="eq-txt-ni" id="corty3e-ch15-p70"><p>where <em>f</em><sub>Expected</sub> = expected frequency for a cell/category</p></div>
+<div data-block_type="eq-unl" id="corty3e-ch15-p71"><p>%<sub>Expected</sub> = expected percentage for a cell/category</p></div>
+<div data-block_type="eq-unl" id="corty3e-ch15-p72"><p><em>N</em> = total number of cases in the sample</p></div>
+</div></div>
+<div data-block_type="txt" id="corty3e-ch15-p73"><p>To calculate the expected frequency of traffic tickets for teenagers in this sample where %<sub>Expected</sub> = 8% and <em>N</em> = 72, Dr. Koenig uses <span data-type="link" data-href="#corty3e-ch15-bx6-2">Equation 15.2</span>:</p></div>
+<div data-block_type="equation" id="corty3e-ch15-eqn-2"><p>
+<img id="" src="asset/ch15/corty3e_eqn15_573_02.jpg" data-figure-id="" data-layout-width="" data-mmtype="" alt="image"></p></div>
+<div data-block_type="txt" id="corty3e-ch15-p74"><p>This means that if the null hypothesis were true and teens received their fair share of the tickets, which is 8%, one would expect 5.76 of these 72 tickets to have been issued to teenagers. Don’t be bothered by the fact that there are fractional tickets. Expected frequencies don’t have to be whole numbers.</p></div>
+<div data-block_type="txt" id="corty3e-ch15-p75"><p><span data-type="link" data-href="#corty3e-ch15-bx6-2">Equation 15.2</span> is also used by Dr. Koenig to calculate the expected frequency for adult tickets. The sample size, <em>N,</em> is still 72, but the expected percentage is now 92%:</p></div>
+<div data-block_type="equation" id="corty3e-ch15-eqn-3"><p>
+<img id="" src="asset/ch15/corty3e_eqn15_573_03.jpg" data-figure-id="" data-layout-width="" data-mmtype="" alt="image"></p></div>
+<div data-block_type="txt" id="corty3e-ch15-p76"><p>If the null hypothesis were true, one would expect the vast majority of the 72 tickets in the sample, 66.24, to go to adults. Only 5.76 are expected to go to teens. <span data-type="link" data-href="#corty3e-ch15-fig-9"><strong>Table 15.4</strong></span> shows the observed frequencies and the expected frequencies. Note that all expected frequencies are greater than 5, so the third assumption was not violated.</p></div>
+<div data-type="figure" data-figure-id="corty3e-ch15-fig-9" data-block_type="table" data-layout-align="center" data-layout-width="medium" data-layout-border="true">
+
+<img id="" src="asset/ch15/corty3e_table15_04.jpg" data-figure-id="corty3e-ch15-fig-9" data-layout-width="medium" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+</div>
+<div data-block_type="page_start" id="corty3e_page_574"><p>574</p></div>
+<div data-block_type="txt" id="corty3e-ch15-p77"><p>Notice something interesting in <span data-type="link" data-href="#corty3e-ch15-fig-9">Table 15.4</span>. If the expected frequencies for all the categories are added up, the total is the same as the original sample size: 5.76 + 66.24 = 72.00. This will always be the case and is a good way to check that the math was done correctly in calculating expected frequencies.</p></div>
+<div data-type="box" data-block_type="bx-1-h" id="corty3e-ch15-bx1-1"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="corty3e-ch15-bx1-1">A Common Question</h3>
+<div data-block_type="bx1-que" id="corty3e-ch15-p78"><p><strong>Q</strong> Do I have to use <span data-type="link" data-href="#corty3e-ch15-bx6-2">Equation 15.2</span> to calculate expected frequencies for each cell?</p></div>
+<div data-block_type="bx1-ans" id="corty3e-ch15-p79"><p><strong>A</strong> No. You can take advantage of the fact that the expected frequencies add up to <em>N</em> and only calculate expected frequencies for as many categories as there are degrees of freedom. Then subtract the calculated frequencies from <em>N</em> to find the missing frequency.</p></div>
+</div></div>
+<div data-block_type="txt" id="corty3e-ch15-p80"><p>Now that the observed frequencies and expected frequencies are known, they will be used to calculate the test statistic, chi-square. The formula for chi-square is shown in <span data-type="link" data-href="#corty3e-ch15-bx6-3">Equation 15.3</span>.</p></div>
+<div data-type="box" data-block_type="eq-t" id="corty3e-ch15-bx6-3"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="corty3e-ch15-bx6-3"><span data-block_type="sec_num">Equation 15.3</span> <span data-block_type="sec_title">Formula for Calculating Chi-Square (χ2)</span>
+</h3>
+
+<div data-block_type="equation" id="corty3e-ch15-eqn-4"><p>
+<img id="" src="asset/ch15/corty3e_eqn15_574_01.jpg" data-figure-id="" data-layout-width="" data-mmtype="" alt="image"></p></div>
+<div data-block_type="eq-txt-ni" id="corty3e-ch15-p81"><p>where χ<sup>2</sup> = chi-square value</p></div>
+<div data-block_type="eq-unl" id="corty3e-ch15-p82"><p><em>f</em><sub>Observed</sub> = observed frequency for a cell/category</p></div>
+<div data-block_type="eq-unl" id="corty3e-ch15-p83"><p><em>f</em><sub>Expected</sub> = expected frequency for a cell/category</p></div>
+</div></div>
+<div data-block_type="txt" id="corty3e-ch15-p84"><p>To use <span data-type="link" data-href="#corty3e-ch15-bx6-3">Equation 15.3</span> to calculate chi-square, follow these four steps:</p></div>
+<ol data-block_type="numbered" id="corty3e-ch15-list-11">
+<li><div data-block_type="nl-first" id="corty3e-ch15-p85"><p>For each cell/category, subtract the expected frequency from the observed frequency.</p></div>
+</li>
+<li><div data-block_type="nl-mid" id="corty3e-ch15-p86"><p>Square each difference.</p></div>
+</li>
+<li><div data-block_type="nl-mid" id="corty3e-ch15-p87"><p>Divide each squared difference by its respective expected frequency to yield a quotient.</p></div>
+</li>
+<li><div data-block_type="nl-last" id="corty3e-ch15-p88"><p>Sum all the quotients to obtain the chi-square value.</p></div>
+</li>
+</ol>
+<div data-block_type="page_start" id="corty3e_page_575"><p>575</p></div>
+<div data-block_type="txt-ni" id="corty3e-ch15-p89"><p>Here are the calculations for the ticket data, where it is found that χ<sup>2</sup> = 5.18:</p></div>
+<div data-block_type="equation" id="corty3e-ch15-eqn-5"><p>
+<img id="" src="asset/ch15/corty3e_eqn15_575_01.jpg" data-figure-id="" data-layout-width="" data-mmtype="" alt="image"></p></div>
+<div data-block_type="h4" id="corty3e-ch15-p90"><p><span data-block_type="h4-n-ri"><strong>Step 6</strong></span> <strong>Interpret the Results</strong></p></div>
+<div data-block_type="txt-ni" id="corty3e-ch15-p91"><p>In interpreting the results of a chi-square goodness-of-fit test, there are two questions to be addressed: (1) Was the null hypothesis rejected? (2) If so, what is the direction of the results?</p></div>
+</div>
+    <div data-type="section" data-block_type="h2" id="corty3e-ch15-sec2-1" level="2" data-print_page="575">
+<h2 class="section-title"><span data-type="title" data-title-for="corty3e-ch15-sec2-1">Was the Null Hypothesis Rejected?
+</span></h2>
+
+<div data-block_type="txt-ni" id="corty3e-ch15-p92"><p>To answer this question, refer back to the decision rule generated in Step 4. Decide which of the two decision rules is true:</p></div>
+<ul data-block_type="bullet" id="corty3e-ch15-list-12">
+<li><div data-block_type="bl-first" id="corty3e-ch15-p93"><p>Is 5.18 ≥ 3.841? If so, reject <em>H</em><sub>0</sub> and call the results statistically significant.</p></div>
+</li>
+<li><div data-block_type="bl-last" id="corty3e-ch15-p94"><p>Is 5.18 &lt; 3.841? If so, fail to reject <em>H</em><sub>0</sub> and call the results not statistically significant.</p></div>
+</li>
+</ul>
+<div data-block_type="txt" id="corty3e-ch15-p95"><p>With the ticket data, the chi-square value (5.18) is greater than the critical value (3.841), so the first statement is true and the null hypothesis is rejected. This means the difference between the percentages observed in the sample and those found in the population is statistically significant. The differences are too large to be explained by sampling error, so we conclude that the distribution of the dependent variable in the population differs from the specified value in the null hypothesis. Here, this means that the percentage of tickets issued to teens in the population is probably not 8%.</p></div>
+<div data-block_type="txt" id="corty3e-ch15-p96"><p>Writing results in APA format for chi-square calls for six pieces of information: (1) what test was done, (2) how many degrees of freedom there were, (3) what the sample size was, (4) what the value of the test statistic was, (5) what alpha level was selected, and (6) whether the null hypothesis was rejected. For the traffic ticket data, Dr. Koenig would write</p></div>
+<div data-block_type="eq" id="corty3e-ch15-p97"><p>χ<sup>2</sup>(1, <em>N</em> = 72) = 5.18, <em>p</em> &lt; .05</p></div>
+<ol data-block_type="numbered" id="corty3e-ch15-list-13">
+<li><div data-block_type="nl-first" id="corty3e-ch15-p98"><p>χ<sup>2</sup> reveals that the test statistic is a chi-square value.</p></div>
+</li>
+<li><div data-block_type="nl-mid" id="corty3e-ch15-p99"><p>The 1 in the parentheses states the degrees of freedom.</p></div>
+</li>
+<li><div data-block_type="nl-mid" id="corty3e-ch15-p100"><p><em>N</em> = 72 gives the sample size.</p></div>
+</li>
+<li><div data-block_type="nl-mid" id="corty3e-ch15-p101"><p>5.18 is the value of the test statistic that was calculated.</p></div>
+<div data-block_type="page_start" id="corty3e_page_576"><p>576</p></div>
+</li>
+<li><div data-block_type="nl-mid" id="corty3e-ch15-p102"><p>.05 indicates that alpha was set at the .05 level.</p></div>
+</li>
+<li><div data-block_type="nl-last" id="corty3e-ch15-p103"><p><em>p</em> &lt; .05 says that the null hypothesis was rejected and that the value of the test statistic (5.18) is a rare one if the null hypothesis is true.</p></div>
+</li>
+</ol>
+</div>
+    <div data-type="section" data-block_type="h2" id="corty3e-ch15-sec2-2" level="2" data-print_page="576">
+<h2 class="section-title"><span data-type="title" data-title-for="corty3e-ch15-sec2-2">What Is the Direction of the Results?
+</span></h2>
+
+<div data-block_type="txt-ni" id="corty3e-ch15-p104"><p>If the results were statistically significant, the researcher needs to comment on the direction of the difference. This can be done by comparing what was observed to what was expected. If the results were not statistically significant, then there’s not enough evidence to say a difference exists so there’s no need to worry about the direction of the difference.</p></div>
+<div data-block_type="txt" id="corty3e-ch15-p105"><p>With the traffic ticket data, there are just two categories, so it is easy to tell the direction of the difference. Teenagers account for 8% of the drivers, but they received 15.28% of the tickets. The researcher can say that 15.28% is statistically higher than 8%. Dr. Koenig can conclude that teens in this town get statistically significantly more tickets than expected for the number of teens who are drivers.</p></div>
+</div>
+    <div data-type="section" data-block_type="h2" id="corty3e-ch15-sec2-3" level="2" data-print_page="576">
+<h2 class="section-title"><span data-type="title" data-title-for="corty3e-ch15-sec2-3">Putting It All Together
+</span></h2>
+
+<div data-block_type="txt-ni" id="corty3e-ch15-p106"><p>A four-point interpretation (What was done? What was found? What does it mean? What suggestions are there for future research?) can be completed for a chi-square goodness-of-fit test. Here’s an interpretation for the traffic ticket data:</p></div>
+<div data-block_type="txt_v1_ni" id="corty3e-ch15-p107"><p>A traffic researcher analyzed a sample of traffic tickets from a town in order to determine if teen drivers received proportionally more tickets than adult drivers. 8% of the drivers in the town were teens, but 15.28% of traffic tickets issued went to teens. The difference was statistically significant [χ<sup>2</sup>(1, <em>N</em> = 72) = 5.18, <em>p</em> &lt; .05]. Teenage drivers in this town get more than their fair share of traffic tickets, almost twice as many as expected. Future research should extend the study to other municipalities. It would also be worthwhile to explore whether the over-ticketing of teen drivers is deserved because they are worse drivers or because they are being unfairly targeted by the police.</p></div>
+<div data-type="box" data-block_type="sr-exp-n" id="corty3e-ch15-bx3-1"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="corty3e-ch15-bx3-1">Worked Example 15.1</h3>
+<div data-block_type="sr_exp_txt_ni" id="corty3e-ch15-p108"><p>Here’s another example for a chi-square goodness-of-fit test. Courtney had not done well in intro psych and tried to make the case that the instructor, Dr. Wald, was an unfairly harsh grader. As evidence, she counted the number of A’s, B’s, C’s, D’s, and F’s given as final grades for the 84 students in Dr. Wald’s two sections of intro psych (<span data-type="link" data-href="#corty3e-ch15-fig-12"><strong>Table 15.5</strong></span>). Courtney then found out, from the registrar, the percentages of A’s, B’s, C’s, D’s, and F’s given in all other sections of intro psych that semester. In this table, D’s and F’s are combined into one category for reasons that will be explained shortly. This distribution, the information from the registrar, is shown in gray in <span data-type="link" data-href="#corty3e-ch15-fig-13"><strong>Figure 15.2</strong></span>. Courtney then transformed the distribution of grades for Dr. Wald’s two sections of intro psych into percentages, shown in dark blue in <span data-type="link" data-href="#corty3e-ch15-fig-13">Figure 15.2</span>. As Courtney complained to the school dean, “It is clear in my graph—Professor Wald gives fewer A’s and B’s than the other instructors, but more C’s and more D’s and F’s. Dr. Wald is a harsh and unfair grader.” Is he? To try to clear his name, Dr. Wald is going to need a statistical test.</p></div>
+<div data-type="figure" data-figure-id="corty3e-ch15-fig-12" data-block_type="table" data-layout-align="center" data-layout-width="large" data-layout-border="true">
+
+<img id="" src="asset/ch15/corty3e_table15_05.jpg" data-figure-id="corty3e-ch15-fig-12" data-layout-width="large" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+</div>
+<div data-type="figure" data-figure-id="corty3e-ch15-fig-13" data-block_type="figure" data-layout-align="center" data-layout-width="medium" data-layout-border="true">
+
+<img id="" src="asset/ch15/corty3e_fig15_02.jpg" data-figure-id="corty3e-ch15-fig-13" data-layout-width="medium" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+<div data-type="figure_text">
+<span data-type="number">Figure 15.7: </span><span data-type="caption"><strong><span data-block_type="fig_num">Figure 15.2</span> Final Grades in Professor Wald’s Intro Psych Classes Compared to All Intro Psych Instructors</strong> Professor Wald gives fewer high grades and more low grades than do the other instructors. Is the difference a statistically significant one? Or, is it explained by normal variability in sampling?</span>
+</div>
+</div>
+<div data-block_type="page_start" id="corty3e_page_577"><p>577</p></div>
+<div data-block_type="sr_exp_h4_txt" id="corty3e-ch15-p109"><p><span data-block_type="h4-n-ri"><strong>Step 1</strong></span> <strong>Pick a Test.</strong> The question being asked is whether the distribution of grades in Dr. Wald’s class is different from the distribution in the larger population. In other words, is the difference between his classes and those of the other professors small enough to be due to the random error associated with sampling? A chi-square goodness-of-fit test addresses this question. Here, letter grades, which are ordinal, are treated as categorical. The appropriateness of this will become clear when two grade categories are merged into one.</p></div>
+<div data-block_type="sr_exp_h4_txt" id="corty3e-ch15-p110"><p><span data-block_type="h4-n-ri"><strong>Step 2</strong></span> <strong>Check the Assumptions.</strong> The three assumptions for a chi-square goodness-of-fit test are (1) random sample, (2) independence of observations, and (3) adequate expected frequencies:</p></div>
+<ol data-block_type="numbered" id="corty3e-ch15-list-14">
+<li><div data-block_type="sr_exp_nl" id="corty3e-ch15-p111"><p><em>Random sample</em>. With this example, the importance of the random sample assumption is crystal clear. Comparing this sample of grades from two sections to the larger population only makes sense if these two sections have students similar to the students in the other sections. If, for example, both of Dr. Wald’s sections were 8 <span data-block_type="small">A.M.</span> sections, it is possible that the students who register for an early morning section differ from those who register for classes that meet at a more reasonable time.</p></div>
+<div data-block_type="page_start" id="corty3e_page_578"><p>578</p></div>
+<div data-block_type="sr_exp_nl" id="corty3e-ch15-p112"><p>The ideal scenario, from an experimenter’s standpoint, would be that students indicate a desire to take intro psych and then are randomly assigned to sections. But, of course, that didn’t happen, so the random samples assumption is violated. The objective of the assumption, though, is to study a sample that is representative of the population. When the random samples assumption is violated, a researcher can proceed with the study if he or she makes the case that the sample is representative. As there was nothing unusual about his two sections, Dr. Wald is willing to continue with the chi-square goodness-of-fit test.</p></div>
+</li>
+<li><div data-block_type="sr_exp_nl" id="corty3e-ch15-p113"><p><em>Independence of observations</em>. The independence of observations assumption is not violated as each student was in only one section.</p></div>
+</li>
+<li><div data-block_type="sr_exp_nl" id="corty3e-ch15-p114"><p><em>Adequate expected frequencies</em>. All cells must have expected frequencies of at least 5. As will be seen later, each cell has an expected frequency greater than 5, so this assumption is not violated. To achieve this, Dr. Wald put together the small number of D’s and F’s in one cell.</p></div>
+</li>
+</ol>
+<div data-block_type="sr_exp_h4_txt" id="corty3e-ch15-p115"><p><span data-block_type="h4-n-ri"><strong>Step 3</strong></span> <strong>List the Hypotheses.</strong> The null hypothesis will state that the distribution of outcomes in the population is the same as is specified. The alternative hypothesis will state that the distribution of outcomes in the population is different from the specified values. The specified values, as percentages, are found in <span data-type="link" data-href="#corty3e-ch15-fig-12">Table 15.5</span>.</p></div>
+<div data-block_type="sr-exp-eq" id="corty3e-ch15-p116"><p><em>H</em><sub>0</sub>: In the population, the distribution of A’s, B’s, C’s, and D’s/F’s is, respectively, 19%, 33%, 42%, and 6%.</p></div>
+<div data-block_type="sr-exp-eq" id="corty3e-ch15-p117"><p><em>H</em><sub>1</sub>: In the population, the distribution of A’s, B’s, C’s, and D’s/F’s is not, respectively, 19%, 33%, 42%, and 6%.</p></div>
+<div data-block_type="sr_exp_h4_txt" id="corty3e-ch15-p118"><p><span data-block_type="h4-n-ri"><strong>Step 4</strong></span> <strong>Set the Decision Rule.</strong> Finding the critical value of chi-square depends on what is set as an acceptable risk of Type I error and the number of degrees of freedom. Dr. Wald follows the convention for Type I error and uses α = .05. Degrees of freedom are calculated with <span data-type="link" data-href="#corty3e-ch15-bx6-1">Equation 15.1</span>, which involves knowing <em>k,</em> the number of categories of outcome that are possible. There are four categories for grades (A, B, C, and D or F), so <em>k</em> = 4. To calculate degrees of freedom, apply <span data-type="link" data-href="#corty3e-ch15-bx6-1">Equation 15.1</span>:</p></div>
+<div data-block_type="sr-exp-eq" id="corty3e-ch15-p119"><p><em>df</em> = <em>k</em> – 1</p></div>
+<div data-block_type="sr-exp-eq" id="corty3e-ch15-p120"><p>= 4 –1</p></div>
+<div data-block_type="sr-exp-eq" id="corty3e-ch15-p121"><p>= 3</p></div>
+<div data-block_type="sr_exp_txt" id="corty3e-ch15-p122"><p>Looking in <span data-type="link" data-href="corty3e-appendix01.xml#corty3e-app1-fig-26">Appendix Table 9</span>, the table of critical values of χ<sup>2</sup>, at the intersection of the column for α = .05 and the row for <em>df</em> = 3, one finds that χ<sup>2</sup><sub>cv</sub> = 7.815. Here is the decision rule:</p></div>
+<ul data-block_type="bullet" id="corty3e-ch15-list-15">
+<li><div data-block_type="bl-first" id="corty3e-ch15-p123"><p>If χ<sup>2</sup> ≥ 7.815, reject <em>H</em><sub>0</sub>.</p></div>
+</li>
+<li><div data-block_type="bl-last" id="corty3e-ch15-p124"><p>If χ<sup>2</sup> &lt; 7.815, fail to reject <em>H</em><sub>0</sub>.</p></div>
+</li>
+</ul>
+<div data-block_type="sr_exp_h4_txt" id="corty3e-ch15-p125"><p><span data-block_type="h4-n-ri"><strong>Step 5</strong></span> <strong>Calculate the Test Statistic.</strong> To calculate the chi-square value, a researcher needs to know the observed and expected frequencies. The observed frequencies were shown in <span data-type="link" data-href="#corty3e-ch15-fig-12">Table 15.5</span>, which also displays the percentages for the expected frequencies.</p></div>
+<div data-block_type="page_start" id="corty3e_page_579"><p>579</p></div>
+<div data-block_type="sr_exp_txt" id="corty3e-ch15-p126"><p>To calculate the expected frequency for A’s, use <span data-type="link" data-href="#corty3e-ch15-bx6-2">Equation 15.2</span>, where%<sub>Expected</sub> = 19% and <em>N</em> = 84:</p></div>
+<div data-block_type="equation" id="corty3e-ch15-eqn-6"><p>
+<img id="" src="asset/ch15/corty3e_eqn15_579_01.jpg" data-figure-id="" data-layout-width="" data-mmtype="" alt="image"></p></div>
+<div data-block_type="sr_exp_txt_ni" id="corty3e-ch15-p127"><p>(The value 19% can be found in <span data-type="link" data-href="#corty3e-ch15-fig-12">Table 15.5</span>.)</p></div>
+<div data-block_type="sr_exp_txt" id="corty3e-ch15-p128"><p>Dr. Wald gave only 10 A’s, but if his grade distribution was exactly the same as that found in the entire population, he would have distributed 15.96 A’s. The expected frequency for B’s is</p></div>
+<div data-block_type="equation" id="corty3e-ch15-eqn-7"><p>
+<img id="" src="asset/ch15/corty3e_eqn15_579_02.jpg" data-figure-id="" data-layout-width="" data-mmtype="" alt="image"></p></div>
+<div data-block_type="sr_exp_txt_ni" id="corty3e-ch15-p129"><p>The expected frequency for C is</p></div>
+<div data-block_type="equation" id="corty3e-ch15-eqn-8"><p>
+<img id="" src="asset/ch15/corty3e_eqn15_579_03.jpg" data-figure-id="" data-layout-width="" data-mmtype="" alt="image"></p></div>
+<div data-block_type="sr_exp_txt" id="corty3e-ch15-p130"><p>To find the expected frequency for the last cell, Dr. Wald takes advantage of the fact that there are 3 degrees of freedom, and once the expected frequencies for three cells are known, the fourth can be determined. The sum of the expected frequencies for all the cells will be the same as <em>N,</em> which in this case is 84. So, Dr. Wald subtracts the expected frequencies for the A, B, and C cells from 84, to find the remainder, which is the expected frequency for the D or F cell:</p></div>
+<div data-block_type="sr-exp-eq" id="corty3e-ch15-p131"><p>84 – 15.96 – 27.72 – 35.28 = 5.04</p></div>
+<div data-block_type="sr_exp_txt" id="corty3e-ch15-p132"><p><span data-type="link" data-href="#corty3e-ch15-fig-17"><strong>Table 15.6</strong></span> shows the observed frequencies and the expected frequencies for the four categories. To calculate the chi-square statistic, Dr. Wald uses <span data-type="link" data-href="#corty3e-ch15-bx6-3">Equation 15.3</span>:</p></div>
+<div data-type="figure" data-figure-id="corty3e-ch15-fig-17" data-block_type="table" data-layout-align="center" data-layout-width="medium" data-layout-border="true">
+
+<img id="" src="asset/ch15/corty3e_table15_06.jpg" data-figure-id="corty3e-ch15-fig-17" data-layout-width="medium" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+</div>
+<div data-block_type="equation" id="corty3e-ch15-eqn-9"><p>
+<img id="" src="asset/ch15/corty3e_eqn15_579_04.jpg" data-figure-id="" data-layout-width="" data-mmtype="" alt="image"></p></div>
+<div data-block_type="sr_exp_txt_ni" id="corty3e-ch15-p133"><p>For these data, χ<sup>2</sup> = 6.76.</p></div>
+<div data-block_type="page_start" id="corty3e_page_580"><p>580</p></div>
+<div data-block_type="sr_exp_h4_txt" id="corty3e-ch15-p134"><p><span data-block_type="h4-n-ri"><strong>Step 6</strong></span> <strong>Interpret the Results.</strong> To decide if the null hypothesis is rejected, Dr. Wald uses the decision rule:</p></div>
+<ul data-block_type="bullet" id="corty3e-ch15-list-16">
+<li><div data-block_type="sr_exp_bl" id="corty3e-ch15-p135"><p>Is 6.76 ≥ 7.815? If so, reject the null hypothesis and call the results statistically significant.</p></div>
+</li>
+<li><div data-block_type="sr_exp_bl" id="corty3e-ch15-p136"><p>If 6.76 &lt; 7.815? If so, fail to reject the null hypothesis and the results are called not statistically significant.</p></div>
+</li>
+</ul>
+<div data-block_type="sr_exp_txt" id="corty3e-ch15-p137"><p>The second statement is true: 6.76 is less than 7.815. As seen in <span data-type="link" data-href="#corty3e-ch15-fig-19"><strong>Figure 15.3</strong></span>, the observed value of chi-square, 6.76, falls in the common zone. Dr. Wald has failed to reject the null hypothesis. There is not enough evidence to conclude that the percentages of different grades in the population differ from what was indicated by the null hypothesis. With a sample size of 84, the discrepancy of the observed frequencies from the expected frequencies was small enough that sampling error could account for it. There is insufficient evidence to conclude that Dr. Wald grades more harshly than do the other intro psych faculty.</p></div>
+<div data-type="figure" data-figure-id="corty3e-ch15-fig-19" data-block_type="figure" data-layout-align="center" data-layout-width="medium" data-layout-border="true">
+
+<img id="" src="asset/ch15/corty3e_fig15_03.jpg" data-figure-id="corty3e-ch15-fig-19" data-layout-width="medium" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+<div data-type="figure_text">
+<span data-type="number">Figure 15.9: </span><span data-type="caption"><strong><span data-block_type="fig_num">Figure 15.3</span> Is Dr. Wald Harsh and Unfair? Comparing an Observed Chi-Square Value to the Expected Distribution of Chi-Square Values</strong> The observed chi-square value, 6.76, falls in the common zone, meaning insufficient evidence exists to justify rejecting the null hypothesis. There is not enough evidence to conclude that this professor is harsh and unfair.</span>
+</div>
+</div>
+<div data-block_type="txt" id="corty3e-ch15-p138"><p>The results in <span data-type="link" data-href="#corty3e-ch15-fig-13">Figure 15.2</span> show C’s, and D’s and F’s, turning up more often in Dr. Wald’s grades than among the grades of the other instructors. So, it may not seem correct to conclude that insufficient evidence exists to say that Dr. Wald gives more low grades. However, remember that hypothesis testing works like the American legal system: finding a defendant not guilty is different from saying the defendant is innocent. Saying that the evidence is insufficient is not the same as saying Dr. Wald gives the same grades as the other instructors.</p></div>
+<div data-block_type="page_start" id="corty3e_page_581"><p>581</p></div>
+<div data-block_type="txt" id="corty3e-ch15-p139"><p>In APA format, the results would be reported as</p></div>
+<div data-block_type="sr-exp-eq" id="corty3e-ch15-p140"><p>χ<sup>2</sup>(3, <em>N</em> = 84) = 6.76, <em>p</em> &gt; .05</p></div>
+<ul data-block_type="bullet" id="corty3e-ch15-list-17">
+<li><div data-block_type="sr_exp_bl" id="corty3e-ch15-p141"><p>χ<sup>2</sup> says that the test is a chi-square test.</p></div>
+</li>
+<li><div data-block_type="sr_exp_bl" id="corty3e-ch15-p142"><p>3 is the degrees of freedom.</p></div>
+</li>
+<li><div data-block_type="sr_exp_bl" id="corty3e-ch15-p143"><p><em>N</em> = 84 gives the sample size.</p></div>
+</li>
+<li><div data-block_type="sr_exp_bl" id="corty3e-ch15-p144"><p>6.76 is the calculated value of chi-square.</p></div>
+</li>
+<li><div data-block_type="sr_exp_bl" id="corty3e-ch15-p145"><p>.05 indicates that alpha was set at the .05 level.</p></div>
+</li>
+<li><div data-block_type="sr_exp_bl" id="corty3e-ch15-p146"><p><em>p</em> &gt; .05 says that the null hypothesis was not rejected. The value of the test statistic (6.76) is a common one. It happens more than 5% of the time when the null hypothesis is true.</p></div>
+</li>
+</ul>
+<div data-block_type="sr_exp_txt" id="corty3e-ch15-p147"><p>Here is a four-point interpretation for these results:</p></div>
+<div data-block_type="sr_exp_txt_v1_ni" id="corty3e-ch15-p148"><p>A psychology professor gave more C’s, D’s, and F’s than the other instructors. A chi-square goodness-of-fit test was used to see if he was a harsher grader than the others. The results showed that his grade distribution was not statistically different [<em>X</em><sup>2</sup> (3, <em>N</em> = 84) = 6.76, <em>p</em> &gt; .05]. This means there is not enough evidence to say that this professor grades differently from the other instructors. If one were to replicate this study, it would be desirable to use a larger sample and to measure characteristics like sex and GPA in order to make sure that the students in his classes are similar to students in the other classes.</p></div>
+</div></div>
+<div data-type="box" data-block_type="sr-h" id="corty3e-ch15-bx2-1"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="corty3e-ch15-bx2-1">Practice Problems 15.1</h3>
+<div data-block_type="sr-que-nl" id="corty3e-ch15-p149"><p><span data-block_type="question_num">15.01</span> People in the world are classified in terms of their natural hair color: black, blonde, brown, red, auburn, chestnut, grey, or white. A hair salon owner keeps track of the natural color of her clients. If she wants to use a chi-square goodness-of-fit test to compare the distribution of hair colors in her salon to the worldwide distribution, how many degrees of freedom will she have?</p></div>
+<div data-block_type="sr-que-nl" id="corty3e-ch15-p150"><p><span data-block_type="question_num">15.02</span> If α = .01 and <em>df</em> = 2, what is χ<sup>2</sup><sub>cv</sub>?</p></div>
+<div data-block_type="sr-que-nl" id="corty3e-ch15-p151"><p><span data-block_type="question_num">15.03</span> Current worldwide estimates are that 51.69% of births are boys and 48.31% are girls. A demographer in the United States obtained a random sample of 5,873 births from all 50 states, determined the sex of each child, and planned to use a chi-square goodness-of-fit test to compare the sex of children born in the United States to the world rate. What are his expected frequencies?</p></div>
+<div data-block_type="sr-que-nl" id="corty3e-ch15-p152"><p><span data-block_type="question_num">15.04</span> A researcher is conducting a chi-square goodness-of-fit test on a variable that has two categories. The observed frequencies are 75 for Cell A and 82 for Cell B. The expected frequencies are 62.80 for Cell A and 94.20 for Cell B. Calculate χ<sup>2</sup>.</p></div>
+<div data-block_type="sr-que-nl" id="corty3e-ch15-p153"><p><span data-block_type="question_num">15.05</span> If <em>N</em> = 73, <em>df</em> = 1, α = .05, and χ<sup>2</sup> = 4.72, write the results in APA format.</p></div>
+</div></div>
+</div>
+<!-- #x-digfir-subsection-insertion-point --><!-- #x-digfir-subsection-insertion-point --><!-- #x-digfir-subsection-insertion-point --><!-- #x-digfir-subsection-insertion-point --></div><!-- /#manuscript -->
+<br class="clear" />
+<!-- end of material in original view -->
+
+	<!--[if IE]><script type="text/javascript" src="js/excanvas.compiled.js"></script><![endif]-->
+    
+<script type="text/javascript" src="js/utilities.js"></script>
+<script type="text/javascript" src="js/query_types.js"></script>
+<script type="text/javascript" src="js/player.js"></script>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/jquery-ui-1.8.16.custom.min.js"></script>
+<script type="text/javascript" src="js/jquery_extensions.js"></script>
+<script type="text/javascript" src="js/swfobject.js"></script>
+<script type="text/javascript" src="http://admin.brightcove.com/js/BrightcoveExperiences.js"></script>
+<script type="text/javascript" src="js/digfir_ebook_fw.js"></script>
+<script type="text/javascript" src="js/corty3e.js"></script>
+<script type="text/javascript" src="js/corty3e_ch15.js"></script>
+<script type="text/javascript">
+    //<!--
+    
+$(window).ready(function () {
+	player.initialize('56d62e13757a2ebf47000008');
+});
+    //-->
+</script>
+</body>
+</html>
+

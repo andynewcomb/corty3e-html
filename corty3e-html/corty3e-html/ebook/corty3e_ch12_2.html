@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]> <html lang="en" class="no-js ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="no-js ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="no-js ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en" class="no-js ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+<head>
+    <title>corty3e_ch12</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <link href="css/boilerplate.css" media="screen" rel="stylesheet" type="text/css" >
+<link href="css/jquery-ui-custom.css" media="screen" rel="stylesheet" type="text/css" >
+<link href="css/manuscript.css" media="screen" rel="stylesheet" type="text/css" >
+<link href="css/digfir_ebook_fw.css" media="screen" rel="stylesheet" type="text/css" >
+<link href="css/corty3e.css" media="screen" rel="stylesheet" type="text/css" >
+<link href="css/corty3e_ch12.css" media="screen" rel="stylesheet" type="text/css" >    
+    
+    </head>
+<body class="noUi">
+<div id="manuscript" data-chapter-number="12">
+    <div data-type="section" data-block_type="h1" id="corty3e-ch12-sec1-1" level="1" data-print_page="421">
+<h2 class="section-title"><span data-type="title" data-title-for="corty3e-ch12-sec1-1"><span data-block_type="sec_num">12.1</span> <span data-block_type="sec_title">Introduction to Two-Way ANOVA</span>
+</span></h2>
+
+<div data-block_type="txt-ni" id="corty3e-ch12-p14"><p>More complex tools are needed to understand, to take apart, more complex things. A basic tool, like a rock, will get you into a skull and show you that there is grey soft matter in there. But, to see finer details of the brain, a saw and a scalpel are more helpful. As tools have evolved, think electron microscopes and MRI machines, so has our understanding of the brain.</p></div>
+<div data-block_type="page_start" id="corty3e_page_422"><p>422</p></div>
+<div data-block_type="txt" id="corty3e-ch12-p16"><p>Statistical tests are statisticians’ tools. Tests like a two-sample <em>t</em> test are simple tools—all they allow a user to do is compare two groups (e.g., What is the impact of 0 vs. 1 drink of alcohol on driving?). One-way ANOVA allows more groups to be compared at once, so it allows more complex questions to be addressed (How does 0 vs. 1 vs. 2 vs. 3 vs. 4 drinks affect driving?). But, the most complex ANOVA questions involve the influence of multiple factors at once (What is the impact on driving of different doses of alcohol for men vs. women, depending on the time elapsed since the last meal?)</p></div>
+<div data-block_type="txt" id="corty3e-ch12-p17"><p>A “factor” is ANOVA-speak for an explanatory variable, an independent variable or a grouping variable that is thought to have some impact on the dependent variable. Factorial ANOVA can have two, three, four, even five factors or “ways.” (The driving study had three: dose of alcohol, sex, and time since meal.) As the number of ways increases, a factorial ANOVA becomes harder to interpret. In this chapter, we’ll limit ourselves to two factors and what is called two-way ANOVA.</p></div>
+<div data-block_type="txt" id="corty3e-ch12-p18"><p>To introduce two-way ANOVA, here’s an example about the influence of two factors, nature <em>and</em> nurture, on personality. Suppose a researcher was studying factors that influence altruism and was interested in <em>both</em> how the children were reared (nurture) and what their nervous systems were like (nature). Using adopted children as participants, the researcher classified the children as falling into one of three levels—high, medium, or low—based on how altruistic their adoptive parents were. The adoptive parents reared them, so these three levels of altruism represented the influence of nurture. In addition, the researcher classified the children as being in one of two levels—high or low—based on how altruistic their birth parents were. Birth parents, who provide genetic material, represent the influence of nature. This two-way classification would allow the researcher to study the effect of both nature and nurture at the same time (see <strong><span data-type="link" data-href="#corty3e-ch12-fig-2">Table 12.2</span></strong>).</p></div>
+<div data-type="figure" data-figure-id="corty3e-ch12-fig-2" data-block_type="table" data-layout-align="center" data-layout-width="large" data-layout-border="true">
+
+<img id="" src="asset/ch12/corty3e_table12_02.jpg" data-figure-id="corty3e-ch12-fig-2" data-layout-width="large" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+</div>
+<div data-block_type="txt" id="corty3e-ch12-p19"><p>In <span data-type="link" data-href="#corty3e-ch12-fig-2">Table 12.2</span>, there are two levels of one grouping variable and three levels of the second grouping variable, so this two-way ANOVA would be called a 2 × 3 ANOVA (pronounced “two by three”). (Note that it doesn’t matter which number goes first: It’s fine to call it a 3 × 2 ANOVA.) Each child in the study would be classified as fitting into only one of the six cells in <span data-type="link" data-href="#corty3e-ch12-fig-2">Table 12.2</span>. This design would allow the researcher to examine the influence of two factors on children’s altruism at once.</p></div>
+<div data-block_type="page_start" id="corty3e_page_423"><p>423</p></div>
+<div data-block_type="txt" id="corty3e-ch12-p21"><p>The type of two-way ANOVA being taught in this chapter is a <em>between-subjects</em> ANOVA. <span data-type="termref" data-term="Between-subjects">Between-subjects</span> is an ANOVA term for independent samples. In a between-subjects design, different cases make up the different groups. <span data-type="termref" data-term="Within-subjects">Within-subjects</span> is the ANOVA term for dependent samples. If different participants each rated the taste of a single ice cream (high-fat, low-fat, and no-fat), that would be a between-subjects design. If each taste-tester rated all three of the ice creams, that would be a within-subjects design.</p></div>
+<div data-type="box" data-block_type="bx-1-h" id="corty3e-ch12-bx1-1"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="corty3e-ch12-bx1-1">A Common Question</h3>
+<div data-block_type="bx1-que" id="corty3e-ch12-p22"><p><strong>Q</strong> Can an ANOVA have more than two ways?</p></div>
+<div data-block_type="bx1-ans" id="corty3e-ch12-p23"><p><strong>A</strong> Absolutely. There can be a three-way ANOVA, a four-way ANOVA, and even more ways than that. The general term for a multiple-way ANOVA is <span data-type="termref" data-term="factorial ANOVA">factorial ANOVA</span> (ways are also called <em>factors</em>). It is rare, however, that a researcher designs an experiment that needs more than a three-way ANOVA because the number of participants required becomes too large and the results become complicated to interpret.</p></div>
+</div></div>
+<div data-block_type="txt" id="corty3e-ch12-p24"><p>There is an advantage to completing a single two-way ANOVA with two explanatory variables instead of two separate one-way tests, one for each of the explanatory variables. To explore this advantage, imagine a study that compares the final point total in a statistics class based on two explanatory variables: (1) type of instruction (whether students take the class in a classroom or online), and (2) level of math anxiety (whether students are high or low on math anxiety). Each factor has two levels (classroom vs. online, and high math anxiety vs. low math anxiety).</p></div>
+<div data-block_type="txt" id="corty3e-ch12-p25"><p>To conduct separate one-way tests, a researcher would need to do two separate studies:</p></div>
+<ul data-block_type="bullet" id="corty3e-ch12-list-2">
+<li><div data-block_type="bl-first" id="corty3e-ch12-p26"><p>To examine the effect of type of instruction, the researcher would get a sample of students, assign some to take the course in a classroom, others to take it online, and then compare how much they learned.</p></div>
+</li>
+<li><div data-block_type="bl-last" id="corty3e-ch12-p27"><p>To examine the effect of anxiety, the researcher would put together another sample of students, classify them as high or low on math anxiety, have them all take the same course, and then compare how much they learned.</p></div>
+</li>
+</ul>
+<div data-block_type="txt" id="corty3e-ch12-p28"><p>To conduct the study as a two-way ANOVA means examining both explanatory variables at once. The researcher would obtain <em>one</em> sample of students, classify them as high or low on math anxiety, and then assign half of each type to take the course in a classroom and half to take it online. That would give four groups:</p></div>
+<ul data-block_type="bullet" id="corty3e-ch12-list-3">
+<li><div data-block_type="bl-first" id="corty3e-ch12-p29"><p>High-anxiety students taking the course in a classroom (Cell A)</p></div>
+</li>
+<li><div data-block_type="bl-mid" id="corty3e-ch12-p30"><p>High-anxiety students taking the course online (Cell B)</p></div>
+</li>
+<li><div data-block_type="bl-mid" id="corty3e-ch12-p31"><p>Low-anxiety students taking the course in a classroom (Cell C)</p></div>
+</li>
+<li><div data-block_type="bl-last" id="corty3e-ch12-p32"><p>Low-anxiety students taking the course online (Cell D)</p></div>
+</li>
+</ul>
+<div data-block_type="page_start" id="corty3e_page_424"><p>424</p></div>
+<div data-block_type="txt" id="corty3e-ch12-p34"><p>The arrangement of the four groups in this study is diagrammed in <strong><span data-type="link" data-href="#corty3e-ch12-fig-3">Table 12.3</span></strong>. Notice how the two ways yield four cells arranged in rows (levels of math anxiety) and columns (where the course is taken). The two explanatory variables are <span data-type="termref" data-term="crossed">crossed</span>, which means that every level of one explanatory variable is paired with every level of the other explanatory variable.</p></div>
+<div data-type="figure" data-figure-id="corty3e-ch12-fig-3" data-block_type="table" data-layout-align="center" data-layout-width="large" data-layout-border="true">
+
+<img id="" src="asset/ch12/corty3e_table12_03.jpg" data-figure-id="corty3e-ch12-fig-3" data-layout-width="large" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+</div>
+<div data-block_type="txt" id="corty3e-ch12-p35"><p>There are two advantages to completing this study as a two-way ANOVA rather than as two one-way ANOVAs. First, it allows the study to be completed and analyzed in one pass, not as two different studies. Second, and more important, the person conducting the study gains more understanding because the variability in the dependent variable can now be divided into <em>three</em> effects. By doing the study as a two-way ANOVA, an effect has been gained.</p></div>
+<div data-block_type="txt" id="corty3e-ch12-p36"><p>The three effects being studied are:</p></div>
+<ul data-block_type="bullet" id="corty3e-ch12-list-4">
+<li><div data-block_type="bl-first" id="corty3e-ch12-p37"><p>Does type of instruction affect learning?</p></div>
+</li>
+<li><div data-block_type="bl-mid" id="corty3e-ch12-p38"><p>Is level of math anxiety related to learning?</p></div>
+</li>
+<li><div data-block_type="bl-last" id="corty3e-ch12-p39"><p>Do type of instruction and level of math anxiety <em>interact</em> to affect learning?</p></div>
+</li>
+</ul>
+<div data-block_type="txt" id="corty3e-ch12-p40"><p>The first two effects are called <span data-type="termref" data-term="main effects">main effects</span>. Main effects examine the overall impact of an explanatory variable by itself. The third effect, the <em>interaction</em> effect, is unique to two-way ANOVA (and factorial ANOVA). An <strong>interaction effect</strong> occurs if the impact of one explanatory variable on the dependent variable depends on the level of the other explanatory variable.</p></div>
+<div data-type="box" data-block_type="mn1" id="corty3e-ch12-exp1-1"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="corty3e-ch12-exp1-1"></h3>
+<div data-block_type="mn-ext-ni" id="corty3e-ch12-p41"><p><em>When the lines are not parallel, an interaction exists.</em></p></div>
+</div></div>
+<div data-block_type="txt" id="corty3e-ch12-p42"><p>So what exactly is an interaction effect? The easiest way to show what it is, is with a figure. <strong><span data-type="link" data-href="#corty3e-ch12-fig-4">Figure 12.1</span></strong> gives the outcome for a 2 × 2 ANOVA of type of instruction and math anxiety on performance. When the lines are not parallel, then an interaction exists. That’s what is seen in <span data-type="link" data-href="#corty3e-ch12-fig-4">Figure 12.1</span>, which illustrates that the low-math-anxiety people perform equally well whether in the classroom or online, while the high-math-anxiety people do more poorly when taking the class online. The two explanatory variables <em>interact</em> to determine the outcome.</p></div>
+<div data-type="figure" data-figure-id="corty3e-ch12-fig-4" data-block_type="figure" data-layout-align="center" data-layout-width="medium" data-layout-border="true">
+
+<img id="" src="asset/ch12/corty3e_fig12_01.jpg" data-figure-id="corty3e-ch12-fig-4" data-layout-width="medium" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+<div data-type="figure_text">
+<span data-type="number">Figure 12.4: </span><span data-type="caption"><strong><span data-block_type="fig_num">Figure 12.1</span> Interaction Between Level of Math Anxiety and Type of Instruction on Performance</strong> The nonparallel lines indicate that level of math anxiety and type of classroom instruction interact to determine performance. If asked whether classroom instruction or online instruction is better for learning statistics, the answer is that it depends on a student’s level of math anxiety.</span>
+</div>
+</div>
+<div data-type="box" data-block_type="bx-1-h" id="corty3e-ch12-bx1-2"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="corty3e-ch12-bx1-2">A Common Question</h3>
+<div data-block_type="bx1-que" id="corty3e-ch12-p43"><p><strong>Q</strong> How nonparallel do the lines have to be for an interaction to occur?</p></div>
+<div data-block_type="bx1-ans" id="corty3e-ch12-p44"><p><strong>A</strong> If the lines are close to parallel, the interaction effect probably is not statistically significant. There should be a reasonable amount of deviation from parallel to speculate that an interaction effect has occurred.</p></div>
+</div></div>
+<div data-block_type="page_start" id="corty3e_page_425"><p>425</p></div>
+<div data-block_type="txt" id="corty3e-ch12-p45"><p>When an interaction takes place, the answer to the question of whether a main effect exists is, “It depends.” Here are questions about the two main effects for the type of instruction/math anxiety study:</p></div>
+<ul data-block_type="bullet" id="corty3e-ch12-list-5">
+<li><div data-block_type="bl-first" id="corty3e-ch12-p46"><p>Does type of instruction have an impact on how much one learns?</p></div>
+<ul data-block_type="bluebullet" id="corty3e-ch12-list-6">
+<li><div data-block_type="bl_lvl2" id="corty3e-ch12-p47"><p><em>It depends</em> on how much math anxiety one has. If a person is low on math anxiety, then he or she will learn equally well whether in the classroom or online. However, if a person is high on math anxiety, then he or she would be wise to take the course in a classroom.</p></div>
+</li>
+</ul>
+</li>
+<li><div data-block_type="bl-last" id="corty3e-ch12-p48"><p>Is level of math anxiety related to how much one learns?</p></div>
+<ul data-block_type="bluebullet" id="corty3e-ch12-list-7">
+<li><div data-block_type="bl_lvl2" id="corty3e-ch12-p49"><p><em>It depends</em> on which course one takes. If a person is taking the course in a classroom, then math anxiety doesn’t matter. However, if a person is taking the course online, then he or she will probably do better if he or she is low on math anxiety.</p></div>
+</li>
+</ul>
+</li>
+</ul>
+<div data-block_type="txt" id="corty3e-ch12-p50"><p>When there is an interaction, one needs to be careful about interpreting main effects. To understand why, look at the results for the type of instruction/level of math anxiety study, which are presented in <strong><span data-type="link" data-href="#corty3e-ch12-fig-5">Table 12.4</span></strong>.</p></div>
+<div data-type="figure" data-figure-id="corty3e-ch12-fig-5" data-block_type="table" data-layout-align="center" data-layout-width="large" data-layout-border="true">
+
+<img id="" src="asset/ch12/corty3e_table12_04.jpg" data-figure-id="corty3e-ch12-fig-5" data-layout-width="large" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+</div>
+<div data-block_type="txt" id="corty3e-ch12-p51"><p>Each of the cells has a mean for one of the four groups—a mean of 85 for high-anxiety students in the classroom, a mean of 65 for high-anxiety students online, and so on. Rather than attend to the cell means, pay attention to the means for each row and for each column. Each cell has the same sample size—and that will be true for all examples in this chapter—so the means for the cells in a row or column can be averaged to find the mean for that row or column. The formula for calculating row means and column means is shown in <span data-type="link" data-href="#corty3e-ch12-bx6-1">Equation 12.1</span>.</p></div>
+<div data-block_type="page_start" id="corty3e_page_426"><p>426</p></div>
+<div data-type="box" data-block_type="eq-t" id="corty3e-ch12-bx6-1"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="corty3e-ch12-bx6-1"><span data-block_type="sec_num">Equation 12.1</span> <span data-block_type="sec_title">Formulas for Calculating Row Means and Column Means for Two-Way ANOVA When Each Cell Has the Same Sample Size</span>
+</h3>
+
+<div data-block_type="equation" id="corty3e-ch12-eqn-1"><p>
+<img id="" src="asset/ch12/corty3e_eqn11_426_01.jpg" data-figure-id="" data-layout-width="" data-mmtype="" alt="image"></p></div>
+<div data-block_type="equation" id="corty3e-ch12-eqn-2"><p>
+<img id="" src="asset/ch12/corty3e_eqn11_426_02.jpg" data-figure-id="" data-layout-width="" data-mmtype="" alt="image"></p></div>
+<div data-block_type="eq-unl" id="corty3e-ch12-p53"><p>where <em>M</em><sub>Row</sub> = row mean</p></div>
+<div data-block_type="eq-unl" id="corty3e-ch12-p54"><p><em>M</em><sub>Column</sub> = column mean</p></div>
+</div></div>
+<div data-block_type="txt" id="corty3e-ch12-p55"><p>The researcher would calculate the mean for the high-math-anxiety row as follows:</p></div>
+<div data-block_type="equation" id="corty3e-ch12-eqn-3"><p>
+<img id="" src="asset/ch12/corty3e_eqn11_426_03.jpg" data-figure-id="" data-layout-width="" data-mmtype="" alt="image"></p></div>
+<div data-block_type="txt-ni" id="corty3e-ch12-p56"><p>The researcher would calculate the mean for the low-math-anxiety row as follows:</p></div>
+<div data-block_type="equation" id="corty3e-ch12-eqn-4"><p>
+<img id="" src="asset/ch12/corty3e_eqn11_426_04.jpg" data-figure-id="" data-layout-width="" data-mmtype="" alt="image"></p></div>
+<div data-block_type="page_start" id="corty3e_page_427"><p>427</p></div>
+<div data-block_type="txt-ni" id="corty3e-ch12-p58"><p>The researcher would calculate the mean for the classroom instruction column as follows:</p></div>
+<div data-block_type="equation" id="corty3e-ch12-eqn-5"><p>
+<img id="" src="asset/ch12/corty3e_eqn11_427_01.jpg" data-figure-id="" data-layout-width="" data-mmtype="" alt="image"></p></div>
+<div data-block_type="txt-ni" id="corty3e-ch12-p59"><p>And, finally, here’s the mean for the online instruction column:</p></div>
+<div data-block_type="equation" id="corty3e-ch12-eqn-6"><p>
+<img id="" src="asset/ch12/corty3e_eqn11_427_02.jpg" data-figure-id="" data-layout-width="" data-mmtype="" alt="image"></p></div>
+<div data-block_type="txt" id="corty3e-ch12-p60"><p>What information do the row and column means provide?</p></div>
+<ul data-block_type="bullet" id="corty3e-ch12-list-8">
+<li><div data-block_type="bl-first" id="corty3e-ch12-p61"><p>The row means give information about the main effect of level of anxiety on learning. Comparing the row mean of 75.00 for high-math-anxiety students to the row mean of 85.00 for the low-math-anxiety students suggests that level of anxiety predicts performance: it appears as if the higher the anxiety, the worse the performance. However, we already know, from the interaction effect, that how anxiety affects performance depends on the type of instruction. Though a main effect for type of anxiety exists, interpreting the interaction effect gives a better understanding of the results.</p></div>
+</li>
+<li><div data-block_type="bl-last" id="corty3e-ch12-p62"><p>The column means give information about the main effect of type of instruction on learning. Comparing the column mean of 85.00 for the classroom students to the column mean of 75.00 for the online students suggests that type of instruction affects performance: it seems as if students learn more in the classroom. However, we already know, from the interaction effect, that how type of instruction affects performance depends on a person’s level of math anxiety. Again, though a main effect for type of instruction exists, interpreting the interaction seems to do a better job of explaining the results.</p></div>
+</li>
+</ul>
+<div data-type="box" data-block_type="mn1" id="corty3e-ch12-exp1-2"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="corty3e-ch12-exp1-2"></h3>
+<div data-block_type="mn-ext-ni" id="corty3e-ch12-p63"><p><em>In a two-way ANOVA, when there is a statistically significant interaction, statistically significant main effects often play a background role.</em></p></div>
+</div></div>
+<div data-block_type="txt" id="corty3e-ch12-p64"><p>This point is important: in a two-way ANOVA, when there is a statistically significant interaction, statistically significant main effects often play a background role.</p></div>
+<div data-block_type="txt" id="corty3e-ch12-p65"><p>To help make the difference between main effects and interactions clear, consider an example without an interaction. Suppose a physical therapist had equal numbers of men and women, then measured each person’s hand strength. For half of each sex, the physical therapist measured hand strength in the dominant hand. For the other half, she measured hand strength in the nondominant hand.</p></div>
+<div data-block_type="txt" id="corty3e-ch12-p66"><p>The graph in <strong><span data-type="link" data-href="#corty3e-ch12-fig-12">Figure 12.2</span></strong> shows the results—men are stronger than women and the dominant hand is stronger than the nondominant hand. The two lines are parallel, so no interaction exists. In this case, it makes sense to interpret the main effects, which can be seen by examining the row means and the column means found in <strong><span data-type="link" data-href="#corty3e-ch12-fig-13">Table 12.5</span></strong>. There is no “it depends” in answer to the two questions below:</p></div>
+<div data-type="figure" data-figure-id="corty3e-ch12-fig-12" data-block_type="figure" data-layout-align="center" data-layout-width="medium" data-layout-border="true">
+
+<img id="" src="asset/ch12/corty3e_fig12_02.jpg" data-figure-id="corty3e-ch12-fig-12" data-layout-width="medium" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+<div data-type="figure_text">
+<span data-type="number">Figure 12.6: </span><span data-type="caption"><strong><span data-block_type="fig_num">Figure 12.2</span> Lack of Interaction Between Sex and Tested Hand Strength</strong> The lines in this graph are parallel, indicating that sex and hand tested don’t interact to determine hand strength. The graph shows a main effect for sex—men are stronger than women—and a main effect for hand tested—dominant hands are stronger than nondominant hands.</span>
+</div>
+</div>
+<div data-type="figure" data-figure-id="corty3e-ch12-fig-13" data-block_type="table" data-layout-align="center" data-layout-width="large" data-layout-border="true">
+
+<img id="" src="asset/ch12/corty3e_table12_05.jpg" data-figure-id="corty3e-ch12-fig-13" data-layout-width="large" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+</div>
+<div data-block_type="page_start" id="corty3e_page_428"><p>428</p></div>
+<ul data-block_type="bullet" id="corty3e-ch12-list-9">
+<li><div data-block_type="bl-first" id="corty3e-ch12-p68"><p>Is there a difference in hand strength by sex?</p></div>
+<ul data-block_type="bluebullet" id="corty3e-ch12-list-10">
+<li><div data-block_type="bl_lvl2" id="corty3e-ch12-p69"><p>Yes. Men have more hand strength than women, both in the dominant hand and nondominant hand.</p></div>
+</li>
+</ul>
+</li>
+<li><div data-block_type="bl-last" id="corty3e-ch12-p70"><p>Is there a difference in strength between dominant and nondominant hands?</p></div>
+<ul data-block_type="bluebullet" id="corty3e-ch12-list-11">
+<li><div data-block_type="bl_lvl2" id="corty3e-ch12-p71"><p>Yes. Dominant hands are stronger than nondominant hands, both for men and for women.</p></div>
+</li>
+</ul>
+</li>
+</ul>
+<div data-type="box" data-block_type="sr-exp-n" id="corty3e-ch12-bx3-1"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="corty3e-ch12-bx3-1">Worked Example 12.1</h3>
+<div data-block_type="sr_exp_txt_ni" id="corty3e-ch12-p72"><p>For practice with main effects and interaction effects, let’s look at some data on aggression in boys and girls. Suppose a developmental psychologist, Dr. O’Grady, administered an aggression scale to a random sample of 100 boys and 100 girls. Half of each sex had their level of physical aggression measured (getting into fights, throwing sticks and stones, etc.) and half had verbal aggression measured (spreading rumors, telling lies, etc.). On each scale, a higher score means more aggression.</p></div>
+<div data-block_type="sr_exp_txt" id="corty3e-ch12-p73"><p>Dr. O’Grady’s study compares the means for groups that differ on two independent variables, sex and type of aggression, so it is an example where results are analyzed with a two-way ANOVA. Each way has two levels, so this is called a 2 × 2 ANOVA and there are four cells. The results from Dr. O’Grady’s study can be found in <strong><span data-type="link" data-href="#corty3e-ch12-fig-14">Table 12.6</span></strong>, where each case fits in one, and only one, cell. For example, a boy who answered questions about physical aggressiveness would be in the top left cell.</p></div>
+<div data-type="figure" data-figure-id="corty3e-ch12-fig-14" data-block_type="table" data-layout-align="center" data-layout-width="large" data-layout-border="true">
+
+<img id="" src="asset/ch12/corty3e_table12_06.jpg" data-figure-id="corty3e-ch12-fig-14" data-layout-width="large" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+</div>
+<div data-block_type="page_start" id="corty3e_page_429"><p>429</p></div>
+<div data-block_type="sr_exp_txt" id="corty3e-ch12-p75"><p>The row means for boys (37.50) and girls (35.50) don’t show much of a main effect by sex. Boys are slightly more aggressive on average, but this 2-point difference could easily be due to sampling error. Even if the small difference indicated a difference between population means, it probably wouldn’t be a meaningful difference.</p></div>
+<div data-block_type="sr_exp_txt" id="corty3e-ch12-p76"><p>The column means tell a similar story—the amount of physical aggression (<em>M</em> = 36) and the amount of verbal aggression (<em>M</em> = 37) are about equal. Verbal aggression is just slightly higher, but it seems possible that the levels of verbal aggression and physical aggression are the same in the populations and that the difference observed between the samples could easily be due to sampling error. Based on these column means, it seems that there is little difference in the use of the two types of aggression.</p></div>
+<div data-block_type="sr_exp_txt" id="corty3e-ch12-p77"><p>For a different view, look at the interaction effect graphed in <strong><span data-type="link" data-href="#corty3e-ch12-fig-15">Figure 12.3</span></strong>.</p></div>
+<div data-type="figure" data-figure-id="corty3e-ch12-fig-15" data-block_type="figure" data-layout-align="center" data-layout-width="medium" data-layout-border="true">
+
+<img id="" src="asset/ch12/corty3e_fig12_03.jpg" data-figure-id="corty3e-ch12-fig-15" data-layout-width="medium" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+<div data-type="figure_text">
+<span data-type="number">Figure 12.9: </span><span data-type="caption"><strong><span data-block_type="fig_num">Figure 12.3</span> Interaction Between Sex and Type of Aggression</strong> The nonparallel lines indicate that the two variables, sex and type of aggression, interact. Are boys more aggressive than girls? It depends on the type of aggression. Is physical aggression more common than verbal aggression? It depends on whether one is talking about boys or girls.</span>
+</div>
+</div>
+<ul data-block_type="bullet" id="corty3e-ch12-list-12">
+<li><div data-block_type="sr-exp-bl-first" id="corty3e-ch12-p78"><p>Are boys more aggressive than girls?</p></div>
+<ul data-block_type="bluebullet" id="corty3e-ch12-list-13">
+<li><div data-block_type="sr_exp_bl_lvl2" id="corty3e-ch12-p79"><p><em>It depends</em> on the type of aggression. Boys are more aggressive physically, and girls are more aggressive verbally.</p></div>
+</li>
+</ul>
+</li>
+<li><div data-block_type="sr-exp-bl-first" id="corty3e-ch12-p80"><p>Is physical aggression as likely to occur as verbal aggression?</p></div>
+<ul data-block_type="bluebullet" id="corty3e-ch12-list-14">
+<li><div data-block_type="sr_exp_bl_lvl2" id="corty3e-ch12-p81"><p><em>It depends</em> on a person’s sex. Physical aggression is more likely to occur in boys and verbal aggression in girls.</p></div>
+</li>
+</ul>
+</li>
+</ul>
+<div data-block_type="page_start" id="corty3e_page_430"><p>430</p></div>
+<div data-block_type="sr_exp_txt" id="corty3e-ch12-p83"><p>It is clear in this example that there is an interaction effect. This is apparent both from the nonparallel lines in <span data-type="link" data-href="#corty3e-ch12-fig-15">Figure 12.3</span> and from the use of “it depends” in interpreting the results. To reiterate: When an interaction effect exists, be cautious interpreting the main effects.</p></div>
+</div></div>
+<div data-type="box" data-block_type="sr-h" id="corty3e-ch12-bx2-1"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="corty3e-ch12-bx2-1">Practice Problems 12.1</h3>
+<div data-block_type="sr-h1" id="corty3e-ch12-p84"><p><strong>Apply Your Knowledge</strong></p></div>
+<div data-block_type="sr-que-nl" id="corty3e-ch12-p85"><p><span data-block_type="question_num">12.01</span> Classify each scenario in terms of the number of ways and the number of levels each way has. For example, classify each scenario as a 2 × 3 design, a 2 × 3 × 5 design, or some other variation.</p></div>
+<ol data-block_type="loweralpha" id="corty3e-ch12-list-4a">
+<li><div data-block_type="sr_que_nl_lvl2" id="corty3e-ch12-p86"><p>Men and women who are right-handed or left-handed and who use razors with blades vs. electric razors are compared in terms of satisfaction with the smoothness of their shaves.</p></div>
+</li>
+<li><div data-block_type="sr_que_nl_lvl2" id="corty3e-ch12-p87"><p>Male and female students studying for traditionally female careers (e.g., nursing) or for traditionally male careers (e.g., engineering) are compared in terms of how androgynous they are.</p></div>
+</li>
+</ol>
+<div data-block_type="sr-que-nl" id="corty3e-ch12-p88"><p><span data-block_type="question_num">12.02</span> Each cell in the matrix below reports the mean of six cases. (a) Calculate the row and column means. (b) Interpret the two main effects.</p></div>
+<div data-type="table" data-block_type="un_table" id="corty3e-ch12-table1" data-layout-align="center" data-layout-width="medium" data-layout-border="true" data-mmsrc="" data-attr=""><table><tbody>
+<tr>
+<td></td>
+<td><span data-block_type="tbn-colhd"><strong>Condition 1</strong></span></td>
+<td><span data-block_type="tbn-colhd"><strong>Condition 2</strong></span></td>
+</tr>
+<tr>
+<td><span data-block_type="tbn-txt"><strong>Group 1</strong></span></td>
+<td><span data-block_type="tbn-txt">12.00</span></td>
+<td><span data-block_type="tbn-txt">18.00</span></td>
+</tr>
+<tr>
+<td><span data-block_type="tbn-txt"><strong>Group 2</strong></span></td>
+<td><span data-block_type="tbn-txt">3.00</span></td>
+<td><span data-block_type="tbn-txt">9.00</span></td>
+</tr>
+</tbody></table></div>
+<div data-block_type="sr-que-nl" id="corty3e-ch12-p89"><p><span data-block_type="question_num">12.03</span> Thirty-six cases were randomly divided into four samples. Each person took either a low dose or a high dose of a drug and was queried about either the physical side effects or psychological side effects. Each cell in the matrix below reports the mean number of side effects reported by a sample of nine cases. (a) Graph the cell means. (b) Decide if there is an interaction. (c) Interpret the effect of the two conditions on the two groups.</p></div>
+<div data-type="table" data-block_type="un_table" id="corty3e-ch12-table2" data-layout-align="center" data-layout-width="medium" data-layout-border="true" data-mmsrc="" data-attr=""><table><tbody>
+<tr>
+<td></td>
+<td><span data-block_type="tbn-colhd"><strong>Physical Side Effects</strong></span></td>
+<td><span data-block_type="tbn-colhd"><strong>Psychological Side Effects</strong></span></td>
+</tr>
+<tr>
+<td><span data-block_type="tbn-txt"><strong>Low Dose</strong></span></td>
+<td><span data-block_type="tbn-txt">10.00</span></td>
+<td><span data-block_type="tbn-txt">10.00</span></td>
+</tr>
+<tr>
+<td><span data-block_type="tbn-txt"><strong>High Dose</strong></span></td>
+<td><span data-block_type="tbn-txt">10.00</span></td>
+<td><span data-block_type="tbn-txt">18.00</span></td>
+</tr>
+</tbody></table></div>
+</div></div>
+</div>
+<!-- #x-digfir-subsection-insertion-point --></div><!-- /#manuscript -->
+<br class="clear" />
+<!-- end of material in original view -->
+
+	<!--[if IE]><script type="text/javascript" src="js/excanvas.compiled.js"></script><![endif]-->
+    
+<script type="text/javascript" src="js/utilities.js"></script>
+<script type="text/javascript" src="js/query_types.js"></script>
+<script type="text/javascript" src="js/player.js"></script>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/jquery-ui-1.8.16.custom.min.js"></script>
+<script type="text/javascript" src="js/jquery_extensions.js"></script>
+<script type="text/javascript" src="js/swfobject.js"></script>
+<script type="text/javascript" src="http://admin.brightcove.com/js/BrightcoveExperiences.js"></script>
+<script type="text/javascript" src="js/digfir_ebook_fw.js"></script>
+<script type="text/javascript" src="js/corty3e.js"></script>
+<script type="text/javascript" src="js/corty3e_ch12.js"></script>
+<script type="text/javascript">
+    //<!--
+    
+$(window).ready(function () {
+	player.initialize('56d62d49757a2e4546000005');
+});
+    //-->
+</script>
+</body>
+</html>
+

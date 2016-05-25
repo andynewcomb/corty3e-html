@@ -1,0 +1,669 @@
+<chapter number="3" id="corty3e-ch3-chapter-3" title="3 Measures of Central Tendency and Variability" start-numbering-at="03" numbered="true">
+<section id="corty3e-ch3-sec1-1a" block_type="intro" title="Chapter Introduction" numbered="false" level="1" print_page="79">
+<p id="corty3e_page_79" block_type="page_start">79</p>
+<p id="corty3e-ch3-p1" block_type="chapter_number">3</p>
+<p id="corty3e-ch3-p2" block_type="chapter_title">Measures of<br/>Central Tendency<br/>and Variability</p>
+<box numbered="false" id="corty3e-ch3-ibx-1" block_type="intro_box">
+<p id="corty3e-ch3-p3" block_type="obj-h"><strong>LEARNING OBJECTIVES</strong></p>
+<list id="corty3e-ch3-list-1" type="unordered" block_type="bluesquare">
+<li><p id="corty3e-ch3-p4" block_type="obj-bl">Define and know when to calculate three measures of central tendency.</p></li>
+<li><p id="corty3e-ch3-p5" block_type="obj-bl">Define variability and know how to calculate four different measures of it.</p></li>
+</list>
+<p id="corty3e-ch3-p6" block_type="obj-h"><strong>CHAPTER OVERVIEW</strong></p>
+<p id="corty3e-ch3-p9" block_type="co-txt-ni">The last chapter explored how to summarize a set of data using a frequency distribution and/or a graph. The current chapter uses descriptive statistics to summarize a whole set of data with just one or two numbers.</p>
+<p id="corty3e-ch3-p10" block_type="co-txt">The numbers summarize different aspects of a set of scores. One of the numbers describes what statisticians call <termref term="central tendency">central tendency</termref>, a single value used to represent the typical score in a set of scores. Another number used to summarize a set of data, a measure of <termref term="variability">variability,</termref> summarizes how much variety exists in a set of scores.</p>
+<p id="corty3e-ch3-p11" block_type="co-txt">Both measurements&#8212;central tendency and variability&#8212;are important. Imagine two students with GPAs of 3.00, as seen in <link href="#corty3e-ch3-fig-1"><strong>Table 3.1</strong></link>. A measure of central tendency, like GPA, gives an overall summary of how well the students are doing academically. Here, both have the same GPA, so the two students look alike&#8212;Darren and Marcie are doing equally well in school. Variability, however, provides a different perspective on the students. Marcie achieved her 3.00 average by getting B&#8217;s in every course. Darren achieved his 3.00 GPA by getting A&#8217;s in half of his classes and C&#8217;s in the other half. Both students have the same grade point average, a 3.00, but they differ in variability. Here, variability provides important information. Variability reveals that Marcie is more consistent in her academic work than Darren.</p>
+<figure id="corty3e-ch3-fig-1" block_type="table" numbered="true" number="3.1" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="large" border="true"/>
+<image asset-id="corty3e-ch3-img-1" alt="image" src="asset/ch3/corty3e_table03_01.jpg"/>
+</figure>
+<box numbered="false" id="corty3e-ch3-exp2-1" block_type="mn2">
+<p id="corty3e-ch3-p7" block_type="co-toc-h1-t"><link href="#corty3e-ch3-sec1-1"><phrase block_type="co-toc-h1-n-ri">3.1</phrase> Central Tendency</link></p>
+<p id="corty3e-ch3-p8" block_type="co-toc-h1-t"><link href="#corty3e-ch3-sec1-2"><phrase block_type="co-toc-h1-n-ri">3.2</phrase> Variability</link></p>
+</box>
+</box>
+</section>
+<section id="corty3e-ch3-sec1-1" block_type="h1" chapter="3" title="" numbered="false" level="1" print_page="79">
+<section-metadata><section-title><phrase block_type="sec_num">3.1</phrase> <phrase block_type="sec_title">Central Tendency</phrase></section-title></section-metadata>
+<p id="corty3e-ch3-p12" block_type="txt-ni">Central tendency tells the typical or average score in a set. Statisticians use central tendency as a summary value for a set of scores, much the way the midpoint was used for intervals in a grouped frequency distribution. Usually central tendency is the value at the center of a set of scores. Mean, median, and mode are the three most common measures of central tendency.</p>
+</section>
+<section id="corty3e-ch3-sec2-1" block_type="h2" chapter="3" title="" numbered="false" level="2" print_page="80">
+<section-metadata><section-title>Mean</section-title></section-metadata>
+<p id="corty3e_page_80" block_type="page_start">80</p>
+<p id="corty3e-ch3-p13" block_type="txt-ni">The <termref term="mean">mean</termref> is what most people think of when they contemplate the average. It is the sum of all the values in a set of data divided by the number of cases. The formula for <em>M,</em> the sample mean, is shown in <link href="#corty3e-ch3-bx6-1">Equation 3.1</link>.</p>
+<box title="" numbered="false" id="corty3e-ch3-bx6-1" block_type="eq-t">
+<box-metadata><box-title><phrase block_type="sec_num">Equation 3.1</phrase> <phrase block_type="sec_title">Formula for Sample Mean (<em>M</em>)</phrase></box-title></box-metadata>
+<p id="corty3e-ch3-eqn-1" block_type="equation">
+<image asset-id="corty3e-ch3-img-2" alt="image" src="asset/ch3/corty3e_eqn01_80_01.jpg"/>
+</p>
+<p id="corty3e-ch3-p14" block_type="eq-first">where <em>M</em> &#61; the mean of a sample</p>
+<p id="corty3e-ch3-p15" block_type="eq-mid">&#8721; &#61; summation sign</p>
+<p id="corty3e-ch3-p16" block_type="eq-mid"><em>X</em> &#61; the values of <em>X</em> for the cases in the sample</p>
+<p id="corty3e-ch3-p17" block_type="eq-last"><em>N</em> &#61; the number of cases in the sample</p>
+</box>
+<p id="corty3e-ch3-p18" block_type="txt">For practice in using <link href="#corty3e-ch3-bx6-1">Equation 3.1</link>, imagine that a demographer has selected five adults from the United States and measured their heights in inches. Here are the data she collected: 62, 65, 66, 69, and 73. Applying <link href="#corty3e-ch3-bx6-1">Equation 3.1</link>, she would calculate the sample mean:</p>
+<p id="corty3e-ch3-eqn-2" block_type="equation">
+<image asset-id="corty3e-ch3-img-2" alt="image" src="asset/ch3/corty3e_eqn01_80_02.jpg"/>
+</p>
+<p id="corty3e-ch3-p19" block_type="txt-ni">The demographer would report, &#8220;The mean height for the sample of five Americans is 67.00&#8243; or 5&#8242; 7&#8243;.&#8221;</p>
+<p id="corty3e_page_81" block_type="page_start">81</p>
+<p id="corty3e-ch3-p20" block_type="txt">An additional way that a mean can be used is to find out how much a single score, <em>X,</em> deviates from it. This is called a <termref term="deviation score">deviation score</termref>. A deviation score is calculated by subtracting the mean from a score:</p>
+<p id="corty3e-ch3-p21" block_type="eq">Deviation score &#61; <em>X</em> &#8211; <em>M</em></p>
+<p id="corty3e-ch3-p22" block_type="txt">Deviation scores in a normal distribution are shown in <link href="#corty3e-ch3-fig-4"><strong>Figure 3.1</strong></link>. No matter the shape of a distribution of scores, a positive deviation score means that the score is above the mean, a negative deviation score means that the score is below the mean, and a deviation score of zero means that the score is right at the mean. <link href="#corty3e-ch3-fig-5"><strong>Table 3.2</strong></link> shows the deviation scores for the heights of the five Americans.</p>
+<figure id="corty3e-ch3-fig-4" block_type="figure" numbered="true" number="3.1" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="medium" border="true"/>
+<image asset-id="corty3e-ch3-img-4" alt="image" src="asset/ch3/corty3e_fig03_01.jpg"/>
+<caption><strong><phrase block_type="fig_num">Figure 3.1</phrase> Deviation Scores</strong> Deviation scores are calculated by subtracting a raw score from the mean. Raw scores above the mean have positive deviation scores and those below the mean have negative deviation scores. Scores exactly at the mean have deviation scores of zero. The farther the raw score is from the mean, the bigger the deviation score.</caption>
+</figure>
+<figure id="corty3e-ch3-fig-5" block_type="table" numbered="true" number="3.2" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="large" border="true"/>
+<image asset-id="corty3e-ch3-img-5" alt="image" src="asset/ch3/corty3e_table03_02.jpg"/>
+</figure>
+<p id="corty3e-ch3-p23" block_type="txt">Note, in <link href="#corty3e-ch3-fig-5">Table 3.2</link>, that the sum of the deviation scores equals zero. This is always true: the sum of a set of deviation scores is zero. The mean is the central score in a set of scores because it balances the negative deviation scores on one side of it with the positive deviation scores on the other side of it. This is shown in <link href="#corty3e-ch3-fig-6"><strong>Figure 3.2</strong></link>, where the mean is the fulcrum of a seesaw balancing the five height deviation scores. Deviation scores rely on information about distance between scores, so the mean can only be used with interval- or ratio-level data.</p>
+<p id="corty3e_page_82" block_type="page_start">82</p>
+<figure id="corty3e-ch3-fig-6" block_type="figure" numbered="true" number="3.2" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="medium" border="true"/>
+<image asset-id="corty3e-ch3-img-6" alt="image" src="asset/ch3/corty3e_fig03_02.jpg"/>
+<caption><strong><phrase block_type="fig_num">Figure 3.2</phrase> Mean as Balancing Point</strong> The numbers in parentheses are deviation scores. The mean is the balancing point for the deviation scores, balancing a sum of deviation scores of &#8211;8.00 on one side with a total of &#43;8.00 on the other side. Because the mean takes distance between cases into account, it can only be used with interval- or ratio-level numbers.</caption>
+</figure>
+<p id="corty3e-ch3-p24" block_type="txt">One problem with the mean is that it can be influenced by an <termref term="outlier">outlier</termref>, an extreme score that falls far away from the rest of the scores in a data set. Robert Wadlow, the world&#8217;s tallest man, is an example of an outlier. Wadlow was born in 1918 and had an overactive pituitary gland that caused him to grow to 8&#8242; 11&#8243;. In <link href="#corty3e-ch3-fig-7"><strong>Figure 3.3</strong></link>, you can see Robert Wadlow standing next to two average height women. In terms of height, Robert Wadlow is an outlier.</p>
+<figure id="corty3e-ch3-fig-7" block_type="figure" numbered="true" number="3.3" mmtype="image" mmsrc="" attr="">
+<layout align="right" width="medium" border="true"/>
+<image asset-id="corty3e-ch3-img-7" alt="image" src="asset/ch3/corty3e_fig03_03.jpg"/>
+<caption><strong><phrase block_type="fig_num">Figure 3.3</phrase> Robert Wadlow, an Outlier</strong> Robert Wadlow at 8&#8242; 11&#8243; towers over two women of average height. Because of his height, Wadlow is an outlier, an extreme score that falls far away from the rest of the scores in a data set.</caption>
+<asset_source>(NYPL/Science Source/Getty Images)</asset_source>
+</figure>
+<p id="corty3e-ch3-p25" block_type="txt">Imagine Robert Wadlow, at 107&#8243;, being added to the demographer&#8217;s sample of five Americans, making it a sample of six. The mean, which had been 67.00 when there were only five cases, would now be</p>
+<p id="corty3e-ch3-eqn-3" block_type="equation">
+<image asset-id="corty3e-ch3-img-8" alt="image" src="asset/ch3/corty3e_eqn01_82_01.jpg"/>
+</p>
+<p id="corty3e-ch3-p26" block_type="txt">Adding one outlier, Robert Wadlow, causes the average height to jump from 5&#8242; 7&#8243; to about 6&#8242; 2&#8243;, a jump of almost 7&#8243;. That&#8217;s a big impact for a single case to have on the mean. Being influenced by outliers is a problem for the mean. The next measure of central tendency, the median, is not as influenced by outliers.</p>
+</section>
+<section id="corty3e-ch3-sec2-2" block_type="h2" chapter="3" title="" numbered="false" level="2" print_page="83">
+<section-metadata><section-title>Median</section-title></section-metadata>
+<p id="corty3e_page_83" block_type="page_start">83</p>
+<p id="corty3e-ch3-p27" block_type="txt-ni">The <termref term="median">median</termref> is the middle score, the score associated with the case that separates the top half of the scores from the bottom half. The median focuses on direction (more/less) and ignores information about the distance between scores. Because of this, the median can be used with ordinal data (unlike the mean). The abbreviation for median is <em>Mdn.</em></p>
+<p id="corty3e-ch3-p28" block_type="txt">The easiest way to calculate the median is to use the counting method, shown in <link href="#corty3e-ch3-bx6-2">Equation 3.2</link>. By this equation, the median is the score associated with case number <image asset-id="corty3e-ch3-img-9" alt="image" src="asset/ch3/corty3e_ineqn01_83_01.jpg"/>.</p>
+<box title="" numbered="false" id="corty3e-ch3-bx6-2" block_type="eq-t">
+<box-metadata><box-title><phrase block_type="sec_num">Equation 3.2</phrase> <phrase block_type="sec_title">Formula for the Median (<em>Mdn</em>)</phrase></box-title></box-metadata>
+<p id="corty3e-ch3-p29" block_type="h4-txt-ni"><phrase block_type="h4-n-ri"><strong>Step 1</strong></phrase> Put the scores in order from low to high and number them (1, 2, 3, etc.).</p>
+<p id="corty3e-ch3-p30" block_type="h4-txt-ni"><phrase block_type="h4-n-ri"><strong>Step 2</strong></phrase> Find the <em>X</em> value associated with the score number <image asset-id="corty3e-ch3-img-10" alt="image" src="asset/ch3/corty3e_ineqn01_83_01.jpg"/></p>
+<p id="corty3e-ch3-p31" block_type="eq-first">where <em>X</em> &#61; raw score</p>
+<p id="corty3e-ch3-p32" block_type="eq-last"><em>N</em> &#61; number of cases in the data set</p>
+</box>
+<p id="corty3e-ch3-p33" block_type="txt">Here&#8217;s how to calculate the median for the original height data set, the one with only five cases:</p>
+<list id="corty3e-ch3-list-2" type="unordered" block_type="bullet">
+<li><p id="corty3e-ch3-p34" block_type="bl-first">In <link href="#corty3e-ch3-fig-9"><strong>Table 3.3</strong></link>, the five heights are listed in order and the numbers 1&#8211;5 are assigned to them.</p>
+<figure id="corty3e-ch3-fig-9" block_type="table" numbered="true" number="3.3" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="large" border="true"/>
+<image asset-id="corty3e-ch3-img-11" alt="image" src="asset/ch3/corty3e_table03_03.jpg"/>
+</figure></li>
+<li><p id="corty3e-ch3-p35" block_type="bl-mid">According to <link href="#corty3e-ch3-bx6-2">Equation 3.2</link>, the median is the raw score associated with the score number <image asset-id="corty3e-ch3-img-12" alt="image" src="asset/ch3/corty3e_ineqn01_83_01.jpg"/>.</p></li>
+<li><p id="corty3e-ch3-p36" block_type="bl-mid">Calculate <image asset-id="corty3e-ch3-img-13" alt="image" src="asset/ch3/corty3e_ineqn01_83_02.jpg"/>.</p></li>
+<li><p id="corty3e-ch3-p37" block_type="bl-mid">The median is the score associated with the third case.</p></li>
+<li><p id="corty3e-ch3-p38" block_type="bl-mid">Looking in <link href="#corty3e-ch3-fig-9">Table 3.3</link>, one can see that the third case has an <em>X</em> value of 66.</p></li>
+<li><p id="corty3e-ch3-p39" block_type="bl-last">So, the median is 66.00. One could say, &#8220;The median height for these five Americans is 5&#8242; 6&#8243;.&#8221;</p></li>
+</list>
+<p id="corty3e-ch3-p40" block_type="txt"><link href="#corty3e-ch3-fig-10"><strong>Figure 3.4</strong></link> shows how the median is also the central score in a set of scores, but in a different way than the mean is. Just as many cases fall below the median as fall above it. Notice how the distance between cases is ignored with the median.</p>
+<figure id="corty3e-ch3-fig-10" block_type="figure" numbered="true" number="3.4" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="medium" border="true"/>
+<image asset-id="corty3e-ch3-img-14" alt="image" src="asset/ch3/corty3e_fig03_04.jpg"/>
+<caption><strong><phrase block_type="fig_num">Figure 3.4</phrase> Median as Balancing Point</strong> The numbers in parentheses above the scores are their ranks. The median is the balancing point, the center, for the <em>number</em> of scores. The mean (<link href="#corty3e-ch3-fig-6">Figure 3.2</link>) is the balancing point for the <em>distance</em> between scores. The distance between cases is irrelevant for the median.</caption>
+</figure>
+<p id="corty3e_page_84" block_type="page_start">84</p>
+<p id="corty3e-ch3-p41" block_type="txt">One advantage of the median over the mean is that it can be used with ordinal-level data. Another is that the median is less influenced by outliers. Let&#8217;s see what happens to 66.00, the median for the five scores, when the outlier, 107&#8243; Robert Wadlow, is added. According to <link href="#corty3e-ch3-bx6-2">Equation 3.2</link>, now that there are six scores, the median case is score number 3.5 and the median is the value associated with this case:</p>
+<p id="corty3e-ch3-eqn-4" block_type="equation">
+<image asset-id="corty3e-ch3-img-15" alt="image" src="asset/ch3/corty3e_eqn01_84_01.jpg"/>
+</p>
+<p id="corty3e-ch3-p42" block_type="txt"><link href="#corty3e-ch3-fig-12"><strong>Table 3.4</strong></link> shows the six cases and there is no case numbered 3.5. There&#8217;s a case number 3, with a height of 66&#8243;, and a case number 4, with a height of 69&#8243;. Statisticians are happy to have fractional cases, so case number 3.5 is halfway between case 3 and case 4. Similarly, the <em>X</em> value associated with case 3.5 is halfway between the raw scores associated with those two cases, 66 and 69. Another way of saying this is that the median in such a case is the mean of the two values:</p>
+<p id="corty3e-ch3-eqn-5" block_type="equation">
+<image asset-id="corty3e-ch3-img-15" alt="image" src="asset/ch3/corty3e_eqn01_84_02.jpg"/>
+</p>
+<figure id="corty3e-ch3-fig-12" block_type="table" numbered="true" number="3.4" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="large" border="true"/>
+<image asset-id="corty3e-ch3-img-16" alt="image" src="asset/ch3/corty3e_table03_04.jpg"/>
+</figure>
+<p id="corty3e-ch3-p43" block_type="txt-ni">The median for the six cases is 67.50.</p>
+<p id="corty3e-ch3-p44" block_type="txt">Before the outlier was added, the median was 66.00. Adding the outlier changed the median, but doing so only moved it 1.5&#8243; higher. Compare this to the almost 7&#8243; that the same outlier added to the mean. Medians are less affected by outliers than are means because they don&#8217;t take distance information into account. This is an advantage for the median.</p>
+</section>
+<section id="corty3e-ch3-sec2-3" block_type="h2" chapter="3" title="" numbered="false" level="2" print_page="85">
+<section-metadata><section-title>Mode</section-title></section-metadata>
+<p id="corty3e_page_85" block_type="page_start">85</p>
+<p id="corty3e-ch3-p45" block_type="txt-ni">The third measure of central tendency is the <termref term="mode">mode</termref>, the score that occurs with the greatest frequency. For the height data, there is no mode. Each value occurs with the same frequency, once, and there is no score that is the most common. Looking back at <link href="corty3e-ch2.xml#corty3e-ch2-fig-37">Table 2.15</link>, the data for the sex of students in a psychology class, the most common value is female, so that is the mode. This points out an advantage of the mode: the mode can be used for nominal data (unlike the mean or the median).</p>
+</section>
+<section id="corty3e-ch3-sec2-4" block_type="h2" chapter="3" title="" numbered="false" level="2" print_page="85">
+<section-metadata><section-title>Choosing a Measure of Central Tendency</section-title></section-metadata>
+<p id="corty3e-ch3-p46" block_type="txt-ni">It is important to know how to select the correct measure of central tendency to represent a given set of data. <link href="#corty3e-ch3-fig-14"><strong>Table 3.5</strong></link> shows which measure of central tendency can be used with which level of measurement:</p>
+<figure id="corty3e-ch3-fig-14" block_type="table" numbered="true" number="3.5" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="large" border="true"/>
+<image asset-id="corty3e-ch3-img-18" alt="image" src="asset/ch3/corty3e_table03_05.jpg"/>
+</figure>
+<list id="corty3e-ch3-list-3" type="unordered" block_type="bullet">
+<li><p id="corty3e-ch3-p47" block_type="bl-first">If one has nominal data, there is only one option for a measure of central tendency, the mode.</p></li>
+<li><p id="corty3e-ch3-p48" block_type="bl-mid">With ordinal data, there are two options for a measure of central tendency, the mode or the median.</p></li>
+<li><p id="corty3e-ch3-p49" block_type="bl-mid">If one has interval- or ratio-level data, there are three options: mode, median, or mean.</p></li>
+</list>
+<p id="corty3e-ch3-p50" block_type="txt">When there are multiple options for a measure of central tendency, choose the measure of central tendency that takes into account the most information:</p>
+<list id="corty3e-ch3-list-4" type="unordered" block_type="bullet">
+<li><p id="corty3e-ch3-p51" block_type="bl-mid">The mode only takes same/different information into account.</p></li>
+<li><p id="corty3e-ch3-p52" block_type="bl-mid">The median takes same/different information into account, as well as direction information.</p></li>
+<li><p id="corty3e-ch3-p53" block_type="bl-last">The mean takes same/different, direction, and distance information into account.</p></li>
+</list>
+<box numbered="false" id="corty3e-ch3-exp1-1" block_type="mn1">
+<p id="corty3e-ch3-p54" block_type="mn-ext-ni"><em>Choose the measure of central tendency that conveys the most information.</em></p>
+</box>
+<p id="corty3e-ch3-p55" block_type="txt"><em>Remember:</em> Choose the measure of central tendency that conveys the most information. So, with interval- or ratio-level data, the &#8220;go to&#8221; option is the mean. However, there are conditions where it is better to fall back to a different measure of central tendency for interval- or ratio-level data.</p>
+<p id="corty3e-ch3-p56" block_type="txt">To decide which measure of central tendency to choose for interval or ratio data, one should make a frequency distribution and think about the shape of the data. If there are outliers or if the data set is skewed, the mean will be pulled in the direction of the outliers or the skew and won&#8217;t be an accurate reflection of central tendency. In these situations, the median is a better option. If the data set is bimodal or multimodal, a mean or a median may not be appropriate. In the bimodal data in <link href="#corty3e-ch3-fig-15"><strong>Figure 3.5</strong></link>, the mean and median fall in a no-man&#8217;s land where there are few cases. Does a score in this region typify the data set? No. In this situation, reporting the multiple modes makes more sense.</p>
+<p id="corty3e_page_86" block_type="page_start">86</p>
+<figure id="corty3e-ch3-fig-15" block_type="figure" numbered="true" number="3.5" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="large" border="true"/>
+<image asset-id="corty3e-ch3-img-19" alt="image" src="asset/ch3/corty3e_fig03_05.jpg"/>
+<caption><strong><phrase block_type="fig_num">Figure 3.5</phrase> Central Tendency for a Bimodal Distribution</strong> It is not appropriate to calculate a mean or a median for bimodal data. In this case, central tendency should be reported as two modes.</caption>
+</figure>
+<box title="A Common Question" numbered="false" id="corty3e-ch3-bx1-1" block_type="bx-1-h">
+<p id="corty3e-ch3-p57" block_type="bx1-que"><strong>Q</strong>	What does it mean if the mean and the median for a set of data are very different from each other?</p>
+<p id="corty3e-ch3-p58" block_type="bx1-ans"><strong>A</strong>	It could mean that the data set is skewed. When the mean is bigger than the median, that suggests positive skew. When the mean is smaller than the median, that suggests negative skew.</p>
+</box>
+<box title="Worked Example 3.1" numbered="false" id="corty3e-ch3-bx3-1" block_type="sr-exp-n">
+<p id="corty3e-ch3-p59" block_type="sr-ex-txt-ni">Here&#8217;s a small data set for practice calculating central tendency. Suppose a psychologist decided to base some research on the famous &#8220;Bobo doll&#8221; experiment (Bandura, Ross, &#38; Ross, 1961). In that study, children saw an adult interact with a Bobo doll, an inflated doll with a weighted base that bounces back up when it is punched. Some of the kids saw the adult behave aggressively toward Bobo and other kids didn&#8217;t. The kids who saw aggression modeled later behaved more aggressively toward Bobo.</p>
+<p id="corty3e-ch3-p60" block_type="sr-ex-txt">Our researcher, Dr. Gorham, put together a sample of 10 third graders and had each of them watch an adult <em>physically</em> attack Bobo. Each child was then left alone in a room with Bobo and other toys for 5 minutes. Dr. Gorham observed and counted how many times each child <em>verbally</em> insulted Bobo. Each time a child used a negative word to address Bobo, for instance, called him &#8220;stupid&#8221; or &#8220;ugly,&#8221; was counted. Here are the totals for number of aggressive comments: 2, 9, 3, 4, 6, 7, 5, 5, 4, and 4. What value should Dr. Gorham use to represent the average number of aggressive comments for this sample?</p>
+<p id="corty3e_page_87" block_type="page_start">87</p>
+<p id="corty3e-ch3-p61" block_type="sr-ex-txt">The first thing to do is figure out which measure of central tendency is most appropriate. The data, number of aggressive comments, are measured at the ratio level, so Dr. Gorham could use mean, median, or mode (see <link href="#corty3e-ch3-fig-14">Table 3.5</link>). His initial plan should be to use the mean, which utilizes all the information in the numbers. To make sure the mean will work, he needs to check the shape of data and confirm that it is not skewed or multimodal.</p>
+<p id="corty3e-ch3-p62" block_type="sr-ex-txt">The distribution, shown in <link href="#corty3e-ch3-fig-16"><strong>Figure 3.6</strong></link>, doesn&#8217;t look unusual in terms of modality or skewness, so the mean still seems appropriate. However, to compare all three, Dr. Gorham calculates all three measures of central tendency.</p>
+<figure id="corty3e-ch3-fig-16" block_type="figure" numbered="true" number="3.6" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="medium" border="true"/>
+<image asset-id="corty3e-ch3-img-20" alt="image" src="asset/ch3/corty3e_fig03_06.jpg"/>
+<caption><strong><phrase block_type="fig_num">Figure 3.6</phrase> Number of Aggressive Comments Made Against the Bobo Doll by 10 Third Graders</strong> When sample size is small, as it is here, it is difficult to draw conclusions about the shape of a data set. This data set isn&#8217;t multimodal and doesn&#8217;t look skewed, so calculating the mean seems OK.</caption>
+</figure>
+<p id="corty3e-ch3-p63" block_type="sr-ex-txt">He calculates the mode first, because it is the easiest. Looking at <link href="#corty3e-ch3-fig-16">Figure 3.6</link>, he sees one peak, at 4, so he can report that the modal number of aggressive comments is 4.00 in his sample.</p>
+<p id="corty3e-ch3-p64" block_type="sr-ex-txt">Next, he calculates the mean using <link href="#corty3e-ch3-bx6-1">Equation 3.1</link>:</p>
+<p id="corty3e-ch3-eqn-6" block_type="equation">
+<image asset-id="corty3e-ch3-img-21" alt="image" src="asset/ch3/corty3e_eqn01_87_01.jpg"/>
+</p>
+<p id="corty3e-ch3-p65" block_type="sr-ex-txt-ni">The mean number of aggressive comments is 4.90.</p>
+<p id="corty3e-ch3-p66" block_type="sr-ex-txt">To calculate the median, following <link href="#corty3e-ch3-bx6-2">Equation 3.2</link>, he arranges the scores in order and numbers them as shown in <link href="#corty3e-ch3-fig-18"><strong>Table 3.6</strong></link>. <em>N</em> &#61; 10, so the median is the value associated with score number <image asset-id="corty3e-ch3-img-22" alt="image" src="asset/ch3/corty3e_ineqn01_87_01.jpg"/>, the 5.5th score.</p>
+<figure id="corty3e-ch3-fig-18" block_type="table" numbered="true" number="3.6" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="large" border="true"/>
+<image asset-id="corty3e-ch3-img-23" alt="image" src="asset/ch3/corty3e_table03_06.jpg"/>
+</figure>
+<p id="corty3e-ch3-p67" block_type="sr-ex-txt">The 5.5th score is the score between the 5th score, which has a value of 4, and the 6th score, which has a value of 5. The mean of those two values, the halfway point between them, is calculated as <image asset-id="corty3e-ch3-img-24" alt="image" src="asset/ch3/corty3e_ineqn01_87_02.jpg"/>. Dr. Gorham would report <em>Mdn</em> &#61; 4.50.</p>
+<p id="corty3e_page_88" block_type="page_start">88</p>
+<p id="corty3e-ch3-p68" block_type="sr-ex-txt">He calculated the mean (4.90), the median (4.50), and the mode (4.00). The mean is a little above the median, which suggests there is some positive skew in the data set. Now, primed to see it, <link href="#corty3e-ch3-fig-16">Figure 3.6</link> does look like it has a slightly positive skew. Because of this, Dr. Gorham could decide that the median is the best measure of central tendency to report. However, the discrepancy between the mean and the median is not very large, so it still makes sense to use the mean. The mean uses more of the information in the numbers, so this is the measure of central tendency that Dr. Gorham decides to report. Here&#8217;s what he said, &#8220;The children in the sample made a mean of 4.90 aggressive comments toward a Bobo doll after having seen an adult commit physical aggression against it.&#8221;</p>
+</box>
+<box title="Practice Problems 3.1" numbered="false" id="corty3e-ch3-bx2-1" block_type="sr-h">
+<p id="corty3e-ch3-p69" block_type="sr-h1"><strong>Review Your Knowledge</strong></p>
+<p id="corty3e-ch3-p70" block_type="sr-que-nl"><phrase block_type="question_num">3.01</phrase> List the three measures of central tendency.</p>
+<p id="corty3e-ch3-p71" block_type="sr-que-nl"><phrase block_type="question_num">3.02</phrase> Which measure of central tendency can be used (a) for nominal-level data? (b) For ordinal-level data? (c) For interval- or ratio-level data?</p>
+<p id="corty3e-ch3-p72" block_type="sr-que-nl"><phrase block_type="question_num">3.03</phrase> What impact does a skewed data set have on the mean?</p>
+<p id="corty3e-ch3-p73" block_type="sr-h1"><strong>Apply Your Knowledge</strong></p>
+<p id="corty3e-ch3-p74" block_type="sr-que-txt-ni"><strong><em>For Practice Problems 3.04&#8211;3.06, calculate the appropriate measure of central tendency for each sample.</em></strong></p>
+<p id="corty3e-ch3-p75" block_type="sr-que-nl"><phrase block_type="question_num">3.04</phrase> A school psychologist measured the IQs of seven children as 94, 100, 110, 112, 100, 98, and 100.</p>
+<p id="corty3e-ch3-p76" block_type="sr-que-nl"><phrase block_type="question_num">3.05</phrase> A neuroscientist measured how often a sample of neurons fired during a specified period of time. The 10 values were 1, 11, 10, 10, 2, 2, 3, 10, 9, and 2.</p>
+<p id="corty3e-ch3-p77" block_type="sr-que-nl"><phrase block_type="question_num">3.06</phrase> A sensory psychologist measured whether taste buds were primarily sensitive to (1) bitter, (2) salty, (3) savory, (4) sour, or (5) sweet. Here are the data for her sample of taste buds: 1, 2, 3, 4, 5, 5, 5, 3, 2, 3, 4, 5, 1, 5, 4, and 5.</p>
+</box>
+</section>
+<section id="corty3e-ch3-sec1-2" block_type="h1" chapter="3" title="" numbered="false" level="1" print_page="89">
+<section-metadata><section-title><phrase block_type="sec_num">3.2</phrase> <phrase block_type="sec_title">Variability</phrase></section-title></section-metadata>
+<p id="corty3e_page_89" block_type="page_start">89</p>
+<box id="corty3e-ch3-video-1" block_type="video">
+<p id="corty3e-ch3-videotxt-1" block_type="vidtxt"><link href="http://bcs.whfreeman.com/webpub/statistics/ips7e/student/Stat Videos/ch01/sc_exploratorypictures_quantdata.html" target="_pop" data-href-px=""><image asset-id="corty3e-ch3-vimg-1" alt="image" src="asset/images/video.jpg"/></link><em>StatClips: Exploratory Pictures for Quantitative Data</em>Video on LaunchPad</p>
+</box>
+<p id="corty3e-ch3-p78" block_type="txt-ni">Statisticians define variability as how much spread there is in a set of scores. Spread refers to how much the scores cluster together or how much they stretch out over a wider range. For an example of this, see <link href="#corty3e-ch3-fig-19"><strong>Figure 3.7</strong></link>. The curve on the left shows a more tightly clustered set of scores, and the curve on the right shows a data set with more variability in scores.</p>
+<figure id="corty3e-ch3-fig-19" block_type="figure" numbered="true" number="3.7" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="large" border="true"/>
+<image asset-id="corty3e-ch3-img-25" alt="image" src="asset/ch3/corty3e_fig03_07.jpg"/>
+<caption><strong><phrase block_type="fig_num">Figure 3.7</phrase> Differing Amounts of Variability</strong> The range of scores in the set of scores on the right is greater than for the set on the left. The set on the right has more variability.</caption>
+</figure>
+<p id="corty3e-ch3-p79" block_type="txt">Both measurements&#8212;central tendency and variability&#8212;are important in describing a set of scores. The need for both measurements was made clear at the start of the chapter with Darren and Marcie, the two students with the same GPA. There are two facts about them&#8212;(1) their GPAs were 3.00, and (2) they achieved this either by getting all B&#8217;s or by a mixture of A&#8217;s and C&#8217;s. The first statement gives information about central tendency, and the second gives information about variability. Both statements offer useful information.</p>
+<p id="corty3e-ch3-p80" block_type="txt">Statisticians have developed a number of ways to summarize variability. The remainder of this chapter will be used to explore four measures of variability: range, interquartile range, variance, and standard deviation. These four measures of variability all make use of the distance between scores, so they are appropriate for use with interval- or ratio-level data, but not with nominal or ordinal data.</p>
+</section>
+<section id="corty3e-ch3-sec2-5" block_type="h2" chapter="3" title="" numbered="false" level="2" print_page="89">
+<section-metadata><section-title>Range and Interquartile Range</section-title></section-metadata>
+<p id="corty3e-ch3-p81" block_type="txt-ni">The simplest measure of variability is the <termref term="range">range</termref>, the distance from the lowest score to the highest score. In <link href="#corty3e-ch3-fig-19">Figure 3.7</link>, notice how the range of scores, marked by a double-headed arrow below the <em>X</em>-axis, is greater for the set of scores on the right. The formula for the range, which says to subtract the smallest score from the largest score, appears in <link href="#corty3e-ch3-bx6-3">Equation 3.3</link>.</p>
+<box title="" numbered="false" id="corty3e-ch3-bx6-3" block_type="eq-t">
+<box-metadata><box-title><phrase block_type="sec_num">Equation 3.3</phrase> <phrase block_type="sec_title">Formula for Range</phrase></box-title></box-metadata>
+<p id="corty3e-ch3-p82" block_type="eq">Range &#61; <em>X</em><sub>High</sub> &#8211; <em>X</em><sub>Low</sub></p>
+<p id="corty3e-ch3-p83" block_type="eq-txt-ni">where Range &#61; distance from lowest score to highest score</p>
+<p id="corty3e-ch3-p84" block_type="eq-unl"><em>X</em><sub>Low</sub> &#61; the smallest value of <em>X</em> in the data set</p>
+<p id="corty3e-ch3-p85" block_type="eq-unl"><em>X</em><sub>High</sub> &#61; the largest value of <em>X</em> in the data set</p>
+</box>
+<p id="corty3e_page_90" block_type="page_start">90</p>
+<p id="corty3e-ch3-p86" block_type="txt">For the height data, here is the calculation for range:</p>
+<p id="corty3e-ch3-p87" block_type="eq">Range &#61; 73 &#8211; 62 &#61; 11.00</p>
+<p id="corty3e-ch3-p88" block_type="txt-ni">The range is a single number, so the range for the height data would be reported as 11.00. This makes it easy to compare amounts of variability from one set of data to another. If the value for the range is greater for data set A than it is for data set B, then data set A has more variability.</p>
+<p id="corty3e-ch3-p89" block_type="txt">There is a problem with using the range as a measure of variability. The range depends only on two scores in the data set, the top score and the bottom score, so most of the data are ignored. This means that the range is influenced by extreme scores even more than the mean. If all 107&#8243; of Robert Wadlow joined the sample, the range would jump from 11.00&#8243; to 45.00&#8243;. That&#8217;s a 34-inch change in the range as the result of adding just one case.</p>
+<p id="corty3e-ch3-p90" block_type="txt">The influence of outliers can be reduced by removing extreme scores before calculating the range. The only question is how many scores to trim. The most common solution is to trim the bottom 25&#37; of scores and the top 25&#37; of scores. Then, the range is calculated for the middle 50&#37; of the scores. This is called the <termref term="interquartile range">interquartile range</termref> (abbreviated <em>IQR</em>).</p>
+<p id="corty3e-ch3-p91" block_type="txt">The interquartile range is called the inter<em>quartile</em> range because data sets can be divided into four equal chunks, called quartiles. Each quartile contains 25&#37; of the cases. The interquartile range represents the distance covered by the middle two quartiles, as shown in <link href="#corty3e-ch3-fig-20"><strong>Figure 3.8</strong></link>.</p>
+<figure id="corty3e-ch3-fig-20" block_type="figure" numbered="true" number="3.8" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="large" border="true"/>
+<image asset-id="corty3e-ch3-img-26" alt="image" src="asset/ch3/corty3e_fig03_08.jpg"/>
+<caption><strong><phrase block_type="fig_num">Figure 3.8</phrase> Four Quartiles of a Data Set</strong> Data sets can be divided into quartiles, four equal sections, each with 25&#37; of the cases. The interquartile range is the distance covered by the two middle quartiles.</caption>
+</figure>
+<p id="corty3e-ch3-p92" block_type="txt">As with the range, the interquartile range is a single number. However, range is often reported as two scores&#8212;the lowest value and the highest value in the data set. Following a similar format&#8212;reporting the interquartile range as two scores&#8212;makes it a statistic that does double duty. The two scores provide information about <em>both</em> variability <em>and</em> central tendency. Knowing how wide the interval is indicates how much variability is present&#8212;the wider the interval, the larger the amount of variability. Knowing the values of the interval tells us where the average scores fall. To illustrate this point, let&#8217;s look at an example that will be familiar to most students.</p>
+<p id="corty3e-ch3-p93" block_type="txt">In the search for colleges, students often encounter the interquartile range without realizing it. Many colleges use the interquartile range in reporting SAT or ACT scores for their students, often calling it something like &#8220;25th&#8211;75th percentile&#8221; or &#8220;middle 50&#37;.&#8221;</p>
+<p id="corty3e-ch3-p94" block_type="txt">When the interquartile is reported as a single number, it gives useful comparative information about variability. In a list of the best research universities, the interquartile ranges for the combined SAT scores of students at the schools were reported (<link href="http://www.satscores.us">www.satscores.us</link>). Schools at the top of the list had interquartile ranges about 280 SAT points wide and those at the bottom of the list had interquartile ranges about 360 SAT points wide.<termref term="fn-ch3-1">*</termref> This indicates that more variability in SAT performance exists among the students at the lower-ranked schools than among students at the upper-ranked schools. Professors at the lower-ranked schools can expect a wider range of skills in their classrooms than would be found at an upper-ranked school.</p>
+<p id="corty3e-ch3-p95" block_type="fn"><link href="#corty3e-ch3-p94">*</link> Note: These figures are based on the three-section SAT in use prior to 2016. Beginning March 2016, the SAT includes only two sections, Reading/Writing and Math.</p>
+<p id="corty3e_page_91" block_type="page_start">91</p>
+<p id="corty3e-ch3-p96" block_type="txt">When the interquartile range is reported as two scores, it functions as a measure of central tendency because it reveals the interval that captures the average students&#8212;the middle 50&#37;. For example, the upper-ranked schools have an interquartile range for combined SAT scores that ranges from 2,100 to 2,380, while the lower-ranked schools&#8217; interquartile range goes from 1,170 to 1,530. One can see that the average students at the top schools did almost 1,000 points better in terms of combined SAT scores than the average students at the lower-ranked schools. The interquartile range is a helpful descriptive statistic because it provides information about variability <em>and</em> central tendency.</p>
+</section>
+<section id="corty3e-ch3-sec2-6" block_type="h2" chapter="3" title="" numbered="false" level="2" print_page="91">
+<section-metadata><section-title>Variability in Populations</section-title></section-metadata>
+<p id="corty3e-ch3-p97" block_type="txt-ni">So far, variability has only been calculated for samples of cases. Now, let&#8217;s consider variability in populations, the larger groups from which samples are drawn. For example, the demographer&#8217;s sample of five adult Americans is a subset of the more than 200 million adult Americans. Just as there is variability for height in the sample of five adults, there is variability for height in the population. In fact, more variability should occur in the population than in the sample. The shortest person in the sample is 5&#8242; 2&#8243; and the tallest is 6&#8242; 1&#8243;. Aren&#8217;t there American adults who are shorter than 5&#8242; 2&#8243; and who are taller than 6&#8242; 1&#8243;? Of course. Populations almost always have more variability than samples do.</p>
+<p id="corty3e-ch3-p98" block_type="txt">Variability exists in populations, but there is a practical problem in measuring it. When the population is large, one can&#8217;t measure everyone. If it took just a minute to measure a person&#8217;s height, it would take more than 300 years&#8212;working 24/7&#8212;to measure the heights of all 200 million American adults. That would be impossible. Except in rare situations, variability can&#8217;t be calculated for a population. Nonetheless, as we&#8217;ll see in the next section, the <em>idea</em> that there is a population value for variability is an important one.</p>
+</section>
+<section id="corty3e-ch3-sec2-7" block_type="h2" chapter="3" title="" numbered="false" level="2" print_page="91">
+<section-metadata><section-title>Population Variance</section-title></section-metadata>
+<box numbered="false" id="corty3e-ch3-exp1-2" block_type="mn1">
+<p id="corty3e-ch3-p99" block_type="mn-ext-ni"><em>The variance and the standard deviation use information from all the cases in the data set. As a result, they are better measures of variability in the whole data set.</em></p>
+</box>
+<p id="corty3e-ch3-p100" block_type="txt-ni">Remember deviation scores from earlier in this chapter? Deviation scores are used to calculate variance and standard deviation. The <termref term="variance">variance</termref> is the mean squared deviation score and a <termref term="standard deviation">standard deviation</termref> is the square root of the variance. In essence, a standard deviation tells the average distance by which raw scores deviate from the mean.</p>
+<p id="corty3e-ch3-p101" block_type="txt">The variance and standard deviation have a big advantage over the range and interquartile range. The range and interquartile range use limited information from a data set. For example, the range only uses the case with the highest score and the case with the lowest score, ignoring variability information from all the other cases. In contrast, the variance and the standard deviation use information from all the cases in the data set. As a result, they are better measures of variability in the whole data set.</p>
+<p id="corty3e_page_92" block_type="page_start">92</p>
+<p id="corty3e-ch3-p102" block_type="txt">Deviation scores represent the amount of distance a score falls from the mean. With data from a whole population, deviation scores would be calculated by subtracting the population mean, &#956;, from the raw scores:</p>
+<p id="corty3e-ch3-p103" block_type="eq">Population deviation score &#61; <em>X &#8211;</em> &#956;</p>
+<p id="corty3e-ch3-p104" block_type="txt">To understand how deviation scores measure variability, examine the two distributions in <link href="#corty3e-ch3-fig-19">Figure 3.7</link> on page 89. The distribution on the right has more variability, a greater range of scores, than is found in the distribution on the left. Said another way, the scores are less tightly clustered around the mean in the distribution on the right than they are in the distribution on the left. The distribution on the right has some cases that fall farther away from the mean and these will have bigger deviation scores. Deviation scores serve as a measure of variability, and bigger deviation scores mean more variability.</p>
+<p id="corty3e-ch3-p105" block_type="txt">If deviation scores are measures of variability and there is a deviation score for each case in the population, then how is the size of the deviation scores summarized? The obvious approach is to find the average deviation score by adding together all the deviation scores and dividing this sum by the number of scores. Unfortunately, this doesn&#8217;t work. Remember, the mean balances the deviation scores, so the sum of a set of deviation scores is always zero. As a result, the average deviation score will always be zero no matter how much variability there was in the data set.</p>
+<p id="corty3e-ch3-p106" block_type="txt">To get around this problem, statisticians square the deviation scores&#8212;making them all positive&#8212;and then find the average of the squared deviation scores. The result is the variance, the mean squared deviation score. For a population, variance is abbreviated as &#963;<sup>2</sup> (&#963; is the lowercase version of the Greek letter sigma; &#963;<sup>2</sup> is pronounced &#8220;sigma squared&#8221;). The formula for calculating population variance is shown in <link href="#corty3e-ch3-bx6-4">Equation 3.4</link>.</p>
+<box title="" numbered="false" id="corty3e-ch3-bx6-4" block_type="eq-t">
+<box-metadata><box-title><phrase block_type="sec_num">Equation 3.4</phrase> <phrase block_type="sec_title">Formula for Population Variance (&#963;<sup>2</sup>)</phrase></box-title></box-metadata>
+<p id="corty3e-ch3-eqn-7" block_type="equation">
+<image asset-id="corty3e-ch3-img-27" alt="image" src="asset/ch3/corty3e_eqn01_92_01.jpg"/>
+</p>
+<p id="corty3e-ch3-p107" block_type="eq-txt-ni">where &#963;<sup>2</sup> &#61; population variance</p>
+<p id="corty3e-ch3-p108" block_type="eq-unl"><em>X</em> &#61; raw score</p>
+<p id="corty3e-ch3-p109" block_type="eq-unl">&#956; &#61; the population mean</p>
+<p id="corty3e-ch3-p110" block_type="eq-unl"><em>N</em> &#61; the number of cases in the population</p>
+</box>
+<p id="corty3e-ch3-p111" block_type="txt">This formula for calculating population variance requires four steps: (1) first, create deviation scores for each case in the population by subtracting the population mean from each raw score; (2) then, square each of these deviation scores; (3) next, add up all the squared deviation scores; and (4) finally, divide this sum by the number of cases in the population. The result is &#963;<sup>2</sup>, the population variance.</p>
+</section>
+<section id="corty3e-ch3-sec2-8" block_type="h2" chapter="3" title="" numbered="false" level="2" print_page="92">
+<section-metadata><section-title>Population Standard Deviation</section-title></section-metadata>
+<p id="corty3e-ch3-p112" block_type="txt-ni">Interpreting variance can be confusing because it is based on squared scores. The solution is simple: find the square root of the variance. The square root of the variance is called the standard deviation, and it transforms the variance back into the original unit of measurement. The standard deviation is the most commonly reported measure of variability. For a population, the standard deviation is abbreviated as &#963;. The formula for calculating a population standard deviation is shown in <link href="#corty3e-ch3-bx6-5">Equation 3.5</link>.</p>
+<p id="corty3e_page_93" block_type="page_start">93</p>
+<box title="" numbered="false" id="corty3e-ch3-bx6-5" block_type="eq-t">
+<box-metadata><box-title><phrase block_type="sec_num">Equation 3.5</phrase> <phrase block_type="sec_title">Formula for Population Standard Deviation(&#963;)</phrase></box-title></box-metadata>
+<p id="corty3e-ch3-eqn-8" block_type="equation">
+<image asset-id="corty3e-ch3-img-27" alt="image" src="asset/ch3/corty3e_eqn01_93_01.jpg"/>
+</p>
+<p id="corty3e-ch3-p113" block_type="eq-txt-ni">where &#963; &#61; population standard deviation</p>
+<p id="corty3e-ch3-p114" block_type="eq-unl">&#963;<sup>2</sup> &#61; population variance (<link href="#corty3e-ch3-bx6-4">Equation 3.4</link>)</p>
+</box>
+<box numbered="false" id="corty3e-ch3-exp1-3" block_type="mn1">
+<p id="corty3e-ch3-p115" block_type="mn-ext-ni"><em>A standard deviation gives information about the average distance that scores fall from the mean.</em></p>
+</box>
+<p id="corty3e-ch3-p116" block_type="txt">A standard deviation tells how much spread, or variability, there is in a set of scores. If the standard deviation is small, then the scores fall relatively close to the mean. As standard deviations grow larger, the scores are scattered farther away from the mean. A standard deviation gives information about the average distance that scores fall from the mean.</p>
+</section>
+<section id="corty3e-ch3-sec2-9" block_type="h2" chapter="3" title="" numbered="false" level="2" print_page="93">
+<section-metadata><section-title>Calculating Variance and Standard Deviation for a Sample</section-title></section-metadata>
+<p id="corty3e-ch3-p117" block_type="txt-ni">Population variance and population standard deviation are almost never known because it is rare that a researcher has access to all the cases in a population. Researchers study samples, but they want to draw conclusions about populations. In order to do so, they need to use population values in their equations. To make this possible, statisticians have developed a way to calculate variance and standard deviation for a sample and to &#8220;correct&#8221; them so that they are better approximations of the population values. The correction makes the sample variance and sample standard deviation a little bit larger.</p>
+<p id="corty3e-ch3-p118" block_type="txt">Why does the correction increase the size of the sample variance and sample standard deviation? Because there is more variability in a population than in a sample. To visualize this, imagine a big jar of jellybeans of different colors and flavors. The jar is the population. Fernando comes along, dips his hand in, and pulls out a handful. The handful is the sample. Now, Fernando is asked how many different colors he has in his hand. The number of colors is a measure of variability. Fernando&#8217;s handful probably includes a lot of different colors. But, given the size of the jar, it is almost certain that there are some colors in the jar that are missing from his sample. More variability exists in the population than was found in the sample, so a sample measure of variability has to be corrected to reflect this.</p>
+<figure id="corty3e-ch3-fig-23" block_type="un_figure" numbered="false" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="medium" border="true"/>
+<image asset-id="corty3e-ch3-img-29" alt="image" src="asset/ch3/corty3e_fig03_un01.jpg"/>
+</figure>
+<p id="corty3e_page_94" block_type="page_start">94</p>
+<p id="corty3e-ch3-p119" block_type="txt">The formula for calculating sample variance is shown in <link href="#corty3e-ch3-bx6-6">Equation 3.6</link>. Sample variance is abbreviated <em>s</em><sup>2</sup>, pronounced &#8220;s squared&#8221; and sample standard deviation is abbreviated <em>s.</em> (<em>s</em> is used because sigma, &#963;, is the Greek letter &#8220;s.&#8221;)</p>
+<box title="" numbered="false" id="corty3e-ch3-bx6-6" block_type="eq-t">
+<box-metadata><box-title><phrase block_type="sec_num">Equation 3.6</phrase> <phrase block_type="sec_title">Formula for Sample Variance (<em>s</em><sup>2</sup>)</phrase></box-title></box-metadata>
+<p id="corty3e-ch3-eqn-9" block_type="equation">
+<image asset-id="corty3e-ch3-img-27" alt="image" src="asset/ch3/corty3e_eqn01_94_01.jpg"/>
+</p>
+<p id="corty3e-ch3-p120" block_type="eq-unl">where <em>s</em><sup>2</sup> &#61; sample variance</p>
+<p id="corty3e-ch3-p121" block_type="eq-unl"><em>X</em> &#61; raw score</p>
+<p id="corty3e-ch3-p122" block_type="eq-unl"><em>M</em> &#61; the sample mean</p>
+<p id="corty3e-ch3-p123" block_type="eq-unl"><em>N</em> &#61; the number of cases in the sample</p>
+</box>
+<p id="corty3e-ch3-p124" block_type="txt">To calculate sample variance, make a table with all the data in it. As seen in <link href="#corty3e-ch3-fig-25"><strong>Table 3.7</strong></link>, the data go in the first column, with each raw score on a separate row. It doesn&#8217;t matter whether the data are in order or not. The table should have three columns. Once the table is ready, follow this four-step procedure to calculate <em>s</em> <sup>2</sup>, the sample variance. Here&#8217;s an example finding the variance for the heights in the demographer&#8217;s sample of five adult Americans:</p>
+<figure id="corty3e-ch3-fig-25" block_type="table" numbered="true" number="3.7" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="large" border="true"/>
+<image asset-id="corty3e-ch3-img-31" alt="image" src="asset/ch3/corty3e_table03_07.jpg"/>
+</figure>
+<p id="corty3e-ch3-p125" block_type="h4-txt-ni"><phrase block_type="h4-n-ri"><strong>Step 1</strong></phrase> Subtract the mean from each score in order to calculate deviation scores. This is shown in the second column in <link href="#corty3e-ch3-fig-25">Table 3.7</link>. For the height data, the mean is 67.00. Here is the calculation of the deviation score for the case in the first row with a raw score of 62:</p>
+<p id="corty3e-ch3-p126" block_type="eq">62 &#8211; 67.00 &#61; &#8211;5.00</p>
+<p id="corty3e-ch3-p127" block_type="h4-txt-ni"><phrase block_type="h4-n-ri"><strong>Step 2</strong></phrase> Take each deviation score and square it. This is shown in the third column in <link href="#corty3e-ch3-fig-25">Table 3.7</link>. In the first row, the deviation score of &#8211;5.00 becomes 25.00 when squared.</p>
+<p id="corty3e-ch3-p128" block_type="h4-txt-ni"><phrase block_type="h4-n-ri"><strong>Step 3</strong></phrase> Add up all the squared deviation scores. This is called a <termref term="sum of squares">sum of squares</termref>, abbreviated <em>SS</em>, because that is just what it is&#8212;a sum of squared scores. At the bottom of the third column is &#8721;, a summation sign. Adding together all the squared deviation scores in <link href="#corty3e-ch3-fig-25">Table 3.7</link> totals to 70.00.</p>
+<p id="corty3e_page_95" block_type="page_start">95</p>
+<p id="corty3e-ch3-p129" block_type="h4-txt-ni"><phrase block_type="h4-n-ri"><strong>Step 4</strong></phrase> The final step involves taking the sum of the squared deviation scores (70.00) and dividing it by the number of cases minus 1 to find the sample variance.</p>
+<p id="corty3e-ch3-eqn-10" block_type="equation">
+<image asset-id="corty3e-ch3-img-27" alt="image" src="asset/ch3/corty3e_eqn01_95_01.jpg"/>
+</p>
+<p id="corty3e-ch3-p130" block_type="txt">And, that&#8217;s the answer. The demographer would report the sample variance for the five Americans as <em>s</em><sup>2</sup> &#61; 17.50. With variances, bigger numbers mean more variability. Without another variance for comparison, it is hard to say whether this sample variance of 17.50 means there is a lot of variability or a little variability in this sample.</p>
+<p id="corty3e-ch3-p131" block_type="txt">Wondering where the &#8220;correction&#8221; is that makes this sample variance larger and a better estimate of the population value? It is in the denominator, where 1 is subtracted from <em>N,</em> the number of cases. This subtraction makes the denominator smaller, which makes the quotient, <em>s</em><sup>2</sup>, larger, making the sample variance a better estimate of &#963;<sup>2</sup>.</p>
+<p id="corty3e-ch3-p132" block_type="txt">Once the sample variance, <em>s</em><sup>2</sup>, has been calculated, it is straightforward to calculate <em>s,</em> the sample standard deviation. The formula for the sample standard deviation is shown in <link href="#corty3e-ch3-bx6-7">Equation 3.7</link>.</p>
+<box title="" numbered="false" id="corty3e-ch3-bx6-7" block_type="eq-t">
+<box-metadata><box-title><phrase block_type="sec_num">Equation 3.7</phrase> <phrase block_type="sec_title">Formula for Sample Standard Deviation (<em>s</em>)</phrase></box-title></box-metadata>
+<p id="corty3e-ch3-eqn-11" block_type="equation">
+<image asset-id="corty3e-ch3-img-27" alt="image" src="asset/ch3/corty3e_eqn01_95_02.jpg"/>
+</p>
+<p id="corty3e-ch3-p133" block_type="eq-txt-ni">where <em>s</em> &#61; sample standard deviation</p>
+<p id="corty3e-ch3-p134" block_type="eq-unl"><em>s</em><sup>2</sup> &#61; sample variance (<link href="#corty3e-ch3-bx6-6">Equation 3.6</link>)</p>
+</box>
+<p id="corty3e-ch3-p135" block_type="txt">As <em>s</em><sup>2</sup> &#61; 17.50 for the five heights, here is the calculation for the standard deviation for the sample:</p>
+<p id="corty3e-ch3-eqn-12" block_type="equation">
+<image asset-id="corty3e-ch3-img-27" alt="image" src="asset/ch3/corty3e_eqn01_95_03.jpg"/>
+</p>
+<p id="corty3e-ch3-p136" block_type="txt">The demographer would report the standard deviation of the sample as <em>s</em> &#61; 4.18. Often, means and standard deviations are used together to describe central tendency and variability for data sets. For the sample of five Americans, the demographer would describe them as having a mean height of 67.00 inches with a standard deviation of 4.18 inches, or she might write <em>M</em> &#61; 67.00&#8243; and <em>s</em> &#61; 4.18&#8243;.</p>
+<p id="corty3e-ch3-p137" block_type="txt">Means are easy to interpret&#8212;readers of the demographer&#8217;s report will have some sense of what an average height of 5&#8242; 7&#8243; looks like&#8212;but most people don&#8217;t have an intuitive sense of how to interpret standard deviations. One can think of a standard deviation as revealing the distance a score, on average, falls from the mean, but does a standard deviation of 4.18&#8243; mean there is a lot of variability in the sample or a little? For now, just remember that bigger standard deviations mean more variability. If someone else had a different sample and reported that <em>s</em> &#61; 5.32, then his sample would have more variability in height than the original demographer&#8217;s sample, where <em>s</em> &#61; 4.18. The scores in the second sample would tend to fall, on average, a little farther away from the mean.</p>
+<p id="corty3e_page_96" block_type="page_start">96</p>
+<box title="Worked Example 3.2" numbered="false" id="corty3e-ch3-bx3-2" block_type="sr-exp-n">
+<p id="corty3e-ch3-p138" block_type="sr-ex-txt-ni">Remember Dr. Gorham, the psychologist who collected data about the number of aggressive comments that third graders made to a Bobo doll after seeing an adult physically attack it? The raw scores were 2, 3, 4, 4, 4, 5, 5, 6, 7, 9 and the mean was 4.90. Let&#8217;s use these data to practice calculating the sample variance and sample standard deviation.</p>
+<p id="corty3e-ch3-p139" block_type="sr-ex-txt">Once the data are in a table, calculating the sample variance follows four steps. Here, the data in <link href="#corty3e-ch3-fig-29"><strong>Table 3.8</strong></link> are listed in order from low to high, but the procedure still works if they are not in order.</p>
+<figure id="corty3e-ch3-fig-29" block_type="table" numbered="true" number="3.8" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="large" border="true"/>
+<image asset-id="corty3e-ch3-img-35" alt="image" src="asset/ch3/corty3e_table03_08.jpg"/>
+</figure>
+<list id="corty3e-ch3-list-5" type="ordered" block_type="numbered">
+<li><p id="corty3e-ch3-p140" block_type="sr-exp-nl-first">The first step involves calculating deviation scores (e.g., 2 &#8211; 4.90 &#61; &#8211;2.90).</p></li>
+<li><p id="corty3e-ch3-p141" block_type="sr-exp-nl-mid">The next step is squaring the deviation scores. For the first row, this is &#8211;2.90<sup>2</sup> &#61; 8.41.</p></li>
+<li><p id="corty3e-ch3-p142" block_type="sr-exp-nl-mid">For the third step, sum the squared deviation scores (e.g., 8.41 &#43; 3.61 &#43; 0.81, etc.) and find the total (&#8721; &#61; 36.90, shown at the bottom of column 3).</p></li>
+<li><p id="corty3e-ch3-p143" block_type="sr-exp-nl-last">Finally, for Step 4, divide the sum of the squared deviations by the number of cases minus 1 to find the sample variance:</p></li>
+</list>
+<p id="corty3e-ch3-eqn-13" block_type="equation">
+<image asset-id="corty3e-ch3-img-27" alt="image" src="asset/ch3/corty3e_eqn01_96_01.jpg"/>
+</p>
+<p id="corty3e-ch3-p144" block_type="sr-ex-txt">Once the variance has been calculated, it is easy to find the standard deviation by taking its square root:</p>
+<p id="corty3e-ch3-eqn-14" block_type="equation">
+<image asset-id="corty3e-ch3-img-27" alt="image" src="asset/ch3/corty3e_eqn03_97_01.jpg"/>
+</p>
+<p id="corty3e-ch3-p145" block_type="sr-ex-txt">When asked to use central tendency and variability to describe this sample, Dr. Gorham would say that these 10 third graders made a mean of 4.90 aggressive comments to Bobo, with a standard deviation of 2.02 comments. He could report this as <em>M</em> &#61; 4.90 and <em>s</em> &#61; 2.02.</p>
+</box>
+<p id="corty3e_page_97" block_type="page_start">97</p>
+<box title="Practice Problems 3.2" numbered="false" id="corty3e-ch3-bx2-2" block_type="sr-h">
+<p id="corty3e-ch3-p146" block_type="sr-h1"><strong>Review Your Knowledge</strong></p>
+<p id="corty3e-ch3-p147" block_type="sr-que-nl"><phrase block_type="question_num">3.07</phrase> What does it mean when one set of scores has more variability than another set?</p>
+<p id="corty3e-ch3-p148" block_type="sr-que-nl"><phrase block_type="question_num">3.08</phrase> What is a disadvantage of the range as a measure of variability?</p>
+<p id="corty3e-ch3-p149" block_type="sr-que-nl"><phrase block_type="question_num">3.09</phrase> What is an advantage of the interquartile range as a measure of variability?</p>
+<p id="corty3e-ch3-p150" block_type="sr-que-nl"><phrase block_type="question_num">3.10</phrase> What is an advantage of the variance and standard deviation over the range and interquartile range as measures of variability?</p>
+<p id="corty3e-ch3-p151" block_type="sr-h1"><strong>Apply Your Knowledge</strong></p>
+<p id="corty3e-ch3-p152" block_type="sr-que-nl"><phrase block_type="question_num">3.11</phrase> A clinical psychologist took 12 people who were diagnosed with depression and gave them an interval-level depression scale. On this scale, scores above 70 are considered to be indicative of clinical depression. Here are the 12 scores: 65, 81, 66, 83, 70, 70, 72, 60, 78, 78, 79, and 84. What is the range?</p>
+<p id="corty3e-ch3-p153" block_type="sr-que-nl"><phrase block_type="question_num">3.12</phrase> The American Association of Organic Apple Growers took a sample of five family farms and determined how large, in acres, the orchards were. The results were 23, 8, 22, 10, and 32 with a mean of 19.00. Calculate (a) sample variance and (b) sample standard deviation for the size, in acres, of the five orchards.</p>
+</box>
+<box title="Application Demonstration" numbered="false" id="corty3e-ch3-bx5-1" block_type="sr-x-h">
+<p id="corty3e-ch3-p154" block_type="sr-x-txt-ni">A psychologist took a sample of eight rats and trained them to run a maze in order to find food in a goal box. After they were well trained, she timed how long it took them, in seconds, to run the maze. Here are the data she collected: 4.73, 6.54, 5.88, 4.68, 5.82, 6.01, 5.54, and 6.24. She wants to report a measure of central tendency and variability for the sample.</p>
+<p id="corty3e-ch3-p155" block_type="sr-x-h1"><strong>Central Tendency</strong></p>
+<p id="corty3e-ch3-p156" block_type="sr-x-txt-ni">The data, time in seconds, are measured at the ratio level, so she can use a mean as her measure of central tendency. But, she should consider the shape of the data set before committing to the mean. <link href="#corty3e-ch3-fig-32"><strong>Figure 3.9</strong></link> shows a histogram for the maze running times.</p>
+<figure id="corty3e-ch3-fig-32" block_type="figure" numbered="true" number="3.9" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="medium" border="true"/>
+<image asset-id="corty3e-ch3-img-38" alt="image" src="asset/ch3/corty3e_fig03_09.jpg"/>
+<caption><strong><phrase block_type="fig_num">Figure 3.9</phrase> Histogram of Maze Running Times for Eight Rats</strong> When sample size is small, it is difficult to judge the shape of a distribution. This histogram does not show obvious skewness, so calculating the mean seems reasonable.</caption>
+</figure>
+<p id="corty3e-ch3-p157" block_type="sr-x-txt"><link href="#corty3e-ch3-fig-32">Figure 3.9</link> doesn&#8217;t illustrate anything unusual in terms of shape. The sample size is small, but there is nothing obviously odd in terms of modality or skew, so she can proceed with calculating the mean. Using <link href="#corty3e-ch3-bx6-1">Equation 3.1</link>, she should sum all the scores and divide by the number of cases to find the mean:</p>
+<p id="corty3e_page_98" block_type="page_start">98</p>
+<p id="corty3e-ch3-eqn-15" block_type="equation">
+<image asset-id="corty3e-ch3-img-39" alt="image" src="asset/ch3/corty3e_eqn03_98_01.jpg"/>
+</p>
+<p id="corty3e-ch3-p158" block_type="sr-x-txt-ni">The mean time to run the maze is 5.68 seconds.</p>
+<p id="corty3e-ch3-p159" block_type="sr-x-h1"><strong>Variability</strong></p>
+<p id="corty3e-ch3-p160" block_type="sr-x-txt-ni">The most often reported measure of variability is the standard deviation, <em>s.</em> To calculate <em>s,</em> she completes <link href="#corty3e-ch3-fig-34"><strong>Table 3.9</strong></link> to lead her through the first four steps involved in calculating the sample variance (<link href="#corty3e-ch3-bx6-4">Equation 3.4</link>).</p>
+<figure id="corty3e-ch3-fig-34" block_type="table" numbered="true" number="3.9" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="large" border="true"/>
+<image asset-id="corty3e-ch3-img-40" alt="image" src="asset/ch3/corty3e_table03_09.jpg"/>
+</figure>
+<p id="corty3e-ch3-p161" block_type="sr-x-txt">Step 1 involves listing the scores and that is easy to do. Using the mean, 5.68, she can complete the second step and calculate deviation scores (see the second column in <link href="#corty3e-ch3-fig-34">Table 3.9</link>). Column 3 shows the squared deviation scores, whereas the bottom of column 3 gives the sum of the squared deviation scores, 3.1438.</p>
+<p id="corty3e-ch3-p162" block_type="sr-x-txt">For Step 5, she uses the sum of the squared deviation scores to calculate the sample variance:</p>
+<p id="corty3e-ch3-eqn-16" block_type="equation">
+<image asset-id="corty3e-ch3-img-41" alt="image" src="asset/ch3/corty3e_eqn03_98_02.jpg"/>
+</p>
+<p id="corty3e-ch3-p163" block_type="sr-x-txt-ni">To find the sample standard deviation, she applies <link href="#corty3e-ch3-bx6-7">Equation 3.7</link>:</p>
+<p id="corty3e-ch3-eqn-17" block_type="equation">
+<image asset-id="corty3e-ch3-img-42" alt="image" src="asset/ch3/corty3e_eqn03_99_01.jpg"/>
+</p>
+<p id="corty3e-ch3-p164" block_type="sr-x-txt-ni">She would report central tendency as a mean maze running time of 5.68 seconds, with a sample standard deviation of 0.67. Following APA format, she could write <em>M</em> &#61; 5.68&#8243; and <em>s</em> &#61; 0.67&#8243;.</p>
+</box>
+<p id="corty3e_page_99" block_type="page_start">99</p>
+<box title="DIY" numbered="false" id="corty3e-ch3-bx4-1" block_type="bx4-h">
+<p id="corty3e-ch3-p165" block_type="bx4-txt-ni">Did you save the grocery receipt you used in the rounding DIY for <link href="corty3e-ch01.xml">Chapter 1</link>? Now we are going to use it to calculate how much your average grocery item costs. Price is a ratio-level variable, so you could calculate mean, median, or mode as an average. Which should you do?</p>
+<p id="corty3e-ch3-p166" block_type="bx4-txt">We would like to calculate the mean because it uses interval and ratio data that contain more information, but does the shape of the sample allow that? What should you do if most of your sample falls in the &#36;2&#8211;&#36;5 range and one or two items are in the &#36;10&#8211;&#36;15 range?</p>
+<p id="corty3e-ch3-p167" block_type="bx4-txt">Calculate all three measures and compare them. Could you calculate a mode? Which measure should you report and why?</p>
+<p id="corty3e-ch3-p168" block_type="bx4-txt">And, what should you do for a measure of variability?</p>
+</box>
+</section>
+<section id="corty3e-ch3-sec1-3" block_type="sum-h" chapter="3" title="" numbered="false" level="1" print_page="99">
+<section-metadata><section-title>SUMMARY</section-title></section-metadata>
+<p id="corty3e-ch3-p169" block_type="sum-hd1"><strong>Define and know when to calculate three measures of central tendency.</strong></p>
+<list id="corty3e-ch3-list-6" type="unordered" block_type="bluebullet">
+<li><p id="corty3e-ch3-p170" block_type="sum-bl-first">The measure of central tendency that is calculated for a data set is determined by the level of measurement and the shape of the data set. A mean, <em>M,</em> can be calculated for interval- or ratio-level data that are not skewed or multimodal. The median, <em>Mdn,</em> is the score associated with the case that separates the top half of scores from the bottom half of scores. Medians can be calculated for ordinal-, interval-, or ratio-level data. The mode, the score that occurs most frequently, is the only measure of central tendency that can be calculated for nominal-level data. Modes can also be calculated for ordinal-, interval-, or ratio-level data. When there are multiple options for which measure of central tendency to choose, select the one that conveys the most information and takes the shape of the data set into consideration.</p></li>
+</list>
+<p id="corty3e_page_100" block_type="page_start">100</p>
+<p id="corty3e-ch3-p171" block_type="sum-hd1"><strong>Define variability and know how to calculate four different measures of it.</strong></p>
+<list id="corty3e-ch3-list-7" type="unordered" block_type="bluebullet">
+<li><p id="corty3e-ch3-p172" block_type="sum-bl-first">Variability refers to how much spread there is in a set of scores. All four measures of variability are for interval- or ratio-level data. The range tells the distance from the smallest score to the largest score and is heavily influenced by outliers. The interquartile range, <em>IQR,</em> tells the distance covered by the middle 50&#37; of scores. The <em>IQR</em> provides information about both central tendency and variability. Variance uses the mean squared deviation score as a measure of variability; standard deviation is the square root of variance and gives the average distance that scores fall from the mean. The larger the standard deviation, the less clustered scores are around the mean.</p></li>
+<li><p id="corty3e-ch3-p173" block_type="sum-bl-mid">There is usually more variability in the population than in a sample. Population variance and standard deviation are abbreviated as &#963;<sup>2</sup> and &#963;; sample variance and standard deviation as <em>s</em> <sup>2</sup> and <em>s.</em> The sample variance and standard deviation are &#8220;corrected&#8221; to approximate population values more accurately.</p></li>
+</list>
+</section>
+<section id="corty3e-ch3-sec1-4" block_type="cr-kt-t" chapter="3" title="" numbered="false" level="1" print_page="100">
+<section-metadata><section-title>KEY TERMS</section-title></section-metadata>
+<question id="corty3e-ch3-keyterms-ques1" numbered="false" title="" number="">
+<query id="corty3e-ch3-keyterms-ques1-qry">MA:
+a.central tendency:: a value used to summarize a set of scores; also known as the average.
+a.deviation score:: a measure of how far a score falls from the mean, calculated by subtracting the mean from the score.
+a.interquartile range:: a measure of variability for interval- or ratio-level data; the distance covered by the middle 50&#37; of scores; abbreviated <em>IQR.</em>
+a.mean:: an average calculated for interval- or ratio-level data by summing all the values in a data set and dividing by the number of cases; abbreviated <em>M.</em>
+a.median:: an average calculated by finding the score associated with the middle case, the case that separates the top half of scores from the bottom half; abbreviated <em>Mdn</em>; can be calculated for ordinal-, interval-, or ratio-level data.
+a.mode:: the score that occurs with the greatest frequency.
+a.outlier:: an extreme (unusual) score that falls far away from the rest of the scores in a set of data.
+a.range:: a measure of variability for interval- or ratio-level data; the distance from the lowest score to the highest score.
+a.standard deviation:: a measure of variability for interval- or ratio-level data; the square root of the variance; a measure of the average distance that scores fall from the mean.
+a.sum of squares:: squaring a set of scores and then adding together the squared scores; abbreviated <em>SS.</em>
+a.variability:: how much variety (spread or dispersion) there is in a set of scores.
+a.variance:: a measure of variability for interval- or ratio-level data; the mean of the squared deviation scores.
+</query>
+</question>
+
+</section>
+<section id="corty3e-ch3-sec1-5" block_type="cr-x-h" chapter="3" title="" numbered="false" level="1" print_page="100">
+<section-metadata><section-title>CHAPTER EXERCISES</section-title></section-metadata>
+<p id="corty3e-ch3-p186" block_type="cr-x-txt-ni"><strong><em>Answers to the odd-numbered exercises appear in <link href="corty3e-appb.xml">Appendix B</link>.</em></strong></p>
+<p id="corty3e-ch3-p187" block_type="cr-x-hd1"><strong>Review Your Knowledge</strong></p>
+<p id="corty3e-ch3-p188" block_type="cr-x-nl-txt"><phrase block_type="question_num">3.01</phrase> The two dimensions used in this chapter to summarize a set of data are measures of &#95;&#95;&#95;&#95; and &#95;&#95;&#95;&#95;.</p>
+<p id="corty3e-ch3-p189" block_type="cr-x-nl-txt"><phrase block_type="question_num">3.02</phrase> The three measures of central tendency covered in this chapter are &#95;&#95;&#95;&#95;, &#95;&#95;&#95;&#95;, and &#95;&#95;&#95;&#95;.</p>
+<p id="corty3e-ch3-p190" block_type="cr-x-nl-txt"><phrase block_type="question_num">3.03</phrase> Two sets of scores may be alike in central tendency but can still differ in &#95;&#95;&#95;&#95;.</p>
+<p id="corty3e-ch3-p191" block_type="cr-x-nl-txt"><phrase block_type="question_num">3.04</phrase> The formula for a &#95;&#95;&#95;&#95; is <em>X</em> &#8211; <em>M.</em></p>
+<p id="corty3e_page_101" block_type="page_start">101</p>
+<p id="corty3e-ch3-p192" block_type="cr-x-nl-txt"><phrase block_type="question_num">3.05</phrase> The sum of deviation scores equals &#95;&#95;&#95;&#95;.</p>
+<p id="corty3e-ch3-p193" block_type="cr-x-nl-txt"><phrase block_type="question_num">3.06</phrase> A mean may be influenced by &#95;&#95;&#95;&#95;, which are extreme scores.</p>
+<p id="corty3e-ch3-p194" block_type="cr-x-nl-txt"><phrase block_type="question_num">3.07</phrase> The median is &#95;&#95;&#95;&#95; influenced by outliers than is the mean.</p>
+<p id="corty3e-ch3-p195" block_type="cr-x-nl-txt"><phrase block_type="question_num">3.08</phrase> The median separates the top &#95;&#95;&#95;&#95;&#37; of scores from the bottom &#95;&#95;&#95;&#95;&#37; of scores.</p>
+<p id="corty3e-ch3-p196" block_type="cr-x-nl-txt"><phrase block_type="question_num">3.09</phrase> If one has interval or ratio data, the first choice for a measure of central tendency to calculate should be a &#95;&#95;&#95;&#95;.</p>
+<p id="corty3e-ch3-p197" block_type="cr-x-nl-txt"><phrase block_type="question_num">3.10</phrase> If one has interval or ratio data and the data set is skewed, one should use a &#95;&#95;&#95;&#95; as the measure of central tendency.</p>
+<p id="corty3e-ch3-p198" block_type="cr-x-nl-txt"><phrase block_type="question_num">3.11</phrase> If one has interval or ratio data and the data set is multimodal, one should use &#95;&#95;&#95;&#95; as the measure of central tendency.</p>
+<p id="corty3e-ch3-p199" block_type="cr-x-nl-txt"><phrase block_type="question_num">3.12</phrase> If one has nominal data, one should use a &#95;&#95;&#95;&#95; as the measure of central tendency.</p>
+<p id="corty3e-ch3-p200" block_type="cr-x-nl-txt"><phrase block_type="question_num">3.13</phrase> The range, interquartile range, variance, and standard deviation can only be used with variables measured at the &#95;&#95;&#95;&#95; or &#95;&#95;&#95;&#95; level.</p>
+<p id="corty3e-ch3-p201" block_type="cr-x-nl-txt"><phrase block_type="question_num">3.14</phrase> The range tells the distance from the &#95;&#95;&#95;&#95; score to the &#95;&#95;&#95;&#95; score.</p>
+<p id="corty3e-ch3-p202" block_type="cr-x-nl-txt"><phrase block_type="question_num">3.15</phrase> The range <em>is/is not</em> influenced by outliers.</p>
+<p id="corty3e-ch3-p203" block_type="cr-x-nl-txt"><phrase block_type="question_num">3.16</phrase> If the top 25&#37; of scores and the bottom 25&#37; of scores are trimmed off the range, it is called the &#95;&#95;&#95;&#95;.</p>
+<p id="corty3e-ch3-p204" block_type="cr-x-nl-txt"><phrase block_type="question_num">3.17</phrase> If the interquartile range for student A&#8217;s grades is wider than it is for student B&#8217;s grades, then student A has &#95;&#95;&#95;&#95; variability in his or her grades.</p>
+<p id="corty3e-ch3-p205" block_type="cr-x-nl-txt"><phrase block_type="question_num">3.18</phrase> The interquartile range can be used as a measure of &#95;&#95;&#95;&#95; as well as variability.</p>
+<p id="corty3e-ch3-p206" block_type="cr-x-nl-txt"><phrase block_type="question_num">3.19</phrase> There is more variability in a &#95;&#95;&#95;&#95; than in a &#95;&#95;&#95;&#95;.</p>
+<p id="corty3e-ch3-p207" block_type="cr-x-nl-txt"><phrase block_type="question_num">3.20</phrase> Because populations are so &#95;&#95;&#95;&#95;, it is practically impossible to measure variability in them.</p>
+<p id="corty3e-ch3-p208" block_type="cr-x-nl-txt"><phrase block_type="question_num">3.21</phrase> The &#95;&#95;&#95;&#95; is the mean squared deviation score.</p>
+<p id="corty3e-ch3-p209" block_type="cr-x-nl-txt"><phrase block_type="question_num">3.22</phrase> The &#95;&#95;&#95;&#95; is the square root of the &#95;&#95;&#95;&#95; and tells the average distance by which the raw scores deviate from the mean.</p>
+<p id="corty3e-ch3-p210" block_type="cr-x-nl-txt"><phrase block_type="question_num">3.23</phrase> The variance and standard deviation, unlike the range and the interquartile range, use information from all of the &#95;&#95;&#95;&#95;.</p>
+<p id="corty3e-ch3-p211" block_type="cr-x-nl-txt"><phrase block_type="question_num">3.24</phrase> The information used from each case, in calculating variance and standard deviation, is its &#95;&#95;&#95;&#95; score.</p>
+<p id="corty3e-ch3-p212" block_type="cr-x-nl-txt"><phrase block_type="question_num">3.25</phrase> If scores are &#95;&#95;&#95;&#95; clustered around the mean, then there is less variability in that set of scores.</p>
+<p id="corty3e-ch3-p213" block_type="cr-x-nl-txt"><phrase block_type="question_num">3.26</phrase> The average deviation score is not useful as a measure of variability because the &#95;&#95;&#95;&#95; of the deviation scores is always &#95;&#95;&#95;&#95;.</p>
+<p id="corty3e-ch3-p214" block_type="cr-x-nl-txt"><phrase block_type="question_num">3.27</phrase> To use deviation scores to measure variability, statisticians &#95;&#95;&#95;&#95; them before summing them.</p>
+<p id="corty3e-ch3-p215" block_type="cr-x-nl-txt"><phrase block_type="question_num">3.28</phrase> &#95;&#95;&#95;&#95; is the abbreviation for population variance.</p>
+<p id="corty3e-ch3-p216" block_type="cr-x-nl-txt"><phrase block_type="question_num">3.29</phrase> &#95;&#95;&#95;&#95; is the abbreviation for population standard deviation.</p>
+<p id="corty3e-ch3-p217" block_type="cr-x-nl-txt"><phrase block_type="question_num">3.30</phrase> If the standard deviation is small, then the scores fall relatively close to the &#95;&#95;&#95;&#95;.</p>
+<p id="corty3e-ch3-p218" block_type="cr-x-nl-txt"><phrase block_type="question_num">3.31</phrase> Sample values of variance and standard deviation are &#95;&#95;&#95;&#95;, so they are better approximations of the &#95;&#95;&#95;&#95; values.</p>
+<p id="corty3e-ch3-p219" block_type="cr-x-nl-txt"><phrase block_type="question_num">3.32</phrase> The abbreviation for sample variance is &#95;&#95;&#95;&#95;; for sample standard deviation, it is &#95;&#95;&#95;&#95;.</p>
+<p id="corty3e-ch3-p220" block_type="cr-x-nl-txt"><phrase block_type="question_num">3.33</phrase> The first step in calculating a sample variance is to calculate a &#95;&#95;&#95;&#95; for each case.</p>
+<p id="corty3e-ch3-p221" block_type="cr-x-nl-txt"><phrase block_type="question_num">3.34</phrase> If <em>s</em> for one set of data is 12.98 and it is 18.54 for a second set of data, then the first set of data has &#95;&#95;&#95;&#95; variability than the second.</p>
+<p id="corty3e-ch3-p222" block_type="cr-x-hd1-rule"><strong>Apply Your Knowledge</strong></p>
+<p id="corty3e-ch3-p223" block_type="cr-x-txt-ni"><strong><em>Selecting and calculating the appropriate measure of central tendency</em></strong></p>
+<p id="corty3e-ch3-p224" block_type="cr-x-nl-txt"><phrase block_type="question_num">3.35</phrase> An industrial/organizational psychologist measured the number of errors seven research participants made in a driving simulator while talking on their cell phones. Here are her data: 12, 6, 5, 4, 4, 3, and 1.</p>
+<p id="corty3e-ch3-p225" block_type="cr-x-nl-txt"><phrase block_type="question_num">3.36</phrase> A cognitive psychologist at a state university noted whether her research participants had been raised in a non&#8211;English-speaking household (0), an English-only&#8211;speaking household (1), or a multilingual, including English, household (2). Here are her data: 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2, and 2.</p>
+<p id="corty3e_page_102" block_type="page_start">102</p>
+<p id="corty3e-ch3-p226" block_type="cr-x-nl-txt"><phrase block_type="question_num">3.37</phrase> A cardiologist wanted to measure the increase in heart rate in response to pain. She directed healthy volunteers to immerse their dominant hands into a bucket of ice water for 1 minute. Here are the increases in heart rate for her participants: 20, 23, 25, 19, 28, and 24.</p>
+<p id="corty3e-ch3-p227" block_type="cr-x-nl-txt"><phrase block_type="question_num">3.38</phrase> An educational psychologist was teaching a graduate seminar with seven students. He was curious to know if the amount of sleep had an impact on performance. On the first exam, he asked how many hours the students had slept the night before. Here are the data he obtained: 8, 9, 7, 6, 8, 4, and 7.</p>
+<p id="corty3e-ch3-p228" block_type="cr-x-txt-ni"><strong><em>Calculating the mean</em></strong></p>
+<p id="corty3e-ch3-p229" block_type="cr-x-nl-txt"><phrase block_type="question_num">3.39</phrase> Given the following ratio-level numbers, calculate the mean: 80, 88, 76, 65, 59, and 77.</p>
+<p id="corty3e-ch3-p230" block_type="cr-x-nl-txt"><phrase block_type="question_num">3.40</phrase> Given the following interval-level numbers, calculate the mean: 0.13, 0.28, 0.42, 0.36, and 0.26.</p>
+<p id="corty3e-ch3-p231" block_type="cr-x-txt-ni"><strong><em>Calculating median and mode</em></strong></p>
+<p id="corty3e-ch3-p232" block_type="cr-x-nl-txt"><phrase block_type="question_num">3.41</phrase> Find the median and the mode for the following data: 65, 66, 66, 70, 71, 72, 72, 72, 78, 83, 85, 86, 87, 87, 88, 88, 92, 93, 95, 95, 99, 100, 102, 102, 102, 102, 102, 103, 104, 108, 111, 113, 118, 119, 119, 119, 121, 121, 122, 128, 130, 131, 134, 136, 138, 139, and 145.</p>
+<p id="corty3e-ch3-p233" block_type="cr-x-nl-txt"><phrase block_type="question_num">3.42</phrase> Find the median and the mode for the following data: 30, 30, 32, 33, 35, 35, 38, 41, 42, 43, 45, 45, 48, 49, 50, 50, 50, 51, 52, 53, 53, 53, 53, 53, 53, 55, 55, 58, 59, 61, 62, 62, 64, 65, 66, 66, 67, 68, 70, 71, 71, 72, 72, 73, 73, 75, 76, 78, 79, and 80.</p>
+<p id="corty3e-ch3-p234" block_type="cr-x-txt-ni"><strong><em>Range and interquartile range</em></strong></p>
+<p id="corty3e-ch3-p235" block_type="cr-x-nl-txt"><phrase block_type="question_num">3.43</phrase> Here is a listing, to the nearest million dollars, of the total payrolls for the 30 Major League baseball teams in 2009.</p>
+<list id="corty3e-ch3-list-8" type="ordered" block_type="loweralpha">
+<li><p id="corty3e-ch3-p236" block_type="cr-x-nl-alpha-lc">Calculate the range.</p></li>
+<li><p id="corty3e-ch3-p237" block_type="cr-x-nl-alpha-lc">Which is a better measure of variability to report, the range or the interquartile range? Why?</p></li>
+</list>
+<table id="corty3e-ch3-table1" block_type="un_table">
+<tbody>
+<tr>
+<td><phrase block_type="tbn-txt">201</phrase></td>
+<td><phrase block_type="tbn-txt">100</phrase></td>
+<td><phrase block_type="tbn-txt">78</phrase></td>
+<td><phrase block_type="tbn-txt">63</phrase></td>
+</tr>
+<tr>
+<td><phrase block_type="tbn-txt">149</phrase></td>
+<td><phrase block_type="tbn-txt">99</phrase></td>
+<td><phrase block_type="tbn-txt">75</phrase></td>
+<td><phrase block_type="tbn-txt">62</phrase></td>
+</tr>
+<tr>
+<td><phrase block_type="tbn-txt">135</phrase></td>
+<td><phrase block_type="tbn-txt">97</phrase></td>
+<td><phrase block_type="tbn-txt">74</phrase></td>
+<td><phrase block_type="tbn-txt">60</phrase></td>
+</tr>
+<tr>
+<td><phrase block_type="tbn-txt">122</phrase></td>
+<td><phrase block_type="tbn-txt">96</phrase></td>
+<td><phrase block_type="tbn-txt">74</phrase></td>
+<td><phrase block_type="tbn-txt">49</phrase></td>
+</tr>
+<tr>
+<td><phrase block_type="tbn-txt">115</phrase></td>
+<td><phrase block_type="tbn-txt">83</phrase></td>
+<td><phrase block_type="tbn-txt">71</phrase></td>
+<td><phrase block_type="tbn-txt">44</phrase></td>
+</tr>
+<tr>
+<td><phrase block_type="tbn-txt">114</phrase></td>
+<td><phrase block_type="tbn-txt">82</phrase></td>
+<td><phrase block_type="tbn-txt">68</phrase></td>
+<td><phrase block_type="tbn-txt">37</phrase></td>
+</tr>
+<tr>
+<td><phrase block_type="tbn-txt">113</phrase></td>
+<td><phrase block_type="tbn-txt">81</phrase></td>
+<td><phrase block_type="tbn-txt">67</phrase></td>
+<td></td>
+</tr>
+<tr>
+<td><phrase block_type="tbn-txt">103</phrase></td>
+<td><phrase block_type="tbn-txt">80</phrase></td>
+<td><phrase block_type="tbn-txt">65</phrase></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p id="corty3e-ch3-p243a" block_type="cr-x-nl-txt"><phrase block_type="question_num">3.44</phrase></p>
+<list id="corty3e-ch3-list-9" type="ordered" block_type="loweralpha">
+<li><p id="corty3e-ch3-p238" block_type="cr-x-nl-txt-ni">Find the range for the data in <link href="#corty3e-ch3-question-53">Exercise 3.41</link>.</p></li>
+<li><p id="corty3e-ch3-p239" block_type="cr-x-nl-alpha-lc">Which is a better measure of variability to report, the range or the interquartile range? Why?</p></li>
+</list>
+<p id="corty3e-ch3-p240" block_type="cr-x-txt-ni"><strong><em>Calculating variability</em></strong></p>
+<p id="corty3e-ch3-p241" block_type="cr-x-nl-txt"><phrase block_type="question_num">3.45</phrase> A researcher obtained a sample from a population and measured an interval-level variable on each case. Here are the values he obtained: 47, 53, 67, 45, and 38. He found <em>M</em> &#61; 50.00. Find the following: (a) <em>N,</em> (b) &#8721; (<em>X</em> &#8211; <em>M</em>), (c) &#8721; (<em>X</em> &#8211; <em>M</em>)<sup>2</sup>.</p>
+<p id="corty3e-ch3-p242" block_type="cr-x-nl-txt"><phrase block_type="question_num">3.46</phrase> Given this data set (12, 9, 15, 13, and 11) with a mean of 12.00, find the following: (a) <em>N,</em> (b) &#8721; (<em>X</em> &#8211; <em>M</em>), (c) &#8721; (<em>X</em> &#8211; <em>M</em>)<sup>2</sup>.</p>
+<p id="corty3e-ch3-p243" block_type="cr-x-nl-txt"><phrase block_type="question_num">3.47</phrase> A clinical psychologist took a sample of four people from the population of people with anxiety disorders and gave them an interval-level anxiety scale. Their scores were 57, 60, 67, and 68 with a mean of 63.00. Calculate <em>s</em><sup>2</sup>.</p>
+<p id="corty3e-ch3-p244" block_type="cr-x-nl-txt"><phrase block_type="question_num">3.48</phrase> A nurse practitioner took a sample of five people from the population of people with high blood pressure and measured their systolic blood pressures as 140, 144, 148, 156, and 162 with a mean of 150.00. Calculate <em>s</em><sup>2</sup>.</p>
+<p id="corty3e-ch3-p245" block_type="cr-x-nl-txt"><phrase block_type="question_num">3.49</phrase> An interval-level measure was obtained on a sample of four cases. Their raw scores were 21, 18, 12, and 9. Calculate <em>s</em><sup>2</sup>.</p>
+<p id="corty3e-ch3-p246" block_type="cr-x-nl-txt"><phrase block_type="question_num">3.50</phrase> An interval-level measure was obtained on five cases. Their raw scores were 108.5, 95.5, 98.0, 112.0, and 112.5. Calculate <em>s</em><sup>2</sup>.</p>
+<p id="corty3e-ch3-p247" block_type="cr-x-nl-txt"><phrase block_type="question_num">3.51</phrase> If <em>s</em> <sup>2</sup> &#61; 6.55, what is <em>s</em>?</p>
+<p id="corty3e-ch3-p248" block_type="cr-x-nl-txt"><phrase block_type="question_num">3.52</phrase> If <em>s</em> <sup>2</sup> &#61; 256.38, what is <em>s</em>?</p>
+<p id="corty3e-ch3-p249" block_type="cr-x-nl-txt"><phrase block_type="question_num">3.53</phrase> Calculate <em>s</em> for these data, which have a mean of 37.20: 24, 36, 42, 50, and 34.</p>
+<p id="corty3e-ch3-p250" block_type="cr-x-nl-txt"><phrase block_type="question_num">3.54</phrase> Calculate <em>s</em> for these data, which have a mean of 3.30: 1.4, 2.2, 4.5, 4.1, and 4.3.</p>
+<p id="corty3e_page_103" block_type="page_start">103</p>
+<p id="corty3e-ch3-p251" block_type="cr-x-hd1"><strong>Expand Your Knowledge</strong></p>
+<p id="corty3e-ch3-p252" block_type="cr-x-nl-txt"><phrase block_type="question_num">3.55</phrase> A librarian measured the number of pages in five books. No two had the same number of pages. Here are the results from four of the books: 150, 100, 210, and 330. Using the counting method, he calculated the median for all five books as 150. In the list below, what is the <em>largest</em> value possible for the number of pages in the fifth book?</p>
+<list id="corty3e-ch3-list-10" type="ordered" block_type="loweralpha">
+<li><p id="corty3e-ch3-p253" block_type="cr-x-nl-alpha-lc">99</p></li>
+<li><p id="corty3e-ch3-p254" block_type="cr-x-nl-alpha-lc">101</p></li>
+<li><p id="corty3e-ch3-p255" block_type="cr-x-nl-alpha-lc">125</p></li>
+<li><p id="corty3e-ch3-p256" block_type="cr-x-nl-alpha-lc">149</p></li>
+<li><p id="corty3e-ch3-p257" block_type="cr-x-nl-alpha-lc">151</p></li>
+<li><p id="corty3e-ch3-p258" block_type="cr-x-nl-alpha-lc">185</p></li>
+<li><p id="corty3e-ch3-p259" block_type="cr-x-nl-alpha-lc">209</p></li>
+<li><p id="corty3e-ch3-p260" block_type="cr-x-nl-alpha-lc">211</p></li>
+<li><p id="corty3e-ch3-p261" block_type="cr-x-nl-alpha-lc">270</p></li>
+<li><p id="corty3e-ch3-p262" block_type="cr-x-nl-alpha-lc">329</p></li>
+<li><p id="corty3e-ch3-p263" block_type="cr-x-nl-alpha-lc">331</p></li>
+<li><p id="corty3e-ch3-p264" block_type="cr-x-nl-alpha-lc">It would be possible to determine this, but the value is not listed above.</p></li>
+<li><p id="corty3e-ch3-p265" block_type="cr-x-nl-alpha-lc">It is not possible to determine this from the information in the question.</p></li>
+</list>
+<p id="corty3e-ch3-p266" block_type="cr-x-nl-txt"><phrase block_type="question_num">3.56</phrase> A teacher has a set of 200 numbers, where the mean is dramatically greater than the median. What does this suggest about the shape of the distribution?</p>
+<list id="corty3e-ch3-list-11" type="ordered" block_type="loweralpha">
+<li><p id="corty3e-ch3-p267" block_type="cr-x-nl-alpha-lc">The distribution is probably normal.</p></li>
+<li><p id="corty3e-ch3-p268" block_type="cr-x-nl-alpha-lc">The distribution is probably bimodal.</p></li>
+<li><p id="corty3e-ch3-p269" block_type="cr-x-nl-alpha-lc">The distribution is probably flat.</p></li>
+<li><p id="corty3e-ch3-p270" block_type="cr-x-nl-alpha-lc">The distribution is probably unusually peaked.</p></li>
+<li><p id="corty3e-ch3-p271" block_type="cr-x-nl-alpha-lc">The distribution is probably negatively skewed.</p></li>
+<li><p id="corty3e-ch3-p272" block_type="cr-x-nl-alpha-lc">The distribution is probably positively skewed.</p></li>
+<li><p id="corty3e-ch3-p273" block_type="cr-x-nl-alpha-lc">Comparing the mean to the median provides no information about a distribution&#8217;s shape.</p></li>
+</list>
+<p id="corty3e-ch3-p274" block_type="cr-x-nl-txt"><phrase block_type="question_num">3.57</phrase> A researcher has a set of positive numbers. No numbers are duplicates. The mean is greater than the median. Which of the following statements is true?</p>
+<list id="corty3e-ch3-list-12" type="ordered" block_type="loweralpha">
+<li><p id="corty3e-ch3-p275" block_type="cr-x-nl-alpha-lc">It is likely that more of the numbers are greater than the mean than are less than the mean.</p></li>
+<li><p id="corty3e-ch3-p276" block_type="cr-x-nl-alpha-lc">It is likely that more of the numbers are less than the mean than are greater than the mean.</p></li>
+<li><p id="corty3e-ch3-p277" block_type="cr-x-nl-alpha-lc">It is likely that more of the numbers are greater than the median than are less than the median.</p></li>
+<li><p id="corty3e-ch3-p278" block_type="cr-x-nl-alpha-lc">It is likely that more of the numbers are less than the median than are greater than the median.</p></li>
+<li><p id="corty3e-ch3-p279" block_type="cr-x-nl-alpha-lc">None of these statements is likely true.</p></li>
+</list>
+<p id="corty3e-ch3-p280" block_type="cr-x-nl-txt"><phrase block_type="question_num">3.58</phrase> Select the appropriate measure of central tendency for each scenario:</p>
+<list id="corty3e-ch3-list-13" type="ordered" block_type="loweralpha">
+<li><p id="corty3e-ch3-p281" block_type="cr-x-nl-alpha-lc">A researcher obtains a sample of men who have been married for 7 years and asks them to rate their levels of marital happiness on an ordinal scale that ranges from &#8211;7 (extremely unhappy) to &#43; 7 (extremely happy).</p></li>
+<li><p id="corty3e-ch3-p282" block_type="cr-x-nl-alpha-lc">An anatomist obtains a sample of athletes that consists of 75 jockeys (who are extremely short) and 75 basketball players (who are extremely tall). She measures the height of all 150 and wants to report the overall average.</p></li>
+<li><p id="corty3e-ch3-p283" block_type="cr-x-nl-alpha-lc">A social studies teacher, with a classroom of students who have roughly the same level of ability, administered a final exam of multiple-choice questions on the social studies facts they had learned.</p></li>
+<li><p id="corty3e-ch3-p284" block_type="cr-x-nl-alpha-lc">An astronomer classifies celestial objects as 1 (stars), 2 (planets), 3 (dwarf planets), 4 (asteroids), 5 (moons), 6 (comets), 7 (meteoroids), and 8 (other). He wants to report the average celestial object in a sample of the universe.</p></li>
+<li><p id="corty3e-ch3-p285" block_type="cr-x-nl-alpha-lc">A college psychology program has 12 faculty members. One of them is a full professor, three are associate professors, and eight are assistant professors. (Full professors have substantially higher salaries than associate professors, who have substantially higher salaries than assistant professors.) The chair of the program wants to report the average salary of the 12 faculty members.</p></li>
+</list>
+<p id="corty3e_page_104" block_type="page_start">104</p>
+<p id="corty3e-ch3-p286" block_type="cr-x-nl-txt"><phrase block_type="question_num">3.59</phrase> A researcher takes two samples, one with <em>N</em> &#61; 10 and the other with <em>N</em> &#61; 100, from the same population.</p>
+<list id="corty3e-ch3-list-14" type="ordered" block_type="loweralpha">
+<li><p id="corty3e-ch3-p287" block_type="cr-x-nl-alpha-lc">Which sample, <em>N</em> &#61; 10 or <em>N</em> &#61; 100, will have to correct <em>s</em> <sup>2</sup> less in order to approximate the population variance?</p></li>
+<li><p id="corty3e-ch3-p288" block_type="cr-x-nl-alpha-lc">Why is it sensible that <link href="#corty3e-ch3-bx6-6">Equation 3.6</link> works this way?</p></li>
+</list>
+<p id="corty3e-ch3-p289" block_type="cr-x-nl-txt"><phrase block_type="question_num">3.60</phrase> A meteorologist measured the temperature every 2 hours for a day in January and for a day in June. Here are the temperatures, in degrees Fahrenheit, for the January day: 23, 22, 21, 21, 23, 27, 28, 31, 32, 32, 30, and 26. The June temperatures were: 56, 56, 59, 62, 64, 67, 73, 75, 77, 76, 75, and 74. On which day were the temperatures more varied? Support the conclusion by calculating a measure of variability.</p>
+<box title="SPSS" numbered="false" id="corty3e-ch3-bx3-3" block_type="bx3-h">
+<p id="corty3e-ch3-p290" block_type="bx3-txt-ni">SPSS has multiple ways to calculate central tendency and variability. The &#8220;Frequencies,&#8221; &#8220;Descriptives,&#8221; and &#8220;Explore&#8221; commands all provide some measures of central tendency and variability, but they differ in what they provide. <link href="#corty3e-ch3-fig-37"><strong>Table 3.10</strong></link> shows which SPSS command provides which measures of central tendency and variability.</p>
+<figure id="corty3e-ch3-fig-37" block_type="table" numbered="true" number="3.10" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="large" border="true"/>
+<image asset-id="corty3e-ch3-img-43" alt="image" src="asset/ch3/corty3e_table03_10.jpg"/>
+</figure>
+<p id="corty3e-ch3-p291" block_type="bx3-txt">No matter which command one chooses&#8212;Frequencies, Descriptives, or Explore&#8212;they all start the same way, under the &#8220;Analyze/Descriptive Statistics&#8221; drop-down menu. This is illustrated in <link href="#corty3e-ch3-fig-38"><strong>Figure 3.10</strong></link>.</p>
+<figure id="corty3e-ch3-fig-38" block_type="figure" numbered="true" number="3.10" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="medium" border="true"/>
+<image asset-id="corty3e-ch3-img-44" alt="image" src="asset/ch3/corty3e_fig03_10.jpg"/>
+<caption><strong><phrase block_type="fig_num">Figure 3.10</phrase> Starting SPSS Commands for Descriptive Statistics</strong> Measures of central tendency and variability in SPSS can be calculated via the Frequencies, Descriptives, or Explore commands, all of which may be found under &#8220;Descriptive Statistics.&#8221;</caption>
+<asset_source>(Source: SPSS)</asset_source>
+</figure>
+<p id="corty3e-ch3-p292" block_type="bx3-txt"><link href="#corty3e-ch3-fig-39"><strong>Figure 3.11</strong></link> shows the initial screen for the Descriptives command. The arrow key is used to move a variable, here &#8220;Maze Running Time,&#8221; from the box on the left to the &#8220;Variable(s)&#8221; box.</p>
+<figure id="corty3e-ch3-fig-39" block_type="figure" numbered="true" number="3.11" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="medium" border="true"/>
+<image asset-id="corty3e-ch3-img-45" alt="image" src="asset/ch3/corty3e_fig03_11.jpg"/>
+<caption><strong><phrase block_type="fig_num">Figure 3.11</phrase> The Descriptives Command in SPSS</strong> Once a variable has been moved from the box on the left to the box labeled &#8220;Variable(s),&#8221; the &#8220;OK&#8221; button on the bottom left becomes active.</caption>
+<asset_source>(Source: SPSS)</asset_source>
+</figure>
+<p id="corty3e-ch3-p293" block_type="bx3-txt">Clicking on the &#8220;Options&#8221; button in <link href="#corty3e-ch3-fig-39">Figure 3.11</link> opens up the menu seen in <link href="#corty3e-ch3-fig-40"><strong>Figure 3.12</strong></link>. Here, select the statistics for SPSS to calculate.</p>
+<figure id="corty3e-ch3-fig-40" block_type="figure" numbered="true" number="3.12" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="medium" border="true"/>
+<image asset-id="corty3e-ch3-img-46" alt="image" src="asset/ch3/corty3e_fig03_12.jpg"/>
+<caption><strong><phrase block_type="fig_num">Figure 3.12</phrase> Selecting Descriptive Statistics</strong> Clicking on the &#8220;Options&#8221; button in <link href="#corty3e-ch3-fig-40">Figure 3.12</link> opens up this menu, which allows one to select the desired descriptive statistics.</caption>
+<asset_source>(Source: SPSS)</asset_source>
+</figure>
+<p id="corty3e_page_105" block_type="page_start">105</p>
+<p id="corty3e-ch3-p294" block_type="bx3-txt">For an example of the output produced by SPSS, see <link href="#corty3e-ch3-fig-41"><strong>Figure 3.13</strong></link>. Only the mean and the standard deviation were requested and this is all that was calculated.</p>
+<figure id="corty3e-ch3-fig-41" block_type="figure" numbered="true" number="3.13" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="large" border="true"/>
+<image asset-id="corty3e-ch3-img-47" alt="image" src="asset/ch3/corty3e_fig03_13.jpg"/>
+<caption><strong><phrase block_type="fig_num">Figure 3.13</phrase> SPSS Output for Descriptive Statistics</strong> An example of SPSS output. Only the mean and standard deviation were requested, and this is all that was calculated.</caption>
+<asset_source>(Source: SPSS)</asset_source>
+</figure>
+</box>
+<p id="corty3e_page_106" block_type="page_start">106</p>
+</section>
+</chapter>

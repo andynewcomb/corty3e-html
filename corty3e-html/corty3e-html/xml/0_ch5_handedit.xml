@@ -1,0 +1,573 @@
+<chapter number="5" id="corty3e-ch5-chapter-5" title="5 Sampling and Confidence Intervals" start-numbering-at="05" numbered="true">
+<section id="corty3e-ch5-sec1-1a" block_type="intro" title="Chapter Introduction" numbered="false" level="1" print_page="145">
+<p id="corty3e_page_145" block_type="page_start">145</p>
+<p id="corty3e-ch5-p1" block_type="chapter_number">5</p>
+<p id="corty3e-ch5-p2" block_type="chapter_title">Sampling and Confidence Intervals</p>
+<box numbered="false" id="corty3e-ch5-ibx-1" block_type="intro_box">
+<p id="corty3e-ch5-p3" block_type="obj-h"><strong>LEARNING OBJECTIVES</strong></p>
+<list id="corty3e-ch5-list-1" type="unordered" block_type="bluesquare">
+<li><p id="corty3e-ch5-p4" block_type="obj-bl">Define a &#8220;good&#8221; sample and how to obtain one.</p></li>
+<li><p id="corty3e-ch5-p5" block_type="obj-bl">List three facts derived from the central limit theorem.</p></li>
+<li><p id="corty3e-ch5-p6" block_type="obj-bl">Calculate the range within which a population mean probably falls.</p></li>
+</list>
+<p id="corty3e-ch5-p7" block_type="obj-h"><strong>CHAPTER OVERVIEW</strong></p>
+<p id="corty3e-ch5-p11" block_type="co-txt-ni">This chapter starts by expanding on concepts introduced in previous chapters and revisiting the differences between populations and samples. The discussion then turns to the different ways that samples are gathered and to the criteria for a &#8220;good&#8221; sample. Next, sampling distributions and the central limit theorem are introduced, two concepts that are part of the foundation for statistical decision making, which is introduced in the next chapter. To cap off this chapter and to presage the logic of hypothesis testing, a practical application of the central limit theorem, the 95&#37; confidence interval for the population mean is introduced. This confidence interval uses the sample mean to calculate a range, an interval, that we are reasonably certain captures the population mean.</p>
+<box numbered="false" id="corty3e-ch5-exp2-1" block_type="mn2">
+<p id="corty3e-ch5-p8" block_type="co-toc-h1-t"><link href="#corty3e-ch5-sec1-1"><phrase block_type="co-toc-h1-n-ri">5.1</phrase> Sampling and Sampling Error</link></p>
+<p id="corty3e-ch5-p9" block_type="co-toc-h1-t"><link href="#corty3e-ch5-sec1-2"><phrase block_type="co-toc-h1-n-ri">5.2</phrase> Sampling Distributions and the Central Limit Theorem</link></p>
+<p id="corty3e-ch5-p10" block_type="co-toc-h1-t"><link href="#corty3e-ch5-sec1-3"><phrase block_type="co-toc-h1-n-ri">5.3</phrase> The 95&#37; Confidence Interval for a Population Mean</link></p>
+</box>
+</box>
+</section>
+<section id="corty3e-ch5-sec1-1" block_type="h1" chapter="5" title="" numbered="false" level="1" print_page="145">
+<section-metadata><section-title><phrase block_type="sec_num">5.1</phrase> <phrase block_type="sec_title">Sampling and Sampling Error</phrase></section-title></section-metadata>
+<box id="corty3e-ch5-video-1" block_type="video">
+<p id="corty3e-ch5-videotxt-1" block_type="vidtxt"><link href="http://bcs.whfreeman.com/webpub/statistics/ips7e/student/Stat Videos/ch02/sc_datasampling.html" target="_pop" data-href-px=""><image asset-id="corty3e-ch5-vimg-1" alt="image" src="asset/images/video.jpg"/></link><em>StatClips: Data and Sampling</em>Video on LaunchPad</p>
+</box>
+<p id="corty3e-ch5-p12" block_type="txt-ni">Let&#8217;s start by reviewing some terminology from <link href="corty3e-ch01.xml">Chapter 1</link>. A population is the larger group of cases a researcher is interested in studying, and a sample is a subset of cases from the population. Samples are used in research because populations are usually large, and it is impractical to study all members of the population.</p>
+</section>
+<section id="corty3e-ch5-sec2-1" block_type="h2" chapter="5" title="" numbered="false" level="2" print_page="145">
+<section-metadata><section-title>Types of Samples</section-title></section-metadata>
+<p id="corty3e-ch5-p13" block_type="txt-ni">The way a sample is selected has an impact on whether the sample is a good one. What is meant by a &#8220;good&#8221; sample? A good sample is one that is <em>representative</em> of the population it came from. <termref term="Representative">Representative</termref> means that all the attributes in the population are in the sample in the same proportions by which they are present in the population. Imagine obtaining a sample of students from a college and no one in the sample was a psychology major. That wouldn&#8217;t be a representative sample. If 3&#37; of students at the college are psychology majors, then, for the sample to be representative, &#8776;3&#37; of the sample should be psychology majors. For a representative sample, this would have to be true for all the other attributes of the students at the college&#8212;for race, religion, having an eating disorder, being an athlete, sexual orientation, wearing glasses, having divorced parents, and so on. A representative sample is like a microcosm of the population (see <strong><link href="#corty3e-ch5-fig-1">Figure 5.1</link></strong>).</p>
+<figure id="corty3e-ch5-fig-1" block_type="figure" numbered="true" number="5.1" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="large" border="true"/>
+<image asset-id="corty3e-ch5-img-1" alt="image" src="asset/ch5/corty3e_fig05_01.jpg"/>
+<caption><strong><phrase block_type="fig_num">Figure 5.1</phrase> A sample is smaller than the population</strong> Here, a sample of 2,400 people is used to represent a population of 314,000,000. If the sample is representative, it has all the attributes that are present in the population in roughly the same degree.</caption>
+</figure>
+<p id="corty3e_page_146" block_type="page_start">146</p>
+<p id="corty3e-ch5-p14" block_type="txt">When a sample is representative, the results of the study can be <em>generalized</em> from the sample back to the population. This is very handy. If a physician wants to know how much cholesterol is circulating in a patient&#8217;s bloodstream, she doesn&#8217;t have to drain all 10 pints of the patient&#8217;s blood. Instead, she takes a small test tube full of blood, measures the amount of cholesterol in that, and generalizes the results to the entire blood supply. This can be done because the blood in the test tube is a representative sample of the population of blood in the body.</p>
+<p id="corty3e-ch5-p15" block_type="txt">Let&#8217;s move from medicine to psychology. How are samples obtained for psychology studies? Many use college students as participants. So, let&#8217;s make up a study in which a psychologist is studying students&#8217; sexual attitudes and behaviors.</p>
+<p id="corty3e-ch5-p16" block_type="txt">The psychologist goes to the student union at lunchtime, and as students pass through, he asks them to complete his survey. This is called a <termref term="convenience sample">convenience sample</termref><strong>,</strong> because it consists of easily gathered cases. Convenience samples are easy to obtain, but they are unlikely to be representative. Students who aren&#8217;t on campus that day, or who have classes at lunchtime, or who don&#8217;t walk through the student union can&#8217;t be in the sample. So, this sampling plan would not provide a representative sample of the student population.</p>
+<figure id="corty3e-ch5-fig-2" block_type="un_figure" numbered="false" mmtype="image" mmsrc="" attr="">
+<layout align="right" width="medium" border="true"/>
+<image asset-id="corty3e-ch5-img-2" alt="image" src="asset/ch5/corty3e_fig05_un01.jpg"/>
+</figure>
+<p id="corty3e-ch5-p17" block_type="txt">A solution is something called <em>random sampling.</em> In a simple <termref term="random sample">random sample</termref>, all the cases in the population have an equal chance of being selected. To assemble a random sample, the psychologist might go to the registrar, get a list of the names of all registered students, put each name on a slip of paper, place all the slips in a barrel, mix it up, draw a name, mix the barrel again, draw another name, and so on. This way all students, whether they are on campus that day or not, whether they walk through the student union or not, have a chance of being in the researcher&#8217;s sample.</p>
+<p id="corty3e_page_147" block_type="page_start">147</p>
+<p id="corty3e-ch5-p18" block_type="txt">Of course, it is rare that researchers draw names out of a hat. Typically, researchers use a computer or a random number table to select a random sample. A random number table is a list of digits in random order, where the number 1 is just as likely to be followed by a 2 as it is by a 1 or a 9 or any other digit. <link href="corty3e_app1_1.html#corty3e-app1-fig-7">Appendix Table 2</link> is a random number table and a section of it is reproduced in <strong><link href="#corty3e-ch5-fig-3">Table 5.1</link></strong>.</p>
+<figure id="corty3e-ch5-fig-3" block_type="table" numbered="true" number="5.1" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="large" border="true"/>
+<image asset-id="corty3e-ch5-img-3" alt="image" src="asset/ch5/corty3e_table05_01.jpg"/>
+</figure>
+<p id="corty3e-ch5-p19" block_type="txt">Suppose there are 4703 students at the psychologist&#8217;s college. Here&#8217;s how the random number table could be used to draw a random sample of 50 from the population of 4703. The first thing the researcher does is assign sequential numbers to the pool of participants. That is, he makes a list of all the students and numbers them from 1 to 4703. Next, he goes to the random number table and moves across it, looking for values of 4703 or lower. Each time such a value is encountered, that person will go in his sample. The first number in <link href="#corty3e-ch5-fig-3">Table 5.1</link> is &#8220;8607.&#8221; There&#8217;s no case numbered 8607 in the sample, so he&#8217;ll skip this value. The next value, &#8220;1887,&#8221; is a hit, and the case numbered 1887 will become part of his sample. With the review of the first row complete, case numbers 2039 and 3174 are also part of the sample. The researcher will continue this process until he has randomly selected 50 cases numbered 4703 or lower.</p>
+<box title="A Common Question" numbered="false" id="corty3e-ch5-bx1-1" block_type="bx-1-h">
+<p id="corty3e-ch5-p20" block_type="bx1-que"><strong>Q</strong> What happens if the same number is selected again?</p>
+<p id="corty3e-ch5-p21" block_type="bx1-ans"><strong>A</strong> If the same number occurs again and is included in the sample a second time, that is called sampling with replacement. Though in terms of the mathematics of probability, this is fair to do, no researcher ever does it when drawing a sample for a study. Sampling without replacement is almost always done.</p>
+</box>
+<p id="corty3e-ch5-p22" block_type="txt">Random selection is great, but it doesn&#8217;t guarantee a representative sample. Sample size, <em>N,</em> is also important. The law of large numbers states that other things being equal, larger samples are more likely to represent the population. Imagine that a researcher drew two random samples from a college, found the number of sexual partners for each person, and then wanted to use the mean number of sexual partners in the sample to represent the average number of sexual partners for students at the school. Which sample would provide a more accurate picture? One where <em>N</em> is 5, or one where <em>N</em> is 50? The larger sample, the one with 50 cases, is the better choice because it has a greater chance of capturing the characteristics of the population. A larger sample is more likely to provide a sample value close to the population value because it is more likely to contain the range of values that are in the population.</p>
+</section>
+<section id="corty3e-ch5-sec2-2" block_type="h2" chapter="5" title="" numbered="false" level="2" print_page="148">
+<section-metadata><section-title>Problems with Sampling</section-title></section-metadata>
+<p id="corty3e_page_148" block_type="page_start">148</p>
+<p id="corty3e-ch5-p23" block_type="txt-ni">With random samples, there are two problems to be concerned about. One is called <em>self-selection bias,</em> and the other is called <em>sampling error.</em> <termref term="Self-selection bias">Self-selection bias</termref> occurs when not everyone who is asked to participate in a study agrees to do so. For example, in the study of students&#8217; sexual attitudes and behavior, the researcher needs to describe the study to the randomly selected potential subjects and then let them decide if they wish to participate. That&#8217;s called informed consent. This study is about sex, a sensitive and private topic, so not everyone will wish to participate and the psychologist will end up with a self-selected sample. If the people who choose to participate differ in some way from those who choose not to participate (perhaps their attitudes and behaviors are more permissive), then the sample is no longer representative of the population. If too much self-selection occurs, the researcher can no longer generalize results from the sample to the population.</p>
+<box numbered="false" id="corty3e-ch5-exp1-1" block_type="mn1">
+<p id="corty3e-ch5-p24" block_type="mn-ext-ni"><em>Problems with sampling and self-selection bias are why researchers need to pay careful attention to how samples are obtained and whether they are representative.</em></p>
+</box>
+<p id="corty3e-ch5-p25" block_type="txt">One can often tell when self-selection bias has occurred by looking at <termref term="consent rate">consent rate</termref>, the percentage of targeted subjects who agree to participate. If 100&#37; of potential subjects agree to participate, then no problem with self-selection exists. If only 5&#37; agree, then there is something unusual about those who agree and they shouldn&#8217;t be used to represent the population. But where does one draw the line between these two extreme situations? One rule of thumb is that self-selection bias isn&#8217;t a problem as long as the consent rate is above 70&#37; (Babbie, 1973). Problems with sampling and self-selection bias are why researchers need to pay careful attention to how samples are obtained and whether they are representative.</p>
+<p id="corty3e-ch5-p26" block_type="txt">Even when a sample is large, randomly obtained, and has a high consent rate, it is almost certainly not going to be an exact replica of the population. Let&#8217;s continue with the example of taking a random sample of college students and collecting information about sexual attitudes and behavior. Further, pretend that, somehow, each student at the college&#8212;the entire population of students&#8212;has reported how many sexual partners he or she has had. From this, it is possible to calculate a population mean (&#956;). The sample mean (<em>M</em>) should be close to that value, but it would be surprising if it were exactly the same. And, if the researcher took another random sample, it would be surprising if <em>M</em><sub>2</sub> were exactly the same as <em>M</em><sub>1</sub>. These discrepancies between sample values and the population value are called <termref term="sampling error">sampling error</termref>.</p>
+<p id="corty3e-ch5-p27" block_type="txt">Sampling error is the result of random factors, which means there is nothing systematic about it. Sampling error is thought of as normally distributed. This means that about half the time sampling error will result in a sample value, for example, a mean, that is larger than the population mean, and half the time sampling error will result in a sample mean smaller than the population mean. Because in a normal distribution most of the scores are bunched around the midpoint, more often than not, sampling error will be small. This means that usually the sample mean will be relatively close to the population mean. But, occasionally, sampling error will be large, resulting in a sample mean that is dramatically different from the population mean.</p>
+<box title="Worked Example 5.1" numbered="false" id="corty3e-ch5-bx3-1" block_type="sr-exp-n">
+<p id="corty3e-ch5-p28" block_type="sr-ex-txt-ni">A familiar example, M&#38;Ms, should help clarify sampling error. Every day millions of M&#38;Ms are made in different colors. At the factory, the colors are mechanically mixed together and packaged for sale. Each package of M&#38;Ms is like a random sample from the population of M&#38;Ms manufactured that day.</p>
+<p id="corty3e_page_149" block_type="page_start">149</p>
+<figure id="corty3e-ch5-fig-4" block_type="un_figure" numbered="false" mmtype="image" mmsrc="" attr="">
+<layout align="right" width="medium" border="true"/>
+<image asset-id="corty3e-ch5-img-4" alt="image" src="asset/ch5/corty3e_fig05_un02.jpg"/>
+<asset_source>Charles Taylor/Shutterstock</asset_source>
+</figure>
+<p id="corty3e-ch5-p29" block_type="sr-ex-txt">Several years ago, I bought 500 of the single-serving bags of M&#38;Ms, those that are sold at checkout counters. At the time, the Mars Company reported that 20&#37; of the M&#38;Ms it produced every day were red. This means that each bag, each random sample from the population of M&#38;Ms, should contain 20&#37; red M&#38;Ms. However, due to sampling error, one would expect discrepancies between the population value, 20&#37; red, and the percentage of red M&#38;Ms found in the samples, the purchased bags. <strong><link href="#corty3e-ch5-fig-5">Figure 5.2</link></strong> is a histogram showing the distribution of the percentage of red M&#38;Ms for these 500 random samples. There are several things to note in this figure:</p>
+<figure id="corty3e-ch5-fig-5" block_type="figure" numbered="true" number="5.2" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="large" border="true"/>
+<image asset-id="corty3e-ch5-img-5" alt="image" src="asset/ch5/corty3e_fig05_02.jpg"/>
+<caption><strong><phrase block_type="fig_num">Figure 5.2</phrase> Percentage of Red M&#38;Ms in 500 Single-Serving Bags</strong> Sampling error is random, uncontrolled error that causes samples to look different from populations. It explains why there is variability in the percentage of red M&#38;Ms in each of these bags and why each one doesn&#8217;t contain exactly 20&#37; red M&#38;Ms.</caption>
+</figure>
+<list id="corty3e-ch5-list-2" type="unordered" block_type="bullet">
+<li><p id="corty3e-ch5-p30" block_type="sr-exp-bl-first">Though the most frequently occurring sample value is around 20&#37; (the population value), the majority of samples don&#8217;t have 20&#37; red M&#38;Ms. That is, the majority of samples show evidence of sampling error.</p></li>
+<li><p id="corty3e-ch5-p31" block_type="sr-exp-bl-mid">A large percentage of the other values fall near the population value of 20&#37;. So, sampling error is usually not large.</p></li>
+<li><p id="corty3e-ch5-p32" block_type="sr-exp-bl-mid">Occasionally, sampling error is large and leads to a sample value that is very different from the population value. Instead of being near 20&#37;, there were bags of M&#38;Ms that had only 5&#37; red M&#38;Ms and others that had up to 38&#37; red M&#38;Ms.</p></li>
+<li><p id="corty3e-ch5-p33" block_type="sr-exp-bl-mid">The distribution is symmetric. About half the cases have &#8220;positive&#8221; sampling error, resulting in a sample value that is greater than the population value, and about half have &#8220;negative&#8221; sampling error.</p></li>
+<li><p id="corty3e-ch5-p34" block_type="sr-exp-bl-last">In fact, the distribution looks very much like a normal distribution, centered around the population value of 20&#37; red.</p></li>
+</list>
+<p id="corty3e_page_150" block_type="page_start">150</p>
+<figure id="corty3e-ch5-fig-6" block_type="un_figure" numbered="false" mmtype="image" mmsrc="" attr="">
+<layout align="right" width="medium" border="true"/>
+<image asset-id="corty3e-ch5-img-6" alt="image" src="asset/ch5/corty3e_fig05_un03.jpg"/>
+</figure>
+<p id="corty3e-ch5-p35" block_type="sr-ex-txt">Perhaps the most important thing to remember is that sampling error just happens by accident. There isn&#8217;t anything malicious going on. Random factors&#8212;for example, the way the M&#38;Ms are mixed together&#8212;cause sampling error. It just happens. That&#8217;s why samples, even if they are random and large, are rarely exact replicas of populations.</p>
+<p id="corty3e-ch5-p36" block_type="sr-ex-txt">When a researcher takes a single sample from a population and uses it to represent the population, he or she needs to bear in mind that sampling error is almost certainly present. The sampling error may be a positive amount or a negative amount. There probably is not too much sampling error, but it is also possible that&#8212;due just to random events and bad luck&#8212;there is a lot of sampling error. If the latter is the case, then the researcher shouldn&#8217;t generalize from the sample to the population. The trouble is, the researcher doesn&#8217;t know if there is a little or a lot of sampling error. If a Martian came to Earth, bought a bag of M&#38;Ms, counted the colors, and found that 5&#37; of the M&#38;Ms were red, then it would probably conclude that red was an uncommon M&#38;M color. And, as red actually makes up 20&#37; of M&#38;Ms, its conclusion would be wrong. But, the Martian wouldn&#8217;t know.</p>
+</box>
+<box title="Practice Problems 5.1" numbered="false" id="corty3e-ch5-bx2-1" block_type="sr-h">
+<p id="corty3e-ch5-p37" block_type="sr-h1"><strong>Review Your Knowledge</strong></p>
+<p id="corty3e-ch5-p38" block_type="sr-que-nl"><phrase block_type="question_num">5.01</phrase> What does it mean if a sample is representative of a population?</p>
+<p id="corty3e-ch5-p39" block_type="sr-que-nl"><phrase block_type="question_num">5.02</phrase> What is the consent rate for a sample?</p>
+<p id="corty3e-ch5-p40" block_type="sr-que-nl"><phrase block_type="question_num">5.03</phrase> What causes sampling error?</p>
+<p id="corty3e-ch5-p41" block_type="sr-h1"><strong>Apply Your Knowledge</strong></p>
+<p id="corty3e-ch5-p42" block_type="sr-que-nl"><phrase block_type="question_num">5.04</phrase> There are 50 students in a class and they count off from 1 to 50. Describe how to draw a random sample of 10 students.</p>
+<p id="corty3e-ch5-p43" block_type="sr-que-nl"><phrase block_type="question_num">5.05</phrase> How can one minimize sampling error?</p>
+</box>
+</section>
+<section id="corty3e-ch5-sec1-2" block_type="h1" chapter="5" title="" numbered="false" level="1" print_page="150">
+<section-metadata><section-title><phrase block_type="sec_num">5.2</phrase> <phrase block_type="sec_title">Sampling Distributions and the Central Limit Theorem</phrase></section-title></section-metadata>
+<box id="corty3e-ch5-video-2" block_type="video">
+<p id="corty3e-ch5-videotxt-2" block_type="vidtxt"><link href="http://bcs.whfreeman.com/webpub/statistics/ips7e/student/Stat Videos/ch05/sc_centrallimittheorem_I.html" target="_pop" data-href-px=""><image asset-id="corty3e-ch5-vimg-2" alt="image" src="asset/images/video.jpg"/></link><em>StatClips: The Central Limit Theorem Part I</em>Video on LaunchPad</p>
+</box>
+<box id="corty3e-ch5-video-3" block_type="video">
+<p id="corty3e-ch5-videotxt-3" block_type="vidtxt"><link href="http://bcs.whfreeman.com/webpub/statistics/ips7e/student/Stat Videos/ch05/sc_centrallimittheorem_II.html" target="_pop" data-href-px=""><image asset-id="corty3e-ch5-vimg-3" alt="image" src="asset/images/video.jpg"/></link><em>StatClips: The Central Limit Theorem Part II</em>Video on LaunchPad</p>
+</box>
+<box id="corty3e-ch5-video-4" block_type="video">
+<p id="corty3e-ch5-videotxt-4" block_type="vidtxt"><link href="http://bcs.whfreeman.com/webpub/statistics/ips7e/student/Stat Videos/ch05/sc_sampdist_oml_ch05.html" target="_pop" data-href-px=""><image asset-id="corty3e-ch5-vimg-4" alt="image" src="asset/images/video.jpg"/></link><em>StatClips: Sampling Distributions Overview and Motivation Part I</em>Video on LaunchPad</p>
+</box>
+<box id="corty3e-ch5-video-5" block_type="video">
+<p id="corty3e-ch5-videotxt-5" block_type="vidtxt"><link href="http://bcs.whfreeman.com/webpub/statistics/ips7e/student/Stat Videos/ch05/sc_centrallimittheorem_III.html" target="_pop" data-href-px=""><image asset-id="corty3e-ch5-vimg-5" alt="image" src="asset/images/video.jpg"/></link><em>StatClips: Central Limit Theorem Part III</em>Video on LaunchPad</p>
+</box>
+<box id="corty3e-ch5-video-6" block_type="video">
+<p id="corty3e-ch5-videotxt-6" block_type="vidtxt"><link href="http://bcs.whfreeman.com/webpub/statistics/ips7e/student/Stat Videos/ch05/sc_sampdist_omII.html" target="_pop" data-href-px=""><image asset-id="corty3e-ch5-vimg-6" alt="image" src="asset/images/video.jpg"/></link><em>StatClips: Sampling Distributions: Overview and Motivation Part II, Lake Full of Fish Example</em>Video on LaunchPad</p>
+</box>
+</section>
+<section id="corty3e-ch5-sec2-3" block_type="h2" chapter="5" title="" numbered="false" level="2" print_page="150">
+<section-metadata><section-title>Sampling Distributions</section-title></section-metadata>
+<p id="corty3e-ch5-p44" block_type="txt-ni">The histogram for the percentage of red M&#38;Ms in 500 bags of M&#38;Ms, <link href="#corty3e-ch5-fig-5">Figure 5.2</link>, is an example of a <em>sampling distribution.</em> A <termref term="sampling distribution">sampling distribution</termref> is generated by (1) taking repeated, random samples of a specified size from a population; (2) calculating some statistic (like a mean or the percentage red M&#38;Ms) for each sample; and (3) making a frequency distribution of those values.</p>
+<p id="corty3e-ch5-p45" block_type="txt">To understand sampling distributions, let&#8217;s use an example with a very small population. This example involves a small town in Texas that has a population of only five people (Diekhoff, 1996). Each person is given an IQ test and their five scores can be seen in <strong><link href="#corty3e-ch5-fig-7">Figure 5.3</link></strong>. The frequency distribution for these data forms a flat line and does not look like a normal distribution.</p>
+<figure id="corty3e-ch5-fig-7" block_type="figure" numbered="true" number="5.3" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="large" border="true"/>
+<image asset-id="corty3e-ch5-img-7" alt="image" src="asset/ch5/corty3e_fig05_03.jpg"/>
+<caption><strong><phrase block_type="fig_num">Figure 5.3</phrase> Distribution of IQ Scores in Small Texas Town</strong> Only five people live in this town and each one has a different IQ score. The distribution of IQ scores in this population is flat.</caption>
+</figure>
+<p id="corty3e_page_151" block_type="page_start">151</p>
+<p id="corty3e-ch5-p46" block_type="txt">These five people make up the entire population of the town. As there is access to all the cases in the population, this is one of those rare instances where one can calculate a population mean:</p>
+<p id="corty3e-ch5-eqn-1" block_type="equation">
+<image asset-id="corty3e-ch5-img-8" alt="image" src="asset/ch5/corty3e_eqn05_151_01.jpg"/>
+</p>
+<p id="corty3e-ch5-p47" block_type="txt">To make a sampling distribution of the mean for this population: (1) take repeated, random samples from the population; (2) for each sample, calculate a mean; (3) make a frequency distribution of the sample means. That&#8217;s a sampling distribution of the mean.</p>
+<p id="corty3e-ch5-p48" block_type="txt">There are two things to be aware of with regard to sampling distributions:</p>
+<list id="corty3e-ch5-list-3" type="unordered" block_type="bullet">
+<li><p id="corty3e-ch5-p49" block_type="bl-first">First, sampling occurs with replacement. This means after a person is selected at random and his or her IQ is recorded, the person is put back into the population, giving him or her a chance to be in the sample again.</p></li>
+<li><p id="corty3e-ch5-p50" block_type="bl-last">Second, the order in which cases are drawn doesn&#8217;t matter. A sample with person A drawn first and person B second is the same as person B drawn first and A second.</p></li>
+</list>
+<p id="corty3e-ch5-p51" block_type="txt">Our sampling distribution of the mean will have samples of size <em>N</em> &#61; 2. There are 15 possible unique samples of size <em>N</em> &#61; 2 for this Texas town. They are shown in the first panel in <strong><link href="#corty3e-ch5-fig-9">Table 5.2</link></strong>.</p>
+<figure id="corty3e-ch5-fig-9" block_type="table" numbered="true" number="5.2" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="large" border="true"/>
+<image asset-id="corty3e-ch5-img-9" alt="image" src="asset/ch5/corty3e_table05_02.jpg"/>
+</figure>
+<p id="corty3e-ch5-p52" block_type="txt"><link href="#corty3e-ch5-fig-9">Table 5.2</link> also shows the pairs of IQ scores for each of the samples (panel 2), as well as the mean IQ score for each sample (panel 3). Note that not all of the sample means are the same. As there is variability in the means, it is possible to calculate a measure of variability (like a standard deviation) for the sampling distribution. <termref term="Standard error of the mean">Standard error of the mean</termref> (abbreviated &#963;<em><sub>M</sub></em>) is the term used for the standard deviation of a sampling distribution of the mean. The standard error of the mean tells how much variability there is from sample mean to sample mean.</p>
+<p id="corty3e_page_152" block_type="page_start">152</p>
+<p id="corty3e-ch5-p53" block_type="txt"><strong><link href="#corty3e-ch5-fig-10">Figure 5.4</link></strong> shows the sampling distribution for the 15 means from the bottom panel of <link href="#corty3e-ch5-fig-9">Table 5.2</link>. The first thing to note is the shape. The population (see <link href="#corty3e-ch5-fig-7">Figure 5.3</link>) was flat, but the sampling distribution is starting to assume a normal shape. This normal shape is important because statisticians know how to use <em>z</em> scores to calculate the likelihood of a score falling in a specified segment of the normal distribution.</p>
+<figure id="corty3e-ch5-fig-10" block_type="figure" numbered="true" number="5.4" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="large" border="true"/>
+<image asset-id="corty3e-ch5-img-10" alt="image" src="asset/ch5/corty3e_fig05_04.jpg"/>
+<caption><strong><phrase block_type="fig_num">Figure 5.4</phrase> Sampling Distribution of Means for Repeated, Random Samples of Size <em>N</em> &#61; 2 from Small Texas Town</strong> The central limit theorem states that the sampling distribution of the mean will be normally distributed, no matter what the shape of the parent population is, as long as the sample size is large. Large means <em>N</em> &#8805; 30. Here, even though the <em>N</em> for each sample is small (<em>N</em> &#61; 2), the sampling distribution is starting to assume the shape of a normal distribution.</caption>
+</figure>
+<p id="corty3e-ch5-p54" block_type="txt">The mean of this sampling distribution is abbreviated as &#956;<em><sub>M</sub></em> because it is a <em>population</em> mean of sample means. Calculating it leads to an interesting observation&#8212;the mean of the sampling distribution is the same as the population mean:</p>
+<p id="corty3e-ch5-eqn-2" block_type="equation">
+<image asset-id="corty3e-ch5-img-11" alt="image" src="asset/ch5/corty3e_eqn05_152_01.jpg"/>
+</p>
+</section>
+<section id="corty3e-ch5-sec2-4" block_type="h2" chapter="5" title="" numbered="false" level="2" print_page="153">
+<section-metadata><section-title>The Central Limit Theorem</section-title></section-metadata>
+<p id="corty3e_page_153" block_type="page_start">153</p>
+<p id="corty3e-ch5-p55" block_type="txt-ni">Having made a number of observations from the sampling distribution for IQ in the small Texas town, it is time to introduce the <em>central limit theorem.</em> The <termref term="central limit theorem">central limit theorem</termref> is a description of the shape of a sampling distribution of the mean when the size of the samples is large and every possible sample is obtained.</p>
+<p id="corty3e-ch5-p56" block_type="txt">Imagine someone had put together a sample of 100 Americans and found the mean IQ score for it. What would the sampling distribution of the mean look like for repeated, random samples with <em>N</em> &#61; 100? With more than 300 million people in the United States, it would be impossible to obtain every possible sample with <em>N</em> &#61; 100. That&#8217;s where the central limit theorem steps in&#8212;it provides a mathematical description of what the sampling distribution would look like if a researcher obtained every possible sample of size <em>N</em> from a population.</p>
+<p id="corty3e-ch5-p57" block_type="txt">Keep in mind that the central limit theorem works when the size of the sample is large. So which number is the one that needs to be large?</p>
+<list id="corty3e-ch5-list-4" type="ordered" block_type="upperalpha">
+<li><p id="corty3e-ch5-p58" block_type="nl-alpha-uc-first">Is it the size of the population, which is 5 for the Texas town example?</p></li>
+<li><p id="corty3e-ch5-p59" block_type="nl-alpha-uc-mid">Is it the size of the repeated, random samples that are drawn from the population? These have <em>N</em> &#61; 2 for the town in Texas.</p></li>
+<li><p id="corty3e-ch5-p60" block_type="unl-last">Is it the number of repeated, random samples that are drawn from the population? This was 15 for the Texas town.</p></li>
+</list>
+<p id="corty3e-ch5-p61" block_type="txt-ni">The answer is B: the large number needs to be the number of cases in the sample.</p>
+<p id="corty3e-ch5-p62" block_type="txt">How large is large? An <em>N</em> of 2 is certainly not large. Usually, an <em>N</em> of 30 is considered to be large enough. So, the central limit theorem applies when the size of the samples that make up the sampling distribution is 30 or larger. This means that the researcher with a sample of 100 Americans can use the central limit theorem.</p>
+<p id="corty3e_page_154" block_type="page_start">154</p>
+<p id="corty3e-ch5-p63" block_type="txt">The central limit theorem is important because it says three things:</p>
+<list id="corty3e-ch5-list-5" type="ordered" block_type="numbered">
+<li><p id="corty3e-ch5-p64" block_type="nl-first">If <em>N</em> is large, then the sampling distribution of the mean will be normally distributed, no matter what the shape of the population is. (In the small town IQ example, the population was flat, but the sampling distribution was starting to look normal.)</p></li>
+<li><p id="corty3e-ch5-p65" block_type="nl-mid">If <em>N</em> is large, then the mean of the sampling distribution is the same as the mean of the population from which the samples were selected. (This was true for our small town example.)</p></li>
+<li><p id="corty3e-ch5-p66" block_type="nl-last">If <em>N</em> is large, then a statistician can compute the standard error of the mean (the standard deviation of the sampling distribution) using <link href="#corty3e-ch5-bx6-1">Equation 5.1</link>.</p></li>
+</list>
+<box title="" numbered="false" id="corty3e-ch5-bx6-1" block_type="eq-t">
+<box-metadata><box-title><phrase block_type="sec_num">Equation 5.1</phrase> <phrase block_type="sec_title">Formula for Calculating the Standard Error of the Mean</phrase></box-title></box-metadata>
+<p id="corty3e-ch5-eqn-3" block_type="equation">
+<image asset-id="corty3e-ch5-img-12" alt="image" src="asset/ch5/corty3e_eqn05_154_01.jpg"/>
+</p>
+<p id="corty3e-ch5-p67" block_type="eq-txt-ni">where &#963;<em><sub>M</sub></em> &#61; the standard error of the mean</p>
+<p id="corty3e-ch5-p68" block_type="eq-unl">&#963; &#61; the standard deviation of the population</p>
+<p id="corty3e-ch5-p69" block_type="eq-unl"><em>N</em> &#61; the number of cases in the sample</p>
+</box>
+<p id="corty3e-ch5-p70" block_type="txt-ni">Given the sample of 100 Americans who were administered an IQ test that had a standard deviation of 15, the standard error of the mean would be calculated as follows:</p>
+<p id="corty3e-ch5-eqn-4" block_type="equation">
+<image asset-id="corty3e-ch5-img-13" alt="image" src="asset/ch5/corty3e_eqn05_154_02.jpg"/>
+</p>
+</section>
+<section id="corty3e-ch5-sec2-5" block_type="h2" chapter="5" title="" numbered="false" level="2" print_page="154">
+<section-metadata><section-title>When &#963; Is Not Known</section-title></section-metadata>
+<p id="corty3e-ch5-p71" block_type="txt-ni">Access to the entire population is rare and it is rare that &#963;, the population standard deviation, is known. So, how can the standard error of the mean be calculated without &#963;? In such a situation, one uses the sample standard deviation <em>s,</em> an estimate of the population standard deviation, to calculate an <em>estimated</em> standard error of the mean. The formula for the estimated standard error of the mean, abbreviated <em>s<sub>M</sub>,</em> is shown in <link href="#corty3e-ch5-bx6-2">Equation 5.2</link>.</p>
+<box title="" numbered="false" id="corty3e-ch5-bx6-2" block_type="eq-t">
+<box-metadata><box-title><phrase block_type="sec_num">Equation 5.2</phrase> <phrase block_type="sec_title">Formula for Estimated Standard Error of the Mean</phrase></box-title></box-metadata>
+<p id="corty3e-ch5-eqn-5" block_type="equation">
+<image asset-id="corty3e-ch5-img-14" alt="image" src="asset/ch5/corty3e_eqn05_154_03.jpg"/>
+</p>
+<p id="corty3e-ch5-p72" block_type="eq-txt-ni">where <em>s<sub>M</sub></em> &#61; the estimated standard error of the mean</p>
+<p id="corty3e-ch5-p73" block_type="eq-unl"><em>s</em> &#61; the sample standard deviation (<link href="corty3e_ch3_3.html#corty3e-ch3-bx6-7">Equation 3.7</link>)</p>
+<p id="corty3e-ch5-p74" block_type="eq-unl"><em>N</em> &#61; the number of cases in the sample</p>
+</box>
+<p id="corty3e_page_155" block_type="page_start">155</p>
+<p id="corty3e-ch5-p75" block_type="txt">Suppose a nurse practitioner has taken a random sample of 83 American adults, measured their diastolic blood pressure, and calculated <em>s</em> as 11. Using <link href="#corty3e-ch5-bx6-2">Equation 5.2</link>, he would estimate the standard error of the mean as</p>
+<p id="corty3e-ch5-eqn-6" block_type="equation">
+<image asset-id="corty3e-ch5-img-15" alt="image" src="asset/ch5/corty3e_eqn05_155_01.jpg"/>
+</p>
+<p id="corty3e-ch5-p76" block_type="txt">A reasonable question to ask right about now is: What is the big deal about the central limit theorem? How is it useful? Thanks to the central limit theorem, a researcher doesn&#8217;t need to worry about the shape of the population from which a sample is drawn. As long as the sample size is large enough, the sampling distribution of the mean will be normally distributed even if the population isn&#8217;t. This is handy, because the percentages of cases that fall in different parts of the normal distribution is known.</p>
+<p id="corty3e-ch5-p77" block_type="txt">Look at the shape of the population displayed in <strong><link href="#corty3e-ch5-fig-16">Figure 5.5</link></strong>. It is far from normal. Yet, if one were to take repeated random samples from this population, calculate a mean for each sample, and make a sampling distribution of the means, then that sampling distribution would look normal as long as the sample sizes were large. This is advantageous because when hypothesis testing is introduced in the next chapter, the hypotheses being tested turn out to be about sampling distributions. If the shape of a sampling distribution is normal, then it is possible to make predictions about how often a particular value will occur.</p>
+<figure id="corty3e-ch5-fig-16" block_type="figure" numbered="true" number="5.5" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="medium" border="true"/>
+<image asset-id="corty3e-ch5-img-16" alt="image" src="asset/ch5/corty3e_fig05_05.jpg"/>
+<caption><strong><phrase block_type="fig_num">Figure 5.5</phrase> A Population That Is Not Normally Distributed</strong> This graph shows a population with a non-normal shape. According to the central limit theorem, as long as the size of the samples drawn from this population is large enough, a sampling distribution of the mean for this non-normally shaped population will have a normal distribution.</caption>
+</figure>
+<p id="corty3e-ch5-p78" block_type="txt">Another benefit of the central limit theorem is that it allows us to calculate the standard error of the mean from a single sample. What&#8217;s important about the standard error of the mean? A smaller standard error of the mean indicates that the means in a sampling distribution are packed more closely together. This tells us that there is less sampling error, that the sample means tend to be closer to the population mean. If the standard error of the mean is small, then a sample mean is probably a more accurate reflection of the population mean because it likely falls close to the population mean.</p>
+<p id="corty3e_page_156" block_type="page_start">156</p>
+<p id="corty3e-ch5-p79" block_type="txt">In a sense, a sampling distribution is a representation of sampling error. <strong><link href="#corty3e-ch5-fig-17">Figure 5.6</link></strong> shows this graphically. Note how the distribution with a larger sample size has less variability and is packed more tightly around the population value. It has less sampling error.</p>
+<figure id="corty3e-ch5-fig-17" block_type="figure" numbered="true" number="5.6" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="large" border="true"/>
+<image asset-id="corty3e-ch5-img-17" alt="image" src="asset/ch5/corty3e_fig05_06.jpg"/>
+<caption><strong><phrase block_type="fig_num">Figure 5.6</phrase> Effect of Size of Standard Error of the Mean on Sampling Distributions</strong> Both sampling distributions are from populations where &#956; &#61; 100 and &#963; &#61; 15. In the top panel, the sample size is smaller (<em>N</em> &#61; 9), so the standard error of the mean is 5.00. In the bottom panel, the sample size is larger (<em>N</em> &#61; 100), so the standard error is 1.50. Where the standard error of the mean is smaller, notice how the sampling distribution is clustered more tightly around the population mean of 100. Less sampling error occurs in the bottom panel.</caption>
+</figure>
+<box title="A Common Question" numbered="false" id="corty3e-ch5-bx1-2" block_type="bx-1-h">
+<p id="corty3e-ch5-p80" block_type="bx1-que"><strong>Q</strong> Are sampling distributions only for means?</p>
+<p id="corty3e-ch5-p81" block_type="bx1-ans"><strong>A</strong> No, a sampling distribution can be constructed for any statistic. There could be a sampling distribution of standard deviations or of medians. In future chapters, sampling distributions of statistics called <em>t,</em> <em>F,</em> and <em>r</em> will be encountered.</p>
+</box>
+<box title="Worked Example 5.2" numbered="false" id="corty3e-ch5-bx3-2" block_type="sr-exp-n">
+<p id="corty3e_page_157" block_type="page_start">157</p>
+<p id="corty3e-ch5-p82" block_type="sr-ex-txt-ni">Sampling distribution generators (available online) draw thousands of samples at a time and form a sampling distribution in a matter of seconds right on the computer screen. A researcher can change parameters&#8212;like the shape of the parent population, the size of the samples, or the number of samples&#8212;and see the impact on the shape of the sampling distribution. Nothing beats playing with a sampling distribution generator for gaining a deeper understanding of the central limit theorem. Google &#8220;Rice Virtual Lab in Statistics,&#8221; click on &#8220;Simulations/Demonstrations,&#8221; and play with the &#8220;sampling distribution simulation.&#8221; For those who prefer a guided tour to a self-guided one, read on.</p>
+<p id="corty3e-ch5-p83" block_type="sr-ex-txt"><strong><link href="#corty3e-ch5-fig-18">Figure 5.7</link></strong> uses the Rice simulation to show a population constructed <em>not</em> to be normal. In this population, scores range from 0 to 32, &#956; &#61; 15.00, &#963; &#61; 11.40, and the midpoint does not have the greatest frequency.</p>
+<figure id="corty3e-ch5-fig-18" block_type="figure" numbered="true" number="5.7" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="medium" border="true"/>
+<image asset-id="corty3e-ch5-img-18" alt="image" src="asset/ch5/corty3e_fig05_07.jpg"/>
+<caption><strong><phrase block_type="fig_num">Figure 5.7</phrase> Histogram for Values in Entire Population</strong> The range of values in this population is from 0 to 32, and the shape is decidedly not normal. The caret marks the population mean, &#956; &#61; 15.00. (The population is generated through Rice Virtual Lab in Statistics.)</caption>
+</figure>
+<p id="corty3e-ch5-p84" block_type="sr-ex-txt">The Rice simulator allows one to control how large the samples are and how many samples one wishes to take from the population. <strong><link href="#corty3e-ch5-fig-19">Figure 5.8</link></strong> illustrates one random sample of size <em>N</em> &#61; 5 from the population. The left panel in <link href="#corty3e-ch5-fig-19">Figure 5.8</link> shows the five cases that were randomly selected and the right panel the mean of these five cases, the first sample. Note that the five cases are scattered about and that the sample mean (<em>M</em> &#61; 16.00) is in the ballpark of the population mean (&#956; &#61; 15.00), but is not an exact match.</p>
+<figure id="corty3e-ch5-fig-19" block_type="figure" numbered="true" number="5.8" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="large" border="true"/>
+<image asset-id="corty3e-ch5-img-19" alt="image" src="asset/ch5/corty3e_fig05_08.jpg"/>
+<caption><strong><phrase block_type="fig_num">Figure 5.8</phrase> Random Sample of Five Cases</strong> The left panel shows a random sample of five cases from the population illustrated in <link href="#corty3e-ch5-fig-18">Figure 5.7</link>. The caret marks the population mean. The right panel shows the mean of these five cases. (Screenshot from Rice Virtual Lab in Statistics.)</caption>
+</figure>
+<p id="corty3e-ch5-p85" block_type="sr-ex-txt"><strong><link href="#corty3e-ch5-fig-20">Figure 5.9</link></strong> shows the sampling distribution after 1,000 random samples were drawn, after 10,000 random samples were drawn, and after 100,000 random samples were drawn. There are several things to note:</p>
+<figure id="corty3e-ch5-fig-20" block_type="figure" numbered="true" number="5.9" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="large" border="true"/>
+<image asset-id="corty3e-ch5-img-20" alt="image" src="asset/ch5/corty3e_fig05_09.jpg"/>
+<caption><strong><phrase block_type="fig_num">Figure 5.9</phrase> Sampling Distributions for Increasing Number of Samples of Five Cases</strong> Repeated, random samples of size <em>N</em> &#61; 5 were taken from the population shown in <link href="#corty3e-ch5-fig-18">Figure 5.7</link>. The caret marks the population mean. A mean was calculated for each sample. The top panel shows the sampling distribution for 1,000 means, the middle panel for 10,000 means, and the bottom panel for 100,000 means. Note that the shape becomes more normal and more regular as the number of means increases. (Sampling distributions generated online at Rice Virtual Lab in Statistics.)</caption>
+</figure>
+<list id="corty3e-ch5-list-6" type="unordered" block_type="bullet">
+<li><p id="corty3e-ch5-p86" block_type="sr-exp-bl-first">All three of the sampling distributions have shapes that are similar to those of a normal distribution, despite the fact that the parent population is distinctly non-normal. This is predicted by the central limit theorem.</p></li>
+<li><p id="corty3e-ch5-p87" block_type="sr-exp-bl-mid">As the number of samples increases, the distribution becomes smoother and more symmetrical. But, even with 100,000 samples, the sampling distribution is not perfectly normal.</p>
+<p id="corty3e_page_158" block_type="page_start">158</p></li>
+<li><p id="corty3e-ch5-p88" block_type="sr-exp-bl-mid">The central limit theorem states that the mean of a sampling distribution is the mean of the population. Here, the population mean is 15.00, and the mean of the sampling distribution gets closer to the population mean as the number of samples in the distribution grows larger. With 1,000 samples <em>M</em> &#61; 15.15, with 10,000 <em>M</em> &#61; 15.02, and with 100,000 it is 15.00.</p></li>
+<li><p id="corty3e-ch5-p89" block_type="sr-exp-bl-mid">Notice the wide range of the means in the sampling distribution&#8212;some are at each end of the distribution. With a small sample size, like <em>N</em> &#61; 5, one will occasionally draw a sample that is not representative of the population and that has a mean far away from the population mean. This is due entirely to the random nature of sampling error.</p></li>
+<li><p id="corty3e-ch5-p90" block_type="sr-exp-bl-last">The central limit theorem states that the standard error of the mean, which is the standard deviation of the sampling distribution, can be calculated from the population standard deviation and the size of the samples: <image asset-id="corty3e-ch5-img-21" alt="image" src="asset/ch5/corty3e_ineqn05_158_01.jpg"/>. This is quite accurate&#8212;the standard deviations of the three sampling distributions are 5.06, 5.19, and 5.12.</p></li>
+</list>
+<p id="corty3e_page_159" block_type="page_start">159</p>
+<p id="corty3e-ch5-p91" block_type="sr-ex-txt">When the size of the random samples increases from <em>N</em> &#61; 5 to <em>N</em> &#61; 25, some things change about the shape of the sampling distribution, as can be seen in <strong><link href="#corty3e-ch5-fig-21">Figure 5.10</link></strong>. It, like <link href="#corty3e-ch5-fig-20">Figure 5.9</link>, shows sampling distributions with 1,000, 10,000, and 100,000 samples. But, unlike <link href="#corty3e-ch5-fig-20">Figure 5.9</link>, the changes in the sampling distribution as the numbers of samples increase are more subtle. All three sampling distributions have a normal shape, though as the number of samples increases from 1,000 to 10,000, there is a noticeable increase in symmetry.</p>
+<figure id="corty3e-ch5-fig-21" block_type="figure" numbered="true" number="5.10" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="large" border="true"/>
+<image asset-id="corty3e-ch5-img-22" alt="image" src="asset/ch5/corty3e_fig05_10.jpg"/>
+<caption><strong><phrase block_type="fig_num">Figure 5.10</phrase> Sampling Distributions for Increasing Numbers of Samples of 25 Cases</strong> Repeated, random samples of size <em>N</em> &#61; 25 were taken from the population shown in <link href="#corty3e-ch5-fig-18">Figure 5.7</link>. The caret marks the population mean. A mean was calculated for each sample. The top panel shows the sampling distribution for 1,000 means, the middle panel for 10,000 means, and the bottom panel for 100,000 means. Compare these sampling distributions to those in <link href="#corty3e-ch5-fig-20">Figure 5.9</link>, and it is apparent that a larger number of cases in each sample yields a more regularly shaped sampling distribution and a narrower range of values. (Sampling distributions generated online at Rice Virtual Lab in Statistics.)</caption>
+</figure>
+<p id="corty3e-ch5-p92" block_type="sr-ex-txt">The most noticeable difference between the sampling distributions based on smaller samples, seen in <link href="#corty3e-ch5-fig-20">Figure 5.9</link>, and those based on larger samples, seen in <link href="#corty3e-ch5-fig-21">Figure 5.10</link>, lies in the range of means. In <link href="#corty3e-ch5-fig-20">Figure 5.9</link>, the means ranged from 2 to 29, while in <link href="#corty3e-ch5-fig-21">Figure 5.10</link>, they range from 9 to 22. There is less variability in the sampling distribution based on the larger samples.</p>
+<p id="corty3e-ch5-p93" block_type="sr-ex-txt">This decreased variability is mirrored in the standard deviations. (Remember, the standard deviation of the sampling distribution is the standard error of measurement. When 100,000 samples of size <em>N</em> &#61; 5 are taken, the standard deviation of the sampling distribution was 5.12. When the same number of samples is taken, but the size of each sample is 25, not 5, the standard deviation of the sampling distribution falls to 2.28. This is exactly what is predicted for the standard error of the mean by the central limit theorem:</p>
+<p id="corty3e_page_160" block_type="page_start">160</p>
+<p id="corty3e-ch5-eqn-7" block_type="equation">
+<image asset-id="corty3e-ch5-img-23" alt="image" src="asset/ch5/corty3e_eqn05_160_01.jpg"/>
+</p>
+<p id="corty3e-ch5-p94" block_type="sr-ex-txt">As was mentioned above, when the standard error of the mean is smaller, the means are packed more tightly together and less sampling error exists. A larger sample size means that there is less sampling error and that the sample is more likely to provide a better representation of the population.</p>
+</box>
+<box title="Practice Problems 5.2" numbered="false" id="corty3e-ch5-bx2-2" block_type="sr-h">
+<p id="corty3e-ch5-p95" block_type="sr-h1"><strong>Review Your Knowledge</strong></p>
+<p id="corty3e-ch5-p96" block_type="sr-que-nl"><phrase block_type="question_num">5.06</phrase> What is a sampling distribution?</p>
+<p id="corty3e-ch5-p97" block_type="sr-que-nl"><phrase block_type="question_num">5.07</phrase> What are three facts derived from the central limit theorem?</p>
+<p id="corty3e-ch5-p98" block_type="sr-h1"><strong>Apply Your Knowledge</strong></p>
+<p id="corty3e-ch5-p99" block_type="sr-que-nl"><phrase block_type="question_num">5.08</phrase> There&#8217;s a small town in Ohio that has a population of 6 and each person has his or her blood pressure measured. The people are labeled as A, B, C, D, E, and F. If one were to draw repeated, random samples of size <em>N</em> &#61; 2 to make a sampling distribution of the mean, how many unique samples are there?</p>
+<p id="corty3e-ch5-p100" block_type="sr-que-nl"><phrase block_type="question_num">5.09</phrase> Researcher X takes repeated, random samples of size <em>N</em> &#61; 10 from a population, calculates a mean for each sample, and constructs a sampling distribution of the mean. Researcher Y takes repeated, random samples of size <em>N</em> &#61; 100 from the same population, calculates a mean for each sample, and constructs a sampling distribution of the mean. What can one conclude about the shapes of the two sampling distributions?</p>
+<p id="corty3e-ch5-p101" block_type="sr-que-nl"><phrase block_type="question_num">5.10</phrase> If &#963; &#61; 12 and <em>N</em> &#61; 78, what is &#963;<em><sub>M</sub></em>?</p>
+</box>
+</section>
+<section id="corty3e-ch5-sec1-3" block_type="h1" chapter="5" title="" numbered="false" level="1" print_page="160">
+<section-metadata><section-title><phrase block_type="sec_num">5.3</phrase> <phrase block_type="sec_title">The 95&#37; Confidence Interval for a Population Mean</phrase></section-title></section-metadata>
+<p id="corty3e-ch5-p102" block_type="txt-ni">All the pieces are now in place for the culmination of this chapter&#8212;calculating a confidence interval for the mean. A <termref term="confidence interval">confidence interval</termref> is a range, based on a sample value, within which a researcher estimates a population value falls. To use the language of statistics from the first chapter, confidence intervals use statistics to estimate parameters. Confidence intervals are useful because population values are rarely known, but researchers like to draw conclusions about populations.</p>
+<p id="corty3e-ch5-p103" block_type="txt">Here&#8217;s how it works. A researcher takes a sample from a population and calculates a mean, <em>M</em>. Then, based on that sample mean, the researcher constructs a range around it, an interval, that is likely to contain the population mean, &#956;. This interval is called a confidence interval.</p>
+<p id="corty3e-ch5-p104" block_type="txt">For example, suppose a researcher wanted to know how many fears the average American had. Clearly, it would be impossible to survey more than 300 million Americans to find the population mean, &#956;. But, the researcher could obtain a representative sample of, say, 1,000 Americans and ask them this question. Suppose he did so and found that the mean number of fears in the sample, <em>M,</em> was 2.78. If someone asked the researcher how many fears the average American had, the researcher shouldn&#8217;t say, &#8220;2.78.&#8221; Because of sampling error, it is unlikely that <em>M</em> is exactly the same as &#956;<em>.</em> <em>M</em> should be close to &#956;, but it is unlikely to be the same down to the last decimal point.</p>
+<p id="corty3e_page_161" block_type="page_start">161</p>
+<p id="corty3e-ch5-p105" block_type="txt">Sampling error, which is a random factor, could inflate the number of fears reported, in which case 2.78 is an overestimate, or it could lead to underreporting, in which case the average American has more than 2.78 fears. The wisest thing for the researcher to do is to add and subtract some amount to his sample mean, say, 2.78 &#177;1.25, so that he has a range within which it is likely that <em>M</em> falls. Said another way, there will be an interval (based on the sample value) that the researcher is fairly confident will capture the population value. This is a confidence interval.</p>
+<p id="corty3e-ch5-p106" block_type="txt">Though confidence intervals may sound exotic, most people are already comfortable with them, albeit under a different name. Polls regularly report a margin of error, a confidence interval by another name. For example, a NYT/CBS poll reported that 66&#37; of a sample of 1,002 adult Americans, interviewed by phone, believe that the distribution of money and wealth should be more even in the United States (Scheiber and Sussman, 2015). Because the pollsters went to some effort to gather a representative sample, they conclude that 66&#37; of adult Americans feel the current income distribution is unfair. But, this poll has a margin of error of &#177;3&#37;, so it is probably not exactly 66&#37; who feel that income distribution is unfair. If asked what percentage of Americans feel it is unfair, the reporters should respond with a confidence interval: &#8220;The percentage of adult Americans who believe the distribution of wealth should be more even is somewhere from 63&#37; to 69&#37;.&#8221;</p>
+<p id="corty3e-ch5-p107" block_type="txt">A confidence interval is an <termref term="interval estimate">interval estimate</termref> for a population value, not a <termref term="point estimate">point estimate</termref><strong>.</strong> A point estimate is just a single value as an estimate of a population value. An example of a point estimate is <em>s</em>, which is the estimated population value for a standard deviation. Interval estimates are ranges and are better than point estimates, because they are more likely to be true. Suppose a compulsive gambler was trying to guess the average GPA at your school. With which guess do you think she would have a better chance of being right?</p>
+<list id="corty3e-ch5-list-7" type="ordered" block_type="upperalpha">
+<li><p id="corty3e-ch5-p108" block_type="nl-alpha-uc-first">The average GPA is 3.19, or</p></li>
+<li><p id="corty3e-ch5-p109" block_type="nl-alpha-uc-mid">The average GPA is somewhere between 3.00 and 3.40.</p></li>
+</list>
+<figure id="corty3e-ch5-fig-23" block_type="figure" numbered="true" number="5.11" mmtype="image" mmsrc="" attr="">
+<layout align="right" width="medium" border="true"/>
+<image asset-id="corty3e-ch5-img-24" alt="image" src="asset/ch5/corty3e_fig05_11.jpg"/>
+<caption><strong><phrase block_type="fig_num">Figure 5.11</phrase> A Sampling Distribution of the Mean</strong> By the central limit theorem, (a) the sampling distribution of the mean is normally distributed, (b) the midpoint of a sampling distribution of the mean is the mean of the population from which the samples are drawn, and (c) the standard deviation of the sampling distribution of the mean is the standard error of the mean (&#963;<em><sub>M</sub></em>).</caption>
+</figure>
+<figure id="corty3e-ch5-fig-24" block_type="figure" numbered="true" number="5.12" mmtype="image" mmsrc="" attr="">
+<layout align="right" width="medium" border="true"/>
+<image asset-id="corty3e-ch5-img-25" alt="image" src="asset/ch5/corty3e_fig05_12.jpg"/>
+<caption><strong><phrase block_type="fig_num">Figure 5.12</phrase> &#177;1.96 &#963;<em><sub>M</sub></em> Brackets Built Around a Sample Mean</strong> The 95&#37; confidence interval extends from 1.96 &#963;<em><sub>M</sub></em> below <em>M</em> to 1.96 &#963;<em><sub>M</sub></em> above it. Notice that this interval captures &#956;, the population mean.</caption>
+</figure>
+<figure id="corty3e-ch5-fig-25" block_type="figure" numbered="true" number="5.13" mmtype="image" mmsrc="" attr="">
+<layout align="right" width="medium" border="true"/>
+<image asset-id="corty3e-ch5-img-26" alt="image" src="asset/ch5/corty3e_fig05_13.jpg"/>
+<caption><strong><phrase block_type="fig_num">Figure 5.13</phrase> &#177;1.96 &#963;<em><sub>M</sub></em> Brackets Built Around a Sample Mean</strong> The 95&#37; confidence interval extends from 1.96 &#963;<em><sub>M</sub></em> below <em>M</em> to 1.96 &#963;<em><sub>M</sub></em> above it. Notice that this interval fails to capture &#956;, the population mean.</caption>
+</figure>
+<p id="corty3e-ch5-p110" block_type="txt">She&#8217;d have to be awfully lucky if the average GPA at your school were exactly 3.19, a point estimate, so she is more likely to capture the actual population value with the interval estimate. A researcher is more likely to be correct with an interval estimate, but an interval estimate is less specific than a point estimate.</p>
+<p id="corty3e-ch5-p111" block_type="txt">The math for calculating a confidence interval is not difficult, but the logic of why a confidence interval works is a little tricky. But, don&#8217;t worry. Confidence intervals will crop up regularly from here on out. I&#8217;m confident that at some point in the next 11 chapters, you will have an &#8220;aha&#8221; experience.</p>
+<p id="corty3e-ch5-p112" block_type="txt">Let&#8217;s start by imagining that a researcher has taken all possible unique, random samples of size <em>N</em> from some population. For each sample, she has calculated a mean and she has made a sampling distribution of the means as shown in <strong><link href="#corty3e-ch5-fig-23">Figure 5.11</link></strong>.</p>
+<p id="corty3e-ch5-p113" block_type="txt">There are several things to note about this figure:</p>
+<list id="corty3e-ch5-list-8" type="unordered" block_type="bullet">
+<li><p id="corty3e-ch5-p114" block_type="bl-first">Thanks to the central limit theorem, it is normally distributed.</p></li>
+<li><p id="corty3e-ch5-p115" block_type="bl-mid">Thanks to the central limit theorem, the mean of all the sample means, which is the midpoint of the distribution, is also the mean of the population. It&#8217;s marked as &#956; in <link href="#corty3e-ch5-fig-23">Figure 5.11</link>.</p><p id="corty3e_page_162" block_type="page_start">162</p></li>
+<li><p id="corty3e-ch5-p116" block_type="bl-last">Thanks to the central limit theorem, it is possible to calculate the standard error of the mean. The <em>X</em>-axis has been marked off in units of the standard error of the mean, ranging from<br/>&#8211;3 to 3. This indicates how many standard errors of the mean each sample mean falls away from &#956;.</p></li>
+</list>
+<p id="corty3e-ch5-p117" block_type="txt">To understand how confidence intervals work, look at <strong><link href="#corty3e-ch5-fig-24">Figure 5.12</link></strong>. There, the mean for the sample falls 1.5 standard errors of the mean above &#956;.</p>
+<p id="corty3e-ch5-p118" block_type="txt">Let&#8217;s build an interval around the mean, adding 1.96 standard errors of the mean to it and subtracting 1.96 standard errors of the mean from it. Mathematically, that is</p>
+<p id="corty3e-ch5-p119" block_type="eq"><em>M</em> &#177;1.96&#963;<em><sub>M</sub></em></p>
+<p id="corty3e-ch5-p120" block_type="txt">Look at the brackets which extend 1.96&#963;<em><sub>M</sub></em> above and below <em>M</em>. Does the interval within the brackets capture &#956;? The answer is yes.</p>
+<p id="corty3e-ch5-p121" block_type="txt">In <strong><link href="#corty3e-ch5-fig-25">Figure 5.13</link></strong> is an example that doesn&#8217;t capture &#956;. <link href="#corty3e-ch5-fig-25">Figure 5.13</link> shows another sample with brackets extended 1.96&#963;<em><sub>M</sub></em> above and below <em>M</em>. The mean of the sample in <link href="#corty3e-ch5-fig-25">Figure 5.13</link> is 2.5 standard errors of the mean below &#956;, so &#956; doesn&#8217;t fall within the brackets around the sample mean.</p>
+<p id="corty3e_page_163" block_type="page_start">163</p>
+<p id="corty3e-ch5-p122" block_type="txt">That value of 1.96 was not arbitrarily chosen for these examples. 1.96 was developed in <link href="corty3e-ch04.xml">Chapter 4</link> as the cut-off score, in a normal distribution, for the middle 95&#37; of cases.</p>
+<p id="corty3e-ch5-p123" block_type="txt">Thanks to the central limit theorem, it is safe to assume that the sampling distribution of the mean is normally shaped. Also, the standard error of the mean is the standard deviation of the sampling distribution, so 95&#37; of the sample means in a sampling distribution will fall from 1.96 standard errors of the mean below the midpoint to 1.96 standard errors of the mean above the midpoint. That is an important point, so here it is again and more succinctly: in a sampling distribution of the mean, 95&#37; of the means fall within 1.96 &#963;<em><sub>M</sub></em> of the midpoint. This is shown in <strong><link href="#corty3e-ch5-fig-26">Figure 5.14</link></strong>.</p>
+<figure id="corty3e-ch5-fig-26" block_type="figure" numbered="true" number="5.14" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="large" border="true"/>
+<image asset-id="corty3e-ch5-img-27" alt="image" src="asset/ch5/corty3e_fig05_14.jpg"/>
+<caption><strong><phrase block_type="fig_num">Figure 5.14</phrase> Area Within Which 95&#37; of the Sample Means Fall in a Sampling Distribution of the Mean</strong> 95&#37; of sample means in a sampling distribution of the mean fall in the area from &#8722;1.96 &#963;<em><sub>M</sub></em> below the midpoint to &#8722;1.96 &#963;<em><sub>M</sub></em> above the midpoint. 95&#37; confidence intervals that are built around means in the shaded area will successfully capture the population mean, &#956;.</caption>
+</figure>
+<p id="corty3e-ch5-p124" block_type="txt">Now imagine any sample mean in the shaded region in <link href="#corty3e-ch5-fig-26">Figure 5.14</link>. Will the <em>population</em> mean (&#956;) fall within brackets extended 1.96 &#963;<em><sub>M</sub></em> to the right and to the left of the <em>sample</em> mean? The answer is yes. This also means that any sample mean more than 1.96 &#963;<em><sub>M</sub></em> away from the midpoint will fail to capture &#956; if the brackets are extended 1.96 &#963;<em><sub>M</sub></em> around it.</p>
+<p id="corty3e-ch5-p125" block_type="txt">Let&#8217;s put all the pieces together and define the 95&#37; confidence interval for the population mean. Here&#8217;s what we know:</p>
+<box numbered="false" id="corty3e-ch5-exp1-2" block_type="mn1">
+<p id="corty3e-ch5-p126" block_type="mn-ext-ni"><em>For any mean picked at random from the sampling distribution, there&#8217;s a 95&#37; chance that 1.96 &#963;<sub>M</sub> brackets extended symmetrically around it will capture &#956;.</em></p>
+</box>
+<list id="corty3e-ch5-list-9" type="unordered" block_type="bullet">
+<li><p id="corty3e-ch5-p127" block_type="bl-first">If a sample mean is picked at random from a sampling distribution of the mean, there&#8217;s a 95&#37; chance that the sample mean falls in the shaded region shown in <link href="#corty3e-ch5-fig-26">Figure 5.14</link>.</p></li>
+<li><p id="corty3e-ch5-p128" block_type="bl-mid">Brackets that extend &#177;1.96 &#963;<em><sub>M</sub></em> capture &#956; for every sample mean in the shaded region.</p></li>
+<li><p id="corty3e-ch5-p129" block_type="bl-last">For any mean picked at random from the sampling distribution, there&#8217;s a 95&#37; chance that 1.96 &#963;<em><sub>M</sub></em> brackets extended symmetrically around it will capture &#956;.</p></li>
+</list>
+<p id="corty3e-ch5-p130" block_type="txt">We&#8217;ve just developed the 95&#37; confidence interval for the population mean: take a sample mean, create an interval around it that is &#177;1.96 &#963;<em><sub>M</sub></em>, and there is a 95&#37; chance that this interval captures &#956;. The formula is shown in <link href="#corty3e-ch5-bx6-3">Equation 5.3</link>.</p>
+<p id="corty3e_page_164" block_type="page_start">164</p>
+<box title="" numbered="false" id="corty3e-ch5-bx6-3" block_type="eq-t">
+<box-metadata><box-title><phrase block_type="sec_num">Equation 5.3</phrase> <phrase block_type="sec_title">Formula for 95&#37; Confidence Interval for the Population Mean</phrase></box-title></box-metadata>
+<p id="corty3e-ch5-p131" block_type="eq-unl">95&#37;CI<sub>&#956;</sub> &#61; <em>M</em> &#177; (1.96 &#215; &#963;<em><sub>M</sub></em>)</p>
+<p id="corty3e-ch5-p132" block_type="eq-txt-ni">where 95&#37;CI<sub>&#956;</sub> &#61; the 95&#37; confidence interval for thepopulation mean being calculated</p>
+<p id="corty3e-ch5-p133" block_type="eq-unl"><em>M</em> &#61; sample mean</p>
+<p id="corty3e-ch5-p134" block_type="eq-unl">&#963;<em><sub>M</sub></em> &#61; standard error of the mean (<link href="#corty3e-ch5-bx6-1">Equation 5.1</link>). [If &#963;<em><sub>M</sub></em> is unknown, substitute <em>s<sub>M</sub></em> (<link href="#corty3e-ch5-bx6-2">Equation 5.2</link>).]</p>
+</box>
+<p id="corty3e-ch5-p135" block_type="txt">Let&#8217;s put this equation into practice and use the results to think about what a 95&#37; confidence interval means. Dr. Saskia obtained a random sample of 37 students at an elite college, gave them an IQ test (&#963; &#61; 15), and found <em>M</em> &#61; 122. What can she conclude from this sample mean about the average IQ of the entire student body at that college. That is, what can she conclude about &#956;? This calls for a confidence interval.</p>
+<p id="corty3e-ch5-p136" block_type="txt">All the pieces are present that are needed to calculate a confidence interval: <em>M</em>, &#963;, and <em>N</em>. &#963; and <em>N</em> are needed to calculate &#963;<em><sub>M</sub></em> using <link href="#corty3e-ch5-bx6-1">Equation 5.1</link>:</p>
+<p id="corty3e-ch5-eqn-8" block_type="equation">
+<image asset-id="corty3e-ch5-img-28" alt="image" src="asset/ch5/corty3e_eqn05_164_01.jpg"/>
+</p>
+<p id="corty3e-ch5-p137" block_type="txt">Now that the standard error of the mean is known, <link href="#corty3e-ch5-bx6-3">Equation 5.3</link> can be used to calculate the 95&#37; confidence interval:</p>
+<p id="corty3e-ch5-p138" block_type="eq">95%CI<sub>&#956;</sub> &#61; M &#177; (1.96 &#215; &#963;<em><sub>M</sub></em>)</p>
+<p id="corty3e-ch5-p139" block_type="eq">&#61; 122 &#177; (1.96 &#215; 2.4660)</p>
+<p id="corty3e-ch5-p140" block_type="eq">&#61; 122 &#177; 4.8837</p>
+<p id="corty3e-ch5-p141" block_type="eq">&#61; ranges from 117.1166 to 126.8834</p>
+<p id="corty3e-ch5-p142" block_type="eq">&#61; from 117.12 to 126.88</p>
+<p id="corty3e-ch5-p143" block_type="txt">Note that the subtraction was done first as confidence intervals are reported from the lower number to the higher number. The confidence interval ranges from 117.12 to 126.88. Note that the whole confidence interval is 9.76 points wide and that each side of it is almost 5 points wide.</p>
+<p id="corty3e-ch5-p144" block_type="txt">The American Psychological Association (2010) has a format for reporting confidence intervals. APA format asks that we do three things: (a) use CI as an abbreviation for confidence interval, (b) report what type of confidence interval (e.g., 95&#37;), and (c) put in brackets first the lower limit and then the upper limit of the confidence interval. To report the mean and confidence interval for the IQ data, one would write <em>M</em> &#61; 118.00, 95&#37;CI [117.12, 126.88].</p>
+<p id="corty3e_page_165" block_type="page_start">165</p>
+<p id="corty3e-ch5-p145" block_type="txt">What does this confidence interval reveal to us? <em>Officially</em>, a 95&#37; confidence interval only tells us that if we repeated the process of getting a sample and calculating a confidence interval, 95 out of 100 times, the confidence interval would capture the population mean, &#956;. <em>Officially</em>, a confidence interval doesn&#8217;t say whether any particular calculation of the confidence interval is one of those 95 times, and, <em>officially</em>, it doesn&#8217;t mean that there&#8217;s a 95&#37; chance &#956; falls in this confidence interval (Cumming &#38; Finch, 2005).</p>
+<p id="corty3e-ch5-p146" block_type="txt">That&#8217;s officially. In reality, most people interpret a confidence interval as indicating that they are fairly certain the population mean falls in such a range. <strong><link href="#corty3e-ch5-fig-28">Figure 5.15</link></strong> shows that with our IQ example we would conclude there&#8217;s a 95&#37; chance that the mean (&#956;) IQ score of the students at this college falls somewhere in the range from 117.12 to 126.88. As new statisticians, the interpretation that a confidence interval gives a range in which the population parameter falls is fine. Just remember, there&#8217;s also a chance that the population parameter doesn&#8217;t fall in the confidence interval.</p>
+<figure id="corty3e-ch5-fig-28" block_type="figure" numbered="true" number="5.15" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="large" border="true"/>
+<image asset-id="corty3e-ch5-img-29" alt="image" src="asset/ch5/corty3e_fig05_15.jpg"/>
+<caption><strong><phrase block_type="fig_num">Figure 5.15</phrase> Using a Confidence Interval to Indicate the Range Within Which a Population Value Likely Falls</strong> The shaded area indicates the range within which the mean IQ of all students at the elite college probably falls.</caption>
+</figure>
+<box title="Worked Example 5.3" numbered="false" id="corty3e-ch5-bx3-3" block_type="sr-exp-n">
+<p id="corty3e-ch5-p147" block_type="sr-ex-txt-ni">Earlier in this chapter, mention was made of a sample of 83 American adults in whom diastolic blood pressure was measured and where the standard error of the mean, <em>s<sub>M</sub></em>, was 1.21. If the mean blood pressure in the sample was 81, what can one conclude about the mean diastolic blood pressure of American adults?</p>
+<p id="corty3e-ch5-p148" block_type="sr-ex-txt">Using <link href="#corty3e-ch5-bx6-3">Equation 5.3</link> to calculate the 95&#37; confidence interval for the population mean:</p>
+<p id="corty3e-ch5-p149" block_type="sr-exp-eq">95&#37;CI<sub>&#956; </sub>&#61; <em>M</em> &#177; (1.96 &#215; <em>s<sub>M</sub></em>)</p>
+<p id="corty3e-ch5-p150" block_type="sr-exp-eq">&#61; 81 &#177; (1.96 &#215; 1.21)</p>
+<p id="corty3e-ch5-p151" block_type="sr-exp-eq">&#61; 81 &#177; 2.3716</p>
+<p id="corty3e-ch5-p152" block_type="sr-exp-eq">&#61; 81 &#177; 2.37</p>
+<p id="corty3e-ch5-p153" block_type="sr-exp-eq">&#61; from 78.63 to 83.37</p>
+<p id="corty3e-ch5-p154" block_type="sr-ex-txt">The confidence interval of 78.63 to 83.37, which is a total of 4.34 points wide, has a 95&#37; probability of capturing the mean diastolic blood pressure of adult Americans. One can conclude that the mean diastolic blood pressure of American adults is probably somewhere from 78.63 to 83.37. In APA format, one would write <em>M</em> &#61; 81.00, 95&#37;CI [78.63, 83.37].</p>
+</box>
+<p id="corty3e_page_166" block_type="page_start">166</p>
+<box title="Practice Problems 5.3" numbered="false" id="corty3e-ch5-bx2-3" block_type="sr-h">
+<p id="corty3e-ch5-p155" block_type="sr-h1"><strong>Review Your Knowledge</strong></p>
+<p id="corty3e-ch5-p156" block_type="sr-que-nl"><phrase block_type="question_num">5.11</phrase> What is the difference between a point estimate and an interval estimate for a population value?</p>
+<p id="corty3e-ch5-p157" block_type="sr-que-nl"><phrase block_type="question_num">5.12</phrase> How often will a 95&#37; confidence interval for &#956; capture the population mean?</p>
+<p id="corty3e-ch5-p158" block_type="sr-que-nl"><phrase block_type="question_num">5.13</phrase> How often will a 95&#37; confidence interval for &#956; fail to capture the population mean?</p>
+<p id="corty3e-ch5-p159" block_type="sr-h1"><strong>Apply Your Knowledge</strong></p>
+<p id="corty3e-ch5-p160" block_type="sr-que-nl"><phrase block_type="question_num">5.14</phrase> Given <em>M</em> &#61; 17, &#963; &#61; 8, and <em>N</em> &#61; 55, calculate the 95&#37; confidence interval for &#956; and report it in APA format.</p>
+<p id="corty3e-ch5-p161" block_type="sr-que-nl"><phrase block_type="question_num">5.15</phrase> Given <em>M</em> &#61; 250, <em>s</em> &#61; 60, and <em>N</em> &#61; 180, calculate the 95&#37; confidence interval for &#956; and report it in APA format.</p>
+</box>
+<box title="Application Demonstration" numbered="false" id="corty3e-ch5-bx5-1" block_type="sr-x-h">
+<p id="corty3e-ch5-p162" block_type="sr-x-txt-ni">A hypothetical survey about sexual attitudes and behaviors was used as an example in this chapter. To understand sampling better, let&#8217;s examine two real studies about human sexuality, one with such a poor sample that the results are meaningless and one that shows how much effort goes into obtaining a representative sample.</p>
+<p id="corty3e-ch5-p163" block_type="sr-x-txt">Shere Hite is famous for her &#8220;Hite Reports&#8221; on male and female sexuality. In 1987 she published <em>Women and Love,</em> known as <em>The Hite Report on Love, Passion, and Emotional Violence.</em> It was a survey of about 4,500 women from across the United States and it generated a number of thought-provoking findings. One result that gathered a lot of media attention was the rate of adultery among married women&#8212;Hite found that 70&#37; of women who had been married five years reported extramarital affairs. Seventy percent!</p>
+<p id="corty3e-ch5-p164" block_type="sr-x-txt">This number is quite high and the fact that the sample size is so large, 4,500 women, gives the finding credibility. Further, the procedure Hite used to put together her sample was interesting. Hite was a feminist and didn&#8217;t want to be accused of only including feminists in her sample. So, she sent her survey to a broad cross section of women&#8217;s groups in 43 states&#8212;church groups, garden clubs, and so on. If 70&#37; of these mainstream American women were having affairs, that&#8217;s surprising.</p>
+<p id="corty3e-ch5-p165" block_type="sr-x-txt">And, it turns out that that 70&#37; figure can be safely ignored because of one important factor&#8212;the consent rate. Hite sent out more than 100,000 surveys and only 4,500 usable surveys were returned. That&#8217;s a consent rate of 4.5&#37;, well below the necessary rate of 70&#37;.</p>
+<p id="corty3e-ch5-p166" block_type="sr-x-txt">If a woman received a Shere Hite survey, what was the normal response? For 95.5&#37; of women, the normal response was not returning the survey. The odd response came from the 4.5&#37; of women who completed and returned the survey. Maybe the odd 4.5&#37; of women who returned the survey are also odd in terms of marital fidelity? The self-selection bias is so great in Hite&#8217;s survey that the results can&#8217;t be taken seriously.</p>
+<p id="corty3e-ch5-p167" block_type="sr-x-txt">To gather a representative sample for a survey is difficult, but it can be done. Here&#8217;s an example of how to do it correctly. In 1994 the sociologist Edward Laumann and three colleagues published a book that reported on sexual behaviors and attitudes in the United States. It was based on a sample of about 3,400 Americans and also offered some interesting findings. Take the frequency with which people have sex, for example. They found that Americans fell into three groups with regard to how much sex they had in the past year:</p>
+<p id="corty3e_page_167" block_type="page_start">167</p>
+<list id="corty3e-ch5-list-10" type="unordered" block_type="bullet">
+<li><p id="corty3e-ch5-p168" block_type="sr-x-bl-first">About a third had sex infrequently, either having no sex in the past year or just a couple of times.</p></li>
+<li><p id="corty3e-ch5-p169" block_type="sr-x-bl-mid">About a third had sex a few times a month.</p></li>
+<li><p id="corty3e-ch5-p170" block_type="sr-x-bl-last">And, about a third had sex frequently, two or more times a week.</p></li>
+</list>
+<p id="corty3e-ch5-p171" block_type="sr-x-txt">Laumann and colleagues went to a lot of trouble to get a representative sample. Using a computer, they generated addresses in randomly selected neighborhoods in randomly selected cities, towns, and rural areas, from randomly selected geographic regions in the United States. This yielded almost 4,400 valid addresses. The people living at the address who spoke English and were between 18&#8211;59 years old were eligible for participation. From the eligible people at the address, the researchers randomly selected one person, approached him or her, explained the study, got permission to do the interview, and completed it. About 4 out of every 5 targeted participants agreed to be interviewed. That&#8217;s a consent rate of 80&#37;, well above the minimum rate of 70&#37;.</p>
+<p id="corty3e-ch5-p172" block_type="sr-x-txt">Such a large and randomly selected sample is likely to be representative of the U.S. population, but the researchers still checked their results. One action they took was to compare the characteristics of the sample to census data about the United States. <strong><link href="#corty3e-ch5-fig-29">Figure 5.16</link></strong> compares data from the Census Bureau to results from their survey. The numbers don&#8217;t match exactly, but they are close and suggest that Laumann and colleagues achieved their goal of obtaining a sample that was representative of the United States. The sample mirrors America, so the study provides one of the best pictures we have ever had of sexual behavior in this nation.</p>
+<figure id="corty3e-ch5-fig-29" block_type="figure" numbered="true" number="5.16" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="large" border="true"/>
+<image asset-id="corty3e-ch5-img-30" alt="image" src="asset/ch5/corty3e_fig05_16.jpg"/>
+<caption><strong><phrase block_type="fig_num">Figure 5.16</phrase> Comparison of Demographic Characteristics of Survey Sample to U.S. Population</strong> This bar chart compares the percentages of respondents in Laumann&#8217;s survey of sexual behaviors who meet selected demographic characteristics to the percentages with which the same characteristics are found in the U.S. population. The matches are very close, supporting the ability to generalize from the survey results to the larger U.S. population (Michael, Gagnon, Laumann, &#38; Kolata, 1994).</caption>
+</figure>
+</box>
+<p id="corty3e_page_168" block_type="page_start">168</p>
+<box title="DIY" numbered="false" id="corty3e-ch5-bx4-1" block_type="bx4-h">
+<p id="corty3e-ch5-p173" block_type="bx4-txt-ni">Get your music player and pick one of your biggest playlists, say, one with hundreds of songs. That will be your population. Find out how many songs are on the playlist and how many total minutes of music it contains. Divide the total number of minutes of music by the number of songs to find the average length of a song. That is, &#956;. Next, use the shuffle function to select &#8776;10 songs from the playlist. This is your random sample from the population. Note the time that each song lasts and calculate the mean, <em>M</em>, and the standard deviation, <em>s</em>. Use these to create a 95&#37; confidence interval for the population mean. Does it capture &#956;? If so, why? If not, why?</p>
+</box>
+</section>
+<section id="corty3e-ch5-sec1-4" block_type="sum-h" chapter="5" title="" numbered="false" level="1" print_page="168">
+<section-metadata><section-title>SUMMARY</section-title></section-metadata>
+<p id="corty3e-ch5-p174" block_type="sum-hd1"><strong>Define a &#8220;good&#8221; sample and how to obtain one.</strong></p>
+<list id="corty3e-ch5-list-11" type="unordered" block_type="bluebullet">
+<li><p id="corty3e-ch5-p175" block_type="sum-bl-first">A good sample is representative of the larger population, so results can be generalized from the sample to the population. A sample is representative if it contains all the attributes in the population, in the same proportions that they are present in the population.</p></li>
+<li><p id="corty3e-ch5-p176" block_type="sum-bl-mid">Random sampling, where all the cases in the population have an equal chance of being selected, makes a representative sample likely but does not guarantee it. Sample size is also important as larger random samples are more likely to be representative.</p></li>
+<li><p id="corty3e-ch5-p177" block_type="sum-bl-last">Two factors that affect representativeness are self-selection bias and sampling error. Self-selection bias occurs when not all targeted participants agree to participate. Sampling error, which is the result of random factors, causes a sample to differ from the population. Sampling error, thought of as normally distributed, is more likely to be small than large.</p></li>
+</list>
+<p id="corty3e-ch5-p178" block_type="sum-hd1"><strong>List three facts derived from the central limit theorem.</strong></p>
+<list id="corty3e-ch5-list-12" type="unordered" block_type="bluebullet">
+<li><p id="corty3e-ch5-p179" block_type="sum-bl-first">The central limit theorem is based on a sampling distribution of the mean. A sampling distribution of the mean is obtained by (a) taking repeated, random samples of size <em>N</em> from a population; (b) calculating a mean for each sample; and then (c) making a frequency distribution of the mean. It demonstrates how much sampling error exists in the samples.</p></li>
+<li><p id="corty3e-ch5-p180" block_type="sum-bl-last">The central limit theorem makes three predictions about a sampling distribution of the mean when the number of cases in each sample is large: (1) The sampling distribution is normally distributed; (2) The mean of the sampling distribution is the mean of the population; (3) The standard error of the mean can be calculated if one knows the population standard deviation and the size of the sample.</p></li>
+</list>
+<p id="corty3e-ch5-p181" block_type="sum-hd1"><strong>Calculate the 95&#37; confidence interval for</strong> &#956;<strong>.</strong></p>
+<list id="corty3e-ch5-list-13" type="unordered" block_type="bluebullet">
+<li><p id="corty3e-ch5-p182" block_type="sum-bl-first">Though less precise than a point estimate, which is a single value estimate of a population value, a confidence interval is a range, built around a sample value, within which a population value is thought to be likely to fall.</p></li>
+<li><p id="corty3e-ch5-p183" block_type="sum-bl-last">The 95&#37; confidence interval for the population mean is built by taking the sample mean and subtracting 1.96 standard errors of the mean from it and adding 1.96 standard errors of the mean to it. An interval constructed this way will capture &#956; 95&#37; of the time.</p></li>
+</list>
+</section>
+<section id="corty3e-ch5-sec1-5" block_type="cr-kt-t" chapter="5" title="" numbered="false" level="1" print_page="169">
+<section-metadata><section-title>KEY TERMS</section-title></section-metadata>
+<p id="corty3e_page_169" block_type="page_start">169</p>
+<question id="corty3e-ch5-keyterms-ques1" numbered="false" title="" number="">
+<query id="corty3e-ch5-keyterms-ques1-qry">MA:
+
+a.central limit theorem:: a statement about the shape that a sampling distribution of the mean takes if the size of the samples is large and every possible sample were obtained.
+a.confidence interval:: a range within which it is estimated that a population value falls.
+a.consent rate:: the percentage of targeted subjects who agree to participate in a study.
+a.convenience sample:: a sampling strategy in which cases are selected for study based on the ease with which they can be obtained.
+a.interval estimate:: an estimate of a population value that says the population value falls somewhere within a range of values.
+a.point estimate:: an estimate of a population value that is a single value.
+a.random sample:: a sampling strategy in which each case in the population has an equal chance of being selected.
+a.representative:: all the attributes of the population are present in the sample in approximately the same proportion as in the population.
+a.sampling distribution:: a frequency distribution generated by taking repeated, random samples from a population and generating some value, like a mean, for each sample.
+a.sampling error:: discrepancies, due to random factors, between sample statistic and a population parameter.
+a.self-selection bias:: a nonrepresentative sample that may occur when the subjects who agree to participate in a research study differ from those who choose not to participate.
+a.standard error of the mean:: the standard deviation of a sampling distribution of the mean.
+</query>
+</question>
+
+</section>
+<section id="corty3e-ch5-sec1-6" block_type="cr-x-h" chapter="5" title="" numbered="false" level="1" print_page="169">
+<section-metadata><section-title>CHAPTER EXERCISES</section-title></section-metadata>
+<p id="corty3e-ch5-p196" block_type="cr-x-txt-ni"><strong><em>Answers to the odd-numbered exercises appear in <link href="corty3e-appb.xml">Appendix B</link>.</em></strong></p>
+<p id="corty3e-ch5-p197" block_type="cr-x-hd1"><strong>Review Your Knowledge</strong></p>
+<p id="corty3e-ch5-p198" block_type="cr-x-nl-txt"><phrase block_type="question_num">5.01</phrase> A &#95;&#95;&#95;&#95;&#95;&#95; is the larger group of cases a researcher is interested in studying, and a sample is a &#95;&#95;&#95;&#95;&#95;&#95; of these cases.</p>
+<p id="corty3e-ch5-p199" block_type="cr-x-nl-txt"><phrase block_type="question_num">5.02</phrase> A good sample is &#95;&#95;&#95;&#95;&#95;&#95; of the population.</p>
+<p id="corty3e-ch5-p200" block_type="cr-x-nl-txt"><phrase block_type="question_num">5.03</phrase> A representative sample contains all the &#95;&#95;&#95;&#95;&#95;&#95; found in the population in the same &#95;&#95;&#95;&#95;&#95;&#95; as in the population.</p>
+<p id="corty3e-ch5-p201" block_type="cr-x-nl-txt"><phrase block_type="question_num">5.04</phrase> When a sample is representative, we can &#95;&#95;&#95;&#95;&#95;&#95; the results from the sample to the &#95;&#95;&#95;&#95;&#95;&#95;.</p>
+<p id="corty3e-ch5-p202" block_type="cr-x-nl-txt"><phrase block_type="question_num">5.05</phrase> A &#95;&#95;&#95;&#95;&#95;&#95; sample is composed of easily obtained cases.</p>
+<p id="corty3e-ch5-p203" block_type="cr-x-nl-txt"><phrase block_type="question_num">5.06</phrase> In a &#95;&#95;&#95;&#95;&#95;&#95;, all the cases in the population have an equal chance of being selected.</p>
+<p id="corty3e-ch5-p204" block_type="cr-x-nl-txt"><phrase block_type="question_num">5.07</phrase> A &#95;&#95;&#95;&#95;&#95;&#95; can be used to draw a random sample.</p>
+<p id="corty3e-ch5-p205" block_type="cr-x-nl-txt"><phrase block_type="question_num">5.08</phrase> A representative sample &#95;&#95;&#95;&#95;&#95;&#95; guaranteed if one has a random sample.</p>
+<p id="corty3e-ch5-p206" block_type="cr-x-nl-txt"><phrase block_type="question_num">5.09</phrase> Larger samples provide sample values closer to &#95;&#95;&#95;&#95;&#95;&#95; values.</p>
+<p id="corty3e-ch5-p207" block_type="cr-x-nl-txt"><phrase block_type="question_num">5.10</phrase> If not everyone targeted for inclusion in the sample agrees to participate, &#95;&#95;&#95;&#95;&#95;&#95; may occur.</p>
+<p id="corty3e-ch5-p208" block_type="cr-x-nl-txt"><phrase block_type="question_num">5.11</phrase> Self-selection bias occurs if the people who agree to participate in a study &#95;&#95;&#95;&#95;&#95;&#95; in some way from those who opt not to participate.</p>
+<p id="corty3e-ch5-p209" block_type="cr-x-nl-txt"><phrase block_type="question_num">5.12</phrase> The &#95;&#95;&#95;&#95;&#95;&#95; is the percentage of targeted subjects who agree to participate.</p>
+<p id="corty3e-ch5-p210" block_type="cr-x-nl-txt"><phrase block_type="question_num">5.13</phrase> As long as the consent rate is greater than or equal to &#95;&#95;&#95;&#95;&#95;&#95;&#37;, concern with self-selection bias isn&#8217;t too great.</p>
+<p id="corty3e-ch5-p211" block_type="cr-x-nl-txt"><phrase block_type="question_num">5.14</phrase> Discrepancies between randomly drawn samples and a population can be explained by &#95;&#95;&#95;&#95;&#95;&#95;.</p>
+<p id="corty3e-ch5-p212" block_type="cr-x-nl-txt"><phrase block_type="question_num">5.15</phrase> Sampling error is caused by &#95;&#95;&#95;&#95;&#95;&#95; factors.</p>
+<p id="corty3e_page_170" block_type="page_start">170</p>
+<p id="corty3e-ch5-p213" block_type="cr-x-nl-txt"><phrase block_type="question_num">5.16</phrase> Sampling error is thought to be &#95;&#95;&#95;&#95;&#95;&#95; distributed.</p>
+<p id="corty3e-ch5-p214" block_type="cr-x-nl-txt"><phrase block_type="question_num">5.17</phrase> Usually, the amount of error caused by sampling error is &#95;&#95;&#95;&#95;&#95;&#95;, but occasionally, it is &#95;&#95;&#95;&#95;&#95;&#95;.</p>
+<p id="corty3e-ch5-p215" block_type="cr-x-nl-txt"><phrase block_type="question_num">5.18</phrase> If one takes repeated random samples from a population, calculates some statistic for each sample, and then makes a frequency distribution for that statistic, it is called a &#95;&#95;&#95;&#95;&#95;&#95;.</p>
+<p id="corty3e-ch5-p216" block_type="cr-x-nl-txt"><phrase block_type="question_num">5.19</phrase> The standard deviation of the sampling distribution of the mean is called the &#95;&#95;&#95;&#95;&#95;&#95;.</p>
+<p id="corty3e-ch5-p217" block_type="cr-x-nl-txt"><phrase block_type="question_num">5.20</phrase> The &#95;&#95;&#95;&#95;&#95;&#95; describes the shape of the sampling distribution of the mean when the size of the samples is &#95;&#95;&#95;&#95;&#95;&#95; and every possible sample is obtained.</p>
+<p id="corty3e-ch5-p218" block_type="cr-x-nl-txt"><phrase block_type="question_num">5.21</phrase> A large sample, as is required for the central limit theorem, has at least &#95;&#95;&#95;&#95;&#95;&#95; cases.</p>
+<p id="corty3e-ch5-p219" block_type="cr-x-nl-txt"><phrase block_type="question_num">5.22</phrase> According to the central limit theorem, the sampling distribution of the mean will be normally distributed, no matter what the &#95;&#95;&#95;&#95;&#95;&#95; of the parent population is.</p>
+<p id="corty3e-ch5-p220" block_type="cr-x-nl-txt"><phrase block_type="question_num">5.23</phrase> According to the central limit theorem, the mean of a sampling distribution of the mean is the same as the &#95;&#95;&#95;&#95;&#95;&#95; of the parent population.</p>
+<p id="corty3e-ch5-p221" block_type="cr-x-nl-txt"><phrase block_type="question_num">5.24</phrase> According to the central limit theorem, we can calculate the standard error of the mean if we know the &#95;&#95;&#95;&#95;&#95;&#95; of the population and the &#95;&#95;&#95;&#95;&#95;&#95; of the sample.</p>
+<p id="corty3e-ch5-p222" block_type="cr-x-nl-txt"><phrase block_type="question_num">5.25</phrase> If we don&#8217;t know &#963;, we can use &#95;&#95;&#95;&#95;&#95;&#95; to estimate the standard error of the mean.</p>
+<p id="corty3e-ch5-p223" block_type="cr-x-nl-txt"><phrase block_type="question_num">5.26</phrase> If the standard error of the mean is small, that&#8217;s an indication there is &#95;&#95;&#95;&#95;&#95;&#95; sampling error.</p>
+<p id="corty3e-ch5-p224" block_type="cr-x-nl-txt"><phrase block_type="question_num">5.27</phrase> A confidence interval is a &#95;&#95;&#95;&#95;&#95;&#95;, based on a &#95;&#95;&#95;&#95;&#95;&#95;&#95; value, within which it is estimated that the &#95;&#95;&#95;&#95;&#95;&#95;&#95; value falls.</p>
+<p id="corty3e-ch5-p225" block_type="cr-x-nl-txt"><phrase block_type="question_num">5.28</phrase> A confidence interval is an interval &#95;&#95;&#95;&#95;&#95;&#95;, not a &#95;&#95;&#95;&#95;&#95;&#95;&#95; estimate.</p>
+<p id="corty3e-ch5-p226" block_type="cr-x-nl-txt"><phrase block_type="question_num">5.29</phrase> Within &#95;&#95;&#95;&#95;&#95;&#95; standard errors of the mean of the midpoint of a sampling distribution of the mean, 95&#37; of the means fall.</p>
+<p id="corty3e-ch5-p227" block_type="cr-x-nl-txt"><phrase block_type="question_num">5.30</phrase> A mean picked at random from a sampling distribution of the mean has a &#95;&#95;&#95;&#95;&#95;&#95;&#95;&#37; chance of capturing the population mean if 1.96 &#963;<em><sub>M</sub></em> brackets are extended from it.</p>
+<p id="corty3e-ch5-p228" block_type="cr-x-nl-txt"><phrase block_type="question_num">5.31</phrase> If a 95&#37; confidence interval ranges from 7.32 to 13.68, it would be written in APA format as &#95;&#95;&#95;&#95;&#95;&#95;&#95;.</p>
+<p id="corty3e-ch5-p229" block_type="cr-x-nl-txt"><phrase block_type="question_num">5.32</phrase> If a 95&#37; confidence interval is calculated, there is a &#95;&#95;&#95;&#95;&#95;&#95;&#95;&#37; chance that it does not capture the population mean.</p>
+<p id="corty3e-ch5-p230" block_type="cr-x-hd1-rule"><strong>Apply Your Knowledge</strong></p>
+<p id="corty3e-ch5-p231" block_type="cr-x-txt-ni"><strong><em>Using the random number table</em></strong></p>
+<p id="corty3e-ch5-p232" block_type="cr-x-nl-txt"><phrase block_type="question_num">5.33</phrase> There are 50 people in a class. The teacher wants a random sample of 10 students. She numbers the students consecutively (1, 2, 3, 4, . . . 50) and uses the random number table to sample 10 cases without replacement. She starts on the first line of the table and uses it like a book, moving from left to right on each line. She divides each four-digit random number into two two-digit numbers. If the first number were 1273, she would read it as 12 and 73. List the numbers of the 10 cases in her sample.</p>
+<p id="corty3e-ch5-p233" block_type="cr-x-nl-txt"><phrase block_type="question_num">5.34</phrase> A dean wants a random sample, without replacement, of 10 students from the first-year class. There are 423 students in the first-year class. Assign numbers consecutively to the students, use the random number table starting at row 6, and use the last three digits of a number (e.g., 1273 would be read as 273). List the numbers of the 10 cases in her sample.</p>
+<p id="corty3e-ch5-p234" block_type="cr-x-txt-ni"><strong><em>Evaluating samples</em></strong></p>
+<p id="corty3e-ch5-p235" block_type="cr-x-nl-txt"><phrase block_type="question_num">5.35</phrase> At an alcohol treatment center, about 10 people with alcohol problems complete treatment each month. The director wants to know their status a year after treatment. By 2014, 112 people had completed treatment. In 2015 she hires a researcher to track down all 112 and assess their status one year after treatment. He manages to locate 86 of the 112, or 77&#37;. Of those 86, 66 agree to be interviewed. 66 is 77&#37; of 86 and 59&#37; of 112. Should the director pay attention to the results of the survey? Why or why not?</p>
+<p id="corty3e_page_171" block_type="page_start">171</p>
+<p id="corty3e-ch5-p236" block_type="cr-x-nl-txt"><phrase block_type="question_num">5.36</phrase> The mayor of a large city wants to know how optimistic new mothers are about their children&#8217;s future in the city. There were 1,189 live births in the city in 2015. The mayor commissions a researcher who randomly samples 120 of the new mothers. That&#8217;s a target sample of a little more than 10&#37; of the population. The researcher approaches the target sample, explains the study to them, and tries to obtain their consent to participate. Ninety-four (78&#37;) of those approached give consent and participate. Should the mayor pay attention to the results of the survey? Why or why not?</p>
+<p id="corty3e-ch5-p237" block_type="cr-x-txt-ni"><strong><em>Calculating the standard error of the mean</em></strong></p>
+<p id="corty3e-ch5-p238" block_type="cr-x-nl-txt"><phrase block_type="question_num">5.37</phrase> Given &#963; &#61; 4 and <em>N</em> &#61; 88, calculate &#963;<em><sub>M</sub></em>.</p>
+<p id="corty3e-ch5-p239" block_type="cr-x-nl-txt"><phrase block_type="question_num">5.38</phrase> Given &#963; &#61; 12 and <em>N</em> &#61; 88, calculate &#963;<em><sub>M</sub></em>.</p>
+<p id="corty3e-ch5-p240" block_type="cr-x-nl-txt"><phrase block_type="question_num">5.39</phrase> Given <em>s</em> &#61; 7.50 and <em>N</em> &#61; 72, calculate <em>s<sub>M</sub></em>.</p>
+<p id="corty3e-ch5-p241" block_type="cr-x-nl-txt"><phrase block_type="question_num">5.40</phrase> Given <em>s</em> &#61; 7.50 and <em>N</em> &#61; 225, calculate <em>s<sub>M</sub></em>.</p>
+<p id="corty3e-ch5-p242" block_type="cr-x-txt-ni"><strong><em>Calculating confidence intervals (Report answers in APA format.)</em></strong></p>
+<p id="corty3e-ch5-p243" block_type="cr-x-nl-txt"><phrase block_type="question_num">5.41</phrase> If &#963;<em><sub>M</sub></em> &#61; 4 and <em>M</em> &#61; 17, what is the 95&#37; confidence interval for the mean?</p>
+<p id="corty3e-ch5-p244" block_type="cr-x-nl-txt"><phrase block_type="question_num">5.42</phrase> If <em>s<sub>M</sub></em> &#61; 8, and <em>M</em> &#61; &#8211;12, what is the 95&#37; confidence interval for the mean?</p>
+<p id="corty3e-ch5-p245" block_type="cr-x-nl-txt"><phrase block_type="question_num">5.43</phrase> If <em>s</em> &#61; 17, <em>N</em> &#61; 72, and <em>M</em> &#61; &#8211;12, what is the 95&#37; confidence interval for the mean?</p>
+<p id="corty3e-ch5-p246" block_type="cr-x-nl-txt"><phrase block_type="question_num">5.44</phrase> If &#963; &#61; 11, <em>N</em> &#61; 33, and <em>M</em> &#61; 52, what is the 95&#37; confidence interval for the mean?</p>
+<p id="corty3e-ch5-p247" block_type="cr-x-hd1"><strong>Expand Your Knowledge</strong></p>
+<p id="corty3e-ch5-p248" block_type="cr-x-nl-txt"><phrase block_type="question_num">5.45</phrase> According to the central limit theorem, a sampling distribution of the mean will approach a normal distribution as long as which of the following is true?</p>
+<list id="corty3e-ch5-list-14" type="ordered" block_type="loweralpha">
+<li><p id="corty3e-ch5-p249" block_type="cr-x-nl-alpha-lc">At least 30 random, repeated samples are drawn.</p></li>
+<li><p id="corty3e-ch5-p250" block_type="cr-x-nl-alpha-lc">The population has at least 30 cases.</p></li>
+<li><p id="corty3e-ch5-p251" block_type="cr-x-nl-alpha-lc">Each repeated, random sample has at least 30 cases.</p></li>
+<li><p id="corty3e-ch5-p252" block_type="cr-x-nl-alpha-lc">The size of the population standard deviation is at least 30.</p></li>
+<li><p id="corty3e-ch5-p253" block_type="cr-x-nl-alpha-lc">The size of the population standard deviation is less than 30.</p></li>
+<li><p id="corty3e-ch5-p254" block_type="cr-x-nl-alpha-lc">&#963;, not <em>s,</em> is used to calculate the standard error of the mean.</p></li>
+</list>
+<p id="corty3e-ch5-p255" block_type="cr-x-nl-txt"><phrase block_type="question_num">5.46</phrase> Charlotte obtains a random sample of 120 students from a university, finds out each person&#8217;s age, and calculates <em>M</em> and <em>s.</em> Why is <em>M</em> not exactly equal to &#956;?</p>
+<list id="corty3e-ch5-list-15" type="ordered" block_type="loweralpha">
+<li><p id="corty3e-ch5-p256" block_type="cr-x-nl-alpha-lc">The sample is random.</p></li>
+<li><p id="corty3e-ch5-p257" block_type="cr-x-nl-alpha-lc">The sample size is &#62;50.</p></li>
+<li><p id="corty3e-ch5-p258" block_type="cr-x-nl-alpha-lc">The sample is not large enough.</p></li>
+<li><p id="corty3e-ch5-p259" block_type="cr-x-nl-alpha-lc">This is due to sampling error.</p></li>
+<li><p id="corty3e-ch5-p260" block_type="cr-x-nl-alpha-lc">The population value for &#956; was wrong.</p></li>
+<li><p id="corty3e-ch5-p261" block_type="cr-x-nl-alpha-lc">The central limit theorem does not apply when &#956; is known.</p></li>
+<li><p id="corty3e-ch5-p262" block_type="cr-x-nl-alpha-lc">This could not occur.</p></li>
+</list>
+<p id="corty3e-ch5-p263" block_type="cr-x-nl-txt"><phrase block_type="question_num">5.47</phrase> If sample size is held constant, how does the size of the population standard deviation affect the size of the standard error of the mean?</p>
+<p id="corty3e-ch5-p264" block_type="cr-x-nl-txt"><phrase block_type="question_num">5.48</phrase> If standard deviation is held constant, how does the size of the sample affect the size of the standard error of the mean?</p>
+<p id="corty3e-ch5-p265" block_type="cr-x-nl-txt"><phrase block_type="question_num">5.49</phrase> Given <em>N</em> &#61; 81, &#963; &#61; 12, and <em>M</em> &#61; 100, calculate a 90&#37; confidence interval for the population mean.</p>
+<p id="corty3e-ch5-p266" block_type="cr-x-nl-txt"><phrase block_type="question_num">5.50</phrase> Which would be narrower, a 90&#37; confidence interval or a 99&#37; confidence interval?</p>
+<p id="corty3e-ch5-p267" block_type="cr-x-nl-txt"><phrase block_type="question_num">5.51</phrase> What can be done to make a 95&#37; confidence interval narrower?</p>
+<p id="corty3e_page_172" block_type="page_start">172</p>
+<box title="SPSS" numbered="false" id="corty3e-ch5-bx3-4" block_type="bx3-h">
+<p id="corty3e-ch5-p268" block_type="bx3-txt-ni">There&#8217;s not much that SPSS does with regard to sampling distributions. All the descriptive statistics procedures covered in <link href="corty3e-ch03.xml">Chapter 3</link>&#8212;frequencies, descriptive, and explore&#8212;do calculate the standard error of the mean. To develop a sense of how much sampling error exists in a sample, use descriptive statistics to find the standard error of the mean.</p>
+<p id="corty3e-ch5-p269" block_type="bx3-txt">SPSS can calculate a confidence interval for the mean with whatever percentage of confidence is desired. To do so, go to &#8220;Analyze,&#8221; then &#8220;Descriptive Statistics,&#8221; then &#8220;Explore.&#8221; See <strong><link href="#corty3e-ch5-fig-30">Figure 5.17</link></strong>. This opens up a new menu box, as shown in <strong><link href="#corty3e-ch5-fig-31">Figure 5.18</link></strong>. Once the variable for which the confidence interval is desired has been moved into the &#8220;Dependent List&#8221; box, click on &#8220;Statistics. . . .&#8221; Another box opens up, with the default value of a 95&#37; confidence interval already selected. This can be changed to any value, though the most common other ones are 90&#37; and 99&#37;, as seen in <strong><link href="asset/ch5/corty3e_fig05_19a.html">Figure 5.19</link></strong>.</p>
+<figure id="corty3e-ch5-fig-30" block_type="figure" numbered="true" number="5.17" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="medium" border="true"/>
+<image asset-id="corty3e-ch5-img-31" alt="image" src="asset/ch5/corty3e_fig05_17.jpg"/>
+<caption><strong><phrase block_type="fig_num">Figure 5.17</phrase> First Step in SPSS to Calculate a Confidence Interval.</strong></caption>
+<asset_source>(Source: SPSS) </asset_source>
+</figure>
+<figure id="corty3e-ch5-fig-31" block_type="figure" numbered="true" number="5.18" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="medium" border="true"/>
+<image asset-id="corty3e-ch5-img-32" alt="image" src="asset/ch5/corty3e_fig05_18.jpg"/>
+<caption><strong><phrase block_type="fig_num">Figure 5.18</phrase> Explore Menu in SPSS.</strong></caption>
+<asset_source>(Source: SPSS)</asset_source>
+</figure>
+<figure id="corty3e-ch5-fig-32" block_type="figure" numbered="true" number="5.19a" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="medium" border="true"/>
+<image asset-id="corty3e-ch5-img-33" alt="image" src="asset/ch5/corty3e_fig05_19a.jpg"/>
+</figure>
+<figure id="corty3e-ch5-fig-33" block_type="figure" numbered="true" number="5.19b" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="medium" border="true"/>
+<image asset-id="corty3e-ch5-img-34" alt="image" src="asset/ch5/corty3e_fig05_19b.jpg"/>
+<caption><strong><phrase block_type="fig_num">Figure 5.19</phrase> Setting the Confidence Interval Value in SPSS.</strong></caption>
+<asset_source>(Source: SPSS) </asset_source>
+</figure>
+</box>
+</section>
+</chapter>

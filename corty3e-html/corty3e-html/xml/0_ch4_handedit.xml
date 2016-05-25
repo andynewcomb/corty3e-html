@@ -1,0 +1,767 @@
+<chapter number="4" id="corty3e-ch4-chapter-4" title="4 Standard Scores, the Normal Distribution, and Probability" start-numbering-at="02" numbered="true">
+<section id="corty3e-ch4-sec1-1a" block_type="intro" title="Chapter Introduction" numbered="false" level="1" print_page="107">
+<p id="corty3e_page_107" block_type="page_start">107</p>
+<p id="corty3e-ch4-p1" block_type="chapter_number">4</p>
+<p id="corty3e-ch4-p2" block_type="chapter_title">Standard Scores, the<br/>Normal Distribution,<br/>and Probability</p>
+<box numbered="false" id="corty3e-ch4-ibx-1" block_type="intro_box">
+<p id="corty3e-ch4-p3" block_type="obj-h"><strong>LEARNING OBJECTIVES</strong></p>
+<list id="corty3e-ch4-list-1" type="unordered" block_type="bluesquare">
+<li><p id="corty3e-ch4-p4" block_type="obj-bl">Transform raw scores into standard scores (<em>z</em> scores) and vice versa.</p></li>
+<li><p id="corty3e-ch4-p5" block_type="obj-bl">Describe the normal curve.</p></li>
+<li><p id="corty3e-ch4-p6" block_type="obj-bl">Transform raw scores and standard scores into percentile ranks and vice versa.</p></li>
+<li><p id="corty3e-ch4-p7" block_type="obj-bl">Calculate the probability of an outcome falling in a specified area under the normal curve.</p></li>
+</list>
+<p id="corty3e-ch4-p8" block_type="obj-h"><strong>CHAPTER OVERVIEW</strong></p>
+<p id="corty3e-ch4-p13" block_type="co-txt-ni">This chapter covers standard scores, normal curves, and probability. Most people know a little about bell-shaped curves, what statisticians call normal curves. This chapter explains why normal curves are called normal, what their characteristics are, and how they are used in statistics.</p>
+<p id="corty3e-ch4-p14" block_type="co-txt">Standard scores, also called <em>z</em> scores, are new territory for most students. Standard scores are useful in statistics because raw scores can be transformed into standard scores (and vice versa). Standard scores allow different kinds of measurements to be compared on a common scale&#8212;such as the juiciness of an orange vs. the crispiness of an apple. Standard scores are also useful for measuring distance on the normal curve, which shows how big the pieces of the bell curve are in terms of what percentage of cases fall in different sections of it. This allows scores to be expressed as percentile ranks, which tell what percentage of cases fall at or below a given score. Breaking the normal curve into chunks allows researchers to talk about how common or rare different scores should be, how probable they are. This excursion into probability opens the way to understanding how statistical tests work in upcoming chapters.</p>
+<box numbered="false" id="corty3e-ch4-exp2-1" block_type="mn2">
+<p id="corty3e-ch4-p9" block_type="co-toc-h1-t"><link href="#corty3e-ch4-sec1-1"><phrase block_type="co-toc-h1-n-ri">4.1</phrase> Standard Scores<br/>(<em>z</em> Scores)</link></p>
+<p id="corty3e-ch4-p10" block_type="co-toc-h1-t"><link href="#corty3e-ch4-sec1-2"><phrase block_type="co-toc-h1-n-ri">4.2</phrase> The Normal Distribution</link></p>
+<p id="corty3e-ch4-p11" block_type="co-toc-h1-t"><link href="#corty3e-ch4-sec1-3"><phrase block_type="co-toc-h1-n-ri">4.3</phrase> Percentile Ranks</link></p>
+<p id="corty3e-ch4-p12" block_type="co-toc-h1-t"><link href="#corty3e-ch4-sec1-4"><phrase block_type="co-toc-h1-n-ri">4.4</phrase> Probability</link></p>
+</box>
+</box>
+</section>
+<section id="corty3e-ch4-sec1-1" block_type="h1" chapter="4" title="" numbered="false" level="1" print_page="107">
+<section-metadata><section-title><phrase block_type="sec_num">4.1</phrase> <phrase block_type="sec_title">Standard Scores (<em>z</em> Scores)</phrase></section-title></section-metadata>
+<p id="corty3e-ch4-p15" block_type="txt-ni">People often say that you cannot compare apples and oranges. In this chapter, we&#8217;ll see this can be done thanks to something called a standard score. We&#8217;ll also see that standard scores allow one to quantify how common or how rare a score is.</p>
+<p id="corty3e-ch4-p16" block_type="txt">Imagine that two fruit growers, Anne who grows apples and Oliver who grows oranges, get into a good-natured argument over whose fruit is better. Anne claims that the crispiness of apples is what makes them so good. Oliver cites the juiciness of oranges as their best feature. How can one objectively compare the crispiness of an apple to the juiciness of an orange to decide which fruit has more of its desired quality? Standard scores.</p>
+<p id="corty3e_page_108" block_type="page_start">108</p>
+<p id="corty3e-ch4-p17" block_type="txt">Look at the graph in <link href="#corty3e-ch4-fig-1"><strong>Figure 4.1</strong></link>. It shows the rate with which Medicare patients receive angioplasty in different geographic hospital regions of the United States. It should be apparent that most hospitals cluster around rates of 6 per thousand patients to 14 per thousand patients. And then, there is one city, way off by itself on the right-hand side, treating an unusually large percentage of Medicare patients with angioplasty. How can we describe how unusual that city is? Standard scores.</p>
+<figure id="corty3e-ch4-fig-1" block_type="figure" numbered="true" number="4.1" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="medium" border="true"/>
+<image asset-id="corty3e-ch4-img-1" alt="image" src="asset/ch4/corty3e_fig04_01.jpg"/>
+<caption><strong><phrase block_type="fig_num">Figure 4.1</phrase> Angioplasty Rates for Medicare Patients by City</strong> There is one city, far out on the right-hand side that is very different from the others. A standard score, a <em>z</em> score, will quantify how unusual this score is. (Data from <em>The New York Times</em>, August 18, 2006.)</caption>
+</figure>
+<p id="corty3e-ch4-p18" block_type="txt">A <termref term="standard score">standard score</termref> is a raw score expressed in terms of how many standard deviations it is away from the mean. Standard scores are commonly called <termref term="z score"><strong><em>z</em></strong> scores</termref>. The formula for calculating a <em>z</em> score is shown in <link href="#corty3e-ch4-bx6-1">Equations 4.1</link> and <link href="#corty3e-ch4-bx6-2">4.2</link>.</p>
+<box title="" numbered="false" id="corty3e-ch4-bx6-1" block_type="eq-t">
+<box-metadata><box-title><phrase block_type="sec_num">Equation 4.1</phrase> <phrase block_type="sec_title">Formula for Calculating Standard Scores (<em>z</em> Scores) for a Population</phrase></box-title></box-metadata>
+<p id="corty3e-ch4-eqn-1" block_type="equation">
+<image asset-id="corty3e-ch4-img-2" alt="image" src="asset/ch4/corty3e_eqn04_108_01.jpg"/>
+</p>
+<p id="corty3e-ch4-p19" block_type="eq-txt-ni">where <em>z</em> &#61; the standard score</p>
+<p id="corty3e-ch4-p20" block_type="eq-unl"><em>X</em> &#61; the raw score</p>
+<p id="corty3e-ch4-p21" block_type="eq-unl">&#956; &#61; the population mean</p>
+<p id="corty3e-ch4-p22" block_type="eq-unl">&#963; &#61; the population standard deviation</p>
+</box>
+<p id="corty3e-ch4-p23" block_type="txt-ni"><link href="#corty3e-ch4-bx6-1">Equation 4.1</link> is used when the population mean, &#956;<em>,</em> and population standard deviation, &#963;<em>,</em> are known. As it is relatively rare that they are known, <link href="#corty3e-ch4-bx6-2">Equation 4.2</link> is more commonly used.</p>
+<p id="corty3e_page_109" block_type="page_start">109</p>
+<box title="" numbered="false" id="corty3e-ch4-bx6-2" block_type="eq-t">
+<box-metadata><box-title><phrase block_type="sec_num">Equation 4.2</phrase> <phrase block_type="sec_title">Formula for Calculating Standard Scores (<em>z</em> Scores) for a Sample</phrase></box-title></box-metadata>
+<p id="corty3e-ch4-eqn-2" block_type="equation">
+<image asset-id="corty3e-ch4-img-3" alt="image" src="asset/ch4/corty3e_eqn04_109_01.jpg"/>
+</p>
+<p id="corty3e-ch4-p24" block_type="eq-txt-ni">where <em>z</em> &#61; the standard score</p>
+<p id="corty3e-ch4-p25" block_type="eq-unl"><em>X</em> &#61; the raw score</p>
+<p id="corty3e-ch4-p26" block_type="eq-unl"><em>M</em> &#61; the population mean</p>
+<p id="corty3e-ch4-p27" block_type="eq-unl"><em>s</em> &#61; the sample standard deviation</p>
+</box>
+<p id="corty3e-ch4-p28" block_type="txt-ni">Each of these two formulas has two steps:</p>
+<p id="corty3e-ch4-p29" block_type="h4-txt-ni"><phrase block_type="h4-n-ri"><strong>Step 1</strong></phrase> Subtract the mean from the raw score, just as was done in <link href="corty3e-ch03.xml">Chapter 3</link> when calculating deviation scores. Be sure to keep track of the sign, whether the deviation score is positive, negative, or zero.</p>
+<p id="corty3e-ch4-p30" block_type="h4-txt-ni"><phrase block_type="h4-n-ri"><strong>Step 2</strong> </phrase> Divide the deviation score by the standard deviation and round to two decimal places. Again, be sure to keep track of the sign, whether the <em>z</em> score is positive, negative, or zero.</p>
+<p id="corty3e-ch4-p31" block_type="txt"><link href="corty3e-ch03.xml">Chapter 3</link> introduced a sample of five Americans where the mean height, in inches, was 67.00 and the standard deviation was 4.18. One of the members of this sample was 62&#8243; tall. For this person, one would calculate the standard score like this:</p>
+<p id="corty3e-ch4-eqn-3" block_type="equation">
+<image asset-id="corty3e-ch4-img-4" alt="image" src="asset/ch4/corty3e_eqn04_109_02.jpg"/>
+</p>
+<p id="corty3e-ch4-p32" block_type="txt">This person&#8217;s <em>z</em> score was &#8211;1.20, meaning that his or her score fell 1.20 standard deviations <em>below</em> the mean. The scores for all five members of the sample, as <em>z</em> scores, are shown in <link href="#corty3e-ch4-fig-5"><strong>Table 4.1</strong></link>.</p>
+<figure id="corty3e-ch4-fig-5" block_type="table" numbered="true" number="4.1" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="large" border="true"/>
+<image asset-id="corty3e-ch4-img-5" alt="image" src="asset/ch4/corty3e_table04_01.jpg"/>
+</figure>
+<p id="corty3e_page_110" block_type="page_start">110</p>
+<p id="corty3e-ch4-p33" block_type="txt">There are two things to note in this table:</p>
+<list id="corty3e-ch4-list-2" type="ordered" block_type="numbered">
+<li><p id="corty3e-ch4-p34" block_type="nl-first">The <em>z</em> scores quickly show where a person&#8217;s score falls in relation to the mean. As shown in <link href="#corty3e-ch4-fig-6"><strong>Figure 4.2</strong></link>, positive <em>z</em> scores indicate a score above the mean, negative <em>z</em> scores a score below the mean, and a <em>z</em> score of 0 is a score right at the mean.</p>
+<figure id="corty3e-ch4-fig-6" block_type="figure" numbered="true" number="4.2" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="medium" border="true"/>
+<image asset-id="corty3e-ch4-img-6" alt="image" src="asset/ch4/corty3e_fig04_02.jpg"/>
+<caption><strong><phrase block_type="fig_num">Figure 4.2</phrase> Positive, Negative, and Zero <em>z</em> Scores</strong> Another term for standard score is <em>z</em> <em>score.</em> A positive value for a <em>z</em> score means that the score falls above the mean, a negative value means that the score falls below the mean, and a value of 0 means that the score falls right at the mean.</caption>
+</figure></li>
+<li><p id="corty3e-ch4-p35" block_type="nl-last">If the <em>z</em> scores for a data set are added together, they sum to zero.</p></li>
+</list>
+<box numbered="false" id="corty3e-ch4-exp1-1" block_type="mn1">
+<p id="corty3e-ch4-p36" block_type="mn-ext-ni"><em>z</em> <em>scores</em> standardize <em>scores. They transform scores to a common unit of measurement, the standard deviation. This allows researchers to compare variables that are measuring different things on different scales.</em></p>
+</box>
+<p id="corty3e-ch4-p37" block_type="txt">The same information found in <em>z</em> scores is contained in the regular deviation scores that are shown in the middle column of <link href="#corty3e-ch4-fig-5">Table 4.1</link>. So, what is the advantage of <em>z</em> scores? <em>z</em> scores <em>standardize</em> scores. They transform scores to a common unit of measurement, the standard deviation. This allows researchers to compare variables that are measuring different things on different scales.</p>
+<p id="corty3e-ch4-p38" block_type="txt">For example, consider Carlos, who is very smart and very extroverted. Which does Carlos have more of, intelligence or extroversion? To answer this question, Carlos takes two tests. One is an intelligence test and the other is an extroversion scale. Carlos gets a score of 130 on the IQ test and a 75 on the extroversion scale. Do these two scores answer the question of whether Carlos is more unusual in terms of his intelligence or his extroversion?</p>
+<p id="corty3e-ch4-p39" block_type="txt">These scores are out of context, so the question can&#8217;t be answered. Knowing the means will help put the scores in context. The mean for the intelligence test is 100, and the mean for the extroversion scale is 50. With the means, one can tell that Carlos is above average in terms of intelligence and in terms of extroversion. The next step is to calculate the deviation scores to see how far above average he is. Carlos&#8217;s deviation score for intelligence is 130 &#8211; 100 &#61; 30.00. For extroversion, his deviation score is 75 &#8211; 50 &#61; 25.00. Based on the deviation scores, it seems as if Carlos is more unusual in terms of intelligence than he is in terms of extroversion. After all, he scored 30 points above the mean on intelligence, but only 25 points above the mean on extroversion. But that would be a premature conclusion. A true comparison can&#8217;t be made until standard deviation information is considered and <em>z</em> scores are calculated.</p>
+<p id="corty3e_page_111" block_type="page_start">111</p>
+<p id="corty3e-ch4-p40" block_type="txt">Here are the standard deviations: 15 for the IQ test and 10 for the extroversion scale. Now, <link href="#corty3e-ch4-bx6-2">Equation 4.2</link> can be used to calculate <em>z</em> scores:</p>
+<p id="corty3e-ch4-eqn-4" block_type="equation">
+<image asset-id="corty3e-ch4-img-7" alt="image" src="asset/ch4/corty3e_eqn04_111_01.jpg"/>
+</p>
+<p id="corty3e-ch4-p41" block_type="txt">Now the question can be answered using a standard unit, the amount of variability in a set of scores in terms of standard deviation units. Carlos&#8217;s intelligence test score falls 2 standard deviations above the mean, but his extroversion score falls 2.5 standard deviations above the mean. As shown in <link href="#corty3e-ch4-fig-8"><strong>Figure 4.3</strong></link>, Carlos deviates more from the mean in terms of extroversion than he does in terms of intelligence. His level of extroversion is more unusual than his level of intelligence.</p>
+<figure id="corty3e-ch4-fig-8" block_type="figure" numbered="true" number="4.3" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="large" border="true"/>
+<image asset-id="corty3e-ch4-img-8" alt="image" src="asset/ch4/corty3e_fig04_03.jpg"/>
+<caption><strong><phrase block_type="fig_num">Figure 4.3</phrase> Carlos&#8217;s Scores on an Extroversion Scale and an Intelligence Test</strong> When the extroversion and intelligence scores are transformed into a standard unit of measurement, <em>z</em> scores, it becomes clear that Carlos&#8217;s score on the extroversion scale is higher than his score on the intelligence test.</caption>
+</figure>
+<p id="corty3e-ch4-p42" block_type="txt">With the <em>z</em> scores, two different variables measured on two different scales can be compared in a statement like this, &#8220;Carlos is more above average in his level of extroversion than he is in his level of intelligence.&#8221; The comparison can be made because the scores have been standardized.</p>
+<p id="corty3e-ch4-p43" block_type="txt">In the same way, the apple and orange example from the start of the chapter would work. If there were a juiciness scale, Oliver&#8217;s orange could be measured. And, with a crispiness scale, Anne&#8217;s apple could be measured. Then, each measurement would be converted to a standard score and the one with the higher score would be the winner.</p>
+<p id="corty3e_page_112" block_type="page_start">112</p>
+<p id="corty3e-ch4-p44" block_type="txt">Just as raw scores can be turned into standard scores, it is possible to reverse direction and turn <em>z</em> scores into raw scores. Suppose Mei-Li was also extroverted and that her <em>z</em> score was 1.00 on the extroversion scale. What was her raw score?</p>
+<p id="corty3e-ch4-p45" block_type="txt">Here&#8217;s what to do. A <em>z</em> score of 1.00 is a positive score, which indicates that her score was above the mean. The mean on the extroversion scale is 50.00, so her score will be greater than this. A <em>z</em> score of 1.00 says that Mei-Li&#8217;s score was 1 standard deviation above the mean. A standard deviation on the extroversion scale is 10.00, so her score was 10 points above the mean. Adding 10.00 (1 standard deviation) to 50.00 (the mean) leads to the conclusion that Mei-Li&#8217;s score on the test was 60.00. <link href="#corty3e-ch4-bx6-3">Equation 4.3</link> formalizes how to turn <em>z</em> scores into raw scores.</p>
+<box title="" numbered="false" id="corty3e-ch4-bx6-3" block_type="eq-t">
+<box-metadata><box-title><phrase block_type="sec_num">Equation 4.3</phrase> <phrase block_type="sec_title">Formula for Calculating a Raw Score (<em>X</em>) from a Standard Score (<em>z</em>)</phrase></box-title></box-metadata>
+<p id="corty3e-ch4-p46" block_type="eq"><em>X</em> &#61; <em>M</em> &#43; (<em>z</em> &#215; <em>s</em>)</p>
+<p id="corty3e-ch4-p47" block_type="eq-txt">where <em>X</em> &#61; the raw score</p>
+<p id="corty3e-ch4-p48" block_type="eq-unl"><em>M</em> &#61; the mean</p>
+<p id="corty3e-ch4-p49" block_type="eq-unl"><em>z</em> &#61; the standard score for which the raw score is being calculated</p>
+<p id="corty3e-ch4-p50" block_type="eq-unl"><em>s</em> &#61; the standard deviation</p>
+</box>
+<p id="corty3e-ch4-p51" block_type="eq-txt-ni">Following this formula, here is how to calculate Mei-Li&#8217;s score:</p>
+<p id="corty3e-ch4-eqn-5" block_type="equation">
+<image asset-id="corty3e-ch4-img-9a" alt="image" src="asset/ch4/corty3e_eqn04_112_01.jpg"/>
+</p>
+<p id="corty3e-ch4-p57" block_type="txt">Here&#8217;s one more example of converting a <em>z</em> score into a raw score, this one with a negative <em>z</em> score. Suppose that Tabitha&#8217;s <em>z</em> score on the IQ test was &#8211;0.75. What was her raw score? Using <link href="#corty3e-ch4-bx6-3">Equation 4.3</link>, here are the calculations:</p>
+<p id="corty3e-ch4-p58" block_type="eq"><em>X</em> &#61; 100.00 &#43; (&#8211;0.75 &#215; 15.00)</p>
+<p id="corty3e-ch4-p59" block_type="eq">&#61; 100.00 &#43; (&#8211;11.2500)</p>
+<p id="corty3e-ch4-p60" block_type="eq">&#61; 100.00 &#8211; 11.2500</p>
+<p id="corty3e-ch4-p61" block_type="eq">&#61; 88.7500</p>
+<p id="corty3e-ch4-p62" block_type="eq">&#61; 88.75</p>
+<p id="corty3e-ch4-p63" block_type="txt">On the IQ test, Tabitha&#8217;s score was 88.75. Note that the raw score is reported to two decimal places and does not have to be a whole number.</p>
+<box title="Worked Example 4.1" numbered="false" id="corty3e-ch4-bx3-1" block_type="sr-exp-n">
+<p id="corty3e-ch4-p64" block_type="sr-ex-txt-ni">SAT subtests are handy for practice in converting from raw scores to <em>z</em> scores and vice versa. As of March 2016, there are two parts on the SAT: a subtest that measures math, and a subtest that measures reading and writing. Both subtests are scored on the same scale, where 500 is the average (mean) score and the standard deviation is 100. Suppose a high school senior takes the SAT and gets a 460 on the reading and writing subtest. What is her score as a standard score?</p>
+<p id="corty3e_page_113" block_type="page_start">113</p>
+<p id="corty3e-ch4-p65" block_type="sr-ex-txt">Applying <link href="#corty3e-ch4-bx6-2">Equation 4.2</link>, here are the calculations:</p>
+<p id="corty3e-ch4-eqn-5" block_type="equation">
+<image asset-id="corty3e-ch4-img-9" alt="image" src="asset/ch4/corty3e_eqn04_113_01.jpg"/>
+</p>
+<p id="corty3e-ch4-p66" block_type="sr-ex-txt-ni">She scored 0.40 standard deviations below the mean, so her <em>z</em> score would be reported as &#8211;0.40.</p>
+<p id="corty3e-ch4-p67" block_type="sr-ex-txt">Suppose she had a friend who took the SAT and did very well on the math section. Her friend&#8217;s score on the math section, expressed as a <em>z</em> score, was 1.80. What was her friend&#8217;s score?</p>
+<p id="corty3e-ch4-p68" block_type="sr-ex-txt">Applying <link href="#corty3e-ch4-bx6-3">Equation 4.3</link>, here are the calculations:</p>
+<p id="corty3e-ch4-p69" block_type="sr-exp-eq"><em>X</em> &#61; 500 &#43; (1.80 &#215; 100)</p>
+<p id="corty3e-ch4-p70" block_type="sr-exp-eq">&#61; 500 &#43; 180.0000</p>
+<p id="corty3e-ch4-p71" block_type="sr-exp-eq">&#61; 680.0000</p>
+<p id="corty3e-ch4-p72" block_type="sr-exp-eq">&#61; 680.00</p>
+<p id="corty3e-ch4-p73" block_type="sr-ex-txt">This student, who had scored 1.80 standard deviations above the mean, obtained a score of 680.00 on the math subtest of the SAT.</p>
+</box>
+<box title="Practice Problems 4.1" numbered="false" id="corty3e-ch4-bx2-1" block_type="sr-h">
+<p id="corty3e-ch4-p74" block_type="sr-h1"><strong>Review Your Knowledge</strong></p>
+<p id="corty3e-ch4-p75" block_type="sr-que-nl"><phrase block_type="question_num">4.01</phrase> In what units do <em>z</em> scores express raw scores?</p>
+<p id="corty3e-ch4-p76" block_type="sr-que-nl"><phrase block_type="question_num">4.02</phrase> What is the sum of all <em>z</em> scores in a data set?</p>
+<p id="corty3e-ch4-p77" block_type="sr-que-nl"><phrase block_type="question_num">4.03</phrase> If a <em>z</em> score is positive, what does that mean?</p>
+<p id="corty3e-ch4-p78" block_type="sr-h1"><strong>Apply Your Knowledge</strong></p>
+<p id="corty3e-ch4-p79" block_type="sr-que-nl"><phrase block_type="question_num">4.04</phrase> The average GPA in a class is 2.75 with a standard deviation of 0.40. One student has a GPA of 3.20. Express this GPA as a <em>z</em> score?</p>
+<p id="corty3e-ch4-p80" block_type="sr-que-nl"><phrase block_type="question_num">4.05</phrase> Another student&#8217;s GPA, expressed as a <em>z</em> score, is &#8211;2.30. What is his GPA?</p>
+</box>
+</section>
+<section id="corty3e-ch4-sec1-2" block_type="h1" chapter="4" title="" numbered="false" level="1" print_page="113">
+<section-metadata><section-title><phrase block_type="sec_num">4.2</phrase> <phrase block_type="sec_title">The Normal Distribution</phrase></section-title></section-metadata>
+<box id="corty3e-ch4-video-4" block_type="video">
+<p id="corty3e-ch4-videotxt-4" block_type="vidtxt"><link href="http://bcs.whfreeman.com/WebPub/Statistics/statvtk/Videos/StatClips/The%20Normal%20Distribution_clearSkinCap_3/The%20Normal%20Distribution.html" target="_pop" data-href-px=""><image asset-id="corty3e-ch4-vimg-4" alt="image" src="asset/images/video.jpg"/></link><em>StatClips: The Normal Distribution</em>Video on LaunchPad</p>
+</box>
+<p id="corty3e-ch4-p81" block_type="txt-ni">Now that calculating and interpreting <em>z</em> scores have been covered, it is time to explore the normal distribution. The <termref term="normal distribution">normal distribution</termref> (often called the bell curve) is a specific symmetrical distribution whose highest point occurs in the middle and whose frequencies decrease as the values on the <em>X</em>-axis move away from the midpoint. An example of a normal distribution is shown in <link href="#corty3e-ch4-fig-10"><strong>Figure 4.4</strong></link>.</p>
+<figure id="corty3e-ch4-fig-10" block_type="figure" numbered="true" number="4.4" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="medium" border="true"/>
+<image asset-id="corty3e-ch4-img-10" alt="image" src="asset/ch4/corty3e_fig04_04.jpg"/>
+<caption><strong><phrase block_type="fig_num">Figure 4.4</phrase> The Normal Distribution</strong> In a normal distribution, the midpoint is the mean, median, and mode. As scores move away from the midpoint, the frequency of their occurrence decreases symmetrically.</caption>
+</figure>
+<p id="corty3e_page_114" block_type="page_start">114</p>
+<p id="corty3e-ch4-p82" block_type="txt">There are several things to note about the shape of a normal distribution:</p>
+<list id="corty3e-ch4-list-3" type="unordered" block_type="bullet">
+<li><p id="corty3e-ch4-p83" block_type="bl-first">The frequencies decrease as the curve moves away from the midpoint, so the midpoint is the mode.</p></li>
+<li><p id="corty3e-ch4-p84" block_type="bl-mid">The distribution is symmetric, so the midpoint is the median&#8212;half the cases fall above the midpoint and half fall below it.</p></li>
+<li><p id="corty3e-ch4-p85" block_type="bl-last">The fact that the distribution is symmetrical also means that the midpoint is the mean. It is the spot that balances the deviation scores.</p></li>
+</list>
+<p id="corty3e-ch4-p86" block_type="txt"><link href="#corty3e-ch4-fig-11"><strong>Figure 4.5</strong></link> shows a variety of bell-shaped curves that meet these criteria, but not all of them are normal distributions. There&#8217;s another criterion that must be met for a bell-shaped curve to be considered a normal distribution: a specific percentage of cases has to fall in each region of the curve.</p>
+<figure id="corty3e-ch4-fig-11" block_type="figure" numbered="true" number="4.5" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="large" border="true"/>
+<image asset-id="corty3e-ch4-img-11" alt="image" src="asset/ch4/corty3e_fig04_05.jpg"/>
+<caption><strong><phrase block_type="fig_num">Figure 4.5</phrase> Not All Bell-Shaped Curves Are Normal Distributions</strong> In bell-shaped curves, the midpoint is the mean, median, and mode, and frequencies decrease symmetrically as values move away from the midpoint. Though all the curves shown here are bell-shaped, not all bell-shaped curves are normal distributions. The normal distribution is a specific bell-shaped curve, defined by the percentage of cases that fall within specified regions. Only the last curve is a normal distribution.</caption>
+</figure>
+<p id="corty3e-ch4-p87" block_type="txt">In <link href="#corty3e-ch4-fig-12"><strong>Figure 4.6</strong></link>, the regions under the normal curve are marked off in <em>z</em> score units. In the normal distribution, 34.13&#37; of the cases fall from the mean to 1 standard deviation above the mean, 13.59&#37; in the next standard deviation, and decreasing percentages in subsequent standard deviations. Because the normal distribution is symmetrical, the same percentages fall in the equivalent regions below the mean. <link href="#corty3e-ch4-fig-13"><strong>Figure 4.7</strong></link> shows the percentages of cases that fall in each standard deviation unit of the normal distribution as the curve moves away from the mean.</p>
+<figure id="corty3e-ch4-fig-12" block_type="figure" numbered="true" number="4.6" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="large" border="true"/>
+<image asset-id="corty3e-ch4-img-12" alt="image" src="asset/ch4/corty3e_fig04_06.jpg"/>
+<caption><strong><phrase block_type="fig_num">Figure 4.6</phrase> Percentage of Cases Falling in Specified Regions of the Normal Distribution</strong> The normal distribution is defined by the percentage of cases that fall within specified regions. This figure shows the percentage of cases that fall in each standard deviation as one moves away from the mean. Note the symmetrical nature and how the percentage of cases drops off dramatically as one moves away from the mean. Theoretically, the curve extends out to infinity, with fewer and fewer cases in each standard deviation.</caption>
+</figure>
+<figure id="corty3e-ch4-fig-13" block_type="figure" numbered="true" number="4.7" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="large" border="true"/>
+<image asset-id="corty3e-ch4-img-13" alt="image" src="asset/ch4/corty3e_fig04_07.jpg"/>
+<caption><strong><phrase block_type="fig_num">Figure 4.7</phrase> Percentage of Cases Falling in Each Standard Deviation of the Normal Distribution as It Moves Away from the Mean</strong> Note how quickly the percentage of cases falling in each standard deviation decreases as one moves away from the mean. Only a very small percentage of cases falls more than 3 standard deviations away from the mean.</caption>
+</figure>
+<p id="corty3e_page_115" block_type="page_start">115</p>
+<p id="corty3e_page_116" block_type="page_start">116</p>
+<p id="corty3e-ch4-p88" block_type="txt">One important thing to note in <link href="#corty3e-ch4-fig-13">Figure 4.7</link> is how quickly the percentage of cases in a standard deviation drops off as the curve moves away from the mean. The first standard deviation contains about 34&#37; of the cases, the next about 14&#37;, then about 2&#37; in the third, and only about 0.1&#37; in the fourth standard deviation. This distribution has an important implication for where the majority of cases fall:</p>
+<list id="corty3e-ch4-list-4" type="unordered" block_type="bullet">
+<li><p id="corty3e-ch4-p89" block_type="bl-first">About two-thirds of the cases fall within 1 standard deviation of the mean. That&#8217;s from 1 standard deviation below the mean to 1 standard deviation above it, from <em>z</em> &#61; &#8211;1.00 to <em>z</em> &#61; 1.00. (The exact percentage of cases that falls in this region is 68.26&#37;.)</p></li>
+<li><p id="corty3e-ch4-p90" block_type="bl-mid">About 95&#37; of the cases fall within 2 standard deviations of the mean, from <em>z</em> &#61; &#8211;2.00 to <em>z</em> &#61; 2.00. (The exact percentage is 95.44&#37;.)</p></li>
+<li><p id="corty3e-ch4-p91" block_type="bl-last">More than 99&#37; of the cases fall within 3 standard deviations, from <em>z</em> &#61; &#8211;3.00 to <em>z</em> &#61; 3.00. In fact, close to 100&#37; of the cases&#8212;almost all&#8212;fall within 3 standard deviations of the mean. (The exact percentage is 99.73&#37;.)</p></li>
+</list>
+<p id="corty3e-ch4-p92" block_type="txt">It is rare, in a normal distribution, for a case to have a score that is more than 3 standard deviations away from the mean. In practical terms, these scores don&#8217;t happen, so when graphing a normal distribution, setting up the <em>z</em> scores on the <em>X</em>-axis so they range from &#8211;3.00 to <em>z</em> &#61; 3.00 is usually sufficient.</p>
+<p id="corty3e-ch4-p93" block_type="txt">Here&#8217;s a simplified version of the normal distribution. Look at <link href="#corty3e-ch4-fig-14"><strong>Figure 4.8</strong></link> and note the three numbers: 34, 14, and 2. These are the approximate percentages of cases that fall in each standard deviation as the curve moves away from the mean:</p>
+<figure id="corty3e-ch4-fig-14" block_type="figure" numbered="true" number="4.8" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="large" border="true"/>
+<image asset-id="corty3e-ch4-img-14" alt="image" src="asset/ch4/corty3e_fig04_08.jpg"/>
+<caption><strong><phrase block_type="fig_num">Figure 4.8</phrase> Simplified Version of the Normal Distribution</strong> This simplified version of the normal distribution takes advantage of the fact that almost all cases fall within 3 standard deviations of the mean and limits the normal distribution to <em>z</em> scores ranging from &#8211;3 to &#43;3. It uses rounded percentages (34&#37;, 14&#37;, and 2&#37;) for the percentage of cases falling in each standard deviation unit.</caption>
+</figure>
+<list id="corty3e-ch4-list-5" type="unordered" block_type="bullet">
+<li><p id="corty3e-ch4-p94" block_type="bl-first">&#8776;34&#37; of cases fall from the mean to 1 standard deviation above it. The same is true for the area from the mean to 1 standard deviation below it. (This symbol, &#8776;, means approximately.)</p>
+<p id="corty3e_page_117" block_type="page_start">117</p></li>
+<li><p id="corty3e-ch4-p95" block_type="bl-mid">&#8776;14&#37; of cases fall from 1 standard deviation above the mean to 2 standard deviations above it. Ditto for the area from 1 standard deviation below to 2 standard deviations below.</p></li>
+<li><p id="corty3e-ch4-p96" block_type="bl-last">&#8776;2&#37; of cases fall from 2 standard deviations above the mean to 3 standard deviations above it. Again, ditto for the same area below the mean.</p></li>
+</list>
+<p id="corty3e-ch4-p97" block_type="txt">Here&#8217;s a real example of how scores only range from 3 standard deviations below the mean to 3 standard deviations above it. Think of the SAT where subtests have a mean of 500 and a standard deviation of 100. A <em>z</em> score of &#8211;3.00 is a raw score of 200 on a subtest. This can be calculated using <link href="#corty3e-ch4-bx6-3">Equation 4.3</link>:</p>
+<p id="corty3e-ch4-p98" block_type="eq"><em>X</em> &#61; 500 &#43; (&#8211;3.00 &#215; 100)</p>
+<p id="corty3e-ch4-p99" block_type="eq">&#61; 500 &#43; (&#8211;300.0000)</p>
+<p id="corty3e-ch4-p100" block_type="eq">&#61; 500 &#8211; 300.0000</p>
+<p id="corty3e-ch4-p101" block_type="eq">&#61; 200.0000</p>
+<p id="corty3e-ch4-p102" block_type="eq">&#61; 200.00</p>
+<p id="corty3e-ch4-p103" block_type="txt">A <em>z</em> score of 3.00 is a raw score of 800 on a subtest. This can be calculated using <link href="#corty3e-ch4-bx6-3">Equation 4.3</link>:</p>
+<p id="corty3e-ch4-p104" block_type="eq"><em>X</em> &#61; 500 &#43; (3.00 &#215; 100)</p>
+<p id="corty3e-ch4-p105" block_type="eq">&#61; 500 &#43; 300.0000</p>
+<p id="corty3e-ch4-p106" block_type="eq">&#61; 800.0000</p>
+<p id="corty3e-ch4-p107" block_type="eq">&#61; 800.00</p>
+<p id="corty3e-ch4-p108" block_type="txt">This means that almost all scores on SAT subtests should range from 200 to 800. And that is how the SAT is scored. No one receives a score lower than a 200 or higher than an 800 on an SAT subtest.</p>
+<p id="corty3e-ch4-p109" block_type="txt">The normal distribution is called &#8220;normal&#8221; because it is a naturally occurring distribution that occurs as a result of random processes. For example, consider taking 10 coins, tossing them, and counting how many turn up heads. It could be anywhere from 0 to 10. The most likely outcome is 5 heads and the least likely outcome is either 10 heads or no heads. If one tossed the 10 coins thousands of times and graphed the frequency distribution, it would approximate a normal distribution (see <link href="#corty3e-ch4-fig-15"><strong>Figure 4.9</strong></link>).</p>
+<figure id="corty3e-ch4-fig-15" block_type="figure" numbered="true" number="4.9" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="medium" border="true"/>
+<image asset-id="corty3e-ch4-img-15" alt="image" src="asset/ch4/corty3e_fig04_09.jpg"/>
+<caption><strong><phrase block_type="fig_num">Figure 4.9</phrase> Approximation of Normal Distribution for Number of Heads for 10 Coins Tossed Together 50,000 Times</strong> If one tossed 10 coins 50,000 times and counted the number of heads, the distribution might look like this. Though this is a bar graph for discrete data, it has a normal shape like that seen for a continuous variable in <link href="#corty3e-ch4-fig-11">Figure 4.5</link>. </caption>
+</figure>
+<p id="corty3e-ch4-p110" block_type="txt">Psychologists don&#8217;t care that much about coins, but they do care about variables like intelligence, conscientiousness, openness to experience, neuroticism, agreeableness, and extroversion. It is often assumed that these psychological variables (and most other psychological variables) are normally distributed. Here&#8217;s an example that shows how helpful this assumption is:</p>
+<p id="corty3e_page_118" block_type="page_start">118</p>
+<box numbered="false" id="corty3e-ch4-exp1-2" block_type="mn1">
+<p id="corty3e-ch4-p111" block_type="mn-ext-ni"><em>It is often assumed that psychological variables are normally distributed.</em></p>
+</box>
+<list id="corty3e-ch4-list-6" type="ordered" block_type="numbered">
+<li><p id="corty3e-ch4-p112" block_type="nl-first">If 34.13&#37; of the cases fall from the mean to a standard deviation above the mean, and</p></li>
+<li><p id="corty3e-ch4-p113" block_type="nl-mid">if intelligence is normally distributed, and</p></li>
+<li><p id="corty3e-ch4-p114" block_type="nl-mid">if intelligence has a mean of 100 and a standard deviation of 15,</p></li>
+<li><p id="corty3e-ch4-p115" block_type="nl-last">then 34.13&#37; of people have IQs that fall in the range from 100 to 115, from the mean to 1 standard deviation above it.</p></li>
+</list>
+<p id="corty3e-ch4-p116" block_type="txt">If a person were picked at random, there&#8217;s a 34.13&#37; chance that he or she would have an IQ that falls in the range from 100 to 115. That&#8217;s true as long as intelligence is normally distributed.</p>
+<p id="corty3e-ch4-p117" block_type="txt">Finding percentages using the normal distribution wouldn&#8217;t be useful if the percentages were only known for each whole standard deviation. Luckily, the normal curve has been sliced into small segments and the area in each segment has been calculated. <link href="corty3e_app1_1.html#corty3e-app1-fig-1">Appendix Table 1</link>, called a <em>z</em> score table, contains this information. A small piece of it is shown in <link href="#corty3e-ch4-fig-16"><strong>Table 4.2</strong></link>.</p>
+<figure id="corty3e-ch4-fig-16" block_type="table" numbered="true" number="4.2" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="large" border="true"/>
+<image asset-id="corty3e-ch4-img-16" alt="image" src="asset/ch4/corty3e_table04_02.jpg"/>
+</figure>
+<p id="corty3e-ch4-p118" block_type="txt">There are a number of things to note about this <em>z</em> score table:</p>
+<list id="corty3e-ch4-list-7" type="unordered" block_type="bullet">
+<li><p id="corty3e-ch4-p119" block_type="bl-first">It is organized by <em>z</em> scores to two decimal places. Each row is for a <em>z</em> score that differs by 0.01 from the row above or below.</p></li>
+<li><p id="corty3e-ch4-p120" block_type="bl-mid">There are no negative <em>z</em> scores listed. Because the normal distribution is symmetrical, the same row can be used whether looking up the area under the curve for <em>z</em> &#61; 0.50 or &#8211;0.50.</p></li>
+<li><p id="corty3e-ch4-p121" block_type="bl-mid">The columns report the percentage of area under the curve that falls in different sections. This is the same as the percentage of cases that have scores in that region.</p>
+<p id="corty3e_page_119" block_type="page_start">119</p></li>
+<li><p id="corty3e-ch4-p122" block_type="bl-mid">The percentages reported are always greater than 0&#37;. In any region of the normal distribution, there is always some percentage of cases that fall in it. Sometimes the percentage is very small, but it is always greater than zero.</p></li>
+<li><p id="corty3e-ch4-p123" block_type="bl-mid">The percentages reported can&#8217;t be greater than 100&#37;. In any region, there can&#8217;t be more than 100&#37; of the cases.</p></li>
+<li><p id="corty3e-ch4-p124" block_type="bl-last">There are three columns, A, B, and C, each containing information about the percentage of cases that fall in a different section of the normal distribution. For each row in the table, there are three different views for each <em>z</em> score.</p></li>
+</list>
+</section>
+<section id="corty3e-ch4-sec2-1" block_type="h2" chapter="4" title="" numbered="false" level="2" print_page="119">
+<section-metadata><section-title>Column A</section-title></section-metadata>
+<p id="corty3e-ch4-p125" block_type="txt-ni">For a <em>positive</em> <em>z</em> score, column A tells the percentage of cases that have scores <em>at</em> or <em>below</em> that value. A positive <em>z</em> score falls <em>above</em> the midpoint, so the area <em>below</em> a positive <em>z</em> score also includes the 50&#37; of cases that fall below the midpoint. This means the area below a positive <em>z</em> score will always be greater than 50&#37; as it includes both the 50&#37; of cases that fall below the mean, and an additional percentage that falls above the mean. Look at <link href="#corty3e-ch4-fig-17"><strong>Figure 4.10</strong></link>, where <em>A</em> marks the area from the bottom of the curve to a <em>z</em> score of 0.50. This area is shaded / / / and it should be apparent that it covers more than 50&#37; of the area under the curve. According to column A in <link href="corty3e_app1_1.html#corty3e-app1-fig-1">Appendix Table 1</link>, the exact percentage of cases that fall in the region below a <em>z</em> score of 0.50 is 69.15&#37;.</p>
+<figure id="corty3e-ch4-fig-17" block_type="figure" numbered="true" number="4.10" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="large" border="true"/>
+<image asset-id="corty3e-ch4-img-17" alt="image" src="asset/ch4/corty3e_fig04_10.jpg"/>
+<caption><strong><phrase block_type="fig_num">Figure 4.10</phrase> Finding Areas Under the Curve for a <em>z</em> Score of 0.50</strong> Area <em>A,</em> marked / / / , is the portion of the normal curve that falls below <em>z</em> &#61; 0.50. Area <em>B,</em> the shaded area, is the section from the mean to <em>z</em> &#61; 0.50. Area <em>C,</em> marked \ \ \, is the section that falls above <em>z</em> &#61; 0.50. These areas, <em>A,</em> <em>B,</em> and <em>C,</em> correspond to the columns A, B, and C in <link href="corty3e_app1_1.html#corty3e-app1-fig-1">Appendix Table 1</link>.</caption>
+</figure>
+<p id="corty3e-ch4-p126" block_type="txt">Because the normal distribution is symmetric, column A also tells the percentage of cases that fall <em>at</em> or <em>above</em> a <em>negative</em> <em>z</em> score. <link href="#corty3e-ch4-fig-18"><strong>Figure 4.11</strong></link> marks off area <em>A</em> for <em>z</em> &#61; &#8211;0.50. Now compare <link href="#corty3e-ch4-fig-17">Figure 4.10</link> to <link href="#corty3e-ch4-fig-18">Figure 4.11</link>, which are mirror images of each other: the same areas are marked off, just on different sides of the normal distribution. So, 69.15&#37; of cases fall at or above a <em>z</em> score of &#8211;0.50.</p>
+<figure id="corty3e-ch4-fig-18" block_type="figure" numbered="true" number="4.11" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="large" border="true"/>
+<image asset-id="corty3e-ch4-img-18" alt="image" src="asset/ch4/corty3e_fig04_11.jpg"/>
+<caption><strong><phrase block_type="fig_num">Figure 4.11</phrase> Finding Areas Under the Curve for a <em>z</em> Score of</strong> &#8211;<strong>0.50</strong> Compare this Figure to <link href="#corty3e-ch4-fig-17">Figure 4.10</link>. Note that the area <em>A</em> is the same in <link href="#corty3e-ch4-fig-17">Figure 4.10</link> as here in <link href="#corty3e-ch4-fig-18">Figure 4.11</link>, but the side of the normal distribution it is on has changed as the sign of the <em>z</em> score changes. This shows the symmetry between positive and negative <em>z</em> scores. The same is true for area <em>B</em> in the two figures and for area <em>C</em>.</caption>
+</figure>
+<p id="corty3e_page_120" block_type="page_start">120</p>
+</section>
+<section id="corty3e-ch4-sec2-2" block_type="h2" chapter="4" title="" numbered="false" level="2" print_page="120">
+<section-metadata><section-title>Column B</section-title></section-metadata>
+<p id="corty3e-ch4-p127" block_type="txt-ni">In <link href="corty3e_app1_1.html#corty3e-app1-fig-1">Appendix Table 1</link>, column B tells the percentage of cases that fall from the mean to a <em>z</em> score, whether positive or negative. This value can never be greater than 50&#37; because it can&#8217;t include more than half of the normal distribution. Figures 4.10 and 4.11 show the shaded area <em>B</em> for a <em>z</em> score of &#177;0.50. Looking in <link href="#corty3e-ch4-fig-16">Table 4.2</link>, one can see that this area captures 19.15&#37; of the normal distribution.</p>
+</section>
+<section id="corty3e-ch4-sec2-3" block_type="h2" chapter="4" title="" numbered="false" level="2" print_page="120">
+<section-metadata><section-title>Column C</section-title></section-metadata>
+<p id="corty3e-ch4-p128" block_type="txt-ni">Column C tells the percentage of cases that fall <em>at</em> or <em>above</em> a <em>positive</em> <em>z</em> score. Because of the symmetrical nature of the normal distribution, column C also tells the percentage of cases that fall <em>at</em> or <em>below</em> a <em>negative</em> <em>z</em> score. Look at Figures 4.10 and 4.11, which show area <em>C,</em> marked \ \ \, for a <em>z</em> score of &#177;0.50. It should be apparent that area <em>C</em> values will always be less than 50&#37;. The <em>z</em> score table in <link href="corty3e_app1_1.htmlcorty3e-app1-fig-1">Appendix Table 1</link> shows that the exact value is 30.85&#37; for the percentage of cases that fall above a <em>z</em> score of 0.50 or below a <em>z</em> score of &#8211;0.50.</p>
+<p id="corty3e-ch4-p129" block_type="txt">There are three questions that the <em>z</em> score table in <link href="corty3e_app1_1.html#corty3e-app1-fig-1">Appendix Table 1</link> can be used directly to answer about a normal distribution:</p>
+<list id="corty3e-ch4-list-8" type="ordered" block_type="numbered">
+<li><p id="corty3e-ch4-p130" block_type="nl-first">What percentage of cases fall above a <em>z</em> score?</p></li>
+<li><p id="corty3e-ch4-p131" block_type="nl-mid">What percentage of cases fall from the mean to a <em>z</em> score?</p></li>
+<li><p id="corty3e-ch4-p132" block_type="nl-last">What percentage of cases fall below a <em>z</em> score?</p></li>
+</list>
+<p id="corty3e-ch4-p133" block_type="txt"><link href="#corty3e-ch4-fig-19"><strong>Figure 4.12</strong></link> is a flowchart that walks through using the <em>z</em> score table in <link href="corty3e_app1_1.html#corty3e-app1-fig-1">Appendix Table 1</link> to answer those questions.</p>
+<figure id="corty3e-ch4-fig-19" block_type="figure" numbered="true" number="4.12" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="large" border="true"/>
+<image asset-id="corty3e-ch4-img-19" alt="image" src="asset/ch4/corty3e_fig04_12.jpg"/>
+<caption><strong><phrase block_type="fig_num">Figure 4.12</phrase> How to Choose: Flowchart for Finding Areas Under the Normal Curve</strong> It is always a good idea to make a sketch of the normal distribution and shade in the area one wishes to find in order to make a rough estimate. Then, use this flowchart to determine which column (A, B, or C) of <link href="corty3e_app1_1.html#corty3e-app1-fig-1">Appendix Table 1</link> will lead to the exact answer.</caption>
+</figure>
+<p id="corty3e-ch4-p134" block_type="txt">Here&#8217;s an example of the first question: &#8220;What is the percentage of cases in a normal distribution that have scores above a <em>z</em> score of &#8211;2.30?&#8221; Before turning to the flowchart in <link href="#corty3e-ch4-fig-19">Figure 4.12</link>, it is helpful to make a quick sketch of the area one is trying to find. <link href="#corty3e-ch4-fig-20"><strong>Figure 4.13</strong></link> is a normal distribution, where the <em>X</em>-axis is marked from <em>z</em> &#61; &#8211;3 to <em>z</em> &#61; 3. A vertical line is drawn at <em>z</em> &#61; &#8211;2.30, and the area to the right of the line all the way to the far right side of the distribution is shaded in. That&#8217;s the area above a <em>z</em> score of &#8211;2.30. The percentage of cases that fall in this shaded in area is greater than 50&#37; and is probably fairly close to 100&#37;.</p>
+<figure id="corty3e-ch4-fig-20" block_type="figure" numbered="true" number="4.13" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="medium" border="true"/>
+<image asset-id="corty3e-ch4-img-20" alt="image" src="asset/ch4/corty3e_fig04_13.jpg"/>
+<caption><strong><phrase block_type="fig_num">Figure 4.13</phrase> Sketch for Finding Area Above a <em>z</em> Score of &#8722;2.30</strong> This figure marks the area in a normal distribution that falls above a <em>z</em> score of &#8211;2.30. The area includes the section to the right of the midpoint, so the total has to be greater than 50&#37;. Inspection of the figure suggests that the area will be close to 100&#37;.</caption>
+</figure>
+<p id="corty3e_page_121" block_type="page_start">121</p>
+<p id="corty3e-ch4-p135" block_type="txt">Now, turn to the flowchart in <link href="#corty3e-ch4-fig-19">Figure 4.12</link>. It directs one to use column A of the <em>z</em> score table to find the exact answer. Turn to <link href="corty3e_app1_1.html#corty3e-app1-fig-1">Appendix Table 1</link> and go down the column of <em>z</em> scores to 2.30. Then look in column A, which tells the area above a negative <em>z</em> score, to find the value of 98.93&#37;. And that&#8217;s the answer: 98.93&#37; of cases in a normal distribution fall above a <em>z</em> score of &#8211;2.30.</p>
+<p id="corty3e_page_122" block_type="page_start">122</p>
+<p id="corty3e-ch4-p136" block_type="txt">The second type of problem involves finding the area from the mean to a <em>z</em> score. For example, what&#8217;s the area from the mean to a <em>z</em> score of 1.50?</p>
+<p id="corty3e-ch4-p137" block_type="txt">Start with a sketch. In <link href="#corty3e-ch4-fig-21"><strong>Figure 4.14</strong></link>, there&#8217;s a normal curve. The <em>X</em>-axis is labeled with <em>z</em> scores from &#8211;3 to &#43;3, and each standard deviation unit is marked with the approximate percentages (34, 14, or 2) that fall in it. There&#8217;s a line at <em>z</em> &#61; 1.50, and the area from <em>z</em> &#61; 0.00 to <em>z</em> &#61; 1.50 is shaded in. Inspection of this figure shows that the area being looked for will be greater than 34&#37; but less than 48&#37;.</p>
+<figure id="corty3e-ch4-fig-21" block_type="figure" numbered="true" number="4.14" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="medium" border="true"/>
+<image asset-id="corty3e-ch4-img-21" alt="image" src="asset/ch4/corty3e_fig04_14.jpg"/>
+<caption><strong><phrase block_type="fig_num">Figure 4.14</phrase> Sketch for Finding Area from the Mean to a <em>z</em> Score of 1.50</strong> This figure marks the area in a normal distribution falling from the mean to a <em>z</em> score of 1.50. The numbers (34&#37;, 14&#37;, and 2&#37;) that represent the approximate percentages in each standard deviation help estimate how much area the shaded area represents.</caption>
+</figure>
+<p id="corty3e-ch4-p138" block_type="txt">To find the exact answer, use the flowchart in <link href="#corty3e-ch4-fig-19">Figure 4.12</link>: the answer can be found in column B of the <em>z</em> score table. The flowchart also indicates that the answer will be less than 50&#37; (which is consistent with what was found in <link href="#corty3e-ch4-fig-21">Figure 4.14</link>). Finally, turn to the intersection of the row for <em>z</em> &#61; 1.50 and column B in <link href="corty3e_app1_1.html#corty3e-app1-fig-1">Appendix Table 1</link> for the answer: 43.32&#37;. In a normal distribution, 43.32&#37; of the cases fall from the mean to 1.50 standard deviations above it.</p>
+<p id="corty3e-ch4-p139" block_type="txt">The third type of question asks one to find the area below a <em>z</em> score. For example, what is the area below a <em>z</em> score of &#8211;0.75?</p>
+<p id="corty3e-ch4-p140" block_type="txt">As always, start with a sketch. <link href="#corty3e-ch4-fig-22"><strong>Figure 4.15</strong></link> shows a normal distribution, filled in with the approximate areas in each standard deviation. There&#8217;s a vertical line at &#8211;0.75, and the area to the left of this line (the area below this <em>z</em> score) is shaded in. That&#8217;s the area to be found. This area will be larger than 16&#37; because it includes the bottom 2&#37;, the next 14&#37;, and then some more.</p>
+<figure id="corty3e-ch4-fig-22" block_type="figure" numbered="true" number="4.15" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="medium" border="true"/>
+<image asset-id="corty3e-ch4-img-22" alt="image" src="asset/ch4/corty3e_fig04_15.jpg"/>
+<caption><strong><phrase block_type="fig_num">Figure 4.15</phrase> Sketch for Finding Area Less Than a <em>z</em> Score of</strong> &#8211;<strong>0.75</strong> This figure marks the area in a normal distribution falling below a <em>z</em> score of &#8211;0.75. The numbers (34&#37;, 14&#37;, and 2&#37;) that represent the approximate percentages in each standard deviation help estimate how much area the shaded area represents. The shaded area will be a little bit more than 16&#37;.</caption>
+</figure>
+<p id="corty3e-ch4-p141" block_type="txt">To find the exact answer, turn to the flowchart in <link href="#corty3e-ch4-fig-19">Figure 4.12</link>. The flowchart says to use column C to find the <em>z</em> score (a positive number) in <link href="corty3e_app1_1.html#corty3e-app1-fig-1">Appendix Table 1</link>. Looking at the intersection of the row where <em>z</em> &#61; 0.75 and column C, we see that the answer is 22.66&#37;. In a normal distribution, 22.66&#37; of the scores are lower than a <em>z</em> score of &#8211;0.75.</p>
+<p id="corty3e_page_123" block_type="page_start">123</p>
+<p id="corty3e-ch4-p142" block_type="txt">After some practice finding the area under the normal distribution curve, we will move on to two new ways to use <em>z</em> scores and the normal curve. One, percentile ranks, is a new way to describe a person&#8217;s performance. The other, probability, underpins how statistical tests work.</p>
+<box title="Worked Example 4.2" numbered="false" id="corty3e-ch4-bx3-2" block_type="sr-exp-n">
+<p id="corty3e-ch4-p143" block_type="sr-ex-txt-ni">Here&#8217;s some practice finding the area under the normal distribution using a real-life example. The expected length of a pregnancy from the day of ovulation to childbirth is 266 days, with a standard deviation of 16 days. Assuming that the length of pregnancy is normally distributed, what percentage of women give birth at least two weeks later than average? Two weeks is equivalent to 14 days, so the question is asking for the percentage of women who deliver their babies on day 280 or later.</p>
+<p id="corty3e-ch4-p144" block_type="sr-ex-txt">The first step is to transform 280 into a <em>z</em> score:</p>
+<p id="corty3e-ch4-eqn-6" block_type="equation">
+<image asset-id="corty3e-ch4-img-23" alt="image" src="asset/ch4/corty3e_eqn04_123_01.jpg"/>
+</p>
+<p id="corty3e-ch4-p145" block_type="sr-ex-txt-ni">Next, make a sketch to isolate the area we&#8217;re looking for. In <link href="#corty3e-ch4-fig-24"><strong>Figure 4.16</strong></link>, the area above a <em>z</em> score of 0.88 is shaded in. This area will be less than 50&#37;. The area includes the distance from 2 standard deviations above the mean to 3 standard deviations above it (2&#37;), the distance from 1 standard deviation above the mean to 2 standard deviations above it (14&#37;), and then a little bit more. The area will be a bit more than 16&#37;.</p>
+<figure id="corty3e-ch4-fig-24" block_type="figure" numbered="true" number="4.16" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="medium" border="true"/>
+<image asset-id="corty3e-ch4-img-24" alt="image" src="asset/ch4/corty3e_fig04_16.jpg"/>
+<caption><strong><phrase block_type="fig_num">Figure 4.16</phrase> Sketch for Finding Probability of Having a Pregnancy That Lasts Two or More Weeks Longer Than Average</strong> The dotted line at <em>z</em> &#61; 0.88 marks the area where deliveries two weeks later than average start. The numbers (34&#37;, 14&#37;, and 2&#37;) that represent the approximate percentages in each standard deviation help estimate how much area the shaded area represents. The area will be a little bit more than 16&#37;.</caption>
+</figure>
+<p id="corty3e_page_124" block_type="page_start">124</p>
+<p id="corty3e-ch4-p146" block_type="sr-ex-txt">The area being looked for is the area above a <em>z</em> score. Consulting <link href="#corty3e-ch4-fig-19">Figure 4.12</link>, it is clear that the answer may be found in column C of <link href="corty3e_app1_1.html#corty3e-app1-fig-1">Appendix Table 1</link>. There, a <em>z</em> score of 0.88 has the corresponding value of 18.94&#37;. And that&#8217;s the conclusion&#8212;almost 19&#37; of pregnant women deliver two weeks or more later than the average length of pregnancy.</p>
+</box>
+<box title="Practice Problems 4.2" numbered="false" id="corty3e-ch4-bx2-2" block_type="sr-h">
+<p id="corty3e-ch4-p147" block_type="sr-h1"><strong>Review Your Knowledge</strong></p>
+<p id="corty3e-ch4-p148" block_type="sr-que-nl"><phrase block_type="question_num">4.06</phrase> Describe the shape of a normal distribution.</p>
+<p id="corty3e-ch4-p149" block_type="sr-que-nl"><phrase block_type="question_num">4.07</phrase> What measure of central tendency is the midpoint of a normal distribution?</p>
+<p id="corty3e-ch4-p150" block_type="sr-que-nl"><phrase block_type="question_num">4.08</phrase> What do numbers 34, 14, and 2 represent in a normal curve?</p>
+<p id="corty3e-ch4-p151" block_type="sr-h1"><strong>Apply Your Knowledge</strong></p>
+<p id="corty3e-ch4-p152" block_type="sr-que-nl"><phrase block_type="question_num">4.09</phrase> What percentage of area in a normal distribution falls at or above a <em>z</em> score of &#8211;1.33?</p>
+<p id="corty3e-ch4-p153" block_type="sr-que-nl"><phrase block_type="question_num">4.10</phrase> What percentage of area in a normal distribution falls at or above a <em>z</em> score of 2.67?</p>
+<p id="corty3e-ch4-p154" block_type="sr-que-nl"><phrase block_type="question_num">4.11</phrase> What percentage of area in a normal distribution falls from the mean to a <em>z</em> score of &#8211;0.85?</p>
+</box>
+</section>
+<section id="corty3e-ch4-sec1-3" block_type="h1" chapter="4" title="" numbered="false" level="1" print_page="124">
+<section-metadata><section-title><phrase block_type="sec_num">4.3</phrase> <phrase block_type="sec_title">Percentile Ranks</phrase></section-title></section-metadata>
+<p id="corty3e-ch4-p155" block_type="txt-ni">So far, the <em>z</em> score table in <link href="corty3e_app1_1.html#corty3e-app1-fig-1">Appendix Table 1</link> has been used as it was designed. First, the <em>z</em> score is found in the table and then the area in the normal distribution is found above, below, or to that <em>z</em> score. Now, the table will be used to calculate percentile ranks.</p>
+<p id="corty3e-ch4-p156" block_type="txt">A <termref term="percentile rank">percentile rank</termref> tells the percentage of cases whose scores are at or below a given level in a frequency distribution. Percentile ranks provide a new way of thinking about a person&#8217;s score. Imagine a student, Leah, who obtained a score of 600 on an SAT subtest. (Remember, SAT subtests have a mean of 500 and a standard deviation of 100.) There have been two ways thus far of expressing Leah&#8217;s score: (1) as a raw score (<em>X</em> &#61; 600), or (2) as a standard score (<em>z</em> &#61; 1.00).</p>
+<p id="corty3e-ch4-p157" block_type="txt">Here&#8217;s a third way, as a percentile rank. Using the <em>z</em> score of 1.00 and looking in column A of <link href="corty3e_app1_1.html#corty3e-app1-fig-1">Appendix Table 1</link>, 84.13&#37; of the area under the normal curve falls at or below Leah&#8217;s score. Leah&#8217;s score as a percentile rank, abbreviated <em>PR,</em> is 84.13. Leah scored higher on this SAT subtest than about 84&#37; of students. When her score is expressed in percentile rank form, it&#8217;s clear that Leah did well on this test.</p>
+<p id="corty3e-ch4-p158" block_type="txt">Now let&#8217;s say that Joshua took the same test and his percentile rank was 2. Joshua didn&#8217;t do very well&#8212;he only performed better than 2&#37; of other students. Comparing Leah to Joshua shows a major advantage of percentile ranks&#8212;they put scores into an easily interpretable context.</p>
+<p id="corty3e-ch4-p159" block_type="txt"><link href="#corty3e-ch4-fig-25"><strong>Figure 4.17</strong></link> shows a normal distribution that is marked off (1) with the approximate percentages in each standard deviation (34&#37;, 14&#37;, and 2&#37;), (2) with <em>z</em> scores (from &#8211;3 to &#43;3) on the <em>X</em>-axis, and (3) with approximate percentile ranks, also on the <em>X</em>-axis. There are several things to note in this figure:</p>
+<figure id="corty3e-ch4-fig-25" block_type="figure" numbered="true" number="4.17" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="large" border="true"/>
+<image asset-id="corty3e-ch4-img-25" alt="image" src="asset/ch4/corty3e_fig04_17.jpg"/>
+<caption><strong><phrase block_type="fig_num">Figure 4.17</phrase> Relationship Among the Area Under the Normal Curve, <em>z</em> Scores, and Percentile Ranks</strong> Percentile ranks, which can be computed from <em>z</em> scores, express the same information but in a different format.</caption>
+</figure>
+<list id="corty3e-ch4-list-9" type="unordered" block_type="bullet">
+<li><p id="corty3e-ch4-p160" block_type="bl-first">In this simplified version of the normal distribution, there are no cases that fall more than 3 standard deviations below the mean and none that fall more than 3 standard deviations above it.</p></li>
+<li><p id="corty3e-ch4-p161" block_type="bl-mid">This means that the percentile rank associated with a <em>z</em> score of &#8211;3 is 0, and the percentile rank associated with a <em>z</em> score of &#43;3 is 100.</p>
+<p id="corty3e_page_125" block_type="page_start">125</p></li>
+<li><p id="corty3e-ch4-p162" block_type="bl-mid">The midpoint is the median. This means that a score at the midpoint has a percentile rank of 50.</p></li>
+<li><p id="corty3e-ch4-p163" block_type="bl-mid">&#8776;2&#37; of cases fall from the bottom of the normal curve to <em>z</em> &#61; &#8211;2, so the percentile rank for <em>z</em> &#61; &#8211;2 is 2.</p></li>
+<li><p id="corty3e-ch4-p164" block_type="bl-last">Moving up the normal distribution, it&#8217;s clear that percentile ranks grow as one moves to the right along the <em>X</em>-axis.</p></li>
+</list>
+<box title="A Common Question" numbered="false" id="corty3e-ch4-bx1-1" block_type="bx-1-h">
+<p id="corty3e-ch4-p165" block_type="bx1-que"><strong>Q</strong> What is the level of measurement for percentile ranks?</p>
+<p id="corty3e-ch4-p166" block_type="bx1-ans"><strong>A</strong> Percentile ranks don&#8217;t have equality of units, so they are ordinal. Look at <link href="#corty3e-ch4-fig-24">Figure 4.16</link> and note that the distance (in <em>z</em> score units) from a <em>PR</em> of 2 to a <em>PR</em> of 16 is the same as the distance from a <em>PR</em> of 16 to a <em>PR</em> of 50. In one case, a single <em>z</em> score covers 14 <em>PR</em> units and in the other it covers 34 <em>PR</em> units.</p>
+</box>
+<p id="corty3e-ch4-p167" block_type="txt">A percentile rank can be calculated from a raw score or a <em>z</em> score. Alternatively, a raw score or a <em>z</em> score can be calculated from a percentile rank by using <link href="corty3e_app1_1.html#corty3e-app1-fig-1">Appendix Table 1</link>. The flowchart in <link href="#corty3e-ch4-fig-26"><strong>Figure 4.18</strong></link> shows how to do this.</p>
+<figure id="corty3e-ch4-fig-26" block_type="figure" numbered="true" number="4.18" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="large" border="true"/>
+<image asset-id="corty3e-ch4-img-26" alt="image" src="asset/ch4/corty3e_fig04_18.jpg"/>
+<caption><strong><phrase block_type="fig_num">Figure 4.18</phrase> How to Choose: Flowchart for Calculating <em>z</em> Scores from Percentile Ranks</strong> Before calculating a <em>z</em> score for a percentile rank, it is a good idea to sketch out a normal distribution with both <em>z</em> scores and percentile ranks on the <em>X</em>-axis in order to estimate the answer. Once the answer is in <em>z</em> score format, it can be transformed to a raw score using <link href="#corty3e-ch4-bx6-3">Equation 4.3</link>.</caption>
+</figure>
+<p id="corty3e-ch4-p168" block_type="txt">Imagine another student, Kelli, who took the same SAT subtest and whose score had a percentile rank of 40. What is her <em>z</em> score? A sketch always helps. <link href="#corty3e-ch4-fig-27"><strong>Figure 4.19</strong></link> shows a normal distribution. The <em>X</em>-axis is marked with <em>z</em> scores, percentile ranks, and SAT subtest scores, which shows how these three scores are equivalent. For example, a <em>z</em> score of 1 is equivalent to a percentile rank score of 84 and an SAT subtest score of 600. There is also an X on the <em>X</em>-axis about where a percentile rank of 40 would be. The X shows that this percentile rank will have an associated <em>z</em> score that falls somewhere between &#8211;1 and 0 and an associated SAT score that falls somewhere between 400 and 500.</p>
+<figure id="corty3e-ch4-fig-27" block_type="figure" numbered="true" number="4.19" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="large" border="true"/>
+<image asset-id="corty3e-ch4-img-27" alt="image" src="asset/ch4/corty3e_fig04_19.jpg"/>
+<caption><strong><phrase block_type="fig_num">Figure 4.19</phrase> Sketch for Figuring Out the SAT Score for a Student with a Percentile Rank of 40</strong> By labeling the <em>X</em>-axis with percentile rank scores as well as with SAT scores, it is possible to make a rough estimate as to what SAT score corresponds to a given percentile rank score.</caption>
+</figure>
+<p id="corty3e-ch4-p169" block_type="txt">Now, it is time to calculate Kelli&#8217;s <em>z</em> score more exactly. According to the flowchart in <link href="#corty3e-ch4-fig-26">Figure 4.18</link>, to find the <em>z</em> score associated with a percentile rank less than 50, go to column C in <link href="corty3e_app1_1.html#corty3e-app1-fig-1">Appendix Table 1</link>, which shows that the <em>z</em> score will be negative. Move down column C. The row closest to a value of 40.00 shows a <em>z</em> score of 0.25. This score needs to be treated as a negative number, so the answer is &#8211;0.25. Kelli&#8217;s grade on the test, as a <em>z</em> score, is &#8211;0.25.</p>
+<p id="corty3e_page_126" block_type="page_start">126</p>
+<p id="corty3e-ch4-p170" block_type="txt">Kelli&#8217;s grade is now known in two formats: as a percentile rank (40) and as a <em>z</em> score<br/>(&#8211;0.25). What is her score as a raw score on the SAT subtest? To answer that question, use <link href="#corty3e-ch4-bx6-3">Equation 4.3</link>:</p>
+<p id="corty3e-ch4-p171" block_type="eq"><em>X</em> &#61; 500 &#43; (&#8211;0.25 &#215; 100)</p>
+<p id="corty3e-ch4-p172" block_type="eq">&#61; 500 &#43; (&#8211;25.0000)</p>
+<p id="corty3e-ch4-p173" block_type="eq">&#61; 500 &#8211; 25.0000</p>
+<p id="corty3e-ch4-p174" block_type="eq">&#61; 475.0000</p>
+<p id="corty3e-ch4-p175" block_type="eq">&#61; 475.00</p>
+<p id="corty3e-ch4-p176" block_type="txt-ni">Kelli obtained a 475.00 on this SAT subtest.</p>
+<p id="corty3e_page_127" block_type="page_start">127</p>
+<box title="Worked Example 4.3" numbered="false" id="corty3e-ch4-bx3-3" block_type="sr-exp-n">
+<p id="corty3e-ch4-p177" block_type="sr-ex-txt-ni">Imagine that Clayton takes an IQ test, with a mean of 100 and a standard deviation of 15, and does better than 95&#37; of the population. If he did better than 95&#37;, then his score, as a percentile rank, is 95. What was his IQ score if his score was a 95 as a percentile rank?</p>
+<p id="corty3e-ch4-p178" block_type="sr-ex-txt">First, make a sketch. In <link href="#corty3e-ch4-fig-28"><strong>Figure 4.20</strong></link>, the <em>X</em>-axis is marked with <em>z</em> scores, percentile ranks, and IQ scores and a dotted line is drawn about where <em>PR</em> 95 should be. The line is between <em>z</em> scores of 1 and 2, closer to 2 than to 1. In IQ units, it is between 115 and 130, closer to 130.</p>
+<figure id="corty3e-ch4-fig-28" block_type="figure" numbered="true" number="4.20" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="medium" border="true"/>
+<image asset-id="corty3e-ch4-img-28" alt="image" src="asset/ch4/corty3e_fig04_20.jpg"/>
+<caption><strong><phrase block_type="fig_num">Figure 4.20</phrase> Sketch for Finding the IQ Score Associated with a Percentile Rank of 95</strong> One can use the percentile ranks marked on the <em>x</em>-axis to estimate where to draw the line for the sketch for the IQ score associated with a percentile rank of 95.</caption>
+</figure>
+<p id="corty3e-ch4-p179" block_type="sr-ex-txt">To calculate the raw score, use the flowchart in <link href="#corty3e-ch4-fig-26">Figure 4.18</link>. Clayton&#8217;s score has a percentile rank above 50, so turn to column A of <link href="corty3e_app1_1.html#corty3e-app1-fig-1">Appendix Table 1</link>. In that column, look for the value closest to 95&#37;. In this case, there are two values, 1.64 and 1.65, that are equally close to 95.00. Logic can be used to decide which of these to select:</p>
+<list id="corty3e-ch4-list-10" type="unordered" block_type="bullet">
+<li><p id="corty3e-ch4-p180" block_type="sr-exp-bl-first">A <em>z</em> score of 1.64 is higher than 94.95&#37; of scores. This doesn&#8217;t quite capture the 95&#37; value that is Clayton&#8217;s score.</p></li>
+<li><p id="corty3e-ch4-p181" block_type="sr-exp-bl-last">A <em>z</em> score of 1.65 is higher than 95.05&#37; of scores. This captures the 95&#37; value that is Clayton&#8217;s score.</p></li>
+</list>
+<p id="corty3e-ch4-p182" block_type="sr-ex-txt">To select the score that is as good or better than 95&#37; of the cases in a normal distribution, go with 1.65. Clayton&#8217;s score, as a <em>z</em> score, is 1.65.</p>
+<p id="corty3e-ch4-p183" block_type="sr-ex-txt">To convert that <em>z</em> score to an IQ score, use <link href="#corty3e-ch4-bx6-3">Equation 4.3</link>:</p>
+<p id="corty3e-ch4-p184" block_type="sr-exp-eq"><em>X</em><sub>IQ</sub> &#61; 100 &#43; (1.65 &#215; 15)</p>
+<p id="corty3e-ch4-p185" block_type="sr-exp-eq">&#61; 100 &#43; 24.7500</p>
+<p id="corty3e-ch4-p186" block_type="sr-exp-eq">&#61; 124.7500</p>
+<p id="corty3e-ch4-p187" block_type="sr-exp-eq">&#61; 124.75</p>
+<p id="corty3e-ch4-p188" block_type="sr-ex-txt-ni">Clayton&#8217;s score on the IQ test is 124.75, a score that was better than that of 95&#37; of the population.</p>
+<p id="corty3e-ch4-p189" block_type="sr-ex-txt">Remember the angioplasty graph from the beginning of the chapter? It showed that most cities had &#8220;normal&#8221; rates of angioplasty and one city was unusually high. Let&#8217;s see how unusual that city is.</p>
+<p id="corty3e_page_128" block_type="page_start">128</p>
+<p id="corty3e-ch4-p190" block_type="sr-ex-txt">To do so, we need to know the mean angioplasty rate for the sample of cities (11) and the standard deviation (4). This allows us to calculate a <em>z</em> score for the outlier city that has an angioplasty rate of 42:</p>
+<p id="corty3e-ch4-eqn-7" block_type="equation">
+<image asset-id="corty3e-ch4-img-29" alt="image" src="asset/ch4/corty3e_eqn04_128_01.jpg"/>
+</p>
+<p id="corty3e-ch4-p191" block_type="sr-ex-txt">This city has an angioplasty rate that is 7.75 standard deviations above the national average. This is a very extreme score. The <em>z</em> score table in the back of the book only goes up to a <em>z</em> score of 5.00; and &#8220;only&#8221; 0.00003&#37; of cases fall above this. A score of 7.75 is farther out in the tail than this, so it is an incredibly rare event. To a statistician&#8217;s mind, such extreme events don&#8217;t just happen by chance. There&#8217;s something fishy going on in that city, something that has inflated the rate at which angioplasties are performed.</p>
+</box>
+<box title="Practice Problems 4.3" numbered="false" id="corty3e-ch4-bx2-3" block_type="sr-h">
+<p id="corty3e-ch4-p192" block_type="sr-h1"><strong>Review Your Knowledge</strong></p>
+<p id="corty3e-ch4-p193" block_type="sr-que-nl"><phrase block_type="question_num">4.12</phrase> What is a percentile rank?</p>
+<p id="corty3e-ch4-p194" block_type="sr-que-nl"><phrase block_type="question_num">4.13</phrase> What is the percentile rank for a score at the midpoint of a set of normally distributed scores?</p>
+<p id="corty3e-ch4-p195" block_type="sr-h1"><strong>Apply Your Knowledge</strong></p>
+<p id="corty3e-ch4-p196" block_type="sr-que-nl"><phrase block_type="question_num">4.14</phrase> If a person&#8217;s score, as a percentile rank, is 80, what is her <em>z</em> score?</p>
+<p id="corty3e-ch4-p197" block_type="sr-que-nl"><phrase block_type="question_num">4.15</phrase> What is the percentile rank associated with a <em>z</em> score of &#8211;0.45?</p>
+</box>
+</section>
+<section id="corty3e-ch4-sec1-4" block_type="h1" chapter="4" title="" numbered="false" level="1" print_page="128">
+<section-metadata><section-title><phrase block_type="sec_num">4.4</phrase> <phrase block_type="sec_title">Probability</phrase></section-title></section-metadata>
+<box id="corty3e-ch4-video-1" block_type="video">
+<p id="corty3e-ch4-videotxt-1" block_type="vidtxt"><link href="http://bcs.whfreeman.com/webpub/statistics/ips7e/student/Stat Videos/ch04/sc_probability_d.html" target="_pop" data-href-px=""><image asset-id="corty3e-ch4-vimg-1" alt="image" src="asset/images/video.jpg"/></link><em>StatClips: Probability Distributions</em>Video on LaunchPad</p>
+</box>
+<box id="corty3e-ch4-video-2" block_type="video">
+<p id="corty3e-ch4-videotxt-2" block_type="vidtxt"><link href="http://bcs.whfreeman.com/webpub/statistics/ips7e/student/Stat Videos/ch04/sc_probability_br.html" target="_pop" data-href-px=""><image asset-id="corty3e-ch4-vimg-2" alt="image" src="asset/images/video.jpg"/></link><em>StatClips: Probability: Basic Rules</em>Video on LaunchPad</p>
+</box>
+<box id="corty3e-ch4-video-3" block_type="video">
+<p id="corty3e-ch4-videotxt-3" block_type="vidtxt"><link href="http://bcs.whfreeman.com/webpub/statistics/ips7e/student/Stat Videos/ch04/sc_probability_om.html" target="_pop" data-href-px=""><image asset-id="corty3e-ch4-vimg-3" alt="image" src="asset/images/video.jpg"/></link><em>StatClips: Probability: Overview and Motivation</em>Video on LaunchPad</p>
+</box>
+<p id="corty3e-ch4-p198" block_type="txt-ni">The focus of this chapter now shifts to probability. To understand why probability is important, consider a study in which a sample of people with depression is divided into two groups, one of which is given psychotherapy and the other isn&#8217;t. After treatment, the two groups are assessed on a depression scale and the psychotherapy participants are found to be less depressed than the no-psychotherapy participants. Which conclusion, A or B, would a statistician draw?</p>
+<list id="corty3e-ch4-list-11" type="ordered" block_type="upperalpha">
+<li><p id="corty3e-ch4-p199" block_type="nl-alpha-lc-first">Psychotherapy is effective in the treatment of depression.</p></li>
+<li><p id="corty3e-ch4-p200" block_type="nl-alpha-lc-last">Psychotherapy is probably effective in the treatment of depression.</p></li>
+</list>
+<p id="corty3e-ch4-p201" block_type="txt">A statistician would pick statement B, that psychotherapy is <em>probably</em> effective in the treatment of depression. Why? Because she would know that psychotherapy was effective for the <em>sample</em> tested, but she couldn&#8217;t be sure it would be effective for all the depressed people not in the sample, for the larger <em>population</em> of depressed people.</p>
+<p id="corty3e-ch4-p202" block_type="txt">Statisticians&#8217; conclusions involve <em>probability,</em> just as weather forecasters say it will &#8220;probably&#8221; rain tomorrow. The conditions may be right to predict that it will rain, but rain is not guaranteed. <termref term="Probability">Probability</termref> concerns how likely it is that an event or outcome will occur. Probability is defined as the number of ways a specific outcome (or set of outcomes) can occur, divided by the total number of possible outcomes. The formula, with probability abbreviated as <em>p</em> and the specific outcome abbreviated as <em>A,</em> is given in <link href="#corty3e-ch4-bx6-4">Equation 4.4</link>.</p>
+<p id="corty3e_page_129" block_type="page_start">129</p>
+<box title="" numbered="false" id="corty3e-ch4-bx6-4" block_type="eq-t">
+<box-metadata><box-title><phrase block_type="sec_num">Equation 4.4</phrase> <phrase block_type="sec_title">Formula for Calculating Probability</phrase></box-title></box-metadata>
+<p id="corty3e-ch4-eqn-8" block_type="equation">
+<image asset-id="corty3e-ch4-img-30" alt="image" src="asset/ch4/corty3e_eqn04_129_01.jpg"/>
+</p>
+<p id="corty3e-ch4-p203" block_type="eq">where <em>p</em> &#61; probability</p>
+<p id="corty3e-ch4-p204" block_type="eq"><em>A</em> &#61; specific outcome</p>
+</box>
+<p id="corty3e-ch4-p205" block_type="txt">Coins are often used to teach probability. A coin has two possible outcomes, heads or tails, and they are <em>mutually exclusive.</em> This means the coin can only land heads or tails&#8212;not both&#8212;on a given toss. (<em>Fairness,</em> that each outcome is equally likely, is going to be assumed for all examples.) Applying <link href="#corty3e-ch4-bx6-4">Equation 4.4</link>, if the coin has two possible outcomes, heads or tails, and there is only one way it can land heads, the probability of it landing heads is <em>p</em>(heads) &#61; <image asset-id="corty3e-ch4-img-31" alt="image" src="asset/ch4/corty3e_ineqn04_129_01.jpg"/>. This could be reported a number of ways:</p>
+<list id="corty3e-ch4-list-12" type="unordered" block_type="bullet">
+<li><p id="corty3e-ch4-p206" block_type="bl-first">Probability can be reported as a fraction. In this case, one would say, &#8220;There is a 1 out of 2 chance that a coin will turn up heads.&#8221;</p></li>
+<li><p id="corty3e-ch4-p207" block_type="bl-mid">Probability can be reported as a proportion by doing the math in the fraction, by dividing the numerator by the denominator: <image asset-id="corty3e-ch4-img-32" alt="image" src="asset/ch4/corty3e_ineqn04_129_01.jpg"/> &#61; .50. One could report, &#8220;The probability of a coin turning up heads is .50.&#8221; Or, one could say, &#8220;<em>p</em>(heads) &#61; .50.&#8221;</p></li>
+<li><p id="corty3e-ch4-p208" block_type="bl-last">Finally, by multiplying the proportion by 100, the probability can be turned into a percentage: .50 &#215; 100 &#61; 50. One could say, &#8220;There is a 50&#37; chance that a coin will land heads.&#8221;</p></li>
+</list>
+<p id="corty3e-ch4-p209" block_type="txt">To get a little more complex than a single coin, let&#8217;s toss two coins so that two outcomes occur at once. We&#8217;ll assume that the two outcomes are <em>independent.</em> <termref term="Independence">Independence</termref> means that the occurrence of one outcome has no impact on the other outcome. This means that how the first coin turns out, heads or tails, has no impact on how the second coin turns out.</p>
+<p id="corty3e-ch4-p210" block_type="txt">As shown in <link href="#corty3e-ch4-fig-31"><strong>Figure 4.21</strong></link>, there are four possible outcomes for the two coins: (1) the first is heads and the second is heads (HH), (2) the first is heads and the second is tails (HT), (3) the first is tails and the second is heads (TH), and (4) the first is tails and the second is tails (TT).</p>
+<figure id="corty3e-ch4-fig-31" block_type="figure" numbered="true" number="4.21" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="medium" border="true"/>
+<image asset-id="corty3e-ch4-img-33" alt="image" src="asset/ch4/corty3e_fig04_21.jpg"/>
+<caption><strong><phrase block_type="fig_num">Figure 4.21</phrase> Four Possible Outcomes for Two Coins Being Tossed</strong> The first coin can be either heads or tails and so can the second coin, leading to four unique outcomes. Each of the four outcomes has one chance in four of occurring, so the probability of each outcome is <image asset-id="corty3e-ch4-img-34" alt="image" src="asset/ch4/corty3e_ineqn04_129_02.jpg"/>.</caption>
+</figure>
+<p id="corty3e_page_130" block_type="page_start">130</p>
+<p id="corty3e-ch4-p211" block_type="txt">What is the probability of obtaining two heads? There&#8217;s one way such a result can occur out of four possible outcomes, so <em>p</em>(two heads) &#61; <image asset-id="corty3e-ch4-img-35" alt="image" src="asset/ch4/corty3e_ineqn04_129_02.jpg"/> &#61; .25. What is the probability of getting a heads and a tails? There are two ways this can occur (HT or TH) out of four possible outcomes, so <em>p</em>(one heads and one tails) &#61; <image asset-id="corty3e-ch4-img-36" alt="image" src="asset/ch4/corty3e_ineqn04_130_01.jpg"/> &#61; .50. Finally, there&#8217;s one other outcome possible for the two coins: <em>p</em>(two tails) &#61; <image asset-id="corty3e-ch4-img-37" alt="image" src="asset/ch4/corty3e_ineqn04_129_02.jpg"/> &#61; .25. <link href="#corty3e-ch4-fig-32"><strong>Table 4.3</strong></link> summarizes the probabilities of the three outcomes for the two coins.</p>
+<figure id="corty3e-ch4-fig-32" block_type="table" numbered="true" number="4.3" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="large" border="true"/>
+<image asset-id="corty3e-ch4-img-38" alt="image" src="asset/ch4/corty3e_table04_03.jpg"/>
+</figure>
+<p id="corty3e-ch4-p212" block_type="txt">If a probability for an outcome is 1.00, or expressed as a percentage 100&#37;, that means this outcome is a sure thing. In fact, any given outcome can&#8217;t have a probability higher than 1.00, and the sum of the probabilities of all the possible outcomes is 1.00. If two coins are tossed, it is guaranteed that one of these outcomes&#8212;two heads, <em>or</em> a heads and a tails, <em>or</em> two tails&#8212;will turn out. In addition, the probability of an outcome occurring can&#8217;t be less than .00, or 0&#37;. A probability of zero means that an outcome can&#8217;t happen. Putting together the two facts in this paragraph, the probability for any given outcome can&#8217;t be less than zero or greater than 1. Stated more formally,</p>
+<box numbered="false" id="corty3e-ch4-exp1-3" block_type="mn1">
+<p id="corty3e-ch4-p213" block_type="mn-ext-ni"><em>The probability for any given outcome can&#8217;t be less than zero or greater than 1.</em></p>
+</box>
+<p id="corty3e-ch4-p214" block_type="eq">.00 &#8804; <em>p</em>(<em>A</em>) &#8804;1.00</p>
+<box title="A Common Question" numbered="false" id="corty3e-ch4-bx1-2" block_type="bx-1-h">
+<p id="corty3e-ch4-p215" block_type="bx1-que"><strong>Q</strong> When probabilities are reported as a proportion, they are written without a leading zero, for example, as .25 not as 0.25. Why?</p>
+<p id="corty3e-ch4-p216" block_type="bx1-ans"><strong>A</strong> APA format says to put a zero before the decimal point for numbers that are less than 1 only when the numbers can be greater than 1. Probabilities can&#8217;t exceed 1, so they don&#8217;t get a leading zero.</p>
+</box>
+<p id="corty3e-ch4-p217" block_type="txt">The most common way that statisticians calculate and use probability involves the normal distribution. They often ask, if a variable is normally distributed and a case is selected at random from a population, how likely is it&#8212;how probable is it&#8212;that this case would have a score that falls in a certain range?</p>
+<p id="corty3e-ch4-p218" block_type="txt">The material covered in <link href="corty3e_ch4_3.html">Section 4.2</link> of this chapter can be construed in just this way. For example, if 50&#37; of cases fall at or above the mean, then the probability of a case selected at random having a score at or above the mean is .50. If approximately 84&#37; of the cases fall in the region at or below a <em>z</em> score of 1, then the probability of picking a case at random and it having a <em>z</em> score less than or equal to 1 is .84. (To move from a percentage to a probability, move the decimal two places to the left; to move from a probability to a percentage, move the decimal place two spots to the right.)</p>
+<p id="corty3e_page_131" block_type="page_start">131</p>
+<p id="corty3e-ch4-p219" block_type="txt">Statisticians use probabilities to determine if a result is common or rare. By <em>common,</em> they mean the result occurs frequently, that it falls somewhere near the middle of a normal distribution. Typically, statisticians consider something that has a 95&#37; chance of occurring as common. A <em>rare</em> result is one that is unlikely to occur, one that falls in the ends, the tails, of the distribution. As will be seen in <link href="corty3e-ch06.xml">Chapter 6</link>, how rare something must be to be considered rare is a decision that should be made on an experiment-by-experiment basis. But, usually, statisticians consider something rare if it has a 5&#37; or less chance of occurring. Phrased in terms of probability, if <em>p&#60;</em>.05, it is usually considered a rare outcome to a statistician.</p>
+<p id="corty3e-ch4-p220" block_type="txt">Let&#8217;s find the <em>z</em> scores that mark off the middle 95&#37; of scores in a normal distribution. This will lead us to one of the most important numbers in statistics, 1.96.</p>
+<p id="corty3e-ch4-p221" block_type="txt">Follow the procedure in <link href="#corty3e-ch4-fig-33"><strong>Table 4.4</strong></link> to find the <em>z</em> scores that mark off the middle 95&#37; of cases. The first step is to take the percentage, here 95&#37;, and split it in two:</p>
+<figure id="corty3e-ch4-fig-33" block_type="table" numbered="true" number="4.4" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="large" border="true"/>
+<image asset-id="corty3e-ch4-img-39" alt="image" src="asset/ch4/corty3e_table04_04.jpg"/>
+</figure>
+<p id="corty3e-ch4-eqn-9" block_type="equation">
+<image asset-id="corty3e-ch4-img-40" alt="image" src="asset/ch4/corty3e_eqn04_131_01.jpg"/>
+</p>
+<p id="corty3e-ch4-p222" block_type="txt">Why split it in two? Because that tells us how much of the area is above the mean and how much is below it. We now know that the 95&#37; consists of 47.5&#37; (half) above the mean and 47.5&#37; (the other half) below the mean.</p>
+<p id="corty3e-ch4-p223" block_type="txt">The second step is to look in column B of <link href="corty3e_app1_1.html#corty3e-app1-fig-1">Appendix Table 1</link> to find the value closest to this percentage. Column B contains the exact value of 47.50, and the <em>z</em> score associated with it is 1.96. The final step in <link href="#corty3e-ch4-fig-33">Table 4.4</link> is to report the results as a range from a negative <em>z</em> score to a positive <em>z</em> score: in a normal distribution, the middle 95&#37; of cases fall from a <em>z</em> score of &#8211;1.96 to a <em>z</em> score of 1.96 (see <link href="#corty3e-ch4-fig-35"><strong>Figure 4.22</strong></link>). Or, thinking in terms of probability, if one took a case at random from the population, the probability is .95 that it came from the interval ranging from <em>z</em> &#61; &#8211;1.96 to <em>z</em> &#61; 1.96.</p>
+<figure id="corty3e-ch4-fig-35" block_type="figure" numbered="true" number="4.22" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="large" border="true"/>
+<image asset-id="corty3e-ch4-img-41" alt="image" src="asset/ch4/corty3e_fig04_22.jpg"/>
+<caption><strong><phrase block_type="fig_num">Figure 4.22</phrase> Middle and Extreme Sections of the Normal Curve Associated with <em>z</em> scores of &#177;1.96</strong> The same <em>z</em> scores, &#177;1.96, that mark off the middle 95&#37; of scores also mark off the extreme 5&#37; of scores.</caption>
+</figure>
+<p id="corty3e_page_132" block_type="page_start">132</p>
+<p id="corty3e-ch4-p224" block_type="txt">Look at <link href="#corty3e-ch4-fig-35">Figure 4.22</link> that shows the middle 95&#37;. If 95&#37; of the cases fall from a <em>z</em> score of &#8211;1.96 to a <em>z</em> score of 1.96, isn&#8217;t that the same as saying 5&#37; of the cases don&#8217;t fall in that region? The complement to a <termref term="common zone">common zone</termref>, the middle section, is the <termref term="rare zone">rare zone</termref>, the section in the ends, the two tails, of the distribution. This section in the extremes of the distribution is evenly divided between the two tails. The extreme 5&#37;, for example, consists of the 2.5&#37; at the very bottom of the normal distribution (the far left side in <link href="#corty3e-ch4-fig-35">Figure 4.22</link>) <em>and</em> the 2.5&#37; at the very top of it (the far right side in <link href="#corty3e-ch4-fig-35">Figure 4.22</link>). Of course, this can also be expressed as a probability: <em>p</em> &#61; .05 that a case selected at random from the population falls below &#8211;1.96 or above 1.96 in a normal distribution. (<link href="#corty3e-ch4-fig-33">Table 4.4</link>, which shows how to calculate a <termref term="middle percentage">middle percentage</termref>, also contains guidelines on how to calculate an <termref term="extreme percentage">extreme percentage</termref>.)</p>
+<box numbered="false" id="corty3e-ch4-exp1-4" block_type="mn1">
+<p id="corty3e-ch4-p225" block_type="mn-ext-ni"><em>The</em> z <em>scores, &#177;1.96, that mark off the middle 95</em>&#37; <em>of scores in a normal distribution are also the</em> z <em>scores that mark off the extreme 5</em>&#37; <em>of scores in a normal distribution.</em></p>
+</box>
+<p id="corty3e-ch4-p226" block_type="txt">The <em>z</em> scores, &#177;1.96, that mark off the middle 95&#37; of scores in a normal distribution are also the <em>z</em> scores that mark off the extreme 5&#37; of scores in a normal distribution. Keep your eyes open, these values will appear a lot more in later chapters. You&#8217;ll see 1.96 used in formulas; you&#8217;ll see 95&#37; used in confidence intervals; and you&#8217;ll see two probabilities, <em>p</em> &#60; .05 and <em>p</em> &#62; .05, to indicate, respectively, whether a result is rare or common.</p>
+<box title="Worked Example 4.4" numbered="false" id="corty3e-ch4-bx3-4" block_type="sr-exp-n">
+<p id="corty3e-ch4-p227" block_type="sr-ex-txt-ni">Mount Pleasant High School instituted a new math curriculum. The principal was not worried about how the average students would fare, but was concerned about the poorer and the better students. He wanted to assess the impact on the extreme 50&#37; of students as measured by IQ. He needed to find the IQ scores that mark off the extreme 50&#37; of cases, the 25&#37; at the top and the 25&#37; at the bottom.</p>
+<p id="corty3e-ch4-p228" block_type="sr-ex-txt"><link href="#corty3e-ch4-fig-36"><strong>Figure 4.23</strong></link>, where the <em>X</em>-axis is marked off with <em>z</em> scores and IQ scores, is the sketch he made. The approximate areas falling in each standard deviation are noted, and dotted lines are drawn about where the cut-off points will be. Based on the sketch, one cut-off point is expected to occur between <em>z</em> scores of &#8211;1 and 0. The other cut-off point will occur, symmetrically, on the positive side of the curve.</p>
+<figure id="corty3e-ch4-fig-36" block_type="figure" numbered="true" number="4.23" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="large" border="true"/>
+<image asset-id="corty3e-ch4-img-42" alt="image" src="asset/ch4/corty3e_fig04_23.jpg"/>
+<caption><strong><phrase block_type="fig_num">Figure 4.23</phrase> Sketch for Finding the Extreme 50&#37; of IQ Scores</strong> The extreme 50&#37; of scores consist of the bottom 25&#37; of scores, the shaded area on the left of the curve, and the top 25&#37;, the shaded area on its right.</caption>
+</figure>
+<p id="corty3e_page_133" block_type="page_start">133</p>
+<p id="corty3e-ch4-p229" block_type="sr-ex-txt">How did he know where to sketch the cut-off points? The objective is to have half of the 50&#37; of extreme scores, or 25&#37;, in each tail. He knew that below, or to the left of, a <em>z</em> score of &#8211;1, about 16&#37; of the scores fall. That isn&#8217;t 25&#37;. So, he needed to move partway into the next standard deviation, enough to add 9&#37; to the existing 16&#37;. This puts the <em>z</em> score somewhere between <em>z</em> &#61; &#8211;1 and <em>z</em> &#61; 0.</p>
+<p id="corty3e-ch4-p230" block_type="sr-ex-txt">Now, with a rough idea of what the answer was, he followed the guidelines in <link href="#corty3e-ch4-fig-33">Table 4.4</link> to find the exact answer. First, he cut the percentage in half. Then, he used column C of <link href="corty3e_app1_1.html#corty3e-app1-fig-1">Appendix Table 1</link> to find the <em>z</em> score associated with the half percentage value. Looking in column C of <link href="corty3e_app1_1.html#corty3e-app1-fig-1">Appendix Table 1</link>, he found that the value closest to 25&#37; was 25.14 and the <em>z</em> score associated with it was 0.67. In <em>z</em> score format, he had his answer: below a <em>z</em> score of &#8211;0.67 <em>and</em> above a <em>z</em> score of 0.67, the extreme 50&#37; of cases fall.</p>
+<p id="corty3e-ch4-p231" block_type="sr-ex-txt">But, to answer the original question, he needed to turn the <em>z</em> scores into IQ scores using <link href="#corty3e-ch4-bx6-3">Equation 4.3</link>:</p>
+<p id="corty3e-ch4-p232" block_type="sr-exp-eq"><em>X</em> &#61; 100 &#43; (&#8211;0.67 &#215; 15)</p>
+<p id="corty3e-ch4-p233" block_type="sr-exp-eq">&#61; 100 &#43; (&#8211;10.0500)</p>
+<p id="corty3e-ch4-p234" block_type="sr-exp-eq">&#61; 100 &#8211; 10.0500</p>
+<p id="corty3e-ch4-p235" block_type="sr-exp-eq">&#61; 89.9500</p>
+<p id="corty3e-ch4-p236" block_type="sr-exp-eq">&#61; 89.95</p>
+<p id="corty3e-ch4-p237" block_type="sr-exp-eq"><em>X</em> &#61; 100 &#43; (0.67 &#215; 15)</p>
+<p id="corty3e-ch4-p238" block_type="sr-exp-eq">&#61; 100 &#43; 10.0500</p>
+<p id="corty3e-ch4-p239" block_type="sr-exp-eq">&#61; 110.0500</p>
+<p id="corty3e-ch4-p240" block_type="sr-exp-eq">&#61; 110.05</p>
+<p id="corty3e-ch4-p241" block_type="sr-ex-txt-ni">He now had his answer: The IQ scores that mark off the extreme 50&#37; of scores are 89.95 and 110.05. He would need to follow the progress of students with IQs lower than 90 or higher than 110 to see how the new math curriculum affected the extreme 50&#37; of students.</p>
+</box>
+<p id="corty3e_page_134" block_type="page_start">134</p>
+<box title="Practice Problems 4.4" numbered="false" id="corty3e-ch4-bx2-4" block_type="sr-h">
+<p id="corty3e-ch4-p242" block_type="sr-h1"><strong>Review Your Knowledge</strong></p>
+<p id="corty3e-ch4-p243" block_type="sr-que-nl"><phrase block_type="question_num">4.16</phrase> What is the definition of probability?</p>
+<p id="corty3e-ch4-p244" block_type="sr-que-nl"><phrase block_type="question_num">4.17</phrase> What&#8217;s the smallest possible probability for an outcome? The largest?</p>
+<p id="corty3e-ch4-p245" block_type="sr-que-nl"><phrase block_type="question_num">4.18</phrase> If the <em>z</em> scores that mark off the middle 60&#37; of scores are &#177;.84, what are the <em>z</em> scores that mark off the extreme 40&#37; of scores?</p>
+<p id="corty3e-ch4-p246" block_type="sr-h1"><strong>Apply Your Knowledge</strong></p>
+<p id="corty3e-ch4-p247" block_type="sr-que-txt-ni"><strong><em>For Practice Problems 4.19&#8211;4.20, assume that in any given year, there are 52 weeks in a year, 365 days in a year, and equal numbers of every day of the week.</em></strong></p>
+<p id="corty3e-ch4-p248" block_type="sr-que-nl"><phrase block_type="question_num">4.19</phrase> If a researcher picked one date at random out of a year, what is the probability of it being a Monday?</p>
+<p id="corty3e-ch4-p249" block_type="sr-que-nl"><phrase block_type="question_num">4.20</phrase> If a researcher picked one date at random out of a year, what is the probability of it not being a Monday?</p>
+<p id="corty3e-ch4-p250" block_type="sr-que-nl"><phrase block_type="question_num">4.21</phrase> What are the <em>z</em> scores that mark the middle 34&#37; of scores?</p>
+<p id="corty3e-ch4-p251" block_type="sr-que-nl"><phrase block_type="question_num">4.22</phrase> If someone is picked at random, what is the probability that her IQ will be 123 or higher? (Use a mean of 100 and a standard deviation of 15.)</p>
+</box>
+<box title="Application Demonstration" numbered="false" id="corty3e-ch4-bx5-1" block_type="sr-x-h">
+<p id="corty3e-ch4-p252" block_type="sr-x-txt-ni">Let&#8217;s use some historical data about IQ to see material from this chapter in action. In the past, intelligence was used as the sole criterion of whether a person was classified as having an intellectual disability or being gifted. These days, multiple criteria are used. Let&#8217;s see what the implications of the former criteria are, based on an IQ test with a mean of 100 and a standard deviation of 15.</p>
+<p id="corty3e-ch4-p253" block_type="sr-x-txt">Let&#8217;s start with intellectual disability. At one point, people were considered intellectually disabled if their IQs were less than 70. Now, adaptive behavior&#8212;the ability to function in everyday life&#8212;is also taken into account. But, using the old definition, if a person were picked at random, what is the probability that he or she would be classified as intellectually disabled?</p>
+<p id="corty3e-ch4-p254" block_type="sr-x-txt">An IQ score below 70 means an IQ score less than or equal to 69, so our question becomes, &#8220;What is the probability of having an IQ score &#8804; 69?&#8221; It always helps to visualize what one is doing, so sketch out a normal distribution. <link href="#corty3e-ch4-fig-37"><strong>Figure 4.24</strong></link> shows a normal distribution with the <em>X</em>-axis marked in both IQ scores and <em>z</em> scores. For the IQ scores, the midpoint is 100 and then the standard deviation is added or subtracted in both directions 3 times. Thus, the IQ scores range from 55 to 145. There is a dotted vertical line marking an IQ score of 69 and the area below the line, to the left of it, is shaded in. This is the area to be found. It should be apparent that this is not a large percentage of cases. In fact, it should be close to 2&#37;.</p>
+<figure id="corty3e-ch4-fig-37" block_type="figure" numbered="true" number="4.24" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="large" border="true"/>
+<image asset-id="corty3e-ch4-img-43" alt="image" src="asset/ch4/corty3e_fig04_24.jpg"/>
+<caption><strong><phrase block_type="fig_num">Figure 4.24</phrase> Sketch for Finding Percent of Cases with IQ Scores at or Below 69</strong> Shading in the area at or below an IQ score of 69 allows one to estimate that less than 2&#37; of the population falls in that area.</caption>
+</figure>
+<p id="corty3e-ch4-p255" block_type="sr-x-txt">Now, it is time to calculate more exactly. Using <link href="#corty3e-ch4-bx6-2">Equation 4.2</link>, convert the IQ score to a <em>z</em> score:</p>
+<p id="corty3e-ch4-eqn-10" block_type="equation">
+<image asset-id="corty3e-ch4-img-44" alt="image" src="asset/ch4/corty3e_eqn04_134_01.jpg"/>
+</p>
+<p id="corty3e_page_135" block_type="page_start">135</p>
+<p id="corty3e-ch4-p256" block_type="sr-x-txt">An IQ score of 69 is equivalent to a <em>z</em> score of &#8211;2.07. (Remember, the fact that the <em>z</em> score is negative means that it falls below the mean.) Now, take that <em>z</em> score and find the percentage of cases at or below it. The flowchart in <link href="#corty3e-ch4-fig-19">Figure 4.12</link> directs one to column C of <link href="corty3e_app1_1.html#corty3e-app1-fig-1">Appendix Table 1</link>. Turn to that table and find the row with a <em>z</em> score of 2.07. (Remember, the normal distribution is symmetrical, so one can consider 2.07 the same as &#8211;2.07.) The answer as a percentage, 1.92&#37;, is found in column C. We can turn 1.92&#37; into a probability of .0192 by moving the decimal place two places to the left. And that&#8217;s the answer&#8212;if a person were picked at random out of the world, the probability is .0192 that he or she would be classified as intellectually disabled if that classification were based entirely on IQ.</p>
+<p id="corty3e-ch4-p257" block_type="sr-x-txt">Here&#8217;s one more way to use this probability. If the population of the United States is 320 million, how many have IQs of 69 or lower? Answer this by taking the probability, .0192, and multiplying it by the population:</p>
+<p id="corty3e-ch4-p258" block_type="sr-x-eq">.0192 &#215; 320,000,000 &#61; 6,144,000</p>
+<p id="corty3e-ch4-p259" block_type="sr-x-txt">That&#8217;s a lot of people! Using the old standard, more than 6 million people in the United States should have IQs of 69 or lower and would be classified as intellectually disabled.</p>
+<p id="corty3e-ch4-p260" block_type="sr-x-txt">Let&#8217;s look at the other side of the intelligence continuum&#8212;genius. How common are geniuses? One cut-off for genius, on a standard IQ test (mean &#61; 100 and standard deviation &#61; 15), is a score of 145 or higher. This is sketched in <link href="#corty3e-ch4-fig-39"><strong>Figure 4.25</strong></link>. It should be apparent that this is the upper limit of the simplified version of the normal distribution. There are very few people with IQ scores of 145 or higher.</p>
+<figure id="corty3e-ch4-fig-39" block_type="figure" numbered="true" number="4.25" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="large" border="true"/>
+<image asset-id="corty3e-ch4-img-45" alt="image" src="asset/ch4/corty3e_fig04_25.jpg"/>
+<caption><strong><phrase block_type="fig_num">Figure 4.25</phrase> Sketch for Finding Percentage of Population with IQs of 145 or Higher</strong> Trying to shade in the area to the right of an IQ score of 145 makes one aware of how few scores fall in that area.</caption>
+</figure>
+<p id="corty3e-ch4-p261" block_type="sr-x-txt">To find out what percentage of people could be classified as geniuses, use <link href="#corty3e-ch4-bx6-2">Equation 4.2</link> to turn the IQ score into a <em>z</em> score:</p>
+<p id="corty3e-ch4-eqn-11" block_type="equation">
+<image asset-id="corty3e-ch4-img-46" alt="image" src="asset/ch4/corty3e_eqn04_135_01.jpg"/>
+</p>
+<p id="corty3e_page_136" block_type="page_start">136</p>
+<p id="corty3e-ch4-p262" block_type="sr-x-txt">The flowchart in <link href="#corty3e-ch4-fig-18">Figure 4.11</link> indicates that the exact percentage may be found in column C of <link href="corty3e_app1_1.html#corty3e-app1-fig-1">Appendix Table 1</link>. Reading across the row in the <em>z</em> score table for a <em>z</em> score of 3.00, one finds that the value in column C is 0.135&#37;. And that&#8217;s the answer: assuming intelligence is normally distributed and considering anyone with an IQ of 145 or higher a genius, then 0.135&#37; of the population will be geniuses.</p>
+<p id="corty3e-ch4-p263" block_type="sr-x-txt">What does that mean for the 320 million Americans? Turn 0.135&#37; into a proportion (.00135) and multiply that by the population:</p>
+<p id="corty3e-ch4-p264" block_type="sr-x-eq">.00135 &#215; 320,000,000 &#61; 432,000</p>
+<p id="corty3e-ch4-p265" block_type="sr-x-txt">Fewer than half a million Americans, only 432,000 to be exact, should have IQs high enough to be classified as geniuses.</p>
+<p id="corty3e-ch4-p266" block_type="sr-x-txt">One last thing, let&#8217;s suppose someone takes an IQ test and gets a 145. What&#8217;s his or her score as a percentile rank? The flowchart in <link href="#corty3e-ch4-fig-26">Figure 4.18</link> says to consult column A of <link href="corty3e_app1_1.html#corty3e-app1-fig-1">Appendix Table 1</link>. Reading column A for a <em>z</em> score of 3.00, we see that the person&#8217;s score is 99.865, as a percentile rank. Not a bad percentile rank to have.</p>
+</box>
+<box title="DIY" numbered="false" id="corty3e-ch4-bx4-1" block_type="bx4-h">
+<p id="corty3e-ch4-p267" block_type="bx4-txt-ni">Dig out the standardized test scores, either the SAT or the ACT, that you used on your college application. How did you do? Can you turn your score into a <em>z</em> score and a percentile rank? For the combined SAT score, which is the sum of the math, writing, and critical reading tests, use a mean of 1,500 and a standard deviation of 300 (If you have taken the new SAT, which has only two subtests, use a mean of 1000 and a standard deviation of 200). For the ACT composite score, use a mean of 20.5 and a standard deviation of 5.5.</p>
+</box>
+</section>
+<section id="corty3e-ch4-sec1-5" block_type="sum-h" chapter="4" title="" numbered="false" level="1" print_page="137">
+<section-metadata><section-title>SUMMARY</section-title></section-metadata>
+<p id="corty3e-ch4-p268" block_type="sum-hd1"><strong>Transform raw scores into standard scores (<em>z</em> scores) and vice versa.</strong></p>
+<p id="corty3e_page_137" block_type="page_start">137</p>
+<list id="corty3e-ch4-list-13" type="unordered" block_type="bluebullet">
+<li><p id="corty3e-ch4-p269" block_type="sum-bl-first">A standard score, called a <em>z</em> score, transforms a raw score so that it is expressed in terms of how many standard deviations it falls away from the mean. A positive <em>z</em> score means the score falls above the mean, a negative <em>z</em> score means it falls below the mean, and a <em>z</em> score of zero means the score falls right at the mean. <em>z</em> scores standardize scores, allowing different variables to be expressed in a common unit of measurement.</p></li>
+</list>
+<p id="corty3e-ch4-p270" block_type="sum-hd1"><strong>Describe the normal curve and calculate the likelihood of an outcome falling in specified areas of it.</strong></p>
+<list id="corty3e-ch4-list-14" type="unordered" block_type="bluebullet">
+<li><p id="corty3e-ch4-p271" block_type="sum-bl-first">The normal distribution is important because it is believed that many psychological variables are normally distributed. The normal curve is a specific bell-shaped curve, defined by the percentage of cases that fall in specified areas. About 34&#37; of cases fall from the mean to 1 standard deviation above the mean, &#8776;14&#37; fall from 1 to 2 standard deviations above the mean, and &#8776;2&#37; fall from 2 standard deviations above to 3 above the mean. Because the normal distribution is symmetric, the same percentages fall below the mean. It is rare that a case has a score more than 3 standard deviations from the mean.</p></li>
+<li><p id="corty3e-ch4-p272" block_type="sum-bl-last"><link href="corty3e_app1_1.html#corty3e-app1-fig-1">Appendix Table 1</link> lists the percentage of cases that fall in specified segments of the normal distribution. A flowchart, <link href="#corty3e-ch4-fig-19">Figure 4.12</link>, can be used as a guide to find the area under a normal curve that is above a <em>z</em> score, below a <em>z</em> score, or from the mean to a <em>z</em> score.</p></li>
+</list>
+<p id="corty3e-ch4-p273" block_type="sum-hd1"><strong>Transform raw scores and standard scores into percentile ranks and vice versa.</strong></p>
+<list id="corty3e-ch4-list-15" type="unordered" block_type="bluebullet">
+<li><p id="corty3e-ch4-p274" block_type="sum-bl-first">Percentile ranks tell the percentage of cases in a distribution that have scores at or below a given level. They provide easy-to-interpret information about how well a person performed on a test.</p></li>
+</list>
+<p id="corty3e-ch4-p275" block_type="sum-hd1"><strong>Calculate the probability of an outcome falling in a specified area under the normal curve.</strong></p>
+<list id="corty3e-ch4-list-16" type="unordered" block_type="bluebullet">
+<li><p id="corty3e-ch4-p276" block_type="sum-bl-first">Conclusions that statisticians draw are probabilistic.</p></li>
+<li><p id="corty3e-ch4-p277" block_type="sum-bl-mid">Probability is defined as the number of ways a specific outcome or event can occur, divided by the total number of possible outcomes.</p></li>
+<li><p id="corty3e-ch4-p278" block_type="sum-bl-mid">The normal curve can be divided into a middle section and extreme sections. A middle percentage of scores is symmetric around the midpoint, while an extreme percentage is evenly divided between the two tails of the distribution. The same <em>z</em> score, for example, defines the middle 60&#37; and the extreme 40&#37;. The middle 60&#37; consists of the first 30&#37; above the midpoint <em>and</em> the first 30&#37; below the midpoint, while the extreme 40&#37; consists of the 20&#37; of scores above the middle 60&#37; <em>and</em> the 20&#37; below it.</p></li>
+<li><p id="corty3e-ch4-p279" block_type="sum-bl-mid"><em>z</em> scores can be used to find the probability that a score, selected at random, falls in a certain section of the normal curve. For example, <em>p</em> &#61; .50 that a score selected at random has a score at or below the mean.</p></li>
+<li><p id="corty3e-ch4-p280" block_type="sum-bl-last">The rare zone of a distribution is the part in the tails where scores rarely fall. Commonly, statisticians consider something rare if it happens less than 5&#37; of the time. If rare is written as <em>p &#60;</em> .05, then a common outcome is written as <em>p</em> &#62; .05, meaning it happens more than 5&#37; of the time. The common zone of a distribution is the central part where scores commonly fall.</p></li>
+</list>
+</section>
+<section id="corty3e-ch4-sec1-6" block_type="cr-kt-t" chapter="4" title="" numbered="false" level="1" print_page="138">
+<section-metadata><section-title>KEY TERMS</section-title></section-metadata>
+<p id="corty3e_page_138" block_type="page_start">138</p>
+<question id="corty3e-ch4-keyterms-ques1" numbered="false" title="" number="">
+<query id="corty3e-ch4-keyterms-ques1-qry">MA:
+a.common zone:: the section of a distribution where scores usually fall; commonly set to be the middle 95&#37;.
+a.extreme percentage:: percentage of the normal distribution that is found in the two tails and is evenly divided between them.
+a.independence:: in probability, when the occurrence of one outcome does not have any impact on the occurrence of a second outcome.
+a.middle percentage:: percentage of the normal distribution found around the midpoint, evenly divided into two parts, one just above the mean and one just below it.
+a.normal distribution:: also called the normal curve; a specific bell-shaped curve defined by the percentage of cases that fall in specific areas under the curve.
+a.percentile rank:: percentage of cases with scores at or below a given level in a frequency distribution.
+a.probability:: how likely an outcome is; the number of ways a specific outcome can occur, divided by the total number of possible outcomes.
+a.rare zone:: section of a distribution where scores do not usually fall; in most instances, set to be the extreme 5&#37;.
+a.standard score:: raw score expressed in terms of how many standard deviations it falls away from the mean; also known as a <em>z</em> score.
+a.z score:: raw score expressed in terms of how many standard deviations it falls away from the mean; also known as a standard score.
+</query>
+</question>
+</section>
+<section id="corty3e-ch4-sec1-7" block_type="cr-x-h" chapter="4" title="" numbered="false" level="1" print_page="138">
+<section-metadata><section-title>CHAPTER EXERCISES</section-title></section-metadata>
+<p id="corty3e-ch4-p291" block_type="cr-x-txt-ni"><strong><em>Answers to the odd-numbered exercises appear in <link href="corty3e-appb.xml">Appendix B</link>.</em></strong></p>
+<p id="corty3e-ch4-p292" block_type="cr-x-hd1"><strong>Review Your Knowledge</strong></p>
+<p id="corty3e-ch4-p293" block_type="cr-x-nl-txt"><phrase block_type="question_num">4.01</phrase> A standard score is a &#95;&#95;&#95;&#95; score expressed in terms of how many standard deviations it is away from the mean.</p>
+<p id="corty3e-ch4-p294" block_type="cr-x-nl-txt"><phrase block_type="question_num">4.02</phrase> &#95;&#95;&#95;&#95; is another term for standard score.</p>
+<p id="corty3e-ch4-p295" block_type="cr-x-nl-txt"><phrase block_type="question_num">4.03</phrase> To calculate a <em>z</em> score, one needs to know the raw score, the &#95;&#95;&#95;&#95;, and the &#95;&#95;&#95;&#95;.</p>
+<p id="corty3e-ch4-p296" block_type="cr-x-nl-txt"><phrase block_type="question_num">4.04</phrase> A positive <em>z</em> score means the score is &#95;&#95;&#95;&#95; the mean; a negative <em>z</em> score means the score is &#95;&#95;&#95;&#95; the mean.</p>
+<p id="corty3e-ch4-p297" block_type="cr-x-nl-txt"><phrase block_type="question_num">4.05</phrase> If a raw score is right at the mean, it has a <em>z</em> score of &#95;&#95;&#95;&#95;.</p>
+<p id="corty3e-ch4-p298" block_type="cr-x-nl-txt"><phrase block_type="question_num">4.06</phrase> The sum of <em>z</em> scores for a data set is &#95;&#95;&#95;&#95;.</p>
+<p id="corty3e-ch4-p299" block_type="cr-x-nl-txt"><phrase block_type="question_num">4.07</phrase> Given a <em>z</em> score, it is possible to turn it into a raw score as long as one knows the sample &#95;&#95;&#95;&#95; and &#95;&#95;&#95;&#95;.</p>
+<p id="corty3e-ch4-p300" block_type="cr-x-nl-txt"><phrase block_type="question_num">4.08</phrase> The normal curve is symmetrical, has the highest point in the &#95;&#95;&#95;&#95;, and has frequencies that &#95;&#95;&#95;&#95; as one moves away from the midpoint.</p>
+<p id="corty3e-ch4-p301" block_type="cr-x-nl-txt"><phrase block_type="question_num">4.09</phrase> Because the normal curve is symmetric, the midpoint is also the &#95;&#95;&#95;&#95; and the &#95;&#95;&#95;&#95;.</p>
+<p id="corty3e-ch4-p302" block_type="cr-x-nl-txt"><phrase block_type="question_num">4.10</phrase> In a normal curve, 34.13&#37; of the cases fall from the mean to &#95;&#95;&#95;&#95; above the mean.</p>
+<p id="corty3e-ch4-p303" block_type="cr-x-nl-txt"><phrase block_type="question_num">4.11</phrase> As one moves away from the mean in a normal distribution, the percentage of cases that fall in each standard deviation &#95;&#95;&#95;&#95;.</p>
+<p id="corty3e-ch4-p304" block_type="cr-x-nl-txt"><phrase block_type="question_num">4.12</phrase> Within 2 standard deviations of the mean in a normal distribution, about &#95;&#95;&#95;&#95;&#37; of the cases fall.</p>
+<p id="corty3e-ch4-p305" block_type="cr-x-nl-txt"><phrase block_type="question_num">4.13</phrase> In a normal distribution, it is &#95;&#95;&#95;&#95; to have a <em>z</em> score that is greater than 3.</p>
+<p id="corty3e-ch4-p306" block_type="cr-x-nl-txt"><phrase block_type="question_num">4.14</phrase> Three numbers that are good to remember for estimating areas in the first 3 standard deviations of a normal distribution are &#95;&#95;&#95;&#95;, &#95;&#95;&#95;&#95;, and &#95;&#95;&#95;&#95;.</p>
+<p id="corty3e-ch4-p307" block_type="cr-x-nl-txt"><phrase block_type="question_num">4.15</phrase> The normal distribution is a naturally occurring distribution that is the result of &#95;&#95;&#95;&#95; processes.</p>
+<p id="corty3e_page_139" block_type="page_start">139</p>
+<p id="corty3e-ch4-p308" block_type="cr-x-nl-txt"><phrase block_type="question_num">4.16</phrase> Most psychological variables are considered to be &#95;&#95;&#95;&#95;.</p>
+<p id="corty3e-ch4-p309" block_type="cr-x-nl-txt"><phrase block_type="question_num">4.17</phrase> <link href="corty3e_app1_1.html#corty3e-app1-fig-1">Appendix Table 1</link> slices the normal distribution into segments that are &#95;&#95;&#95;&#95; <em>z</em> score units wide.</p>
+<p id="corty3e-ch4-p310" block_type="cr-x-nl-txt"><phrase block_type="question_num">4.18</phrase> The area that falls above a positive <em>z</em> score is the same as the area that falls &#95;&#95;&#95;&#95; a negative <em>z</em> score.</p>
+<p id="corty3e-ch4-p311" block_type="cr-x-nl-txt"><phrase block_type="question_num">4.19</phrase> The area that falls from the mean to a positive <em>z</em> score is &#95;&#95;&#95;&#95; as the area from the mean to the same value as a negative <em>z</em> score.</p>
+<p id="corty3e-ch4-p312" block_type="cr-x-nl-txt"><phrase block_type="question_num">4.20</phrase> The area that falls from the mean to a negative <em>z</em> score can&#8217;t exceed &#95;&#95;&#95;&#95;&#37;.</p>
+<p id="corty3e-ch4-p313" block_type="cr-x-nl-txt"><phrase block_type="question_num">4.21</phrase> The area that falls below a negative <em>z</em> score will always be &#95;&#95;&#95;&#95; 50&#37;.</p>
+<p id="corty3e-ch4-p314" block_type="cr-x-nl-txt"><phrase block_type="question_num">4.22</phrase> One can use the <em>z</em> score table in reverse, to find a &#95;&#95;&#95;&#95; when given a percentile rank.</p>
+<p id="corty3e-ch4-p315" block_type="cr-x-nl-txt"><phrase block_type="question_num">4.23</phrase> A percentile rank tells the percentage of cases whose scores are &#95;&#95;&#95;&#95; a given level.</p>
+<p id="corty3e-ch4-p316" block_type="cr-x-nl-txt"><phrase block_type="question_num">4.24</phrase> In a normal distribution, the percentile rank at the &#95;&#95;&#95;&#95; is 50.</p>
+<p id="corty3e-ch4-p317" block_type="cr-x-nl-txt"><phrase block_type="question_num">4.25</phrase> Statistical conclusions involve &#95;&#95;&#95;&#95;.</p>
+<p id="corty3e-ch4-p318" block_type="cr-x-nl-txt"><phrase block_type="question_num">4.26</phrase> &#95;&#95;&#95;&#95; concerns how likely an outcome is to occur.</p>
+<p id="corty3e-ch4-p319" block_type="cr-x-nl-txt"><phrase block_type="question_num">4.27</phrase> Probability is defined as the number of ways a specific outcome can occur divided by &#95;&#95;&#95;&#95;.</p>
+<p id="corty3e-ch4-p320" block_type="cr-x-nl-txt"><phrase block_type="question_num">4.28</phrase> If two outcomes are &#95;&#95;&#95;&#95;, then only one outcome can occur at a time.</p>
+<p id="corty3e-ch4-p321" block_type="cr-x-nl-txt"><phrase block_type="question_num">4.29</phrase> Probability can be reported as a &#95;&#95;&#95;&#95;, a &#95;&#95;&#95;&#95;, or a &#95;&#95;&#95;&#95;.</p>
+<p id="corty3e-ch4-p322" block_type="cr-x-nl-txt"><phrase block_type="question_num">4.30</phrase> If two outcomes are &#95;&#95;&#95;&#95;, then what the first outcome is has no impact on what the second outcome is.</p>
+<p id="corty3e-ch4-p323" block_type="cr-x-nl-txt"><phrase block_type="question_num">4.31</phrase> The highest possible probability for an outcome is &#95;&#95;&#95;&#95; and the lowest possible probability is &#95;&#95;&#95;&#95;.</p>
+<p id="corty3e-ch4-p324" block_type="cr-x-nl-txt"><phrase block_type="question_num">4.32</phrase> If 45&#37; of the scores fall in a certain section of the normal distribution, then <em>p</em> &#61; &#95;&#95;&#95;&#95;&#95;that a case selected at random from the population would have a score that falls in that section.</p>
+<p id="corty3e-ch4-p325" block_type="cr-x-nl-txt"><phrase block_type="question_num">4.33</phrase> Statisticians usually think of something that has a probability of &#95;&#95;&#95;&#95;&#95;as rare and something with a probability of .95 as&#95;&#95;&#95;&#95;&#95;&#95;&#95;&#95;.</p>
+<p id="corty3e-ch4-p326" block_type="cr-x-nl-txt"><phrase block_type="question_num">4.34</phrase> The middle 16&#37; of scores in a normal distribution consist of &#95;&#95;&#95;&#95;&#37; just above the mean and &#95;&#95;&#95;&#95;&#37; just below the mean.</p>
+<p id="corty3e-ch4-p327" block_type="cr-x-nl-txt"><phrase block_type="question_num">4.35</phrase> The extreme 6&#37; of scores in a normal distribution consist of &#95;&#95;&#95;&#95;&#37; in each tail of the distribution.</p>
+<p id="corty3e-ch4-p328" block_type="cr-x-nl-txt"><phrase block_type="question_num">4.36</phrase> &#95;&#95;&#95;&#95; is a very important number in statistics.</p>
+<p id="corty3e-ch4-p329" block_type="cr-x-hd1-rule"><strong>Apply Your Knowledge</strong></p>
+<p id="corty3e-ch4-p330" block_type="cr-x-txt-ni"><strong><em>Calculating standard scores</em></strong></p>
+<p id="corty3e-ch4-p331" block_type="cr-x-nl-txt"><phrase block_type="question_num">4.37</phrase> If <em>M</em> &#61; 7, <em>s</em> &#61; 2, and <em>X</em> &#61; 9.5, what is <em>z</em>?</p>
+<p id="corty3e-ch4-p332" block_type="cr-x-nl-txt"><phrase block_type="question_num">4.38</phrase> If <em>X</em> &#61; 17.34, <em>s</em> &#61; 5.45, and <em>M</em> &#61; 24.88, what is <em>z</em>?</p>
+<p id="corty3e-ch4-p333" block_type="cr-x-txt-ni"><strong><em>Calculating raw scores</em></strong></p>
+<p id="corty3e-ch4-p334" block_type="cr-x-nl-txt"><phrase block_type="question_num">4.39</phrase> If <em>z</em> &#61; 1.45, <em>s</em> &#61; 3.33, and <em>M</em> &#61; 12.75, what is <em>X</em>?</p>
+<p id="corty3e-ch4-p335" block_type="cr-x-nl-txt"><phrase block_type="question_num">4.40</phrase> If <em>s</em> &#61; 25, <em>M</em> &#61; 150, and <em>z</em> &#61; &#8211;0.75, what is <em>X</em>?</p>
+<p id="corty3e-ch4-p336" block_type="cr-x-txt-ni"><strong><em>Calculating</em> z <em>scores</em></strong></p>
+<p id="corty3e-ch4-p337" block_type="cr-x-nl-txt"><phrase block_type="question_num">4.41</phrase> If John&#8217;s score on an IQ test is 73, what is his score as a <em>z</em> score? (For this and subsequent IQ questions, use a mean of 100 and a standard deviation of 15.)</p>
+<p id="corty3e-ch4-p338" block_type="cr-x-nl-txt"><phrase block_type="question_num">4.42</phrase> If Ebony&#8217;s score on an IQ test is 113, what is her score as a <em>z</em> score?</p>
+<p id="corty3e-ch4-p339" block_type="cr-x-txt-ni"><strong><em>Calculating raw scores</em></strong></p>
+<p id="corty3e-ch4-p340" block_type="cr-x-nl-txt"><phrase block_type="question_num">4.43</phrase> Chantelle&#8217;s score on an IQ test, expressed as a <em>z</em> score, is 0. What was her score?</p>
+<p id="corty3e-ch4-p341" block_type="cr-x-nl-txt"><phrase block_type="question_num">4.44</phrase> Sven&#8217;s score on an IQ test, expressed as a <em>z</em> score, is&#8211;.38. What was his score?</p>
+<p id="corty3e-ch4-p342" block_type="cr-x-txt-ni"><strong><em>Comparing scores</em></strong></p>
+<p id="corty3e-ch4-p343" block_type="cr-x-nl-txt"><phrase block_type="question_num">4.45</phrase> Hillary&#8217;s score on the math subtest of the SAT was 620. On a spelling test (<em>M</em> &#61; 60, <em>s</em> &#61; 15), she got a 72. Is she better at math or spelling? (On subtests of the SAT, the mean is 500 and the standard deviation is 100.)</p>
+<p id="corty3e-ch4-p344" block_type="cr-x-nl-txt"><phrase block_type="question_num">4.46</phrase> Jong-Il was feeling depressed and anxious. His therapist gave him a depression test (<em>M</em> =10, <em>s</em> &#61; 3, higher scores mean more depression) and an anxiety inventory (<em>M</em> &#61; 80, <em>s</em> &#61; 25, higher scores mean more anxiety). His score was a 15 on the depression test and a 110 on the anxiety inventory. Is Jong-Il more depressed than anxious, or more anxious than depressed?</p>
+<p id="corty3e_page_140" block_type="page_start">140</p>
+<p id="corty3e-ch4-p345" block_type="cr-x-txt-ni"><strong><em>Finding the area above, below, or to a z score</em></strong></p>
+<p id="corty3e-ch4-p346" block_type="cr-x-nl-txt"><phrase block_type="question_num">4.47</phrase> What percentage of scores in a normal distribution fall at or above a <em>z</em> score of 1.34?</p>
+<p id="corty3e-ch4-p347" block_type="cr-x-nl-txt"><phrase block_type="question_num">4.48</phrase> What percentage of cases in a normal distribution fall at or below a <em>z</em> score of 2.34?</p>
+<p id="corty3e-ch4-p348" block_type="cr-x-nl-txt"><phrase block_type="question_num">4.49</phrase> What percentage of cases in a normal distribution fall at or above a <em>z</em> score of &#8211;0.85?</p>
+<p id="corty3e-ch4-p349" block_type="cr-x-nl-txt"><phrase block_type="question_num">4.50</phrase> What percentage of scores in a normal distribution fall at or below a <em>z</em> score of &#8211;2.57?</p>
+<p id="corty3e-ch4-p350" block_type="cr-x-nl-txt"><phrase block_type="question_num">4.51</phrase> What percentage of scores in a normal distribution fall from the mean to a <em>z</em> score of &#8211;1.96?</p>
+<p id="corty3e-ch4-p351" block_type="cr-x-nl-txt"><phrase block_type="question_num">4.52</phrase> What percentage of cases in a normal distribution fall from the mean to a <em>z</em> score of 2.58?</p>
+<p id="corty3e-ch4-p352" block_type="cr-x-nl-txt"><phrase block_type="question_num">4.53</phrase> The mean diastolic blood pressure in the United States is 77, with a standard deviation of 11. If diastolic blood pressure is normally distributed and a diastolic blood pressure of 90 or higher is considered high blood pressure, what percentage of Americans have high diastolic blood pressure?</p>
+<p id="corty3e-ch4-p353" block_type="cr-x-nl-txt"><phrase block_type="question_num">4.54</phrase> The average American male is 5&#8242; 9&#8243;. The standard deviation for height is 3&#8243;. If a basketball coach only wants to have American men on his team who are at least 6&#8242; 6&#8243;, what percentage of the U.S. male population is eligible for recruitment?</p>
+<p id="corty3e-ch4-p354" block_type="cr-x-txt-ni"><strong><em>Solving for percentile rank</em></strong></p>
+<p id="corty3e-ch4-p355" block_type="cr-x-nl-txt"><phrase block_type="question_num">4.55</phrase> If <em>z</em> &#61; &#8211;2.12, what is the score as a percentile rank?</p>
+<p id="corty3e-ch4-p356" block_type="cr-x-nl-txt"><phrase block_type="question_num">4.56</phrase> What is the percentile rank for a <em>z</em> score of 1.57?</p>
+<p id="corty3e-ch4-p357" block_type="cr-x-nl-txt"><phrase block_type="question_num">4.57</phrase> If Gabrielle&#8217;s score on an IQ test is 113, what is her score as a percentile rank?</p>
+<p id="corty3e-ch4-p358" block_type="cr-x-nl-txt"><phrase block_type="question_num">4.58</phrase> Werner&#8217;s score on an SAT subtest was 480. What is his score as a percentile rank?</p>
+<p id="corty3e-ch4-p359" block_type="cr-x-txt-ni"><strong><em>Moving from percentile rank to raw score</em></strong></p>
+<p id="corty3e-ch4-p360" block_type="cr-x-nl-txt"><phrase block_type="question_num">4.59</phrase> Justin&#8217;s score as a percentile rank on an SAT subtest was 88.5. What is his score on the SAT subtest?</p>
+<p id="corty3e-ch4-p361" block_type="cr-x-nl-txt"><phrase block_type="question_num">4.60</phrase> Assume systolic blood pressure is normally distributed, with a mean of 124 and a standard deviation of 16. Sarita&#8217;s systolic blood pressure, as a percentile rank, is 20. What is her systolic blood pressure?</p>
+<p id="corty3e-ch4-p362" block_type="cr-x-txt-ni"><strong><em>Calculating probabilities</em></strong></p>
+<p id="corty3e-ch4-p363" block_type="cr-x-nl-txt"><phrase block_type="question_num">4.61</phrase> If there are 28 students in a classroom and 18 of them are boys, what is the probability&#8212;if a student is picked at random&#8212;of selecting a boy?</p>
+<p id="corty3e-ch4-p364" block_type="cr-x-nl-txt"><phrase block_type="question_num">4.62</phrase> Paolo, a kindergarten student was given a pack of colored construction paper with 10 pages each of red, orange, yellow, green, blue, indigo, violet, black, and white. His favorite color is green. What is the probability, if he selects a page at random, of picking a green one?</p>
+<p id="corty3e-ch4-p365" block_type="cr-x-txt-ni"><strong><em>Finding standard scores for middle and extreme sections of the normal curve</em></strong></p>
+<p id="corty3e-ch4-p366" block_type="cr-x-nl-txt"><phrase block_type="question_num">4.63</phrase> What are the <em>z</em> scores associated with the middle 10&#37; of scores?</p>
+<p id="corty3e-ch4-p367" block_type="cr-x-nl-txt"><phrase block_type="question_num">4.64</phrase> What are the <em>z</em> scores associated with the middle 54&#37; of scores?</p>
+<p id="corty3e-ch4-p368" block_type="cr-x-nl-txt"><phrase block_type="question_num">4.65</phrase> What are the IQ scores associated with the middle 84&#37; of scores?</p>
+<p id="corty3e-ch4-p369" block_type="cr-x-nl-txt"><phrase block_type="question_num">4.66</phrase> What are the IQ scores associated with the middle 61&#37; of scores?</p>
+<p id="corty3e-ch4-p370" block_type="cr-x-nl-txt"><phrase block_type="question_num">4.67</phrase> What are the <em>z</em> scores associated with the extreme 4&#37; of scores?</p>
+<p id="corty3e-ch4-p371" block_type="cr-x-nl-txt"><phrase block_type="question_num">4.68</phrase> What are the <em>z</em> scores associated with the extreme 18&#37; of scores?</p>
+<p id="corty3e-ch4-p372" block_type="cr-x-nl-txt"><phrase block_type="question_num">4.69</phrase> What are the SAT subtest scores associated with the extreme 15&#37; of scores?</p>
+<p id="corty3e-ch4-p373" block_type="cr-x-nl-txt"><phrase block_type="question_num">4.70</phrase> What are the SAT subtest scores associated with the extreme 8&#37; of scores?</p>
+<p id="corty3e-ch4-p374" block_type="cr-x-txt-ni"><strong><em>Finding probabilities</em></strong></p>
+<p id="corty3e-ch4-p375" block_type="cr-x-nl-txt"><phrase block_type="question_num">4.71</phrase> What is the probability, for a score picked at random from a normal distribution, that it falls at or above 3 standard deviations above the mean.</p>
+<p id="corty3e_page_141" block_type="page_start">141</p>
+<p id="corty3e-ch4-p376" block_type="cr-x-nl-txt"><phrase block_type="question_num">4.72</phrase> What is the probability, for a score picked at random from a normal distribution, that it falls at or below 2.7 standard deviations below the mean.</p>
+<p id="corty3e-ch4-p377" block_type="cr-x-nl-txt"><phrase block_type="question_num">4.73</phrase> What is the probability, for a score picked at random from a normal distribution, that it falls within .38 standard deviations of the mean.</p>
+<p id="corty3e-ch4-p378" block_type="cr-x-nl-txt"><phrase block_type="question_num">4.74</phrase> What is the probability, for a score picked at random from a normal distribution, that it falls within 2.1 standard deviations of the mean?</p>
+<p id="corty3e-ch4-p379" block_type="cr-x-nl-txt"><phrase block_type="question_num">4.75</phrase> What is the probability, for a score picked at random from a normal distribution, that it does not fall within half a standard deviation of the mean?</p>
+<p id="corty3e-ch4-p380" block_type="cr-x-nl-txt"><phrase block_type="question_num">4.76</phrase> What is the probability, for a score picked at random from a normal distribution, that it falls at least 4 standard deviations away from the mean?</p>
+<p id="corty3e-ch4-p381" block_type="cr-x-txt-ni"><strong><em>Defining common and rare</em></strong></p>
+<p id="corty3e-ch4-p382" block_type="cr-x-nl-txt"><phrase block_type="question_num">4.77</phrase> A researcher decides to call something rare if it should happen no more than 10&#37; of the time. What <em>z</em> scores should she use as cut-off scores?</p>
+<p id="corty3e-ch4-p383" block_type="cr-x-nl-txt"><phrase block_type="question_num">4.78</phrase> Another researcher decides to call something rare if it should happen no more than 1&#37; of the time. What <em>z</em> scores should he use as cut-off scores?</p>
+<p id="corty3e-ch4-p384" block_type="cr-x-nl-txt"><phrase block_type="question_num">4.79</phrase> Dr. Noyes wants his rare zone to cover an area with a probability of .05. He would like this whole area to be on the positive side of the normal curve. What <em>z</em> score will be the cut-off for this area?</p>
+<p id="corty3e-ch4-p385" block_type="cr-x-nl-txt"><phrase block_type="question_num">4.80</phrase> Dr. Hicks will call something rare if it happens less than or equal to 3&#37; of the time and is greater than the mean. Expressed as a <em>z</em> score, what is the cut-off score?</p>
+<p id="corty3e-ch4-p386" block_type="cr-x-hd1"><strong>Expand Your Knowledge</strong></p>
+<p id="corty3e-ch4-p387" block_type="cr-x-nl-txt"><phrase block_type="question_num">4.81</phrase> What is the standard deviation of a set of <em>z</em> scores?</p>
+<p id="corty3e-ch4-p388" block_type="cr-x-nl-txt"><phrase block_type="question_num">4.82</phrase> Answer this without consulting <link href="corty3e_app1_1.html#corty3e-app1-fig-1">Appendix Table 1</link>. In a normal distribution, does a higher percentage of scores fall between <em>z</em> scores of 1.1 and 1.2, or between <em>z</em> scores of 2.1 and 2.2?</p>
+<list id="corty3e-ch4-list-17" type="ordered" block_type="loweralpha">
+<li><p id="corty3e-ch4-p389" block_type="cr-x-nl-alpha-lc">1.1 and 1.2</p></li>
+<li><p id="corty3e-ch4-p390" block_type="cr-x-nl-alpha-lc">2.1 and 2.2</p></li>
+<li><p id="corty3e-ch4-p391" block_type="cr-x-nl-alpha-lc">The percentages are the same.</p></li>
+<li><p id="corty3e-ch4-p392" block_type="cr-x-nl-alpha-lc">This can&#8217;t be answered without consulting <link href="corty3e_app1_1.html#corty3e-app1-fig-1">Appendix Table 1</link>.</p></li>
+</list>
+<p id="corty3e-ch4-p393" block_type="cr-x-nl-txt"><phrase block_type="question_num">4.83</phrase> A researcher obtained a set of scores and has made a frequency polygon for the distribution. The distribution is symmetric, has the highest percentage of scores occurring at the midpoint, and the frequency of scores decreases as it moves away from the midpoint. The distribution is which of the following?</p>
+<list id="corty3e-ch4-list-18" type="ordered" block_type="loweralpha">
+<li><p id="corty3e-ch4-p394" block_type="cr-x-nl-alpha-lc">Normally distributed</p></li>
+<li><p id="corty3e-ch4-p395" block_type="cr-x-nl-alpha-lc">Not normally distributed</p></li>
+<li><p id="corty3e-ch4-p396" block_type="cr-x-nl-alpha-lc">May be normally distributed</p></li>
+<li><p id="corty3e-ch4-p397" block_type="cr-x-nl-alpha-lc">Not enough information to tell</p></li>
+</list>
+<p id="corty3e-ch4-p398" block_type="cr-x-nl-txt"><phrase block_type="question_num">4.84</phrase> Marilyn vos Savant claims that her IQ was once measured at 228 and that she is the smartest person in the world. (vos Savant is a real person and writes a weekly column for <em>Parade</em> magazine.) Let&#8217;s assume that she took a standard IQ test. How credible is her claim that her IQ is 228?</p>
+<p id="corty3e-ch4-p399" block_type="cr-x-nl-txt"><phrase block_type="question_num">4.85</phrase> A researcher has a sample of five cases. She has used the sample mean and sample standard deviation to calculate <em>z</em> scores. Four of the <em>z</em> scores are 0.50, 1.00, 1.50, and 2.00. What is the missing <em>z</em> score?</p>
+<p id="corty3e-ch4-p400" block_type="cr-x-nl-txt"><phrase block_type="question_num">4.86</phrase> A researcher wants to study people who are very jealous. She believes that jealousy is normally distributed. She uses a jealousy scale that has a mean of 75 and a standard deviation of 25. She administers the jealousy scale as a screening device to a large group of people. For her study, she will only select people with scores of 125 or higher. How many people will she need to screen in order to end up with 50 people in her sample?</p>
+<p id="corty3e-ch4-p401" block_type="cr-x-nl-txt"><phrase block_type="question_num">4.87</phrase> Assume that there is an animal intelligence test. A psychologist administers it to a representative sample of cats and a representative sample of dogs. Both species turn out to be, on average, equally smart. (That is, <em>M</em><sub>Dogs</sub> &#61; <em>M</em><sub>Cats</sub>.) But, more variability occurred in the IQs of dogs than cats. (That is, <em>s</em><sub>Dogs</sub> > <em>s</em><sub>Cats</sub>.) If we consider animals with IQs above 110 to be &#8220;geniuses,&#8221; will there be more genius cats or more genius dogs?</p>
+<p id="corty3e_page_142" block_type="page_start">142</p>
+<p id="corty3e-ch4-p402" block_type="cr-x-nl-txt"><phrase block_type="question_num">4.88</phrase> If a person is selected at random, what is the probability that he is in the top 7&#37; of the world in terms of height?</p>
+<p id="corty3e-ch4-p403" block_type="cr-x-nl-txt"><phrase block_type="question_num">4.89</phrase> A scale to measure perseverance has been developed. Perseverance is normally distributed and scores on the measure range from 15 to 45. It is very, very rare that anyone scores lower than 15 or higher than 45. What are the scale&#8217;s mean and standard deviation?</p>
+<p id="corty3e-ch4-p404" block_type="cr-x-nl-txt"><phrase block_type="question_num">4.90</phrase> What percentage of cases in the normal distribution have <em>z</em> scores in the range from 1.25 through 1.75?</p>
+<box title="SPSS" numbered="false" id="corty3e-ch4-bx3-5" block_type="bx3-h">
+<p id="corty3e-ch4-p405" block_type="bx3-txt-ni">SPSS doesn&#8217;t do a lot with <em>z</em> scores or percentile ranks. It does, however, offer a way of converting raw scores to <em>z</em> scores and saving them in the data file so that they can be used in other analyses. To do so, go to the menu under &#8220;Analyze,&#8221; then &#8220;Descriptive Statistics,&#8221; and finally &#8220;Descriptives&#8221; as seen in <link href="#corty3e-ch4-fig-41"><strong>Figure 4.26</strong></link>.</p>
+<figure id="corty3e-ch4-fig-41" block_type="figure" numbered="true" number="4.26" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="medium" border="true"/>
+<image asset-id="corty3e-ch4-img-47" alt="image" src="asset/ch4/corty3e_fig04_26.jpg"/>
+<caption><strong><phrase block_type="fig_num">Figure 4.26</phrase> Commands for Saving z Scores in SPSS</strong> The &#8220;Descriptives&#8221; command can be found under &#8220;Analyze&#8221; and then &#8220;Descriptive Statistics.&#8221; (Source: SPSS)</caption>
+</figure>
+<p id="corty3e-ch4-p406" block_type="bx3-txt">Clicking on Descriptives opens up the menu seen in <link href="#corty3e-ch4-fig-42"><strong>Figure 4.27</strong></link>. Notice that the variable &#8220;height&#8221; has already been moved to the &#8220;Variable(s)&#8221; box and that the box for &#8220;Save standardized values as variables&#8221; has been checked. Clicking &#8220;OK&#8221; starts the analysis.</p>
+<figure id="corty3e-ch4-fig-42" block_type="figure" numbered="true" number="4.27" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="medium" border="true"/>
+<image asset-id="corty3e-ch4-img-48" alt="image" src="asset/ch4/corty3e_fig04_27.jpg"/>
+<caption><strong><phrase block_type="fig_num">Figure 4.27</phrase> Menu for the &#8220;Descriptives&#8221; Command</strong> Clicking on &#8220;Descriptives&#8221; in <link href="#corty3e-ch4-fig-41">Figure 4.26</link> opens up this menu. Note that the variable for which the <em>z</em> scores, or &#8220;standardized values&#8221; as SPSS calls them here, are to be calculated has been moved to the &#8220;Variable(s)&#8221; box. And, importantly, the box has been checked to &#8220;Save standardized values as variables.&#8221; (Source: SPSS)</caption>
+</figure>
+<p id="corty3e_page_143" block_type="page_start">143</p>
+<p id="corty3e-ch4-p407" block_type="bx3-txt">Look at <link href="#corty3e-ch4-fig-43"><strong>Figure 4.28</strong></link>, which shows the data editor for the demographer&#8217;s sample of five Americans. Notice that there are two variables listed: height and Zheight. Zheight is the name assigned to the <em>z</em> score for height by SPSS. The <em>z</em> scores that SPSS calculates carry more decimal places throughout the calculations, but they match up well to the ones found for these data earlier in this chapter.</p>
+<figure id="corty3e-ch4-fig-43" block_type="figure" numbered="true" number="4.28" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="medium" border="true"/>
+<image asset-id="corty3e-ch4-img-49" alt="image" src="asset/ch4/corty3e_fig04_28.jpg"/>
+<caption><strong><phrase block_type="fig_num">Figure 4.28</phrase> SPSS Output for z scores for Heights of Five Americans</strong> Compare the number of variables in this data file to the number seen in the upper left of <link href="#corty3e-ch4-fig-42">Figure 4.27</link>. The z scores for height have been given the name Zheight and added to the data set. (Source: SPSS)</caption>
+</figure>
+</box>
+</section>
+</chapter>

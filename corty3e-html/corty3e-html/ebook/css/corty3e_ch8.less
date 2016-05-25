@@ -1,0 +1,125 @@
+/* Chapter 8 CSS */
+
+// borrowed from book-level CSS
+@corty-blue: #168ca8;
+@box-bg-blue: #e0e8ef;
+
+// margin adjustments
+
+
+/* Figures */
+// noUi not showing up in HTML ???
+//body.noUi {
+    // opening figure
+    div#corty3e-ch8-fig-1 {
+        position: absolute;
+        left: 484px;
+        top: 237px;
+        float: none;
+        width: 250px !important;
+        img {
+            max-width: 250px;
+        }
+    }
+//}
+body#supp_win {
+    div#corty3e-ch8-fig-1 {
+        position: static;
+        left: 0;
+        top: 0;
+        width: 800px !important;
+        img {
+            max-width: 800px;
+        }
+    }
+}
+
+/* Tables */
+body.noUi {
+}
+
+/* Lists */
+
+/* Equations */
+
+// equation box line adjustments
+
+// equation alignment
+
+// block equation move/resize
+
+// inline equation sizing
+    
+// page numbers caught in relative parent
+
+// other
+
+// intro chapter number
+
+/* inline math image adjustments */
+// note that the default for the images marjed as math inline (ineqn) is 2em, which works
+// for those fractions with denomominator and numerator, making them double high
+// the changes below are for single-high math (symbols, etc., but not fractions)
+// special note for this chapter: some inline math has subscripts. The height has been adjusted to make them fit.
+// some of the rules below apply to several images
+img[src*="corty3e_ineqn08_270"],
+img[src*="corty3e_ineqn08_271"],
+img[src*="corty3e_ineqn08_272"],
+img[src*="corty3e_ineqn08_278"],
+img[src*="corty3e_ineqn08_281"],
+img[src*="corty3e_ineqn08_282"],
+img[src*="corty3e_ineqn08_287"],
+img[src*="corty3e_ineqn08_289"] {
+    height: 1.5em;
+    vertical-align: text-top;
+}
+
+// Page Numbers overlapping text
+div#corty3e_page_266 {
+    margin-top: -8em;
+}
+div#corty3e_page_269 {
+    margin-top: -6px;
+}
+div#corty3e_page_270 {
+    margin-top: -2em;
+}
+div#corty3e_page_271 {
+    margin-top: -2em;
+}
+div#corty3e_page_272 {
+    margin-top: -2em;
+}
+div#corty3e_page_273 {
+    margin-top: -2em;
+}
+div#corty3e_page_274 {
+    margin-top: -7.5em;
+}
+div#corty3e_page_275 {
+    margin-top: -1.5em;
+}
+div#corty3e_page_282 {
+    margin-top: -2em;
+}
+div#corty3e_page_283 {
+    margin-top: -5.7em;
+}
+div#corty3e_page_285 {
+    margin-top: -2em;
+}
+div#corty3e_page_286 {
+    margin-top: -2em;
+}
+div#corty3e_page_287 {
+    margin-top: -2em;
+}
+div#corty3e_page_288 {
+    margin-top: -2em;
+}
+div#corty3e_page_290 {
+    margin-top: -2em;
+}
+div#corty3e_page_292 {
+    margin-top: -2em;
+}

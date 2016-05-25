@@ -1,0 +1,133 @@
+/* Chapter 10 CSS */
+
+// borrowed from book-level CSS
+@corty-blue: #168ca8;
+@box-bg-blue: #e0e8ef;
+
+div#corty3e-ch10-p1 {
+    margin-top: -5px;
+}
+
+// margin adjustments
+
+
+/* Figures */
+body.noUi {
+    div#corty3e-ch10-fig-10 {
+        margin-top: -38px;
+    }
+    div#corty3e-ch10-fig-29 img {
+        max-width: 200px !important;
+    }
+    div#corty3e-ch10-fig-45 img {
+        max-width: 200px !important;
+    }
+}
+
+/* Tables */
+body.noUi {
+    div#corty3e-ch10-table2,
+    div#corty3e-ch10-table4,
+    div#corty3e-ch10-table5,
+    div#corty3e-ch10-table14,
+    div#corty3e-ch10-table15 {
+        table {
+            tr:first-child {
+                background-color: @box-bg-blue;
+                td {
+                    color: @corty-blue;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+    
+    div#corty3e-ch10-table3,
+    div#corty3e-ch10-table8,
+    div#corty3e-ch10-table9,
+    div#corty3e-ch10-table10,
+    div#corty3e-ch10-table11,
+    div#corty3e-ch10-table12,
+    div#corty3e-ch10-table13 {
+        table {
+            tr:first-child {
+                background-color: @box-bg-blue;
+                td {
+                    color: @corty-blue;
+                    font-weight: bold;
+                }
+            }
+            tr > td:first-child {
+                text-align: left;
+                color: @corty-blue;
+                font-weight: bold;
+            }
+        }
+    }
+
+    div#corty3e-ch10-table6,
+    div#corty3e-ch10-table7 {
+        table {
+            width: 702px !important;
+            tr:first-child {
+                background-color: @box-bg-blue;
+                td {
+                    color: @corty-blue;
+                    font-weight: bold;
+                }
+            }
+            tr > td:first-child {
+                color: @corty-blue;
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+/* Lists */
+ol#corty3e-ch10-list-28 {
+    font-weight: normal;
+}
+
+/* Equations */
+
+// equation box line adjustments
+
+// equation alignment
+
+// block equation move/resize
+
+// inline equation sizing
+    
+// page numbers caught in relative parent
+
+// other
+
+/* equation feature box -- needs more room for equation number to left */
+[data-block_type="eq-t"] {
+    [data-type="title"] {
+        padding-left: 8em;
+    }
+}
+
+// question numbers get wider at 100, need more space, PDF does this, too
+// questions
+[data-block_type="cr-x-nl-txt"] {
+    position: relative;
+    p {
+        margin-left: 4em !important;
+    }
+}
+
+
+// "join" two gray boxes
+div#corty3e-ch10-p292 {
+    margin-bottom: 0;
+}
+div#corty3e-ch10-p293 {
+    margin-top: 0;
+}
+
+
+
+// intro chapter number

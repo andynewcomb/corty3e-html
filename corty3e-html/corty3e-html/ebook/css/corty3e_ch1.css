@@ -1,0 +1,43 @@
+/* Chapter 1 CSS */
+/* intro adjustments */
+div#corty3e-ch1-ibx-1 {
+  padding-bottom: 3em;
+}
+body.noUi div#corty3e-ch1-exp1-4 {
+  margin-top: -77px;
+}
+body.noUi div#corty3e-ch1-fig-12 img {
+  max-width: 121px;
+}
+body.noUi div#corty3e-ch1-fig-13 {
+  width: 125px !important;
+}
+body.noUi div#corty3e-ch1-fig-13 img {
+  max-width: 80px !important;
+}
+body.noUi div#corty3e-ch1-fig-14 {
+  margin-top: -23px;
+}
+div#corty3e_page_15,
+div#corty3e_page_16,
+div#corty3e_page_21,
+div#corty3e_page_22,
+div#corty3e_page_28,
+div#corty3e_page_30 {
+  position: absolute;
+  left: -60px;
+}
+div#digfir_section_2,
+div#digfir_section_4 {
+  clear: none;
+}
+div#corty3e-ch1-p329 img {
+  height: 30px;
+}
+/* inline math image adjustments */
+img[src*="corty3e_ineqn01_24_01"],
+img[src*="corty3e_ineqn01_24_02"] {
+  height: 1em;
+  vertical-align: text-top;
+}
+/*# sourceMappingURL=corty3e_ch1.css.map */

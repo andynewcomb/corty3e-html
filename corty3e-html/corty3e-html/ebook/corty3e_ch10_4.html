@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]> <html lang="en" class="no-js ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="no-js ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="no-js ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en" class="no-js ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+<head>
+    <title>corty3e_ch10</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <link href="css/boilerplate.css" media="screen" rel="stylesheet" type="text/css" >
+<link href="css/jquery-ui-custom.css" media="screen" rel="stylesheet" type="text/css" >
+<link href="css/manuscript.css" media="screen" rel="stylesheet" type="text/css" >
+<link href="css/digfir_ebook_fw.css" media="screen" rel="stylesheet" type="text/css" >
+<link href="css/corty3e.css" media="screen" rel="stylesheet" type="text/css" >
+<link href="css/corty3e_ch10.css" media="screen" rel="stylesheet" type="text/css" >    
+    
+    </head>
+<body class="noUi">
+<div id="manuscript" data-chapter-number="10">
+    <div data-type="section" data-block_type="h1" id="corty3e-ch10-sec1-3" level="1" data-print_page="355">
+<h2 class="section-title"><span data-type="title" data-title-for="corty3e-ch10-sec1-3"><span data-block_type="sec_num">10.3</span> <span data-block_type="sec_title">Interpreting Between-Subjects, One-Way ANOVA</span>
+</span></h2>
+
+<div data-block_type="txt-ni" id="corty3e-ch10-p234"><p>The interpretation of a between-subjects, one-way ANOVA starts the same way it did for <em>t</em> tests, addressing questions of whether the null hypothesis was rejected and how big the effect is. After that, the interpretation answers a different question, where the effect is found.</p></div>
+<div data-block_type="txt" id="corty3e-ch10-p235"><p>Why is there a need to worry about where the effect is? This question didn’t have to be addressed for a <em>t</em> test because in a <em>t</em> test just two groups exist. If the results of a <em>t</em> test were statistically significant, it was clear that the mean of Group 1 was different from the mean of Group 2. However, there can be more than two groups in an ANOVA. If the results of the ANOVA are statistically significant, then all that is known is that the mean of at least one group is different from at least one other group. If there are three groups, the mean of Group 1 could differ from the mean of Group 2, the mean of Group 1 could differ from the mean of Group 3, or the mean of Group 2 could differ from the mean of Group 3. It is also possible that two of the mean of the three pairs could differ or that all three pairs could differ. This is why it’s important to address the question of where the effect is when interpreting a statistically significant ANOVA.</p></div>
+</div>
+    <div data-type="section" data-block_type="h2" id="corty3e-ch10-sec2-5" level="2" data-print_page="356">
+<h2 class="section-title"><span data-type="title" data-title-for="corty3e-ch10-sec2-5">Was the Null Hypothesis Rejected?
+</span></h2>
+
+<div data-block_type="page_start" id="corty3e_page_356"><p>356</p></div>
+<div data-block_type="txt-ni" id="corty3e-ch10-p236"><p>Dr. Chung’s maze study compared rats that expected to find different foods in the goal box of a maze. Ten rats were assigned to three groups—one that expected to find low-calorie food in the goal box, one that expected medium-calorie food, and one that expected high-calorie food. The rats expecting low-calorie food took 31 seconds from start box to goal box, the rats expecting medium-calorie food took 28 seconds, and the rats expecting high-calorie food took 25 seconds. Dr. Chung had determined <em>F<sub>cv</sub></em> = 4.737 and formulated the decision rule:</p></div>
+<ul data-block_type="bullet" id="corty3e-ch10-list-19">
+<li><div data-block_type="bl-first" id="corty3e-ch10-p237"><p>If <em>F</em> ≥ 4.737, reject the null hypothesis.</p></div>
+</li>
+<li><div data-block_type="bl-last" id="corty3e-ch10-p238"><p>If <em>F</em> &lt; 4.737, fail to reject the null hypothesis.</p></div>
+</li>
+</ul>
+<div data-block_type="txt" id="corty3e-ch10-p239"><p>As shown in the ANOVA summary table, <span data-type="link" data-href="#corty3e-ch10-fig-38">Table 10.8</span>, <em>F</em> = 31.40 for the maze data. Applying the decision rule, it is clear that 31.40 is greater than or equal to 4.737, and <span data-type="link" data-href="#corty3e-ch10-fig-47"><strong>Figure 10.12</strong></span> shows how the observed value of <em>F</em> falls in the rare zone. This means that the null hypothesis is rejected and the alternative hypothesis accepted. This leads to the conclusion that at least one of the three groups—rats expecting low-calorie food, rats expecting medium-calorie food, or rats expecting high-calorie food—differs from at least one of the others in terms of the mean time it takes to get to the food. It is not yet clear where the difference lies, so the best interpretation Dr. Chung can make at present is: “The results of the between-subjects, one-way ANOVA were statistically significant [<em>F</em>(2, 7) = 31.40, <em>p</em> &lt; .05], indicating that there is a statistically significant difference in the time it takes to get from the start box to the goal box depending on the calorie content of the food a rat expects to find.”</p></div>
+<div data-type="figure" data-figure-id="corty3e-ch10-fig-47" data-block_type="figure" data-layout-align="center" data-layout-width="xlarge" data-layout-border="true">
+
+<img id="" src="asset/ch10/corty3e_fig10_12.jpg" data-figure-id="corty3e-ch10-fig-47" data-layout-width="xlarge" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+<div data-type="figure_text">
+<span data-type="number">Figure 10.23: </span><span data-type="caption"><strong><span data-block_type="fig_num">Figure 10.12</span> Determining Whether the Observed Value of the Test Statistic Falls in the Rare Zone or the Common Zone for the Maze Study</strong> The observed value of the test statistic, <em>F</em> = 31.40, falls in the rare zone, so the null hypothesis is rejected.</span>
+</div>
+</div>
+<div data-block_type="page_start" id="corty3e_page_357"><p>357</p></div>
+<div data-block_type="txt" id="corty3e-ch10-p240"><p>Dr. Chung used APA format in reporting the results of the analysis of variance. APA format provides five pieces of information:</p></div>
+<ol data-block_type="numbered" id="corty3e-ch10-list-20">
+<li><div data-block_type="nl-first" id="corty3e-ch10-p241"><p><em>F</em> indicates that an <em>F</em> test, an analysis of variance, was used.</p></div>
+</li>
+<li><div data-block_type="nl-mid" id="corty3e-ch10-p242"><p>The numbers in parentheses, 2 and 7, are the degrees of freedom for <em>SS</em><sub>Between</sub>, the numerator of the <em>F</em> ratio, and for <em>SS</em><sub>Within</sub>, the denominator of the <em>F</em> ratio. By adding these two numbers together and adding 1, it is possible to find the sample size:</p></div>
+<div data-block_type="eq" id="corty3e-ch10-p243"><p><em>N</em> = 2 + 7 + 1 = 10</p></div>
+</li>
+<li><div data-block_type="nl-mid" id="corty3e-ch10-p244"><p>31.40 is the observed (calculated) value of the test statistic.</p></div>
+</li>
+<li><div data-block_type="nl-mid" id="corty3e-ch10-p245"><p>.05 reveals that alpha was set at .05 and there is a 5% chance of making a Type I error.</p></div>
+</li>
+<li><div data-block_type="nl-last" id="corty3e-ch10-p246"><p><em>p</em> &lt; .05 indicates that the null hypothesis was rejected. It means that an <em>F</em> value of 31.40 is a rare occurrence (it happens less than 5% of the time) when the null hypothesis is true.</p></div>
+</li>
+</ol>
+</div>
+    <div data-type="section" data-block_type="h2" id="corty3e-ch10-sec2-6" level="2" data-print_page="357">
+<h2 class="section-title"><span data-type="title" data-title-for="corty3e-ch10-sec2-6">How Big Is the Effect?
+</span></h2>
+
+<div data-block_type="txt-ni" id="corty3e-ch10-p247"><p>The second question to be addressed in interpreting an ANOVA is how big the <em>overall</em> effect is. That is, how much impact does the independent variable have on the dependent variable? For the maze data, this involves asking how much impact the three different types of food (low-, medium-, and high-calorie) have on the time it takes to run the maze.</p></div>
+<div data-block_type="txt" id="corty3e-ch10-p248"><p>Once again, <em>r</em><sup>2</sup> will be used. <span data-type="link" data-href="#corty3e-ch10-bx6-8">Equation 10.8</span> shows how to calculate <em>r</em><sup>2</sup>, the percentage of variability in the outcome variable that is accounted for by group status.</p></div>
+<div data-type="box" data-block_type="eq-t" id="corty3e-ch10-bx6-8"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="corty3e-ch10-bx6-8"><span data-block_type="sec_num">Equation 10.8</span> <span data-block_type="sec_title">Formula for <em>r</em><sup>2</sup>, the Percentage of Variability in the Dependent Variable Accounted for by the Explanatory Variable</span>
+</h3>
+
+<div data-block_type="equation" id="corty3e-ch10-eqn-22"><p>
+<img id="" src="asset/ch10/corty3e_eqn10_357_01.jpg" data-figure-id="" data-layout-width="" data-mmtype="" alt="image"></p></div>
+<div data-block_type="eq-txt-ni" id="corty3e-ch10-p249"><p>where <em>r</em><sup>2</sup> = the percentage of variability in the dependent variable that is accounted for by the explanatory variable</p></div>
+<div data-block_type="eq-unl" id="corty3e-ch10-p250"><p><em>SS</em><sub>Between</sub> = between-groups sum of squares (<span data-type="link" data-href="#corty3e-ch10-bx6-3">Equation 10.3</span>)</p></div>
+<div data-block_type="eq-unl" id="corty3e-ch10-p251"><p><em>SS</em><sub>Total</sub> = total sum of squares (<span data-type="link" data-href="#corty3e-ch10-bx6-2">Equation 10.2</span>)</p></div>
+</div></div>
+<div data-block_type="txt" id="corty3e-ch10-p252"><p>This formula says that <em>r</em><sup>2</sup> is calculated as the between-groups sum of squares divided by the total sum of squares. Then, to turn it into a percentage, the ratio is multiplied by 100. These calculations reveal the percentage of total variability in the scores that is accounted for by the treatment effect. For the maze data, these calculations would lead to the conclusion that <em>r</em><sup>2</sup> = 90%:</p></div>
+<div data-block_type="equation" id="corty3e-ch10-eqn-23"><p>
+<img id="" src="asset/ch10/corty3e_eqn10_357_02.jpg" data-figure-id="" data-layout-width="" data-mmtype="" alt="image"></p></div>
+<div data-block_type="page_start" id="corty3e_page_358"><p>358</p></div>
+<div data-block_type="txt-ni" id="corty3e-ch10-p253"><p>By Cohen’s standards, an <em>r</em><sup>2</sup> of 90% is a huge effect. <span data-type="link" data-href="#corty3e-ch10-fig-50"><strong>Figure 10.13</strong></span> is a visual demonstration of how big an effect this is. Here is what Dr. Chung’s interpretation would look like for the maze data now that <em>r</em><sup>2</sup> is known:</p></div>
+<div data-type="figure" data-figure-id="corty3e-ch10-fig-50" data-block_type="figure" data-layout-align="center" data-layout-width="medium" data-layout-border="true">
+
+<img id="" src="asset/ch10/corty3e_fig10_13.jpg" data-figure-id="corty3e-ch10-fig-50" data-layout-width="medium" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+<div data-type="figure_text">
+<span data-type="number">Figure 10.24: </span><span data-type="caption"><strong><span data-block_type="fig_num">Figure 10.13</span> Percentage of Variability in Time to Run the Maze Scores That Is Accounted for by Type of Food in Goal Box</strong> 90% of the variability in time it takes for rats to run the maze is accounted for by the type of food they expect to find in the goal box. Only 10% of the variability remains, to be accounted for by other factors such as individual differences.</span>
+</div>
+</div>
+<div data-block_type="sr_exp_txt_v1_ni" id="corty3e-ch10-p254"><p>The results of the one-way ANOVA were statistically significant [<em>F</em>(2, 7) = 31.40, <em>p</em> &lt; .05], indicating that the time it takes a hungry rat to run a maze is affected by the type of food it expects to find in the goal box. When all the rats are of the same age and from the same strain, as they were here, then the calorie content of the food in the goal box has a very large effect on the speed with which the animal travels the maze. In fact, the type of food in the goal box explains 90% of the variability in running speed.</p></div>
+<div data-block_type="txt" id="corty3e-ch10-p255"><p>Here’s a heads up for future chapters and for reading results sections in psychology articles—there’s another measure of effect size for a between-subjects, one-way ANOVA that is calculated exactly the same way as <em>r</em><sup>2</sup>, but is called something different. It is called “eta squared” and abbreviated η<sup>2</sup>. It is calculated the same way as <em>r</em><sup>2</sup> and provides the same information, how much of the variability in the dependent variable is explained by the independent variable.</p></div>
+<div data-type="box" data-block_type="bx-1-h" id="corty3e-ch10-bx1-2"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="corty3e-ch10-bx1-2">A Common Question</h3>
+<div data-block_type="bx1-que" id="corty3e-ch10-p256"><p><strong>Q</strong> How is η pronounced?</p></div>
+<div data-block_type="bx1-ans" id="corty3e-ch10-p257"><p><strong>A</strong> η is the lowercase version of the Greek letter eta and there is no consensus on how it should be pronounced. I have heard “eat-uh,” “etta,” and “ey-tuh” as in “hey.” Whichever one you choose, just say it with confidence and you’ll be fine.</p></div>
+</div></div>
+</div>
+    <div data-type="section" data-block_type="h2" id="corty3e-ch10-sec2-7" level="2" data-print_page="358">
+<h2 class="section-title"><span data-type="title" data-title-for="corty3e-ch10-sec2-7">Where Is the Effect?
+</span></h2>
+
+<div data-block_type="txt-ni" id="corty3e-ch10-p258"><p>So far, Dr. Chung knows that the goal affects running time and how much variability is explained, but he doesn’t know where the effect occurs. Is the 3-second difference between the mean of low-calorie time and the mean of medium-calorie time a statistically significant one? Or, does it take the 6-second difference between low-calorie and high-calorie goals to be statistically significant?</p></div>
+<div data-block_type="page_start" id="corty3e_page_359"><p>359</p></div>
+<div data-type="box" data-block_type="mn1" id="corty3e-ch10-exp1-3"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="corty3e-ch10-exp1-3"></h3>
+<div data-block_type="mn-ext-ni" id="corty3e-ch10-p259"><p><em>Post-hoc tests are meant to be used only</em> after <em>a statistically significant</em> F <em>ratio has been found.</em></p></div>
+</div></div>
+<div data-block_type="txt" id="corty3e-ch10-p260"><p>The <em>F</em> ratio, which was statistically significant, reveals that at least one pair of means has a statistically significant difference, but it doesn’t tell which one or which ones. For that, a <em>post-hoc</em> test is needed. “Post-hoc” is Latin for “after this” and post-hoc tests are meant to be used only <em>after</em> a statistically significant <em>F</em> ratio has been found. Post-hoc tests are mathematically designed to allow multiple comparisons to be made while keeping alpha at the desired level.</p></div>
+<div data-block_type="txt" id="corty3e-ch10-p261"><p>There are a wide variety of post-hoc tests with cool names like the Scheffé, the Newman-Keuls, and the Bonferroni-Dunn. Post-hoc tests vary in terms of what type of error they are more likely to make, a Type I error or a Type II error. No post-hoc test can guarantee avoiding a mistake. Compared to each other, some post-hoc tests are more likely to say that there is a statistically significant difference between means that don’t differ (Type I error). Other post-hoc tests are more likely to find no statistically significant difference when a difference exists (Type II error).</p></div>
+<div data-block_type="txt" id="corty3e-ch10-p262"><p>The test taught here, the Tukey <em>HSD,</em> is the latter type, what is called a conservative test. If it finds a statistically significant difference between a pair of means, then the population means probably really are different. Which is why <em>HSD</em> stands for “honestly significant difference.” However, there is a cost to this conservatism: the <em>HSD</em> has less statistical power and so may overlook a pair of means that are different.</p></div>
+<div data-block_type="txt" id="corty3e-ch10-p263"><p>The Tukey <em>HSD</em> works by calculating an <em>HSD</em> value, which is the minimum difference needed between two means in order for the difference to be considered statistically significant. If the observed difference between a pair of means is greater than or equal to the <em>HSD</em> value, then the researcher can conclude that there is a statistically significant difference between the two groups. For example, the mean for the low-calorie group was 31 seconds and for the medium-calorie group it was 28 seconds. There is a 3.00-second difference between the mean of these two groups. If the <em>HSD</em> value were, say, 2.50, then the difference between the mean of these two groups would be a statistically significant one. This is the case because the observed difference, 3.00, met or exceeded the <em>HSD</em> value of 2.50.</p></div>
+<div data-block_type="txt" id="corty3e-ch10-p264"><p>The formula to calculate <em>HSD</em> is shown in <span data-type="link" data-href="#corty3e-ch10-bx6-9">Equation 10.9</span>. In order to apply that formula, one needs a value called <em>q.</em> Values of <em>q</em> can be found in <span data-type="link" data-href="corty3e-appendix01.xml#corty3e-app1-fig-18">Appendix Table 5</span>, a part of which is shown in <span data-type="link" data-href="#corty3e-ch10-fig-51"><strong>Table 10.12.</strong></span></p></div>
+<div data-type="figure" data-figure-id="corty3e-ch10-fig-51" data-block_type="table" data-layout-align="center" data-layout-width="large" data-layout-border="true">
+
+<img id="" src="asset/ch10/corty3e_table10_12.jpg" data-figure-id="corty3e-ch10-fig-51" data-layout-width="large" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+</div>
+<div data-block_type="page_start" id="corty3e_page_360"><p>360</p></div>
+<div data-block_type="txt" id="corty3e-ch10-p265"><p>There are <em>q</em> tables for α = .05 and α = .01, for a 5% and a 1% chance of making a Type I error. The <em>q</em> values are found at the intersections of rows and columns.</p></div>
+<ul data-block_type="bullet" id="corty3e-ch10-list-21">
+<li><div data-block_type="bl-first" id="corty3e-ch10-p266"><p>The columns represent different values of <em>k,</em> the number of groups being compared in the ANOVA.</p></div>
+</li>
+<li><div data-block_type="bl-last" id="corty3e-ch10-p267"><p>The columns represent within-groups degrees of freedom, <em>df</em><sub>Within</sub>.</p></div>
+</li>
+</ul>
+<div data-block_type="txt-ni" id="corty3e-ch10-p268"><p>For the maze data, there are three groups and within-groups degrees of freedom are 7. The <em>q</em> value of 4.17 is found at the intersection of the column where <em>k</em> = 3 with the row where <em>df</em> = 7.</p></div>
+<div data-type="box" data-block_type="eq-t" id="corty3e-ch10-bx6-9"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="corty3e-ch10-bx6-9"><span data-block_type="sec_num">Equation 10.9</span> <span data-block_type="sec_title">Formula to Calculate Tukey <em>HSD</em> Value for a Post-Hoc Test for Between Subjects, One-Way ANOVA</span>
+</h3>
+
+<div data-block_type="equation" id="corty3e-ch10-eqn-24"><p>
+<img id="" src="asset/ch10/corty3e_eqn10_360_01.jpg" data-figure-id="" data-layout-width="" data-mmtype="" alt="image"></p></div>
+<div data-block_type="eq-txt-ni" id="corty3e-ch10-p269"><p>where <em>HSD</em> = value by which, if two means differ, the difference is statistically significant</p></div>
+<div data-block_type="eq-unl" id="corty3e-ch10-p270"><p><em>q</em> = value of <em>q,</em> from <span data-type="link" data-href="corty3e-appendix01.xml#corty3e-app1-fig-18">Appendix Table 5</span></p></div>
+<div data-block_type="eq-unl" id="corty3e-ch10-p271"><p><em>MS</em><sub>Within</sub> = <em>MS</em><sub>Within</sub> (from ANOVA summary table)</p></div>
+<div data-block_type="eq-unl" id="corty3e-ch10-p272"><p><em>n</em> = sample size for the smallest group</p></div>
+</div></div>
+<div data-block_type="txt" id="corty3e-ch10-p273"><p>To calculate <em>HSD,</em> one needs to know <em>q,</em> <em>MS</em><sub>Within</sub>, and <em>n:</em></p></div>
+<ul data-block_type="bullet" id="corty3e-ch10-list-22">
+<li><div data-block_type="bl-first" id="corty3e-ch10-p274"><p>From <span data-type="link" data-href="corty3e-appendix01.xml#corty3e-app1-fig-18">Appendix Table 5</span>, it is known that <em>q</em> = 4.17.</p></div>
+</li>
+<li><div data-block_type="bl-mid" id="corty3e-ch10-p275"><p>Referring back to the ANOVA summary table for the maze data (<span data-type="link" data-href="#corty3e-ch10-fig-30">Table 10.7</span>), <em>MS</em><sub>Within</sub> = 0.86.</p></div>
+</li>
+<li><div data-block_type="bl-last" id="corty3e-ch10-p276"><p>The only missing piece is <em>n,</em> the sample size for the smallest group. In <span data-type="link" data-href="#corty3e-ch10-fig-11">Table 10.3</span>, where the maze data were first presented, it can be seen that the smallest group has three cases, so <em>n</em> = 3. (Tukey’s <em>HSD</em> was designed to be used when all sample sizes are equal. When sample sizes are unequal, using the smallest sample size makes the <em>HSD</em> value larger, which keeps the test conservative.)</p></div>
+</li>
+</ul>
+<div data-block_type="txt-ni" id="corty3e-ch10-p277"><p>With all the parts in place, the <em>HSD</em> value is calculated as</p></div>
+<div data-block_type="equation" id="corty3e-ch10-eqn-25"><p>
+<img id="" src="asset/ch10/corty3e_eqn10_360_02.jpg" data-figure-id="" data-layout-width="" data-mmtype="" alt="image"></p></div>
+<div data-block_type="page_start" id="corty3e_page_361"><p>361</p></div>
+<div data-block_type="txt" id="corty3e-ch10-p278"><p>The <em>HSD</em> value is 2.23. Any two means that differ by at least 2.23 seconds are honestly significantly different. Here are the three sample means:</p></div>
+<ul data-block_type="bullet" id="corty3e-ch10-list-23">
+<li><div data-block_type="bl-first" id="corty3e-ch10-p279"><p>Group 1: Expecting low-calorie food in the goal box = 31.00 seconds</p></div>
+</li>
+<li><div data-block_type="bl-mid" id="corty3e-ch10-p280"><p>Group 2: Expecting medium-calorie food in the goal box = 28.00 seconds</p></div>
+</li>
+<li><div data-block_type="bl-last" id="corty3e-ch10-p281"><p>Group 3: Expecting high-calorie food in the goal box = 25.00 seconds</p></div>
+</li>
+</ul>
+<div data-block_type="txt-ni" id="corty3e-ch10-p282"><p>Here are the comparisons:</p></div>
+<ul data-block_type="bullet" id="corty3e-ch10-list-24">
+<li><div data-block_type="bl-first" id="corty3e-ch10-p283"><p>Group 1 vs. Group 2: There is a 3.00-second difference between the mean of Group 1 and the mean of Group 2. 3.00 ≥ 2.23, so this is a statistically significant difference.</p></div>
+</li>
+<li><div data-block_type="bl-mid" id="corty3e-ch10-p284"><p>Group 1 vs. Group 3: There is a 6.00-second difference between the mean of Group 1 and the mean of Group 3. 6.00 ≥ 2.23, so this is a statistically significant difference.</p></div>
+</li>
+<li><div data-block_type="bl-last" id="corty3e-ch10-p285"><p>Group 2 vs. Group 3: There is a 3.00-second difference between the mean of Group 2 and the mean of Group 3. 3.00 ≥ 2.23, so this is a statistically significant difference.</p></div>
+</li>
+</ul>
+<div data-block_type="txt" id="corty3e-ch10-p286"><p>Once a researcher knows whether a difference is statistically significant, he or she needs to think about the direction of the difference. As with <em>t</em> tests, the actual sample means can be used to determine the direction of the difference. Here are Dr. Chung’s conclusions:</p></div>
+<ul data-block_type="bullet" id="corty3e-ch10-list-25">
+<li><div data-block_type="bl-first" id="corty3e-ch10-p287"><p>Group 1 vs. Group 2: Expecting medium-calorie food compared to low-calorie food leads to rats taking significantly less time to travel through the maze. That is, the medium-calorie rats ran through the maze statistically more quickly on average.</p></div>
+</li>
+<li><div data-block_type="bl-mid" id="corty3e-ch10-p288"><p>Group 1 vs. Group 3: There’s a significant difference between expecting low-calorie food and expecting medium-calorie food, so it’s not surprising that a similar difference exists between expecting low-calorie food and expecting high-calorie food. Rats expecting high-calorie food were statistically faster on average than rats expecting low-calorie food.</p></div>
+</li>
+<li><div data-block_type="bl-last" id="corty3e-ch10-p289"><p>Group 2 vs. Group 3: Rats expecting high-calorie food were statistically faster on average than rats expecting medium-calorie food.</p></div>
+</li>
+</ul>
+<div data-block_type="txt" id="corty3e-ch10-p290"><p>A statistically significant ANOVA reveals that at least one pair of population means differs. Now after the post-hoc test, Dr. Chung knows which pairs differ and what the differences mean. His challenge is to summarize the findings. He could report that the mean of Group 1 differs from the mean of Group 2 and that the mean of Group 1 differs from the mean of Group 3, and so forth, but that would be a focus on the trees, not the forest. Interpretations are more useful if they find a pattern in the results. Dr. Chung’s findings could be summarized by saying that rats, this strain of rats at least, appear able to figure out that different foods have different caloric contents and, when hungry, are more motivated to seek nutritionally richer foods.</p></div>
+<div data-block_type="txt" id="corty3e-ch10-p291"><p>With all three interpretation questions addressed—Was the null hypothesis rejected? How big is the effect? Where is the effect?—Dr. Chung is ready to write a four-point interpretation that (1) tells what the study was about, (2) presents the main results, (3) explains what the results mean, and (4) makes suggestions for future research:</p></div>
+<div data-block_type="sr_exp_txt_v1_ni" id="corty3e-ch10-p292"><p>In this study, rats were exposed to three different types of food (low-calorie, medium-calorie, and high-calorie) in the goal box while learning a maze. After learning the maze, they were made hungry, randomly assigned to three groups, and timed while they ran the maze. The three groups expected to find different foods in the goal box: low-calorie, medium-calorie, or high-calorie. There was a statistically significant decrease in mean time, that is, an increase in mean speed, as the caloric content of the food increased [<em>F</em>(2, 7) = 31.40, <em>p</em> &lt; .05]. Time decreased from a mean of 31.00 seconds for the rats expecting low-calorie food to 28.00 seconds for those expecting medium-calorie food and to 25.00 seconds for the ones expecting high-calorie food. The effect of caloric content on speed in this study was quite dramatic, accounting for 90% of the variability in speed. This is probably an overestimate of the effect of caloric content as all rats were from the same strain and were the same age.</p></div>
+<div data-block_type="page_start" id="corty3e_page_362"><p>362</p></div>
+<div data-block_type="sr_exp_txt_v1_ni" id="corty3e-ch10-p293"><p>These results suggest that this strain of rats is able to discriminate the caloric content of food and that, when they are hungry, they are more motivated to seek nutritionally richer food. This motivation makes sense for increasing the likelihood of survival in lean times. An alternative explanation for the results is that the richer-calorie foods tasted better and that rats hurry to food if it tastes good. Future research should be sure to control for food taste. Future research should also employ different strains of rats.</p></div>
+<div data-type="box" data-block_type="sr-exp-n" id="corty3e-ch10-bx3-2"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="corty3e-ch10-bx3-2">Worked Example 10.2</h3>
+<div data-block_type="sr-ex-txt-ni" id="corty3e-ch10-p294"><p>For practice in interpretation, let’s return to Dr. Douglas’s data from the study of over-the-counter pain relievers (ibuprofen and acetaminophen) on pain threshold. In that study, 12 male undergraduates were randomly assigned by a sensory psychologist to take a placebo, ibuprofen, or acetaminophen. They then placed their hands in ice water until they felt pain. The participants who received placebos kept their hands in ice water for an average of 17.50 seconds, the ibuprofen participants for 23.00 seconds, and the acetaminophen participants for 21.00 seconds. <em>F<sub>cv</sub></em> was 4.256 and the ANOVA summary table is reprinted here (see <span data-type="link" data-href="#corty3e-ch10-fig-54"><strong>Table 10.13</strong></span>).</p></div>
+<div data-type="figure" data-figure-id="corty3e-ch10-fig-54" data-block_type="figure" data-layout-align="center" data-layout-width="large" data-layout-border="true">
+
+<img id="" src="asset/ch10/corty3e_table10_13.jpg" data-figure-id="corty3e-ch10-fig-54" data-layout-width="large" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+</div>
+<div data-block_type="sr_exp_txt" id="corty3e-ch10-p295"><p><em>Was the null hypothesis rejected?</em> From the ANOVA summary table (<span data-type="link" data-href="#corty3e-ch10-fig-54">Table 10.13</span>), it is clear that the observed value of <em>F</em> is 1.35. 1.35 is less than 4.256, <em>F<sub>cv</sub>,</em> so the null hypothesis was not rejected. <span data-type="link" data-href="#corty3e-ch10-fig-55"><strong>Figure 10.14</strong></span> shows how the observed value of <em>F</em> falls in the common zone. With these data, Dr. Douglas does not have enough evidence to state that any one of these three groups differs from another in terms of the mean pain threshold. In APA format, she would write the results as</p></div>
+<div data-type="figure" data-figure-id="corty3e-ch10-fig-55" data-block_type="figure" data-layout-align="center" data-layout-width="large" data-layout-border="true">
+
+<img id="" src="asset/ch10/corty3e_fig10_14.jpg" data-figure-id="corty3e-ch10-fig-55" data-layout-width="large" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+<div data-type="figure_text">
+<span data-type="number">Figure 10.27: </span><span data-type="caption"><strong><span data-block_type="fig_num">Figure 10.14</span> Determining Whether the Observed Value of the Test Statistic Falls in the Rare Zone or the Common Zone for the Pain Threshold Study</strong> The observed value of the test statistic, <em>F</em> = 1.35, falls in the common zone, so we fail to reject the null hypothesis.</span>
+</div>
+</div>
+<div data-block_type="sr-exp-eq" id="corty3e-ch10-p296"><p><em>F</em>(2, 9) = 1.35, <em>p</em> &gt; .05</p></div>
+<ul data-block_type="bullet" id="corty3e-ch10-list-26">
+<li><div data-block_type="sr-exp-bl-first" id="corty3e-ch10-p297"><p><em>F</em> tells the reader that an analysis of variance, also known as an <em>F</em> test, was done.</p></div>
+<div data-block_type="page_start" id="corty3e_page_363"><p>363</p></div>
+</li>
+<li><div data-block_type="sr-exp-bl-mid" id="corty3e-ch10-p298"><p>The 2 and 9 in the parentheses are the numerator and denominator degrees of freedom. These are <em>df</em><sub>Between</sub> and <em>df</em><sub>Within</sub>. If they are added together and 1 is added, that gives <em>N.</em></p></div>
+</li>
+<li><div data-block_type="sr-exp-bl-mid" id="corty3e-ch10-p299"><p>1.35 is the value of <em>F</em> that Dr. Douglas calculated.</p></div>
+</li>
+<li><div data-block_type="sr-exp-bl-mid" id="corty3e-ch10-p300"><p>The .05 is the alpha level that had been selected.</p></div>
+</li>
+<li><div data-block_type="sr-exp-bl-last" id="corty3e-ch10-p301"><p>The <em>p</em> &gt; .05 means that a result like <em>F</em> = 1.35 is a common one when the null hypothesis is true, as under those conditions it occurs more than 5% of the time. The sensory psychologist has failed to reject the null hypothesis.</p></div>
+</li>
+</ul>
+<div data-block_type="sr_exp_txt" id="corty3e-ch10-p302"><p><em>How big is the effect?</em> <span data-type="link" data-href="#corty3e-ch10-bx6-5">Equation 10.5</span> is used to calculate the effect size, <em>r</em> <sup>2</sup>, the percentage of variability in the dependent variable (seconds to pain threshold) that is accounted for by the independent variable (type of painkiller). To use the equation, two values, <em>SS</em><sub>Between</sub> (62.00) and <em>SS</em><sub>Total</sub> (269.00), are obtained from the ANOVA summary table:</p></div>
+<div data-block_type="equation" id="corty3e-ch10-eqn-26"><p>
+<img id="" src="asset/ch10/corty3e_eqn10_363_01.jpg" data-figure-id="" data-layout-width="" data-mmtype="" alt="image"></p></div>
+<div data-block_type="sr_exp_txt" id="corty3e-ch10-p303"><p>An <em>r</em> <sup>2</sup> of 23% is close to a large effect, according to Cohen. This gives Dr. Douglas two conflicting pieces of information:</p></div>
+<ul data-block_type="bullet" id="corty3e-ch10-list-27">
+<li><div data-block_type="sr-exp-bl-first" id="corty3e-ch10-p304"><p>Not enough evidence exists to say there is an effect.</p></div>
+</li>
+<li><div data-block_type="sr-exp-bl-mid" id="corty3e-ch10-p305"><p>However, the effect seems to be large.</p></div>
+</li>
+</ul>
+<div data-block_type="page_start" id="corty3e_page_364"><p>364</p></div>
+<div data-block_type="sr_exp_txt" id="corty3e-ch10-p306"><p>One way to reconcile these two conflicting pieces of information is to look at the possibility of a Type II error. Type II errors occur when a researcher fails to find statistically significant evidence of an effect that really does exist. That possibility can’t be ruled out here. When interpreting such a situation, the researcher should point out the possibility and suggest that the study be replicated with a larger sample size. Larger sample sizes give tests more power and so increase the likelihood of being able to find an effect when it does exist.</p></div>
+<div data-block_type="sr_exp_txt" id="corty3e-ch10-p307"><p><em>Where is the effect?</em> Post-hoc tests are designed to be conducted only when the null hypothesis is rejected. In this study, the null hypothesis was not rejected. This means there is not enough evidence that an effect exists, so there is no reason to try to find where the effect is.</p></div>
+<div data-block_type="sr_exp_txt" id="corty3e-ch10-p308"><p><em>Putting it all together.</em> Here’s Dr. Douglas’s four-point interpretation for the pain threshold study. She reveals what the study was about, identifies its main results, interprets them, and makes suggestions for future research.</p></div>
+<div data-block_type="sr_exp_txt_v1_ni" id="corty3e-ch10-p309"><p>Analysis of data for a study comparing the impact of placebo, ibuprofen, and acetaminophen on pain threshold found no evidence that either of the over-the-counter pain relievers had any impact on the threshold for perceiving pain. There was no statistically significant difference in the mean time it took participants to perceive pain when their hands were in ice water [<em>F</em>(2, 9) = 1.35, <em>p</em> &gt; .05]. There was some evidence that medication may have an impact, but the small sample size (<em>N</em> =12) meant the study did not have enough power to detect it. In order to determine if these over-the-counter pain relievers have an impact on pain threshold, the study should be replicated with a larger sample size.</p></div>
+</div></div>
+<div data-type="box" data-block_type="sr-h" id="corty3e-ch10-bx2-3"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="corty3e-ch10-bx2-3">Practice Problems 10.3</h3>
+<div data-block_type="sr-h1" id="corty3e-ch10-p310"><p><strong>Apply Your Knowledge</strong></p></div>
+<div data-block_type="sr-que-nl" id="corty3e-ch10-p311"><p><span data-block_type="question_num">10.12</span> Given α = .05, <em>F<sub>cv</sub></em> = 2.690, <em>df</em><sub>Between</sub> = 4, <em>df</em><sub>Within</sub> = 30, and <em>F</em> = 7.37, write the results in APA format.</p></div>
+<div data-block_type="sr-que-nl" id="corty3e-ch10-p312"><p><span data-block_type="question_num">10.13</span> Given <em>SS</em><sub>Between</sub> = 1,827.50 and <em>SS</em><sub>Total</sub> = 4,631.50, (a) calculate <em>r</em><sup>2</sup> and (b) comment on the size of the effect.</p></div>
+<div data-block_type="sr-que-nl" id="corty3e-ch10-p313"><p><span data-block_type="question_num">10.14</span> Four groups are being compared in a between-subjects, one-way ANOVA. Each group has 10 cases. <em>MS</em><sub>Within</sub> = 77.89 and <em>df</em><sub>Within</sub> = 36. The <em>F</em> ratio was statistically significant with α = .05.</p></div>
+<ol data-block_type="loweralpha" id="corty3e-ch10-list-28">
+<li><div data-block_type="sr-que-ll" id="corty3e-ch10-p314"><p>Use this information to complete a post-hoc test comparing <em>M</em><sub>1</sub> = 29.00 and <em>M</em><sub>2</sub> = 18.00; interpret the difference between the two population means.</p></div>
+</li>
+<li><div data-block_type="sr-que-ll" id="corty3e-ch10-p315"><p>Use this information to complete a post-hoc test comparing <em>M</em><sub>1</sub> = 29.00 and <em>M</em><sub>3</sub> = 22.00; interpret the difference between the two population means.</p></div>
+</li>
+</ol>
+<div data-block_type="sr-que-nl" id="corty3e-ch10-p316"><p><span data-block_type="question_num">10.15</span> An industrial/organizational psychologist wanted to investigate the effect of different management styles on employee performance. She obtained 27 employees at a large company and randomly assigned them, in equal-sized groups, to be supervised by managers who believed in motivating employees by using (a) rewards for good performance, (b) punishment for poor performance, or (c) a mixture of rewards and punishments. No nonrobust assumptions of a between-subjects, one-way ANOVA were violated. One year later, she recorded how much of a raise (as a percentage) each employee received. She believed that employees who did better work would receive bigger raises. The employees supervised by managers who believed in using rewards saw a mean raise of 8%, those supervised by managers who believed in using punishment had a mean raise of 5%, and those supervised by managers who used a mixture of rewards and punishment had a mean raise of 7%.</p></div>
+<div data-block_type="sr-x-txt-ni" id="corty3e-ch10-p317"><p>A between-subjects, one-way ANOVA was used to analyze the results. The results were statistically significant. Given the ANOVA summary table, <em>r</em> <sup>2</sup> = 30.43% and <em>HSD</em> = 2.35, write a four-point interpretation.</p></div>
+<div data-type="table" data-block_type="un_table" id="corty3e-ch10-table3" data-layout-align="center" data-layout-width="large" data-layout-border="true" data-mmsrc="" data-attr=""><table><tbody>
+<tr>
+<td><span data-block_type="TBN-COLHD"><strong>Source of Variability</strong></span></td>
+<td><span data-block_type="TBN-COLHD"><strong>Sum of Squares</strong></span></td>
+<td><span data-block_type="TBN-COLHD"><strong>Degrees of Freedom</strong></span></td>
+<td><span data-block_type="TBN-COLHD"><strong>Mean Square</strong></span></td>
+<td><span data-block_type="TBN-COLHD"><strong><em>F</em> ratio</strong></span></td>
+</tr>
+<tr>
+<td><span data-block_type="TBN-SIDHD"><strong>Between groups</strong></span></td>
+<td><span data-block_type="tbn-txt">42.00</span></td>
+<td><span data-block_type="tbn-txt">2</span></td>
+<td><span data-block_type="tbn-txt">21.00</span></td>
+<td><span data-block_type="tbn-txt">5.25</span></td>
+</tr>
+<tr>
+<td><span data-block_type="TBN-SIDHD"><strong>Within groups</strong></span></td>
+<td><span data-block_type="tbn-txt">96.00</span></td>
+<td><span data-block_type="tbn-txt">24</span></td>
+<td><span data-block_type="tbn-txt">4.00</span></td>
+<td></td>
+</tr>
+<tr>
+<td><span data-block_type="TBN-SIDHD"><strong>Total</strong></span></td>
+<td><span data-block_type="tbn-txt">138.00</span></td>
+<td><span data-block_type="tbn-txt">26</span></td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table></div>
+</div></div>
+<div data-block_type="page_start" id="corty3e_page_365"><p>365</p></div>
+<div data-type="box" data-block_type="sr-x-h" id="corty3e-ch10-bx3-3"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="corty3e-ch10-bx3-3">Application Demonstration</h3>
+<div data-block_type="sr-x-txt-ni" id="corty3e-ch10-p318"><p>America is a land of movers. If we don’t like where we’re living, if we think the grass is greener somewhere else, we just pull up our stakes and go. Are salaries for psychologists consistent throughout the United States or do some areas have higher or lower salaries? If so, this information could guide a recent graduate’s decision about where to seek employment.</p></div>
+<div data-block_type="sr-x-txt" id="corty3e-ch10-p319"><p>The Census Bureau divides the United States into four regions: the Northeast, Midwest, South, and West. Four states from each region were randomly selected and the mean salary for “clinical, counseling, and school psychologists” was obtained from a Bureau of Labor Statistics website for each state. Salaries were recorded in thousands of dollars; $79.52, for example, means $79,520. Recording the values this way keeps the sums of squares from becoming unwieldy numbers in the hundreds of millions. The mean salaries for the four regions (Northeast <strong>=</strong> $77.73, Midwest = $63.55, West = $68.83, and South = $61.37) are seen in <span data-type="link" data-href="#corty3e-ch10-fig-57"><strong>Figure 10.15.</strong></span></p></div>
+<div data-type="figure" data-figure-id="corty3e-ch10-fig-57" data-block_type="figure" data-layout-align="center" data-layout-width="medium" data-layout-border="true">
+
+<img id="" src="asset/ch10/corty3e_fig10_15.jpg" data-figure-id="corty3e-ch10-fig-57" data-layout-width="medium" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+<div data-type="figure_text">
+<span data-type="number">Figure 10.28: </span><span data-type="caption"><strong><span data-block_type="fig_num">Figure 10.15</span> Mean Salary for Psychologists by Census Region: Two Different Pictures</strong> The mean salary for clinical, counseling, and school psychologists is highest in the Northeast and lowest in the South. Whether the differences among regions look significant or not depends on how the graph is drawn. The two graphs here differ only in the scale on the <em>Y</em>-axis.</span>
+</div>
+</div>
+<div data-block_type="txt" id="corty3e-ch10-p320"><p>The top panel in <span data-type="link" data-href="#corty3e-ch10-fig-57">Figure 10.15</span> shows some slight differences in salary by region. Based on this graph, it seems unlikely that there are any statistically significant differences. The bottom panel in <span data-type="link" data-href="#corty3e-ch10-fig-57">Figure 10.15</span>, where the <em>y</em>-axis doesn’t start at zero, does make it look like there are significant differences by region. As mentioned in <span data-type="link" data-href="corty3e-ch02.xml">Chapter 2</span>, a graph is a subjective interpretation of the data. The question of whether there are differences in mean salary is best resolved in an objective manner with a significance test.</p></div>
+<div data-block_type="page_start" id="corty3e_page_366"><p>366</p></div>
+<div data-block_type="h4-txt-ni" id="corty3e-ch10-p321"><p><span data-block_type="h4-n-ri"><strong>Step 1</strong></span> <strong>Pick a Test.</strong> There are four samples, they are independent, and the dependent variable is measured at the ratio level, so the test should be a between-subjects, one-way ANOVA.</p></div>
+<div data-block_type="h4-txt-ni" id="corty3e-ch10-p322"><p><span data-block_type="h4-n-ri"><strong>Step 2</strong></span> <strong>Check the Assumptions.</strong></p></div>
+<ul data-block_type="bullet" id="corty3e-ch10-list-29">
+<li><div data-block_type="sr-x-bl-first" id="corty3e-ch10-p323"><p>The random samples assumption is not violated. Cases were randomly selected from their populations.</p></div>
+</li>
+<li><div data-block_type="sr-x-bl-mid" id="corty3e-ch10-p324"><p>The independence of observations assumption is not violated. Each state (case) is measured only once.</p></div>
+</li>
+<li><div data-block_type="sr-x-bl-mid" id="corty3e-ch10-p325"><p>The normality assumption might be violated. The populations are not large. For example, there are only nine states in the Northeast. With such a small population, it is unlikely to be normally distributed. But, this assumption is robust.</p></div>
+</li>
+<li><div data-block_type="sr-x-bl-last" id="corty3e-ch10-p326"><p>The homogeneity of variance assumption is not violated. All standard deviations are comparable.</p></div>
+</li>
+</ul>
+<div data-block_type="h4-txt-ni" id="corty3e-ch10-p327"><p><span data-block_type="h4-n-ri"><strong>Step 3</strong></span> <strong>List the Hypotheses.</strong></p></div>
+<div data-block_type="sr-x-eq" id="corty3e-ch10-p328"><p><em>H</em><sub>0</sub>: μ<sub>1</sub> = μ<sub>2</sub> = μ<sub>3</sub> = μ<sub>4</sub>.</p></div>
+<div data-block_type="sr-x-eq" id="corty3e-ch10-p329"><p><em>H</em><sub>1</sub>: At least one population mean differs from the others.</p></div>
+<div data-block_type="h4-txt-ni" id="corty3e-ch10-p330"><p><span data-block_type="h4-n-ri"><strong>Step 4</strong></span> <strong>Set the Decision Rule.</strong> First, find the numerator, denominator, and total degrees of freedom:</p></div>
+<div data-block_type="sr-x-eq" id="corty3e-ch10-p331"><p>Numerator degrees of freedom = <em>df</em><sub>Between</sub> = <em>k</em> − 1 = 4 − 1 = 3</p></div>
+<div data-block_type="sr-x-eq" id="corty3e-ch10-p332"><p>Denominator degrees of freedom = <em>df</em><sub>Within</sub> = <em>N</em> − <em>k</em> = 16 − 4 = 12</p></div>
+<div data-block_type="sr-x-eq" id="corty3e-ch10-p333"><p>Total degrees of freedom = <em>df</em><sub>Total</sub> = <em>N</em> − 1 = 16 − 1 = 15</p></div>
+<div data-block_type="sr-x-txt-ni" id="corty3e-ch10-p334"><p>Next, set the alpha level:</p></div>
+<div data-block_type="sr-x-eq" id="corty3e-ch10-p335"><p>α = .05 because willing to have a 5% chance of making a Type I error</p></div>
+<div data-block_type="sr-x-txt-ni" id="corty3e-ch10-p336"><p>Then, use the degrees of freedom and alpha level to find the critical value of <em>F</em> in <span data-type="link" data-href="corty3e-appendix01.xml#corty3e-app1-fig-10">Appendix Table 4</span>:</p></div>
+<div data-block_type="sr-x-eq" id="corty3e-ch10-p337"><p><em>F<sub>cv</sub></em> = 3.490</p></div>
+<div data-block_type="sr-x-txt-ni" id="corty3e-ch10-p338"><p>Then, set the decision rule:</p></div>
+<ul data-block_type="bullet" id="corty3e-ch10-list-30">
+<li><div data-block_type="sr-x-bl-first" id="corty3e-ch10-p339"><p>If <em>F</em> ≥ 3.490, reject <em>H</em><sub>0</sub>.</p></div>
+</li>
+<li><div data-block_type="sr-x-bl-last" id="corty3e-ch10-p340"><p>If <em>F</em> &lt; 3.490, fail to reject <em>H</em><sub>0</sub>.</p></div>
+</li>
+</ul>
+<div data-block_type="h4-txt-ni" id="corty3e-ch10-p341"><p><span data-block_type="h4-n-ri"><strong>Step 5</strong></span> <strong>Calculate the Test Statistic.</strong> Calculate the between-groups sum of squares using <span data-type="link" data-href="#corty3e-ch10-bx6-3">Equation 10.3</span>, the within-groups sum of squares using <span data-type="link" data-href="#corty3e-ch10-bx6-4">Equation 10.4</span>, and the total sum of squares using <span data-type="link" data-href="#corty3e-ch10-bx6-2">Equation 10.2</span>. To save time, these values have already been calculated:</p></div>
+<div data-block_type="sr-x-eq" id="corty3e-ch10-p342"><p><em>SS</em><sub>Between</sub> = 636.41</p></div>
+<div data-block_type="sr-x-eq" id="corty3e-ch10-p343"><p><em>SS</em><sub>Within</sub> = 723.85</p></div>
+<div data-block_type="sr-x-eq" id="corty3e-ch10-p344"><p><em>SS</em><sub>Total</sub> = 1,360.26</p></div>
+<div data-block_type="page_start" id="corty3e_page_367"><p>367</p></div>
+<div data-block_type="sr-x-txt" id="corty3e-ch10-p345"><p>Use the degrees of freedom calculated in Step 4 and the sums of squares calculated in Step 4 to fill in the appropriate columns of the ANOVA summary table. Then follow the guidelines in <span data-type="link" data-href="#corty3e-ch10-fig-30">Table 10.7</span> to complete the ANOVA summary table (<span data-type="link" data-href="#corty3e-ch10-fig-58"><strong>Table 10.14</strong></span>).</p></div>
+<div data-type="figure" data-figure-id="corty3e-ch10-fig-58" data-block_type="table" data-layout-align="center" data-layout-width="large" data-layout-border="true">
+
+<img id="" src="asset/ch10/corty3e_table10_14.jpg" data-figure-id="corty3e-ch10-fig-58" data-layout-width="large" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+</div>
+<div data-block_type="h4-txt-ni" id="corty3e-ch10-p346"><p><span data-block_type="h4-n-ri"><strong>Step 6</strong></span> <strong>Interpret the Results.</strong> <em>Was the null hypothesis rejected?</em> To determine if the null hypothesis should be rejected, apply the decision rule. Which of these statements is true?</p></div>
+<ul data-block_type="bullet" id="corty3e-ch10-list-31">
+<li><div data-block_type="sr-x-bl-first" id="corty3e-ch10-p347"><p>Is 3.52 ≥ 3.490?</p></div>
+</li>
+<li><div data-block_type="sr-x-bl-last" id="corty3e-ch10-p348"><p>Is 3.52 &lt; 3.490?</p></div>
+</li>
+</ul>
+<div data-block_type="sr-x-txt" id="corty3e-ch10-p349"><p>The first statement is true, so the null hypothesis should be rejected. The results are called statistically significant, the alternative hypothesis is accepted, and it is concluded that at least one population mean differs from at least one other population mean. A post-hoc test will be needed to determine where the differences lie. For now, though, the results can be written in APA format:</p></div>
+<div data-block_type="sr-x-eq" id="corty3e-ch10-p350"><p><em>F</em>(3, 12) = 3.52, <em>p</em> &lt; .05</p></div>
+<div data-block_type="sr-x-txt" id="corty3e-ch10-p351"><p><em>How big is the effect?</em> This question is answered by calculating <em>r</em> <sup>2</sup>:</p></div>
+<div data-block_type="equation" id="corty3e-ch10-eqn-27"><p>
+<img id="" src="asset/ch10/corty3e_eqn10_367_01.jpg" data-figure-id="" data-layout-width="" data-mmtype="" alt="image"></p></div>
+<div data-block_type="sr-x-txt-ni" id="corty3e-ch10-p352"><p>On the basis of Cohen’s criteria, the fact that region explains 46.79% of the variability in salary means this is a very large effect.</p></div>
+<div data-block_type="sr-x-txt" id="corty3e-ch10-p353"><p><em>Where is the effect?</em> Tukey’s <em>HSD</em> will be used as a post-hoc test to find out which pair, or pairs, of means are statistically significantly different. To calculate the <em>HSD</em> value, a researcher must know <em>q,</em> <em>MS</em><sub>Within</sub>, and <em>n.</em> <em>q</em> is found in <span data-type="link" data-href="corty3e-appendix01.xml#corty3e-app1-fig-18">Appendix Table 5</span> for α?=?.05, in the column for <em>k</em> = 4 and the row for <em>df</em><sub>Within</sub> = 12. With <em>q</em> = 4.20, <em>MS</em><sub>Within</sub> = 60.32, and <em>n</em> = 4, <span data-type="link" data-href="#corty3e-ch10-bx6-9">Equation 10.9</span> is used to calculate <em>HSD:</em></p></div>
+<div data-block_type="equation" id="corty3e-ch10-eqn-28"><p>
+<img id="" src="asset/ch10/corty3e_eqn10_367_02.jpg" data-figure-id="" data-layout-width="" data-mmtype="" alt="image"></p></div>
+<div data-block_type="sr-x-txt-ni" id="corty3e-ch10-p354"><p>Any groups that have a mean difference greater than or equal to 16.31 points are statistically significantly different. The largest mean is the Northeast at $77.73 thousand and the smallest is the South at $61.37 thousand. Those two are 16.36 points apart and this difference is a statistically significant difference. All other differences are smaller than 16.31 and thus not statistically significant. The effect seems to be due to the $16.36 thousand difference between the mean salaries for psychologists in the Northeast and mean salaries in the South. Salaries are statistically significantly higher in the Northeast than they are in the South.</p></div>
+<div data-block_type="page_start" id="corty3e_page_368"><p>368</p></div>
+<div data-block_type="sr-x-txt" id="corty3e-ch10-p355"><p>Here is a four-point interpretation:</p></div>
+<div data-block_type="sr_exp_txt_v1_ni" id="corty3e-ch10-p356"><p>In this study, a random sample of states from each of the four census regions was taken and the average salary in each state for clinical, counseling, and school psychologists was recorded. The mean salary in the Northeast region was $77,730, $63,550 in the Midwest, $61,370 in the South, and $68,830 in the West. The overall ANOVA showed a statistically significant effect for the region [<em>F</em>(3, 12) = 3.52, <em>p</em> &lt; .05] and region accounted for almost 50% of the variability in salary. However, post-hoc testing showed that the only statistically significant difference that existed was between the Northeast and the South—the mean salaries for clinical, counseling, and school psychologists are statistically higher in the Northeast than in the South. The results of this study suggest that it might be worthwhile for a psychologist living in the South to move to the North, but there would be no advantage to moving to the West or Midwest. If this study is replicated, it would be advisable to take into account the cost of living as higher salaries in a region may be mitigated by a higher cost of living.</p></div>
+</div></div>
+</div>
+<!-- #x-digfir-subsection-insertion-point --><!-- #x-digfir-subsection-insertion-point --><!-- #x-digfir-subsection-insertion-point --><!-- #x-digfir-subsection-insertion-point --></div><!-- /#manuscript -->
+<br class="clear" />
+<!-- end of material in original view -->
+
+	<!--[if IE]><script type="text/javascript" src="js/excanvas.compiled.js"></script><![endif]-->
+    
+<script type="text/javascript" src="js/utilities.js"></script>
+<script type="text/javascript" src="js/query_types.js"></script>
+<script type="text/javascript" src="js/player.js"></script>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/jquery-ui-1.8.16.custom.min.js"></script>
+<script type="text/javascript" src="js/jquery_extensions.js"></script>
+<script type="text/javascript" src="js/swfobject.js"></script>
+<script type="text/javascript" src="http://admin.brightcove.com/js/BrightcoveExperiences.js"></script>
+<script type="text/javascript" src="js/digfir_ebook_fw.js"></script>
+<script type="text/javascript" src="js/corty3e.js"></script>
+<script type="text/javascript" src="js/corty3e_ch10.js"></script>
+<script type="text/javascript">
+    //<!--
+    
+$(window).ready(function () {
+	player.initialize('56d62cd7757a2efe47000002');
+});
+    //-->
+</script>
+</body>
+</html>
+

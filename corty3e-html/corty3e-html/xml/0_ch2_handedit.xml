@@ -1,0 +1,804 @@
+<chapter number="2" id="corty3e-ch2-chapter-2" title="2 Frequency Distributions" start-numbering-at="02" numbered="true">
+<section id="corty3e-ch2-sec1-1a" block_type="intro" title="Chapter Introduction" numbered="false" level="1" print_page="39">
+<p id="corty3e_page_39" block_type="page_start">39</p>
+<p id="corty3e-ch2-p1" block_type="chapter_number">2</p>
+<p id="corty3e-ch2-p2" block_type="chapter_title">Frequency Distributions</p>
+<box numbered="false" id="corty3e-ch2-ibx-1" block_type="intro_box">
+<p id="corty3e-ch2-p3" block_type="obj-h"><strong>LEARNING OBJECTIVES</strong></p>
+<list id="corty3e-ch2-list-1" type="unordered" block_type="bluesquare">
+<li><p id="corty3e-ch2-p4" block_type="obj-bl">Make a frequency distribution for a set of data.</p></li>
+<li><p id="corty3e-ch2-p5" block_type="obj-bl">Decide if a number is discrete or continuous.</p></li>
+<li><p id="corty3e-ch2-p6" block_type="obj-bl">Choose and make the appropriate graph for a frequency distribution.</p></li>
+<li><p id="corty3e-ch2-p7" block_type="obj-bl">Describe modality, skewness, and kurtosis for a frequency distribution.</p></li>
+<li><p id="corty3e-ch2-p8" block_type="obj-bl">Make a stem and leaf display.</p></li>
+</list>
+<p id="corty3e-ch2-p9" block_type="obj-h"><strong>CHAPTER OVERVIEW</strong></p>
+<p id="corty3e-ch2-p14" block_type="co-txt-ni">The purpose of statistics is data reduction, taking a mass of numbers and reducing them in some way to bring order to them. <link href="corty3e-ch01.xml">Chapter 1</link> showed how organizing binge drinking rates for 18- to 25-year-olds in the United States&#8212;alphabetically or from low to high&#8212;made them easier to understand. That just involved reorganizing the data, not reducing it. <link href="corty3e-ch02.xml">Chapter 2</link> covers some data reduction techniques, making tables and graphs. It also introduces another way to think about numbers, whether the number is continuous or discrete, and talks about the &#8220;shapes&#8221; data can take.</p>
+<box numbered="false" id="corty3e-ch2-exp2-1" block_type="mn2">
+<p id="corty3e-ch2-p10" block_type="co-toc-h1-t"><link href="#corty3e-ch2-sec1-1"><phrase block_type="co-toc-h1-n-ri">2.1</phrase> Frequency Distributions</link></p>
+<p id="corty3e-ch2-p11" block_type="co-toc-h1-t"><link href="#corty3e-ch2-sec1-2"><phrase block_type="co-toc-h1-n-ri">2.2</phrase> Discrete Numbers and Continuous Numbers</link></p>
+<p id="corty3e-ch2-p12" block_type="co-toc-h1-t"><link href="#corty3e-ch2-sec1-3"><phrase block_type="co-toc-h1-n-ri">2.3</phrase> Graphing Frequency Distributions</link></p>
+<p id="corty3e-ch2-p13" block_type="co-toc-h1-t"><link href="#corty3e-ch2-sec1-4"><phrase block_type="co-toc-h1-n-ri">2.4</phrase> Shapes of Frequency Distributions</link></p>
+</box>
+</box>
+</section>
+<section id="corty3e-ch2-sec1-1" block_type="h1" chapter="2" title="" numbered="false" level="1" print_page="39">
+<section-metadata><section-title><phrase block_type="sec_num">2.1</phrase> <phrase block_type="sec_title">Frequency Distributions</phrase></section-title></section-metadata>
+<p id="corty3e-ch2-p15" block_type="txt-ni">Frequency distributions can be made for nominal-, ordinal-, interval-, or ratio-level data. A frequency distribution is an intuitive way to organize and reduce data. A <termref term="frequency distribution">frequency distribution</termref> is simply a count of how often the values of a variable occur in a set of data. For example, to tell someone how many boys and girls are in a class is to make a frequency distribution.</p>
+</section>
+<section id="corty3e-ch2-sec2-1" block_type="h2" chapter="2" title="" numbered="false" level="2" print_page="39">
+<section-metadata><section-title>Ungrouped vs. Grouped Frequency Distributions</section-title></section-metadata>
+<p id="corty3e-ch2-p16" block_type="txt-ni">There are two different types of frequency distribution tables, ungrouped and grouped. An <strong>ungrouped frequency distribution</strong> table is a count of how often each value of a variable occurs in a data set. In a <strong>grouped frequency distribution</strong> table, the frequency counts are for adjacent groupings of values, or intervals, of the variable.</p>
+<p id="corty3e-ch2-p17" block_type="txt">Ungrouped frequency distributions are used when the values a variable can take are limited. For example, if students were surveyed about how many children were in their families, a limited number of responses would exist. Students would most commonly report that there were one, two, or three kids in their families. Almost no one would report ten or more kids. An ungrouped frequency distribution for data like these would be compact, taking up maybe a half-dozen lines on one page, and could be viewed easily.</p>
+<p id="corty3e_page_40" block_type="page_start">40</p>
+<p id="corty3e-ch2-p18" block_type="txt">Now if the same students were surveyed about the size of their high school graduating classes, it would be a very different frequency distribution. The survey would yield answers ranging from 1 (homeschooled) to 500 or more students. If one listed each value separately, it would take many lines and could run to multiple pages. This would be hard to view and not a good summary of the data. In this case, it would make sense to group answers together in intervals (fewer than 100 in the class, 100 to 199 in the class, etc.) to make a more compact presentation.</p>
+<p id="corty3e-ch2-p19" block_type="txt">Grouped frequency distributions should be used when the variable has a large number of values and it is acceptable to lose information by collapsing the values into intervals. If the variable has a large number of values but it is important to retain information about all the unique values, then one should use an ungrouped frequency distribution.</p>
+<p id="corty3e-ch2-p20" block_type="txt"><strong><link href="#corty3e-ch2-fig-1">Table 2.1</link></strong> shows both an ungrouped frequency distribution and a grouped frequency distribution for the binge drinking data from <link href="corty3e-ch01.xml">Chapter 1</link>. Note the size of the ungrouped frequency distribution and the many gaps in it. There is too much detail to get a clear picture of the data. Compare that to the compactness of the grouped frequency distribution, which reduces the data to a greater degree and does a better job summarizing and describing it.</p>
+<figure id="corty3e-ch2-fig-1" block_type="table" numbered="true" number="2.1" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="xlarge" border="true"/>
+<image asset-id="corty3e-ch2-img-1" alt="image" src="asset/ch2/corty3e_table02_01.jpg"/>
+</figure>
+</section>
+<section id="corty3e-ch2-sec2-2" block_type="h2" chapter="2" title="" numbered="false" level="2" print_page="40">
+<section-metadata><section-title>Ungrouped Frequency Distributions</section-title></section-metadata>
+<p id="corty3e-ch2-p21" block_type="txt-ni">Here are some data regarding how many children are in the families of 31 students. Nine of the 31 reported being in one-child families, 14 families had two children, 5 had three, 2 had four, and 1 had six. An ungrouped frequency distribution table for these data can be seen in <strong><link href="#corty3e-ch2-fig-2">Table 2.2</link></strong> on page 42.</p>
+<figure id="corty3e-ch2-fig-2" block_type="table" numbered="true" number="2.2" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="medium" border="true"/>
+<image asset-id="corty3e-ch2-img-2" alt="image" src="asset/ch2/corty3e_table02_02.jpg"/>
+</figure>
+<p id="corty3e-ch2-p22" block_type="txt">There are a number of things to note about <link href="#corty3e-ch2-fig-2">Table 2.2</link>:</p>
+<list id="corty3e-ch2-list-2" type="unordered" block_type="bullet">
+<li><p id="corty3e-ch2-p23" block_type="bl-first">This is a basic, no-frills frequency distribution. It just provides the values that the variable takes and how often each value occurs. That&#8217;s it.</p></li>
+<li><p id="corty3e-ch2-p24" block_type="bl-mid">There is a title! All tables need to have titles that clearly describe the information the table contains.</p></li>
+<li><p id="corty3e-ch2-p25" block_type="bl-mid">The columns are labeled.</p></li>
+<li><p id="corty3e-ch2-p26" block_type="bl-mid">The abbreviation for frequency is <em>f.</em></p></li>
+<li><p id="corty3e-ch2-p27" block_type="bl-mid">The table is &#8220;upside down,&#8221; with the largest value of the variable (six children per family) at the top and the smallest value (one child per family) at the bottom. Why the table is arranged this way will become clear in a moment when cumulative frequencies are introduced.</p></li>
+<li><p id="corty3e-ch2-p28" block_type="bl-mid">There is no value in the table that indicates how many students were in the class, so that information was placed in the title. The sample size, <em>N,</em> is commonly reported in tables and graphs.</p></li>
+<li><p id="corty3e-ch2-p29" block_type="bl-last">There was one value (five children per family) that did not exist in the class. But, this is included anyway with a frequency of zero. Include zero frequency values because that shows breaks in the data set.</p></li>
+</list>
+<p id="corty3e_page_41" block_type="page_start">41</p>
+<p id="corty3e_page_42" block_type="page_start">42</p>
+<p id="corty3e-ch2-p30" block_type="txt"><link href="#corty3e-ch2-fig-2">Table 2.2</link> is a basic ungrouped frequency distribution. <strong><link href="#corty3e-ch2-fig-3">Table 2.3</link></strong> is one with more bells and whistles. This more complex ungrouped frequency distribution has three new columns. The first, <termref term="cumulative frequency">cumulative frequency</termref><strong>,</strong> tells how many cases in a data set have a given value <em>or</em> a lower value. For example, there are 23 people who have two <em>or fewer</em> children in their family and 28 who have three <em>or fewer.</em></p>
+<figure id="corty3e-ch2-fig-3" block_type="table" numbered="true" number="2.3" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="large" border="true"/>
+<image asset-id="corty3e-ch2-img-3" alt="image" src="asset/ch2/corty3e_table02_03.jpg"/>
+</figure>
+<p id="corty3e-ch2-p31" block_type="txt">A cumulative frequency, abbreviated <em>f</em><em><sub>c</sub></em><em>,</em> is calculated by adding up all the frequencies at or below a given row. It is easier to visualize this than to make it into a formula. Look at <strong><link href="#corty3e-ch2-fig-4">Figure 2.1</link></strong> and note how the cumulative frequencies stair-step up. For the first row, the frequency and the cumulative frequency are the same, 9. Moving up one step, add the frequency at this level, 14, to the cumulative frequency from the level below, 9, to get the cumulative frequency of 23 for this level. Then repeat the process&#8212;add the frequency at the new level to the cumulative frequency from one step down&#8212;to get the next cumulative frequency.</p>
+<figure id="corty3e-ch2-fig-4" block_type="figure" numbered="true" number="2.1" mmtype="image" mmsrc="" attr="">
+<layout align="right" width="medium" border="true"/>
+<image asset-id="corty3e-ch2-img-4" alt="image" src="asset/ch2/corty3e_fig02_01.jpg"/>
+<caption><strong><phrase block_type="fig_num">Figure 2.1</phrase> Calculating Cumulative Frequencies for a Frequency Distribution</strong> One can calculate cumulative frequencies by &#8220;stair-stepping&#8221; up. The cumulative frequency in the bottom row is the same as the frequency for that row. Then add the frequency from the row above to find its cumulative frequency. Continue the process until one reaches the final row. Note that the cumulative frequency in the top row is the same as the number of cases in the data set.</caption>
+</figure>
+<p id="corty3e_page_43" block_type="page_start">43</p>
+<p id="corty3e-ch2-p32" block_type="txt">There are a few other things one should know about cumulative frequencies:</p>
+<list id="corty3e-ch2-list-3" type="unordered" block_type="bullet">
+<li><p id="corty3e-ch2-p33" block_type="bl-first">Frequency distributions are organized upside down, with the biggest value the variable can take on the top row. This is because of cumulative frequency, the number of cases at or <em>below</em> a given value. In this table, the row for six children in the family is the top row and the row for one child in the family is the bottom row.</p></li>
+<li><p id="corty3e-ch2-p34" block_type="bl-mid">The cumulative frequency for the top row should be the same as the total number of cases, <em>N,</em> in the data set. If they don&#8217;t match, something is wrong.</p></li>
+<li><p id="corty3e-ch2-p36" block_type="bl-mid">Cumulative frequencies can only be calculated for data that have an order, data where the numbers tell direction. This means that cumulative frequencies can be calculated for ordinal-, interval-, or ratio-level data, but not for nominal data.</p></li>
+<li><p id="corty3e-ch2-p37" block_type="bl-last">If one has nominal data, one needs to organize the data in some logical fashion to fit one&#8217;s intended purpose. For example, one could make a frequency distribution for the nominal variable of choice of college major. To draw attention to the relative popularity of majors, it could be organized by ascending or descending frequency.</p></li>
+</list>
+<box numbered="false" id="corty3e-ch2-exp1-1" block_type="mn1">
+<p id="corty3e-ch2-p35" block_type="mn-ext-ni"><em>Cumulative frequencies can only be calculated for data that have an order, data where the numbers tell direction.</em></p>
+</box>
+<p id="corty3e-ch2-p38" block_type="txt">The other new columns in <link href="#corty3e-ch2-fig-3">Table 2.3</link> take information that is already there, frequency and cumulative frequency, and present it as percentages. Percentages are a way of transforming scores to put them in context. To see how this works, imagine that a psychologist said that two of the clients he treated in the last year experienced major depression. Does he specialize in the treatment of depression? The answer depends on how many total clients he treated in the last year. If he offered therapy to four patients, then half of them, or 50&#37;, were depressed. If he treated 100 cases, then only 2&#37; were depressed. Whether the psychologist is a depression specialist depends on what percentage of his practice is devoted to treating that illness. Percentages put scores in context.</p>
+<p id="corty3e-ch2-p39" block_type="txt">The percentage column, abbreviated &#37;, takes the information in the frequency column and turns it into percentages. <link href="#corty3e-ch2-bx6-1">Equation 2.1</link> shows that this is done by dividing a frequency by the total number of cases in the data set and then multiplying the quotient by 100.</p>
+<box title="" numbered="false" id="corty3e-ch2-bx6-1" block_type="eq-t">
+<box-metadata><box-title><phrase block_type="sec_num">Equation 2.1</phrase> <phrase block_type="sec_title">Formula for Calculating Frequency Percentage (%) for a Frequency Distribution</phrase></box-title></box-metadata>
+<p id="corty3e-ch2-eqn-1" block_type="equation">
+<image asset-id="corty3e-ch2-img-5" alt="image" src="asset/ch2/corty3e_eqn02_43_01.jpg"/>
+</p>
+<p id="corty3e-ch2-p40" block_type="whl">where &#37; &#61; frequency percentage</p>
+<p id="corty3e-ch2-p41" block_type="whl"><em>f</em> &#61; frequency</p>
+<p id="corty3e-ch2-p42" block_type="whl"><em>N</em> &#61; total number of cases</p>
+</box>
+<p id="corty3e-ch2-p43" block_type="txt">For example, in the third row where the frequency is 5, one would calculate</p>
+<p id="corty3e-ch2-eqn-2" block_type="equation">
+<image asset-id="corty3e-ch2-img-6" alt="image" src="asset/ch2/corty3e_eqn02_43_02.jpg"/>
+</p>
+<p id="corty3e-ch2-p44" block_type="txt">This means, in plain language, that 16.13&#37; of the students come from families with three children.</p>
+<p id="corty3e_page_44" block_type="page_start">44</p>
+<p id="corty3e-ch2-p45" block_type="txt">The final column, abbreviated &#37;<sub>c</sub><em>,</em> gives the <termref term="cumulative percentage">cumulative percentage</termref><strong>,</strong> the percentage of cases with scores at or below a given level. The cumulative percentage is a restatement of the information in the cumulative frequency column in percentage format. For example, in the second row from the bottom of <link href="#corty3e-ch2-fig-3">Table 2.3</link>, it is readily apparent that just over 74&#37; of the students come from one-child or two-child families.</p>
+<box title="" numbered="false" id="corty3e-ch2-bx6-2" block_type="eq-t">
+<box-metadata><box-title><phrase block_type="sec_num">Equation 2.2</phrase> <phrase block_type="sec_title">Formula for Calculating Cumulative Percentage (&#37;<sub>c</sub>) for a Frequency Distribution</phrase></box-title></box-metadata>
+<p id="corty3e-ch2-eqn-3" block_type="equation">
+<image asset-id="corty3e-ch2-img-7" alt="image" src="asset/ch2/corty3e_eqn02_44_01.jpg"/>
+</p>
+<p id="corty3e-ch2-p46" block_type="whl">where &#37;<em><sub>c</sub></em> &#61; cumulative percentage</p>
+<p id="corty3e-ch2-p47" block_type="whl"><em>f</em><em><sub>c</sub></em> &#61; cumulative frequency</p>
+<p id="corty3e-ch2-p48" block_type="whl"><em>N</em> &#61; total number of cases</p>
+</box>
+<p id="corty3e-ch2-p49" block_type="txt">The formula for cumulative percentage is given in <link href="#corty3e-ch2-bx6-2">Equation 2.2</link>. To find &#37;<sub>c</sub> for a given row in a frequency distribution table, one divides the row&#8217;s cumulative frequency by the total number of cases and then multiplies the quotient by 100. In the second to last row of <link href="#corty3e-ch2-fig-3">Table 2.3</link>, where the cumulative frequency is 23, one would calculate</p>
+<p id="corty3e-ch2-eqn-4" block_type="equation">
+<image asset-id="corty3e-ch2-img-7" alt="image" src="asset/ch2/corty3e_eqn02_44_02.jpg"/>
+</p>
+<p id="corty3e-ch2-p50" block_type="txt-ni">Note that the cumulative percentage for the top row should equal 100&#37;.</p>
+</section>
+<section id="corty3e-ch2-sec2-3" block_type="h2" chapter="2" title="" numbered="false" level="2" print_page="44">
+<section-metadata><section-title>Grouped Frequency Distributions</section-title></section-metadata>
+<p id="corty3e-ch2-p51" block_type="txt-ni">Ungrouped frequency distributions work well in two conditions: (1) when the variable takes a limited set of values, or (2) when one wants to document all the values a variable can take. If one were classifying semester status of students in college, there is a limited number of options (1st, 2nd, 3rd, etc.) and an ungrouped frequency distribution would work well. There are many more options for the number of credit hours a student has completed, and an ungrouped frequency distribution for this variable would only make sense if it were important to keep track of how many students had 15 hours vs. 16 hours vs. 17 hours, and so forth.</p>
+<p id="corty3e-ch2-p52" block_type="txt">When dealing with a variable that has a large range, like number of credit hours, a grouped frequency distribution makes more sense. In a grouped frequency distribution, one finds the frequency with which a variable occurs over a range of values. In the credit hours example, one might count how many students have completed from 0 to 14 hours, or from 15 to 29 hours, and so forth. These ranges are called intervals or bins and are abbreviated with a lowercase <em>i.</em></p>
+<p id="corty3e-ch2-p53" block_type="txt">Grouped frequency distributions work best when there is an order to the values a variable can take, that is, when the variable is measured at the ordinal, interval, or ratio level. Nominal data can be grouped if there is some logical categorization. For example, imagine that a psychologist collected detailed information about the diagnoses of her patients&#8212;whether they had major depression, dysthymia, bipolar disorder, obsessive-compulsive disorder, phobias, generalized anxiety disorder, alcoholism, heroin addiction. These responses could be grouped into categories of mood disorders, anxiety disorders, and substance abuse disorders.</p>
+<p id="corty3e_page_45" block_type="page_start">45</p>
+<p id="corty3e-ch2-p54" block_type="txt">For variables that are measured at the ordinal level or higher, the first step is to decide how many intervals to include in a grouped frequency distribution. There needs to be a balance between the amount of detail presented and the number of intervals. There shouldn&#8217;t be so few intervals that one can&#8217;t see important details in the data set, and there shouldn&#8217;t be so many intervals that the big picture is lost in the details. A rule of thumb is to use psychology&#8217;s magic number, 7 &#177; 2, and have from five to nine intervals. But, that&#8217;s just a rule of thumb&#8212;if fewer than five intervals or more than nine intervals do a better job of communication, that&#8217;s fine. The other thing to keep in mind is convention. It is common to make intervals that are 5, 10, 20, 25, or 100 units wide.</p>
+<p id="corty3e-ch2-p55" block_type="txt"><strong><link href="#corty3e-ch2-fig-9">Table 2.4</link></strong> displays data we&#8217;ll use to make a grouped frequency distribution. These numbers represent the number of property crimes that occur in a state for every thousand people who live in that state. They are organized from low (17 crimes per 1,000) to high (44 crimes per 1,000) to make it easy to construct a grouped frequency distribution.</p>
+<figure id="corty3e-ch2-fig-9" block_type="table" numbered="true" number="2.4" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="large" border="true"/>
+<image asset-id="corty3e-ch2-img-9" alt="image" src="asset/ch2/corty3e_table02_04.jpg"/>
+</figure>
+<p id="corty3e-ch2-p56" block_type="txt">The first task is to decide how many intervals to include. One needs to have intervals that will capture all data and that don&#8217;t overlap. One option is to have 10-point-wide intervals&#8212;one for the values in the 10s, one for the 20s, the 30s, and the 40s. But that means only four intervals and so few intervals would lose too much detail. Instead, it makes sense here to opt for 5-point-wide intervals. Note that the first interval starts at 15, not 17, because starting an interval at a multiple of 5 is a convention commonly followed. The first interval is 15&#8211;19. (If you don&#8217;t believe it is five points wide, count it off on your fingers.)</p>
+<p id="corty3e-ch2-p57" block_type="txt">There&#8217;s one other thing to mention&#8212;all intervals should be the same width so that the frequency in one interval can be compared to the frequency in another. So, there will be six intervals, ranging from 15&#8211;19 on the bottom row to 40&#8211;44 on the top. <strong><link href="#corty3e-ch2-fig-10">Table 2.5</link></strong> shows what a completed grouped frequency distribution looks like for these state crime data.</p>
+<figure id="corty3e-ch2-fig-10" block_type="table" numbered="true" number="2.5" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="xlarge" border="true"/>
+<image asset-id="corty3e-ch2-img-10" alt="image" src="asset/ch2/corty3e_table02_05.jpg"/>
+</figure>
+<p id="corty3e_page_46" block_type="page_start">46</p>
+<p id="corty3e-ch2-p58" block_type="txt">As with an ungrouped frequency distribution, a grouped frequency distribution has a title, labeled columns, and is upside down. A grouped frequency distribution also presents the same information&#8212;frequency, cumulative frequency, percentage, and cumulative percentage. This grouped frequency distribution does have one new column, <em>m,</em> which gives information about the <em>midpoint</em> of each interval. The <termref term="midpoint">midpoint</termref> is just what it sounds like, the middle point of the interval. One can verify that the midpoint of the first interval is 17.00 by counting through the interval, 15&#8211;19, on one&#8217;s fingers. Or, find the average of 15 and 19, the endpoints of the interval</p>
+<p id="corty3e-ch2-eqn-5" block_type="equation">
+<image asset-id="corty3e-ch2-img-11" alt="image" src="asset/ch2/corty3e_eqn02_46_01.jpg"/>
+</p>
+<figure id="corty3e-ch2-fig-12" block_type="figure" numbered="true" number="2.2" mmtype="image" mmsrc="" attr="">
+<layout align="right" width="medium" border="true"/>
+<image asset-id="corty3e-ch2-img-13" alt="image" src="asset/ch2/corty3e_fig02_02.jpg"/>
+<caption><strong><phrase block_type="fig_num">Figure 2.2</phrase> Four Cardinal Compass Headings</strong> This figure shows the degrees associated with the four main compass headings&#8212;north, east, south, and west&#8212;as well as the degrees halfway between them. Though a heading of east is exactly 90&#176;, we would say a person is heading east anywhere from 45&#176; to 135&#176;. &#8220;East&#8221; is the midpoint of that interval.</caption>
+</figure>
+<p id="corty3e-ch2-p59" block_type="txt">There are two reasons for having a midpoint. First, the midpoint is, in a sense, a summary of the interval. Imagine a compass drawn as a circle with only four headings&#8212;north, east, south, and west (see <strong><link href="#corty3e-ch2-fig-12">Figure 2.2</link></strong>). North is at the top, labeled 360&#176;, east is to the right, labeled 90&#176;, and so on. If Sharon were heading off to the right at exactly 90&#176;, one would say that she was heading east. But when else would one say she was heading east? If the only options were to say a person was heading north, east, south, or west, one would say &#8220;east&#8221; when that person was heading anywhere from 45&#176; to 135&#176;. East is the midpoint of that interval <image asset-id="corty3e-ch2-img-12" alt="image" src="asset/ch2/corty3e_ineqn02_46_01.jpg"/>, a summary of the direction for all the points in that interval.</p>
+<p id="corty3e-ch2-p60" block_type="txt">There&#8217;s another reason for having a midpoint. Suppose a grouped frequency distribution, like that in <link href="#corty3e-ch2-fig-10">Table 2.5</link>, was the only information one had. There was no access to the original data. One would know that there are three cases in the 15&#8211;19 interval, but their specific values wouldn&#8217;t be known. Were they all 15s? All 19s? Spread throughout the interval? Statisticians have developed the convention that when the exact value for a case is unknown, it is assigned the value of the midpoint of the interval within which it falls.</p>
+<p id="corty3e_page_47" block_type="page_start">47</p>
+<p id="corty3e-ch2-p61" block_type="txt">A lot of material was covered in this section, so here are some summaries. <strong><link href="#corty3e-ch2-fig-13">Figure 2.3</link></strong> is a flowchart that leads one through the process of deciding whether to make an ungrouped or a grouped frequency distribution. <strong><link href="#corty3e-ch2-fig-13">Table 2.6</link></strong> summarizes what material to include when making a table.</p>
+<figure id="corty3e-ch2-fig-13" block_type="figure" numbered="true" number="2.3" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="large" border="true"/>
+<image asset-id="corty3e-ch2-img-14" alt="image" src="asset/ch2/corty3e_fig02_03.jpg"/>
+<caption><strong><phrase block_type="fig_num">Figure 2.3</phrase> How to Choose: Deciding Whether to Make an Ungrouped Frequency Distribution or a Grouped Frequency Distribution for an Ordinal-, Interval-, or Ratio-Level Variable</strong> This flowchart leads one through the decision process of whether to make an ungrouped frequency distribution or a grouped frequency distribution for a variable that is measured at a level higher than nominal.</caption>
+</figure>
+<figure id="corty3e-ch2-fig-14" block_type="table" numbered="true" number="2.6" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="xlarge" border="true"/>
+<image asset-id="corty3e-ch2-img-15" alt="image" src="asset/ch2/corty3e_table02_06.jpg"/>
+</figure>
+<p id="corty3e_page_48" block_type="page_start">48</p>
+<box title="Worked Example 2.1" numbered="false" id="corty3e-ch2-bx3-1" block_type="sr-exp-n">
+<p id="corty3e-ch2-p62" block_type="sr-ex-txt-ni">For practice making a frequency distribution table, imagine a school district that wanted to get a better picture of the intelligence of its students. It hired a psychologist to administer IQ tests to a random sample of sixth-grade students. Now the district needs a summary of the results.</p>
+<p id="corty3e-ch2-p63" block_type="sr-ex-txt"><strong><link href="#corty3e-ch2-fig-15">Table 2.7</link></strong> shows the raw data for the students tested. The first thing to note is that there is a lot of data&#8212;four columns of 15 and one of 8, so <em>N</em> &#61; 68. The second thing to note is that a wide range of IQ scores exists, from the 60s to the 150s. Given the wide range of scores and given that it doesn&#8217;t seem necessary to maintain information about all the unique scores, a grouped frequency distribution is a more sensible option than an ungrouped frequency distribution to summarize the data.</p>
+<figure id="corty3e-ch2-fig-15" block_type="table" numbered="true" number="2.7" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="large" border="true"/>
+<image asset-id="corty3e-ch2-img-16" alt="image" src="asset/ch2/corty3e_table02_07.jpg"/>
+</figure>
+<p id="corty3e-ch2-p64" block_type="sr-x-txt">The first step in making a grouped frequency distribution is organizing the data. <strong><link href="#corty3e-ch2-fig-16">Table 2.8</link></strong> shows the data arranged in ascending order.</p>
+<figure id="corty3e-ch2-fig-16" block_type="table" numbered="true" number="2.8" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="large" border="true"/>
+<image asset-id="corty3e-ch2-img-17" alt="image" src="asset/ch2/corty3e_table02_08.jpg"/>
+</figure>
+<p id="corty3e-ch2-p65" block_type="txt">The next decision is how many intervals to have and/or how wide they should be. The range of scores is from 67 to 152. Grouping scores by tens into 60s, 70s, 80s, and so on seems like a reasonable approach. That would mean having 10 intervals, more than the five-to-nine-intervals rule of thumb suggests. But, it is not many more and having an interval width (10) that is familiar is important.</p>
+<p id="corty3e-ch2-p66" block_type="txt">Next, one needs to decide what information to put into the frequency distribution. The bare minimum is the interval and the frequency, but tables are more useful if they also include cumulative frequency, percentage, and cumulative percentage. <strong><link href="#corty3e-ch2-fig-17">Table 2.9</link></strong> shows a table, empty except for title, column labels, and interval information. Note that the intervals appear in the reverse order they did in <link href="#corty3e-ch2-fig-16">Table 2.8</link>. And, note that there are enough non-overlapping intervals so that each value falls in one, and only one, interval.</p>
+<figure id="corty3e-ch2-fig-17" block_type="table" numbered="true" number="2.9" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="large" border="true"/>
+<image asset-id="corty3e-ch2-img-18" alt="image" src="asset/ch2/corty3e_table02_09.jpg"/>
+</figure>
+<p id="corty3e_page_49" block_type="page_start">49</p>
+<p id="corty3e-ch2-p67" block_type="txt">The completed table, <strong><link href="#corty3e-ch2-fig-18">Table 2.10</link></strong>, will provide the school district with a good descriptive summary of the intelligence of its sixth graders. It shows the range of scores, from the 60s to the 150s, and the most common scores, from 90 to 119.</p>
+<figure id="corty3e-ch2-fig-18" block_type="table" numbered="true" number="2.10" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="large" border="true"/>
+<image asset-id="corty3e-ch2-img-19" alt="image" src="asset/ch2/corty3e_table02_10.jpg"/>
+</figure>
+</box>
+<box title="Practice Problems 2.1" numbered="false" id="corty3e-ch2-bx2-1" block_type="sr-h">
+<p id="corty3e_page_50" block_type="page_start">50</p>
+<p id="corty3e-ch2-p68" block_type="sr-h1"><strong>Review Your Knowledge</strong></p>
+<p id="corty3e-ch2-p69" block_type="sr-que-nl"><phrase block_type="question_num">2.01</phrase> Under what conditions should an ungrouped frequency distribution be made? A grouped frequency distribution?</p>
+<p id="corty3e-ch2-p70" block_type="sr-que-nl"><phrase block_type="question_num">2.02</phrase> What information does a cumulative frequency provide?</p>
+<p id="corty3e-ch2-p71" block_type="sr-que-nl"><phrase block_type="question_num">2.03</phrase> How should a frequency distribution be organized for a nominal variable like type of religion?</p>
+<p id="corty3e-ch2-p72" block_type="sr-que-nl"><phrase block_type="question_num">2.04</phrase> How many intervals should a grouped frequency distribution have?</p>
+<p id="corty3e-ch2-p73" block_type="sr-que-nl"><phrase block_type="question_num">2.05</phrase> What is the formula to calculate a midpoint for an interval in a grouped frequency distribution?</p>
+<p id="corty3e-ch2-p74" block_type="sr-h1"><strong>Apply Your Knowledge</strong></p>
+<p id="corty3e-ch2-p75" block_type="sr-que-nl"><phrase block_type="question_num">2.06</phrase> An exercise physiologist has first-year college students exercise and then measures how many minutes it takes for their heart rates to return to normal. Make an ungrouped frequency distribution that shows frequency, cumulative frequency, percentage, and cumulative percentage for the following data:</p>
+<p id="corty3e-ch2-p76" block_type="sr-x-eq">1, 3, 7, 2, 8, 12, 11, 3, 5, 6, 7, 4, 14, 8, 2, 3, 5, 8, 11, 10, 9, 8, 4, 3, 2, 3, 4, 2, 6, and 7</p>
+<p id="corty3e-ch2-p77" block_type="sr-que-nl"><phrase block_type="question_num">2.07</phrase> Below are final grades, in order, from an upper-level psychology class. Make a grouped frequency distribution to show the distribution of grades. Use an interval width of 10 and start the lowest interval at 50. Be sure to include midpoint, frequency, cumulative frequency, percentage, and cumulative percentage for the data:</p>
+<p id="corty3e-ch2-p78" block_type="sr-x-eq">53, 54, 56, 59, 60, 60, 60, 62, 63, 63, 66, 67, 67, 70, 70, 70, 71, 72, 73, 74, 74, 75, 75, 77, 77, 77, 78, 79, 79, 80, 80, 81, 81, 81, 81, 81, 83, 83, 84, 84, 85, 85, 85, 85, 86, 86, 87, 87, 88, 91, 91, 92, 93, 94, 96, 98, 98, 99</p>
+</box>
+</section>
+<section id="corty3e-ch2-sec1-2" block_type="h1" chapter="2" title="" numbered="false" level="1" print_page="50">
+<section-metadata><section-title><phrase block_type="sec_num">2.2</phrase> <phrase block_type="sec_title">Discrete Numbers and Continuous Numbers</phrase></section-title></section-metadata>
+<p id="corty3e-ch2-p79" block_type="txt-ni"><link href="corty3e-ch01.xml">Chapter 1</link> covered levels of measurement, classifying numbers as nominal, ordinal, interval, or ratio. Now let&#8217;s learn another way to classify numbers, as discrete or continuous. Knowing whether a number is discrete or continuous will be important in the next section of this chapter, which addresses how to graph a frequency distribution.</p>
+<box numbered="false" id="corty3e-ch2-exp1-2" block_type="mn1">
+<p id="corty3e-ch2-p80" block_type="mn-ext-ni"><em>Because fractional values for continuous numbers represent distance, continuous numbers are always interval- or ratio-level numbers. But not all interval- or ratio-level numbers are continuous.</em></p>
+</box>
+<p id="corty3e-ch2-p81" block_type="txt"><termref term="Discrete numbers">Discrete numbers</termref> answer the question &#8220;How many?&#8221; For example, the answers to questions like how many siblings one has, how many neurons are in a spinal cord, or how many jeans are in a closet are all discrete numbers. Discrete numbers take whole number values only and have no &#8220;in-between,&#8221; or fractional, values. No matter how raggedy a person&#8217;s favorite pair of jeans is, it&#8217;s still one pair of jeans. One would never say that a pair of jeans with a lot of holes is 0.79 of a pair of jeans. Nominal- and ordinal-level numbers are always discrete. Sometimes, interval- and ratio-level numbers are discrete.</p>
+<p id="corty3e-ch2-p82" block_type="txt"><termref term="Continuous numbers">Continuous numbers</termref> answer the question &#8220;How much?&#8221; For example, the answers to questions like how much aggression a person has, how much intelligence one has, or how much a person weighs would be continuous numbers. Continuous numbers can take on values between whole numbers, that is, they may have fractional values. The number of decimal places reported for continuous numbers, how specific they are, depends on the measuring instrument used. More precise measuring instruments allow attributes to be measured more exactly.</p>
+<p id="corty3e-ch2-p83" block_type="txt">Because fractional values for continuous numbers represent distance, continuous numbers are always interval- or ratio-level numbers. Keep in mind, though, that not all interval- or ratio-level numbers are continuous. <strong><link href="#corty3e-ch2-fig-19">Figure 2.4</link></strong> is a flowchart that leads one through the process of determining whether a number is discrete or continuous.</p>
+<figure id="corty3e-ch2-fig-19" block_type="figure" numbered="true" number="2.4" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="large" border="true"/>
+<image asset-id="corty3e-ch2-img-20" alt="image" src="asset/ch2/corty3e_fig02_04.jpg"/>
+<caption><strong><phrase block_type="fig_num">Figure 2.4</phrase> How to Choose: Continuous Numbers vs. Discrete Numbers</strong> Start by using <link href="#corty3e-ch1-fig-16">Figure 1.10</link> on page 20 to determine the variable&#8217;s level of measurement. Then, depending on whether the variable is (a) nominal or ordinal or (b) interval or ratio, follow the flowchart to determine if the variable is continuous or discrete.</caption>
+</figure>
+<p id="corty3e_page_51" block_type="page_start">51</p>
+<box title="A Common Question" numbered="false" id="corty3e-ch2-bx1-1" block_type="bx-1-h">
+<p id="corty3e-ch2-p84" block_type="bx1-que"><strong>Q</strong>	If a number, like how many children in a family, is discrete and only takes whole number values, why is the average number of children in families reported as a decimal value such as 2.37?</p>
+<p id="corty3e-ch2-p85" block_type="bx1-ans"><strong>A</strong>	Individual cases can only take on whole number values if a variable is discrete, but math can be done on these whole numbers to obtain meaningful fractional values.</p>
+</box>
+<p id="corty3e-ch2-p86" block_type="txt">An example should make it clearer how continuous numbers can take on in-between values. Weight is a continuous number. Suppose Tyrone stepped on a digital scale, one that weighs to the nearest pound, and reported, &#8220;I weigh 175 pounds.&#8221; Does Tyrone weigh <em>exactly</em> 175 pounds? If there were a more precise scale, one that weighed to the nearest tenth of a pound, his weight might turn out to be 175.3 pounds. And, with an even more precise scale, one that measured to the nearest hundredth of a pound, his weight might now be found to be 175.34 pounds. How much Tyrone weighs depends on the precision of the scale used to measure him. Theoretically, continuous numbers can always be made more exact by using a better&#8212;more precise&#8212;measuring instrument.</p>
+<p id="corty3e_page_52" block_type="page_start">52</p>
+<p id="corty3e-ch2-p87" block_type="txt">Tyrone could weigh exactly 175 pounds, but he probably doesn&#8217;t. Statisticians think of his weight as falling within an <em>interval</em> that has a midpoint of 175. The question is this: How wide is the interval? How much or how little does Tyrone really weigh?</p>
+<p id="corty3e-ch2-p88" block_type="txt">The answer is that Tyrone weighs somewhere from 174.5 to 175.5 pounds. The scale reports weight to the nearest pound, so the unit of measurement is 1 pound. Tyrone&#8217;s real weight falls somewhere in the interval from half a unit of measurement below his reported weight to half a unit of measurement above his reported weight. That&#8217;s from 175 &#8211; 0.5 &#61; 174.5 to 175 &#43; 0.5 &#61; 175.5.</p>
+<p id="corty3e-ch2-p89" block_type="txt">If Tyrone weighed less than 174.5, say, 174.2, then the scale would have reported his weight as 174, not 175 pounds. And if he weighed more than 175.5, say, 175.9, it would have reported his weight as 176 pounds. It is not clear where in the range from 174.5 to 175.5 his weight really falls, but his weight does fall in that range. His weight&#8212;a continuous number&#8212;is reported as the midpoint (175) of a range of values, any of which could be his real weight.</p>
+<p id="corty3e-ch2-p90" block_type="txt">A single continuous number represents a range of values. To help understand this, think back to high school chemistry and measuring how acidic or basic a liquid was. This was done by dipping pH paper into the liquid and comparing the color of the pH paper to a key. An example of a key for pH is shown in <strong><link href="#corty3e-ch2-fig-20">Figure 2.5</link></strong>.</p>
+<figure id="corty3e-ch2-fig-20" block_type="figure" numbered="true" number="2.5" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="medium" border="true"/>
+<image asset-id="corty3e-ch2-img-21" alt="image" src="asset/ch2/corty3e_fig02_05.jpg"/>
+<caption><strong><phrase block_type="fig_num">Figure 2.5</phrase> Key for pH Paper</strong> pH is a continuous measure. If this pH paper turns the middle shade when dipped into a solution, the pH is called 6. But the pH of the solution may not be exactly 6. It is just closer to 6 than it is to 4 or 8.</caption>
+</figure>
+<p id="corty3e-ch2-p91" block_type="txt">Suppose one dipped a piece of the pH paper from <link href="#corty3e-ch2-fig-20">Figure 2.5</link> into a solution and it turned the shade associated with a pH of 6. Is the pH of the solution exactly 6? The pH is closer to 6 than to 4, or else the paper would have turned the lighter shade for 4. It is also closer to 6 than to 8, because the paper was not the darker shade for 8. The pH of the solution is closer to 6 than to 4 or 8, but it probably is not exactly 6.</p>
+<p id="corty3e-ch2-p92" block_type="txt">In what range does the pH of the solution fall? This pH paper measures to the nearest 2 points so that is the unit of measurement. Half of the unit of measurement is 1, so subtracting that from 6 and adding it to 6 give the range within which the pH of the solution really falls: between 5 and 7. When this pH paper says 6, it really means somewhere between 5 and 7.</p>
+<p id="corty3e-ch2-p93" block_type="txt">Those pH values, 5 and 7, are called the real limits of the interval. <termref term="Real limits">Real limits</termref> are the upper and lower bounds of a single continuous number or of an interval in a grouped frequency distribution for a continuous variable.</p>
+<p id="corty3e-ch2-p94" block_type="txt"><link href="#corty3e-ch2-fig-18">Table 2.10</link>, the grouped frequency distribution of IQ for the 68 sixth graders, can be used to examine the real limits for an interval in a grouped frequency distribution. Here, IQ is measured to the nearest whole number. However, it would be possible to make a test that measures IQ to the nearest tenth or hundredth of a point, so IQ is a continuous variable. In <link href="#corty3e-ch2-fig-18">Table 2.10</link>, the bottom IQ interval ranges from 60 to 69, what are called the apparent limits for the interval. These are called <termref term="apparent limits">apparent limits</termref> because they represent how wide the interval appears to be. But an IQ score of 60, at the bottom of the interval, really ranges from 59.5 to 60.5 and a score of 69, at the top of the interval, really ranges from 68.5 to 69.5. So, the scores in the 60 to 69 interval really fall somewhere in the range from 59.5, the real lower limit of the interval, to 69.5, the real upper limit. For continuous measures, real limits make researchers aware of how (im)precise their measures are.</p>
+<p id="corty3e_page_53" block_type="page_start">53</p>
+<box title="Worked Example 2.2" numbered="false" id="corty3e-ch2-bx3-2" block_type="sr-exp-n">
+<p id="corty3e-ch2-p95" block_type="sr-ex-txt-ni">The next section of this chapter turns to making graphs. Differentiating between discrete numbers and continuous numbers is important when figuring out what graph to make, so here&#8217;s more practice.</p>
+<list id="corty3e-ch2-list-4" type="ordered" block_type="upperroman">
+<li><p id="corty3e-ch2-p96" block_type="sr-ex-nl">A professor surveys a group of college students about how much time, in minutes, they spend on schoolwork per week. She makes a grouped frequency distribution that has intervals of 0&#8211;59 minutes, 60&#8211;119 minutes, 120&#8211;179 minutes, and so on. Is this a discrete measure or a continuous measure? What are the real limits for the 60&#8211;119 interval? For that interval, what are the interval width and the midpoint?</p>
+<p id="corty3e-ch2-p97" block_type="sr-ex-nl">To figure this out, follow the flowchart in <link href="#corty3e-ch2-fig-19">Figure 2.4</link>. Minutes is a ratio-level variable, so it can be either discrete or continuous. To decide, one needs to think if the scale could be made more precise and to measure minutes to fractional values. The answer is yes. So, the amount of time spent studying is a continuous variable. The real lower limit for the 60&#8211;119 interval is 59.5, which is half a unit of measurement below the apparent lower limit of the interval. Similarly, the real upper limit for the interval is 119.5, half a unit of measurement above the apparent upper limit. The interval width is 60, the distance between the real limits of an interval, calculated by 119.5 &#8211; 59.5. And the midpoint of the interval is 89.5, halfway between 60 and 119, calculated by <image asset-id="corty3e-ch2-img-22" alt="image" src="asset/ch2/corty3e_ineqn02_53_01.jpg"/> .</p></li>
+<li><p id="corty3e-ch2-p98" block_type="sr-ex-nl">A developmental psychologist finds out, from a national sample of teenagers, how many texts they send per week. He ends up making a grouped frequency distribution that has intervals of 1&#8211;25, 26&#8211;50, 51&#8211;75, and so forth. Is this a continuous or a discrete measure? For the second interval, 26&#8211;50, what are the real limits? For that interval, what are the interval width and the midpoint?</p>
+<p id="corty3e-ch2-p99" block_type="sr-ex-nl">Again, use the flowchart in <link href="#corty3e-ch2-fig-19">Figure 2.4</link> to figure out whether this is a continuous or a discrete measure. The number of texts sent is a ratio-level number, so it could be either continuous or discrete. A text is a text is a text, whether it is one character long or 160. One can&#8217;t measure the number of texts more precisely than with whole numbers, which means that this variable, number of texts sent, is a discrete number. If a person sends 26 texts, he or she has sent 26 texts, not somewhere from 25.5 to 26.5 texts. This means that the real limits of the interval are the same as the apparent limits: 26&#8211;50. The interval width is 25 and the midpoint is 38, halfway between 26 and 50, calculated by way of <image asset-id="corty3e-ch2-img-23" alt="image" src="asset/ch2/corty3e_ineqn02_53_02.jpg"/>.</p></li>
+</list>
+</box>
+<box title="Practice Problems 2.2" numbered="false" id="corty3e-ch2-bx2-2" block_type="sr-h">
+<p id="corty3e_page_54" block_type="page_start">54</p>
+<p id="corty3e-ch2-p100" block_type="sr-h1"><strong>Review Your Knowledge</strong></p>
+<p id="corty3e-ch2-p101" block_type="sr-que-nl"><phrase block_type="question_num">2.08</phrase> How does a continuous number differ from a discrete number?</p>
+<p id="corty3e-ch2-p102" block_type="sr-que-nl"><phrase block_type="question_num">2.09</phrase> If there were five cases in the interval 45&#8211;49 of a grouped frequency distribution for a continuous variable and their original raw scores were unknown, what value(s) should be assigned to them?</p>
+<p id="corty3e-ch2-p103" block_type="sr-h1"><strong>Apply Your Knowledge</strong></p>
+<p id="corty3e-ch2-p104" block_type="sr-que-nl"><phrase block_type="question_num">2.10</phrase> For each variable, determine if it is continuous or discrete.</p>
+<list id="corty3e-ch2-list-5" type="ordered" block_type="loweralpha">
+<li><p id="corty3e-ch2-p105" block_type="sr-que-ll">The amount of snowfall, in inches, recorded during winter in a city</p></li>
+<li><p id="corty3e-ch2-p106" block_type="sr-que-ll">The number of days, in the past 30, on which a person has consumed any alcohol</p></li>
+<li><p id="corty3e-ch2-p107" block_type="sr-que-ll">A person&#8217;s level of depression, as measured by the percentage of questions on a scale that was endorsed in the depressed direction</p></li>
+</list>
+<p id="corty3e-ch2-p108" block_type="sr-que-nl"><phrase block_type="question_num">2.11</phrase> Below are sets of consecutive intervals from frequency distributions for continuous variables. For the second interval in each set, the one in bold, tell the real lower limit; the real upper limit; the interval width, <em>i;</em> and the interval midpoint, <em>m.</em></p>
+<list id="corty3e-ch2-list-6" type="ordered" block_type="loweralpha">
+<li><p id="corty3e-ch2-p109" block_type="sr-que-ll">15&#8211;19; <strong>20</strong>&#8211;<strong>24;</strong> 25&#8211;29</p></li>
+<li><p id="corty3e-ch2-p110" block_type="sr-que-ll">205&#8211;245; <strong>255</strong>&#8211;<strong>295;</strong> 305&#8211;345</p></li>
+<li><p id="corty3e-ch2-p111" block_type="sr-que-ll">1.1&#8211;1.2; <strong>1.3</strong>&#8211;<strong>1.4;</strong> 1.5&#8211;1.6</p></li>
+<li><p id="corty3e-ch2-p112" block_type="sr-que-ll">1,000&#8211;2,000; <strong>3,000</strong>&#8211;<strong>4,000;</strong> 5,000&#8211;6,000</p></li>
+</list>
+</box>
+</section>
+<section id="corty3e-ch2-sec1-3" block_type="h1" chapter="2" title="" numbered="false" level="1" print_page="54">
+<section-metadata><section-title><phrase block_type="sec_num">2.3</phrase> <phrase block_type="sec_title">Graphing Frequency Distributions</phrase></section-title></section-metadata>
+<p id="corty3e-ch2-p113" block_type="txt-ni">&#8220;A picture is worth a thousand words&#8221; is a common saying. It&#8217;s time to put that saying into practice and explore visual displays of frequency distributions. Graphs, the subject of this section, can be used to display frequency information. With graphs, the information leaps out, whereas one has to work harder to find the information in a frequency distribution table.</p>
+<box numbered="false" id="corty3e-ch2-exp1-3" block_type="mn1">
+<p id="corty3e-ch2-p114" block_type="mn-ext-ni"><em>Choosing which graph to use depends on whether the numbers are discrete or continuous. If the numbers are discrete, use a bar graph. If the data are continuous, use a histogram or a frequency polygon.</em></p>
+</box>
+<p id="corty3e-ch2-p115" block_type="txt">This chapter covers three different graphs for showing frequency: (1) bar graphs, (2) histograms, and (3) frequency polygons. Choosing which graph to use depends on whether the numbers are discrete or continuous. If the numbers are discrete, use a bar graph. If the data are continuous, use a histogram or a frequency polygon.</p>
+<p id="corty3e-ch2-p116" block_type="txt">Decisions about which graph to use are often based on the level of measurement for the data&#8212;nominal, ordinal, interval, or ratio. Nominal- and ordinal-level data are discrete and should be graphed with a bar graph. Interval- and ratio-level data may be discrete or continuous. If the variable is discrete, use a bar graph. If the variable is continuous, use a histogram or frequency polygon. In actual practice, histograms and frequency polygons are often made for interval variables and ratio variables, whether the variable is continuous or not. In these instances, histograms or frequency polygons are used even if the data are discrete. <strong><link href="#corty3e-ch2-fig-21">Figure 2.6</link></strong> is a flowchart summarizing the decision rules about how to choose the correct graph for a frequency distribution.</p>
+<figure id="corty3e-ch2-fig-21" block_type="figure" numbered="true" number="2.6" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="medium" border="true"/>
+<image asset-id="corty3e-ch2-img-24" alt="image" src="asset/ch2/corty3e_fig02_06.jpg"/>
+<caption><strong><phrase block_type="fig_num">Figure 2.6</phrase> How to Choose: What Graph Should One Make for a Frequency Distribution?</strong> Start by using <link href="#corty3e-ch2-fig-19">Figure 2.4</link> to determine whether the variable is continuous or discrete. The type of graph depends on this decision. No matter which graph one makes, be sure to give the graph a title and label all axes. If the variable being graphed is measured at the ordinal, interval, or ratio level, one can comment on the shape of the graph.</caption>
+</figure>
+</section>
+<section id="corty3e-ch2-sec2-4" block_type="h2" chapter="2" title="" numbered="false" level="2" print_page="54">
+<section-metadata><section-title>Bar Graphs</section-title></section-metadata>
+<p id="corty3e-ch2-p117" block_type="txt-ni"><termref term="Bar graph">Bar graph</termref><strong>s</strong> are used to demonstrate the frequency with which the different values of discrete variables occur. Sex, whether one is male or female, is a discrete variable. <strong><link href="#corty3e-ch2-fig-22">Table 2.11</link></strong> shows a frequency distribution for the sex of students in a psychology class.</p>
+<box id="corty3e-ch2-video-1" block_type="video">
+<p id="corty3e-ch2-videotxt-1" block_type="vidtxt"><link href="http://bcs.whfreeman.com/WebPub/Statistics/statvtk/Videos/StatClips/Summaries%20and%20Pictures%20for%20Categorical%20Data_clearSkinCap_3/Summaries%20and%20Pictures%20for%20Categorical%20Data.html" target="_pop" data-href-px=""><image asset-id="corty3e-ch2-vimg-1" alt="image" src="asset/images/video.jpg"/></link><em>StatClips: Summaries and Pictures for Categorical Data</em>Video on LaunchPad</p>
+</box>
+<figure id="corty3e-ch2-fig-22" block_type="table" numbered="true" number="2.11" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="medium" border="true"/>
+<image asset-id="corty3e-ch2-img-25" alt="image" src="asset/ch2/corty3e_table02_11.jpg"/>
+</figure>
+<p id="corty3e_page_55" block_type="page_start">55</p>
+<p id="corty3e-ch2-p118" block_type="txt">Here&#8217;s how to turn this table into a bar graph. Graphs are usually wider than tall, so start by making the <em>X</em>-axis longer than the <em>Y</em>-axis. <strong><link href="#corty3e-ch2-fig-23">Figure 2.7</link></strong> shows the template for the graph. The different categories of the variable, in this case male and female, go on the <em>X</em>-axis. The <em>X</em>-axis is labeled &#8220;Sex&#8221; and is marked &#8220;Male&#8221; and &#8220;Female.&#8221;</p>
+<figure id="corty3e-ch2-fig-23" block_type="figure" numbered="true" number="2.7" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="medium" border="true"/>
+<image asset-id="corty3e-ch2-img-26" alt="image" src="asset/ch2/corty3e_fig02_07.jpg"/>
+<caption><strong><phrase block_type="fig_num">Figure 2.7</phrase> Template for Bar Graph Showing the Sex of Students (<em>N</em> &#61; 65) in Upper-Level Psychology Class</strong> This &#8220;empty&#8221; graph shows how to set up a bar graph. Note that the graph is wider than tall, all axes are labeled, frequency goes on the <em>Y</em>-axis, and the categories being counted go on the <em>X</em>-axis.</caption>
+</figure>
+<p id="corty3e_page_56" block_type="page_start">56</p>
+<p id="corty3e-ch2-p119" block_type="txt">Frequency goes on the <em>Y</em>-axis, so it is labeled &#8220;Frequency&#8221; and marked off in equal intervals, by 10s, from 0 to 50. Why go up to 50? Because the largest frequency was 46 and the axis has to accommodate that value.</p>
+<p id="corty3e-ch2-p120" block_type="txt">Note that, just as with tables, the graph has a detailed title, <em>N</em> is mentioned, and everything is labeled clearly. Obviously, it is a good idea to use graph paper and a ruler.</p>
+<p id="corty3e-ch2-p121" block_type="txt">To complete the bar graph, all one needs to do is draw a bar above each category on the <em>X</em>-axis. Note that the bar goes up as high as the frequency of the category in <strong><link href="#corty3e-ch2-fig-24">Figure 2.8</link></strong>, the completed figure. This is called a bar graph because of the bars; note that all of the bars are the same width and they don&#8217;t touch each other. They don&#8217;t touch each other because the variable is discrete.</p>
+<figure id="corty3e-ch2-fig-24" block_type="figure" numbered="true" number="2.8" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="medium" border="true"/>
+<image asset-id="corty3e-ch2-img-27" alt="image" src="asset/ch2/corty3e_fig02_08.jpg"/>
+<caption><strong><phrase block_type="fig_num">Figure 2.8</phrase> Bar Graph Showing the Sex of Students (<em>N</em> &#61; 65) in Upper-Level Psychology Class</strong> Note that the bars don&#8217;t touch each other in bar graphs because the variable on the <em>X</em>-axis is discrete.</caption>
+</figure>
+<p id="corty3e-ch2-p122" block_type="txt">The advantage of a picture over words, of the graph (<link href="#corty3e-ch2-fig-24">Figure 2.8</link>) over the table (<link href="#corty3e-ch2-fig-22">Table 2.11</link>), should be obvious. In this bar graph, it jumps out that there were a lot more women than men in this class.</p>
+</section>
+<section id="corty3e-ch2-sec2-5" block_type="h2" chapter="2" title="" numbered="false" level="2" print_page="56">
+<section-metadata><section-title>Histograms</section-title></section-metadata>
+<p id="corty3e-ch2-p123" block_type="txt-ni">A <termref term="histogram">histogram</termref> is a graphic display of a frequency distribution for continuous data. It is like a bar graph in that bars rise above the <em>X</em>-axis, with the height of the bars representing the frequencies in the intervals. However, a histogram differs from a bar graph in that the bars touch each other, representing the fact that the variable is continuous, not discrete. In <strong><link href="#corty3e-ch2-fig-25">Figure 2.9</link></strong>, a template for a histogram for the sixth-grade IQ data from earlier in the chapter is presented.</p>
+<figure id="corty3e-ch2-fig-25" block_type="figure" numbered="true" number="2.9" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="large" border="true"/>
+<image asset-id="corty3e-ch2-img-28" alt="image" src="asset/ch2/corty3e_fig02_09.jpg"/>
+<caption><strong><phrase block_type="fig_num">Figure 2.9</phrase> Template for Histogram Showing Grouped Frequency Distribution of IQ Scores for 68 Sixth Graders (Interval Width &#61; 10)</strong> This &#8220;empty&#8221; graph shows how to set up a histogram. Note that frequency goes on the <em>Y</em>-axis, values of the variable being graphed on the <em>X</em>-axis, and that both axes are clearly labeled.</caption>
+</figure>
+<p id="corty3e-ch2-p124" block_type="txt">There are several things to note in this histogram:</p>
+<list id="corty3e-ch2-list-7" type="unordered" block_type="bullet">
+<li><p id="corty3e-ch2-p125" block_type="bl-first">Even though the histogram is &#8220;empty&#8221; right now, it already has a detailed title.</p></li>
+<li><p id="corty3e-ch2-p126" block_type="bl-mid">Both axes are clearly labeled.</p></li>
+<li><p id="corty3e-ch2-p127" block_type="bl-mid">Frequency goes on the <em>Y</em>-axis and the values of the variable (in this case, IQ) go on the <em>X</em>-axis.</p></li>
+<li><p id="corty3e-ch2-p128" block_type="bl-mid">The <em>Y</em>-axis starts at zero and is marked off by 5s to a height of 20. This accommodates the largest frequency in the data set, 15.</p>
+<p id="corty3e_page_57" block_type="page_start">57</p></li>
+<li><p id="corty3e-ch2-p129" block_type="bl-mid">The smallest value for IQ is 67, which is far away from a value of zero. If the <em>X</em>-axis started at zero, there would be a lot of blank space before the first interval. Instead, the <em>X</em>-axis starts at 60, the apparent lower limit of the first interval.</p></li>
+<li><p id="corty3e-ch2-p130" block_type="bl-mid">Note the discontinuity mark on the <em>X</em>-axis, which alerts people viewing the graph that the axis doesn&#8217;t start at zero.</p></li>
+<li><p id="corty3e-ch2-p131" block_type="bl-last">The highest IQ value is 152, so the <em>X</em>-axis ends at 160, what would be the start of the next higher interval.</p>
+<p id="corty3e-ch2-p132" block_type="txt"><strong><link href="#corty3e-ch2-fig-26">Figure 2.10</link></strong> shows the histogram once it has been completed. Note:</p>
+<figure id="corty3e-ch2-fig-26" block_type="figure" numbered="true" number="2.10" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="large" border="true"/>
+<image asset-id="corty3e-ch2-img-29" alt="image" src="asset/ch2/corty3e_fig02_10.jpg"/>
+<caption><strong><phrase block_type="fig_num">Figure 2.10</phrase> Histogram Showing Grouped Frequency Distribution of IQ Scores for 68 Sixth Graders (Interval Width &#61; 10)</strong> Histograms graph the frequency of continuous variables, so the bars touch each other. Note that the bars are as wide as the real limits of each interval, not the apparent limits. This is highlighted in the enlarged section of the graph.</caption>
+</figure>
+</li>
+<li><p id="corty3e-ch2-p133" block_type="bl-first">The bars go up as high as the frequency in the interval, 15 for the highest frequency.</p></li>
+<li><p id="corty3e-ch2-p134" block_type="bl-mid">Unlike a bar graph, the bars in a histogram touch each other because the variable being represented is continuous.</p></li>
+<li><p id="corty3e-ch2-p135" block_type="bl-last">There is one tricky thing in a histogram&#8212;the bars go up and come down at the real limits of the interval, not the apparent limits. The first interval, 60 to 69, for example, really covers scores from 59.5 to 69.5 and the bar reflects that. Look at the enlarged section of <link href="#corty3e-ch2-fig-26">Figure 2.10</link> to get a clear picture of this.</p></li>
+</list>
+</section>
+<section id="corty3e-ch2-sec2-6" block_type="h2" chapter="2" title="" numbered="false" level="2" print_page="57">
+<section-metadata><section-title>Frequency Polygon</section-title></section-metadata>
+<p id="corty3e-ch2-p136" block_type="txt-ni">A <termref term="frequency polygon">frequency polygon</termref><strong>,</strong> sometimes called a line graph, displays the frequency distribution of a continuous variable as a line, not with bars. A frequency polygon differs from a histogram in another way: the frequencies &#8220;go to zero&#8221; at the beginning (the far left) and the end (the far right) of the graph. Whether one uses a histogram or a frequency polygon to represent a frequency distribution is a matter of personal preference&#8212;they both are legitimate options for graphing frequencies for a continuous variable.</p>
+<p id="corty3e_page_58" block_type="page_start">58</p>
+<p id="corty3e-ch2-p137" block_type="txt"><strong><link href="#corty3e-ch2-fig-27">Figure 2.11</link></strong> shows a template for a frequency polygon for the sixth-grade IQ data:</p>
+<figure id="corty3e-ch2-fig-27" block_type="figure" numbered="true" number="2.11" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="large" border="true"/>
+<image asset-id="corty3e-ch2-img-30" alt="image" src="asset/ch2/corty3e_fig02_11.jpg"/>
+<caption><strong><phrase block_type="fig_num">Figure 2.11</phrase> Template for Frequency Polygon Showing Grouped Frequency Distribution of IQ Scores for 68 Sixth Graders (Interval Width &#61; 10)</strong> This &#8220;empty&#8221; graph shows how a frequency polygon should be set up. Frequency is marked on the <em>Y</em>-axis and midpoints of the IQ intervals on the <em>X</em>-axis. Both axes are clearly labeled and the graph is wider than tall.</caption>
+</figure>
+<list id="corty3e-ch2-list-8" type="unordered" block_type="bullet">
+<li><p id="corty3e-ch2-p138" block_type="bl-first">Of course, there is a title and both axes are labeled.</p></li>
+<li><p id="corty3e-ch2-p139" block_type="bl-mid">Frequency, on the <em>Y</em>-axis, starts at zero and goes up, in equal intervals, to the first interval above the largest possible frequency.</p></li>
+<li><p id="corty3e-ch2-p140" block_type="bl-mid">The <em>X</em>-axis shows the midpoints of the intervals for the variable being graphed.</p></li>
+<li><p id="corty3e-ch2-p141" block_type="bl-last">The lowest IQ score in the data set is in the interval with a midpoint of 64.5 and the highest in an interval with a midpoint of 154.5. But, two &#8220;extra&#8221; midpoints are displayed on the <em>X</em>-axis, one (54.5) below the lowest interval and one (164.5) above the highest interval.</p></li>
+</list>
+<p id="corty3e-ch2-p142" block_type="txt"><strong><link href="#corty3e-ch2-fig-28">Figure 2.12</link></strong> shows the completed frequency polygon. It was completed by placing a dot above each midpoint at the level of its frequency and then connecting the dots. Note that the frequency for the very bottom and very top interval is zero. This is what was meant by saying that frequency polygons &#8220;go to zero&#8221; at the beginning and end of the graph.</p>
+<figure id="corty3e-ch2-fig-28" block_type="figure" numbered="true" number="2.12" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="large" border="true"/>
+<image asset-id="corty3e-ch2-img-31" alt="image" src="asset/ch2/corty3e_fig02_12.jpg"/>
+<caption><strong><phrase block_type="fig_num">Figure 2.12</phrase> Frequency Polygon Showing Grouped Frequency Distribution of IQ Scores for 68 Sixth Graders (Interval Width &#61; 10)</strong> Frequency polygons are made for continuous variables. The frequencies are marked by dots at the appropriate height at the midpoints of the intervals. Then the dots are connected by lines. Note that the graph starts and ends at intervals with a frequency of zero.</caption>
+</figure>
+<p id="corty3e_page_59" block_type="page_start">59</p>
+<p id="corty3e_page_60" block_type="page_start">60</p>
+<p id="corty3e-ch2-p143" block_type="txt">There are a number of differences among the three graphs. <strong><link href="#corty3e-ch2-fig-29">Table 2.12</link></strong> summarizes the differences among bar graphs, histograms, and frequency polygons.</p>
+<figure id="corty3e-ch2-fig-29" block_type="table" numbered="true" number="2.12" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="large" border="true"/>
+<image asset-id="corty3e-ch2-img-32" alt="image" src="asset/ch2/corty3e_table02_12.jpg"/>
+</figure>
+<box title="Worked Example 2.3" numbered="false" id="corty3e-ch2-bx3-3" block_type="sr-exp-n">
+<p id="corty3e-ch2-p144" block_type="sr-ex-txt-ni">What type of graph could one make for the property crime rate frequency distribution in <link href="#corty3e-ch2-fig-10">Table 2.5</link>. The data are rates, so they are continuous and one could make either a histogram or a frequency polygon. This author is partial to histograms, but there would be nothing wrong with choosing to make a frequency polygon instead. The completed histogram&#8212;wider than tall, with crime rate on the <em>X</em>-axis and frequency on the <em>Y,</em> all axes labeled and with a clear title&#8212;is shown in <strong><link href="#corty3e-ch2-fig-30">Figure 2.13</link></strong>.</p>
+<figure id="corty3e-ch2-fig-30" block_type="figure" numbered="true" number="2.13" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="medium" border="true"/>
+<image asset-id="corty3e-ch2-img-33" alt="image" src="asset/ch2/corty3e_fig02_13.jpg"/>
+<caption><strong><phrase block_type="fig_num">Figure 2.13</phrase> Histogram Showing Property Crime Rates per 1,000 Population for the 50 States</strong> This frequency distribution, which is for a continuous variable, could also be graphed as a frequency polygon.</caption>
+</figure>
+</box>
+<box title="Practice Problems 2.3" numbered="false" id="corty3e-ch2-bx2-3" block_type="sr-h">
+<p id="corty3e_page_61" block_type="page_start">61</p>
+<p id="corty3e-ch2-p145" block_type="sr-h1"><strong>Review Your Knowledge</strong></p>
+<p id="corty3e-ch2-p146" block_type="sr-que-nl"><phrase block_type="question_num">2.12</phrase> Match these two types of data, continuous and discrete, with the three types of graphs (bar graphs, histograms, and frequency polygons).</p>
+<p id="corty3e-ch2-p147" block_type="sr-que-nl"><phrase block_type="question_num">2.13</phrase> Where do the bars go up and come down for each interval on a histogram?</p>
+<p id="corty3e-ch2-p148" block_type="sr-h1"><strong>Apply Your Knowledge</strong></p>
+<p id="corty3e-ch2-p149" block_type="sr-que-nl"><phrase block_type="question_num">2.14</phrase> A religion professor at a large university took a sample of 53 students and asked them what their religious faith was. Nine reported they were Muslim, 4 Buddhist, 2 Hindu, 16 Christian, 10 Jewish, 6 atheist, and 6 reported being other religions. Make a graph for these data.</p>
+<p id="corty3e-ch2-p150" block_type="sr-que-nl"><phrase block_type="question_num">2.15</phrase> A psychologist administered a continuous measure of depression to a representative sample of 772 residents of a midwestern state. Scores on the depression scale can range from 0 to 60 and higher scores indicate more depression. There were 423 with scores in the 0&#8211;9 range, 210 in the 10&#8211;19 range, 72 in the 20&#8211;29 range, 37 in the 30&#8211;39 range, 18 in the 40&#8211;49 range, and 12 in the 50&#8211;59 range. Make a graph for the data.</p>
+</box>
+</section>
+<section id="corty3e-ch2-sec1-4" block_type="h1" chapter="2" title="" numbered="false" level="1" print_page="61">
+<section-metadata><section-title><phrase block_type="sec_num">2.4</phrase> <phrase block_type="sec_title">Shapes of Frequency Distributions</phrase></section-title></section-metadata>
+<box numbered="false" id="corty3e-ch2-exp1-4" block_type="mn1">
+<p id="corty3e-ch2-p151" block_type="mn-ext-ni"><em>There are three aspects of the shape of frequency distributions to focus on&#8212;modality, skewness, and kurtosis.</em></p>
+</box>
+<p id="corty3e-ch2-p152" block_type="txt-ni">Now that frequency distributions are being graphed, it is time to look at the shapes that data sets can take. There are three aspects of the shape of frequency distributions to focus on&#8212;modality, skewness, and kurtosis&#8212;and they are summarized in <strong><link href="#corty3e-ch2-fig-31">Table 2.13</link></strong>.</p>
+<figure id="corty3e-ch2-fig-31" block_type="table" numbered="true" number="2.13" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="large" border="true"/>
+<image asset-id="corty3e-ch2-img-34" alt="image" src="asset/ch2/corty3e_table02_13.jpg"/>
+</figure>
+<p id="corty3e-ch2-p153" block_type="txt">It is important to know the shape of a distribution of data. The shape will determine whether certain statistics can be used. In the next chapter, for instance, it will be shown that it&#8217;s inappropriate to calculate a mean if a data set has certain irregular shapes.</p>
+<p id="corty3e-ch2-p154" block_type="txt">The shape of a data set only matters if the variable is measured at the ordinal, interval, or ratio level. With nominal variables, factors like race or religion, the order in which the categories are arranged is arbitrary. For example, Practice Problem 2.14 involved making a bar graph for the frequencies of different religions. The shape of this graph will vary, depending on whether one organizes the religions alphabetically, by ascending frequency, or by descending frequency. In contrast, one can&#8217;t legitimately alter the order of the depression variable, graphed with either a histogram or frequency polygon, in Practice Problem 2.15.</p>
+<p id="corty3e-ch2-p155" block_type="txt">One example of a common shape is <strong><link href="#corty3e-ch2-fig-32">Figure 2.14</link></strong>. Many call this a bell-shaped curve, but statisticians call it a normal curve or normal distribution. This curve has one highest point, in the middle, and the frequencies decrease symmetrically as the values move away from the midpoint. (Being symmetrical means that the left side of the curve is a mirror image of the right.) The frequency polygon of the sixth-grade IQ data in <link href="#corty3e-ch2-fig-28">Figure 2.12</link> has a &#8220;normalish&#8221; shape.</p>
+<p id="corty3e_page_62" block_type="page_start">62</p>
+<figure id="corty3e-ch2-fig-32" block_type="figure" numbered="true" number="2.14" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="medium" border="true"/>
+<image asset-id="corty3e-ch2-img-35" alt="image" src="asset/ch2/corty3e_fig02_14.jpg"/>
+<caption><strong><phrase block_type="fig_num">Figure 2.14</phrase> The Normal Distribution</strong> The normal distribution, sometimes called the bell-shaped curve, is highest at its midpoint and then shows symmetrical decreases in frequency as it moves to the tails.</caption>
+</figure>
+<p id="corty3e-ch2-p156" block_type="txt"><termref term="Modality">Modality</termref><strong>,</strong> the first of the three aspects used to describe shape, refers to how many peaks exist in the curve of the frequency distribution. A peak is a high point, also called a mode, and it represents the score or interval with the largest frequency. The normal curve has one peak, in the center of the distribution, and is called unimodal. A distribution can have two peaks, in which case it is called bimodal. If a distribution has three or more peaks, it is called multimodal. <strong><link href="#corty3e-ch2-fig-33">Figure 2.15</link></strong> shows what distributions with different modalities look like.</p>
+<figure id="corty3e-ch2-fig-33" block_type="figure" numbered="true" number="2.15" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="xlarge" border="true"/>
+<image asset-id="corty3e-ch2-img-36" alt="image" src="asset/ch2/corty3e_fig02_15.jpg"/>
+<caption><strong><phrase block_type="fig_num">Figure 2.15</phrase> Examples of Modality</strong> Panel A shows a unimodal data set, panel B a bimodal data set, and panel C a multimodal data set.</caption>
+</figure>
+<p id="corty3e-ch2-p157" block_type="txt">Another characteristic of the shape of frequency distributions is <termref term="skewness">skewness</termref><strong>,</strong> which is a measure of how symmetric they are. A distribution is considered skewed if it is not symmetric. The normal curve is perfectly symmetric, as the left side and right side are mirror images of each other. If there is asymmetry and the data tail off to the right, it is called <termref term="positive skew">positive skew</termref><strong>.</strong> If the data tail off to the left, it is called <termref term="negative skew">negative skew</termref><strong>.</strong> Positive and negative don&#8217;t have good and bad connotations here. Statisticians simply use positive and negative to describe which side of the <em>X</em>-axis the tail is on, the right side for positive numbers and the left side for negative numbers.</p>
+<p id="corty3e_page_63" block_type="page_start">63</p>
+<p id="corty3e-ch2-p158" block_type="txt">For a good example of skewness, look at <strong><link href="#corty3e-ch2-fig-34">Figure 2.16</link></strong>. It shows the length of all 2,132 songs in a student&#8217;s iTunes library. Most songs are around 3 or 4 minutes in length, but there are a few approximately 25 minutes long, giving this frequency distribution positive skew.</p>
+<figure id="corty3e-ch2-fig-34" block_type="figure" numbered="true" number="2.16" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="large" border="true"/>
+<image asset-id="corty3e-ch2-img-37" alt="image" src="asset/ch2/corty3e_fig02_16.jpg"/>
+<caption><strong><phrase block_type="fig_num">Figure 2.16</phrase> Length of Songs in an iTunes Library</strong> This histogram is a good example of positive skew, the data set not being symmetric but trailing off to the right. The &#8220;spike&#8221; around 4 minutes makes this a good example of a data set that is quite peaked. (Thanks to Samantha DeDionisio for collecting these data.)</caption>
+</figure>
+<p id="corty3e-ch2-p159" block_type="txt">The third aspect of a frequency distribution is <termref term="kurtosis">kurtosis,</termref> which is just a fancy term for how peaked or flat the distribution is. In <link href="#corty3e-ch2-fig-32">Figure 2.14</link>, the normal curve is neither too peaked nor too flat, so it has a normal level of kurtosis. Some sets of data have higher peaks, like the iTunes data in <link href="#corty3e-ch2-fig-34">Figure 2.16</link>. Other distributions are more flat, like the one shown in <strong><link href="#corty3e-ch2-fig-35">Figure 2.17</link></strong> of the results from a single die rolled multiple times.</p>
+<figure id="corty3e-ch2-fig-35" block_type="figure" numbered="true" number="2.17" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="medium" border="true"/>
+<image asset-id="corty3e-ch2-img-38" alt="image" src="asset/ch2/corty3e_fig02_17.jpg"/>
+<caption><strong><phrase block_type="fig_num">Figure 2.17</phrase> Frequency Distribution of Outcomes on a Die Rolled 150 Times</strong> Kurtosis refers to how peaked or flat a data set is. This data set is flat.</caption>
+</figure>
+</section>
+<section id="corty3e-ch2-sec2-7" block_type="h2" chapter="2" title="" numbered="false" level="2" print_page="64">
+<section-metadata><section-title>Stem-and-Leaf Displays</section-title></section-metadata>
+<p id="corty3e_page_64" block_type="page_start">64</p>
+<p id="corty3e-ch2-p160" block_type="txt-ni">The final topic in this chapter, stem-and-leaf displays, is a wonderful way to summarize the whole chapter. A <termref term="stem-and-leaf display">stem-and-leaf display</termref> is a combination of a table and a graph. It contains all the original data like an ungrouped frequency distribution table, summarizes them in intervals like a grouped frequency distribution, and &#8220;pictures&#8221; the data like a graph.</p>
+<p id="corty3e-ch2-p161" block_type="txt">A stem-and-leaf display divides numbers into &#8220;stems&#8221; and &#8220;leaves.&#8221; The leaves are the last digit on the right of a number. The stems are all the preceding digits. For the data in <link href="#corty3e-ch2-fig-9">Table 2.4</link>, the stem for South Dakota, North Dakota, and New Hampshire would be the tens digit 1, and the leaves would be, respectively, the ones digits 7, 9, and 9. With New York, the stem changes to the tens digit 2 and the leaf would be 0. All the numbers in <link href="#corty3e-ch2-fig-9">Table 2.4</link> are two-digit numbers, ranging from numbers in the teens to numbers in the 40s, so the leaves are 1, 2, 3, and 4. <strong><link href="#corty3e-ch2-fig-36">Table 2.14</link></strong> shows the first step in making a stem-and-leaf display, listing all the possible stems, followed by a vertical line.</p>
+<figure id="corty3e-ch2-fig-36" block_type="table" numbered="true" number="2.14" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="medium" border="true"/>
+<image asset-id="corty3e-ch2-img-39" alt="image" src="asset/ch2/corty3e_table02_14.jpg"/>
+</figure>
+<p id="corty3e-ch2-p162" block_type="txt">The next step is to start tallying the leaves for each stem. When the leaves for all 50 states have been added, the results will look like <strong><link href="#corty3e-ch2-fig-37">Table 2.15</link>.</strong> Note that the leaves for each stem are in order from low to high. Stem-and-leaf displays are a great way to organize data in preparation for making a grouped frequency distribution.</p>
+<figure id="corty3e-ch2-fig-37" block_type="table" numbered="true" number="2.15" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="medium" border="true"/>
+<image asset-id="corty3e-ch2-img-40" alt="image" src="asset/ch2/corty3e_table02_15.jpg"/>
+</figure>
+<box title="Worked Example 2.4" numbered="false" id="corty3e-ch2-bx3-4" block_type="sr-exp-n">
+<p id="corty3e-ch2-p163" block_type="sr-ex-txt-ni">For practice using a graph to figure out the shape of a data set, here are some data collected by a student, Neil Rufenacht. He took a ruler to a fast-food restaurant, bought several orders of french fries, and measured how long they were to the nearest tenth of a centimeter (cm). His results are shown as a stem-and-leaf display in <strong><link href="#corty3e-ch2-fig-38">Table 2.16</link></strong> and as a histogram in <strong><link href="#corty3e-ch2-fig-38">Figure 2.18</link></strong>.</p>
+<figure id="corty3e-ch2-fig-39" block_type="table" numbered="true" number="2.16" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="medium" border="true"/>
+<image asset-id="corty3e-ch2-img-42" alt="image" src="asset/ch2/corty3e_table02_16.jpg"/>
+</figure>
+<figure id="corty3e-ch2-fig-38" block_type="figure" numbered="true" number="2.18" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="medium" border="true"/>
+<image asset-id="corty3e-ch2-img-41" alt="image" src="asset/ch2/corty3e_fig02_18.jpg"/>
+<caption><strong><phrase block_type="fig_num">Figure 2.18</phrase> Histogram for Length of French Fries</strong> With one mode near the center and somewhat symmetrical tailing off of frequencies from the mode, this data set has a &#8220;normalish&#8221; shape.</caption>
+</figure>
+<p id="corty3e-ch2-p164" block_type="sr-ex-txt">It is apparent in the histogram that the smallest french fries fell in the interval with a midpoint of 2 cm and the largest in the 14-cm interval. (That&#8217;s from about three quarters of an inch to five and a half inches for those who prefer the English system of measurement.)</p>
+<p id="corty3e_page_65" block_type="page_start">65</p>
+<p id="corty3e-ch2-p165" block_type="sr-ex-txt">The histogram has one mode, near the center, that doesn&#8217;t seem to go up unusually high. This means that the distribution is unimodal and neither too peaked nor flat. In addition, the frequencies tail off, in a somewhat symmetrical fashion, as the lengths move away from the mode. The shape is not a perfect normal distribution, but it is &#8220;normalish.&#8221; It seems reasonable to conclude that lengths of french fries, at least at this restaurant, resemble a normal distribution.</p>
+<p id="corty3e-ch2-p166" block_type="sr-ex-txt">The stem-and-leaf display shows the same general shape, but offers more details. One can tell, for example, that the smallest french fry is 1.7 cm long.</p>
+</box>
+<box title="DIY" numbered="false" id="corty3e-ch2-bx4-1" block_type="bx4-h">
+<p id="corty3e_page_66" block_type="page_start">66</p>
+<p id="corty3e-ch2-p167" block_type="bx4-txt-ni">Find something you can measure 100 times. Here are some ideas:</p>
+<list id="corty3e-ch2-list-9" type="unordered" block_type="bullet">
+<li><p id="corty3e-ch2-p168" block_type="bx4-bl-first">Light a match and time how long it takes to burn down. Get another match, light it, and time the burning. Do this 98 more times.</p></li>
+<li><p id="corty3e-ch2-p169" block_type="bx4-bl-mid">Find the prices of 100 stocks.</p></li>
+<li><p id="corty3e-ch2-p170" block_type="bx4-bl-mid">Find the length, in seconds, of 100 songs from your iTunes library.</p></li>
+<li><p id="corty3e-ch2-p171" block_type="bx4-bl-mid">Stick your tongue in a bowl of Cheerios and count how many stick to your tongue.</p></li>
+<li><p id="corty3e-ch2-p172" block_type="bx4-bl-mid">Dip a tablespoon into a bowl of change and tally the value of the coins you picked up.</p></li>
+<li><p id="corty3e-ch2-p173" block_type="bx4-bl-mid">Weigh, in grams, 100 eggs.</p></li>
+</list>
+<p id="corty3e-ch2-p174" block_type="bx4-txt">After you have collected your 100 data points, graph them and examine the shape. Given what you measured, does it make sense? For example, if you recorded the length of 100 songs from your music library and the distribution was positively skewed, does that, on reflection, seem reasonable?</p>
+</box>
+<box title="Practice Problems 2.4" numbered="false" id="corty3e-ch2-bx2-4" block_type="sr-h">
+<p id="corty3e-ch2-p175" block_type="sr-h1"><strong>Review Your Knowledge</strong></p>
+<p id="corty3e-ch2-p176" block_type="sr-que-nl"><phrase block_type="question_num">2.16</phrase> For what levels of measurement can one describe the shape of a frequency distribution?</p>
+<p id="corty3e-ch2-p177" block_type="sr-que-nl"><phrase block_type="question_num">2.17</phrase> Describe the normal curve in terms of symmetry, modality, and kurtosis.</p>
+<p id="corty3e-ch2-p178" block_type="sr-que-nl"><phrase block_type="question_num">2.18</phrase> What does it mean if a frequency distribution is positively skewed?</p>
+<p id="corty3e-ch2-p179" block_type="sr-h1"><strong>Apply Your Knowledge</strong></p>
+<p id="corty3e-ch2-p180" block_type="sr-que-nl"><phrase block_type="question_num">2.19</phrase> Here is a graph for the religious affiliation of the 53 students surveyed in Practice Problem 2.14. Determine the shape of the data set.</p>
+<figure id="corty3e-ch2-fig-40" block_type="un_figure" numbered="false" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="medium" border="true"/>
+<image asset-id="corty3e-ch2-img-43" alt="image" src="asset/ch2/corty3e_fig02_un01.jpg"/>
+</figure>
+<p id="corty3e-ch2-p181" block_type="sr-que-nl"><phrase block_type="question_num">2.20</phrase> This graph shows the depression scores of the 772 residents surveyed in Practice Problem 2.15. Determine the shape of the data set.</p>
+<figure id="corty3e-ch2-fig-41" block_type="un_figure" numbered="false" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="medium" border="true"/>
+<image asset-id="corty3e-ch2-img-44" alt="image" src="asset/ch2/corty3e_fig02_un02.jpg"/>
+</figure>
+<p id="corty3e-ch2-p182" block_type="sr-que-nl"><phrase block_type="question_num">2.21</phrase> Make a stem-and-leaf display and comment on the shape of the distribution for these data: 183, 192, 203, 203, 211, 219, 220, 227, 228, 228, 229, 230, 233, 234, 234, 248, 249, 254, and 266.</p>
+</box>
+<box title="Application Demonstration" numbered="false" id="corty3e-ch2-bx5-1" block_type="sr-x-h">
+<p id="corty3e-ch2-p183" block_type="sr-x-txt-ni">Data showing the suicide rates for all 50 U.S. states were obtained from the <em>Statistical Abstract of the United States</em>. The rates are expressed as the number of deaths per 100,000 population. The rates range from a low of 6.5 deaths per 100,000 population in New Jersey to a high of 21.7 per 100,000 population in Wyoming. To put that in perspective, 0.0065&#37; of the population of New Jersey committed suicide in 2006 vs. a rate more than three times higher in Wyoming, 0.0217&#37;.</p>
+<p id="corty3e_page_67" block_type="page_start">67</p>
+<p id="corty3e-ch2-p184" block_type="sr-x-txt">The data are arranged in ascending order in <strong><link href="#corty3e-ch2-fig-42">Table 2.17</link></strong> in preparation for making a frequency distribution. Note that the rates are reported to the nearest tenth, so that is the unit of measurement. There are a large number of unique values for the 50 states, but all values don&#8217;t need to be maintained. Instead, those close to each other can be grouped together into intervals without losing vital information. Following the flowchart in <link href="#corty3e-ch2-fig-13">Figure 2.3</link>, a grouped frequency distribution makes sense.</p>
+<figure id="corty3e-ch2-fig-42" block_type="table" numbered="true" number="2.17" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="large" border="true"/>
+<image asset-id="corty3e-ch2-img-45" alt="image" src="asset/ch2/corty3e_table02_17.jpg"/>
+</figure>
+<p id="corty3e-ch2-p185" block_type="sr-x-txt">The next question is how many intervals to include. With a range of values from 6.5 to 21.7, the high score and low score are 15.2 points apart. An interval width of 2 points would mean having eight intervals. This fits in with the rule of thumb of including from five to nine intervals suggested in <link href="#corty3e-ch2-fig-10">Table 2.5</link>.</p>
+<p id="corty3e-ch2-p186" block_type="sr-x-txt">Intervals can&#8217;t overlap. If the bottom interval starts at 6 and is 2 points wide, then the next interval starts at 8. Suicide rates are reported to the nearest tenth, so the apparent limits of the first interval are from 6.0 to 7.9. The bottom interval starts at 6. The real limits of the interval run from half a unit of measurement below the apparent bottom of the interval to half a unit of measurement above the apparent top of the interval. That is, from 5.95 to 7.95. <em>Note:</em> The distance between the real limits is the interval width.</p>
+<p id="corty3e-ch2-p187" block_type="sr-x-txt">The midpoints of the intervals are the points halfway between the interval&#8217;s limits. The midpoint for the first interval, which ranges from 6.0 to 7.9, is calculated:</p>
+<p id="corty3e-ch2-eqn-6" block_type="equation">
+<image asset-id="corty3e-ch2-img-46" alt="image" src="asset/ch2/corty3e_eqn02_67_01.jpg"/>
+</p>
+<p id="corty3e-ch2-p188" block_type="sr-x-txt-ni">The next midpoint is one interval width higher:</p>
+<p id="corty3e-ch2-p189" block_type="sr-x-eq">6.95 &#43; 2.00 &#61; 8.95</p>
+<p id="corty3e-ch2-p190" block_type="sr-x-txt">After calculating the other midpoints, one finds the frequencies by counting the number of cases in each interval. These frequencies are placed in a grouped frequency distribution table, as shown in <strong><link href="#corty3e-ch2-fig-44">Table 2.18</link></strong>.</p>
+<figure id="corty3e-ch2-fig-44" block_type="table" numbered="true" number="2.18" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="large" border="true"/>
+<image asset-id="corty3e-ch2-img-47" alt="image" src="asset/ch2/corty3e_table02_18.jpg"/>
+</figure>
+<p id="corty3e_page_68" block_type="page_start">68</p>
+<p id="corty3e-ch2-p191" block_type="sr-x-txt"><link href="#corty3e-ch2-fig-44">Table 2.18</link> contains only the intervals, the midpoints, and the frequencies. Using <link href="#corty3e-ch2-fig-1">Figure 2.1</link> as a guide, stair-step up to find the cumulative frequencies. Then use <link href="#corty3e-ch2-bx6-1">Equation 2.1</link> to transform frequencies into percentages and <link href="#corty3e-ch2-bx6-2">Equation 2.2</link> to transform cumulative frequencies into cumulative percentages in order to complete the grouped frequency distribution (see <strong><link href="#corty3e-ch2-fig-45">Table 2.19</link></strong>).</p>
+<figure id="corty3e-ch2-fig-45" block_type="table" numbered="true" number="2.19" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="large" border="true"/>
+<image asset-id="corty3e-ch2-img-48" alt="image" src="asset/ch2/corty3e_table02_19.jpg"/>
+</figure>
+<p id="corty3e-ch2-p192" block_type="sr-x-txt">The next step is to make a graph of the data. Use <link href="#corty3e-ch2-fig-19">Figure 2.4</link> to determine whether the data are continuous and <link href="#corty3e-ch2-fig-21">Figure 2.6</link> to determine whether a histogram or frequency polygon should be made. <strong><link href="#corty3e-ch2-fig-46">Figure 2.19</link></strong> displays a histogram.</p>
+<figure id="corty3e-ch2-fig-46" block_type="figure" numbered="true" number="2.19" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="medium" border="true"/>
+<image asset-id="corty3e-ch2-img-49" alt="image" src="asset/ch2/corty3e_fig02_19.jpg"/>
+<caption><strong><phrase block_type="fig_num">Figure 2.19</phrase> Histogram for U.S. Suicide Rates</strong> This histogram, with an interval width of 2.00, is unimodal and seems a little more peaked than normal. It might have a little positive skew.</caption>
+</figure>
+<p id="corty3e_page_69" block_type="page_start">69</p>
+<p id="corty3e-ch2-p193" block_type="sr-x-txt">This is a histogram, so the bars go up and come down at the real limits of the intervals, not the apparent limits. It may be hard to see, but the first bar goes up at 5.95, not 6.00, and comes down at 7.95, not 8.00.</p>
+</box>
+<box title="DIY" numbered="false" id="corty3e-ch2-bx4-2" block_type="bx4-h">
+<p id="corty3e-ch2-p194" block_type="bx4-txt-ni">Every year the U.S. Census Bureau used to publish a compendium of odd facts about America and Americans. Want to know the dollar value of all the crops and livestock produced in a state? The <em>Statistical Abstract of the United States</em> will tell you that it ranges from &#36;32 million in Alaska to &#36;35 billion in California. California also leads in the number of federal and state prisoners (171,000), while Hawaii has the longest life expectancy, 77 years.</p>
+<p id="corty3e-ch2-p195" block_type="bx4-txt">Though the last <em>Statistical Abstract</em> was published in 2012, it is still available on the Web and in libraries. Make a reference librarian happy and ask to see a copy. Or Google the term and explore it online. Whatever approach you take, get hold of a copy, find a table that has data of interest to you, and reduce that data into a frequency distribution and graph. By doing so, what did you learn about your variable?</p>
+</box>
+</section>
+<section id="corty3e-ch2-sec1-5" block_type="sum-h" chapter="2" title="" numbered="false" level="1" print_page="69">
+<section-metadata><section-title>SUMMARY</section-title></section-metadata>
+<p id="corty3e-ch2-p196" block_type="sum-hd1"><strong>Make a frequency distribution for a set of data.</strong></p>
+<list id="corty3e-ch2-list-10" type="unordered" block_type="bluebullet">
+<li><p id="corty3e-ch2-p197" block_type="sum-bl-first">Frequency distributions summarize a set of data by tallying how often the values, or ranges of values, occur. For all but nominal-level data, they may also display information about cumulative frequency, percentage, and cumulative percentage.</p></li>
+</list>
+<p id="corty3e-ch2-p198" block_type="sum-hd1"><strong>Decide if a number is discrete or continuous.</strong></p>
+<list id="corty3e-ch2-list-11" type="unordered" block_type="bluebullet">
+<li><p id="corty3e-ch2-p199" block_type="sum-bl-first">Discrete numbers are whole numbers that answer the question &#8220;How many?&#8221; Continuous numbers can be fractional and answer the question &#8220;How much?&#8221; The number of decimal places reported for a continuous variable depends on the precision of the measuring instrument.</p>
+<p id="corty3e_page_70" block_type="page_start">70</p></li>
+<li><p id="corty3e-ch2-p200" block_type="sum-bl-last">The range within which a single continuous value, or an interval of continuous numbers, falls is bounded by the real limits of the interval.</p></li>
+</list>
+<p id="corty3e-ch2-p201" block_type="sum-hd1"><strong>Choose and make the appropriate graph for a frequency distribution.</strong></p>
+<list id="corty3e-ch2-list-12" type="unordered" block_type="bluebullet">
+<li><p id="corty3e-ch2-p202" block_type="sum-bl-first">Frequency distributions of discrete data are graphed with bar graphs; distributions of continuous data are graphed with histograms or frequency polygons.</p></li>
+</list>
+<p id="corty3e-ch2-p203" block_type="sum-hd1"><strong>Describe modality, skewness, and kurtosis for a frequency distribution.</strong></p>
+<list id="corty3e-ch2-list-13" type="unordered" block_type="bluebullet">
+<li><p id="corty3e-ch2-p204" block_type="sum-bl-first">Modality refers to how many high points there are in a data set. If a distribution is asymmetric, it is skewed, while kurtosis refers to how peaked or flat a distribution is.</p></li>
+</list>
+<p id="corty3e-ch2-p205" block_type="sum-hd1"><strong>Make a stem-and-leaf display.</strong></p>
+<list id="corty3e-ch2-list-14" type="unordered" block_type="bluebullet">
+<li><p id="corty3e-ch2-p206" block_type="sum-bl-first">Stem-and-leaf displays are a great way to summarize a set of data. They present the data compactly, like a grouped frequency distribution; keep all the details like an ungrouped frequency distribution; and show the shape, like a graph.</p></li>
+</list>
+</section>
+<section id="corty3e-ch2-sec1-6" block_type="cr-kt-t" chapter="2" title="" numbered="false" level="1" print_page="70">
+<section-metadata><section-title>KEY TERMS</section-title></section-metadata>
+<question id="corty3e-ch2-keyterms-ques1" numbered="false" title="" number="">
+<query id="corty3e-ch2-keyterms-ques1-qry">MA:
+a.apparent limits:: what seem to be the upper and lower bounds of an interval in a grouped frequency distribution.
+a.bar graph:: a graph of a frequency distribution for discrete data that uses the heights of bars to indicate frequency; the bars do not touch.
+a.continuous numbers:: answer the question &#8220;how much&#8221; and can have &#8220;in-between&#8221; values; the specificity of the number, the number of decimal places reported, depends on the precision of the measuring instrument.
+a.cumulative frequency:: a count of how often a given value, or a lower value, occurs in a set of data.
+a.cumulative percentage:: cumulative frequency expressed as a percentage of the number of cases in the data set.
+a.discrete numbers:: answer the question &#8220;how many,&#8221; take whole number values, and have no &#8220;in-between&#8221; values.
+a.frequency distribution:: a tally of how often different values of a variable occur in a set of data.
+a.frequency polygon:: a frequency distribution for continuous data, displayed in graphical format, using a line connecting dots, above interval midpoints, that indicate frequency.
+a.grouped frequency distribution:: a count of how often the values of a variable, grouped into intervals, occur in a set of data.
+a.histogram:: a frequency distribution for continuous data, displayed in graph form, using the heights of bars to indicate frequency; the bars touch each other.
+a.kurtosis:: how peaked or flat a frequency distribution is.
+a.midpoint:: the middle of an interval in a grouped frequency distribution.
+a.modality:: the number of peaks that exist in a frequency distribution.
+a.negative skew:: an asymmetrical frequency distribution in which the tail extends to the left, in the direction of lower scores.
+a.positive skew:: an asymmetrical frequency distribution in which the tail extends to the right, in the direction of higher scores.
+a.real limits:: what are really the upper and lower bounds of a single continuous number or of an interval in a grouped frequency distribution.
+a.stem-and-leaf display:: a data summary technique that combines features of a table and a graph.
+a.skewness:: deviation from symmetry in a frequency distribution, which means the left and right sides of the distribution are not mirror images of each other.
+a.ungrouped frequency distribution:: a count of how often each individual value of a variable occurs in a set of data.
+</query>
+</question>
+
+</section>
+<section id="corty3e-ch2-sec1-7" block_type="cr-x-h" chapter="2" title="" numbered="false" level="1" print_page="71">
+<section-metadata><section-title>CHAPTER EXERCISES</section-title></section-metadata>
+<p id="corty3e_page_71" block_type="page_start">71</p>
+<p id="corty3e-ch2-p226" block_type="cr-x-txt-ni"><strong><em>Answers to the odd-numbered exercises appear in <link href="corty3e-appb.xml">Appendix B</link>.</em></strong></p>
+<p id="corty3e-ch2-p227" block_type="cr-x-hd1"><strong>Review Your Knowledge</strong></p>
+<p id="corty3e-ch2-p228" block_type="cr-x-nl-txt"><phrase block_type="question_num">2.01</phrase> A frequency distribution is a &#95;&#95;&#95;&#95;&#95;&#95;&#95;&#95;&#95;&#95; of how often the values of a variable occur in a data set.</p>
+<p id="corty3e-ch2-p229" block_type="cr-x-nl-txt"><phrase block_type="question_num">2.02</phrase> There are two types of frequency distribution tables: &#95;&#95;&#95;&#95;&#95;&#95;&#95;&#95;&#95;&#95; and &#95;&#95;&#95;&#95;&#95;&#95;&#95;&#95;&#95;&#95;.</p>
+<p id="corty3e-ch2-p230" block_type="cr-x-nl-txt"><phrase block_type="question_num">2.03</phrase> A basic frequency distribution just contains information about what &#95;&#95;&#95;&#95;&#95;&#95;&#95;&#95;&#95;&#95; occur in a data set and what their &#95;&#95;&#95;&#95;&#95;&#95;&#95;&#95;&#95;&#95; are.</p>
+<p id="corty3e-ch2-p231" block_type="cr-x-nl-txt"><phrase block_type="question_num">2.04</phrase> &#95;&#95;&#95;&#95;&#95;&#95;&#95;&#95;&#95;&#95; tells how many cases in a data set have a given value or a lower one.</p>
+<p id="corty3e-ch2-p232" block_type="cr-x-nl-txt"><phrase block_type="question_num">2.05</phrase> The abbreviation for cumulative frequency is&#95;&#95;&#95;&#95;&#95;&#95;&#95;&#95;&#95;&#95;.</p>
+<p id="corty3e-ch2-p233" block_type="cr-x-nl-txt"><phrase block_type="question_num">2.06</phrase> The cumulative frequency for the top row in a frequency distribution is equal to &#95;&#95;&#95;&#95;&#95;&#95;&#95;&#95;&#95;&#95;.</p>
+<p id="corty3e-ch2-p234" block_type="cr-x-nl-txt"><phrase block_type="question_num">2.07</phrase> If one has &#95;&#95;&#95;&#95;&#95;&#95;&#95;&#95;&#95;&#95; -level data in a frequency distribution, it should be organized in some logical fashion.</p>
+<p id="corty3e-ch2-p235" block_type="cr-x-nl-txt"><phrase block_type="question_num">2.08</phrase> The &#95;&#95;&#95;&#95;&#95;&#95;&#95;&#95;&#95;&#95; column in a frequency distribution is a restatement of the information in the cumulative frequency column.</p>
+<p id="corty3e-ch2-p236" block_type="cr-x-nl-txt"><phrase block_type="question_num">2.09</phrase> When dealing with a variable that has a large range, a &#95;&#95;&#95;&#95;&#95;&#95;&#95;&#95;&#95;&#95; frequency distribution usually makes more sense than an ungrouped frequency distribution.</p>
+<p id="corty3e-ch2-p237" block_type="cr-x-nl-txt"><phrase block_type="question_num">2.10</phrase> As a general rule of thumb, grouped frequency distributions have from &#95;&#95;&#95;&#95;&#95;&#95;&#95;&#95;&#95;&#95; to &#95;&#95;&#95;&#95;&#95;&#95;&#95;&#95;&#95;&#95; intervals.</p>
+<p id="corty3e-ch2-p238" block_type="cr-x-nl-txt"><phrase block_type="question_num">2.11</phrase> Having a small number of intervals may show the big picture, but the danger exists of losing sight of the &#95;&#95;&#95;&#95;&#95;&#95;&#95;&#95;&#95;&#95; in the data set.</p>
+<p id="corty3e-ch2-p239" block_type="cr-x-nl-txt"><phrase block_type="question_num">2.12</phrase> All intervals in a grouped frequency distribution should be the same &#95;&#95;&#95;&#95;&#95;&#95;&#95;&#95;&#95;&#95;, so the frequencies in different intervals can be compared meaningfully.</p>
+<p id="corty3e-ch2-p240" block_type="cr-x-nl-txt"><phrase block_type="question_num">2.13</phrase> A &#95;&#95;&#95;&#95;&#95;&#95;&#95;&#95;&#95;&#95; is the middle point of an interval.</p>
+<p id="corty3e-ch2-p241" block_type="cr-x-nl-txt"><phrase block_type="question_num">2.14</phrase> If the value for a case in an interval is unknown, assign it the value associated with the &#95;&#95;&#95;&#95;&#95;&#95;&#95;&#95;&#95;&#95;.</p>
+<p id="corty3e-ch2-p242" block_type="cr-x-nl-txt"><phrase block_type="question_num">2.15</phrase> Discrete numbers answer the question &#95;&#95;&#95;&#95;&#95;&#95;&#95;&#95;&#95;&#95;.</p>
+<p id="corty3e-ch2-p243" block_type="cr-x-nl-txt"><phrase block_type="question_num">2.16</phrase> Discrete numbers take on &#95;&#95;&#95;&#95;&#95;&#95;&#95;&#95;&#95;&#95; number values only.</p>
+<p id="corty3e-ch2-p244" block_type="cr-x-nl-txt"><phrase block_type="question_num">2.17</phrase> &#95;&#95;&#95;&#95;&#95;&#95;&#95;&#95;&#95;&#95;- and &#95;&#95;&#95;&#95;&#95;&#95;&#95;&#95;&#95;&#95;-level numbers are discrete numbers.</p>
+<p id="corty3e-ch2-p245" block_type="cr-x-nl-txt"><phrase block_type="question_num">2.18</phrase> &#95;&#95;&#95;&#95;&#95;&#95;&#95; numbers answer the question &#8220;How much?&#8221;</p>
+<p id="corty3e-ch2-p246" block_type="cr-x-nl-txt"><phrase block_type="question_num">2.19</phrase> Continuous numbers can have &#95;&#95;&#95;&#95;&#95;&#95;&#95; values.</p>
+<p id="corty3e-ch2-p247" block_type="cr-x-nl-txt"><phrase block_type="question_num">2.20</phrase> The specificity of a &#95;&#95;&#95;&#95;&#95;&#95;&#95; depends on the precision of the instrument used to measure it.</p>
+<p id="corty3e-ch2-p248" block_type="cr-x-nl-txt"><phrase block_type="question_num">2.21</phrase> Continuous numbers are always &#95;&#95;&#95;&#95;&#95;&#95;&#95;- or &#95;&#95;&#95;&#95;&#95;&#95;&#95;-level numbers.</p>
+<p id="corty3e-ch2-p249" block_type="cr-x-nl-txt"><phrase block_type="question_num">2.22</phrase> Interval- and ratio-level numbers can be &#95;&#95;&#95;&#95;&#95;&#95;&#95; or &#95;&#95;&#95;&#95;&#95;&#95;&#95;.</p>
+<p id="corty3e-ch2-p250" block_type="cr-x-nl-txt"><phrase block_type="question_num">2.23</phrase> A single value of a continuous number really represents a &#95;&#95;&#95;&#95;&#95;&#95;&#95; of values.</p>
+<p id="corty3e-ch2-p251" block_type="cr-x-nl-txt"><phrase block_type="question_num">2.24</phrase> The &#95;&#95;&#95;&#95;&#95;&#95;&#95; are the upper and lower bounds of a single continuous number or of an interval in a grouped frequency distribution for continuous numbers.</p>
+<p id="corty3e-ch2-p252" block_type="cr-x-nl-txt"><phrase block_type="question_num">2.25</phrase> The distance between the real limits of an interval is &#95;&#95;&#95;&#95;&#95;&#95;&#95;.</p>
+<p id="corty3e-ch2-p253" block_type="cr-x-nl-txt"><phrase block_type="question_num">2.26</phrase> Which graph is used to display a frequency distribution depends on whether the numbers in the frequency distribution are &#95;&#95;&#95;&#95;&#95;&#95;&#95; or &#95;&#95;&#95;&#95;&#95;&#95;&#95;.</p>
+<p id="corty3e-ch2-p254" block_type="cr-x-nl-txt"><phrase block_type="question_num">2.27</phrase> The graph used for a frequency distribution of discrete data is a &#95;&#95;&#95;&#95;&#95;&#95;&#95;.</p>
+<p id="corty3e-ch2-p255" block_type="cr-x-nl-txt"><phrase block_type="question_num">2.28</phrase> To make a graph of a frequency distribution of continuous data, one can use a &#95;&#95;&#95;&#95;&#95;&#95;&#95; or a &#95;&#95;&#95;&#95;&#95;&#95;&#95;.</p>
+<p id="corty3e-ch2-p256" block_type="cr-x-nl-txt"><phrase block_type="question_num">2.29</phrase> In terms of size, graphs are usually &#95;&#95;&#95;&#95;&#95;&#95;&#95; than &#95;&#95;&#95;&#95;&#95;&#95;&#95;.</p>
+<p id="corty3e-ch2-p257" block_type="cr-x-nl-txt"><phrase block_type="question_num">2.30</phrase> Graphs should have a descriptive title and the &#95;&#95;&#95;&#95;&#95;&#95;&#95; should be clearly labeled.</p>
+<p id="corty3e-ch2-p258" block_type="cr-x-nl-txt"><phrase block_type="question_num">2.31</phrase> Frequency is marked on the &#95;&#95;&#95;&#95;&#95;&#95;&#95;-axis of the graph of a frequency distribution.</p>
+<p id="corty3e-ch2-p259" block_type="cr-x-nl-txt"><phrase block_type="question_num">2.32</phrase> The intervals for the values of the variable being graphed are marked on the &#95;&#95;&#95;&#95;&#95;&#95;&#95; -axis of a histogram.</p>
+<p id="corty3e_page_72" block_type="page_start">72</p>
+<p id="corty3e-ch2-p260" block_type="cr-x-nl-txt"><phrase block_type="question_num">2.33</phrase> In a histogram, the data are continuous, so the bars &#95;&#95;&#95;&#95;&#95;&#95;&#95; each other.</p>
+<p id="corty3e-ch2-p261" block_type="cr-x-nl-txt"><phrase block_type="question_num">2.34</phrase> In a frequency polygon, frequency is marked with a dot placed at the appropriate height above the &#95;&#95;&#95;&#95;&#95;&#95;&#95;of an interval.</p>
+<p id="corty3e-ch2-p262" block_type="cr-x-nl-txt"><phrase block_type="question_num">2.35</phrase> One shouldn&#8217;t look at the shape of a graph for &#95;&#95;&#95;&#95;&#95;&#95;&#95;-level data.</p>
+<p id="corty3e-ch2-p263" block_type="cr-x-nl-txt"><phrase block_type="question_num">2.36</phrase> The &#95;&#95;&#95;&#95;&#95;&#95;&#95; is symmetric, has the highest point in the middle, and includes frequencies that decrease as one moves away from the midpoint.</p>
+<p id="corty3e-ch2-p264" block_type="cr-x-nl-txt"><phrase block_type="question_num">2.37</phrase> The three aspects of the shape of a frequency distribution that are described are &#95;&#95;&#95;&#95;&#95;&#95;&#95;, &#95;&#95;&#95;&#95;&#95;&#95;&#95;, and &#95;&#95;&#95;&#95;&#95;&#95;&#95;.</p>
+<p id="corty3e-ch2-p265" block_type="cr-x-nl-txt"><phrase block_type="question_num">2.38</phrase> &#95;&#95;&#95;&#95;&#95;&#95;&#95; describes how many peaks exist in a frequency distribution.</p>
+<p id="corty3e-ch2-p266" block_type="cr-x-nl-txt"><phrase block_type="question_num">2.39</phrase> If a frequency distribution has two peaks, it is called &#95;&#95;&#95;&#95;&#95;&#95;&#95;.</p>
+<p id="corty3e-ch2-p267" block_type="cr-x-nl-txt"><phrase block_type="question_num">2.40</phrase> A frequency distribution that tails off on one side is said to be &#95;&#95;&#95;&#95;&#95;&#95;&#95;.</p>
+<p id="corty3e-ch2-p268" block_type="cr-x-nl-txt"><phrase block_type="question_num">2.41</phrase> If a frequency distribution tails off on the left-hand side, it has &#95;&#95;&#95;&#95;&#95;&#95;&#95; skewness.</p>
+<p id="corty3e-ch2-p269" block_type="cr-x-nl-txt"><phrase block_type="question_num">2.42</phrase> Kurtosis refers to how &#95;&#95;&#95;&#95;&#95;&#95;&#95; or &#95;&#95;&#95;&#95;&#95;&#95;&#95; a frequency distribution is.</p>
+<p id="corty3e-ch2-p270" block_type="cr-x-nl-txt"><phrase block_type="question_num">2.43</phrase> A stem-and-leaf display summarizes a data set like a &#95;&#95;&#95;&#95;&#95;&#95;&#95;&#95;&#95;&#95;&#95; frequency distribution.</p>
+<p id="corty3e-ch2-p271" block_type="cr-x-nl-txt"><phrase block_type="question_num">2.44</phrase> In a stem-and-leaf display for 21, 21, 24, 25, 28, 30, 31, 34, and 39, the numbers 2 and 3 would be the &#95;&#95;&#95;&#95;&#95;&#95;&#95;&#95;s and 0, 1, 4, 5, 8, and 9 would be the &#95;&#95;&#95;&#95;&#95;&#95;&#95;&#95;&#95;&#95;&#95;s.</p>
+<p id="corty3e-ch2-p272" block_type="cr-x-hd1-rule"><strong>Apply Your Knowledge</strong></p>
+<p id="corty3e-ch2-p273" block_type="cr-x-txt-ni"><strong><em>Making frequency distribution tables</em></strong></p>
+<p id="corty3e-ch2-p274" block_type="cr-x-nl-txt"><phrase block_type="question_num">2.45</phrase> A psychologist completes a survey in which residents in a psychiatric hospital are given diagnostic interviews in order to determine their psychiatric diagnoses. After each interview, the researcher counts how many diagnoses each resident has. Given the following data, make an ungrouped frequency distribution showing frequency, cumulative frequency, percentage, and cumulative percentage: 2, 3, 2, 1, 0, 1, 1, 4, 2, 3, 1, 0, 1, 2, 4, 3, 2, 2, 2, 2, 1, 2, 3, 2, 5, 2, 3, 2, 1, 1, 2, 3, 3, 3, 2, 2, 1, 1, 2, 2, 3, 1, 1, 2, and 2.</p>
+<p id="corty3e-ch2-p275" block_type="cr-x-nl-txt"><phrase block_type="question_num">2.46</phrase> A cognitive psychologist wanted to investigate the stage of moral development reached by college students. She believed that people progressed, in order, through six stages of moral reasoning, from Stage I to Stage VI. She obtained a representative sample of college students in the United States and administered an inventory to classify stage of moral development. Here are the numbers of people classified at the different stages: I &#61; 17, II &#61; 34, III &#61; 78, IV &#61; 187, V &#61; 112, and VI &#61; 88. Make a frequency distribution table for these data, showing frequency, cumulative frequency, percentage, and cumulative percentage.</p>
+<p id="corty3e-ch2-p276" block_type="cr-x-nl-txt"><phrase block_type="question_num">2.47</phrase> A college registrar completes a survey of classrooms on campus in order to find out how many usable seats there are in each one. Make a grouped frequency distribution for her data, using an interval width of 20 and an apparent lower limit of 10 for the bottom interval. Report midpoint, frequency, cumulative frequency, percentage, and cumulative percentage. Here are the data the registrar collected: 12, 26, 18, 17, 102, 20, 35, 46, 50, 28, 29, 53, 75, 30, 37, 45, 58, 43, 42, 36, 50, 60, 55, 45, 40, 23, 28, 38, 39, 40, 50, 60, 45, 36, 28, 40, 54, 62, 38, 58, and 24.</p>
+<p id="corty3e-ch2-p277" block_type="cr-x-nl-txt"><phrase block_type="question_num">2.48</phrase> A professor of education was curious about students&#8217; expectations of academic success. She obtained a sample of college students at the start of their college careers and asked them what they thought their GPAs would be for the first semester. Below are the data she obtained. Make a grouped frequency distribution for the data, using an interval width of 0.5 and an apparent lower limit of 2.1 for the bottom interval. Report midpoint, frequency, cumulative frequency, percentage, and cumulative percentage.</p>
+<p id="corty3e-ch2-p278" block_type="cr-x-eq">3.9, 4.0, 3.0, 3.5, 3.0, 3.5, 3.5, 3.9, 3.5, 2.5, 3.5, 3.8, 3.9, 3.0, 3.9, 3.5, 3.9, 3.0, 3.5, 2.8, 2.4, 2.7, 2.6, 3.4, 3.6, 2.5, 3.8, 2.9, 2.6, 2.4</p>
+<p id="corty3e-ch2-p279" block_type="cr-x-txt-ni"><strong><em>Discrete vs. continuous numbers</em></strong></p>
+<p id="corty3e-ch2-p280" block_type="cr-x-nl-txt"><phrase block_type="question_num">2.49</phrase> For each variable, decide if it is discrete or continuous:</p>
+<p id="corty3e_page_73" block_type="page_start">73</p>
+<list id="corty3e-ch2-list-15" type="ordered" block_type="loweralpha">
+<li><p id="corty3e-ch2-p281" block_type="cr-x-nl-alpha-lc">The number of cases of flu diagnosed at a college in a given semester</p></li>
+<li><p id="corty3e-ch2-p282" block_type="cr-x-nl-alpha-lc">The weight, in grams, of a rat&#8217;s hypothalamus</p></li>
+<li><p id="corty3e-ch2-p283" block_type="cr-x-nl-alpha-lc">The number of teachers, including substitutes, in a school district who are certified to teach high school math</p></li>
+<li><p id="corty3e-ch2-p284" block_type="cr-x-nl-alpha-lc">The number of times that a rat pushes a lever in a Skinner box during a 15-minute period</p></li>
+<li><p id="corty3e-ch2-p285" block_type="cr-x-nl-alpha-lc">How long, in seconds, it takes applause to die down at the end of a school assembly</p></li>
+</list>
+<p id="corty3e-ch2-p286" block_type="cr-x-nl-txt"><phrase block_type="question_num">2.50</phrase> For each variable, decide if it is continuous or discrete:</p>
+<list id="corty3e-ch2-list-16" type="ordered" block_type="loweralpha">
+<li><p id="corty3e-ch2-p287" block_type="cr-x-nl-alpha-lc">The depth, in inches, a person can drive a 3-inch nail with one hammer blow</p></li>
+<li><p id="corty3e-ch2-p288" block_type="cr-x-nl-alpha-lc">The number of students in a classroom who are absent for at least one day during the month of February</p></li>
+<li><p id="corty3e-ch2-p289" block_type="cr-x-nl-alpha-lc">The total number of days that students in a classroom are absent during the month of February</p></li>
+<li><p id="corty3e-ch2-p290" block_type="cr-x-nl-alpha-lc">How many friends one has on Facebook</p></li>
+<li><p id="corty3e-ch2-p291" block_type="cr-x-nl-alpha-lc">The amount of time, measured in seconds, that a person in a driving simulator keeps his or her eyes on the road while engaging in a cell phone conversation</p></li>
+</list>
+<p id="corty3e-ch2-p292" block_type="cr-x-txt-ni"><strong><em>Real vs. apparent limits</em></strong></p>
+<p id="corty3e-ch2-p293" block_type="cr-x-nl-txt"><phrase block_type="question_num">2.51</phrase> Below are sets of consecutive numbers, or intervals, from frequency distributions for continuous variables. For the second number (or interval) in each set, the one in bold, identify the real lower limit, real upper limit, interval width, and midpoint.</p>
+<list id="corty3e-ch2-list-17" type="ordered" block_type="loweralpha">
+<li><p id="corty3e-ch2-p294" block_type="cr-x-nl-alpha-lc">27&#8211;30; <strong>31</strong>&#8211;<strong>34;</strong> 35&#8211;38</p></li>
+<li><p id="corty3e-ch2-p295" block_type="cr-x-nl-alpha-lc">10&#8211;20; <strong>30</strong>&#8211;<strong>40;</strong> 50&#8211;60</p></li>
+<li><p id="corty3e-ch2-p296" block_type="cr-x-nl-alpha-lc">2.00&#8211;2.49; <strong>2.50</strong>&#8211;<strong>2.99;</strong> 3.00&#8211;3.49</p></li>
+<li><p id="corty3e-ch2-p297" block_type="cr-x-nl-alpha-lc">10; <strong>11;</strong> 12</p></li>
+</list>
+<p id="corty3e-ch2-p298" block_type="cr-x-nl-txt"><phrase block_type="question_num">2.52</phrase> For each scenario, tell what the real limits of the number/interval are:</p>
+<list id="corty3e-ch2-list-18" type="ordered" block_type="loweralpha">
+<li><p id="corty3e-ch2-p299" block_type="cr-x-nl-alpha-lc">If a person&#8217;s temperature is reported as 100.3 (and not 100.2 or 100.4), what is the interval within which the person&#8217;s temperature really falls?</p></li>
+<li><p id="corty3e-ch2-p300" block_type="cr-x-nl-alpha-lc">If a family has 7 children, not 6 or 8, what is the interval within which the number of children they have really falls?</p></li>
+<li><p id="corty3e-ch2-p301" block_type="cr-x-nl-alpha-lc">If a person&#8217;s IQ is reported as 115 (and not 114 or 116), what is the interval within which the person&#8217;s IQ really falls?</p></li>
+<li><p id="corty3e-ch2-p302" block_type="cr-x-nl-alpha-lc">If nations&#8217; populations are reported to the nearest million and the United States has a population of 321 million, not 320 or 322, how many people really live in the United States?</p></li>
+<li><p id="corty3e-ch2-p303" block_type="cr-x-nl-alpha-lc">If a man has 3 televisions in his house, not 4 or 5, what is the interval within which the number of televisions he has really falls?</p></li>
+</list>
+<p id="corty3e-ch2-p304" block_type="cr-x-txt-ni"><strong><em>Graphs and shapes of distributions</em></strong></p>
+<p id="corty3e-ch2-p305" block_type="cr-x-nl-txt"><phrase block_type="question_num">2.53</phrase> A developmental psychologist observes how children interact with their parents and classifies the children&#8217;s attachment as secure, avoidant, resistant, or disorganized. He classifies 33 children as securely attached, 17 as avoidant, 13 as resistant, and 21 as disorganized. Graph this frequency distribution and comment on its shape.</p>
+<p id="corty3e-ch2-p306" block_type="cr-x-nl-txt"><phrase block_type="question_num">2.54</phrase> A music teacher held an assembly at an elementary school during which he explained the different types of instruments to the children. Afterwards, he surveyed them as to what kind of instrument each would like to play. Here are the results: percussion &#61; 12, brass &#61; 39, wind &#61; 42, and string &#61; 28. Graph the results and comment on the shape of the graph.</p>
+<p id="corty3e-ch2-p307" block_type="cr-x-nl-txt"><phrase block_type="question_num">2.55</phrase> A psychologist administered an aggression scale to a sample of high school girls. Scores on the scale can range from 20 to 80. Fifty is considered an average score; higher scores mean more aggression. Twelve girls had scores in the 20&#8211;29 range; 33 were 30&#8211;39; 57 were 40&#8211;49; 62 were 50&#8211;59; 19 were 60&#8211;69; and 8 had scores in the 70&#8211;79 range. Graph the results and comment on the shape of the graph.</p>
+<p id="corty3e-ch2-p308" block_type="cr-x-nl-txt"><phrase block_type="question_num">2.56</phrase> A researcher from a search engine company runs Internet searches and times how long each one takes. She found that 17 searches took 0.01 to 0.05 seconds; 57 took 0.06 to 0.10 seconds; 134 took 0.11 to 0.15 seconds; 146 took 0.16 to 0.20 seconds; 398 took 0.21 to 0.25 seconds; 82 took 0.26 to 0.30 seconds; and 56 took 0.31 to 0.35 seconds. Graph the frequency distribution and comment on its shape.</p>
+<p id="corty3e_page_74" block_type="page_start">74</p>
+<p id="corty3e-ch2-p309" block_type="cr-x-txt-ni"><strong><em>Making stem-and-leaf displays</em></strong></p>
+<p id="corty3e-ch2-p310" block_type="cr-x-nl-txt"><phrase block_type="question_num">2.57</phrase> Make a stem-and-leaf display for these data and comment on the shape of the distribution: 11, 12, 21, 23, 27, 27, 29, 30, 30, 33, 34, 35, 39, 43, 45, 47, 53, 53, 67, 75, 84, and 96.</p>
+<p id="corty3e-ch2-p311" block_type="cr-x-nl-txt"><phrase block_type="question_num">2.58</phrase> Make a stem-and-leaf display for these data and comment on the shape of the distribution: 8, 9, 13, 13, 16, 21, 22, 24, 25, 25, 29, 33, 33, 45, 48, 55, 58, 61, 63, 64, 66, 66, 69, 71, 83, 92, 93, and 95.</p>
+<p id="corty3e-ch2-p312" block_type="cr-x-hd1"><strong>Expand Your Knowledge</strong></p>
+<p id="corty3e-ch2-p313" block_type="cr-x-nl-txt"><phrase block_type="question_num">2.59</phrase> If the real limits and apparent limits for an interval are the same, then the variable is:</p>
+<list id="corty3e-ch2-list-19" type="ordered" block_type="loweralpha">
+<li><p id="corty3e-ch2-p314" block_type="cr-x-nl-alpha-lc">continuous.</p></li>
+<li><p id="corty3e-ch2-p315" block_type="cr-x-nl-alpha-lc">discrete.</p></li>
+<li><p id="corty3e-ch2-p316" block_type="cr-x-nl-alpha-lc">interval.</p></li>
+<li><p id="corty3e-ch2-p317" block_type="cr-x-nl-alpha-lc">ratio.</p></li>
+<li><p id="corty3e-ch2-p318" block_type="cr-x-nl-alpha-lc">Real and apparent limits are never the same.</p></li>
+</list>
+<p id="corty3e-ch2-p319" block_type="cr-x-nl-txt"><phrase block_type="question_num">2.60</phrase> For a row in the middle of a frequency distribution, either ungrouped or grouped, which statement is probably true?</p>
+<list id="corty3e-ch2-list-20" type="ordered" block_type="loweralpha">
+<li><p id="corty3e-ch2-p320" block_type="cr-x-nl-alpha-lc"><em>f</em> &#62; <em>f</em><em><sub>c</sub></em></p></li>
+<li><p id="corty3e-ch2-p321" block_type="cr-x-nl-alpha-lc"><em>f</em><em><sub>c</sub></em> &#62; <em>f</em></p></li>
+<li><p id="corty3e-ch2-p322" block_type="cr-x-nl-alpha-lc"><em>f</em> &#61; <em>f</em><em><sub>c</sub></em></p></li>
+<li><p id="corty3e-ch2-p323" block_type="cr-x-nl-alpha-lc">None of these statements is ever true.</p></li>
+</list>
+<p id="corty3e-ch2-p324" block_type="cr-x-nl-txt"><phrase block_type="question_num">2.61</phrase> If a researcher has a grouped frequency distribution for a continuous variable and there are five people in the interval ranging from 50 to 54, what <em>X</em> values should he assign them if he wants to assign values?</p>
+<list id="corty3e-ch2-list-21" type="ordered" block_type="loweralpha">
+<li><p id="corty3e-ch2-p325" block_type="cr-x-nl-alpha-lc">He should randomly select values from 50 to 54.</p></li>
+<li><p id="corty3e-ch2-p326" block_type="cr-x-nl-alpha-lc">He should randomly select values from 49.5 to 54.5.</p></li>
+<li><p id="corty3e-ch2-p327" block_type="cr-x-nl-alpha-lc">As there are five people and there are five integers from 50 through 54, he should assign them values of 50, 51, 52, 53, and 54.</p></li>
+<li><p id="corty3e-ch2-p328" block_type="cr-x-nl-alpha-lc">50</p></li>
+<li><p id="corty3e-ch2-p329" block_type="cr-x-nl-alpha-lc">52</p></li>
+<li><p id="corty3e-ch2-p330" block_type="cr-x-nl-alpha-lc">52.5</p></li>
+<li><p id="corty3e-ch2-p331" block_type="cr-x-nl-alpha-lc">54</p></li>
+</list>
+<p id="corty3e-ch2-p332" block_type="cr-x-nl-txt"><phrase block_type="question_num">2.62</phrase> The distribution of prices of all the new cars sold in a year, including Ferraris, Lamborghinis, and other high-end cars, is probably:</p>
+<list id="corty3e-ch2-list-22" type="ordered" block_type="loweralpha">
+<li><p id="corty3e-ch2-p333" block_type="cr-x-nl-alpha-lc">normally distributed.</p></li>
+<li><p id="corty3e-ch2-p334" block_type="cr-x-nl-alpha-lc">positively skewed.</p></li>
+<li><p id="corty3e-ch2-p335" block_type="cr-x-nl-alpha-lc">negatively skewed.</p></li>
+<li><p id="corty3e-ch2-p336" block_type="cr-x-nl-alpha-lc">not skewed.</p></li>
+</list>
+<p id="corty3e-ch2-p337" block_type="cr-x-nl-txt"><phrase block_type="question_num">2.63</phrase> Diane wears a digital watch that reports the time to the nearest minute. At 10:16 <phrase block_type="small">A.M.</phrase>, by her watch, she left her office. She returned at 10:21 <phrase block_type="small">A.M</phrase>. To the nearest minute, what is the shortest amount of time that she was out of her office? What is the longest?</p>
+<p id="corty3e-ch2-p338" block_type="cr-x-nl-txt"><phrase block_type="question_num">2.64</phrase> Make a stem-and-leaf display for these data. Use an interval width of 5.</p>
+<p id="corty3e-ch2-p339" block_type="cr-x-eq">120, 122, 123, 123, 124, 125, 126, 125, 126, 130, 134, 135, 135, 138, 147</p>
+<box title="SPSS" numbered="false" id="corty3e-ch2-bx3-5" block_type="bx3-h">
+<p id="corty3e-ch2-p340" block_type="bx3-txt-ni">SPSS can be used to generate frequency distribution tables and graphs like those created in this chapter. The &#8220;Frequencies&#8221; command is used to generate an ungrouped frequency distribution. <strong><link href="#corty3e-ch2-fig-47">Figure 2.20</link></strong> shows how to access the Frequencies command by clicking on &#8220;Analyze&#8221; and then &#8220;Descriptive Statistics.&#8221;</p>
+<figure id="corty3e-ch2-fig-47" block_type="figure" numbered="true" number="2.20" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="medium" border="true"/>
+<image asset-id="corty3e-ch2-img-50" alt="image" src="asset/ch2/corty3e_fig02_20.jpg"/>
+<caption><strong><phrase block_type="fig_num">Figure 2.20</phrase> Starting the Frequencies Command</strong> The &#8220;Frequencies&#8221; command is accessed under &#8220;Analyze&#8221; and &#8220;Descriptive Statistics.&#8221;</caption>
+<asset_source>(Source: SPSS)</asset_source>
+</figure>
+<p id="corty3e-ch2-p341" block_type="bx3-txt">Once the menu shown in <strong><link href="#corty3e-ch2-fig-48">Figure 2.21</link></strong> has been opened, use the arrow key to shift the variable one wants to use from the box on the left to the &#8220;Variable(s)&#8221; box. Here, the variable name is &#8220;Children.&#8221;</p>
+<figure id="corty3e-ch2-fig-48" block_type="figure" numbered="true" number="2.21" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="medium" border="true"/>
+<image asset-id="corty3e-ch2-img-51" alt="image" src="asset/ch2/corty3e_fig02_21.jpg"/>
+<caption><strong><phrase block_type="fig_num">Figure 2.21</phrase> The Frequencies Command Menu</strong> Once a variable like &#8220;Number of children&#8221; has been moved into the &#8220;Variable(s)&#8221; box, the &#8220;OK&#8221; button on the lower right becomes active.</caption>
+<asset_source>(Source: SPSS)</asset_source>
+</figure>
+<p id="corty3e_page_75" block_type="page_start">75</p>
+<p id="corty3e-ch2-p342" block_type="bx3-txt">Once there&#8217;s a variable in the Variable(s) box, click on &#8220;OK&#8221; to generate an ungrouped frequency distribution. The Frequencies output can be seen in <strong><link href="#corty3e-ch2-fig-49">Figure 2.22</link></strong>.</p>
+<figure id="corty3e-ch2-fig-49" block_type="figure" numbered="true" number="2.22" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="medium" border="true"/>
+<image asset-id="corty3e-ch2-img-52" alt="image" src="asset/ch2/corty3e_fig02_22.jpg"/>
+<caption><strong><phrase block_type="fig_num">Figure 2.22</phrase> Example of Frequencies Output from SPSS</strong> Compare this SPSS output to <link href="#corty3e-ch2-fig-3">Table 2.3</link>, for the same data. Note that <link href="#corty3e-ch2-fig-3">Table 2.3</link> was arranged upside down, compared to SPSS. <link href="#corty3e-ch2-fig-3">Table 2.3</link> also contained additional information&#8212;cumulative frequency. Finally, <link href="#corty3e-ch2-fig-3">Table 2.3</link> included values, such as five children in the family, for which the frequency was zero.</caption>
+<asset_source>(Source: SPSS)</asset_source>
+</figure>
+<p id="corty3e-ch2-p343" block_type="bx3-txt">Making a grouped frequency distribution in SPSS is more involved. One has to use &#8220;Transform&#8221; commands like &#8220;Recode&#8221; or &#8220;Visual binning&#8221; to place the data into intervals before using Frequencies.</p>
+<p id="corty3e-ch2-p344" block_type="bx3-txt">Graphing is easy with SPSS. To start making a graph, click on &#8220;Graphs&#8221; as shown in <strong><link href="#corty3e-ch2-fig-50">Figure 2.23</link></strong>.</p>
+<figure id="corty3e-ch2-fig-50" block_type="figure" numbered="true" number="2.23" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="medium" border="true"/>
+<image asset-id="corty3e-ch2-img-53" alt="image" src="asset/ch2/corty3e_fig02_23.jpg"/>
+<caption><strong><phrase block_type="fig_num">Figure 2.23</phrase> Starting the Graph Command in SPSS</strong> To start a graph, click on &#8220;Graphs&#8221; and then on &#8220;Chart Builder. . . .&#8221;</caption>
+<asset_source>(Source: SPSS)</asset_source>
+</figure>
+<p id="corty3e_page_76" block_type="page_start">76</p>
+<p id="corty3e-ch2-p345" block_type="bx3-txt">Clicking on &#8220;Chart Builder. . .&#8221; opens up the screen shown in <strong><link href="#corty3e-ch2-fig-51">Figure 2.24</link></strong>. Note that the list of graphs SPSS can make may be seen on the bottom left.</p>
+<figure id="corty3e-ch2-fig-51" block_type="figure" numbered="true" number="2.24" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="medium" border="true"/>
+<image asset-id="corty3e-ch2-img-54" alt="image" src="asset/ch2/corty3e_fig02_24.jpg"/>
+<caption><strong><phrase block_type="fig_num">Figure 2.24</phrase> Chart Builder Screenshot</strong> The list on the bottom left shows the different categories of graphs available, while the pictures to the right show the different options within a category. In the list, there are bar graphs and histograms; look under &#8220;Line&#8221; to find frequency polygons.</caption>
+<asset_source>(Source: SPSS)</asset_source>
+</figure>
+<p id="corty3e-ch2-p346" block_type="bx3-txt"><strong><link href="#corty3e-ch2-fig-52">Figure 2.25</link></strong> shows how to make a histogram. Histogram was highlighted in the list of graphs and the mouse was used to drag the basic histogram from the gallery of histograms to the preview pane.</p>
+<figure id="corty3e-ch2-fig-52" block_type="figure" numbered="true" number="2.25" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="medium" border="true"/>
+<image asset-id="corty3e-ch2-img-55" alt="image" src="asset/ch2/corty3e_fig02_25.jpg"/>
+<caption><strong><phrase block_type="fig_num">Figure 2.25</phrase> SPSS Commands for Making a Histogram</strong> Histogram was highlighted in the gallery. Then the basic histogram was clicked and dragged into the preview pane.</caption>
+<asset_source>(Source: SPSS)</asset_source>
+</figure>
+<p id="corty3e-ch2-p347" block_type="bx3-txt">To finish the histogram commands, see <strong><link href="#corty3e-ch2-fig-53">Figure 2.26</link></strong>. Note that the variable for which the frequencies are being graphed, IQ, has been highlighted and dragged to the <em>X</em>-axis.</p>
+<figure id="corty3e-ch2-fig-53" block_type="figure" numbered="true" number="2.26" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="medium" border="true"/>
+<image asset-id="corty3e-ch2-img-56" alt="image" src="asset/ch2/corty3e_fig02_26.jpg"/>
+<caption><strong><phrase block_type="fig_num">Figure 2.26</phrase> Finishing the Histogram Commands</strong> As the final step, highlight the variable for which the histogram is being completed (here, the IQ score) and drag it to the <em>X</em>-axis.</caption>
+<asset_source>(Source: SPSS)</asset_source>
+</figure>
+<p id="corty3e_page_77" block_type="page_start">77</p>
+<p id="corty3e-ch2-p348" block_type="bx3-txt">Once the &#8220;OK&#8221; button has been clicked, SPSS generates a histogram as seen in <strong><link href="#corty3e-ch2-fig-54">Figure 2.27</link></strong>. This is called the &#8220;default&#8221; version because SPSS decides how wide the intervals should be.</p>
+<figure id="corty3e-ch2-fig-54" block_type="figure" numbered="true" number="2.27" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="medium" border="true"/>
+<image asset-id="corty3e-ch2-img-57" alt="image" src="asset/ch2/corty3e_fig02_27.jpg"/>
+<caption><strong><phrase block_type="fig_num">Figure 2.27</phrase> Histogram Generated by SPSS</strong> This is the histogram generated by SPSS when the &#8220;OK&#8221; button was pressed.</caption>
+<asset_source>(Source: SPSS)</asset_source>
+</figure>
+<p id="corty3e-ch2-p349" block_type="bx3-txt">A major advantage of using SPSS to make a graph over making it by hand is that it is easy to edit a graph in SPSS. Double-click on the graph to open up the editor. With just a few clicks of the mouse, one can change the interval width, the scale on the <em>Y</em>-axis, the labels on the axes, or the size of the graph. <strong><link href="#corty3e-ch2-fig-55">Figure 2.28</link></strong> shows an edited version of a histogram for the IQ data.</p>
+<figure id="corty3e-ch2-fig-55" block_type="figure" numbered="true" number="2.28" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="medium" border="true"/>
+<image asset-id="corty3e-ch2-img-58" alt="image" src="asset/ch2/corty3e_fig02_28.jpg"/>
+<caption><strong><phrase block_type="fig_num">Figure 2.28</phrase> Edited Version of Histogram</strong> Editing graphs is easy in SPSS. Compare this version to the default graph shown in <link href="#corty3e-ch2-fig-54">Figure 2.27</link>.</caption>
+<asset_source>(Source: SPSS)</asset_source>
+</figure>
+<p id="corty3e-ch2-p350" block_type="bx3-txt">Stem-and-leaf plots can also be produced easily using SPSS. From the Analyze menu, choose &#8220;Descriptive Statistics&#8221; and then the &#8220;Explore&#8221; command as shown in <strong><link href="#corty3e-ch2-fig-56">Figure 2.29</link></strong>.</p>
+<figure id="corty3e-ch2-fig-56" block_type="figure" numbered="true" number="2.29" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="medium" border="true"/>
+<image asset-id="corty3e-ch2-img-59" alt="image" src="asset/ch2/corty3e_fig02_29.jpg"/>
+<caption><strong><phrase block_type="fig_num">Figure 2.29</phrase> Starting Stem-and-Leaf Plot Commands</strong> Stem-and-leaf plots are accessed through the &#8220;Explore&#8221; command.</caption>
+<asset_source>(Source: SPSS)</asset_source>
+</figure>
+<p id="corty3e-ch2-p351" block_type="bx3-txt">As shown in <strong><link href="#corty3e-ch2-fig-57">Figure 2.30</link></strong>, move the variable you want to analyze into the &#8220;Dependent List&#8221; by highlighting the variable and the clicking the arrow. Next, click &#8220;Plots&#8221; and make sure that under the Descriptive option &#8220;Stem-and-leaf&#8221; is checked. This is the default. You can change the default option under &#8220;Boxplots&#8221; to &#8220;None&#8221; because we are not running a boxplot.</p>
+<figure id="corty3e-ch2-fig-57" block_type="figure" numbered="true" number="2.30" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="medium" border="true"/>
+<image asset-id="corty3e-ch2-img-60" alt="image" src="asset/ch2/corty3e_fig02_30.jpg"/>
+<caption><strong><phrase block_type="fig_num">Figure 2.30</phrase> Commands for Making a Stem-and-Leaf Plot</strong> The variable to be plotted has been moved to &#8220;Dependent List&#8221; and &#8220;Stem-and-leaf&#8221; has been chosen.</caption>
+<asset_source>(Source: SPSS)</asset_source>
+</figure>
+<p id="corty3e_page_78" block_type="page_start">78</p>
+<p id="corty3e-ch2-p352" block_type="bx3-txt">After clicking &#8220;Continue&#8221; and &#8220;OK,&#8221; the output in <strong><link href="#corty3e-ch2-fig-58">Figure 2.31</link></strong> will be produced.</p>
+<figure id="corty3e-ch2-fig-58" block_type="figure" numbered="true" number="2.31" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="medium" border="true"/>
+<image asset-id="corty3e-ch2-img-61" alt="image" src="asset/ch2/corty3e_fig02_31.jpg"/>
+<caption><strong><phrase block_type="fig_num">Figure 2.31</phrase> SPSS Output of a Stem-and-Leaf Display</strong> SPSS provides an output that includes the stem and leaf values as well as the frequencies.</caption>
+<asset_source>(Source: SPSS)</asset_source>
+</figure>
+</box>
+</section>
+</chapter>

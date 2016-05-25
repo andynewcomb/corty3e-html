@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]> <html lang="en" class="no-js ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="no-js ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="no-js ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en" class="no-js ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+<head>
+    <title>corty3e_ch5</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <link href="css/boilerplate.css" media="screen" rel="stylesheet" type="text/css" >
+<link href="css/jquery-ui-custom.css" media="screen" rel="stylesheet" type="text/css" >
+<link href="css/manuscript.css" media="screen" rel="stylesheet" type="text/css" >
+<link href="css/digfir_ebook_fw.css" media="screen" rel="stylesheet" type="text/css" >
+<link href="css/corty3e.css" media="screen" rel="stylesheet" type="text/css" >
+<link href="css/corty3e_ch5.css" media="screen" rel="stylesheet" type="text/css" >    
+    
+    </head>
+<body class="noUi">
+<div id="manuscript" data-chapter-number="5">
+    <div data-type="section" data-block_type="h1" id="corty3e-ch5-sec1-3" level="1" data-print_page="160">
+<h2 class="section-title"><span data-type="title" data-title-for="corty3e-ch5-sec1-3"><span data-block_type="sec_num">5.3</span> <span data-block_type="sec_title">The 95% Confidence Interval for a Population Mean</span>
+</span></h2>
+
+<div data-block_type="txt-ni" id="corty3e-ch5-p102"><p>All the pieces are now in place for the culmination of this chapter—calculating a confidence interval for the mean. A <span data-type="termref" data-term="confidence interval">confidence interval</span> is a range, based on a sample value, within which a researcher estimates a population value falls. To use the language of statistics from the first chapter, confidence intervals use statistics to estimate parameters. Confidence intervals are useful because population values are rarely known, but researchers like to draw conclusions about populations.</p></div>
+<div data-block_type="txt" id="corty3e-ch5-p103"><p>Here’s how it works. A researcher takes a sample from a population and calculates a mean, <em>M</em>. Then, based on that sample mean, the researcher constructs a range around it, an interval, that is likely to contain the population mean, μ. This interval is called a confidence interval.</p></div>
+<div data-block_type="txt" id="corty3e-ch5-p104"><p>For example, suppose a researcher wanted to know how many fears the average American had. Clearly, it would be impossible to survey more than 300 million Americans to find the population mean, μ. But, the researcher could obtain a representative sample of, say, 1,000 Americans and ask them this question. Suppose he did so and found that the mean number of fears in the sample, <em>M,</em> was 2.78. If someone asked the researcher how many fears the average American had, the researcher shouldn’t say, “2.78.” Because of sampling error, it is unlikely that <em>M</em> is exactly the same as μ<em>.</em> <em>M</em> should be close to μ, but it is unlikely to be the same down to the last decimal point.</p></div>
+<div data-block_type="page_start" id="corty3e_page_161"><p>161</p></div>
+<div data-block_type="txt" id="corty3e-ch5-p105"><p>Sampling error, which is a random factor, could inflate the number of fears reported, in which case 2.78 is an overestimate, or it could lead to underreporting, in which case the average American has more than 2.78 fears. The wisest thing for the researcher to do is to add and subtract some amount to his sample mean, say, 2.78 ±1.25, so that he has a range within which it is likely that <em>M</em> falls. Said another way, there will be an interval (based on the sample value) that the researcher is fairly confident will capture the population value. This is a confidence interval.</p></div>
+<div data-block_type="txt" id="corty3e-ch5-p106"><p>Though confidence intervals may sound exotic, most people are already comfortable with them, albeit under a different name. Polls regularly report a margin of error, a confidence interval by another name. For example, a NYT/CBS poll reported that 66% of a sample of 1,002 adult Americans, interviewed by phone, believe that the distribution of money and wealth should be more even in the United States (Scheiber and Sussman, 2015). Because the pollsters went to some effort to gather a representative sample, they conclude that 66% of adult Americans feel the current income distribution is unfair. But, this poll has a margin of error of ±3%, so it is probably not exactly 66% who feel that income distribution is unfair. If asked what percentage of Americans feel it is unfair, the reporters should respond with a confidence interval: “The percentage of adult Americans who believe the distribution of wealth should be more even is somewhere from 63% to 69%.”</p></div>
+<div data-block_type="txt" id="corty3e-ch5-p107"><p>A confidence interval is an <span data-type="termref" data-term="interval estimate">interval estimate</span> for a population value, not a <span data-type="termref" data-term="point estimate">point estimate</span><strong>.</strong> A point estimate is just a single value as an estimate of a population value. An example of a point estimate is <em>s</em>, which is the estimated population value for a standard deviation. Interval estimates are ranges and are better than point estimates, because they are more likely to be true. Suppose a compulsive gambler was trying to guess the average GPA at your school. With which guess do you think she would have a better chance of being right?</p></div>
+<ol data-block_type="upperalpha" id="corty3e-ch5-list-7">
+<li><div data-block_type="nl-alpha-uc-first" id="corty3e-ch5-p108"><p>The average GPA is 3.19, or</p></div>
+</li>
+<li><div data-block_type="nl-alpha-uc-mid" id="corty3e-ch5-p109"><p>The average GPA is somewhere between 3.00 and 3.40.</p></div>
+</li>
+</ol>
+<div data-type="figure" data-figure-id="corty3e-ch5-fig-23" data-block_type="figure" data-layout-align="right" data-layout-width="medium" data-layout-border="true">
+
+<img id="" src="asset/ch5/corty3e_fig05_11.jpg" data-figure-id="corty3e-ch5-fig-23" data-layout-width="medium" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+<div data-type="figure_text">
+<span data-type="number">Figure 5.13: </span><span data-type="caption"><strong><span data-block_type="fig_num">Figure 5.11</span> A Sampling Distribution of the Mean</strong> By the central limit theorem, (a) the sampling distribution of the mean is normally distributed, (b) the midpoint of a sampling distribution of the mean is the mean of the population from which the samples are drawn, and (c) the standard deviation of the sampling distribution of the mean is the standard error of the mean (σ<em><sub>M</sub></em>).</span>
+</div>
+</div>
+<div data-type="figure" data-figure-id="corty3e-ch5-fig-24" data-block_type="figure" data-layout-align="right" data-layout-width="medium" data-layout-border="true">
+
+<img id="" src="asset/ch5/corty3e_fig05_12.jpg" data-figure-id="corty3e-ch5-fig-24" data-layout-width="medium" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+<div data-type="figure_text">
+<span data-type="number">Figure 5.14: </span><span data-type="caption"><strong><span data-block_type="fig_num">Figure 5.12</span> ±1.96 σ<em><sub>M</sub></em> Brackets Built Around a Sample Mean</strong> The 95% confidence interval extends from 1.96 σ<em><sub>M</sub></em> below <em>M</em> to 1.96 σ<em><sub>M</sub></em> above it. Notice that this interval captures μ, the population mean.</span>
+</div>
+</div>
+<div data-type="figure" data-figure-id="corty3e-ch5-fig-25" data-block_type="figure" data-layout-align="right" data-layout-width="medium" data-layout-border="true">
+
+<img id="" src="asset/ch5/corty3e_fig05_13.jpg" data-figure-id="corty3e-ch5-fig-25" data-layout-width="medium" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+<div data-type="figure_text">
+<span data-type="number">Figure 5.15: </span><span data-type="caption"><strong><span data-block_type="fig_num">Figure 5.13</span> ±1.96 σ<em><sub>M</sub></em> Brackets Built Around a Sample Mean</strong> The 95% confidence interval extends from 1.96 σ<em><sub>M</sub></em> below <em>M</em> to 1.96 σ<em><sub>M</sub></em> above it. Notice that this interval fails to capture μ, the population mean.</span>
+</div>
+</div>
+<div data-block_type="txt" id="corty3e-ch5-p110"><p>She’d have to be awfully lucky if the average GPA at your school were exactly 3.19, a point estimate, so she is more likely to capture the actual population value with the interval estimate. A researcher is more likely to be correct with an interval estimate, but an interval estimate is less specific than a point estimate.</p></div>
+<div data-block_type="txt" id="corty3e-ch5-p111"><p>The math for calculating a confidence interval is not difficult, but the logic of why a confidence interval works is a little tricky. But, don’t worry. Confidence intervals will crop up regularly from here on out. I’m confident that at some point in the next 11 chapters, you will have an “aha” experience.</p></div>
+<div data-block_type="txt" id="corty3e-ch5-p112"><p>Let’s start by imagining that a researcher has taken all possible unique, random samples of size <em>N</em> from some population. For each sample, she has calculated a mean and she has made a sampling distribution of the means as shown in <strong><span data-type="link" data-href="#corty3e-ch5-fig-23">Figure 5.11</span></strong>.</p></div>
+<div data-block_type="txt" id="corty3e-ch5-p113"><p>There are several things to note about this figure:</p></div>
+<ul data-block_type="bullet" id="corty3e-ch5-list-8">
+<li><div data-block_type="bl-first" id="corty3e-ch5-p114"><p>Thanks to the central limit theorem, it is normally distributed.</p></div>
+</li>
+<li><div data-block_type="bl-mid" id="corty3e-ch5-p115"><p>Thanks to the central limit theorem, the mean of all the sample means, which is the midpoint of the distribution, is also the mean of the population. It’s marked as μ in <span data-type="link" data-href="#corty3e-ch5-fig-23">Figure 5.11</span>.</p></div>
+<div data-block_type="page_start" id="corty3e_page_162"><p>162</p></div>
+</li>
+<li><div data-block_type="bl-last" id="corty3e-ch5-p116"><p>Thanks to the central limit theorem, it is possible to calculate the standard error of the mean. The <em>X</em>-axis has been marked off in units of the standard error of the mean, ranging from<br>–3 to 3. This indicates how many standard errors of the mean each sample mean falls away from μ.</p></div>
+</li>
+</ul>
+<div data-block_type="txt" id="corty3e-ch5-p117"><p>To understand how confidence intervals work, look at <strong><span data-type="link" data-href="#corty3e-ch5-fig-24">Figure 5.12</span></strong>. There, the mean for the sample falls 1.5 standard errors of the mean above μ.</p></div>
+<div data-block_type="txt" id="corty3e-ch5-p118"><p>Let’s build an interval around the mean, adding 1.96 standard errors of the mean to it and subtracting 1.96 standard errors of the mean from it. Mathematically, that is</p></div>
+<div data-block_type="eq" id="corty3e-ch5-p119"><p><em>M</em> ±1.96σ<em><sub>M</sub></em></p></div>
+<div data-block_type="txt" id="corty3e-ch5-p120"><p>Look at the brackets which extend 1.96σ<em><sub>M</sub></em> above and below <em>M</em>. Does the interval within the brackets capture μ? The answer is yes.</p></div>
+<div data-block_type="txt" id="corty3e-ch5-p121"><p>In <strong><span data-type="link" data-href="#corty3e-ch5-fig-25">Figure 5.13</span></strong> is an example that doesn’t capture μ. <span data-type="link" data-href="#corty3e-ch5-fig-25">Figure 5.13</span> shows another sample with brackets extended 1.96σ<em><sub>M</sub></em> above and below <em>M</em>. The mean of the sample in <span data-type="link" data-href="#corty3e-ch5-fig-25">Figure 5.13</span> is 2.5 standard errors of the mean below μ, so μ doesn’t fall within the brackets around the sample mean.</p></div>
+<div data-block_type="page_start" id="corty3e_page_163"><p>163</p></div>
+<div data-block_type="txt" id="corty3e-ch5-p122"><p>That value of 1.96 was not arbitrarily chosen for these examples. 1.96 was developed in <span data-type="link" data-href="corty3e-ch04.xml">Chapter 4</span> as the cut-off score, in a normal distribution, for the middle 95% of cases.</p></div>
+<div data-block_type="txt" id="corty3e-ch5-p123"><p>Thanks to the central limit theorem, it is safe to assume that the sampling distribution of the mean is normally shaped. Also, the standard error of the mean is the standard deviation of the sampling distribution, so 95% of the sample means in a sampling distribution will fall from 1.96 standard errors of the mean below the midpoint to 1.96 standard errors of the mean above the midpoint. That is an important point, so here it is again and more succinctly: in a sampling distribution of the mean, 95% of the means fall within 1.96 σ<em><sub>M</sub></em> of the midpoint. This is shown in <strong><span data-type="link" data-href="#corty3e-ch5-fig-26">Figure 5.14</span></strong>.</p></div>
+<div data-type="figure" data-figure-id="corty3e-ch5-fig-26" data-block_type="figure" data-layout-align="center" data-layout-width="large" data-layout-border="true">
+
+<img id="" src="asset/ch5/corty3e_fig05_14.jpg" data-figure-id="corty3e-ch5-fig-26" data-layout-width="large" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+<div data-type="figure_text">
+<span data-type="number">Figure 5.16: </span><span data-type="caption"><strong><span data-block_type="fig_num">Figure 5.14</span> Area Within Which 95% of the Sample Means Fall in a Sampling Distribution of the Mean</strong> 95% of sample means in a sampling distribution of the mean fall in the area from −1.96 σ<em><sub>M</sub></em> below the midpoint to −1.96 σ<em><sub>M</sub></em> above the midpoint. 95% confidence intervals that are built around means in the shaded area will successfully capture the population mean, μ.</span>
+</div>
+</div>
+<div data-block_type="txt" id="corty3e-ch5-p124"><p>Now imagine any sample mean in the shaded region in <span data-type="link" data-href="#corty3e-ch5-fig-26">Figure 5.14</span>. Will the <em>population</em> mean (μ) fall within brackets extended 1.96 σ<em><sub>M</sub></em> to the right and to the left of the <em>sample</em> mean? The answer is yes. This also means that any sample mean more than 1.96 σ<em><sub>M</sub></em> away from the midpoint will fail to capture μ if the brackets are extended 1.96 σ<em><sub>M</sub></em> around it.</p></div>
+<div data-block_type="txt" id="corty3e-ch5-p125"><p>Let’s put all the pieces together and define the 95% confidence interval for the population mean. Here’s what we know:</p></div>
+<div data-type="box" data-block_type="mn1" id="corty3e-ch5-exp1-2"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="corty3e-ch5-exp1-2"></h3>
+<div data-block_type="mn-ext-ni" id="corty3e-ch5-p126"><p><em>For any mean picked at random from the sampling distribution, there’s a 95% chance that 1.96 σ<sub>M</sub> brackets extended symmetrically around it will capture μ.</em></p></div>
+</div></div>
+<ul data-block_type="bullet" id="corty3e-ch5-list-9">
+<li><div data-block_type="bl-first" id="corty3e-ch5-p127"><p>If a sample mean is picked at random from a sampling distribution of the mean, there’s a 95% chance that the sample mean falls in the shaded region shown in <span data-type="link" data-href="#corty3e-ch5-fig-26">Figure 5.14</span>.</p></div>
+</li>
+<li><div data-block_type="bl-mid" id="corty3e-ch5-p128"><p>Brackets that extend ±1.96 σ<em><sub>M</sub></em> capture μ for every sample mean in the shaded region.</p></div>
+</li>
+<li><div data-block_type="bl-last" id="corty3e-ch5-p129"><p>For any mean picked at random from the sampling distribution, there’s a 95% chance that 1.96 σ<em><sub>M</sub></em> brackets extended symmetrically around it will capture μ.</p></div>
+</li>
+</ul>
+<div data-block_type="txt" id="corty3e-ch5-p130"><p>We’ve just developed the 95% confidence interval for the population mean: take a sample mean, create an interval around it that is ±1.96 σ<em><sub>M</sub></em>, and there is a 95% chance that this interval captures μ. The formula is shown in <span data-type="link" data-href="#corty3e-ch5-bx6-3">Equation 5.3</span>.</p></div>
+<div data-block_type="page_start" id="corty3e_page_164"><p>164</p></div>
+<div data-type="box" data-block_type="eq-t" id="corty3e-ch5-bx6-3"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="corty3e-ch5-bx6-3"><span data-block_type="sec_num">Equation 5.3</span> <span data-block_type="sec_title">Formula for 95% Confidence Interval for the Population Mean</span>
+</h3>
+
+<div data-block_type="eq-unl" id="corty3e-ch5-p131"><p>95%CI<sub>μ</sub> = <em>M</em> ± (1.96 × σ<em><sub>M</sub></em>)</p></div>
+<div data-block_type="eq-txt-ni" id="corty3e-ch5-p132"><p>where 95%CI<sub>μ</sub> = the 95% confidence interval for thepopulation mean being calculated</p></div>
+<div data-block_type="eq-unl" id="corty3e-ch5-p133"><p><em>M</em> = sample mean</p></div>
+<div data-block_type="eq-unl" id="corty3e-ch5-p134"><p>σ<em><sub>M</sub></em> = standard error of the mean (<span data-type="link" data-href="#corty3e-ch5-bx6-1">Equation 5.1</span>). [If σ<em><sub>M</sub></em> is unknown, substitute <em>s<sub>M</sub></em> (<span data-type="link" data-href="#corty3e-ch5-bx6-2">Equation 5.2</span>).]</p></div>
+</div></div>
+<div data-block_type="txt" id="corty3e-ch5-p135"><p>Let’s put this equation into practice and use the results to think about what a 95% confidence interval means. Dr. Saskia obtained a random sample of 37 students at an elite college, gave them an IQ test (σ = 15), and found <em>M</em> = 122. What can she conclude from this sample mean about the average IQ of the entire student body at that college. That is, what can she conclude about μ? This calls for a confidence interval.</p></div>
+<div data-block_type="txt" id="corty3e-ch5-p136"><p>All the pieces are present that are needed to calculate a confidence interval: <em>M</em>, σ, and <em>N</em>. σ and <em>N</em> are needed to calculate σ<em><sub>M</sub></em> using <span data-type="link" data-href="#corty3e-ch5-bx6-1">Equation 5.1</span>:</p></div>
+<div data-block_type="equation" id="corty3e-ch5-eqn-8"><p>
+<img id="" src="asset/ch5/corty3e_eqn05_164_01.jpg" data-figure-id="" data-layout-width="" data-mmtype="" alt="image">
+</p></div>
+<div data-block_type="txt" id="corty3e-ch5-p137"><p>Now that the standard error of the mean is known, <span data-type="link" data-href="#corty3e-ch5-bx6-3">Equation 5.3</span> can be used to calculate the 95% confidence interval:</p></div>
+<div data-block_type="eq" id="corty3e-ch5-p138"><p>95%CI<sub>μ</sub> = M ± (1.96 × σ<em><sub>M</sub></em>)</p></div>
+<div data-block_type="eq" id="corty3e-ch5-p139"><p>= 122 ± (1.96 × 2.4660)</p></div>
+<div data-block_type="eq" id="corty3e-ch5-p140"><p>= 122 ± 4.8837</p></div>
+<div data-block_type="eq" id="corty3e-ch5-p141"><p>= ranges from 117.1166 to 126.8834</p></div>
+<div data-block_type="eq" id="corty3e-ch5-p142"><p>= from 117.12 to 126.88</p></div>
+<div data-block_type="txt" id="corty3e-ch5-p143"><p>Note that the subtraction was done first as confidence intervals are reported from the lower number to the higher number. The confidence interval ranges from 117.12 to 126.88. Note that the whole confidence interval is 9.76 points wide and that each side of it is almost 5 points wide.</p></div>
+<div data-block_type="txt" id="corty3e-ch5-p144"><p>The American Psychological Association (2010) has a format for reporting confidence intervals. APA format asks that we do three things: (a) use CI as an abbreviation for confidence interval, (b) report what type of confidence interval (e.g., 95%), and (c) put in brackets first the lower limit and then the upper limit of the confidence interval. To report the mean and confidence interval for the IQ data, one would write <em>M</em> = 118.00, 95%CI [117.12, 126.88].</p></div>
+<div data-block_type="page_start" id="corty3e_page_165"><p>165</p></div>
+<div data-block_type="txt" id="corty3e-ch5-p145"><p>What does this confidence interval reveal to us? <em>Officially</em>, a 95% confidence interval only tells us that if we repeated the process of getting a sample and calculating a confidence interval, 95 out of 100 times, the confidence interval would capture the population mean, μ. <em>Officially</em>, a confidence interval doesn’t say whether any particular calculation of the confidence interval is one of those 95 times, and, <em>officially</em>, it doesn’t mean that there’s a 95% chance μ falls in this confidence interval (Cumming &amp; Finch, 2005).</p></div>
+<div data-block_type="txt" id="corty3e-ch5-p146"><p>That’s officially. In reality, most people interpret a confidence interval as indicating that they are fairly certain the population mean falls in such a range. <strong><span data-type="link" data-href="#corty3e-ch5-fig-28">Figure 5.15</span></strong> shows that with our IQ example we would conclude there’s a 95% chance that the mean (μ) IQ score of the students at this college falls somewhere in the range from 117.12 to 126.88. As new statisticians, the interpretation that a confidence interval gives a range in which the population parameter falls is fine. Just remember, there’s also a chance that the population parameter doesn’t fall in the confidence interval.</p></div>
+<div data-type="figure" data-figure-id="corty3e-ch5-fig-28" data-block_type="figure" data-layout-align="center" data-layout-width="large" data-layout-border="true">
+
+<img id="" src="asset/ch5/corty3e_fig05_15.jpg" data-figure-id="corty3e-ch5-fig-28" data-layout-width="large" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+<div data-type="figure_text">
+<span data-type="number">Figure 5.17: </span><span data-type="caption"><strong><span data-block_type="fig_num">Figure 5.15</span> Using a Confidence Interval to Indicate the Range Within Which a Population Value Likely Falls</strong> The shaded area indicates the range within which the mean IQ of all students at the elite college probably falls.</span>
+</div>
+</div>
+<div data-type="box" data-block_type="sr-exp-n" id="corty3e-ch5-bx3-3"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="corty3e-ch5-bx3-3">Worked Example 5.3</h3>
+<div data-block_type="sr-ex-txt-ni" id="corty3e-ch5-p147"><p>Earlier in this chapter, mention was made of a sample of 83 American adults in whom diastolic blood pressure was measured and where the standard error of the mean, <em>s<sub>M</sub></em>, was 1.21. If the mean blood pressure in the sample was 81, what can one conclude about the mean diastolic blood pressure of American adults?</p></div>
+<div data-block_type="sr-ex-txt" id="corty3e-ch5-p148"><p>Using <span data-type="link" data-href="#corty3e-ch5-bx6-3">Equation 5.3</span> to calculate the 95% confidence interval for the population mean:</p></div>
+<div data-block_type="sr-exp-eq" id="corty3e-ch5-p149"><p>95%CI<sub>μ </sub>= <em>M</em> ± (1.96 × <em>s<sub>M</sub></em>)</p></div>
+<div data-block_type="sr-exp-eq" id="corty3e-ch5-p150"><p>= 81 ± (1.96 × 1.21)</p></div>
+<div data-block_type="sr-exp-eq" id="corty3e-ch5-p151"><p>= 81 ± 2.3716</p></div>
+<div data-block_type="sr-exp-eq" id="corty3e-ch5-p152"><p>= 81 ± 2.37</p></div>
+<div data-block_type="sr-exp-eq" id="corty3e-ch5-p153"><p>= from 78.63 to 83.37</p></div>
+<div data-block_type="sr-ex-txt" id="corty3e-ch5-p154"><p>The confidence interval of 78.63 to 83.37, which is a total of 4.34 points wide, has a 95% probability of capturing the mean diastolic blood pressure of adult Americans. One can conclude that the mean diastolic blood pressure of American adults is probably somewhere from 78.63 to 83.37. In APA format, one would write <em>M</em> = 81.00, 95%CI [78.63, 83.37].</p></div>
+</div></div>
+<div data-block_type="page_start" id="corty3e_page_166"><p>166</p></div>
+<div data-type="box" data-block_type="sr-h" id="corty3e-ch5-bx2-3"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="corty3e-ch5-bx2-3">Practice Problems 5.3</h3>
+<div data-block_type="sr-h1" id="corty3e-ch5-p155"><p><strong>Review Your Knowledge</strong></p></div>
+<div data-block_type="sr-que-nl" id="corty3e-ch5-p156"><p><span data-block_type="question_num">5.11</span> What is the difference between a point estimate and an interval estimate for a population value?</p></div>
+<div data-block_type="sr-que-nl" id="corty3e-ch5-p157"><p><span data-block_type="question_num">5.12</span> How often will a 95% confidence interval for μ capture the population mean?</p></div>
+<div data-block_type="sr-que-nl" id="corty3e-ch5-p158"><p><span data-block_type="question_num">5.13</span> How often will a 95% confidence interval for μ fail to capture the population mean?</p></div>
+<div data-block_type="sr-h1" id="corty3e-ch5-p159"><p><strong>Apply Your Knowledge</strong></p></div>
+<div data-block_type="sr-que-nl" id="corty3e-ch5-p160"><p><span data-block_type="question_num">5.14</span> Given <em>M</em> = 17, σ = 8, and <em>N</em> = 55, calculate the 95% confidence interval for μ and report it in APA format.</p></div>
+<div data-block_type="sr-que-nl" id="corty3e-ch5-p161"><p><span data-block_type="question_num">5.15</span> Given <em>M</em> = 250, <em>s</em> = 60, and <em>N</em> = 180, calculate the 95% confidence interval for μ and report it in APA format.</p></div>
+</div></div>
+<div data-type="box" data-block_type="sr-x-h" id="corty3e-ch5-bx5-1"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="corty3e-ch5-bx5-1">Application Demonstration</h3>
+<div data-block_type="sr-x-txt-ni" id="corty3e-ch5-p162"><p>A hypothetical survey about sexual attitudes and behaviors was used as an example in this chapter. To understand sampling better, let’s examine two real studies about human sexuality, one with such a poor sample that the results are meaningless and one that shows how much effort goes into obtaining a representative sample.</p></div>
+<div data-block_type="sr-x-txt" id="corty3e-ch5-p163"><p>Shere Hite is famous for her “Hite Reports” on male and female sexuality. In 1987 she published <em>Women and Love,</em> known as <em>The Hite Report on Love, Passion, and Emotional Violence.</em> It was a survey of about 4,500 women from across the United States and it generated a number of thought-provoking findings. One result that gathered a lot of media attention was the rate of adultery among married women—Hite found that 70% of women who had been married five years reported extramarital affairs. Seventy percent!</p></div>
+<div data-block_type="sr-x-txt" id="corty3e-ch5-p164"><p>This number is quite high and the fact that the sample size is so large, 4,500 women, gives the finding credibility. Further, the procedure Hite used to put together her sample was interesting. Hite was a feminist and didn’t want to be accused of only including feminists in her sample. So, she sent her survey to a broad cross section of women’s groups in 43 states—church groups, garden clubs, and so on. If 70% of these mainstream American women were having affairs, that’s surprising.</p></div>
+<div data-block_type="sr-x-txt" id="corty3e-ch5-p165"><p>And, it turns out that that 70% figure can be safely ignored because of one important factor—the consent rate. Hite sent out more than 100,000 surveys and only 4,500 usable surveys were returned. That’s a consent rate of 4.5%, well below the necessary rate of 70%.</p></div>
+<div data-block_type="sr-x-txt" id="corty3e-ch5-p166"><p>If a woman received a Shere Hite survey, what was the normal response? For 95.5% of women, the normal response was not returning the survey. The odd response came from the 4.5% of women who completed and returned the survey. Maybe the odd 4.5% of women who returned the survey are also odd in terms of marital fidelity? The self-selection bias is so great in Hite’s survey that the results can’t be taken seriously.</p></div>
+<div data-block_type="sr-x-txt" id="corty3e-ch5-p167"><p>To gather a representative sample for a survey is difficult, but it can be done. Here’s an example of how to do it correctly. In 1994 the sociologist Edward Laumann and three colleagues published a book that reported on sexual behaviors and attitudes in the United States. It was based on a sample of about 3,400 Americans and also offered some interesting findings. Take the frequency with which people have sex, for example. They found that Americans fell into three groups with regard to how much sex they had in the past year:</p></div>
+<div data-block_type="page_start" id="corty3e_page_167"><p>167</p></div>
+<ul data-block_type="bullet" id="corty3e-ch5-list-10">
+<li><div data-block_type="sr-x-bl-first" id="corty3e-ch5-p168"><p>About a third had sex infrequently, either having no sex in the past year or just a couple of times.</p></div>
+</li>
+<li><div data-block_type="sr-x-bl-mid" id="corty3e-ch5-p169"><p>About a third had sex a few times a month.</p></div>
+</li>
+<li><div data-block_type="sr-x-bl-last" id="corty3e-ch5-p170"><p>And, about a third had sex frequently, two or more times a week.</p></div>
+</li>
+</ul>
+<div data-block_type="sr-x-txt" id="corty3e-ch5-p171"><p>Laumann and colleagues went to a lot of trouble to get a representative sample. Using a computer, they generated addresses in randomly selected neighborhoods in randomly selected cities, towns, and rural areas, from randomly selected geographic regions in the United States. This yielded almost 4,400 valid addresses. The people living at the address who spoke English and were between 18–59 years old were eligible for participation. From the eligible people at the address, the researchers randomly selected one person, approached him or her, explained the study, got permission to do the interview, and completed it. About 4 out of every 5 targeted participants agreed to be interviewed. That’s a consent rate of 80%, well above the minimum rate of 70%.</p></div>
+<div data-block_type="sr-x-txt" id="corty3e-ch5-p172"><p>Such a large and randomly selected sample is likely to be representative of the U.S. population, but the researchers still checked their results. One action they took was to compare the characteristics of the sample to census data about the United States. <strong><span data-type="link" data-href="#corty3e-ch5-fig-29">Figure 5.16</span></strong> compares data from the Census Bureau to results from their survey. The numbers don’t match exactly, but they are close and suggest that Laumann and colleagues achieved their goal of obtaining a sample that was representative of the United States. The sample mirrors America, so the study provides one of the best pictures we have ever had of sexual behavior in this nation.</p></div>
+<div data-type="figure" data-figure-id="corty3e-ch5-fig-29" data-block_type="figure" data-layout-align="center" data-layout-width="large" data-layout-border="true">
+
+<img id="" src="asset/ch5/corty3e_fig05_16.jpg" data-figure-id="corty3e-ch5-fig-29" data-layout-width="large" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+<div data-type="figure_text">
+<span data-type="number">Figure 5.18: </span><span data-type="caption"><strong><span data-block_type="fig_num">Figure 5.16</span> Comparison of Demographic Characteristics of Survey Sample to U.S. Population</strong> This bar chart compares the percentages of respondents in Laumann’s survey of sexual behaviors who meet selected demographic characteristics to the percentages with which the same characteristics are found in the U.S. population. The matches are very close, supporting the ability to generalize from the survey results to the larger U.S. population (Michael, Gagnon, Laumann, &amp; Kolata, 1994).</span>
+</div>
+</div>
+</div></div>
+<div data-block_type="page_start" id="corty3e_page_168"><p>168</p></div>
+<div data-type="box" data-block_type="bx4-h" id="corty3e-ch5-bx4-1"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="corty3e-ch5-bx4-1">DIY</h3>
+<div data-block_type="bx4-txt-ni" id="corty3e-ch5-p173"><p>Get your music player and pick one of your biggest playlists, say, one with hundreds of songs. That will be your population. Find out how many songs are on the playlist and how many total minutes of music it contains. Divide the total number of minutes of music by the number of songs to find the average length of a song. That is, μ. Next, use the shuffle function to select ≈10 songs from the playlist. This is your random sample from the population. Note the time that each song lasts and calculate the mean, <em>M</em>, and the standard deviation, <em>s</em>. Use these to create a 95% confidence interval for the population mean. Does it capture μ? If so, why? If not, why?</p></div>
+</div></div>
+</div>
+<!-- #x-digfir-subsection-insertion-point --></div><!-- /#manuscript -->
+<br class="clear" />
+<!-- end of material in original view -->
+
+	<!--[if IE]><script type="text/javascript" src="js/excanvas.compiled.js"></script><![endif]-->
+    
+<script type="text/javascript" src="js/utilities.js"></script>
+<script type="text/javascript" src="js/query_types.js"></script>
+<script type="text/javascript" src="js/player.js"></script>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/jquery-ui-1.8.16.custom.min.js"></script>
+<script type="text/javascript" src="js/jquery_extensions.js"></script>
+<script type="text/javascript" src="js/swfobject.js"></script>
+<script type="text/javascript" src="http://admin.brightcove.com/js/BrightcoveExperiences.js"></script>
+<script type="text/javascript" src="js/digfir_ebook_fw.js"></script>
+<script type="text/javascript" src="js/corty3e.js"></script>
+<script type="text/javascript" src="js/corty3e_ch5.js"></script>
+<script type="text/javascript">
+    //<!--
+    
+$(window).ready(function () {
+	player.initialize('56d62b57757a2e7b52000003');
+});
+    //-->
+</script>
+</body>
+</html>
+

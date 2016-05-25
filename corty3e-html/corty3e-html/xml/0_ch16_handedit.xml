@@ -1,0 +1,418 @@
+<chapter number="16" id="corty3e-ch16-chapter-16" title="16 Selecting the Right Statistical Test" start-numbering-at="16" numbered="true">
+<section id="corty3e-ch16-sec1-1a" block_type="intro" title="Chapter Introduction" numbered="false" level="1" print_page="617">
+<p id="corty3e-ch16-p1" block_type="chapter_number">16</p>
+<p id="corty3e-ch16-p2" block_type="chapter_title">Selecting the Right<br/>Statistical Test</p>
+<box numbered="false" id="corty3e-ch16-ibx-1" block_type="intro_box">
+<p id="corty3e-ch16-p3" block_type="obj-h"><strong>LEARNING OBJECTIVES</strong></p>
+<list id="corty3e-ch16-list-1" type="unordered" block_type="bluesquare">
+<li><p id="corty3e-ch16-p4" block_type="obj-bl">Define the different tasks of statistics.</p></li>
+<li><p id="corty3e-ch16-p5" block_type="obj-bl">Select the correct statistical test.</p></li>
+</list>
+<p id="corty3e_page_617" block_type="page_start">617</p>
+<p id="corty3e-ch16-p6" block_type="obj-h"><strong>CHAPTER OVERVIEW</strong></p>
+<p id="corty3e-ch16-p7" block_type="co-txt-ni">Most people have a toolbox with a few tools in it. There&#8217;s probably a hammer, a screwdriver, and a pair of pliers. Most people know that if a screw has to be tightened, a pair of pliers won&#8217;t be much use, so they reach for the screwdriver. Statistical tests are tools&#8212;pliers, screwdrivers, and hammers&#8212;designed for different research jobs. This book has filled your statistical toolbox with a set of tools for the most commonly encountered statistical jobs. Now it is time to learn how to pick the right statistical tool for the particular research job at hand.</p>
+<box numbered="false" id="corty3e-ch16-exp2-1" block_type="mn2">
+<p id="corty3e-ch16-p8" block_type="co-toc-h1-t"><link href="#corty3e-ch16-sec1-1"><phrase block_type="co-toc-h1-n-ri">16.1</phrase> Review of Statistical Tasks</link></p>
+<p id="corty3e-ch16-p9" block_type="co-toc-h1-t"><link href="#corty3e-ch16-sec1-2"><phrase block_type="co-toc-h1-n-ri">16.2</phrase> Descriptive Statistics</link></p>
+<p id="corty3e-ch16-p10" block_type="co-toc-h1-t"><link href="#corty3e-ch16-sec1-3"><phrase block_type="co-toc-h1-n-ri">16.3</phrase> Hypothesis Tests I: Difference Tests</link></p>
+<p id="corty3e-ch16-p11" block_type="co-toc-h1-t"><link href="#corty3e-ch16-sec1-4"><phrase block_type="co-toc-h1-n-ri">16.4</phrase> Hypothesis Tests II: Relationship Tests</link></p>
+</box>
+</box>
+</section>
+<section id="corty3e-ch16-sec1-1" block_type="h1" chapter="16" title="" numbered="false" level="1" print_page="617">
+<section-metadata><section-title><phrase block_type="sec_num">16.1</phrase> <phrase block_type="sec_title">Review of Statistical Tasks</phrase></section-title></section-metadata>
+<p id="corty3e-ch16-p12" block_type="txt-ni">The tool that the statistician selects depends on the task, and there are three different types of tasks:</p>
+<list id="corty3e-ch16-list-2" type="ordered" block_type="numbered">
+<li><p id="corty3e-ch16-p13" block_type="nl-first">Summarizing a set of data</p></li>
+<li><p id="corty3e-ch16-p14" block_type="nl-mid">Deciding if a group of cases differs from another group of cases on some underlying parameter</p></li>
+<li><p id="corty3e-ch16-p15" block_type="nl-last">Determining if two variables vary together systematically</p></li>
+</list>
+<p id="corty3e-ch16-p16" block_type="txt">The first type of task involves what are called <em>descriptive statistics</em>, statistics used to describe a set of observations. Reporting that the average length of stay in a psychiatric hospital is two weeks is an example of a descriptive statistic.</p>
+<p id="corty3e-ch16-p17" block_type="txt">The other two tasks for statisticians involve <em>difference tests</em> and <em>relationship tests.</em> Difference tests look for differences in some underlying parameter among groups of cases. For example, reporting that it takes longer, on average, to treat someone for depression than for anxiety would be the result of a difference test. Relationship tests see if variables correlate. Finding that the longer a person has suffered from depression tends to increase the difficulty in treating it would be the result of a relationship test.</p>
+<p id="corty3e_page_618" block_type="page_start">618</p>
+<p id="corty3e-ch16-p18" block_type="txt"><link href="corty3e-ch01.xml">Chapter 1</link> covered three different types of studies&#8212;experimental designs, quasi-experimental designs, and correlational designs. <link href="#corty3e-ch16-fig-1"><strong>Table 16.1</strong></link> summarizes their similarities and differences. Knowing what type of study was conducted is important because different types of studies call for different statistics:</p>
+<figure id="corty3e-ch16-fig-1" block_type="table" numbered="true" number="16.1" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="large" border="true"/>
+<image asset-id="corty3e-ch16-img-1" alt="image" src="asset/ch16/corty3e_table16_01.jpg"/>
+</figure>
+<list id="corty3e-ch16-list-3" type="unordered" block_type="bullet">
+<li><p id="corty3e-ch16-p19" block_type="bl-first"><em>Descriptive studies</em> call for the use of descriptive statistics.</p></li>
+<li><p id="corty3e-ch16-p20" block_type="bl-mid"><em>Experimental designs</em> and <em>quasi-experimental designs</em> divide participants into groups, so they are analyzed with difference tests.</p></li>
+<li><p id="corty3e-ch16-p21" block_type="bl-last"><em>Correlational designs,</em> which measure two variables in a single sample of participants, call for relationship tests.</p></li>
+</list>
+<p id="corty3e-ch16-p22" block_type="txt">The flowchart in <link href="#corty3e-ch16-fig-2"><strong>Figure 16.1</strong></link> shows how to determine whether a study is experimental, quasi-experimental, or correlational, as well as whether it is descriptive.</p>
+<figure id="corty3e-ch16-fig-2" block_type="figure" numbered="true" number="16.1" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="xlarge" border="true"/>
+<image asset-id="corty3e-ch16-img-2" alt="image" src="asset/ch16/corty3e_fig16_01.jpg"/>
+<caption><strong><phrase block_type="fig_num">Figure 16.1</phrase> How to Choose: Type of Study</strong> This flowchart can be used to determine whether a study is descriptive, correlational, experimental, or quasi-experimental. The type of study depends on whether the explanatory variable is manipulated by the experimenter and, if the explanatory variable is not manipulated, whether cases are classified into groups.</caption>
+</figure>
+<p id="corty3e_page_619" block_type="page_start">619</p>
+<p id="corty3e-ch16-p23" block_type="txt">The flowchart in <link href="#corty3e-ch16-fig-2">Figure 16.1</link> may involve making a decision about the explanatory variable, often called the independent variable, in a study. Studies often have two variables, an explanatory variable and an outcome variable, commonly referred to, respectively, as the independent variable and the dependent variable. It is important to be able to tell which is which. The explanatory variable is the one used to assign or classify cases into groups or to predict the outcome, and the outcome variable is the one where the outcome of the study is measured.</p>
+</section>
+<section id="corty3e-ch16-sec1-2" block_type="h1" chapter="16" title="" numbered="false" level="1" print_page="619">
+<section-metadata><section-title><phrase block_type="sec_num">16.2</phrase> <phrase block_type="sec_title">Descriptive Statistics</phrase></section-title></section-metadata>
+<p id="corty3e-ch16-p24" block_type="txt-ni">The most basic task in statistics is taking a set of numbers and summarizing them in some way. Statistical techniques that do this are called <termref term="descriptive statistics">descriptive statistics</termref> because these techniques are used to describe a set of cases.</p>
+<p id="corty3e_page_620" block_type="page_start">620</p>
+<p id="corty3e-ch16-p25" block_type="txt">The flowchart in <link href="#corty3e-ch16-fig-3"><strong>Figure 16.2</strong></link> walks through how to choose the correct descriptive statistic. Choosing the correct descriptive statistic depends on three things:</p>
+<figure id="corty3e-ch16-fig-3" block_type="figure" numbered="true" number="16.2" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="xlarge" border="true"/>
+<image asset-id="corty3e-ch16-img-3" alt="image" src="asset/ch16/corty3e_fig16_02.jpg"/>
+<caption><strong><phrase block_type="fig_num">Figure 16.2</phrase> How to Choose: Selecting a Descriptive Statistic</strong> This flowchart is used to select the correct descriptive statistic, depending on (1) whether one is trying to describe an individual case, a sample, or a population; (2) what attribute one wants to describe (central tendency or variability); and (3) the variable&#8217;s level of measurement (nominal, ordinal, interval, or ratio).</caption>
+</figure>
+<list id="corty3e-ch16-list-4" type="ordered" block_type="numbered">
+<li><p id="corty3e-ch16-p26" block_type="nl-first">At what level the variable is measured: nominal, ordinal, or interval/ratio</p></li>
+<li><p id="corty3e-ch16-p27" block_type="nl-mid">What is being described: an individual case or a sample of cases</p></li>
+<li><p id="corty3e-ch16-p28" block_type="nl-last">What is to be described: central tendency or variability</p></li>
+</list>
+<p id="corty3e-ch16-p29" block_type="txt">Knowing the level of measurement for the variable&#8212;nominal, ordinal, interval, or ratio&#8212;is important in statistics (see <link href="corty3e-ch01.xml">Chapter 1</link>). <link href="#corty3e-ch16-fig-4"><strong>Table 16.2</strong></link> shows the distinctions among the four levels of measurement, and the flowchart in <link href="#corty3e-ch16-fig-5"><strong>Figure 16.3</strong></link> leads one through the steps for determining the level of measurement of a variable.</p>
+<figure id="corty3e-ch16-fig-4" block_type="table" numbered="true" number="16.2" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="large" border="true"/>
+<image asset-id="corty3e-ch16-img-4" alt="image" src="asset/ch16/corty3e_table16_02.jpg"/>
+</figure>
+<p id="corty3e_page_621" block_type="page_start">621</p>
+<figure id="corty3e-ch16-fig-5" block_type="figure" numbered="true" number="16.3" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="xlarge" border="true"/>
+<image asset-id="corty3e-ch16-img-5" alt="image" src="asset/ch16/corty3e_fig16_03.jpg"/>
+<caption><strong><phrase block_type="fig_num">Figure 16.3</phrase> How to Choose: Level of Measurement</strong> Asking the four questions in this flowchart will lead to a decision regarding the level of measurement of a variable.</caption>
+</figure>
+</section>
+<section id="corty3e-ch16-sec2-1" block_type="h2" chapter="16" title="" numbered="false" level="2" print_page="622">
+<section-metadata><section-title>Describing Individual Cases</section-title></section-metadata>
+<p id="corty3e_page_622" block_type="page_start">622</p>
+<p id="corty3e-ch16-p30" block_type="txt-ni">Sometimes the objective is to describe a single case. If the characteristic being measured for an individual case is measured at the interval or ratio level, it can be left as a raw score or transformed. Transformed scores have an advantage because they put scores into context. This book covered two types of transformed scores in <link href="corty3e-ch04.xml">Chapter 4</link>:</p>
+<list id="corty3e-ch16-list-5" type="unordered" block_type="bullet">
+<li><p id="corty3e-ch16-p31" block_type="bl-first"><em>z</em> scores reveal (1) whether a score falls above or below the mean, and (2) how far away from the mean it falls.</p></li>
+<li><p id="corty3e-ch16-p32" block_type="bl-last">Percentile ranks tell the percentage of scores in the distribution that fall at or below a score.</p></li>
+</list>
+<p id="corty3e-ch16-p33" block_type="txt">For example, a person with an IQ score of 115 could have his or her score transformed into a <em>z</em> score of 1.00 or a percentile rank of 84.13, both of which provide more information than the raw score.</p>
+</section>
+<section id="corty3e-ch16-sec2-2" block_type="h2" chapter="16" title="" numbered="false" level="2" print_page="622">
+<section-metadata><section-title>Describing a Sample of Cases</section-title></section-metadata>
+<p id="corty3e-ch16-p34" block_type="txt-ni">When a set of scores is a sample from a population, it can be summarized (1) by presenting the entire distribution or (2) with a single value that describes some aspect of the sample. As was covered in <link href="corty3e-ch02.xml">Chapter 2</link>, the entire distribution can be summarized in a table (i.e., a frequency distribution or stem-and-leaf plot) or as a graph. Graphs have a visual advantage over tables. Which graph can be used (histogram, frequency polygon, or bar graph) depends on whether the variable is continuous or discrete. <link href="#corty3e-ch16-fig-6"><strong>Figure 16.4</strong></link> is a flowchart for determining if a variable is continuous or discrete.</p>
+<figure id="corty3e-ch16-fig-6" block_type="figure" numbered="true" number="16.4" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="large" border="true"/>
+<image asset-id="corty3e-ch16-img-6" alt="image" src="asset/ch16/corty3e_fig16_04.jpg"/>
+<caption><strong><phrase block_type="fig_num">Figure 16.4</phrase> How to Choose: Continuous Numbers vs. Discrete Numbers</strong> To determine if the variable is continuous or discrete, decide whether the variable is (1) nominal or ordinal, or (2) interval or ratio. Then follow the flowchart.</caption>
+</figure>
+<p id="corty3e_page_623" block_type="page_start">623</p>
+<p id="corty3e-ch16-p35" block_type="txt">When using a descriptive statistic to describe a sample of cases, a researcher can describe the central tendency or the variability in a set of cases (see <link href="corty3e-ch03.xml">Chapter 3</link>). Usually, both are described. For example, a researcher might report both the average age of the participants <em>and</em> the range of ages.</p>
+<p id="corty3e-ch16-p36" block_type="txt">A measure of central tendency for a variable is chosen depending on its level of measurement (see <link href="#corty3e-ch16-fig-7"><strong>Table 16.3</strong></link>). But other factors&#8212;such as the shape of the distribution (see <link href="corty3e-ch03.xml">Chapter 3</link>)&#8212;also need to be taken into account when selecting a measure of central tendency.</p>
+<figure id="corty3e-ch16-fig-7" block_type="table" numbered="true" number="16.3" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="large" border="true"/>
+<image asset-id="corty3e-ch16-img-7" alt="image" src="asset/ch16/corty3e_table16_03.jpg"/>
+</figure>
+<list id="corty3e-ch16-list-6" type="unordered" block_type="bullet">
+<li><p id="corty3e-ch16-p37" block_type="bl-first">To describe central tendency in a sample for a variable measured at the interval or ratio level, the go-to option is the mean (<em>M</em> ).</p></li>
+<li><p id="corty3e-ch16-p38" block_type="bl-mid">Central tendency for an ordinal-level variable is best measured with the median (<em>Mdn</em>).</p></li>
+<li><p id="corty3e-ch16-p39" block_type="bl-last">Central tendency for a nominal variable can only be measured with a mode.</p></li>
+</list>
+<p id="corty3e-ch16-p40" block_type="txt">All of the descriptive statistics for variability (see <link href="corty3e-ch03.xml">Chapter 3</link>) are used for interval-level or ratio-level variables. These statistics include the range, interquartile range (<em>IQR</em>), variance (<em>s</em> <sup>2</sup>), and standard deviation (<em>s</em>). The standard deviation is the most commonly used measure of variability. Different abbreviations are used for variance and standard deviation depending on whether one is referring to a population value or sample value. A lowercase Greek sigma, &#963;, is used for population standard deviations and <em>s</em> for sample standard deviations.</p>
+<p id="corty3e-ch16-p41" block_type="txt">Just like seeing a mountain from several sides gives a better idea of what it looks like, using multiple perspectives&#8212;multiple descriptive statistics&#8212;gives a better sense of a set of data. Here are multiple ways a teacher might report how well her class had done on a test. Each descriptive statistic by itself answers a specific question. Taken together, they provide a detailed and comprehensive view of class performance:</p>
+<list id="corty3e-ch16-list-7" type="unordered" block_type="bullet">
+<li><p id="corty3e-ch16-p42" block_type="bl-first">The teacher might use a frequency distribution, grouping scores into A&#8217;s, B&#8217;s, and so on to provide an overview of the class performance.</p></li>
+<li><p id="corty3e-ch16-p43" block_type="bl-mid">A single score like the mean would summarize the class&#8217; performance, giving some sense of how easy (or difficult) the test was and how well (or how poorly) the class as a whole had done.</p>
+<p id="corty3e_page_624" block_type="page_start">624</p></li>
+<li><p id="corty3e-ch16-p44" block_type="bl-mid">The standard deviation would indicate how much variability existed in the scores, how tightly they are packed around the mean.</p></li>
+<li><p id="corty3e-ch16-p45" block_type="bl-mid">The range would tell how badly the worst student had performed and how well the best student had performed. It would also reveal how much distance separated the best and the worst students.</p></li>
+<li><p id="corty3e-ch16-p46" block_type="bl-last">If a student came in to talk about his or her performance, the teacher might transform that student&#8217;s score into a percentile rank in order to compare that student&#8217;s performance to the rest of the class.</p></li>
+</list>
+<p id="corty3e-ch16-p47" block_type="txt">Sometimes the results from a sample are used to describe a population. The population standard deviation, &#963;, is an example of this. &#963; is a point estimate, a single value. <link href="corty3e-ch05.xml">Chapter 5</link> covered confidence intervals, which give a range within which it is likely that the population value falls. If one has a sample measured on an interval- or ratio-level variable and wants to estimate what the average value is in the larger population, a confidence interval for the mean is the way to go.</p>
+<box title="Practice Problems 16.1" numbered="false" id="corty3e-ch16-bx2-1" block_type="sr-h">
+<p id="corty3e-ch16-p48" block_type="sr-que-nl"><phrase block_type="question_num">16.01</phrase> Read each scenario and decide whether the study is descriptive, experimental, quasi-experimental, or correlational.</p>
+<list id="corty3e-ch16-list-8" type="ordered" block_type="loweralpha">
+<li><p id="corty3e-ch16-p49" block_type="sr_que_nl_lvl2">An ethologist attaches motion sensors to house cats and to wild cats so that he can measure the amount of time that each type of cat spends resting/sleeping each day. He&#8217;s curious if wild cats spend more, less, or the same amount of time sleeping/resting as do house cats.</p></li>
+<li><p id="corty3e-ch16-p50" block_type="sr_que_nl_lvl2">A physical fitness instructor is curious about how much time people spend at the gym. At his gym, people have to swipe in and swipe out. He collects data for a week, finding that the amount of time ranges from less than a minute to more than 9 hours, with a median time of 77 minutes.</p></li>
+<li><p id="corty3e-ch16-p51" block_type="sr_que_nl_lvl2">An industrial/organizational psychologist obtained a random sample of employees at a large company. Among the questions she asked them was how good they thought the company was. She found that as the ages of the workers increased, so did their ratings of the &#8220;goodness&#8221; of the company.</p></li>
+</list>
+<p id="corty3e-ch16-p52" block_type="sr-que-nl"><phrase block_type="question_num">16.02</phrase> Read the scenarios below and for each determine the level of measurement for the variable.</p>
+<list id="corty3e-ch16-list-9" type="ordered" block_type="loweralpha">
+<li><p id="corty3e-ch16-p53" block_type="sr_que_nl_lvl2">People who were not Chinese and who could not read Chinese viewed samples of Chinese writing written by Chinese people of different ages. They were asked to judge whether the passage was written by a pre-schooler (1), an elementary school&#8211;age child (2), a middle schooler (3), a high schooler (4), a young adult (5), a middle-aged person (6), or a senior citizen (7). The numbers in parentheses are the scores assigned to each answer.</p></li>
+<li><p id="corty3e-ch16-p54" block_type="sr_que_nl_lvl2">Researchers wanted to find out if people could judge what sex a person was from a distance. They had participants watch videos of people walking toward them from 200 yards away and classify the subjects as &#8722;1 (male), 0 (can&#8217;t tell), or 1 (female).</p></li>
+<li><p id="corty3e-ch16-p55" block_type="sr_que_nl_lvl2">Some personality psychologists wanted to measure &#8220;manliness.&#8221; They showed women pictures of men and had them rate the images as &#8722;1 (negative levels of manliness), 0 (neutral level of manliness), 1 (a small degree of manliness), 2 (more than a little, but less than average level of manliness), 3 (average level of manliness), 4 (somewhat above average in manliness), 5 (far above average in manliness), and 6 (off the top of the chart in terms of manliness).</p></li>
+</list>
+<p id="corty3e-ch16-p56" block_type="sr-que-nl"><phrase block_type="question_num">16.03</phrase> Read each scenario and then select the appropriate descriptive statistic.</p>
+<p id="corty3e_page_625" block_type="page_start">625</p>
+<list id="corty3e-ch16-list-10" type="ordered" block_type="loweralpha">
+<li><p id="corty3e-ch16-p57" block_type="sr_que_nl_lvl2">John attends a large university and is one of 450 people in introductory psychology. The last exam posed 73 questions, and John answered 62 correctly. John goes to see the professor because he would like to know how his performance compares to others in the same class.</p></li>
+<li><p id="corty3e-ch16-p58" block_type="sr_que_nl_lvl2">The physical fitness instructor in Practice Problem 16.01(b) above wants to display the whole range of amounts of time people spend in the gym, as well as how &#8220;popular&#8221; the different amounts of time are.</p></li>
+<li><p id="corty3e-ch16-p59" block_type="sr_que_nl_lvl2">The researchers in Practice Problem 16.02(b) above want to report what the average perceived sex is.</p></li>
+<li><p id="corty3e-ch16-p60" block_type="sr_que_nl_lvl2">A hospital clothing manufacturer wants to re-size its one-size-fits-all hospital gowns now that Americans have grown larger. The manufacturer measures the weights of a sample of hospital patients from all 50 states and wishes to know the average weight of all Americans.</p></li>
+</list>
+</box>
+</section>
+<section id="corty3e-ch16-sec1-3" block_type="h1" chapter="16" title="" numbered="false" level="1" print_page="625">
+<section-metadata><section-title><phrase block_type="sec_num">16.3</phrase> <phrase block_type="sec_title">Hypothesis Tests I: Difference Tests</phrase></section-title></section-metadata>
+<p id="corty3e-ch16-p61" block_type="txt-ni">Let&#8217;s move from selecting the correct descriptive statistic to selecting the right difference test. Difference tests are the most popular type of hypothesis test used in psychology. <em>t</em> tests and ANOVAs are examples of difference tests. <termref term="Difference tests">Difference tests</termref> are used when cases are sorted into groups that are defined on the basis of an explanatory variable. They are used to answer the question of whether groups differ on some outcome variable. For example, whether people with depression or people with anxiety are more impaired by their disorder would be answered by a difference test.</p>
+<p id="corty3e-ch16-p62" block_type="txt">Difference tests are the go-to tests for experimental and quasi-experimental designs. In experimental designs, the researcher controls the assignment of participants to groups on the basis of the independent variable. With quasi-experimental designs, participants are classified as being in groups on the basis of their naturally occurring status on the grouping variable. In either event, a difference test is used to compare the groups in terms of the dependent variable.</p>
+<p id="corty3e-ch16-p63" block_type="txt">The flowchart in <link href="#corty3e-ch16-fig-8"><strong>Figure 16.5</strong></link> shows how to choose the correct difference test to answer a research question. Picking the right test depends on (1) the number of groups of cases, (2) the number of explanatory variables, (3) the type of samples&#8212;independent or dependent, and (4) the level of measurement for the dependent variable.</p>
+<figure id="corty3e-ch16-fig-8" block_type="figure" numbered="true" number="16.5" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="xlarge" border="true"/>
+<image asset-id="corty3e-ch16-img-8" alt="image" src="asset/ch16/corty3e_fig16_05.jpg"/>
+<caption><strong><phrase block_type="fig_num">Figure 16.5</phrase> How to Choose: Selecting the Correct Difference Test</strong> Choosing a difference test depends on the number of samples, the type of samples, the dependent variable&#8217;s level of measurement, and the number of explanatory variables.</caption>
+</figure>
+<p id="corty3e-ch16-p64" block_type="txt">Whether a study is experimental or quasi-experimental, the first decision point involves how many groups of cases there are: one, two, or three or more groups. If just one group exists, then the sample is being compared to a specified value or a population value. The specific test to be used in making that comparison is determined by the dependent variable&#8217;s level of measurement.</p>
+<p id="corty3e-ch16-p65" block_type="txt">If there is more than one group, it is important to determine whether the comparison is between just two groups or among three or more groups. This determination leads to the next decision point. When the comparison is between two groups, the next decision point is whether the groups are independent samples or dependent samples (see <link href="corty3e-ch08.xml">Chapters 8</link> and <link href="corty3e-ch09.xml">9</link> on <em>t</em> tests).</p>
+<p id="corty3e-ch16-p66" block_type="txt"><link href="#corty3e-ch16-fig-9"><strong>Table 16.4</strong></link> presents guidelines for determining the type of samples&#8212;independent or dependent. Once the type of samples has been determined for a two-sample test, the specific difference test to use depends on the level of measurement for the dependent variable.</p>
+<figure id="corty3e-ch16-fig-9" block_type="table" numbered="true" number="16.4" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="large" border="true"/>
+<image asset-id="corty3e-ch16-img-9" alt="image" src="asset/ch16/corty3e_table16_04.jpg"/>
+</figure>
+<p id="corty3e_page_626" block_type="page_start">626</p>
+<p id="corty3e_page_627" block_type="page_start">627</p>
+<p id="corty3e_page_628" block_type="page_start">628</p>
+<p id="corty3e-ch16-p67" block_type="txt">When there are three or more samples, the flowchart branches out depending on (1) the number of explanatory variables, (2) whether the samples are independent or dependent, and (3) the dependent variable&#8217;s level of measurement.</p>
+<p id="corty3e-ch16-p68" block_type="txt">To see how the flowchart works, imagine a clinical psychologist who wanted to see how the loss of a parent before age 6 affected a child&#8217;s adult level of psychological functioning. She obtained a large and representative sample of adults and classified them as belonging to one of four groups: (1) neither parent had died before the child, who is now an adult, was 6 years old; (2) the mother died before the child was 6 years old; (3) the father died before the child was 6 years old; or (4) both parents died before the child was 6 years old. To measure adult psychological functioning, she used an interval-level measure of psychological resilience. What statistical test should she use to find out if the mean level of psychological resilience differs among these four groups? The difference test flowchart, <link href="#corty3e-ch16-fig-8">Figure 16.5</link>, will help determine the answer.</p>
+<list id="corty3e-ch16-list-11" type="unordered" block_type="bullet">
+<li><p id="corty3e-ch16-p69" block_type="bl-first">The first decision point involves how many groups of cases exist. There was one sample of cases, which was divided into four groups, so proceed down the flowchart path on the far right side for three or more groups.</p></li>
+<li><p id="corty3e-ch16-p70" block_type="bl-mid">The next decision point involves how many explanatory variables exist. In this situation, there is one grouping variable, early parental death, that has four levels (none died, mother died, father died, both died).</p></li>
+<li><p id="corty3e-ch16-p71" block_type="bl-mid">The next choice point involves the type of samples, dependent or independent. In this example, each case is classified as belonging to only one group and cases are not paired with each other. Who is classified as being in one group has no impact on who is classified as being in one of the other groups. The samples are independent.</p></li>
+<li><p id="corty3e-ch16-p72" block_type="bl-last">The final question to be addressed involves the level of measurement of the dependent variable. The dependent variable, psychological resilience, is measured at the interval level, which leads to the selection of a between-subjects, one-way ANOVA as the appropriate statistical test.</p></li>
+</list>
+<p id="corty3e_page_629" block_type="page_start">629</p>
+<box title="A Common Question" numbered="false" id="corty3e-ch16-bx1-1" block_type="bx-1-h">
+<p id="corty3e-ch16-p73" block_type="bx1-que"><strong>Q</strong>	What should be done if there is no test listed in the flowchart? For example, what happens if the dependent variable for the early parental loss study was ordinal, not interval?</p>
+<p id="corty3e-ch16-p74" block_type="bx1-ans"><strong>A</strong>	The flowcharts here only choose among the statistical tests taught in this book. To find the correct test for a different situation, see the SPSS section at the end of this chapter, or consult a more advanced text.</p>
+</box>
+<box title="Worked Example 16.1" numbered="false" id="corty3e-ch16-bx3-1" block_type="sr-exp-n">
+<p id="corty3e-ch16-p75" block_type="sr_exp_txt_ni">For practice choosing the correct difference test, imagine an economist who wanted to investigate whether parents invest equally in their children&#8217;s education depending on the children&#8217;s birth order. From around the United States, he obtained a sample of families with two (and only two) children in which both children had attended college. His dependent variable was how much money the parents contributed to each child&#8217;s college education. Is there a difference in mean parental funding for first-born vs. second-born children?</p>
+<list id="corty3e-ch16-list-12" type="unordered" block_type="bullet">
+<li><p id="corty3e-ch16-p76" block_type="sr-exp-bl-first">There are two samples, a sample of first-born children and a sample of second-born children.</p></li>
+<li><p id="corty3e-ch16-p77" block_type="sr-exp-bl-mid">The children in the two samples are paired together&#8212;they come from the same family&#8212;so the samples are dependent samples.</p></li>
+<li><p id="corty3e-ch16-p78" block_type="sr-exp-bl-last">The dependent variable, dollars spent, is a ratio-level variable.</p></li>
+</list>
+<p id="corty3e-ch16-p79" block_type="sr_exp_txt">Following the difference test flowchart, <link href="#corty3e-ch16-fig-8">Figure 16.5</link>, leads to selecting the paired-samples <em>t</em> test as the correct test to analyze the results.</p>
+</box>
+<box title="Practice Problems 16.2" numbered="false" id="corty3e-ch16-bx2-2" block_type="sr-h">
+<p id="corty3e-ch16-p80" block_type="sr-que-txt-ni"><strong><em>Select the correct statistical test.</em></strong></p>
+<p id="corty3e-ch16-p81" block_type="sr-que-nl"><phrase block_type="question_num">16.04</phrase> A public health researcher wanted to know if hand washing or hand sanitizer was more effective in removing germs. She randomly assigned visitors at a hospital to wash their hands with soap and water or to use hand sanitizer. She then cultured the visitors&#8217; hands to see how many bacterial colonies there were.</p>
+<p id="corty3e-ch16-p82" block_type="sr-que-nl"><phrase block_type="question_num">16.05</phrase> People who wanted to lose weight were randomly assigned to drink 1 cup, 2 cups, or 3 cups of green tea each day. After three months, each person was weighed to determine how many pounds he or she had lost.</p>
+<p id="corty3e-ch16-p83" block_type="sr-que-nl"><phrase block_type="question_num">16.06</phrase> People from countries with spicy cuisines were matched in terms of age and sex with people from countries with bland cuisines. All participants completed the Willingness to Engage in Risky Behavior Scale. Are people who eat spicy food more likely to engage in risky behavior?</p>
+</box>
+
+</section>
+<section id="corty3e-ch16-sec1-4" block_type="h1" chapter="16" title="" numbered="false" level="1" print_page="630">
+<section-metadata><section-title><phrase block_type="sec_num">16.4</phrase> <phrase block_type="sec_title">Hypothesis Tests II: Relationship Tests</phrase></section-title></section-metadata>
+<p id="corty3e_page_630" block_type="page_start">630</p>
+<p id="corty3e-ch16-p84" block_type="txt-ni">Having covered the selection of descriptive statistics and difference tests, it is time to turn to relationship tests. <termref term="Relationship tests">Relationship tests</termref> are meant to examine whether a correlation exists between two variables. Relationship tests are used when there is one sample of cases and each case is measured on two variables in order to see if the variables vary together systematically. For example, one might measure both attractiveness and number of dates in college students to see if the two are associated. The flowchart for selecting the correct relationship test is shown in <link href="#corty3e-ch16-fig-10"><strong>Figure 16.6</strong></link>.</p>
+<figure id="corty3e-ch16-fig-10" block_type="figure" numbered="true" number="16.6" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="large" border="true"/>
+<image asset-id="corty3e-ch16-img-10" alt="image" src="asset/ch16/corty3e_fig16_06.jpg"/>
+<caption><strong><phrase block_type="fig_num">Figure 16.6</phrase> How to Choose: Selecting the Correct Relationship Test</strong> The selection of the correct relationship test depends on the level of measurement of the variables. If one variable is nominal and the other is not, then a difference test is used.</caption>
+</figure>
+<p id="corty3e-ch16-p85" block_type="txt">The decision about which relationship test to use in a given situation is determined by the level of measurement for each of the two variables:</p>
+<list id="corty3e-ch16-list-13" type="unordered" block_type="bullet">
+<li><p id="corty3e-ch16-p86" block_type="bl-first">If both variables are measured at the interval or ratio level, then the Pearson <em>r</em> is used (see <link href="corty3e-ch13.xml">Chapter 13</link>).</p></li>
+<li><p id="corty3e-ch16-p87" block_type="bl-mid">If one variable is ordinal and the other is ordinal or interval or ratio, use a Spearman <em>r</em> (see <link href="corty3e-ch15.xml">Chapter 15</link>).</p></li>
+<li><p id="corty3e-ch16-p88" block_type="bl-mid">If both variables are nominal-level, then the chi-square test of independence is used (see <link href="corty3e-ch15.xml">Chapter 15</link>).</p></li>
+<li><p id="corty3e-ch16-p89" block_type="bl-last">When one of the variables is nominal and the other is not, the relationship question can be conceptualized as a difference question. To do so, treat the nominal variable as the explanatory variable and use it to classify cases into groups. Then, the difference test flowchart (<link href="#corty3e-ch16-fig-8">Figure 16.5</link>) can be used to determine the appropriate test.</p></li>
+</list>
+<p id="corty3e-ch16-p90" block_type="txt">For an example of how to select the correct relationship test, imagine an animal behaviorist who first trained rats to run a maze to find food in a goal box and then measured how many days it took for the behavior to cease (for the rats to stop running to the goal box) once food was no longer being placed in the goal box. She wondered if smarter rats, those who learned the maze more quickly, were also quicker in learning a reward was no longer present. Is there a relationship between the times it takes to learn these two tasks?</p>
+<p id="corty3e_page_631" block_type="page_start">631</p>
+<p id="corty3e-ch16-p91" block_type="txt">This calls for a relationship test. To select the appropriate test, use the flowchart in <link href="#corty3e-ch16-fig-10">Figure 16.6</link>. To use that flowchart, the level of measurement must be known for each of the two variables&#8212;number of trials to learn the maze and number of days to extinction. Using the flowchart in <link href="#corty3e-ch16-fig-3">Figure 16.2</link>, both variables are classified as being at the ratio level. Turning back to the relationship test flowchart, <link href="#corty3e-ch16-fig-10">Figure 16.6</link>, when both variables are measured at the interval or ratio level, the Pearson <em>r</em> is the test to use.</p>
+<p id="corty3e-ch16-p92" block_type="txt">Let&#8217;s complete one more relationship test example, one in which one variable is nominal and the other isn&#8217;t. Imagine a researcher who has a random sample of male college students and a random sample of female college students, and who wonders if there is a relationship between sex (male or female) and GPA. To determine what statistical test should be used, go to the relationship test flowchart, <link href="#corty3e-ch16-fig-10">Figure 16.6</link>. Notice that one variable is nominal (sex) and the other variable is interval (GPA). This combination of variables prompts us to exit the relationship test flowchart and move to the difference test flowchart. The relationship question is now phrased, &#8220;Is there a difference between male and female students in terms of mean GPA?&#8221;</p>
+<p id="corty3e-ch16-p93" block_type="txt">In the difference test flowchart, the nominal-level variable, sex, is treated as the explanatory variable, and the interval/ratio variable, GPA, as the dependent variable. Here are the answers to the choice points in <link href="#corty3e-ch16-fig-8">Figure 16.5</link> for the sex/GPA test decision:</p>
+<list id="corty3e-ch16-list-14" type="unordered" block_type="bullet">
+<li><p id="corty3e-ch16-p94" block_type="bl-first">The explanatory variable has two levels, male and female, so two groups are being compared.</p></li>
+<li><p id="corty3e-ch16-p95" block_type="bl-mid">Each sample was a random sample from its population, so the two samples are independent.</p></li>
+<li><p id="corty3e-ch16-p96" block_type="bl-last">The dependent variable, GPA, is measured at the interval level.</p></li>
+</list>
+<p id="corty3e-ch16-p97" block_type="txt">These choice points lead to the selection of an independent-samples <em>t</em> test as the appropriate test to analyze the data to determine if a relationship exists between sex and mean GPA. A difference test can answer a relationship question.</p>
+<box title="Worked Example 16.2" numbered="false" id="corty3e-ch16-bx3-2" block_type="sr-exp-n">
+<p id="corty3e-ch16-p98" block_type="sr_exp_txt_ni">A criminologist developed a theory that elementary school teachers can quickly tell which kids are going to be a problem in their classroom. After only two weeks of school, he had asked teachers to make a judgment for each child: whether he or she &#8220;would be trouble in the classroom.&#8221; A dozen years later, as the same kids are ready to graduate from high school, he tracked down all their records and determined which ones had been arrested, spent time in jail, dropped out of school, and so on. Anyone for whom one of these events had occurred was classified as &#8220;having gotten into trouble in life.&#8221; What test should the criminologist use to see if an association exists between a prediction made by a first-grade teacher, after only two weeks of observation, and getting into serious trouble over the next 12 years?</p>
+<p id="corty3e-ch16-p99" block_type="sr_exp_txt">This means asking if there is a relationship between the two variables, so the place to start is with the flowchart in <link href="#corty3e-ch16-fig-10">Figure 16.6</link>. The first question concerns the level of measurement of the variables. Both variables are nominal. Thus, the appropriate statistical test is the chi-square test of independence.</p>
+</box>
+<p id="corty3e_page_632" block_type="page_start">632</p>
+<box title="Practice Problems 16.3" numbered="false" id="corty3e-ch16-bx2-3" block_type="sr-h">
+<p id="corty3e-ch16-p100" block_type="sr-que-txt-ni"><strong><em>Select the correct statistical test.</em></strong></p>
+<p id="corty3e-ch16-p101" block_type="sr-que-nl"><phrase block_type="question_num">16.07</phrase> A hair salon owner watches people walk by his shop, notes whether they are male or female, and classifies them as having long hair or short hair. Does a relationship exist between sex and hair length?</p>
+<p id="corty3e-ch16-p102" block_type="sr-que-nl"><phrase block_type="question_num">16.08</phrase> Is there a relationship, for adults, between how many text messages they send per week and how many minutes they talk on their phones?</p>
+<p id="corty3e-ch16-p103" block_type="sr-que-nl"><phrase block_type="question_num">16.09</phrase> An education researcher wants to see if class rank in high school is associated with class rank in college.</p>
+</box>
+<box title="Application Demonstration" numbered="false" id="corty3e-ch16-bx5-1" block_type="sr-x-h">
+<p id="corty3e-ch16-p104" block_type="sr-x-txt-ni">To see how selecting the correct statistical test works in real life, here are three classic studies in psychology: one that uses descriptive statistics, one that uses difference tests, and one that uses relationship tests.</p>
+<p id="corty3e-ch16-p105" block_type="sr-x-h1"><strong>Obedience to Authority</strong></p>
+<p id="corty3e-ch16-p106" block_type="sr-x-txt-ni">Perhaps the most famous study in psychology was reported by Stanley Milgram in 1963. Called a &#8220;behavioral study in obedience,&#8221; Milgram investigated whether normal people would behave in inhumane ways just because they were following orders.</p>
+<p id="corty3e-ch16-p107" block_type="sr-x-txt">In the study, 40 males, from age 20 to 50, served as participants and were called &#8220;teachers.&#8221; The teachers were asked to test another participant, called the &#8220;learner,&#8221; to see how well he had memorized a list of words. For every word the learner got wrong, the teacher was asked to punish him with a shock. And, after delivering a shock, the teacher was to adjust the shock generator to deliver a higher level of shock as the next punishment. The shock generator had 30 levels, ranging from 15 to 450 volts, and the levels were labeled from &#8220;Slight Shock&#8221; to &#8220;Danger: Severe Shock.&#8221; At 300 volts, the learner stopped responding&#8212;presumably, he was now unconscious or dead from the shocks&#8212;and the teacher was instructed to treat no response as a wrong answer, to administer a shock, and to advance to the next question. (By the way, the learner was a confederate of the experimenter, offered incorrect answers according to a script, and received no shocks.)</p>
+<p id="corty3e-ch16-p108" block_type="sr-x-txt">This is all that there was to Milgram&#8217;s experiment. It included no experimental group vs. control group aspect. All he included was an experimental group. Milgram&#8217;s question was simple: How many participants would continue to give shocks all the way up to 450 volts? And his answer&#8212;a descriptive statistic that 26 of 40 normal men, 65&#37;, were willing to shock a man to death in a psychology experiment simply because a researcher in a lab coat asked them to&#8212;shocked a nation. Sometimes the simplest statistic is the most powerful.</p>
+<p id="corty3e-ch16-p109" block_type="sr-x-h1"><strong>Television and Aggression</strong></p>
+<p id="corty3e-ch16-p110" block_type="sr-x-txt-ni">Leonard Eron was one of the first to study the relationship between children watching violence on TV and behaving aggressively in real life. In 1972, along with some colleagues, he presented data on children followed for 10 years, from 9 to 19 years old.</p>
+<p id="corty3e_page_633" block_type="page_start">633</p>
+<p id="corty3e-ch16-p111" block_type="sr-x-txt">When the children were 9 years old, the researchers measured the number of violent shows the children liked to watch. At the same time, Eron asked the children to answer questions about their peers. From this, he was able to develop a measure for each child as to how aggressive he or she was, as rated by peers. Similar measures were obtained when the kids were 19 years old.</p>
+<p id="corty3e-ch16-p112" block_type="sr-x-txt">Eron used Pearson correlation coefficients to analyze the results. Here are the highlights of his findings:</p>
+<list id="corty3e-ch16-list-15" type="unordered" block_type="bullet">
+<li><p id="corty3e-ch16-p113" block_type="sr-x-bl-first">There was a positive, statistically significant correlation of .21 between violent TV watching at age 9 and rating of aggressiveness by peers at age 9.</p></li>
+<li><p id="corty3e-ch16-p114" block_type="sr-x-bl-last">The correlation between watching violent TV at age 9 and rating of aggressiveness by peers 10 years later was also positive and statistically significant. But, the relationship was stronger one: <em>r</em> = 31.</p></li>
+<li><p id="corty3e-ch16-p115" block_type="sr-x-bl-last">The correlation between violent TV watching at age 19 and aggression at age 19 was not statistically different from zero.</p></li>
+</list>
+<p id="corty3e-ch16-p116" block_type="sr-x-txt">Taken together, these correlations suggest that early viewing of violent TV is more strongly related to aggression 10 years later than it is to aggression as a child. These relationship tests suggest that there is a critical period in childhood during which images from television may have an impact on personality. Eron&#8217;s research has led to thousands of other studies about the effects of violence on television. Simple correlations can make powerful points.</p>
+<p id="corty3e-ch16-p117" block_type="sr-x-h1"><strong>Language and Memory</strong></p>
+<p id="corty3e-ch16-p118" block_type="sr-x-txt-ni">Elizabeth Loftus, a cognitive psychologist, is one of the people most responsible for eyewitness testimony no longer being held in high esteem. One of her early studies, published with John Palmer in 1974, used difference tests to make this point.</p>
+<p id="corty3e-ch16-p119" block_type="sr-x-txt">In that study, participants were shown movies of car crashes and asked to estimate how fast the cars were traveling when the crash occurred. Different participants were asked slightly different questions, ranging from how fast the cars were going when they <em>contacted</em> each other to how fast they were going when they <em>smashed into</em> each other. There were five different options: smashed, collided, bumped, hit, and contacted. Loftus&#8217;s research question was whether the different words would elicit different estimates of speed.</p>
+<p id="corty3e-ch16-p120" block_type="sr-x-txt">And, that was what she found. Asked how fast cars were traveling when they &#8220;contacted&#8221; each other, the mean response was 32 mph. Each word that suggested more speed was associated with an increase of perceived speed by about 2 mph, until cars that &#8220;smashed into&#8221; each other were going almost 41 mph. The analysis of variance that Loftus used to analyze these results showed that the results were statistically significant. Here&#8217;s a <em>difference</em> test that made a difference&#8212;it showed that perceptions can be manipulated by a person asking about them.</p>
+</box>
+<p id="corty3e_page_634" block_type="page_start">634</p>
+<box title="DIY" numbered="false" id="corty3e-ch16-bx4-1" block_type="bx4-h">
+<p id="corty3e-ch16-p121" block_type="bx4-txt-ni">Many people have pet theories about the world. A friend of mine in graduate school, many years ago, believed that no matter what she bought at the grocery store, the cost always turned out to be about &#36;15 per bag. I believe that the day after a presidential election, many more supporters of the loser have removed bumper stickers from their cars than have supporters of the winner.</p>
+<p id="corty3e-ch16-p122" block_type="bx4-txt">Do you have a pet theory? If not, develop one. What statistical test would you use to answer it?</p>
+</box>
+</section>
+<section id="corty3e-ch16-sec1-5" block_type="sum-h" chapter="16" title="" numbered="false" level="1" print_page="634">
+<section-metadata><section-title>SUMMARY</section-title></section-metadata>
+<p id="corty3e-ch16-p123" block_type="sum-hd1"><strong>Define the different tasks of statistics.</strong></p>
+<list id="corty3e-ch16-list-16" type="unordered" block_type="bluebullet">
+<li><p id="corty3e-ch16-p124" block_type="sum-bl-first">Statistical tests are tools, appropriate for specific tasks. Tasks include summarizing a set of data with descriptive statistics, using difference tests to compare groups in experimental and quasi-experimental designs, and using relationship tests to see if two variables vary together systematically (relationship tests).</p></li>
+</list>
+<p id="corty3e-ch16-p125" block_type="sum-hd1"><strong>Select the correct statistical test.</strong></p>
+<list id="corty3e-ch16-list-17" type="unordered" block_type="bluebullet">
+<li><p id="corty3e-ch16-p126" block_type="sum-bl-first">Descriptive statistics summarize a set of numbers to describe an individual case or a sample of cases in terms of central tendency and/or variability. Difference tests are used when cases are sorted into groups on the basis of an explanatory variable. Relationship tests are used when there is one sample of cases and each case is measured on two variables to see if the variables covary.</p></li>
+</list>
+</section>
+<section id="corty3e-ch16-sec1-6" block_type="cr-kt-t" chapter="16" title="" numbered="false" level="1" print_page="634">
+<section-metadata><section-title>KEY TERMS</section-title></section-metadata>
+<p id="corty3e-ch16-kt-01" block_type="txt-ni">Match each of the terms on the left with its definition on the right. Click on the term first and then click on the matching definition. As you match them correctly they will move to the bottom of the activity.</p>
+<question id="corty3e-ch16-keyterms-ques1" numbered="false" title="" number="">
+<query id="corty3e-ch16-keyterms-ques1-qry">MA:
+a.descriptive statistics:: statistics used to describe a set of observations.
+a.difference tests:: statistical tests that look for differences among groups of cases.
+a.relationship tests:: statistical tests that determine if two variables in a group of cases covary.
+</query>
+</question>
+</section>
+<section id="corty3e-ch16-sec1-7" block_type="cr-x-h" chapter="16" title="" numbered="false" level="1" print_page="634">
+<section-metadata><section-title>CHAPTER EXERCISES</section-title></section-metadata>
+<p id="corty3e-ch16-p129b" block_type="cr-x-txt-ni"><strong><em>Answers to the odd-numbered exercises appear in <link href="corty3e-appb.xml">Appendix B</link>.</em></strong></p>
+<p id="corty3e-ch16-p130" block_type="cr-x-hd1"><strong>Review Your Knowledge</strong></p>
+<p id="corty3e-ch16-p131" block_type="cr_x_nl"><phrase block_type="question_num">16.01</phrase> Descriptive statistics &#95;&#95;&#95;&#95; a set of observations.</p>
+<p id="corty3e-ch16-p132" block_type="cr_x_nl"><phrase block_type="question_num">16.02</phrase> To determine if one group differs from another, the type of test to use is a &#95;&#95;&#95;&#95; test.</p>
+<p id="corty3e-ch16-p133" block_type="cr_x_nl"><phrase block_type="question_num">16.03</phrase> Relationship tests are used to see if &#95;&#95;&#95;&#95; vary together systematically.</p>
+<p id="corty3e-ch16-p134" block_type="cr_x_nl"><phrase block_type="question_num">16.04</phrase> If cases are divided into groups, the researcher is probably conducting a &#95;&#95;&#95;&#95; test.</p>
+<p id="corty3e-ch16-p135" block_type="cr_x_nl"><phrase block_type="question_num">16.05</phrase> The &#95;&#95;&#95;&#95; is thought of as the causal agent.</p>
+<p id="corty3e-ch16-p136" block_type="cr_x_nl"><phrase block_type="question_num">16.06</phrase> The two characteristics of a data set most commonly described are &#95;&#95;&#95;&#95; and &#95;&#95;&#95;&#95;.</p>
+<p id="corty3e-ch16-p137" block_type="cr_x_nl"><phrase block_type="question_num">16.07</phrase> Scores are transformed in order to put them into &#95;&#95;&#95;&#95;.</p>
+<p id="corty3e-ch16-p138" block_type="cr_x_nl"><phrase block_type="question_num">16.08</phrase> In order to choose the correct &#95;&#95;&#95;&#95; to display a variable&#8217;s frequency, it matters if the variable is discrete or continuous.</p>
+<p id="corty3e-ch16-p139" block_type="cr_x_nl"><phrase block_type="question_num">16.09</phrase> The &#95;&#95;&#95;&#95; of the distribution of the data, as well as the variable&#8217;s &#95;&#95;&#95;&#95;, determines what measure of central tendency should be chosen.</p>
+<p id="corty3e_page_635" block_type="page_start">635</p>
+<p id="corty3e-ch16-p140" block_type="cr_x_nl"><phrase block_type="question_num">16.10</phrase> This book covered no measures of variability for &#95;&#95;&#95;&#95; or &#95;&#95;&#95;&#95; variables.</p>
+<p id="corty3e-ch16-p141" block_type="cr_x_nl"><phrase block_type="question_num">16.11</phrase> Level of measurement <em>is / is not</em> important in deciding what difference test to use.</p>
+<p id="corty3e-ch16-p142" block_type="cr_x_nl"><phrase block_type="question_num">16.12</phrase> Two variables are measured on each case in one sample of cases. This sounds like a &#95;&#95;&#95;&#95; test is being planned.</p>
+<p id="corty3e-ch16-p143" block_type="cr-x-hd1-rule"><strong>Apply Your Knowledge</strong></p>
+<p id="corty3e-ch16-p144" block_type="cr_x_hd2"><strong><em>Determining the type of study</em></strong></p>
+<p id="corty3e-ch16-p145" block_type="cr-x-txt-ni"><strong><em>For Exercises 16.13&#8211;16.20, determine if the study is descriptive, experimental, quasi-experimental, or correlational.</em></strong></p>
+<p id="corty3e-ch16-p146" block_type="cr_x_nl"><phrase block_type="question_num">16.13</phrase> A restaurant chain surveys its customers to learn demographic characteristics such as age in years, marital status, and annual income.</p>
+<p id="corty3e-ch16-p147" block_type="cr_x_nl"><phrase block_type="question_num">16.14</phrase> A developmental psychologist has a teacher rate the boys in his class in terms of how helpful they are. He then classifies the boys as to whether they were ever Boy Scouts or not, and compares the helpfulness of the two groups.</p>
+<p id="corty3e-ch16-p148" block_type="cr_x_nl"><phrase block_type="question_num">16.15</phrase> A clinical psychologist obtained a large sample of adults. Each adult kept track of all the food and beverages he or she consumed for a week. From this, the psychologist calculated the average grams of caffeine consumed per day. The psychologist believed that caffeine, a stimulant, might be used to self-medicate for symptoms of ADHD. So, she also had all participants complete an ADHD symptom inventory. She wanted to see if people with more ADHD symptoms consumed more caffeine.</p>
+<p id="corty3e-ch16-p149" block_type="cr_x_nl"><phrase block_type="question_num">16.16</phrase> An economist wondered if job satisfaction was associated with salary. She obtained a sample of first-year teachers from all around the country and found each one&#8217;s salary, adjusted for the local cost of living. She also had the teachers complete a job satisfaction survey.</p>
+<p id="corty3e-ch16-p150" block_type="cr_x_nl"><phrase block_type="question_num">16.17</phrase> A cognitive psychologist wondered if the type of computer one used affected how one thought. She put together a sample of kids, randomly divided them into two groups, and gave Apple Macs to one group and Windows PCs to the other group. A year later, she administered the Smith &#38; Jones Measure of Creative and Divergent Thinking to each child.</p>
+<p id="corty3e-ch16-p151" block_type="cr_x_nl"><phrase block_type="question_num">16.18</phrase> A real estate company wondered why some of its agents were more successful than others. The company classified its agents as high-volume producers, medium-volume producers, and low-volume producers. All agents took a personality test and the company compared the three groups on the personality traits measured.</p>
+<p id="corty3e-ch16-p152" block_type="cr_x_nl"><phrase block_type="question_num">16.19</phrase> A milk-processing plant had strict standards regarding how much milk went into each container. A quart container, for example, was supposed to contain no less than 31.5 ounces and no more than 32.5 ounces. Every day, quality control randomly sampled 100 quart containers, precisely measured their contents, and prepared a graph showing the distribution of amount per container.</p>
+<p id="corty3e-ch16-p153" block_type="cr_x_nl"><phrase block_type="question_num">16.20</phrase> A researcher on superstition decided to investigate if walking under a ladder really brought about bad luck. He took 100 people to his laboratory, one at a time. As each person entered, he flipped a coin. If it turned up heads, he had the person walk under a ladder; tails, the person walked next to the ladder. A week later, all the participants returned and reported if anything unlucky had happened to them during the week.</p>
+<p id="corty3e-ch16-p154" block_type="cr_x_hd2"><strong><em>Determining a variable&#8217;s level of measurement</em></strong></p>
+<p id="corty3e-ch16-p155" block_type="cr-x-txt-ni"><strong><em>For Exercises 16.21&#8211;16.26, determine (a) whether the variable is measured at the nominal, ordinal, interval, or ratio level, and (b) whether it is continuous or discrete.</em></strong></p>
+<p id="corty3e-ch16-p156" block_type="cr_x_nl"><phrase block_type="question_num">16.21</phrase> Ounces of milk, as measured in <link href="#corty3e-ch16-p152">Exercise 16.19</link></p>
+<p id="corty3e-ch16-p157" block_type="cr_x_nl"><phrase block_type="question_num">16.22</phrase> Whether anything unlucky or not happened, as measured in <link href="#corty3e-ch16-p153">Exercise 16.20</link></p>
+<p id="corty3e-ch16-p158" block_type="cr_x_nl"><phrase block_type="question_num">16.23</phrase> Marital status</p>
+<p id="corty3e-ch16-p159" block_type="cr_x_nl"><phrase block_type="question_num">16.24</phrase> Level of anxiety before a test, as measured 0&#8211;4 on a scale marked 0 = none, 1 = slight, 2 = moderate, 3 = considerable, and 4 = extreme</p>
+<p id="corty3e-ch16-p160" block_type="cr_x_nl"><phrase block_type="question_num">16.25</phrase> Heights of randomly selected pieces of land as measured by meters above or below sea level</p>
+<p id="corty3e-ch16-p161" block_type="cr_x_nl"><phrase block_type="question_num">16.26</phrase> Number of light bulbs in a house</p>
+<p id="corty3e_page_636" block_type="page_start">636</p>
+<p id="corty3e-ch16-p162" block_type="cr_x_hd2"><strong><em>Selecting the right descriptive statistic</em></strong></p>
+<p id="corty3e-ch16-p163" block_type="cr-x-txt-ni"><strong><em>For Exercises 16.27&#8211;16.30, select the appropriate statistical technique from among the options in <link href="#corty3e-ch16-fig-3">Figure 16.2</link>.</em></strong></p>
+<p id="corty3e-ch16-p164" block_type="cr_x_nl"><phrase block_type="question_num">16.27</phrase> A measure of variability in IQ scores for students in law school</p>
+<p id="corty3e-ch16-p165" block_type="cr_x_nl"><phrase block_type="question_num">16.28</phrase> The most common marital status among 50-year-old men living in Rhode Island</p>
+<p id="corty3e-ch16-p166" block_type="cr_x_nl"><phrase block_type="question_num">16.29</phrase> A graph showing the number of high-, medium-, and low-volume producers from the real estate company in <link href="#corty3e-ch16-p151">Exercise 16.18</link></p>
+<p id="corty3e-ch16-p167" block_type="cr_x_nl"><phrase block_type="question_num">16.30</phrase> The average salary for a sample of first-year teachers in the United States</p>
+<p id="corty3e-ch16-p168" block_type="cr_x_hd2"><strong><em>Selecting the correct difference test</em></strong></p>
+<p id="corty3e-ch16-p169" block_type="cr-x-txt-ni"><strong><em>For Exercises 16.31&#8211;16.38, select the appropriate statistical technique from among those in <link href="#corty3e-ch16-fig-8">Figure 16.5</link>.</em></strong></p>
+<p id="corty3e-ch16-p170" block_type="cr_x_nl"><phrase block_type="question_num">16.31</phrase> 10&#37; of the U.S. population is left-handed. Several recent presidents (Barack Obama, Bill Clinton, George H. W. Bush) have been left-handed. This caused a cognitive psychologist to wonder if presidents were representative of the U.S. population in terms of handedness. What test should she use?</p>
+<p id="corty3e-ch16-p171" block_type="cr_x_nl"><phrase block_type="question_num">16.32</phrase> A demographer was curious if an age difference existed between men and women who were getting married for the first time. From wedding announcements in local papers throughout the United States, he randomly sampled 250 couples for whom it was the first marriage for both the bride and the groom. From the announcements, he obtained their ages. What statistical test should he use to compare the ages of husbands and wives?</p>
+<p id="corty3e-ch16-p172" block_type="cr_x_nl"><phrase block_type="question_num">16.33</phrase> In some educational programs, there are a lot of options. One nursing program, for example, allows its students to decide between (a) traditional, semester-long courses; (b) online courses; (c) weekend-only courses; or (d) courses that meet for 8 hours a day, 6 days in a row. The dean of the school wanted to find out if the type of course content had any impact on how much was learned. At the end of its programs, she administered a 50-question, multiple-choice test about basic nursing facts. What test should she use to see if the groups differ on the mean percentage of questions answered correctly?</p>
+<p id="corty3e-ch16-p173" block_type="cr_x_nl"><phrase block_type="question_num">16.34</phrase> Students often gain a few pounds when they move away to college and start eating institutional food. A nutritionist weighed first-year students at the start of the semester, right before Thanksgiving, on their return to school in January, and at the end of the second semester. What statistical test should he use to see if their mean weight changes over time?</p>
+<p id="corty3e-ch16-p174" block_type="cr_x_nl"><phrase block_type="question_num">16.35</phrase> An ecologist obtained a random sample of 85 small rural towns and a random sample of 72 small suburban towns. For each town, he calculated pounds of trash per resident per year that went to the landfill. What statistical test should he use to see if rural and suburban residents differ in the average amount of trash they generate every year?</p>
+<p id="corty3e-ch16-p175" block_type="cr_x_nl"><phrase block_type="question_num">16.36</phrase> A dentist wanted to examine if milk consumption as a child had an impact on the need for dentures by age 50. He classified his patients as having consumed a lot of milk as a child (yes vs. no) and as to whether they wore dentures by age 50 (yes vs. no). What statistical test should he use to determine this?</p>
+<p id="corty3e-ch16-p176" block_type="cr_x_nl"><phrase block_type="question_num">16.37</phrase> The same dentist wanted to find out if his practice was unusual in terms of how many cavities his patients had. He learned that the average American has 11.23 decayed, filled, or missing permanent teeth. In his dental practice, the mean was 8.76, with a standard deviation of 3.42. What statistical test should he use?</p>
+<p id="corty3e-ch16-p177" block_type="cr_x_nl"><phrase block_type="question_num">16.38</phrase> A textbook publisher calculated the percentage of deadlines met by each of its authors. It then classified the authors as having made money for the company, broken even, or lost money for the company. What statistical test should the company use to see if the three types of authors differ in the degree to which they met their deadlines.</p>
+<p id="corty3e_page_637" block_type="page_start">637</p>
+<p id="corty3e-ch16-p178" block_type="cr_x_hd2"><strong><em>Selecting the right relationship test</em></strong></p>
+<p id="corty3e-ch16-p179" block_type="cr-x-txt-ni"><strong><em>For Exercises 16.39&#8211;16.42, select the appropriate statistical technique from among those in <link href="#corty3e-ch16-fig-10">Figure 16.6</link>.</em></strong></p>
+<p id="corty3e-ch16-p180" block_type="cr_x_nl"><phrase block_type="question_num">16.39</phrase> The dentist from <link href="#corty3e-ch16-p175">Exercises 16.36</link> and <link href="#corty3e-ch16-p176">16.37</link> has a new question to contemplate. He wondered if people get most of their cavities when they are young or if they occur consistently over time. To investigate this, he decided to examine the relationship between the ages of his patients and how many of their permanent teeth were decayed, filled, or missing. What test should he use?</p>
+<p id="corty3e-ch16-p181" block_type="cr_x_nl"><phrase block_type="question_num">16.40</phrase> An anti-doping agency decided to investigate if an athlete&#8217;s eliteness was related to the likelihood of doping. It unexpectedly drug-tested the top 10 finishers in all the track and field events at a large meet. From this, it calculated the percentage of first-place finishers who tested positive, the percentage of second-place finishers who tested positive, and so on. The agency then wanted to examine the relationship between the place in which an athlete finished and the likelihood of testing positive. What test should the agency use?</p>
+<p id="corty3e-ch16-p182" block_type="cr_x_nl"><phrase block_type="question_num">16.41</phrase> A member of a bicycle club wondered if a relationship existed between how expensive a person&#8217;s bicycle was and how fast that person rode. He found riders with bikes in two categories. One group rode bikes that were classified by a cycling magazine as &#8220;decent bikes for not too much money.&#8221; The others rode bikes classified as &#8220;amazing, but even Bill Gates would think twice about spending this much for a bike.&#8221; The club member then asked each person to ride solo on a track and time his or her fastest lap. What test should the club member use to see if there&#8217;s a relationship between the cost of the bike and the speed of the rider?</p>
+<p id="corty3e-ch16-p183" block_type="cr_x_nl"><phrase block_type="question_num">16.42</phrase> Some people like cats and some like dogs. Cats are generally thought of as more independent and aloof. A personality psychologist wondered if a relationship existed between the personality trait of introversion/extroversion and the type of pet a person preferred. He obtained a sample of cat owners and a sample of dog owners. Each pet owner took a personality test and was classified as an introvert or an extrovert. What statistical test should be used to see if the two variables are related?</p>
+<p id="corty3e-ch16-p184" block_type="cr-x-hd1"><strong>Expand Your Knowledge</strong></p>
+<p id="corty3e-ch16-p185" block_type="cr-x-txt-ni"><strong><em>In this series of questions, there are no headings that tell which flowchart to use. Plus, some gaps occur in the flowchart. For example, if the scenario has two dependent samples with an ordinal-level dependent variable, there is no such test in the flowchart. Tests exist for such situations; they just weren&#8217;t covered in this book. So, if a scenario in this series calls for a &#8220;missing&#8221; test, just write, &#8220;No such test in book&#8221; as your answer.</em></strong></p>
+<p id="corty3e-ch16-p186" block_type="cr_x_nl"><phrase block_type="question_num">16.43</phrase> A neonatologist is curious to find out what the long-term effect of premature birth is on mental development. He goes to a large school district, assembles a sample of sixth graders, and determines each student&#8217;s IQ score. From each student&#8217;s parents, he finds out if the student was full-term or premature at birth. What statistical test should he complete to figure out if there is a relationship between prematurity and IQ?</p>
+<p id="corty3e-ch16-p187" block_type="cr_x_nl"><phrase block_type="question_num">16.44</phrase> A summer camp director wanted to find out if campers&#8217; degree of homesickness changed over time. She took a sample of them at her camp and at three points in time&#8212;the beginning, middle, and end of camp&#8212;administered the interval-level Homesickness Inventory. What statistical test should she choose to analyze her data?</p>
+<p id="corty3e-ch16-p188" block_type="cr_x_nl"><phrase block_type="question_num">16.45</phrase> A high school principal claimed that academic talent was evenly distributed among the social strata at his high school. To test this, he classified the students as jocks, cheerleaders, techies, stoners, band geeks, and so on and compared class rank among the different groups. What statistical test should he use?</p>
+<p id="corty3e-ch16-p189" block_type="cr_x_nl"><phrase block_type="question_num">16.46</phrase> A health-care researcher obtained a sample of respondents from throughout the United States and asked each one to indicate how worried he or she is about the avian flu on an interval-level scale. Before reporting the results for how worried Americans are about avian flu, the researcher wants to make sure the sample may be representative of the United States in terms of geographic distribution, based on the U.S. Census Bureau&#8217;s division of the United States into four regions (Northeast, Midwest, South, and West). What statistical test should he use to answer this question?</p>
+<p id="corty3e_page_638" block_type="page_start">638</p>
+<p id="corty3e-ch16-p190" block_type="cr_x_nl"><phrase block_type="question_num">16.47</phrase> A medical school dean wondered whether students who did better in her medical school became better physicians. To test this, she gathered a sample of medical students in their final year and determined their GPAs. She also administered to each student the Differential Diagnosis Test (DDT). The DDT presents students with 50 diagnostic dilemmas. Each dilemma is considered equivalent, and scores on the DDT can range from 0 (no questions answered correctly) to 50 (all answered correctly). What statistical test should the dean use to answer her question?</p>
+<p id="corty3e-ch16-p191" block_type="cr_x_nl"><phrase block_type="question_num">16.48</phrase> Graduates of a particular college were classified as having (a) liberal arts degrees or (b) professional degrees. They were also classified as (1) planning to pursue graduate education or (2) not going on for graduate education. When the graduates returned for their 25th reunion, they completed an interval-level, life satisfaction scale. Is life satisfaction influenced by type of degree and/or graduate study? What statistical test will answer this question?</p>
+<p id="corty3e-ch16-p192" block_type="cr_x_nl"><phrase block_type="question_num">16.49</phrase> A sample of students at a college were asked to classify themselves as (1) Asian; (2) Black; (3) Hispanic; (4) Native American; (5) White; or (6) other. Each person was also asked whether his or her family would consider it acceptable (yes or no) if he or she married someone from a different racial category. What statistical test should be used to see if the degree of acceptability differs among racial/ethnic categories?</p>
+<p id="corty3e-ch16-p193" block_type="cr_x_nl"><phrase block_type="question_num">16.50</phrase> The very last question in this book is a challenging one. It is rare that a researcher does a study that involves just one statistical analysis. Usually, there are multiple dependent variables and a branching series of questions and analyses. Here is an example. An infectious disease specialist believes she has developed a vaccine for the common cold. In order to test its efficacy, she designs a study. As a first step, potential participants call in and provide demographic information (age, sex, race) and complete an interval-level measure of general physical health. After this, they learn more about the study, and about 40&#37; of those who originally called decide that they wish to take part in the study.</p>
+<p id="corty3e-ch16-p194" block_type="cr-x-nl-txt">The actual study is a double-blind study in which the volunteers will be inoculated either with the active vaccine or a placebo. At the end of the first week, each participant completes a side effect checklist, which counts how many side effects each person has experienced.</p>
+<p id="corty3e-ch16-p195" block_type="cr-x-nl-txt">For the next 12 months, the research team will keep track of each participant and whether he or she contracts a cold. If a participant contracts a cold, the research team will note how many days have elapsed from the vaccine until the cold. In addition, the researchers will assess the severity of the cold in terms of two dimensions: (1) measuring how many days the cold lasts, and (2) having the cold sufferers report how congested they felt on an ordinal scale.</p>
+<p id="corty3e-ch16-p196" block_type="cr-x-nl-txt">For each scenario below, decide which statistical test or tests should be used to answer the research question. Be aware&#8212;many of these questions involve multiple dependent variables and multiple analyses<strong>.</strong></p>
+<list id="corty3e-ch16-list-18" type="ordered" block_type="loweralpha">
+<li><p id="corty3e-ch16-p197" block_type="cr_x_nl_lvl2">The researcher wants to know if those who volunteered for the study differ from those who chose not to volunteer.</p></li>
+<li><p id="corty3e-ch16-p198" block_type="cr_x_nl_lvl2">The researcher wants to know if her sample of volunteers is demographically similar to the U.S. population.</p></li>
+<li><p id="corty3e-ch16-p199" block_type="cr_x_nl_lvl2">Did the active vaccine have more side effects than the placebo?</p></li>
+<li><p id="corty3e-ch16-p200" block_type="cr_x_nl_lvl2">The primary measure of the vaccine&#8217;s effectiveness is whether or not people in the experimental group, compared to the control group, did or did not contract a cold during the year after the vaccine. How should she answer this question?</p></li>
+<li><p id="corty3e-ch16-p201" block_type="cr_x_nl_lvl2">Secondary measures of the vaccine&#8217;s effectiveness were, for those who contracted colds, how long the cold lasted and how sick they were. What tests should the researcher do to answer these questions?</p>
+<p id="corty3e_page_639" block_type="page_start">639</p></li>
+<li><p id="corty3e-ch16-p202" block_type="cr_x_nl_lvl2">For the control group participants, the researcher was interested in the relationship between their general physical health and contracting a cold. How can this question be answered?</p></li>
+<li><p id="corty3e-ch16-p203" block_type="cr_x_nl_lvl2">For the control group participants who contracted a cold, the researcher was interested in the relationship between general physical health and the severity of the cold. How should she answer this question?</p></li>
+</list>
+<box title="SPSS" numbered="false" id="corty3e-ch16-bx3-3" block_type="bx3-h">
+<p id="corty3e-ch16-p204" block_type="bx3-txt-ni">SPSS, like most serious software programs, has a variety of help options. One help option is Statistics Coach, which leads users through a series of questions to the selection of a statistical test. Let&#8217;s see how it works, using as an example the study in which the effect of early parental loss is measured years later in adults. There were four independent samples (no loss, mother died, father died, both died), and the dependent variable was measured at the interval level.</p>
+<p id="corty3e-ch16-p205" block_type="bx3-txt"><phrase block_type="fig-label"><link href="#corty3e-ch16-fig-11"><strong>Figure 16.7</strong></link></phrase> shows the help options available within SPSS. Statistics Coach is on the fifth line down. Clicking on it opens up the screen shown in <link href="#corty3e-ch16-fig-12"><strong>Figure 16.8</strong></link>, where SPSS asks, &#8220;What do you want to do?&#8221; There are seven possible answers to the question. Option 1 and option 2 involve descriptive statistics, option 4 applies to difference tests, and option 5 relationship tests. The other three options lead to more advanced statistics.</p>
+<figure id="corty3e-ch16-fig-11" block_type="figure" numbered="true" number="16.7" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="medium" border="true"/>
+<image asset-id="corty3e-ch16-img-11" alt="image" src="asset/ch16/corty3e_fig16_07.jpg"/>
+<caption><strong><phrase block_type="fig_num">Figure 16.7</phrase> The SPSS Help Menu</strong> Statistics Coach leads an SPSS user through a series of questions to select an appropriate statistical test. </caption>
+<asset_source>(Source: SPSS)</asset_source>
+</figure>
+<figure id="corty3e-ch16-fig-12" block_type="figure" numbered="true" number="16.8" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="medium" border="true"/>
+<image asset-id="corty3e-ch16-img-12" alt="image" src="asset/ch16/corty3e_fig16_08.jpg"/>
+<caption><strong><phrase block_type="fig_num">Figure 16.8</phrase> Initiating the Statistics Coach</strong> The first step is to decide what one wants to do statistically. </caption>
+<asset_source>(Source: SPSS)</asset_source>
+</figure>
+<p id="corty3e-ch16-p206" block_type="bx3-txt">Clicking on the option for difference tests leads to the query, seen in <link href="#corty3e-ch16-fig-13"><strong>Figure 16.9</strong></link>, about the kind of data. SPSS calls interval and ratio data &#8220;scale&#8221; data. Here, it is checking how the cases are divided into groups, on the basis of the level of measurement for the variable. Click on the option for &#8220;scale numeric data divided into groups.&#8221;</p>
+<p id="corty3e_page_640" block_type="page_start">640</p>
+<figure id="corty3e-ch16-fig-13" block_type="figure" numbered="true" number="16.9" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="medium" border="true"/>
+<image asset-id="corty3e-ch16-img-13" alt="image" src="asset/ch16/corty3e_fig16_09.jpg"/>
+<caption><strong><phrase block_type="fig_num">Figure 16.9</phrase> Determining Level of Measurement</strong> In this step, SPSS asks one to choose whether one&#8217;s data are nominal/ordinal or interval/ratio. </caption>
+<asset_source>(Source: SPSS)</asset_source>
+</figure>
+<p id="corty3e-ch16-p207" block_type="bx3-txt">The next question, seen in <link href="#corty3e-ch16-fig-14"><strong>Figure 16.10</strong></link>, concerns how many groups there are. This study involves three or more groups.</p>
+<figure id="corty3e-ch16-fig-14" block_type="figure" numbered="true" number="16.10" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="medium" border="true"/>
+<image asset-id="corty3e-ch16-img-14" alt="image" src="asset/ch16/corty3e_fig16_10.jpg"/>
+<caption><strong><phrase block_type="fig_num">Figure 16.10</phrase> Deciding How Many Groups One Has</strong> In this step, one decides whether to do a single-sample test, a two-sample test, or a multiple-sample test.</caption>
+<asset_source>(Source: SPSS)</asset_source>
+</figure>
+<p id="corty3e-ch16-p208" block_type="bx3-txt">Clicking on three or more groups brings up the next screen, <link href="#corty3e-ch16-fig-15"><strong>Figure 16.11</strong></link>, which inquires how many &#8220;grouping&#8221; or &#8220;factor&#8221; variables exist. These are what the text calls independent variables, and there is only one of them.</p>
+<figure id="corty3e-ch16-fig-15" block_type="figure" numbered="true" number="16.11" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="large" border="true"/>
+<image asset-id="corty3e-ch16-img-15" alt="image" src="asset/ch16/corty3e_fig16_11.jpg"/>
+<caption><strong><phrase block_type="fig_num">Figure 16.11</phrase> Verifying the Number of Independent Variables</strong> In this step, the decision is whether to do a one-way test or a multiway test. </caption>
+<asset_source>(Source: SPSS)</asset_source>
+</figure>
+<p id="corty3e-ch16-p209" block_type="bx3-txt">Clicking on one grouping variable brings up the next-to-last screen, <link href="#corty3e-ch16-fig-16"><strong>Figure 16.12</strong></link>, which asks whether the data are normally distributed (i.e., a parametric test), not normally distributed (i.e., a nonparametric test), or if one wants to check.</p>
+<figure id="corty3e-ch16-fig-16" block_type="figure" numbered="true" number="16.12" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="large" border="true"/>
+<image asset-id="corty3e-ch16-img-16" alt="image" src="asset/ch16/corty3e_fig16_12.jpg"/>
+<caption><strong><phrase block_type="fig_num">Figure 16.12</phrase> Parametric or Nonparametric?</strong> In this step, one decides whether a parametric or nonparametric test should be done. </caption>
+<asset_source>(Source: SPSS)</asset_source>
+</figure>
+<p id="corty3e_page_641" block_type="page_start">641</p>
+<p id="corty3e-ch16-p210" block_type="bx3-txt">Selecting normally distributed leads to a decision about what test should be done, a one-way ANOVA. As can be seen in <link href="#corty3e-ch16-fig-17"><strong>Figure 16.13</strong></link>, SPSS also provides information about where the commands are located.</p>
+<figure id="corty3e-ch16-fig-17" block_type="figure" numbered="true" number="16.13" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="large" border="true"/>
+<image asset-id="corty3e-ch16-img-17" alt="image" src="asset/ch16/corty3e_fig16_13.jpg"/>
+<caption><strong><phrase block_type="fig_num">Figure 16.13</phrase> Selecting the Test</strong> Not only does SPSS select a test, but it also provides guidance about where to find the commands and what commands to select.</caption>
+<asset_source>(Source: SPSS)</asset_source>
+</figure></box>
+</section>
+</chapter>

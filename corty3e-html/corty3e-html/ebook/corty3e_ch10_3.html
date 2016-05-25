@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]> <html lang="en" class="no-js ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="no-js ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="no-js ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en" class="no-js ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+<head>
+    <title>corty3e_ch10</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <link href="css/boilerplate.css" media="screen" rel="stylesheet" type="text/css" >
+<link href="css/jquery-ui-custom.css" media="screen" rel="stylesheet" type="text/css" >
+<link href="css/manuscript.css" media="screen" rel="stylesheet" type="text/css" >
+<link href="css/digfir_ebook_fw.css" media="screen" rel="stylesheet" type="text/css" >
+<link href="css/corty3e.css" media="screen" rel="stylesheet" type="text/css" >
+<link href="css/corty3e_ch10.css" media="screen" rel="stylesheet" type="text/css" >    
+    
+    </head>
+<body class="noUi">
+<div id="manuscript" data-chapter-number="10">
+    <div data-type="section" data-block_type="h1" id="corty3e-ch10-sec1-2" level="1" data-print_page="336">
+<h2 class="section-title"><span data-type="title" data-title-for="corty3e-ch10-sec1-2"><span data-block_type="sec_num">10.2</span> <span data-block_type="sec_title">Calculating Between-Subjects, One-Way ANOVA</span>
+</span></h2>
+
+<div data-type="box" data-block_type="video" id="corty3e-ch10-video-2"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="corty3e-ch10-video-2"></h3>
+<div data-block_type="vidtxt" id="corty3e-ch10-videotxt-2"><p><span data-type="link" data-href-px="" data-href="http://bcs.whfreeman.com/webpub/statistics/ips7e/student/Stat Videos/ch12/sc_anova_inference.html" data-target="_pop"><img id="" src="asset/images/video.jpg" data-figure-id="" data-layout-width="" data-mmtype="" alt="image"></span><em>StatClips: Anova - Inference</em>Video on LaunchPad</p></div>
+</div></div>
+<div data-block_type="txt-ni" id="corty3e-ch10-p57"><p>Imagine that Dr. Chung, a psychologist who studies learning and motivation, designed a study to learn whether rats could discriminate among different types of food and if this discrimination influenced their behavior. He built a large and complex maze and trained 10 rats to run it. A rat would be placed in the start box and had to find its way to the goal box. To motivate the rats, food was placed in the goal box. Dr. Chung trained the rats with three different types of food: a low-calorie food, a normal-calorie food, and a high-calorie food. Each rat received an equal number of trials with each food and the rats were trained until they all ran the maze equally quickly.</p></div>
+<div data-block_type="page_start" id="corty3e_page_337"><p>337</p></div>
+<div data-type="figure" data-figure-id="corty3e-ch10-fig-10" data-block_type="un_figure" data-layout-align="right" data-layout-width="small" data-layout-border="true">
+
+<img id="" src="asset/ch10/corty3e_fig10_un01.jpg" data-figure-id="corty3e-ch10-fig-10" data-layout-width="small" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+</div>
+<div data-block_type="txt" id="corty3e-ch10-p58"><p>Dr. Chung then put all the rats on a diet until they lost 10% of their normal body weight. The purpose of this was to increase their motivation to find food. Up until this point, all the rats had received the same treatment. Now, Dr. Chung implemented his experimental manipulation.</p></div>
+<div data-block_type="txt" id="corty3e-ch10-p59"><p>He randomly assigned the rats to three groups based on the type of food they would find in the goal box the next time they ran the maze: low-calorie, medium-calorie, or high-calorie. Each rat, individually, was placed in the maze and allowed to approach the goal box. When the rat got there, however, it found a screen that prevented it from entering. The rat could see and smell the food through the screen, but it couldn’t get to the food. The purpose of this was to inform the rat of the type of food that awaited it.</p></div>
+<div data-block_type="txt" id="corty3e-ch10-p60"><p>Dr. Chung picked up the rat, removed the screen, and placed the rat in the start box. He then timed, in seconds, how long it took the rat to get to the goal box. This is the dependent variable in his study and the fewer seconds it took the rat to get to the goal box, the faster the rat traveled the maze. Dr. Chung figured that if the different caloric contents of the foods had been recognized by the rats and if hungry rats were more motivated by higher-calorie foods, then the time taken to run the maze should differ among the three groups. The data and the means for the three groups are shown in <span data-type="link" data-href="#corty3e-ch10-fig-11"><strong>Table 10.3</strong></span>.</p></div>
+<div data-type="figure" data-figure-id="corty3e-ch10-fig-11" data-block_type="table" data-layout-align="center" data-layout-width="large" data-layout-border="true">
+
+<img id="" src="asset/ch10/corty3e_table10_03.jpg" data-figure-id="corty3e-ch10-fig-11" data-layout-width="large" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+</div>
+<div data-block_type="txt" id="corty3e-ch10-p61"><p>The average was 31.00 seconds to get to the low-calorie food, 28.00 seconds for the medium-calorie food, and 25.00 seconds for the high-calorie food (<span data-type="link" data-href="#corty3e-ch10-fig-12"><strong>Figure 10.6</strong></span>). It appears as if mean speed increases as calorie content goes up, but the effect is not dramatic. It seems possible that the differences among the three groups may be explained by sampling error. It is also possible that the calorie content of the food in the goal box has had an effect. A statistical test is needed to decide between these two options.</p></div>
+<div data-type="figure" data-figure-id="corty3e-ch10-fig-12" data-block_type="figure" data-layout-align="center" data-layout-width="medium" data-layout-border="true">
+
+<img id="" src="asset/ch10/corty3e_fig10_06.jpg" data-figure-id="corty3e-ch10-fig-12" data-layout-width="medium" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+<div data-type="figure_text">
+<span data-type="number">Figure 10.9: </span><span data-type="caption"><strong><span data-block_type="fig_num">Figure 10.6</span> The Effect of Calorie Content on Maze Travel Time</strong> There appears to be some decrease in the mean time it takes a rat to run the maze (i.e., an increase in speed) as the calorie content of the food in the goal box increases. But, the effect looks modest at best. A between-subjects, one-way ANOVA can be used to see if the effect is a statistically significant one or if the differences are due to sampling error.</span>
+</div>
+</div>
+<div data-block_type="page_start" id="corty3e_page_338"><p>338</p></div>
+<div data-block_type="h4" id="corty3e-ch10-p62"><p><span data-block_type="h4-n-ri"><strong>Step 1</strong></span> <strong>Pick a Test</strong></p></div>
+<div data-block_type="txt-ni" id="corty3e-ch10-p63"><p>The first step of hypothesis testing is picking the right test. This study compares the means of three independent samples. There is one independent variable (calorie content), which has three levels (low, medium, and high). The dependent variable, seconds, is measured at the ratio level, so means can be calculated. This study calls for a between-subjects, one-way ANOVA.</p></div>
+<div data-type="figure" data-figure-id="corty3e-ch10-fig-13" data-block_type="un_figure" data-layout-align="center" data-layout-width="medium" data-layout-border="true">
+
+<img id="" src="asset/ch10/corty3e_fig10_un02.jpg" data-figure-id="corty3e-ch10-fig-13" data-layout-width="medium" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+<div data-type="figure_text"><span data-type="caption">Don’t forget: <strong>T</strong>om <strong>a</strong>nd <strong>H</strong>arry <strong>d</strong>espise <strong>c</strong>rabby <strong>i</strong>nfants is a mnemonic to remember the six steps of hypothesis testing.</span></div>
+</div>
+<div data-block_type="page_start" id="corty3e_page_339"><p>339</p></div>
+<div data-block_type="h4" id="corty3e-ch10-p64"><p><span data-block_type="h4-n-ri"><strong>Step 2</strong></span> <strong>Check the Assumptions</strong></p></div>
+<div data-block_type="txt-ni" id="corty3e-ch10-p65"><p>The assumptions for the between-subjects, one-way ANOVA, listed in <span data-type="link" data-href="#corty3e-ch10-fig-14"><strong>Table 10.4</strong></span>, are the same as they are for an independent-samples <em>t</em> test: (1) each sample should be a random sample from its population, (2) the cases should be independent of each other, (3) the dependent variable should be normally distributed in each population, and (4) each population should have the same degree of variability. The robustness of the assumptions is the same as for <em>t.</em> The only nonrobust assumption is the second one, the assumption of independence of observations within each group.</p></div>
+<div data-type="figure" data-figure-id="corty3e-ch10-fig-14" data-block_type="table" data-layout-align="center" data-layout-width="large" data-layout-border="true">
+
+<img id="" src="asset/ch10/corty3e_table10_04.jpg" data-figure-id="corty3e-ch10-fig-14" data-layout-width="large" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+</div>
+<div data-block_type="txt" id="corty3e-ch10-p66"><p>Here is an evaluation of the assumptions for the maze data:</p></div>
+<ol data-block_type="numbered" id="corty3e-ch10-list-4">
+<li><div data-block_type="nl-first" id="corty3e-ch10-p67"><p><em>Random samples.</em> Though this is an experimental study in which cases were randomly assigned to experimental conditions, the initial sample wasn’t a random sample from the population of rats, so this assumption was violated. The assumption is robust, however, so Dr. Chung can proceed. However, he has to be careful about generalizing beyond the specific strain of rats he’s working with.</p></div>
+</li>
+<li><div data-block_type="nl-mid" id="corty3e-ch10-p68"><p><em>Independence of cases.</em> Each rat was trained and tested individually. Each rat only provided one data point for the final test. So, this assumption was not violated.</p></div>
+</li>
+<li><div data-block_type="nl-mid" id="corty3e-ch10-p69"><p><em>Normality.</em> It seems reasonable to assume that, within a population of rats, running speed is normally distributed. That is, for rats, there is a mean speed around which most animals cluster and the number of rats with higher and lower speeds tails off in both directions symmetrically.</p></div>
+</li>
+<li><div data-block_type="nl-last" id="corty3e-ch10-p70"><p><em>Homogeneity of variance.</em> A look at the three standard deviations (1.00, 0.82, and 1.00) shows that they are all about the same. There is no reason to believe that this assumption has been violated.</p></div>
+</li>
+</ol>
+<div data-block_type="txt-ni" id="corty3e-ch10-p71"><p>With no nonrobust assumptions violated, Dr. Chung can proceed with the planned between-subjects, one-way ANOVA.</p></div>
+<div data-block_type="h4" id="corty3e-ch10-p72"><p><span data-block_type="h4-n-ri"><strong>Step 3</strong></span> <strong>List the Hypotheses</strong></p></div>
+<div data-block_type="txt-ni" id="corty3e-ch10-p73"><p>The hypotheses are statements about the populations. In Dr. Chung’s study, there are three samples, with each one thought of as having come from a separate population. His hypotheses will be about the population of rats that finds low-calorie food in the goal box, the population of rats that finds medium-calorie food, and the population of rats that finds high-calorie food.</p></div>
+<div data-block_type="page_start" id="corty3e_page_340"><p>340</p></div>
+<div data-block_type="txt" id="corty3e-ch10-p74"><p>Look at <span data-type="link" data-href="#corty3e-ch10-fig-9">Figure 10.5</span>, the example of a sampling distribution for an <em>F</em> ratio, and notice two things—there are no negative values on the <em>x</em>-axis and the sampling distribution is positively skewed. It looks like there is only one “tail” to the sampling distribution. This doesn’t mean that all ANOVAs are one-tailed; it means just the opposite. Both “tails” are wrapped into this one side, so ANOVA always has nondirectional hypotheses. One doesn’t have to decide between a one-tailed or two-tailed test. ANOVA is always two-tailed.</p></div>
+<div data-block_type="txt" id="corty3e-ch10-p75"><p>The nondirectional null hypothesis will state that no difference exists in the means of the populations. The generic form of this, where there are <em>k</em> samples, is</p></div>
+<div data-block_type="eq" id="corty3e-ch10-p76"><p><em>H</em><sub>0</sub>: μ<sub>1</sub> = μ<sub>2</sub> = . . . = μ<sub>k</sub></p></div>
+<div data-block_type="txt-ni" id="corty3e-ch10-p77"><p>For the maze study, with three populations, Dr. Chung’s null hypothesis is</p></div>
+<div data-block_type="eq" id="corty3e-ch10-p78"><p><em>H</em><sub>0</sub>: μ<sub>1</sub> = μ<sub>2</sub> = μ<sub>3</sub></p></div>
+<div data-block_type="txt" id="corty3e-ch10-p79"><p>The alternative hypothesis, also nondirectional, says not all population means are equal. It is not written as μ<sub>1</sub> ≠ μ<sub>2</sub> ≠ μ<sub>3</sub> because that doesn’t cover options like Populations 1 and 2 having different means but Populations 2 and 3 don’t. The alternative hypothesis states that at least two of the population means are different, and maybe all three are. There is no easy way to write this mathematically, so Dr. Chung will write it as</p></div>
+<div data-block_type="eq" id="corty3e-ch10-p80"><p><em>H</em><sub>1</sub>: At least one population mean is different from the others.</p></div>
+<div data-block_type="h4" id="corty3e-ch10-p81"><p><span data-block_type="h4-n-ri"><strong>Step 4</strong></span> <strong>Set the Decision Rule</strong></p></div>
+<div data-block_type="txt-ni" id="corty3e-ch10-p82"><p>This step finds the critical value of <em>F,</em> abbreviated <em>F<sub>cv</sub>,</em> the value that separates the rare zone from the common zone of the sampling distribution of the <em>F</em> ratio. <span data-type="link" data-href="#corty3e-ch10-fig-15"><strong>Figure 10.7</strong></span> is an example of a sampling distribution of <em>F</em> with the rare and common zones marked.</p></div>
+<div data-type="figure" data-figure-id="corty3e-ch10-fig-15" data-block_type="figure" data-layout-align="center" data-layout-width="large" data-layout-border="true">
+
+<img id="" src="asset/ch10/corty3e_fig10_07.jpg" data-figure-id="corty3e-ch10-fig-15" data-layout-width="large" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+<div data-type="figure_text">
+<span data-type="number">Figure 10.11: </span><span data-type="caption"><strong><span data-block_type="fig_num">Figure 10.7</span> Using the Critical Value of <em>F</em> to Mark the Common Zone and the Rare Zone of the Sampling Distribution of <em>F</em></strong> The critical value of <em>F,</em> <em>F<sub>cv</sub>,</em> marks the boundary between the common zone and the rare zone of the test statistic. Here, 5% of the area under the curve falls in the rare zone that is on and to the right of <em>F<sub>cv</sub>.</em></span>
+</div>
+</div>
+<div data-block_type="page_start" id="corty3e_page_341"><p>341</p></div>
+<div data-block_type="txt" id="corty3e-ch10-p83"><p>The decision rule will sound familiar as it is similar to what we used for the <em>z</em> test and <em>t</em> tests: if the calculated value of the test statistic, <em>F,</em> falls on the line or in the rare zone, the null hypothesis is rejected.</p></div>
+<ul data-block_type="bullet" id="corty3e-ch10-list-5">
+<li><div data-block_type="bl-first" id="corty3e-ch10-p84"><p>If <em>F</em> ≥ <em>F<sub>cv</sub>,</em> reject <em>H</em><sub>0</sub>.</p></div>
+</li>
+<li><div data-block_type="bl-last" id="corty3e-ch10-p85"><p>If <em>F</em> &lt; <em>F<sub>cv</sub>,</em> fail to reject <em>H</em><sub>0</sub>.</p></div>
+</li>
+</ul>
+<div data-block_type="txt-ni" id="corty3e-ch10-p86"><p>To obtain the value of <em>F<sub>cv</sub></em>, use <span data-type="link" data-href="corty3e-appendix01.xml#corty3e-app1-fig-10">Appendix Table 4</span>. It provides two <em>F<sub>cv</sub></em> tables: one for critical values of <em>F</em> with a 5% chance of making a Type I error (i.e., α = .05) and one for a 1% chance of making a Type I error (α = .01). A portion of the table with the most commonly used alpha level, .05, is shown in <span data-type="link" data-href="#corty3e-ch10-fig-16"><strong>Table 10.5</strong></span>.</p></div>
+<div data-type="figure" data-figure-id="corty3e-ch10-fig-16" data-block_type="table" data-layout-align="center" data-layout-width="large" data-layout-border="true">
+
+<img id="" src="asset/ch10/corty3e_table10_05.jpg" data-figure-id="corty3e-ch10-fig-16" data-layout-width="large" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+</div>
+<div data-block_type="txt" id="corty3e-ch10-p87"><p>To determine the critical value of <em>F,</em> find the value at the intersection of the <em>column</em> for the degrees of freedom in the numerator and the <em>row</em> for the degrees of freedom in the denominator. <span data-type="link" data-href="#corty3e-ch10-bx6-1">Equation 10.1</span> shows how to calculate the different degrees of freedom needed for a between-subjects, one-way ANOVA. Recall the formula for <em>F</em> ratio from the previous section:</p></div>
+<ul data-block_type="bullet" id="corty3e-ch10-list-6">
+<li><div data-block_type="bl-first" id="corty3e-ch10-p88"><p>The numerator degrees of freedom for the <em>F</em> ratio, what defines the columns in the table of critical values of <em>F,</em> are called between-groups degrees of freedom. This is abbreviated as <em>df</em><sub>Between</sub>.</p></div>
+</li>
+<li><div data-block_type="bl-mid" id="corty3e-ch10-p89"><p>The denominator degrees of freedom for the <em>F</em> ratio, what defines the rows in the table of critical values of <em>F,</em> are within-groups degrees of freedom. This is abbreviated as <em>df</em><sub>Within</sub>.</p></div>
+</li>
+<li><div data-block_type="bl-last" id="corty3e-ch10-p90"><p>The final degrees of freedom calculated in <span data-type="link" data-href="#corty3e-ch10-bx6-1">Equation 10.1</span> are total degrees of freedom. This is abbreviated as <em>df</em><sub>Total</sub> and represents the total number of degrees of freedom in the data. Note that adding together <em>df</em><sub>Between</sub> and <em>df</em><sub>Within</sub> equals <em>df</em><sub>Total</sub>.</p></div>
+</li>
+</ul>
+<div data-block_type="page_start" id="corty3e_page_342"><p>342</p></div>
+<div data-type="box" data-block_type="eq-t" id="corty3e-ch10-bx6-1"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="corty3e-ch10-bx6-1"><span data-block_type="sec_num">Equation 10.1</span> <span data-block_type="sec_title">Degrees of Freedom for Between-Subjects, One-Way ANOVA</span>
+</h3>
+
+<div data-block_type="eq" id="corty3e-ch10-p91"><p><em>df</em><sub>Between</sub> = <em>k</em> – 1</p></div>
+<div data-block_type="eq" id="corty3e-ch10-p92"><p><em>df</em><sub>Within</sub> = <em>N</em> – <em>k</em></p></div>
+<div data-block_type="eq" id="corty3e-ch10-p93"><p><em>df</em><sub>Total</sub> = <em>N</em> – 1</p></div>
+<div data-block_type="eq-txt-ni" id="corty3e-ch10-p94"><p>where <em>df</em><sub>Between</sub> = between-groups degrees of freedom (degrees of freedom for the numerator)</p></div>
+<div data-block_type="eq-unl" id="corty3e-ch10-p95"><p><em>df</em><sub>Within</sub> = within-groups degrees of freedom (degrees of freedom for the denominator)</p></div>
+<div data-block_type="eq-unl" id="corty3e-ch10-p96"><p><em>df</em><sub>Total</sub> = total degrees of freedom</p></div>
+<div data-block_type="eq-unl" id="corty3e-ch10-p97"><p><em>k</em> = the number of groups</p></div>
+<div data-block_type="eq-unl" id="corty3e-ch10-p98"><p><em>N</em> = the total number of cases</p></div>
+</div></div>
+<div data-block_type="txt" id="corty3e-ch10-p99"><p>For the maze data, there are three groups (low-, medium-, and high-calorie), so <em>k</em> = 3. There are a total of 10 participants in the study, so <em>N</em> = 10. Given these values, degrees of freedom are calculated as</p></div>
+<div data-block_type="eq" id="corty3e-ch10-p100"><p><em>df</em><sub>Between</sub> = <em>k</em> – 1</p></div>
+<div data-block_type="eq" id="corty3e-ch10-p101"><p>= 3 – 1</p></div>
+<div data-block_type="eq" id="corty3e-ch10-p102"><p>= 2</p></div>
+<div data-block_type="eq" id="corty3e-ch10-p103"><p><em>df</em><sub>Within</sub> = <em>N</em> – <em>k</em></p></div>
+<div data-block_type="eq" id="corty3e-ch10-p104"><p>= 10 – 3</p></div>
+<div data-block_type="eq" id="corty3e-ch10-p105"><p>= 7</p></div>
+<div data-block_type="eq" id="corty3e-ch10-p106"><p><em>df</em><sub>Total</sub> = <em>N</em> – 1</p></div>
+<div data-block_type="eq" id="corty3e-ch10-p107"><p>= 10 – 1</p></div>
+<div data-block_type="eq" id="corty3e-ch10-p108"><p>= 9</p></div>
+<div data-block_type="txt" id="corty3e-ch10-p109"><p>To find the critical value of <em>F,</em> Dr. Chung needs numerator degrees of freedom (<em>df</em><sub>Between</sub> = 2) and denominator degrees of freedom (<em>df</em><sub>Within</sub> = 7). The intersection of the column for 2 degrees of freedom and the row for 7 degrees of freedom leads to a critical value of <em>F</em> of 4.737. That means the decision rule for the maze data can now be written as:</p></div>
+<ul data-block_type="bullet" id="corty3e-ch10-list-7">
+<li><div data-block_type="bl-first" id="corty3e-ch10-p110"><p>If <em>F</em> ≥ 4.737, reject the null hypothesis.</p></div>
+</li>
+<li><div data-block_type="bl-last" id="corty3e-ch10-p111"><p>If <em>F</em> &lt; 4.737, fail to reject the null hypothesis.</p></div>
+</li>
+</ul>
+<div data-block_type="txt" id="corty3e-ch10-p112"><p>The sampling distribution of <em>F</em> with degrees of freedom of 2 (numerator) and 7 (denominator) is shown in <span data-type="link" data-href="#corty3e-ch10-fig-17"><strong>Figure 10.8</strong></span>. The critical value of <em>F,</em> <em>F<sub>cv</sub></em> = 4.737, is used to separate the rare zone from the common zone. If the observed value of <em>F,</em> the value of the test statistic calculated in Step 5, falls on the line or in the rare zone, the null hypothesis is rejected. If it falls in the common zone, Dr. Chung will fail to reject the null hypothesis.</p></div>
+<div data-type="figure" data-figure-id="corty3e-ch10-fig-17" data-block_type="figure" data-layout-align="center" data-layout-width="large" data-layout-border="true">
+
+<img id="" src="asset/ch10/corty3e_fig10_08.jpg" data-figure-id="corty3e-ch10-fig-17" data-layout-width="large" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+<div data-type="figure_text">
+<span data-type="number">Figure 10.13: </span><span data-type="caption"><strong><span data-block_type="fig_num">Figure 10.8</span> The Critical Value of <em>F</em> for 2 and 7 Degrees of Freedom</strong> The critical value of <em>F,</em> <em>F<sub>cv</sub>,</em> with 2 degrees of freedom in the numerator and 7 degrees of freedom in the denominator, is 4.737. Note that 5% of the <em>F</em> distribution falls on or to the right of this point. If the observed value of <em>F</em> falls in the rare zone, then the null hypothesis is rejected.</span>
+</div>
+</div>
+<div data-block_type="page_start" id="corty3e_page_343"><p>343</p></div>
+<div data-block_type="h4" id="corty3e-ch10-p113"><p><span data-block_type="h4-n-ri"><strong>Step 5</strong></span> <strong>Calculate the Test Statistic</strong></p></div>
+<div data-block_type="txt-ni" id="corty3e-ch10-p114"><p>To complete the ANOVA, Dr. Chung’s next step is to analyze the variability in the maze data. This means taking account of variability both within and between groups:</p></div>
+<ul data-block_type="bullet" id="corty3e-ch10-list-8">
+<li><div data-block_type="bl-first" id="corty3e-ch10-p115"><p>Not each rat with the same type of food in the goal box coursed through the maze in the same amount of time, so there is variability within groups.</p></div>
+</li>
+<li><div data-block_type="bl-last" id="corty3e-ch10-p116"><p>The three groups all had different means, so there is variability between groups.</p></div>
+</li>
+</ul>
+<div data-block_type="txt-ni" id="corty3e-ch10-p117"><p>To understand why analysis of variance is called analysis of <em>variance,</em> it is useful to review the variance formula from <span data-type="link" data-href="corty3e-ch03.xml">Chapter 3</span>. Equation 3.6 says:</p></div>
+<div data-block_type="equation" id="corty3e-ch10-eqn-3"><p>
+<img id="" src="asset/ch10/corty3e_eqn10_343_01.jpg" data-figure-id="" data-layout-width="" data-mmtype="" alt="image"></p></div>
+<div data-block_type="txt" id="corty3e-ch10-p118"><p>The <em>numerator</em> in the variance formula is calculated by following three steps: (1) calculating deviation scores by subtracting the mean from each score, (2) squaring all the deviation scores, and (3) adding up all the squared deviation scores. This numerator, a sum of squared deviation scores, is called a <em>sum of squares,</em> abbreviated as <em>SS.</em> Calculating sums of squares for the two sources of variability, between-groups and within-groups, is necessary to find the between- and within-group variances that are analyzed in an analysis of variance.</p></div>
+<div data-block_type="txt" id="corty3e-ch10-p119"><p>Actually, there are three sums of squares that are calculated. In addition to sum of squares between-groups (<em>SS</em><sub>Between</sub>) and sum of squares within groups (<em>SS</em><sub>Within</sub>), sum of squares total (<em>SS</em><sub>Total</sub>) is also calculated. Sum of squares total represents all the variability in the data. Between-subjects, one-way ANOVA divides <em>SS</em><sub>Total</sub> into between-groups sum of squares (<em>SS</em><sub>Between</sub>), which measures variability due to treatment, and within-groups sum of squares (<em>SS</em><sub>Within</sub>), which measures variability due to individual differences. In other words, <em>SS</em><sub>Total</sub> = <em>SS</em><sub>Between</sub> + <em>SS</em><sub>Within</sub>.</p></div>
+<div data-block_type="page_start" id="corty3e_page_344"><p>344</p></div>
+<div data-type="box" data-block_type="mn1" id="corty3e-ch10-exp1-2"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="corty3e-ch10-exp1-2"></h3>
+<div data-block_type="mn-ext-ni" id="corty3e-ch10-p120"><p>SS<sub>Total</sub> <em>represents all the variability in the scores. Between-subjects, one-way ANOVA divides it into variability due to the different ways the groups are treated, and variability due to individual differences.</em></p></div>
+</div></div>
+<div data-block_type="txt" id="corty3e-ch10-p121"><p><span data-type="termref" data-term="Sum of squares total">Sum of squares total</span> is calculated by treating all the cases as if they belong in one group: the grand mean, the mean of all the scores, is subtracted from each score, these deviation scores are squared, and the squared deviation scores are added up. Voilà, a sum of squares, the numerator for a variance.</p></div>
+<div data-block_type="txt" id="corty3e-ch10-p122"><p><span data-type="termref" data-term="Sum of squares between">Sum of squares between</span> represents the variability between groups. It is calculated by subtracting the grand mean from each group mean, squaring these deviation scores, multiplying each squared deviation score by the number of cases in the group, and then adding them up. The final variance numerator, the one that represents variability within groups, <strong>sum of squares within</strong>, is calculated by taking each score, subtracting from it its group mean, squaring each deviation score, and adding them all up.</p></div>
+<div data-block_type="txt" id="corty3e-ch10-p123"><p>The calculations just described are what are called definitional formulas because the calculations explain what the value being calculated is. Unfortunately, definitional formulas often are not straightforward mathematically. In contrast, computational formulas are designed to be easier to use. <span data-type="link" data-href="#corty3e-ch10-bx6-2">Equation 10.2</span> is a computational formula for sum of squares total.</p></div>
+<div data-type="box" data-block_type="eq-t" id="corty3e-ch10-bx6-2"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="corty3e-ch10-bx6-2"><span data-block_type="sec_num">Equation 10.2</span> <span data-block_type="sec_title">Formula for Calculating Sum of Squares Total for Between-Subjects, One-Way ANOVA</span>
+</h3>
+
+<div data-block_type="equation" id="corty3e-ch10-eqn-4"><p>
+<img id="" src="asset/ch10/corty3e_eqn10_344_01.jpg" data-figure-id="" data-layout-width="" data-mmtype="" alt="image"></p></div>
+<div data-block_type="eq-txt-ni" id="corty3e-ch10-p124"><p>where <em>SS</em><sub>Total</sub> = total sum of squares</p></div>
+<div data-block_type="eq-unl" id="corty3e-ch10-p125"><p><em>X</em> = raw score</p></div>
+<div data-block_type="eq-unl" id="corty3e-ch10-p126"><p><em>N</em> = the total number of cases</p></div>
+</div></div>
+<div data-block_type="txt-ni" id="corty3e-ch10-p127"><p>This formula says:</p></div>
+<ol data-block_type="numbered" id="corty3e-ch10-list-9">
+<li><div data-block_type="nl-first" id="corty3e-ch10-p128"><p>Square each score and add them all up.</p></div>
+</li>
+<li><div data-block_type="nl-mid" id="corty3e-ch10-p129"><p>Add up all the scores, square the sum, and divide by the total number of cases.</p></div>
+</li>
+<li><div data-block_type="nl-last" id="corty3e-ch10-p130"><p>Subtract the result of Step 2 from the result of Step 1.</p></div>
+</li>
+</ol>
+<div data-block_type="txt" id="corty3e-ch10-p131"><p>The easiest way to do this is to take <span data-type="link" data-href="#corty3e-ch10-fig-11">Table 10.3</span> and add another column to it, one for squared scores. This can be seen in <span data-type="link" data-href="#corty3e-ch10-fig-20"><strong>Table 10.6</strong></span>. From the table, we can see that the sum of squared scores for Step 1 is 7,900.00.</p></div>
+<div data-type="figure" data-figure-id="corty3e-ch10-fig-20" data-block_type="table" data-layout-align="center" data-layout-width="large" data-layout-border="true">
+
+<img id="" src="asset/ch10/corty3e_table10_06.jpg" data-figure-id="corty3e-ch10-fig-20" data-layout-width="large" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+</div>
+<div data-block_type="page_start" id="corty3e_page_345"><p>345</p></div>
+<div data-block_type="txt" id="corty3e-ch10-p132"><p>Step 2 is next.</p></div>
+<div data-block_type="equation" id="corty3e-ch10-eqn-5"><p>
+<img id="" src="asset/ch10/corty3e_eqn10_345_01.jpg" data-figure-id="" data-layout-width="" data-mmtype="" alt="image"></p></div>
+<div data-block_type="txt" id="corty3e-ch10-p133"><p>Finally,</p></div>
+<div data-block_type="equation" id="corty3e-ch10-eqn-6"><p>
+<img id="" src="asset/ch10/corty3e_eqn10_345_02.jpg" data-figure-id="" data-layout-width="" data-mmtype="" alt="image"></p></div>
+<div data-block_type="txt-ni" id="corty3e-ch10-p134"><p>Next, let’s use <span data-type="link" data-href="#corty3e-ch10-bx6-3">Equation 10.3</span> to calculate sum of squares between groups.</p></div>
+<div data-type="box" data-block_type="eq-t" id="corty3e-ch10-bx6-3"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="corty3e-ch10-bx6-3"><span data-block_type="sec_num">Equation 10.3</span> <span data-block_type="sec_title">Formula for Calculating Between-Groups Sum of Squares for Between-Subjects, One-Way ANOVA</span>
+</h3>
+
+<div data-block_type="equation" id="corty3e-ch10-eqn-7"><p>
+<img id="" src="asset/ch10/corty3e_eqn10_345_03.jpg" data-figure-id="" data-layout-width="" data-mmtype="" alt="image"></p></div>
+<div data-block_type="eq-txt-ni" id="corty3e-ch10-p135"><p>where <em>SS</em><sub>Between</sub> = between-groups sum of squares</p></div>
+<div data-block_type="eq-unl" id="corty3e-ch10-p136"><p><em>X</em><sub>Group</sub> = raw scores for cases in a group</p></div>
+<div data-block_type="eq-unl" id="corty3e-ch10-p137"><p><em>n</em><sub>Group</sub> = number of cases in a group</p></div>
+<div data-block_type="eq-unl" id="corty3e-ch10-p138"><p><em>X</em> = raw scores</p></div>
+<div data-block_type="eq-unl" id="corty3e-ch10-p139"><p><em>N</em> = total number of cases</p></div>
+</div></div>
+<div data-block_type="txt" id="corty3e-ch10-p140"><p>Here’s how the formula works:</p></div>
+<ol data-block_type="numbered" id="corty3e-ch10-list-10">
+<li><div data-block_type="nl-first" id="corty3e-ch10-p141"><p>For each group, add up all the scores, square that sum, and divide that square by the number of cases in the group. Add up all these quotients.</p></div>
+</li>
+<li><div data-block_type="nl-mid" id="corty3e-ch10-p142"><p>Add up all the scores, square that sum, and divide that square by the total number of cases.</p></div>
+</li>
+<li><div data-block_type="nl-last" id="corty3e-ch10-p143"><p>Subtract Step 2 from Step 1.</p></div>
+</li>
+</ol>
+<div data-block_type="txt" id="corty3e-ch10-p144"><p>Again, most of the work has already been done in <span data-type="link" data-href="#corty3e-ch10-fig-20">Table 10.6</span>. Here is Step 1:</p></div>
+<div data-block_type="equation" id="corty3e-ch10-eqn-8"><p>
+<img id="" src="asset/ch10/corty3e_eqn10_345_04.jpg" data-figure-id="" data-layout-width="" data-mmtype="" alt="image"></p></div>
+<div data-block_type="page_start" id="corty3e_page_346"><p>346</p></div>
+<div data-block_type="txt" id="corty3e-ch10-p145"><p>And, Step 2:</p></div>
+<div data-block_type="equation" id="corty3e-ch10-eqn-9"><p>
+<img id="" src="asset/ch10/corty3e_eqn10_346_01.jpg" data-figure-id="" data-layout-width="" data-mmtype="" alt="image"></p></div>
+<div data-block_type="txt" id="corty3e-ch10-p146"><p>Finally,</p></div>
+<div data-block_type="equation" id="corty3e-ch10-eqn-10"><p>
+<img id="" src="asset/ch10/corty3e_eqn10_346_02.jpg" data-figure-id="" data-layout-width="" data-mmtype="" alt="image"></p></div>
+<div data-block_type="txt" id="corty3e-ch10-p147"><p>The final sum of squares to calculate is the sum of squares within. <span data-type="link" data-href="#corty3e-ch10-bx6-4">Equation 10.4</span> covers this.</p></div>
+<div data-type="box" data-block_type="eq-t" id="corty3e-ch10-bx6-4"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="corty3e-ch10-bx6-4"><span data-block_type="sec_num">Equation 10.4</span> <span data-block_type="sec_title">Formula for Calculating Sum of Squares Within for Between-Subjects, One-Way ANOVA</span>
+</h3>
+
+<div data-block_type="equation" id="corty3e-ch10-eqn-11"><p>
+<img id="" src="asset/ch10/corty3e_eqn10_346_03.jpg" data-figure-id="" data-layout-width="" data-mmtype="" alt="image"></p></div>
+<div data-block_type="eq-txt-ni" id="corty3e-ch10-p148"><p>where <em>SS</em><sub>Within</sub> = sum of squares within</p></div>
+<div data-block_type="eq-unl" id="corty3e-ch10-p149"><p><em>X</em><sub>Group</sub> = raw scores for cases in a group</p></div>
+<div data-block_type="eq-unl" id="corty3e-ch10-p150"><p><em>n</em><sub>Group</sub> = number of cases in a group</p></div>
+</div></div>
+<ol data-block_type="numbered" id="corty3e-ch10-list-11">
+<li><div data-block_type="nl-first" id="corty3e-ch10-p151"><p>For each group, square each score and add them all up.</p></div>
+</li>
+<li><div data-block_type="nl-mid" id="corty3e-ch10-p152"><p>For each group, add up all the scores, square the sum, and divide by the total number of cases.</p></div>
+</li>
+<li><div data-block_type="nl-mid" id="corty3e-ch10-p153"><p>For each group, subtract the result of Step 2 from the result of Step 1.</p></div>
+</li>
+<li><div data-block_type="nl-last" id="corty3e-ch10-p154"><p>Add together all the remainders from Step 3.</p></div>
+</li>
+</ol>
+<div data-block_type="txt-ni" id="corty3e-ch10-p155"><p>As with the other sums of squares, <span data-type="link" data-href="#corty3e-ch10-fig-20">Table 10.6</span> has the components already prepared:</p></div>
+<div data-block_type="equation" id="corty3e-ch10-eqn-12"><p>
+<img id="" src="asset/ch10/corty3e_eqn10_346_04.jpg" data-figure-id="" data-layout-width="" data-mmtype="" alt="image"></p></div>
+<div data-block_type="page_start" id="corty3e_page_347"><p>347</p></div>
+<div data-block_type="txt" id="corty3e-ch10-p156"><p>Earlier in the chapter, it was stated that <em>SS</em><sub>Total</sub> = <em>SS</em><sub>Between</sub> + <em>SS</em><sub>Within</sub>. Let’s see if that is true. <em>SS</em><sub>Between</sub> is 54.00 and <em>SS</em><sub>Within</sub> is 6.00. They sum to 60.00, which is what we calculated <em>SS</em><sub>Total</sub> to be. This is shown visually in <span data-type="link" data-href="#corty3e-ch10-fig-29"><strong>Figure 10.9</strong></span>.</p></div>
+<div data-type="figure" data-figure-id="corty3e-ch10-fig-29" data-block_type="figure" data-layout-align="center" data-layout-width="medium" data-layout-border="true">
+
+<img id="" src="asset/ch10/corty3e_fig10_09.jpg" data-figure-id="corty3e-ch10-fig-29" data-layout-width="medium" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+<div data-type="figure_text">
+<span data-type="number">Figure 10.15: </span><span data-type="caption"><strong><span data-block_type="fig_num">Figure 10.9</span> Partitioning Total Sum of Squares for Maze Running Time Data</strong> <em>SS</em><sub>Total</sub> can be broken down into its component parts, <em>SS</em><sub>Between</sub> and <em>SS</em><sub>Within</sub>. Note that in this example the largest chunk of <em>SS</em><sub>Total</sub> is accounted for by <em>SS</em><sub>Between</sub>.</span>
+</div>
+</div>
+<div data-block_type="txt" id="corty3e-ch10-p157"><p>Now that the degrees of freedom and sums of squares have been calculated, Dr. Chung can go on to calculate the <em>F</em> ratio. By organizing the sums of squares and the degrees of freedom into an ANOVA summary table, the <em>F</em> ratio will almost calculate itself.</p></div>
+<div data-block_type="txt" id="corty3e-ch10-p158"><p><span data-type="link" data-href="#corty3e-ch10-fig-30"><strong>Table 10.7</strong></span> is a template of a summary table for a between-subjects, one-way ANOVA. It is important to note the order in which it is laid out—three rows and five columns. Always arrange a summary table for a between-subjects, one-way ANOVA in exactly this way:</p></div>
+<div data-type="figure" data-figure-id="corty3e-ch10-fig-30" data-block_type="table" data-layout-align="center" data-layout-width="large" data-layout-border="true">
+
+<img id="" src="asset/ch10/corty3e_table10_07.jpg" data-figure-id="corty3e-ch10-fig-30" data-layout-width="large" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+</div>
+<ul data-block_type="bullet" id="corty3e-ch10-list-12">
+<li><div data-block_type="bl-last" id="corty3e-ch10-p159"><p>There is one row for each source of variability:</p></div>
+<ul data-block_type="bluebullet" id="corty3e-ch10-list-13">
+<li><div data-block_type="bl_lvl2" id="corty3e-ch10-p160"><p>Between-groups variability appears on the top row.</p></div>
+</li>
+<li><div data-block_type="bl_lvl2" id="corty3e-ch10-p161"><p>Within-groups variability is on the middle row.</p></div>
+</li>
+<li><div data-block_type="bl_lvl2" id="corty3e-ch10-p162"><p>Total variability goes on the bottom row.</p></div>
+</li>
+</ul>
+</li>
+</ul>
+<div data-block_type="page_start" id="corty3e_page_348"><p>348</p></div>
+<ul data-block_type="bullet" id="corty3e-ch10-list-14">
+<li><div data-block_type="bl-last" id="corty3e-ch10-p163"><p>The five columns, in order, tell:</p></div>
+<ul data-block_type="bluebullet" id="corty3e-ch10-list-15">
+<li><div data-block_type="bl_lvl2" id="corty3e-ch10-p164"><p>The source of variability (between, within, or total).</p></div>
+</li>
+<li><div data-block_type="bl_lvl2" id="corty3e-ch10-p165"><p>The sum of squares calculated for that source of variability.</p></div>
+</li>
+<li><div data-block_type="bl_lvl2" id="corty3e-ch10-p166"><p>The degrees of freedom for that source of variability.</p></div>
+</li>
+<li><div data-block_type="bl_lvl2" id="corty3e-ch10-p167"><p>What is called the “mean square” for that source of variability.</p></div>
+</li>
+<li><div data-block_type="bl_lvl2" id="corty3e-ch10-p168"><p>The <em>F</em> ratio.</p></div>
+</li>
+</ul>
+</li>
+</ul>
+<div data-block_type="txt" id="corty3e-ch10-p169"><p>Dr. Chung already has enough information to fill in the second and third columns. Mean square, the fourth column, sounds like something new, but it is a variance by another name. To calculate the mean square, one divides the sum of squares in a row by the degrees of freedom for that row.</p></div>
+<div data-block_type="txt" id="corty3e-ch10-p170"><p>To see how a mean square is a variance, let’s revisit the variance formula from <span data-type="link" data-href="corty3e-ch03.xml">Chapter 3</span> one more time:</p></div>
+<div data-block_type="equation" id="corty3e-ch10-eqn-13"><p>
+<img id="" src="asset/ch10/corty3e_eqn10_348_01.jpg" data-figure-id="" data-layout-width="" data-mmtype="" alt="image"></p></div>
+<div data-block_type="txt-ni" id="corty3e-ch10-p171"><p>The numerator in this formula is the same as the sum of squares total. And, <em>df</em><sub>Total</sub> is <em>N</em> – 1. Thus, if mean square total were calculated, it would be exactly the same as the variance for all the cases. Analysis of variance really does analyze variances.</p></div>
+<div data-block_type="txt" id="corty3e-ch10-p172"><p>The only mean squares needed to complete a between-subjects, one-way ANOVA are between-groups mean square (<em>MS</em><sub>Between</sub>) and within-groups mean square (<em>MS</em><sub>Within</sub>). As the mean square total is not needed, the convention is not to calculate it and to leave the space blank where mean square total would go.</p></div>
+<div data-block_type="txt" id="corty3e-ch10-p173"><p>The formula for calculating the between-groups mean square is given in <span data-type="link" data-href="#corty3e-ch10-bx6-5">Equation 10.5</span>.</p></div>
+<div data-type="box" data-block_type="eq-t" id="corty3e-ch10-bx6-5"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="corty3e-ch10-bx6-5"><span data-block_type="sec_num">Equation 10.5</span> <span data-block_type="sec_title">Formula for Between-Groups Mean Square, <em>MS</em><sub>Between</sub>, for Between-Subjects, One-Way ANOVA</span>
+</h3>
+
+<div data-block_type="equation" id="corty3e-ch10-eqn-14"><p>
+<img id="" src="asset/ch10/corty3e_eqn10_348_02.jpg" data-figure-id="" data-layout-width="" data-mmtype="" alt="image"></p></div>
+<div data-block_type="eq-txt-ni" id="corty3e-ch10-p174"><p>where <em>MS</em><sub>Between</sub> = between-groups mean square</p></div>
+<div data-block_type="eq-unl" id="corty3e-ch10-p175"><p><em>SS</em><sub>Between</sub> = between-groups sum of squares</p></div>
+<div data-block_type="eq-unl" id="corty3e-ch10-p176"><p><em>df</em><sub>Between</sub> = between-groups degrees of freedom</p></div>
+</div></div>
+<div data-block_type="page_start" id="corty3e_page_349"><p>349</p></div>
+<div data-block_type="txt" id="corty3e-ch10-p177"><p>For the maze data, where <em>SS</em><sub>Between</sub> = 54.00 and <em>df</em><sub>Between</sub> = 2, the between-groups mean square would be calculated:</p></div>
+<div data-block_type="equation" id="corty3e-ch10-eqn-15"><p>
+<img id="" src="asset/ch10/corty3e_eqn10_349_01.jpg" data-figure-id="" data-layout-width="" data-mmtype="" alt="image"></p></div>
+<div data-block_type="txt-ni" id="corty3e-ch10-p178"><p><span data-type="link" data-href="#corty3e-ch10-bx6-6">Equation 10.6</span> offers the formula for the within-groups mean square.</p></div>
+<div data-type="box" data-block_type="eq-t" id="corty3e-ch10-bx6-6"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="corty3e-ch10-bx6-6"><span data-block_type="sec_num">Equation 10.6</span> <span data-block_type="sec_title">Formula for Within-Groups Mean Square, <em>MS</em><sub>Within</sub>, for a Between-Subjects, One-Way ANOVA</span>
+</h3>
+
+<div data-block_type="equation" id="corty3e-ch10-eqn-16"><p>
+<img id="" src="asset/ch10/corty3e_eqn10_349_02.jpg" data-figure-id="" data-layout-width="" data-mmtype="" alt="image"></p></div>
+<div data-block_type="eq-txt-ni" id="corty3e-ch10-p179"><p>where <em>MS</em><sub>Within</sub> = within-groups mean square</p></div>
+<div data-block_type="eq-unl" id="corty3e-ch10-p180"><p><em>SS</em><sub>Within</sub> = within-groups sum of squares</p></div>
+<div data-block_type="eq-unl" id="corty3e-ch10-p181"><p><em>df</em><sub>Within</sub> = within-groups degrees of freedom</p></div>
+</div></div>
+<div data-block_type="txt" id="corty3e-ch10-p182"><p>For the maze data, <em>SS</em><sub>Within</sub> = 6.00 and <em>df</em><sub>Within</sub> = 7, so <em>MS</em><sub>Within</sub> would be calculated:</p></div>
+<div data-type="figure" data-figure-id="corty3e-ch10-fig-35" data-block_type="un_figure" data-layout-align="center" data-layout-width="medium" data-layout-border="true">
+
+<img id="" src="asset/ch10/corty3e_eqn10_349_03.jpg" data-figure-id="corty3e-ch10-fig-35" data-layout-width="medium" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+</div>
+<div data-block_type="txt" id="corty3e-ch10-p183"><p>Once the two mean squares are calculated, it is time to calculate the <em>F</em> ratio<em>.</em> <em>F</em> is the ratio of variability due to between-group factors and individual differences divided by the variability due to individual differences. <em>F</em> is calculated as shown in <span data-type="link" data-href="#corty3e-ch10-bx6-7">Equation 10.7</span>.</p></div>
+<div data-type="box" data-block_type="eq-t" id="corty3e-ch10-bx6-7"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="corty3e-ch10-bx6-7"><span data-block_type="sec_num">Equation 10.7</span> <span data-block_type="sec_title">Formula for Calculating <em>F</em> for a Between-Subjects, One-Way ANOVA</span>
+</h3>
+
+<div data-block_type="equation" id="corty3e-ch10-eqn-17"><p>
+<img id="" src="asset/ch10/corty3e_eqn10_349_04.jpg" data-figure-id="" data-layout-width="" data-mmtype="" alt="image"></p></div>
+<div data-block_type="eq-txt-ni" id="corty3e-ch10-p184"><p>where <em>F</em> = the <em>F</em> ratio</p></div>
+<div data-block_type="eq-unl" id="corty3e-ch10-p185"><p><em>MS</em><sub>Between</sub> = the between-groups mean square</p></div>
+<div data-block_type="eq-unl" id="corty3e-ch10-p186"><p><em>MS</em><sub>Within</sub> = the within-groups mean square</p></div>
+</div></div>
+<div data-block_type="page_start" id="corty3e_page_350"><p>350</p></div>
+<div data-block_type="txt" id="corty3e-ch10-p187"><p>For the maze data, where <em>MS</em><sub>Between</sub> = 27.00 and <em>MS</em><sub>Within</sub> = 0.86, <em>F</em> is calculated as</p></div>
+<div data-block_type="equation" id="corty3e-ch10-eqn-18"><p>
+<img id="" src="asset/ch10/corty3e_eqn10_350_01.jpg" data-figure-id="" data-layout-width="" data-mmtype="" alt="image"></p></div>
+<div data-block_type="txt" id="corty3e-ch10-p188"><p>The complete ANOVA summary table for the maze data is shown in <span data-type="link" data-href="#corty3e-ch10-fig-38"><strong>Table 10.8</strong></span>. <span data-type="link" data-href="#corty3e-ch10-fig-39"><strong>Table 10.9</strong></span> is a summary table that provides the organization and formulas for completing a between-subjects, one-way ANOVA.</p></div>
+<div data-type="figure" data-figure-id="corty3e-ch10-fig-38" data-block_type="table" data-layout-align="center" data-layout-width="large" data-layout-border="true">
+
+<img id="" src="asset/ch10/corty3e_table10_08.jpg" data-figure-id="corty3e-ch10-fig-38" data-layout-width="large" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+</div>
+<div data-type="figure" data-figure-id="corty3e-ch10-fig-39" data-block_type="table" data-layout-align="center" data-layout-width="large" data-layout-border="true">
+
+<img id="" src="asset/ch10/corty3e_table10_09.jpg" data-figure-id="corty3e-ch10-fig-39" data-layout-width="large" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+</div>
+<div data-type="box" data-block_type="sr-exp-n" id="corty3e-ch10-bx3-1"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="corty3e-ch10-bx3-1">Worked Example 10.1</h3>
+<div data-block_type="sr-ex-txt-ni" id="corty3e-ch10-p189"><p>For practice with a between-subjects, one-way ANOVA, let’s explore how effective pain relievers like acetaminophen (Tylenol) and ibuprofen (Advil) are. Dr. Douglas, a sensory psychologist, wanted to see if medications such as these affected the pain threshold (how long it takes to perceive a stimulus as painful). Twelve male undergraduates volunteered for the study, and she randomly assigned them to three groups, one control group and two experimental groups, but tested each person individually. Each participant was given a pill—either a placebo, ibuprofen, or acetaminophen—waited an hour for the medication to take effect, then placed his hand in a bucket of ice water. As this was a test of pain threshold, he was told to remove his hand from the ice water as soon as it became painful. The researcher recorded the elapsed time, in seconds, as shown in <span data-type="link" data-href="#corty3e-ch10-fig-40"><strong>Table 10.10</strong></span>. Note that this table has squared and summed scores so that the ANOVA computational formulas can be easily completed.</p></div>
+<div data-type="figure" data-figure-id="corty3e-ch10-fig-40" data-block_type="table" data-layout-align="center" data-layout-width="large" data-layout-border="true">
+
+<img id="" src="asset/ch10/corty3e_table10_10.jpg" data-figure-id="corty3e-ch10-fig-40" data-layout-width="large" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+</div>
+<div data-block_type="page_start" id="corty3e_page_351"><p>351</p></div>
+<div data-block_type="sr_exp_txt" id="corty3e-ch10-p190"><p><span data-type="link" data-href="#corty3e-ch10-fig-41"><strong>Figure 10.10</strong></span> shows what appears to be an effect of the pain relievers on the pain threshold. Compared to the placebo group, those using acetaminophen took longer on average to feel pain, and those given ibuprofen took even longer on average. It is necessary, of course, to conduct a hypothesis test to see if the effect is statistically significant and isn’t plausibly accounted for by sampling error.</p></div>
+<div data-type="figure" data-figure-id="corty3e-ch10-fig-41" data-block_type="figure" data-layout-align="center" data-layout-width="medium" data-layout-border="true">
+
+<img id="" src="asset/ch10/corty3e_fig10_10.jpg" data-figure-id="corty3e-ch10-fig-41" data-layout-width="medium" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+<div data-type="figure_text">
+<span data-type="number">Figure 10.20: </span><span data-type="caption"><strong><span data-block_type="fig_num">Figure 10.10</span> Mean Seconds to Mean Pain Threshold for Different Pain Relievers</strong> It appears that ibuprofen, and perhaps acetaminophen, raise the pain threshold compared to placebo. But, a between-subjects, one-way ANOVA has to be conducted to make sure that the effect is statistically significant.</span>
+</div>
+</div>
+<div data-block_type="sr_exp_h4_txt" id="corty3e-ch10-p191"><p><span data-block_type="SR-EXP-h4-N-ni"><strong>Step 1</strong></span> <span data-block_type="SR-EXP-h4-T-ri"><strong>Pick a Test</strong></span></p></div>
+<div data-block_type="sr-ex-txt-ni" id="corty3e-ch10-p192"><p>There are a number of conditions that lead to Dr. Douglas’s selection of between-subjects, one-way ANOVA as the appropriate test to analyze these data.</p></div>
+<ul data-block_type="bullet" id="corty3e-ch10-list-16">
+<li><div data-block_type="sr-exp-bl-first" id="corty3e-ch10-p193"><p>There is one independent variable (factor), the type of drug.</p></div>
+</li>
+<li><div data-block_type="sr-exp-bl-first" id="corty3e-ch10-p194"><p>This factor has three levels (placebo, ibuprofen, and acetaminophen), so there are three samples or groups.</p></div>
+</li>
+<li><div data-block_type="sr-exp-bl-mid" id="corty3e-ch10-p195"><p>The cases were randomly assigned to the groups, so the samples are independent samples.</p></div>
+</li>
+<li><div data-block_type="sr-exp-bl-mid" id="corty3e-ch10-p196"><p>The dependent variable, number of seconds to pain threshold, is measured at the ratio level so means can be calculated for each group.</p></div>
+</li>
+</ul>
+<div data-block_type="page_start" id="corty3e_page_352"><p>352</p></div>
+<div data-block_type="sr_exp_h4_txt" id="corty3e-ch10-p197"><p><span data-block_type="SR-EXP-h4-N-ni"><strong>Step 2</strong></span> <span data-block_type="SR-EXP-h4-T-ri"><strong>Check the Assumptions</strong></span></p></div>
+<ol data-block_type="numbered" id="corty3e-ch10-list-17">
+<li><div data-block_type="sr-exp-bl-mid" id="corty3e-ch10-p198"><p>Random samples: The samples are made up of male, college-student volunteers, so they are not random samples from the human population. The random samples assumption is violated, but it is a robust assumption so the researcher can proceed. She’ll just have to be careful about the population to which she generalizes the results.</p></div>
+</li>
+<li><div data-block_type="sr-exp-bl-mid" id="corty3e-ch10-p199"><p>Independence of cases: Each participant was in the study only once. Plus, each participant was tested individually, uninfluenced by the other participants. This assumption was not violated.</p></div>
+</li>
+<li><div data-block_type="sr-exp-bl-mid" id="corty3e-ch10-p200"><p>Normality: Researchers are commonly willing to assume that psychological variables, like pain threshold, are normally distributed. So, this assumption is not violated.</p></div>
+</li>
+<li><div data-block_type="sr-exp-bl-mid" id="corty3e-ch10-p201"><p>Homogeneity of variance: All the standard deviations (4.04, 5.48, and 4.76, from <span data-type="link" data-href="#corty3e-ch10-fig-40">Table 10.10</span>) are very similar, so the amount of variability in each population seems about equal.</p></div>
+</li>
+</ol>
+<div data-block_type="sr_exp_txt" id="corty3e-ch10-p202"><p>With no nonrobust assumptions violated, Dr. Douglas can proceed with the planned between-subjects, one-way ANOVA.</p></div>
+<div data-block_type="sr_exp_h4_txt" id="corty3e-ch10-p203"><p><span data-block_type="SR-EXP-h4-N-ni"><strong>Step 3</strong></span> <span data-block_type="SR-EXP-h4-T-ri"><strong>List the Hypotheses</strong></span></p></div>
+<div data-block_type="sr-exp-eq" id="corty3e-ch10-p204"><p><em>H</em><sub>0</sub>: μ<sub>1</sub> = μ<sub>2</sub> = μ<sub>3</sub>.</p></div>
+<div data-block_type="sr-exp-eq" id="corty3e-ch10-p205"><p><em>H</em><sub>1</sub>: At least one population mean is different from the others.</p></div>
+<div data-block_type="sr_exp_h4_txt" id="corty3e-ch10-p206"><p><span data-block_type="SR-EXP-h4-N-ni"><strong>Step 4</strong></span> <span data-block_type="SR-EXP-h4-T-ri"><strong>Set the Decision Rule</strong></span></p></div>
+<div data-block_type="sr-ex-txt-ni" id="corty3e-ch10-p207"><p>In order to find the critical value of <em>F,</em> Dr. Douglas needs to know the degrees of freedom for the numerator (<em>df</em><sub>Between</sub>) and for the denominator (<em>df</em><sub>Within</sub>). To do so, she uses <span data-type="link" data-href="#corty3e-ch10-bx6-1">Equation 10.1</span>:</p></div>
+<div data-block_type="sr-exp-eq" id="corty3e-ch10-p208"><p><em>df</em><sub>Between</sub> = <em>k</em> – 1</p></div>
+<div data-block_type="sr-exp-eq" id="corty3e-ch10-p209"><p>= 3 – 1</p></div>
+<div data-block_type="sr-exp-eq" id="corty3e-ch10-p210"><p>= 2</p></div>
+<div data-block_type="sr-exp-eq" id="corty3e-ch10-p211"><p><em>df</em><sub>Within</sub> = <em>N</em> – <em>k</em></p></div>
+<div data-block_type="sr-exp-eq" id="corty3e-ch10-p212"><p>= 12 – 3</p></div>
+<div data-block_type="sr-exp-eq" id="corty3e-ch10-p213"><p>= 9</p></div>
+<div data-block_type="sr-exp-eq" id="corty3e-ch10-p214"><p><em>df</em><sub>Total</sub> = <em>N</em> – 1</p></div>
+<div data-block_type="sr-exp-eq" id="corty3e-ch10-p215"><p>= 12 – 1</p></div>
+<div data-block_type="sr-exp-eq" id="corty3e-ch10-p216"><p>= 11</p></div>
+<div data-block_type="page_start" id="corty3e_page_353"><p>353</p></div>
+<div data-block_type="sr_exp_txt" id="corty3e-ch10-p217"><p>Looking at the α = .05 version of <span data-type="link" data-href="corty3e-appendix01.xml#corty3e-app1-fig-10">Appendix Table 4</span>—at the intersection of the column for 2 degrees of freedom in the numerator and the row for 9 degrees of freedom in the denominator—she finds <em>F<sub>cv</sub></em> is 4.256. Here is the decision rule:</p></div>
+<ul data-block_type="bullet" id="corty3e-ch10-list-18">
+<li><div data-block_type="sr-exp-bl-first" id="corty3e-ch10-p218"><p>If <em>F</em> ≥ 4.256, reject <em>H</em><sub>0</sub>.</p></div>
+</li>
+<li><div data-block_type="sr-exp-bl-first" id="corty3e-ch10-p219"><p>If <em>F</em> &lt; 4.256, fail to reject <em>H</em><sub>0</sub>.</p></div>
+</li>
+</ul>
+<div data-block_type="sr_exp_h4_txt" id="corty3e-ch10-p220"><p><span data-block_type="SR-EXP-h4-N-ni"><strong>Step 5</strong></span> <span data-block_type="SR-EXP-h4-T-ri"><strong>Calculate the Test Statistic</strong></span></p></div>
+<div data-block_type="sr-ex-txt-ni" id="corty3e-ch10-p221"><p>Dr. Douglas’s first step on the path to <em>F</em> is to calculate <em>SS</em><sub>Total</sub>, using <span data-type="link" data-href="#corty3e-ch10-bx6-2">Equation 10.2</span> and values from <span data-type="link" data-href="#corty3e-ch10-fig-40">Table 10.10</span>:</p></div>
+<div data-block_type="equation" id="corty3e-ch10-eqn-19"><p>
+<img id="" src="asset/ch10/corty3e_eqn10_353_01.jpg" data-figure-id="" data-layout-width="" data-mmtype="" alt="image"></p></div>
+<div data-block_type="sr_exp_txt" id="corty3e-ch10-p222"><p>Next, she calculates <em>SS</em><sub>Between</sub> following <span data-type="link" data-href="#corty3e-ch10-bx6-3">Equation 10.3</span>:</p></div>
+<div data-block_type="equation" id="corty3e-ch10-eqn-20"><p>
+<img id="" src="asset/ch10/corty3e_eqn10_353_02.jpg" data-figure-id="" data-layout-width="" data-mmtype="" alt="image"></p></div>
+<div data-block_type="sr_exp_txt" id="corty3e-ch10-p223"><p>Finally, using <span data-type="link" data-href="#corty3e-ch10-bx6-4">Equation 10.4</span>, she calculates <em>SS</em><sub>Within</sub>:</p></div>
+<div data-block_type="equation" id="corty3e-ch10-eqn-21"><p>
+<img id="" src="asset/ch10/corty3e_eqn10_353_03.jpg" data-figure-id="" data-layout-width="" data-mmtype="" alt="image"></p></div>
+<div data-block_type="page_start" id="corty3e_page_354"><p>354</p></div>
+<div data-block_type="sr_exp_txt" id="corty3e-ch10-p224"><p>As a check that she has done the math correctly, she adds together <em>SS</em><sub>Between</sub> (62.00) and <em>SS</em><sub>Within</sub> (207.00) to make sure that they sum to sum of squares total (269.00). They do. <span data-type="link" data-href="#corty3e-ch10-fig-45"><strong>Figure 10.11</strong></span> shows this visually.</p></div>
+<div data-type="figure" data-figure-id="corty3e-ch10-fig-45" data-block_type="figure" data-layout-align="center" data-layout-width="medium" data-layout-border="true">
+
+<img id="" src="asset/ch10/corty3e_fig10_11.jpg" data-figure-id="corty3e-ch10-fig-45" data-layout-width="medium" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+<div data-type="figure_text">
+<span data-type="number">Figure 10.21: </span><span data-type="caption"><strong><span data-block_type="fig_num">Figure 10.11</span> Partitioning Total Sum of Squares for Mean Pain Threshold Data</strong> <em>SS</em><sub>Total</sub> can be broken down into its component parts, <em>SS</em><sub>Between</sub> and <em>SS</em><sub>Within</sub>. Note that the largest chunk of <em>SS</em><sub>Total</sub> is accounted for by <em>SS</em><sub>Within</sub>.</span>
+</div>
+</div>
+<div data-block_type="sr_exp_txt" id="corty3e-ch10-p225"><p>The final step is to complete an ANOVA summary table for the pain threshold data. The degrees of freedom and sums of squares already calculated can be used to start to fill in the summary table. Then, following the guidelines in <span data-type="link" data-href="#corty3e-ch10-fig-39">Table 10.9</span>, Dr. Douglas completes the ANOVA summary table (see <span data-type="link" data-href="#corty3e-ch10-fig-46"><strong>Table 10.11</strong></span>), finding <em>F</em> =1.35. In the next section, we’ll learn how to interpret the results.</p></div>
+<div data-type="figure" data-figure-id="corty3e-ch10-fig-46" data-block_type="table" data-layout-align="center" data-layout-width="large" data-layout-border="true">
+
+<img id="" src="asset/ch10/corty3e_table10_11.jpg" data-figure-id="corty3e-ch10-fig-46" data-layout-width="large" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+</div>
+</div></div>
+<div data-block_type="page_start" id="corty3e_page_355"><p>355</p></div>
+<div data-type="box" data-block_type="sr-h" id="corty3e-ch10-bx2-2"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="corty3e-ch10-bx2-2">Practice Problems 10.2 </h3>
+<div data-block_type="sr-h1" id="corty3e-ch10-p226"><p><strong>Apply Your Knowledge</strong></p></div>
+<div data-block_type="sr-que-nl" id="corty3e-ch10-p227"><p><span data-block_type="question_num">10.5</span> Select the correct test for this example: A gerontologist wants to determine which exercise program, yoga or stretching, leads to greater limberness in elderly people. He uses a ratio-level range-of-motion test to measure limberness and randomly assigns elderly people to receive either eight weeks of yoga or eight weeks of stretching.</p></div>
+<div data-block_type="sr-que-nl" id="corty3e-ch10-p228"><p><span data-block_type="question_num">10.6</span> Select the correct test for this example: A human factors psychologist is comparing three different adhesives used in sealing cereal boxes to see which one is easiest to open. He obtained 90 consumers, randomly assigned each participant to open one cereal box, and measured how long it took to open the box. Thirty of the boxes were sealed with Adhesive A, 30 with Adhesive B, and 30 with Adhesive C.</p></div>
+<div data-block_type="sr-que-nl" id="corty3e-ch10-p229"><p><span data-block_type="question_num">10.7</span> If the numerator <em>df</em> for a between-subjects, one-way ANOVA are 4 and the denominator <em>df</em> are 20, what is the decision rule if α = .05?</p></div>
+<div data-type="table" data-block_type="un_table" id="corty3e-ch10-table1" data-layout-align="center" data-layout-width="xlarge" data-layout-border="true" data-mmsrc="" data-attr=""><table><tbody>
+<tr>
+<td></td>
+<td colspan="2"><span data-block_type="TBN-STRHD"><strong>Group 1</strong></span></td>
+<td colspan="2"><span data-block_type="TBN-STRHD"><strong>Group 2</strong></span></td>
+<td colspan="2"><span data-block_type="TBN-STRHD"><strong>Group 3</strong></span></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><span data-block_type="TBN-COLHD"><strong><em>X</em></strong></span></td>
+<td><span data-block_type="TBN-COLHD"><strong><em>X</em><sup>2</sup></strong></span></td>
+<td><span data-block_type="TBN-COLHD"><strong><em>X</em></strong></span></td>
+<td><span data-block_type="TBN-COLHD"><strong><em>X</em><sup>2</sup></strong></span></td>
+<td><span data-block_type="TBN-COLHD"><strong><em>X</em></strong></span></td>
+<td><span data-block_type="TBN-COLHD"><strong><em>X</em><sup>2</sup></strong></span></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><span data-block_type="tbn-txt">16</span></td>
+<td><span data-block_type="tbn-txt">256</span></td>
+<td><span data-block_type="tbn-txt">19</span></td>
+<td><span data-block_type="tbn-txt">361</span></td>
+<td><span data-block_type="tbn-txt">26</span></td>
+<td><span data-block_type="tbn-txt">676</span></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><span data-block_type="tbn-txt">18</span></td>
+<td><span data-block_type="tbn-txt">324</span></td>
+<td><span data-block_type="tbn-txt">20</span></td>
+<td><span data-block_type="tbn-txt">400</span></td>
+<td><span data-block_type="tbn-txt">22</span></td>
+<td><span data-block_type="tbn-txt">484</span></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><span data-block_type="tbn-txt">14</span></td>
+<td><span data-block_type="tbn-txt">196</span></td>
+<td><span data-block_type="tbn-txt">22</span></td>
+<td><span data-block_type="tbn-txt">484</span></td>
+<td><span data-block_type="tbn-txt">25</span></td>
+<td><span data-block_type="tbn-txt">625</span></td>
+<td colspan="2"><span data-block_type="TBN-COLHD"><strong>Grand</strong></span></td>
+</tr>
+<tr>
+<td></td>
+<td><span data-block_type="tbn-txt">18</span></td>
+<td><span data-block_type="tbn-txt">324</span></td>
+<td><span data-block_type="tbn-txt">24</span></td>
+<td><span data-block_type="tbn-txt">576</span></td>
+<td><span data-block_type="tbn-txt">27</span></td>
+<td><span data-block_type="tbn-txt">729</span></td>
+<td><span data-block_type="TBN-COLHD"><strong><em>X</em></strong></span></td>
+<td><span data-block_type="TBN-COLHD"><strong><em>X</em><sup>2</sup></strong></span></td>
+</tr>
+<tr>
+<td><span data-block_type="TBN-STRHD">∑</span></td>
+<td><span data-block_type="tbn-txt">66.00</span></td>
+<td><span data-block_type="tbn-txt">1,100.00</span></td>
+<td><span data-block_type="tbn-txt">85.00</span></td>
+<td><span data-block_type="tbn-txt">1,821.00</span></td>
+<td><span data-block_type="tbn-txt">100.00</span></td>
+<td><span data-block_type="tbn-txt">2,514.00</span></td>
+<td><span data-block_type="tbn-txt">251.00</span></td>
+<td><span data-block_type="tbn-txt">5,435.00</span></td>
+</tr>
+<tr>
+<td><span data-block_type="TBN-STRHD"><strong>n</strong></span></td>
+<td><span data-block_type="tbn-txt">4</span></td>
+<td></td>
+<td><span data-block_type="tbn-txt">4</span></td>
+<td></td>
+<td><span data-block_type="tbn-txt">4</span></td>
+<td></td>
+<td><span data-block_type="tbn-txt">12</span></td>
+<td><span data-block_type="tbn-txt"></span></td>
+</tr>
+</tbody></table></div>
+<div data-block_type="sr-que-nl" id="corty3e-ch10-p230"><p><span data-block_type="question_num">10.8</span> If a between-subjects, one-way ANOVA has 32 cases randomly assigned to four equally sized groups, what are <em>df</em><sub>Between</sub>, <em>df</em><sub>Within</sub>, and <em>df</em><sub>Total</sub>?</p></div>
+<div data-block_type="sr-que-nl" id="corty3e-ch10-p231"><p><span data-block_type="question_num">10.9</span> Here are data on an interval-level variable for three independent samples. Prepare this table so that it would be ready for use in computing sums of squares. (Do not compute the sums of squares.)</p></div>
+<div data-type="table" data-block_type="un_table" id="corty3e-ch10-table2" data-layout-align="center" data-layout-width="medium" data-layout-border="true" data-mmsrc="" data-attr=""><table><tbody>
+<tr>
+<td><span data-block_type="TBN-COLHD"><strong>Group 1</strong></span></td>
+<td><span data-block_type="TBN-COLHD"><strong>Group 2</strong></span></td>
+<td><span data-block_type="TBN-COLHD"><strong>Group 3</strong></span></td>
+</tr>
+<tr>
+<td><span data-block_type="tbn-txt">16</span></td>
+<td><span data-block_type="tbn-txt">12</span></td>
+<td><span data-block_type="tbn-txt">13</span></td>
+</tr>
+<tr>
+<td><span data-block_type="tbn-txt">17</span></td>
+<td><span data-block_type="tbn-txt">14</span></td>
+<td><span data-block_type="tbn-txt">15</span></td>
+</tr>
+<tr>
+<td><span data-block_type="tbn-txt">20</span></td>
+<td></td>
+<td><span data-block_type="tbn-txt">18</span></td>
+</tr>
+</tbody></table></div>
+<div data-block_type="sr-que-nl" id="corty3e-ch10-p232"><p><span data-block_type="question_num">10.10</span> Given the data in the table below, calculate (a) <em>SS</em><sub>Total</sub>, (b) <em>SS</em><sub>Between</sub>, and (c) <em>SS</em><sub>Within</sub>.</p></div>
+<div data-block_type="sr-que-nl" id="corty3e-ch10-p233"><p><span data-block_type="question_num">10.11</span> Given <em>df</em><sub>Between</sub> = 3, <em>df</em><sub>Within</sub> = 12, <em>df</em><sub>Total</sub> = 15, <em>SS</em><sub>Between</sub> = 716.00, <em>SS</em><sub>Within</sub> = 228.00, and <em>SS</em><sub>Total</sub> = 944.00, complete an ANOVA summary table.</p></div>
+</div></div>
+</div>
+<!-- #x-digfir-subsection-insertion-point --></div><!-- /#manuscript -->
+<br class="clear" />
+<!-- end of material in original view -->
+
+	<!--[if IE]><script type="text/javascript" src="js/excanvas.compiled.js"></script><![endif]-->
+    
+<script type="text/javascript" src="js/utilities.js"></script>
+<script type="text/javascript" src="js/query_types.js"></script>
+<script type="text/javascript" src="js/player.js"></script>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/jquery-ui-1.8.16.custom.min.js"></script>
+<script type="text/javascript" src="js/jquery_extensions.js"></script>
+<script type="text/javascript" src="js/swfobject.js"></script>
+<script type="text/javascript" src="http://admin.brightcove.com/js/BrightcoveExperiences.js"></script>
+<script type="text/javascript" src="js/digfir_ebook_fw.js"></script>
+<script type="text/javascript" src="js/corty3e.js"></script>
+<script type="text/javascript" src="js/corty3e_ch10.js"></script>
+<script type="text/javascript">
+    //<!--
+    
+$(window).ready(function () {
+	player.initialize('56d62cd7757a2efe47000002');
+});
+    //-->
+</script>
+</body>
+</html>
+

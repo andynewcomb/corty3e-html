@@ -1,0 +1,19 @@
+/* Appendix A CSS */
+[data-block_type="bm-ct-1"] {
+  background-color: #168ca8;
+  color: #ffffff;
+  font-size: 3em;
+  padding: 75px 0 0 40px;
+  margin-left: -40px;
+  width: 845px;
+}
+[data-block_type="bm-ct-1"] p {
+  margin: 0;
+  line-height: 30px;
+}
+[data-block_type="ans-t"] {
+  color: #168ca8;
+  font-size: 1.8em;
+  margin: 14px 0;
+}
+/*# sourceMappingURL=corty3e_app1.css.map */

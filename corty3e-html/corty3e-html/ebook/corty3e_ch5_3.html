@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]> <html lang="en" class="no-js ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="no-js ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="no-js ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en" class="no-js ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+<head>
+    <title>corty3e_ch5</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <link href="css/boilerplate.css" media="screen" rel="stylesheet" type="text/css" >
+<link href="css/jquery-ui-custom.css" media="screen" rel="stylesheet" type="text/css" >
+<link href="css/manuscript.css" media="screen" rel="stylesheet" type="text/css" >
+<link href="css/digfir_ebook_fw.css" media="screen" rel="stylesheet" type="text/css" >
+<link href="css/corty3e.css" media="screen" rel="stylesheet" type="text/css" >
+<link href="css/corty3e_ch5.css" media="screen" rel="stylesheet" type="text/css" >    
+    
+    </head>
+<body class="noUi">
+<div id="manuscript" data-chapter-number="5">
+    <div data-type="section" data-block_type="h1" id="corty3e-ch5-sec1-2" level="1" data-print_page="150">
+<h2 class="section-title"><span data-type="title" data-title-for="corty3e-ch5-sec1-2"><span data-block_type="sec_num">5.2</span> <span data-block_type="sec_title">Sampling Distributions and the Central Limit Theorem</span>
+</span></h2>
+
+<div data-type="box" data-block_type="video" id="corty3e-ch5-video-2"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="corty3e-ch5-video-2"></h3>
+<div data-block_type="vidtxt" id="corty3e-ch5-videotxt-2"><p><span data-type="link" data-href-px="" data-href="http://bcs.whfreeman.com/webpub/statistics/ips7e/student/Stat Videos/ch05/sc_centrallimittheorem_I.html" data-target="_pop"><img id="" src="asset/images/video.jpg" data-figure-id="" data-layout-width="" data-mmtype="" alt="image"></span><em>StatClips: The Central Limit Theorem Part I</em>Video on LaunchPad</p></div>
+</div></div>
+<div data-type="box" data-block_type="video" id="corty3e-ch5-video-3"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="corty3e-ch5-video-3"></h3>
+<div data-block_type="vidtxt" id="corty3e-ch5-videotxt-3"><p><span data-type="link" data-href-px="" data-href="http://bcs.whfreeman.com/webpub/statistics/ips7e/student/Stat Videos/ch05/sc_centrallimittheorem_II.html" data-target="_pop"><img id="" src="asset/images/video.jpg" data-figure-id="" data-layout-width="" data-mmtype="" alt="image"></span><em>StatClips: The Central Limit Theorem Part II</em>Video on LaunchPad</p></div>
+</div></div>
+<div data-type="box" data-block_type="video" id="corty3e-ch5-video-4"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="corty3e-ch5-video-4"></h3>
+<div data-block_type="vidtxt" id="corty3e-ch5-videotxt-4"><p><span data-type="link" data-href-px="" data-href="http://bcs.whfreeman.com/webpub/statistics/ips7e/student/Stat Videos/ch05/sc_sampdist_oml_ch05.html" data-target="_pop"><img id="" src="asset/images/video.jpg" data-figure-id="" data-layout-width="" data-mmtype="" alt="image"></span><em>StatClips: Sampling Distributions Overview and Motivation Part I</em>Video on LaunchPad</p></div>
+</div></div>
+<div data-type="box" data-block_type="video" id="corty3e-ch5-video-5"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="corty3e-ch5-video-5"></h3>
+<div data-block_type="vidtxt" id="corty3e-ch5-videotxt-5"><p><span data-type="link" data-href-px="" data-href="http://bcs.whfreeman.com/webpub/statistics/ips7e/student/Stat Videos/ch05/sc_centrallimittheorem_III.html" data-target="_pop"><img id="" src="asset/images/video.jpg" data-figure-id="" data-layout-width="" data-mmtype="" alt="image"></span><em>StatClips: Central Limit Theorem Part III</em>Video on LaunchPad</p></div>
+</div></div>
+<div data-type="box" data-block_type="video" id="corty3e-ch5-video-6"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="corty3e-ch5-video-6"></h3>
+<div data-block_type="vidtxt" id="corty3e-ch5-videotxt-6"><p><span data-type="link" data-href-px="" data-href="http://bcs.whfreeman.com/webpub/statistics/ips7e/student/Stat Videos/ch05/sc_sampdist_omII.html" data-target="_pop"><img id="" src="asset/images/video.jpg" data-figure-id="" data-layout-width="" data-mmtype="" alt="image"></span><em>StatClips: Sampling Distributions: Overview and Motivation Part II, Lake Full of Fish Example</em>Video on LaunchPad</p></div>
+</div></div>
+</div>
+    <div data-type="section" data-block_type="h2" id="corty3e-ch5-sec2-3" level="2" data-print_page="150">
+<h2 class="section-title"><span data-type="title" data-title-for="corty3e-ch5-sec2-3">Sampling Distributions
+</span></h2>
+
+<div data-block_type="txt-ni" id="corty3e-ch5-p44"><p>The histogram for the percentage of red M&amp;Ms in 500 bags of M&amp;Ms, <span data-type="link" data-href="#corty3e-ch5-fig-5">Figure 5.2</span>, is an example of a <em>sampling distribution.</em> A <span data-type="termref" data-term="sampling distribution">sampling distribution</span> is generated by (1) taking repeated, random samples of a specified size from a population; (2) calculating some statistic (like a mean or the percentage red M&amp;Ms) for each sample; and (3) making a frequency distribution of those values.</p></div>
+<div data-block_type="txt" id="corty3e-ch5-p45"><p>To understand sampling distributions, let’s use an example with a very small population. This example involves a small town in Texas that has a population of only five people (Diekhoff, 1996). Each person is given an IQ test and their five scores can be seen in <strong><span data-type="link" data-href="#corty3e-ch5-fig-7">Figure 5.3</span></strong>. The frequency distribution for these data forms a flat line and does not look like a normal distribution.</p></div>
+<div data-type="figure" data-figure-id="corty3e-ch5-fig-7" data-block_type="figure" data-layout-align="center" data-layout-width="large" data-layout-border="true">
+
+<img id="" src="asset/ch5/corty3e_fig05_03.jpg" data-figure-id="corty3e-ch5-fig-7" data-layout-width="large" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+<div data-type="figure_text">
+<span data-type="number">Figure 5.4: </span><span data-type="caption"><strong><span data-block_type="fig_num">Figure 5.3</span> Distribution of IQ Scores in Small Texas Town</strong> Only five people live in this town and each one has a different IQ score. The distribution of IQ scores in this population is flat.</span>
+</div>
+</div>
+<div data-block_type="page_start" id="corty3e_page_151"><p>151</p></div>
+<div data-block_type="txt" id="corty3e-ch5-p46"><p>These five people make up the entire population of the town. As there is access to all the cases in the population, this is one of those rare instances where one can calculate a population mean:</p></div>
+<div data-block_type="equation" id="corty3e-ch5-eqn-1"><p>
+<img id="" src="asset/ch5/corty3e_eqn05_151_01.jpg" data-figure-id="" data-layout-width="" data-mmtype="" alt="image">
+</p></div>
+<div data-block_type="txt" id="corty3e-ch5-p47"><p>To make a sampling distribution of the mean for this population: (1) take repeated, random samples from the population; (2) for each sample, calculate a mean; (3) make a frequency distribution of the sample means. That’s a sampling distribution of the mean.</p></div>
+<div data-block_type="txt" id="corty3e-ch5-p48"><p>There are two things to be aware of with regard to sampling distributions:</p></div>
+<ul data-block_type="bullet" id="corty3e-ch5-list-3">
+<li><div data-block_type="bl-first" id="corty3e-ch5-p49"><p>First, sampling occurs with replacement. This means after a person is selected at random and his or her IQ is recorded, the person is put back into the population, giving him or her a chance to be in the sample again.</p></div>
+</li>
+<li><div data-block_type="bl-last" id="corty3e-ch5-p50"><p>Second, the order in which cases are drawn doesn’t matter. A sample with person A drawn first and person B second is the same as person B drawn first and A second.</p></div>
+</li>
+</ul>
+<div data-block_type="txt" id="corty3e-ch5-p51"><p>Our sampling distribution of the mean will have samples of size <em>N</em> = 2. There are 15 possible unique samples of size <em>N</em> = 2 for this Texas town. They are shown in the first panel in <strong><span data-type="link" data-href="#corty3e-ch5-fig-9">Table 5.2</span></strong>.</p></div>
+<div data-type="figure" data-figure-id="corty3e-ch5-fig-9" data-block_type="table" data-layout-align="center" data-layout-width="large" data-layout-border="true">
+
+<img id="" src="asset/ch5/corty3e_table05_02.jpg" data-figure-id="corty3e-ch5-fig-9" data-layout-width="large" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+</div>
+<div data-block_type="txt" id="corty3e-ch5-p52"><p><span data-type="link" data-href="#corty3e-ch5-fig-9">Table 5.2</span> also shows the pairs of IQ scores for each of the samples (panel 2), as well as the mean IQ score for each sample (panel 3). Note that not all of the sample means are the same. As there is variability in the means, it is possible to calculate a measure of variability (like a standard deviation) for the sampling distribution. <span data-type="termref" data-term="Standard error of the mean">Standard error of the mean</span> (abbreviated σ<em><sub>M</sub></em>) is the term used for the standard deviation of a sampling distribution of the mean. The standard error of the mean tells how much variability there is from sample mean to sample mean.</p></div>
+<div data-block_type="page_start" id="corty3e_page_152"><p>152</p></div>
+<div data-block_type="txt" id="corty3e-ch5-p53"><p><strong><span data-type="link" data-href="#corty3e-ch5-fig-10">Figure 5.4</span></strong> shows the sampling distribution for the 15 means from the bottom panel of <span data-type="link" data-href="#corty3e-ch5-fig-9">Table 5.2</span>. The first thing to note is the shape. The population (see <span data-type="link" data-href="#corty3e-ch5-fig-7">Figure 5.3</span>) was flat, but the sampling distribution is starting to assume a normal shape. This normal shape is important because statisticians know how to use <em>z</em> scores to calculate the likelihood of a score falling in a specified segment of the normal distribution.</p></div>
+<div data-type="figure" data-figure-id="corty3e-ch5-fig-10" data-block_type="figure" data-layout-align="center" data-layout-width="large" data-layout-border="true">
+
+<img id="" src="asset/ch5/corty3e_fig05_04.jpg" data-figure-id="corty3e-ch5-fig-10" data-layout-width="large" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+<div data-type="figure_text">
+<span data-type="number">Figure 5.6: </span><span data-type="caption"><strong><span data-block_type="fig_num">Figure 5.4</span> Sampling Distribution of Means for Repeated, Random Samples of Size <em>N</em> = 2 from Small Texas Town</strong> The central limit theorem states that the sampling distribution of the mean will be normally distributed, no matter what the shape of the parent population is, as long as the sample size is large. Large means <em>N</em> ≥ 30. Here, even though the <em>N</em> for each sample is small (<em>N</em> = 2), the sampling distribution is starting to assume the shape of a normal distribution.</span>
+</div>
+</div>
+<div data-block_type="txt" id="corty3e-ch5-p54"><p>The mean of this sampling distribution is abbreviated as μ<em><sub>M</sub></em> because it is a <em>population</em> mean of sample means. Calculating it leads to an interesting observation—the mean of the sampling distribution is the same as the population mean:</p></div>
+<div data-block_type="equation" id="corty3e-ch5-eqn-2"><p>
+<img id="" src="asset/ch5/corty3e_eqn05_152_01.jpg" data-figure-id="" data-layout-width="" data-mmtype="" alt="image">
+</p></div>
+</div>
+    <div data-type="section" data-block_type="h2" id="corty3e-ch5-sec2-4" level="2" data-print_page="153">
+<h2 class="section-title"><span data-type="title" data-title-for="corty3e-ch5-sec2-4">The Central Limit Theorem
+</span></h2>
+
+<div data-block_type="page_start" id="corty3e_page_153"><p>153</p></div>
+<div data-block_type="txt-ni" id="corty3e-ch5-p55"><p>Having made a number of observations from the sampling distribution for IQ in the small Texas town, it is time to introduce the <em>central limit theorem.</em> The <span data-type="termref" data-term="central limit theorem">central limit theorem</span> is a description of the shape of a sampling distribution of the mean when the size of the samples is large and every possible sample is obtained.</p></div>
+<div data-block_type="txt" id="corty3e-ch5-p56"><p>Imagine someone had put together a sample of 100 Americans and found the mean IQ score for it. What would the sampling distribution of the mean look like for repeated, random samples with <em>N</em> = 100? With more than 300 million people in the United States, it would be impossible to obtain every possible sample with <em>N</em> = 100. That’s where the central limit theorem steps in—it provides a mathematical description of what the sampling distribution would look like if a researcher obtained every possible sample of size <em>N</em> from a population.</p></div>
+<div data-block_type="txt" id="corty3e-ch5-p57"><p>Keep in mind that the central limit theorem works when the size of the sample is large. So which number is the one that needs to be large?</p></div>
+<ol data-block_type="upperalpha" id="corty3e-ch5-list-4">
+<li><div data-block_type="nl-alpha-uc-first" id="corty3e-ch5-p58"><p>Is it the size of the population, which is 5 for the Texas town example?</p></div>
+</li>
+<li><div data-block_type="nl-alpha-uc-mid" id="corty3e-ch5-p59"><p>Is it the size of the repeated, random samples that are drawn from the population? These have <em>N</em> = 2 for the town in Texas.</p></div>
+</li>
+<li><div data-block_type="unl-last" id="corty3e-ch5-p60"><p>Is it the number of repeated, random samples that are drawn from the population? This was 15 for the Texas town.</p></div>
+</li>
+</ol>
+<div data-block_type="txt-ni" id="corty3e-ch5-p61"><p>The answer is B: the large number needs to be the number of cases in the sample.</p></div>
+<div data-block_type="txt" id="corty3e-ch5-p62"><p>How large is large? An <em>N</em> of 2 is certainly not large. Usually, an <em>N</em> of 30 is considered to be large enough. So, the central limit theorem applies when the size of the samples that make up the sampling distribution is 30 or larger. This means that the researcher with a sample of 100 Americans can use the central limit theorem.</p></div>
+<div data-block_type="page_start" id="corty3e_page_154"><p>154</p></div>
+<div data-block_type="txt" id="corty3e-ch5-p63"><p>The central limit theorem is important because it says three things:</p></div>
+<ol data-block_type="numbered" id="corty3e-ch5-list-5">
+<li><div data-block_type="nl-first" id="corty3e-ch5-p64"><p>If <em>N</em> is large, then the sampling distribution of the mean will be normally distributed, no matter what the shape of the population is. (In the small town IQ example, the population was flat, but the sampling distribution was starting to look normal.)</p></div>
+</li>
+<li><div data-block_type="nl-mid" id="corty3e-ch5-p65"><p>If <em>N</em> is large, then the mean of the sampling distribution is the same as the mean of the population from which the samples were selected. (This was true for our small town example.)</p></div>
+</li>
+<li><div data-block_type="nl-last" id="corty3e-ch5-p66"><p>If <em>N</em> is large, then a statistician can compute the standard error of the mean (the standard deviation of the sampling distribution) using <span data-type="link" data-href="#corty3e-ch5-bx6-1">Equation 5.1</span>.</p></div>
+</li>
+</ol>
+<div data-type="box" data-block_type="eq-t" id="corty3e-ch5-bx6-1"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="corty3e-ch5-bx6-1"><span data-block_type="sec_num">Equation 5.1</span> <span data-block_type="sec_title">Formula for Calculating the Standard Error of the Mean</span>
+</h3>
+
+<div data-block_type="equation" id="corty3e-ch5-eqn-3"><p>
+<img id="" src="asset/ch5/corty3e_eqn05_154_01.jpg" data-figure-id="" data-layout-width="" data-mmtype="" alt="image">
+</p></div>
+<div data-block_type="eq-txt-ni" id="corty3e-ch5-p67"><p>where σ<em><sub>M</sub></em> = the standard error of the mean</p></div>
+<div data-block_type="eq-unl" id="corty3e-ch5-p68"><p>σ = the standard deviation of the population</p></div>
+<div data-block_type="eq-unl" id="corty3e-ch5-p69"><p><em>N</em> = the number of cases in the sample</p></div>
+</div></div>
+<div data-block_type="txt-ni" id="corty3e-ch5-p70"><p>Given the sample of 100 Americans who were administered an IQ test that had a standard deviation of 15, the standard error of the mean would be calculated as follows:</p></div>
+<div data-block_type="equation" id="corty3e-ch5-eqn-4"><p>
+<img id="" src="asset/ch5/corty3e_eqn05_154_02.jpg" data-figure-id="" data-layout-width="" data-mmtype="" alt="image">
+</p></div>
+</div>
+    <div data-type="section" data-block_type="h2" id="corty3e-ch5-sec2-5" level="2" data-print_page="154">
+<h2 class="section-title"><span data-type="title" data-title-for="corty3e-ch5-sec2-5">When σ Is Not Known
+</span></h2>
+
+<div data-block_type="txt-ni" id="corty3e-ch5-p71"><p>Access to the entire population is rare and it is rare that σ, the population standard deviation, is known. So, how can the standard error of the mean be calculated without σ? In such a situation, one uses the sample standard deviation <em>s,</em> an estimate of the population standard deviation, to calculate an <em>estimated</em> standard error of the mean. The formula for the estimated standard error of the mean, abbreviated <em>s<sub>M</sub>,</em> is shown in <span data-type="link" data-href="#corty3e-ch5-bx6-2">Equation 5.2</span>.</p></div>
+<div data-type="box" data-block_type="eq-t" id="corty3e-ch5-bx6-2"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="corty3e-ch5-bx6-2"><span data-block_type="sec_num">Equation 5.2</span> <span data-block_type="sec_title">Formula for Estimated Standard Error of the Mean</span>
+</h3>
+
+<div data-block_type="equation" id="corty3e-ch5-eqn-5"><p>
+<img id="" src="asset/ch5/corty3e_eqn05_154_03.jpg" data-figure-id="" data-layout-width="" data-mmtype="" alt="image">
+</p></div>
+<div data-block_type="eq-txt-ni" id="corty3e-ch5-p72"><p>where <em>s<sub>M</sub></em> = the estimated standard error of the mean</p></div>
+<div data-block_type="eq-unl" id="corty3e-ch5-p73"><p><em>s</em> = the sample standard deviation (<span data-type="link" data-href="corty3e_ch3_3.html#corty3e-ch3-bx6-7">Equation 3.7</span>)</p></div>
+<div data-block_type="eq-unl" id="corty3e-ch5-p74"><p><em>N</em> = the number of cases in the sample</p></div>
+</div></div>
+<div data-block_type="page_start" id="corty3e_page_155"><p>155</p></div>
+<div data-block_type="txt" id="corty3e-ch5-p75"><p>Suppose a nurse practitioner has taken a random sample of 83 American adults, measured their diastolic blood pressure, and calculated <em>s</em> as 11. Using <span data-type="link" data-href="#corty3e-ch5-bx6-2">Equation 5.2</span>, he would estimate the standard error of the mean as</p></div>
+<div data-block_type="equation" id="corty3e-ch5-eqn-6"><p>
+<img id="" src="asset/ch5/corty3e_eqn05_155_01.jpg" data-figure-id="" data-layout-width="" data-mmtype="" alt="image">
+</p></div>
+<div data-block_type="txt" id="corty3e-ch5-p76"><p>A reasonable question to ask right about now is: What is the big deal about the central limit theorem? How is it useful? Thanks to the central limit theorem, a researcher doesn’t need to worry about the shape of the population from which a sample is drawn. As long as the sample size is large enough, the sampling distribution of the mean will be normally distributed even if the population isn’t. This is handy, because the percentages of cases that fall in different parts of the normal distribution is known.</p></div>
+<div data-block_type="txt" id="corty3e-ch5-p77"><p>Look at the shape of the population displayed in <strong><span data-type="link" data-href="#corty3e-ch5-fig-16">Figure 5.5</span></strong>. It is far from normal. Yet, if one were to take repeated random samples from this population, calculate a mean for each sample, and make a sampling distribution of the means, then that sampling distribution would look normal as long as the sample sizes were large. This is advantageous because when hypothesis testing is introduced in the next chapter, the hypotheses being tested turn out to be about sampling distributions. If the shape of a sampling distribution is normal, then it is possible to make predictions about how often a particular value will occur.</p></div>
+<div data-type="figure" data-figure-id="corty3e-ch5-fig-16" data-block_type="figure" data-layout-align="center" data-layout-width="medium" data-layout-border="true">
+
+<img id="" src="asset/ch5/corty3e_fig05_05.jpg" data-figure-id="corty3e-ch5-fig-16" data-layout-width="medium" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+<div data-type="figure_text">
+<span data-type="number">Figure 5.7: </span><span data-type="caption"><strong><span data-block_type="fig_num">Figure 5.5</span> A Population That Is Not Normally Distributed</strong> This graph shows a population with a non-normal shape. According to the central limit theorem, as long as the size of the samples drawn from this population is large enough, a sampling distribution of the mean for this non-normally shaped population will have a normal distribution.</span>
+</div>
+</div>
+<div data-block_type="txt" id="corty3e-ch5-p78"><p>Another benefit of the central limit theorem is that it allows us to calculate the standard error of the mean from a single sample. What’s important about the standard error of the mean? A smaller standard error of the mean indicates that the means in a sampling distribution are packed more closely together. This tells us that there is less sampling error, that the sample means tend to be closer to the population mean. If the standard error of the mean is small, then a sample mean is probably a more accurate reflection of the population mean because it likely falls close to the population mean.</p></div>
+<div data-block_type="page_start" id="corty3e_page_156"><p>156</p></div>
+<div data-block_type="txt" id="corty3e-ch5-p79"><p>In a sense, a sampling distribution is a representation of sampling error. <strong><span data-type="link" data-href="#corty3e-ch5-fig-17">Figure 5.6</span></strong> shows this graphically. Note how the distribution with a larger sample size has less variability and is packed more tightly around the population value. It has less sampling error.</p></div>
+<div data-type="figure" data-figure-id="corty3e-ch5-fig-17" data-block_type="figure" data-layout-align="center" data-layout-width="large" data-layout-border="true">
+
+<img id="" src="asset/ch5/corty3e_fig05_06.jpg" data-figure-id="corty3e-ch5-fig-17" data-layout-width="large" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+<div data-type="figure_text">
+<span data-type="number">Figure 5.8: </span><span data-type="caption"><strong><span data-block_type="fig_num">Figure 5.6</span> Effect of Size of Standard Error of the Mean on Sampling Distributions</strong> Both sampling distributions are from populations where μ = 100 and σ = 15. In the top panel, the sample size is smaller (<em>N</em> = 9), so the standard error of the mean is 5.00. In the bottom panel, the sample size is larger (<em>N</em> = 100), so the standard error is 1.50. Where the standard error of the mean is smaller, notice how the sampling distribution is clustered more tightly around the population mean of 100. Less sampling error occurs in the bottom panel.</span>
+</div>
+</div>
+<div data-type="box" data-block_type="bx-1-h" id="corty3e-ch5-bx1-2"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="corty3e-ch5-bx1-2">A Common Question</h3>
+<div data-block_type="bx1-que" id="corty3e-ch5-p80"><p><strong>Q</strong> Are sampling distributions only for means?</p></div>
+<div data-block_type="bx1-ans" id="corty3e-ch5-p81"><p><strong>A</strong> No, a sampling distribution can be constructed for any statistic. There could be a sampling distribution of standard deviations or of medians. In future chapters, sampling distributions of statistics called <em>t,</em> <em>F,</em> and <em>r</em> will be encountered.</p></div>
+</div></div>
+<div data-type="box" data-block_type="sr-exp-n" id="corty3e-ch5-bx3-2"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="corty3e-ch5-bx3-2">Worked Example 5.2</h3>
+<div data-block_type="page_start" id="corty3e_page_157"><p>157</p></div>
+<div data-block_type="sr-ex-txt-ni" id="corty3e-ch5-p82"><p>Sampling distribution generators (available online) draw thousands of samples at a time and form a sampling distribution in a matter of seconds right on the computer screen. A researcher can change parameters—like the shape of the parent population, the size of the samples, or the number of samples—and see the impact on the shape of the sampling distribution. Nothing beats playing with a sampling distribution generator for gaining a deeper understanding of the central limit theorem. Google “Rice Virtual Lab in Statistics,” click on “Simulations/Demonstrations,” and play with the “sampling distribution simulation.” For those who prefer a guided tour to a self-guided one, read on.</p></div>
+<div data-block_type="sr-ex-txt" id="corty3e-ch5-p83"><p><strong><span data-type="link" data-href="#corty3e-ch5-fig-18">Figure 5.7</span></strong> uses the Rice simulation to show a population constructed <em>not</em> to be normal. In this population, scores range from 0 to 32, μ = 15.00, σ = 11.40, and the midpoint does not have the greatest frequency.</p></div>
+<div data-type="figure" data-figure-id="corty3e-ch5-fig-18" data-block_type="figure" data-layout-align="center" data-layout-width="medium" data-layout-border="true">
+
+<img id="" src="asset/ch5/corty3e_fig05_07.jpg" data-figure-id="corty3e-ch5-fig-18" data-layout-width="medium" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+<div data-type="figure_text">
+<span data-type="number">Figure 5.9: </span><span data-type="caption"><strong><span data-block_type="fig_num">Figure 5.7</span> Histogram for Values in Entire Population</strong> The range of values in this population is from 0 to 32, and the shape is decidedly not normal. The caret marks the population mean, μ = 15.00. (The population is generated through Rice Virtual Lab in Statistics.)</span>
+</div>
+</div>
+<div data-block_type="sr-ex-txt" id="corty3e-ch5-p84"><p>The Rice simulator allows one to control how large the samples are and how many samples one wishes to take from the population. <strong><span data-type="link" data-href="#corty3e-ch5-fig-19">Figure 5.8</span></strong> illustrates one random sample of size <em>N</em> = 5 from the population. The left panel in <span data-type="link" data-href="#corty3e-ch5-fig-19">Figure 5.8</span> shows the five cases that were randomly selected and the right panel the mean of these five cases, the first sample. Note that the five cases are scattered about and that the sample mean (<em>M</em> = 16.00) is in the ballpark of the population mean (μ = 15.00), but is not an exact match.</p></div>
+<div data-type="figure" data-figure-id="corty3e-ch5-fig-19" data-block_type="figure" data-layout-align="center" data-layout-width="large" data-layout-border="true">
+
+<img id="" src="asset/ch5/corty3e_fig05_08.jpg" data-figure-id="corty3e-ch5-fig-19" data-layout-width="large" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+<div data-type="figure_text">
+<span data-type="number">Figure 5.10: </span><span data-type="caption"><strong><span data-block_type="fig_num">Figure 5.8</span> Random Sample of Five Cases</strong> The left panel shows a random sample of five cases from the population illustrated in <span data-type="link" data-href="#corty3e-ch5-fig-18">Figure 5.7</span>. The caret marks the population mean. The right panel shows the mean of these five cases. (Screenshot from Rice Virtual Lab in Statistics.)</span>
+</div>
+</div>
+<div data-block_type="sr-ex-txt" id="corty3e-ch5-p85"><p><strong><span data-type="link" data-href="#corty3e-ch5-fig-20">Figure 5.9</span></strong> shows the sampling distribution after 1,000 random samples were drawn, after 10,000 random samples were drawn, and after 100,000 random samples were drawn. There are several things to note:</p></div>
+<div data-type="figure" data-figure-id="corty3e-ch5-fig-20" data-block_type="figure" data-layout-align="center" data-layout-width="large" data-layout-border="true">
+
+<img id="" src="asset/ch5/corty3e_fig05_09.jpg" data-figure-id="corty3e-ch5-fig-20" data-layout-width="large" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+<div data-type="figure_text">
+<span data-type="number">Figure 5.11: </span><span data-type="caption"><strong><span data-block_type="fig_num">Figure 5.9</span> Sampling Distributions for Increasing Number of Samples of Five Cases</strong> Repeated, random samples of size <em>N</em> = 5 were taken from the population shown in <span data-type="link" data-href="#corty3e-ch5-fig-18">Figure 5.7</span>. The caret marks the population mean. A mean was calculated for each sample. The top panel shows the sampling distribution for 1,000 means, the middle panel for 10,000 means, and the bottom panel for 100,000 means. Note that the shape becomes more normal and more regular as the number of means increases. (Sampling distributions generated online at Rice Virtual Lab in Statistics.)</span>
+</div>
+</div>
+<ul data-block_type="bullet" id="corty3e-ch5-list-6">
+<li><div data-block_type="sr-exp-bl-first" id="corty3e-ch5-p86"><p>All three of the sampling distributions have shapes that are similar to those of a normal distribution, despite the fact that the parent population is distinctly non-normal. This is predicted by the central limit theorem.</p></div>
+</li>
+<li><div data-block_type="sr-exp-bl-mid" id="corty3e-ch5-p87"><p>As the number of samples increases, the distribution becomes smoother and more symmetrical. But, even with 100,000 samples, the sampling distribution is not perfectly normal.</p></div>
+<div data-block_type="page_start" id="corty3e_page_158"><p>158</p></div>
+</li>
+<li><div data-block_type="sr-exp-bl-mid" id="corty3e-ch5-p88"><p>The central limit theorem states that the mean of a sampling distribution is the mean of the population. Here, the population mean is 15.00, and the mean of the sampling distribution gets closer to the population mean as the number of samples in the distribution grows larger. With 1,000 samples <em>M</em> = 15.15, with 10,000 <em>M</em> = 15.02, and with 100,000 it is 15.00.</p></div>
+</li>
+<li><div data-block_type="sr-exp-bl-mid" id="corty3e-ch5-p89"><p>Notice the wide range of the means in the sampling distribution—some are at each end of the distribution. With a small sample size, like <em>N</em> = 5, one will occasionally draw a sample that is not representative of the population and that has a mean far away from the population mean. This is due entirely to the random nature of sampling error.</p></div>
+</li>
+<li><div data-block_type="sr-exp-bl-last" id="corty3e-ch5-p90"><p>The central limit theorem states that the standard error of the mean, which is the standard deviation of the sampling distribution, can be calculated from the population standard deviation and the size of the samples: <img id="" src="asset/ch5/corty3e_ineqn05_158_01.jpg" data-figure-id="" data-layout-width="" data-mmtype="" alt="image">. This is quite accurate—the standard deviations of the three sampling distributions are 5.06, 5.19, and 5.12.</p></div>
+</li>
+</ul>
+<div data-block_type="page_start" id="corty3e_page_159"><p>159</p></div>
+<div data-block_type="sr-ex-txt" id="corty3e-ch5-p91"><p>When the size of the random samples increases from <em>N</em> = 5 to <em>N</em> = 25, some things change about the shape of the sampling distribution, as can be seen in <strong><span data-type="link" data-href="#corty3e-ch5-fig-21">Figure 5.10</span></strong>. It, like <span data-type="link" data-href="#corty3e-ch5-fig-20">Figure 5.9</span>, shows sampling distributions with 1,000, 10,000, and 100,000 samples. But, unlike <span data-type="link" data-href="#corty3e-ch5-fig-20">Figure 5.9</span>, the changes in the sampling distribution as the numbers of samples increase are more subtle. All three sampling distributions have a normal shape, though as the number of samples increases from 1,000 to 10,000, there is a noticeable increase in symmetry.</p></div>
+<div data-type="figure" data-figure-id="corty3e-ch5-fig-21" data-block_type="figure" data-layout-align="center" data-layout-width="large" data-layout-border="true">
+
+<img id="" src="asset/ch5/corty3e_fig05_10.jpg" data-figure-id="corty3e-ch5-fig-21" data-layout-width="large" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+<div data-type="figure_text">
+<span data-type="number">Figure 5.12: </span><span data-type="caption"><strong><span data-block_type="fig_num">Figure 5.10</span> Sampling Distributions for Increasing Numbers of Samples of 25 Cases</strong> Repeated, random samples of size <em>N</em> = 25 were taken from the population shown in <span data-type="link" data-href="#corty3e-ch5-fig-18">Figure 5.7</span>. The caret marks the population mean. A mean was calculated for each sample. The top panel shows the sampling distribution for 1,000 means, the middle panel for 10,000 means, and the bottom panel for 100,000 means. Compare these sampling distributions to those in <span data-type="link" data-href="#corty3e-ch5-fig-20">Figure 5.9</span>, and it is apparent that a larger number of cases in each sample yields a more regularly shaped sampling distribution and a narrower range of values. (Sampling distributions generated online at Rice Virtual Lab in Statistics.)</span>
+</div>
+</div>
+<div data-block_type="sr-ex-txt" id="corty3e-ch5-p92"><p>The most noticeable difference between the sampling distributions based on smaller samples, seen in <span data-type="link" data-href="#corty3e-ch5-fig-20">Figure 5.9</span>, and those based on larger samples, seen in <span data-type="link" data-href="#corty3e-ch5-fig-21">Figure 5.10</span>, lies in the range of means. In <span data-type="link" data-href="#corty3e-ch5-fig-20">Figure 5.9</span>, the means ranged from 2 to 29, while in <span data-type="link" data-href="#corty3e-ch5-fig-21">Figure 5.10</span>, they range from 9 to 22. There is less variability in the sampling distribution based on the larger samples.</p></div>
+<div data-block_type="sr-ex-txt" id="corty3e-ch5-p93"><p>This decreased variability is mirrored in the standard deviations. (Remember, the standard deviation of the sampling distribution is the standard error of measurement. When 100,000 samples of size <em>N</em> = 5 are taken, the standard deviation of the sampling distribution was 5.12. When the same number of samples is taken, but the size of each sample is 25, not 5, the standard deviation of the sampling distribution falls to 2.28. This is exactly what is predicted for the standard error of the mean by the central limit theorem:</p></div>
+<div data-block_type="page_start" id="corty3e_page_160"><p>160</p></div>
+<div data-block_type="equation" id="corty3e-ch5-eqn-7"><p>
+<img id="" src="asset/ch5/corty3e_eqn05_160_01.jpg" data-figure-id="" data-layout-width="" data-mmtype="" alt="image">
+</p></div>
+<div data-block_type="sr-ex-txt" id="corty3e-ch5-p94"><p>As was mentioned above, when the standard error of the mean is smaller, the means are packed more tightly together and less sampling error exists. A larger sample size means that there is less sampling error and that the sample is more likely to provide a better representation of the population.</p></div>
+</div></div>
+<div data-type="box" data-block_type="sr-h" id="corty3e-ch5-bx2-2"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="corty3e-ch5-bx2-2">Practice Problems 5.2</h3>
+<div data-block_type="sr-h1" id="corty3e-ch5-p95"><p><strong>Review Your Knowledge</strong></p></div>
+<div data-block_type="sr-que-nl" id="corty3e-ch5-p96"><p><span data-block_type="question_num">5.06</span> What is a sampling distribution?</p></div>
+<div data-block_type="sr-que-nl" id="corty3e-ch5-p97"><p><span data-block_type="question_num">5.07</span> What are three facts derived from the central limit theorem?</p></div>
+<div data-block_type="sr-h1" id="corty3e-ch5-p98"><p><strong>Apply Your Knowledge</strong></p></div>
+<div data-block_type="sr-que-nl" id="corty3e-ch5-p99"><p><span data-block_type="question_num">5.08</span> There’s a small town in Ohio that has a population of 6 and each person has his or her blood pressure measured. The people are labeled as A, B, C, D, E, and F. If one were to draw repeated, random samples of size <em>N</em> = 2 to make a sampling distribution of the mean, how many unique samples are there?</p></div>
+<div data-block_type="sr-que-nl" id="corty3e-ch5-p100"><p><span data-block_type="question_num">5.09</span> Researcher X takes repeated, random samples of size <em>N</em> = 10 from a population, calculates a mean for each sample, and constructs a sampling distribution of the mean. Researcher Y takes repeated, random samples of size <em>N</em> = 100 from the same population, calculates a mean for each sample, and constructs a sampling distribution of the mean. What can one conclude about the shapes of the two sampling distributions?</p></div>
+<div data-block_type="sr-que-nl" id="corty3e-ch5-p101"><p><span data-block_type="question_num">5.10</span> If σ = 12 and <em>N</em> = 78, what is σ<em><sub>M</sub></em>?</p></div>
+</div></div>
+</div>
+<!-- #x-digfir-subsection-insertion-point --><!-- #x-digfir-subsection-insertion-point --><!-- #x-digfir-subsection-insertion-point --><!-- #x-digfir-subsection-insertion-point --></div><!-- /#manuscript -->
+<br class="clear" />
+<!-- end of material in original view -->
+
+	<!--[if IE]><script type="text/javascript" src="js/excanvas.compiled.js"></script><![endif]-->
+    
+<script type="text/javascript" src="js/utilities.js"></script>
+<script type="text/javascript" src="js/query_types.js"></script>
+<script type="text/javascript" src="js/player.js"></script>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/jquery-ui-1.8.16.custom.min.js"></script>
+<script type="text/javascript" src="js/jquery_extensions.js"></script>
+<script type="text/javascript" src="js/swfobject.js"></script>
+<script type="text/javascript" src="http://admin.brightcove.com/js/BrightcoveExperiences.js"></script>
+<script type="text/javascript" src="js/digfir_ebook_fw.js"></script>
+<script type="text/javascript" src="js/corty3e.js"></script>
+<script type="text/javascript" src="js/corty3e_ch5.js"></script>
+<script type="text/javascript">
+    //<!--
+    
+$(window).ready(function () {
+	player.initialize('56d62b57757a2e7b52000003');
+});
+    //-->
+</script>
+</body>
+</html>
+
