@@ -31,15 +31,15 @@
 <p id="corty3e-ch16-p17" block_type="txt">The other two tasks for statisticians involve <em>difference tests</em> and <em>relationship tests.</em> Difference tests look for differences in some underlying parameter among groups of cases. For example, reporting that it takes longer, on average, to treat someone for depression than for anxiety would be the result of a difference test. Relationship tests see if variables correlate. Finding that the longer a person has suffered from depression tends to increase the difficulty in treating it would be the result of a relationship test.</p>
 <p id="corty3e_page_618" block_type="page_start">618</p>
 <p id="corty3e-ch16-p18" block_type="txt"><link href="corty3e-ch01.xml">Chapter 1</link> covered three different types of studies&#8212;experimental designs, quasi-experimental designs, and correlational designs. <link href="#corty3e-ch16-fig-1"><strong>Table 16.1</strong></link> summarizes their similarities and differences. Knowing what type of study was conducted is important because different types of studies call for different statistics:</p>
-<figure id="corty3e-ch16-fig-1" block_type="table" numbered="true" number="16.1" mmtype="image" mmsrc="" attr="">
-<layout align="center" width="large" border="true"/>
-<image asset-id="corty3e-ch16-img-1" alt="image" src="asset/ch16/corty3e_table16_01.jpg"/>
-</figure>
 <list id="corty3e-ch16-list-3" type="unordered" block_type="bullet">
 <li><p id="corty3e-ch16-p19" block_type="bl-first"><em>Descriptive studies</em> call for the use of descriptive statistics.</p></li>
 <li><p id="corty3e-ch16-p20" block_type="bl-mid"><em>Experimental designs</em> and <em>quasi-experimental designs</em> divide participants into groups, so they are analyzed with difference tests.</p></li>
 <li><p id="corty3e-ch16-p21" block_type="bl-last"><em>Correlational designs,</em> which measure two variables in a single sample of participants, call for relationship tests.</p></li>
 </list>
+<figure id="corty3e-ch16-fig-1" block_type="table" numbered="true" number="16.1" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="large" border="true"/>
+<image asset-id="corty3e-ch16-img-1" alt="image" src="asset/ch16/corty3e_table16_01.jpg"/>
+</figure>
 <p id="corty3e-ch16-p22" block_type="txt">The flowchart in <link href="#corty3e-ch16-fig-2"><strong>Figure 16.1</strong></link> shows how to determine whether a study is experimental, quasi-experimental, or correlational, as well as whether it is descriptive.</p>
 <figure id="corty3e-ch16-fig-2" block_type="figure" numbered="true" number="16.1" mmtype="image" mmsrc="" attr="">
 <layout align="center" width="xlarge" border="true"/>
@@ -54,16 +54,16 @@
 <p id="corty3e-ch16-p24" block_type="txt-ni">The most basic task in statistics is taking a set of numbers and summarizing them in some way. Statistical techniques that do this are called <termref term="descriptive statistics">descriptive statistics</termref> because these techniques are used to describe a set of cases.</p>
 <p id="corty3e_page_620" block_type="page_start">620</p>
 <p id="corty3e-ch16-p25" block_type="txt">The flowchart in <link href="#corty3e-ch16-fig-3"><strong>Figure 16.2</strong></link> walks through how to choose the correct descriptive statistic. Choosing the correct descriptive statistic depends on three things:</p>
-<figure id="corty3e-ch16-fig-3" block_type="figure" numbered="true" number="16.2" mmtype="image" mmsrc="" attr="">
-<layout align="center" width="xlarge" border="true"/>
-<image asset-id="corty3e-ch16-img-3" alt="image" src="asset/ch16/corty3e_fig16_02.jpg"/>
-<caption><strong><phrase block_type="fig_num">Figure 16.2</phrase> How to Choose: Selecting a Descriptive Statistic</strong> This flowchart is used to select the correct descriptive statistic, depending on (1) whether one is trying to describe an individual case, a sample, or a population; (2) what attribute one wants to describe (central tendency or variability); and (3) the variable&#8217;s level of measurement (nominal, ordinal, interval, or ratio).</caption>
-</figure>
 <list id="corty3e-ch16-list-4" type="ordered" block_type="numbered">
 <li><p id="corty3e-ch16-p26" block_type="nl-first">At what level the variable is measured: nominal, ordinal, or interval/ratio</p></li>
 <li><p id="corty3e-ch16-p27" block_type="nl-mid">What is being described: an individual case or a sample of cases</p></li>
 <li><p id="corty3e-ch16-p28" block_type="nl-last">What is to be described: central tendency or variability</p></li>
 </list>
+<figure id="corty3e-ch16-fig-3" block_type="figure" numbered="true" number="16.2" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="xlarge" border="true"/>
+<image asset-id="corty3e-ch16-img-3" alt="image" src="asset/ch16/corty3e_fig16_02.jpg"/>
+<caption><strong><phrase block_type="fig_num">Figure 16.2</phrase> How to Choose: Selecting a Descriptive Statistic</strong> This flowchart is used to select the correct descriptive statistic, depending on (1) whether one is trying to describe an individual case, a sample, or a population; (2) what attribute one wants to describe (central tendency or variability); and (3) the variable&#8217;s level of measurement (nominal, ordinal, interval, or ratio).</caption>
+</figure>
 <p id="corty3e-ch16-p29" block_type="txt">Knowing the level of measurement for the variable&#8212;nominal, ordinal, interval, or ratio&#8212;is important in statistics (see <link href="corty3e-ch01.xml">Chapter 1</link>). <link href="#corty3e-ch16-fig-4"><strong>Table 16.2</strong></link> shows the distinctions among the four levels of measurement, and the flowchart in <link href="#corty3e-ch16-fig-5"><strong>Figure 16.3</strong></link> leads one through the steps for determining the level of measurement of a variable.</p>
 <figure id="corty3e-ch16-fig-4" block_type="table" numbered="true" number="16.2" mmtype="image" mmsrc="" attr="">
 <layout align="center" width="large" border="true"/>

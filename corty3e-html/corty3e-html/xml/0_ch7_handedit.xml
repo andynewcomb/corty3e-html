@@ -117,7 +117,7 @@
 <li><p id="corty3e-ch7-p59" block_type="bl-last">Larger sample sizes have the opposite effect. When a sample size is large, the critical value of <em>t</em> falls closer to zero. As a result, the rare zone is easier to reach, which makes it easier to reject the null hypothesis.</p></li>
 </list>
 <p id="corty3e-ch7-p60" block_type="txt">The goal of research almost always is to reject the null hypothesis, so having a larger sample size is an advantage.</p>
-<p id="corty3e-ch7-p61" block_type="txt">To find the critical value of <em>t</em> for a given sample size, use <link href="corty3e-appendix01.xml#corty3e-app1-fig-8">Appendix Table 3</link>, a table of critical values of <em>t.</em> A portion of <link href="corty3e-appendix01.xml#corty3e-app1-fig-8">Appendix Table 3</link> is shown in <link href="#corty3e-ch7-fig-5"><strong>Table 7.2</strong></link>.</p>
+<p id="corty3e-ch7-p61" block_type="txt">To find the critical value of <em>t</em> for a given sample size, use <link href="corty3e_app1_1.html#corty3e-app1-fig-8">Appendix Table 3</link>, a table of critical values of <em>t.</em> A portion of <link href="corty3e_app1_1.html#corty3e-app1-fig-8">Appendix Table 3</link> is shown in <link href="#corty3e-ch7-fig-5"><strong>Table 7.2</strong></link>.</p>
 <figure id="corty3e-ch7-fig-5" block_type="table" numbered="true" number="7.2" mmtype="image" mmsrc="" attr="">
 <layout align="center" width="xlarge" border="true"/>
 <image asset-id="corty3e-ch7-img-5" alt="image" src="asset/ch7/corty3e_table07_02.jpg"/>
@@ -163,7 +163,7 @@
 <li><p id="corty3e-ch7-p83" block_type="bl-last">Fail to reject the null hypothesis if &#8211;1.977 &#60; <em>t</em> &#60; 1.977.</p></li>
 </list>
 <box title="A Common Question" numbered="false" id="corty3e-ch7-bx1-2" block_type="bx-1-h">
-<p id="corty3e-ch7-p84" block_type="bx1-que"><strong>Q</strong> <link href="corty3e-appendix01.xml#corty3e-app1-fig-8">Appendix Table 3</link> doesn&#8217;t contain degrees of freedom for all possible values. What does one do if <em>df</em> &#61; 54, for example?</p>
+<p id="corty3e-ch7-p84" block_type="bx1-que"><strong>Q</strong> <link href="corty3e_app1_1.html#corty3e-app1-fig-8">Appendix Table 3</link> doesn&#8217;t contain degrees of freedom for all possible values. What does one do if <em>df</em> &#61; 54, for example?</p>
 <p id="corty3e-ch7-p85" block_type="bx1-ans"><strong>A</strong> In the TV game show <em>The Price Is Right,</em> the person who comes closest to guessing the price of an object without exceeding the price wins. Follow that rule and use the degrees of freedom that are closest without going over. If <em>df</em> &#61; 54 and the table only contains critical values of <em>t</em> for 50 and 55 degrees of freedom, use <em>t<sub>cv</sub></em> for <em>df</em> &#61; 50.</p>
 </box>
 <p id="corty3e-ch7-p86" block_type="h4"><phrase block_type="h4-n-ri"><strong>Step 5</strong></phrase> <strong>Calculate the Test Statistic</strong></p>
@@ -206,16 +206,16 @@
 <p id="corty3e-ch7-p109" block_type="sr-exp-eq"><em>df</em> &#61; <em>N</em> &#8211; 1</p>
 <p id="corty3e-ch7-p110" block_type="sr-exp-eq">&#61; 11 &#8211; 1</p>
 <p id="corty3e-ch7-p111" block_type="sr-exp-eq">&#61; 10</p>
-<p id="corty3e-ch7-p112" block_type="sr_exp_txt">Using <link href="corty3e-appendix01.xml#corty3e-app1-fig-8">Appendix Table 3</link>, Dr. Richman finds <em>t<sub>cv</sub></em> &#61; 1.812. Because he is doing a one-tailed test, he has to decide whether the critical value of <em>t</em> is &#8211;1.812 or &#43;1.812. If his theory is correct and losing a pet hurts students&#8217; GPAs, then the numerator of the single-sample <em>t</em> test formula (<link href="#corty3e-ch7-bx6-2">Equation 7.2</link>), which is <em>M</em> &#8211; &#956;, will be a negative number because <em>M</em> should be below 2.68. Hence, <em>t<sub>cv</sub></em> is a negative value, &#8211;1.812. Here, and in <link href="#corty3e-ch7-fig-11"><strong>Figure 7.5</strong></link>, is the vet&#8217;s decision rule:</p>
+<p id="corty3e-ch7-p112" block_type="sr_exp_txt">Using <link href="corty3e_app1_1.html#corty3e-app1-fig-8">Appendix Table 3</link>, Dr. Richman finds <em>t<sub>cv</sub></em> &#61; 1.812. Because he is doing a one-tailed test, he has to decide whether the critical value of <em>t</em> is &#8211;1.812 or &#43;1.812. If his theory is correct and losing a pet hurts students&#8217; GPAs, then the numerator of the single-sample <em>t</em> test formula (<link href="#corty3e-ch7-bx6-2">Equation 7.2</link>), which is <em>M</em> &#8211; &#956;, will be a negative number because <em>M</em> should be below 2.68. Hence, <em>t<sub>cv</sub></em> is a negative value, &#8211;1.812. Here, and in <link href="#corty3e-ch7-fig-11"><strong>Figure 7.5</strong></link>, is the vet&#8217;s decision rule:</p>
+<list id="corty3e-ch7-list-7" type="unordered" block_type="bullet">
+<li><p id="corty3e-ch7-p113" block_type="sr-exp-bl-first">If <em>t</em> &#8804; &#8211;1.812, reject <em>H</em><sub>0</sub>.</p></li>
+<li><p id="corty3e-ch7-p114" block_type="sr-exp-bl-last">If <em>t</em> &#62; &#8211;1.812, fail to reject <em>H</em><sub>0</sub>.</p></li>
+</list>
 <figure id="corty3e-ch7-fig-11" block_type="figure" numbered="true" number="7.5" mmtype="image" mmsrc="" attr="">
 <layout align="center" width="large" border="true"/>
 <image asset-id="corty3e-ch7-img-13" alt="image" src="asset/ch7/corty3e_fig07_05.jpg"/>
 <caption><strong><phrase block_type="fig_num">Figure 7.5</phrase> One-Tailed Decision Rule for Sampling Distribution of <em>t</em>, <em>df</em></strong> &#61; <strong>10</strong> This is a one-tailed test with 10 degrees of freedom. The critical value of <em>t</em> is &#8211;1.812. Note that the entire rare zone falls on one side of the sampling distribution.</caption>
 </figure>
-<list id="corty3e-ch7-list-7" type="unordered" block_type="bullet">
-<li><p id="corty3e-ch7-p113" block_type="sr-exp-bl-first">If <em>t</em> &#8804; &#8211;1.812, reject <em>H</em><sub>0</sub>.</p></li>
-<li><p id="corty3e-ch7-p114" block_type="sr-exp-bl-last">If <em>t</em> &#62; &#8211;1.812, fail to reject <em>H</em><sub>0</sub>.</p></li>
-</list>
 <p id="corty3e_page_227" block_type="page_start">227</p>
 <p id="corty3e-ch7-p115" block_type="sr_exp_h4_txt"><phrase block_type="SR-EXP-h4-N-ni"><strong>Step 5</strong></phrase> <phrase block_type="SR-EXP-h4-T-ri"><strong>Calculate the Test Statistic.</strong></phrase> Before calculating <em>t,</em> the vet needs to calculate <em>s<sub>M</sub></em> using Equation 5.2:</p>
 <p id="corty3e-ch7-eqn-4" block_type="equation">
@@ -297,7 +297,7 @@
 <list id="corty3e-ch7-list-10" type="ordered" block_type="numbered">
 <li><p id="corty3e-ch7-p147" block_type="nl-first">The initial <em>t</em> says that the statistical test was a <em>t</em> test.</p></li>
 <li><p id="corty3e-ch7-p148" block_type="nl-mid">The sample size, 141, is present in disguised form. The number 140, in parentheses, is the degrees of freedom for the <em>t</em> test. For a single-sample <em>t</em> test, <em>df</em> &#61; <em>N</em> &#8211; 1. That means <em>N</em> &#61; <em>df</em> &#43; 1. So, if <em>df</em> &#61; 140, <em>N</em> &#61; 140 &#43; 1 &#61; 141.</p></li>
-<li><p id="corty3e-ch7-p149" block_type="nl-mid">The observed <em>t</em> value, 8.81, is reported. This number is the value of <em>t</em> calculated, <em>not</em> the critical value of <em>t</em> found in <link href="corty3e-appendix01.xml#corty3e-app1-fig-8">Appendix Table 3</link>. Note that APA format requires the value to be reported to two decimal places, no more and no fewer.</p></li>
+<li><p id="corty3e-ch7-p149" block_type="nl-mid">The observed <em>t</em> value, 8.81, is reported. This number is the value of <em>t</em> calculated, <em>not</em> the critical value of <em>t</em> found in <link href="corty3e_app1_1.html#corty3e-app1-fig-8">Appendix Table 3</link>. Note that APA format requires the value to be reported to two decimal places, no more and no fewer.</p></li>
 <li><p id="corty3e-ch7-p150" block_type="nl-mid">The .05 tells that alpha was set at .05.</p></li>
 <li><p id="corty3e-ch7-p151" block_type="nl-last">The final part, <em>p</em> &#60; .05, reveals that the null hypothesis was rejected. It means that the observed result (8.81) is a rare result&#8212;it has a probability of less than .05 of occurring when the null hypothesis is true.</p></li>
 </list>
@@ -410,7 +410,7 @@
 <p id="corty3e-ch7-p206" block_type="eq-txt-ni">where 95&#37; CI&#956;<sub>Diff</sub> &#61; the 95&#37; confidence interval for the difference between two population means</p>
 <p id="corty3e-ch7-p207" block_type="eq-unl"><em>M</em> &#61; sample mean from one population</p>
 <p id="corty3e-ch7-p208" block_type="eq-unl">&#956; &#61; mean for other population</p>
-<p id="corty3e-ch7-p209" block_type="eq-unl"><em>t<sub>cv</sub></em> &#61; critical value of <em>t,</em> two-tailed, &#945; &#61; .05, <em>df</em> &#61; <em>N</em> &#8211; 1 (<link href="corty3e-appendix01.xml#corty3e-app1-fig-8">Appendix Table 3</link>)</p>
+<p id="corty3e-ch7-p209" block_type="eq-unl"><em>t<sub>cv</sub></em> &#61; critical value of <em>t,</em> two-tailed, &#945; &#61; .05, <em>df</em> &#61; <em>N</em> &#8211; 1 (<link href="corty3e_app1_1.html#corty3e-app1-fig-8">Appendix Table 3</link>)</p>
 <p id="corty3e-ch7-p210" block_type="eq-unl"><em>s<sub>M</sub></em> &#61; estimated standard error of the mean (Equation 5.2)</p>
 </box>
 <p id="corty3e-ch7-p211" block_type="txt">Here are all the numbers Dr. Farshad needs to calculate the 95&#37; confidence interval:</p>
@@ -466,16 +466,16 @@
 <section id="corty3e-ch7-sec2-3" block_type="h2" chapter="7" title="" numbered="false" level="2" print_page="239">
 <section-metadata><section-title>Putting It All Together</section-title></section-metadata>
 <p id="corty3e-ch7-p242" block_type="txt-ni">Dr. Farshad has completed her study using a single-sample <em>t</em> test to see if adults with ADHD had a reaction time that differed from that for the general population. By addressing the three questions in <link href="#corty3e-ch7-fig-25"><strong>Table 7.5</strong></link>, Dr. Farshad has gathered all the pieces she needs to write an interpretation. There are four points she addresses in her interpretation:</p>
-<figure id="corty3e-ch7-fig-25" block_type="table" numbered="true" number="7.5" mmtype="image" mmsrc="" attr="">
-<layout align="center" width="large" border="true"/>
-<image asset-id="corty3e-ch7-img-27" alt="image" src="asset/ch7/corty3e_table07_05.jpg"/>
-</figure>
 <list id="corty3e-ch7-list-16" type="ordered" block_type="numbered">
 <li><p id="corty3e-ch7-p243" block_type="nl-first">Dr. Farshad starts with a brief explanation of the study.</p></li>
 <li><p id="corty3e-ch7-p244" block_type="nl-mid">She presents some facts, such as the means of the sample and the population. But, she does not report all the values she calculated just because she calculated them. Rather, she is selective and only reports what she believes is most relevant.</p></li>
 <li><p id="corty3e-ch7-p245" block_type="nl-mid">She explains what she believes the results mean.</p></li>
 <li><p id="corty3e-ch7-p246" block_type="nl-last">Finally, she offers some suggestions for future research. Having been involved in the study from start to finish, she knows its strengths and weaknesses better than anyone else. She is in a perfect position to offer advice to other researchers about ways to redress the limitations of her study. In her suggestions, she uses the word &#8220;replicate.&#8221; To <termref term="replicate">replicate</termref> a study is to repeat it, usually introducing some change in procedure to make it better.</p></li>
 </list>
+<figure id="corty3e-ch7-fig-25" block_type="table" numbered="true" number="7.5" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="large" border="true"/>
+<image asset-id="corty3e-ch7-img-27" alt="image" src="asset/ch7/corty3e_table07_05.jpg"/>
+</figure>
 <p id="corty3e_page_240" block_type="page_start">240</p>
 <p id="corty3e-ch7-p247" block_type="tbl_num">Here is Dr. Farshad&#8217;s interpretation:</p>
 <p id="corty3e-ch7-p248" block_type="sr_exp_txt_v1_ni">A study compared the reaction time of a random sample of Illinois adults who had been diagnosed with ADHD (<em>M</em> &#61; 220 msec) to the known reaction time for the American population (&#956; &#61; 200 msec). The reaction time of adults with ADHD was statistically significantly slower than the reaction time found in the general population [<em>t</em>(140) &#61; 8.81, <em>p</em> &#60; .05]. The size of the difference in the larger population probably ranges on this task from a 16- to a 24-msec decrement in performance. This is not a small difference&#8212;these results suggest that ADHD in adults is associated with a medium to large level of impairment on tasks that require fast reactions. If one were to replicate this study, it would be advisable to obtain a broader sample of adults with ADHD, not just limiting it to one state. This would increase the generalizability of the results.</p>
@@ -817,20 +817,20 @@ a.underpowered:: term for a study with a sample size too small for the study to 
 <td><phrase block_type="tbn-txt">A: Less variability (<em>s</em> &#61; 2)</phrase></td>
 <td><phrase block_type="tbn-txt">0.24</phrase></td>
 <td><phrase block_type="tbn-txt">1.994</phrase></td>
-<td><phrase block_type="tbn-txt">&#8211;8.33</phrase></td>
-<td><phrase block_type="tbn-txt">&#8211;1.00</phrase></td>
+<td><phrase block_type="nowrap">&#8211;8.33</phrase></td>
+<td><phrase block_type="nowrap">&#8211;1.00</phrase></td>
 <td><phrase block_type="tbn-txt">50&#37;</phrase></td>
-<td><phrase block_type="tbn-txt">&#8211;2.48 to &#8211;1.52</phrase></td>
+<td><phrase block_type="nowrap">&#8211;2.48</phrase> to <phrase block_type="nowrap">&#8211;1.52</phrase></td>
 <td><phrase block_type="tbn-txt">0.96</phrase></td>
 </tr>
 <tr>
 <td><phrase block_type="tbn-txt">B: More variability (<em>s</em> &#61; 12)</phrase></td>
 <td><phrase block_type="tbn-txt">1.42</phrase></td>
 <td><phrase block_type="tbn-txt">1.994</phrase></td>
-<td><phrase block_type="tbn-txt">&#8211;1.41</phrase></td>
-<td><phrase block_type="tbn-txt">&#8211;0.17</phrase></td>
+<td><phrase block_type="nowrap">&#8211;1.41</phrase></td>
+<td><phrase block_type="nowrap">&#8211;0.17</phrase></td>
 <td><phrase block_type="tbn-txt">3&#37;</phrase></td>
-<td><phrase block_type="tbn-txt">&#8211;4.83 to 0.83</phrase></td>
+<td><phrase block_type="nowrap">&#8211;4.83</phrase> to <phrase block_type="nowrap">0.83</phrase></td>
 <td><phrase block_type="tbn-txt">5.66</phrase></td>
 </tr>
 </tbody>
@@ -853,8 +853,8 @@ a.underpowered:: term for a study with a sample size too small for the study to 
 <td><phrase block_type="tbn-txt">C: Smaller <em>N</em> (<em>N</em> &#61; 10)</phrase></td>
 <td><phrase block_type="tbn-txt">1.58</phrase></td>
 <td><phrase block_type="tbn-txt">2.262</phrase></td>
-<td><phrase block_type="tbn-txt">&#8211;1.90</phrase></td>
-<td><phrase block_type="tbn-txt">&#8211;0.60</phrase></td>
+<td><phrase block_type="nowrap">&#8211;1.90</phrase></td>
+<td><phrase block_type="nowrap">&#8211;0.60</phrase></td>
 <td><phrase block_type="tbn-txt">29&#37;</phrase></td>
 <td><phrase block_type="tbn-txt">6.57 to 0.57</phrase></td>
 <td><phrase block_type="tbn-txt">7.14</phrase></td>
@@ -863,10 +863,10 @@ a.underpowered:: term for a study with a sample size too small for the study to 
 <td><phrase block_type="tbn-txt">D: Larger <em>N</em> (<em>N</em> &#61; 50)</phrase></td>
 <td><phrase block_type="tbn-txt">0.71</phrase></td>
 <td><phrase block_type="tbn-txt">2.010</phrase></td>
-<td><phrase block_type="tbn-txt">&#8211;4.23</phrase></td>
-<td><phrase block_type="tbn-txt">&#8211;0.60</phrase></td>
+<td><phrase block_type="nowrap">&#8211;4.23</phrase></td>
+<td><phrase block_type="nowrap">&#8211;0.60</phrase></td>
 <td><phrase block_type="tbn-txt">27&#37;</phrase></td>
-<td><phrase block_type="tbn-txt">4.43 to &#8211;1.57</phrase></td>
+<td><phrase block_type="tbn-txt">4.43</phrase> to <phrase block_type="nowrap">&#8211;1.57</phrase></td>
 <td><phrase block_type="tbn-txt">2.86</phrase></td>
 </tr>
 </tbody>
@@ -948,6 +948,8 @@ a.underpowered:: term for a study with a sample size too small for the study to 
 <li><p id="corty3e-ch7-p483" block_type="bx3_bl">At the top of the second output box, &#8220;Test Value &#61; 27.78&#8221; indicates that this is the value against which the sample mean is being compared.</p></li>
 <li><p id="corty3e-ch7-p484" block_type="bx3_bl">Next, SPSS reports the <em>t</em> value (&#8211;1.978) and the degrees of freedom (9).</p></li>
 <li><p id="corty3e-ch7-p485" block_type="bx3_bl">SPSS then reports what it calls &#8220;Sig. (2-tailed)&#8221; as .079.</p></li>
+</list>
+<list id="corty3e-ch7-list-26" type="unordered" block_type="bullet">
 <li><p id="corty3e-ch7-p486" block_type="bx3_bl_lvl2">The important thing for us is whether this value is &#8804; .05 or &#62; .05.</p></li>
 <li><p id="corty3e-ch7-p487" block_type="bx3_bl_lvl3">If it is &#8804; .05, the null hypothesis is rejected and the results are reported in APA format as <em>p</em> &#60; .05.</p></li>
 <li><p id="corty3e-ch7-p488" block_type="bx3_bl_lvl3">If it is &#62; .05, the null hypothesis is not rejected and the results are reported in APA format as <em>p</em> &#62; .05.</p></li>

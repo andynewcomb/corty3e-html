@@ -123,7 +123,7 @@
 <figure id="corty3e-ch13-fig-8" block_type="figure" numbered="true" number="13.7" mmtype="image" mmsrc="" attr="">
 <layout align="center" width="xlarge" border="true"/>
 <image asset-id="corty3e-ch13-img-8" alt="image" src="asset/ch13/corty3e_fig13_07.jpg"/>
-<caption><strong><phrase block_type="fig_num">Figure 13.7</phrase> A Perfect Relationship: Raw Scores vs.</strong> <em>z</em> <strong>Scores</strong> With a perfect relationship, a case&#8217;s <em>z</em> score on the <em>X</em> variable has exactly the same value as it does on the <em>Y</em> variable. In the panel on the left, the data point for boiling water occurs at the intersection of 212&#176;F and 100&#176;C. In the pa el on the right, the data point is at the intersection of <em>z</em> scores of 1.63 on both axes.</caption>
+<caption><strong><phrase block_type="fig_num">Figure 13.7</phrase> A Perfect Relationship: Raw Scores vs.</strong> <em>z</em> <strong>Scores</strong> With a perfect relationship, a case&#8217;s <em>z</em> score on the <em>X</em> variable has exactly the same value as it does on the <em>Y</em> variable. In the panel on the left, the data point for boiling water occurs at the intersection of 212&#176;F and 100&#176;C. In the panel on the right, the data point is at the intersection of <em>z</em> scores of 1.63 on both axes.</caption>
 </figure>
 <p id="corty3e_page_486" block_type="page_start">486</p>
 <p id="corty3e_page_487" block_type="page_start">487</p>
@@ -333,7 +333,9 @@
 <list id="corty3e-ch13-list-6" type="unordered" block_type="bullet">
 <li><p id="corty3e-ch13-p105" block_type="bl-first">The common zone is the middle section of the sampling distribution, the section centered around zero where it would be common to find the <em>r</em> value for a sample when the null hypothesis is true.</p></li>
 <li><p id="corty3e-ch13-p106" block_type="bl-last">The rare zone is the extreme sections of the sampling distribution. If the null hypothesis is true, it is rare to find a sample <em>r</em> value that falls in this section.</p></li>
-<li><p id="corty3e-ch13-p107" block_type="txt">The decision rule for the Pearson <em>r</em> is similar to the other tests:</p></li>
+</list>
+<p id="corty3e-ch13-p107" block_type="txt">The decision rule for the Pearson <em>r</em> is similar to the other tests:</p>
+<list id="corty3e-ch13-list-6b" type="unordered" block_type="bullet">
 <li><p id="corty3e-ch13-p108" block_type="bl-mid">If the value of <em>r</em> calculated for the sample falls in the rare zone, reject the null hypothesis.</p></li>
 <li><p id="corty3e-ch13-p109" block_type="bl-last">If the value of <em>r</em> calculated for the sample falls in the common zone, fail to reject the null hypothesis.</p></li>
 </list>
@@ -347,7 +349,7 @@
 <caption><strong><phrase block_type="fig_num">Figure 13.17</phrase> Common Zone and Rare Zones for the Sampling Distribution of <em>r</em> for Dr. Paik&#8217;s Marital Satisfaction Study</strong> The critical value of <em>r</em> is &#177;.707. If the observed value of <em>r</em> falls in the common zone of the sampling distribution, one will fail to reject the null hypothesis. If <em>r</em> falls on either of the lines or in either rare zone, reject the null hypothesis.</caption>
 </figure>
 <p id="corty3e_page_498" block_type="page_start">498</p>
-<p id="corty3e-ch13-p114" block_type="txt">Critical values of <em>r</em> are listed in <link href="corty3e-appendix01.xml#corty3e-app1-fig-22">Appendix Table 6</link>, a portion of which is in <strong><link href="#corty3e-ch13-fig-23">Table 13.4</link></strong>. Finding the critical value of <em>r</em> follows the same process as finding a critical value of <em>t:</em></p>
+<p id="corty3e-ch13-p114" block_type="txt">Critical values of <em>r</em> are listed in <link href="corty3e_app1_1.html#corty3e-app1-fig-22">Appendix Table 6</link>, a portion of which is in <strong><link href="#corty3e-ch13-fig-23">Table 13.4</link></strong>. Finding the critical value of <em>r</em> follows the same process as finding a critical value of <em>t:</em></p>
 <figure id="corty3e-ch13-fig-23" block_type="table" numbered="true" number="13.4" mmtype="image" mmsrc="" attr="">
 <layout align="center" width="large" border="true"/>
 <image asset-id="corty3e-ch13-img-23" alt="image" src="asset/ch13/corty3e_table13_04.jpg"/>
@@ -365,9 +367,9 @@
 <p id="corty3e-ch13-p120" block_type="eq-unl"><em>N</em> &#61; number of cases in the sample</p>
 </box>
 <p id="corty3e-ch13-p121" block_type="txt">For the marital satisfaction study, there are eight cases in the sample, so <em>N</em> &#61; 8. Applying <link href="#corty3e-ch13-bx6-1">Equation 13.1</link>, Dr. Paik determines <em>df</em> &#61; 6:</p>
-<p id="corty3e-ch13-p122" block_type="eq-first"><em>df</em> &#61; <em>N &#8211;</em>2</p>
-<p id="corty3e-ch13-p123" block_type="eq-mid">&#61; 8 &#8211;2</p>
-<p id="corty3e-ch13-p124" block_type="eq-last">&#61; 6</p>
+<p id="corty3e-ch13-p122" block_type="eq"><em>df</em> &#61; <em>N &#8211;</em>2</p>
+<p id="corty3e-ch13-p123" block_type="eq">&#61; 8 &#8211;2</p>
+<p id="corty3e-ch13-p124" block_type="eq">&#61; 6</p>
 <p id="corty3e-ch13-p125" block_type="txt-ni">Looking in the table of critical values of <em>r,</em> the intersection of the row where <em>df</em> &#61; 6 and the column where &#945; &#61; .05, two-tailed, we determine that the critical value of <em>r</em> is .707. There is no sign attached to this critical value. Dr. Paik has opted for a two-tailed test and the sampling distribution is symmetric, so <em>r<sub>cv</sub></em> &#61; &#177;.707. The decision rule can now be written for the marital satisfaction study:</p>
 <list id="corty3e-ch13-list-8" type="unordered" block_type="bullet">
 <li><p id="corty3e-ch13-p126" block_type="bl-first">If <em>r</em> &#8804; &#8211;.707 <em>or</em> if <em>r</em> &#8805; .707, reject <em>H</em><sub>0</sub>.</p></li>
@@ -421,7 +423,7 @@
 </list>
 <p id="corty3e-ch13-p157" block_type="txt">The next step to find Pearson <em>r</em> is calculating the denominator:</p>
 <list id="corty3e-ch13-list-12" type="ordered" block_type="numbered">
-<li><p id="corty3e-ch13-p158" block_type="nl-first">In column 6, labeled &#8220;(<em>X</em> &#8211; <em>M<sub>X</sub></em>)<sup>2</sup>,&#8221; square the <em>X</em> deviation scores from column 3. The <em>X</em> deviation score for the first case was&#8211;17.00, so &#8211;17.00<sup>2</sup> &#61; 289.00. Repeat this step for each of the scores in column 3.</p></li>
+<li><p id="corty3e-ch13-p158" block_type="nl-first">In column 6, labeled &#8220;(<em>X</em> &#8211; <em>M<sub>X</sub></em>)<sup>2</sup>,&#8221; square the <em>X</em> deviation scores from column 3. The <em>X</em> deviation score for the first case was &#8211;17.00, so &#8211;17.00<sup>2</sup> &#61; 289.00. Repeat this step for each of the scores in column 3.</p></li>
 <li><p id="corty3e-ch13-p159" block_type="nl-mid">Once all the <em>X</em> deviation scores have been squared, add them all up at the bottom of column 6. <em>SS<sub>X</sub></em> &#61; 924.00.</p></li>
 <li><p id="corty3e-ch13-p160" block_type="nl-mid">In column 7, labeled &#8220;(<em>Y</em> &#8211; <em>M<sub>Y</sub></em>)<sup>2</sup>,&#8221; square the <em>Y</em> deviation scores from column 4. For example, for the first case, &#8211;1.20<sup>2</sup> &#61; 1.44. Repeat this step for each of the scores in column 4.</p></li>
 <li><p id="corty3e-ch13-p161" block_type="nl-mid">Next, add up the squared <em>Y</em> deviation scores and write the value at the bottom of column 7. <em>SS<sub>Y</sub></em> &#61; 5.18.</p></li>
@@ -466,11 +468,11 @@
 <p id="corty3e-ch13-p181" block_type="sr-exp-eq"><em>df</em> &#61; <em>N</em>&#8211; 2</p>
 <p id="corty3e-ch13-p182" block_type="sr-exp-eq">&#61; 10 &#8211; 2</p>
 <p id="corty3e-ch13-p183" block_type="sr-exp-eq">&#61; 8</p>
-<p id="corty3e-ch13-p184" block_type="sr_exp_txt">Dr. Solomon is examining whether there is a relationship between age of first walking and IQ, either positive or negative, so the test is two-tailed. She&#8217;s willing to have a 5&#37; chance of a Type I error, so &#945; &#61; .05. Next, she consults the table of critical values of <em>r,</em> <link href="corty3e-appendix01.xml#corty3e-app1-fig-22">Appendix Table 6</link>. The intersection of the row with 8 degrees of freedom and the column for &#945; &#61; .05, two-tailed gives <em>r<sub>cv</sub></em> &#61; &#177;.632. The decision rule is:</p>
 <p id="corty3e_page_504" block_type="page_start">504</p>
+<p id="corty3e-ch13-p184" block_type="sr_exp_txt">Dr. Solomon is examining whether there is a relationship between age of first walking and IQ, either positive or negative, so the test is two-tailed. She&#8217;s willing to have a 5&#37; chance of a Type I error, so &#945; &#61; .05. Next, she consults the table of critical values of <em>r,</em> <link href="corty3e_app1_1.html#corty3e-app1-fig-22">Appendix Table 6</link>. The intersection of the row with 8 degrees of freedom and the column for &#945; &#61; .05, two-tailed gives <em>r<sub>cv</sub></em> &#61; &#177;.632. The decision rule is:</p>
 <list id="corty3e-ch13-list-14" type="unordered" block_type="bullet">
 <li><p id="corty3e-ch13-p185" block_type="sr-exp-bl-first">If <em>r</em> &#8804; &#8211;.632 <em>or</em> if <em>r</em> &#8805; .632, reject <em>H</em><sub>0</sub>.</p></li>
-<li><p id="corty3e-ch13-p186" block_type="sr-exp-bl-last">If &#8211;632 &#60; <em>r</em> &#60; .632, fail to reject <em>H</em><sub>0</sub>.</p></li>
+<li><p id="corty3e-ch13-p186" block_type="sr-exp-bl-last">If &#8211;.632 &#60; <em>r</em> &#60; .632, fail to reject <em>H</em><sub>0</sub>.</p></li>
 </list>
 <p id="corty3e-ch13-p187" block_type="sr_exp_txt_ni"><strong><link href="#corty3e-ch13-fig-29">Figure 13.19</link></strong> shows how Dr. Solomon sketched the decision rule as a sampling distribution of <em>r,</em> marking the rare and common zones.</p>
 <figure id="corty3e-ch13-fig-29" block_type="figure" numbered="true" number="13.19" mmtype="image" mmsrc="" attr="">
@@ -599,12 +601,12 @@
 <li><p id="corty3e-ch13-p215" block_type="bl-last">Is &#8211;.707 &#60; .76 &#60; .707?</p></li>
 </list>
 <p id="corty3e-ch13-p216" block_type="txt">The second part of the first statement, .76 &#8805; .707, is true, so the null hypothesis is rejected. <strong><link href="#corty3e-ch13-fig-32">Figure 13.20</link></strong> shows how the results fall in the rare zone. The null hypothesis is rejected and the results are called statistically significant. Dr. Paik can say that this Pearson <em>r</em> of .76 is statistically different from zero. In APA format, he would write</p>
+<p id="corty3e-ch13-p217" block_type="eq"><em>r</em>(6) &#61; .76, <em>p</em> &#60; .05</p>
 <figure id="corty3e-ch13-fig-32" block_type="figure" numbered="true" number="13.20" mmtype="image" mmsrc="" attr="">
 <layout align="center" width="large" border="true"/>
 <image asset-id="corty3e-ch13-img-34" alt="image" src="asset/ch13/corty3e_fig13_20.jpg"/>
 <caption><strong><phrase block_type="fig_num">Figure 13.20</phrase> Implementing the Decision Rule for Dr. Paik&#8217;s Marital Satisfaction Study</strong> The observed value of <em>r,</em> .76, falls in the rare zone of the sampling distribution. It is an unusual result if the null hypothesis is true, so the null hypothesis is rejected.</caption>
 </figure>
-<p id="corty3e-ch13-p217" block_type="eq"><em>r</em>(6) &#61; .76, <em>p</em> &#60; .05</p>
 <p id="corty3e-ch13-p218" block_type="txt">APA format for a Pearson <em>r</em> contains five pieces of information: (1) what test is being done, (2) how many cases there are, (3) the observed value of the test statistic, (4) what alpha level was selected, and (5) whether the null hypothesis was rejected.</p>
 <list id="corty3e-ch13-list-20" type="ordered" block_type="numbered">
 <li><p id="corty3e-ch13-p219" block_type="nl-first">The <em>r</em> tells that the test was a Pearson <em>r.</em></p>
@@ -634,7 +636,7 @@
 </list>
 <p id="corty3e-ch13-p234" block_type="txt">The effect size used for <em>r</em> has a formal name, the <termref term="coefficient of determination">coefficient of determination</termref><strong>,</strong> but it is commonly called <em>r</em><sup>2</sup>. This is the same effect size that was calculated for the between-subjects, one-way ANOVA.</p>
 <p id="corty3e-ch13-p235" block_type="txt"><phrase block_type="KT"><strong><em>r</em></strong><sup>2</sup></phrase> tells the percentage of variability in one variable that is accounted for by the other variable. The amount of variability that can be explained ranges from 0&#37; to 100&#37;. The closer the size of the effect is to 100&#37;, the stronger it is. The closer the size of the effect is to 0&#37;, the weaker it is.</p>
-<p id="corty3e-ch13-p236" block_type="txt"><em>r</em><sup>2</sup> can be thought of as indicating how much overlap occurs between what the two variables measure. If <em>r</em><sup>2</sup> &#61; 100&#37;, then the two variables overlap 100&#37; and measure exactly the same thing (though they are on different scales). This occurs if <em>r</em> &#61; &#8211;1.00 or <em>r</em> &#61; &#8211; 1.00. For example, the correlation between temperatures measured in Fahrenheit and Celsius is 1.00 and <em>r</em><sup>2</sup> &#61; 100&#37;. Fahrenheit and Celsius measure the same thing. Saying something&#8217;s temperature is 212&#176; in Fahrenheit is exactly the same as saying it is 100&#176; Celsius.</p>
+<p id="corty3e-ch13-p236" block_type="txt"><em>r</em><sup>2</sup> can be thought of as indicating how much overlap occurs between what the two variables measure. If <em>r</em><sup>2</sup> &#61; 100&#37;, then the two variables overlap 100&#37; and measure exactly the same thing (though they are on different scales). This occurs if <em>r</em> &#61; 1.00 or <em>r</em> &#61; &#8211;1.00. For example, the correlation between temperatures measured in Fahrenheit and Celsius is 1.00 and <em>r</em><sup>2</sup> &#61; 100&#37;. Fahrenheit and Celsius measure the same thing. Saying something&#8217;s temperature is 212&#176; in Fahrenheit is exactly the same as saying it is 100&#176; Celsius.</p>
 <p id="corty3e-ch13-p237" block_type="txt">An <em>r</em><sup>2</sup> of 0&#37; would occur if there were no relationship between <em>X</em> and <em>Y,</em> if <em>r</em> were zero. This means that no overlap, none at all, exists between the two variables. An <em>r</em><sup>2</sup> near zero means the effect is very weak; near 100&#37; means the effect is very strong. Very high <em>r</em><sup>2</sup> values are rare. Much more common are low to mid-level values. Cohen (1988) provides standards for judging effect sizes for <em>r</em><sup>2</sup>:</p>
 <p id="corty3e_page_509" block_type="page_start">509</p>
 <list id="corty3e-ch13-list-23" type="unordered" block_type="bullet">
@@ -662,17 +664,17 @@
 <p id="corty3e_page_510" block_type="page_start">510</p>
 <p id="corty3e-ch13-p252" block_type="txt">Calculating the 95&#37; confidence interval for &#961;, 95&#37; CI&#961;, is a three-step procedure:</p>
 <list id="corty3e-ch13-list-24" type="ordered" block_type="numbered">
-<li><p id="corty3e-ch13-p253" block_type="nl-first">First, transform the observed <em>r</em> value into a <em>z</em> score, <em>z<sub>r </sub></em>. This is called a Fisher&#8217;s <em>r</em> to <em>z</em> transformation. <link href="corty3e-appendix01.xml#corty3e-app1-fig-24">Appendix Table 7</link> makes the transformation easy.</p></li>
+<li><p id="corty3e-ch13-p253" block_type="nl-first">First, transform the observed <em>r</em> value into a <em>z</em> score, <em>z<sub>r </sub></em>. This is called a Fisher&#8217;s <em>r</em> to <em>z</em> transformation. <link href="corty3e_app1_1.html#corty3e-app1-fig-24">Appendix Table 7</link> makes the transformation easy.</p></li>
 <li><p id="corty3e-ch13-p254" block_type="nl-mid">Then, use <em>z<sub>r</sub></em> along with <link href="#corty3e-ch13-bx6-4">Equations 13.4</link> and <link href="#corty3e-ch13-bx6-5">13.5</link> to calculate the confidence interval.</p></li>
-<li><p id="corty3e-ch13-p255" block_type="nl-last">This confidence interval is in <em>z<sub>r</sub></em> format, not <em>r</em> format. So, the final step is to use <link href="corty3e-appendix01.xml#corty3e-app1-fig-25">Appendix Table 8</link> to transform the confidence interval back into <em>r</em> value format.</p></li>
+<li><p id="corty3e-ch13-p255" block_type="nl-last">This confidence interval is in <em>z<sub>r</sub></em> format, not <em>r</em> format. So, the final step is to use <link href="corty3e_app1_1.html#corty3e-app1-fig-25">Appendix Table 8</link> to transform the confidence interval back into <em>r</em> value format.</p></li>
 </list>
 <p id="corty3e-ch13-p256" block_type="h4"><phrase block_type="h4-n-ri"><strong>Step 1</strong></phrase> <strong>Transform <em>r</em> to <em>z<sub>r</sub></em></strong></p>
-<p id="corty3e-ch13-p257" block_type="txt-ni"><link href="corty3e-appendix01.xml#corty3e-app1-fig-24">Appendix Table 7</link>, shown in <strong><link href="#corty3e-ch13-fig-33">Table 13.8</link></strong>, is used to transform <em>r</em> to <em>z</em><sub>r </sub>. The transformation is necessary because the sampling distribution of <em>r</em> becomes less normally distributed as &#961; deviates more from zero.</p>
+<p id="corty3e-ch13-p257" block_type="txt-ni"><link href="corty3e_app1_1.html#corty3e-app1-fig-24">Appendix Table 7</link>, shown in <strong><link href="#corty3e-ch13-fig-33">Table 13.8</link></strong>, is used to transform <em>r</em> to <em>z</em><sub>r </sub>. The transformation is necessary because the sampling distribution of <em>r</em> becomes less normally distributed as &#961; deviates more from zero.</p>
 <figure id="corty3e-ch13-fig-33" block_type="table" numbered="true" number="13.8" mmtype="image" mmsrc="" attr="">
 <layout align="center" width="large" border="true"/>
 <image asset-id="corty3e-ch13-img-35" alt="image" src="asset/ch13/corty3e_table13_08.jpg"/>
 </figure>
-<p id="corty3e-ch13-p258" block_type="txt">The rows in <link href="corty3e-appendix01.xml#corty3e-app1-fig-24">Appendix Table 7</link> represent the first digit of a two-digit <em>r</em> value and the columns represent the second digit of the two-digit <em>r</em> value. For example, an <em>r</em> of .76 is broken down into .7 for the row and .06 for the column. The numbers at the intersections of the row and column are the <em>r</em> value transformed into a <em>z</em> value. <link href="#corty3e-ch13-fig-30">Table 13.7</link> demonstrates this for the Pearson <em>r</em> for the marital satisfaction study where <em>r</em> &#61; .76. The intersection of the row for <em>r</em> &#8217;s that start with .7 and the column for <em>r</em> &#8217;s that end in .06 gives <em>z<sub>r</sub></em> &#61; 1.00. The original <em>r,</em> .76, was positive, so the <em>z<sub>r</sub></em> value is also positive. The <em>r</em> of .76 is transformed into a <em>z<sub>r</sub></em> of 1.00.</p>
+<p id="corty3e-ch13-p258" block_type="txt">The rows in <link href="corty3e_app1_1.html#corty3e-app1-fig-24">Appendix Table 7</link> represent the first digit of a two-digit <em>r</em> value and the columns represent the second digit of the two-digit <em>r</em> value. For example, an <em>r</em> of .76 is broken down into .7 for the row and .06 for the column. The numbers at the intersections of the row and column are the <em>r</em> value transformed into a <em>z</em> value. <link href="#corty3e-ch13-fig-30">Table 13.7</link> demonstrates this for the Pearson <em>r</em> for the marital satisfaction study where <em>r</em> &#61; .76. The intersection of the row for <em>r</em> &#8217;s that start with .7 and the column for <em>r</em> &#8217;s that end in .06 gives <em>z<sub>r</sub></em> &#61; 1.00. The original <em>r,</em> .76, was positive, so the <em>z<sub>r</sub></em> value is also positive. The <em>r</em> of .76 is transformed into a <em>z<sub>r</sub></em> of 1.00.</p>
 <p id="corty3e-ch13-p259" block_type="h4"><phrase block_type="h4-n-ri"><strong>Step 2</strong></phrase> <strong>Calculate the 95&#37; Confidence Interval for the <em>z</em> Value</strong></p>
 <p id="corty3e-ch13-p260" block_type="txt-ni">The formula for calculating the 95&#37; confidence interval around the <em>z<sub>r</sub></em> value is given in <link href="#corty3e-ch13-bx6-4">Equation 13.4</link>.</p>
 <p id="corty3e_page_511" block_type="page_start">511</p>
@@ -680,7 +682,7 @@
 <box-metadata><box-title><phrase block_type="sec_num">Equation 13.4</phrase> <phrase block_type="sec_title">95&#37; Confidence Interval for <em>z<sub>r</sub></em></phrase></box-title></box-metadata>
 <p id="corty3e-ch13-p261" block_type="eq">95&#37;CI<em><sub>zr</sub></em> &#61; <em>z<sub>r</sub></em> &#177; 1.96<em>s</em><sub>r</sub></p>
 <p id="corty3e-ch13-p262" block_type="eq-txt-ni">where 95&#37;CI<em><sub>zr</sub></em> &#61; 95&#37; confidence interval for &#961;, expressed in <em>z<sub>r</sub></em> units</p>
-<p id="corty3e-ch13-p263" block_type="eq-unl"><em>z<sub>r</sub></em> &#61; Pearson <em>r</em> transformed into <em>z</em> format, using <link href="corty3e-appendix01.xml#corty3e-app1-fig-24">Appendix Table 7</link></p>
+<p id="corty3e-ch13-p263" block_type="eq-unl"><em>z<sub>r</sub></em> &#61; Pearson <em>r</em> transformed into <em>z</em> format, using <link href="corty3e_app1_1.html#corty3e-app1-fig-24">Appendix Table 7</link></p>
 <p id="corty3e-ch13-p264" block_type="eq-unl"><em>s<sub>r</sub></em> &#61; standard error of <em>r</em> (<link href="#corty3e-ch13-bx6-5">Equation 13.5</link>)</p>
 </box>
 <p id="corty3e-ch13-p265" block_type="txt-ni">This formula says that 1.96 standard errors of <em>r,</em> abbreviated <em>s<sub>r</sub></em>, are added to and subtracted from <em>z<sub>r </sub></em>. So before calculating 95&#37;CI&#961;, <em>s<sub>r</sub></em> needs to be calculated using <link href="#corty3e-ch13-bx6-5">Equation 13.5</link>.</p>
@@ -689,7 +691,7 @@
 <p id="corty3e-ch13-eqn-4" block_type="equation">
 <image asset-id="corty3e-ch13-img-36" alt="image" src="asset/ch13/corty3e_eqn13_511_01.jpg"/></p>
 <p id="corty3e-ch13-p266" block_type="eq-txt-ni">where <em>s<sub>r</sub> =</em> standard error of <em>r</em></p>
-<p id="corty3e-ch13-p267" block_type="eq-unl"><em>N</em> &#61; number of pairs of cases used in calculating the Pearson</p>
+<p id="corty3e-ch13-p267" block_type="eq-unl"><em>N</em> &#61; number of pairs of cases used in calculating the Pearson <em>r</em></p>
 </box>
 <p id="corty3e-ch13-p268" block_type="txt">For Dr. Paik&#8217;s marital satisfaction study, where <em>N</em> &#61; 8, <em>s<sub>r</sub></em> is calculated like this:</p>
 <p id="corty3e-ch13-eqn-5" block_type="equation">
@@ -707,13 +709,13 @@
 <p id="corty3e_page_512" block_type="page_start">512</p>
 <p id="corty3e-ch13-p277" block_type="txt-ni">The 95&#37; confidence interval for &#961;, expressed in <em>z<sub>r</sub></em> units, ranges from 0.12 to 1.88. All that is left is to transform the confidence interval back into <em>r</em> units.</p>
 <p id="corty3e-ch13-p278" block_type="h4"><phrase block_type="h4-n-ri"><strong>Step 3</strong></phrase> <strong>Transform the Confidence Interval from <em>z<sub>r</sub></em> Units to <em>r</em> Values</strong></p>
-<p id="corty3e-ch13-p279" block_type="txt-ni">Transforming from <em>z<sub>r</sub></em> units to <em>r</em> units uses <link href="corty3e-appendix01.xml#corty3e-app1-fig-25">Appendix Table 8</link>, a reversal of <link href="corty3e-appendix01.xml#corty3e-app1-fig-24">Appendix Table 7</link>. <link href="corty3e-appendix01.xml#corty3e-app1-fig-25">Appendix Table 8</link> is shown in <strong><link href="#corty3e-ch13-fig-36">Table 13.9</link></strong>.</p>
+<p id="corty3e-ch13-p279" block_type="txt-ni">Transforming from <em>z<sub>r</sub></em> units to <em>r</em> units uses <link href="corty3e_app1_1.html#corty3e-app1-fig-25">Appendix Table 8</link>, a reversal of <link href="corty3e_app1_1.html#corty3e-app1-fig-24">Appendix Table 7</link>. <link href="corty3e_app1_1.html#corty3e-app1-fig-25">Appendix Table 8</link> is shown in <strong><link href="#corty3e-ch13-fig-36">Table 13.9</link></strong>.</p>
 <figure id="corty3e-ch13-fig-36" block_type="table" numbered="true" number="13.9" mmtype="image" mmsrc="" attr="">
 <layout align="center" width="large" border="true"/>
 <image asset-id="corty3e-ch13-img-38" alt="image" src="asset/ch13/corty3e_table13_09.jpg"/>
 </figure>
 <p id="corty3e_page_513" block_type="page_start">513</p>
-<p id="corty3e-ch13-p280" block_type="txt"><link href="corty3e-appendix01.xml#corty3e-app1-fig-25">Appendix Table 8</link> is set up the same way as <link href="corty3e-appendix01.xml#corty3e-app1-fig-24">Appendix Table 7</link>. Each row covers the first decimal place of a <em>z<sub>r</sub></em> value and each column is the second decimal place of a <em>z<sub>r</sub></em> value. At the intersection of the row and column, the <em>z<sub>r</sub></em> value is transformed back into an <em>r</em> value. Of course, be sure to maintain the sign. If the <em>z<sub>r</sub></em> was a negative number, then the <em>r</em> value is a negative value as well.</p>
+<p id="corty3e-ch13-p280" block_type="txt"><link href="corty3e_app1_1.html#corty3e-app1-fig-25">Appendix Table 8</link> is set up the same way as <link href="corty3e_app1_1.html#corty3e-app1-fig-24">Appendix Table 7</link>. Each row covers the first decimal place of a <em>z<sub>r</sub></em> value and each column is the second decimal place of a <em>z<sub>r</sub></em> value. At the intersection of the row and column, the <em>z<sub>r</sub></em> value is transformed back into an <em>r</em> value. Of course, be sure to maintain the sign. If the <em>z<sub>r</sub></em> was a negative number, then the <em>r</em> value is a negative value as well.</p>
 <p id="corty3e-ch13-p281" block_type="txt">The first <em>z<sub>r</sub></em> value for the marital satisfaction study, the one at the lower end of the confidence interval, was 0.12. Looking at the intersection of the 0.1 row with the .02 column in the <em>z</em> to <em>r</em> table, Dr. Paik finds <em>r</em> &#61; .12. The second <em>z</em><sub>r</sub> value for the marital satisfaction study was 1.88. The intersection of the 1.8 row with the .08 column gives <em>r</em> &#61; .95. The 95&#37; confidence interval for &#961;, the population value of the relationship between male gender role flexibility and female marital satisfaction, ranges from .12 to .95 when expressed in Pearson correlation coefficient units.</p>
 <p id="corty3e-ch13-p282" block_type="txt">The observed <em>r</em> in the sample was .76, which is a strong and positive correlation. But, the confidence interval indicates uncertainty about the strength of the relationship between gender role flexibility and marital satisfaction in the population. &#961; could be (1) an almost perfect correlation coefficient of .95, or (2) a correlation of .12 that is much closer to zero, or (3) a correlation anywhere between those two extremes. And, there&#8217;s a fourth option, a 5&#37; chance that this confidence interval doesn&#8217;t capture &#961;. A very wide confidence interval, like this one ranging from .12 to .95, tells a researcher that there is a lot of uncertainty about how strong the correlation is in the underlying population.</p>
 <p id="corty3e-ch13-p283" block_type="txt">To interpret a confidence interval for &#961;, pay attention to three factors:</p>
@@ -737,11 +739,11 @@
 <p id="corty3e-ch13-p294" block_type="sr_exp_txt_ni">For practice interpreting a Pearson correlation coefficient, let&#8217;s return to Dr. Solomon&#8217;s study that investigated the relationship between the age at which children begin walking and their later IQ. In that study, ten 16-year-old girls were randomly selected from a pediatrician&#8217;s practice. They were given IQ tests and their charts were examined to determine the age at which they started to walk. Dr. Solomon used a Pearson correlation coefficient to examine the relationship between the two variables and found <em>r</em> &#61; &#8211;.44.</p>
 <p id="corty3e-ch13-p295" block_type="sr_exp_txt"><em>Was the null hypothesis rejected?</em> The null hypothesis said that there was no relationship between the two variables. With <em>df</em> &#61; 8, &#945; &#61; .05, and a two-tailed test, the critical value of <em>r</em> was &#177;.632. Here is the decision rule:</p>
 <list id="corty3e-ch13-list-26" type="unordered" block_type="bullet">
-<li><p id="corty3e-ch13-p296" block_type="sr-exp-bl-first">If &#8211;. 44 &#8804; &#8211;.632 <em>or</em> if &#8211;.44 &#8805; .632, reject <em>H</em><sub>0</sub>.</p></li>
+<li><p id="corty3e-ch13-p296" block_type="sr-exp-bl-first">If &#8211;.44 &#8804; &#8211;.632 <em>or</em> if &#8211;.44 &#8805; .632, reject <em>H</em><sub>0</sub>.</p></li>
 <li><p id="corty3e-ch13-p297" block_type="sr-exp-bl-last">If &#8211;.632 &#60; &#8211;.44 &#60; .632, fail to reject <em>H</em><sub>0</sub>.</p></li>
 </list>
 <p id="corty3e_page_515" block_type="page_start">515</p>
-<p id="corty3e-ch13-p298" block_type="sr_exp_txt">The second statement is true, so Dr. Solomon has failed to reject the null hypothesis. As shown in <strong><link href="#corty3e-ch13-fig-37">Figure 13.21</link></strong>, the observed <em>r</em> of&#8211;.44 falls between &#8211;.632 and &#8211;.632, which is in the common zone of the sampling distribution of <em>r.</em> That means &#8211;.44 is a result that will commonly occur if the null hypothesis is true. There is no reason to reject the null hypothesis.</p>
+<p id="corty3e-ch13-p298" block_type="sr_exp_txt">The second statement is true, so Dr. Solomon has failed to reject the null hypothesis. As shown in <strong><link href="#corty3e-ch13-fig-37">Figure 13.21</link></strong>, the observed <em>r</em> of &#8211;.44 falls between &#8211;.632 and .632, which is in the common zone of the sampling distribution of <em>r.</em> That means &#8211;.44 is a result that will commonly occur if the null hypothesis is true. There is no reason to reject the null hypothesis.</p>
 <figure id="corty3e-ch13-fig-37" block_type="figure" numbered="true" number="13.21" mmtype="image" mmsrc="" attr="">
 <layout align="center" width="medium" border="true"/>
 <image asset-id="corty3e-ch13-img-39" alt="image" src="asset/ch13/corty3e_fig13_21.jpg"/>
@@ -770,18 +772,18 @@
 <p id="corty3e_page_516" block_type="page_start">516</p>
 <p id="corty3e-ch13-p315" block_type="sr_exp_txt_ni">An <em>r</em><sup>2</sup> of 19.36&#37; is more than a medium effect, according to Cohen (1988). As a result, Dr. Solomon is worried that a Type II error may have been made and that she missed finding a relationship between age of walking and IQ. She is going to recommend replicating the study with a larger sample size in order to have a better chance of finding the effect if it exists.</p>
 <p id="corty3e-ch13-p316" block_type="sr_exp_txt"><em>How wide is the confidence interval?</em> Calculating the confidence interval for &#961; is a three-step process.</p>
-<p id="corty3e-ch13-p317" block_type="sr_exp_h4_txt"><phrase block_type="h4-n-ri"><strong>Step 1</strong></phrase> <phrase block_type="sr-exp-h4-t-ri"><strong>Convert <em>r</em> to <em>z<sub>r</sub></em>.</strong></phrase> To do this, Dr. Solomon uses <link href="corty3e-appendix01.xml#corty3e-app1-fig-24">Appendix Table 7</link>. Given <em>r</em> &#61; &#8211;.44, she finds the <em>z<sub>r</sub></em> transformation for this at the intersection of the row for .4 and the column for .04. The <em>r</em> was negative, so the <em>z<sub>r</sub></em> should be, too: <em>z<sub>r</sub></em> &#61; &#8211;0.47.</p>
+<p id="corty3e-ch13-p317" block_type="sr_exp_h4_txt"><phrase block_type="h4-n-ri"><strong>Step 1</strong></phrase> <phrase block_type="sr-exp-h4-t-ri"><strong>Convert <em>r</em> to <em>z<sub>r</sub></em>.</strong></phrase> To do this, Dr. Solomon uses <link href="corty3e_app1_1.html#corty3e-app1-fig-24">Appendix Table 7</link>. Given <em>r</em> &#61; &#8211;.44, she finds the <em>z<sub>r</sub></em> transformation for this at the intersection of the row for .4 and the column for .04. The <em>r</em> was negative, so the <em>z<sub>r</sub></em> should be, too: <em>z<sub>r</sub></em> &#61; &#8211;0.47.</p>
 <p id="corty3e-ch13-p318" block_type="sr_exp_h4_txt"><phrase block_type="h4-n-ri"><strong>Step 2</strong></phrase> <phrase block_type="sr-exp-h4-t-ri"><strong>Calculate the Confidence Interval in <em>z<sub>r</sub></em> Units.</strong></phrase> The first thing Dr. Solomon does in this step is use <link href="#corty3e-ch13-bx6-5">Equation 13.5</link> to calculate <em>s<sub>r </sub>.</em> The only variable to plug into the equation is the sample size, which is 10:</p>
 <p id="corty3e-ch13-eqn-6" block_type="equation">
 <image asset-id="corty3e-ch13-img-40" alt="image" src="asset/ch13/corty3e_eqn13_516_01.jpg"/></p>
 <p id="corty3e-ch13-p319" block_type="sr_exp_txt_ni">Now that she knows <em>s<sub>r</sub></em> &#61; 0.38 and <em>z<sub>r</sub></em> &#61; &#8211;0.47, she can use <link href="#corty3e-ch13-bx6-4">Equation 13.4</link> to calculate the confidence interval in <em>z<sub>r</sub></em> units:</p>
 <p id="corty3e-ch13-eqn-7" block_type="equation">
 <image asset-id="corty3e-ch13-img-41" alt="image" src="asset/ch13/corty3e_eqn13_516_02.jpg"/></p>
-<p id="corty3e-ch13-p320" block_type="sr-exp-eq">&#61; 0.47 <em>&#177;</em> (1.96 &#215; 0.38)</p>
-<p id="corty3e-ch13-p321" block_type="sr-exp-eq">&#61; 0.47 <em>&#177;</em> 0.7448</p>
+<p id="corty3e-ch13-p320" block_type="sr-exp-eq">&#61; &#8211;0.47 <em>&#177;</em> (1.96 &#215; 0.38)</p>
+<p id="corty3e-ch13-p321" block_type="sr-exp-eq">&#61; &#8211;0.47 <em>&#177;</em> 0.7448</p>
 <p id="corty3e-ch13-p322" block_type="sr-exp-eq">&#61; from &#8211;1.2148 to 0.2748</p>
 <p id="corty3e-ch13-p323" block_type="sr-exp-eq">&#61; [&#8211;1.21, 0.27]</p>
-<p id="corty3e-ch13-p324" block_type="sr_exp_h4_txt"><phrase block_type="h4-n-ri"><strong>Step 3</strong></phrase> <phrase block_type="sr-exp-h4-t-ri"><strong>Convert the Confidence Interval Back into</strong> <em>r</em> <strong>Units.</strong></phrase> The confidence interval, in <em>z<sub>r</sub></em> units, ranges from &#8211;1.21 to 0.27. In order to interpret the confidence interval, Dr. Solomon needs to convert it back to Pearson correlation coefficient units using <link href="corty3e-appendix01.xml#corty3e-app1-fig-25">Appendix Table 8</link>. She will maintain the sign of the values, positive or negative, in the conversion process.</p>
+<p id="corty3e-ch13-p324" block_type="sr_exp_h4_txt"><phrase block_type="h4-n-ri"><strong>Step 3</strong></phrase> <phrase block_type="sr-exp-h4-t-ri"><strong>Convert the Confidence Interval Back into</strong> <em>r</em> <strong>Units.</strong></phrase> The confidence interval, in <em>z<sub>r</sub></em> units, ranges from &#8211;1.21 to 0.27. In order to interpret the confidence interval, Dr. Solomon needs to convert it back to Pearson correlation coefficient units using <link href="corty3e_app1_1.html#corty3e-app1-fig-25">Appendix Table 8</link>. She will maintain the sign of the values, positive or negative, in the conversion process.</p>
 <list id="corty3e-ch13-list-28" type="unordered" block_type="bullet">
 <li><p id="corty3e-ch13-p325" block_type="sr-exp-bl-first">At the intersection of the row for 1.2 and the column for .01, she transforms a <em>z<sub>r</sub></em> of &#8211;1.21 into <em>r</em> &#61; &#8211;.84.</p></li>
 <li><p id="corty3e-ch13-p326" block_type="sr-exp-bl-mid">At the intersection of the row for 0.2 and the column for .07, she transforms a <em>z<sub>r</sub></em> of .27 into <em>r</em> &#61; .26.</p>
@@ -796,9 +798,9 @@
 </list>
 <p id="corty3e-ch13-p332" block_type="sr_exp_h4_txt"><phrase block_type="h4-n-ri"><strong>Step 4</strong></phrase> <phrase block_type="sr-exp-h4-t-ri"><strong>Was There Adequate Power? How Likely Was a Type II Error?</strong></phrase> Dr. Solomon is already concerned that a Type II error might have been made. That is, she&#8217;s concerned the study might&#8217;ve been underpowered. Remember, power is the probability that a null hypothesis that should be rejected is rejected. Statisticians like power to be at least .80 to be considered adequate. That is, if the null hypothesis should be rejected, they want an 80&#37; chance of being able to do so.</p>
 <p id="corty3e-ch13-p333" block_type="sr_exp_txt">Power is the flipside to Type II error, it is heads to error&#8217;s tails. If the null hypothesis should be rejected, then there are only two options: it is rejected or it is not rejected. If there is an 80&#37; chance of rejecting it, then there&#8217;s a 20&#37; chance of failing to reject it. Beta, &#946;, is the probability of Type II error. As discussed in <link href="corty3e-ch06.xml">Chapter 6</link>, power &#43; &#946; &#61; 1.00, so if power &#61; .80, then &#946; &#61; .20.</p>
-<p id="corty3e-ch13-p334" block_type="sr_exp_txt"><link href="corty3e-appendix01.xml#corty3e-app1-fig-26">Appendix Table 9</link> makes it easy to find power for a Pearson <em>r</em>. Power depends on the number of cases and the strength of the correlation. The rows in the table are for different sample sizes and the columns offer different correlations. Dr. Solomon had 10 cases and found <em>r</em> &#61; &#8211;.44. For both rows and columns, follow the <em>Price Is Right</em> rule and select the option that is closest without going over. The sign of the correlation does not matter. So, Dr. Solomon looks at the intersection of the row with 10 cases and the column for <em>r</em> &#61; .40, where she finds power &#61; .20. As she would like power to be .80 and it is only .20, this study is quite underpowered.</p>
+<p id="corty3e-ch13-p334" block_type="sr_exp_txt"><link href="corty3e_app1_1.html#corty3e-app1-fig-26">Appendix Table 9</link> makes it easy to find power for a Pearson <em>r</em>. Power depends on the number of cases and the strength of the correlation. The rows in the table are for different sample sizes and the columns offer different correlations. Dr. Solomon had 10 cases and found <em>r</em> &#61; &#8211;.44. For both rows and columns, follow the <em>Price Is Right</em> rule and select the option that is closest without going over. The sign of the correlation does not matter. So, Dr. Solomon looks at the intersection of the row with 10 cases and the column for <em>r</em> &#61; .40, where she finds power &#61; .20. As she would like power to be .80 and it is only .20, this study is quite underpowered.</p>
 <p id="corty3e-ch13-p335" block_type="sr_exp_txt">With power of .20, &#946; &#61; .80. If there really is a relationship between age of walking and intelligence and Dr. Solomon tries to find it with only 10 cases, then there&#8217;s an 80&#37; chance the results will not find evidence of a relationship. Those are not very good odds.</p>
-<p id="corty3e-ch13-p336" block_type="sr_exp_txt"><link href="corty3e-appendix01.xml#corty3e-app1-fig-26">Appendix Table 9</link> can also be used to see how many cases Dr. Solomon would need to have an 80&#37; chance of finding a relationship if the relationship had the strength of <em>r</em> &#61; .40. She would simply go down the column until she reaches power of .80 and then look to the left to see how many cases would be needed. Dr. Solomon should have used 48 cases.</p>
+<p id="corty3e-ch13-p336" block_type="sr_exp_txt"><link href="corty3e_app1_1.html#corty3e-app1-fig-26">Appendix Table 9</link> can also be used to see how many cases Dr. Solomon would need to have an 80&#37; chance of finding a relationship if the relationship had the strength of <em>r</em> &#61; .40. She would simply go down the column until she reaches power of .80 and then look to the left to see how many cases would be needed. Dr. Solomon should have used 48 cases.</p>
 <p id="corty3e_page_518" block_type="page_start">518</p>
 <p id="corty3e-ch13-p337" block_type="sr_exp_txt"><em>Putting it all together.</em> Finally, Dr. Solomon is ready to interpret results:</p>
 <p id="corty3e-ch13-p338" block_type="sr_exp_txt_v1_ni">This study investigated if a relationship existed between the age at which children started walking and their IQs at age 16. Using a random sample of 10 girls from a pediatrician&#8217;s practice, there wasn&#8217;t enough evidence to conclude that the age at which a child begins to walk provides any information about intelligence [<em>r</em>(8) &#61; &#8211;.44, <em>p</em> &#62; .05]. However, the sample size was small, so a relationship may exist that the researcher failed to find. Future research should replicate the study with a sample size of at least 48 participants to increase the chances of finding a relationship if one does exist. The sample should also include boys and be drawn from multiple sites.</p>
@@ -810,7 +812,7 @@
 <box title="Practice Problems 13.3" numbered="false" id="corty3e-ch13-bx2-3" block_type="sr-h">
 <p id="corty3e-ch13-p341" block_type="sr-h1"><strong>Apply Your Knowledge</strong></p>
 <p id="corty3e-ch13-p342" block_type="sr-que-nl"><phrase block_type="question_num">13.13</phrase> If <em>N</em> &#61; 22, &#945; &#61; .05, <em>r<sub>cv</sub></em> &#61; .444, and <em>r</em> &#61; .63, (a) state whether the null hypothesis was rejected, (b) indicate whether the results are statistically significant, and (c) report the results in APA format.</p>
-<p id="corty3e-ch13-p343" block_type="sr-que-nl"><phrase block_type="question_num">13.14</phrase> (a) If <em>r</em> =&#8211; .34, what is <em>r</em><sup>2</sup>? (b) Is this a small, medium, or large effect?</p>
+<p id="corty3e-ch13-p343" block_type="sr-que-nl"><phrase block_type="question_num">13.14</phrase> (a) If <em>r</em> = &#8211;.34, what is <em>r</em><sup>2</sup>? (b) Is this a small, medium, or large effect?</p>
 <p id="corty3e-ch13-p344" block_type="sr-que-nl"><phrase block_type="question_num">13.15</phrase> Given <em>N</em> &#61; 12 and <em>r</em> &#61; .40, calculate the 95&#37; confidence interval for &#961;.</p>
 <p id="corty3e-ch13-p345" block_type="sr-que-nl"><phrase block_type="question_num">13.16</phrase> If power &#61; .72, what is &#946;?</p>
 <p id="corty3e-ch13-p346" block_type="sr-que-nl"><phrase block_type="question_num">13.17</phrase> Given <em>N</em> &#61; 33 and <em>r</em> &#61; .37, what is power?</p>
@@ -839,13 +841,13 @@
 </box>
 <p id="corty3e_page_520" block_type="page_start">520</p>
 <p id="corty3e-ch13-p359" block_type="txt">Let&#8217;s use a partial correlation to control for the effect of population on the correlation between the number of community hospitals per state and the number of deaths per state. The scatterplot in <link href="#corty3e-ch13-fig-2">Figure 13.1</link> at the start of this chapter shows a strong and direct relationship. Not surprisingly, the correlation is strong and significant: <em>r</em>(23) &#61; .89, <em>p</em> &#60; .05. But, the correlation between the number of hospitals (<em>X</em>) and the state population (<em>Z</em>) was .92, and for the number of deaths (<em>Y</em>) and the population, it was .98.</p>
-<p id="corty3e-ch13-p360" block_type="eq-unl">Using <em>r<sub>XY</sub></em> &#61; .89, <em>r<sub>XZ</sub></em> &#61; .92, and <em>r<sub>YZ</sub></em> &#61; .98, we can complete <link href="#corty3e-ch13-bx6-6">Equation 13.6</link>:</p>
+<p id="corty3e-ch13-p360" block_type="txt">Using <em>r<sub>XY</sub></em> &#61; .89, <em>r<sub>XZ</sub></em> &#61; .92, and <em>r<sub>YZ</sub></em> &#61; .98, we can complete <link href="#corty3e-ch13-bx6-6">Equation 13.6</link>:</p>
 <p id="corty3e-ch13-eqn-9" block_type="equation">
 <image asset-id="corty3e-ch13-img-43" alt="image" src="asset/ch13/corty3e_eqn13_520_01.jpg"/></p>
 <p id="corty3e-ch13-p361" block_type="txt-ni">The correlation of the number of hospitals with the number of deaths was .89. But, when population was controlled for, the correlation fell to &#8211;.15. It went from statistically significant to failing to reject the null hypothesis. This means that there is not enough evidence to suggest the number of community hospitals has any causal impact on the number of deaths in a given state&#8212;the apparent association between the two variables can be explained by the states&#8217; populations.</p>
 <box title="A Common Question" numbered="false" id="corty3e-ch13-bx1-5" block_type="bx-1-h">
 <p id="corty3e-ch13-p362" block_type="bx1-que"><strong>Q</strong> How many degrees of freedom does a partial correlation have?</p>
-<p id="corty3e-ch13-p363" block_type="bx1-que"><strong>A</strong> <em>df</em> for a partial correlation is <em>N</em> &#8211; 3. For the community hospital study, there were 25 states, so <em>df</em> &#61; 25 &#8211; 3 &#61; 22. The critical value of <em>r</em> is &#177; .396; thus, the observed <em>r</em> of &#8211;.15 falls in the common zone. The results would be reported as <em>r</em>(22) =.&#8211;15, <em>p</em> &#62; .05.</p>
+<p id="corty3e-ch13-p363" block_type="bx1-que"><strong>A</strong> <em>df</em> for a partial correlation is <em>N</em> &#8211; 3. For the community hospital study, there were 25 states, so <em>df</em> &#61; 25 &#8211; 3 &#61; 22. The critical value of <em>r</em> is &#177; .396; thus, the observed <em>r</em> of &#8211;.15 falls in the common zone. The results would be reported as <em>r</em>(22) =&#8211;.15, <em>p</em> &#62; .05.</p>
 </box>
 <box title="Worked Example 13.3" numbered="false" id="corty3e-ch13-bx3-3" block_type="sr-exp-n">
 <p id="corty3e-ch13-p364" block_type="sr_exp_txt_ni">A researcher gathered a random sample of 160 students at her college and measured their physical and mental health on two dimensions: the distance that they are able to run in 30 minutes and happiness, as indicated on a survey. She theorized, from a biopsychosocial perspective, that if there is a mind&#8211;body connection, then a relationship should exist between physical health and psychological health. She found in her sample that the correlation between the two variables was .37 [<em>r</em>(158) &#61; .37, <em>p</em> &#60; .05], suggesting that a correlation does indeed exist between physical health and mental health.</p>
@@ -1328,7 +1330,7 @@ a.<em>r</em><sup>2</sup>:: an effect size that reveals the percentage of variabi
 <td><phrase block_type="tbn-txt"><em>M</em> &#61; 99.33</phrase></td>
 <td></td>
 <td></td>
-<td><phrase block_type="tbn-txt">&#931; &#61; &#8211;153.33</phrase></td>
+<td><phrase block_type="nowrap">&#931; &#61; &#8211;153.33</phrase></td>
 <td></td>
 <td></td>
 </tr>
@@ -1483,7 +1485,7 @@ a.<em>r</em><sup>2</sup>:: an effect size that reveals the percentage of variabi
 <td><phrase block_type="tbn-txt"><em>M</em> &#61; 593.33</phrase></td>
 <td></td>
 <td></td>
-<td><phrase block_type="tbn-txt">&#931; &#61; &#8211;3,626.67</phrase></td>
+<td><phrase block_type="nowrap">&#931; &#61; &#8211;3,626.67</phrase></td>
 <td><phrase block_type="tbn-txt">&#931; &#61; 7,242.67</phrase></td>
 <td><phrase block_type="tbn-txt">&#931; &#61; 35,466.67</phrase></td>
 </tr>
@@ -1711,8 +1713,8 @@ a.<em>r</em><sup>2</sup>:: an effect size that reveals the percentage of variabi
 <td><phrase block_type="tbn-txt">11.56</phrase></td>
 </tr>
 <tr>
-<td><phrase block_type="tbn-txt"><em>M</em> &#61; &#8211;0.20</phrase></td>
-<td><phrase block_type="tbn-txt"><em>M</em> &#61; &#8211;0.40</phrase></td>
+<td><phrase block_type="nowrap"><em>M</em> &#61; &#8211;0.20</phrase></td>
+<td><phrase block_type="nowrap"><em>M</em> &#61; &#8211;0.40</phrase></td>
 <td></td>
 <td></td>
 <td><phrase block_type="tbn-txt">&#931; &#61; &#8211;42.80</phrase></td>

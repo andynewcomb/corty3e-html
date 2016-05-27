@@ -1,7 +1,13 @@
-/* Chapter 7 CSS */
+﻿/* Chapter 7 CSS */
 /* Figures */
 body.noUi div#corty3e-ch7-fig-33 img {
   max-width: 200px !important;
+}
+body.noUi div#corty3e-ch7-fig-36 img {
+  max-width: 450px !important;
+}
+body#supp_win [data-figure-id="corty3e-ch7-fig-36"][data-layout-width="medium"] img {
+  max-width: 550px !important;
 }
 /* Tables */
 body.noUi div#corty3e-ch7-table1 {
@@ -22,7 +28,7 @@ body.noUi div#corty3e-ch7-table1 table tr > td:first-child {
 body.noUi div#corty3e-ch7-table2,
 body.noUi div#corty3e-ch7-table3,
 body.noUi div#corty3e-ch7-table4 {
-  width: 556px !important;
+  width: 615px !important;
 }
 body.noUi div#corty3e-ch7-table2 table tr:first-child,
 body.noUi div#corty3e-ch7-table3 table tr:first-child,
@@ -47,13 +53,34 @@ body.noUi div#corty3e-ch7-table4 table td {
   vertical-align: top;
 }
 /* Lists */
+ul#corty3e-ch7-list-19 {
+  margin-left: 4em;
+}
+ul#corty3e-ch7-list-23 {
+  margin-left: 4em;
+}
+ul#corty3e-ch7-list-24 {
+  margin-left: 4em;
+}
+ul#corty3e-ch7-list-25 {
+  margin-bottom: 0;
+}
+ul#corty3e-ch7-list-25 p {
+  margin: 0;
+}
+ul#corty3e-ch7-list-26 {
+  margin-top: 0;
+  margin-left: 44px;
+}
+ul#corty3e-ch7-list-26 p {
+  margin: 0;
+}
 /* Equations */
 div#corty3e-ch7-p205 {
   margin-left: -22px;
 }
 div#corty3e-ch7-p206 {
   margin-left: 61px;
-  text-indent: -124px;
 }
 div#corty3e-ch7-p209 {
   margin-left: 59px;

@@ -18,30 +18,378 @@
     
     </head>
 <body class="noUi">
-<div id="manuscript" data-chapter-number="0">
-    <div data-type="section" data-block_type="fm-prf-hd1" id="corty3e-fm1-sec1-3" level="1" data-print_page="xvii">
-<h2 class="section-title"><span data-type="title" data-title-for="corty3e-fm1-sec1-3">TO THE STUDENT
+<div id="manuscript" data-chapter-number="13">
+    <div data-type="section" data-block_type="h1" id="corty3e-ch13-sec1-2" level="1" data-print_page="493">
+<h2 class="section-title"><span data-type="title" data-title-for="corty3e-ch13-sec1-2"><span data-block_type="sec_num">13.2</span> <span data-block_type="sec_title">Calculating the Pearson Correlation Coefficient</span>
 </span></h2>
 
-<div data-block_type="fm-txt" id="corty3e-fm1-p357"><p>If you are like many students, this is not a course you have been looking forward to taking. And you probably don’t feel like reading a long message about how important this course is. So, I’ll be brief and say just five things to introduce the book to you:</p></div>
-<ol data-block_type="numbered" id="corty3e-fm1-list-2">
-<li><div data-block_type="fm-txt-nl" id="corty3e-fm1-p358"><p>When the semester is over, you’ll find that statistics wasn’t as hard as you feared. Learning statistics is like learning a foreign language—the concepts build on each other and require regular practice. The best way to practice is just like the best way to eat: Take small bites, chew thoroughly, and swallow thoughtfully. Work through the “Practice Problems” as they pop up. Make sure you can do them before moving on to new material.</p></div>
+<div data-block_type="txt-ni" id="corty3e-ch13-p79"><p>To learn how to calculate a Pearson <em>r,</em> imagine some data collected by a marriage therapist. Dr. Paik was interested in seeing whether there was a relationship between gender role flexibility and marital satisfaction. Gender role flexibility refers to the ability to express both male and female traits. Dr. Paik wanted to find out if women’s marital satisfaction correlated with how gender role flexible their husbands were.</p></div>
+<div data-block_type="txt" id="corty3e-ch13-p80"><p>To measure gender role flexibility, he used the Role Flexibility Test (RFT). The RFT is scored on an interval level and scores range from 0 to 40. Higher scores mean more role flexibility. To measure marital satisfaction, he asked the women to grade their husbands A–F on a number of dimensions. He averaged these grades together, and then he calculated a marital “GPA.” Just like an academic GPA, a marital GPA ranges from 0 to 4, with 0 = F and 4 = A.</p></div>
+<div data-block_type="page_start" id="corty3e_page_494"><p>494</p></div>
+<div data-block_type="txt" id="corty3e-ch13-p81"><p>Dr. Paik obtained a random sample of eight heterosexual married couples from his city and measured two characteristics for each couple (see the data in <strong><span data-type="link" data-href="#corty3e-ch13-fig-18">Table 13.3</span></strong>). <em>X</em> was the husband’s level of gender role flexibility, and <em>Y</em> was the wife’s rating of marital satisfaction. Dr. Paik’s question was simple. He did not specify a direction, direct or inverse, for the relationship, he just wanted to know: Are the two variables related?</p></div>
+<div data-type="figure" data-figure-id="corty3e-ch13-fig-18" data-block_type="table" data-layout-align="center" data-layout-width="large" data-layout-border="true">
+
+<img id="" src="asset/ch13/corty3e_table13_03.jpg" data-figure-id="corty3e-ch13-fig-18" data-layout-width="large" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+</div>
+<div data-block_type="h4" id="corty3e-ch13-p82"><p><span data-block_type="h4-n-ri"><strong>Step 1</strong></span> <strong>Pick a Test</strong></p></div>
+<div data-block_type="txt-ni" id="corty3e-ch13-p83"><p>The first step in hypothesis testing involves picking the correct statistical test. Here, one group of cases (<em>N</em> = 8) is used to examine the linear relationship between two interval/ratio level variables. This calls for a Pearson <em>r.</em></p></div>
+<div data-block_type="h4" id="corty3e-ch13-p84"><p><span data-block_type="h4-n-ri"><strong>Step 2</strong></span> <strong>Check the Assumptions</strong></p></div>
+<div data-block_type="txt-ni" id="corty3e-ch13-p85"><p>The Pearson <em>r</em> has four assumptions that should be met in order to proceed with the test. Three of the assumptions are familiar (random sample, independence of observations, and normality). One assumption, linearity, is new.</p></div>
+<ul data-block_type="bullet" id="corty3e-ch13-list-4">
+<li><div data-block_type="bl-first" id="corty3e-ch13-p86"><p><em>Random sample</em>. This assumption says that the sample in which the correlation is being calculated is a random sample from the population to which the results will be generalized. As with <em>t</em> tests and ANOVAs, the random sample assumption is robust to violation. With the marital satisfaction study, the random sample assumption is not violated. This is one of those rare times there is a random sample. The researcher can generalize the results of the study to the whole city. However, the sample size is small, so replication should be on Dr. Paik’s mind already.</p></div>
+<div data-block_type="page_start" id="corty3e_page_495"><p>495</p></div>
+<div data-type="figure" data-figure-id="corty3e-ch13-fig-19" data-block_type="un_figure" data-layout-align="right" data-layout-width="medium" data-layout-border="true">
+
+<img id="" src="asset/ch13/corty3e_fig13_un02.jpg" data-figure-id="corty3e-ch13-fig-19" data-layout-width="medium" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+<div data-type="figure_text"><span data-type="caption">“<strong>T</strong>om <strong>a</strong>nd <strong>H</strong>arry <strong>d</strong>espise <strong>c</strong>rabby <strong>i</strong>nfants” is the mnemonic for the six steps of hypothesis testing: (1) Pick a <strong>test</strong>, (2) check the <strong>assumptions</strong>, (3) list the <strong>hypotheses</strong>, (4) set the <strong>decision rule</strong>, (5) <strong>calculate</strong> the test statistic, and (6) <strong>interpret</strong> the results.</span></div>
+</div>
 </li>
-<li><div data-block_type="fm-txt-nl" id="corty3e-fm1-p359"><p>The “Review Your Knowledge” exercises at the end of the chapter are just that, a review of the chapter. Do them when you’ve finished the chapter to make sure that you’re comfortable with all of the material in the chapter. Then, do them again before a test as a refresher.</p></div>
+<li><div data-block_type="bl-mid" id="corty3e-ch13-p87"><p><em>Independence of observations</em>. This assumption says each case in the sample is independent of every other case, that the cases don’t influence each other. This assumption is not robust, so a researcher shouldn’t use the Pearson <em>r</em> if it is violated. Even though the cases are couples, the independence of observations assumption is not violated for the marital satisfaction study because each couple was measured individually and was only in the sample once.</p></div>
 </li>
-<li><div data-block_type="fm-txt-nl" id="corty3e-fm1-p360"><p>The questions in the “Apply Your Knowledge” exercises at the end of the chapter have at least two questions on each topic. Each odd-numbered question is followed by an even-numbered question that asks the same thing. Answers for the odd-numbered questions appear in the back of the book. So if you struggle with an odd-numbered question, you can turn there for help. And then, with that guidance, you should be able to work through the even-numbered question on your own.</p></div>
+<li><div data-block_type="bl-mid" id="corty3e-ch13-p88"><p><em>Normality</em>. This assumption says that each of the variables in a Pearson <em>r,</em> both <em>X</em> and <em>Y,</em> is normally distributed in the population. This assumption is robust to violation, especially if the sample size is large. The normality assumption is not violated for the marital satisfaction data. It seems reasonable to assume, in the larger population of the city, that both gender role flexibility and marital satisfaction are normally distributed.</p></div>
 </li>
-<li><div data-block_type="fm-txt-nl" id="corty3e-fm1-p361"><p>The book is divided into four parts. At the end of each, you’ll find a test that covers the techniques from all chapters in that part. Working these problems can be a great way to determine whether you have truly mastered the material.</p></div>
+<li><div data-block_type="bl-last" id="corty3e-ch13-p89"><p><em>Linearity</em>. This assumption is a new one. It says that the relationship between the two variables in the population is a linear one. The linearity assumption is tested by making a scatterplot for the data. If the dots in the scatterplot fall on a curve, as they do in <span data-type="link" data-href="#corty3e-ch13-fig-14">Figure 13.12</span>, then this assumption is violated. If the dots form an irregular shape, like that seen in <span data-type="link" data-href="#corty3e-ch13-fig-15">Figure 13.13</span>, or fall in a straight line, then the linearity assumption is not violated. This assumption is not robust, so if it is violated, the test should not proceed. The scatterplot for Dr. Paik’s data appears in <strong><span data-type="link" data-href="#corty3e-ch13-fig-20">Figure 13.15</span></strong>, which shows the points falling roughly along a straight line that moves up and to the right. The shape is not curvilinear, so the linearity assumption is not violated for the marital satisfaction data.</p></div>
 </li>
-<li><div data-block_type="fm-txt-nl" id="corty3e-fm1-p362"><p>One last thing: In each chapter, you’ll find a boxed feature called “DIY.” I’ve crafted these projects as a way for you to gain experience gathering data and conducting experiments. I encourage you to work the projects on your own, even if your teacher doesn’t assign them.</p></div>
+</ul>
+<div data-type="figure" data-figure-id="corty3e-ch13-fig-20" data-block_type="figure" data-layout-align="center" data-layout-width="medium" data-layout-border="true">
+
+<img id="" src="asset/ch13/corty3e_fig13_15.jpg" data-figure-id="corty3e-ch13-fig-20" data-layout-width="medium" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+<div data-type="figure_text">
+<span data-type="number">Figure 13.18: </span><span data-type="caption"><strong><span data-block_type="fig_num">Figure 13.15</span> Relationship Between Male Gender Role Flexibility and Female Marital Satisfaction</strong> The data points in this scatterplot for the most part fall along a straight line, so the linearity assumption is not violated.</span>
+</div>
+</div>
+<div data-block_type="page_start" id="corty3e_page_496"><p>496</p></div>
+<div data-block_type="txt-ni" id="corty3e-ch13-p90"><p>With no assumptions violated, Dr. Paik can proceed to the next step.</p></div>
+<div data-block_type="h4" id="corty3e-ch13-p91"><p><span data-block_type="h4-n-ri"><strong>Step 3</strong></span> <strong>List the Hypotheses</strong></p></div>
+<div data-block_type="txt-ni" id="corty3e-ch13-p92"><p>The null and alternative hypotheses are statements about populations, not samples. For the population value of a correlation, the Greek letter rho, ρ, will be used as the abbreviation. Though ρ looks like the letter “p,” it is the Greek letter “r” and is pronounced “row.” ρ represents the <em>population</em> value of a correlation, while <em>r</em> is the value of a correlation when it is calculated for the data in a <em>sample.</em> The correlation coefficient Dr. Paik is calculating for the sample of eight cases in the marital satisfaction study is an <em>r.</em> If the correlation coefficient were calculated for all the married couples in the city, it would be a ρ, a population value.</p></div>
+<div data-block_type="txt" id="corty3e-ch13-p93"><p>For a nondirectional or two-tailed test, the null hypothesis states that there is no relationship, in the population, between <em>X</em> and <em>Y.</em> This is expressed by saying that ρ equals zero:</p></div>
+<div data-block_type="eq" id="corty3e-ch13-p94"><p><em>H</em><sub>0</sub>: ρ = 0</p></div>
+<div data-block_type="txt" id="corty3e-ch13-p95"><p>The alternative hypothesis says there is <em>some</em> relationship between <em>X</em> and <em>Y</em> in the population. It might be a strong relationship (near 1.00), a very weak relationship (say, .01), or anywhere between those extremes. It might be a positive relationship or it might be a negative relationship. It just is something other than a zero-relationship. So, the alternative hypothesis is</p></div>
+<div data-block_type="eq" id="corty3e-ch13-p96"><p><em>H</em><sub>1</sub>: ρ ≠ 0</p></div>
+<div data-block_type="txt" id="corty3e-ch13-p97"><p>If a researcher has a directional hypothesis, then he or she would specify what the expected direction of the relationship is before any data are collected. This direction is then stated as the alternative hypothesis. For example, if the researcher expected a direct relationship between <em>X</em> and <em>Y,</em> that is, a correlation coefficient with a positive sign, then the alternative hypothesis would be ρ &gt; 0; for an expected inverse relation, the alternative hypothesis would read ρ &lt; 0. The null hypothesis is then set so that the two hypotheses together are all-inclusive and mutually exclusive. If the alternative hypothesis is ρ &gt; 0, then a null hypothesis of ρ ≤ 0 would satisfy those criteria.</p></div>
+<div data-block_type="h4" id="corty3e-ch13-p98"><p><span data-block_type="h4-n-ri"><strong>Step 4</strong></span> <strong>Set the Decision Rule</strong></p></div>
+<div data-block_type="txt-ni" id="corty3e-ch13-p99"><p>The sampling distribution of <em>r</em> is based on the population value of the correlation being zero. If the null hypothesis is nondirectional, then the sampling distribution of <em>r</em> would look like <strong><span data-type="link" data-href="#corty3e-ch13-fig-21">Figure 13.16</span></strong>. Note the following points about the sampling distribution:</p></div>
+<div data-type="figure" data-figure-id="corty3e-ch13-fig-21" data-block_type="figure" data-layout-align="center" data-layout-width="large" data-layout-border="true">
+
+<img id="" src="asset/ch13/corty3e_fig13_16.jpg" data-figure-id="corty3e-ch13-fig-21" data-layout-width="large" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+<div data-type="figure_text">
+<span data-type="number">Figure 13.19: </span><span data-type="caption"><strong><span data-block_type="fig_num">Figure 13.16</span> Example of a Sampling Distribution of Pearson <em>r</em></strong> Centered at zero, <em>r</em> is symmetrical and ranges from–1.00 to 1.00. Note that the frequencies decrease as <em>r</em> moves away from zero.</span>
+</div>
+</div>
+<ul data-block_type="bullet" id="corty3e-ch13-list-5">
+<li><div data-block_type="bl-first" id="corty3e-ch13-p100"><p>All the values of <em>r</em> fall from –1.00 to 1.00.</p></div>
+</li>
+<li><div data-block_type="bl-mid" id="corty3e-ch13-p101"><p>The distribution is centered on zero, and <em>r</em> = .00 has the highest frequency.</p></div>
+</li>
+<li><div data-block_type="bl-mid" id="corty3e-ch13-p102"><p>The distribution is symmetric. One is just as likely to draw a random sample that has a negative <em>r</em> as a positive <em>r.</em></p></div>
+</li>
+<li><div data-block_type="bl-last" id="corty3e-ch13-p103"><p>As one moves away from <em>r</em> = .00, the frequencies become smaller.</p></div>
+</li>
+</ul>
+<div data-block_type="page_start" id="corty3e_page_497"><p>497</p></div>
+<div data-block_type="txt" id="corty3e-ch13-p104"><p>As with the sampling distribution for <em>t</em> and <em>F,</em> this sampling distribution can be divided into common and rare zones:</p></div>
+<ul data-block_type="bullet" id="corty3e-ch13-list-6">
+<li><div data-block_type="bl-first" id="corty3e-ch13-p105"><p>The common zone is the middle section of the sampling distribution, the section centered around zero where it would be common to find the <em>r</em> value for a sample when the null hypothesis is true.</p></div>
+</li>
+<li><div data-block_type="bl-last" id="corty3e-ch13-p106"><p>The rare zone is the extreme sections of the sampling distribution. If the null hypothesis is true, it is rare to find a sample <em>r</em> value that falls in this section.</p></div>
+</li>
+</ul>
+<div data-block_type="txt" id="corty3e-ch13-p107"><p>The decision rule for the Pearson <em>r</em> is similar to the other tests:</p></div>
+<ul data-block_type="bullet" id="corty3e-ch13-list-6b">
+<li><div data-block_type="bl-mid" id="corty3e-ch13-p108"><p>If the value of <em>r</em> calculated for the sample falls in the rare zone, reject the null hypothesis.</p></div>
+</li>
+<li><div data-block_type="bl-last" id="corty3e-ch13-p109"><p>If the value of <em>r</em> calculated for the sample falls in the common zone, fail to reject the null hypothesis.</p></div>
+</li>
+</ul>
+<div data-block_type="txt" id="corty3e-ch13-p110"><p>The boundary between the common zone and the rare zone is called the critical value of <em>r,</em> abbreviated <em>r<sub>cv</sub>.</em> Most commonly, the rare zone is set to be 5% of the sampling distribution. Phrased in the language of statistics, this means alpha (α) is set at .05, giving a 5% chance of a Type I error.</p></div>
+<div data-block_type="txt" id="corty3e-ch13-p111"><p>Besides deciding what alpha level to use, a researcher has to decide whether to do a one-tailed or two-tailed test. With a one-tailed test, the hypotheses are directional, so the entire rare zone is placed in one tail of the sampling distribution. A directional alternative hypothesis makes a statement about the direction of ρ, such as ρ &gt; 0 or ρ &lt; 0. Directional hypotheses need to be stated before data are collected.</p></div>
+<div data-block_type="txt" id="corty3e-ch13-p112"><p>With a two-tailed test, the hypotheses are nondirectional, so the rare zone is split evenly between the two tails. Two-tailed tests are more common. For example, the hypotheses for the marital satisfaction study are nondirectional, with the alternative hypothesis simply stating ρ ≠ 0. The hypotheses are nondirectional because Dr. Paik hasn’t predicted whether higher gender role flexibility scores or lower gender role flexibility scores are associated with more marital satisfaction.</p></div>
+<div data-block_type="txt" id="corty3e-ch13-p113"><p>Two-tailed tests with α = .05 are the “default” option for the Pearson correlation coefficient. This is what Dr. Paik plans to use. When there is a two-tailed test and α = .05, the middle 95% of the sampling distribution is the common zone and the rare zone is made up of the 2.5% on the far left of the sampling distribution <em>and</em> the 2.5% on the far right. The sampling distribution for the marital satisfaction study, with the rare and common zones marked, is shown in <strong><span data-type="link" data-href="#corty3e-ch13-fig-22">Figure 13.17</span></strong>.</p></div>
+<div data-type="figure" data-figure-id="corty3e-ch13-fig-22" data-block_type="figure" data-layout-align="center" data-layout-width="large" data-layout-border="true">
+
+<img id="" src="asset/ch13/corty3e_fig13_17.jpg" data-figure-id="corty3e-ch13-fig-22" data-layout-width="large" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+<div data-type="figure_text">
+<span data-type="number">Figure 13.20: </span><span data-type="caption"><strong><span data-block_type="fig_num">Figure 13.17</span> Common Zone and Rare Zones for the Sampling Distribution of <em>r</em> for Dr. Paik’s Marital Satisfaction Study</strong> The critical value of <em>r</em> is ±.707. If the observed value of <em>r</em> falls in the common zone of the sampling distribution, one will fail to reject the null hypothesis. If <em>r</em> falls on either of the lines or in either rare zone, reject the null hypothesis.</span>
+</div>
+</div>
+<div data-block_type="page_start" id="corty3e_page_498"><p>498</p></div>
+<div data-block_type="txt" id="corty3e-ch13-p114"><p>Critical values of <em>r</em> are listed in <span data-type="link" data-href="corty3e_app1_1.html#corty3e-app1-fig-22">Appendix Table 6</span>, a portion of which is in <strong><span data-type="link" data-href="#corty3e-ch13-fig-23">Table 13.4</span></strong>. Finding the critical value of <em>r</em> follows the same process as finding a critical value of <em>t:</em></p></div>
+<div data-type="figure" data-figure-id="corty3e-ch13-fig-23" data-block_type="table" data-layout-align="center" data-layout-width="large" data-layout-border="true">
+
+<img id="" src="asset/ch13/corty3e_table13_04.jpg" data-figure-id="corty3e-ch13-fig-23" data-layout-width="large" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+</div>
+<ul data-block_type="bullet" id="corty3e-ch13-list-7">
+<li><div data-block_type="bl-first" id="corty3e-ch13-p115"><p>First, select a column to use based on whether it is a one-tailed test or a two-tailed test <em>and</em> what the level of alpha is.</p></div>
+<div data-block_type="page_start" id="corty3e_page_499"><p>499</p></div>
+</li>
+<li><div data-block_type="bl-last" id="corty3e-ch13-p116"><p>Then, find the row that contains <em>r<sub>cv</sub></em> by selecting the row with the correct degrees of freedom. (If there is no row for the degrees of freedom one needs, follow <em>The Price Is Right</em> rule and use the row for the degrees of freedom that is closest without going over.)</p></div>
+</li>
+</ul>
+<div data-block_type="txt-ni" id="corty3e-ch13-p117"><p><span data-type="link" data-href="#corty3e-ch13-bx6-1">Equation 13.1</span> shows how to calculate degrees of freedom for a Pearson correlation coefficient.</p></div>
+<div data-type="box" data-block_type="eq-t" id="corty3e-ch13-bx6-1"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="corty3e-ch13-bx6-1"><span data-block_type="sec_num">Equation 13.1</span> <span data-block_type="sec_title">Formula for Calculating Degrees of Freedom (<em>df</em>) for a Pearson Correlation Coefficient</span>
+</h3>
+
+<div data-block_type="eq" id="corty3e-ch13-p118"><p><em>df</em> = <em>N</em> – 2</p></div>
+<div data-block_type="eq-txt-ni" id="corty3e-ch13-p119"><p>where <em>df</em> = degrees of freedom</p></div>
+<div data-block_type="eq-unl" id="corty3e-ch13-p120"><p><em>N</em> = number of cases in the sample</p></div>
+</div></div>
+<div data-block_type="txt" id="corty3e-ch13-p121"><p>For the marital satisfaction study, there are eight cases in the sample, so <em>N</em> = 8. Applying <span data-type="link" data-href="#corty3e-ch13-bx6-1">Equation 13.1</span>, Dr. Paik determines <em>df</em> = 6:</p></div>
+<div data-block_type="eq" id="corty3e-ch13-p122"><p><em>df</em> = <em>N –</em>2</p></div>
+<div data-block_type="eq" id="corty3e-ch13-p123"><p>= 8 –2</p></div>
+<div data-block_type="eq" id="corty3e-ch13-p124"><p>= 6</p></div>
+<div data-block_type="txt-ni" id="corty3e-ch13-p125"><p>Looking in the table of critical values of <em>r,</em> the intersection of the row where <em>df</em> = 6 and the column where α = .05, two-tailed, we determine that the critical value of <em>r</em> is .707. There is no sign attached to this critical value. Dr. Paik has opted for a two-tailed test and the sampling distribution is symmetric, so <em>r<sub>cv</sub></em> = ±.707. The decision rule can now be written for the marital satisfaction study:</p></div>
+<ul data-block_type="bullet" id="corty3e-ch13-list-8">
+<li><div data-block_type="bl-first" id="corty3e-ch13-p126"><p>If <em>r</em> ≤ –.707 <em>or</em> if <em>r</em> ≥ .707, reject <em>H</em><sub>0</sub>.</p></div>
+</li>
+<li><div data-block_type="bl-last" id="corty3e-ch13-p127"><p>If –.707 &lt; <em>r</em> &lt; .707, fail to reject <em>H</em><sub>0</sub>.</p></div>
+</li>
+</ul>
+<div data-block_type="h4" id="corty3e-ch13-p128"><p><span data-block_type="h4-n-ri"><strong>Step 5</strong></span> <strong>Calculate the Test Statistic</strong></p></div>
+<div data-block_type="txt-ni" id="corty3e-ch13-p129"><p><span data-type="link" data-href="#corty3e-ch13-bx6-2">Equation 13.2</span> is the computational formula for calculating the Pearson <em>r.</em> Computational formulas are mathematically easier than definitional formulas. <span data-type="link" data-href="#corty3e-ch13-bx6-2">Equation 13.2</span> may look complex, but it isn’t difficult when broken down into chunks.</p></div>
+<div data-type="box" data-block_type="eq-t" id="corty3e-ch13-bx6-2"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="corty3e-ch13-bx6-2"><span data-block_type="sec_num">Equation 13.2</span> <span data-block_type="sec_title">Formula for Calculating <em>r</em>, the Pearson Correlation Coefficient</span>
+</h3>
+
+<div data-block_type="equation" id="corty3e-ch13-eqn-1"><p>
+<img id="" src="asset/ch13/corty3e_eqn13_449_01.jpg" data-figure-id="" data-layout-width="" data-mmtype="" alt="image"></p></div>
+<div data-block_type="eq-txt-ni" id="corty3e-ch13-p130"><p>where <em>r</em> = Pearson correlation coefficient</p></div>
+<div data-block_type="eq-unl" id="corty3e-ch13-p131"><p><em>X</em> = a case’s score on variable <em>X</em></p></div>
+<div data-block_type="eq-unl" id="corty3e-ch13-p132"><p><em>M<sub>X</sub></em> = mean score on variable <em>X</em></p></div>
+<div data-block_type="eq-unl" id="corty3e-ch13-p133"><p><em>Y</em> = a case’s score on variable <em>Y</em></p></div>
+<div data-block_type="eq-unl" id="corty3e-ch13-p134"><p><em>M<sub>Y</sub></em> = mean score on variable <em>Y</em></p></div>
+<div data-block_type="eq-unl" id="corty3e-ch13-p135"><p><em>SS<sub>X</sub></em> = sum of the squared deviation scores for variable <em>X</em></p></div>
+<div data-block_type="eq-unl" id="corty3e-ch13-p136"><p><em>SS<sub>Y</sub></em> = sum of the squared deviation scores for variable <em>Y</em></p></div>
+</div></div>
+<div data-block_type="page_start" id="corty3e_page_500"><p>500</p></div>
+<div data-block_type="txt" id="corty3e-ch13-p137"><p>The easiest way to complete <span data-type="link" data-href="#corty3e-ch13-bx6-2">Equation 13.2</span> is in three pieces: one for the numerator, one for the denominator, and one to finish the division.</p></div>
+<div data-block_type="sl" id="corty3e-ch13-p138"><p><span data-block_type="h5-ri"><strong>The Numerator.</strong></span> There are four steps in calculating the numerator:</p></div>
+<ol data-block_type="numbered" id="corty3e-ch13-list-9">
+<li><div data-block_type="nl-first" id="corty3e-ch13-p139"><p>Take each <em>X</em> score and subtract the mean of the <em>X</em> scores from it. The resulting values are the <em>X</em> deviation scores.</p></div>
+</li>
+<li><div data-block_type="nl-mid" id="corty3e-ch13-p140"><p>Take each <em>Y</em> score and subtract the mean of the <em>Y</em> scores from it. The resulting values are the <em>Y</em> deviation scores.</p></div>
+</li>
+<li><div data-block_type="nl-mid" id="corty3e-ch13-p141"><p>For each case, multiply the two deviation scores together.</p></div>
+</li>
+<li><div data-block_type="nl-last" id="corty3e-ch13-p142"><p>Add up all the multiplied pairs of deviation scores. This sum is the numerator in <span data-type="link" data-href="#corty3e-ch13-bx6-2">Equation 13.2</span>.</p></div>
 </li>
 </ol>
-<div data-block_type="nl" id="corty3e-fm1-p363"><p>I hope you enjoy this book half as much as I enjoyed writing it. If you have any comments about it that you’d like to share with me, please write to me at <span data-type="link" data-href="mailto:ewc2@psu.edu">ewc2@psu.edu</span>.</p></div>
-<div data-type="figure" data-figure-id="corty3e-fm1-fig-8" data-block_type="un_figure" data-layout-align="right" data-layout-width="large" data-layout-border="true">
+<div data-block_type="sl" id="corty3e-ch13-p143"><p><span data-block_type="h5-ri"><strong>The Denominator.</strong></span> There are six steps in calculating the denominator:</p></div>
+<ol data-block_type="numbered" id="corty3e-ch13-list-10">
+<li><div data-block_type="nl-first" id="corty3e-ch13-p144"><p>Take each <em>X</em> deviation score and square it.</p></div>
+</li>
+<li><div data-block_type="nl-mid" id="corty3e-ch13-p145"><p>Add up all the squared <em>X</em> deviation scores. This results in the sum of squares for <em>X,</em> abbreviated <em>SS</em><em><sub>X</sub></em>.</p></div>
+</li>
+<li><div data-block_type="nl-mid" id="corty3e-ch13-p146"><p>Take each <em>Y</em> deviation score and square it.</p></div>
+</li>
+<li><div data-block_type="nl-mid" id="corty3e-ch13-p147"><p>Add up all the squared <em>Y</em> deviation scores. This results in the sum of squares for <em>Y,</em> abbreviated as <em>SS</em><em><sub>Y</sub></em>.</p></div>
+</li>
+<li><div data-block_type="nl-mid" id="corty3e-ch13-p148"><p>Multiply <em>SS</em><em><sub>X</sub></em> from Step 2 by <em>SS</em><em><sub>Y</sub></em> from Step 4.</p></div>
+</li>
+<li><div data-block_type="nl-last" id="corty3e-ch13-p149"><p>The square root of the product found in Step 5 is the denominator in <span data-type="link" data-href="#corty3e-ch13-bx6-2">Equation 13.2</span>.</p></div>
+</li>
+</ol>
+<div data-block_type="sl" id="corty3e-ch13-p150"><p><span data-block_type="h5-ri"><strong>Final Calculations.</strong></span> The last step in calculating Pearson <em>r</em> is to take the numerator and divide it by the denominator, yielding the <em>r</em> value.</p></div>
+<div data-block_type="sl" id="corty3e-ch13-p151"><p><span data-block_type="h5-ri"><strong>Doing the Calculations.</strong></span> The marital satisfaction data are re-presented in <strong><span data-type="link" data-href="#corty3e-ch13-fig-25">Table 13.5</span></strong>. The first two columns contain the <em>X</em> value and the <em>Y</em> value for each case (the same information as in <span data-type="link" data-href="#corty3e-ch13-fig-18">Table 13.3</span>). But, <span data-type="link" data-href="#corty3e-ch13-fig-25">Table 13.5</span> contains five new columns (numbered as columns 3–7), each of which will be explained below as it is used.</p></div>
+<div data-type="figure" data-figure-id="corty3e-ch13-fig-25" data-block_type="table" data-layout-align="center" data-layout-width="large" data-layout-border="true">
 
-<img id="" src="asset/fm/corty3e_fm_un03.jpg" data-figure-id="corty3e-fm1-fig-8" data-layout-width="large" data-mmtype="image" data-mmsrc="images" data-attr="" alt="image">
+<img id="" src="asset/ch13/corty3e_table13_05.jpg" data-figure-id="corty3e-ch13-fig-25" data-layout-width="large" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
 </div>
-<div data-block_type="page_start" id="corty3e_page_xviii"><p>xviii</p></div>
+<div data-block_type="page_start" id="corty3e_page_501"><p>501</p></div>
+<div data-block_type="txt" id="corty3e-ch13-p152"><p>To find Pearson <em>r,</em> calculate the numerator first:</p></div>
+<ol data-block_type="numbered" id="corty3e-ch13-list-11">
+<li><div data-block_type="nl-first" id="corty3e-ch13-p153"><p>Column 3, labeled “<em>X</em> –<em>M<sub>X</sub>,</em>” is used to calculate deviation scores for the <em>X</em> variable. It is completed by subtracting the mean for the <em>X</em> scores, which is 25.00 here, from each <em>X</em> score. The first case has an <em>X</em> score of 8.00, so the deviation score is 8.00 – 25.00 = –17.00. To complete column 3, repeat this step for each of the <em>X</em> scores.</p></div>
+</li>
+<li><div data-block_type="nl-mid" id="corty3e-ch13-p154"><p>Column 4, labeled “<em>Y</em> – <em>M<sub>Y</sub>,</em>” calculates deviation scores for the <em>Y</em> variable. The same action is taken here for each <em>Y</em> value that was done for each <em>X</em> value in column 3. That is, the mean for <em>Y</em> is subtracted from each <em>Y</em> score. For example, the first case has a <em>Y</em> score of 0.8 and <em>M<sub>Y</sub></em> is 2.00, so the deviation score is 0.8 – 2.00 = –1.20. To complete column 4, repeat this step for each of the <em>Y</em> scores.</p></div>
+</li>
+<li><div data-block_type="nl-mid" id="corty3e-ch13-p155"><p>In column 5, labeled “(<em>X –</em> <em>M<sub>X</sub></em>)(<em>Y</em> – <em>M<sub>Y</sub></em>),” the two deviation scores for each case are multiplied together. For the first case, which is in the first row, –17.00 × –1.20 = 20.40. For each row, column 3 is multiplied by column 4.</p></div>
+</li>
+<li><div data-block_type="nl-last" id="corty3e-ch13-p156"><p>Finally, add up all the deviation scores that were multiplied together in column 5. At the bottom of column 5, it says Σ = 52.70. That sum of the multiplied-together deviation scores is the numerator Dr. Paik will use to calculate <em>r.</em></p></div>
+</li>
+</ol>
+<div data-block_type="txt" id="corty3e-ch13-p157"><p>The next step to find Pearson <em>r</em> is calculating the denominator:</p></div>
+<ol data-block_type="numbered" id="corty3e-ch13-list-12">
+<li><div data-block_type="nl-first" id="corty3e-ch13-p158"><p>In column 6, labeled “(<em>X</em> – <em>M<sub>X</sub></em>)<sup>2</sup>,” square the <em>X</em> deviation scores from column 3. The <em>X</em> deviation score for the first case was –17.00, so –17.00<sup>2</sup> = 289.00. Repeat this step for each of the scores in column 3.</p></div>
+</li>
+<li><div data-block_type="nl-mid" id="corty3e-ch13-p159"><p>Once all the <em>X</em> deviation scores have been squared, add them all up at the bottom of column 6. <em>SS<sub>X</sub></em> = 924.00.</p></div>
+</li>
+<li><div data-block_type="nl-mid" id="corty3e-ch13-p160"><p>In column 7, labeled “(<em>Y</em> – <em>M<sub>Y</sub></em>)<sup>2</sup>,” square the <em>Y</em> deviation scores from column 4. For example, for the first case, –1.20<sup>2</sup> = 1.44. Repeat this step for each of the scores in column 4.</p></div>
+</li>
+<li><div data-block_type="nl-mid" id="corty3e-ch13-p161"><p>Next, add up the squared <em>Y</em> deviation scores and write the value at the bottom of column 7. <em>SS<sub>Y</sub></em> = 5.18.</p></div>
+</li>
+<li><div data-block_type="nl-mid" id="corty3e-ch13-p162"><p>Then, multiply together the two sums of squared deviation scores, 924.00 (Step 2) and 5.18 (Step 4): 924.00 × 5.18 = 4,786.32.</p></div>
+</li>
+<li><div data-block_type="nl-last" id="corty3e-ch13-p163"><p>Next, to find the denominator, take the square root of the product that was calculated in Step 5:<img id="" src="asset/ch13/corty3e_ineqn13_501_01.jpg" data-figure-id="" data-layout-width="" data-mmtype="" alt="image">.</p></div>
+</li>
+</ol>
+<div data-block_type="txt" id="corty3e-ch13-p164"><p>Now that the numerator of <span data-type="link" data-href="#corty3e-ch13-bx6-2">Equation 13.2</span> (52.70) and the denominator of <span data-type="link" data-href="#corty3e-ch13-bx6-2">Equation 13.2</span> (69.18) are known, Dr. Paik can calculate <em>r:</em></p></div>
+<div data-block_type="equation" id="corty3e-ch13-eqn-2"><p>
+<img id="" src="asset/ch13/corty3e_eqn13_501_01.jpg" data-figure-id="" data-layout-width="" data-mmtype="" alt="image"></p></div>
+<div data-block_type="page_start" id="corty3e_page_502"><p>502</p></div>
+<div data-block_type="txt" id="corty3e-ch13-p165"><p>Dr. Paik now knows that <em>r</em> = .76. His next task is to interpret this correlation. We’ll turn to that after one more experience going through the first five steps of hypothesis testing for a Pearson <em>r.</em></p></div>
+<div data-type="box" data-block_type="bx-1-h" id="corty3e-ch13-bx1-3"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="corty3e-ch13-bx1-3">A Common Question</h3>
+<div data-block_type="bx1-que" id="corty3e-ch13-p166"><p><strong>Q</strong> Why is <em>r</em> reported as .76, not 0.76?</p></div>
+<div data-block_type="bx1-que" id="corty3e-ch13-p167"><p><strong>A</strong> APA format says not to use a zero before the decimal point for correlations.</p></div>
+</div></div>
+<div data-type="box" data-block_type="sr-exp-n" id="corty3e-ch13-bx3-1"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="corty3e-ch13-bx3-1">Worked Example 13.1</h3>
+<div data-block_type="sr-ex-txt-ni" id="corty3e-ch13-p168"><p>Imagine that a developmental psychologist, Dr. Solomon, wanted to determine if there were a relationship between the age at which children started to walk and their intelligence at age 16. She went to a pediatrician’s office and randomly selected 10 charts of 16-year-old girls. In the charts, she found the age (in months) at which each girl started walking and then she gave each girl a standard IQ test.</p></div>
+<div data-block_type="sr-ex-txt" id="corty3e-ch13-p169"><p>In this instance, there is a clear order to the variables—age of walking comes first and IQ is measured later. This is an example of a relationship test with a predictor variable (age) and an outcome variable (IQ). When the variables can be classified as predictor and outcome, the convention is to make the predictor variable <em>X</em> and the outcome variable <em>Y.</em> That is how the data are shown in <strong><span data-type="link" data-href="#corty3e-ch13-fig-27">Table 13.6</span></strong>, with age of walking as <em>X</em> and IQ as <em>Y.</em> Remember, correlations measure association. The fact that one variable is used to predict the other should not be taken to mean that the one causes the other.</p></div>
+<div data-type="figure" data-figure-id="corty3e-ch13-fig-27" data-block_type="table" data-layout-align="center" data-layout-width="large" data-layout-border="true">
+
+<img id="" src="asset/ch13/corty3e_table13_06.jpg" data-figure-id="corty3e-ch13-fig-27" data-layout-width="large" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+</div>
+<div data-block_type="page_start" id="corty3e_page_503"><p>503</p></div>
+<div data-block_type="sr_exp_h4_txt" id="corty3e-ch13-p170"><p><span data-block_type="h4-n-ri"><strong>Step 1</strong></span> <span data-block_type="sr-exp-h4-t-ri"><strong>Pick a Test.</strong></span> There is one group of cases in which two interval/ratio level variables were measured in order to see if a relationship exists between them. This calls for a Pearson <em>r.</em></p></div>
+<div data-block_type="sr_exp_h4_txt" id="corty3e-ch13-p171"><p><span data-block_type="h4-n-ri"><strong>Step 2</strong></span> <span data-block_type="sr-exp-h4-t-ri"><strong>Check the Assumptions.</strong></span></p></div>
+<ul data-block_type="bullet" id="corty3e-ch13-list-13">
+<li><div data-block_type="sr-exp-bl-first" id="corty3e-ch13-p172"><p><em>Random sample</em>. The random sample assumption is not violated. The sample is from one pediatric practice, though, so the results shouldn’t be generalized beyond that practice.</p></div>
+</li>
+<li><div data-block_type="sr-exp-bl-mid" id="corty3e-ch13-p173"><p><em>Independence of observations</em>. Each case is in the sample only once. There’s no reason to think that the cases influence each other in terms of age of first walking or IQ. The independence of observations assumption is not violated.</p></div>
+</li>
+<li><div data-block_type="sr-exp-bl-mid" id="corty3e-ch13-p174"><p><em>Normality</em>. Researchers consider IQ to be normally distributed. It seems reasonable to consider age at first walking normally distributed as well. This assumption is not violated.</p></div>
+</li>
+<li><div data-block_type="sr-exp-bl-last" id="corty3e-ch13-p175"><p><em>Linearity</em>. There is no obvious curvilinear relationship in the scatterplot (<strong><span data-type="link" data-href="#corty3e-ch13-fig-28">Figure 13.18</span></strong>), so this assumption is not violated.</p></div>
+<div data-type="figure" data-figure-id="corty3e-ch13-fig-28" data-block_type="figure" data-layout-align="center" data-layout-width="medium" data-layout-border="true">
+
+<img id="" src="asset/ch13/corty3e_fig13_18.jpg" data-figure-id="corty3e-ch13-fig-28" data-layout-width="medium" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+<div data-type="figure_text">
+<span data-type="number">Figure 13.24: </span><span data-type="caption"><strong><span data-block_type="fig_num">Figure 13.18</span> Dr. Solomon’s Data Showing the Relationship Between Age of First Walking and Intelligence at Age 16</strong> There is no obvious curvilinear relationship in this scatterplot, so the linearity assumption is not violated.</span>
+</div>
+</div>
+</li>
+</ul>
+<div data-block_type="sr_exp_txt_ni" id="corty3e-ch13-p176"><p>With no assumptions violated, Dr. Solomon can proceed with the Pearson <em>r.</em></p></div>
+<div data-block_type="sr_exp_h4_txt" id="corty3e-ch13-p177"><p><span data-block_type="h4-n-ri"><strong>Step 3</strong></span> <span data-block_type="sr-exp-h4-t-ri"><strong>List the Hypotheses.</strong></span> Dr. Solomon has not made a prediction about the direction of the relationship, so her hypotheses are nondirectional or two-tailed:</p></div>
+<div data-block_type="sr-exp-eq" id="corty3e-ch13-p178"><p><em>H</em><sub>0</sub>: ρ = 0</p></div>
+<div data-block_type="sr-exp-eq" id="corty3e-ch13-p179"><p><em>H</em><sub>1</sub>: ρ ≠ 0</p></div>
+<div data-block_type="sr_exp_h4_txt" id="corty3e-ch13-p180"><p><span data-block_type="h4-n-ri"><strong>Step 4</strong></span> <span data-block_type="sr-exp-h4-t-ri"><strong>Set the Decision Rule.</strong></span> With <em>N</em> = 10, the degrees of freedom are calculated with <span data-type="link" data-href="#corty3e-ch13-bx6-1">Equation 13.1</span>:</p></div>
+<div data-block_type="sr-exp-eq" id="corty3e-ch13-p181"><p><em>df</em> = <em>N</em>– 2</p></div>
+<div data-block_type="sr-exp-eq" id="corty3e-ch13-p182"><p>= 10 – 2</p></div>
+<div data-block_type="sr-exp-eq" id="corty3e-ch13-p183"><p>= 8</p></div>
+<div data-block_type="page_start" id="corty3e_page_504"><p>504</p></div>
+<div data-block_type="sr_exp_txt" id="corty3e-ch13-p184"><p>Dr. Solomon is examining whether there is a relationship between age of first walking and IQ, either positive or negative, so the test is two-tailed. She’s willing to have a 5% chance of a Type I error, so α = .05. Next, she consults the table of critical values of <em>r,</em> <span data-type="link" data-href="corty3e_app1_1.html#corty3e-app1-fig-22">Appendix Table 6</span>. The intersection of the row with 8 degrees of freedom and the column for α = .05, two-tailed gives <em>r<sub>cv</sub></em> = ±.632. The decision rule is:</p></div>
+<ul data-block_type="bullet" id="corty3e-ch13-list-14">
+<li><div data-block_type="sr-exp-bl-first" id="corty3e-ch13-p185"><p>If <em>r</em> ≤ –.632 <em>or</em> if <em>r</em> ≥ .632, reject <em>H</em><sub>0</sub>.</p></div>
+</li>
+<li><div data-block_type="sr-exp-bl-last" id="corty3e-ch13-p186"><p>If –.632 &lt; <em>r</em> &lt; .632, fail to reject <em>H</em><sub>0</sub>.</p></div>
+</li>
+</ul>
+<div data-block_type="sr_exp_txt_ni" id="corty3e-ch13-p187"><p><strong><span data-type="link" data-href="#corty3e-ch13-fig-29">Figure 13.19</span></strong> shows how Dr. Solomon sketched the decision rule as a sampling distribution of <em>r,</em> marking the rare and common zones.</p></div>
+<div data-type="figure" data-figure-id="corty3e-ch13-fig-29" data-block_type="figure" data-layout-align="center" data-layout-width="medium" data-layout-border="true">
+
+<img id="" src="asset/ch13/corty3e_fig13_19.jpg" data-figure-id="corty3e-ch13-fig-29" data-layout-width="medium" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+<div data-type="figure_text">
+<span data-type="number">Figure 13.25: </span><span data-type="caption"><strong><span data-block_type="fig_num">Figure 13.19</span> Decision Rule for Dr. Solomon’s IQ/Walking Study</strong> This sketch of a sampling distribution of <em>r</em> uses the critical value of <em>r,</em> ±.632, to mark the rare and common zones.</span>
+</div>
+</div>
+<div data-block_type="sr_exp_h4_txt" id="corty3e-ch13-p188"><p><span data-block_type="h4-n-ri"><strong>Step 5</strong></span> <span data-block_type="sr-exp-h4-t-ri"><strong>Calculate the Test Statistic.</strong></span> <strong><span data-type="link" data-href="#corty3e-ch13-fig-30">Table 13.7</span></strong> shows the deviation scores for age of first walking (<em>X</em>) and IQ (<em>Y</em>), the deviation scores that were multiplied together, and the squared deviation scores.</p></div>
+<div data-type="figure" data-figure-id="corty3e-ch13-fig-30" data-block_type="table" data-layout-align="center" data-layout-width="large" data-layout-border="true">
+
+<img id="" src="asset/ch13/corty3e_table13_07.jpg" data-figure-id="corty3e-ch13-fig-30" data-layout-width="large" data-mmtype="image" data-mmsrc="" data-attr="" alt="image">
+</div>
+<ul data-block_type="bullet" id="corty3e-ch13-list-15">
+<li><div data-block_type="sr-exp-bl-first" id="corty3e-ch13-p189"><p>For the numerator in <span data-type="link" data-href="#corty3e-ch13-bx6-2">Equation 13.2</span>, add up the deviation scores that were multiplied together. The bottom of column 5 gives the result: –120.00.</p></div>
+</li>
+<li><div data-block_type="sr-exp-bl-mid" id="corty3e-ch13-p190"><p>The sums of the squared deviation scores are 82.50 (<em>SS<sub>X</sub></em> in column 6) and 890.00 (<em>SS<sub>Y</sub></em> in column 7):</p></div>
+</li>
+<li><div data-block_type="sr-exp-bl-mid" id="corty3e-ch13-p191"><p>Multiply these together: 82.50 × 890.00 = 73,425.00.</p></div>
+</li>
+<li><div data-block_type="sr-exp-bl-last" id="corty3e-ch13-p192"><p>Take the square root of this product to find the denominator: <img id="" src="asset/ch13/corty3e_ineqn13_504_01.jpg" data-figure-id="" data-layout-width="" data-mmtype="" alt="image">.</p></div>
+</li>
+</ul>
+<div data-block_type="page_start" id="corty3e_page_505"><p>505</p></div>
+<div data-block_type="sr_exp_txt" id="corty3e-ch13-p193"><p>Now that the numerator (–120.00) and the denominator (270.97) are known, the calculation of Pearson <em>r</em> is straightforward:</p></div>
+<div data-block_type="equation" id="corty3e-ch13-eqn-3"><p>
+<img id="" src="asset/ch13/corty3e_eqn13_505_01.jpg" data-figure-id="" data-layout-width="" data-mmtype="" alt="image"></p></div>
+<div data-block_type="sr_exp_txt_ni" id="corty3e-ch13-p194"><p>Dr. Solomon now knows that <em>r</em> = –.44. Her next step will be to interpret the results.</p></div>
+</div></div>
+<div data-type="box" data-block_type="sr-h" id="corty3e-ch13-bx2-2"><div data-type="box_inner">
+<h3 data-type="title" data-for_type="box" data-title-for="corty3e-ch13-bx2-2">Practice Problems 13.2</h3>
+<div data-block_type="sr-h1" id="corty3e-ch13-p195"><p><strong>Apply Your Knowledge</strong></p></div>
+<div data-block_type="sr-que-nl" id="corty3e-ch13-p196"><p><span data-block_type="question_num">13.08</span> Read each scenario and decide if the data can be analyzed with a Pearson <em>r.</em></p></div>
+<ol data-block_type="loweralpha" id="corty3e-ch13-list-16">
+<li><div data-block_type="sr_que_nl_lvl2" id="corty3e-ch13-p197"><p>A researcher from a facial tissue manufacturer rates the severity of people’s colds on a 15-point interval scale and measures how many tissues they use in a 24-hour period. She wants to determine if there is a relationship between the severity of a cold and tissue use.</p></div>
+</li>
+<li><div data-block_type="sr_que_nl_lvl2" id="corty3e-ch13-p198"><p>A high school counselor obtains each student’s class rank and IQ score. She wants to know if a relationship exists between class rank and IQ.</p></div>
+</li>
+<li><div data-block_type="sr_que_nl_lvl2" id="corty3e-ch13-p199"><p>People who use Apple computers and those who use Windows-based computers are measured on an interval level of creativity. Is there a relationship between the type of computer a person uses and his or her level of creativity?</p></div>
+</li>
+</ol>
+<div data-block_type="sr-que-nl" id="corty3e-ch13-p200"><p><span data-block_type="question_num">13.09</span> A dietician goes to a mall on a Sunday afternoon and finds people shopping by themselves who are willing to complete questionnaires about weekly food consumption and weekly exercise. She wants to see if any relationship exists between caloric consumption and caloric expenditure. She is planning to use a Pearson <em>r.</em> (a) Check as many assumptions as possible and (b) decide if she can proceed.</p></div>
+<div data-block_type="sr-que-nl" id="corty3e-ch13-p201"><p><span data-block_type="question_num">13.10</span> A cosmetician develops a theory that the longer a man’s hair is, the more tattoos and piercings he is likely to have. She obtains a sample of 37 men, measures how long their hair is in millimeters, and counts how many tattoos and piercings each has.</p></div>
+<ol data-block_type="loweralpha" id="corty3e-ch13-list-17">
+<li><div data-block_type="sr_que_nl_lvl2" id="corty3e-ch13-p202"><p>List her hypotheses.</p></div>
+</li>
+<li><div data-block_type="sr_que_nl_lvl2" id="corty3e-ch13-p203"><p>With α = .05, list her decision rules.</p></div>
+</li>
+</ol>
+<div data-block_type="sr-que-nl" id="corty3e-ch13-p204"><p><span data-block_type="question_num">13.11</span> Given the following values for <em>X</em> and <em>Y,</em> complete the table:</p></div>
+<div data-type="table" data-block_type="un_table" id="corty3e-ch13-table2" data-layout-align="center" data-layout-width="large" data-layout-border="true" data-mmsrc="" data-attr=""><table><tbody>
+<tr>
+<td></td>
+<td><span data-block_type="TBN-STRHD"><strong>Col. 1</strong></span></td>
+<td><span data-block_type="TBN-STRHD"><strong>Col. 2</strong></span></td>
+<td><span data-block_type="TBN-STRHD"><strong>Col. 3</strong></span></td>
+<td><span data-block_type="TBN-STRHD"><strong>Col. 4</strong></span></td>
+<td><span data-block_type="TBN-STRHD"><strong>Col. 5</strong></span></td>
+<td><span data-block_type="TBN-STRHD"><strong>Col. 6</strong></span></td>
+<td><span data-block_type="TBN-STRHD"><strong>Col. 7</strong></span></td>
+</tr>
+<tr>
+<td></td>
+<td><span data-block_type="tbn-colhd"><strong><em>X</em></strong></span></td>
+<td><span data-block_type="tbn-colhd"><strong><em>Y</em></strong></span></td>
+<td><span data-block_type="tbn-colhd"><strong><em>X</em>– <em>M</em><sub>X</sub></strong></span></td>
+<td><span data-block_type="tbn-colhd"><strong><em>Y</em>– <em>M</em><sub>Y</sub></strong></span></td>
+<td><span data-block_type="tbn-colhd"><strong>(<em>X – M</em><sub>X</sub>)(<em>Y – M</em><sub>Y</sub>)</strong></span></td>
+<td><span data-block_type="tbn-colhd"><strong>(<em>X – M<sub>X</sub></em>)<sup>2 </sup></strong></span></td>
+<td><span data-block_type="tbn-colhd"><strong>(<em>Y</em> – <em>M<sub>Y</sub></em>)<sup>2</sup></strong></span></td>
+</tr>
+<tr>
+<td></td>
+<td><span data-block_type="tbn-txt">10</span></td>
+<td><span data-block_type="tbn-txt">20</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><span data-block_type="tbn-txt">14</span></td>
+<td><span data-block_type="tbn-txt">24</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><span data-block_type="tbn-txt">9</span></td>
+<td><span data-block_type="tbn-txt">37</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><span data-block_type="tbn-txt"><em>M</em></span></td>
+<td><span data-block_type="tbn-txt">11.00</span></td>
+<td><span data-block_type="tbn-txt">27.00</span></td>
+<td></td>
+<td></td>
+<td><span data-block_type="tbn-txt">Σ = </span></td>
+<td><span data-block_type="tbn-txt">Σ = <em>SS<sub>X</sub></em> = </span></td>
+<td><span data-block_type="tbn-txt">Σ = <em>SS</em><sub>Y</sub> = </span></td>
+</tr>
+</tbody></table></div>
+<div data-block_type="sr-que-nl" id="corty3e-ch13-p205"><p><span data-block_type="question_num">13.12</span> Given Σ[(<em>X</em> – <em>M<sub>X</sub></em>)(<em>Y</em> – <em>M<sub>Y</sub></em>)] = 80.00, <em>SS<sub>X</sub> =</em> 200.00, and <em>SS<sub>Y</sub> =</em> 90.00, what is <em>r</em> ?</p></div>
+</div></div>
 </div>
 <!-- #x-digfir-subsection-insertion-point --></div><!-- /#manuscript -->
 <br class="clear" />

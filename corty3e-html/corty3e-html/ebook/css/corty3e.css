@@ -1,9 +1,9 @@
-/* corty3e LESS CSS */
+﻿/* corty3e LESS CSS */
 body,
 #manuscript {
   font-family: serif;
   font-size: 15px;
-  color: #222222;
+  color: #222;
   min-width: 600px;
   margin-left: 45px;
 }
@@ -170,8 +170,8 @@ tr.tbl-lrborder-none td {
   text-align: left;
   color: #168ca8;
   font-weight: bold;
-  border-top: 1px solid #222222;
-  border-bottom: 1px solid #222222;
+  border-top: 1px solid #222;
+  border-bottom: 1px solid #222;
 }
 [data-type="box"][data-block_type="sr-exp-n"] {
   border-top: 3px solid #168ca8;
@@ -217,7 +217,7 @@ tr.tbl-lrborder-none td {
 }
 [data-type="box"][data-block_type="sr-exp-n"] [data-block_type="sr_exp_h4_txt"] [data-block_type="SR-EXP-h4-N-ni"] strong,
 [data-type="box"][data-block_type="sr-exp-n"] [data-block_type="sr_exp_h4_txt"] [data-block_type="sr-exp-h4-n-ni"] strong {
-  color: #ffffff;
+  color: #fff;
   background-color: #168ca8;
   padding: 1px 3px;
   font-family: sans-serif;
@@ -267,7 +267,7 @@ tr.tbl-lrborder-none td {
   margin-top: 1em;
 }
 [data-type="box"][data-block_type="sr-x-h"] [data-block_type="sr_x_h4_txt"] [data-block_type=" SR-X-h4-N-ri"] strong {
-  color: #ffffff;
+  color: #fff;
   background-color: #168ca8;
   padding: 1px 3px;
   font-family: sans-serif;
@@ -281,7 +281,7 @@ tr.tbl-lrborder-none td {
 [data-type="box"][data-block_type="bx4-h"] h3[data-type="title"] {
   display: inline-block;
   background-color: #168ca8;
-  color: #ffffff;
+  color: #fff;
   padding: 0 14px;
   position: absolute;
   top: -14px;
@@ -306,7 +306,7 @@ tr.tbl-lrborder-none td {
 [data-type="box"][data-block_type="bx3-h"] h3[data-type="title"] {
   display: inline-block;
   background-color: #168ca8;
-  color: #ffffff;
+  color: #fff;
   padding: 0 14px;
   position: absolute;
   top: 0;
@@ -448,24 +448,24 @@ body#supp_win [data-type="figure"][data-layout-width="xlarge"] img {
   margin: 1em 0;
 }
 [data-block_type="h4"] p {
-  color: #222222;
+  color: #222;
 }
 [data-block_type="h4"] p > strong {
   color: #168ca8;
 }
 [data-block_type="h4"] p > strong [data-block_type="h4-N-ril"] {
-  color: #ffffff;
+  color: #fff;
   background-color: #168ca8;
   padding: 1px 3px;
 }
 [data-block_type="h4"] [data-block_type="h4-n-ri"] strong,
 [data-block_type="h4"] [data-block_type="h4-n-ril"] strong {
-  color: #ffffff;
+  color: #fff;
   background-color: #168ca8;
   padding: 1px 3px;
 }
 [data-block_type="h4-n-ri"] strong {
-  color: #ffffff;
+  color: #fff;
   background-color: #168ca8;
   padding: 1px 3px;
   font-family: sans-serif;
@@ -475,12 +475,12 @@ body#supp_win [data-type="figure"][data-layout-width="xlarge"] img {
   font-family: sans-serif;
 }
 [data-block_type="h4-txt-ni"] {
-  color: #222222;
+  color: #222;
   font-family: serif;
   margin-top: 1em;
 }
 [data-block_type="h4-txt-ni"] [data-block_type="h4-N-ri1"] strong {
-  color: #ffffff;
+  color: #fff;
   background-color: #168ca8;
   padding: 1px 3px;
   font-family: sans-serif;
@@ -583,7 +583,7 @@ img[src*="corty3e_eqn"] {
   border-top: 1px solid #168ca8;
 }
 [data-block_type="sum-h"] h2.section-title [data-type="title"] {
-  color: #ffffff;
+  color: #fff;
   background-color: #168ca8;
   display: inline-block;
   padding: 0 8px;
@@ -605,7 +605,7 @@ img[src*="corty3e_eqn"] {
   border-top: 1px solid #168ca8;
 }
 [data-type="section"][data-block_type="cr-kt-t"] h2.section-title [data-type="title"] {
-  color: #ffffff;
+  color: #fff;
   background-color: #168ca8;
   display: inline-block;
   padding: 0 8px;
@@ -617,7 +617,7 @@ img[src*="corty3e_eqn"] {
   border-top: 1px solid #168ca8;
 }
 [data-block_type="cr-x-h"] h2.section-title [data-type="title"] {
-  color: #ffffff;
+  color: #fff;
   background-color: #168ca8;
   display: inline-block;
   padding: 0 8px;
@@ -634,7 +634,7 @@ img[src*="corty3e_eqn"] {
   font-family: sans-serif;
   color: #168ca8;
   margin: 2em 0 10px 0;
-  border-top: 1px solid #999999;
+  border-top: 1px solid #999;
   padding-top: 8px;
 }
 [data-block_type="cr-x-h"] [data-block_type="cr-x-hd1-rule"] p {
@@ -677,7 +677,7 @@ div[data-type="figure"] {
   border: 0;
 }
 div[data-type="figure"] div[data-type="figure_text"] {
-  color: #222222;
+  color: #222;
 }
 div[data-type="figure"] div[data-type="figure_text"] [data-type="caption"] > strong {
   font-family: sans-serif;
@@ -686,7 +686,7 @@ div[data-type="figure"] div[data-type="figure_text"] [data-type="number"] {
   display: none;
 }
 div[data-type="figure"] div[data-type="figure_text"] [data-type="caption"] {
-  color: #222222;
+  color: #222;
 }
 div[data-type="figure"] div[data-type="figure_text"] [data-type="caption"] [data-block_type="fig_num"] {
   color: #168ca8;

@@ -1,4 +1,4 @@
-/* Chapter 9 CSS */
+﻿/* Chapter 9 CSS */
 /* Figures */
 /* Tables */
 body.noUi div#corty3e-ch9-table1 table tr:first-child {
@@ -16,7 +16,16 @@ body.noUi div#corty3e-ch9-table1 table tr:first-child + tr {
   font-weight: bold !important;
 }
 /* Lists */
+div#corty3e-ch9-p220 p {
+  margin-bottom: 4px;
+}
+ul#corty3e-ch9-list-17 {
+  margin: 0 4em;
+}
 /* Equations */
+div#corty3e-ch9-eqn-2 img {
+  width: 444px;
+}
 div#corty3e-ch9-p154 {
   margin-bottom: 0;
 }

@@ -1,8 +1,14 @@
-/* Chapter 13 CSS */
+﻿/* Chapter 13 CSS */
 div#corty3e-ch13-p1 {
   margin-top: -5px;
 }
 /* Figures */
+div#corty3e-ch13-fig-53 img {
+  max-width: 480px !important;
+}
+body#supp_win div[data-figure-id="corty3e-ch13-fig-53"][data-layout-width="medium"] img {
+  max-width: 550px !important;
+}
 /* Tables */
 body.noUi div#corty3e-ch13-table1,
 body.noUi div#corty3e-ch13-table5,
@@ -184,4 +190,3 @@ img[src*="corty3e_ineqn"] {
   height: 1em;
   vertical-align: text-top;
 }
-/*# sourceMappingURL=corty3e_ch13.css.map */

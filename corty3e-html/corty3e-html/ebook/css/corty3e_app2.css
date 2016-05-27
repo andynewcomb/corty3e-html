@@ -1,7 +1,7 @@
-/* Appendix B CSS */
+﻿/* Appendix B CSS */
 [data-block_type="bm-ct-1"] {
   background-color: #168ca8;
-  color: #ffffff;
+  color: #fff;
   font-size: 3em;
   padding: 75px 0 0 40px;
   margin-left: -40px;
@@ -64,16 +64,16 @@
 }
 [data-block_type="ans-h3"] p {
   margin-left: 3em !important;
-  color: #222222;
+  color: #222;
 }
 [data-block_type="ans-h3"] p [data-block_type="question_num"] {
   font-family: sans-serif;
-  color: #222222;
+  color: #222;
   position: absolute;
   left: 60px;
 }
 [data-block_type="ans-h3"] p [data-block_type="h4-n-ri"] + strong {
-  color: #222222;
+  color: #222;
   font-family: sans-serif;
   margin-left: 5px;
 }
@@ -158,6 +158,9 @@ ul#corty3e-app2-list-30 {
 div#corty3e-app2-p996 {
   margin-bottom: 2.5em;
 }
+div#corty3e-app2-p997 {
+  margin-bottom: 2.5em;
+}
 div#corty3e-app2-p998 {
   margin-bottom: 1.5em;
 }
@@ -207,7 +210,7 @@ div#corty3e-app2-table13 tr > td:first-child,
 div#corty3e-app2-table14 tr > td:first-child,
 div#corty3e-app2-table15 tr > td:first-child,
 div#corty3e-app2-table16 tr > td:first-child {
-  color: #222222;
+  color: #222;
   font-weight: normal;
   text-align: center;
 }
@@ -247,7 +250,7 @@ div#corty3e-app2-table17 table {
 div#corty3e-app2-table17 table td {
   font-weight: normal;
   text-align: center;
-  color: #222222;
+  color: #222;
 }
 div#corty3e-app2-table17 table tr:first-child {
   background-color: transparent;
@@ -485,8 +488,44 @@ img[src="asset/appb/corty3e_ineqn_app_b-11_02.jpg"] {
   vertical-align: top;
   margin-top: 1em;
 }
+img[src="asset/appb/corty3e_eqn_app_b-11_03.jpg"] {
+  height: 5.5em;
+  vertical-align: top;
+  margin-top: 6px;
+  margin-left: 6px;
+}
 img[src="asset/appb/corty3e_ineqn_app_b-13_02.jpg"] {
   height: 2.5em;
   vertical-align: top;
   margin-top: 1em;
+}
+[data-block_type="ans-h3"] [data-block_type="question_num"] {
+  font-family: serif !important;
+}
+div#corty3e_page_B-19 {
+  margin-top: -2em;
+}
+ul#corty3e-app2-list-32 ul[data-block_type="bluebullet"] {
+  font-family: serif !important;
+}
+ul#corty3e-app2-list-61 ul {
+  font-family: serif !important;
+}
+div#corty3e-app2-p304 {
+  margin-left: 20px;
+}
+div#corty3e-app2-p422 {
+  margin-left: 20px;
+}
+div#corty3e-app2-p426 {
+  margin-left: 20px;
+}
+img[src="asset/appb/corty3e_ineqn_app_b-26_06.jpg"] {
+  height: 21px;
+}
+div#corty3e-app2-table14 td.right {
+  text-align: right !important;
+}
+div#corty3e-app2-table14 td.right img {
+  float: right;
 }

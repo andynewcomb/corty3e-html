@@ -66,6 +66,169 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="ebook\asset\ch8\corty3e_fig08_01.html" />
+    <Content Include="ebook\asset\ch8\corty3e_fig08_02.html" />
+    <Content Include="ebook\asset\ch8\corty3e_fig08_03.html" />
+    <Content Include="ebook\asset\ch8\corty3e_fig08_04.html" />
+    <Content Include="ebook\asset\ch8\corty3e_fig08_05.html" />
+    <Content Include="ebook\asset\ch8\corty3e_fig08_06.html" />
+    <Content Include="ebook\asset\ch8\corty3e_fig08_07.html" />
+    <Content Include="ebook\asset\ch8\corty3e_fig08_08.html" />
+    <Content Include="ebook\asset\ch8\corty3e_fig08_09.html" />
+    <Content Include="ebook\asset\ch8\corty3e_fig08_10.html" />
+    <Content Include="ebook\asset\ch8\corty3e_fig08_11.html" />
+    <Content Include="ebook\asset\ch8\corty3e_fig08_12.html" />
+    <Content Include="ebook\asset\ch8\corty3e_fig08_13.html" />
+    <Content Include="ebook\asset\ch8\corty3e_fig08_un01.html" />
+    <Content Include="ebook\asset\ch8\corty3e_table08_01.html" />
+    <Content Include="ebook\asset\ch8\corty3e_table08_02.html" />
+    <Content Include="ebook\asset\ch8\corty3e_table08_03.html" />
+    <Content Include="ebook\config.txt" />
+    <Content Include="ebook\css\corty3e.css">
+      <DependentUpon>corty3e.less</DependentUpon>
+    </Content>
+    <Content Include="ebook\css\corty3e.min.css">
+      <DependentUpon>corty3e.css</DependentUpon>
+    </Content>
+    <Content Include="ebook\css\corty3e_app1.css">
+      <DependentUpon>corty3e_app1.less</DependentUpon>
+    </Content>
+    <Content Include="ebook\css\corty3e_app1.min.css">
+      <DependentUpon>corty3e_app1.css</DependentUpon>
+    </Content>
+    <Content Include="ebook\css\corty3e_app2.css">
+      <DependentUpon>corty3e_app2.less</DependentUpon>
+    </Content>
+    <Content Include="ebook\css\corty3e_app2.min.css">
+      <DependentUpon>corty3e_app2.css</DependentUpon>
+    </Content>
+    <Content Include="ebook\css\corty3e_app3.css">
+      <DependentUpon>corty3e_app3.less</DependentUpon>
+    </Content>
+    <Content Include="ebook\css\corty3e_app3.min.css">
+      <DependentUpon>corty3e_app3.css</DependentUpon>
+    </Content>
+    <Content Include="ebook\css\corty3e_app4.css">
+      <DependentUpon>corty3e_app4.less</DependentUpon>
+    </Content>
+    <Content Include="ebook\css\corty3e_app4.min.css">
+      <DependentUpon>corty3e_app4.css</DependentUpon>
+    </Content>
+    <Content Include="ebook\css\corty3e_ch1.css">
+      <DependentUpon>corty3e_ch1.less</DependentUpon>
+    </Content>
+    <Content Include="ebook\css\corty3e_ch1.min.css">
+      <DependentUpon>corty3e_ch1.css</DependentUpon>
+    </Content>
+    <Content Include="ebook\css\corty3e_ch10.css">
+      <DependentUpon>corty3e_ch10.less</DependentUpon>
+    </Content>
+    <Content Include="ebook\css\corty3e_ch10.min.css">
+      <DependentUpon>corty3e_ch10.css</DependentUpon>
+    </Content>
+    <Content Include="ebook\css\corty3e_ch11.css">
+      <DependentUpon>corty3e_ch11.less</DependentUpon>
+    </Content>
+    <Content Include="ebook\css\corty3e_ch11.min.css">
+      <DependentUpon>corty3e_ch11.css</DependentUpon>
+    </Content>
+    <Content Include="ebook\css\corty3e_ch12.css">
+      <DependentUpon>corty3e_ch12.less</DependentUpon>
+    </Content>
+    <Content Include="ebook\css\corty3e_ch12.min.css">
+      <DependentUpon>corty3e_ch12.css</DependentUpon>
+    </Content>
+    <Content Include="ebook\css\corty3e_ch13.css">
+      <DependentUpon>corty3e_ch13.less</DependentUpon>
+    </Content>
+    <Content Include="ebook\css\corty3e_ch13.min.css">
+      <DependentUpon>corty3e_ch13.css</DependentUpon>
+    </Content>
+    <Content Include="ebook\css\corty3e_ch14.css">
+      <DependentUpon>corty3e_ch14.less</DependentUpon>
+    </Content>
+    <Content Include="ebook\css\corty3e_ch14.min.css">
+      <DependentUpon>corty3e_ch14.css</DependentUpon>
+    </Content>
+    <Content Include="ebook\css\corty3e_ch15.css">
+      <DependentUpon>corty3e_ch15.less</DependentUpon>
+    </Content>
+    <Content Include="ebook\css\corty3e_ch15.min.css">
+      <DependentUpon>corty3e_ch15.css</DependentUpon>
+    </Content>
+    <Content Include="ebook\css\corty3e_ch16.css">
+      <DependentUpon>corty3e_ch16.less</DependentUpon>
+    </Content>
+    <Content Include="ebook\css\corty3e_ch16.min.css">
+      <DependentUpon>corty3e_ch16.css</DependentUpon>
+    </Content>
+    <Content Include="ebook\css\corty3e_ch2.css">
+      <DependentUpon>corty3e_ch2.less</DependentUpon>
+    </Content>
+    <Content Include="ebook\css\corty3e_ch2.min.css">
+      <DependentUpon>corty3e_ch2.css</DependentUpon>
+    </Content>
+    <Content Include="ebook\css\corty3e_ch3.css">
+      <DependentUpon>corty3e_ch3.less</DependentUpon>
+    </Content>
+    <Content Include="ebook\css\corty3e_ch3.min.css">
+      <DependentUpon>corty3e_ch3.css</DependentUpon>
+    </Content>
+    <Content Include="ebook\css\corty3e_ch4.css">
+      <DependentUpon>corty3e_ch4.less</DependentUpon>
+    </Content>
+    <Content Include="ebook\css\corty3e_ch4.min.css">
+      <DependentUpon>corty3e_ch4.css</DependentUpon>
+    </Content>
+    <Content Include="ebook\css\corty3e_ch5.css">
+      <DependentUpon>corty3e_ch5.less</DependentUpon>
+    </Content>
+    <Content Include="ebook\css\corty3e_ch5.min.css">
+      <DependentUpon>corty3e_ch5.css</DependentUpon>
+    </Content>
+    <Content Include="ebook\css\corty3e_ch6.css">
+      <DependentUpon>corty3e_ch6.less</DependentUpon>
+    </Content>
+    <Content Include="ebook\css\corty3e_ch6.min.css">
+      <DependentUpon>corty3e_ch6.css</DependentUpon>
+    </Content>
+    <Content Include="ebook\css\corty3e_ch7.css">
+      <DependentUpon>corty3e_ch7.less</DependentUpon>
+    </Content>
+    <Content Include="ebook\css\corty3e_ch7.min.css">
+      <DependentUpon>corty3e_ch7.css</DependentUpon>
+    </Content>
+    <Content Include="ebook\css\corty3e_ch8.css">
+      <DependentUpon>corty3e_ch8.less</DependentUpon>
+    </Content>
+    <Content Include="ebook\css\corty3e_ch8.min.css">
+      <DependentUpon>corty3e_ch8.css</DependentUpon>
+    </Content>
+    <Content Include="ebook\css\corty3e_ch9.css">
+      <DependentUpon>corty3e_ch9.less</DependentUpon>
+    </Content>
+    <Content Include="ebook\css\corty3e_ch9.min.css">
+      <DependentUpon>corty3e_ch9.css</DependentUpon>
+    </Content>
+    <Content Include="ebook\css\corty3e_fm.css">
+      <DependentUpon>corty3e_fm.less</DependentUpon>
+    </Content>
+    <Content Include="ebook\css\corty3e_fm.min.css">
+      <DependentUpon>corty3e_fm.css</DependentUpon>
+    </Content>
+    <Content Include="ebook\css\corty3e_glossary.css">
+      <DependentUpon>corty3e_glossary.less</DependentUpon>
+    </Content>
+    <Content Include="ebook\css\corty3e_glossary.min.css">
+      <DependentUpon>corty3e_glossary.css</DependentUpon>
+    </Content>
+    <Content Include="ebook\css\corty3e_ref.css">
+      <DependentUpon>corty3e_ref.less</DependentUpon>
+    </Content>
+    <Content Include="ebook\css\corty3e_ref.min.css">
+      <DependentUpon>corty3e_ref.css</DependentUpon>
+    </Content>
+    <Content Include="ebook\pagemap.js" />
     <Content Include="packages.config" />
     <Content Include="docs\Corty_3e_APP-A_Final HR.pdf" />
     <Content Include="docs\Corty_3e_APP-B_Final HR.pdf" />
@@ -97,56 +260,36 @@
     <Content Include="ebook\asset\ch2\corty3e_table02_10__conflict_html" />
     <Content Include="ebook\asset\ch7\corty3e_ineqn07_225_01.zip" />
     <Content Include="ebook\asset\ch8\corty3e_eqn08_271_03.zip" />
-    <Content Include="ebook\css\corty3e.css.map" />
     <Content Include="ebook\css\corty3e.less" />
-    <Content Include="ebook\css\corty3e_app1.css.map" />
     <Content Include="ebook\css\corty3e_app1.less" />
-    <Content Include="ebook\css\corty3e_app2.css.map" />
     <Content Include="ebook\css\corty3e_app2.less" />
-    <Content Include="ebook\css\corty3e_app3.css.map" />
     <Content Include="ebook\css\corty3e_app3.less" />
-    <Content Include="ebook\css\corty3e_app4.css.map" />
     <Content Include="ebook\css\corty3e_app4.less" />
-    <Content Include="ebook\css\corty3e_ch1.css.map" />
     <Content Include="ebook\css\corty3e_ch1.less" />
-    <Content Include="ebook\css\corty3e_ch10.css.map" />
     <Content Include="ebook\css\corty3e_ch10.less" />
-    <Content Include="ebook\css\corty3e_ch11.css.map" />
     <Content Include="ebook\css\corty3e_ch11.less" />
-    <Content Include="ebook\css\corty3e_ch12.css.map" />
     <Content Include="ebook\css\corty3e_ch12.less" />
-    <Content Include="ebook\css\corty3e_ch13.css.map" />
     <Content Include="ebook\css\corty3e_ch13.less" />
-    <Content Include="ebook\css\corty3e_ch14.css.map" />
     <Content Include="ebook\css\corty3e_ch14.less" />
-    <Content Include="ebook\css\corty3e_ch15.css.map" />
     <Content Include="ebook\css\corty3e_ch15.less" />
-    <Content Include="ebook\css\corty3e_ch16.css.map" />
     <Content Include="ebook\css\corty3e_ch16.less" />
-    <Content Include="ebook\css\corty3e_ch2.css.map" />
     <Content Include="ebook\css\corty3e_ch2.less" />
-    <Content Include="ebook\css\corty3e_ch3.css.map" />
     <Content Include="ebook\css\corty3e_ch3.less" />
-    <Content Include="ebook\css\corty3e_ch4.css.map" />
     <Content Include="ebook\css\corty3e_ch4.less" />
-    <Content Include="ebook\css\corty3e_ch5.css.map" />
     <Content Include="ebook\css\corty3e_ch5.less" />
-    <Content Include="ebook\css\corty3e_ch6.css.map" />
     <Content Include="ebook\css\corty3e_ch6.less" />
-    <Content Include="ebook\css\corty3e_ch7.css.map" />
     <Content Include="ebook\css\corty3e_ch7.less" />
-    <Content Include="ebook\css\corty3e_ch8.css.map" />
     <Content Include="ebook\css\corty3e_ch8.less" />
-    <Content Include="ebook\css\corty3e_ch9.css.map" />
     <Content Include="ebook\css\corty3e_ch9.less" />
-    <Content Include="ebook\css\corty3e_fm.css.map" />
     <Content Include="ebook\css\corty3e_fm.less" />
-    <Content Include="ebook\css\corty3e_glossary.css.map" />
     <Content Include="ebook\css\corty3e_glossary.less" />
-    <Content Include="ebook\css\corty3e_ref.css.map" />
     <Content Include="ebook\css\corty3e_ref.less" />
-    <Content Include="ebook\css\koala-config.json" />
     <Content Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <Content Include="ebook\create_page_number_map.pl" />
+    <None Include="compilerconfig.json" />
+    <None Include="compilerconfig.json.defaults">
+      <DependentUpon>compilerconfig.json</DependentUpon>
+    </None>
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -1861,30 +2004,6 @@
     <Content Include="ebook\corty3e_glossary_1.html" />
     <Content Include="ebook\corty3e_ref_1.html" />
     <Content Include="ebook\css\boilerplate.css" />
-    <Content Include="ebook\css\corty3e.css" />
-    <Content Include="ebook\css\corty3e_app1.css" />
-    <Content Include="ebook\css\corty3e_app2.css" />
-    <Content Include="ebook\css\corty3e_app3.css" />
-    <Content Include="ebook\css\corty3e_app4.css" />
-    <Content Include="ebook\css\corty3e_ch1.css" />
-    <Content Include="ebook\css\corty3e_ch10.css" />
-    <Content Include="ebook\css\corty3e_ch11.css" />
-    <Content Include="ebook\css\corty3e_ch12.css" />
-    <Content Include="ebook\css\corty3e_ch13.css" />
-    <Content Include="ebook\css\corty3e_ch14.css" />
-    <Content Include="ebook\css\corty3e_ch15.css" />
-    <Content Include="ebook\css\corty3e_ch16.css" />
-    <Content Include="ebook\css\corty3e_ch2.css" />
-    <Content Include="ebook\css\corty3e_ch3.css" />
-    <Content Include="ebook\css\corty3e_ch4.css" />
-    <Content Include="ebook\css\corty3e_ch5.css" />
-    <Content Include="ebook\css\corty3e_ch6.css" />
-    <Content Include="ebook\css\corty3e_ch7.css" />
-    <Content Include="ebook\css\corty3e_ch8.css" />
-    <Content Include="ebook\css\corty3e_ch9.css" />
-    <Content Include="ebook\css\corty3e_fm.css" />
-    <Content Include="ebook\css\corty3e_glossary.css" />
-    <Content Include="ebook\css\corty3e_ref.css" />
     <Content Include="ebook\css\digfir_ebook_fw.css" />
     <Content Include="ebook\css\images\drop_down.png" />
     <Content Include="ebook\css\images\drop_right.png" />

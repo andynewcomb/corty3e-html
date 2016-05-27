@@ -1,8 +1,20 @@
-/* Chapter 16 CSS */
+﻿/* Chapter 16 CSS */
 div#corty3e-ch16-p1 {
   margin-top: -5px;
 }
+[data-type="section"][data-block_type="intro"] [data-block_type="intro_box"] [data-block_type="mn2"] {
+  width: 200px;
+}
+[data-type="section"][data-block_type="intro"] [data-block_type="intro_box"] [data-block_type="mn2"] [data-block_type="co-toc-h1-t"] {
+  padding-left: 43px;
+}
 /* Figures */
+div#corty3e-ch16-fig-13 img {
+  max-width: 377px !important;
+}
+div#corty3e-ch16-fig-14 img {
+  max-width: 482px !important;
+}
 /* Tables */
 /* Lists */
 div#corty3e-ch16-bx2-1 ol[data-block_type="loweralpha"] {
@@ -13,4 +25,3 @@ div#corty3e-ch16-bx2-1 ol[data-block_type="loweralpha"] {
 [data-block_type="eq-t"] [data-type="title"] {
   padding-left: 8em;
 }
-/*# sourceMappingURL=corty3e_ch16.css.map */

@@ -1,9 +1,9 @@
-/* Chapter 8 CSS */
+﻿/* Chapter 8 CSS */
 /* Figures */
 div#corty3e-ch8-fig-1 {
   position: absolute;
   left: 484px;
-  top: 237px;
+  top: 268px;
   float: none;
   width: 250px !important;
 }
@@ -21,7 +21,16 @@ body#supp_win div#corty3e-ch8-fig-1 img {
 }
 /* Tables */
 /* Lists */
+ul#corty3e-ch8-list-24 {
+  margin-left: 4em;
+}
+ul#corty3e-ch8-list-25 {
+  margin-left: 4em;
+}
 /* Equations */
+div#corty3e-ch8-eqn-10 img {
+  max-width: 443px;
+}
 /* inline math image adjustments */
 img[src*="corty3e_ineqn08_270"],
 img[src*="corty3e_ineqn08_271"],

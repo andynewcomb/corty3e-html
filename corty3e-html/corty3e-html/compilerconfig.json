@@ -1,0 +1,98 @@
+﻿[
+  {
+    "outputFile": "ebook/css/corty3e_ch7.css",
+    "inputFile": "ebook/css/corty3e_ch7.less"
+  },
+  {
+    "outputFile": "ebook/css/corty3e_ch6.css",
+    "inputFile": "ebook/css/corty3e_ch6.less"
+  },
+  {
+    "outputFile": "ebook/css/corty3e_ch8.css",
+    "inputFile": "ebook/css/corty3e_ch8.less"
+  },
+  {
+    "outputFile": "ebook/css/corty3e.css",
+    "inputFile": "ebook/css/corty3e.less"
+  },
+  {
+    "outputFile": "ebook/css/corty3e_ch9.css",
+    "inputFile": "ebook/css/corty3e_ch9.less"
+  },
+  {
+    "outputFile": "ebook/css/corty3e_ch10.css",
+    "inputFile": "ebook/css/corty3e_ch10.less"
+  },
+  {
+    "outputFile": "ebook/css/corty3e_ch1.css",
+    "inputFile": "ebook/css/corty3e_ch1.less"
+  },
+  {
+    "outputFile": "ebook/css/corty3e_ch2.css",
+    "inputFile": "ebook/css/corty3e_ch2.less"
+  },
+  {
+    "outputFile": "ebook/css/corty3e_ch3.css",
+    "inputFile": "ebook/css/corty3e_ch3.less"
+  },
+  {
+    "outputFile": "ebook/css/corty3e_ch4.css",
+    "inputFile": "ebook/css/corty3e_ch4.less"
+  },
+  {
+    "outputFile": "ebook/css/corty3e_ch5.css",
+    "inputFile": "ebook/css/corty3e_ch5.less"
+  },
+  {
+    "outputFile": "ebook/css/corty3e_ch11.css",
+    "inputFile": "ebook/css/corty3e_ch11.less"
+  },
+  {
+    "outputFile": "ebook/css/corty3e_ch12.css",
+    "inputFile": "ebook/css/corty3e_ch12.less"
+  },
+  {
+    "outputFile": "ebook/css/corty3e_ch13.css",
+    "inputFile": "ebook/css/corty3e_ch13.less"
+  },
+  {
+    "outputFile": "ebook/css/corty3e_ch14.css",
+    "inputFile": "ebook/css/corty3e_ch14.less"
+  },
+  {
+    "outputFile": "ebook/css/corty3e_ch15.css",
+    "inputFile": "ebook/css/corty3e_ch15.less"
+  },
+  {
+    "outputFile": "ebook/css/corty3e_ch16.css",
+    "inputFile": "ebook/css/corty3e_ch16.less"
+  },
+  {
+    "outputFile": "ebook/css/corty3e_fm.css",
+    "inputFile": "ebook/css/corty3e_fm.less"
+  },
+  {
+    "outputFile": "ebook/css/corty3e_glossary.css",
+    "inputFile": "ebook/css/corty3e_glossary.less"
+  },
+  {
+    "outputFile": "ebook/css/corty3e_ref.css",
+    "inputFile": "ebook/css/corty3e_ref.less"
+  },
+  {
+    "outputFile": "ebook/css/corty3e_app1.css",
+    "inputFile": "ebook/css/corty3e_app1.less"
+  },
+  {
+    "outputFile": "ebook/css/corty3e_app2.css",
+    "inputFile": "ebook/css/corty3e_app2.less"
+  },
+  {
+    "outputFile": "ebook/css/corty3e_app3.css",
+    "inputFile": "ebook/css/corty3e_app3.less"
+  },
+  {
+    "outputFile": "ebook/css/corty3e_app4.css",
+    "inputFile": "ebook/css/corty3e_app4.less"
+  }
+]

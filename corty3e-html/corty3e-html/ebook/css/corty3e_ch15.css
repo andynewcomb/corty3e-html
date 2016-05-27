@@ -1,8 +1,11 @@
-/* Chapter 15 CSS */
+﻿/* Chapter 15 CSS */
 div#corty3e-ch15-p1 {
   margin-top: 25px;
 }
 /* Figures */
+div#corty3e-ch15-eqn-5 img {
+  width: 278px;
+}
 /* Tables */
 body.noUi div#corty3e-ch15-table1 table tr td {
   border: 1px solid black;
@@ -307,4 +310,3 @@ body.noUi div#corty3e-ch15-table44 tr:last-child > td {
 [data-block_type="eq-t"] [data-type="title"] {
   padding-left: 8em;
 }
-/*# sourceMappingURL=corty3e_ch15.css.map */

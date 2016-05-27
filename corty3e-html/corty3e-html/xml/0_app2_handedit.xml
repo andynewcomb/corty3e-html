@@ -316,7 +316,7 @@
 <list id="corty3e-app2-list-8" type="ordered" block_type="loweralpha">
 <li><p id="corty3e-app2-p131" block_type="ans"><em>N</em> &#61; 5</p></li>
 <li><p id="corty3e-app2-p132" block_type="ans-cont-ni">&#931; (<em>X</em> &#8211; <em>M</em>) &#61; (47 &#8211; 50.00) &#43; (53 &#8211; 50.00) &#43; (67 &#8211; 50.00) &#43; (45 &#8211; 50.00) &#43; (38 &#8211;50.00) &#61; 0.00</p></li>
-<li><p id="corty3e-app2-p134" block_type="ans-cont-ni">&#931; (<em>X</em> &#8211; <em>M</em>)<sup>2</sup> &#61; (47 &#8211; 50.00)<sup>2</sup> &#43; (53 &#8211; 50.00)<sup>2</sup> &#43; (67 &#8211; 50.00)<sup>2</sup> &#43; (45 &#8211; 50.00)<sup>2</sup> &#43; (38 50.00)<sup>2</sup> &#61; 476.00</p></li>
+<li><p id="corty3e-app2-p134" block_type="ans-cont-ni">&#931; (<em>X</em> &#8211; <em>M</em>)<sup>2</sup> &#61; (47 &#8211; 50.00)<sup>2</sup> &#43; (53 &#8211; 50.00)<sup>2</sup> &#43; (67 &#8211; 50.00)<sup>2</sup> &#43; (45 &#8211; 50.00)<sup>2</sup> &#43; (38 &#8211; 50.00)<sup>2</sup> &#61; 476.00</p></li>
 </list>
 <p id="corty3e_page_B-4" block_type="page_start">B-4</p>
 <p id="corty3e-app2-p136" block_type="ans"><phrase block_type="question_num">3.47</phrase><image asset-id="corty3e-app2-img-9" alt="image" src="asset/appb/corty3e_ineqn_app_b-4_01.jpg"/></p>
@@ -356,7 +356,7 @@
 <p id="corty3e-app2-p170" block_type="ans"><phrase block_type="question_num">4.49</phrase>80.23&#37;</p>
 <p id="corty3e-app2-p171" block_type="ans"><phrase block_type="question_num">4.51</phrase>47.50&#37;</p>
 <p id="corty3e-app2-p172" block_type="ans"><phrase block_type="question_num">4.53</phrase><image asset-id="corty3e-app2-img-16" alt="image" src="asset/appb/corty3e_ineqn_app_b-4_08.jpg"/></p>
-<p id="corty3e-app2-p173" block_type="ans"><phrase block_type="question_num">11.90</phrase>&#37; of cases in a normal distribution have a <em>z</em> score &#8805;1.18. Thus, 11.90&#37; of Americans should have high diastolic blood pressure (90 or higher).</p>
+<p id="corty3e-app2-p173" block_type="ans">11.90&#37; of cases in a normal distribution have a <em>z</em> score &#8805;1.18. Thus, 11.90&#37; of Americans should have high diastolic blood pressure (90 or higher).</p>
 <p id="corty3e-app2-p174" block_type="ans"><phrase block_type="question_num">4.55</phrase><em>PR</em> &#61; 1.70</p>
 <p id="corty3e-app2-p175" block_type="ans"><phrase block_type="question_num">4.57</phrase><image asset-id="corty3e-app2-img-17" alt="image" src="asset/appb/corty3e_ineqn_app_b-4_09.jpg"/></p>
 <p id="corty3e-app2-p176" block_type="ans"><em>PR</em> &#61; 80.78</p>
@@ -463,7 +463,7 @@
 </list>
 <p id="corty3e-app2-p274" block_type="ans"><phrase block_type="question_num">6.89</phrase></p>
 <list id="corty3e-app2-list-10" type="ordered" block_type="loweralpha">
-<li><p id="corty3e-app2-p275" block_type="ans"><phrase block_type="question_num">2.37</phrase>&#8805; 1.96, so <em>H</em><sub>0</sub> rejected;</p></li>
+<li><p id="corty3e-app2-p275" block_type="ans">2.37 &#8805; 1.96, so <em>H</em><sub>0</sub> rejected;</p></li>
 <li><p id="corty3e-app2-p276" block_type="ans"><em>z</em> (<em>N</em> =23) &#61; 2.37, <em>p</em> &#60; .05</p></li>
 </list>
 <p id="corty3e-app2-p277" block_type="ans"><phrase block_type="question_num">6.91</phrase>(a) There was a statistically significant difference; (b) the sample mean is higher than the population mean.</p>
@@ -497,7 +497,7 @@
 <p id="corty3e-app2-p301" block_type="ans"><phrase block_type="question_num">6.111</phrase></p>
 <list id="corty3e-app2-list-11" type="ordered" block_type="loweralpha">
 <li><p id="corty3e-app2-p302" block_type="ans">This is a one-tailed test because he has made a prediction about the direction of the results before collecting any data.</p></li>
-<li><p id="corty3e-app2-p303" block_type="ans-cont-ni"><em>H</em><sub>0</sub>: &#956; <sub>Athletes </sub>&#8805; 78</p>
+<li><p id="corty3e-app2-p303" block_type="ans-cont-ni"><em>H</em><sub>0</sub>: &#956; <sub>Athletes </sub>&#8805; 78<br/></p>
 <p id="corty3e-app2-p304" block_type="ans"><em>H</em><sub>1</sub>: &#956; <sub>Athletes</sub> &#60; 78</p></li>
 </list>
 <p id="corty3e-app2-p305" block_type="ans"><phrase block_type="question_num">6.113</phrase>The statistician is comparing the mean of a sample to the mean of a population, and the population standard deviation is known. This sounds appropriate for a single-sample <em>z</em> test. However, before using the test, the assumptions must be checked. The random samples assumption is not violated, and neither is the independence of observations assumption. However, the normality assumption is violated. With random numbers, all numbers are equally likely. So, a 50 is as likely to occur as is a 0 or a 99. This assumption is robust to violations, but this distribution is not even close to normally distributed (it&#8217;s flat, not normal), so the single-sample <em>z</em> test should not be done.</p>
@@ -634,13 +634,13 @@
 <p id="corty3e-app2-p419" block_type="ans"><phrase block_type="question_num">8.49</phrase>The random samples assumption is violated. The independence assumption is not violated. The normality of distribution assumption is not violated. The homogeneity of variance assumption is violated, so much so that it is not OK to continue with the test.</p>
 <p id="corty3e-app2-p420" block_type="ans"><phrase block_type="question_num">8.51</phrase></p>
 <list id="corty3e-app2-list-14" type="ordered" block_type="loweralpha">
-<li><p id="corty3e-app2-p421" block_type="ans"><em>H</em><sub>0</sub>: &#956; <sub>1</sub> &#61; &#956; <sub>2</sub></p>
+<li><p id="corty3e-app2-p421" block_type="ans"><em>H</em><sub>0</sub>: &#956; <sub>1</sub> &#61; &#956; <sub>2</sub><br/></p>
 <p id="corty3e-app2-p422" block_type="ans"><em>H</em><sub>1</sub>: &#956; <sub>1</sub> &#8800; &#956; <sub>2</sub></p></li>
 <li><p id="corty3e-app2-p423" block_type="ans-cont-ni">The null hypothesis says that the two population means are the same, that is, there is no difference in effectiveness between the two treatments. Any difference between sample means is due to sampling error. The alternative hypothesis says that the two population means are different because the two populations are differentially effective. The difference between sample means is too large to be due to sampling error.</p></li>
 </list>
 <p id="corty3e-app2-p424" block_type="ans"><phrase block_type="question_num">8.53</phrase></p>
 <list id="corty3e-app2-list-15" type="ordered" block_type="loweralpha">
-<li><p id="corty3e-app2-p425" block_type="ans"><em>H</em><sub>0</sub>: &#956; <sub>Fluoride</sub> &#8805; &#956; <sub>Nonfluoride</sub></p>
+<li><p id="corty3e-app2-p425" block_type="ans"><em>H</em><sub>0</sub>: &#956; <sub>Fluoride</sub> &#8805; &#956; <sub>Nonfluoride</sub><br/></p>
 <p id="corty3e-app2-p426" block_type="ans"><em>H</em><sub>1</sub>: &#956; <sub>Fluoride</sub> &#60; &#956; <sub>Nonfluoride</sub></p></li>
 <li><p id="corty3e-app2-p427" block_type="ans-cont-ni">The null hypothesis says that the population mean for the number of cavities for the fluoride group will be greater than or the same as that for the nonfluoride group because fluoride has no effect, or a negative effect, on cavities. The alternative hypothesis states that the population mean for the number of cavities for the fluoride group will be less than that for the nonfluoride group because fluoride reduces cavities.</p></li>
 </list>
@@ -709,7 +709,7 @@
 <p id="corty3e_page_B-12" block_type="page_start">B-12</p>
 <p id="corty3e-app2-p468" block_type="ans-h3"><phrase block_type="h4-n-ri"><strong>Step 6</strong></phrase> <strong>Interpret the Results.</strong></p>
 <p id="corty3e-app2-p469" block_type="ans-cont-ni"><em>Was the null hypothesis rejected?</em></p>
-<p id="corty3e-app2-p470" block_type="ans"><phrase block_type="question_num">6.78</phrase>&#8805; 1.994, so <em>H</em><sub>0</sub> rejected. Results are statistically significant. Cholesterol levels of those who follow a Mediterranean diet are lower than for those who follow an American diet.</p>
+<p id="corty3e-app2-p470" block_type="ans-cont-ni">6.78 &#8805; 1.994, so <em>H</em><sub>0</sub> rejected. Results are statistically significant. Cholesterol levels of those who follow a Mediterranean diet are lower than for those who follow an American diet.</p>
 <p id="corty3e-app2-p471" block_type="ans-cont-ni"><em>How big is the effect?</em></p>
 <p id="corty3e-app2-fig-13" block_type="equation">
 <image asset-id="corty3e-app2-img-47" alt="image" src="asset/appb/corty3e_eqn_app_b-12_01.jpg"/>
@@ -754,9 +754,9 @@
 <p id="corty3e-app2-p504" block_type="ans"><phrase block_type="question_num">9.37</phrase>It is not OK to proceed with the paired-samples <em>t</em> test.</p>
 <p id="corty3e_page_B-13" block_type="page_start">B-13</p>
 <list id="corty3e-app2-list-23" type="unordered" block_type="bullet">
-<li><p id="corty3e-app2-p505" block_type="ans-cont-ni">The random samples assumption is violated, but this assumption is robust to violation.</p></li>
-<li><p id="corty3e-app2-p506" block_type="ans-cont-ni">The nonrobust independence of observations assumption is violated, so it is not OK to proceed with the test. Why was it violated? All students are in the same classes, so presumably they were assigned the same homework, which would influence the online activity of all students.</p></li>
-<li><p id="corty3e-app2-p507" block_type="ans-cont-ni">For the normality assumption, we can assume that the difference scores are normally distributed.</p></li>
+<li><p id="corty3e-app2-p505" block_type="ans-bl">The random samples assumption is violated, but this assumption is robust to violation.</p></li>
+<li><p id="corty3e-app2-p506" block_type="ans-bl">The nonrobust independence of observations assumption is violated, so it is not OK to proceed with the test. Why was it violated? All students are in the same classes, so presumably they were assigned the same homework, which would influence the online activity of all students.</p></li>
+<li><p id="corty3e-app2-p507" block_type="ans-bl">For the normality assumption, we can assume that the difference scores are normally distributed.</p></li>
 </list>
 <p id="corty3e-app2-p508" block_type="ans"><phrase block_type="question_num">9.39</phrase><em>H</em><sub>0</sub>: &#956;<sub>School</sub> &#61; &#956;<sub>Social</sub></p>
 <p id="corty3e-app2-p509" block_type="ans"><em>H</em><sub>1</sub>: &#956;<sub>School</sub> &#8800; &#956;<sub>Social</sub></p>
@@ -1021,7 +1021,7 @@
 <p id="corty3e-app2-p623" block_type="ans"><phrase block_type="question_num">10.121</phrase>13.09 &#8211; 8.89 &#61; 4.20. 4.20 &#60; 4.37, so the difference is not statistically significant. There&#8217;s not enough evidence to conclude that these two populations have a mean difference.</p>
 <p id="corty3e-app2-p624" block_type="ans"><phrase block_type="question_num">10.123</phrase></p>
 <list id="corty3e-app2-list-30" type="unordered" block_type="bullet">
-<li><p id="corty3e-app2-p625" block_type="ans"><em>M</em><sub>1</sub> vs. <em>M</em><sub>2</sub>: 67.86 &#8211; 53.56 &#61; 14.30, which is greater than 8.30, so it is a statistically significant difference. The mean of population 1 is probably greater than the mean of population 2.</p>
+<li><p id="corty3e-app2-p625" block_type="ans-bl"><em>M</em><sub>1</sub> vs. <em>M</em><sub>2</sub>: 67.86 &#8211; 53.56 &#61; 14.30, which is greater than 8.30, so it is a statistically significant difference. The mean of population 1 is probably greater than the mean of population 2.</p>
 <p id="corty3e_page_B-16" block_type="page_start">B-16</p></li>
 <li><p id="corty3e-app2-p626" block_type="ans-bl"><em>M</em><sub>1</sub> vs. <em>M</em><sub>3</sub>: 67.86 &#8211; 61.55 &#61; 6.31, which is less than 8.30, so it is not a statistically significant difference. There is not enough evidence to conclude that these two population means are different.</p></li>
 <li><p id="corty3e-app2-p627" block_type="ans-bl"><em>M</em><sub>2</sub> vs. <em>M</em><sub>3</sub>: 61.55 &#8211; 53.56 &#61; 7.99, which is less than 8.30, so it is not a statistically significant difference. There is not enough evidence to conclude that the two population means are different.</p></li>
@@ -1427,7 +1427,7 @@
 <p id="corty3e-app2-p832" block_type="ans">If <em>F</em><sub>Interaction</sub> &#60; 2.668, fail to reject <em>H</em><sub>0</sub>.</p>
 <p id="corty3e-app2-p833" block_type="ans"><phrase block_type="question_num">12.63</phrase><image asset-id="corty3e-app2-img-84" alt="image" src="asset/appb/corty3e_ineqn_app_b-21_01.jpg"/></p>
 <p id="corty3e-app2-p834" block_type="ans"><phrase block_type="question_num">12.65</phrase><image asset-id="corty3e-app2-img-85" alt="image" src="asset/appb/corty3e_ineqn_app_b-21_02.jpg"/></p>
-<p id="corty3e-app2-p835" block_type="ans-eq">12.67 <em>df</em><sub>Rows</sub> &#61; <em>R</em> &#8211; 1 &#61; 2 &#8211; 1 &#61; 1</p>
+<p id="corty3e-app2-p835" block_type="ans"><phrase block_type="question_num">12.67</phrase> <em>df</em><sub>Rows</sub> &#61; <em>R</em> &#8211; 1 &#61; 2 &#8211; 1 &#61; 1</p>
 <p id="corty3e-app2-p836" block_type="ans-eq"><em>df</em><sub>Columns</sub> &#61; <em>C</em> &#8211; 1 &#61; 2 &#8211; 1 &#61; 1</p>
 <p id="corty3e-app2-p837" block_type="ans-eq"><em>df</em><sub>Interaction</sub> &#61; <em>df</em><sub>Rows</sub> &#215; <em>df</em><sub>Columns</sub> &#61; 1 &#215; 1 &#61; 1</p>
 <p id="corty3e-app2-p838" block_type="ans-eq"><em>N</em> &#61; <em>n</em> &#215; <em>R</em> &#215; <em>C</em> &#61; 5 &#215; 2 &#215; 2 &#61; 20</p>
@@ -1649,7 +1649,7 @@
 <li><p id="corty3e-app2-p911" block_type="ans-bl-lvl3">Being unrestricted in what one watches on TV leads to a statistically significant higher approval of the use of violence to solve disagreements.</p></li>
 </list></li>
 </list></li>
-<li><p id="corty3e-app2-p912" block_type="ans-bl-lvl2">The interaction effect is not statistically significant:</p>
+<li><p id="corty3e-app2-p912" block_type="ans-bl">The interaction effect is not statistically significant:</p>
 <list id="corty3e-app2-list-67" type="unordered" block_type="bluebullet">
 <li><p id="corty3e-app2-p913" block_type="ans-bl-lvl3"><em>F</em>(1, 20) &#61; 1.47, <em>p</em> &#62; .05</p></li>
 <li><p id="corty3e-app2-p914" block_type="ans-bl-lvl3">There is not enough evidence to conclude that type of discipline and restricting TV watching interact to affect the acceptance of violence as a way to solve disagreements.</p></li>
@@ -1664,7 +1664,7 @@
 </figure></li>
 </list></li>
 <p id="corty3e_page_B-24" block_type="page_start">B-24</p></list></li>
-<li><p id="corty3e-app2-p919" block_type="ans-bl-lvl2">Calculating effect sizes:</p>
+<li><p id="corty3e-app2-p919" block_type="ans-bl">Calculating effect sizes:</p>
 <list id="corty3e-app2-list-68" type="unordered" block_type="bluebullet">
 <li><p id="corty3e-app2-p920" block_type="ans-bl-lvl3"><image asset-id="corty3e-app2-img-99" alt="image" src="asset/appb/corty3e_ineqn_app_b-24_01.jpg"/></p>
 <list id="corty3e-app2-list-68a" type="unordered" block_type="bullet">
@@ -1802,7 +1802,7 @@
 </tr>
 </tbody>
 </table>
-<p id="corty3e-app2-p997" block_type="tbl-num">13.89</p>
+<p id="corty3e-app2-p997" block_type="ans"><phrase block_type="question_num">13.89</phrase></p>
 <table id="corty3e-app2-table12" block_type="un_table">
 <layout align="center" width="medium" border="true"/>
 <tbody>
@@ -1888,7 +1888,7 @@
 <td><phrase block_type="tbn-txt"><em>M</em> &#61; 99.33</phrase></td>
 <td></td>
 <td></td>
-<td><phrase block_type="tbn-txt">&#8211;153.33</phrase></td>
+<td><phrase block_type="tbn-txt">&#931; =&#8211;153.33</phrase></td>
 <td><phrase block_type="tbn-txt">&#931; =248.67</phrase></td>
 <td><phrase block_type="tbn-txt">&#931; =202.67</phrase></td>
 </tr>
@@ -1936,31 +1936,19 @@
 <td><phrase block_type="tbn-txt">25.00</phrase></td>
 </tr>
 <tr>
-<td><phrase block_type="tbn-txt"><em>M</em> =?86.33</phrase></td>
-<td><phrase block_type="tbn-txt"><em>M</em> =?28.00</phrase></td>
+<td><phrase block_type="tbn-txt"><em>M</em> =86.33</phrase></td>
+<td><phrase block_type="tbn-txt"><em>M</em> =28.00</phrase></td>
 <td></td>
 <td></td>
 <td><phrase block_type="tbn-txt">&#931; =&#8211;50.00</phrase></td>
-<td><phrase block_type="tbn-txt">&#931; =?116.67</phrase></td>
+<td><phrase block_type="tbn-txt">&#931; =116.67</phrase></td>
 <td><phrase block_type="tbn-txt">&#931; &#61; 50.00</phrase></td>
 </tr>
 <tr>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td><phrase block_type="tbn-txt"><em>SS</em><sub>X</sub><em>SS</em><sub>Y</sub> &#61; 5,833.50</phrase></td>
+<td colspan="7" class="right"><phrase block_type="tbn-txt"><em>SS</em><sub>X</sub><em>SS</em><sub>Y</sub> &#61; 5,833.50</phrase></td>
 </tr>
 <tr>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td><image asset-id="corty3e-app2-img-109" alt="image" src="asset/appb/corty3e_ineqn_app_b-26_06.jpg"/></td>
+<td colspan="7" class="right"><image asset-id="corty3e-app2-img-109" alt="image" src="asset/appb/corty3e_ineqn_app_b-26_06.jpg"/></td>
 </tr>
 </tbody>
 </table>
@@ -2272,7 +2260,7 @@
 <p id="corty3e-app2-p1148" block_type="ans-h3"><phrase block_type="h4-n-ri"><strong>Step 3</strong></phrase> <strong>List the Hypotheses</strong></p>
 <list id="corty3e-app2-list-87" type="unordered" block_type="bullet">
 <li><p id="corty3e-app2-p1149" block_type="ans-bl"><em>H</em><sub>0</sub>: The distribution of cola choices in the population is random.</p></li>
-<li><p id="corty3e-app2-p1150" block_type="ans-nl-lvl2-v2"><em>H</em><sub>1</sub>: The distribution of cola choices in the population differs from random.</p></li>
+<li><p id="corty3e-app2-p1150" block_type="ans-bl"><em>H</em><sub>1</sub>: The distribution of cola choices in the population differs from random.</p></li>
 </list>
 <p id="corty3e-app2-p1151" block_type="ans-h3"><phrase block_type="h4-n-ri"><strong>Step 4</strong></phrase> <strong>Set the Decision Rule</strong></p>
 <p id="corty3e-app2-p1152" block_type="ans"><em>df</em> &#61; <em>k</em> &#8211; 1 &#61; 2 &#8211; 1 &#61; 1</p>
@@ -2315,11 +2303,11 @@
 </tbody>
 </table>
 <p id="corty3e_page_B-31" block_type="page_start">B-31</p>
-<p id="corty3e-app2-p1162" block_type="ans-nl-txt-ni">15.71</p>
-<p id="corty3e-app2-p1163" block_type="ans-nl-txt-ni"><em>N</em><sub>Row1</sub> &#61; 34 &#43; 86 =120</p>
-<p id="corty3e-app2-p1164" block_type="ans-nl-txt-ni"><em>N</em><sub>Row1</sub> &#61; 67 &#43; 113 =180</p>
-<p id="corty3e-app2-p1165" block_type="ans-nl-txt-ni"><em>N</em><sub>Row1</sub> &#61; 34 &#43; 67 =101</p>
-<p id="corty3e-app2-p1166" block_type="ans-nl-txt-ni"><em>N</em><sub>Row1</sub> &#61; 86 &#43; 113 =199</p>
+<p id="corty3e-app2-p1162" block_type="ans"><phrase block_type="question_num">15.71</phrase></p>
+<p id="corty3e-app2-p1163" block_type="ans-nl-txt-ni"><em>N</em><sub>Row1</sub> &#61; 34 &#43; 86 = 120</p>
+<p id="corty3e-app2-p1164" block_type="ans-nl-txt-ni"><em>N</em><sub>Row2</sub> &#61; 67 &#43; 113 = 180</p>
+<p id="corty3e-app2-p1165" block_type="ans-nl-txt-ni"><em>N</em><sub>Column1</sub> &#61; 34 &#43; 67 = 101</p>
+<p id="corty3e-app2-p1166" block_type="ans-nl-txt-ni"><em>N</em><sub>Column2</sub> &#61; 86 &#43; 113 = 199</p>
 <p id="corty3e-app2-p1167" block_type="ans"><phrase block_type="question_num">15.73</phrase></p>
 <p id="corty3e-app2-fig-52" block_type="equation">
 <image asset-id="corty3e-app2-img-130" alt="image" src="asset/appb/corty3e_ineqn_app_b-31_02.jpg"/>
@@ -2366,7 +2354,7 @@
 </p>
 <p id="corty3e-app2-p1192" block_type="ans-h3"><phrase block_type="h4-n-ri"><strong>Step 6</strong></phrase> <strong>Interpret the Results</strong></p>
 <list id="corty3e-app2-list-91" type="unordered" block_type="bullet">
-<li><p id="corty3e-app2-p1193" block_type="ans"><phrase block_type="question_num">0.10</phrase>&#60; 3.841; fail to reject <em>H</em><sub>0</sub>.</p></li>
+<li><p id="corty3e-app2-p1193" block_type="ans">0.10 &#60; 3.841; fail to reject <em>H</em><sub>0</sub>.</p></li>
 <li><p id="corty3e-app2-p1194" block_type="ans">&#967;<sup>2</sup>(1, <em>N</em> &#61; 42) &#61; 0.10, <em>p</em> &#62; .05</p></li>
 </list>
 <p id="corty3e-app2-fig-57" block_type="equation">

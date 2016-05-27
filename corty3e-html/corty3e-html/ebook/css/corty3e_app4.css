@@ -1,7 +1,7 @@
-/* Appendix D CSS */
+﻿/* Appendix D CSS */
 [data-block_type="bm-ct-1"] {
   background-color: #168ca8;
-  color: #ffffff;
+  color: #fff;
   font-size: 3em;
   padding: 75px 0 0 40px;
   margin-left: -40px;
@@ -67,16 +67,16 @@
 }
 [data-block_type="ans-h3"] p {
   margin-left: 3em !important;
-  color: #222222;
+  color: #222;
 }
 [data-block_type="ans-h3"] p [data-block_type="question_num"] {
   font-family: sans-serif;
-  color: #222222;
+  color: #222;
   position: absolute;
   left: 60px;
 }
 [data-block_type="ans-h3"] p [data-block_type="h4-n-ri"] + strong {
-  color: #222222;
+  color: #222;
   font-family: sans-serif;
   margin-left: 5px;
 }
@@ -152,7 +152,7 @@ ol[data-block_type="numbered"] > li ol[data-block_type="numbered"] > li {
   counter-increment: numbered-nested-list;
   margin: 4px 0;
   list-style: none;
-  font-family: serif
+  font-family: serif;
   /*
                 [data-block_type="app4-nl-mid"] > p {
                     margin-left: .5em !important;
@@ -170,7 +170,7 @@ ol[data-block_type="numbered"] > li ol[data-block_type="numbered"] > li:before {
   content: counter(numbered-nested-list, decimal) ".";
   margin-top: 2px;
   font-family: serif;
-  color: #222222;
+  color: #222;
   font-weight: normal;
   position: absolute;
   left: 88px;

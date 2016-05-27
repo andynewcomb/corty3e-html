@@ -532,19 +532,20 @@ a.cases:: the participants in or subjects of a study.
 a.confounding variable:: a third variable in correlational and quasi-experimental designs that is not controlled for and that has an impact on <em>both</em> of the other variables.
 a.correlational design:: a scientific study in which the relationship between two variables is examined without any attempt to manipulate or control them.
 a.criterion variable:: the outcome variable in a correlational design.
-a.dependent variable:: the variable where the effect is measured in an experimental or quasi-experimental study.
+a.dependent variable:: the variable where the effect is measured in an experimental or quasi-experimental study; an outcome variable.
 a.descriptive statistic:: a summary statement about a set of cases.
-a.experimental design:: a scientific study in which an explanatory variable is manipulated or controlled by the experimenter and the effect is measured in a dependent variable.
+a.experimental design:: a scientific study in which an explanatory variable is manipulated or controlled by the experimenter and the effect that is measured in a dependent variable allows for a cause and effect conclusion.
 a.explanatory variable:: the variable that causes, predicts, or explains the outcome variable.
+a.grouping variable:: the variable that is the explanatory variable in a quasi-experimental design.
 a.independent variable:: the variable that is controlled by the experimenter in an experimental design.
 a.inferential statistic:: using observations from a sample to draw a conclusion about a population.
 a.interval-level numbers:: numbers that provide information about how much of an attribute is possessed, as well as information about same/different and more/less; interval-level numbers have equality of units and an arbitrary zero point.
 a.nominal-level numbers:: numbers used to place cases in categories; numbers are arbitrary and only provide information about same/different.
 a.ordinal-level numbers:: numbers used to indicate if more or less of an attribute is possessed; numbers provide information about same/different and more/less.
-a.outcome variable:: the variable that is caused, predicted, or influenced by the explanatory variable.
+a.outcome variable:: the variable that is caused, predicted, or influenced by the explanatory variable; the variable in a relationship test, <em>Y</em>, that is predicted from the other variable, <em>X</em>. Sometimes called the dependent variable.
 a.parameter:: a value that summarizes a population.
 a.population:: the larger group of cases a researcher is interested in studying.
-a.predictor variable:: the explanatory variable in a correlational design.
+a.predictor variable:: the variable in a relationship test, <em>X</em>, that is used to predict the other variable, <em>Y;</em> the explanatory variable in a correlation design.
 a.quasi-experimental design:: a scientific study in which cases are classified into naturally occurring groups and then compared on a dependent variable.
 a.random assignment:: every case has an equal chance of being assigned to either group in an experiment; random assignment is the hallmark of an experiment.
 a.ratio-level numbers:: numbers that have all the attributes of interval-level numbers, plus a real zero point; numbers that provide information about same/different, more/less, how much of an attribute is possessed, and that can be used to calculate a proportion.

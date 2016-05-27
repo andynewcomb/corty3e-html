@@ -27,15 +27,15 @@
 </section>
 <section id="corty3e-ch10-sec2-1" block_type="h2" chapter="10" title="" numbered="false" level="2" print_page="329">
 <section-metadata><section-title>Analysis of Variance Terminology</section-title></section-metadata>
-<p id="corty3e-ch10-p12" block_type="txt-ni"><termref term="analysis of variance (ANOVA)">Analysis of variance</termref>, called <termref term="analysis of variance (ANOVA)">ANOVA</termref> for short, is a family of statistical tests used for comparing the means of two or more groups. This chapter focuses on <strong>between-subjects, one-way ANOVA</strong>. Between-subjects, one-way ANOVA is an extension of the independent-samples <em>t</em> test, so it is used to compare means when there are two or more <em>independent</em> samples.</p>
+<p id="corty3e-ch10-p12" block_type="txt-ni"><termref term="analysis of variance (ANOVA)">Analysis of variance</termref>, called <termref term="analysis of variance (ANOVA)">ANOVA</termref> for short, is a family of statistical tests used for comparing the means of two or more groups. This chapter focuses on <termref term="between-subjects one-way ANOVA">between-subjects, one-way ANOVA</termref>. Between-subjects, one-way ANOVA is an extension of the independent-samples <em>t</em> test, so it is used to compare means when there are two or more <em>independent</em> samples.</p>
 <list id="corty3e-ch10-list-2" type="unordered" block_type="bullet">
 <li><p id="corty3e-ch10-p13" block_type="bl-first"><strong>Between-subjects</strong> is ANOVA terminology for independent samples.</p></li>
-<li><p id="corty3e-ch10-p14" block_type="bl-mid"><strong>Way</strong> is ANOVA terminology for an explanatory variable. Ways can either be independent variables or grouping variables. (Independent variables are controlled by the experimenter, who assigns subjects to groups. Grouping variables are naturally occurring characteristics used to classify subjects into different groups.)</p>
+<li><p id="corty3e-ch10-p14" block_type="bl-mid"><termref term="way">Way</termref> is ANOVA terminology for an explanatory variable. Ways can either be independent variables or grouping variables. (Independent variables are controlled by the experimenter, who assigns subjects to groups. Grouping variables are naturally occurring characteristics used to classify subjects into different groups.)</p>
 <p id="corty3e_page_330" block_type="page_start">330</p></li>
 <li><p id="corty3e-ch10-p15" block_type="bl-mid">A one-way ANOVA has one explanatory variable, either an independent variable or a grouping variable. A two-way ANOVA would have two explanatory variables, a three-way ANOVA would have three, etc.</p></li>
 <li><p id="corty3e-ch10-p16" block_type="bl-mid">Though the explanatory variable in ANOVA is either a grouping variable or an independent variable, it becomes tedious to use both terms. Most statisticians get a bit casual with language and simply call it an independent variable; we&#8217;ll continue calling them, generically, explanatory variables. Of course, when it is an independent variable, we&#8217;ll call it that.</p></li>
 <li><p id="corty3e-ch10-p17" block_type="bl-mid">An explanatory variable in ANOVA is also called a <termref term="factor">factor</termref><strong>,</strong> so a one-way ANOVA can also be called a one-factor ANOVA.</p></li>
-<li><p id="corty3e-ch10-p18" block_type="bl-last"><strong>Level</strong> is the term in ANOVA for a category of an explanatory variable. The grouping variable sex, for example, has two levels&#8212;male and female.</p></li>
+<li><p id="corty3e-ch10-p18" block_type="bl-last"><termref term="level">Level</termref> is the term in ANOVA for a category of an explanatory variable. The grouping variable sex, for example, has two levels&#8212;male and female.</p></li>
 </list>
 <p id="corty3e-ch10-p19" block_type="txt">To clarify all this terminology, here&#8217;s a question where a between-subjects, one-way ANOVA would be used: Is there a difference in artistic ability among right-handed, left-handed, and ambidextrous people? This question could be answered by gathering a sample of people and classifying them into three groups: (1) right-handed people, (2) left-handed people, and (3) ambidextrous people.</p>
 <p id="corty3e-ch10-p20" block_type="txt">Now there are three samples. The samples are independent samples as who is in one sample does not control or determine who is in another sample.</p>
@@ -72,7 +72,7 @@
 </figure>
 <p id="corty3e-ch10-p31" block_type="txt">Within-group variability can be reduced by making the sample more homogeneous, but the effect of individual differences can&#8217;t be eliminated entirely. For example, if all participants were men who weighed 175 pounds, had eaten dinner 30 minutes ago, and had been consuming alcohol regularly for over a year, there would still be variability within that group on the intoxication scores.</p>
 <p id="corty3e-ch10-p32" block_type="txt">Within-group variability is one type of variability in analysis of variance. The other type of variability for a one-way ANOVA is <em>between-group variability.</em> <termref term="Between-group variability">Between-group variability</termref> is variability that is due to the different &#8220;treatments&#8221; that the different groups receive.</p>
-<p id="corty3e-ch10-p33" block_type="txt"><link href="#corty3e-ch10-fig-4"><strong>Figure 10.2</strong></link> shows the distribution of intoxication scores for two groups&#8212;one group where each participant drank one beer and one group where each participant drank a six-pack. Individual differences explain the variability within a group, but the different doses of alcohol explain the differences <em>between</em> groups, why one group is more intoxicated than the other. This is called the <strong>treatment effect</strong> because it refers to the different ways that groups are treated. The treatment effect shows up as an impact on the outcome variable (here, the intoxication score) and is associated with the explanatory variable (here, the dose of alcohol, which is controlled by the experimenter).</p>
+<p id="corty3e-ch10-p33" block_type="txt"><link href="#corty3e-ch10-fig-4"><strong>Figure 10.2</strong></link> shows the distribution of intoxication scores for two groups&#8212;one group where each participant drank one beer and one group where each participant drank a six-pack. Individual differences explain the variability within a group, but the different doses of alcohol explain the differences <em>between</em> groups, why one group is more intoxicated than the other. This is called the <termref term="treatment effect">treatment effect</termref> because it refers to the different ways that groups are treated. The treatment effect shows up as an impact on the outcome variable (here, the intoxication score) and is associated with the explanatory variable (here, the dose of alcohol, which is controlled by the experimenter).</p>
 <p id="corty3e_page_333" block_type="page_start">333</p>
 <figure id="corty3e-ch10-fig-4" block_type="figure" numbered="true" number="10.2" mmtype="image" mmsrc="" attr="">
 <layout align="center" width="large" border="true"/>
@@ -139,7 +139,7 @@
 <section id="corty3e-ch10-sec1-2" block_type="h1" chapter="10" title="" numbered="false" level="1" print_page="336">
 <section-metadata><section-title><phrase block_type="sec_num">10.2</phrase> <phrase block_type="sec_title">Calculating Between-Subjects, One-Way ANOVA</phrase></section-title></section-metadata>
 <box id="corty3e-ch10-video-2" block_type="video">
-<p id="corty3e-ch10-videotxt-2" block_type="vidtxt"><link href="http://bcs.whfreeman.com/webpub/statistics/ips7e/student/Stat Videos/ch12/sc_anova_inference.html" target="_pop" data-href-px=""><image asset-id="corty3e-ch10-vimg-2" alt="image" src="asset/images/video.jpg"/></link><em>StatClips: Anova - Inference</em>Video on LaunchPad</p>
+<p id="corty3e-ch10-videotxt-2" block_type="vidtxt"><link href="http://bcs.whfreeman.com/webpub/statistics/ips7e/student/Stat Videos/ch12/sc_anova_inference.html" target="_pop" data-href-px=""><image asset-id="corty3e-ch10-vimg-2" alt="image" src="asset/images/video.jpg"/></link><em>StatClips: ANOVA - Inference</em>Video on LaunchPad</p>
 </box>
 <p id="corty3e-ch10-p57" block_type="txt-ni">Imagine that Dr. Chung, a psychologist who studies learning and motivation, designed a study to learn whether rats could discriminate among different types of food and if this discrimination influenced their behavior. He built a large and complex maze and trained 10 rats to run it. A rat would be placed in the start box and had to find its way to the goal box. To motivate the rats, food was placed in the goal box. Dr. Chung trained the rats with three different types of food: a low-calorie food, a normal-calorie food, and a high-calorie food. Each rat received an equal number of trials with each food and the rats were trained until they all ran the maze equally quickly.</p>
 <p id="corty3e_page_337" block_type="page_start">337</p>
@@ -206,7 +206,7 @@
 <li><p id="corty3e-ch10-p84" block_type="bl-first">If <em>F</em> &#8805; <em>F<sub>cv</sub>,</em> reject <em>H</em><sub>0</sub>.</p></li>
 <li><p id="corty3e-ch10-p85" block_type="bl-last">If <em>F</em> &#60; <em>F<sub>cv</sub>,</em> fail to reject <em>H</em><sub>0</sub>.</p></li>
 </list>
-<p id="corty3e-ch10-p86" block_type="txt-ni">To obtain the value of <em>F<sub>cv</sub></em>, use <link href="corty3e-appendix01.xml#corty3e-app1-fig-10">Appendix Table 4</link>. It provides two <em>F<sub>cv</sub></em> tables: one for critical values of <em>F</em> with a 5&#37; chance of making a Type I error (i.e., &#945; &#61; .05) and one for a 1&#37; chance of making a Type I error (&#945; &#61; .01). A portion of the table with the most commonly used alpha level, .05, is shown in <link href="#corty3e-ch10-fig-16"><strong>Table 10.5</strong></link>.</p>
+<p id="corty3e-ch10-p86" block_type="txt-ni">To obtain the value of <em>F<sub>cv</sub></em>, use <link href="corty3e_app1_1.html#corty3e-app1-fig-10">Appendix Table 4</link>. It provides two <em>F<sub>cv</sub></em> tables: one for critical values of <em>F</em> with a 5&#37; chance of making a Type I error (i.e., &#945; &#61; .05) and one for a 1&#37; chance of making a Type I error (&#945; &#61; .01). A portion of the table with the most commonly used alpha level, .05, is shown in <link href="#corty3e-ch10-fig-16"><strong>Table 10.5</strong></link>.</p>
 <figure id="corty3e-ch10-fig-16" block_type="table" numbered="true" number="10.5" mmtype="image" mmsrc="" attr="">
 <layout align="center" width="large" border="true"/>
 <image asset-id="corty3e-ch10-img-16" alt="image" src="asset/ch10/corty3e_table10_05.jpg"/>
@@ -266,8 +266,8 @@
 <box numbered="false" id="corty3e-ch10-exp1-2" block_type="mn1">
 <p id="corty3e-ch10-p120" block_type="mn-ext-ni">SS<sub>Total</sub> <em>represents all the variability in the scores. Between-subjects, one-way ANOVA divides it into variability due to the different ways the groups are treated, and variability due to individual differences.</em></p>
 </box>
-<p id="corty3e-ch10-p121" block_type="txt"><termref term="Sum of squares total">Sum of squares total</termref> is calculated by treating all the cases as if they belong in one group: the grand mean, the mean of all the scores, is subtracted from each score, these deviation scores are squared, and the squared deviation scores are added up. Voil&#224;, a sum of squares, the numerator for a variance.</p>
-<p id="corty3e-ch10-p122" block_type="txt"><termref term="Sum of squares between">Sum of squares between</termref> represents the variability between groups. It is calculated by subtracting the grand mean from each group mean, squaring these deviation scores, multiplying each squared deviation score by the number of cases in the group, and then adding them up. The final variance numerator, the one that represents variability within groups, <strong>sum of squares within</strong>, is calculated by taking each score, subtracting from it its group mean, squaring each deviation score, and adding them all up.</p>
+<p id="corty3e-ch10-p121" block_type="txt"><termref term="sum of squares total">Sum of squares total</termref> is calculated by treating all the cases as if they belong in one group: the grand mean, the mean of all the scores, is subtracted from each score, these deviation scores are squared, and the squared deviation scores are added up. Voil&#224;, a sum of squares, the numerator for a variance.</p>
+<p id="corty3e-ch10-p122" block_type="txt"><termref term="sum of squares between">Sum of squares between</termref> represents the variability between groups. It is calculated by subtracting the grand mean from each group mean, squaring these deviation scores, multiplying each squared deviation score by the number of cases in the group, and then adding them up. The final variance numerator, the one that represents variability within groups, <termref term="sum of squares within">sum of squares within</termref>, is calculated by taking each score, subtracting from it its group mean, squaring each deviation score, and adding them all up.</p>
 <p id="corty3e-ch10-p123" block_type="txt">The calculations just described are what are called definitional formulas because the calculations explain what the value being calculated is. Unfortunately, definitional formulas often are not straightforward mathematically. In contrast, computational formulas are designed to be easier to use. <link href="#corty3e-ch10-bx6-2">Equation 10.2</link> is a computational formula for sum of squares total.</p>
 <box title="" numbered="false" id="corty3e-ch10-bx6-2" block_type="eq-t">
 <box-metadata><box-title><phrase block_type="sec_num">Equation 10.2</phrase> <phrase block_type="sec_title">Formula for Calculating Sum of Squares Total for Between-Subjects, One-Way ANOVA</phrase></box-title></box-metadata>
@@ -472,7 +472,7 @@
 <p id="corty3e-ch10-p215" block_type="sr-exp-eq">&#61; 12 &#8211; 1</p>
 <p id="corty3e-ch10-p216" block_type="sr-exp-eq">&#61; 11</p>
 <p id="corty3e_page_353" block_type="page_start">353</p>
-<p id="corty3e-ch10-p217" block_type="sr_exp_txt">Looking at the &#945; &#61; .05 version of <link href="corty3e-appendix01.xml#corty3e-app1-fig-10">Appendix Table 4</link>&#8212;at the intersection of the column for 2 degrees of freedom in the numerator and the row for 9 degrees of freedom in the denominator&#8212;she finds <em>F<sub>cv</sub></em> is 4.256. Here is the decision rule:</p>
+<p id="corty3e-ch10-p217" block_type="sr_exp_txt">Looking at the &#945; &#61; .05 version of <link href="corty3e_app1_1.html#corty3e-app1-fig-10">Appendix Table 4</link>&#8212;at the intersection of the column for 2 degrees of freedom in the numerator and the row for 9 degrees of freedom in the denominator&#8212;she finds <em>F<sub>cv</sub></em> is 4.256. Here is the decision rule:</p>
 <list id="corty3e-ch10-list-18" type="unordered" block_type="bullet">
 <li><p id="corty3e-ch10-p218" block_type="sr-exp-bl-first">If <em>F</em> &#8805; 4.256, reject <em>H</em><sub>0</sub>.</p></li>
 <li><p id="corty3e-ch10-p219" block_type="sr-exp-bl-first">If <em>F</em> &#60; 4.256, fail to reject <em>H</em><sub>0</sub>.</p></li>
@@ -506,6 +506,34 @@
 <p id="corty3e-ch10-p227" block_type="sr-que-nl"><phrase block_type="question_num">10.5</phrase> Select the correct test for this example: A gerontologist wants to determine which exercise program, yoga or stretching, leads to greater limberness in elderly people. He uses a ratio-level range-of-motion test to measure limberness and randomly assigns elderly people to receive either eight weeks of yoga or eight weeks of stretching.</p>
 <p id="corty3e-ch10-p228" block_type="sr-que-nl"><phrase block_type="question_num">10.6</phrase> Select the correct test for this example: A human factors psychologist is comparing three different adhesives used in sealing cereal boxes to see which one is easiest to open. He obtained 90 consumers, randomly assigned each participant to open one cereal box, and measured how long it took to open the box. Thirty of the boxes were sealed with Adhesive A, 30 with Adhesive B, and 30 with Adhesive C.</p>
 <p id="corty3e-ch10-p229" block_type="sr-que-nl"><phrase block_type="question_num">10.7</phrase> If the numerator <em>df</em> for a between-subjects, one-way ANOVA are 4 and the denominator <em>df</em> are 20, what is the decision rule if &#945; &#61; .05?</p>
+<p id="corty3e-ch10-p230" block_type="sr-que-nl"><phrase block_type="question_num">10.8</phrase> If a between-subjects, one-way ANOVA has 32 cases randomly assigned to four equally sized groups, what are <em>df</em><sub>Between</sub>, <em>df</em><sub>Within</sub>, and <em>df</em><sub>Total</sub>?</p>
+<p id="corty3e-ch10-p231" block_type="sr-que-nl"><phrase block_type="question_num">10.9</phrase> Here are data on an interval-level variable for three independent samples. Prepare this table so that it would be ready for use in computing sums of squares. (Do not compute the sums of squares.)</p>
+<table id="corty3e-ch10-table2" block_type="un_table">
+<layout align="center" width="medium" border="true"/>
+<tbody>
+<tr>
+<td><phrase block_type="TBN-COLHD"><strong>Group 1</strong></phrase></td>
+<td><phrase block_type="TBN-COLHD"><strong>Group 2</strong></phrase></td>
+<td><phrase block_type="TBN-COLHD"><strong>Group 3</strong></phrase></td>
+</tr>
+<tr>
+<td><phrase block_type="tbn-txt">16</phrase></td>
+<td><phrase block_type="tbn-txt">12</phrase></td>
+<td><phrase block_type="tbn-txt">13</phrase></td>
+</tr>
+<tr>
+<td><phrase block_type="tbn-txt">17</phrase></td>
+<td><phrase block_type="tbn-txt">14</phrase></td>
+<td><phrase block_type="tbn-txt">15</phrase></td>
+</tr>
+<tr>
+<td><phrase block_type="tbn-txt">20</phrase></td>
+<td></td>
+<td><phrase block_type="tbn-txt">18</phrase></td>
+</tr>
+</tbody>
+</table>
+<p id="corty3e-ch10-p232" block_type="sr-que-nl"><phrase block_type="question_num">10.10</phrase> Given the data in the table below, calculate (a) <em>SS</em><sub>Total</sub>, (b) <em>SS</em><sub>Between</sub>, and (c) <em>SS</em><sub>Within</sub>.</p>
 <table id="corty3e-ch10-table1" block_type="un_table">
 <layout align="center" width="xlarge" border="true"/>
 <tbody>
@@ -595,34 +623,6 @@
 </tr>
 </tbody>
 </table>
-<p id="corty3e-ch10-p230" block_type="sr-que-nl"><phrase block_type="question_num">10.8</phrase> If a between-subjects, one-way ANOVA has 32 cases randomly assigned to four equally sized groups, what are <em>df</em><sub>Between</sub>, <em>df</em><sub>Within</sub>, and <em>df</em><sub>Total</sub>?</p>
-<p id="corty3e-ch10-p231" block_type="sr-que-nl"><phrase block_type="question_num">10.9</phrase> Here are data on an interval-level variable for three independent samples. Prepare this table so that it would be ready for use in computing sums of squares. (Do not compute the sums of squares.)</p>
-<table id="corty3e-ch10-table2" block_type="un_table">
-<layout align="center" width="medium" border="true"/>
-<tbody>
-<tr>
-<td><phrase block_type="TBN-COLHD"><strong>Group 1</strong></phrase></td>
-<td><phrase block_type="TBN-COLHD"><strong>Group 2</strong></phrase></td>
-<td><phrase block_type="TBN-COLHD"><strong>Group 3</strong></phrase></td>
-</tr>
-<tr>
-<td><phrase block_type="tbn-txt">16</phrase></td>
-<td><phrase block_type="tbn-txt">12</phrase></td>
-<td><phrase block_type="tbn-txt">13</phrase></td>
-</tr>
-<tr>
-<td><phrase block_type="tbn-txt">17</phrase></td>
-<td><phrase block_type="tbn-txt">14</phrase></td>
-<td><phrase block_type="tbn-txt">15</phrase></td>
-</tr>
-<tr>
-<td><phrase block_type="tbn-txt">20</phrase></td>
-<td></td>
-<td><phrase block_type="tbn-txt">18</phrase></td>
-</tr>
-</tbody>
-</table>
-<p id="corty3e-ch10-p232" block_type="sr-que-nl"><phrase block_type="question_num">10.10</phrase> Given the data in the table below, calculate (a) <em>SS</em><sub>Total</sub>, (b) <em>SS</em><sub>Between</sub>, and (c) <em>SS</em><sub>Within</sub>.</p>
 <p id="corty3e-ch10-p233" block_type="sr-que-nl"><phrase block_type="question_num">10.11</phrase> Given <em>df</em><sub>Between</sub> &#61; 3, <em>df</em><sub>Within</sub> &#61; 12, <em>df</em><sub>Total</sub> &#61; 15, <em>SS</em><sub>Between</sub> &#61; 716.00, <em>SS</em><sub>Within</sub> &#61; 228.00, and <em>SS</em><sub>Total</sub> &#61; 944.00, complete an ANOVA summary table.</p>
 </box>
 </section>
@@ -696,7 +696,7 @@
 <p id="corty3e-ch10-p261" block_type="txt">There are a wide variety of post-hoc tests with cool names like the Scheff&#233;, the Newman-Keuls, and the Bonferroni-Dunn. Post-hoc tests vary in terms of what type of error they are more likely to make, a Type I error or a Type II error. No post-hoc test can guarantee avoiding a mistake. Compared to each other, some post-hoc tests are more likely to say that there is a statistically significant difference between means that don&#8217;t differ (Type I error). Other post-hoc tests are more likely to find no statistically significant difference when a difference exists (Type II error).</p>
 <p id="corty3e-ch10-p262" block_type="txt">The test taught here, the Tukey <em>HSD,</em> is the latter type, what is called a conservative test. If it finds a statistically significant difference between a pair of means, then the population means probably really are different. Which is why <em>HSD</em> stands for &#8220;honestly significant difference.&#8221; However, there is a cost to this conservatism: the <em>HSD</em> has less statistical power and so may overlook a pair of means that are different.</p>
 <p id="corty3e-ch10-p263" block_type="txt">The Tukey <em>HSD</em> works by calculating an <em>HSD</em> value, which is the minimum difference needed between two means in order for the difference to be considered statistically significant. If the observed difference between a pair of means is greater than or equal to the <em>HSD</em> value, then the researcher can conclude that there is a statistically significant difference between the two groups. For example, the mean for the low-calorie group was 31 seconds and for the medium-calorie group it was 28 seconds. There is a 3.00-second difference between the mean of these two groups. If the <em>HSD</em> value were, say, 2.50, then the difference between the mean of these two groups would be a statistically significant one. This is the case because the observed difference, 3.00, met or exceeded the <em>HSD</em> value of 2.50.</p>
-<p id="corty3e-ch10-p264" block_type="txt">The formula to calculate <em>HSD</em> is shown in <link href="#corty3e-ch10-bx6-9">Equation 10.9</link>. In order to apply that formula, one needs a value called <em>q.</em> Values of <em>q</em> can be found in <link href="corty3e-appendix01.xml#corty3e-app1-fig-18">Appendix Table 5</link>, a part of which is shown in <link href="#corty3e-ch10-fig-51"><strong>Table 10.12.</strong></link></p>
+<p id="corty3e-ch10-p264" block_type="txt">The formula to calculate <em>HSD</em> is shown in <link href="#corty3e-ch10-bx6-9">Equation 10.9</link>. In order to apply that formula, one needs a value called <em>q.</em> Values of <em>q</em> can be found in <link href="corty3e_app1_1.html#corty3e-app1-fig-18">Appendix Table 5</link>, a part of which is shown in <link href="#corty3e-ch10-fig-51"><strong>Table 10.12.</strong></link></p>
 <figure id="corty3e-ch10-fig-51" block_type="table" numbered="true" number="10.12" mmtype="image" mmsrc="" attr="">
 <layout align="center" width="large" border="true"/>
 <image asset-id="corty3e-ch10-img-51" alt="image" src="asset/ch10/corty3e_table10_12.jpg"/>
@@ -713,13 +713,13 @@
 <p id="corty3e-ch10-eqn-24" block_type="equation">
 <image asset-id="corty3e-ch10-img-52" alt="image" src="asset/ch10/corty3e_eqn10_360_01.jpg"/></p>
 <p id="corty3e-ch10-p269" block_type="eq-txt-ni">where <em>HSD</em> &#61; value by which, if two means differ, the difference is statistically significant</p>
-<p id="corty3e-ch10-p270" block_type="eq-unl"><em>q</em> &#61; value of <em>q,</em> from <link href="corty3e-appendix01.xml#corty3e-app1-fig-18">Appendix Table 5</link></p>
+<p id="corty3e-ch10-p270" block_type="eq-unl"><em>q</em> &#61; value of <em>q,</em> from <link href="corty3e_app1_1.html#corty3e-app1-fig-18">Appendix Table 5</link></p>
 <p id="corty3e-ch10-p271" block_type="eq-unl"><em>MS</em><sub>Within</sub> &#61; <em>MS</em><sub>Within</sub> (from ANOVA summary table)</p>
 <p id="corty3e-ch10-p272" block_type="eq-unl"><em>n</em> &#61; sample size for the smallest group</p>
 </box>
 <p id="corty3e-ch10-p273" block_type="txt">To calculate <em>HSD,</em> one needs to know <em>q,</em> <em>MS</em><sub>Within</sub>, and <em>n:</em></p>
 <list id="corty3e-ch10-list-22" type="unordered" block_type="bullet">
-<li><p id="corty3e-ch10-p274" block_type="bl-first">From <link href="corty3e-appendix01.xml#corty3e-app1-fig-18">Appendix Table 5</link>, it is known that <em>q</em> &#61; 4.17.</p></li>
+<li><p id="corty3e-ch10-p274" block_type="bl-first">From <link href="corty3e_app1_1.html#corty3e-app1-fig-18">Appendix Table 5</link>, it is known that <em>q</em> &#61; 4.17.</p></li>
 <li><p id="corty3e-ch10-p275" block_type="bl-mid">Referring back to the ANOVA summary table for the maze data (<link href="#corty3e-ch10-fig-30">Table 10.7</link>), <em>MS</em><sub>Within</sub> &#61; 0.86.</p></li>
 <li><p id="corty3e-ch10-p276" block_type="bl-last">The only missing piece is <em>n,</em> the sample size for the smallest group. In <link href="#corty3e-ch10-fig-11">Table 10.3</link>, where the maze data were first presented, it can be seen that the smallest group has three cases, so <em>n</em> &#61; 3. (Tukey&#8217;s <em>HSD</em> was designed to be used when all sample sizes are equal. When sample sizes are unequal, using the smallest sample size makes the <em>HSD</em> value larger, which keeps the test conservative.)</p></li>
 </list>
@@ -771,10 +771,10 @@
 <li><p id="corty3e-ch10-p300" block_type="sr-exp-bl-mid">The .05 is the alpha level that had been selected.</p></li>
 <li><p id="corty3e-ch10-p301" block_type="sr-exp-bl-last">The <em>p</em> > .05 means that a result like <em>F</em> &#61; 1.35 is a common one when the null hypothesis is true, as under those conditions it occurs more than 5&#37; of the time. The sensory psychologist has failed to reject the null hypothesis.</p></li>
 </list>
-<p id="corty3e-ch10-p302" block_type="sr_exp_txt"><em>How big is the effect?</em> <link href="#corty3e-ch10-bx6-5">Equation 10.5</link> is used to calculate the effect size, <em>r</em> <sup>2</sup>, the percentage of variability in the dependent variable (seconds to pain threshold) that is accounted for by the independent variable (type of painkiller). To use the equation, two values, <em>SS</em><sub>Between</sub> (62.00) and <em>SS</em><sub>Total</sub> (269.00), are obtained from the ANOVA summary table:</p>
+<p id="corty3e-ch10-p302" block_type="sr_exp_txt"><em>How big is the effect?</em> <link href="#corty3e-ch10-bx6-5">Equation 10.5</link> is used to calculate the effect size, <em>r</em><sup>2</sup>, the percentage of variability in the dependent variable (seconds to pain threshold) that is accounted for by the independent variable (type of painkiller). To use the equation, two values, <em>SS</em><sub>Between</sub> (62.00) and <em>SS</em><sub>Total</sub> (269.00), are obtained from the ANOVA summary table:</p>
 <p id="corty3e-ch10-eqn-26" block_type="equation">
 <image asset-id="corty3e-ch10-img-56" alt="image" src="asset/ch10/corty3e_eqn10_363_01.jpg"/></p>
-<p id="corty3e-ch10-p303" block_type="sr_exp_txt">An <em>r</em> <sup>2</sup> of 23&#37; is close to a large effect, according to Cohen. This gives Dr. Douglas two conflicting pieces of information:</p>
+<p id="corty3e-ch10-p303" block_type="sr_exp_txt">An <em>r</em><sup>2</sup> of 23&#37; is close to a large effect, according to Cohen. This gives Dr. Douglas two conflicting pieces of information:</p>
 <list id="corty3e-ch10-list-27" type="unordered" block_type="bullet">
 <li><p id="corty3e-ch10-p304" block_type="sr-exp-bl-first">Not enough evidence exists to say there is an effect.</p></li>
 <li><p id="corty3e-ch10-p305" block_type="sr-exp-bl-mid">However, the effect seems to be large.</p></li>
@@ -795,7 +795,7 @@
 <li><p id="corty3e-ch10-p315" block_type="sr-que-ll">Use this information to complete a post-hoc test comparing <em>M</em><sub>1</sub> &#61; 29.00 and <em>M</em><sub>3</sub> &#61; 22.00; interpret the difference between the two population means.</p></li>
 </list>
 <p id="corty3e-ch10-p316" block_type="sr-que-nl"><phrase block_type="question_num">10.15</phrase> An industrial/organizational psychologist wanted to investigate the effect of different management styles on employee performance. She obtained 27 employees at a large company and randomly assigned them, in equal-sized groups, to be supervised by managers who believed in motivating employees by using (a) rewards for good performance, (b) punishment for poor performance, or (c) a mixture of rewards and punishments. No nonrobust assumptions of a between-subjects, one-way ANOVA were violated. One year later, she recorded how much of a raise (as a percentage) each employee received. She believed that employees who did better work would receive bigger raises. The employees supervised by managers who believed in using rewards saw a mean raise of 8&#37;, those supervised by managers who believed in using punishment had a mean raise of 5&#37;, and those supervised by managers who used a mixture of rewards and punishment had a mean raise of 7&#37;.</p>
-<p id="corty3e-ch10-p317" block_type="sr-x-txt-ni">A between-subjects, one-way ANOVA was used to analyze the results. The results were statistically significant. Given the ANOVA summary table, <em>r</em> <sup>2</sup> &#61; 30.43&#37; and <em>HSD</em> &#61; 2.35, write a four-point interpretation.</p>
+<p id="corty3e-ch10-p317" block_type="sr-x-txt-ni">A between-subjects, one-way ANOVA was used to analyze the results. The results were statistically significant. Given the ANOVA summary table, <em>r</em><sup>2</sup> &#61; 30.43&#37; and <em>HSD</em> &#61; 2.35, write a four-point interpretation.</p>
 <table id="corty3e-ch10-table3" block_type="un_table">
 <layout align="center" width="large" border="true"/>
 <tbody>
@@ -858,7 +858,7 @@
 <p id="corty3e-ch10-p333" block_type="sr-x-eq">Total degrees of freedom &#61; <em>df</em><sub>Total</sub> &#61; <em>N</em> &#8722; 1 &#61; 16 &#8722; 1 &#61; 15</p>
 <p id="corty3e-ch10-p334" block_type="sr-x-txt-ni">Next, set the alpha level:</p>
 <p id="corty3e-ch10-p335" block_type="sr-x-eq">&#945; &#61; .05 because willing to have a 5&#37; chance of making a Type I error</p>
-<p id="corty3e-ch10-p336" block_type="sr-x-txt-ni">Then, use the degrees of freedom and alpha level to find the critical value of <em>F</em> in <link href="corty3e-appendix01.xml#corty3e-app1-fig-10">Appendix Table 4</link>:</p>
+<p id="corty3e-ch10-p336" block_type="sr-x-txt-ni">Then, use the degrees of freedom and alpha level to find the critical value of <em>F</em> in <link href="corty3e_app1_1.html#corty3e-app1-fig-10">Appendix Table 4</link>:</p>
 <p id="corty3e-ch10-p337" block_type="sr-x-eq"><em>F<sub>cv</sub></em> &#61; 3.490</p>
 <p id="corty3e-ch10-p338" block_type="sr-x-txt-ni">Then, set the decision rule:</p>
 <list id="corty3e-ch10-list-30" type="unordered" block_type="bullet">
@@ -882,11 +882,11 @@
 </list>
 <p id="corty3e-ch10-p349" block_type="sr-x-txt">The first statement is true, so the null hypothesis should be rejected. The results are called statistically significant, the alternative hypothesis is accepted, and it is concluded that at least one population mean differs from at least one other population mean. A post-hoc test will be needed to determine where the differences lie. For now, though, the results can be written in APA format:</p>
 <p id="corty3e-ch10-p350" block_type="sr-x-eq"><em>F</em>(3, 12) &#61; 3.52, <em>p</em> &#60; .05</p>
-<p id="corty3e-ch10-p351" block_type="sr-x-txt"><em>How big is the effect?</em> This question is answered by calculating <em>r</em> <sup>2</sup>:</p>
+<p id="corty3e-ch10-p351" block_type="sr-x-txt"><em>How big is the effect?</em> This question is answered by calculating <em>r</em><sup>2</sup>:</p>
 <p id="corty3e-ch10-eqn-27" block_type="equation">
 <image asset-id="corty3e-ch10-img-59" alt="image" src="asset/ch10/corty3e_eqn10_367_01.jpg"/></p>
 <p id="corty3e-ch10-p352" block_type="sr-x-txt-ni">On the basis of Cohen&#8217;s criteria, the fact that region explains 46.79&#37; of the variability in salary means this is a very large effect.</p>
-<p id="corty3e-ch10-p353" block_type="sr-x-txt"><em>Where is the effect?</em> Tukey&#8217;s <em>HSD</em> will be used as a post-hoc test to find out which pair, or pairs, of means are statistically significantly different. To calculate the <em>HSD</em> value, a researcher must know <em>q,</em> <em>MS</em><sub>Within</sub>, and <em>n.</em> <em>q</em> is found in <link href="corty3e-appendix01.xml#corty3e-app1-fig-18">Appendix Table 5</link> for &#945;?=?.05, in the column for <em>k</em> &#61; 4 and the row for <em>df</em><sub>Within</sub> &#61; 12. With <em>q</em> &#61; 4.20, <em>MS</em><sub>Within</sub> &#61; 60.32, and <em>n</em> &#61; 4, <link href="#corty3e-ch10-bx6-9">Equation 10.9</link> is used to calculate <em>HSD:</em></p>
+<p id="corty3e-ch10-p353" block_type="sr-x-txt"><em>Where is the effect?</em> Tukey&#8217;s <em>HSD</em> will be used as a post-hoc test to find out which pair, or pairs, of means are statistically significantly different. To calculate the <em>HSD</em> value, a researcher must know <em>q,</em> <em>MS</em><sub>Within</sub>, and <em>n.</em> <em>q</em> is found in <link href="corty3e_app1_1.html#corty3e-app1-fig-18">Appendix Table 5</link> for &#945;?=?.05, in the column for <em>k</em> &#61; 4 and the row for <em>df</em><sub>Within</sub> &#61; 12. With <em>q</em> &#61; 4.20, <em>MS</em><sub>Within</sub> &#61; 60.32, and <em>n</em> &#61; 4, <link href="#corty3e-ch10-bx6-9">Equation 10.9</link> is used to calculate <em>HSD:</em></p>
 <p id="corty3e-ch10-eqn-28" block_type="equation">
 <image asset-id="corty3e-ch10-img-60" alt="image" src="asset/ch10/corty3e_eqn10_367_02.jpg"/></p>
 <p id="corty3e-ch10-p354" block_type="sr-x-txt-ni">Any groups that have a mean difference greater than or equal to 16.31 points are statistically significantly different. The largest mean is the Northeast at &#36;77.73 thousand and the smallest is the South at &#36;61.37 thousand. Those two are 16.36 points apart and this difference is a statistically significant difference. All other differences are smaller than 16.31 and thus not statistically significant. The effect seems to be due to the &#36;16.36 thousand difference between the mean salaries for psychologists in the Northeast and mean salaries in the South. Salaries are statistically significantly higher in the Northeast than they are in the South.</p>
@@ -913,7 +913,7 @@
 </list>
 <p id="corty3e_page_369" block_type="page_start">369</p>
 <box title="DIY" numbered="false" id="corty3e-ch10-bx4-1" block_type="bx4-h">
-<p id="corty3e-ch10-p365" block_type="bx4-txt-ni">ANOVA is an extension of the <em>t</em> test, so let&#8217;s extend the <link href="#corty3e-ch10-bx4-019">DIY</link> from the independent-samples <em>t</em> test to the between-subjects, one-way ANOVA. In that DIY, you were asked to compare two groups of states, say, northern states vs. southern states, on some outcome variable, say, murder rate. Now, divide states into three groups, say, northern, middle, and southern states, and compare them on your outcome variable.</p>
+<p id="corty3e-ch10-p365" block_type="bx4-txt-ni">ANOVA is an extension of the <em>t</em> test, so let&#8217;s extend the DIY from the independent-samples <em>t</em> test to the between-subjects, one-way ANOVA. In that DIY, you were asked to compare two groups of states, say, northern states vs. southern states, on some outcome variable, say, murder rate. Now, divide states into three groups, say, northern, middle, and southern states, and compare them on your outcome variable.</p>
 </box>
 </section>
 <section id="corty3e-ch10-sec1-5" block_type="cr-kt-t" chapter="10" title="" numbered="false" level="1" print_page="369">
@@ -927,9 +927,9 @@ a.between-subjects, one-way ANOVA:: a statistical test used to compare the means
 a.factor:: term for an explanatory variable in ANOVA.
 a.level:: ANOVA terminology for a category of an explanatory variable.
 a.post-hoc test:: a follow-up test to a statistically significant ANOVA, engineered to find out which pairs of means differ while keeping the overall alpha level at the chosen level.
-a.sum of squares between (<em>SS</em><sub>Between</sub>):: A sum of the squared deviations scores representing the variability between groups.
-a.sum of squares total (<em>SS</em><sub>Total</sub>):: A sum of the squared deviation scores representing the all variability in the scores.
-a.sum of squares within (<em>SS</em><sub>Within</sub>):: A sum of the squared deviation scores representing the variability within groups.
+a.sum of squares between (<em>SS</em><sub>Between</sub>):: a sum of the squared deviation scores representing the variability between groups.
+a.sum of squares total (<em>SS</em><sub>Total</sub>):: a sum of the squared deviation scores representing all the variability in the scores.
+a.sum of squares within (<em>SS</em><sub>Within</sub>):: a sum of the squared deviation scores representing the variability within groups.
 a.treatment effect:: the impact of the explanatory variable on the dependent variable.
 a.way:: term for an explanatory variable in ANOVA.
 a.within-group variability:: variability within a sample of cases, all of which have received the same treatment.
@@ -998,10 +998,10 @@ a.within-group variability:: variability within a sample of cases, all of which 
 <p id="corty3e-ch10-p433" block_type="cr-x-nl-txt"><phrase block_type="question_num">10.54</phrase> The numbers in parentheses when reporting the results of a between-subjects, one-way ANOVA in APA format are &#95;&#95;&#95;&#95; and &#95;&#95;&#95;&#95;.</p>
 <p id="corty3e-ch10-p434" block_type="cr-x-nl-txt"><phrase block_type="question_num">10.55</phrase> If the null hypothesis is not rejected, ANOVA results are reported in APA format as <em>p</em> &#95;&#95;&#95;&#95; .05.</p>
 <p id="corty3e-ch10-p435" block_type="cr-x-nl-txt"><phrase block_type="question_num">10.56</phrase> &#95;&#95;&#95;&#95; is used as the effect size in between-subjects, one-way ANOVA.</p>
-<p id="corty3e-ch10-p436" block_type="cr-x-nl-txt"><phrase block_type="question_num">10.57</phrase> <em>r</em> <sup>2</sup> is calculated as the percentage of total variability in scores that is accounted for by &#95;&#95;&#95;&#95; variability.</p>
+<p id="corty3e-ch10-p436" block_type="cr-x-nl-txt"><phrase block_type="question_num">10.57</phrase> <em>r</em><sup>2</sup> is calculated as the percentage of total variability in scores that is accounted for by &#95;&#95;&#95;&#95; variability.</p>
 <p id="corty3e-ch10-p437" block_type="cr-x-nl-txt"><phrase block_type="question_num">10.58</phrase> The higher the percentage of variability in the dependent variable explained by the explanatory variable, the &#95;&#95;&#95;&#95; is the size of the effect.</p>
-<p id="corty3e-ch10-p438" block_type="cr-x-nl-txt"><phrase block_type="question_num">10.59</phrase> The closer <em>r</em> <sup>2</sup> is to &#95;&#95;&#95;&#95;&#37;, the stronger the effect; the closer <em>r</em> <sup>2</sup> is to &#95;&#95;&#95;&#95;&#37;, the weaker the effect.</p>
-<p id="corty3e-ch10-p439" block_type="cr-x-nl-txt"><phrase block_type="question_num">10.60</phrase> Cohen considers an <em>r</em> <sup>2</sup> of 9&#37; to be a &#95;&#95;&#95;&#95; effect.</p>
+<p id="corty3e-ch10-p438" block_type="cr-x-nl-txt"><phrase block_type="question_num">10.59</phrase> The closer <em>r</em><sup>2</sup> is to &#95;&#95;&#95;&#95;&#37;, the stronger the effect; the closer <em>r</em><sup>2</sup> is to &#95;&#95;&#95;&#95;&#37;, the weaker the effect.</p>
+<p id="corty3e-ch10-p439" block_type="cr-x-nl-txt"><phrase block_type="question_num">10.60</phrase> Cohen considers an <em>r</em><sup>2</sup> of 9&#37; to be a &#95;&#95;&#95;&#95; effect.</p>
 <p id="corty3e-ch10-p440" block_type="cr-x-nl-txt"><phrase block_type="question_num">10.61</phrase> Post-hoc tests are only used if the ANOVA results are &#95;&#95;&#95;&#95;.</p>
 <p id="corty3e-ch10-p441" block_type="cr-x-nl-txt"><phrase block_type="question_num">10.62</phrase> Some post-hoc tests have a greater likelihood of making a &#95;&#95;&#95;&#95; error and others a greater chance of a &#95;&#95;&#95;&#95; error.</p>
 <p id="corty3e-ch10-p442" block_type="cr-x-nl-txt"><phrase block_type="question_num">10.63</phrase> The Tukey <em>HSD</em> is a conservative test. It is more likely to make a &#95;&#95;&#95;&#95; error than a &#95;&#95;&#95;&#95; error.</p>
@@ -1021,8 +1021,8 @@ a.within-group variability:: variability within a sample of cases, all of which 
 <p id="corty3e-ch10-p455" block_type="cr-x-nl-txt"><phrase block_type="question_num">10.73</phrase> A sensory psychologist wants to determine if a sensory threshold differs depending on which nostril is used. He obtains 30 introductory psychology student volunteers and measures the absolute threshold, in parts per million, for detecting the scent of peppermint. Participants are randomly assigned to three equal-size groups: (1) scent administered to the left nostril, (2) scent administered to the right nostril, and (3) scent administered to both nostrils. Each participant is tested individually by an experimenter who does not know what the hypothesis is and does not know which nostril is being used.</p>
 <p id="corty3e-ch10-p456" block_type="cr-x-nl-txt"><phrase block_type="question_num">10.74</phrase> A biomedical engineer compared the abrasion resistance &#8212; as measured by number of rotations until failure &#8212; of three different artificial hips. Manufacturer X makes hip joints out of metal, manufacturer Y out of ceramic, and manufacturer Z out of a metal/ceramic composite. The biomedical engineer gets a random sample of 6 hips from each manufacturer&#8217;s production line and tests each one individually until failure occurs.</p>
 <p id="corty3e-ch10-p457" block_type="cr-x-txt-ni"><strong><em>Writing the hypotheses</em></strong></p>
-<p id="corty3e-ch10-p458" block_type="cr-x-nl-txt"><phrase block_type="question_num">10.75</phrase> Write the null and alternative hypotheses for the between-subjects, one-way ANOVA in <link href="#corty3e-ch10-question-88">Exercise 10.73</link>.</p>
-<p id="corty3e-ch10-p459" block_type="cr-x-nl-txt"><phrase block_type="question_num">10.76</phrase> Write the null and alternative hypotheses for the between-subjects, one-way ANOVA in <link href="#corty3e-ch10-question-89">Exercise 10.74</link>.</p>
+<p id="corty3e-ch10-p458" block_type="cr-x-nl-txt"><phrase block_type="question_num">10.75</phrase> Write the null and alternative hypotheses for the between-subjects, one-way ANOVA in <link href="#corty3e-ch10-p455">Exercise 10.73</link>.</p>
+<p id="corty3e-ch10-p459" block_type="cr-x-nl-txt"><phrase block_type="question_num">10.76</phrase> Write the null and alternative hypotheses for the between-subjects, one-way ANOVA in <link href="#corty3e-ch10-p456">Exercise 10.74</link>.</p>
 <p id="corty3e-ch10-p460" block_type="cr-x-txt-ni"><strong><em>Calculating degrees of freedom</em></strong></p>
 <p id="corty3e-ch10-p461" block_type="cr-x-nl-txt"><phrase block_type="question_num">10.77</phrase> If <em>N</em> &#61; 48 and <em>k</em> &#61; 4, calculate (a) <em>df</em><sub>Total</sub>, (b) <em>df</em><sub>Between</sub>, and (c) <em>df</em><sub>Within</sub>.</p>
 <p id="corty3e-ch10-p462" block_type="cr-x-nl-txt"><phrase block_type="question_num">10.78</phrase> If <em>N</em> &#61; 120 and <em>k</em> &#61; 5, calculate (a) <em>df</em><sub>Total</sub>, (b <em>df</em><sub>Between</sub>, and (c) <em>df</em><sub>Within</sub>.</p>
@@ -1421,12 +1421,12 @@ a.within-group variability:: variability within a sample of cases, all of which 
 <p id="corty3e-ch10-p503" block_type="cr-x-nl-txt"><phrase block_type="question_num">10.110</phrase> The results of a between-subjects, one-way ANOVA, in APA format, are <em>F</em>(3, 30) &#61; 2.66, <em>p</em> > .05. What interpretative statement can one make about the differences among the four population means?</p>
 <p id="corty3e-ch10-p504" block_type="cr-x-txt-ni"><strong><em>Calculating r<sup>2</sup></em></strong></p>
 <p id="corty3e-ch10-p505" block_type="cr-x-nl-txt"><phrase block_type="question_num">10.111</phrase> If <em>SS</em><sub>Between</sub> &#61; 128.86 and <em>SS</em><sub>Total</sub> &#61; 413.67, what is <em>r</em><sup>2</sup>?</p>
-<p id="corty3e-ch10-p506" block_type="cr-x-nl-txt"><phrase block_type="question_num">10.112</phrase> f <em>SS</em><sub>Between</sub> &#61; 17.48 and <em>SS</em><sub>Total</sub> &#61; 342.88, what is <em>r</em> <sup>2</sup>?</p>
-<p id="corty3e-ch10-p507" block_type="cr-x-nl-txt"><phrase block_type="question_num">10.113</phrase> Using the information in the ANOVA summary table in <link href="#corty3e-ch10-question-122">Exercise 10.107</link>, calculate <em>r</em><sup>2</sup>.</p>
-<p id="corty3e-ch10-p508" block_type="cr-x-nl-txt"><phrase block_type="question_num">10.114</phrase> Using the information in the ANOVA summary table in <link href="#corty3e-ch10-question-123">Exercise 10.108</link>, calculate <em>r</em><sup>2</sup>.</p>
+<p id="corty3e-ch10-p506" block_type="cr-x-nl-txt"><phrase block_type="question_num">10.112</phrase> f <em>SS</em><sub>Between</sub> &#61; 17.48 and <em>SS</em><sub>Total</sub> &#61; 342.88, what is <em>r</em><sup>2</sup>?</p>
+<p id="corty3e-ch10-p507" block_type="cr-x-nl-txt"><phrase block_type="question_num">10.113</phrase> Using the information in the ANOVA summary table in <link href="#corty3e-ch10-p499">Exercise 10.107</link>, calculate <em>r</em><sup>2</sup>.</p>
+<p id="corty3e-ch10-p508" block_type="cr-x-nl-txt"><phrase block_type="question_num">10.114</phrase> Using the information in the ANOVA summary table in <link href="#corty3e-ch10-p500">Exercise 10.108</link>, calculate <em>r</em><sup>2</sup>.</p>
 <p id="corty3e-ch10-p509" block_type="cr-x-txt-ni"><strong><em>Deciding whether to do a post-hoc test</em></strong></p>
-<p id="corty3e-ch10-p510" block_type="cr-x-nl-txt"><phrase block_type="question_num">10.115</phrase> Should a post-hoc test be completed for the results in the ANOVA summary table in <link href="#corty3e-ch10-question-122">Exercise 10.107</link>?</p>
-<p id="corty3e-ch10-p511" block_type="cr-x-nl-txt"><phrase block_type="question_num">10.116</phrase> Should a post-hoc test be completed for the results in the ANOVA summary table in <link href="#corty3e-ch10-question-123">Exercise 10.108</link>?</p>
+<p id="corty3e-ch10-p510" block_type="cr-x-nl-txt"><phrase block_type="question_num">10.115</phrase> Should a post-hoc test be completed for the results in the ANOVA summary table in <link href="#corty3e-ch10-p499">Exercise 10.107</link>?</p>
+<p id="corty3e-ch10-p511" block_type="cr-x-nl-txt"><phrase block_type="question_num">10.116</phrase> Should a post-hoc test be completed for the results in the ANOVA summary table in <link href="#corty3e-ch10-p500">Exercise 10.108</link>?</p>
 <p id="corty3e-ch10-p512" block_type="cr-x-txt-ni"><strong><em>Finding q</em></strong></p>
 <p id="corty3e-ch10-p513" block_type="cr-x-nl-txt"><phrase block_type="question_num">10.117</phrase> If <em>k</em> &#61; 4 and <em>df</em><sub>Within</sub> &#61; 16, what is <em>q</em> if &#945;?= .01?</p>
 <p id="corty3e-ch10-p514" block_type="cr-x-nl-txt"><phrase block_type="question_num">10.118</phrase> If <em>k</em> &#61; 3 and <em>df</em><sub>Within</sub> &#61; 26, what is <em>q</em> if &#945;?= .05?</p>
@@ -1437,10 +1437,10 @@ a.within-group variability:: variability within a sample of cases, all of which 
 <p id="corty3e-ch10-p518" block_type="cr-x-txt-ni"><strong><em>Interpreting HSD</em></strong></p>
 <p id="corty3e-ch10-p519" block_type="cr-x-nl-txt"><phrase block_type="question_num">10.121</phrase> If <em>M</em><sub>1</sub> &#61; 13.09, <em>M</em><sub>2</sub> &#61; 8.89, and <em>HSD</em> &#61; 4.37, is the difference a statistically significant one? What conclusion would one draw about the direction of the difference between the two population means?</p>
 <p id="corty3e-ch10-p520" block_type="cr-x-nl-txt"><phrase block_type="question_num">10.122</phrase> If <em>M</em><sub>1</sub> &#61; 123.65, <em>M</em><sub>2</sub> &#61; 144.56, and <em>HSD</em> &#61; 10.64, is the difference a statistically significant one? What conclusion would one draw about the direction of the difference between the two population means?</p>
-<p id="corty3e-ch10-p521" block_type="cr-x-nl-txt"><phrase block_type="question_num">10.123</phrase> If <em>M</em><sub>1</sub> &#61; 67.86, <em>M</em><sub>2</sub> &#61; 53.56, <em>M</em><sub>3</sub> =?61.55, and <em>HSD</em> &#61; 8.30, which pairs of means have statistically significant differences? What is the direction of the differences?</p>
+<p id="corty3e-ch10-p521" block_type="cr-x-nl-txt"><phrase block_type="question_num">10.123</phrase> If <em>M</em><sub>1</sub> &#61; 67.86, <em>M</em><sub>2</sub> &#61; 53.56, <em>M</em><sub>3</sub> = 61.55, and <em>HSD</em> &#61; 8.30, which pairs of means have statistically significant differences? What is the direction of the differences?</p>
 <p id="corty3e-ch10-p522" block_type="cr-x-nl-txt"><phrase block_type="question_num">10.124</phrase> If <em>M</em><sub>1</sub> &#61; 12.55, <em>M</em><sub>2</sub> &#61; 13.74, <em>M</em><sub>3</sub> &#61; 5.49, and <em>HSD</em> &#61; 4.44, which pairs of means have statistically significant differences? What is the direction of the differences?</p>
 <p id="corty3e-ch10-p523" block_type="cr-x-txt-ni"><strong><em>Completing an interpretation (HSD values are given whether needed or not).</em></strong></p>
-<p id="corty3e-ch10-p524" block_type="cr-x-nl-txt"><phrase block_type="question_num">10.125</phrase> An addictions researcher was curious about which drug was hardest to quit: alcohol, cigarettes, or heroin. She obtained samples of alcoholics, smokers, and heroin addicts who were in treatment for the second time and found out how long they had remained abstinent, in months, after their first treatment. The mean time to relapse for the 8 alcoholics was 4.63 months; for the 11 smokers, it was 4.91 months; for the 6 heroin addicts, it was 5.17 months. Given the ANOVA summary table below, <em>r</em> <sup>2</sup> &#61; 0.66&#37;, and <em>HSD</em> &#61; 3.83, complete a four-point interpretation of the results using &#945; &#61; .05.</p>
+<p id="corty3e-ch10-p524" block_type="cr-x-nl-txt"><phrase block_type="question_num">10.125</phrase> An addictions researcher was curious about which drug was hardest to quit: alcohol, cigarettes, or heroin. She obtained samples of alcoholics, smokers, and heroin addicts who were in treatment for the second time and found out how long they had remained abstinent, in months, after their first treatment. The mean time to relapse for the 8 alcoholics was 4.63 months; for the 11 smokers, it was 4.91 months; for the 6 heroin addicts, it was 5.17 months. Given the ANOVA summary table below, <em>r</em><sup>2</sup> &#61; 0.66&#37;, and <em>HSD</em> &#61; 3.83, complete a four-point interpretation of the results using &#945; &#61; .05.</p>
 <table id="corty3e-ch10-table12" block_type="un_table">
 <layout align="center" width="xlarge" border="true"/>
 <tbody>
@@ -1618,11 +1618,11 @@ a.within-group variability:: variability within a sample of cases, all of which 
 <p id="corty3e-ch10-p546" block_type="cr-x-nl-txt"><phrase block_type="question_num">10.133</phrase> <em>F</em>(4, 20) &#61; &#8722;17.89, <em>p</em> &#60; .05</p>
 <p id="corty3e-ch10-p547" block_type="cr-x-nl-txt"><phrase block_type="question_num">10.134</phrase> <em>N</em> &#61; 14, <em>k</em> &#61; 3</p>
 <p id="corty3e-ch10-p548" block_type="cr-x-nl-txt"><phrase block_type="question_num">10.135</phrase> <em>N</em> &#61; 6, <em>k</em> &#61; 8</p>
-<p id="corty3e-ch10-p549" block_type="cr-x-nl-txt"><phrase block_type="question_num">10.136</phrase> If &#945;?= .05, <em>q</em> &#61; 1.96.</p>
+<p id="corty3e-ch10-p549" block_type="cr-x-nl-txt"><phrase block_type="question_num">10.136</phrase> If &#945; = .05, <em>q</em> &#61; 1.96.</p>
 <p id="corty3e-ch10-p550" block_type="cr-x-nl-txt"><phrase block_type="question_num">10.137</phrase> <em>SS</em><sub>Between</sub> &#61; 25, <em>SS</em><sub>Within</sub> &#61; 10, <em>SS</em><sub>Total</sub> &#61; 35</p>
 <p id="corty3e-ch10-p551" block_type="cr-x-nl-txt"><phrase block_type="question_num">10.138</phrase> <em>SS</em><sub>Between</sub> &#61; 12.50, <em>SS</em><sub>Within</sub> &#61; 12.50, <em>SS</em><sub>Total</sub> &#61; 25.00</p>
 <box title="SPSS" numbered="false" id="corty3e-ch10-bx3-4" block_type="bx3-h">
-<p id="corty3e-ch10-p552" block_type="bx3-txt-ni">The data for a between-subjects, one-way ANOVA have to be entered in the <link href="#corty3e-ch10-bx3-020">SPSS</link> data editor in a specific way. <link href="#corty3e-ch10-fig-61"><strong>Figure 10.16</strong></link> contains the data for psychologists&#8217; salaries for states in the four census regions. The first column in the data editor tells which state the data come from. The second variable, the column labeled &#8220;region,&#8221; contains information about which group a case is in. Here, a 1 indicates that a case is in the Northeast, a 2 indicates the Midwest, a 3 is for cases in the South, and a 4 is for the West. Note that SPSS does not need cases in a region to be grouped together. The final variable, the column labeled &#8220;psych,&#8221; contains the cases&#8217; scores on the dependent variable, the mean salary for the state.</p>
+<p id="corty3e-ch10-p552" block_type="bx3-txt-ni">The data for a between-subjects, one-way ANOVA have to be entered in the SPSS data editor in a specific way. <link href="#corty3e-ch10-fig-61"><strong>Figure 10.16</strong></link> contains the data for psychologists&#8217; salaries for states in the four census regions. The first column in the data editor tells which state the data come from. The second variable, the column labeled &#8220;region,&#8221; contains information about which group a case is in. Here, a 1 indicates that a case is in the Northeast, a 2 indicates the Midwest, a 3 is for cases in the South, and a 4 is for the West. Note that SPSS does not need cases in a region to be grouped together. The final variable, the column labeled &#8220;psych,&#8221; contains the cases&#8217; scores on the dependent variable, the mean salary for the state.</p>
 <figure id="corty3e-ch10-fig-61" block_type="figure" numbered="true" number="10.16" mmtype="image" mmsrc="" attr="">
 <layout align="center" width="medium" border="true"/>
 <image asset-id="corty3e-ch10-img-61" alt="image" src="asset/ch10/corty3e_fig10_16.jpg"/>

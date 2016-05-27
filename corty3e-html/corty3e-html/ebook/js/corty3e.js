@@ -315,7 +315,40 @@ var Player_subtype = Player_manuscript_type.extend({
         // email_link.removeAttr("data-type", "");
         email_link.removeAttr("target", "");
 
-        
+        // fix linkage oddities
+        var href = $('[href="asset/ch5/corty3e_fig05_19.html"]');
+        if (href.length > 0) {
+            href.attr('href', 'asset/ch5/corty3e_fig05_19a.html');
+        }
+        href = $('[href="asset/ch6/corty3e_fig06_11.html"]');
+        if (href.length > 0) {
+            href.attr('href', 'asset/ch6/corty3e_fig06_11a_c.html');
+        }
+        href = $('[href="asset/ch6/corty3e_fig06_08.html"]');
+        if (href.length > 0) {
+            href.attr('href', 'asset/ch6/corty3e_fig06_08a_b.html');
+        }
+        href = $('[href="asset/ch6/corty3e_fig06_09.html"]');
+        if (href.length > 0) {
+            href.attr('href', 'asset/ch6/corty3e_fig06_09a_b.html');
+        }
+        href = $('[href="asset/ch6/corty3e_fig06_10.html"]');
+        if (href.length > 0) {
+            href.attr('href', 'asset/ch6/corty3e_fig06_10a_c.html');
+        }
+        href = $('[href="asset/ch6/corty3e_fig06_11.html"]');
+        if (href.length > 0) {
+            href.attr('href', 'asset/ch6/corty3e_fig06_11a_c.html');
+        }
+        href = $('[href="asset/ch10/corty3e_fig10_03.html"]');
+        if (href.length > 0) {
+            href.attr('href', 'asset/ch10/corty3e_fig10_03a_b.html');
+        }
+        href = $('[href="asset/ch15/corty3e_fig15_06.html"]');
+        if (href.length > 0) {
+            href.attr('href', 'asset/ch15/corty3e_fig15_06a_b.html');
+        }
+
     } // end initialize2
     
 }); // end Player_subtype

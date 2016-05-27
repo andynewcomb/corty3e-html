@@ -74,11 +74,11 @@
 <li><p id="corty3e-app3-p57" block_type="ans-cont-ni">(&#8721;<em>X</em>)<sup>2</sup> = (12 &#43; 8 &#43; 4 &#43; 6)<sup>2</sup> = 30.0000<sup>2</sup></p>
 <p id="corty3e-app3-p58" block_type="ans-cont-ni">= 900.0000 = 900.00</p></li>
 <li><p id="corty3e-app3-p59" block_type="ans-cont-ni">&#8721;<em>X</em> &#43; 1 = &#8721; (12 &#43; 8 &#43; 4 &#43; 6) &#43;1 = 30.0000 &#43; 1 = 31.0000 = 31.00</p></li>
-<li><p id="corty3e-app3-p60" block_type="ans-cont-ni">&#8721;(<em>X&#43;</em> &#43; 1) = (12 &#43; 1) &#43;(8 &#43; 1) &#43; (4 &#43;1) &#43;(6 &#43; 1)</p>
+<li><p id="corty3e-app3-p60" block_type="ans-cont-ni">&#8721;(<em>X</em> &#43; 1) = (12 &#43; 1) &#43; (8 &#43; 1)  &#43; (4 &#43; 1) &#43; (6 &#43; 1)</p>
 <p id="corty3e-app3-p61" block_type="ans-cont-ni">= 13.0000 &#43; 9.0000 &#43; 5.0000 &#43; 7.0000</p>
 <p id="corty3e-app3-p62" block_type="ans-cont-ni">= 34.0000 = 34.00</p></li>
 </list>
-<p id="corty3e-app3-p63" block_type="ans-cont-ni">1.25</p>
+<p id="corty3e-app3-p63" block_type="ans"><phrase block_type="question_num">1.25</phrase></p>
 <list id="corty3e-app3-list-8" type="ordered" block_type="loweralpha">
 <li><p id="corty3e-app3-p64" block_type="ans">17.79</p></li>
 <li><p id="corty3e-app3-p65" block_type="ans-cont-ni">9.74</p></li>
@@ -404,12 +404,12 @@
 </tr>
 <tr>
 <td class="tbl-blue-font"><phrase block_type="tbn-sidhd"><strong>8</strong></phrase></td>
-<td><phrase block_type="tbn-txt">11.00</phrase></td>
+<td><phrase block_type="tbn-txt">&#8211;11.00</phrase></td>
 <td><phrase block_type="tbn-txt">121.00</phrase></td>
 </tr>
 <tr>
 <td class="tbl-blue-font"><phrase block_type="tbn-sidhd"><strong>10</strong></phrase></td>
-<td><phrase block_type="tbn-txt">9.00</phrase></td>
+<td><phrase block_type="tbn-txt">&#8211;9.00</phrase></td>
 <td><phrase block_type="tbn-txt">81.00</phrase></td>
 </tr>
 <tr>
@@ -536,7 +536,7 @@
 <p id="corty3e-app3-p162" block_type="ans-h2"><strong>Practice Problems 5.3</strong></p>
 <p id="corty3e-app3-p163" block_type="ans"><phrase block_type="question_num">5.11</phrase> A point estimate is a discrete, single value estimate of a population value. An interval estimate is a range of values that estimate the population value.</p>
 <p id="corty3e-app3-p164" block_type="ans"><phrase block_type="question_num">5.12</phrase> 95&#37; of the time</p>
-<p id="corty3e-app3-p165" block_type="ans"><phrase block_type="question_num">5.13</phrase> 100&#37; &#8211; 95&#37;=5&#37; of the time</p>
+<p id="corty3e-app3-p165" block_type="ans"><phrase block_type="question_num">5.13</phrase> 100&#37; &#8211; 95&#37; = 5&#37; of the time</p>
 <p id="corty3e-app3-p166" block_type="ans"><phrase block_type="question_num">5.14</phrase> <image asset-id="corty3e-app3-img-14" alt="image" src="asset/appc/corty3e_ineqn_app_c-5_03.jpg"/></p>
 <p id="corty3e-app3-p167" block_type="ans"><phrase block_type="question_num">5.15</phrase> <image asset-id="corty3e-app3-img-15" alt="image" src="asset/appc/corty3e_ineqn_app_c-5_04.jpg"/></p>
 <p id="corty3e-app3-p168" block_type="ans-h1-s"><strong><link href="corty3e-ch06.xml">Chapter 6</link></strong></p>
@@ -635,14 +635,14 @@
 <p id="corty3e-app3-p249" block_type="ans"><phrase block_type="question_num">8.08</phrase> This study compared the resting heart rate of people who do their own chores (<em>M</em> =72.00) to those who pay others to do their chores (<em>M</em> = 76.00). The results were not statistically significant [<em>t</em>(33) = 0.79, <em>p</em> > .05], meaning that there wasn&#8217;t enough evidence to conclude a difference in the population means existed. There appears to be no exercise benefit to doing one&#8217;s own chores. Future research should measure whether people also exercise and the body mass of the individuals involved to see if these two groups differ on these potential confounding variables.</p>
 <p id="corty3e-app3-p250" block_type="ans-h1-s"><strong><link href="corty3e-ch09.xml">Chapter 9</link></strong></p>
 <p id="corty3e-app3-p251" block_type="ans-h2"><strong>Practice Problems 9.1</strong></p>
-<p id="corty3e-app3-p252" block_type="ans"><phrase block_type="question_num">9.01</phrase> If the second score is subtracted from the first score: &#8211;3.00; 24.00; 3.00; 1.00; &#8211;6.00; &#8211;11.00; 2.00; &#8211;14.00. If the first score is subtracted from the second score: 3.00; 24.00; 3.00; &#8211;1.00; 6.00, 11.00; &#8211;2.00; 14.00.</p>
+<p id="corty3e-app3-p252" block_type="ans"><phrase block_type="question_num">9.01</phrase> If the second score is subtracted from the first score: &#8211;3.00; 24.00; 3.00; 1.00; &#8211;6.00; <phrase block_type="nowrap">&#8211;11.00;</phrase> 2.00; &#8211;14.00. If the first score is subtracted from the second score: 3.00; &#8211;24.00; &#8211;3.00; &#8211;1.00; 6.00, 11.00; &#8211;2.00; 14.00.</p>
 <p id="corty3e-app3-p253" block_type="ans"><phrase block_type="question_num">9.02</phrase> <image asset-id="corty3e-app3-img-28" alt="image" src="asset/appc/corty3e_ineqn_app_c-7_04.jpg"/></p>
 <p id="corty3e-app3-p254" block_type="ans"><phrase block_type="question_num">9.03</phrase> <image asset-id="corty3e-app3-img-29" alt="image" src="asset/appc/corty3e_ineqn_app_c-7_05.jpg"/></p>
 <p id="corty3e_page_C-8" block_type="page_start">C-8</p>
 <p id="corty3e-app3-p255" block_type="ans-h2"><strong>Practice Problems 9.2</strong></p>
 <p id="corty3e-app3-p256" block_type="ans"><phrase block_type="question_num">9.04</phrase> (a) <em>t</em>(45) = 3.67, <em>p</em> &#60; .05. (b) Sample 2 has a mean that is significantly higher than the mean of Sample 1.</p>
 <p id="corty3e-app3-p257" block_type="ans"><phrase block_type="question_num">9.05</phrase> (a) <em>t</em>(19) = 2.01, <em>p</em> > .05. (b) There&#8217;s not enough evidence to suggest that a difference exists between the two population means.</p>
-<p id="corty3e-app3-p258" block_type="ans"><phrase block_type="question_num">9.06</phrase> 95&#37;CI&#181;<sub>Diff </sub>= (<em>M</em><sub>1</sub> &#8211; <em>M</em><sub>2</sub>) &#177; (<em>t<sub>cv</sub></em> &#215; <em>s</em>M<em><sub>D</sub></em>) = (55 &#8211; 48) &#177; (2.023 &#215; 2.86) = [1.21, 12.79]</p>
+<p id="corty3e-app3-p258" block_type="ans"><phrase block_type="question_num">9.06</phrase> 95&#37;CI&#181;<sub>Diff </sub>= (<em>M</em><sub>1</sub> &#8211; <em>M</em><sub>2</sub>) &#177; (<em>t<sub>cv</sub></em> &#215; <em>s</em><sub>M<em><sub>D</sub></em></sub>) = (55 &#8211; 48) &#177; (2.023 &#215; 2.86) = [1.21, 12.79]</p>
 <p id="corty3e-app3-p259" block_type="ans"><phrase block_type="question_num">9.07</phrase> Data were analyzed from a study in which a tennis instructor compared having students practice by hitting against a wall vs. practicing by playing against another player. Students were matched in terms of ability and were assigned to use one of the methods of practice for two weeks before they were tested in terms of the percentage of time they could hit targets on the court. The students who hit against the wall hit the targets a significantly higher percentage of the time than the students who played against other players (57&#37; vs. 48&#37;; <em>t</em>(11) = 5.20, <em>p</em> &#60; .05.). Hitting against the wall seems to have a moderate to large effect in improving the skills of beginning players. In the larger population from which this sample came, it probably leads to a 5 to 13 percentage points improvement in beginning players placing the ball accurately on the court. To obtain a better estimate of the size of the effect, it is recommended that this study be replicated with a larger sample size.</p>
 <p id="corty3e-app3-p260" block_type="ans-h1-s"><strong><link href="corty3e-ch10.xml">Chapter 10</link></strong></p>
 <p id="corty3e-app3-p261" block_type="ans-h2"><strong>Practice Problems 10.1</strong></p>
@@ -656,7 +656,7 @@
 <p id="corty3e-app3-p269" block_type="ans"><phrase block_type="question_num">10.7</phrase> If <em>F</em> &#8805; 2.866, reject <em>H</em><sub>0</sub>; if <em>F</em> &#60; 2.866, fail to reject <em>H</em><sub>0</sub>.</p>
 <p id="corty3e-app3-p270" block_type="ans"><phrase block_type="question_num">10.8</phrase> <em>df</em><sub>Between</sub> = <em>k</em> &#8211; 1 = 4 &#8211; 1 = 3</p>
 <p id="corty3e-app3-p271" block_type="ans"><em>df</em><sub>Within</sub> = <em>N</em> &#8211;<em>k</em> = 32 &#8211; 4 = 28</p>
-<p id="corty3e-app3-p272" block_type="ans"><em>df</em><sub>Total</sub> = <em>N&#8722;</em>&#8211; 1 = 32&#8722;&#8211; 1 = 31</p>
+<p id="corty3e-app3-p272" block_type="ans"><em>df</em><sub>Total</sub> = <em>N&#8722;</em>&#8211; 1 = 32 &#8211; 1 = 31</p>
 <p id="corty3e-app3-p273" block_type="ans"><phrase block_type="question_num">10.9</phrase></p>
 <table>
 <tbody>
@@ -770,7 +770,7 @@
 </tbody>
 </table>
 <p id="corty3e_page_C-9" block_type="page_start">C-9</p>
-<p id="corty3e-app3-p276" block_type="txt"><strong>Practice Problems 10.3</strong></p>
+<p id="corty3e-app3-p276" block_type="ans-h2"><strong>Practice Problems 10.3</strong></p>
 <p id="corty3e-app3-p277" block_type="ans"><phrase block_type="question_num">10.12</phrase> <em>F</em>(4, 30) = 7.37, <em>p</em> &#60; .05</p>
 <p id="corty3e-app3-p278" block_type="ans"><phrase block_type="question_num">10.13</phrase></p>
 <list id="corty3e-app3-list-16" type="ordered" block_type="loweralpha">
@@ -790,10 +790,10 @@
 <li><p id="corty3e-app3-p285" block_type="ans-bl">The difference between the mean raise for employees of managers who use rewards vs. those who use punishments is 3.00 percentage points. This is greater than 2.35 percentage points, so the difference is statistically significant. One can conclude that using rewards leads to statistically significantly better performance than using punishments, as judged by the size of the raise.</p></li>
 <li><p id="corty3e-app3-p286" block_type="ans-nl-lvl2-v1">The differences between (a) rewards vs. a mixture of rewards and punishments, 1.00 percentage point, and (b) punishments vs. a mixture of rewards and punishments, 2.00 percentage points, are not statistically significant. There is not enough evidence to conclude that (a) rewards alone work better than rewards and punishment, or (b) that rewards and punishments work better than punishments alone.</p></li>
 </list>
-<p id="corty3e-app3-p287" block_type="ans-nl-lvl2-v1-txt-ni">Here is an interpretation:</p>
-<p id="corty3e-app3-p288" block_type="ans-nl-lvl2-v1-ext-txt">An industrial/organizational psychologist compared management styles based on using rewards, using punishments, or using a combination of rewards and punishments on employee performance. Employee performance was measured by the size of raise the employee received. The effect of management style was statistically significant, <em>F</em>(2, 24) = 5.25, <em>p</em> &#60; .05, and was a strong one. Type of management does have an impact on employee mean performance.</p>
-<p id="corty3e-app3-p289" block_type="ans-nl-lvl2-v1-ext-txt-mid">The effect is due to the difference in raises between employees of managers who use rewards (<em>M</em> = 8&#37; raise) and those who use punishments (<em>M</em> = 5&#37; raise). Rewarding good performance leads to statistically better performance than does punishing poor performance. This study offered insufficient evidence to show that using a mixture of rewards and punishments (<em>M</em> = 7&#37; raise) led to worse performance than rewards alone or better performance than punishment alone.</p>
-<p id="corty3e-app3-p290" block_type="ans-nl-lvl2-v1-ext-txt-last">This study took place at only one company, so the results should not be generalized beyond this one site. Future research should extend this study to other companies. If managers want to improve the performance of employees at this company, there is evidence that using only rewards is a better strategy than using only punishments.</p>
+<p id="corty3e-app3-p287" block_type="txt-ni">Here is an interpretation:</p>
+<p id="corty3e-app3-p288" block_type="txt-ni">An industrial/organizational psychologist compared management styles based on using rewards, using punishments, or using a combination of rewards and punishments on employee performance. Employee performance was measured by the size of raise the employee received. The effect of management style was statistically significant, <em>F</em>(2, 24) = 5.25, <em>p</em> &#60; .05, and was a strong one. Type of management does have an impact on employee mean performance.</p>
+<p id="corty3e-app3-p289" block_type="txt">The effect is due to the difference in raises between employees of managers who use rewards (<em>M</em> = 8&#37; raise) and those who use punishments (<em>M</em> = 5&#37; raise). Rewarding good performance leads to statistically better performance than does punishing poor performance. This study offered insufficient evidence to show that using a mixture of rewards and punishments (<em>M</em> = 7&#37; raise) led to worse performance than rewards alone or better performance than punishment alone.</p>
+<p id="corty3e-app3-p290" block_type="txt">This study took place at only one company, so the results should not be generalized beyond this one site. Future research should extend this study to other companies. If managers want to improve the performance of employees at this company, there is evidence that using only rewards is a better strategy than using only punishments.</p>
 <p id="corty3e-app3-p291" block_type="ans-h1-s"><strong><link href="corty3e-ch11.xml">Chapter 11</link></strong></p>
 <p id="corty3e-app3-p292" block_type="ans-h2"><strong>Practice Problems 11.1</strong></p>
 <p id="corty3e-app3-p293" block_type="ans"><phrase block_type="question_num">11.01</phrase> Repeated-measures ANOVA is used to compare the means of two or more dependent samples.</p>
@@ -865,14 +865,15 @@
 <li><p id="corty3e-app3-p311" block_type="ans"><em>F</em>(3, 36) = 4.36, <em>p &#60;</em> .05</p></li>
 <li><p id="corty3e-app3-p312" block_type="ans-cont-ni">The results are statistically significant as <em>F<sub>cv</sub></em> = 2.866.</p></li>
 </list>
-<p id="corty3e-app3-p313" block_type="ans-cont-ni">11.11</p>
+<p id="corty3e-app3-p313" block_type="ans"><phrase block_type="question_num">11.11</phrase></p>
 <list id="corty3e-app3-list-22" type="ordered" block_type="loweralpha">
 <li><p id="corty3e-app3-p314" block_type="ans-cont-ni"><image asset-id="corty3e-app3-img-34" alt="image" src="asset/appc/corty3e_ineqn_app_c-10_01.jpg"/></p></li>
 <li><p id="corty3e-app3-p315" block_type="ans-cont-ni">Large effect</p></li>
 </list>
 <p id="corty3e-app3-p316" block_type="ans"><phrase block_type="question_num">11.12</phrase></p>
 <list id="corty3e-app3-list-23" type="ordered" block_type="loweralpha">
-<li><p id="corty3e-app3-p317" block_type="ans-cont-ni"><em>k</em> = 5 and <em>df</em> <sub>Residual</sub> = (<em>n</em> &#8211; 1)(<em>k</em> &#8211; 1) = (16 &#8211; 1)(5 &#8211; 1) = 60.<em>q</em> = 3.98</p></li>
+<li><p id="corty3e-app3-p317" block_type="ans-cont-ni"><em>k</em> = 5 and <em>df</em> <sub>Residual</sub> = (<em>n</em> &#8211; 1)(<em>k</em> &#8211; 1) = (16 &#8211; 1)(5 &#8211; 1) = 60.</p>
+<p id="corty3e-app3-p317b" block_type="ans-cont-ni"><em>q</em> = 3.98</p></li>
 <li><p id="corty3e-app3-p318" block_type="ans-cont-ni"><image asset-id="corty3e-app3-img-35" alt="image" src="asset/appc/corty3e_ineqn_app_c-10_02.jpg"/></p></li>
 </list>
 <p id="corty3e-app3-p319" block_type="ans"><phrase block_type="question_num">11.13</phrase> A software designer examined how comfort with technology varied across generations by timing how long it took, when installing new software, to click on the &#8220;Agree to Terms of Installation&#8221; button for grandparents, parents, and teenagers in the same family. The teenagers agreed in a mean of 1.50 seconds, the parents took 3 times as long (<em>M</em> = 4.50 seconds), and the grandparents (<em>M</em> = 20.00 seconds) took more than 4 times as long as the parents. This was a very strong and statistically significant effect for age/generation [<em>F</em>(2, 18) = 219.08, <em>p</em> &#60;.05], with the difference between each generation being a statistically significant one. The most likely explanation for the results is that younger generations have more experience with computers and give less thought to following&#8212;and agreeing to&#8212;computer directions. It is also possible that as people age their reaction time slows, their eyesight becomes poorer, and their movements slow and that these changes could account for the effect observed in this study. Future research should measure the physical abilities of the participants.</p>
@@ -895,8 +896,9 @@
 <li><p id="corty3e-app3-p333" block_type="ans-cont-ni">There is a main effect for group, with Group 1 (<em>M</em> = 15.00) having a higher mean than Group 2 (<em>M</em> = 6.00). There is also a main effect for condition, with Condition 1(<em>M</em> = 7.50) having a lower mean than Condition 2 (<em>M</em> = 13.50).</p></li>
 </list>
 <p id="corty3e_page_C-10" block_type="page_start">C-11</p>
+<p id="corty3e-app3-p334" block_type="ans"><phrase block_type="question_num">12.03</phrase></p>
 <list id="corty3e-app3-list-26" type="ordered" block_type="loweralpha">
-<li><p id="corty3e-app3-p334" block_type="ans">12.03</p>
+<li>
 <figure id="corty3e-app3-fig-8" block_type="un_figure" numbered="false" number="false" mmtype="image" mmsrc="images" attr="">
 <layout align="center" width="large" border="true"/>
 <image asset-id="corty3e-app3-img-40" alt="image" src="asset/appc/corty3e_fig_app_c_un04.jpg"/>
@@ -916,14 +918,14 @@
 <p id="corty3e-app3-p344" block_type="ans-cont-ni"><em>H</em><sub>1 Columns</sub>: At least column population mean is different from at least one other column population mean.</p>
 <p id="corty3e-app3-p345" block_type="ans-cont-ni"><em>H</em><sub>0</sub> <sub>Interaction</sub>: There is no interactive effect of the two explanatory variables on the dependent variable in the population.</p>
 <p id="corty3e-app3-p346" block_type="ans-cont-ni"><em>H</em><sub>1</sub> <sub>Interaction</sub>: The two explanatory variables, in the population, interact to affect the dependent variable in at least one cell.</p>
-<p id="corty3e-app3-p347" block_type="ans"><phrase block_type="question_num">12.06</phrase> <em>F<sub>cv</sub></em> <sub>Rows</sub> = 3.053; <em>F<sub>cv</sub></em> <sub>Columns</sub> = 2.428;<em>F<sub>cv</sub></em> <sub>Interaction</sub> = 1.997</p>
+<p id="corty3e-app3-p347" block_type="ans"><phrase block_type="question_num">12.06</phrase> <em>F<sub>cv</sub></em> <sub>Rows</sub> = 3.053; <em>F<sub>cv</sub></em> <sub>Columns</sub> = 2.428; <em>F<sub>cv</sub></em> <sub>Interaction</sub> = 1.997</p>
 <p id="corty3e-app3-p348" block_type="ans"><phrase block_type="question_num">12.07</phrase> <em>df</em><sub>Rows</sub> = <em>R</em> &#8211; 1 = 2 &#8211; 1 = 1</p>
 <p id="corty3e-app3-p349" block_type="ans-eq"><em>df</em><sub>Columns</sub> = <em>C</em> &#8211; 1 = 2 &#8211; 1 = 1</p>
 <p id="corty3e-app3-p350" block_type="ans-eq"><em>df</em><sub>Interaction</sub> = <em>df</em><sub>Rows</sub> &#215; <em>df</em><sub>Columns</sub> = 1 &#215; 1 = 1</p>
 <p id="corty3e-app3-p351" block_type="ans-eq"><em>N</em> = <em>n</em> &#215; <em>R</em> &#215; <em>C</em> = 7 &#215; 2 &#215; 2 = 28</p>
 <p id="corty3e-app3-p352" block_type="ans-eq"><em>df</em><sub>Within</sub> = <em>N</em> &#8211; (<em>R</em> &#215; <em>C</em>) = 28 &#8211; (2 &#215; 2) = 24</p>
 <p id="corty3e-app3-p353" block_type="ans-eq"><em>df</em><sub>Between</sub> = <em>df</em><sub>Rows</sub> &#43; <em>df</em><sub>Columns</sub> &#43; <em>df</em><sub>Interaction</sub> = 1 &#43; 1 &#43; 1 = 3</p>
-<p id="corty3e-app3-p354" block_type="ans-eq"><em>df</em><sub>Total</sub> = <em>N</em> &#8211; 1 = 28&#8722;&#8211; 1 = 27</p>
+<p id="corty3e-app3-p354" block_type="ans-eq"><em>df</em><sub>Total</sub> = <em>N</em> &#8211; 1 = 28 &#8211; 1 = 27</p>
 <p id="corty3e-app3-p355" block_type="ans-eq"><em>SS</em><sub>Between</sub> = <em>SS</em><sub>Rows</sub> &#43; <em>SS</em><sub>Columns</sub> &#43; <em>SS</em><sub>Interaction</sub> = 250.00 &#43; 300.00 &#43; 100.00 = 650.00</p>
 <p id="corty3e-app3-p356" block_type="ans-eq"><em>SS</em><sub>Total</sub> = <em>SS</em><sub>Between</sub> &#43; <em>SS</em><sub>Within</sub> = 650.00 &#43; 800.00 = 1,450.00</p>
 <p id="corty3e-app3-fig-9" block_type="equation">
@@ -1000,9 +1002,8 @@
 </list>
 <p id="corty3e-app3-p365" block_type="ans"><phrase block_type="question_num">12.10</phrase> The interaction effect is not statistically significant, so there is no need to do post-hoc tests on that. Both the row effect and column effect are statistically significant. But, there are only two rows, so it is obvious which row mean (Row 1 mean = 30.00) is statistically different than (and higher than) the other row (Row 2 mean = 22.00.)</p>
 <p id="corty3e-app3-p366" block_type="ans">There are three columns, so it&#8217;s necessary to calculate a <em>HSD</em> value to compare column means:</p>
-<p id="corty3e-app3-p367" block_type="ans-eq"><em>q</em><sub>Columns</sub> = 3.49</p>
 <p id="corty3e-app3-fig-11" block_type="equation">
-<image asset-id="corty3e-app3-img-43" alt="image" src="asset/appc/corty3e_ineqn_app_c-10_02.jpg"/>
+<image asset-id="corty3e-app3-img-43" alt="image" src="asset/appc/corty3e_eqn_app_c-12_02.jpg"/>
 </p>
 <list id="corty3e-app3-list-30" type="unordered" block_type="bullet">
 <li><p id="corty3e-app3-p368" block_type="ans-bl">Column 2 &#8211; Column 1 = 26.00 &#8211; 22.00 = 4.00. 4.00 &#60; 4.03, so the difference is not statistically significant. One can&#8217;t conclude that the population from which Column 2 is drawn has a mean greater than the Column 1 population.</p></li>
@@ -1049,7 +1050,7 @@
 <table>
 <tbody>
 <tr class="tbl-blue-bg">
-<td></td>
+<td rowspan="2"></td>
 <td><phrase block_type="tbn-colhd"><strong>Col. 1</strong></phrase></td>
 <td><phrase block_type="tbn-colhd"><strong>Col. 2</strong></phrase></td>
 <td><phrase block_type="tbn-colhd"><strong>Col. 3</strong></phrase></td>
@@ -1059,7 +1060,6 @@
 <td><phrase block_type="tbn-colhd"><strong>Col. 7</strong></phrase></td>
 </tr>
 <tr class="tbl-blue-bg">
-<td></td>
 <td><phrase block_type="tbn-colhd"><strong><em>X</em></strong></phrase></td>
 <td><phrase block_type="tbn-colhd"><strong><em>Y</em></strong></phrase></td>
 <td><phrase block_type="tbn-colhd"><strong><em>X</em></strong>&#8211;<strong><em>M</em><sub>X</sub></strong></phrase></td>
@@ -1099,9 +1099,9 @@
 <td><phrase block_type="tbn-txt">100.00</phrase></td>
 </tr>
 <tr>
-<td><em>M</em> =<phrase block_type="tbn-txt">11.00</phrase></td>
-<td><phrase block_type="tbn-txt">27.00</phrase></td>
+<td><em>M</em> =</td>
 <td><phrase block_type="tbn-txt">11.00</phrase></td>
+<td><phrase block_type="tbn-txt">27.00</phrase></td>
 <td></td>
 <td></td>
 <td><phrase block_type="tbn-txt">&#8721; = &#8722;22.00</phrase></td>
@@ -1163,9 +1163,11 @@
 <p id="corty3e-app3-p429" block_type="ans">= (1.50 &#215; 12) &#43; 4.50</p>
 <p id="corty3e-app3-p430" block_type="ans">= 22.50</p></li>
 <li>
-<p id="corty3e-app3-fig-17" block_type="equation">
+<figure id="corty3e-app3-fig-22" block_type="un_figure" numbered="false" number="false" mmtype="image" mmsrc="images" attr="">
+<layout align="center" width="medium" border="true"/>
 <image asset-id="corty3e-app3-img-50" alt="image" src="asset/appc/corty3e_fig_app_c_un06.jpg"/>
-</p></li>
+</figure>
+</li>
 </list>
 <p id="corty3e-app3-p431" block_type="ans"><phrase block_type="question_num">14.05</phrase> &#8776;35</p>
 <p id="corty3e-app3-p432" block_type="ans-h2"><strong>Practice Problems 14.2</strong></p>

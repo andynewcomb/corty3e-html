@@ -1,8 +1,26 @@
-/* Chapter 12 CSS */
+﻿/* Chapter 12 CSS */
 div#corty3e-ch12-p2 {
   margin-top: -5px;
 }
 /* Figures */
+div#corty3e-ch12-fig-41 img {
+  max-width: 480px !important;
+}
+body#supp_win div[data-figure-id="corty3e-ch12-fig-41"][data-layout-width="medium"] img {
+  max-width: 550px !important;
+}
+div#corty3e-ch12-fig-50 img {
+  max-width: 480px !important;
+}
+body#supp_win div[data-figure-id="corty3e-ch12-fig-50"][data-layout-width="medium"] img {
+  max-width: 550px !important;
+}
+div#corty3e-ch12-fig-63 img {
+  max-width: 450px !important;
+}
+body#supp_win div[data-figure-id="corty3e-ch12-fig-63"][data-layout-width="medium"] img {
+  max-width: 600px !important;
+}
 /* Tables */
 body.noUi [data-block_type="un_table"] table tr:first-child {
   background-color: #e0e8ef;
@@ -78,4 +96,3 @@ div#corty3e-ch12-p401 {
 div#corty3e-ch12-p402 {
   margin-top: 0;
 }
-/*# sourceMappingURL=corty3e_ch12.css.map */

@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<manifest id="corty3e" timestamp="1464217591" supp_win="0"><manuscript id="56ddd74f757a2e4938000000" title="Using and Interpreting Statistics, THIRD EDITION" question-delivery-method="ARGA">
+<manifest id="corty3e" timestamp="1464376518" supp_win="0"><manuscript id="56ddd74f757a2e4938000000" title="Using and Interpreting Statistics, THIRD EDITION" question-delivery-method="ARGA">
     <section id="corty3e-fm1-sec1-1" folder="false" filename="corty3e_fm_1.html" dlapFilename="corty3e_fm_1_dlap.xml" numquestions="0">
       <title>Credits</title>
     </section>
@@ -462,18 +462,64 @@
         <title>Calculating Sums of Squares for Between-Subjects, Two-Way ANOVA</title>
       </section>
     </section>
-  </manuscript><manuscript id="56d62d76757a2ebf47000007" title="Using and Interpreting Statistics, THIRD EDITION" question-delivery-method="ARGA">
-    <section id="corty3e-fm1-sec1-1" folder="false" filename="corty3e_ch13_1.html" dlapFilename="corty3e_ch13_1_dlap.xml" numquestions="0">
-      <title>Credits</title>
+  </manuscript><manuscript id="56d62d76757a2ebf47000007" title="13 The Pearson Correlation Coefficient" question-delivery-method="ARGA" number="13">
+    <section title="Chapter Introduction" id="corty3e-ch13-sec1-1a" folder="false" filename="corty3e_ch13_1.html" dlapFilename="corty3e_ch13_1_dlap.xml" numquestions="0"/>
+    <section id="corty3e-ch13-sec1-1" folder="true" filename="corty3e_ch13_2.html" dlapFilename="corty3e_ch13_2_dlap.xml" numquestions="0" hasEmbeddedHeads="true">
+      <title><phrase block_type="sec_num">13.1</phrase> <phrase block_type="sec_title">Introduction to the Pearson Correlation Coefficient</phrase></title>
+      <section id="corty3e-ch13-sec2-1" folder="false">
+        <title>Defining Pearson <em>r</em> and Relationship</title>
+      </section>
+      <section id="corty3e-ch13-sec2-2" folder="false">
+        <title>Correlation, Causation, and Association</title>
+      </section>
+      <section id="corty3e-ch13-sec2-3" folder="false">
+        <title>Visualizing Relationships</title>
+      </section>
+      <section id="corty3e-ch13-sec2-4" folder="false">
+        <title>Strength of Relationships</title>
+      </section>
+      <section id="corty3e-ch13-sec2-5" folder="false">
+        <title>Correlations Defined by <em>z</em> Scores</title>
+      </section>
+      <section id="corty3e-ch13-sec2-6" folder="false">
+        <title>Quantifying Relationships</title>
+      </section>
+      <section id="corty3e-ch13-sec2-7" folder="false">
+        <title>Direction of the Relationship</title>
+      </section>
+      <section id="corty3e-ch13-sec2-8" folder="false">
+        <title>Conditions Affecting Pearson <em>r</em></title>
+      </section>
     </section>
-    <section id="corty3e-fm1-sec1-2" folder="false" filename="corty3e_ch13_2.html" dlapFilename="corty3e_ch13_2_dlap.xml" numquestions="0">
-      <title>ABOUT THE AUTHOR</title>
+    <section id="corty3e-ch13-sec1-2" folder="false" filename="corty3e_ch13_3.html" dlapFilename="corty3e_ch13_3_dlap.xml" numquestions="0">
+      <title><phrase block_type="sec_num">13.2</phrase> <phrase block_type="sec_title">Calculating the Pearson Correlation Coefficient</phrase></title>
     </section>
-    <section id="corty3e-fm1-sec1-3" folder="false" filename="corty3e_ch13_3.html" dlapFilename="corty3e_ch13_3_dlap.xml" numquestions="0">
-      <title>TO THE STUDENT</title>
+    <section id="corty3e-ch13-sec1-3" folder="true" filename="corty3e_ch13_4.html" dlapFilename="corty3e_ch13_4_dlap.xml" numquestions="0" hasEmbeddedHeads="true">
+      <title><phrase block_type="sec_num">13.3</phrase> <phrase block_type="sec_title">Interpreting the Pearson Correlation Coefficient</phrase></title>
+      <section id="corty3e-ch13-sec2-9" folder="false">
+        <title>Was the Null Hypothesis Rejected?</title>
+      </section>
+      <section id="corty3e-ch13-sec2-10" folder="false">
+        <title>How Big Is the Effect?</title>
+      </section>
+      <section id="corty3e-ch13-sec2-11" folder="false">
+        <title>How Wide Is the Confidence Interval?</title>
+      </section>
+      <section id="corty3e-ch13-sec2-12" folder="false">
+        <title>Putting It All Together</title>
+      </section>
     </section>
-    <section id="corty3e-fm1-sec1-4" folder="false" filename="corty3e_ch13_4.html" dlapFilename="corty3e_ch13_4_dlap.xml" numquestions="0">
-      <title>TO THE INSTRUCTOR</title>
+    <section id="corty3e-ch13-sec1-4" folder="false" filename="corty3e_ch13_5.html" dlapFilename="corty3e_ch13_5_dlap.xml" numquestions="0">
+      <title><phrase block_type="sec_num">13.4</phrase> <phrase block_type="sec_title">Calculating a Partial Correlation</phrase></title>
+    </section>
+    <section id="corty3e-ch13-sec1-5" folder="false" filename="corty3e_ch13_6.html" dlapFilename="corty3e_ch13_6_dlap.xml" numquestions="0">
+      <title>SUMMARY</title>
+    </section>
+    <section id="corty3e-ch13-sec1-6" folder="false" filename="corty3e_ch13_7.html" dlapFilename="corty3e_ch13_7_dlap.xml" numquestions="1">
+      <title>KEY TERMS</title>
+    </section>
+    <section id="corty3e-ch13-sec1-7" folder="false" filename="corty3e_ch13_8.html" dlapFilename="corty3e_ch13_8_dlap.xml" numquestions="0">
+      <title>CHAPTER EXERCISES</title>
     </section>
   </manuscript><manuscript id="56d62de6757a2efb47000003" title="14 Simple and Multiple Linear Regression" question-delivery-method="ARGA" number="14">
     <section title="Chapter Introduction" id="corty3e-ch14-sec1-1a" folder="false" filename="corty3e_ch14_1.html" dlapFilename="corty3e_ch14_1_dlap.xml" numquestions="0"/>
