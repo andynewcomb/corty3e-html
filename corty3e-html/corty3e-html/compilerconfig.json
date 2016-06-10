@@ -94,5 +94,53 @@
   {
     "outputFile": "ebook/css/corty3e_app4.css",
     "inputFile": "ebook/css/corty3e_app4.less"
+  },
+  {
+    "outputFile": "ebook/css/corty3e_pt1.css",
+    "inputFile": "ebook/css/corty3e_pt1.less"
+  },
+  {
+    "outputFile": "ebook/css/corty3e_pt3.css",
+    "inputFile": "ebook/css/corty3e_pt3.less"
+  },
+  {
+    "outputFile": "ebook/css/corty3e_pt2.css",
+    "inputFile": "ebook/css/corty3e_pt2.less"
+  },
+  {
+    "outputFile": "ebook/css/corty3e_pt4.css",
+    "inputFile": "ebook/css/corty3e_pt4.less"
+  },
+  {
+    "outputFile": "ebook/css/corty3e_test_pt1.css",
+    "inputFile": "ebook/css/corty3e_test_pt1.less"
+  },
+  {
+    "outputFile": "ebook/css/corty3e_test_pt2.css",
+    "inputFile": "ebook/css/corty3e_test_pt2.less"
+  },
+  {
+    "outputFile": "ebook/css/corty3e_test_pt3.css",
+    "inputFile": "ebook/css/corty3e_test_pt3.less"
+  },
+  {
+    "outputFile": "ebook/css/corty3e_test_pt4.css",
+    "inputFile": "ebook/css/corty3e_test_pt4.less"
+  },
+  {
+    "outputFile": "ebook/css/corty3e_testpt4.css",
+    "inputFile": "ebook/css/corty3e_testpt4.less"
+  },
+  {
+    "outputFile": "ebook/css/corty3e_testpt1.css",
+    "inputFile": "ebook/css/corty3e_testpt1.less"
+  },
+  {
+    "outputFile": "ebook/css/corty3e_testpt2.css",
+    "inputFile": "ebook/css/corty3e_testpt2.less"
+  },
+  {
+    "outputFile": "ebook/css/corty3e_testpt3.css",
+    "inputFile": "ebook/css/corty3e_testpt3.less"
   }
 ]

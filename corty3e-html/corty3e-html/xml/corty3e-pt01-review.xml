@@ -1,0 +1,243 @@
+<chapter number="1" id="corty3e-pt1-review-1" title="PART I Test Your Knowledge" start-numbering-at="501" numbered="true">
+<section id="corty3e-pt1-review-sec1-1" block_type="intro" title="Chapter Introduction" numbered="true" level="1" print_page="173">
+<p id="corty3e_page_173" block_type="page_start">173</p>
+<p id="corty3e-pt1-review-p1" block_type="pr_n_ri">PART I</p>
+<p id="corty3e-pt1-review-p2" block_type="pr_t">Test Your Knowledge</p>
+<p id="corty3e-pt1-review-p3" block_type="pr_txt_ni"><em>These questions are meant to probe your understanding of the material covered in <link href="corty3e-ch01.xml">Chapters 1</link></em>&#8211;<em>5. The questions are not in the order of the chapters. Some of them are phrased differently or approach the material from a different direction. A few of them ask you to use the material in ways above and beyond what was covered in the book. This &#8220;test&#8221; is challenging. But, if you do well on it or puzzle out the answers using the key in the back of the book, you should feel comfortable that you are grasping the material.</em></p>
+<p id="corty3e-pt1-review-p4" block_type="pr_que_nl"><phrase block_type="question_num">1.</phrase> Answer each part. All questions refer to a normal distribution. For IQ, &#956; = 100 and &#963; = 15.</p>
+<list id="corty3e-pt1-review-list-1" type="ordered" block_type="loweralpha">
+<li><p id="corty3e-pt1-review-p5" block_type="pr_que_nl_lvl2">What percentage of scores fall from the mean to 2.33 standard deviations below the mean?</p></li>
+<li><p id="corty3e-pt1-review-p6" block_type="pr_que_nl_lvl2">What percentage of scores fall at or above <em>z</em> = 0.93?</p></li>
+<li><p id="corty3e-pt1-review-p7" block_type="pr_que_nl_lvl2">What percentage of scores fall at or above <em>z</em> = &#8211;1.37?</p></li>
+<li><p id="corty3e-pt1-review-p8" block_type="pr_que_nl_lvl2">What percentage of scores fall from <em>z</em> = &#8211;0.23 to <em>z</em> = 1.84?</p></li>
+<li><p id="corty3e-pt1-review-p9" block_type="pr_que_nl_lvl2">What percentage of the world&#8217;s population would be classified as geniuses if to be a genius one must have an IQ &#8805;150?</p></li>
+<li><p id="corty3e-pt1-review-p10" block_type="pr_que_nl_lvl2">What was Buffy&#8217;s score on the IQ test if her score, as a PR, were 33.</p></li>
+<li><p id="corty3e-pt1-review-p11" block_type="pr_que_nl_lvl2">On each SAT subtest, Skip&#8217;s score was 670. He is planning to take the ACT. If he performs as well on the ACT as he did on the SAT, then what would his ACT score be? (Assume the ACT has a mean of 21.50 and a standard deviation of 5.)</p></li>
+<li><p id="corty3e-pt1-review-p12" block_type="pr_que_nl_lvl2">What percentage of scores fall from <em>z</em> = 1.23 to <em>z</em> = 2.23?</p></li>
+</list>
+<p id="corty3e-pt1-review-p13" block_type="pr_que_nl"><phrase block_type="question_num">2.</phrase> Answer each part.</p>
+<list id="corty3e-pt1-review-list-2" type="ordered" block_type="loweralpha">
+<li><p id="corty3e-pt1-review-p14" block_type="pr_que_nl_lvl2">Make a stem-and-leaf plot for these data: 11, 31, 61, 62, 44, 54, 33, 32, 36, 45, 47, 55, 52, 19, 22, 33, 24, 28, 48, 26, 58, 44, 33, 36</p>
+<p id="corty3e-pt1-review-p15" block_type="pr_que_nl_txt">Based on the frequency distribution for the Irrational Beliefs Scale shown in the following table, answer the following questions:</p></li>
+<li><p id="corty3e-pt1-review-p16" block_type="pr_que_nl_lvl2"><em>i</em> = &#95;&#95;&#95;&#95;&#95;&#95;&#95;&#95;&#95;&#95;&#95;&#95;&#95;</p></li>
+<li><p id="corty3e-pt1-review-p17" block_type="pr_que_nl_lvl2">What are the apparent limits for interval D?</p></li>
+<li><p id="corty3e-pt1-review-p18" block_type="pr_que_nl_lvl2">What is the real lower limit for interval G?</p></li>
+<li><p id="corty3e-pt1-review-p19" block_type="pr_que_nl_lvl2">What is the real upper limit for interval H?</p></li>
+<li><p id="corty3e-pt1-review-p20" block_type="pr_que_nl_lvl2">What is the midpoint for interval E?</p></li>
+<li><p id="corty3e-pt1-review-p21" block_type="pr_que_nl_lvl2"><em>N</em> = &#95;&#95;&#95;&#95;&#95;&#95;&#95;&#95;&#95;&#95;&#95;&#95;&#95;&#95;&#95;&#95;</p></li>
+<li><p id="corty3e-pt1-review-p22" block_type="pr_que_nl_lvl2">What is the unit of measurement for the Irrational Beliefs Scale?</p></li>
+</list>
+<p id="corty3e-pt1-review-p23" block_type="pr_que_tb1_t"><strong>Frequency Distribution: Irrational Beliefs Scale</strong></p>
+<table>
+<tbody>
+<tr>
+<td block_type="TBN-COLHD"></td>
+<td block_type="TBN-COLHD"><strong>Interval</strong></td>
+<td block_type="TBN-COLHD"><strong>Frequency</strong></td>
+<td block_type="TBN-COLHD"><strong>Cumulative<br/>Frequency</strong></td>
+</tr>
+<tr>
+<td><phrase block_type="TBN-TXT">A</phrase></td>
+<td><phrase block_type="TBN-TXT">37&#8211;40</phrase></td>
+<td><phrase block_type="TBN-TXT">4</phrase></td>
+<td><phrase block_type="TBN-TXT">150</phrase></td>
+</tr>
+<tr>
+<td><phrase block_type="TBN-TXT">B</phrase></td>
+<td><phrase block_type="TBN-TXT">33&#8211;36</phrase></td>
+<td><phrase block_type="TBN-TXT">10</phrase></td>
+<td><phrase block_type="TBN-TXT">146</phrase></td>
+</tr>
+<tr>
+<td><phrase block_type="TBN-TXT">C</phrase></td>
+<td><phrase block_type="TBN-TXT">29&#8211;32</phrase></td>
+<td><phrase block_type="TBN-TXT">17</phrase></td>
+<td><phrase block_type="TBN-TXT">136</phrase></td>
+</tr>
+<tr>
+<td><phrase block_type="TBN-TXT">D</phrase></td>
+<td><phrase block_type="TBN-TXT">25&#8211;28</phrase></td>
+<td><phrase block_type="TBN-TXT">27</phrase></td>
+<td><phrase block_type="TBN-TXT">119</phrase></td>
+</tr>
+<tr>
+<td><phrase block_type="TBN-TXT">E</phrase></td>
+<td><phrase block_type="TBN-TXT">21&#8211;24</phrase></td>
+<td><phrase block_type="TBN-TXT">30</phrase></td>
+<td><phrase block_type="TBN-TXT">92</phrase></td>
+</tr>
+<tr>
+<td><phrase block_type="TBN-TXT">F</phrase></td>
+<td><phrase block_type="TBN-TXT">17&#8211;20</phrase></td>
+<td><phrase block_type="TBN-TXT">25</phrase></td>
+<td><phrase block_type="TBN-TXT">62</phrase></td>
+</tr>
+<tr>
+<td><phrase block_type="TBN-TXT">G</phrase></td>
+<td><phrase block_type="TBN-TXT">13&#8211;16</phrase></td>
+<td><phrase block_type="TBN-TXT">16</phrase></td>
+<td><phrase block_type="TBN-TXT">37</phrase></td>
+</tr>
+<tr>
+<td><phrase block_type="TBN-TXT">H</phrase></td>
+<td><phrase block_type="TBN-TXT">9&#8211;12</phrase></td>
+<td><phrase block_type="TBN-TXT">11</phrase></td>
+<td><phrase block_type="TBN-TXT">21</phrase></td>
+</tr>
+<tr>
+<td><phrase block_type="TBN-TXT">I</phrase></td>
+<td><phrase block_type="TBN-TXT">5&#8211;8</phrase></td>
+<td><phrase block_type="TBN-TXT">7</phrase></td>
+<td><phrase block_type="TBN-TXT">10</phrase></td>
+</tr>
+<tr>
+<td><phrase block_type="TBN-TXT">J</phrase></td>
+<td><phrase block_type="TBN-TXT">1&#8211;4</phrase></td>
+<td><phrase block_type="TBN-TXT">3</phrase></td>
+<td><phrase block_type="TBN-TXT">3</phrase></td>
+</tr>
+</tbody>
+</table>
+<p id="corty3e-pt1-review-p24" block_type="pr_que_nl"><phrase block_type="question_num">3.</phrase> Answer all parts.</p>
+<p id="corty3e-pt1-review-p25" block_type="pr_que_nl">Given 7, 9, 4, 11, and 14,</p>
+<list id="corty3e-pt1-review-list-3" type="ordered" block_type="loweralpha">
+<li><p id="corty3e-pt1-review-p26" block_type="pr_que_nl_lvl2">&#8721;<em>X</em> = &#95;&#95;&#95;&#95;&#95;&#95;&#95;&#95;&#95;&#95;&#95;&#95;&#95;&#95;&#95;</p></li>
+<li><p id="corty3e-pt1-review-p27" block_type="pr_que_nl_lvl2"><em>M</em> = &#95;&#95;&#95;&#95;&#95;&#95;&#95;&#95;&#95;&#95;&#95;&#95;</p></li>
+<li><p id="corty3e-pt1-review-p28" block_type="pr_que_nl_lvl2">&#8721;(<em>X</em> &#8211; <em>M</em>) = &#95;&#95;&#95;&#95;&#95;&#95;&#95;&#95;&#95;&#95;&#95;&#95;&#95;</p></li>
+<li><p id="corty3e-pt1-review-p29" block_type="pr_que_nl_lvl2">&#8721;(<em>X</em> &#8211; <em>M</em>)<sup>2</sup> = &#95;&#95;&#95;&#95;&#95;&#95;&#95;&#95;&#95;&#95;&#95;&#95;&#95;</p></li>
+<li><p id="corty3e-pt1-review-p30" block_type="pr_que_nl_lvl2"><em>s</em> = <em>&#95;&#95;&#95;&#95;&#95;&#95;&#95;&#95;&#95;</em></p></li>
+<li><p id="corty3e-pt1-review-p31" block_type="pr_que_nl_lvl2">Mdn = &#95;&#95;&#95;&#95;&#95;&#95;&#95;&#95;&#95;&#95;&#95;&#95;&#95;&#95;</p></li>
+</list>
+<p id="corty3e-pt1-review-p24a" block_type="pr_que_nl"><phrase block_type="question_num">4.</phrase></p>
+<list id="corty3e-pt1-review-list-4" type="ordered" block_type="loweralpha">
+<li><p id="corty3e-pt1-review-p32" block_type="pr_que_nl_lvl2">For a sample of 50 cases from a population, put these in order from smallest to largest: &#963;, &#963;<sup>2</sup>, <em>s</em>, <em>s</em><sup>2</sup>: &#95;&#95;&#95;&#95;&#95;&#95;&#95;&#95;&#95;&#95;&#95;&#95;&#95;&#95;&#95;&#95;&#95;&#95;&#95;&#95;&#95;&#95;&#95;&#95;&#95;</p></li>
+<li><p id="corty3e-pt1-review-p33" block_type="pr_que_nl_lvl2">Assume that conscientiousness is normally distributed. A researcher develops a new way to measure it. If almost 100&#37; of the scores fall from 15 to 45, then <em>s</em> = &#95;&#95;&#95;&#95;&#95;&#95;&#95;&#95;&#95;&#95;.</p></li>
+</list>
+<p id="corty3e_page_174" block_type="page_start">174</p>
+<p id="corty3e-pt1-review-p34" block_type="pr_que_nl"><phrase block_type="question_num">5.</phrase> Answer both parts.</p>
+<list id="corty3e-pt1-review-list-5" type="ordered" block_type="loweralpha">
+<li><p id="corty3e-pt1-review-p35" block_type="pr_que_nl_lvl2">A researcher obtained a random sample of 75 teenagers from the United States. She had each teenager keep track of how many times he or she checked his or her phone for texts or tweets during one 24-hour period. Given <em>M</em> = 157 and <em>s</em> = 32, calculate the 95&#37; confidence interval for the population mean for the number of times a teenager checks.</p></li>
+<li><p id="corty3e-pt1-review-p36" block_type="pr_que_nl_lvl2">Explain what this confidence interval means.</p></li>
+</list>
+<p id="corty3e-pt1-review-p37" block_type="pr_que_nl"><phrase block_type="question_num">6.</phrase> For each scenario, indicate whether the design is correlational (C), experimental (E), or quasi-experimental (QE). For the variable in <strong>bold,</strong> indicate whether it is a predictor variable (PV), criterion variable (CV), independent variable (IV), dependent variable (DV), or grouping variable (GV).</p>
+<list id="corty3e-pt1-review-list-6" type="ordered" block_type="loweralpha">
+<li><p id="corty3e-pt1-review-p38" block_type="pr_que_nl_lvl2">A psychologist is curious if <strong>sex</strong> has an impact on anxiety. She observes male and female nurses as they give shots to patients. Just before the injection, she asks the patients to rate how anxious they are.</p></li>
+<li><p id="corty3e-pt1-review-p39" block_type="pr_que_nl_lvl2">A researcher is curious how <strong>color</strong> affects children&#8217;s activity levels. He takes a noncolorful breakfast cereal and dyes it in bright colors. When a child comes to his lab, he randomly assigns him or her to receive the colorful or noncolorful version. He then lets the child play in a ball pit and times, to the nearest second, how long he or she plays.</p></li>
+<li><p id="corty3e-pt1-review-p40" block_type="pr_que_nl_lvl2">A researcher thinks it is <strong>eyes</strong> that control how attractive a person is. She gets a sample of college students and takes high-resolution images of their faces. She prepares two sets of photos, one of their full faces and one of just their eyes. She goes to another college and assembles two panels of raters. One panel rates how attractive the eyes are and the other panel rates the faces. Each panel rates on a scale of 0 to 100.</p></li>
+<li><p id="corty3e-pt1-review-p41" block_type="pr_que_nl_lvl2">Can humans echolocate? A researcher advertises for subjects who don&#8217;t mind getting bruises and 20 volunteers show up. He randomly assigns them to two groups. He teaches one group to click their tongues and listen for the sound to bounce back. He teaches nothing to the other group. He then puts each person in a totally dark room that is filled with obstacles like chairs and tables for ten minutes. The volunteer is instructed to walk around and form a mental map of the room. While each person is walking around the room, the researcher counts <strong>how many times he or she bumps into an object</strong>.</p></li>
+<li><p id="corty3e-pt1-review-p42" block_type="pr_que_nl_lvl2">Does fussiness as a baby predict fussiness as an adult? A psychologist has mothers classify their babies as fussy or not. Thirty years later, she tracks down the babies and has their spouses rate them on a scale that measures <strong>how difficult they are to please</strong>.</p></li>
+</list>
+<p id="corty3e-pt1-review-p43" block_type="pr_que_nl"><phrase block_type="question_num">7.</phrase> Given an interval-level variable, make a grouped frequency distribution. Use <em>i</em> = 10, start the lowest interval at 20, and report the midpoint, <em>f, f<sub>c</sub>, &#37;,</em> and <em>&#37;<sub>c</sub></em>. The data are given below&#8212;note that they are already organized from low to high.</p>
+<table>
+<tbody>
+<tr>
+<td><phrase block_type="PR-QUE-NL-TBMCL-first">26</phrase></td>
+<td><phrase block_type="PR-QUE-NL-TBMCL-first">40</phrase></td>
+<td><phrase block_type="PR-QUE-NL-TBMCL-first">47</phrase></td>
+<td><phrase block_type="PR-QUE-NL-TBMCL-first">51</phrase></td>
+<td><phrase block_type="PR-QUE-NL-TBMCL-first">55</phrase></td>
+<td><phrase block_type="PR-QUE-NL-TBMCL-first">61</phrase></td>
+</tr>
+<tr>
+<td><phrase block_type="PR-QUE-NL-TBMCL-first">30</phrase></td>
+<td><phrase block_type="PR-QUE-NL-TBMCL-first">40</phrase></td>
+<td><phrase block_type="PR-QUE-NL-TBMCL-first">47</phrase></td>
+<td><phrase block_type="PR-QUE-NL-TBMCL-first">51</phrase></td>
+<td><phrase block_type="PR-QUE-NL-TBMCL-first">56</phrase></td>
+<td><phrase block_type="PR-QUE-NL-TBMCL-first">61</phrase></td>
+</tr>
+<tr>
+<td><phrase block_type="PR-QUE-NL-TBMCL-first">33</phrase></td>
+<td><phrase block_type="PR-QUE-NL-TBMCL-first">41</phrase></td>
+<td><phrase block_type="PR-QUE-NL-TBMCL-first">47</phrase></td>
+<td><phrase block_type="PR-QUE-NL-TBMCL-first">52</phrase></td>
+<td><phrase block_type="PR-QUE-NL-TBMCL-first">57</phrase></td>
+<td><phrase block_type="PR-QUE-NL-TBMCL-first">62</phrase></td>
+</tr>
+<tr>
+<td><phrase block_type="PR-QUE-NL-TBMCL-first">33</phrase></td>
+<td><phrase block_type="PR-QUE-NL-TBMCL-first">42</phrase></td>
+<td><phrase block_type="PR-QUE-NL-TBMCL-first">48</phrase></td>
+<td><phrase block_type="PR-QUE-NL-TBMCL-first">53</phrase></td>
+<td><phrase block_type="PR-QUE-NL-TBMCL-first">57</phrase></td>
+<td><phrase block_type="PR-QUE-NL-TBMCL-first">64</phrase></td>
+</tr>
+<tr>
+<td><phrase block_type="PR-QUE-NL-TBMCL-first">33</phrase></td>
+<td><phrase block_type="PR-QUE-NL-TBMCL-first">43</phrase></td>
+<td><phrase block_type="PR-QUE-NL-TBMCL-first">48</phrase></td>
+<td><phrase block_type="PR-QUE-NL-TBMCL-first">53</phrase></td>
+<td><phrase block_type="PR-QUE-NL-TBMCL-first">57</phrase></td>
+<td><phrase block_type="PR-QUE-NL-TBMCL-first">65</phrase></td>
+</tr>
+<tr>
+<td><phrase block_type="PR-QUE-NL-TBMCL-first">36</phrase></td>
+<td><phrase block_type="PR-QUE-NL-TBMCL-first">45</phrase></td>
+<td><phrase block_type="PR-QUE-NL-TBMCL-first">48</phrase></td>
+<td><phrase block_type="PR-QUE-NL-TBMCL-first">54</phrase></td>
+<td><phrase block_type="PR-QUE-NL-TBMCL-first">59</phrase></td>
+<td><phrase block_type="PR-QUE-NL-TBMCL-first">65</phrase></td>
+</tr>
+<tr>
+<td><phrase block_type="PR-QUE-NL-TBMCL-first">38</phrase></td>
+<td><phrase block_type="PR-QUE-NL-TBMCL-first">45</phrase></td>
+<td><phrase block_type="PR-QUE-NL-TBMCL-first">48</phrase></td>
+<td><phrase block_type="PR-QUE-NL-TBMCL-first">54</phrase></td>
+<td><phrase block_type="PR-QUE-NL-TBMCL-first">59</phrase></td>
+<td><phrase block_type="PR-QUE-NL-TBMCL-first">67</phrase></td>
+</tr>
+<tr>
+<td><phrase block_type="PR-QUE-NL-TBMCL-first">39</phrase></td>
+<td><phrase block_type="PR-QUE-NL-TBMCL-first">45</phrase></td>
+<td><phrase block_type="PR-QUE-NL-TBMCL-first">50</phrase></td>
+<td><phrase block_type="PR-QUE-NL-TBMCL-first">54</phrase></td>
+<td><phrase block_type="PR-QUE-NL-TBMCL-first">59</phrase></td>
+<td><phrase block_type="PR-QUE-NL-TBMCL-first">72</phrase></td>
+</tr>
+<tr>
+<td><phrase block_type="PR-QUE-NL-TBMCL-first">39</phrase></td>
+<td><phrase block_type="PR-QUE-NL-TBMCL-first">45</phrase></td>
+<td><phrase block_type="PR-QUE-NL-TBMCL-first">50</phrase></td>
+<td><phrase block_type="PR-QUE-NL-TBMCL-first">54</phrase></td>
+<td><phrase block_type="PR-QUE-NL-TBMCL-first">59</phrase></td>
+<td><phrase block_type="PR-QUE-NL-TBMCL-first">73</phrase></td>
+</tr>
+<tr>
+<td><phrase block_type="PR-QUE-NL-TBMCL-first">40</phrase></td>
+<td><phrase block_type="PR-QUE-NL-TBMCL-first">46</phrase></td>
+<td><phrase block_type="PR-QUE-NL-TBMCL-first">50</phrase></td>
+<td><phrase block_type="PR-QUE-NL-TBMCL-first">54</phrase></td>
+<td><phrase block_type="PR-QUE-NL-TBMCL-first">61</phrase></td>
+<td><phrase block_type="PR-QUE-NL-TBMCL-first">75</phrase></td>
+</tr>
+</tbody>
+</table>
+<p id="corty3e-pt1-review-p44" block_type="pr_que_nl"><phrase block_type="question_num">8.</phrase> For each scenario below, determine the level of measurement of the variable in <strong>bold</strong>.</p>
+<list id="corty3e-pt1-review-list-7" type="ordered" block_type="loweralpha">
+<li><p id="corty3e-pt1-review-p45" block_type="pr_que_nl_lvl2">Adopted children are compared to nonadopted children on the 25-item Smith Attachment Checklist to see whether <strong>adoption status</strong> affects attachment level.</p></li>
+<li><p id="corty3e-pt1-review-p46" block_type="pr_que_nl_lvl2">A researcher believed that amount of sleep influenced learning ability. He had participants keep a sleep diary for a week, so he could calculate the average number of hours each slept per night. He then had each subject memorize a list of 25 words, gave him or her a distractor task, and observed <strong>how many of the 25 words each could recall.</strong></p></li>
+<li><p id="corty3e-pt1-review-p47" block_type="pr_que_nl_lvl2">A researcher thought that amount of sleep influenced learning ability. She got 20 volunteers and randomly assigned them to two groups. Group A slept for 8 hours a night, for three nights in a row. Group B slept for 4 hours a night, for three nights in a row. After the three nights, each participant read a newspaper article about a chef who was mugged while walking home from work. Then, each person took a surprise recall test about 20 facts from the article. It was scored based on <strong>the percentage of facts correctly recalled</strong>.</p></li>
+<li><p id="corty3e-pt1-review-p48" block_type="pr_que_nl_lvl2">A researcher is curious how well a student&#8217;s score on an initial statistics test predicts how much statistics he or she ends up knowing, as measured by <strong>the final point total in the class</strong>. He takes a random sample of 100 students from previous semesters, determines each person&#8217;s score on the first test, and then finds his or her final point total.</p></li>
+<li><p id="corty3e-pt1-review-p49" block_type="pr_que_nl_lvl2">A sexual assault researcher believes that alcohol consumption leads to being in situations where assault is more possible. To investigate this assumption, she obtains a representative sample of 3,500 U.S. college students and classifies them as (0) nondrinkers, (1) people who drink 1&#8211;3 days per month, (2) 4&#8211;7 days per month, (3) 8&#8211;13 days per month, (4) 14&#8211;24 days per month, (5) 25&#8211;29 days per month, and (6) every day. Each participant also reports how many sexual experiences he or she had under the influence that he or she now regrets. The researcher compares the number of regretted sexual experiences across the different <strong>classifications of drinking days</strong>.</p></li>
+</list>
+<p id="corty3e_page_175" block_type="page_start">175</p>
+<p id="corty3e-pt1-review-p50" block_type="pr_que_nl"><phrase block_type="question_num">9.</phrase> Round the following to two decimal places.</p>
+<list id="corty3e-pt1-review-list-8" type="ordered" block_type="loweralpha">
+<li><p id="corty3e-pt1-review-p51" block_type="pr_que_nl_lvl2">12.4550</p></li>
+<li><p id="corty3e-pt1-review-p52" block_type="pr_que_nl_lvl2">13.4105</p></li>
+<li><p id="corty3e-pt1-review-p53" block_type="pr_que_nl_lvl2">14.7812345</p></li>
+<li><p id="corty3e-pt1-review-p54" block_type="pr_que_nl_lvl2">15.9937</p></li>
+<li><p id="corty3e-pt1-review-p55" block_type="pr_que_nl_lvl2">16.99</p></li>
+<li><p id="corty3e-pt1-review-p56" block_type="pr_que_nl_lvl2">2/3</p></li>
+<li><p id="corty3e-pt1-review-p57" block_type="pr_que_nl_lvl2">3/2</p></li>
+<li><p id="corty3e-pt1-review-p58" block_type="pr_que_nl_lvl2">10/2</p></li>
+<li><p id="corty3e-pt1-review-p59" block_type="pr_que_nl_lvl2">4.00/2.00</p></li>
+</list>
+<p id="corty3e-pt1-review-p60" block_type="pr_que_nl"><phrase block_type="question_num">10.</phrase> Graph the following data: Intro psych students were surveyed regarding textbook use. Ten bought a new textbook; 32 bought a used version; 21 bought a looseleaf version; 23 were renting their copy; and 7 did not have a textbook.</p>
+<p id="corty3e-pt1-review-p61" block_type="pr_que_nl"><phrase block_type="question_num">11.</phrase> Determine the shape of each distribution.</p>
+<figure id="corty3e-pt1-review-fig-1" block_type="un_figure" numbered="false" number="false" mmtype="image" mmsrc="images" attr="">
+<layout align="center" width="large" border="true"/>
+<image asset-id="corty3e-pt1-review-img-1" alt="image" src="asset/pt1/corty3e_part_test1_un01.jpg"/>
+</figure>
+</section>
+</chapter>

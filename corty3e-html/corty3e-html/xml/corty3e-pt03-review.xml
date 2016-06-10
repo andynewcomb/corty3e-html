@@ -1,0 +1,157 @@
+<chapter number="3" id="corty3e-pt3-review-3" title="PART III Test Your Knowledge" start-numbering-at="503" numbered="true">
+<section id="corty3e-pt3-review-sec1-1a" block_type="intro" title="Chapter Introduction" numbered="true" level="1" print_page="475">
+<p id="corty3e_page_475" block_type="page_start">475</p>
+<p id="corty3e-pt3-review-p1" block_type="pr_n_ri"><strong>PART III</strong></p>
+<p id="corty3e-pt3-review-p2" block_type="pr_t">Test Your Knowledge</p>
+<p id="corty3e-pt3-review-p3" block_type="pr_txt_ni"><em>These questions are meant to probe your understanding of the material covered in</em> <link href="corty3e-ch10.xml">Chapters 10</link>&#8211;<link href="corty3e-ch12.xml">12</link><em>. The questions are not in the order of the chapters. Some of them are phrased differently or approach the material from a different direction. A few of them ask you to use the material in ways above and beyond what was covered in the book. This &#8220;test&#8221; is challenging. But, if you do well on it or puzzle out the answers using the key in the back of the book, you should feel comfortable that you are grasping the material.</em></p>
+<p id="corty3e-pt3-review-p4" block_type="pr_que_nl"><phrase block_type="question_num">1.</phrase> A researcher completed a study with three independent samples, each with four participants. She found <em>SS</em><sub>Total</sub> = 776.00 and <em>SS</em><sub>Within</sub> = 48.00. Complete an ANOVA summary table.</p>
+<p id="corty3e-pt3-review-p5" block_type="pr_que_nl"><phrase block_type="question_num">2.</phrase> Here are the descriptive statistics for the groups in a between-subjects, one-way ANOVA:</p>
+<table>
+<tbody>
+<tr>
+<td block_type="TBN-COLHD"></td>
+<td block_type="TBN-COLHD"><strong>Group 1</strong></td>
+<td block_type="TBN-COLHD"><strong>Group 2</strong></td>
+<td block_type="TBN-COLHD"><strong>Group 3</strong></td>
+</tr>
+<tr>
+<td><phrase block_type="PR-QUE-TB1-TXT"><em>n</em></phrase></td>
+<td><phrase block_type="PR-QUE-TB1-TXT">6</phrase></td>
+<td><phrase block_type="PR-QUE-TB1-TXT">7</phrase></td>
+<td><phrase block_type="PR-QUE-TB1-TXT">8</phrase></td>
+</tr>
+<tr>
+<td><phrase block_type="PR-QUE-TB1-TXT"><em>M</em></phrase></td>
+<td><phrase block_type="PR-QUE-TB1-TXT">23.00</phrase></td>
+<td><phrase block_type="PR-QUE-TB1-TXT">26.57</phrase></td>
+<td><phrase block_type="PR-QUE-TB1-TXT">36.63</phrase></td>
+</tr>
+<tr>
+<td><phrase block_type="PR-QUE-TB1-TXT"><em>s</em></phrase></td>
+<td><phrase block_type="PR-QUE-TB1-TXT">4.69</phrase></td>
+<td><phrase block_type="PR-QUE-TB1-TXT">7.28</phrase></td>
+<td><phrase block_type="PR-QUE-TB1-TXT">5.37</phrase></td>
+</tr>
+</tbody>
+</table>
+<p id="corty3e-pt3-review-p6" block_type="pr_que_tb1_txt">And here is the ANOVA summary table:</p>
+<table>
+<tbody>
+<tr>
+<td block_type="TBN-COLHD"><strong>Source of Variability</strong></td>
+<td block_type="TBN-COLHD"><strong>Sum of Squares</strong></td>
+<td block_type="TBN-COLHD"><strong>Degrees of Freedom</strong></td>
+<td block_type="TBN-COLHD"><strong>Mean Square</strong></td>
+<td block_type="TBN-COLHD"><em>F</em> <strong>ratio</strong></td>
+</tr>
+<tr>
+<td><phrase block_type="PR-QUE-TB1-TXT"><strong>Between groups</strong></phrase></td>
+<td><phrase block_type="PR-QUE-TB1-TXT">719.36</phrase></td>
+<td><phrase block_type="PR-QUE-TB1-TXT">2</phrase></td>
+<td><phrase block_type="PR-QUE-TB1-TXT">359.68</phrase></td>
+<td><phrase block_type="PR-QUE-TB1-TXT">10.28</phrase></td>
+</tr>
+<tr>
+<td><phrase block_type="PR-QUE-TB1-TXT"><strong>Within groups</strong></phrase></td>
+<td><phrase block_type="PR-QUE-TB1-TXT">629.59</phrase></td>
+<td><phrase block_type="PR-QUE-TB1-TXT">18</phrase></td>
+<td><phrase block_type="PR-QUE-TB1-TXT">34.98</phrase></td>
+<td></td>
+</tr>
+<tr>
+<td><phrase block_type="PR-QUE-TB1-TXT"><strong>Total</strong></phrase></td>
+<td><phrase block_type="PR-QUE-TB1-TXT">1,348.95</phrase></td>
+<td><phrase block_type="PR-QUE-TB1-TXT">20</phrase></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p id="corty3e-pt3-review-p7" block_type="pr_que_nl">If appropriate to do so, determine which groups have a statistically significant difference in the means. If not appropriate to do so, explain why.</p>
+<p id="corty3e-pt3-review-p8" block_type="pr_que_nl"><phrase block_type="question_num">3.</phrase> Eight hundred participants are randomly assigned to two groups. Half the participants are tested in Environment A and half in Environment B. Prior to testing, different expectations were induced in the participants. Random assignment was used to determine which half of the participants expected a positive outcome and which half expected a negative outcome. Outcome was measured on an interval scale where 100 is neutral, below 100 is poor, and above 100 is good. Here are the means for the 200 people in each cell:</p>
+<table>
+<tbody>
+<tr>
+<td block_type="TBN-COLHD"></td>
+<td block_type="TBN-COLHD">&#43;<strong>Expect</strong></td>
+<td block_type="TBN-COLHD">&#8211;<strong>Expect</strong></td>
+</tr>
+<tr>
+<td><phrase block_type="PR-QUE-TB1-TXT"><strong>Env A</strong></phrase></td>
+<td><phrase block_type="PR-QUE-TB1-TXT">100</phrase></td>
+<td><phrase block_type="PR-QUE-TB1-TXT">100</phrase></td>
+</tr>
+<tr>
+<td><phrase block_type="PR-QUE-TB1-TXT"><strong>Env B</strong></phrase></td>
+<td><phrase block_type="PR-QUE-TB1-TXT">130</phrase></td>
+<td><phrase block_type="PR-QUE-TB1-TXT">70</phrase></td>
+</tr>
+</tbody>
+</table>
+<list id="corty3e-pt3-review-list-1" type="ordered" block_type="loweralpha">
+<li><p id="corty3e-pt3-review-p9" block_type="pr_que_nl_lvl2">Calculate marginal means and place them in the appropriate places in the table.</p></li>
+<li><p id="corty3e-pt3-review-p10" block_type="pr_que_nl_lvl2">Graph the results.</p></li>
+<li><p id="corty3e-pt3-review-p11" block_type="pr_que_nl_lvl2">Answer these two questions:</p>
+<list id="corty3e-pt3-review-list-2" type="ordered" block_type="numbered">
+<li><p id="corty3e-pt3-review-p12" block_type="pr_que_nl_lvl2">What is the effect of environment on outcome?</p></li>
+<li><p id="corty3e-pt3-review-p13" block_type="pr_que_nl_lvl2">What is the effect of expectation on outcome?</p></li>
+</list></li></list>
+<p id="corty3e-pt3-review-p14" block_type="pr_que_nl"><phrase block_type="question_num">4.</phrase> Read the ANOVA scenarios below and determine how many &#8220;ways&#8221; exist in each one. State what each way is (e.g., sex or handedness), indicate whether the samples for the way are independent or dependent, and state the number of levels for the way.</p>
+<list id="corty3e-pt3-review-list-3" type="ordered" block_type="loweralpha">
+<li><p id="corty3e-pt3-review-p15" block_type="pr_que_nl_lvl2">People are assigned to groups based on (1) whether or not they like to exercise and (2) whether they prefer fruits or chips. The groups are compared in terms of weight.</p></li>
+<li><p id="corty3e-pt3-review-p16" block_type="pr_que_nl_lvl2">Orchestra members who play string, brass, wind, or percussion instruments are compared on an interval-level measure of perfect pitch.</p></li>
+<li><p id="corty3e-pt3-review-p17" block_type="pr_que_nl_lvl2">The same students&#8217; political views are measured on an interval-level scale at the end of their first, second, third, and fourth years of college.</p></li>
+<li><p id="corty3e-pt3-review-p18" block_type="pr_que_nl_lvl2">People with schizophrenia are classified as to whether their symptoms are primarily &#8220;positive&#8221; or &#8220;negative.&#8221; They are then assigned to receive either standard medications or new experimental medications. Each person&#8217;s symptom severity is measured after three, six, and nine months of treatment.</p></li>
+<li><p id="corty3e-pt3-review-p19" block_type="pr_que_nl_lvl2">Psychology majors, English majors, and communications majors are matched in terms of sex and IQ. They are then compared in terms of first-job-after-graduation salary.</p></li>
+</list>
+<p id="corty3e_page_476" block_type="page_start">476</p>
+<p id="corty3e-pt3-review-p20" block_type="pr_que_nl"><phrase block_type="question_num">5.</phrase> Design a study in which it would be appropriate to use the tests indicated below to analyze the results. Make sure that you give sufficient details.</p>
+<list id="corty3e-pt3-review-list-4" type="ordered" block_type="loweralpha">
+<li><p id="corty3e-pt3-review-p21" block_type="pr_que_nl_lvl2">A between-subjects, one-way ANOVA</p></li>
+<li><p id="corty3e-pt3-review-p22" block_type="pr_que_nl_lvl2">A one-way, repeated-measures ANOVA</p></li>
+<li><p id="corty3e-pt3-review-p23" block_type="pr_que_nl_lvl2">A between-subjects, two-way ANOVA</p></li>
+</list>
+<p id="corty3e-pt3-review-p24" block_type="pr_que_nl"><phrase block_type="question_num">6.</phrase> Read each scenario below and determine which statistical test should be used to analyze the data to arrive at an answer to the question. Your options are the single-sample <em>z</em> test, the three <em>t</em> tests, and the three ANOVAs. Specify the test being used (i.e., rather than simply indicating &#8220;<em>t</em> test,&#8221; indicate &#8220;paired-samples <em>t</em> test&#8221;). If the answer calls for a test that has not been covered in the text, say so.</p>
+<list id="corty3e-pt3-review-list-5" type="ordered" block_type="loweralpha">
+<li><p id="corty3e-pt3-review-p25" block_type="pr_que_nl_lvl2">The IQs of first-year college students are measured. The IQs for the same students are measured again four years later. Does college make people smarter?</p></li>
+<li><p id="corty3e-pt3-review-p26" block_type="pr_que_nl_lvl2">The body mass indexes (BMIs) of kindergarten students are measured. The BMIs for the same students are measured 12 years later. Do BMIs change over time?</p></li>
+<li><p id="corty3e-pt3-review-p27" block_type="pr_que_nl_lvl2">People who suffer from regular headaches are assigned to receive aspirin, ibuprofen, acetaminophen, caffeine, placebo, or a new experimental drug. The subjects track how many minutes it takes for their headaches to go away once they ingest the assigned medication. Is there a difference in the effectiveness of the various treatments?</p></li>
+<li><p id="corty3e-pt3-review-p28" block_type="pr_que_nl_lvl2">According to the U.S. Hospital Association, every year on July 4th, the average hospital in the United States treats 7.35 (&#963; = 2.53) children for fireworks-related injuries. In order to determine whether rural communities are safer for children on July 4, a researcher surveyed a random sample of 37 rural hospitals and found for each one the number of children treated on July 4 for fireworks-related injuries. What statistical test should he use to see if rural communities are safer on July 4?</p></li>
+</list>
+<p id="corty3e-pt3-review-p29" block_type="pr_que_nl"><phrase block_type="question_num">7.</phrase> A babysitter once told me that she thought regular babysitting was the best contraceptive in the world. She loved kids and planned to have several someday, but she realized how much responsibility they were and was not going to rush into it. I decided to conduct a study to see if babysitting had any impact on the age at which women had their first child. I found 10 women who had never babysat, 10 who babysat occasionally, and 10 who were frequent babysitters. All participants were college graduates. For each, I determined her age at the birth of her first child. The means for the three groups are: <em>never babysat</em> = 23.10 years old at birth of first child; <em>occasional</em> = 24.60; <em>frequent</em> = 26.90.</p>
+<p id="corty3e-pt3-review-p30" block_type="pr_que_nl">Below is the ANOVA summary table:</p>
+<table>
+<tbody>
+<tr>
+<td block_type="TBN-COLHD"><strong>Source of Variability</strong></td>
+<td block_type="TBN-COLHD"><strong>Sum of Squares</strong></td>
+<td block_type="TBN-COLHD"><strong>Degrees of Freedom</strong></td>
+<td block_type="TBN-COLHD"><strong>Mean Square</strong></td>
+<td block_type="TBN-COLHD"><em>F</em> <strong>ratio</strong></td>
+</tr>
+<tr>
+<td><phrase block_type="TBN-TXT"><strong>Between groups</strong></phrase></td>
+<td><phrase block_type="TBN-TXT">73.27</phrase></td>
+<td><phrase block_type="TBN-TXT">2</phrase></td>
+<td><phrase block_type="TBN-TXT">36.64</phrase></td>
+<td><phrase block_type="TBN-TXT">8.48</phrase></td>
+</tr>
+<tr>
+<td><phrase block_type="TBN-TXT"><strong>Within groups</strong></phrase></td>
+<td><phrase block_type="TBN-TXT">116.66</phrase></td>
+<td><phrase block_type="TBN-TXT">27</phrase></td>
+<td><phrase block_type="TBN-TXT">4.32</phrase></td>
+<td></td>
+</tr>
+<tr>
+<td><phrase block_type="TBN-TXT"><strong>Total</strong></phrase></td>
+<td><phrase block_type="TBN-TXT">189.93</phrase></td>
+<td><phrase block_type="TBN-TXT">29</phrase></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p id="corty3e-pt3-review-p31" block_type="txt">Interpret the results.</p>
+</section>
+</chapter>

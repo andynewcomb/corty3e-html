@@ -1,0 +1,16 @@
+<chapter number="4" id="corty3e-p4" title="PART IV Correlation, Regression, and Nonparametric Statistical Tests" start-numbering-at="04" numbered="true">
+<section id="corty3e-pt4-sec1-1a" block_type="intro" title="Chapter Introduction" numbered="true" level="1" print_page="477">
+<p id="comerfund8e_page_477" block_type="page_start">477</p>
+<p id="corty3e-pt4-p1" block_type="part_number">PART IV</p>
+<p id="corty3e-pt4-p2" block_type="part_title">Correlation, Regression, and Nonparametric Statistical Tests</p>
+<p id="corty3e-pt4-p3" block_type="po-toc-ct"><link href="corty3e-ch13.xml"><strong>Chapter 13</strong> The Pearson Correlation Coefficient</link></p>
+<p id="corty3e-pt4-p4" block_type="po-toc-ct"><link href="corty3e-ch14.xml"><strong>Chapter 14</strong> Simple and Multiple Linear Regression</link></p>
+<p id="corty3e-pt4-p5" block_type="po-toc-ct"><link href="corty3e-ch15.xml"><strong>Chapter 15</strong> Nonparametric Statistical Tests: Chi-Square</link></p>
+<p id="corty3e-pt4-p6" block_type="po-toc-ct"><link href="corty3e-ch16.xml"><strong>Chapter 16</strong> Selecting the Right Statistical Test</link></p>
+<p id="corty3e-pt4-p7" block_type="po-txt-ni">Congratulations! This is the final section of the book and you are just four chapters away from completing your first statistics course. Up to this point, we have discussed a group of hypothesis tests called <em>difference tests.</em> These tests, which include the various <em>t</em> tests and ANOVAs, allow researchers to determine whether two or more populations differ on an outcome variable.</p>
+<p id="corty3e-pt4-p8" block_type="po-txt">Now, the final chapters will introduce you to a second group of hypothesis tests called <em>relationship tests.</em> These tests allow researchers to analyze whether an association, or correlation, exists between two or more variables.</p>
+<p id="corty3e-pt4-p9" block_type="po-txt"><link href="corty3e-ch13.xml">Chapter 13</link> introduces the Pearson correlation coefficient, or Pearson <em>r</em>, a test used to measure the strength of a relationship between two interval/ratio variables. <link href="corty3e-ch14.xml">Chapter 14</link> then takes the Pearson <em>r</em> and uses it in something called linear regression to predict a case&#8217;s score on the outcome variable from its score on the explanatory variable. <link href="corty3e-ch15.xml">Chapter 15</link> covers nonparametric tests, tests that can be used with ordinal- or nominal-level outcome data.</p>
+<p id="comerfund8e_page_478" block_type="page_start">478</p>
+<p id="corty3e-pt4-p10" block_type="po-txt">By the end of <link href="corty3e-ch15.xml">Chapter 15</link>, this book will have put more than a dozen statistical tests into your statistical toolbox and taught you the proper use of each one. But, students often stumble when, facing a statistical task on their own, they have to reach into their toolbox and pick the right test. That&#8217;s where <link href="corty3e-ch16.xml">Chapter 16</link> on selecting the correct test comes in. After completing this final chapter, you should feel confident that when you open your toolbox, you will choose the right test.</p>
+</section>
+</chapter>

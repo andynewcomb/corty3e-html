@@ -1,0 +1,13 @@
+<chapter number="2" id="corty3e-pt2-part-1" title="PART II One-and Two-Sample Difference Tests" start-numbering-at="02" numbered="true">
+<section id="corty3e-pt2-sec1-1a" block_type="intro" title="Chapter Introduction" numbered="true" level="1" print_page="177">
+<p id="corty3e_page_177" block_type="page_start">177</p>
+<p id="corty3e-pt2-p1" block_type="part_number">PART II</p>
+<p id="corty3e-pt2-p3" block_type="part_title">One-and Two-Sample Difference Tests</p>
+<p id="corty3e-pt2-p4" block_type="po-toc-ct"><link href="corty3e-ch06.xml"><strong>Chapter 6</strong> Introduction to Hypothesis Testing</link></p>
+<p id="corty3e-pt2-p5" block_type="po-toc-ct"><link href="corty3e-ch07.xml"><strong>Chapter 7</strong> The Single-Sample <em>t</em> Test</link></p>
+<p id="corty3e-pt2-p6" block_type="po-toc-ct"><link href="corty3e-ch08.xml"><strong>Chapter 8</strong> Independent-Samples <em>t</em> Test</link></p>
+<p id="corty3e-pt2-p7" block_type="po-toc-ct"><link href="corty3e-ch09.xml"><strong>Chapter 9</strong> The Paired-Samples <em>t</em> Test</link></p>
+<p id="corty3e-pt2-p8" block_type="po-txt-ni">The four chapters in this section form the core of statistics for psychology. First, hypothesis testing is introduced. Hypothesis testing is the procedure that statisticians use to make decisions that are objective and data-based, not subjective and emotion-based.</p>
+<p id="corty3e-pt2-p9" block_type="po-txt">Then the most commonly used tool in the psychologist&#8217;s toolbox, the difference test, is introduced in several varieties. Single-sample difference tests are used to answer questions such as the following: Is the average GPA in this <em>sample</em> of students different from the mean GPA for the entire <em>population</em> of students? Two-sample difference tests are used to answer questions like those posed by classic experiments that have one experimental group and one control group. In this section, we&#8217;ll learn about two, the independent-samples <em>t</em> test and the paired-samples <em>t</em> test. In the next section, we&#8217;ll cover ANOVA, tests used in more complex situations when experiments include three or more groups.</p>
+</section>
+</chapter>

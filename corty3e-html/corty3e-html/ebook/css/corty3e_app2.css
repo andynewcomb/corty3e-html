@@ -502,9 +502,6 @@ img[src="asset/appb/corty3e_ineqn_app_b-13_02.jpg"] {
 [data-block_type="ans-h3"] [data-block_type="question_num"] {
   font-family: serif !important;
 }
-div#corty3e_page_B-19 {
-  margin-top: -2em;
-}
 ul#corty3e-app2-list-32 ul[data-block_type="bluebullet"] {
   font-family: serif !important;
 }
@@ -528,4 +525,43 @@ div#corty3e-app2-table14 td.right {
 }
 div#corty3e-app2-table14 td.right img {
   float: right;
+}
+div#corty3e_page_B-3 {
+  margin-top: -2em;
+}
+div#corty3e_page_B-4 {
+  margin-top: -2em;
+}
+div#corty3e_page_B-5 {
+  margin-top: -2em;
+}
+div#corty3e_page_B-6 {
+  margin-top: -2em;
+}
+div#corty3e_page_B-11 {
+  margin-top: -2em;
+}
+div#corty3e_page_B-15 {
+  margin-top: 2em;
+}
+div#corty3e_page_B-19 {
+  margin-top: -2em;
+}
+div#corty3e_page_B-20 {
+  margin-top: -2em;
+}
+div#corty3e_page_B-21 {
+  margin-top: -2em;
+}
+div#corty3e_page_B-26 {
+  margin-top: -2em;
+}
+div#corty3e_page_B-28 {
+  margin-top: -2em;
+}
+div#corty3e_page_B-29 {
+  margin-top: 2em;
+}
+div#corty3e_page_B-31 {
+  margin-top: -2em;
 }

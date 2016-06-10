@@ -788,7 +788,7 @@
 <p id="corty3e-app3-p284" block_type="ans"><phrase block_type="question_num">10.15</phrase> First, determine if the result is statistically significant. <em>F<sub>cv</sub></em> with 2 and 24 degrees of freedom is 3.403. As 5.25 (<em>F</em>) &#8805; 3.403, the results are statistically significant and at least one mean differs from at least one other. <em>r</em><sup>2</sup> has already been calculated as 30.43&#37;, a large effect, and the <em>HSD</em> value is 2.35. Because the <em>F</em> was statistically significant, it is OK to complete post-hoc tests.</p>
 <list id="corty3e-app3-list-18" type="unordered" block_type="bullet">
 <li><p id="corty3e-app3-p285" block_type="ans-bl">The difference between the mean raise for employees of managers who use rewards vs. those who use punishments is 3.00 percentage points. This is greater than 2.35 percentage points, so the difference is statistically significant. One can conclude that using rewards leads to statistically significantly better performance than using punishments, as judged by the size of the raise.</p></li>
-<li><p id="corty3e-app3-p286" block_type="ans-nl-lvl2-v1">The differences between (a) rewards vs. a mixture of rewards and punishments, 1.00 percentage point, and (b) punishments vs. a mixture of rewards and punishments, 2.00 percentage points, are not statistically significant. There is not enough evidence to conclude that (a) rewards alone work better than rewards and punishment, or (b) that rewards and punishments work better than punishments alone.</p></li>
+<li><p id="corty3e-app3-p286" block_type="ans-bl">The differences between (a) rewards vs. a mixture of rewards and punishments, 1.00 percentage point, and (b) punishments vs. a mixture of rewards and punishments, 2.00 percentage points, are not statistically significant. There is not enough evidence to conclude that (a) rewards alone work better than rewards and punishment, or (b) that rewards and punishments work better than punishments alone.</p></li>
 </list>
 <p id="corty3e-app3-p287" block_type="txt-ni">Here is an interpretation:</p>
 <p id="corty3e-app3-p288" block_type="txt-ni">An industrial/organizational psychologist compared management styles based on using rewards, using punishments, or using a combination of rewards and punishments on employee performance. Employee performance was measured by the size of raise the employee received. The effect of management style was statistically significant, <em>F</em>(2, 24) = 5.25, <em>p</em> &#60; .05, and was a strong one. Type of management does have an impact on employee mean performance.</p>
@@ -1072,7 +1072,7 @@
 <td></td>
 <td><phrase block_type="tbn-txt">10</phrase></td>
 <td><phrase block_type="tbn-txt">20</phrase></td>
-<td><phrase block_type="tbn-txt">&#8722; 1.00</phrase></td>
+<td><phrase block_type="tbn-txt">&#8722;1.00</phrase></td>
 <td>&#8722;<phrase block_type="tbn-txt">7.00</phrase></td>
 <td><phrase block_type="tbn-txt">7.00</phrase></td>
 <td><phrase block_type="tbn-txt">1.00</phrase></td>
@@ -1083,7 +1083,7 @@
 <td><phrase block_type="tbn-txt">14</phrase></td>
 <td><phrase block_type="tbn-txt">24</phrase></td>
 <td><phrase block_type="tbn-txt">3.00</phrase></td>
-<td><phrase block_type="tbn-txt">&#8722; 3.00</phrase></td>
+<td><phrase block_type="tbn-txt">&#8722;3.00</phrase></td>
 <td>&#8722;<phrase block_type="tbn-txt">9.00</phrase></td>
 <td><phrase block_type="tbn-txt">9.00</phrase></td>
 <td><phrase block_type="tbn-txt">9.00</phrase></td>
@@ -1094,7 +1094,7 @@
 <td><phrase block_type="tbn-txt">37</phrase></td>
 <td>&#8722;<phrase block_type="tbn-txt">2.00</phrase></td>
 <td><phrase block_type="tbn-txt">10.00</phrase></td>
-<td><phrase block_type="tbn-txt">&#8722; 20.00</phrase></td>
+<td><phrase block_type="tbn-txt">&#8722;20.00</phrase></td>
 <td><phrase block_type="tbn-txt">4.00</phrase></td>
 <td><phrase block_type="tbn-txt">100.00</phrase></td>
 </tr>

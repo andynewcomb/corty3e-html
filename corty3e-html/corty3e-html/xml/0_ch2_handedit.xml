@@ -320,12 +320,12 @@
 <li><p id="corty3e-ch2-p129" block_type="bl-mid">The smallest value for IQ is 67, which is far away from a value of zero. If the <em>X</em>-axis started at zero, there would be a lot of blank space before the first interval. Instead, the <em>X</em>-axis starts at 60, the apparent lower limit of the first interval.</p></li>
 <li><p id="corty3e-ch2-p130" block_type="bl-mid">Note the discontinuity mark on the <em>X</em>-axis, which alerts people viewing the graph that the axis doesn&#8217;t start at zero.</p></li>
 <li><p id="corty3e-ch2-p131" block_type="bl-last">The highest IQ value is 152, so the <em>X</em>-axis ends at 160, what would be the start of the next higher interval.</p>
-<p id="corty3e-ch2-p132" block_type="txt"><strong><link href="#corty3e-ch2-fig-26">Figure 2.10</link></strong> shows the histogram once it has been completed. Note:</p>
 <figure id="corty3e-ch2-fig-26" block_type="figure" numbered="true" number="2.10" mmtype="image" mmsrc="" attr="">
 <layout align="center" width="large" border="true"/>
 <image asset-id="corty3e-ch2-img-29" alt="image" src="asset/ch2/corty3e_fig02_10.jpg"/>
 <caption><strong><phrase block_type="fig_num">Figure 2.10</phrase> Histogram Showing Grouped Frequency Distribution of IQ Scores for 68 Sixth Graders (Interval Width &#61; 10)</strong> Histograms graph the frequency of continuous variables, so the bars touch each other. Note that the bars are as wide as the real limits of each interval, not the apparent limits. This is highlighted in the enlarged section of the graph.</caption>
 </figure>
+<p id="corty3e-ch2-p132" block_type="txt-ni"><strong><link href="#corty3e-ch2-fig-26">Figure 2.10</link></strong> shows the histogram once it has been completed. Note:</p>
 </li>
 <li><p id="corty3e-ch2-p133" block_type="bl-first">The bars go up as high as the frequency in the interval, 15 for the highest frequency.</p></li>
 <li><p id="corty3e-ch2-p134" block_type="bl-mid">Unlike a bar graph, the bars in a histogram touch each other because the variable being represented is continuous.</p></li>
@@ -715,14 +715,12 @@ a.ungrouped frequency distribution:: a count of how often each individual value 
 <layout align="center" width="medium" border="true"/>
 <image asset-id="corty3e-ch2-img-50" alt="image" src="asset/ch2/corty3e_fig02_20.jpg"/>
 <caption><strong><phrase block_type="fig_num">Figure 2.20</phrase> Starting the Frequencies Command</strong> The &#8220;Frequencies&#8221; command is accessed under &#8220;Analyze&#8221; and &#8220;Descriptive Statistics.&#8221;</caption>
-<asset_source>(Source: SPSS)</asset_source>
 </figure>
 <p id="corty3e-ch2-p341" block_type="bx3-txt">Once the menu shown in <strong><link href="#corty3e-ch2-fig-48">Figure 2.21</link></strong> has been opened, use the arrow key to shift the variable one wants to use from the box on the left to the &#8220;Variable(s)&#8221; box. Here, the variable name is &#8220;Children.&#8221;</p>
 <figure id="corty3e-ch2-fig-48" block_type="figure" numbered="true" number="2.21" mmtype="image" mmsrc="" attr="">
 <layout align="center" width="medium" border="true"/>
 <image asset-id="corty3e-ch2-img-51" alt="image" src="asset/ch2/corty3e_fig02_21.jpg"/>
 <caption><strong><phrase block_type="fig_num">Figure 2.21</phrase> The Frequencies Command Menu</strong> Once a variable like &#8220;Number of children&#8221; has been moved into the &#8220;Variable(s)&#8221; box, the &#8220;OK&#8221; button on the lower right becomes active.</caption>
-<asset_source>(Source: SPSS)</asset_source>
 </figure>
 <p id="corty3e_page_75" block_type="page_start">75</p>
 <p id="corty3e-ch2-p342" block_type="bx3-txt">Once there&#8217;s a variable in the Variable(s) box, click on &#8220;OK&#8221; to generate an ungrouped frequency distribution. The Frequencies output can be seen in <strong><link href="#corty3e-ch2-fig-49">Figure 2.22</link></strong>.</p>
@@ -730,7 +728,6 @@ a.ungrouped frequency distribution:: a count of how often each individual value 
 <layout align="center" width="medium" border="true"/>
 <image asset-id="corty3e-ch2-img-52" alt="image" src="asset/ch2/corty3e_fig02_22.jpg"/>
 <caption><strong><phrase block_type="fig_num">Figure 2.22</phrase> Example of Frequencies Output from SPSS</strong> Compare this SPSS output to <link href="#corty3e-ch2-fig-3">Table 2.3</link>, for the same data. Note that <link href="#corty3e-ch2-fig-3">Table 2.3</link> was arranged upside down, compared to SPSS. <link href="#corty3e-ch2-fig-3">Table 2.3</link> also contained additional information&#8212;cumulative frequency. Finally, <link href="#corty3e-ch2-fig-3">Table 2.3</link> included values, such as five children in the family, for which the frequency was zero.</caption>
-<asset_source>(Source: SPSS)</asset_source>
 </figure>
 <p id="corty3e-ch2-p343" block_type="bx3-txt">Making a grouped frequency distribution in SPSS is more involved. One has to use &#8220;Transform&#8221; commands like &#8220;Recode&#8221; or &#8220;Visual binning&#8221; to place the data into intervals before using Frequencies.</p>
 <p id="corty3e-ch2-p344" block_type="bx3-txt">Graphing is easy with SPSS. To start making a graph, click on &#8220;Graphs&#8221; as shown in <strong><link href="#corty3e-ch2-fig-50">Figure 2.23</link></strong>.</p>
@@ -738,7 +735,6 @@ a.ungrouped frequency distribution:: a count of how often each individual value 
 <layout align="center" width="medium" border="true"/>
 <image asset-id="corty3e-ch2-img-53" alt="image" src="asset/ch2/corty3e_fig02_23.jpg"/>
 <caption><strong><phrase block_type="fig_num">Figure 2.23</phrase> Starting the Graph Command in SPSS</strong> To start a graph, click on &#8220;Graphs&#8221; and then on &#8220;Chart Builder. . . .&#8221;</caption>
-<asset_source>(Source: SPSS)</asset_source>
 </figure>
 <p id="corty3e_page_76" block_type="page_start">76</p>
 <p id="corty3e-ch2-p345" block_type="bx3-txt">Clicking on &#8220;Chart Builder. . .&#8221; opens up the screen shown in <strong><link href="#corty3e-ch2-fig-51">Figure 2.24</link></strong>. Note that the list of graphs SPSS can make may be seen on the bottom left.</p>
@@ -746,21 +742,18 @@ a.ungrouped frequency distribution:: a count of how often each individual value 
 <layout align="center" width="medium" border="true"/>
 <image asset-id="corty3e-ch2-img-54" alt="image" src="asset/ch2/corty3e_fig02_24.jpg"/>
 <caption><strong><phrase block_type="fig_num">Figure 2.24</phrase> Chart Builder Screenshot</strong> The list on the bottom left shows the different categories of graphs available, while the pictures to the right show the different options within a category. In the list, there are bar graphs and histograms; look under &#8220;Line&#8221; to find frequency polygons.</caption>
-<asset_source>(Source: SPSS)</asset_source>
 </figure>
 <p id="corty3e-ch2-p346" block_type="bx3-txt"><strong><link href="#corty3e-ch2-fig-52">Figure 2.25</link></strong> shows how to make a histogram. Histogram was highlighted in the list of graphs and the mouse was used to drag the basic histogram from the gallery of histograms to the preview pane.</p>
 <figure id="corty3e-ch2-fig-52" block_type="figure" numbered="true" number="2.25" mmtype="image" mmsrc="" attr="">
 <layout align="center" width="medium" border="true"/>
 <image asset-id="corty3e-ch2-img-55" alt="image" src="asset/ch2/corty3e_fig02_25.jpg"/>
 <caption><strong><phrase block_type="fig_num">Figure 2.25</phrase> SPSS Commands for Making a Histogram</strong> Histogram was highlighted in the gallery. Then the basic histogram was clicked and dragged into the preview pane.</caption>
-<asset_source>(Source: SPSS)</asset_source>
 </figure>
 <p id="corty3e-ch2-p347" block_type="bx3-txt">To finish the histogram commands, see <strong><link href="#corty3e-ch2-fig-53">Figure 2.26</link></strong>. Note that the variable for which the frequencies are being graphed, IQ, has been highlighted and dragged to the <em>X</em>-axis.</p>
 <figure id="corty3e-ch2-fig-53" block_type="figure" numbered="true" number="2.26" mmtype="image" mmsrc="" attr="">
 <layout align="center" width="medium" border="true"/>
 <image asset-id="corty3e-ch2-img-56" alt="image" src="asset/ch2/corty3e_fig02_26.jpg"/>
 <caption><strong><phrase block_type="fig_num">Figure 2.26</phrase> Finishing the Histogram Commands</strong> As the final step, highlight the variable for which the histogram is being completed (here, the IQ score) and drag it to the <em>X</em>-axis.</caption>
-<asset_source>(Source: SPSS)</asset_source>
 </figure>
 <p id="corty3e_page_77" block_type="page_start">77</p>
 <p id="corty3e-ch2-p348" block_type="bx3-txt">Once the &#8220;OK&#8221; button has been clicked, SPSS generates a histogram as seen in <strong><link href="#corty3e-ch2-fig-54">Figure 2.27</link></strong>. This is called the &#8220;default&#8221; version because SPSS decides how wide the intervals should be.</p>
@@ -768,28 +761,24 @@ a.ungrouped frequency distribution:: a count of how often each individual value 
 <layout align="center" width="medium" border="true"/>
 <image asset-id="corty3e-ch2-img-57" alt="image" src="asset/ch2/corty3e_fig02_27.jpg"/>
 <caption><strong><phrase block_type="fig_num">Figure 2.27</phrase> Histogram Generated by SPSS</strong> This is the histogram generated by SPSS when the &#8220;OK&#8221; button was pressed.</caption>
-<asset_source>(Source: SPSS)</asset_source>
 </figure>
 <p id="corty3e-ch2-p349" block_type="bx3-txt">A major advantage of using SPSS to make a graph over making it by hand is that it is easy to edit a graph in SPSS. Double-click on the graph to open up the editor. With just a few clicks of the mouse, one can change the interval width, the scale on the <em>Y</em>-axis, the labels on the axes, or the size of the graph. <strong><link href="#corty3e-ch2-fig-55">Figure 2.28</link></strong> shows an edited version of a histogram for the IQ data.</p>
 <figure id="corty3e-ch2-fig-55" block_type="figure" numbered="true" number="2.28" mmtype="image" mmsrc="" attr="">
 <layout align="center" width="medium" border="true"/>
 <image asset-id="corty3e-ch2-img-58" alt="image" src="asset/ch2/corty3e_fig02_28.jpg"/>
 <caption><strong><phrase block_type="fig_num">Figure 2.28</phrase> Edited Version of Histogram</strong> Editing graphs is easy in SPSS. Compare this version to the default graph shown in <link href="#corty3e-ch2-fig-54">Figure 2.27</link>.</caption>
-<asset_source>(Source: SPSS)</asset_source>
 </figure>
 <p id="corty3e-ch2-p350" block_type="bx3-txt">Stem-and-leaf plots can also be produced easily using SPSS. From the Analyze menu, choose &#8220;Descriptive Statistics&#8221; and then the &#8220;Explore&#8221; command as shown in <strong><link href="#corty3e-ch2-fig-56">Figure 2.29</link></strong>.</p>
 <figure id="corty3e-ch2-fig-56" block_type="figure" numbered="true" number="2.29" mmtype="image" mmsrc="" attr="">
 <layout align="center" width="medium" border="true"/>
 <image asset-id="corty3e-ch2-img-59" alt="image" src="asset/ch2/corty3e_fig02_29.jpg"/>
 <caption><strong><phrase block_type="fig_num">Figure 2.29</phrase> Starting Stem-and-Leaf Plot Commands</strong> Stem-and-leaf plots are accessed through the &#8220;Explore&#8221; command.</caption>
-<asset_source>(Source: SPSS)</asset_source>
 </figure>
 <p id="corty3e-ch2-p351" block_type="bx3-txt">As shown in <strong><link href="#corty3e-ch2-fig-57">Figure 2.30</link></strong>, move the variable you want to analyze into the &#8220;Dependent List&#8221; by highlighting the variable and the clicking the arrow. Next, click &#8220;Plots&#8221; and make sure that under the Descriptive option &#8220;Stem-and-leaf&#8221; is checked. This is the default. You can change the default option under &#8220;Boxplots&#8221; to &#8220;None&#8221; because we are not running a boxplot.</p>
 <figure id="corty3e-ch2-fig-57" block_type="figure" numbered="true" number="2.30" mmtype="image" mmsrc="" attr="">
 <layout align="center" width="medium" border="true"/>
 <image asset-id="corty3e-ch2-img-60" alt="image" src="asset/ch2/corty3e_fig02_30.jpg"/>
 <caption><strong><phrase block_type="fig_num">Figure 2.30</phrase> Commands for Making a Stem-and-Leaf Plot</strong> The variable to be plotted has been moved to &#8220;Dependent List&#8221; and &#8220;Stem-and-leaf&#8221; has been chosen.</caption>
-<asset_source>(Source: SPSS)</asset_source>
 </figure>
 <p id="corty3e_page_78" block_type="page_start">78</p>
 <p id="corty3e-ch2-p352" block_type="bx3-txt">After clicking &#8220;Continue&#8221; and &#8220;OK,&#8221; the output in <strong><link href="#corty3e-ch2-fig-58">Figure 2.31</link></strong> will be produced.</p>
@@ -797,7 +786,6 @@ a.ungrouped frequency distribution:: a count of how often each individual value 
 <layout align="center" width="medium" border="true"/>
 <image asset-id="corty3e-ch2-img-61" alt="image" src="asset/ch2/corty3e_fig02_31.jpg"/>
 <caption><strong><phrase block_type="fig_num">Figure 2.31</phrase> SPSS Output of a Stem-and-Leaf Display</strong> SPSS provides an output that includes the stem and leaf values as well as the frequencies.</caption>
-<asset_source>(Source: SPSS)</asset_source>
 </figure>
 </box>
 </section>

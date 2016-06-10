@@ -2,6 +2,9 @@
 div#corty3e-ch5-p1 {
   margin-top: -5px;
 }
+[data-sec-id="corty3e-ch5-sec2-3"] {
+  clear: none;
+}
 /* Figures */
 body.noUi div#corty3e-ch5-fig-4 {
   width: 300px !important;

@@ -1,0 +1,98 @@
+<chapter number="4" id="corty3e-pt4-review-review-4" title="PART IV Test Your Knowledge" start-numbering-at="504" numbered="true">
+<section id="corty3e-pt4-review-sec1-1a" block_type="intro" title="Chapter Introduction" numbered="false" level="1" print_page="643">
+<p id="corty3e_page_643" block_type="page_start">643</p>
+<p id="corty3e-pt4-review-p1" block_type="pr_n_ri">PART IV</p>
+<p id="corty3e-pt4-review-p2" block_type="pr_t">Test Your Knowledge</p>
+<p id="corty3e-pt4-review-p3" block_type="pr_txt_ni"><em>These questions are meant to probe your understanding of the material covered in <link href="corty3e-ch13.xml">Chapters 13</link>&#8211;<link href="corty3e-ch16.xml">16</link>. The questions are not in the order of the chapters. Some of them are phrased differently or approach the material from a different direction. A few of them ask you to use the material in ways above and beyond what was covered in the book. This &#8220;test&#8221; is challenging. But, if you do well on it or puzzle out the answers using the key in the back of the book, you should feel comfortable that you are grasping the material.</em></p>
+<p id="corty3e-pt4-review-review-question-1" block_type="pr_que_nl"><phrase block_type="question_num">1.</phrase> Given <em>r</em>(38) = &#8211;.44, <em>p</em> &#60; .05, calculate the 95&#37; CI for &#961;.</p>
+<p id="corty3e-pt4-review-p5" block_type="pr_que_nl"><phrase block_type="question_num">2.</phrase> Given the following information, find <em>Y&#8242;</em>:</p>
+<p id="corty3e-pt4-review-p6" block_type="pr_que_nl_eq"><em>N</em> = 132, <em>r</em> = .68, <em>M</em><sub>X</sub> = 60, <em>s<sub>x</sub> =</em> 16, <em>M</em><sub>Y</sub> = 55, <em>s<sub>y</sub></em> = 17, and <em>X</em> = 50</p>
+<p id="corty3e-pt4-review-p7" block_type="pr_que_nl"><phrase block_type="question_num">3.</phrase> A professor obtains data from a random sample of his former students. The following scatterplot shows the relationship between each student&#8217;s grade on the first test and his or her grade on the final.</p>
+<figure id="corty3e-pt4-review-fig-1" block_type="un_figure" numbered="false" number="false" mmtype="image" mmsrc="images" attr="">
+<layout align="center" width="large" border="true"/>
+<image asset-id="corty3e-pt4-review-img-1" alt="image" src="asset/pt4/corty3e_part_test4_un01.jpg"/>
+</figure>
+<list id="corty3e-pt4-review-review-list-1" type="ordered" block_type="loweralpha">
+<li><p id="corty3e-pt4-review-p8" block_type="pr_que_nl_lvl2">Should the professor calculate a Pearson <em>r</em>? Why or why not?</p></li>
+<li><p id="corty3e-pt4-review-p9" block_type="pr_que_nl_lvl2">What type of relationship is shown: direct, indirect, inverse, obverse, curvilinear, or near zero?</p></li>
+<li><p id="corty3e-pt4-review-p10" block_type="pr_que_nl_lvl2">What is the predictor variable? What is the criterion variable?</p></li>
+<li><p id="corty3e-pt4-review-p11" block_type="pr_que_nl_lvl2">The range of scores for which predictions can be made, roughly, is:</p></li>
+</list>
+<p id="corty3e-pt4-review-p12" block_type="pr_que_nl_lvl2_v2">&#95;&#95;&#95;&#95;&#95; There is no limitation on the range.</p>
+<p id="corty3e-pt4-review-p13" block_type="pr_que_nl_lvl2_v2">&#95;&#95;&#95;&#95;&#95; 0 to 100</p>
+<p id="corty3e-pt4-review-p14" block_type="pr_que_nl_lvl2_v2">&#95;&#95;&#95;&#95;&#95; 10 to 90</p>
+<p id="corty3e-pt4-review-p15" block_type="pr_que_nl_lvl2_v2">&#95;&#95;&#95;&#95;&#95; 20 to 80</p>
+<p id="corty3e-pt4-review-p16" block_type="pr_que_nl_lvl2_v2">&#95;&#95;&#95;&#95;&#95; 30 to 70</p>
+<p id="corty3e-pt4-review-p17" block_type="pr_que_nl_lvl2_v2">&#95;&#95;&#95;&#95;&#95; 30 to 80</p>
+<p id="corty3e-pt4-review-p18" block_type="pr_que_nl_lvl2_v2">&#95;&#95;&#95;&#95;&#95; 30 to 90</p>
+<p id="corty3e-pt4-review-p19" block_type="pr_que_nl_lvl2_v2">&#95;&#95;&#95;&#95;&#95; 25 to 90</p>
+<p id="corty3e-pt4-review-p20" block_type="pr_que_nl"><phrase block_type="question_num">4.</phrase> Read each of the following scenarios and decide which statistical test should be used to analyze the data to answer the question. Be specific: simply indicating <em>t</em> test, ANOVA, or chi-square is not sufficient, as there are multiple versions of these tests. If the answer calls for a test which has not been covered in this text, indicate that.</p>
+<list id="corty3e-pt4-review-review-list-2" type="ordered" block_type="loweralpha">
+<li><p id="corty3e-pt4-review-p21" block_type="pr_que_nl_lvl2">The level of social anxiety of kindergarten students is measured. The social anxiety level for the same students is measured 8 years later. Does degree of social anxiety at kindergarten predict degree of social anxiety 8 years later?</p></li>
+<li><p id="corty3e-pt4-review-p22" block_type="pr_que_nl_lvl2">The level of social anxiety of kindergarten students is measured. The social anxiety level for the same students is measured 8 years later. Does degree of social anxiety change over time?</p></li>
+<li><p id="corty3e-pt4-review-p23" block_type="pr_que_nl_lvl2">People with a fear of needles were assigned to receive either relaxation therapy, anti-anxiety medication, or a placebo. They then went to get their blood drawn and measured how many minutes it took for their heart rate to return to normal. Is there a difference in the effectiveness of the various treatments as measured by how long it takes heart rate to return to normal?</p></li>
+<li><p id="corty3e-pt4-review-p24" block_type="pr_que_nl_lvl2">People with a fear of needles were assigned to receive either relaxation therapy, anti-anxiety medication, or a placebo. They then went to get their blood drawn and measured how many minutes it took for their heart rate to return to normal. Is there a relationship between how long it takes the heart rate to normalize and the type of treatment received?</p>
+<p id="corty3e_page_644" block_type="page_start">644</p></li>
+<li><p id="corty3e-pt4-review-p25" block_type="pr_que_nl_lvl2">Candidates for a job were randomly assigned to be interviewed by either the supervisor or by employees. All candidates considered by the majority of interviewers to be of good fit for the job were hired. Six months later, the new hires were rated as being good employees or not good employees. What test should be used to analyze these data to see if supervisors or employees are better predictors of job success?</p></li>
+</list>
+<p id="corty3e-pt4-review-p26" block_type="pr_que_nl"><phrase block_type="question_num">5.</phrase> Given the data below, calculate <em>r</em>:</p>
+<table>
+<tbody>
+<tr>
+<td block_type="TBN-COLHD"><strong>X</strong></td>
+<td block_type="TBN-COLHD"><strong>Y</strong></td>
+</tr>
+<tr>
+<td><phrase block_type="TBN-TXT">93</phrase></td>
+<td><phrase block_type="TBN-TXT">8</phrase></td>
+</tr>
+<tr>
+<td><phrase block_type="TBN-TXT">48</phrase></td>
+<td><phrase block_type="TBN-TXT">11</phrase></td>
+</tr>
+<tr>
+<td><phrase block_type="TBN-TXT">18</phrase></td>
+<td><phrase block_type="TBN-TXT">17</phrase></td>
+</tr>
+<tr>
+<td><em>M</em> = <phrase block_type="TBN-TXT">53.00</phrase></td>
+<td><em>M</em> = <phrase block_type="TBN-TXT">12.00</phrase></td>
+</tr>
+<tr>
+<td><em>s</em> = <phrase block_type="TBN-TXT">37.75</phrase></td>
+<td><em>s</em> = <phrase block_type="TBN-TXT">4.58</phrase></td>
+</tr>
+</tbody>
+</table>
+<p id="corty3e-pt4-review-p27" block_type="pr_que_nl"><phrase block_type="question_num">6.</phrase> Answer each of the following questions. (<em>Sample answer:</em> An independent-samples <em>t</em> test is used to compare the means of two independent groups.)</p>
+<list id="corty3e-pt4-review-review-list-3" type="ordered" block_type="loweralpha">
+<li><p id="corty3e-pt4-review-p28" block_type="pr_que_nl_lvl2">When should a single sample <em>t</em>-test be used?</p></li>
+<li><p id="corty3e-pt4-review-p29" block_type="pr_que_nl_lvl2">When should a Spearman <em>r</em> be used?</p></li>
+<li><p id="corty3e-pt4-review-p30" block_type="pr_que_nl_lvl2">When should a Mann&#8211;Whitney U be used?</p></li>
+<li><p id="corty3e-pt4-review-p31" block_type="pr_que_nl_lvl2">When should a repeated-measures ANOVA be used?</p></li>
+</list>
+<p id="corty3e-pt4-review-p32" block_type="pr_que_nl"><phrase block_type="question_num">7.</phrase> There has been a lot of talk about how a Mediterranean diet (which is high in fruits, vegetables, and olives and low in dairy and meat) is good for physical health. A dietician decided to investigate its impact on mental health. He obtained a large and representative sample of Americans 55 years old and gave them the Mediterranean Diet Scale (MDS). The MDS is an interval-level test that measures the degree, from 0&#37; to 100&#37;, to which a person follows the Mediterranean diet. He then waited 15 years and, using the STMIS (Short-Term Memory Impairment Scale), measured the degree of short-term memory impairment being experienced by the now 70-year-old participants. Scores on the interval-level STMIS can range from 0 (no impairment of STM) to 100 (total STM impairment). No assumptions were violated for the Pearson <em>r</em>. The dietician found <em>r</em>(2,498) = .14. He calculated the 95&#37; CI as ranging from .&#8211;18 to .&#8211;10. Interpret these results.</p>
+<p id="corty3e-pt4-review-p33" block_type="pr_que_nl"><phrase block_type="question_num">8.</phrase> The principal of the elementary school in a small town in Ohio was looking at the roster for the incoming kindergarten class and noticed something unusual&#8212;of the 125 students in the class, 81 of them were boys. The principal expected that half the class should be boys and wouldn&#8217;t have been surprised if it had been 53&#37; or even 55&#37;, but 65&#37; seemed odd. Use a statistical technique to determine if the class is abnormal in terms of how many boys it includes.</p>
+<p id="corty3e-pt4-review-p34" block_type="pr_que_nl"><phrase block_type="question_num">9.</phrase> Many parents use the hand-on-the-forehead test, rather than a thermometer, to decide if their child has a fever. A pediatrician wondered how accurate this method was. He attended several PTA meetings at elementary schools in the area and brought a life-size doll whose forehead temperature could be rapidly switched from 98.6<sup>o</sup>F to 100.6<sup>o</sup>F. He invited parents to feel the doll&#8217;s forehead and indicate whether or not it had a fever. Each parent was randomly assigned to touch either a &#8220;healthy&#8221; doll (98.6<sup>o</sup>F) or a doll with a &#8220;fever&#8221; of 100.6<sup>o</sup>F. The results are presented in the table below. Use a statistical technique to determine if these parents are accurate in determining whether the doll has a fever. How accurate, or inaccurate, are they?</p>
+<table>
+<tbody>
+<tr>
+<td block_type="TBN-COLHD"></td>
+<td block_type="TBN-COLHD"><strong>Say &#8220;Fever&#8221;</strong></td>
+<td block_type="TBN-COLHD"><strong>Say &#8220;No fever&#8221;</strong></td>
+</tr>
+<tr>
+<td><phrase block_type="TBN-TXT">100.6&#0176; </phrase></td>
+<td><phrase block_type="TBN-TXT">610</phrase></td>
+<td><phrase block_type="TBN-TXT">423</phrase></td>
+</tr>
+<tr>
+<td><phrase block_type="TBN-TXT">98.6&#0176; </phrase></td>
+<td><phrase block_type="TBN-TXT">433</phrase></td>
+<td><phrase block_type="TBN-TXT">634</phrase></td>
+</tr>
+</tbody>
+</table>
+<p id="corty3e-pt4-review-p35" block_type="pr_que_nl"><phrase block_type="question_num">10.</phrase> The correlation between <em>X</em> and <em>Y</em> is .47. If <em>X</em> = 73, <em>M</em><sub>X=</sub> 128, <em>s<sub>x</sub></em> = 12, <em>M</em><sub>Y</sub> = 42, and <em>s<sub>y</sub></em> =6, what is <em>Y</em>&#8242; =?</p>
+</section>
+</chapter>

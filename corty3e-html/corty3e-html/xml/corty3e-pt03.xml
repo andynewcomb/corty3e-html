@@ -1,0 +1,43 @@
+<chapter number="3" id="corty3e-pt3-p1" title="PART III Analysis of Variance" start-numbering-at="03" numbered="true">
+<section id="corty3e-pt3-sec1-1a" block_type="intro" title="Chapter Introduction" numbered="true" level="1" print_page="327">
+<p id="corty3e_page_327" block_type="page_start">327</p>
+<p id="corty3e-pt3-p2" block_type="part_number">PART III</p>
+<p id="corty3e-pt3-p3" block_type="part_title">Analysis of Variance</p>
+<p id="corty3e-pt3-p4" block_type="po-toc-ct"><link href="corty3e-ch10.xml"><strong>Chapter 10</strong> Between-Subjects, One-Way Analysis of Variance</link></p>
+<p id="corty3e-pt3-p5" block_type="po-toc-ct"><link href="corty3e-ch11.xml"><strong>Chapter 11</strong> One-Way, Repeated-Measures ANOVA</link></p>
+<p id="corty3e-pt3-p6" block_type="po-toc-ct"><link href="corty3e-ch12.xml"><strong>Chapter 12</strong> Between-Subjects, Two-Way Analysis of Variance</link></p>
+<p id="corty3e-pt3-p7" block_type="po-txt-ni">This section covers a family of tests frequently used in psychology called analysis of variance, abbreviated as ANOVA. ANOVAs are difference tests, like <em>t</em> tests. Like <em>t</em> tests, they take a variety of forms, depending on the groups being studied. But they are unlike <em>t</em> tests in one important way. <em>t</em> tests are limited to a maximum of two samples, so they are great for classic studies that have an experimental group and control group. ANOVA can handle three or more groups. So, for example, it can be used with a study where people with headaches are randomly assigned to receive aspirin, acetaminophen, or ibuprofen to see which medication works most quickly.</p>
+<p id="corty3e-pt3-p8" block_type="po-txt">ANOVAs can also be used for studies with two or more explanatory variables like the one below, in which right-handed people are tested in a driving simulator to see how which hand they have on the wheel and which eye they have on the road affect performance.</p>
+<p id="corty3e_page_328" block_type="page_start">328</p>
+<table id="corty3e-ch1-table1" block_type="un_table">
+<layout align="center" width="large"/>
+<tbody>
+<tr>
+<td block_type="TBN-COLHD"></td>
+<td block_type="TBN-COLHD"><strong>Both Eyes Open</strong></td>
+<td block_type="TBN-COLHD"><strong>Right Eye Covered</strong></td>
+<td block_type="TBN-COLHD"><strong>Left Eye Covered</strong></td>
+</tr>
+<tr>
+<td><phrase block_type="tbn-txt"><strong>Use both hands</strong></phrase></td>
+<td><phrase block_type="tbn-txt">2 eyes, 2 hands</phrase></td>
+<td><phrase block_type="tbn-txt">L eye, 2 hands</phrase></td>
+<td><phrase block_type="tbn-txt">R eye, 2 hands</phrase></td>
+</tr>
+<tr>
+<td><phrase block_type="tbn-txt"><strong>Use right hand</strong></phrase></td>
+<td><phrase block_type="tbn-txt">2 eyes, R hand</phrase></td>
+<td><phrase block_type="tbn-txt">L eye, R hand</phrase></td>
+<td><phrase block_type="tbn-txt">R eye, R hand</phrase></td>
+</tr>
+<tr>
+<td><phrase block_type="tbn-txt"><strong>Use left hand</strong></phrase></td>
+<td><phrase block_type="tbn-txt">2 eyes, L hand</phrase></td>
+<td><phrase block_type="tbn-txt">L eye, L hand</phrase></td>
+<td><phrase block_type="tbn-txt">R eye, L hand</phrase></td>
+</tr>
+</tbody>
+</table>
+<p id="corty3e-pt3-p9" block_type="po-txt">Analyses of variance allow behavioral scientists to ask, and to answer, complex questions, the type of questions that must be posed to understand something as complex as how humans and animals think, feel, and behave.</p>
+</section>
+</chapter>

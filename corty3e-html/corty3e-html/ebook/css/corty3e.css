@@ -139,7 +139,7 @@ tr.tbl-lrborder-none td {
   color: #168ca8;
   margin-bottom: 6px;
   font-size: 1.2em;
-  padding-left: 2em;
+  padding-left: 2.5em;
 }
 [data-type="section"][data-block_type="intro"] [data-block_type="intro_box"] [data-block_type="mn2"] [data-block_type="co-toc-h1-t"] [data-block_type="co-toc-h1-n-ri"] {
   position: absolute;
@@ -392,6 +392,9 @@ body#supp_win [data-type="figure"][data-layout-width="large"] img {
 }
 body#supp_win [data-type="figure"][data-layout-width="xlarge"] img {
   max-width: 1000px !important;
+}
+body#supp_win [data-type="figure"] [data-type="asset_source"] {
+  display: none;
 }
 [data-block_type="bx-1-h"] {
   background-color: #E7F2F5;
@@ -668,6 +671,9 @@ img[src*="corty3e_eqn"] {
 }
 [data-block_type="cr-x-h"] ol[data-block_type="loweralpha"] li p {
   margin: 0;
+}
+[data-block_type="cr-x-h"] [data-type="figure"] [data-type="asset_source"] {
+  display: none;
 }
 /********************************/
 /* figures                      */

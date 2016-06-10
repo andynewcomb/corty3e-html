@@ -833,7 +833,7 @@
 <p id="corty3e_page_365" block_type="page_start">365</p>
 <box title="Application Demonstration" numbered="false" id="corty3e-ch10-bx3-3" block_type="sr-x-h">
 <p id="corty3e-ch10-p318" block_type="sr-x-txt-ni">America is a land of movers. If we don&#8217;t like where we&#8217;re living, if we think the grass is greener somewhere else, we just pull up our stakes and go. Are salaries for psychologists consistent throughout the United States or do some areas have higher or lower salaries? If so, this information could guide a recent graduate&#8217;s decision about where to seek employment.</p>
-<p id="corty3e-ch10-p319" block_type="sr-x-txt">The Census Bureau divides the United States into four regions: the Northeast, Midwest, South, and West. Four states from each region were randomly selected and the mean salary for &#8220;clinical, counseling, and school psychologists&#8221; was obtained from a Bureau of Labor Statistics website for each state. Salaries were recorded in thousands of dollars; &#36;79.52, for example, means &#36;79,520. Recording the values this way keeps the sums of squares from becoming unwieldy numbers in the hundreds of millions. The mean salaries for the four regions (Northeast <strong>&#61;</strong> &#36;77.73, Midwest &#61; &#36;63.55, West &#61; &#36;68.83, and South &#61; &#36;61.37) are seen in <link href="#corty3e-ch10-fig-57"><strong>Figure 10.15.</strong></link></p>
+<p id="corty3e-ch10-p319" block_type="sr-x-txt">The Census Bureau divides the United States into four regions: the Northeast, Midwest, South, and West. Four states from each region were randomly selected and the mean salary for &#8220;clinical, counseling, and school psychologists&#8221; was obtained from a Bureau of Labor Statistics website for each state. Salaries were recorded in thousands of dollars; &#36;79.52, for example, means &#36;79,520. Recording the values this way keeps the sums of squares from becoming unwieldy numbers in the hundreds of millions. The mean salaries for the four regions (Northeast <strong>&#61;</strong> &#36;77.73, Midwest &#61; &#36;63.55, West &#61; &#36;68.83, and South &#61; &#36;61.37) are seen in <link href="#corty3e-ch10-fig-57"><strong>Figure 10.15</strong></link>.</p>
 <figure id="corty3e-ch10-fig-57" block_type="figure" numbered="true" number="10.15" mmtype="image" mmsrc="" attr="">
 <layout align="center" width="medium" border="true"/>
 <image asset-id="corty3e-ch10-img-57" alt="image" src="asset/ch10/corty3e_fig10_15.jpg"/>
@@ -1627,21 +1627,18 @@ a.within-group variability:: variability within a sample of cases, all of which 
 <layout align="center" width="medium" border="true"/>
 <image asset-id="corty3e-ch10-img-61" alt="image" src="asset/ch10/corty3e_fig10_16.jpg"/>
 <caption><strong><phrase block_type="fig_num">Figure 10.16</phrase> Data Entry in SPSS for a One-Way ANOVA</strong> At least two columns are needed to enter data for a one-way ANOVA in SPSS (just as for the independent-samples <em>t</em> test). One column, &#8220;region,&#8221; contains information about which group a case belongs to and another column, &#8220;psych,&#8221; has the case&#8217;s score on the dependent variable.</caption>
-<asset_source>(Source: SPSS)</asset_source>
 </figure>
 <p id="corty3e-ch10-p553" block_type="bx3-txt">The command to start a one-way ANOVA can be found under &#8220;Analyze&#8221; and &#8220;Compare Means,&#8221; as shown in <link href="#corty3e-ch10-fig-62"><strong>Figure 10.17</strong></link>.</p>
 <figure id="corty3e-ch10-fig-62" block_type="figure" numbered="true" number="10.17" mmtype="image" mmsrc="" attr="">
 <layout align="center" width="medium" border="true"/>
 <image asset-id="corty3e-ch10-img-62" alt="image" src="asset/ch10/corty3e_fig10_17.jpg"/>
 <caption><strong><phrase block_type="fig_num">Figure 10.17</phrase> Starting a One-Way ANOVA in SPSS</strong> The command &#8220;One-Way ANOVA. . .&#8221; is found under the &#8220;Compare Means&#8221; heading under &#8220;Analyze.&#8221;</caption>
-<asset_source>(Source: SPSS)</asset_source>
 </figure>
 <p id="corty3e-ch10-p554" block_type="bx3-txt">Clicking on &#8220;One-Way ANOVA. . .&#8221; opens up the commands shown in <link href="#corty3e-ch10-fig-63"><strong>Figure 10.18</strong></link>. &#8220;psych,&#8221; the dependent variable, has already been moved over to the box labeled &#8220;Dependent List.&#8221; &#8220;region,&#8221; the explanatory variable, is moved over to the box labeled &#8220;Factor.&#8221;</p>
 <figure id="corty3e-ch10-fig-63" block_type="figure" numbered="true" number="10.18" mmtype="image" mmsrc="" attr="">
 <layout align="center" width="medium" border="true"/>
 <image asset-id="corty3e-ch10-img-63" alt="image" src="asset/ch10/corty3e_fig10_18.jpg"/>
 <caption><strong><phrase block_type="fig_num">Figure 10.18</phrase> Defining the Dependent Variable and Explanatory Variable for a One-Way ANOVA in SPSS</strong> Once the dependent variable (psych) has been moved to &#8220;Dependent List:&#8221; and the explanatory variable (region) to &#8220;Factor:&#8221;, clicking on the &#8220;OK&#8221; button will start the analysis of variance.</caption>
-<asset_source>(Source: SPSS)</asset_source>
 </figure>
 <p id="corty3e_page_377" block_type="page_start">377</p>
 <p id="corty3e_page_378" block_type="page_start">378</p>
@@ -1650,7 +1647,6 @@ a.within-group variability:: variability within a sample of cases, all of which 
 <layout align="center" width="large" border="true"/>
 <image asset-id="corty3e-ch10-img-64" alt="image" src="asset/ch10/corty3e_fig10_19.jpg"/>
 <caption><strong><phrase block_type="fig_num">Figure 10.19</phrase> Example of One-Way ANOVA Output from SPSS</strong> SPSS produces an ANOVA summary table. The column labeled &#8220;Sig.&#8221; provides the exact significance level for the <em>F</em> ratio. If the &#8220;Sig.&#8221; value is &#8804;.05, the results are written as <em>p</em> &#60; .05 in APA format. If the &#8220;Sig.&#8221; value is &#62;.05, write the results as <em>p</em> &#62; .05.</caption>
-<asset_source>(Source: SPSS)</asset_source>
 </figure>
 <p id="corty3e-ch10-p556" block_type="bx3-txt">Here, the exact significance level is .049, which is less than .05, so the null hypothesis is rejected. If the exact significance level is known, as it is here, then it should be reported in APA format. These results would be reported as <em>F</em>(3, 12) &#61; 3.52, p &#61; .049.</p>
 <p id="corty3e-ch10-p557" block_type="bx3-txt">Once a researcher knows that the <em>F</em> ratio was statistically significant, he or she can proceed to select a post-hoc test by clicking the &#8220;Post Hoc&#8221; button seen in <link href="#corty3e-ch10-fig-62">Figure 10.17</link>. This opens up the selection of post-hoc tests seen in <link href="#corty3e-ch10-fig-65"><strong>Figure 10.20</strong></link>. &#8220;Tukey,&#8221; which is the Tukey <em>HSD</em> test covered in this chapter, has been selected. If a researcher wants to change the significance level from .05, now is the time to do so.</p>
@@ -1658,7 +1654,6 @@ a.within-group variability:: variability within a sample of cases, all of which 
 <layout align="center" width="large" border="true"/>
 <image asset-id="corty3e-ch10-img-65" alt="image" src="asset/ch10/corty3e_fig10_20.jpg"/>
 <caption><strong><phrase block_type="fig_num">Figure 10.20</phrase> Choosing a Post-Hoc Test in SPSS</strong> This is the dialog box that opens up when one clicks on &#8220;Post Hoc&#8221; in <link href="#corty3e-ch10-fig-63">Figure 10.18</link>. Note the wide variety of post-hoc tests that are available. &#8220;Tukey,&#8221; which is Tukey&#8217;s <em>HSD,</em> has been selected.</caption>
-<asset_source>(Source: SPSS)</asset_source>
 </figure>
 <p id="corty3e_page_379" block_type="page_start">379</p>
 <p id="corty3e-ch10-p558" block_type="bx3-txt">The output from the <em>HSD</em> test is shown in <link href="#corty3e-ch10-fig-66"><strong>Figure 10.21</strong></link>. SPSS is redundant and has 12 rows in the table when it only needs 6. The first row, for example, compares the Northeast region to the Midwest region, and the fourth row turns this around to compare the Midwest region to the Northeast region. It is exactly the same comparison, though one finds a mean difference of 14.17750 and the other &#8722;14.17750. SPSS doesn&#8217;t report the <em>HSD</em> values, but it does report each mean difference that is statistically significant at the .05 level. It does this, as mentioned in the table footnote, by placing an asterisk after each mean difference that is statistically significant.</p>
@@ -1666,7 +1661,6 @@ a.within-group variability:: variability within a sample of cases, all of which 
 <layout align="center" width="large" border="true"/>
 <image asset-id="corty3e-ch10-img-66" alt="image" src="asset/ch10/corty3e_fig10_21.jpg"/>
 <caption><strong><phrase block_type="fig_num">Figure 10.21</phrase> Output for Post-Hoc Tests in SPSS</strong> Each row in this table compares a pair of means. SPSS is redundant and compares each pair of means twice. For example, the first row (Northeast vs. Midwest) is the same as the fourth row (Midwest vs. Northeast). All that changes is the direction of the mean difference. Also, note the footnote on the table&#8212;asterisks that follow the mean difference indicate the difference is a statistically significant one. The exact significance level is found in the column labeled &#8220;Sig.&#8221;</caption>
-<asset_source>(Source: SPSS)</asset_source>
 </figure>
 </box>
 <p id="corty3e_page_380" block_type="page_start">380</p>

@@ -2158,10 +2158,10 @@ a.within-subjects:: ANOVA terminology for dependent samples.
 <image asset-id="corty3e-ch12-img-69" alt="image" src="asset/ch12/corty3e_table12_21.jpg"/>
 </figure>
 <p id="corty3e-ch12-p620" block_type="txt">These data have been summed, squared, and arranged to expedite calculations of sums of squares for a between-subjects, two-way ANOVA.</p>
-<p id="corty3e-ch12-p621" block_type="ca_txt">Using Equation 10.3, <em>SS</em><sub>Between</sub> is</p>
+<p id="corty3e-ch12-p621" block_type="txt">Using Equation 10.3, <em>SS</em><sub>Between</sub> is</p>
 <p id="corty3e-ch12-eqn-35" block_type="equation">
 <image asset-id="corty3e-ch12-img-71" alt="image" src="asset/ch12/corty3e_eqn11_473_02.jpg"/></p>
-<p id="corty3e-ch12-p622" block_type="ca_txt">Then, <em>SS</em><sub>Within</sub> is calculated as</p>
+<p id="corty3e-ch12-p622" block_type="txt">Then, <em>SS</em><sub>Within</sub> is calculated as</p>
 <p id="corty3e-ch12-p623" block_type="artline"><em>SS</em><sub>Within</sub> &#61; <em>SS</em><sub>Total</sub> &#8211; <em>SS</em><sub>Between</sub></p>
 <p id="corty3e-ch12-p624" block_type="artline">&#61; 6,698.00 &#8211; 5,950.00</p>
 <p id="corty3e-ch12-p625" block_type="artline">&#61;748.00</p>

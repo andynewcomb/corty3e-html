@@ -204,6 +204,12 @@ var Player_subtype = Player_manuscript_type.extend({
             }
         });
 
+        /* hack to get figure ids */
+        $('div[data-figure-id]').each(function (index, element) {
+            var id = $(this).attr('data-figure-id');
+            $(this).attr('id', id);
+        });
+
     }, // end initialize_sections
     
 
@@ -289,7 +295,7 @@ var Player_subtype = Player_manuscript_type.extend({
             }
         });
         
-        $('a[data-type="lh-link"]:contains(Figure)').each(function(){
+        $('a[data-type="lh-link"]:contains(Figure )').each(function(){
             var reftext = $(this).text();
             var chnum = reftext.replace(/Figure (\d+)\.\d+/, '$1');
             var chnum_orig = chnum;
@@ -347,6 +353,11 @@ var Player_subtype = Player_manuscript_type.extend({
         href = $('[href="asset/ch15/corty3e_fig15_06.html"]');
         if (href.length > 0) {
             href.attr('href', 'asset/ch15/corty3e_fig15_06a_b.html');
+        }
+        // remove path in supp_win caption
+        href = $('#supp_win [href="asset/ch14/corty3e_fig14_04.html"]');
+        if (href.length > 0) {
+            href.attr('href', 'corty3e_fig14_04.html');
         }
 
     } // end initialize2

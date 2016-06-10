@@ -1,0 +1,193 @@
+<chapter number="2" id="corty3e-pt2-review-2" title="PART II Test Your Knowledge" start-numbering-at="502" numbered="true">
+<section id="corty3e-pt2-review-sec1-1a" block_type="intro" title="Chapter Introduction" numbered="true" level="1" print_page="323">
+<p id="corty3e_page_323" block_type="page_start">323</p>
+<p id="corty3e-pt2-review-p1" block_type="pr_n_ri"><strong>PART II</strong></p>
+<p id="corty3e-pt2-review-p2" block_type="pr_t">Test Your Knowledge</p>
+<p id="corty3e-pt2-review-p3" block_type="pr_txt_ni"><em>These questions are meant to probe your understanding of the material covered in <link href="corty3e-ch06.xml">Chapters 6</link>&#8722;<link href="corty3e-ch09.xml">9</link>. The questions are not in the order of the chapters. Some of them are phrased differently or approach the material from a different direction. A few of them ask you to use the material in ways above and beyond what was covered in the book. This &#8220;test&#8221; is challenging. But, if you do well on it or puzzle out the answers using the key in the back of the book, you should feel comfortable that you are grasping the material.</em></p>
+<p id="corty3e-pt2-review-p4" block_type="pr_que_nl"><phrase block_type="question_num">1.</phrase> Using the information below, find <em>S<sub>M<sub>1</sub></sub></em>&#8722;<em>S<sub>M<sub>2</sub></sub></em>.</p>
+<table>
+<tbody>
+<tr>
+<td block_type="TBN-COLHD"><strong>Sample 1</strong></td>
+<td block_type="TBN-COLHD"><strong>Sample 2</strong></td>
+</tr>
+<tr>
+<td><phrase block_type="PR-QUE-TB1-TXT"><em>n</em><sub>1</sub> = 34</phrase></td>
+<td><phrase block_type="PR-QUE-TB1-TXT"><em>n</em><sub>2</sub> = 40</phrase></td>
+</tr>
+<tr>
+<td><phrase block_type="PR-QUE-TB1-TXT"><em>M</em><sub>1</sub> = 26.41</phrase></td>
+<td><phrase block_type="PR-QUE-TB1-TXT"><em>M</em><sub>2</sub> = 32.36</phrase></td>
+</tr>
+<tr>
+<td><phrase block_type="PR-QUE-TB1-TXT"><em>s</em><sub>1</sub> = 3.55</phrase></td>
+<td><phrase block_type="PR-QUE-TB1-TXT"><em>s</em><sub>2</sub> = 5.42</phrase></td>
+</tr>
+</tbody>
+</table>
+<p id="corty3e-pt2-review-p5" block_type="pr_que_nl"><phrase block_type="question_num">2.</phrase> Here is information about a paired-samples <em>t</em> test. Calculate the 95&#37;CI&#956;<sub>Diff</sub>.</p>
+<list id="corty3e-pt2-review-list-1" type="unordered" block_type="bullet">
+<li><p id="corty3e-pt2-review-p6" block_type="pr_que_nl_lvl2"><em>M</em><sub>1</sub> = 48, <em>M</em><sub>2</sub> = 52</p></li>
+<li><p id="corty3e-pt2-review-p7" block_type="pr_que_nl_lvl2"><em>N</em> = 401, <em>df</em> = 400</p></li>
+<li><p id="corty3e-pt2-review-p8" block_type="pr_que_nl_lvl2"><em>s<sub>D</sub></em> = 14.53, <em>s<sub>M<sub>D</sub></sub></em> = 0.73</p></li>
+<li><p id="corty3e-pt2-review-p9" block_type="pr_que_nl_lvl2"><em>t<sub>cv</sub></em> = 1.966, <em>t</em> = 5.48</p></li>
+</list>
+<p id="corty3e-pt2-review-p10" block_type="pr_que_nl"><phrase block_type="question_num">3.</phrase> Given <em>N</em> = 18, <em>M</em> = 23.42, <em>s</em> = 5.82, and &#956; = 25, calculate <em>t</em>.</p>
+<p id="corty3e-pt2-review-p11" block_type="pr_que_nl"><phrase block_type="question_num">4.</phrase> Given the information below, calculate <em>s</em><sup>2</sup><sub>Pooled</sub>.</p>
+<table>
+<tbody>
+<tr>
+<td block_type="TBN-COLHD"></td>
+<td block_type="TBN-COLHD"><strong>Group 1</strong></td>
+<td block_type="TBN-COLHD"><strong>Group 2</strong></td>
+</tr>
+<tr>
+<td><phrase block_type="PR-QUE-TB1-TXT"><em>M</em></phrase></td>
+<td><phrase block_type="PR-QUE-TB1-TXT">96.86</phrase></td>
+<td><phrase block_type="PR-QUE-TB1-TXT">106.88</phrase></td>
+</tr>
+<tr>
+<td><phrase block_type="PR-QUE-TB1-TXT"><em>s</em></phrase></td>
+<td><phrase block_type="PR-QUE-TB1-TXT">4.50</phrase></td>
+<td><phrase block_type="PR-QUE-TB1-TXT">6.40</phrase></td>
+</tr>
+<tr>
+<td><phrase block_type="PR-QUE-TB1-TXT"><em>n</em></phrase></td>
+<td><phrase block_type="PR-QUE-TB1-TXT">12</phrase></td>
+<td><phrase block_type="PR-QUE-TB1-TXT">10</phrase></td>
+</tr>
+</tbody>
+</table>
+<p id="corty3e-pt2-review-p12" block_type="pr_que_nl"><phrase block_type="question_num">5.</phrase> Calculate the 95&#37;CI for the difference between population means.</p>
+<table>
+<tbody>
+<tr>
+<td><phrase block_type="PR-QUE-TB1-TXT"><em>M</em> Group 1 (Control)</phrase></td>
+<td><phrase block_type="PR-QUE-TB1-TXT">3.50</phrase></td>
+</tr>
+<tr>
+<td><phrase block_type="PR-QUE-TB1-TXT"><em>M</em> Group 2 (Experimental)</phrase></td>
+<td><phrase block_type="PR-QUE-TB1-TXT">3.70</phrase></td>
+</tr>
+<tr>
+<td><phrase block_type="PR-QUE-TB1-TXT"><em>N</em> (pairs of cases)</phrase></td>
+<td><phrase block_type="PR-QUE-TB1-TXT">25</phrase></td>
+</tr>
+<tr>
+<td><phrase block_type="PR-QUE-TB1-TXT"><em>s</em> difference scores</phrase></td>
+<td><phrase block_type="PR-QUE-TB1-TXT">0.25</phrase></td>
+</tr>
+<tr>
+<td><phrase block_type="PR-QUE-TB1-TXT"><em>S<sub>M<sub>D</sub></sub></em></phrase></td>
+<td><phrase block_type="PR-QUE-TB1-TXT">0.05</phrase></td>
+</tr>
+</tbody>
+</table>
+<p id="corty3e-pt2-review-p13" block_type="pr_que_nl"><phrase block_type="question_num">6.</phrase> Given <em>N</em> = 36, <em>M</em> = 55, &#956; = 57, and &#963; =12, calculate <em>z</em>.</p>
+<p id="corty3e-pt2-review-p14" block_type="pr_que_nl"><phrase block_type="question_num">7.</phrase> Derek completes a single-sample <em>z</em> test with 55 cases, where &#956; = 10.6, <em>M</em> = 12.9, and <em>z</em> = 1.70. Report the results in APA format.</p>
+<p id="corty3e-pt2-review-p15" block_type="pr_que_nl"><phrase block_type="question_num">8.</phrase> Adele is planning to complete a single-sample <em>t</em> test comparing the GPA of the small number of male psych majors graduating this semester (<em>n</em> = 10) to the GPA of the larger number of female psych majors who are graduating (<em>n</em> = 17). What <em>df</em> should she use?</p>
+<p id="corty3e-pt2-review-p16" block_type="pr_que_nl"><phrase block_type="question_num">9.</phrase> Meghan used an independent-samples <em>t</em> test to compare the salaries of male professors to those of female professors at her college. To help interpret her results, she calculated a 95&#37;CI for the difference between population means and found that it ranged from &#36;2,563 to &#36;42,985. The difference was in favor of the males. What should Meghan suggest for future research?</p>
+<p id="corty3e-pt2-review-p17" block_type="pr_que_nl"><phrase block_type="question_num">10.</phrase> Based on Meghan&#8217;s results in Question 9, Taylor has decided to replicate the study at her college, but as a one-tailed independent-samples <em>t</em> test, &#945; = .05. Her alternative hypothesis is that &#956;<sub>Men</sub> > &#956;<sub>Women</sub>, and for the numerator of her <em>t</em> test, she uses <em>M</em><sub>Men</sub> &#8211; <em>M</em><sub>Women</sub>. Don&#8217;t worry about the exact value of <em>t<sub>cv</sub></em>; just draw Taylor&#8217;s decision rule as a sampling distribution of <em>t</em> in which the rare and common zones are labeled.</p>
+<p id="corty3e-pt2-review-p18" block_type="pr_que_nl"><phrase block_type="question_num">11.</phrase> Michael completed a study. In the interpretation, he expressed a concern that there was an effect, but that his study had failed to find it. Michael had:</p>
+<p id="corty3e-pt2-review-p19" block_type="pr_que_nl_tbmcl">&#95;&#95;&#95;&#95;&#95; rejected the null hypothesis.</p>
+<p id="corty3e-pt2-review-p20" block_type="pr_que_nl_tbmcl">&#95;&#95;&#95;&#95;&#95; failed to reject the null hypothesis.</p>
+<p id="corty3e-pt2-review-p21" block_type="pr_que_nl_tbmcl">&#95;&#95;&#95;&#95;&#95; done an independent-samples <em>t</em> test.</p>
+<p id="corty3e-pt2-review-p22" block_type="pr_que_nl_tbmcl">&#95;&#95;&#95;&#95;&#95; done a paired-samples <em>t</em> test.</p>
+<p id="corty3e-pt2-review-p23" block_type="pr_que_nl_tbmcl">&#95;&#95;&#95;&#95;&#95; found <em>d</em> = 0.</p>
+<p id="corty3e-pt2-review-p24" block_type="pr_que_nl_tbmcl">&#95;&#95;&#95;&#95;&#95; a sample size greater than 50.</p>
+<p id="corty3e-pt2-review-p25" block_type="pr_que_nl_tbmcl">&#95;&#95;&#95;&#95;&#95; It is possible to answer the question from the information given, but the correct answer is not listed above.</p>
+<p id="corty3e-pt2-review-p26" block_type="pr_que_nl_tbmcl">&#95;&#95;&#95;&#95;&#95; Based on the information presented above, this question is not answerable.</p>
+<p id="corty3e_page_324" block_type="page_start">324</p>
+<p id="corty3e-pt2-review-p27" block_type="pr_que_nl"><phrase block_type="question_num">12.</phrase> A researcher knows that stimulants are used to treat ADHD. He is curious if caffeine, a stimulant, has an impact on ADHD symptoms. He takes a sample of children who have been diagnosed with ADHD but who are not on medication. One by one, he places each child in a chair to watch a very boring, 15-minute video. The chair has a sensor, so it can measure how many minutes a child remains seated&#8212;the fewer the minutes, the worse the child&#8217;s ADHD symptoms are. A few days later, each child returns to the researcher&#8217;s office, consumes 16 ounces of Starbucks coffee, and repeats the earlier procedure watching an equally boring video. What statistical test should this researcher use to see if caffeine has an impact on in-seat minutes?</p>
+<p id="corty3e-pt2-review-p28" block_type="pr_que_nl"><phrase block_type="question_num">13.</phrase> An education researcher randomly assigns 36 15-year-olds either to study a driver&#8217;s manual online or to review a print-out of the same document. She then has each teenager take a multiple-choice test. What statistical test should she use to see if modality of studying, online vs. paper, has an impact on test performance?</p>
+<p id="corty3e-pt2-review-p29" block_type="pr_que_nl"><phrase block_type="question_num">14.</phrase> If <em>N</em> = 77, <em>M</em><sub>1</sub> = 48, <em>M</em><sub>2</sub> = 44, and <em>s<sub>M1</sub></em><sub>&#8211;</sub><sub><em>M</em>2</sub> = 2.50 , report the results in APA format.</p>
+<p id="corty3e-pt2-review-p30" block_type="pr_que_nl"><phrase block_type="question_num">15.</phrase> Should this independent-samples <em>t</em> test be conducted? (The dependent variable is minutes spent talking on the phone during the week.)</p>
+<table>
+<tbody>
+<tr>
+<td block_type="TBN-COLHD"></td>
+<td block_type="TBN-COLHD"><strong>Sample 1</strong></td>
+<td block_type="TBN-COLHD"><strong>Sample 2</strong></td>
+</tr>
+<tr>
+<td><phrase block_type="PR-QUE-TB1-TXT"><em>M</em></phrase></td>
+<td><phrase block_type="PR-QUE-TB1-TXT">273</phrase></td>
+<td><phrase block_type="PR-QUE-TB1-TXT">198</phrase></td>
+</tr>
+<tr>
+<td><phrase block_type="PR-QUE-TB1-TXT"><em>s</em></phrase></td>
+<td><phrase block_type="PR-QUE-TB1-TXT">92</phrase></td>
+<td><phrase block_type="PR-QUE-TB1-TXT">33</phrase></td>
+</tr>
+<tr>
+<td><phrase block_type="PR-QUE-TB1-TXT"><em>n</em></phrase></td>
+<td><phrase block_type="PR-QUE-TB1-TXT">18</phrase></td>
+<td><phrase block_type="PR-QUE-TB1-TXT">96</phrase></td>
+</tr>
+</tbody>
+</table>
+<p id="corty3e-pt2-review-p31" block_type="pr_que_nl"><phrase block_type="question_num">16.</phrase> Should this one-sample <em>z</em> test be completed? (The dependent variable is introversion level.)</p>
+<p id="corty3e-pt2-review-p32" block_type="pr_que_nl_tbmcl"><em>M</em> = 356; &#956; = 500; <em>N</em> = 360; <em>s</em> = 24</p>
+<p id="corty3e-pt2-review-p33" block_type="pr_que_nl"><phrase block_type="question_num">17.</phrase> Stanley compared Druids to Wiccans in terms of spirituality. He used an interval-level measure of spirituality and, other than random samples, violated no assumptions. On the spirituality scale, higher scores mean more spiritual: Druids scored a mean (SD) of 78 (18) and Wiccans 65 (15). In APA format, Stanley wrote: <em>t</em>(70) = 3.31, <em>p</em> &#60; .05. What should his conclusion be?</p>
+<p id="corty3e-pt2-review-p34" block_type="pr_que_nl_tbmcl">&#95;&#95;&#95;&#95;&#95; In these samples, Druids are more spiritual than Wiccans.</p>
+<p id="corty3e-pt2-review-p35" block_type="pr_que_nl_tbmcl">&#95;&#95;&#95;&#95;&#95; In these samples, Wiccans are more spiritual than Druids.</p>
+<p id="corty3e-pt2-review-p36" block_type="pr_que_nl_tbmcl">&#95;&#95;&#95;&#95;&#95; In the populations, Druids are more spiritual than Wiccans.</p>
+<p id="corty3e-pt2-review-p37" block_type="pr_que_nl_tbmcl">&#95;&#95;&#95;&#95;&#95; In the populations, Wiccans are more spiritual than Druids.</p>
+<p id="corty3e-pt2-review-p38" block_type="pr_que_nl_tbmcl">&#95;&#95;&#95;&#95;&#95; In the populations, Druids are probably more spiritual than Wiccans.</p>
+<p id="corty3e-pt2-review-p39" block_type="pr_que_nl_tbmcl">&#95;&#95;&#95;&#95;&#95; In the populations, Wiccans are probably more spiritual than Druids.</p>
+<p id="corty3e-pt2-review-p40" block_type="pr_que_nl_tbmcl">&#95;&#95;&#95;&#95;&#95; Not enough information was given to answer the question.</p>
+<p id="corty3e-pt2-review-p41" block_type="pr_que_nl_tbmcl">&#95;&#95;&#95;&#95;&#95; Enough information was given, but the correct answer is not listed here.</p>
+<p id="corty3e-pt2-review-p42" block_type="pr_que_nl"><phrase block_type="question_num">18.</phrase> True or False: In order to be able to reject the null hypothesis, power must be &#8805;.80.</p>
+<p id="corty3e-pt2-review-p43" block_type="pr_que_nl"><phrase block_type="question_num">19.</phrase> A public health researcher wanted to test the theory that aluminum is related to Alzheimer&#8217;s disease (AD). He matched people with AD to people without AD on age, sex, and socioeconomic status. He then found out whether or not each person had used aluminum cookware. Each person received a score for the number of months he or she had prepared meals with such cookware. What statistical test should be used to analyze these data?</p>
+<p id="corty3e-pt2-review-p44" block_type="pr_que_nl"><phrase block_type="question_num">20.</phrase> The researcher from Question 19 was curious if his group of Alzheimer&#8217;s disease patients could be considered representative of Alzheimer&#8217;s patients in general. On the Universal Alzheimer&#8217;s Disease Rating Scale (UADRS), the average score in the Alzheimer&#8217;s population is 76, with a population standard deviation of 15. (The UADRS is an interval-level scale.) His patients had a mean UADRS score of 72. What statistical test should be used to analyze these data?</p>
+<p id="corty3e_page_325" block_type="page_start">325</p>
+<p id="corty3e-pt2-review-p45" block_type="pr_que_nl"><phrase block_type="question_num">21.</phrase> A storeowner was curious about the effect of music on consumer behavior. He played both happy music and sad music in his shop. Each day he flipped a coin to determine which he should play. He then compared the total dollar value sold in his store on happy days vs. the total sold on sad days. What statistical test should be used to analyze these data?</p>
+<p id="corty3e-pt2-review-p46" block_type="pr_que_nl"><phrase block_type="question_num">22.</phrase> Write a complete interpretation of the following study. Use &#945; = .05, two-tailed.</p>
+<p id="corty3e-pt2-review-p47" block_type="pr_que_nl_tbmcl">A social psychologist explored what motivates people more&#8212;altruism or self-interest. Members of a high school band who were selling LED light bulbs as a fundraiser were randomly assigned to two conditions.</p>
+<p id="corty3e-pt2-review-p48" block_type="pr_que_nl_lvl2">The <strong>altruism</strong> group was told how the money raised was used to support a band program in an impoverished elementary school. It watched a short video of a 10-year-old boy, beaming with joy, as he received a trumpet paid for by the fundraiser&#8217;s light bulb sales.</p>
+<p id="corty3e-pt2-review-p49" block_type="pr_que_nl_lvl2">The <strong>self-interest</strong> group was told that each person would receive 10&#37; of all the money he or she raised. It watched a short video of a band member, beaming with joy, as he displayed the iPod he bought with his light bulb money.</p>
+<p id="corty3e-pt2-review-p50" block_type="pr_que_nl_lvl2">All band members then sold as many light bulbs as they could. Here are the results:</p>
+<table>
+<tbody>
+<tr>
+<td block_type="TBN-COLHD"></td>
+<td block_type="TBN-COLHD"><strong>Self-interest</strong></td>
+<td block_type="TBN-COLHD"><strong>Altruism</strong></td>
+</tr>
+<tr>
+<td><phrase block_type="PR-QUE-TB1-TXT"><em>M</em></phrase></td>
+<td><phrase block_type="PR-QUE-TB1-TXT">&#36;78.66</phrase></td>
+<td><phrase block_type="PR-QUE-TB1-TXT">&#36;106.00</phrase></td>
+</tr>
+<tr>
+<td><phrase block_type="PR-QUE-TB1-TXT"><em>s</em></phrase></td>
+<td><phrase block_type="PR-QUE-TB1-TXT">19.74</phrase></td>
+<td><phrase block_type="PR-QUE-TB1-TXT">14.79</phrase></td>
+</tr>
+<tr>
+<td><phrase block_type="PR-QUE-TB1-TXT"><em>n</em></phrase></td>
+<td><phrase block_type="PR-QUE-TB1-TXT">33</phrase></td>
+<td><phrase block_type="PR-QUE-TB1-TXT">39</phrase></td>
+</tr>
+</tbody>
+</table>
+<p id="corty3e-pt2-review-p51" block_type="pr_que_nl_lvl2">In addition:</p>
+<list id="corty3e-pt2-review-list-2" type="unordered" block_type="bullet">
+<li><p id="corty3e-pt2-review-p52" block_type="pr_que_nl_lvl2"><em>df</em> = 70, <em>t<sub>cv</sub></em> = 1.994</p></li>
+<li><p id="corty3e-pt2-review-p53" block_type="pr_que_nl_lvl2"><em>s</em><sub><em>M</em><sub>1</sub>-<em>M</em><sub>2</sub></sub> = 4.07; s<sub>pooled</sub> = 17.23</p></li>
+<li><p id="corty3e-pt2-review-p54" block_type="pr_que_nl_lvl2"><em>t</em> = 6.72</p></li>
+<li><p id="corty3e-pt2-review-p55" block_type="pr_que_nl_lvl2"><em>d</em> =1.59; 95&#37; CI ranges from 19.22 to 35.46</p></li>
+<li><p id="corty3e-pt2-review-p56" block_type="pr_que_nl_lvl2"><em>r</em><sup>2</sup> = 40&#37;</p></li>
+</list>
+<p id="corty3e-pt2-review-p57" block_type="pr_que_nl"><phrase block_type="question_num">23.</phrase> A cognitive psychologist read a study that found that children reared in families who ate organic diets ended up with higher IQs than children from families who did not eat organic food. He thought that if such an effect existed, it could be explained by socioeconomic status (SES). It costs more to buy organic and families that buy organic can afford other advantages for their kids. So, he designed a study:</p>
+<p id="corty3e-pt2-review-p58" block_type="pr_que_nl_txt">He found 25 families who were feeding their babies organic food and matched them to 25 non-organic baby food families on the basis of (a) SES, (b) sex and age of the baby, (c) intelligence of the parents, (d) parenting style, and (e) degree of liberalism. Six years later, when the babies were in first grade, he measured the IQs of all 50 kids.</p>
+<p id="corty3e-pt2-review-p59" block_type="pr_que_nl_txt">He found that the mean IQ of the &#8220;organic&#8221; kids was 109 and for the &#8220;non-organic&#8221; it was 102. In addition:</p>
+<list id="corty3e-pt2-review-list-3" type="unordered" block_type="bullet">
+<li><p id="corty3e-pt2-review-p60" block_type="pr_que_nl_lvl2"><em>S<sub>M<sub>D</sub></sub></em> = 1.40</p></li>
+<li><p id="corty3e-pt2-review-p61" block_type="pr_que_nl_lvl2"><em>t<sub>cv</sub></em> = 2.064</p></li>
+<li><p id="corty3e-pt2-review-p62" block_type="pr_que_nl_lvl2"><em>t</em> = 5.00</p></li>
+<li><p id="corty3e-pt2-review-p63" block_type="pr_que_nl_lvl2">95&#37;CI [4.11, 9.84]</p></li>
+</list>
+<p id="corty3e-pt2-review-p64" block_type="pr_que_nl_lvl2">Interpret the results. Use &#945; = .05, two-tailed.</p>
+</section>
+</chapter>

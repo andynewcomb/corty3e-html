@@ -83,6 +83,10 @@
     <Content Include="ebook\asset\ch8\corty3e_table08_01.html" />
     <Content Include="ebook\asset\ch8\corty3e_table08_02.html" />
     <Content Include="ebook\asset\ch8\corty3e_table08_03.html" />
+    <Content Include="ebook\asset\pt1\corty3e_part_test1_un01.html" />
+    <Content Include="ebook\asset\pt1\corty3e_part_test1_un01.jpg" />
+    <Content Include="ebook\asset\pt4\corty3e_part_test4_un01.html" />
+    <Content Include="ebook\asset\pt4\corty3e_part_test4_un01.jpg" />
     <Content Include="ebook\config.txt" />
     <Content Include="ebook\css\corty3e.css">
       <DependentUpon>corty3e.less</DependentUpon>
@@ -222,12 +226,68 @@
     <Content Include="ebook\css\corty3e_glossary.min.css">
       <DependentUpon>corty3e_glossary.css</DependentUpon>
     </Content>
+    <Content Include="ebook\css\corty3e_pt1.css">
+      <DependentUpon>corty3e_pt1.less</DependentUpon>
+    </Content>
+    <Content Include="ebook\css\corty3e_pt1.less" />
+    <Content Include="ebook\css\corty3e_pt1.min.css">
+      <DependentUpon>corty3e_pt1.css</DependentUpon>
+    </Content>
+    <Content Include="ebook\css\corty3e_pt2.css">
+      <DependentUpon>corty3e_pt2.less</DependentUpon>
+    </Content>
+    <Content Include="ebook\css\corty3e_pt2.less" />
+    <Content Include="ebook\css\corty3e_pt2.min.css">
+      <DependentUpon>corty3e_pt2.css</DependentUpon>
+    </Content>
+    <Content Include="ebook\css\corty3e_pt3.css">
+      <DependentUpon>corty3e_pt3.less</DependentUpon>
+    </Content>
+    <Content Include="ebook\css\corty3e_pt3.less" />
+    <Content Include="ebook\css\corty3e_pt3.min.css">
+      <DependentUpon>corty3e_pt3.css</DependentUpon>
+    </Content>
+    <Content Include="ebook\css\corty3e_pt4.css">
+      <DependentUpon>corty3e_pt4.less</DependentUpon>
+    </Content>
+    <Content Include="ebook\css\corty3e_pt4.less" />
+    <Content Include="ebook\css\corty3e_pt4.min.css">
+      <DependentUpon>corty3e_pt4.css</DependentUpon>
+    </Content>
     <Content Include="ebook\css\corty3e_ref.css">
       <DependentUpon>corty3e_ref.less</DependentUpon>
     </Content>
     <Content Include="ebook\css\corty3e_ref.min.css">
       <DependentUpon>corty3e_ref.css</DependentUpon>
     </Content>
+    <Content Include="ebook\css\corty3e_testpt1.css">
+      <DependentUpon>corty3e_testpt1.less</DependentUpon>
+    </Content>
+    <Content Include="ebook\css\corty3e_testpt1.min.css">
+      <DependentUpon>corty3e_testpt1.css</DependentUpon>
+    </Content>
+    <Content Include="ebook\css\corty3e_testpt2.css">
+      <DependentUpon>corty3e_testpt2.less</DependentUpon>
+    </Content>
+    <Content Include="ebook\css\corty3e_testpt2.min.css">
+      <DependentUpon>corty3e_testpt2.css</DependentUpon>
+    </Content>
+    <Content Include="ebook\css\corty3e_testpt3.css">
+      <DependentUpon>corty3e_testpt3.less</DependentUpon>
+    </Content>
+    <Content Include="ebook\css\corty3e_testpt3.min.css">
+      <DependentUpon>corty3e_testpt3.css</DependentUpon>
+    </Content>
+    <Content Include="ebook\css\corty3e_testpt4.css">
+      <DependentUpon>corty3e_testpt4.less</DependentUpon>
+    </Content>
+    <Content Include="ebook\css\corty3e_testpt4.min.css">
+      <DependentUpon>corty3e_testpt4.css</DependentUpon>
+    </Content>
+    <Content Include="ebook\css\corty3e_testpt1.less" />
+    <Content Include="ebook\css\corty3e_testpt2.less" />
+    <Content Include="ebook\css\corty3e_testpt3.less" />
+    <Content Include="ebook\css\corty3e_testpt4.less" />
     <Content Include="ebook\pagemap.js" />
     <Content Include="packages.config" />
     <Content Include="docs\Corty_3e_APP-A_Final HR.pdf" />
@@ -286,6 +346,16 @@
     <Content Include="ebook\css\corty3e_ref.less" />
     <Content Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
     <Content Include="ebook\create_page_number_map.pl" />
+    <Content Include="xml\corty3e-pt01-review.xml" />
+    <Content Include="xml\corty3e-pt01.xml" />
+    <Content Include="xml\corty3e-pt02-review.xml" />
+    <Content Include="xml\corty3e-pt02.xml" />
+    <Content Include="xml\corty3e-pt03-review.xml" />
+    <Content Include="xml\corty3e-pt03.xml" />
+    <Content Include="xml\corty3e-pt04-review.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="xml\corty3e-pt04.xml" />
     <None Include="compilerconfig.json" />
     <None Include="compilerconfig.json.defaults">
       <DependentUpon>compilerconfig.json</DependentUpon>
@@ -1572,10 +1642,8 @@
     <Content Include="ebook\asset\ch5\corty3e_fig05_17.jpg" />
     <Content Include="ebook\asset\ch5\corty3e_fig05_18.html" />
     <Content Include="ebook\asset\ch5\corty3e_fig05_18.jpg" />
-    <Content Include="ebook\asset\ch5\corty3e_fig05_19a.html" />
-    <Content Include="ebook\asset\ch5\corty3e_fig05_19a.jpg" />
-    <Content Include="ebook\asset\ch5\corty3e_fig05_19b.html" />
-    <Content Include="ebook\asset\ch5\corty3e_fig05_19b.jpg" />
+    <Content Include="ebook\asset\ch5\corty3e_fig05_19.html" />
+    <Content Include="ebook\asset\ch5\corty3e_fig05_19.jpg" />
     <Content Include="ebook\asset\ch5\corty3e_fig05_un01.html" />
     <Content Include="ebook\asset\ch5\corty3e_fig05_un01.jpg" />
     <Content Include="ebook\asset\ch5\corty3e_fig05_un02.html" />

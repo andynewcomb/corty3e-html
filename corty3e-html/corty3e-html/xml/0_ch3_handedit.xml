@@ -639,21 +639,18 @@ a.variance:: a measure of variability for interval- or ratio-level data; the mea
 <layout align="center" width="medium" border="true"/>
 <image asset-id="corty3e-ch3-img-44" alt="image" src="asset/ch3/corty3e_fig03_10.jpg"/>
 <caption><strong><phrase block_type="fig_num">Figure 3.10</phrase> Starting SPSS Commands for Descriptive Statistics</strong> Measures of central tendency and variability in SPSS can be calculated via the Frequencies, Descriptives, or Explore commands, all of which may be found under &#8220;Descriptive Statistics.&#8221;</caption>
-<asset_source>(Source: SPSS)</asset_source>
 </figure>
 <p id="corty3e-ch3-p292" block_type="bx3-txt"><link href="#corty3e-ch3-fig-39"><strong>Figure 3.11</strong></link> shows the initial screen for the Descriptives command. The arrow key is used to move a variable, here &#8220;Maze Running Time,&#8221; from the box on the left to the &#8220;Variable(s)&#8221; box.</p>
 <figure id="corty3e-ch3-fig-39" block_type="figure" numbered="true" number="3.11" mmtype="image" mmsrc="" attr="">
 <layout align="center" width="medium" border="true"/>
 <image asset-id="corty3e-ch3-img-45" alt="image" src="asset/ch3/corty3e_fig03_11.jpg"/>
 <caption><strong><phrase block_type="fig_num">Figure 3.11</phrase> The Descriptives Command in SPSS</strong> Once a variable has been moved from the box on the left to the box labeled &#8220;Variable(s),&#8221; the &#8220;OK&#8221; button on the bottom left becomes active.</caption>
-<asset_source>(Source: SPSS)</asset_source>
 </figure>
 <p id="corty3e-ch3-p293" block_type="bx3-txt">Clicking on the &#8220;Options&#8221; button in <link href="#corty3e-ch3-fig-39">Figure 3.11</link> opens up the menu seen in <link href="#corty3e-ch3-fig-40"><strong>Figure 3.12</strong></link>. Here, select the statistics for SPSS to calculate.</p>
 <figure id="corty3e-ch3-fig-40" block_type="figure" numbered="true" number="3.12" mmtype="image" mmsrc="" attr="">
 <layout align="center" width="medium" border="true"/>
 <image asset-id="corty3e-ch3-img-46" alt="image" src="asset/ch3/corty3e_fig03_12.jpg"/>
 <caption><strong><phrase block_type="fig_num">Figure 3.12</phrase> Selecting Descriptive Statistics</strong> Clicking on the &#8220;Options&#8221; button in <link href="#corty3e-ch3-fig-40">Figure 3.12</link> opens up this menu, which allows one to select the desired descriptive statistics.</caption>
-<asset_source>(Source: SPSS)</asset_source>
 </figure>
 <p id="corty3e_page_105" block_type="page_start">105</p>
 <p id="corty3e-ch3-p294" block_type="bx3-txt">For an example of the output produced by SPSS, see <link href="#corty3e-ch3-fig-41"><strong>Figure 3.13</strong></link>. Only the mean and the standard deviation were requested and this is all that was calculated.</p>
@@ -661,7 +658,6 @@ a.variance:: a measure of variability for interval- or ratio-level data; the mea
 <layout align="center" width="large" border="true"/>
 <image asset-id="corty3e-ch3-img-47" alt="image" src="asset/ch3/corty3e_fig03_13.jpg"/>
 <caption><strong><phrase block_type="fig_num">Figure 3.13</phrase> SPSS Output for Descriptive Statistics</strong> An example of SPSS output. Only the mean and standard deviation were requested, and this is all that was calculated.</caption>
-<asset_source>(Source: SPSS)</asset_source>
 </figure>
 </box>
 <p id="corty3e_page_106" block_type="page_start">106</p>

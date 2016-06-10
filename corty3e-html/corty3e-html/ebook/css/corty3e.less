@@ -182,7 +182,7 @@ tr.tbl-lrborder-none {
                 color: @corty-blue;
                 margin-bottom: 6px;
                 font-size: 1.2em;
-                padding-left: 2em;
+                padding-left: 2.5em;
                 [data-block_type="co-toc-h1-n-ri"] {
                     position: absolute;
                     left: 0;
@@ -503,6 +503,9 @@ body#supp_win {
         }
         &[data-layout-width="xlarge"] img {
             max-width: @figure-xlarge-width * @supp_win_magnification !important;
+        }
+        [data-type="asset_source"] {
+            display: none;
         }
     }    
 }
@@ -845,6 +848,9 @@ img[src*="corty3e_eqn"] {
         li p {
             margin: 0;
         }
+    }
+    [data-type="figure"] [data-type="asset_source"] {
+        display: none;
     }
 }
 

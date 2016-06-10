@@ -1,0 +1,13 @@
+<chapter number="1" id="corty3e-pt1-part-1" title="PART I Basic Concepts" start-numbering-at="01" numbered="true">
+<section id="corty3e-pt1-sec1-1a" block_type="intro" title="Chapter Introduction" numbered="true" level="1" print_page="1">
+<p id="corty3e_page_1" block_type="page_start">1</p>
+<p id="corty3e-pt1-p2" block_type="part_number">PART I</p>
+<p id="corty3e-pt1-p3" block_type="part_title">Basic Concepts</p>
+<p id="corty3e-pt1-p4" block_type="po-toc-ct"><link href="corty3e-ch01.xml"><strong>Chapter 1</strong> Introduction to Statistics</link></p>
+<p id="corty3e-pt1-p5" block_type="po-toc-ct"><link href="corty3e-ch02.xml"><strong>Chapter 2</strong> Frequency Distributions</link></p>
+<p id="corty3e-pt1-p6" block_type="po-toc-ct"><link href="corty3e-ch03.xml"><strong>Chapter 3</strong> Measures of Central Tendency and Variability</link></p>
+<p id="corty3e-pt1-p7" block_type="po-toc-ct"><link href="corty3e-ch04.xml"><strong>Chapter 4</strong> Standard Scores, the Normal Distribution, and Probability</link></p>
+<p id="corty3e-pt1-p8" block_type="po-toc-ct"><link href="corty3e-ch05.xml"><strong>Chapter 5</strong> Sampling and Confidence Intervals</link></p>
+<p id="corty3e-pt1-p9" block_type="po-txt-ni">This section, roughly the first third of the book, introduces the basic concepts that form the foundation of statistics. By the time you have finished these five chapters, you should be familiar with statistical terminology and be able to describe a set of data using tables, graphs, and numbers that summarize the average score and the amount of heterogeneity in the scores. The last two chapters in this section cover concepts&#8212;the normal distribution, probability, sampling, and confidence intervals&#8212;that pave the way for the transition from this section on descriptive statistics to inferential statistics, the topic of the final two thirds of the book.</p>
+</section>
+</chapter>

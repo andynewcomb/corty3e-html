@@ -80,6 +80,7 @@
 <section id="corty3e-ch13-sec2-3" block_type="h2" chapter="13" title="" numbered="false" level="2" print_page="483">
 <section-metadata><section-title>Visualizing Relationships</section-title></section-metadata>
 <p id="corty3e-ch13-p41" block_type="txt-ni">The degree to which two variables vary together determines whether the relationship is strong or weak. The strength of the relationship can be visualized in a scatterplot. <strong><link href="#corty3e-ch13-fig-3">Figure 13.2</link></strong> shows the relationship between randomly generated numbers. If <em>X</em> values are randomly selected and each <em>X</em> is paired with a randomly selected <em>Y,</em> then the two do not vary together systematically. <link href="#corty3e-ch13-fig-3">Figure 13.2</link> shows a rectangular scatterplot where there is <em>no</em> relationship, what is called a zero correlation, between two variables. Cases with low values on <em>X</em> could have low, medium, or high values on <em>Y.</em> And, the same is true for cases with medium or high values on <em>X.</em></p>
+<p id="corty3e_page_483" block_type="page_start">484</p>
 <figure id="corty3e-ch13-fig-3" block_type="figure" numbered="true" number="13.2" mmtype="image" mmsrc="" attr="">
 <layout align="center" width="large" border="true"/>
 <image asset-id="corty3e-ch13-img-3" alt="image" src="asset/ch13/corty3e_fig13_02.jpg"/>
@@ -114,6 +115,7 @@
 <section-metadata><section-title>Correlations Defined by <em>z</em> Scores</section-title></section-metadata>
 <p id="corty3e-ch13-p46" block_type="txt-ni">A scatterplot can also be drawn using <em>z</em> scores, not raw scores. <em>z</em> scores, also called standard scores, were introduced in <link href="corty3e-ch04.xml">Chapter 4</link>. They are a transformation of raw scores into scores that reveal how far away from the mean the scores are in standard deviation units. <em>z</em> scores can be positive or negative, which means they fall above the mean or below the mean.</p>
 <p id="corty3e-ch13-p47" block_type="txt"><strong><link href="#corty3e-ch13-fig-7">Figure 13.6</link></strong> offers scatterplots for the community hospital/number of deaths data. The panel on the left in 13.6, like <link href="#corty3e-ch13-fig-2">Figure 13.1</link>, illustrates the relationship with raw scores, and the panel on the right shows what the scatterplot looks like when the same variables are transformed into <em>z</em> scores. Note that transforming from raw scores to <em>z</em> scores doesn&#8217;t change the relationship. The pattern of the dots, the shape, is exactly the same, whether raw scores or <em>z</em> scores are being plotted.</p>
+<p id="corty3e_page_483" block_type="page_start">484</p>
 <figure id="corty3e-ch13-fig-7" block_type="figure" numbered="true" number="13.6" mmtype="image" mmsrc="" attr="">
 <layout align="center" width="xlarge" border="true"/>
 <image asset-id="corty3e-ch13-img-7" alt="image" src="asset/ch13/corty3e_fig13_06.jpg"/>
@@ -820,7 +822,6 @@
 <p id="corty3e-ch13-p348" block_type="sr-que-nl"><phrase block_type="question_num">13.19</phrase> If a researcher thinks <em>r</em> &#61; .30, how many cases would he need to have in order to have power of .80? Of .95?</p>
 <p id="corty3e-ch13-p349" block_type="sr-que-nl"><phrase block_type="question_num">13.20</phrase> A clinical psychologist randomly sampled 402 parents-to-be in the United States and administered to each couple an interval-level measure of marital harmony. She tracked down all of the children 18 years later and to each child administered an interval-level measure of mental health. Both scales were scored so that higher scores indicated more marital harmony or more mental health. She found <em>r</em>(400) &#61; .38, <em>p</em> &#60; .05. Given 95&#37; CI [.29, 36] and <em>r</em><sup>2</sup> &#61; 14.44&#37;, write a four-point interpretation.</p>
 </box>
-<p id="corty3e_page_519" block_type="page_start">519</p>
 </section>
 <section id="corty3e-ch13-sec1-4" block_type="h1" chapter="13" title="" numbered="false" level="1" print_page="519">
 <section-metadata><section-title><phrase block_type="sec_num">13.4</phrase> <phrase block_type="sec_title">Calculating a Partial Correlation</phrase></section-title></section-metadata>
