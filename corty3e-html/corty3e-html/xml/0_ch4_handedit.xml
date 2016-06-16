@@ -202,13 +202,13 @@
 <li><p id="corty3e-ch4-p95" block_type="bl-mid">&#8776;14&#37; of cases fall from 1 standard deviation above the mean to 2 standard deviations above it. Ditto for the area from 1 standard deviation below to 2 standard deviations below.</p></li>
 <li><p id="corty3e-ch4-p96" block_type="bl-last">&#8776;2&#37; of cases fall from 2 standard deviations above the mean to 3 standard deviations above it. Again, ditto for the same area below the mean.</p></li>
 </list>
-<p id="corty3e-ch4-p97" block_type="txt">Here&#8217;s a real example of how scores only range from 3 standard deviations below the mean to 3 standard deviations above it. Think of the SAT where subtests have a mean of 500 and a standard deviation of 100. A <em>z</em> score of &#8211;3.00 is a raw score of 200 on a subtest. This can be calculated using <link href="#corty3e-ch4-bx6-3">Equation 4.3</link>:</p>
+<p id="corty3e-ch4-p97" block_type="txt">Here&#8217;s a real example of how scores only range from 3 standard deviations below the mean to 3 standard deviations above it. Think of the SAT where subtests have a mean of 500 and a standard deviation of 100. A <em>z</em> score of &#8211;3.00 is a raw score of 200 on a subtest. This can be calculated using Equation 4.3:</p>
 <p id="corty3e-ch4-p98" block_type="eq"><em>X</em> &#61; 500 &#43; (&#8211;3.00 &#215; 100)</p>
 <p id="corty3e-ch4-p99" block_type="eq">&#61; 500 &#43; (&#8211;300.0000)</p>
 <p id="corty3e-ch4-p100" block_type="eq">&#61; 500 &#8211; 300.0000</p>
 <p id="corty3e-ch4-p101" block_type="eq">&#61; 200.0000</p>
 <p id="corty3e-ch4-p102" block_type="eq">&#61; 200.00</p>
-<p id="corty3e-ch4-p103" block_type="txt">A <em>z</em> score of 3.00 is a raw score of 800 on a subtest. This can be calculated using <link href="#corty3e-ch4-bx6-3">Equation 4.3</link>:</p>
+<p id="corty3e-ch4-p103" block_type="txt">A <em>z</em> score of 3.00 is a raw score of 800 on a subtest. This can be calculated using Equation 4.3:</p>
 <p id="corty3e-ch4-p104" block_type="eq"><em>X</em> &#61; 500 &#43; (3.00 &#215; 100)</p>
 <p id="corty3e-ch4-p105" block_type="eq">&#61; 500 &#43; 300.0000</p>
 <p id="corty3e-ch4-p106" block_type="eq">&#61; 800.0000</p>

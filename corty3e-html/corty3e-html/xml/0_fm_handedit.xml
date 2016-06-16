@@ -1,5 +1,22 @@
 <chapter number="fm1" id="corty3e-fm1-fm1" title="Using and Interpreting Statistics, THIRD EDITION" start-numbering-at="vi" numbered="true">
-<section id="corty3e-fm1-sec1-1" block_type="copyright" title="" numbered="false" level="1" print_page="vi">
+<section id="corty3e-fm1-sec1-1" block_type="title" title="" numbered="false" level="1" print_page="v">
+<section-metadata><section-title>Title Page</section-title></section-metadata>
+<p id="corty3e_page_v" block_type="page_start">v</p>
+<box id="corty3e-fm1-bx-1" numbered="false" block_type="title_box">
+<p id="corty3e-fm1-p37" block_type="txt"><strong>THIRD EDITION</strong></p>
+<box id="corty3e-fm1-bx-1a" numbered="false" block_type="main_title">
+<p id="corty3e-fm1-p38" block_type="txt">Using and Interpreting</p>
+<p id="corty3e-fm1-p39" block_type="txt"><strong>Statistics</strong></p>
+</box>
+<p id="corty3e-fm1-p40" block_type="txt">A Practical Text for the Behavioral,<br/>Social, and Health Sciences</p>
+<p id="corty3e-fm1-p41" block_type="txt2"><strong>ERIC W. CORTY</strong></p>
+<p id="corty3e-fm1-p42" block_type="txt2"><em>The Pennsylvania State University</em></p>
+<p id="corty3e-fm1-p43" block_type="img">
+<image asset-id="corty3e-fm1-img-23" alt="image" src="asset/fm/corty3e_fm_un02.jpg"/>
+</p>
+</box>
+</section>
+<section id="corty3e-fm1-sec1-2" block_type="copyright" title="" numbered="false" level="1" print_page="vi">
 <section-metadata><section-title>Credits</section-title></section-metadata>
 <p id="corty3e_page_vi" block_type="page_start">vi</p>
 <table id="corty3e-fm1-table1" block_type="un_table">
@@ -62,7 +79,7 @@
 <p id="corty3e-fm1-p95" block_type="txt">New York, NY 10004-1562</p>
 <p id="corty3e-fm1-p96" block_type="txt"><link href="http://www.macmillanlearning.com">www.macmillanlearning.com/</link></p>
 </section>
-<section id="corty3e-fm1-sec1-2" block_type="cr-sum-t" chapter="fm1" title="" numbered="false" level="1" print_page="ix">
+<section id="corty3e-fm1-sec1-3" block_type="cr-sum-t" chapter="fm1" title="" numbered="false" level="1" print_page="ix">
 <section-metadata><section-title>ABOUT THE AUTHOR</section-title></section-metadata>
 <figure id="corty3e-fm1-fig-7" block_type="un_figure" numbered="false" number="false" mmtype="image" mmsrc="images" attr="">
 <layout align="right" width="small" border="true"/>
@@ -73,7 +90,7 @@
 <p id="corty3e-fm1-p99" block_type="fm-aau">Corty&#8217;s work has appeared in more than three dozen peer-reviewed publications. His research on ejaculatory latencies received worldwide attention, including being made fun of on the <em>Late Show with David Letterman</em>. His statistics textbook was recognized as Book of the Year by the <em>American Journal of Nursing</em> in 1997. Corty serves as a member of the editorial board for <em>The Journal of Sex &#38; Marital Therapy</em> and previously was on the editorial board for <em>The Journal of Consulting and Clinical Psychology</em>.</p>
 <p id="corty3e-fm1-p100" block_type="fm-aau">Corty was born in Wilmington, Delaware, and still celebrates Delaware Day every December 7th. He now lives in Beachwood, Ohio. He likes to eat and to cook, loves to ride his bicycles, and is sad to report that he has not made much progress on his pool game since the second edition.</p>
 </section>
-<section id="corty3e-fm1-sec1-3" block_type="fm-prf-hd1" chapter="fm1" title="" numbered="false" level="1" print_page="xvii">
+<section id="corty3e-fm1-sec1-4" block_type="fm-prf-hd1" chapter="fm1" title="" numbered="false" level="1" print_page="xvii">
 <section-metadata><section-title>TO THE STUDENT</section-title></section-metadata>
 <p id="corty3e_page_xvii" block_type="page_start">xvii</p>
 <p id="corty3e-fm1-p357" block_type="fm-txt">If you are like many students, this is not a course you have been looking forward to taking. And you probably don&#8217;t feel like reading a long message about how important this course is. So, I&#8217;ll be brief and say just five things to introduce the book to you:</p>
@@ -90,7 +107,7 @@
 <image asset-id="corty3e-fm1-img-25" alt="image" src="asset/fm/corty3e_fm_un03.jpg"/>
 </figure>
 </section>
-<section id="corty3e-fm1-sec1-4" block_type="fm-prf-hd1" chapter="fm1" title="" numbered="false" level="1" print_page="xviii">
+<section id="corty3e-fm1-sec1-5" block_type="fm-prf-hd1" chapter="fm1" title="" numbered="false" level="1" print_page="xviii">
 <section-metadata><section-title>TO THE INSTRUCTOR</section-title></section-metadata>
 <p id="corty3e_page_xviii" block_type="page_start">xviii</p>
 <p id="corty3e-fm1-p364" block_type="fm-prf-txt-3">Welcome to the third edition of <em>Using and Interpreting Statistics.</em> I wrote this book because I couldn&#8217;t find a text that presented the right amount of material in a straightforward manner that engaged students. My approach is applied&#8212;I want students to walk away from a first course in statistics with an ability to do what I call the &#8220;human side&#8221; of statistics, the things that computers can&#8217;t do. Yes, I teach the math of statistics&#8212;how to calculate <em>t, F, r,</em> &#967;<sup>2</sup>, confidence intervals, and a variety of effect sizes&#8212;but my overall focus is on leading students to an understanding of the logic (and the beauty) of statistics. At the end of the course, I want students to be able to select the appropriate statistical test for a research question. For the statistical tests, I want them to be able to write, in simple language, a complete interpretative statement and to explain what the results mean. In line with the recommendations from the American Statistical Association&#8217;s <em>Guidelines for Assessment and Instruction in Statistics Education: College Report</em> (2010), I aim for a conceptual understanding, not just procedural knowledge.</p>

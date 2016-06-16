@@ -40,3 +40,6 @@ img[src*="corty3e_ineqn01_24_02"] {
   height: 1em;
   vertical-align: text-top;
 }
+div#corty3e-ch1-video-1 {
+  display: none;
+}
