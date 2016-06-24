@@ -194,7 +194,7 @@
 </list>
 <p id="corty3e-ch6-p88" block_type="txt">Next, Dr. Pell needs to state the alternative hypothesis. The alternative hypothesis has to be mutually exclusive to the null hypothesis, and the two hypotheses together have to be all-inclusive. Further, the alternative hypothesis is not going to make a specific prediction. The alternative hypothesis is just going to say that the null hypothesis is wrong. This means that the alternative hypothesis states the population mean for adopted children is something other than 100:</p>
 <p id="corty3e-ch6-p89" block_type="eq"><em>H</em><sub>1</sub>: μ<sub>AdoptedChildren</sub> ≠ 100</p>
-<p id="corty3e-ch6-p90" block_type="h4-txt-ni"><phrase block_type="h4-N-ri1"><strong>Step 4</strong></phrase> <phrase block_type="SR-X-h4-T-ri"><strong>Set the Decision Rule.</strong></phrase> Hypothesis testing works by assuming that the null hypothesis is true. Assume that the null hypothesis, μ = 100, is true and imagine taking hundreds and hundreds of repeated random samples of size 72 from the population of adopted children. For each sample, calculate a mean and then make a sampling distribution for all the means from all the samples. Thanks to the central limit theorem, three things are known about this sampling distribution: (1) the sampling distribution of the mean will be centered at 100, (2) it will have a normal shape, and (3) its standard deviation, called the standard error of the mean, can be calculated using <link href="corty3e_ch5_3.html#corty3e-ch5-bx6-1">Equation 5.1</link>. For the adoption IQ example, this would be</p>
+<p id="corty3e-ch6-p90" block_type="h4-txt-ni"><phrase block_type="h4-N-ri1"><strong>Step 4</strong></phrase> <phrase block_type="SR-X-h4-T-ri"><strong>Set the Decision Rule.</strong></phrase> Hypothesis testing works by assuming that the null hypothesis is true. Assume that the null hypothesis, μ = 100, is true and imagine taking hundreds and hundreds of repeated random samples of size 72 from the population of adopted children. For each sample, calculate a mean and then make a sampling distribution for all the means from all the samples. Thanks to the central limit theorem, three things are known about this sampling distribution: (1) the sampling distribution of the mean will be centered at 100, (2) it will have a normal shape, and (3) its standard deviation, called the standard error of the mean, can be calculated using Equation 5.1. For the adoption IQ example, this would be</p>
 <p id="corty3e_page_190" block_type="page_start">190</p>
 <p id="corty3e-ch6-eqn-1" block_type="equation">
 <image asset-id="corty3e-ch6-img-12" alt="image" src="asset/ch6/corty3e_eqn06_190_01.jpg"/>
@@ -239,7 +239,7 @@
 <layout align="center" width="xlarge" border="true"/>
 <image asset-id="corty3e-ch6-img-15" alt="image" src="asset/ch6/corty3e_table06_04.jpg"/>
 </figure>
-<p id="corty3e-ch6-p106" block_type="h4-txt-ni"><phrase block_type="h4-N-ri1"><strong>Step 5</strong></phrase> <phrase block_type="SR-X-h4-T-ri"><strong>Calculate the Test Statistic.</strong></phrase> The test statistic to be calculated is a <em>z</em> value. So, Step 5 involves turning the observed sample mean of 104.50 into a <em>z</em> score. The formula for calculating the <em>z</em> value for a single-sample test is shown in <link href="#corty3e-ch6-bx6-1">Equation 6.1</link>.</p>
+<p id="corty3e-ch6-p106" block_type="h4-txt-ni"><phrase block_type="h4-N-ri1"><strong>Step 5</strong></phrase> <phrase block_type="SR-X-h4-T-ri"><strong>Calculate the Test Statistic.</strong></phrase> The test statistic to be calculated is a <em>z</em> value. So, Step 5 involves turning the observed sample mean of 104.50 into a <em>z</em> score. The formula for calculating the <em>z</em> value for a single-sample test is shown in Equation 6.1.</p>
 <box title="Equation 6.1 Formula for the Single-Sample z Test" numbered="false" id="corty3e-ch6-bx6-1" block_type="eq-t">
 <box-metadata><box-title><phrase block_type="sec_num">Equation 6.1</phrase> <phrase block_type="sec_title">Formula for the Single-Sample <em>z</em> Test</phrase></box-title></box-metadata>
 <p id="corty3e-ch6-eqn-2" block_type="equation">
@@ -248,9 +248,9 @@
 <p id="corty3e-ch6-p107" block_type="eq-txt-ni">where <em>z</em> = the <em>z</em> score</p>
 <p id="corty3e-ch6-p108" block_type="eq-unl"><em>M</em> = the sample mean</p>
 <p id="corty3e-ch6-p109" block_type="eq-unl">μ = the population mean</p>
-<p id="corty3e-ch6-p110" block_type="eq-unl">σ<em><sub>M</sub></em> = the standard error of the mean (<link href="corty3e_ch5_3.html#corty3e-ch5-bx6-1">Equation 5.1</link>)</p>
+<p id="corty3e-ch6-p110" block_type="eq-unl">σ<em><sub>M</sub></em> = the standard error of the mean (Equation 5.1)</p>
 </box>
-<p id="corty3e-ch6-p111" block_type="txt">Earlier, using <link href="corty3e_ch5_3.html#corty3e-ch5-bx6-1">Equation 5.1</link>, the standard error of the mean for the adoption IQ example was calculated as σ<em><sub>M</sub></em> = 1.77. With that value, and with <em>M</em> = 104.5 and μ = 100, Dr. Pell can calculate the value of <em>z</em> for the single-sample <em>z</em> test for the adoption IQ study:</p>
+<p id="corty3e-ch6-p111" block_type="txt">Earlier, using Equation 5.1, the standard error of the mean for the adoption IQ example was calculated as σ<em><sub>M</sub></em> = 1.77. With that value, and with <em>M</em> = 104.5 and μ = 100, Dr. Pell can calculate the value of <em>z</em> for the single-sample <em>z</em> test for the adoption IQ study:</p>
 <p id="corty3e_page_193" block_type="page_start">193</p>
 <p id="corty3e-ch6-eqn-3" block_type="equation">
 <image asset-id="corty3e-ch6-img-17" alt="image" src="asset/ch6/corty3e_eqn06_193_01.jpg"/>
@@ -309,11 +309,11 @@
 <image asset-id="corty3e-ch6-img-19" alt="image" src="asset/ch6/corty3e_fig06_04.jpg"/>
 <caption><strong><phrase block_type="fig_num">Figure 6.4</phrase> Sampling Distribution of the Mean, Marked with the Rare Zone and Common Zone, for Psychic Blood Pressure Data</strong> This is the sampling distribution of the mean for the blood pressure data with a population mean of 124 and a standard error of the mean of 2.00.</caption>
 </figure>
-<p id="corty3e-ch6-p144" block_type="sr_exp_h4_txt"><phrase block_type="SR-EXP-h4-N-ni"><strong>Step 5</strong></phrase> <phrase block_type="SR-EXP-h4-T-ri"><strong>Calculate the Test Statistic.</strong></phrase> In order to calculate the <em>z</em> value, Dr. Levine will first use <link href="corty3e_ch5_3.html#corty3e-ch5-bx6-1">Equation 5.1</link> to calculate the standard error of the mean:</p>
+<p id="corty3e-ch6-p144" block_type="sr_exp_h4_txt"><phrase block_type="SR-EXP-h4-N-ni"><strong>Step 5</strong></phrase> <phrase block_type="SR-EXP-h4-T-ri"><strong>Calculate the Test Statistic.</strong></phrase> In order to calculate the <em>z</em> value, Dr. Levine will first use Equation 5.1 to calculate the standard error of the mean:</p>
 <p id="corty3e-ch6-eqn-4" block_type="equation">
 <image asset-id="corty3e-ch6-img-20" alt="image" src="asset/ch6/corty3e_eqn06_196_01.jpg"/>
 </p>
-<p id="corty3e-ch6-p145" block_type="sr-ex-txt">Now that the standard error of the mean is known, Dr. Levine can use <link href="#corty3e-ch6-bx6-1">Equation 6.1</link> to calculate the <em>z</em> value:</p>
+<p id="corty3e-ch6-p145" block_type="sr-ex-txt">Now that the standard error of the mean is known, Dr. Levine can use Equation 6.1 to calculate the <em>z</em> value:</p>
 <p id="corty3e-ch6-eqn-5" block_type="equation">
 <image asset-id="corty3e-ch6-img-21" alt="image" src="asset/ch6/corty3e_eqn06_196_02.jpg"/>
 </p>

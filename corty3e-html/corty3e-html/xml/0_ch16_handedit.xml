@@ -97,15 +97,15 @@
 <p id="corty3e_page_623" block_type="page_start">623</p>
 <p id="corty3e-ch16-p35" block_type="txt">When using a descriptive statistic to describe a sample of cases, a researcher can describe the central tendency or the variability in a set of cases (see <link href="corty3e-ch03.xml">Chapter 3</link>). Usually, both are described. For example, a researcher might report both the average age of the participants <em>and</em> the range of ages.</p>
 <p id="corty3e-ch16-p36" block_type="txt">A measure of central tendency for a variable is chosen depending on its level of measurement (see <link href="#corty3e-ch16-fig-7"><strong>Table 16.3</strong></link>). But other factors&#8212;such as the shape of the distribution (see <link href="corty3e-ch03.xml">Chapter 3</link>)&#8212;also need to be taken into account when selecting a measure of central tendency.</p>
-<figure id="corty3e-ch16-fig-7" block_type="table" numbered="true" number="16.3" mmtype="image" mmsrc="" attr="">
-<layout align="center" width="large" border="true"/>
-<image asset-id="corty3e-ch16-img-7" alt="image" src="asset/ch16/corty3e_table16_03.jpg"/>
-</figure>
 <list id="corty3e-ch16-list-6" type="unordered" block_type="bullet">
 <li><p id="corty3e-ch16-p37" block_type="bl-first">To describe central tendency in a sample for a variable measured at the interval or ratio level, the go-to option is the mean (<em>M</em> ).</p></li>
 <li><p id="corty3e-ch16-p38" block_type="bl-mid">Central tendency for an ordinal-level variable is best measured with the median (<em>Mdn</em>).</p></li>
 <li><p id="corty3e-ch16-p39" block_type="bl-last">Central tendency for a nominal variable can only be measured with a mode.</p></li>
 </list>
+<figure id="corty3e-ch16-fig-7" block_type="table" numbered="true" number="16.3" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="large" border="true"/>
+<image asset-id="corty3e-ch16-img-7" alt="image" src="asset/ch16/corty3e_table16_03.jpg"/>
+</figure>
 <p id="corty3e-ch16-p40" block_type="txt">All of the descriptive statistics for variability (see <link href="corty3e-ch03.xml">Chapter 3</link>) are used for interval-level or ratio-level variables. These statistics include the range, interquartile range (<em>IQR</em>), variance (<em>s</em> <sup>2</sup>), and standard deviation (<em>s</em>). The standard deviation is the most commonly used measure of variability. Different abbreviations are used for variance and standard deviation depending on whether one is referring to a population value or sample value. A lowercase Greek sigma, &#963;, is used for population standard deviations and <em>s</em> for sample standard deviations.</p>
 <p id="corty3e-ch16-p41" block_type="txt">Just like seeing a mountain from several sides gives a better idea of what it looks like, using multiple perspectives&#8212;multiple descriptive statistics&#8212;gives a better sense of a set of data. Here are multiple ways a teacher might report how well her class had done on a test. Each descriptive statistic by itself answers a specific question. Taken together, they provide a detailed and comprehensive view of class performance:</p>
 <list id="corty3e-ch16-list-7" type="unordered" block_type="bullet">
@@ -151,15 +151,15 @@
 <image asset-id="corty3e-ch16-img-8" alt="image" src="asset/ch16/corty3e_fig16_05.jpg"/>
 <caption><strong><phrase block_type="fig_num">Figure 16.5</phrase> How to Choose: Selecting the Correct Difference Test</strong> Choosing a difference test depends on the number of samples, the type of samples, the dependent variable&#8217;s level of measurement, and the number of explanatory variables.</caption>
 </figure>
-<p id="corty3e-ch16-p64" block_type="txt">Whether a study is experimental or quasi-experimental, the first decision point involves how many groups of cases there are: one, two, or three or more groups. If just one group exists, then the sample is being compared to a specified value or a population value. The specific test to be used in making that comparison is determined by the dependent variable&#8217;s level of measurement.</p>
 <p id="corty3e_page_627" block_type="page_start">627</p>
+<p id="corty3e-ch16-p64" block_type="txt">Whether a study is experimental or quasi-experimental, the first decision point involves how many groups of cases there are: one, two, or three or more groups. If just one group exists, then the sample is being compared to a specified value or a population value. The specific test to be used in making that comparison is determined by the dependent variable&#8217;s level of measurement.</p>
 <p id="corty3e-ch16-p65" block_type="txt">If there is more than one group, it is important to determine whether the comparison is between just two groups or among three or more groups. This determination leads to the next decision point. When the comparison is between two groups, the next decision point is whether the groups are independent samples or dependent samples (see <link href="corty3e-ch08.xml">Chapters 8</link> and <link href="corty3e-ch09.xml">9</link> on <em>t</em> tests).</p>
 <p id="corty3e-ch16-p66" block_type="txt"><link href="#corty3e-ch16-fig-9"><strong>Table 16.4</strong></link> presents guidelines for determining the type of samples&#8212;independent or dependent. Once the type of samples has been determined for a two-sample test, the specific difference test to use depends on the level of measurement for the dependent variable.</p>
+<p id="corty3e_page_628" block_type="page_start">628</p>
 <figure id="corty3e-ch16-fig-9" block_type="table" numbered="true" number="16.4" mmtype="image" mmsrc="" attr="">
 <layout align="center" width="large" border="true"/>
 <image asset-id="corty3e-ch16-img-9" alt="image" src="asset/ch16/corty3e_table16_04.jpg"/>
 </figure>
-<p id="corty3e_page_628" block_type="page_start">628</p>
 <p id="corty3e-ch16-p67" block_type="txt">When there are three or more samples, the flowchart branches out depending on (1) the number of explanatory variables, (2) whether the samples are independent or dependent, and (3) the dependent variable&#8217;s level of measurement.</p>
 <p id="corty3e-ch16-p68" block_type="txt">To see how the flowchart works, imagine a clinical psychologist who wanted to see how the loss of a parent before age 6 affected a child&#8217;s adult level of psychological functioning. She obtained a large and representative sample of adults and classified them as belonging to one of four groups: (1) neither parent had died before the child, who is now an adult, was 6 years old; (2) the mother died before the child was 6 years old; (3) the father died before the child was 6 years old; or (4) both parents died before the child was 6 years old. To measure adult psychological functioning, she used an interval-level measure of psychological resilience. What statistical test should she use to find out if the mean level of psychological resilience differs among these four groups? The difference test flowchart, <link href="#corty3e-ch16-fig-8">Figure 16.5</link>, will help determine the answer.</p>
 <list id="corty3e-ch16-list-11" type="unordered" block_type="bullet">

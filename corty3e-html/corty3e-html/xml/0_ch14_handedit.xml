@@ -119,16 +119,16 @@
 <p id="corty3e-ch14-p41" block_type="txt-ni">Most students remember the formula for a straight line from algebra. The abbreviations may have been different, but it looked something like this:</p>
 <p id="corty3e-ch14-p42" block_type="eq"><em>Y</em> &#61; <em>bX</em> &#43; <em>a</em></p>
 <p id="corty3e-ch14-p43" block_type="txt">In this equation, <em>Y</em> is the value being calculated; <em>b</em> is the slope of the line; <em>X</em> is the value for which <em>Y</em> is being calculated; and <em>a</em> is the point where the line intersects the <em>Y</em>-axis, the <em>Y</em>-intercept.</p>
-<p id="corty3e-ch14-p44" block_type="txt">The regression line equation, <link href="#corty3e-ch14-bx6-1">Equation 14.1</link>, is similar, but it calculates <em>Y&#8242;</em><em>,</em> the predicted value of <em>Y,</em> not <em>Y.</em></p>
+<p id="corty3e-ch14-p44" block_type="txt">The regression line equation, Equation 14.1, is similar, but it calculates <em>Y&#8242;</em><em>,</em> the predicted value of <em>Y,</em> not <em>Y.</em></p>
 <box title="" numbered="false" id="corty3e-ch14-bx6-1" block_type="eq-t">
 <box-metadata><box-title><phrase block_type="sec_num">Equation 14.1</phrase> <phrase block_type="sec_title">Formula for Calculating a Regression Line</phrase></box-title></box-metadata>
 <p id="corty3e-ch14-p45" block_type="eq"><em>Y&#8242;</em> &#61; <em>bX</em> &#43; <em>a</em></p>
 <p id="corty3e-ch14-p46" block_type="eq-txt-ni">where <em>Y&#8242;</em> &#61; predicted value of <em>Y</em></p>
-<p id="corty3e-ch14-p47" block_type="eq-unl"><em>b</em> &#61; slope of the regression line (<link href="#corty3e-ch14-bx6-2">Equation 14.2</link>)</p>
+<p id="corty3e-ch14-p47" block_type="eq-unl"><em>b</em> &#61; slope of the regression line (Equation 14.2)</p>
 <p id="corty3e-ch14-p48" block_type="eq-unl"><em>X</em> &#61; value of <em>X</em> for which one wants to find <em>Y&#8242;</em></p>
-<p id="corty3e-ch14-p49" block_type="eq-unl"><em>a</em> &#61; <em>Y</em>-intercept of the regression line (<link href="#corty3e-ch14-bx6-3">Equation 14.3</link>)</p>
+<p id="corty3e-ch14-p49" block_type="eq-unl"><em>a</em> &#61; <em>Y</em>-intercept of the regression line (Equation 14.3)</p>
 </box>
-<p id="corty3e-ch14-p50" block_type="txt">In order to apply the regression line formula, three factors need to be known: (1) the <em>X</em> value for which one wants to predict a <em>Y</em> value; (2) the slope, <em>b;</em> and (3) the <em>Y</em>-intercept, <em>a.</em> The first of these, <em>X,</em> does not need to be calculated. It will either be given to or determined by the researcher. But the other two values, the slope and the <em>Y</em>-intercept, need to be calculated in order to apply <link href="#corty3e-ch14-bx6-1">Equation 14.1</link>.</p>
+<p id="corty3e-ch14-p50" block_type="txt">In order to apply the regression line formula, three factors need to be known: (1) the <em>X</em> value for which one wants to predict a <em>Y</em> value; (2) the slope, <em>b;</em> and (3) the <em>Y</em>-intercept, <em>a.</em> The first of these, <em>X,</em> does not need to be calculated. It will either be given to or determined by the researcher. But the other two values, the slope and the <em>Y</em>-intercept, need to be calculated in order to apply Equation 14.1.</p>
 <p id="corty-ch14-chead-1" block_type="h3">Understanding Slope</p>
 <p id="corty3e-ch14-p51" block_type="txt-ni"><termref term="Slope">Slope</termref> represents the tilt of the line. It tells how much up or down change in <em>Y</em> is predicted for each 1-unit change in <em>X.</em> This is often called &#8220;rise over run.&#8221;</p>
 <list id="corty3e-ch14-list-5" type="unordered" block_type="bullet">
@@ -167,7 +167,7 @@
 <p id="corty3e-ch14-p69" block_type="eq"><em>a</em> &#61; <em>M<sub>Y</sub></em> &#8211; <em>bM<sub>X</sub></em></p>
 <p id="corty3e-ch14-p70" block_type="eq-txt-ni">where <em>a</em> &#61; <em>Y</em>-intercept for the regression line</p>
 <p id="corty3e-ch14-p71" block_type="eq-unl"><em>M<sub>Y</sub></em> &#61; mean of the <em>Y</em> scores</p>
-<p id="corty3e-ch14-p72" block_type="eq-unl"><em>b</em> &#61; slope of the regression line (<link href="#corty3e-ch14-bx6-2">Equation 14.2</link>)</p>
+<p id="corty3e-ch14-p72" block_type="eq-unl"><em>b</em> &#61; slope of the regression line (Equation 14.2)</p>
 <p id="corty3e-ch14-p73" block_type="eq-unl"><em>M<sub>X</sub></em> &#61; mean of the <em>X</em> scores</p>
 </box>
 <p id="corty3e-ch14-p74" block_type="txt">Dr. Paik has already calculated the slope and found it to be 0.0568, which he rounded to <em>b</em> &#61; 0.06. Consulting his data, he finds <em>M<sub>Y</sub></em> &#61; 2.00 and <em>M<sub>X</sub></em> &#61; 25.00. Using these values, the <em>Y</em>-intercept is calculated as follows:</p>
@@ -177,11 +177,11 @@
 <p id="corty3e-ch14-p78" block_type="eq">&#61; 0.5800</p>
 <p id="corty3e-ch14-p79" block_type="eq">&#61; 0.58</p>
 <p id="corty3e-ch14-p80" block_type="txt-ni">(<em>Note:</em> Because very precise numbers are needed for an example to work later in the chapter, this equation uses a value of the slope to four decimal places, <em>b</em> &#61; 0.0568.)</p>
-<p id="corty3e-ch14-p81" block_type="txt">The <em>Y</em>-intercept, the spot where the regression line would intersect the <em>Y</em>-axis, is 0.58. Now that the slope, <em>b</em> &#61; 0.06, and the <em>Y</em>-intercept, <em>a</em> &#61; 0.58, are known, Dr. Paik can complete the regression formula, <link href="#corty3e-ch14-bx6-1">Equation 14.1</link>:</p>
+<p id="corty3e-ch14-p81" block_type="txt">The <em>Y</em>-intercept, the spot where the regression line would intersect the <em>Y</em>-axis, is 0.58. Now that the slope, <em>b</em> &#61; 0.06, and the <em>Y</em>-intercept, <em>a</em> &#61; 0.58, are known, Dr. Paik can complete the regression formula, Equation 14.1:</p>
 <p id="corty3e-ch14-p82" block_type="eq"><em>Y&#8242;</em> &#61; <em>bX</em> &#43; <em>a</em></p>
 <p id="corty3e-ch14-p83" block_type="eq">&#61; 0.06<em>X</em> &#43; 0.58</p>
 <p id="corty-ch14-chead-3" block_type="h3">Predicting <em>Y</em></p>
-<p id="corty3e-ch14-p84" block_type="txt-ni">Here is how a researcher could apply the formula and use it to draw the regression line. Dr. Paik needs to select an <em>X</em> value for which to predict a <em>Y</em> score. He must select a value that is within the range used to develop the regression formula. So, he selects a gender role flexibility score of 30 and substitutes that for <em>X</em> in <link href="#corty3e-ch14-bx6-1">Equation 14.1</link>:</p>
+<p id="corty3e-ch14-p84" block_type="txt-ni">Here is how a researcher could apply the formula and use it to draw the regression line. Dr. Paik needs to select an <em>X</em> value for which to predict a <em>Y</em> score. He must select a value that is within the range used to develop the regression formula. So, he selects a gender role flexibility score of 30 and substitutes that for <em>X</em> in Equation 14.1:</p>
 <p id="corty3e-ch14-p85" block_type="eq"><em>Y&#8242;</em> &#61; <em>bX</em> &#43; <em>a</em></p>
 <p id="corty3e-ch14-p86" block_type="eq">&#61; (0.06 &#215; 30) &#43; 0.58</p>
 <p id="corty3e-ch14-p87" block_type="eq">&#61; 1.8000 &#43; 0.58</p>
@@ -217,22 +217,22 @@
 <image asset-id="corty3e-ch14-img-11" alt="image" src="asset/ch14/corty3e_fig14_08.jpg"/>
 <caption><strong><phrase block_type="fig_num">Figure 14.8</phrase> Relationship Between Years of Cigarette Smoking and Lung Function</strong> In this scatterplot, the relationship between years of smoking and loss of lung function is strong, statistically significant, and inverse.</caption>
 </figure>
-<p id="corty3e-ch14-p106" block_type="txt">To calculate the slope (<em>b</em>) for the regression line, plug <em>r</em> &#61; &#8211;.68, <em>s<sub>X</sub></em> &#61; 9, and <em>s<sub>Y</sub></em> &#61; 13 into <link href="#corty3e-ch14-bx6-2">Equation 14.2</link>:</p>
+<p id="corty3e-ch14-p106" block_type="txt">To calculate the slope (<em>b</em>) for the regression line, plug <em>r</em> &#61; &#8211;.68, <em>s<sub>X</sub></em> &#61; 9, and <em>s<sub>Y</sub></em> &#61; 13 into Equation 14.2:</p>
 <p id="corty3e-ch14-eqn-3" block_type="equation">
 <image asset-id="corty3e-ch14-img-12" alt="image" src="asset/ch14/corty3e_eqn14_549_01.jpg"/></p>
 <p id="corty3e_page_550" block_type="page_start">550</p>
 <p id="corty3e-ch14-p107" block_type="sr_exp_txt_ni">For the regression line for the years of smoking/lung function data, the slope is <em>b</em> &#61; &#8211;0.98. A slope of <em>negative</em> 0.98 means that for every 1-point <em>increase</em> in <em>X,</em> there&#8217;s a predicted <em>decrease</em> of 0.98 points in <em>Y.</em> To put this in the context of this example, every year of smoking is associated with an additional decrease of 0.98 percentage points from normal lung function. In this way, a slope can be a meaningful tool for interpreting regression.</p>
-<p id="corty3e-ch14-p108" block_type="sr_exp_txt">To calculate the <em>Y</em>-intercept, one needs the slope, which was just found to be &#8211;0.98, and the two means, <em>M<sub>X</sub></em> and <em>M<sub>Y</sub>.</em> The predictor variable is years of smoking so <em>M<sub>X</sub></em> &#61; 22; the predicted variable is percent of normal function and <em>M<sub>Y</sub></em> &#61; 76. These values can be plugged into <link href="#corty3e-ch14-bx6-3">Equation 14.3</link> to find the <em>Y</em>-intercept:</p>
+<p id="corty3e-ch14-p108" block_type="sr_exp_txt">To calculate the <em>Y</em>-intercept, one needs the slope, which was just found to be &#8211;0.98, and the two means, <em>M<sub>X</sub></em> and <em>M<sub>Y</sub>.</em> The predictor variable is years of smoking so <em>M<sub>X</sub></em> &#61; 22; the predicted variable is percent of normal function and <em>M<sub>Y</sub></em> &#61; 76. These values can be plugged into Equation 14.3 to find the <em>Y</em>-intercept:</p>
 <p id="corty3e-ch14-p109" block_type="sr-exp-eq"><em>a</em> &#61; <em>M<sub>Y</sub></em> &#8211; <em>bM<sub>X</sub></em></p>
 <p id="corty3e-ch14-p110" block_type="sr-exp-eq">&#61; 76 &#8211; (&#8211;0.98 &#215; 22)</p>
 <p id="corty3e-ch14-p111" block_type="sr-exp-eq">&#61; 76 &#8211; (&#8211;21.5600)</p>
 <p id="corty3e-ch14-p112" block_type="sr-exp-eq">&#61; 76 &#43; (21.5600)</p>
 <p id="corty3e-ch14-p113" block_type="sr-exp-eq">&#61; 97.5600</p>
 <p id="corty3e-ch14-p114" block_type="sr-exp-eq">&#61; 97.56</p>
-<p id="corty3e-ch14-p115" block_type="txt">The <em>Y</em>-intercept for the regression line, which is the predicted value of <em>Y</em> when <em>X</em> &#61; 0, is 97.56. Given <em>b</em> &#61; &#8211;0.98 and <em>a</em> &#61; 97.56, it is now possible to complete the regression equation, <link href="#corty3e-ch14-bx6-1">Equation 14.1</link>:</p>
+<p id="corty3e-ch14-p115" block_type="txt">The <em>Y</em>-intercept for the regression line, which is the predicted value of <em>Y</em> when <em>X</em> &#61; 0, is 97.56. Given <em>b</em> &#61; &#8211;0.98 and <em>a</em> &#61; 97.56, it is now possible to complete the regression equation, Equation 14.1:</p>
 <p id="corty3e-ch14-p116" block_type="sr-exp-eq"><em>Y&#8242;</em> &#61; <em>bX</em> &#43; <em>a</em></p>
 <p id="corty3e-ch14-p117" block_type="sr-exp-eq">&#61; &#8211;0.98<em>X</em> &#43; 97.56</p>
-<p id="corty3e-ch14-p118" block_type="sr_exp_txt">This is the regression equation. Regression equations are used to predict a <em>Y</em> score for a case from its score on <em>X.</em> In the present instance, it can be used to predict a smoker&#8217;s lung function (<em>Y&#8242;</em>) based on how many years he or she has been smoking (<em>X</em>). Let&#8217;s see it in action and predict the percentage of normal lung function for a person who has been smoking for eight years. Or, phrased mathematically, if <em>X</em> &#61; 8, what is <em>Y&#8242;</em>? Applying <link href="#corty3e-ch14-bx6-1">Equation 14.1</link> to answer that question, it is predicted that a person who has been smoking for eight years will have lungs that function at 89.72&#37; of normal capacity:</p>
+<p id="corty3e-ch14-p118" block_type="sr_exp_txt">This is the regression equation. Regression equations are used to predict a <em>Y</em> score for a case from its score on <em>X.</em> In the present instance, it can be used to predict a smoker&#8217;s lung function (<em>Y&#8242;</em>) based on how many years he or she has been smoking (<em>X</em>). Let&#8217;s see it in action and predict the percentage of normal lung function for a person who has been smoking for eight years. Or, phrased mathematically, if <em>X</em> &#61; 8, what is <em>Y&#8242;</em>? Applying Equation 14.1 to answer that question, it is predicted that a person who has been smoking for eight years will have lungs that function at 89.72&#37; of normal capacity:</p>
 <p id="corty3e-ch14-p119" block_type="sr-exp-eq"><em>Y&#8242;</em> &#61; <em>bX</em> &#43; <em>a</em></p>
 <p id="corty3e-ch14-p120" block_type="sr-exp-eq">&#61; &#8211;0.98<em>X</em> &#43; 97.56</p>
 <p id="corty3e-ch14-p121" block_type="sr-exp-eq">&#61; (&#8211;0.98 &#215; 8) &#43; 97.56</p>
@@ -289,7 +289,7 @@
 </figure>
 <p id="corty3e_page_553" block_type="page_start">553</p>
 <p id="corty3e-ch14-p150" block_type="txt">The last column contains deviation scores (error scores), which sum to zero. So, how can the average amount of error be represented? With a standard deviation! And that is what a standard error of the estimate is, the standard deviation of the residual scores. As can be seen at the bottom of the column, for Dr. Paik&#8217;s data, the standard deviation of the residual scores, the standard error of the estimate, is 0.56.</p>
-<p id="corty3e-ch14-p151" block_type="txt">The definitional formula requires that we calculate the standard error of the estimate as the standard deviation of the residual scores. <link href="#corty3e-ch14-bx6-4">Equation 14.4</link> gives the easier-to-use computational formula, a formula that can be used as long as one knows <em>r</em> and <em>s<sub>Y </sub>.</em></p>
+<p id="corty3e-ch14-p151" block_type="txt">The definitional formula requires that we calculate the standard error of the estimate as the standard deviation of the residual scores. Equation 14.4 gives the easier-to-use computational formula, a formula that can be used as long as one knows <em>r</em> and <em>s<sub>Y </sub>.</em></p>
 <box title="" numbered="false" id="corty3e-ch14-bx6-4" block_type="eq-t">
 <box-metadata><box-title><phrase block_type="sec_num">Equation 14.4</phrase> <phrase block_type="sec_title">Formula for the Standard Error of the Estimate</phrase></box-title></box-metadata>
 <p id="corty3e-ch14-eqn-4" block_type="equation">
@@ -308,7 +308,7 @@
 <box title="Worked Example 14.2" numbered="false" id="corty3e-ch14-bx3-2" block_type="sr-exp-n">
 <p id="corty3e-ch14-p159" block_type="sr_exp_txt_ni">For another example of calculating the standard error of the estimate, a return to the cigarette smoking and lung function study is in order. In that study, 2,500 smokers reported how many years they had been smoking (<em>M</em> &#61; 22, <em>s</em> &#61; 9) and had their lung function measured as a percentage of normal (<em>M</em> &#61; 76, <em>s</em> =13). There was a strong and statistically significant inverse relationship, <em>r</em> &#61; &#8211;.68: the longer people smoked, the lower their lung function. After a regression equation was developed, it was used to predict that a person who had been smoking for eight years would have lungs functioning at 89.72&#37; of normal capacity. How much confidence should we have that this estimate is accurate?</p>
 <p id="corty3e_page_555" block_type="page_start">555</p>
-<p id="corty3e-ch14-p160" block_type="sr_exp_txt">The way to answer this is by calculating <em>s<sub>Y&#8211;Y</sub>&#8242;</em> using <link href="#corty3e-ch14-bx6-4">Equation 14.4</link>:</p>
+<p id="corty3e-ch14-p160" block_type="sr_exp_txt">The way to answer this is by calculating <em>s<sub>Y&#8211;Y</sub>&#8242;</em> using Equation 14.4:</p>
 <p id="corty3e-ch14-eqn-6" block_type="equation">
 <image asset-id="corty3e-ch14-img-18" alt="image" src="asset/ch14/corty3e_eqn14_555_01.jpg"/></p>
 <p id="corty3e-ch14-p161" block_type="sr_exp_txt">This standard error of the estimate of 9.53 means that the actual <em>Y</em> scores and <em>Y&#8242;</em> scores for the 2,500 people in the sample differed by almost 10 points, on average, on a 100-point scale. That seems like a fair amount of error. This suggests that predictions based on this regression equation aren&#8217;t very accurate.</p>
@@ -438,7 +438,7 @@ a.Y prime:: the value of <em>Y</em> predicted from <em>X</em> by a regression eq
 </query>
 </question>
 <box title="DIY" numbered="false" id="corty3e-ch14-bx4-1" block_type="bx4-h">
-<p id="corty3e-ch14-p239" block_type="bx4-txt-ni">In the DIY of <link href="corty3e-ch13.xml">Chapter 13</link>, you calculated the correlation between foot size and height. Now, take that same correlation coefficient and generate the regression equation to predict height from foot size. When you have arrived at the equation, use it to calculate <em>Y&#8242;</em> for the students on whom the equation was based. For each of the cases, calculate residual scores. Do they sum to zero? Now, find the standard deviation of the residual scores. Then, use <link href="#corty3e-ch14-bx6-4">Equation 14.4</link> to calculate the standard error of the estimate. Is that the same value you calculated for the standard deviation?</p>
+<p id="corty3e-ch14-p239" block_type="bx4-txt-ni">In the DIY of <link href="corty3e-ch13.xml">Chapter 13</link>, you calculated the correlation between foot size and height. Now, take that same correlation coefficient and generate the regression equation to predict height from foot size. When you have arrived at the equation, use it to calculate <em>Y&#8242;</em> for the students on whom the equation was based. For each of the cases, calculate residual scores. Do they sum to zero? Now, find the standard deviation of the residual scores. Then, use Equation 14.4 to calculate the standard error of the estimate. Is that the same value you calculated for the standard deviation?</p>
 <p id="corty3e-ch14-p240" block_type="bx4-txt">Want more fun? Select 10 new cases and use the regression equation to calculate <em>Y&#8242;</em> scores for them. Will the regression equation be as accurate for them as it was for the original group? Investigate this by calculating residual scores and finding their standard deviation. Is it larger or smaller than the first standard deviation? Why?</p>
 </box>
 

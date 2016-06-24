@@ -30,7 +30,7 @@
 <section id="corty3e-ch3-sec2-1" block_type="h2" chapter="3" title="" numbered="false" level="2" print_page="80">
 <section-metadata><section-title>Mean</section-title></section-metadata>
 <p id="corty3e_page_80" block_type="page_start">80</p>
-<p id="corty3e-ch3-p13" block_type="txt-ni">The <termref term="mean">mean</termref> is what most people think of when they contemplate the average. It is the sum of all the values in a set of data divided by the number of cases. The formula for <em>M,</em> the sample mean, is shown in <link href="#corty3e-ch3-bx6-1">Equation 3.1</link>.</p>
+<p id="corty3e-ch3-p13" block_type="txt-ni">The <termref term="mean">mean</termref> is what most people think of when they contemplate the average. It is the sum of all the values in a set of data divided by the number of cases. The formula for <em>M,</em> the sample mean, is shown in Equation 3.1.</p>
 <box title="" numbered="false" id="corty3e-ch3-bx6-1" block_type="eq-t">
 <box-metadata><box-title><phrase block_type="sec_num">Equation 3.1</phrase> <phrase block_type="sec_title">Formula for Sample Mean (<em>M</em>)</phrase></box-title></box-metadata>
 <p id="corty3e-ch3-eqn-1" block_type="equation">
@@ -41,7 +41,7 @@
 <p id="corty3e-ch3-p16" block_type="eq-mid"><em>X</em> &#61; the values of <em>X</em> for the cases in the sample</p>
 <p id="corty3e-ch3-p17" block_type="eq-last"><em>N</em> &#61; the number of cases in the sample</p>
 </box>
-<p id="corty3e-ch3-p18" block_type="txt">For practice in using <link href="#corty3e-ch3-bx6-1">Equation 3.1</link>, imagine that a demographer has selected five adults from the United States and measured their heights in inches. Here are the data she collected: 62, 65, 66, 69, and 73. Applying <link href="#corty3e-ch3-bx6-1">Equation 3.1</link>, she would calculate the sample mean:</p>
+<p id="corty3e-ch3-p18" block_type="txt">For practice in using Equation 3.1, imagine that a demographer has selected five adults from the United States and measured their heights in inches. Here are the data she collected: 62, 65, 66, 69, and 73. Applying Equation 3.1, she would calculate the sample mean:</p>
 <p id="corty3e-ch3-eqn-2" block_type="equation">
 <image asset-id="corty3e-ch3-img-2" alt="image" src="asset/ch3/corty3e_eqn01_80_02.jpg"/>
 </p>
@@ -83,7 +83,7 @@
 <section-metadata><section-title>Median</section-title></section-metadata>
 <p id="corty3e_page_83" block_type="page_start">83</p>
 <p id="corty3e-ch3-p27" block_type="txt-ni">The <termref term="median">median</termref> is the middle score, the score associated with the case that separates the top half of the scores from the bottom half. The median focuses on direction (more/less) and ignores information about the distance between scores. Because of this, the median can be used with ordinal data (unlike the mean). The abbreviation for median is <em>Mdn.</em></p>
-<p id="corty3e-ch3-p28" block_type="txt">The easiest way to calculate the median is to use the counting method, shown in <link href="#corty3e-ch3-bx6-2">Equation 3.2</link>. By this equation, the median is the score associated with case number <image asset-id="corty3e-ch3-img-9" alt="image" src="asset/ch3/corty3e_ineqn01_83_01.jpg"/>.</p>
+<p id="corty3e-ch3-p28" block_type="txt">The easiest way to calculate the median is to use the counting method, shown in Equation 3.2. By this equation, the median is the score associated with case number <image asset-id="corty3e-ch3-img-9" alt="image" src="asset/ch3/corty3e_ineqn01_83_01.jpg"/>.</p>
 <box title="" numbered="false" id="corty3e-ch3-bx6-2" block_type="eq-t">
 <box-metadata><box-title><phrase block_type="sec_num">Equation 3.2</phrase> <phrase block_type="sec_title">Formula for the Median (<em>Mdn</em>)</phrase></box-title></box-metadata>
 <p id="corty3e-ch3-p29" block_type="h4-txt-ni"><phrase block_type="h4-n-ri"><strong>Step 1</strong></phrase> Put the scores in order from low to high and number them (1, 2, 3, etc.).</p>
@@ -98,7 +98,7 @@
 <layout align="center" width="large" border="true"/>
 <image asset-id="corty3e-ch3-img-11" alt="image" src="asset/ch3/corty3e_table03_03.jpg"/>
 </figure></li>
-<li><p id="corty3e-ch3-p35" block_type="bl-mid">According to <link href="#corty3e-ch3-bx6-2">Equation 3.2</link>, the median is the raw score associated with the score number <image asset-id="corty3e-ch3-img-12" alt="image" src="asset/ch3/corty3e_ineqn01_83_01.jpg"/>.</p></li>
+<li><p id="corty3e-ch3-p35" block_type="bl-mid">According to Equation 3.2, the median is the raw score associated with the score number <image asset-id="corty3e-ch3-img-12" alt="image" src="asset/ch3/corty3e_ineqn01_83_01.jpg"/>.</p></li>
 <li><p id="corty3e-ch3-p36" block_type="bl-mid">Calculate <image asset-id="corty3e-ch3-img-13" alt="image" src="asset/ch3/corty3e_ineqn01_83_02.jpg"/>.</p></li>
 <li><p id="corty3e-ch3-p37" block_type="bl-mid">The median is the score associated with the third case.</p></li>
 <li><p id="corty3e-ch3-p38" block_type="bl-mid">Looking in <link href="#corty3e-ch3-fig-9">Table 3.3</link>, one can see that the third case has an <em>X</em> value of 66.</p></li>
@@ -111,7 +111,7 @@
 <caption><strong><phrase block_type="fig_num">Figure 3.4</phrase> Median as Balancing Point</strong> The numbers in parentheses above the scores are their ranks. The median is the balancing point, the center, for the <em>number</em> of scores. The mean (<link href="#corty3e-ch3-fig-6">Figure 3.2</link>) is the balancing point for the <em>distance</em> between scores. The distance between cases is irrelevant for the median.</caption>
 </figure>
 <p id="corty3e_page_84" block_type="page_start">84</p>
-<p id="corty3e-ch3-p41" block_type="txt">One advantage of the median over the mean is that it can be used with ordinal-level data. Another is that the median is less influenced by outliers. Let&#8217;s see what happens to 66.00, the median for the five scores, when the outlier, 107&#8243; Robert Wadlow, is added. According to <link href="#corty3e-ch3-bx6-2">Equation 3.2</link>, now that there are six scores, the median case is score number 3.5 and the median is the value associated with this case:</p>
+<p id="corty3e-ch3-p41" block_type="txt">One advantage of the median over the mean is that it can be used with ordinal-level data. Another is that the median is less influenced by outliers. Let&#8217;s see what happens to 66.00, the median for the five scores, when the outlier, 107&#8243; Robert Wadlow, is added. According to Equation 3.2, now that there are six scores, the median case is score number 3.5 and the median is the value associated with this case:</p>
 <p id="corty3e-ch3-eqn-4" block_type="equation">
 <image asset-id="corty3e-ch3-img-15" alt="image" src="asset/ch3/corty3e_eqn01_84_01.jpg"/>
 </p>
@@ -176,12 +176,12 @@
 <caption><strong><phrase block_type="fig_num">Figure 3.6</phrase> Number of Aggressive Comments Made Against the Bobo Doll by 10 Third Graders</strong> When sample size is small, as it is here, it is difficult to draw conclusions about the shape of a data set. This data set isn&#8217;t multimodal and doesn&#8217;t look skewed, so calculating the mean seems OK.</caption>
 </figure>
 <p id="corty3e-ch3-p63" block_type="sr-ex-txt">He calculates the mode first, because it is the easiest. Looking at <link href="#corty3e-ch3-fig-16">Figure 3.6</link>, he sees one peak, at 4, so he can report that the modal number of aggressive comments is 4.00 in his sample.</p>
-<p id="corty3e-ch3-p64" block_type="sr-ex-txt">Next, he calculates the mean using <link href="#corty3e-ch3-bx6-1">Equation 3.1</link>:</p>
+<p id="corty3e-ch3-p64" block_type="sr-ex-txt">Next, he calculates the mean using Equation 3.1:</p>
 <p id="corty3e-ch3-eqn-6" block_type="equation">
 <image asset-id="corty3e-ch3-img-21" alt="image" src="asset/ch3/corty3e_eqn01_87_01.jpg"/>
 </p>
 <p id="corty3e-ch3-p65" block_type="sr-ex-txt-ni">The mean number of aggressive comments is 4.90.</p>
-<p id="corty3e-ch3-p66" block_type="sr-ex-txt">To calculate the median, following <link href="#corty3e-ch3-bx6-2">Equation 3.2</link>, he arranges the scores in order and numbers them as shown in <link href="#corty3e-ch3-fig-18"><strong>Table 3.6</strong></link>. <em>N</em> &#61; 10, so the median is the value associated with score number <image asset-id="corty3e-ch3-img-22" alt="image" src="asset/ch3/corty3e_ineqn01_87_01.jpg"/>, the 5.5th score.</p>
+<p id="corty3e-ch3-p66" block_type="sr-ex-txt">To calculate the median, following Equation 3.2, he arranges the scores in order and numbers them as shown in <link href="#corty3e-ch3-fig-18"><strong>Table 3.6</strong></link>. <em>N</em> &#61; 10, so the median is the value associated with score number <image asset-id="corty3e-ch3-img-22" alt="image" src="asset/ch3/corty3e_ineqn01_87_01.jpg"/>, the 5.5th score.</p>
 <figure id="corty3e-ch3-fig-18" block_type="table" numbered="true" number="3.6" mmtype="image" mmsrc="" attr="">
 <layout align="center" width="large" border="true"/>
 <image asset-id="corty3e-ch3-img-23" alt="image" src="asset/ch3/corty3e_table03_06.jpg"/>
@@ -219,7 +219,7 @@
 </section>
 <section id="corty3e-ch3-sec2-5" block_type="h2" chapter="3" title="" numbered="false" level="2" print_page="89">
 <section-metadata><section-title>Range and Interquartile Range</section-title></section-metadata>
-<p id="corty3e-ch3-p81" block_type="txt-ni">The simplest measure of variability is the <termref term="range">range</termref>, the distance from the lowest score to the highest score. In <link href="#corty3e-ch3-fig-19">Figure 3.7</link>, notice how the range of scores, marked by a double-headed arrow below the <em>X</em>-axis, is greater for the set of scores on the right. The formula for the range, which says to subtract the smallest score from the largest score, appears in <link href="#corty3e-ch3-bx6-3">Equation 3.3</link>.</p>
+<p id="corty3e-ch3-p81" block_type="txt-ni">The simplest measure of variability is the <termref term="range">range</termref>, the distance from the lowest score to the highest score. In <link href="#corty3e-ch3-fig-19">Figure 3.7</link>, notice how the range of scores, marked by a double-headed arrow below the <em>X</em>-axis, is greater for the set of scores on the right. The formula for the range, which says to subtract the smallest score from the largest score, appears in Equation 3.3.</p>
 <box title="" numbered="false" id="corty3e-ch3-bx6-3" block_type="eq-t">
 <box-metadata><box-title><phrase block_type="sec_num">Equation 3.3</phrase> <phrase block_type="sec_title">Formula for Range</phrase></box-title></box-metadata>
 <p id="corty3e-ch3-p82" block_type="eq">Range &#61; <em>X</em><sub>High</sub> &#8211; <em>X</em><sub>Low</sub></p>
@@ -263,7 +263,7 @@
 <p id="corty3e-ch3-p103" block_type="eq">Population deviation score &#61; <em>X &#8211;</em> &#956;</p>
 <p id="corty3e-ch3-p104" block_type="txt">To understand how deviation scores measure variability, examine the two distributions in <link href="#corty3e-ch3-fig-19">Figure 3.7</link> on page 89. The distribution on the right has more variability, a greater range of scores, than is found in the distribution on the left. Said another way, the scores are less tightly clustered around the mean in the distribution on the right than they are in the distribution on the left. The distribution on the right has some cases that fall farther away from the mean and these will have bigger deviation scores. Deviation scores serve as a measure of variability, and bigger deviation scores mean more variability.</p>
 <p id="corty3e-ch3-p105" block_type="txt">If deviation scores are measures of variability and there is a deviation score for each case in the population, then how is the size of the deviation scores summarized? The obvious approach is to find the average deviation score by adding together all the deviation scores and dividing this sum by the number of scores. Unfortunately, this doesn&#8217;t work. Remember, the mean balances the deviation scores, so the sum of a set of deviation scores is always zero. As a result, the average deviation score will always be zero no matter how much variability there was in the data set.</p>
-<p id="corty3e-ch3-p106" block_type="txt">To get around this problem, statisticians square the deviation scores&#8212;making them all positive&#8212;and then find the average of the squared deviation scores. The result is the variance, the mean squared deviation score. For a population, variance is abbreviated as &#963;<sup>2</sup> (&#963; is the lowercase version of the Greek letter sigma; &#963;<sup>2</sup> is pronounced &#8220;sigma squared&#8221;). The formula for calculating population variance is shown in <link href="#corty3e-ch3-bx6-4">Equation 3.4</link>.</p>
+<p id="corty3e-ch3-p106" block_type="txt">To get around this problem, statisticians square the deviation scores&#8212;making them all positive&#8212;and then find the average of the squared deviation scores. The result is the variance, the mean squared deviation score. For a population, variance is abbreviated as &#963;<sup>2</sup> (&#963; is the lowercase version of the Greek letter sigma; &#963;<sup>2</sup> is pronounced &#8220;sigma squared&#8221;). The formula for calculating population variance is shown in Equation 3.4.</p>
 <box title="" numbered="false" id="corty3e-ch3-bx6-4" block_type="eq-t">
 <box-metadata><box-title><phrase block_type="sec_num">Equation 3.4</phrase> <phrase block_type="sec_title">Formula for Population Variance (&#963;<sup>2</sup>)</phrase></box-title></box-metadata>
 <p id="corty3e-ch3-eqn-7" block_type="equation">
@@ -278,7 +278,7 @@
 </section>
 <section id="corty3e-ch3-sec2-8" block_type="h2" chapter="3" title="" numbered="false" level="2" print_page="92">
 <section-metadata><section-title>Population Standard Deviation</section-title></section-metadata>
-<p id="corty3e-ch3-p112" block_type="txt-ni">Interpreting variance can be confusing because it is based on squared scores. The solution is simple: find the square root of the variance. The square root of the variance is called the standard deviation, and it transforms the variance back into the original unit of measurement. The standard deviation is the most commonly reported measure of variability. For a population, the standard deviation is abbreviated as &#963;. The formula for calculating a population standard deviation is shown in <link href="#corty3e-ch3-bx6-5">Equation 3.5</link>.</p>
+<p id="corty3e-ch3-p112" block_type="txt-ni">Interpreting variance can be confusing because it is based on squared scores. The solution is simple: find the square root of the variance. The square root of the variance is called the standard deviation, and it transforms the variance back into the original unit of measurement. The standard deviation is the most commonly reported measure of variability. For a population, the standard deviation is abbreviated as &#963;. The formula for calculating a population standard deviation is shown in Equation 3.5.</p>
 <p id="corty3e_page_93" block_type="page_start">93</p>
 <box title="" numbered="false" id="corty3e-ch3-bx6-5" block_type="eq-t">
 <box-metadata><box-title><phrase block_type="sec_num">Equation 3.5</phrase> <phrase block_type="sec_title">Formula for Population Standard Deviation(&#963;)</phrase></box-title></box-metadata>
@@ -286,7 +286,7 @@
 <image asset-id="corty3e-ch3-img-27" alt="image" src="asset/ch3/corty3e_eqn01_93_01.jpg"/>
 </p>
 <p id="corty3e-ch3-p113" block_type="eq-txt-ni">where &#963; &#61; population standard deviation</p>
-<p id="corty3e-ch3-p114" block_type="eq-unl">&#963;<sup>2</sup> &#61; population variance (<link href="#corty3e-ch3-bx6-4">Equation 3.4</link>)</p>
+<p id="corty3e-ch3-p114" block_type="eq-unl">&#963;<sup>2</sup> &#61; population variance (Equation 3.4)</p>
 </box>
 <box numbered="false" id="corty3e-ch3-exp1-3" block_type="mn1">
 <p id="corty3e-ch3-p115" block_type="mn-ext-ni"><em>A standard deviation gives information about the average distance that scores fall from the mean.</em></p>
@@ -302,7 +302,7 @@
 <image asset-id="corty3e-ch3-img-29" alt="image" src="asset/ch3/corty3e_fig03_un01.jpg"/>
 </figure>
 <p id="corty3e_page_94" block_type="page_start">94</p>
-<p id="corty3e-ch3-p119" block_type="txt">The formula for calculating sample variance is shown in <link href="#corty3e-ch3-bx6-6">Equation 3.6</link>. Sample variance is abbreviated <em>s</em><sup>2</sup>, pronounced &#8220;s squared&#8221; and sample standard deviation is abbreviated <em>s.</em> (<em>s</em> is used because sigma, &#963;, is the Greek letter &#8220;s.&#8221;)</p>
+<p id="corty3e-ch3-p119" block_type="txt">The formula for calculating sample variance is shown in Equation 3.6. Sample variance is abbreviated <em>s</em><sup>2</sup>, pronounced &#8220;s squared&#8221; and sample standard deviation is abbreviated <em>s.</em> (<em>s</em> is used because sigma, &#963;, is the Greek letter &#8220;s.&#8221;)</p>
 <box title="" numbered="false" id="corty3e-ch3-bx6-6" block_type="eq-t">
 <box-metadata><box-title><phrase block_type="sec_num">Equation 3.6</phrase> <phrase block_type="sec_title">Formula for Sample Variance (<em>s</em><sup>2</sup>)</phrase></box-title></box-metadata>
 <p id="corty3e-ch3-eqn-9" block_type="equation">
@@ -329,14 +329,14 @@
 </p>
 <p id="corty3e-ch3-p130" block_type="txt">And, that&#8217;s the answer. The demographer would report the sample variance for the five Americans as <em>s</em><sup>2</sup> &#61; 17.50. With variances, bigger numbers mean more variability. Without another variance for comparison, it is hard to say whether this sample variance of 17.50 means there is a lot of variability or a little variability in this sample.</p>
 <p id="corty3e-ch3-p131" block_type="txt">Wondering where the &#8220;correction&#8221; is that makes this sample variance larger and a better estimate of the population value? It is in the denominator, where 1 is subtracted from <em>N,</em> the number of cases. This subtraction makes the denominator smaller, which makes the quotient, <em>s</em><sup>2</sup>, larger, making the sample variance a better estimate of &#963;<sup>2</sup>.</p>
-<p id="corty3e-ch3-p132" block_type="txt">Once the sample variance, <em>s</em><sup>2</sup>, has been calculated, it is straightforward to calculate <em>s,</em> the sample standard deviation. The formula for the sample standard deviation is shown in <link href="#corty3e-ch3-bx6-7">Equation 3.7</link>.</p>
+<p id="corty3e-ch3-p132" block_type="txt">Once the sample variance, <em>s</em><sup>2</sup>, has been calculated, it is straightforward to calculate <em>s,</em> the sample standard deviation. The formula for the sample standard deviation is shown in Equation 3.7.</p>
 <box title="" numbered="false" id="corty3e-ch3-bx6-7" block_type="eq-t">
 <box-metadata><box-title><phrase block_type="sec_num">Equation 3.7</phrase> <phrase block_type="sec_title">Formula for Sample Standard Deviation (<em>s</em>)</phrase></box-title></box-metadata>
 <p id="corty3e-ch3-eqn-11" block_type="equation">
 <image asset-id="corty3e-ch3-img-27" alt="image" src="asset/ch3/corty3e_eqn01_95_02.jpg"/>
 </p>
 <p id="corty3e-ch3-p133" block_type="eq-txt-ni">where <em>s</em> &#61; sample standard deviation</p>
-<p id="corty3e-ch3-p134" block_type="eq-unl"><em>s</em><sup>2</sup> &#61; sample variance (<link href="#corty3e-ch3-bx6-6">Equation 3.6</link>)</p>
+<p id="corty3e-ch3-p134" block_type="eq-unl"><em>s</em><sup>2</sup> &#61; sample variance (Equation 3.6)</p>
 </box>
 <p id="corty3e-ch3-p135" block_type="txt">As <em>s</em><sup>2</sup> &#61; 17.50 for the five heights, here is the calculation for the standard deviation for the sample:</p>
 <p id="corty3e-ch3-eqn-12" block_type="equation">
@@ -387,14 +387,14 @@
 <image asset-id="corty3e-ch3-img-38" alt="image" src="asset/ch3/corty3e_fig03_09.jpg"/>
 <caption><strong><phrase block_type="fig_num">Figure 3.9</phrase> Histogram of Maze Running Times for Eight Rats</strong> When sample size is small, it is difficult to judge the shape of a distribution. This histogram does not show obvious skewness, so calculating the mean seems reasonable.</caption>
 </figure>
-<p id="corty3e-ch3-p157" block_type="sr-x-txt"><link href="#corty3e-ch3-fig-32">Figure 3.9</link> doesn&#8217;t illustrate anything unusual in terms of shape. The sample size is small, but there is nothing obviously odd in terms of modality or skew, so she can proceed with calculating the mean. Using <link href="#corty3e-ch3-bx6-1">Equation 3.1</link>, she should sum all the scores and divide by the number of cases to find the mean:</p>
+<p id="corty3e-ch3-p157" block_type="sr-x-txt"><link href="#corty3e-ch3-fig-32">Figure 3.9</link> doesn&#8217;t illustrate anything unusual in terms of shape. The sample size is small, but there is nothing obviously odd in terms of modality or skew, so she can proceed with calculating the mean. Using Equation 3.1, she should sum all the scores and divide by the number of cases to find the mean:</p>
 <p id="corty3e_page_98" block_type="page_start">98</p>
 <p id="corty3e-ch3-eqn-15" block_type="equation">
 <image asset-id="corty3e-ch3-img-39" alt="image" src="asset/ch3/corty3e_eqn03_98_01.jpg"/>
 </p>
 <p id="corty3e-ch3-p158" block_type="sr-x-txt-ni">The mean time to run the maze is 5.68 seconds.</p>
 <p id="corty3e-ch3-p159" block_type="sr-x-h1"><strong>Variability</strong></p>
-<p id="corty3e-ch3-p160" block_type="sr-x-txt-ni">The most often reported measure of variability is the standard deviation, <em>s.</em> To calculate <em>s,</em> she completes <link href="#corty3e-ch3-fig-34"><strong>Table 3.9</strong></link> to lead her through the first four steps involved in calculating the sample variance (<link href="#corty3e-ch3-bx6-4">Equation 3.4</link>).</p>
+<p id="corty3e-ch3-p160" block_type="sr-x-txt-ni">The most often reported measure of variability is the standard deviation, <em>s.</em> To calculate <em>s,</em> she completes <link href="#corty3e-ch3-fig-34"><strong>Table 3.9</strong></link> to lead her through the first four steps involved in calculating the sample variance (Equation 3.4).</p>
 <figure id="corty3e-ch3-fig-34" block_type="table" numbered="true" number="3.9" mmtype="image" mmsrc="" attr="">
 <layout align="center" width="large" border="true"/>
 <image asset-id="corty3e-ch3-img-40" alt="image" src="asset/ch3/corty3e_table03_09.jpg"/>
@@ -404,7 +404,7 @@
 <p id="corty3e-ch3-eqn-16" block_type="equation">
 <image asset-id="corty3e-ch3-img-41" alt="image" src="asset/ch3/corty3e_eqn03_98_02.jpg"/>
 </p>
-<p id="corty3e-ch3-p163" block_type="sr-x-txt-ni">To find the sample standard deviation, she applies <link href="#corty3e-ch3-bx6-7">Equation 3.7</link>:</p>
+<p id="corty3e-ch3-p163" block_type="sr-x-txt-ni">To find the sample standard deviation, she applies Equation 3.7:</p>
 <p id="corty3e-ch3-eqn-17" block_type="equation">
 <image asset-id="corty3e-ch3-img-42" alt="image" src="asset/ch3/corty3e_eqn03_99_01.jpg"/>
 </p>
@@ -625,7 +625,7 @@ a.variance:: a measure of variability for interval- or ratio-level data; the mea
 <p id="corty3e-ch3-p286" block_type="cr-x-nl-txt"><phrase block_type="question_num">3.59</phrase> A researcher takes two samples, one with <em>N</em> &#61; 10 and the other with <em>N</em> &#61; 100, from the same population.</p>
 <list id="corty3e-ch3-list-14" type="ordered" block_type="loweralpha">
 <li><p id="corty3e-ch3-p287" block_type="cr-x-nl-alpha-lc">Which sample, <em>N</em> &#61; 10 or <em>N</em> &#61; 100, will have to correct <em>s</em> <sup>2</sup> less in order to approximate the population variance?</p></li>
-<li><p id="corty3e-ch3-p288" block_type="cr-x-nl-alpha-lc">Why is it sensible that <link href="#corty3e-ch3-bx6-6">Equation 3.6</link> works this way?</p></li>
+<li><p id="corty3e-ch3-p288" block_type="cr-x-nl-alpha-lc">Why is it sensible that Equation 3.6 works this way?</p></li>
 </list>
 <p id="corty3e-ch3-p289" block_type="cr-x-nl-txt"><phrase block_type="question_num">3.60</phrase> A meteorologist measured the temperature every 2 hours for a day in January and for a day in June. Here are the temperatures, in degrees Fahrenheit, for the January day: 23, 22, 21, 21, 23, 27, 28, 31, 32, 32, 30, and 26. The June temperatures were: 56, 56, 59, 62, 64, 67, 73, 75, 77, 76, 75, and 74. On which day were the temperatures more varied? Support the conclusion by calculating a measure of variability.</p>
 <box title="SPSS" numbered="false" id="corty3e-ch3-bx3-3" block_type="bx3-h">

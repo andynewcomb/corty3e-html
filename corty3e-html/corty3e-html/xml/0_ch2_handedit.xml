@@ -81,7 +81,7 @@
 <p id="corty3e-ch2-p35" block_type="mn-ext-ni"><em>Cumulative frequencies can only be calculated for data that have an order, data where the numbers tell direction.</em></p>
 </box>
 <p id="corty3e-ch2-p38" block_type="txt">The other new columns in <link href="#corty3e-ch2-fig-3">Table 2.3</link> take information that is already there, frequency and cumulative frequency, and present it as percentages. Percentages are a way of transforming scores to put them in context. To see how this works, imagine that a psychologist said that two of the clients he treated in the last year experienced major depression. Does he specialize in the treatment of depression? The answer depends on how many total clients he treated in the last year. If he offered therapy to four patients, then half of them, or 50&#37;, were depressed. If he treated 100 cases, then only 2&#37; were depressed. Whether the psychologist is a depression specialist depends on what percentage of his practice is devoted to treating that illness. Percentages put scores in context.</p>
-<p id="corty3e-ch2-p39" block_type="txt">The percentage column, abbreviated &#37;, takes the information in the frequency column and turns it into percentages. <link href="#corty3e-ch2-bx6-1">Equation 2.1</link> shows that this is done by dividing a frequency by the total number of cases in the data set and then multiplying the quotient by 100.</p>
+<p id="corty3e-ch2-p39" block_type="txt">The percentage column, abbreviated &#37;, takes the information in the frequency column and turns it into percentages. Equation 2.1 shows that this is done by dividing a frequency by the total number of cases in the data set and then multiplying the quotient by 100.</p>
 <box title="" numbered="false" id="corty3e-ch2-bx6-1" block_type="eq-t">
 <box-metadata><box-title><phrase block_type="sec_num">Equation 2.1</phrase> <phrase block_type="sec_title">Formula for Calculating Frequency Percentage (%) for a Frequency Distribution</phrase></box-title></box-metadata>
 <p id="corty3e-ch2-eqn-1" block_type="equation">
@@ -107,7 +107,7 @@
 <p id="corty3e-ch2-p47" block_type="whl"><em>f</em><em><sub>c</sub></em> &#61; cumulative frequency</p>
 <p id="corty3e-ch2-p48" block_type="whl"><em>N</em> &#61; total number of cases</p>
 </box>
-<p id="corty3e-ch2-p49" block_type="txt">The formula for cumulative percentage is given in <link href="#corty3e-ch2-bx6-2">Equation 2.2</link>. To find &#37;<sub>c</sub> for a given row in a frequency distribution table, one divides the row&#8217;s cumulative frequency by the total number of cases and then multiplies the quotient by 100. In the second to last row of <link href="#corty3e-ch2-fig-3">Table 2.3</link>, where the cumulative frequency is 23, one would calculate</p>
+<p id="corty3e-ch2-p49" block_type="txt">The formula for cumulative percentage is given in Equation 2.2. To find &#37;<sub>c</sub> for a given row in a frequency distribution table, one divides the row&#8217;s cumulative frequency by the total number of cases and then multiplies the quotient by 100. In the second to last row of <link href="#corty3e-ch2-fig-3">Table 2.3</link>, where the cumulative frequency is 23, one would calculate</p>
 <p id="corty3e-ch2-eqn-4" block_type="equation">
 <image asset-id="corty3e-ch2-img-7" alt="image" src="asset/ch2/corty3e_eqn02_44_02.jpg"/>
 </p>
@@ -502,7 +502,7 @@
 <image asset-id="corty3e-ch2-img-47" alt="image" src="asset/ch2/corty3e_table02_18.jpg"/>
 </figure>
 <p id="corty3e_page_68" block_type="page_start">68</p>
-<p id="corty3e-ch2-p191" block_type="sr-x-txt"><link href="#corty3e-ch2-fig-44">Table 2.18</link> contains only the intervals, the midpoints, and the frequencies. Using <link href="#corty3e-ch2-fig-1">Figure 2.1</link> as a guide, stair-step up to find the cumulative frequencies. Then use <link href="#corty3e-ch2-bx6-1">Equation 2.1</link> to transform frequencies into percentages and <link href="#corty3e-ch2-bx6-2">Equation 2.2</link> to transform cumulative frequencies into cumulative percentages in order to complete the grouped frequency distribution (see <strong><link href="#corty3e-ch2-fig-45">Table 2.19</link></strong>).</p>
+<p id="corty3e-ch2-p191" block_type="sr-x-txt"><link href="#corty3e-ch2-fig-44">Table 2.18</link> contains only the intervals, the midpoints, and the frequencies. Using <link href="#corty3e-ch2-fig-1">Figure 2.1</link> as a guide, stair-step up to find the cumulative frequencies. Then use Equation 2.1 to transform frequencies into percentages and Equation 2.2 to transform cumulative frequencies into cumulative percentages in order to complete the grouped frequency distribution (see <strong><link href="#corty3e-ch2-fig-45">Table 2.19</link></strong>).</p>
 <figure id="corty3e-ch2-fig-45" block_type="table" numbered="true" number="2.19" mmtype="image" mmsrc="" attr="">
 <layout align="center" width="large" border="true"/>
 <image asset-id="corty3e-ch2-img-48" alt="image" src="asset/ch2/corty3e_table02_19.jpg"/>

@@ -94,14 +94,14 @@
 <li><p id="corty3e-ch15-p50" block_type="nl-last">The critical value of chi-square also depends on how many degrees of freedom there are. Each row in the table of critical values represents a different number of degrees of freedom. The critical value of chi-square is found at the intersection of the column for the desired alpha level with the row for the correct number of degrees of freedom.</p></li>
 </list>
 <p id="corty3e_page_571" block_type="page_start">571</p>
-<p id="corty3e-ch15-p51" block_type="txt-ni">The next step is to find the degrees of freedom, which can be calculated using <link href="#corty3e-ch15-bx6-1">Equation 15.1</link>.</p>
+<p id="corty3e-ch15-p51" block_type="txt-ni">The next step is to find the degrees of freedom, which can be calculated using Equation 15.1.</p>
 <box title="" numbered="false" id="corty3e-ch15-bx6-1" block_type="eq-t">
 <box-metadata><box-title><phrase block_type="sec_num">Equation 15.1</phrase> <phrase block_type="sec_title">Degrees of Freedom for a Chi-Square Goodness-of-fit Test</phrase></box-title></box-metadata>
 <p id="corty3e-ch15-p52" block_type="eq"><em>df</em> &#61; <em>k</em> &#8211; 1</p>
 <p id="corty3e-ch15-p53" block_type="eq-txt-ni">where <em>df</em> &#61; degrees of freedom</p>
 <p id="corty3e-ch15-p54" block_type="eq-unl"><em>k</em> &#61; number of categories</p>
 </box>
-<p id="corty3e-ch15-p55" block_type="txt"><link href="#corty3e-ch15-bx6-1">Equation 15.1</link> says to calculate degrees of freedom (<em>df</em>) for a chi-square goodness-of-fit test as the number of categories, <em>k,</em> minus 1. For the ticket data, the variable is age of drivers and it has two categories&#8212;adults and teens. This can be seen in the two cells in <link href="#corty3e-ch15-fig-1">Table 15.1</link>. With <em>k</em> &#61; 2, degrees of freedom is calculated as follows:</p>
+<p id="corty3e-ch15-p55" block_type="txt">Equation 15.1 says to calculate degrees of freedom (<em>df</em>) for a chi-square goodness-of-fit test as the number of categories, <em>k,</em> minus 1. For the ticket data, the variable is age of drivers and it has two categories&#8212;adults and teens. This can be seen in the two cells in <link href="#corty3e-ch15-fig-1">Table 15.1</link>. With <em>k</em> &#61; 2, degrees of freedom is calculated as follows:</p>
 <p id="corty3e-ch15-p56" block_type="eq"><em>df</em> &#61; <em>k</em> &#8211; 1</p>
 <p id="corty3e-ch15-p57" block_type="eq">&#61; 2 &#8211; 1</p>
 <p id="corty3e-ch15-p58" block_type="eq">&#61; 1</p>
@@ -129,7 +129,7 @@
 <layout align="center" width="medium" border="true"/>
 <image asset-id="corty3e-ch15-img-5" alt="image" src="asset/ch15/corty3e_table15_03.jpg"/>
 </figure>
-<p id="corty3e-ch15-p69" block_type="txt">The next step is to calculate the expected frequencies for each cell. It is already known that 8&#37; of drivers are teens. The total percentage of drivers is 100&#37;. So, 100&#37; &#8211; 8&#37;, or 92&#37;, of drivers must be adults. These two percentages, 8&#37; for teens and 92&#37; for adults, are the expected <em>percentages,</em> abbreviated &#37;<sub>Expected</sub>, for the two cells. If the null hypothesis is true, one would expect that 8&#37; of tickets would go to teens and 92&#37; to adults. These expected percentages are used to calculate the expected frequencies, as shown in <link href="#corty3e-ch15-bx6-2">Equation 15.2</link>.</p>
+<p id="corty3e-ch15-p69" block_type="txt">The next step is to calculate the expected frequencies for each cell. It is already known that 8&#37; of drivers are teens. The total percentage of drivers is 100&#37;. So, 100&#37; &#8211; 8&#37;, or 92&#37;, of drivers must be adults. These two percentages, 8&#37; for teens and 92&#37; for adults, are the expected <em>percentages,</em> abbreviated &#37;<sub>Expected</sub>, for the two cells. If the null hypothesis is true, one would expect that 8&#37; of tickets would go to teens and 92&#37; to adults. These expected percentages are used to calculate the expected frequencies, as shown in Equation 15.2.</p>
 <p id="corty3e_page_573" block_type="page_start">573</p>
 <box title="" numbered="false" id="corty3e-ch15-bx6-2" block_type="eq-t">
 <box-metadata><box-title><phrase block_type="sec_num">Equation 15.2</phrase> <phrase block_type="sec_title">Formula for Calculating Expected Frequency</phrase></box-title></box-metadata>
@@ -139,11 +139,11 @@
 <p id="corty3e-ch15-p71" block_type="eq-unl">&#37;<sub>Expected</sub> &#61; expected percentage for a cell/category</p>
 <p id="corty3e-ch15-p72" block_type="eq-unl"><em>N</em> &#61; total number of cases in the sample</p>
 </box>
-<p id="corty3e-ch15-p73" block_type="txt">To calculate the expected frequency of traffic tickets for teenagers in this sample where &#37;<sub>Expected</sub> &#61; 8&#37; and <em>N</em> &#61; 72, Dr. Koenig uses <link href="#corty3e-ch15-bx6-2">Equation 15.2</link>:</p>
+<p id="corty3e-ch15-p73" block_type="txt">To calculate the expected frequency of traffic tickets for teenagers in this sample where &#37;<sub>Expected</sub> &#61; 8&#37; and <em>N</em> &#61; 72, Dr. Koenig uses Equation 15.2:</p>
 <p id="corty3e-ch15-eqn-2" block_type="equation">
 <image asset-id="corty3e-ch15-img-7" alt="image" src="asset/ch15/corty3e_eqn15_573_02.jpg"/></p>
 <p id="corty3e-ch15-p74" block_type="txt">This means that if the null hypothesis were true and teens received their fair share of the tickets, which is 8&#37;, one would expect 5.76 of these 72 tickets to have been issued to teenagers. Don&#8217;t be bothered by the fact that there are fractional tickets. Expected frequencies don&#8217;t have to be whole numbers.</p>
-<p id="corty3e-ch15-p75" block_type="txt"><link href="#corty3e-ch15-bx6-2">Equation 15.2</link> is also used by Dr. Koenig to calculate the expected frequency for adult tickets. The sample size, <em>N,</em> is still 72, but the expected percentage is now 92&#37;:</p>
+<p id="corty3e-ch15-p75" block_type="txt">Equation 15.2 is also used by Dr. Koenig to calculate the expected frequency for adult tickets. The sample size, <em>N,</em> is still 72, but the expected percentage is now 92&#37;:</p>
 <p id="corty3e-ch15-eqn-3" block_type="equation">
 <image asset-id="corty3e-ch15-img-8" alt="image" src="asset/ch15/corty3e_eqn15_573_03.jpg"/></p>
 <p id="corty3e-ch15-p76" block_type="txt">If the null hypothesis were true, one would expect the vast majority of the 72 tickets in the sample, 66.24, to go to adults. Only 5.76 are expected to go to teens. <link href="#corty3e-ch15-fig-9"><strong>Table 15.4</strong></link> shows the observed frequencies and the expected frequencies. Note that all expected frequencies are greater than 5, so the third assumption was not violated.</p>
@@ -154,10 +154,10 @@
 <p id="corty3e_page_574" block_type="page_start">574</p>
 <p id="corty3e-ch15-p77" block_type="txt">Notice something interesting in <link href="#corty3e-ch15-fig-9">Table 15.4</link>. If the expected frequencies for all the categories are added up, the total is the same as the original sample size: 5.76 &#43; 66.24 &#61; 72.00. This will always be the case and is a good way to check that the math was done correctly in calculating expected frequencies.</p>
 <box title="A Common Question" numbered="false" id="corty3e-ch15-bx1-1" block_type="bx-1-h">
-<p id="corty3e-ch15-p78" block_type="bx1-que"><strong>Q</strong> Do I have to use <link href="#corty3e-ch15-bx6-2">Equation 15.2</link> to calculate expected frequencies for each cell?</p>
+<p id="corty3e-ch15-p78" block_type="bx1-que"><strong>Q</strong> Do I have to use Equation 15.2 to calculate expected frequencies for each cell?</p>
 <p id="corty3e-ch15-p79" block_type="bx1-ans"><strong>A</strong> No. You can take advantage of the fact that the expected frequencies add up to <em>N</em> and only calculate expected frequencies for as many categories as there are degrees of freedom. Then subtract the calculated frequencies from <em>N</em> to find the missing frequency.</p>
 </box>
-<p id="corty3e-ch15-p80" block_type="txt">Now that the observed frequencies and expected frequencies are known, they will be used to calculate the test statistic, chi-square. The formula for chi-square is shown in <link href="#corty3e-ch15-bx6-3">Equation 15.3</link>.</p>
+<p id="corty3e-ch15-p80" block_type="txt">Now that the observed frequencies and expected frequencies are known, they will be used to calculate the test statistic, chi-square. The formula for chi-square is shown in Equation 15.3.</p>
 <box title="" numbered="false" id="corty3e-ch15-bx6-3" block_type="eq-t">
 <box-metadata><box-title><phrase block_type="sec_num">Equation 15.3</phrase> <phrase block_type="sec_title">Formula for Calculating Chi-Square (&#967;2)</phrase></box-title></box-metadata>
 <p id="corty3e-ch15-eqn-4" block_type="equation">
@@ -166,7 +166,7 @@
 <p id="corty3e-ch15-p82" block_type="eq-unl"><em>f</em><sub>Observed</sub> &#61; observed frequency for a cell/category</p>
 <p id="corty3e-ch15-p83" block_type="eq-unl"><em>f</em><sub>Expected</sub> &#61; expected frequency for a cell/category</p>
 </box>
-<p id="corty3e-ch15-p84" block_type="txt">To use <link href="#corty3e-ch15-bx6-3">Equation 15.3</link> to calculate chi-square, follow these four steps:</p>
+<p id="corty3e-ch15-p84" block_type="txt">To use Equation 15.3 to calculate chi-square, follow these four steps:</p>
 <list id="corty3e-ch15-list-11" type="ordered" block_type="numbered">
 <li><p id="corty3e-ch15-p85" block_type="nl-first">For each cell/category, subtract the expected frequency from the observed frequency.</p></li>
 <li><p id="corty3e-ch15-p86" block_type="nl-mid">Square each difference.</p></li>
@@ -233,7 +233,7 @@
 <p id="corty3e-ch15-p115" block_type="sr_exp_h4_txt"><phrase block_type="h4-n-ri"><strong>Step 3</strong></phrase> <strong>List the Hypotheses.</strong> The null hypothesis will state that the distribution of outcomes in the population is the same as is specified. The alternative hypothesis will state that the distribution of outcomes in the population is different from the specified values. The specified values, as percentages, are found in <link href="#corty3e-ch15-fig-12">Table 15.5</link>.</p>
 <p id="corty3e-ch15-p116" block_type="sr-exp-eq"><em>H</em><sub>0</sub>: In the population, the distribution of A&#8217;s, B&#8217;s, C&#8217;s, and D&#8217;s/F&#8217;s is, respectively, 19&#37;, 33&#37;, 42&#37;, and 6&#37;.</p>
 <p id="corty3e-ch15-p117" block_type="sr-exp-eq"><em>H</em><sub>1</sub>: In the population, the distribution of A&#8217;s, B&#8217;s, C&#8217;s, and D&#8217;s/F&#8217;s is not, respectively, 19&#37;, 33&#37;, 42&#37;, and 6&#37;.</p>
-<p id="corty3e-ch15-p118" block_type="sr_exp_h4_txt"><phrase block_type="h4-n-ri"><strong>Step 4</strong></phrase> <strong>Set the Decision Rule.</strong> Finding the critical value of chi-square depends on what is set as an acceptable risk of Type I error and the number of degrees of freedom. Dr. Wald follows the convention for Type I error and uses &#945; &#61; .05. Degrees of freedom are calculated with <link href="#corty3e-ch15-bx6-1">Equation 15.1</link>, which involves knowing <em>k,</em> the number of categories of outcome that are possible. There are four categories for grades (A, B, C, and D or F), so <em>k</em> &#61; 4. To calculate degrees of freedom, apply <link href="#corty3e-ch15-bx6-1">Equation 15.1</link>:</p>
+<p id="corty3e-ch15-p118" block_type="sr_exp_h4_txt"><phrase block_type="h4-n-ri"><strong>Step 4</strong></phrase> <strong>Set the Decision Rule.</strong> Finding the critical value of chi-square depends on what is set as an acceptable risk of Type I error and the number of degrees of freedom. Dr. Wald follows the convention for Type I error and uses &#945; &#61; .05. Degrees of freedom are calculated with Equation 15.1, which involves knowing <em>k,</em> the number of categories of outcome that are possible. There are four categories for grades (A, B, C, and D or F), so <em>k</em> &#61; 4. To calculate degrees of freedom, apply Equation 15.1:</p>
 <p id="corty3e-ch15-p119" block_type="sr-exp-eq"><em>df</em> &#61; <em>k</em> &#8211; 1</p>
 <p id="corty3e-ch15-p120" block_type="sr-exp-eq">&#61; 4 &#8211;1</p>
 <p id="corty3e-ch15-p121" block_type="sr-exp-eq">&#61; 3</p>
@@ -244,7 +244,7 @@
 </list>
 <p id="corty3e-ch15-p125" block_type="sr_exp_h4_txt"><phrase block_type="h4-n-ri"><strong>Step 5</strong></phrase> <strong>Calculate the Test Statistic.</strong> To calculate the chi-square value, a researcher needs to know the observed and expected frequencies. The observed frequencies were shown in <link href="#corty3e-ch15-fig-12">Table 15.5</link>, which also displays the percentages for the expected frequencies.</p>
 <p id="corty3e_page_579" block_type="page_start">579</p>
-<p id="corty3e-ch15-p126" block_type="sr_exp_txt">To calculate the expected frequency for A&#8217;s, use <link href="#corty3e-ch15-bx6-2">Equation 15.2</link>, where &#37;<sub>Expected</sub> &#61; 19&#37; and <em>N</em> &#61; 84:</p>
+<p id="corty3e-ch15-p126" block_type="sr_exp_txt">To calculate the expected frequency for A&#8217;s, use Equation 15.2, where &#37;<sub>Expected</sub> &#61; 19&#37; and <em>N</em> &#61; 84:</p>
 <p id="corty3e-ch15-eqn-6" block_type="equation">
 <image asset-id="corty3e-ch15-img-14" alt="image" src="asset/ch15/corty3e_eqn15_579_01.jpg"/></p>
 <p id="corty3e-ch15-p127" block_type="sr_exp_txt_ni">(The value 19&#37; can be found in <link href="#corty3e-ch15-fig-12">Table 15.5</link>.)</p>
@@ -256,7 +256,7 @@
 <image asset-id="corty3e-ch15-img-16" alt="image" src="asset/ch15/corty3e_eqn15_579_03.jpg"/></p>
 <p id="corty3e-ch15-p130" block_type="sr_exp_txt">To find the expected frequency for the last cell, Dr. Wald takes advantage of the fact that there are 3 degrees of freedom, and once the expected frequencies for three cells are known, the fourth can be determined. The sum of the expected frequencies for all the cells will be the same as <em>N,</em> which in this case is 84. So, Dr. Wald subtracts the expected frequencies for the A, B, and C cells from 84, to find the remainder, which is the expected frequency for the D or F cell:</p>
 <p id="corty3e-ch15-p131" block_type="sr-exp-eq">84 &#8211; 15.96 &#8211; 27.72 &#8211; 35.28 &#61; 5.04</p>
-<p id="corty3e-ch15-p132" block_type="sr_exp_txt"><link href="#corty3e-ch15-fig-17"><strong>Table 15.6</strong></link> shows the observed frequencies and the expected frequencies for the four categories. To calculate the chi-square statistic, Dr. Wald uses <link href="#corty3e-ch15-bx6-3">Equation 15.3</link>:</p>
+<p id="corty3e-ch15-p132" block_type="sr_exp_txt"><link href="#corty3e-ch15-fig-17"><strong>Table 15.6</strong></link> shows the observed frequencies and the expected frequencies for the four categories. To calculate the chi-square statistic, Dr. Wald uses Equation 15.3:</p>
 <figure id="corty3e-ch15-fig-17" block_type="table" numbered="true" number="15.6" mmtype="image" mmsrc="" attr="">
 <layout align="center" width="medium" border="true"/>
 <image asset-id="corty3e-ch15-img-17" alt="image" src="asset/ch15/corty3e_table15_06.jpg"/>
@@ -346,7 +346,7 @@
 <li><p id="corty3e-ch15-p182" block_type="bl">There are two rows, one for the students who read the text before class and one for the students who read the text after class, so <em>R</em> &#61; 2.</p></li>
 <li><p id="corty3e-ch15-p183" block_type="bl">There are two columns, one for students with high grades and one for students with low grades, so <em>C</em> &#61; 2.</p></li>
 </list>
-<p id="corty3e-ch15-p184" block_type="txt"><link href="#corty3e-ch15-bx6-4">Equation 15.4</link> uses <em>R</em> (the number of rows in the contingency table) and <em>C</em> (the number of columns in the contingency table) to calculate the degrees of freedom for a chi-square test of independence.</p>
+<p id="corty3e-ch15-p184" block_type="txt">Equation 15.4 uses <em>R</em> (the number of rows in the contingency table) and <em>C</em> (the number of columns in the contingency table) to calculate the degrees of freedom for a chi-square test of independence.</p>
 <box title="" numbered="false" id="corty3e-ch15-bx6-4" block_type="eq-t">
 <box-metadata><box-title><phrase block_type="sec_num">Equation 15.4</phrase> <phrase block_type="sec_title">Formula for Degrees of Freedom (<em>df</em>) for a Chi-Square Test of Independence</phrase></box-title></box-metadata>
 <p id="corty3e-ch15-p185" block_type="eq"><em>df</em> &#61; (<em>R</em> &#8211; 1) &#215; (<em>C</em> &#8211; 1)</p>
@@ -366,7 +366,7 @@
 <li><p id="corty3e-ch15-p196" block_type="bl-last">If &#967;<sup>2</sup> &#60; 3.841, fail to reject <em>H</em><sub>0</sub>.</p></li>
 </list>
 <p id="corty3e-ch15-p197" block_type="h4"><phrase block_type="h4-n-ri"><strong>Step 5</strong></phrase> <strong>Calculate the Test Statistic</strong></p>
-<p id="corty3e-ch15-p198" block_type="txt-ni">&#967;<sup>2</sup> for a chi-square test of independence is calculated with the same formula (<link href="#corty3e-ch15-bx6-3">Equation 15.3</link>) used to calculate a chi-square goodness-of-fit test. Here it is again.</p>
+<p id="corty3e-ch15-p198" block_type="txt-ni">&#967;<sup>2</sup> for a chi-square test of independence is calculated with the same formula (Equation 15.3) used to calculate a chi-square goodness-of-fit test. Here it is again.</p>
 <box title="" numbered="false" id="corty3e-ch15-bx6-5" block_type="eq-t">
 <box-metadata><box-title><phrase block_type="sec_num">Equation 15.3</phrase> <phrase block_type="sec_title">Formula for Calculating Chi-Square (&#967;2)</phrase></box-title></box-metadata>
 <p id="corty3e-ch15-eqn-10" block_type="equation">
@@ -375,7 +375,7 @@
 <p id="corty3e-ch15-p200" block_type="eq-unl"><em>f</em><sub>Observed</sub> &#61; observed frequency for a category</p>
 <p id="corty3e-ch15-p201" block_type="eq-unl"><em>f</em><sub>Expected</sub> &#61; expected frequency for a category</p>
 </box>
-<p id="corty3e-ch15-p202" block_type="txt">To apply the formula, two values are needed for each cell: (1) the observed frequency, <em>f</em><sub>Observed</sub>, and (2) the expected frequency, <em>f</em><sub>Expected</sub>. The contingency table in <link href="#corty3e-ch15-fig-20">Table 15.7</link> gives the observed frequencies for the cells, so those are known. Finding the expected frequencies takes <link href="#corty3e-ch15-bx6-5">Equation 15.5</link>.</p>
+<p id="corty3e-ch15-p202" block_type="txt">To apply the formula, two values are needed for each cell: (1) the observed frequency, <em>f</em><sub>Observed</sub>, and (2) the expected frequency, <em>f</em><sub>Expected</sub>. The contingency table in <link href="#corty3e-ch15-fig-20">Table 15.7</link> gives the observed frequencies for the cells, so those are known. Finding the expected frequencies takes Equation 15.5.</p>
 <box title="" numbered="false" id="corty3e-ch15-bx6-6" block_type="eq-t">
 <box-metadata><box-title><phrase block_type="sec_num">Equation 15.5</phrase> <phrase block_type="sec_title">Formula for Calculating Cell Expected Frequencies (<em>f</em><sub>Expected</sub>)</phrase></box-title></box-metadata>
 <p id="corty3e-ch15-eqn-11" block_type="equation">
@@ -386,17 +386,17 @@
 <p id="corty3e-ch15-p206" block_type="eq-unl"><em>N</em> &#61; total number of cases in the contingency table</p>
 </box>
 <p id="corty3e-ch15-p207" block_type="txt">This formula says that the expected frequency for a cell is found by multiplying together the <em>N</em> for the row that contains the cell by the <em>N</em> for the column that contains the cell. This product is then divided by the total sample size.</p>
-<p id="corty3e-ch15-p208" block_type="txt">Dr. Pradesh applies <link href="#corty3e-ch15-bx6-5">Equation 15.5</link> to the read before class vs. read after class data. From <link href="#corty3e-ch15-fig-20">Table 15.7</link>, the following is known:</p>
+<p id="corty3e-ch15-p208" block_type="txt">Dr. Pradesh applies Equation 15.5 to the read before class vs. read after class data. From <link href="#corty3e-ch15-fig-20">Table 15.7</link>, the following is known:</p>
 <list id="corty3e-ch15-list-23" type="unordered" block_type="bullet">
 <li><p id="corty3e-ch15-p209" block_type="bl-first">For the first row, <em>N</em><sub>Row</sub> &#61; 26. For the second row, <em>N</em><sub>Row</sub> &#61; 24.</p></li>
 <li><p id="corty3e-ch15-p210" block_type="bl-mid">For the first column, <em>N</em><sub>Column</sub> &#61; 32. For the second column, <em>N</em><sub>Column</sub> &#61; 18.</p></li>
 <li><p id="corty3e-ch15-p211" block_type="bl-last"><em>N</em> &#61; 50.</p></li>
 </list>
 <p id="corty3e_page_586" block_type="page_start">586</p>
-<p id="corty3e-ch15-p212" block_type="txt">Using <link href="#corty3e-ch15-bx6-5">Equation 15.5</link> to calculate the expected frequency for Cell A finds:</p>
+<p id="corty3e-ch15-p212" block_type="txt">Using Equation 15.5 to calculate the expected frequency for Cell A finds:</p>
 <p id="corty3e-ch15-eqn-12" block_type="equation">
 <image asset-id="corty3e-ch15-img-23" alt="image" src="asset/ch15/corty3e_eqn15_586_01.jpg"/></p>
-<p id="corty3e-ch15-p213" block_type="txt-ni">Continuing to use <link href="#corty3e-ch15-bx6-5">Equation 15.5</link>, the expected frequencies for the other three cells are found in a similar way.</p>
+<p id="corty3e-ch15-p213" block_type="txt-ni">Continuing to use Equation 15.5, the expected frequencies for the other three cells are found in a similar way.</p>
 <p id="corty3e-ch15-eqn-13" block_type="equation">
 <image asset-id="corty3e-ch15-img-24" alt="image" src="asset/ch15/corty3e_eqn15_586_02.jpg"/></p>
 <p id="corty3e-ch15-eqn-14" block_type="equation">
@@ -417,10 +417,10 @@
 <li><p id="corty3e-ch15-p219" block_type="nl-last">All the expected frequencies were at least 5, so Dr. Pradesh now knows that the third assumption was not violated.</p></li>
 </list>
 <box title="A Common Question" numbered="false" id="corty3e-ch15-bx1-2" block_type="bx-1-h">
-<p id="corty3e-ch15-p220" block_type="bx1-que"><strong>Q</strong> Does one have to use <link href="#corty3e-ch15-bx6-5">Equation 15.5</link> to calculate an expected frequency for each cell?</p>
-<p id="corty3e-ch15-p221" block_type="bx1-ans"><strong>A</strong> No. <link href="#corty3e-ch15-bx6-5">Equation 15.5</link> is only needed to calculate expected frequencies for as many cells as there are degrees of freedom. For the read before class vs. read after class study, where <em>df</em> &#61; 1, once the first cell is known, the other three can be figured out. If the frequency for the first row is 26 and <em>f</em><sub>Expected</sub> &#61; 16.64 for Cell A, then Cell B must have an expected frequency of 26 &#8211; 16.64, or 9.36.</p>
+<p id="corty3e-ch15-p220" block_type="bx1-que"><strong>Q</strong> Does one have to use Equation 15.5 to calculate an expected frequency for each cell?</p>
+<p id="corty3e-ch15-p221" block_type="bx1-ans"><strong>A</strong> No. Equation 15.5 is only needed to calculate expected frequencies for as many cells as there are degrees of freedom. For the read before class vs. read after class study, where <em>df</em> &#61; 1, once the first cell is known, the other three can be figured out. If the frequency for the first row is 26 and <em>f</em><sub>Expected</sub> &#61; 16.64 for Cell A, then Cell B must have an expected frequency of 26 &#8211; 16.64, or 9.36.</p>
 </box>
-<p id="corty3e-ch15-p222" block_type="txt">Now that the expected frequencies have been found, <link href="#corty3e-ch15-bx6-3">Equation 15.3</link> may be used to calculate &#967;<sup>2</sup>. Using the observed frequencies for the read before class vs. read after class data (see <link href="#corty3e-ch15-fig-20">Table 15.7</link>) and the expected frequencies (see <link href="#corty3e-ch15-fig-27">Table 15.8</link>), the formula finds &#967;<sup>2</sup> &#61; 3.93:</p>
+<p id="corty3e-ch15-p222" block_type="txt">Now that the expected frequencies have been found, Equation 15.3 may be used to calculate &#967;<sup>2</sup>. Using the observed frequencies for the read before class vs. read after class data (see <link href="#corty3e-ch15-fig-20">Table 15.7</link>) and the expected frequencies (see <link href="#corty3e-ch15-fig-27">Table 15.8</link>), the formula finds &#967;<sup>2</sup> &#61; 3.93:</p>
 <p id="corty3e_page_588" block_type="page_start">588</p>
 <p id="corty3e-ch15-eqn-16" block_type="equation">
 <image asset-id="corty3e-ch15-img-28" alt="image" src="asset/ch15/corty3e_eqn15_588_01.jpg"/></p>
@@ -455,7 +455,7 @@
 <p id="corty3e-ch15-p235" block_type="sr_exp_h4_txt"><phrase block_type="h4-n-ri"><strong>Step 3</strong></phrase> <strong>List the Hypotheses.</strong> The hypotheses are listed below. The null hypothesis says that no relation exists in the population between the amount of unconditional positive regard one receives and the likelihood of being a behavior problem. The alternative hypothesis states there is some relationship in the population.</p>
 <p id="corty3e-ch15-p236" block_type="sr-exp-eq"><em>H</em><sub>0</sub>: &#961; &#61; 0</p>
 <p id="corty3e-ch15-p237" block_type="sr-exp-eq"><em>H</em><sub>1</sub>: &#961; &#8800; 0</p>
-<p id="corty3e-ch15-p238" block_type="sr_exp_h4_txt"><phrase block_type="h4-n-ri"><strong>Step 4</strong></phrase> <strong>Set the Decision Rule.</strong> To set the decision rule, a researcher needs to know the alpha and degrees of freedom. Mr. Conaway has set alpha at .05. He uses <link href="#corty3e-ch15-bx6-4">Equation 15.4</link> to calculate the degrees of freedom:</p>
+<p id="corty3e-ch15-p238" block_type="sr_exp_h4_txt"><phrase block_type="h4-n-ri"><strong>Step 4</strong></phrase> <strong>Set the Decision Rule.</strong> To set the decision rule, a researcher needs to know the alpha and degrees of freedom. Mr. Conaway has set alpha at .05. He uses Equation 15.4 to calculate the degrees of freedom:</p>
 <p id="corty3e-ch15-p239" block_type="sr-exp-eq"><em>df</em> &#61; (<em>R</em> &#8211;1) &#215; (<em>C</em> &#8211; 1)</p>
 <p id="corty3e-ch15-p240" block_type="sr-exp-eq">&#61; (3 &#8211; 1) &#215; (2 &#8211; 1)</p>
 <p id="corty3e-ch15-p241" block_type="sr-exp-eq">&#61; 2 &#215; 1</p>
@@ -465,7 +465,7 @@
 <li><p id="corty3e-ch15-p244" block_type="sr-exp-bl-first">If &#967;<sup>2</sup> &#8805; 5.991, reject <em>H</em><sub>0</sub>.</p></li>
 <li><p id="corty3e-ch15-p245" block_type="sr-exp-bl-last">If &#967;<sup>2</sup> &#60; 5.991, fail to reject <em>H</em><sub>0</sub>.</p></li>
 </list>
-<p id="corty3e-ch15-p246" block_type="sr_exp_h4_txt"><phrase block_type="h4-n-ri"><strong>Step 5</strong></phrase> <strong>Calculate the Test Statistic.</strong> The first step in calculating a chi-square test for independence (&#967;<sup>2</sup>) is using <link href="#corty3e-ch15-bx6-5">Equation 15.5</link> to calculate expected frequencies. This contingency table has six cells and it is a bit tedious to perform <link href="#corty3e-ch15-bx6-5">Equation 15.5</link> six times. So, Mr. Conaway will use a bit of logic and just use <link href="#corty3e-ch15-bx6-5">Equation 15.5</link> twice. Why twice? Because the contingency table has 2 degrees of freedom, and once two cells are known, the rest can be calculated. The two to be calculated have to be chosen a little carefully, so Mr. Conaway has picked Cells A and C.</p>
+<p id="corty3e-ch15-p246" block_type="sr_exp_h4_txt"><phrase block_type="h4-n-ri"><strong>Step 5</strong></phrase> <strong>Calculate the Test Statistic.</strong> The first step in calculating a chi-square test for independence (&#967;<sup>2</sup>) is using Equation 15.5 to calculate expected frequencies. This contingency table has six cells and it is a bit tedious to perform Equation 15.5 six times. So, Mr. Conaway will use a bit of logic and just use Equation 15.5 twice. Why twice? Because the contingency table has 2 degrees of freedom, and once two cells are known, the rest can be calculated. The two to be calculated have to be chosen a little carefully, so Mr. Conaway has picked Cells A and C.</p>
 <p id="corty3e-ch15-eqn-17" block_type="equation">
 <image asset-id="corty3e-ch15-img-31" alt="image" src="asset/ch15/corty3e_eqn15_590_01.jpg"/></p>
 <p id="corty3e-ch15-eqn-18" block_type="equation">
@@ -482,7 +482,7 @@
 <li><p id="corty3e-ch15-p250" block_type="sr_exp_bl">To find the expected frequency for Cell E, look at the total number of cases in the column, 18. Subtracting the expected frequencies for Cells A and C from this yields the expected frequency of 5.40 for Cell E.</p></li>
 <li><p id="corty3e-ch15-p251" block_type="sr_exp_bl">Finally, for Cell F, subtract Cell E (5.40) from 12, the total number of cases in the row to find 6.60.</p></li>
 </list>
-<p id="corty3e-ch15-p252" block_type="tbl_num">The expected frequencies for all six cells are shown in <link href="#corty3e-ch15-fig-34"><strong>Table 15.11</strong></link>. Note that all the expected frequencies are greater than 5. Mr. Conaway can finally determine that the remaining assumption, that all expected frequencies were large enough, was not violated. The expected frequencies, in conjunction with the observed frequencies (<link href="#corty3e-ch15-fig-29">Table 15.9</link>), are needed to calculate the value of the test statistic using <link href="#corty3e-ch15-bx6-3">Equation 15.3</link>:</p>
+<p id="corty3e-ch15-p252" block_type="tbl_num">The expected frequencies for all six cells are shown in <link href="#corty3e-ch15-fig-34"><strong>Table 15.11</strong></link>. Note that all the expected frequencies are greater than 5. Mr. Conaway can finally determine that the remaining assumption, that all expected frequencies were large enough, was not violated. The expected frequencies, in conjunction with the observed frequencies (<link href="#corty3e-ch15-fig-29">Table 15.9</link>), are needed to calculate the value of the test statistic using Equation 15.3:</p>
 <figure id="corty3e-ch15-fig-34" block_type="table" numbered="true" number="15.11" mmtype="image" mmsrc="" attr="">
 <layout align="center" width="large" border="true"/>
 <image asset-id="corty3e-ch15-img-34" alt="image" src="asset/ch15/corty3e_table15_11.jpg"/>
@@ -595,17 +595,17 @@
 <li><p id="corty3e-ch15-p276" block_type="bl">As Cramer&#8217;s <em>V</em> gets closer to 1, the effect is stronger.</p></li>
 <li><p id="corty3e-ch15-p277" block_type="bl">As Cramer&#8217;s <em>V</em> gets closer to 0, the effect is weaker.</p></li>
 </list>
-<p id="corty3e-ch15-p278" block_type="txt-ni">The formula for calculating Cramer&#8217;s <em>V</em> is shown in <link href="#corty3e-ch15-bx6-7">Equation 15.7</link>.</p>
+<p id="corty3e-ch15-p278" block_type="txt-ni">The formula for calculating Cramer&#8217;s <em>V</em> is shown in Equation 15.7.</p>
 <box title="" numbered="false" id="corty3e-ch15-bx6-7" block_type="eq-t">
 <box-metadata><box-title><phrase block_type="sec_num">Equation 15.7</phrase> <phrase block_type="sec_title">Formula for Calculating Cramer&#8217;s <em>V</em></phrase></box-title></box-metadata>
 <p id="corty3e-ch15-eqn-20" block_type="equation">
 <image asset-id="corty3e-ch15-img-36" alt="image" src="asset/ch15/corty3e_eqn15_594_01.jpg"/></p>
 <p id="corty3e-ch15-p279" block_type="eq-txt-ni">where <em>V</em> &#61; Cramer&#8217;s <em>V</em></p>
-<p id="corty3e-ch15-p280" block_type="eq-unl">&#967;<sup>2</sup> &#61; chi-square value, calculated via <link href="#corty3e-ch15-bx6-3">Equation 15.3</link></p>
+<p id="corty3e-ch15-p280" block_type="eq-unl">&#967;<sup>2</sup> &#61; chi-square value, calculated via Equation 15.3</p>
 <p id="corty3e-ch15-p281" block_type="eq-unl"><em>N</em> &#61; total number of cases in the contingency table</p>
 <p id="corty3e-ch15-p282" block_type="eq-unl"><em>df</em><sub>RC</sub> &#61; (<em>R</em> &#8211; 1) or (<em>C</em> &#8211; 1), whichever is smaller (<em>R</em> &#61; number of rows in the contingency table; <em>C</em> &#61; number of columns in the contingency table)</p>
 </box>
-<p id="corty3e-ch15-p283" block_type="txt">Here&#8217;s how to calculate <em>V</em> for the read before class vs. read after class study. It is already known that &#967;<sup>2</sup> &#61; 3.93 and <em>N</em> &#61; 50. To calculate <em>V</em> for this equation, one needs to know the number of rows (2) and the number of columns (2) in the contingency table. The degrees of freedom for <link href="#corty3e-ch15-bx6-7">Equation 15.7</link> are either <em>R</em> &#8211; 1, which is 2 &#8211; 1, or <em>C</em> &#8211; 1, which is also 2 &#8211; 1, whichever is smaller. Both are the same, so <em>df</em><sub>RC</sub> &#61; 1.</p>
+<p id="corty3e-ch15-p283" block_type="txt">Here&#8217;s how to calculate <em>V</em> for the read before class vs. read after class study. It is already known that &#967;<sup>2</sup> &#61; 3.93 and <em>N</em> &#61; 50. To calculate <em>V</em> for this equation, one needs to know the number of rows (2) and the number of columns (2) in the contingency table. The degrees of freedom for Equation 15.7 are either <em>R</em> &#8211; 1, which is 2 &#8211; 1, or <em>C</em> &#8211; 1, which is also 2 &#8211; 1, whichever is smaller. Both are the same, so <em>df</em><sub>RC</sub> &#61; 1.</p>
 <p id="corty3e-ch15-eqn-21" block_type="equation">
 <image asset-id="corty3e-ch15-img-37" alt="image" src="asset/ch15/corty3e_eqn15_594_02.jpg"/></p>
 <p id="corty3e-ch15-p284" block_type="txt">Cramer&#8217;s <em>V</em> for the text-reading data is .28. When there is only 1 degree of freedom, as here, Cramer&#8217;s <em>V</em> is equivalent to a Pearson <em>r.</em> So, Dr. Pradesh could say that there is a .28 correlation between the independent variable (when the text is read) and the dependent variable (high grade or low grade). This is a medium-strength correlation. Guidelines for interpreting Cramer&#8217;s <em>V</em> are given in <link href="#corty3e-ch15-fig-38"><strong>Table 15.12</strong></link>.</p>
@@ -626,7 +626,7 @@
 <p id="corty3e-ch15-p289" block_type="txt_v1_ni">This study investigated whether completing readings before or after class has an impact on the grade a student receives. Fifty students in introductory psychology classes were randomly assigned to complete the readings before class or after it. Reading the text before attending class resulted in a significantly higher percentage of students receiving high grades: 77&#37; vs. 50&#37;, &#967;<sup>2</sup>(1, <em>N</em> &#61; 50) &#61; 3.93, <em>p</em> &#60; .05. The impact on grades of when the reading is completed is more than small, but less than large. To increase the generalizability of results and certainty about the size of the effect, the study should be replicated in courses other than psychology and at other universities.</p>
 <p id="corty3e-ch15-p290" block_type="txt-ni">(Though the results do sound reasonable, please be aware that these data were manufactured for this example.)</p>
 <box title="Worked Example 15.3" numbered="false" id="corty3e-ch15-bx3-3" block_type="sr-exp-n">
-<p id="corty3e-ch15-p291" block_type="sr_exp_txt_ni">For an example demonstrating how to interpret the chi-square test of independence results that are not statistically significant, a return to Mr. Conaway&#8217;s study of the relationship between the frequency of receiving unconditional positive regard and being a behavior problem is in order. In that study, Mr. Conaway, an elementary school teacher, &#8220;measured&#8221; 40 children. The grouping variable was how frequently the child received unconditional positive regard (frequently, sometimes, or rarely) and the dependent variable was whether the child&#8217;s teacher rated him or her as a behavior problem (yes or no). Alpha was set at .05, there were 2 degrees of freedom, and the critical value of chi-square was 5.991. Using <link href="#corty3e-ch15-bx6-3">Equation 15.3</link>, Mr. Conaway found &#967;<sup>2</sup> &#61; 3.33.</p>
+<p id="corty3e-ch15-p291" block_type="sr_exp_txt_ni">For an example demonstrating how to interpret the chi-square test of independence results that are not statistically significant, a return to Mr. Conaway&#8217;s study of the relationship between the frequency of receiving unconditional positive regard and being a behavior problem is in order. In that study, Mr. Conaway, an elementary school teacher, &#8220;measured&#8221; 40 children. The grouping variable was how frequently the child received unconditional positive regard (frequently, sometimes, or rarely) and the dependent variable was whether the child&#8217;s teacher rated him or her as a behavior problem (yes or no). Alpha was set at .05, there were 2 degrees of freedom, and the critical value of chi-square was 5.991. Using Equation 15.3, Mr. Conaway found &#967;<sup>2</sup> &#61; 3.33.</p>
 <p id="corty3e-ch15-p292" block_type="sr_exp_txt"><em>Was the null hypothesis rejected?</em> Here is the decision rule:</p>
 <list id="corty3e-ch15-list-33" type="unordered" block_type="bullet">
 <li><p id="corty3e-ch15-p293" block_type="bl-first">If &#967;<sup>2</sup> &#8805; 5.991, reject <em>H</em><sub>0</sub>.</p></li>
@@ -650,7 +650,7 @@
 <li><p id="corty3e-ch15-p303" block_type="sr-exp-bl-mid">.05 indicates that alpha was set at .05.</p></li>
 <li><p id="corty3e-ch15-p304" block_type="sr-exp-bl-last"><em>p</em> &#62; .05 indicates that the results fell in the common zone, that the null hypothesis was not rejected.</p></li>
 </list>
-<p id="corty3e-ch15-p305" block_type="sr_exp_txt"><em>How big is the effect?</em> Cramer&#8217;s <em>V,</em> the effect size for a chi-square test of independence, should be calculated even when results are not statistically significant. Doing so allows a researcher to evaluate the likelihood of a Type II error. To calculate <em>V,</em> one needs the observed chi-square value, sample size, and degrees of freedom (<link href="#corty3e-ch15-bx6-7">Equation 15.7</link>). For his data, Mr. Conaway already knows &#967;<sup>2</sup> &#61; 3.33 and <em>N</em> &#61; 40. To find <em>df</em><sub>RC </sub><em>,</em> he needs to subtract 1 from the number of rows or 1 from the number of columns, whichever is smaller. There are fewer columns (two) than rows (three), so <em>df</em><sub>RC</sub> &#61; 2 &#8211; 1 &#61; 1. Next, he plugs the numbers into <link href="#corty3e-ch15-bx6-7">Equation 15.7</link> to calculate <em>V:</em></p>
+<p id="corty3e-ch15-p305" block_type="sr_exp_txt"><em>How big is the effect?</em> Cramer&#8217;s <em>V,</em> the effect size for a chi-square test of independence, should be calculated even when results are not statistically significant. Doing so allows a researcher to evaluate the likelihood of a Type II error. To calculate <em>V,</em> one needs the observed chi-square value, sample size, and degrees of freedom (Equation 15.7). For his data, Mr. Conaway already knows &#967;<sup>2</sup> &#61; 3.33 and <em>N</em> &#61; 40. To find <em>df</em><sub>RC </sub><em>,</em> he needs to subtract 1 from the number of rows or 1 from the number of columns, whichever is smaller. There are fewer columns (two) than rows (three), so <em>df</em><sub>RC</sub> &#61; 2 &#8211; 1 &#61; 1. Next, he plugs the numbers into Equation 15.7 to calculate <em>V:</em></p>
 <p id="corty3e_page_597" block_type="page_start">597</p>
 <p id="corty3e-ch15-eqn-22" block_type="equation">
 <image asset-id="corty3e-ch15-img-40" alt="image" src="asset/ch15/corty3e_eqn15_597_01.jpg"/></p>
@@ -751,7 +751,7 @@
 <p id="corty3e-ch15-p339" block_type="sr_x_h4_txt"><phrase block_type="h4-n-ri"><strong>Step 3</strong></phrase> <strong>List the Hypotheses.</strong> The null hypothesis says that malnutrition status and survival are independent and the alternative hypothesis states that they have some relationship:</p>
 <p id="corty3e-ch15-p340" block_type="sr-x-eq"><em>H</em><sub>0</sub>: &#961; &#61; 0</p>
 <p id="corty3e-ch15-p341" block_type="sr-x-eq"><em>H</em><sub>1</sub>: &#961; &#8800; 0</p>
-<p id="corty3e-ch15-p342" block_type="sr_x_h4_txt"><phrase block_type="h4-n-ri"><strong>Step 4</strong></phrase> <strong>Set the Decision Rule.</strong> The alpha level is set at .05, as usual. The degrees of freedom are calculated using <link href="#corty3e-ch15-bx6-4">Equation 15.4</link>:</p>
+<p id="corty3e-ch15-p342" block_type="sr_x_h4_txt"><phrase block_type="h4-n-ri"><strong>Step 4</strong></phrase> <strong>Set the Decision Rule.</strong> The alpha level is set at .05, as usual. The degrees of freedom are calculated using Equation 15.4:</p>
 <p id="corty3e-ch15-p343" block_type="sr-x-eq"><em>df</em> &#61; (<em>R</em> &#8211; 1) &#215; (<em>C</em> &#8211; 1)</p>
 <p id="corty3e-ch15-p344" block_type="sr-x-eq">&#61; (2 &#8211; 1) &#215; (2 &#8211; 1)</p>
 <p id="corty3e-ch15-p345" block_type="sr-x-eq">&#61; 1 &#215; 1</p>
@@ -761,17 +761,17 @@
 <li><p id="corty3e-ch15-p348" block_type="sr-x-bl-first">If &#967;<sup>2</sup> &#8805; 3.841, reject <em>H</em><sub>0</sub> and say the results are statistically significant.</p></li>
 <li><p id="corty3e-ch15-p349" block_type="sr-x-bl-last">If &#967;<sup>2</sup> &#60; 3.841, fail to reject <em>H</em><sub>0</sub> and say the results are not statistically significant.</p></li>
 </list>
-<p id="corty3e-ch15-p350" block_type="sr_x_h4_txt"><phrase block_type="h4-n-ri"><strong>Step 5</strong></phrase> <strong>Calculate the Test Statistic.</strong> To save time, the expected frequencies for the cells are shown in <link href="#corty3e-ch15-fig-45"><strong>Table 15.16</strong></link>. <link href="#corty3e-ch15-bx6-5">Equation 15.5</link> was used to calculate the expected frequency for Cell A and then logic was utilized to find the expected frequencies for the other three cells. None of the expected frequencies is less than 5, so it&#8217;s now known that the third assumption was not violated.</p>
+<p id="corty3e-ch15-p350" block_type="sr_x_h4_txt"><phrase block_type="h4-n-ri"><strong>Step 5</strong></phrase> <strong>Calculate the Test Statistic.</strong> To save time, the expected frequencies for the cells are shown in <link href="#corty3e-ch15-fig-45"><strong>Table 15.16</strong></link>. Equation 15.5 was used to calculate the expected frequency for Cell A and then logic was utilized to find the expected frequencies for the other three cells. None of the expected frequencies is less than 5, so it&#8217;s now known that the third assumption was not violated.</p>
 <figure id="corty3e-ch15-fig-45" block_type="table" numbered="true" number="15.16" mmtype="image" mmsrc="" attr="">
 <layout align="center" width="large" border="true"/>
 <image asset-id="corty3e-ch15-img-45" alt="image" src="asset/ch15/corty3e_table15_16.jpg"/>
 </figure>
 <p id="corty3e_page_603" block_type="page_start">603</p>
-<p id="corty3e-ch15-p351" block_type="sr-x-txt">Using <link href="#corty3e-ch15-bx6-3">Equation 15.3</link>, the chi-square value is calculated as 28.63:</p>
+<p id="corty3e-ch15-p351" block_type="sr-x-txt">Using Equation 15.3, the chi-square value is calculated as 28.63:</p>
 <p id="corty3e-ch15-eqn-23" block_type="equation">
 <image asset-id="corty3e-ch15-img-46" alt="image" src="asset/ch15/corty3e_eqn15_603_01.jpg"/></p>
 <p id="corty3e-ch15-p352" block_type="sr_x_h4_txt"><phrase block_type="h4-n-ri"><strong>Step 6</strong></phrase> <strong>Interpret the Results.</strong> The calculated value of chi-square (28.63) is greater than the critical value (3.841), so the null hypothesis is rejected and the results are written in APA format as &#967;<sup>2</sup>(1, <em>N</em> &#61; 369) &#61; 28.63, <em>p</em> &#60; .05. A statistically significant difference exists between the mortality rate for malnourished patients and patients who were not malnourished. There are only two groups, so we know the direction of the difference: the mortality rate is higher for malnourished patients than for patients who were not malnourished, 41&#37; vs. 14&#37;.</p>
-<p id="corty3e-ch15-p353" block_type="sr-x-txt">Using <link href="#corty3e-ch15-bx6-7">Equation 15.7</link>, Cramer&#8217;s <em>V</em> is calculated as .28:</p>
+<p id="corty3e-ch15-p353" block_type="sr-x-txt">Using Equation 15.7, Cramer&#8217;s <em>V</em> is calculated as .28:</p>
 <p id="corty3e-ch15-eqn-24" block_type="equation">
 <image asset-id="corty3e-ch15-img-47" alt="image" src="asset/ch15/corty3e_eqn15_603_02.jpg"/></p>
 <p id="corty3e-ch15-p354" block_type="sr-x-txt">By Cohen&#8217;s standards (1988), this is a medium effect. However, Cohen&#8217;s standards are meant as guidelines. A change in the mortality rate from 14&#37; to 41&#37;&#8212;almost a threefold increase&#8212;seems like a strong effect, especially as death is the outcome.</p>

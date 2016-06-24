@@ -113,7 +113,7 @@
 <p id="corty3e-ch8-p60" block_type="txt">Dr. Villanova predicted in advance of collecting the data that the deep processing participants would do better than the shallow processing participants. And, because he had directional hypotheses, he has a one-tailed test. So, he will be looking at one-tailed values of <em>t<sub>cv</sub>.</em></p>
 <p id="corty3e_page_264" block_type="page_start">264</p>
 <p id="corty3e-ch8-p61" block_type="txt">By convention, most researchers are willing to have a 5&#37; chance of making a Type I error and set alpha at .05. (Type I error occurs when one erroneously rejects the null hypothesis.) As Dr. Villanova is replicating previous work, he wants to make sure that if he rejects the null hypothesis, it should have been rejected. He wants to have only a 1&#37; chance of Type I error, so he&#8217;s setting &#945; &#61; .01.</p>
-<p id="corty3e-ch8-p62" block_type="txt">Finally, the degrees of freedom need to be determined. The formula for calculating degrees of freedom (<em>df</em>) for an independent-samples <em>t</em> test is given in <link href="#corty3e-ch8-bx6-1">Equation 8.1</link>.</p>
+<p id="corty3e-ch8-p62" block_type="txt">Finally, the degrees of freedom need to be determined. The formula for calculating degrees of freedom (<em>df</em>) for an independent-samples <em>t</em> test is given in Equation 8.1.</p>
 <box title="" numbered="false" id="corty3e-ch8-bx6-1" block_type="eq-t">
 <box-metadata><box-title><phrase block_type="sec_num">Equation 8.1</phrase> <phrase block_type="sec_title">Formula for Calculating Degrees of Freedom (<em>df</em>) for an Independent-Samples <em>t</em> Test</phrase></box-title></box-metadata>
 <p id="corty3e-ch8-p63" block_type="eq"><em>df</em> &#61; <em>N</em> &#8211; 2</p>
@@ -121,7 +121,7 @@
 <p id="corty3e-ch8-p65" block_type="eq-unl"><em>N</em> &#61; total number of cases in the two groups</p>
 </box>
 <p id="corty3e-ch8-p66" block_type="txt">For the depth of processing study, Dr. Villanova calculates <em>df</em> &#61; 38 &#8211; 2 &#61; 36. Looking in <link href="corty3e_app1_1.html#corty3e-app1-fig-8">Appendix Table 3</link> at the row where <em>df</em> &#61; 36 and under the column where &#945; &#61; .01, one-tailed, we find <em>t<sub>cv</sub></em> &#61; 2.434.</p>
-<p id="corty3e-ch8-p67" block_type="txt">The <em>t</em> distribution is symmetric, so this value could be either &#8211;2.434 or &#43;2.434. As Dr. Villanova is doing a one-tailed test, he needs to decide whether his critical value of <em>t</em> will be a positive or a negative number. To do so requires knowing: (1) which mean will be subtracted from which in the numerator of <link href="#corty3e-ch8-bx6-1">Equation 8.1</link> when it is used to find the <em>t</em> value; and (2) what the sign of the difference <em>should</em> be. The expected sign of the difference is the sign to be associated with the critical value of <em>t</em> for a one-tailed test.</p>
+<p id="corty3e-ch8-p67" block_type="txt">The <em>t</em> distribution is symmetric, so this value could be either &#8211;2.434 or &#43;2.434. As Dr. Villanova is doing a one-tailed test, he needs to decide whether his critical value of <em>t</em> will be a positive or a negative number. To do so requires knowing: (1) which mean will be subtracted from which in the numerator of Equation 8.1 when it is used to find the <em>t</em> value; and (2) what the sign of the difference <em>should</em> be. The expected sign of the difference is the sign to be associated with the critical value of <em>t</em> for a one-tailed test.</p>
 <p id="corty3e-ch8-p68" block_type="txt">Dr. Villanova has decided that he&#8217;ll subtract the shallow processing group&#8217;s mean from the deep processing group&#8217;s mean. That is, it will be <em>M</em><sub>Deep</sub> &#8211; <em>M</em><sub>Shallow</sub>. If his theory is correct, the deep processing group will remember more words than the shallow group, and the difference will have a positive sign. This means that the critical value of <em>t</em> will be positive: 2.434. This value separates the rare zone of the sampling distribution of <em>t</em> from the common zone. The decision rule is shown in <strong><link href="corty3e-ch08.xml#corty3e-ch8-fig-6">Figure 8.3</link>,</strong> with the rare and common zones labeled. Here is how Dr. Villanova states the decision rule for his one-tailed test:</p>
 <figure id="corty3e-ch8-fig-6" block_type="figure" numbered="true" number="8.3" mmtype="image" mmsrc="" attr="">
 <layout align="center" width="large" border="true"/>
@@ -144,7 +144,7 @@
 <image asset-id="corty3e-ch8-img-7" alt="image" src="asset/ch8/corty3e_table08_03.jpg"/>
 </figure>
 <p id="corty3e-ch8-p75" block_type="h4-txt-ni"><phrase block_type="h4-n-ri"><strong>Step 5</strong></phrase> <strong>Calculate the Test Statistic.</strong> It is now time for Dr. Villanova to calculate the test statistic, <em>t.</em> In the last chapter, it was pointed out that the formula for a single-sample <em>t</em> test, <image asset-id="corty3e-ch8-img-8" alt="image" src="asset/ch8/corty3e_ineqn08_265_01.jpg"/>, was similar to the <em>z</em> score formula, <image asset-id="corty3e-ch8-img-9" alt="image" src="asset/ch8/corty3e_ineqn08_265_02.jpg"/>. Though it won&#8217;t look like it by the time we see it, the independent-samples <em>t</em> test formula is also like a <em>z</em> score formula. The numerator is a deviation score, the deviation of the difference between the two sample means from the difference between the two population means: (<em>M</em><sub>1</sub> &#8211; <em>M</em><sub>2</sub>) &#8211; (&#956;<sub>1</sub> &#8211; &#956;<sub>2</sub>). Because hypothesis testing proceeds under the assumption that the null hypothesis is true, if we assume &#956;<sub>1</sub> &#61; &#956;<sub>2</sub>, we can simplify the numerator to <em>M</em><sub>1</sub> &#8211; <em>M</em><sub>2</sub>.</p>
-<p id="corty3e-ch8-p76" block_type="txt">The denominator is a standard deviation, the standard deviation of the sampling distribution of the difference scores. Standard deviations of sampling distributions are called standard errors and this one, called the standard error of the difference, is abbreviated <image asset-id="corty3e-ch8-img-10" alt="image" src="asset/ch8/corty3e_ineqn08_272_01.jpg"/>. Calculating the standard error of the difference proceeds in two steps. First we need to calculate variance for the two samples combined, or pooled, and then we need to adjust this <termref term="pooled variance">pooled variance</termref> to turn it into a standard error. <link href="#corty3e-ch8-bx6-2">Equation 8.2</link> gives the formula for calculating the pooled variance.</p>
+<p id="corty3e-ch8-p76" block_type="txt">The denominator is a standard deviation, the standard deviation of the sampling distribution of the difference scores. Standard deviations of sampling distributions are called standard errors and this one, called the standard error of the difference, is abbreviated <image asset-id="corty3e-ch8-img-10" alt="image" src="asset/ch8/corty3e_ineqn08_272_01.jpg"/>. Calculating the standard error of the difference proceeds in two steps. First we need to calculate variance for the two samples combined, or pooled, and then we need to adjust this <termref term="pooled variance">pooled variance</termref> to turn it into a standard error. Equation 8.2 gives the formula for calculating the pooled variance.</p>
 <p id="corty3e_page_266" block_type="page_start">266</p>
 <box title="" numbered="false" id="corty3e-ch8-bx6-2" block_type="eq-t">
 <box-metadata><box-title><phrase block_type="sec_num">Equation 8.2</phrase> <phrase block_type="sec_title">Formula for Calculating the Pooled Variance for an Independent-Samples <em>t</em> Test</phrase></box-title></box-metadata>
@@ -161,17 +161,17 @@
 <p id="corty3e-ch8-p79" block_type="eq-unl"><em>df</em> &#61; the degrees of freedom (<em>N</em> &#8211; 2)</p>
 </box>
 <p id="corty3e-ch8-p80" block_type="txt">This equation says the pooled variance is calculated by multiplying each sample variance by 1 less than the number of cases that are in its sample and adding together these products. That sum is then divided by 2 less than the total number of cases, which is the same as the degrees of freedom.</p>
-<p id="corty3e-ch8-p81" block_type="txt">Let&#8217;s follow Dr. Villanova as he plugs in the values from his depth of processing study into <link href="#corty3e-ch8-bx6-2">Equation 8.2</link>. Remember, the shallow processing group had 18 cases, with a standard deviation of 1.54; the sample size and standard deviation for the deep processing group were 20 and 2.74, respectively. The equation calls for variances, not standard deviations, but a variance is simply a squared standard deviation, so we are OK. And the equation calls for the degrees of freedom, which we calculated in the previous step as <em>N</em> &#8211; 2 &#61; 38 &#8211; 2 &#61; 36:</p>
+<p id="corty3e-ch8-p81" block_type="txt">Let&#8217;s follow Dr. Villanova as he plugs in the values from his depth of processing study into Equation 8.2. Remember, the shallow processing group had 18 cases, with a standard deviation of 1.54; the sample size and standard deviation for the deep processing group were 20 and 2.74, respectively. The equation calls for variances, not standard deviations, but a variance is simply a squared standard deviation, so we are OK. And the equation calls for the degrees of freedom, which we calculated in the previous step as <em>N</em> &#8211; 2 &#61; 38 &#8211; 2 &#61; 36:</p>
 <p id="corty3e-ch8-eqn-5" block_type="equation">
 <image asset-id="corty3e-ch8-img-15" alt="image" src="asset/ch8/corty3e_eqn08_266_06.jpg"/></p>
-<p id="corty3e-ch8-p82" block_type="txt">The pooled variance is 5.08. We can now use the pooled variance to find the standard error of the mean by using <link href="#corty3e-ch8-bx6-3">Equation 8.3</link>.</p>
+<p id="corty3e-ch8-p82" block_type="txt">The pooled variance is 5.08. We can now use the pooled variance to find the standard error of the mean by using Equation 8.3.</p>
 <box title="" numbered="false" id="corty3e-ch8-bx6-3" block_type="eq-t">
 <box-metadata><box-title><phrase block_type="sec_num">Equation 8.3</phrase> <phrase block_type="sec_title">Formula for the Standard Error of the Mean,<br/><em>s</em><sub>M<sub>1</sub>-M<sub>2</sub></sub>, for an Independent-Samples <em>t</em> test</phrase></box-title></box-metadata>
 <p id="corty3e-ch8-eqn-6" block_type="equation">
 <image asset-id="corty3e-ch8-img-16" alt="image" src="asset/ch8/corty3e_eqn08_266_07.jpg"/></p>
 <p id="corty3e-ch8-eqn-7" block_type="equation">
 <image asset-id="corty3e-ch8-img-17" alt="image" src="asset/ch8/corty3e_eqn08_266_08.jpg"/></p>
-<p id="corty3e-ch8-p83" block_type="eq-unl"><em>s</em><sup>2</sup><sub>Pooled</sub> &#61; the pooled variance (from <link href="#corty3e-ch8-bx6-2">Equation 8.2</link>)</p>
+<p id="corty3e-ch8-p83" block_type="eq-unl"><em>s</em><sup>2</sup><sub>Pooled</sub> &#61; the pooled variance (from Equation 8.2)</p>
 <p id="corty3e-ch8-p84" block_type="eq-unl"><em>N</em> &#61; the total number of cases</p>
 <p id="corty3e-ch8-p85" block_type="eq-unl"><em>n</em><sub>1</sub> &#61; the number of cases in Group 1</p>
 <p id="corty3e-ch8-p86" block_type="eq-unl"><em>n</em><sub>2</sub> &#61; the number of cases in Group 2</p>
@@ -181,7 +181,7 @@
 <p id="corty3e-ch8-p88" block_type="txt">Let&#8217;s do the math for the shallow vs. deep processing study:</p>
 <p id="corty3e-ch8-eqn-8" block_type="equation">
 <image asset-id="corty3e-ch8-img-18" alt="image" src="asset/ch8/corty3e_eqn08_267_01.jpg"/></p>
-<p id="corty3e-ch8-p89" block_type="txt">At this point, the hardest part of calculating an independent-samples <em>t</em> test is over and Dr. Villanova knows that the standard error of the mean is 0.73. All that is left to do is use the formula in <link href="#corty3e-ch8-bx6-4">Equation 8.4</link> to find <em>t.</em></p>
+<p id="corty3e-ch8-p89" block_type="txt">At this point, the hardest part of calculating an independent-samples <em>t</em> test is over and Dr. Villanova knows that the standard error of the mean is 0.73. All that is left to do is use the formula in Equation 8.4 to find <em>t.</em></p>
 <box title="" numbered="false" id="corty3e-ch8-bx6-4" block_type="eq-t">
 <box-metadata><box-title><phrase block_type="sec_num">Equation 8.4</phrase> <phrase block_type="sec_title">Formula for an Independent-Samples <em>t</em> Test</phrase></box-title></box-metadata>
 <p id="corty3e-ch8-eqn-9" block_type="equation">
@@ -192,7 +192,7 @@
 <p id="corty3e-ch8-eqn-10" block_type="equation">
 <image asset-id="corty3e-ch8-img-20" alt="image" src="asset/ch8/corty3e_eqn08_267_03.jpg"/></p>
 </box>
-<p id="corty3e-ch8-p93" block_type="txt"><link href="#corty3e-ch8-bx6-4">Equation 8.4</link> says that an independent-samples <em>t</em> value is calculated by dividing the numerator, the difference between the two sample means, by the denominator, the standard error of the difference. Dr. Villanova, because he is doing a one-tailed test, has already decided that he will be subtracting the shallow processing group&#8217;s mean, 3.50, from the deep processing group&#8217;s mean, 8.30:</p>
+<p id="corty3e-ch8-p93" block_type="txt">Equation 8.4 says that an independent-samples <em>t</em> value is calculated by dividing the numerator, the difference between the two sample means, by the denominator, the standard error of the difference. Dr. Villanova, because he is doing a one-tailed test, has already decided that he will be subtracting the shallow processing group&#8217;s mean, 3.50, from the deep processing group&#8217;s mean, 8.30:</p>
 <p id="corty3e-ch8-eqn-11" block_type="equation">
 <image asset-id="corty3e-ch8-img-21" alt="image" src="asset/ch8/corty3e_eqn08_267_04.jpg"/></p>
 <p id="corty3e_page_268" block_type="page_start">268</p>
@@ -223,7 +223,7 @@
 <list id="corty3e-ch8-list-7" type="ordered" block_type="numbered">
 <li><p id="corty3e-ch8-p109" block_type="sr-exp-nl-first">The hypotheses were nondirectional, so she&#8217;s doing a two-tailed test.</p></li>
 <li><p id="corty3e-ch8-p110" block_type="sr-exp-nl-mid">She&#8217;s willing to run the standard, 5&#37;, risk of making a Type I error, so &#945; &#61; .05.</p></li>
-<li><p id="corty3e-ch8-p111" block_type="sr-exp-nl-last">Applying <link href="#corty3e-ch8-bx6-1">Equation 8.1</link> to her total sample size, <em>N</em> &#61; 61, she calculates degrees of freedom as <em>df</em> &#61; 61 &#8211; 2 &#61; 59.</p></li>
+<li><p id="corty3e-ch8-p111" block_type="sr-exp-nl-last">Applying Equation 8.1 to her total sample size, <em>N</em> &#61; 61, she calculates degrees of freedom as <em>df</em> &#61; 61 &#8211; 2 &#61; 59.</p></li>
 </list>
 <p id="corty3e-ch8-p112" block_type="sr_exp_txt">Turning to the table of critical values of <em>t,</em> she looks for the intersection of the column for a two-tailed test with &#945; &#61; .05, the bolded column, and the row for <em>df</em> &#61; 59. However, there is no row for <em>df</em> &#61; 59. What should she do? She&#8217;ll follow <em>The</em> <em>Price Is Right</em> rule (see <link href="corty3e-ch07.xml">Chapter 7</link>) and use the critical value found in the row for the degrees of freedom that are closest to her actual degrees of freedom without going over it. In this instance, that means the row with <em>df</em> &#61; 55. The critical value of <em>t</em> is &#177;2.004. The sampling distribution of <em>t</em> with this critical value of <em>t</em> is shown in <strong><link href="corty3e-ch08.xml#corty3e-ch8-fig-20">Figure 8.5</link></strong>.</p>
 <figure id="corty3e-ch8-fig-20" block_type="figure" numbered="true" number="8.5" mmtype="image" mmsrc="" attr="">
@@ -241,26 +241,26 @@
 <p id="corty3e-ch8-p116" block_type="bx1-que"><strong>Q</strong> Why do statisticians use <em>The Price Is Right</em> rule and, if the actual degrees of freedom aren&#8217;t in the table of critical values, use the value that is closest without going over the actual value?</p>
 <p id="corty3e-ch8-p117" block_type="bx1-ans"><strong>A</strong> Statisticians like to make it difficult to reject the null hypothesis. Using a critical value associated with a smaller number of degrees of freedom means that the rare zone is smaller and so it is harder to reject the null hypothesis.</p>
 </box>
-<p id="corty3e-ch8-p118" block_type="sr_exp_h4_txt"><phrase block_type="h4-n-ri"><strong>Step 5</strong></phrase> <strong>Calculate the Test Statistic.</strong> The first step in finding the <em>t</em> value is to use <link href="#corty3e-ch8-bx6-2">Equation 8.2</link> to calculate the pooled variance. Once that is done, Dr. Risen can use <link href="#corty3e-ch8-bx6-3">Equation 8.3</link> to find the standard error of the difference and <link href="#corty3e-ch8-bx6-4">Equation 8.4</link> to calculate the value of the test statistic.</p>
+<p id="corty3e-ch8-p118" block_type="sr_exp_h4_txt"><phrase block_type="h4-n-ri"><strong>Step 5</strong></phrase> <strong>Calculate the Test Statistic.</strong> The first step in finding the <em>t</em> value is to use Equation 8.2 to calculate the pooled variance. Once that is done, Dr. Risen can use Equation 8.3 to find the standard error of the difference and Equation 8.4 to calculate the value of the test statistic.</p>
 <p id="corty3e-ch8-p119" block_type="sr_exp_txt">As a reminder, here is the information Dr. Risen has to work with:</p>
 <list id="corty3e-ch8-list-9" type="unordered" block_type="bullet">
 <li><p id="corty3e-ch8-p120" block_type="sr-exp-bl-first">Cold day: <em>n</em> &#61; 33, <em>M</em> &#61; 3.05 (mph), <em>s</em> &#61; 0.40 (mph)</p></li>
 <li><p id="corty3e-ch8-p121" block_type="sr-exp-bl-last">Warm day: <em>n</em> &#61; 28, <em>M</em> &#61; 2.90 (mph), <em>s</em> &#61; 0.39 (mph)</p></li>
 </list>
-<p id="corty3e-ch8-p122" block_type="sr_exp_txt_ni">Let&#8217;s follow as Dr. Risen plugs the values into <link href="#corty3e-ch8-bx6-2">Equation 8.2</link> to find <image asset-id="corty3e-ch8-img-24" alt="image" src="asset/ch8/corty3e_ineqn08_270_01.jpg"/>:</p>
+<p id="corty3e-ch8-p122" block_type="sr_exp_txt_ni">Let&#8217;s follow as Dr. Risen plugs the values into Equation 8.2 to find <image asset-id="corty3e-ch8-img-24" alt="image" src="asset/ch8/corty3e_ineqn08_270_01.jpg"/>:</p>
 <p id="corty3e-ch8-eqn-12" block_type="equation">
 <image asset-id="corty3e-ch8-img-25" alt="image" src="asset/ch8/corty3e_eqn08_270_01.jpg"/></p>
 <p id="corty3e_page_271" block_type="page_start">271</p>
-<p id="corty3e-ch8-p123" block_type="sr_exp_txt_ni">The next step is to use <link href="#corty3e-ch8-bx6-3">Equation 8.3</link> to find the standard error of the difference:</p>
+<p id="corty3e-ch8-p123" block_type="sr_exp_txt_ni">The next step is to use Equation 8.3 to find the standard error of the difference:</p>
 <p id="corty3e-ch8-eqn-13" block_type="equation">
 <image asset-id="corty3e-ch8-img-26" alt="image" src="asset/ch8/corty3e_eqn08_271_01.jpg"/></p>
-<p id="corty3e-ch8-p124" block_type="sr_exp_txt">Now that she knows <image asset-id="corty3e-ch8-img-27" alt="image" src="asset/ch8/corty3e_ineqn08_271_01.jpg"/>, Dr. Risen can go on to complete <link href="#corty3e-ch8-bx6-4">Equation 8.4</link> and find the <em>t</em> value:</p>
+<p id="corty3e-ch8-p124" block_type="sr_exp_txt">Now that she knows <image asset-id="corty3e-ch8-img-27" alt="image" src="asset/ch8/corty3e_ineqn08_271_01.jpg"/>, Dr. Risen can go on to complete Equation 8.4 and find the <em>t</em> value:</p>
 <p id="corty3e-ch8-eqn-14" block_type="equation">
 <image asset-id="corty3e-ch8-img-28" alt="image" src="asset/ch8/corty3e_eqn08_271_02.jpg"/></p>
 <p id="corty3e-ch8-p125" block_type="sr_exp_txt_ni">The value of the test statistic, <em>t,</em> is 1.50. This completes Step 5.</p>
 <box title="A Common Question" numbered="false" id="corty3e-ch8-bx1-3" block_type="bx-1-h">
 <p id="corty3e-ch8-p126" block_type="bx1-que"><strong>Q</strong> Is it possible to calculate the standard error of the estimate without computing the pooled variance first?</p>
-<p id="corty3e-ch8-p127" block_type="bx1-ans"><strong>A</strong> With a little algebraic rearranging, almost anything is possible. Here is the combination of <link href="#corty3e-ch8-bx6-2">Equations 8.2</link> and <link href="#corty3e-ch8-bx6-3">8.3</link>:</p>
+<p id="corty3e-ch8-p127" block_type="bx1-ans"><strong>A</strong> With a little algebraic rearranging, almost anything is possible. Here is the combination of Equations 8.2 and <link href="#corty3e-ch8-bx6-3">8.3</link>:</p>
 <p id="corty3e-ch8-eqn-15" block_type="equation">
 <image asset-id="corty3e-ch8-img-29" alt="image" src="asset/ch8/corty3e_eqn08_271_03.jpg"/></p>
 </box>
@@ -334,7 +334,7 @@
 <li><p id="corty3e-ch8-p162" block_type="bl-mid"><em>d</em> &#8776; 0.50 or <em>r</em><sup>2</sup> &#61; 9&#37; is a medium effect.</p></li>
 <li><p id="corty3e-ch8-p163" block_type="bl-last"><em>d</em> &#8805; 0.80 or <em>r</em><sup>2</sup> &#8805; 25&#37; is a large effect.</p></li>
 </list>
-<p id="corty3e-ch8-p164" block_type="txt"><link href="#corty3e-ch8-bx6-5">Equation 8.5</link> shows how to calculate Cohen&#8217;s <em>d</em> for the independent-samples <em>t</em> test. Note that it makes use of the pooled variance, <image asset-id="corty3e-ch8-img-36" alt="image" src="asset/ch8/corty3e_ineqn08_270_01.jpg"/>, which was 5.08.</p>
+<p id="corty3e-ch8-p164" block_type="txt">Equation 8.5 shows how to calculate Cohen&#8217;s <em>d</em> for the independent-samples <em>t</em> test. Note that it makes use of the pooled variance, <image asset-id="corty3e-ch8-img-36" alt="image" src="asset/ch8/corty3e_ineqn08_270_01.jpg"/>, which was 5.08.</p>
 <box title="" numbered="false" id="corty3e-ch8-bx6-5" block_type="eq-t">
 <box-metadata><box-title><phrase block_type="sec_num">Equation 8.5</phrase> <phrase block_type="sec_title">Formula for Calculating Cohen&#8217;s <em>d</em> for an Independent-Samples <em>t</em> Test</phrase></box-title></box-metadata>
 <p id="corty3e-ch8-eqn-16" block_type="equation">
@@ -359,7 +359,7 @@
 <section id="corty3e-ch8-sec2-3" block_type="h2" chapter="8" title="" numbered="false" level="2" print_page="275">
 <section-metadata><section-title>How Wide Is the Confidence Interval?</section-title></section-metadata>
 <p id="corty3e-ch8-p172" block_type="txt-ni">To determine the impact of the independent variable on the dependent variable in the population, a confidence interval is used. For an independent-samples <em>t</em> test, a researcher calculates a confidence interval for the difference between population means, the same type of confidence interval calculated for the single-sample <em>t</em> test. This confidence interval estimates how close together (or how far apart) the two population means may be. This tells how much of an effect may, or may not, exist in the population.</p>
-<p id="corty3e-ch8-p173" block_type="txt">Though any level of confidence, from greater than 0&#37; to less than 100&#37;, can be used for a confidence interval, the most commonly calculated is a 95&#37; confidence interval. The formula for that is found in <link href="#corty3e-ch8-bx6-6">Equation 8.6</link>. Two other common confidence intervals are 90&#37; and 99&#37;.</p>
+<p id="corty3e-ch8-p173" block_type="txt">Though any level of confidence, from greater than 0&#37; to less than 100&#37;, can be used for a confidence interval, the most commonly calculated is a 95&#37; confidence interval. The formula for that is found in Equation 8.6. Two other common confidence intervals are 90&#37; and 99&#37;.</p>
 <box title="" numbered="false" id="corty3e-ch8-bx6-6" block_type="eq-t">
 <box-metadata><box-title><phrase block_type="sec_num">Equation 8.6</phrase> <phrase block_type="sec_title">Formula for Calculating the 95&#37; Confidence Interval for the Difference Between Population Means</phrase></box-title></box-metadata>
 <p id="corty3e-ch8-eqn-20" block_type="equation">
@@ -435,14 +435,14 @@
 <p id="corty3e-ch8-p213" block_type="bx1-ans"><strong>A</strong> The degrees of freedom within the parentheses in APA format provide information about how many cases there are, so they should reflect that.</p>
 </box>
 <p id="corty3e_page_279" block_type="page_start">279</p>
-<p id="corty3e-ch8-p214" block_type="sr_exp_txt"><em>How big is the effect?</em> Using <link href="#corty3e-ch8-bx6-5">Equation 8.5</link>, Dr. Risen calculated Cohen&#8217;s <em>d:</em></p>
+<p id="corty3e-ch8-p214" block_type="sr_exp_txt"><em>How big is the effect?</em> Using Equation 8.5, Dr. Risen calculated Cohen&#8217;s <em>d:</em></p>
 <p id="corty3e-ch8-eqn-23" block_type="equation">
 <image asset-id="corty3e-ch8-img-47" alt="image" src="asset/ch8/corty3e_eqn08_279_01.jpg"/></p>
-<p id="corty3e-ch8-p215" block_type="sr_exp_txt"><link href="#corty3e-ch8-bx6-6">Equation 8.6</link> is used to calculate <em>r</em><sup>2</sup>:</p>
+<p id="corty3e-ch8-p215" block_type="sr_exp_txt">Equation 8.6 is used to calculate <em>r</em><sup>2</sup>:</p>
 <p id="corty3e-ch8-eqn-24" block_type="equation">
 <image asset-id="corty3e-ch8-img-48" alt="image" src="asset/ch8/corty3e_eqn08_279_02.jpg"/></p>
 <p id="corty3e-ch8-p216" block_type="sr_exp_txt">Hypothesis testing says there is not enough evidence to conclude an effect has occurred, but the two effect sizes suggest that a small to moderate effect may be present. Dr. Risen might want to replicate the study with a larger sample size in order to have a better chance of rejecting the null hypothesis and seeing whether temperature does affect the pace of urban life.</p>
-<p id="corty3e-ch8-p217" block_type="sr_exp_txt"><em>How wide is the confidence interval?</em> Applying <link href="#corty3e-ch8-bx6-6">Equation 8.6</link>, Dr. Risen calculated the 95&#37; confidence interval:</p>
+<p id="corty3e-ch8-p217" block_type="sr_exp_txt"><em>How wide is the confidence interval?</em> Applying Equation 8.6, Dr. Risen calculated the 95&#37; confidence interval:</p>
 <p id="corty3e-ch8-eqn-25" block_type="equation">
 <image asset-id="corty3e-ch8-img-49" alt="image" src="asset/ch8/corty3e_eqn08_279_03.jpg"/></p>
 <p id="corty3e-ch8-p218" block_type="sr-exp-eq">&#61; (3.05 &#8211; 2.90) &#177; (2.004 &#215; 0.10)</p>
@@ -727,7 +727,7 @@ a.two-samples <em>t</em> test:: an inferential statistical test used to compare 
 <p id="corty3e-ch8-p404" block_type="bx3-txt">The second box of output presents the results of the <em>t</em> test. SPSS gives more information than we need. Just pay attention to the first row, the one that says &#8220;Equal variances assumed.&#8221; SPSS reports a negative value for the test statistic, while Dr. Villanova found a positive value. The different sign for the <em>t</em> values doesn&#8217;t matter because it is merely a result of which mean is subtracted from the other. Because SPSS carries more decimal places than Dr. Villanova did, its <em>t</em> value (6.558) is more accurate than his (6.58). Similarly, the SPSS value for the standard error of the difference (.732) is more accurate than Dr. Villanova&#8217;s (.73).</p>
 <p id="corty3e-ch8-p405" block_type="bx3-txt">SPSS also reports degrees of freedom (36) and the exact, two-tailed significance level. If this value (here, .000) is less than or equal to .05, then reject the null hypothesis. If the value is greater than .05, then fail to reject the null hypothesis.</p>
 <p id="corty3e-ch8-p406" block_type="bx3-txt">SPSS reports the 95&#37; confidence interval for the difference between population means. Because SPSS subtracted the means in a different order than Dr. Villanova did, it reports the confidence interval as negative numbers, from &#8211;6.284 to &#8211;3.316. (The SPSS confidence interval is also reported with more decimal places.) Don&#8217;t let the sign become a concern&#8212;by referring back to the population means, one can figure out the direction of the confidence interval.</p>
-<p id="corty3e-ch8-p407" block_type="bx3-txt">Finally, SPSS does not report Cohen&#8217;s <em>d.</em> And, unfortunately, it does not report the pooled variance so that Cohen&#8217;s <em>d</em> can be calculated by hand. To calculate <em>d,</em> go through the first five steps of <link href="#corty3e-ch8-bx6-3">Equation 8.3</link> to calculate <image asset-id="corty3e-ch8-img-85" alt="image" src="asset/ch8/corty3e_ineqn08_270_01.jpg"/>.</p>
+<p id="corty3e-ch8-p407" block_type="bx3-txt">Finally, SPSS does not report Cohen&#8217;s <em>d.</em> And, unfortunately, it does not report the pooled variance so that Cohen&#8217;s <em>d</em> can be calculated by hand. To calculate <em>d,</em> go through the first five steps of Equation 8.3 to calculate <image asset-id="corty3e-ch8-img-85" alt="image" src="asset/ch8/corty3e_ineqn08_270_01.jpg"/>.</p>
 </box>
 </section>
 </chapter>

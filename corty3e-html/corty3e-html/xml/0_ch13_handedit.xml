@@ -80,7 +80,7 @@
 <section id="corty3e-ch13-sec2-3" block_type="h2" chapter="13" title="" numbered="false" level="2" print_page="483">
 <section-metadata><section-title>Visualizing Relationships</section-title></section-metadata>
 <p id="corty3e-ch13-p41" block_type="txt-ni">The degree to which two variables vary together determines whether the relationship is strong or weak. The strength of the relationship can be visualized in a scatterplot. <strong><link href="#corty3e-ch13-fig-3">Figure 13.2</link></strong> shows the relationship between randomly generated numbers. If <em>X</em> values are randomly selected and each <em>X</em> is paired with a randomly selected <em>Y,</em> then the two do not vary together systematically. <link href="#corty3e-ch13-fig-3">Figure 13.2</link> shows a rectangular scatterplot where there is <em>no</em> relationship, what is called a zero correlation, between two variables. Cases with low values on <em>X</em> could have low, medium, or high values on <em>Y.</em> And, the same is true for cases with medium or high values on <em>X.</em></p>
-<p id="corty3e_page_483" block_type="page_start">484</p>
+<p id="corty3e_page_484" block_type="page_start">484</p>
 <figure id="corty3e-ch13-fig-3" block_type="figure" numbered="true" number="13.2" mmtype="image" mmsrc="" attr="">
 <layout align="center" width="large" border="true"/>
 <image asset-id="corty3e-ch13-img-3" alt="image" src="asset/ch13/corty3e_fig13_02.jpg"/>
@@ -108,14 +108,13 @@
 <caption><strong><phrase block_type="fig_num">Figure 13.5</phrase> Visualizing the Strength of Relationships</strong> These four scatterplots differ in the degree to which the points form a straight line or are spread out to form an oval. As the amount of spread increases&#8212;as the points fall less along a line&#8212;the relationship becomes weaker.</caption>
 </figure>
 <p id="corty3e-ch13-p45" block_type="txt">Two situations exist in which the points in a scatterplot form a straight line, but the relationship is not a perfect one. These occur when the line is horizontal or vertical. When the line is horizontal, for example, every value of <em>X</em> is paired with the same value of <em>Y.</em> There is no variability in <em>Y.</em> With a vertical line, the opposite is true and there is no variability in <em>X.</em> The Pearson <em>r</em> formula needs both variables to have variability, and if either variable has none, Pearson <em>r</em> can&#8217;t be calculated. In these situations, <em>r</em> is said to be undefined.</p>
-<p id="corty3e_page_484" block_type="page_start">484</p>
 <p id="corty3e_page_485" block_type="page_start">485</p>
 </section>
 <section id="corty3e-ch13-sec2-5" block_type="h2" chapter="13" title="" numbered="false" level="2" print_page="485">
 <section-metadata><section-title>Correlations Defined by <em>z</em> Scores</section-title></section-metadata>
 <p id="corty3e-ch13-p46" block_type="txt-ni">A scatterplot can also be drawn using <em>z</em> scores, not raw scores. <em>z</em> scores, also called standard scores, were introduced in <link href="corty3e-ch04.xml">Chapter 4</link>. They are a transformation of raw scores into scores that reveal how far away from the mean the scores are in standard deviation units. <em>z</em> scores can be positive or negative, which means they fall above the mean or below the mean.</p>
 <p id="corty3e-ch13-p47" block_type="txt"><strong><link href="#corty3e-ch13-fig-7">Figure 13.6</link></strong> offers scatterplots for the community hospital/number of deaths data. The panel on the left in 13.6, like <link href="#corty3e-ch13-fig-2">Figure 13.1</link>, illustrates the relationship with raw scores, and the panel on the right shows what the scatterplot looks like when the same variables are transformed into <em>z</em> scores. Note that transforming from raw scores to <em>z</em> scores doesn&#8217;t change the relationship. The pattern of the dots, the shape, is exactly the same, whether raw scores or <em>z</em> scores are being plotted.</p>
-<p id="corty3e_page_483" block_type="page_start">484</p>
+<p id="corty3e_page_486" block_type="page_start">486</p>
 <figure id="corty3e-ch13-fig-7" block_type="figure" numbered="true" number="13.6" mmtype="image" mmsrc="" attr="">
 <layout align="center" width="xlarge" border="true"/>
 <image asset-id="corty3e-ch13-img-7" alt="image" src="asset/ch13/corty3e_fig13_06.jpg"/>
@@ -127,7 +126,6 @@
 <image asset-id="corty3e-ch13-img-8" alt="image" src="asset/ch13/corty3e_fig13_07.jpg"/>
 <caption><strong><phrase block_type="fig_num">Figure 13.7</phrase> A Perfect Relationship: Raw Scores vs.</strong> <em>z</em> <strong>Scores</strong> With a perfect relationship, a case&#8217;s <em>z</em> score on the <em>X</em> variable has exactly the same value as it does on the <em>Y</em> variable. In the panel on the left, the data point for boiling water occurs at the intersection of 212&#176;F and 100&#176;C. In the panel on the right, the data point is at the intersection of <em>z</em> scores of 1.63 on both axes.</caption>
 </figure>
-<p id="corty3e_page_486" block_type="page_start">486</p>
 <p id="corty3e_page_487" block_type="page_start">487</p>
 <p id="corty3e-ch13-p49" block_type="txt">As correlations get weaker, the similarity between <em>z<sub>X</sub></em> and <em>z<sub>Y</sub></em> lessens. The community hospital/number of deaths data show a strong correlation, but not a perfect one. The point on the upper right is New York with 206 hospitals and 153,000 deaths. Converted, those are <em>z</em> scores of 2.2 and 2.8. The two <em>z</em> scores are not the same, but they are in the same ballpark, both far above the mean. As correlations grow weaker and weaker, the similarity between the two <em>z</em> scores for each data point becomes less and less.</p>
 <p id="corty3e-ch13-p50" block_type="txt">In fact, the similarity&#8211;dissimilarity of the pairs of <em>z</em> scores is one way of calculating what a Pearson correlation coefficient is. This formula, called the definitional formula, calculates a Pearson <em>r</em> as the average of multiplied-together pairs of <em>z</em> scores. Each case&#8217;s raw score on <em>X</em> is transformed into a <em>z</em> score and its raw score on <em>Y</em> is transformed into a <em>z</em> score. The two <em>z</em> scores for each case are multiplied together and the mean of these products is calculated. The mean of all such multiplied-together scores is a Pearson correlation coefficient. Thus, the stronger the correlation, the more similar&#8212;on average&#8212;the <em>z</em> scores are.</p>
@@ -361,14 +359,14 @@
 <p id="corty3e_page_499" block_type="page_start">499</p></li>
 <li><p id="corty3e-ch13-p116" block_type="bl-last">Then, find the row that contains <em>r<sub>cv</sub></em> by selecting the row with the correct degrees of freedom. (If there is no row for the degrees of freedom one needs, follow <em>The Price Is Right</em> rule and use the row for the degrees of freedom that is closest without going over.)</p></li>
 </list>
-<p id="corty3e-ch13-p117" block_type="txt-ni"><link href="#corty3e-ch13-bx6-1">Equation 13.1</link> shows how to calculate degrees of freedom for a Pearson correlation coefficient.</p>
+<p id="corty3e-ch13-p117" block_type="txt-ni">Equation 13.1 shows how to calculate degrees of freedom for a Pearson correlation coefficient.</p>
 <box title="" numbered="false" id="corty3e-ch13-bx6-1" block_type="eq-t">
 <box-metadata><box-title><phrase block_type="sec_num">Equation 13.1</phrase> <phrase block_type="sec_title">Formula for Calculating Degrees of Freedom (<em>df</em>) for a Pearson Correlation Coefficient</phrase></box-title></box-metadata>
 <p id="corty3e-ch13-p118" block_type="eq"><em>df</em> &#61; <em>N</em> &#8211; 2</p>
 <p id="corty3e-ch13-p119" block_type="eq-txt-ni">where <em>df</em> &#61; degrees of freedom</p>
 <p id="corty3e-ch13-p120" block_type="eq-unl"><em>N</em> &#61; number of cases in the sample</p>
 </box>
-<p id="corty3e-ch13-p121" block_type="txt">For the marital satisfaction study, there are eight cases in the sample, so <em>N</em> &#61; 8. Applying <link href="#corty3e-ch13-bx6-1">Equation 13.1</link>, Dr. Paik determines <em>df</em> &#61; 6:</p>
+<p id="corty3e-ch13-p121" block_type="txt">For the marital satisfaction study, there are eight cases in the sample, so <em>N</em> &#61; 8. Applying Equation 13.1, Dr. Paik determines <em>df</em> &#61; 6:</p>
 <p id="corty3e-ch13-p122" block_type="eq"><em>df</em> &#61; <em>N &#8211;</em>2</p>
 <p id="corty3e-ch13-p123" block_type="eq">&#61; 8 &#8211;2</p>
 <p id="corty3e-ch13-p124" block_type="eq">&#61; 6</p>
@@ -378,7 +376,7 @@
 <li><p id="corty3e-ch13-p127" block_type="bl-last">If &#8211;.707 &#60; <em>r</em> &#60; .707, fail to reject <em>H</em><sub>0</sub>.</p></li>
 </list>
 <p id="corty3e-ch13-p128" block_type="h4"><phrase block_type="h4-n-ri"><strong>Step 5</strong></phrase> <strong>Calculate the Test Statistic</strong></p>
-<p id="corty3e-ch13-p129" block_type="txt-ni"><link href="#corty3e-ch13-bx6-2">Equation 13.2</link> is the computational formula for calculating the Pearson <em>r.</em> Computational formulas are mathematically easier than definitional formulas. <link href="#corty3e-ch13-bx6-2">Equation 13.2</link> may look complex, but it isn&#8217;t difficult when broken down into chunks.</p>
+<p id="corty3e-ch13-p129" block_type="txt-ni">Equation 13.2 is the computational formula for calculating the Pearson <em>r.</em> Computational formulas are mathematically easier than definitional formulas. Equation 13.2 may look complex, but it isn&#8217;t difficult when broken down into chunks.</p>
 <box title="" numbered="false" id="corty3e-ch13-bx6-2" block_type="eq-t">
 <box-metadata><box-title><phrase block_type="sec_num">Equation 13.2</phrase> <phrase block_type="sec_title">Formula for Calculating <em>r</em>, the Pearson Correlation Coefficient</phrase></box-title></box-metadata>
 <p id="corty3e-ch13-eqn-1" block_type="equation">
@@ -392,13 +390,13 @@
 <p id="corty3e-ch13-p136" block_type="eq-unl"><em>SS<sub>Y</sub></em> &#61; sum of the squared deviation scores for variable <em>Y</em></p>
 </box>
 <p id="corty3e_page_500" block_type="page_start">500</p>
-<p id="corty3e-ch13-p137" block_type="txt">The easiest way to complete <link href="#corty3e-ch13-bx6-2">Equation 13.2</link> is in three pieces: one for the numerator, one for the denominator, and one to finish the division.</p>
+<p id="corty3e-ch13-p137" block_type="txt">The easiest way to complete Equation 13.2 is in three pieces: one for the numerator, one for the denominator, and one to finish the division.</p>
 <p id="corty3e-ch13-p138" block_type="sl"><phrase block_type="h5-ri"><strong>The Numerator.</strong></phrase> There are four steps in calculating the numerator:</p>
 <list id="corty3e-ch13-list-9" type="ordered" block_type="numbered">
 <li><p id="corty3e-ch13-p139" block_type="nl-first">Take each <em>X</em> score and subtract the mean of the <em>X</em> scores from it. The resulting values are the <em>X</em> deviation scores.</p></li>
 <li><p id="corty3e-ch13-p140" block_type="nl-mid">Take each <em>Y</em> score and subtract the mean of the <em>Y</em> scores from it. The resulting values are the <em>Y</em> deviation scores.</p></li>
 <li><p id="corty3e-ch13-p141" block_type="nl-mid">For each case, multiply the two deviation scores together.</p></li>
-<li><p id="corty3e-ch13-p142" block_type="nl-last">Add up all the multiplied pairs of deviation scores. This sum is the numerator in <link href="#corty3e-ch13-bx6-2">Equation 13.2</link>.</p></li>
+<li><p id="corty3e-ch13-p142" block_type="nl-last">Add up all the multiplied pairs of deviation scores. This sum is the numerator in Equation 13.2.</p></li>
 </list>
 <p id="corty3e-ch13-p143" block_type="sl"><phrase block_type="h5-ri"><strong>The Denominator.</strong></phrase> There are six steps in calculating the denominator:</p>
 <list id="corty3e-ch13-list-10" type="ordered" block_type="numbered">
@@ -407,7 +405,7 @@
 <li><p id="corty3e-ch13-p146" block_type="nl-mid">Take each <em>Y</em> deviation score and square it.</p></li>
 <li><p id="corty3e-ch13-p147" block_type="nl-mid">Add up all the squared <em>Y</em> deviation scores. This results in the sum of squares for <em>Y,</em> abbreviated as <em>SS</em><em><sub>Y</sub></em>.</p></li>
 <li><p id="corty3e-ch13-p148" block_type="nl-mid">Multiply <em>SS</em><em><sub>X</sub></em> from Step 2 by <em>SS</em><em><sub>Y</sub></em> from Step 4.</p></li>
-<li><p id="corty3e-ch13-p149" block_type="nl-last">The square root of the product found in Step 5 is the denominator in <link href="#corty3e-ch13-bx6-2">Equation 13.2</link>.</p></li>
+<li><p id="corty3e-ch13-p149" block_type="nl-last">The square root of the product found in Step 5 is the denominator in Equation 13.2.</p></li>
 </list>
 <p id="corty3e-ch13-p150" block_type="sl"><phrase block_type="h5-ri"><strong>Final Calculations.</strong></phrase> The last step in calculating Pearson <em>r</em> is to take the numerator and divide it by the denominator, yielding the <em>r</em> value.</p>
 <p id="corty3e-ch13-p151" block_type="sl"><phrase block_type="h5-ri"><strong>Doing the Calculations.</strong></phrase> The marital satisfaction data are re-presented in <strong><link href="#corty3e-ch13-fig-25">Table 13.5</link></strong>. The first two columns contain the <em>X</em> value and the <em>Y</em> value for each case (the same information as in <link href="#corty3e-ch13-fig-18">Table 13.3</link>). But, <link href="#corty3e-ch13-fig-25">Table 13.5</link> contains five new columns (numbered as columns 3&#8211;7), each of which will be explained below as it is used.</p>
@@ -432,7 +430,7 @@
 <li><p id="corty3e-ch13-p162" block_type="nl-mid">Then, multiply together the two sums of squared deviation scores, 924.00 (Step 2) and 5.18 (Step 4): 924.00 &#215; 5.18 &#61; 4,786.32.</p></li>
 <li><p id="corty3e-ch13-p163" block_type="nl-last">Next, to find the denominator, take the square root of the product that was calculated in Step 5:<image asset-id="corty3e-ch13-img-26" alt="image" src="asset/ch13/corty3e_ineqn13_501_01.jpg"/>.</p></li>
 </list>
-<p id="corty3e-ch13-p164" block_type="txt">Now that the numerator of <link href="#corty3e-ch13-bx6-2">Equation 13.2</link> (52.70) and the denominator of <link href="#corty3e-ch13-bx6-2">Equation 13.2</link> (69.18) are known, Dr. Paik can calculate <em>r:</em></p>
+<p id="corty3e-ch13-p164" block_type="txt">Now that the numerator of Equation 13.2 (52.70) and the denominator of Equation 13.2 (69.18) are known, Dr. Paik can calculate <em>r:</em></p>
 <p id="corty3e-ch13-eqn-2" block_type="equation">
 <image asset-id="corty3e-ch13-img-27" alt="image" src="asset/ch13/corty3e_eqn13_501_01.jpg"/></p>
 <p id="corty3e_page_502" block_type="page_start">502</p>
@@ -466,7 +464,7 @@
 <p id="corty3e-ch13-p177" block_type="sr_exp_h4_txt"><phrase block_type="h4-n-ri"><strong>Step 3</strong></phrase> <phrase block_type="sr-exp-h4-t-ri"><strong>List the Hypotheses.</strong></phrase> Dr. Solomon has not made a prediction about the direction of the relationship, so her hypotheses are nondirectional or two-tailed:</p>
 <p id="corty3e-ch13-p178" block_type="sr-exp-eq"><em>H</em><sub>0</sub>: &#961; &#61; 0</p>
 <p id="corty3e-ch13-p179" block_type="sr-exp-eq"><em>H</em><sub>1</sub>: &#961; &#8800; 0</p>
-<p id="corty3e-ch13-p180" block_type="sr_exp_h4_txt"><phrase block_type="h4-n-ri"><strong>Step 4</strong></phrase> <phrase block_type="sr-exp-h4-t-ri"><strong>Set the Decision Rule.</strong></phrase> With <em>N</em> &#61; 10, the degrees of freedom are calculated with <link href="#corty3e-ch13-bx6-1">Equation 13.1</link>:</p>
+<p id="corty3e-ch13-p180" block_type="sr_exp_h4_txt"><phrase block_type="h4-n-ri"><strong>Step 4</strong></phrase> <phrase block_type="sr-exp-h4-t-ri"><strong>Set the Decision Rule.</strong></phrase> With <em>N</em> &#61; 10, the degrees of freedom are calculated with Equation 13.1:</p>
 <p id="corty3e-ch13-p181" block_type="sr-exp-eq"><em>df</em> &#61; <em>N</em>&#8211; 2</p>
 <p id="corty3e-ch13-p182" block_type="sr-exp-eq">&#61; 10 &#8211; 2</p>
 <p id="corty3e-ch13-p183" block_type="sr-exp-eq">&#61; 8</p>
@@ -488,7 +486,7 @@
 <image asset-id="corty3e-ch13-img-31" alt="image" src="asset/ch13/corty3e_table13_07.jpg"/>
 </figure>
 <list id="corty3e-ch13-list-15" type="unordered" block_type="bullet">
-<li><p id="corty3e-ch13-p189" block_type="sr-exp-bl-first">For the numerator in <link href="#corty3e-ch13-bx6-2">Equation 13.2</link>, add up the deviation scores that were multiplied together. The bottom of column 5 gives the result: &#8211;120.00.</p></li>
+<li><p id="corty3e-ch13-p189" block_type="sr-exp-bl-first">For the numerator in Equation 13.2, add up the deviation scores that were multiplied together. The bottom of column 5 gives the result: &#8211;120.00.</p></li>
 <li><p id="corty3e-ch13-p190" block_type="sr-exp-bl-mid">The sums of the squared deviation scores are 82.50 (<em>SS<sub>X</sub></em> in column 6) and 890.00 (<em>SS<sub>Y</sub></em> in column 7):</p></li>
 <li><p id="corty3e-ch13-p191" block_type="sr-exp-bl-mid">Multiply these together: 82.50 &#215; 890.00 &#61; 73,425.00.</p></li>
 <li><p id="corty3e-ch13-p192" block_type="sr-exp-bl-last">Take the square root of this product to find the denominator: <image asset-id="corty3e-ch13-img-32" alt="image" src="asset/ch13/corty3e_ineqn13_504_01.jpg"/>.</p></li>
@@ -646,7 +644,7 @@
 <li><p id="corty3e-ch13-p239" block_type="bl-mid">Medium &#8776;9&#37;</p></li>
 <li><p id="corty3e-ch13-p240" block_type="bl-last">Large &#8776;25&#37;</p></li>
 </list>
-<p id="corty3e-ch13-p241" block_type="txt">The formula for calculating <em>r</em><sup>2</sup> is shown in <link href="#corty3e-ch13-bx6-3">Equation 13.3</link>. To calculate <em>r</em><sup>2</sup>, take the Pearson <em>r,</em> square it, and multiply that number by 100 to turn it into a percentage.</p>
+<p id="corty3e-ch13-p241" block_type="txt">The formula for calculating <em>r</em><sup>2</sup> is shown in Equation 13.3. To calculate <em>r</em><sup>2</sup>, take the Pearson <em>r,</em> square it, and multiply that number by 100 to turn it into a percentage.</p>
 <box title="" numbered="false" id="corty3e-ch13-bx6-3" block_type="eq-t">
 <box-metadata><box-title><phrase block_type="sec_num">Equation 13.3</phrase> <phrase block_type="sec_title">Formula for Calculating <em>r</em><sup>2</sup>, the Percentage of Variability in One Variable That Is Accounted for by the Other Variable</phrase></box-title></box-metadata>
 <p id="corty3e-ch13-p242" block_type="eq"><em>r</em><sup>2</sup> &#61; (<em>r</em>)<sup>2</sup> &#215; 100</p>
@@ -667,7 +665,7 @@
 <p id="corty3e-ch13-p252" block_type="txt">Calculating the 95&#37; confidence interval for &#961;, 95&#37; CI&#961;, is a three-step procedure:</p>
 <list id="corty3e-ch13-list-24" type="ordered" block_type="numbered">
 <li><p id="corty3e-ch13-p253" block_type="nl-first">First, transform the observed <em>r</em> value into a <em>z</em> score, <em>z<sub>r </sub></em>. This is called a Fisher&#8217;s <em>r</em> to <em>z</em> transformation. <link href="corty3e_app1_1.html#corty3e-app1-fig-24">Appendix Table 7</link> makes the transformation easy.</p></li>
-<li><p id="corty3e-ch13-p254" block_type="nl-mid">Then, use <em>z<sub>r</sub></em> along with <link href="#corty3e-ch13-bx6-4">Equations 13.4</link> and <link href="#corty3e-ch13-bx6-5">13.5</link> to calculate the confidence interval.</p></li>
+<li><p id="corty3e-ch13-p254" block_type="nl-mid">Then, use <em>z<sub>r</sub></em> along with Equations 13.4 and <link href="#corty3e-ch13-bx6-5">13.5</link> to calculate the confidence interval.</p></li>
 <li><p id="corty3e-ch13-p255" block_type="nl-last">This confidence interval is in <em>z<sub>r</sub></em> format, not <em>r</em> format. So, the final step is to use <link href="corty3e_app1_1.html#corty3e-app1-fig-25">Appendix Table 8</link> to transform the confidence interval back into <em>r</em> value format.</p></li>
 </list>
 <p id="corty3e-ch13-p256" block_type="h4"><phrase block_type="h4-n-ri"><strong>Step 1</strong></phrase> <strong>Transform <em>r</em> to <em>z<sub>r</sub></em></strong></p>
@@ -678,16 +676,16 @@
 </figure>
 <p id="corty3e-ch13-p258" block_type="txt">The rows in <link href="corty3e_app1_1.html#corty3e-app1-fig-24">Appendix Table 7</link> represent the first digit of a two-digit <em>r</em> value and the columns represent the second digit of the two-digit <em>r</em> value. For example, an <em>r</em> of .76 is broken down into .7 for the row and .06 for the column. The numbers at the intersections of the row and column are the <em>r</em> value transformed into a <em>z</em> value. <link href="#corty3e-ch13-fig-30">Table 13.7</link> demonstrates this for the Pearson <em>r</em> for the marital satisfaction study where <em>r</em> &#61; .76. The intersection of the row for <em>r</em> &#8217;s that start with .7 and the column for <em>r</em> &#8217;s that end in .06 gives <em>z<sub>r</sub></em> &#61; 1.00. The original <em>r,</em> .76, was positive, so the <em>z<sub>r</sub></em> value is also positive. The <em>r</em> of .76 is transformed into a <em>z<sub>r</sub></em> of 1.00.</p>
 <p id="corty3e-ch13-p259" block_type="h4"><phrase block_type="h4-n-ri"><strong>Step 2</strong></phrase> <strong>Calculate the 95&#37; Confidence Interval for the <em>z</em> Value</strong></p>
-<p id="corty3e-ch13-p260" block_type="txt-ni">The formula for calculating the 95&#37; confidence interval around the <em>z<sub>r</sub></em> value is given in <link href="#corty3e-ch13-bx6-4">Equation 13.4</link>.</p>
+<p id="corty3e-ch13-p260" block_type="txt-ni">The formula for calculating the 95&#37; confidence interval around the <em>z<sub>r</sub></em> value is given in Equation 13.4.</p>
 <p id="corty3e_page_511" block_type="page_start">511</p>
 <box title="" numbered="false" id="corty3e-ch13-bx6-4" block_type="eq-t">
 <box-metadata><box-title><phrase block_type="sec_num">Equation 13.4</phrase> <phrase block_type="sec_title">95&#37; Confidence Interval for <em>z<sub>r</sub></em></phrase></box-title></box-metadata>
 <p id="corty3e-ch13-p261" block_type="eq">95&#37;CI<em><sub>zr</sub></em> &#61; <em>z<sub>r</sub></em> &#177; 1.96<em>s</em><sub>r</sub></p>
 <p id="corty3e-ch13-p262" block_type="eq-txt-ni">where 95&#37;CI<em><sub>zr</sub></em> &#61; 95&#37; confidence interval for &#961;, expressed in <em>z<sub>r</sub></em> units</p>
 <p id="corty3e-ch13-p263" block_type="eq-unl"><em>z<sub>r</sub></em> &#61; Pearson <em>r</em> transformed into <em>z</em> format, using <link href="corty3e_app1_1.html#corty3e-app1-fig-24">Appendix Table 7</link></p>
-<p id="corty3e-ch13-p264" block_type="eq-unl"><em>s<sub>r</sub></em> &#61; standard error of <em>r</em> (<link href="#corty3e-ch13-bx6-5">Equation 13.5</link>)</p>
+<p id="corty3e-ch13-p264" block_type="eq-unl"><em>s<sub>r</sub></em> &#61; standard error of <em>r</em> (Equation 13.5)</p>
 </box>
-<p id="corty3e-ch13-p265" block_type="txt-ni">This formula says that 1.96 standard errors of <em>r,</em> abbreviated <em>s<sub>r</sub></em>, are added to and subtracted from <em>z<sub>r </sub></em>. So before calculating 95&#37;CI&#961;, <em>s<sub>r</sub></em> needs to be calculated using <link href="#corty3e-ch13-bx6-5">Equation 13.5</link>.</p>
+<p id="corty3e-ch13-p265" block_type="txt-ni">This formula says that 1.96 standard errors of <em>r,</em> abbreviated <em>s<sub>r</sub></em>, are added to and subtracted from <em>z<sub>r </sub></em>. So before calculating 95&#37;CI&#961;, <em>s<sub>r</sub></em> needs to be calculated using Equation 13.5.</p>
 <box title="" numbered="false" id="corty3e-ch13-bx6-5" block_type="eq-t">
 <box-metadata><box-title><phrase block_type="sec_num">Equation 13.5</phrase> <phrase block_type="sec_title">Standard Error of <em>r</em></phrase></box-title></box-metadata>
 <p id="corty3e-ch13-eqn-4" block_type="equation">
@@ -699,10 +697,10 @@
 <p id="corty3e-ch13-eqn-5" block_type="equation">
 <image asset-id="corty3e-ch13-img-37" alt="image" src="asset/ch13/corty3e_eqn13_511_02.jpg"/></p>
 <box title="A Common Question" numbered="false" id="corty3e-ch13-bx6-6" block_type="bx-1-h">
-<p id="corty3e-ch13-p269" block_type="bx1-que"><strong>Q</strong> Are a 1 and a 3 always used in <link href="#corty3e-ch13-bx6-4">Equation 13.4</link> to calculate <em>s<sub>r</sub></em>?</p>
+<p id="corty3e-ch13-p269" block_type="bx1-que"><strong>Q</strong> Are a 1 and a 3 always used in Equation 13.4 to calculate <em>s<sub>r</sub></em>?</p>
 <p id="corty3e-ch13-p270" block_type="bx1-ans"><strong>A</strong> Yes. They are constants.</p>
 </box>
-<p id="corty3e-ch13-p271" block_type="txt">The standard error of <em>r</em> from <link href="#corty3e-ch13-bx6-5">Equation 13.5</link> can now be used in <link href="#corty3e-ch13-bx6-4">Equation 13.4</link> to calculate the 95&#37; confidence interval for &#961; in <em>z<sub>r</sub></em> units:</p>
+<p id="corty3e-ch13-p271" block_type="txt">The standard error of <em>r</em> from Equation 13.5 can now be used in Equation 13.4 to calculate the 95&#37; confidence interval for &#961; in <em>z<sub>r</sub></em> units:</p>
 <p id="corty3e-ch13-p272" block_type="eq">95&#37;CI<sub>zr</sub> &#61; <em>z<sub>r</sub></em> &#177; 1.96<em>s</em><sub>r</sub></p>
 <p id="corty3e-ch13-p273" block_type="eq">&#61; 1.00 &#177; (1.96 &#215; 0.45)</p>
 <p id="corty3e-ch13-p274" block_type="eq">&#61; 1.00 &#177; 0.8820</p>
@@ -727,7 +725,7 @@
 <li><p id="corty3e-ch13-p286" block_type="nl-last">How wide the confidence interval is. The wider the confidence interval is, the less sure a researcher is of the population value of the correlation coefficient.</p></li>
 </list>
 <p id="corty3e-ch13-p287" block_type="txt">For Dr. Paik&#8217;s marital satisfaction study, the results were statistically significant and the null hypothesis was rejected. As a result, the confidence interval for &#961; should not capture zero and that&#8217;s exactly what happened. There&#8217;s little reason, beyond the possibility of a Type I error, to think &#961; &#61; 0. The whole confidence interval, from .12 to .95, is on the positive side of zero. This leaves the researcher confident that the relationship between gender role flexibility and marital satisfaction is a direct one.</p>
-<p id="corty3e-ch13-p288" block_type="txt">The low end of the confidence interval is .12. Using <link href="#corty3e-ch13-bx6-4">Equation 13.4</link> to calculate <em>r</em><sup>2</sup> for this correlation coefficient, Dr. Paik finds <em>r</em><sup>2</sup> &#61; 1.44&#37;. This is a small effect, which tells Dr. Paik that the size of the effect in the overall population might also be small. On the other hand, if &#961; &#61; .95, the other end of the confidence interval, then <em>r</em><sup>2</sup> &#61; 90.25&#37;, which represents a huge effect.</p>
+<p id="corty3e-ch13-p288" block_type="txt">The low end of the confidence interval is .12. Using Equation 13.4 to calculate <em>r</em><sup>2</sup> for this correlation coefficient, Dr. Paik finds <em>r</em><sup>2</sup> &#61; 1.44&#37;. This is a small effect, which tells Dr. Paik that the size of the effect in the overall population might also be small. On the other hand, if &#961; &#61; .95, the other end of the confidence interval, then <em>r</em><sup>2</sup> &#61; 90.25&#37;, which represents a huge effect.</p>
 <p id="corty3e-ch13-p289" block_type="txt">Dr. Paik is bothered by the width of the confidence interval. It ranges from near 0 (.12) to near 1 (.95). That&#8217;s a wide range. This lack of precision in the confidence interval makes it unclear how much association exists between role flexibility and marital satisfaction in the population. The relationship in the population from which this sample came could be near zero or near perfect.</p>
 <p id="corty3e_page_514" block_type="page_start">514</p>
 <p id="corty3e-ch13-p290" block_type="txt">The reason the confidence interval is so wide is that the sample size was small. If <em>N</em> had been 80 (not 8), then <em>s<sub>r</sub></em> would have been 0.11 (not 0.45), and the 95&#37; confidence interval would have been a much more precise .65 to .84, with the low end much further away from zero. Such a confidence interval would inspire more confidence that, as a result of this study, something was known about the relationship between these two variables in the larger population.</p>
@@ -766,7 +764,7 @@
 <li><p id="corty3e-ch13-p308" block_type="sr-exp-bl-last">&#8220;<em>p</em> &#62; .05&#8221; reveals that results like this occur more than 5&#37; of the time when the null hypothesis is true. That is, the null hypothesis was not rejected.</p></li>
 </list>
 <p id="corty3e-ch13-p309" block_type="sr_exp_txt"><em>How big is the effect?</em> Though Dr. Solomon failed to reject the null hypothesis, she should still calculate an effect size to help her consider the possibility of Type II error.</p>
-<p id="corty3e-ch13-p310" block_type="sr_exp_txt">Using <link href="#corty3e-ch13-bx6-3">Equation 13.3</link>, she calculates the effect size, <em>r</em><sup>2</sup>:</p>
+<p id="corty3e-ch13-p310" block_type="sr_exp_txt">Using Equation 13.3, she calculates the effect size, <em>r</em><sup>2</sup>:</p>
 <p id="corty3e-ch13-p311" block_type="sr-exp-eq"><em>r</em><sup>2</sup> &#61; (<em>r</em>)<sup>2</sup> &#215; 100</p>
 <p id="corty3e-ch13-p312" block_type="sr-exp-eq">&#61; &#8211;.44<sup>2</sup> &#215; 100</p>
 <p id="corty3e-ch13-p313" block_type="sr-exp-eq">&#61; 0.1936 &#215; 100</p>
@@ -775,10 +773,10 @@
 <p id="corty3e-ch13-p315" block_type="sr_exp_txt_ni">An <em>r</em><sup>2</sup> of 19.36&#37; is more than a medium effect, according to Cohen (1988). As a result, Dr. Solomon is worried that a Type II error may have been made and that she missed finding a relationship between age of walking and IQ. She is going to recommend replicating the study with a larger sample size in order to have a better chance of finding the effect if it exists.</p>
 <p id="corty3e-ch13-p316" block_type="sr_exp_txt"><em>How wide is the confidence interval?</em> Calculating the confidence interval for &#961; is a three-step process.</p>
 <p id="corty3e-ch13-p317" block_type="sr_exp_h4_txt"><phrase block_type="h4-n-ri"><strong>Step 1</strong></phrase> <phrase block_type="sr-exp-h4-t-ri"><strong>Convert <em>r</em> to <em>z<sub>r</sub></em>.</strong></phrase> To do this, Dr. Solomon uses <link href="corty3e_app1_1.html#corty3e-app1-fig-24">Appendix Table 7</link>. Given <em>r</em> &#61; &#8211;.44, she finds the <em>z<sub>r</sub></em> transformation for this at the intersection of the row for .4 and the column for .04. The <em>r</em> was negative, so the <em>z<sub>r</sub></em> should be, too: <em>z<sub>r</sub></em> &#61; &#8211;0.47.</p>
-<p id="corty3e-ch13-p318" block_type="sr_exp_h4_txt"><phrase block_type="h4-n-ri"><strong>Step 2</strong></phrase> <phrase block_type="sr-exp-h4-t-ri"><strong>Calculate the Confidence Interval in <em>z<sub>r</sub></em> Units.</strong></phrase> The first thing Dr. Solomon does in this step is use <link href="#corty3e-ch13-bx6-5">Equation 13.5</link> to calculate <em>s<sub>r </sub>.</em> The only variable to plug into the equation is the sample size, which is 10:</p>
+<p id="corty3e-ch13-p318" block_type="sr_exp_h4_txt"><phrase block_type="h4-n-ri"><strong>Step 2</strong></phrase> <phrase block_type="sr-exp-h4-t-ri"><strong>Calculate the Confidence Interval in <em>z<sub>r</sub></em> Units.</strong></phrase> The first thing Dr. Solomon does in this step is use Equation 13.5 to calculate <em>s<sub>r </sub>.</em> The only variable to plug into the equation is the sample size, which is 10:</p>
 <p id="corty3e-ch13-eqn-6" block_type="equation">
 <image asset-id="corty3e-ch13-img-40" alt="image" src="asset/ch13/corty3e_eqn13_516_01.jpg"/></p>
-<p id="corty3e-ch13-p319" block_type="sr_exp_txt_ni">Now that she knows <em>s<sub>r</sub></em> &#61; 0.38 and <em>z<sub>r</sub></em> &#61; &#8211;0.47, she can use <link href="#corty3e-ch13-bx6-4">Equation 13.4</link> to calculate the confidence interval in <em>z<sub>r</sub></em> units:</p>
+<p id="corty3e-ch13-p319" block_type="sr_exp_txt_ni">Now that she knows <em>s<sub>r</sub></em> &#61; 0.38 and <em>z<sub>r</sub></em> &#61; &#8211;0.47, she can use Equation 13.4 to calculate the confidence interval in <em>z<sub>r</sub></em> units:</p>
 <p id="corty3e-ch13-eqn-7" block_type="equation">
 <image asset-id="corty3e-ch13-img-41" alt="image" src="asset/ch13/corty3e_eqn13_516_02.jpg"/></p>
 <p id="corty3e-ch13-p320" block_type="sr-exp-eq">&#61; &#8211;0.47 <em>&#177;</em> (1.96 &#215; 0.38)</p>
@@ -830,7 +828,7 @@
 <p id="corty3e-ch13-p351" block_type="txt">A confounding variable is a third variable, let&#8217;s call it <em>Z</em>, that is not measured and/or not controlled, that correlates with both <em>X</em> and <em>Y</em>, and that potentially explains why <em>X</em> and <em>Y</em> are correlated. Here is an example. Suppose we give &#36;10 each to ten 21-year-old college students on a Friday night and ask them to rendezvous with us at midnight. When they return, we find out how much money they spent and measure how well they can walk a straight line. We find a relationship&#8212;the more money a student has spent, the worse he or she is at walking the line. Clearly, a third variable, the amount of alcohol a student has purchased, would explain both why his or her funds are depleted and why his or her performance is impaired. If we took into account each student&#8217;s alcohol consumption, the correlation between money spent and performance would be explained.</p>
 <p id="corty3e-ch13-p352" block_type="txt">A <termref term="partial correlation">partial correlation</termref> mathematically removes the influence of a third variable on a correlation. It is a useful technique that moves a correlational study a little bit in the direction of an experimental study. Partial correlations do not allow cause-and-effect conclusions to be drawn, but they can make potential cause-and-effect conclusions less or more plausible. In the student study above, if the results turned out as described, it would be less plausible to conclude that spending money is the cause of impaired performance.</p>
 <p id="corty3e-ch13-p353" block_type="txt">How can a partial correlation make a cause-and-effect conclusion more plausible? Suppose a researcher finds a relationship between the number of years a person has smoked cigarettes and the degree of impairment of lung function. This researcher claims that the impairment is caused by smoking. Another researcher points out that people who have been smoking longer are usually older, and posits that it is age that causes the impaired lung function. If the effect of age is removed and the correlation between years of smoking and impaired lung function remains strong, then the notion that it is the number of years of smoking that leads to impaired lung function remains plausible.</p>
-<p id="corty3e-ch13-p354" block_type="txt">The abbreviation for a partial correlation is <em>r<sub>XY&#8211;Z</sub></em>, the correlation between <em>X</em> and <em>Y</em> minus the influence of <em>Z</em>. The formula for a partial correlation, shown in <link href="#corty3e-ch13-bx6-6">Equation 13.6</link>, makes use of three pieces of information: the correlation between <em>X</em> and <em>Y</em>, the correlation between <em>X</em> and <em>Z</em>, and the correlation between <em>Z</em> and <em>Y</em>.</p>
+<p id="corty3e-ch13-p354" block_type="txt">The abbreviation for a partial correlation is <em>r<sub>XY&#8211;Z</sub></em>, the correlation between <em>X</em> and <em>Y</em> minus the influence of <em>Z</em>. The formula for a partial correlation, shown in Equation 13.6, makes use of three pieces of information: the correlation between <em>X</em> and <em>Y</em>, the correlation between <em>X</em> and <em>Z</em>, and the correlation between <em>Z</em> and <em>Y</em>.</p>
 <box title="" numbered="false" id="corty3e-ch13-bx6-7" block_type="eq-t">
 <box-metadata><box-title><phrase block_type="sec_num">Equation 13.6</phrase> <phrase block_type="sec_title">Partial Correlation of <em>X</em> with <em>Y</em>, Controlling for <em>Z</em></phrase></box-title></box-metadata>
 <p id="corty3e-ch13-eqn-8" block_type="equation">
@@ -842,7 +840,7 @@
 </box>
 <p id="corty3e_page_520" block_type="page_start">520</p>
 <p id="corty3e-ch13-p359" block_type="txt">Let&#8217;s use a partial correlation to control for the effect of population on the correlation between the number of community hospitals per state and the number of deaths per state. The scatterplot in <link href="#corty3e-ch13-fig-2">Figure 13.1</link> at the start of this chapter shows a strong and direct relationship. Not surprisingly, the correlation is strong and significant: <em>r</em>(23) &#61; .89, <em>p</em> &#60; .05. But, the correlation between the number of hospitals (<em>X</em>) and the state population (<em>Z</em>) was .92, and for the number of deaths (<em>Y</em>) and the population, it was .98.</p>
-<p id="corty3e-ch13-p360" block_type="txt">Using <em>r<sub>XY</sub></em> &#61; .89, <em>r<sub>XZ</sub></em> &#61; .92, and <em>r<sub>YZ</sub></em> &#61; .98, we can complete <link href="#corty3e-ch13-bx6-6">Equation 13.6</link>:</p>
+<p id="corty3e-ch13-p360" block_type="txt">Using <em>r<sub>XY</sub></em> &#61; .89, <em>r<sub>XZ</sub></em> &#61; .92, and <em>r<sub>YZ</sub></em> &#61; .98, we can complete Equation 13.6:</p>
 <p id="corty3e-ch13-eqn-9" block_type="equation">
 <image asset-id="corty3e-ch13-img-43" alt="image" src="asset/ch13/corty3e_eqn13_520_01.jpg"/></p>
 <p id="corty3e-ch13-p361" block_type="txt-ni">The correlation of the number of hospitals with the number of deaths was .89. But, when population was controlled for, the correlation fell to &#8211;.15. It went from statistically significant to failing to reject the null hypothesis. This means that there is not enough evidence to suggest the number of community hospitals has any causal impact on the number of deaths in a given state&#8212;the apparent association between the two variables can be explained by the states&#8217; populations.</p>
@@ -1864,7 +1862,7 @@ a.<em>r</em><sup>2</sup>:: an effect size that reveals the percentage of variabi
 </table>
 <p id="corty3e-ch13-p578" block_type="cr-x-hd1"><strong>Expand Your Knowledge</strong></p>
 <p id="corty3e-ch13-p579" block_type="cr-x-nl-txt"><phrase block_type="question_num">13.133</phrase> A researcher has completed a study and found <em>r</em>(28) &#61; &#8211;.23, <em>p</em> &#62; .05. What should she conclude about the direction of the relationship between <em>X</em> and <em>Y</em> in the population?</p>
-<p id="corty3e-ch13-p580" block_type="cr-x-nl-txt"><phrase block_type="question_num">13.134</phrase> Dr. Smith had a sample of 19 cases, violated no assumptions, and calculated <em>r</em> &#61; .46. She was conducting a two-tailed test with &#945; =.05. <em>r</em><sup>2</sup> &#61; 21.16&#37; and the 95&#37; CI ranges from .01 to .76. What type of error does he need to worry about?</p>
+<p id="corty3e-ch13-p580" block_type="cr-x-nl-txt"><phrase block_type="question_num">13.134</phrase> Dr. Smith had a sample of 19 cases, violated no assumptions, and calculated <em>r</em> &#61; .46. She was conducting a two-tailed test with &#945; =.05. <em>r</em><sup>2</sup> &#61; 21.16&#37; and the 95&#37; CI ranges from .01 to .76. What type of error does she need to worry about?</p>
 <list id="corty3e-ch13-list-38" type="ordered" block_type="loweralpha">
 <li><p id="corty3e-ch13-p581" block_type="cr-x-nl-alpha-lc">Type I</p></li>
 <li><p id="corty3e-ch13-p582" block_type="cr-x-nl-alpha-lc">Type II</p></li>

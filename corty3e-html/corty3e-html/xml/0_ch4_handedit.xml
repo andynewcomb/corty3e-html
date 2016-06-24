@@ -33,7 +33,7 @@
 <image asset-id="corty3e-ch4-img-1" alt="image" src="asset/ch4/corty3e_fig04_01.jpg"/>
 <caption><strong><phrase block_type="fig_num">Figure 4.1</phrase> Angioplasty Rates for Medicare Patients by City</strong> There is one city, far out on the right-hand side that is very different from the others. A standard score, a <em>z</em> score, will quantify how unusual this score is. (Data from <em>The New York Times</em>, August 18, 2006.)</caption>
 </figure>
-<p id="corty3e-ch4-p18" block_type="txt">A <termref term="standard score">standard score</termref> is a raw score expressed in terms of how many standard deviations it is away from the mean. Standard scores are commonly called <termref term="z score"><strong><em>z</em></strong> scores</termref>. The formula for calculating a <em>z</em> score is shown in <link href="#corty3e-ch4-bx6-1">Equations 4.1</link> and <link href="#corty3e-ch4-bx6-2">4.2</link>.</p>
+<p id="corty3e-ch4-p18" block_type="txt">A <termref term="standard score">standard score</termref> is a raw score expressed in terms of how many standard deviations it is away from the mean. Standard scores are commonly called <termref term="z score"><strong><em>z</em></strong> scores</termref>. The formula for calculating a <em>z</em> score is shown in Equations 4.1 and 4.2.</p>
 <box title="" numbered="false" id="corty3e-ch4-bx6-1" block_type="eq-t">
 <box-metadata><box-title><phrase block_type="sec_num">Equation 4.1</phrase> <phrase block_type="sec_title">Formula for Calculating Standard Scores (<em>z</em> Scores) for a Population</phrase></box-title></box-metadata>
 <p id="corty3e-ch4-eqn-1" block_type="equation">
@@ -44,7 +44,7 @@
 <p id="corty3e-ch4-p21" block_type="eq-unl">&#956; &#61; the population mean</p>
 <p id="corty3e-ch4-p22" block_type="eq-unl">&#963; &#61; the population standard deviation</p>
 </box>
-<p id="corty3e-ch4-p23" block_type="txt-ni"><link href="#corty3e-ch4-bx6-1">Equation 4.1</link> is used when the population mean, &#956;<em>,</em> and population standard deviation, &#963;<em>,</em> are known. As it is relatively rare that they are known, <link href="#corty3e-ch4-bx6-2">Equation 4.2</link> is more commonly used.</p>
+<p id="corty3e-ch4-p23" block_type="txt-ni">Equation 4.1 is used when the population mean, &#956;<em>,</em> and population standard deviation, &#963;<em>,</em> are known. As it is relatively rare that they are known, Equation 4.2 is more commonly used.</p>
 <p id="corty3e_page_109" block_type="page_start">109</p>
 <box title="" numbered="false" id="corty3e-ch4-bx6-2" block_type="eq-t">
 <box-metadata><box-title><phrase block_type="sec_num">Equation 4.2</phrase> <phrase block_type="sec_title">Formula for Calculating Standard Scores (<em>z</em> Scores) for a Sample</phrase></box-title></box-metadata>
@@ -86,7 +86,7 @@
 <p id="corty3e-ch4-p38" block_type="txt">For example, consider Carlos, who is very smart and very extroverted. Which does Carlos have more of, intelligence or extroversion? To answer this question, Carlos takes two tests. One is an intelligence test and the other is an extroversion scale. Carlos gets a score of 130 on the IQ test and a 75 on the extroversion scale. Do these two scores answer the question of whether Carlos is more unusual in terms of his intelligence or his extroversion?</p>
 <p id="corty3e-ch4-p39" block_type="txt">These scores are out of context, so the question can&#8217;t be answered. Knowing the means will help put the scores in context. The mean for the intelligence test is 100, and the mean for the extroversion scale is 50. With the means, one can tell that Carlos is above average in terms of intelligence and in terms of extroversion. The next step is to calculate the deviation scores to see how far above average he is. Carlos&#8217;s deviation score for intelligence is 130 &#8211; 100 &#61; 30.00. For extroversion, his deviation score is 75 &#8211; 50 &#61; 25.00. Based on the deviation scores, it seems as if Carlos is more unusual in terms of intelligence than he is in terms of extroversion. After all, he scored 30 points above the mean on intelligence, but only 25 points above the mean on extroversion. But that would be a premature conclusion. A true comparison can&#8217;t be made until standard deviation information is considered and <em>z</em> scores are calculated.</p>
 <p id="corty3e_page_111" block_type="page_start">111</p>
-<p id="corty3e-ch4-p40" block_type="txt">Here are the standard deviations: 15 for the IQ test and 10 for the extroversion scale. Now, <link href="#corty3e-ch4-bx6-2">Equation 4.2</link> can be used to calculate <em>z</em> scores:</p>
+<p id="corty3e-ch4-p40" block_type="txt">Here are the standard deviations: 15 for the IQ test and 10 for the extroversion scale. Now, Equation 4.2 can be used to calculate <em>z</em> scores:</p>
 <p id="corty3e-ch4-eqn-4" block_type="equation">
 <image asset-id="corty3e-ch4-img-7" alt="image" src="asset/ch4/corty3e_eqn04_111_01.jpg"/>
 </p>
@@ -100,7 +100,7 @@
 <p id="corty3e-ch4-p43" block_type="txt">In the same way, the apple and orange example from the start of the chapter would work. If there were a juiciness scale, Oliver&#8217;s orange could be measured. And, with a crispiness scale, Anne&#8217;s apple could be measured. Then, each measurement would be converted to a standard score and the one with the higher score would be the winner.</p>
 <p id="corty3e_page_112" block_type="page_start">112</p>
 <p id="corty3e-ch4-p44" block_type="txt">Just as raw scores can be turned into standard scores, it is possible to reverse direction and turn <em>z</em> scores into raw scores. Suppose Mei-Li was also extroverted and that her <em>z</em> score was 1.00 on the extroversion scale. What was her raw score?</p>
-<p id="corty3e-ch4-p45" block_type="txt">Here&#8217;s what to do. A <em>z</em> score of 1.00 is a positive score, which indicates that her score was above the mean. The mean on the extroversion scale is 50.00, so her score will be greater than this. A <em>z</em> score of 1.00 says that Mei-Li&#8217;s score was 1 standard deviation above the mean. A standard deviation on the extroversion scale is 10.00, so her score was 10 points above the mean. Adding 10.00 (1 standard deviation) to 50.00 (the mean) leads to the conclusion that Mei-Li&#8217;s score on the test was 60.00. <link href="#corty3e-ch4-bx6-3">Equation 4.3</link> formalizes how to turn <em>z</em> scores into raw scores.</p>
+<p id="corty3e-ch4-p45" block_type="txt">Here&#8217;s what to do. A <em>z</em> score of 1.00 is a positive score, which indicates that her score was above the mean. The mean on the extroversion scale is 50.00, so her score will be greater than this. A <em>z</em> score of 1.00 says that Mei-Li&#8217;s score was 1 standard deviation above the mean. A standard deviation on the extroversion scale is 10.00, so her score was 10 points above the mean. Adding 10.00 (1 standard deviation) to 50.00 (the mean) leads to the conclusion that Mei-Li&#8217;s score on the test was 60.00. Equation 4.3 formalizes how to turn <em>z</em> scores into raw scores.</p>
 <box title="" numbered="false" id="corty3e-ch4-bx6-3" block_type="eq-t">
 <box-metadata><box-title><phrase block_type="sec_num">Equation 4.3</phrase> <phrase block_type="sec_title">Formula for Calculating a Raw Score (<em>X</em>) from a Standard Score (<em>z</em>)</phrase></box-title></box-metadata>
 <p id="corty3e-ch4-p46" block_type="eq"><em>X</em> &#61; <em>M</em> &#43; (<em>z</em> &#215; <em>s</em>)</p>
@@ -113,7 +113,7 @@
 <p id="corty3e-ch4-eqn-5" block_type="equation">
 <image asset-id="corty3e-ch4-img-9a" alt="image" src="asset/ch4/corty3e_eqn04_112_01.jpg"/>
 </p>
-<p id="corty3e-ch4-p57" block_type="txt">Here&#8217;s one more example of converting a <em>z</em> score into a raw score, this one with a negative <em>z</em> score. Suppose that Tabitha&#8217;s <em>z</em> score on the IQ test was &#8211;0.75. What was her raw score? Using <link href="#corty3e-ch4-bx6-3">Equation 4.3</link>, here are the calculations:</p>
+<p id="corty3e-ch4-p57" block_type="txt">Here&#8217;s one more example of converting a <em>z</em> score into a raw score, this one with a negative <em>z</em> score. Suppose that Tabitha&#8217;s <em>z</em> score on the IQ test was &#8211;0.75. What was her raw score? Using Equation 4.3, here are the calculations:</p>
 <p id="corty3e-ch4-p58" block_type="eq"><em>X</em> &#61; 100.00 &#43; (&#8211;0.75 &#215; 15.00)</p>
 <p id="corty3e-ch4-p59" block_type="eq">&#61; 100.00 &#43; (&#8211;11.2500)</p>
 <p id="corty3e-ch4-p60" block_type="eq">&#61; 100.00 &#8211; 11.2500</p>
@@ -123,13 +123,13 @@
 <box title="Worked Example 4.1" numbered="false" id="corty3e-ch4-bx3-1" block_type="sr-exp-n">
 <p id="corty3e-ch4-p64" block_type="sr-ex-txt-ni">SAT subtests are handy for practice in converting from raw scores to <em>z</em> scores and vice versa. As of March 2016, there are two parts on the SAT: a subtest that measures math, and a subtest that measures reading and writing. Both subtests are scored on the same scale, where 500 is the average (mean) score and the standard deviation is 100. Suppose a high school senior takes the SAT and gets a 460 on the reading and writing subtest. What is her score as a standard score?</p>
 <p id="corty3e_page_113" block_type="page_start">113</p>
-<p id="corty3e-ch4-p65" block_type="sr-ex-txt">Applying <link href="#corty3e-ch4-bx6-2">Equation 4.2</link>, here are the calculations:</p>
+<p id="corty3e-ch4-p65" block_type="sr-ex-txt">Applying Equation 4.2, here are the calculations:</p>
 <p id="corty3e-ch4-eqn-5" block_type="equation">
 <image asset-id="corty3e-ch4-img-9" alt="image" src="asset/ch4/corty3e_eqn04_113_01.jpg"/>
 </p>
 <p id="corty3e-ch4-p66" block_type="sr-ex-txt-ni">She scored 0.40 standard deviations below the mean, so her <em>z</em> score would be reported as &#8211;0.40.</p>
 <p id="corty3e-ch4-p67" block_type="sr-ex-txt">Suppose she had a friend who took the SAT and did very well on the math section. Her friend&#8217;s score on the math section, expressed as a <em>z</em> score, was 1.80. What was her friend&#8217;s score?</p>
-<p id="corty3e-ch4-p68" block_type="sr-ex-txt">Applying <link href="#corty3e-ch4-bx6-3">Equation 4.3</link>, here are the calculations:</p>
+<p id="corty3e-ch4-p68" block_type="sr-ex-txt">Applying Equation 4.3, here are the calculations:</p>
 <p id="corty3e-ch4-p69" block_type="sr-exp-eq"><em>X</em> &#61; 500 &#43; (1.80 &#215; 100)</p>
 <p id="corty3e-ch4-p70" block_type="sr-exp-eq">&#61; 500 &#43; 180.0000</p>
 <p id="corty3e-ch4-p71" block_type="sr-exp-eq">&#61; 680.0000</p>
@@ -364,7 +364,7 @@
 <figure id="corty3e-ch4-fig-26" block_type="figure" numbered="true" number="4.18" mmtype="image" mmsrc="" attr="">
 <layout align="center" width="large" border="true"/>
 <image asset-id="corty3e-ch4-img-26" alt="image" src="asset/ch4/corty3e_fig04_18.jpg"/>
-<caption><strong><phrase block_type="fig_num">Figure 4.18</phrase> How to Choose: Flowchart for Calculating <em>z</em> Scores from Percentile Ranks</strong> Before calculating a <em>z</em> score for a percentile rank, it is a good idea to sketch out a normal distribution with both <em>z</em> scores and percentile ranks on the <em>X</em>-axis in order to estimate the answer. Once the answer is in <em>z</em> score format, it can be transformed to a raw score using <link href="#corty3e-ch4-bx6-3">Equation 4.3</link>.</caption>
+<caption><strong><phrase block_type="fig_num">Figure 4.18</phrase> How to Choose: Flowchart for Calculating <em>z</em> Scores from Percentile Ranks</strong> Before calculating a <em>z</em> score for a percentile rank, it is a good idea to sketch out a normal distribution with both <em>z</em> scores and percentile ranks on the <em>X</em>-axis in order to estimate the answer. Once the answer is in <em>z</em> score format, it can be transformed to a raw score using Equation 4.3.</caption>
 </figure>
 <p id="corty3e-ch4-p168" block_type="txt">Imagine another student, Kelli, who took the same SAT subtest and whose score had a percentile rank of 40. What is her <em>z</em> score? A sketch always helps. <link href="#corty3e-ch4-fig-27"><strong>Figure 4.19</strong></link> shows a normal distribution. The <em>X</em>-axis is marked with <em>z</em> scores, percentile ranks, and SAT subtest scores, which shows how these three scores are equivalent. For example, a <em>z</em> score of 1 is equivalent to a percentile rank score of 84 and an SAT subtest score of 600. There is also an X on the <em>X</em>-axis about where a percentile rank of 40 would be. The X shows that this percentile rank will have an associated <em>z</em> score that falls somewhere between &#8211;1 and 0 and an associated SAT score that falls somewhere between 400 and 500.</p>
 <figure id="corty3e-ch4-fig-27" block_type="figure" numbered="true" number="4.19" mmtype="image" mmsrc="" attr="">
@@ -374,7 +374,7 @@
 </figure>
 <p id="corty3e-ch4-p169" block_type="txt">Now, it is time to calculate Kelli&#8217;s <em>z</em> score more exactly. According to the flowchart in <link href="#corty3e-ch4-fig-26">Figure 4.18</link>, to find the <em>z</em> score associated with a percentile rank less than 50, go to column C in <link href="corty3e_app1_1.html#corty3e-app1-fig-1">Appendix Table 1</link>, which shows that the <em>z</em> score will be negative. Move down column C. The row closest to a value of 40.00 shows a <em>z</em> score of 0.25. This score needs to be treated as a negative number, so the answer is &#8211;0.25. Kelli&#8217;s grade on the test, as a <em>z</em> score, is &#8211;0.25.</p>
 <p id="corty3e_page_126" block_type="page_start">126</p>
-<p id="corty3e-ch4-p170" block_type="txt">Kelli&#8217;s grade is now known in two formats: as a percentile rank (40) and as a <em>z</em> score<br/>(&#8211;0.25). What is her score as a raw score on the SAT subtest? To answer that question, use <link href="#corty3e-ch4-bx6-3">Equation 4.3</link>:</p>
+<p id="corty3e-ch4-p170" block_type="txt">Kelli&#8217;s grade is now known in two formats: as a percentile rank (40) and as a <em>z</em> score<br/>(&#8211;0.25). What is her score as a raw score on the SAT subtest? To answer that question, use Equation 4.3:</p>
 <p id="corty3e-ch4-p171" block_type="eq"><em>X</em> &#61; 500 &#43; (&#8211;0.25 &#215; 100)</p>
 <p id="corty3e-ch4-p172" block_type="eq">&#61; 500 &#43; (&#8211;25.0000)</p>
 <p id="corty3e-ch4-p173" block_type="eq">&#61; 500 &#8211; 25.0000</p>
@@ -396,7 +396,7 @@
 <li><p id="corty3e-ch4-p181" block_type="sr-exp-bl-last">A <em>z</em> score of 1.65 is higher than 95.05&#37; of scores. This captures the 95&#37; value that is Clayton&#8217;s score.</p></li>
 </list>
 <p id="corty3e-ch4-p182" block_type="sr-ex-txt">To select the score that is as good or better than 95&#37; of the cases in a normal distribution, go with 1.65. Clayton&#8217;s score, as a <em>z</em> score, is 1.65.</p>
-<p id="corty3e-ch4-p183" block_type="sr-ex-txt">To convert that <em>z</em> score to an IQ score, use <link href="#corty3e-ch4-bx6-3">Equation 4.3</link>:</p>
+<p id="corty3e-ch4-p183" block_type="sr-ex-txt">To convert that <em>z</em> score to an IQ score, use Equation 4.3:</p>
 <p id="corty3e-ch4-p184" block_type="sr-exp-eq"><em>X</em><sub>IQ</sub> &#61; 100 &#43; (1.65 &#215; 15)</p>
 <p id="corty3e-ch4-p185" block_type="sr-exp-eq">&#61; 100 &#43; 24.7500</p>
 <p id="corty3e-ch4-p186" block_type="sr-exp-eq">&#61; 124.7500</p>
@@ -436,7 +436,7 @@
 <li><p id="corty3e-ch4-p200" block_type="nl-alpha-lc-last">Psychotherapy is probably effective in the treatment of depression.</p></li>
 </list>
 <p id="corty3e-ch4-p201" block_type="txt">A statistician would pick statement B, that psychotherapy is <em>probably</em> effective in the treatment of depression. Why? Because she would know that psychotherapy was effective for the <em>sample</em> tested, but she couldn&#8217;t be sure it would be effective for all the depressed people not in the sample, for the larger <em>population</em> of depressed people.</p>
-<p id="corty3e-ch4-p202" block_type="txt">Statisticians&#8217; conclusions involve <em>probability,</em> just as weather forecasters say it will &#8220;probably&#8221; rain tomorrow. The conditions may be right to predict that it will rain, but rain is not guaranteed. <termref term="Probability">Probability</termref> concerns how likely it is that an event or outcome will occur. Probability is defined as the number of ways a specific outcome (or set of outcomes) can occur, divided by the total number of possible outcomes. The formula, with probability abbreviated as <em>p</em> and the specific outcome abbreviated as <em>A,</em> is given in <link href="#corty3e-ch4-bx6-4">Equation 4.4</link>.</p>
+<p id="corty3e-ch4-p202" block_type="txt">Statisticians&#8217; conclusions involve <em>probability,</em> just as weather forecasters say it will &#8220;probably&#8221; rain tomorrow. The conditions may be right to predict that it will rain, but rain is not guaranteed. <termref term="Probability">Probability</termref> concerns how likely it is that an event or outcome will occur. Probability is defined as the number of ways a specific outcome (or set of outcomes) can occur, divided by the total number of possible outcomes. The formula, with probability abbreviated as <em>p</em> and the specific outcome abbreviated as <em>A,</em> is given in Equation 4.4.</p>
 <p id="corty3e_page_129" block_type="page_start">129</p>
 <box title="" numbered="false" id="corty3e-ch4-bx6-4" block_type="eq-t">
 <box-metadata><box-title><phrase block_type="sec_num">Equation 4.4</phrase> <phrase block_type="sec_title">Formula for Calculating Probability</phrase></box-title></box-metadata>
@@ -446,7 +446,7 @@
 <p id="corty3e-ch4-p203" block_type="eq">where <em>p</em> &#61; probability</p>
 <p id="corty3e-ch4-p204" block_type="eq"><em>A</em> &#61; specific outcome</p>
 </box>
-<p id="corty3e-ch4-p205" block_type="txt">Coins are often used to teach probability. A coin has two possible outcomes, heads or tails, and they are <em>mutually exclusive.</em> This means the coin can only land heads or tails&#8212;not both&#8212;on a given toss. (<em>Fairness,</em> that each outcome is equally likely, is going to be assumed for all examples.) Applying <link href="#corty3e-ch4-bx6-4">Equation 4.4</link>, if the coin has two possible outcomes, heads or tails, and there is only one way it can land heads, the probability of it landing heads is <em>p</em>(heads) &#61; <image asset-id="corty3e-ch4-img-31" alt="image" src="asset/ch4/corty3e_ineqn04_129_01.jpg"/>. This could be reported a number of ways:</p>
+<p id="corty3e-ch4-p205" block_type="txt">Coins are often used to teach probability. A coin has two possible outcomes, heads or tails, and they are <em>mutually exclusive.</em> This means the coin can only land heads or tails&#8212;not both&#8212;on a given toss. (<em>Fairness,</em> that each outcome is equally likely, is going to be assumed for all examples.) Applying Equation 4.4, if the coin has two possible outcomes, heads or tails, and there is only one way it can land heads, the probability of it landing heads is <em>p</em>(heads) &#61; <image asset-id="corty3e-ch4-img-31" alt="image" src="asset/ch4/corty3e_ineqn04_129_01.jpg"/>. This could be reported a number of ways:</p>
 <list id="corty3e-ch4-list-12" type="unordered" block_type="bullet">
 <li><p id="corty3e-ch4-p206" block_type="bl-first">Probability can be reported as a fraction. In this case, one would say, &#8220;There is a 1 out of 2 chance that a coin will turn up heads.&#8221;</p></li>
 <li><p id="corty3e-ch4-p207" block_type="bl-mid">Probability can be reported as a proportion by doing the math in the fraction, by dividing the numerator by the denominator: <image asset-id="corty3e-ch4-img-32" alt="image" src="asset/ch4/corty3e_ineqn04_129_01.jpg"/> &#61; .50. One could report, &#8220;The probability of a coin turning up heads is .50.&#8221; Or, one could say, &#8220;<em>p</em>(heads) &#61; .50.&#8221;</p></li>
@@ -511,7 +511,7 @@
 <p id="corty3e_page_133" block_type="page_start">133</p>
 <p id="corty3e-ch4-p229" block_type="sr-ex-txt">How did he know where to sketch the cut-off points? The objective is to have half of the 50&#37; of extreme scores, or 25&#37;, in each tail. He knew that below, or to the left of, a <em>z</em> score of &#8211;1, about 16&#37; of the scores fall. That isn&#8217;t 25&#37;. So, he needed to move partway into the next standard deviation, enough to add 9&#37; to the existing 16&#37;. This puts the <em>z</em> score somewhere between <em>z</em> &#61; &#8211;1 and <em>z</em> &#61; 0.</p>
 <p id="corty3e-ch4-p230" block_type="sr-ex-txt">Now, with a rough idea of what the answer was, he followed the guidelines in <link href="#corty3e-ch4-fig-33">Table 4.4</link> to find the exact answer. First, he cut the percentage in half. Then, he used column C of <link href="corty3e_app1_1.html#corty3e-app1-fig-1">Appendix Table 1</link> to find the <em>z</em> score associated with the half percentage value. Looking in column C of <link href="corty3e_app1_1.html#corty3e-app1-fig-1">Appendix Table 1</link>, he found that the value closest to 25&#37; was 25.14 and the <em>z</em> score associated with it was 0.67. In <em>z</em> score format, he had his answer: below a <em>z</em> score of &#8211;0.67 <em>and</em> above a <em>z</em> score of 0.67, the extreme 50&#37; of cases fall.</p>
-<p id="corty3e-ch4-p231" block_type="sr-ex-txt">But, to answer the original question, he needed to turn the <em>z</em> scores into IQ scores using <link href="#corty3e-ch4-bx6-3">Equation 4.3</link>:</p>
+<p id="corty3e-ch4-p231" block_type="sr-ex-txt">But, to answer the original question, he needed to turn the <em>z</em> scores into IQ scores using Equation 4.3:</p>
 <p id="corty3e-ch4-p232" block_type="sr-exp-eq"><em>X</em> &#61; 100 &#43; (&#8211;0.67 &#215; 15)</p>
 <p id="corty3e-ch4-p233" block_type="sr-exp-eq">&#61; 100 &#43; (&#8211;10.0500)</p>
 <p id="corty3e-ch4-p234" block_type="sr-exp-eq">&#61; 100 &#8211; 10.0500</p>
@@ -545,7 +545,7 @@
 <image asset-id="corty3e-ch4-img-43" alt="image" src="asset/ch4/corty3e_fig04_24.jpg"/>
 <caption><strong><phrase block_type="fig_num">Figure 4.24</phrase> Sketch for Finding Percent of Cases with IQ Scores at or Below 69</strong> Shading in the area at or below an IQ score of 69 allows one to estimate that less than 2&#37; of the population falls in that area.</caption>
 </figure>
-<p id="corty3e-ch4-p255" block_type="sr-x-txt">Now, it is time to calculate more exactly. Using <link href="#corty3e-ch4-bx6-2">Equation 4.2</link>, convert the IQ score to a <em>z</em> score:</p>
+<p id="corty3e-ch4-p255" block_type="sr-x-txt">Now, it is time to calculate more exactly. Using Equation 4.2, convert the IQ score to a <em>z</em> score:</p>
 <p id="corty3e-ch4-eqn-10" block_type="equation">
 <image asset-id="corty3e-ch4-img-44" alt="image" src="asset/ch4/corty3e_eqn04_134_01.jpg"/>
 </p>
@@ -560,7 +560,7 @@
 <image asset-id="corty3e-ch4-img-45" alt="image" src="asset/ch4/corty3e_fig04_25.jpg"/>
 <caption><strong><phrase block_type="fig_num">Figure 4.25</phrase> Sketch for Finding Percentage of Population with IQs of 145 or Higher</strong> Trying to shade in the area to the right of an IQ score of 145 makes one aware of how few scores fall in that area.</caption>
 </figure>
-<p id="corty3e-ch4-p261" block_type="sr-x-txt">To find out what percentage of people could be classified as geniuses, use <link href="#corty3e-ch4-bx6-2">Equation 4.2</link> to turn the IQ score into a <em>z</em> score:</p>
+<p id="corty3e-ch4-p261" block_type="sr-x-txt">To find out what percentage of people could be classified as geniuses, use Equation 4.2 to turn the IQ score into a <em>z</em> score:</p>
 <p id="corty3e-ch4-eqn-11" block_type="equation">
 <image asset-id="corty3e-ch4-img-46" alt="image" src="asset/ch4/corty3e_eqn04_135_01.jpg"/>
 </p>

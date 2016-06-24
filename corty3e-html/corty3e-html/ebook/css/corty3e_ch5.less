@@ -124,3 +124,26 @@ div#corty3e_page_172 {
         display: none;
     }
 }
+
+/* spread out video statclips in 5.2 */
+[data-sec-id="corty3e-ch5-sec1-2"] [data-block_type="video"] {
+    display: inline-block;
+    float: none;
+    margin: 0;
+    vertical-align: top;
+    width: 196px;
+}
+
+/* Figure 5.19: special dual image figure */
+div#corty3e-ch5-fig-32 {
+    width: 700px !important;
+    [src*="corty3e_fig05_19a.jpg"] {
+        display: inline;
+        width: 350px;
+    }
+    [src*="corty3e_fig05_19b.jpg"] {
+        display: inline;
+        width: 250px;
+        margin-left: 22px;
+    }
+}

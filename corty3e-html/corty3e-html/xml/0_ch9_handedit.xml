@@ -64,7 +64,7 @@
 </figure>
 <p id="corty3e-ch9-p27" block_type="txt">The second assumption is that the observations are independent within a sample. Be careful in assessing this assumption: it refers to independence <em>within</em> a sample, not <em>between</em> samples. Since the same cases are in both samples, or conditions, <em>the two samples</em> are not independent. However, each person in each sample is tested individually and each person is only tested once in each condition. The independence of observations assumption is not violated.</p>
 <p id="corty3e_page_297" block_type="page_start">297</p>
-<p id="corty3e-ch9-p28" block_type="txt">The third assumption, the normality assumption, says that in the larger population <em>the difference scores</em> are normally distributed. Look at <link href="corty3e-ch09.xml#corty3e-ch9-fig-1">Table 9.1</link> and note that there&#8217;s a third column listing the difference between the value a case had in one condition (high humidity) and its score in the other condition (low humidity). This is called a difference score, abbreviated <em>D,</em> and is needed to calculate a paired-samples <em>t</em> test. The formula for <em>D</em> is shown in <link href="#corty3e-ch9-bx6-1">Equation 9.1</link>.</p>
+<p id="corty3e-ch9-p28" block_type="txt">The third assumption, the normality assumption, says that in the larger population <em>the difference scores</em> are normally distributed. Look at <link href="corty3e-ch09.xml#corty3e-ch9-fig-1">Table 9.1</link> and note that there&#8217;s a third column listing the difference between the value a case had in one condition (high humidity) and its score in the other condition (low humidity). This is called a difference score, abbreviated <em>D,</em> and is needed to calculate a paired-samples <em>t</em> test. The formula for <em>D</em> is shown in Equation 9.1.</p>
 <box title="" numbered="false" id="corty3e-ch9-bx6-1" block_type="eq-t">
 <box-metadata><box-title><phrase block_type="sec_num">Equation 9.1</phrase> <phrase block_type="sec_title">Formula for Calculating Difference Score, <em>D</em></phrase></box-title></box-metadata>
 <p id="corty3e-ch9-p29" block_type="eq"><em>D</em> &#61; <em>X</em><sub>1</sub> &#8211; <em>X</em><sub>2</sub></p>
@@ -95,7 +95,7 @@
 <li><p id="corty3e-ch9-p51" block_type="bl-first">If <em>t</em> &#8804; &#8211;<em>t<sub>cv</sub></em> <em>or</em> t &#8805; <em>t<sub>cv</sub> ,</em> reject the null hypothesis.</p></li>
 <li><p id="corty3e-ch9-p52" block_type="bl-last">If &#8211;<em>t<sub>cv</sub></em> &#60; <em>t</em> &#60; t<em><sub>cv</sub></em> , fail to reject the null hypothesis.</p></li>
 </list>
-<p id="corty3e-ch9-p53" block_type="txt">Dr. Keim is doing a two-tailed test and is content to use the default alpha level of .05. All that she needs to do is calculate degrees of freedom. <link href="#corty3e-ch9-bx6-2">Equation 9.2</link> is the formula for calculating degrees of freedom for a paired-samples <em>t</em> test.</p>
+<p id="corty3e-ch9-p53" block_type="txt">Dr. Keim is doing a two-tailed test and is content to use the default alpha level of .05. All that she needs to do is calculate degrees of freedom. Equation 9.2 is the formula for calculating degrees of freedom for a paired-samples <em>t</em> test.</p>
 <box title="" numbered="false" id="corty3e-ch9-bx6-2" block_type="eq-t">
 <box-metadata><box-title><phrase block_type="sec_num">Equation 9.2</phrase> <phrase block_type="sec_title">Degrees of Freedom (<em>df</em>) for a Paired-Samples <em>t</em> Test</phrase></box-title></box-metadata>
 <p id="corty3e-ch9-p54" block_type="eq"><em>df</em> &#61; <em>N</em> &#8211; 1</p>
@@ -127,11 +127,11 @@
 <p id="corty3e-ch9-p66" block_type="eq-unl"><em>s<sub>D</sub></em> &#61; the standard deviation (<em>s</em>) of the difference scores</p>
 <p id="corty3e-ch9-p67" block_type="eq-unl"><em>N</em> &#61; the number of pairs of cases</p>
 </box>
-<p id="corty3e-ch9-p68" block_type="txt">Using Equations 3.6 and 3.7, Dr. Keim has calculated the standard deviation of the difference scores and found <em>s<sub>D</sub></em> &#61; 2.07. There are six pairs of cases, so <em>N</em> &#61; 6. Plugging these values into <link href="#corty3e-ch9-bx6-3">Equation 9.3</link> gives</p>
+<p id="corty3e-ch9-p68" block_type="txt">Using Equations 3.6 and 3.7, Dr. Keim has calculated the standard deviation of the difference scores and found <em>s<sub>D</sub></em> &#61; 2.07. There are six pairs of cases, so <em>N</em> &#61; 6. Plugging these values into Equation 9.3 gives</p>
 <p id="corty3e-ch9-eqn-3" block_type="equation">
 <image asset-id="corty3e-ch9-img-9" alt="image" src="asset/ch9/corty3e_eqn09_299_02.jpg"/></p>
 <p id="corty3e_page_300" block_type="page_start">300</p>
-<p id="corty3e-ch9-p69" block_type="txt">The standard error of the mean difference for the difference scores is 0.85. This value will be used in <link href="#corty3e-ch9-bx6-4">Equation 9.4</link>, the formula for calculating <em>t,</em> the value of the test statistic for the paired-samples <em>t</em> test.</p>
+<p id="corty3e-ch9-p69" block_type="txt">The standard error of the mean difference for the difference scores is 0.85. This value will be used in Equation 9.4, the formula for calculating <em>t,</em> the value of the test statistic for the paired-samples <em>t</em> test.</p>
 <box title="" numbered="false" id="corty3e-ch9-bx6-4" block_type="eq-t">
 <box-metadata><box-title><phrase block_type="sec_num">Equation 9.4</phrase> <phrase block_type="sec_title">Formula for Calculating <em>t</em>, the Value of the Test Statistic for a Paired-Samples <em>t</em> Test</phrase></box-title></box-metadata>
 <p id="corty3e-ch9-eqn-4" block_type="equation">
@@ -139,7 +139,7 @@
 <p id="corty3e-ch9-p70" block_type="eq-txt-ni">where <em>t</em> &#61; the value of the test statistic for a paired-samples <em>t</em> test</p>
 <p id="corty3e-ch9-p71" block_type="eq-unl"><em>M</em><sub>1</sub> &#61; the mean of one sample</p>
 <p id="corty3e-ch9-p72" block_type="eq-unl"><em>M</em><sub>2</sub> &#61; the mean of the other sample</p>
-<p id="corty3e-ch9-p73" block_type="eq-unl"><image asset-id="corty3e-ch9-img-11" alt="image" src="asset/ch9/corty3e_ineqn09_302_01.jpg"/> &#61; standard error of the mean difference for difference scores (<link href="#corty3e-ch9-bx6-3">Equation 9.3</link>)</p>
+<p id="corty3e-ch9-p73" block_type="eq-unl"><image asset-id="corty3e-ch9-img-11" alt="image" src="asset/ch9/corty3e_ineqn09_302_01.jpg"/> &#61; standard error of the mean difference for difference scores (Equation 9.3)</p>
 </box>
 <p id="corty3e-ch9-p74" block_type="txt">Given <image asset-id="corty3e-ch9-img-12" alt="image" src="asset/ch9/corty3e_ineqn09_300_01.jpg"/>, <em>M</em><sub>LowHumidity</sub> &#61; 75.00, and <em>M</em><sub>HighHumidity</sub> &#61; 82.50, Dr. Keim is ready to calculate <em>t.</em> Again, it matters little which mean is called <em>M</em><sub>1</sub> and which is <em>M</em><sub>2</sub>, so Dr. Keim has arranged the calculations to end up with a positive number in the numerator, assuring a positive <em>t</em> value:</p>
 <p id="corty3e-ch9-eqn-5" block_type="equation">
@@ -164,7 +164,7 @@
 <p id="corty3e-ch9-p83" block_type="sr-exp-eq"><em>H</em><sub>0</sub>: &#181;<sub>EOT</sub> &#61; &#181;<sub>6MFU</sub></p>
 <p id="corty3e-ch9-p84" block_type="sr-exp-eq"><em>H</em><sub>1</sub>: &#181;<sub>EOT</sub> &#8800; &#181;<sub>6MFU</sub></p>
 <p id="corty3e_page_302" block_type="page_start">302</p>
-<p id="corty3e-ch9-p85" block_type="h4-txt-ni"><phrase block_type="h4-n-ri"><strong>Step 4</strong></phrase> <strong>Set the Decision Rule.</strong> The critical value of <em>t</em> depends on the number of tails, alpha, and degrees of freedom. With nondirectional hypotheses, the test is two-tailed. Dr. Althof is comfortable setting the alpha at the usual level, .05, and having a 5&#37; chance of Type I error. Finally, using <link href="#corty3e-ch9-bx6-2">Equation 9.2</link>, he calculates degrees of freedom for the paired-samples <em>t</em> test:</p>
+<p id="corty3e-ch9-p85" block_type="h4-txt-ni"><phrase block_type="h4-n-ri"><strong>Step 4</strong></phrase> <strong>Set the Decision Rule.</strong> The critical value of <em>t</em> depends on the number of tails, alpha, and degrees of freedom. With nondirectional hypotheses, the test is two-tailed. Dr. Althof is comfortable setting the alpha at the usual level, .05, and having a 5&#37; chance of Type I error. Finally, using Equation 9.2, he calculates degrees of freedom for the paired-samples <em>t</em> test:</p>
 <p id="corty3e-ch9-p86" block_type="sr-exp-eq"><em>df</em> &#61; <em>N</em> &#8211; 1</p>
 <p id="corty3e-ch9-p87" block_type="sr-exp-eq">&#61; 16 &#8211; 1</p>
 <p id="corty3e-ch9-p88" block_type="sr-exp-eq">&#61; 15</p>
@@ -183,10 +183,10 @@
 <layout align="center" width="large" border="true"/>
 <image asset-id="corty3e-ch9-img-16" alt="image" src="asset/ch9/corty3e_table09_03.jpg"/>
 </figure>
-<p id="corty3e-ch9-p93" block_type="sr_exp_txt">The first step in the calculations is applying <link href="#corty3e-ch9-bx6-3">Equation 9.3</link> to find the standard error of the difference, <image asset-id="corty3e-ch9-img-17" alt="image" src="asset/ch9/corty3e_ineqn09_302_01.jpg"/>:</p>
+<p id="corty3e-ch9-p93" block_type="sr_exp_txt">The first step in the calculations is applying Equation 9.3 to find the standard error of the difference, <image asset-id="corty3e-ch9-img-17" alt="image" src="asset/ch9/corty3e_ineqn09_302_01.jpg"/>:</p>
 <p id="corty3e-ch9-eqn-6" block_type="equation">
 <image asset-id="corty3e-ch9-img-18" alt="image" src="asset/ch9/corty3e_eqn09_302_01.jpg"/></p>
-<p id="corty3e-ch9-p94" block_type="sr_exp_txt">The value for the standard error of the difference, 0.58, is then used in <link href="#corty3e-ch9-bx6-4">Equation 9.4</link> to find <em>t.</em> It doesn&#8217;t matter which mean is subtracted from which, so Dr. Althof arranged them to end up with a positive value by subtracting the follow-up mean (14.00) from the end-of-treatment mean (15.00):</p>
+<p id="corty3e-ch9-p94" block_type="sr_exp_txt">The value for the standard error of the difference, 0.58, is then used in Equation 9.4 to find <em>t.</em> It doesn&#8217;t matter which mean is subtracted from which, so Dr. Althof arranged them to end up with a positive value by subtracting the follow-up mean (14.00) from the end-of-treatment mean (15.00):</p>
 <p id="corty3e_page_303" block_type="page_start">303</p>
 <p id="corty3e-ch9-eqn-7" block_type="equation">
 <image asset-id="corty3e-ch9-img-19" alt="image" src="asset/ch9/corty3e_eqn09_303_01.jpg"/></p>
@@ -260,7 +260,7 @@
 </section>
 <section id="corty3e-ch9-sec2-2" block_type="h2" chapter="9" title="" numbered="false" level="2" print_page="306">
 <section-metadata><section-title>How Wide Is the Confidence Interval and How Big Is the Effect?</section-title></section-metadata>
-<p id="corty3e-ch9-p130" block_type="txt-ni">The confidence interval for the difference between population means reveals how small or how large the difference between the population means might be. For the humidity data set, the confidence interval will tell, at a population level, how much hotter the temperature is perceived when the humidity rises. A confidence interval of any percentage could be calculated, but the most common is the 95&#37; confidence interval. <link href="#corty3e-ch9-bx6-5">Equation 9.5</link> gives the formula for the 95&#37; confidence interval for the difference between population means for the paired-samples <em>t</em> test.</p>
+<p id="corty3e-ch9-p130" block_type="txt-ni">The confidence interval for the difference between population means reveals how small or how large the difference between the population means might be. For the humidity data set, the confidence interval will tell, at a population level, how much hotter the temperature is perceived when the humidity rises. A confidence interval of any percentage could be calculated, but the most common is the 95&#37; confidence interval. Equation 9.5 gives the formula for the 95&#37; confidence interval for the difference between population means for the paired-samples <em>t</em> test.</p>
 <box title="" numbered="false" id="corty3e-ch9-bx6-5" block_type="eq-t">
 <box-metadata><box-title><phrase block_type="sec_num">Equation 9.5</phrase> <phrase block_type="sec_title">Formula for the 95&#37; Confidence Interval for the Difference Between Population Means for a Paired-Samples <em>t</em> Test</phrase></box-title></box-metadata>
 <p id="corty3e-ch9-eqn-8" block_type="equation">
@@ -270,7 +270,7 @@
 <p id="corty3e-ch9-p133" block_type="eq-unl"><em>M</em><sub>1</sub> &#61; the mean of one sample</p>
 <p id="corty3e-ch9-p134" block_type="eq-unl"><em>M</em><sub>2</sub> &#61; the mean of the other sample</p>
 <p id="corty3e-ch9-p135" block_type="eq-unl"><em>t<sub>cv</sub></em> &#61; the critical value of <em>t,</em> two-tailed, &#945; &#61; .05, <em>df</em> &#61; <em>N</em> &#8211; 1</p>
-<p id="corty3e-ch9-p136" block_type="eq-unl"><image asset-id="corty3e-ch9-img-26" alt="image" src="asset/ch9/corty3e_ineqn09_302_01.jpg"/> &#61; the standard error of the mean difference for the difference scores (<link href="#corty3e-ch9-bx6-3">Equation 9.3</link>)</p>
+<p id="corty3e-ch9-p136" block_type="eq-unl"><image asset-id="corty3e-ch9-img-26" alt="image" src="asset/ch9/corty3e_ineqn09_302_01.jpg"/> &#61; the standard error of the mean difference for the difference scores (Equation 9.3)</p>
 </box>
 <p id="corty3e_page_307" block_type="page_start">307</p>
 <p id="corty3e-ch9-p137" block_type="txt">Applying this to her humidity data, Dr. Keim would calculate the 95&#37; confidence interval as follows:</p>
@@ -315,7 +315,7 @@
 </figure>
 <p id="corty3e-ch9-p162" block_type="sr_exp_txt">Remember, &#8220;<em>p</em> > .05&#8221; signifies that the result (<em>t</em> &#61; 1.72) is an expected, or common, occurrence when the null hypothesis is true. It means that the null hypothesis was not rejected.</p>
 <p id="corty3e-ch9-p163" block_type="sr_exp_txt">This failure to reject the null hypothesis can be taken as good news. Dr. Althof thinks of it as lack of evidence that relapse to depression occurs within six months of ending psychodynamic treatment for depression. The effectiveness of this treatment seems fairly long-lasting.</p>
-<p id="corty3e-ch9-p164" block_type="sr_exp_txt"><em>How wide is the confidence interval? How big is the effect?</em> The second step in interpretation for a paired-samples <em>t</em> test is to use the confidence interval to evaluate the size of the effect. Dr. Althof used <link href="#corty3e-ch9-bx6-5">Equation 9.5</link> to calculate the confidence interval:</p>
+<p id="corty3e-ch9-p164" block_type="sr_exp_txt"><em>How wide is the confidence interval? How big is the effect?</em> The second step in interpretation for a paired-samples <em>t</em> test is to use the confidence interval to evaluate the size of the effect. Dr. Althof used Equation 9.5 to calculate the confidence interval:</p>
 <p id="corty3e-ch9-eqn-9" block_type="equation">
 <image asset-id="corty3e-ch9-img-29" alt="image" src="asset/ch9/corty3e_eqn09_309_01.jpg"/></p>
 <p id="corty3e-ch9-p165" block_type="sr-exp-eq">&#61; (15.00 &#8211; 14.00) &#177; (2.131 &#215; 0.58)</p>
@@ -372,7 +372,7 @@
 <li><p id="corty3e-ch9-p195" block_type="sr-x-bl-first">If <em>t</em> &#8804; &#8211;2.262 <em>or</em> t &#8805; 2.262, reject the null hypothesis.</p></li>
 <li><p id="corty3e-ch9-p196" block_type="sr-x-bl-last">If &#8211;2.262 &#60; <em>t</em> &#60; 2.262, fail to reject the null hypothesis.</p></li>
 </list>
-<p id="corty3e-ch9-p197" block_type="sr_x_h4_txt"><phrase block_type="h4-n-ri"><strong>Step 5</strong></phrase> <strong>Calculate the Test Statistic. <link href="corty3e-ch09.xml#corty3e-ch9-fig-21">Table 9.4</link></strong> displays the means and standard deviations for men and women, and the difference scores for the 10 states. Using the standard deviation of the difference scores (1.98) and the number of pairs of cases (10), the standard error of the difference is calculated (<link href="#corty3e-ch9-bx6-3">Equation 9.3</link>):</p>
+<p id="corty3e-ch9-p197" block_type="sr_x_h4_txt"><phrase block_type="h4-n-ri"><strong>Step 5</strong></phrase> <strong>Calculate the Test Statistic. <link href="corty3e-ch09.xml#corty3e-ch9-fig-21">Table 9.4</link></strong> displays the means and standard deviations for men and women, and the difference scores for the 10 states. Using the standard deviation of the difference scores (1.98) and the number of pairs of cases (10), the standard error of the difference is calculated (Equation 9.3):</p>
 <figure id="corty3e-ch9-fig-21" block_type="table" numbered="true" number="9.4" mmtype="image" mmsrc="" attr="">
 <layout align="center" width="large" border="true"/>
 <image asset-id="corty3e-ch9-img-31" alt="image" src="asset/ch9/corty3e_table09_04.jpg"/>
@@ -380,7 +380,7 @@
 <p id="corty3e-ch9-eqn-10" block_type="equation">
 <image asset-id="corty3e-ch9-img-32" alt="image" src="asset/ch9/corty3e_eqn09_313_01.jpg"/></p>
 <p id="corty3e_page_313" block_type="page_start">313</p>
-<p id="corty3e-ch9-p198" block_type="sr-x-txt">The standard error of the mean difference is used to calculate the <em>t</em> value (<link href="#corty3e-ch9-bx6-4">Equation 9.4</link>). Remember, it doesn&#8217;t make a difference which mean is subtracted from the other mean, so subtract the mean for the women (18.23&#37;) from the mean for the men (23.00&#37;) to obtain a positive number:</p>
+<p id="corty3e-ch9-p198" block_type="sr-x-txt">The standard error of the mean difference is used to calculate the <em>t</em> value (Equation 9.4). Remember, it doesn&#8217;t make a difference which mean is subtracted from the other mean, so subtract the mean for the women (18.23&#37;) from the mean for the men (23.00&#37;) to obtain a positive number:</p>
 <p id="corty3e-ch9-eqn-11" block_type="equation">
 <image asset-id="corty3e-ch9-img-33" alt="image" src="asset/ch9/corty3e_eqn09_313_02.jpg"/></p>
 <p id="corty3e-ch9-p199" block_type="sr_x_h4_txt"><phrase block_type="h4-n-ri"><strong>Step 6</strong></phrase> <strong>Interpret the Results.</strong> <em>Was the null hypothesis rejected?</em></p>
@@ -396,7 +396,7 @@
 </figure>
 <p id="corty3e-ch9-p203" block_type="sr-x-txt">The conclusion is that in the larger population of states, there is a difference in the smoking rate between men and women. Examining the sample means, 18.23&#37; for the women and 23.00&#37; for the men, leads to the conclusion that the smoking rate per state is higher for men than it is for women. In APA format, one would report</p>
 <p id="corty3e-ch9-p204" block_type="sr-x-eq"><em>t</em>(9) &#61; 7.57, <em>p</em> &#60; .05</p>
-<p id="corty3e-ch9-p205" block_type="sr-x-txt"><em>How wide is the confidence interval? How big is the effect?</em> To calculate the 95&#37; confidence interval for the difference between population means, <link href="#corty3e-ch9-bx6-5">Equation 9.5</link> is used. Arrange the subtraction of one mean (the women at 18.23&#37;) from the other (the men at 23.00&#37;) to end up with a positive value. The other numbers in the equation, 2.262 and 0.63, are the critical value of <em>t</em> and the standard error of the difference, respectively:</p>
+<p id="corty3e-ch9-p205" block_type="sr-x-txt"><em>How wide is the confidence interval? How big is the effect?</em> To calculate the 95&#37; confidence interval for the difference between population means, Equation 9.5 is used. Arrange the subtraction of one mean (the women at 18.23&#37;) from the other (the men at 23.00&#37;) to end up with a positive value. The other numbers in the equation, 2.262 and 0.63, are the critical value of <em>t</em> and the standard error of the difference, respectively:</p>
 <p id="corty3e_page_314" block_type="page_start">314</p>
 <p id="corty3e-ch9-eqn-12" block_type="equation">
 <image asset-id="corty3e-ch9-img-35" alt="image" src="asset/ch9/corty3e_eqn09_314_01.jpg"/></p>

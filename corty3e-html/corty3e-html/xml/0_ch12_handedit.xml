@@ -98,7 +98,7 @@
 <layout align="center" width="large" border="true"/>
 <image asset-id="corty3e-ch12-img-5" alt="image" src="asset/ch12/corty3e_table12_04.jpg"/>
 </figure>
-<p id="corty3e-ch12-p51" block_type="txt">Each of the cells has a mean for one of the four groups&#8212;a mean of 85 for high-anxiety students in the classroom, a mean of 65 for high-anxiety students online, and so on. Rather than attend to the cell means, pay attention to the means for each row and for each column. Each cell has the same sample size&#8212;and that will be true for all examples in this chapter&#8212;so the means for the cells in a row or column can be averaged to find the mean for that row or column. The formula for calculating row means and column means is shown in <link href="#corty3e-ch12-bx6-1">Equation 12.1</link>.</p>
+<p id="corty3e-ch12-p51" block_type="txt">Each of the cells has a mean for one of the four groups&#8212;a mean of 85 for high-anxiety students in the classroom, a mean of 65 for high-anxiety students online, and so on. Rather than attend to the cell means, pay attention to the means for each row and for each column. Each cell has the same sample size&#8212;and that will be true for all examples in this chapter&#8212;so the means for the cells in a row or column can be averaged to find the mean for that row or column. The formula for calculating row means and column means is shown in Equation 12.1.</p>
 <p id="corty3e_page_426" block_type="page_start">426</p>
 <box title="" numbered="false" id="corty3e-ch12-bx6-1" block_type="eq-t">
 <box-metadata><box-title><phrase block_type="sec_num">Equation 12.1</phrase> <phrase block_type="sec_title">Formulas for Calculating Row Means and Column Means for Two-Way ANOVA When Each Cell Has the Same Sample Size</phrase></box-title></box-metadata>
@@ -292,7 +292,7 @@
 <p id="corty3e-ch12-p123" block_type="h4"><strong><phrase block_type="h4-N-ril">Step 4</phrase></strong> <strong>Set the Decision Rules</strong></p>
 <p id="corty3e-ch12-p124" block_type="txt-ni">Just as three sets of hypotheses exist, there will be three decision rules for a two-way ANOVA&#8212;one for the row effect, one for the column effect, and one for the interaction effect. Because this is an ANOVA, <em>F</em> ratios will be calculated for each of the three effects (<em>F</em><sub>Rows</sub>, <em>F</em><sub>Columns</sub>, and <em>F</em><sub>Interaction</sub>) and compared to their critical values of <em>F</em>(<em>F<sub>cv</sub></em> <sub>Rows</sub>, <em>F<sub>cv</sub></em> <sub>Columns</sub>, and <em>F<sub>cv</sub></em> <sub>Interaction</sub>). If the observed value of <em>F</em> is greater than or equal to <em>F</em><em><sub>cv</sub></em> for an effect, the null hypothesis is rejected for that effect, the alternative hypothesis accepted, and the effect is called statistically significant.</p>
 <p id="corty3e-ch12-p125" block_type="txt">To find a critical value of <em>F</em> for an <em>F</em> ratio, a researcher needs to decide on the alpha level and know the degrees of freedom for the <em>F</em> ratio. The most commonly used alpha levels for ANOVA are .05 and .01, which correspond to a 5&#37; chance and a 1&#37; chance of making a Type I error. (Type I error occurs when the null hypothesis is erroneously rejected.) Typically, alpha is set at .05. When the consequences of a Type I error are more severe, alpha is set at .01 instead. Dr. Ballard, of course, wants to avoid Type I error, but he can live with a 5&#37; chance of it occurring. So, he sets alpha at .05.</p>
-<p id="corty3e-ch12-p126" block_type="txt">Now he needs to calculate degrees of freedom both for the numerator and the denominator of the <em>F</em> ratios. The degrees of freedom for the numerator will change from <em>F</em> ratio to <em>F</em> ratio, moving from <em>df</em><sub>Rows</sub> to <em>df</em><sub>Columns</sub> to <em>df</em><sub>Interaction</sub> as a researcher moves from effect to effect. The degrees of freedom for the denominator term for the between-subjects, two-way ANOVA is degrees of freedom within, <em>df</em><sub>Within</sub>, and it will remain so across all three of the hypothesis tests. Formulas for calculating all 4 of the degrees of freedom needed to find the critical values of <em>F</em> are shown in <link href="#corty3e-ch12-bx6-2">Equation 12.2</link>. <link href="#corty3e-ch12-fig-20">Table 12.9</link> (on page 437) shows how to calculate the other 2 degrees of freedom&#8212;between groups degrees of freedom and total degrees of freedom&#8212;that will be needed to complete the ANOVA summary table.</p>
+<p id="corty3e-ch12-p126" block_type="txt">Now he needs to calculate degrees of freedom both for the numerator and the denominator of the <em>F</em> ratios. The degrees of freedom for the numerator will change from <em>F</em> ratio to <em>F</em> ratio, moving from <em>df</em><sub>Rows</sub> to <em>df</em><sub>Columns</sub> to <em>df</em><sub>Interaction</sub> as a researcher moves from effect to effect. The degrees of freedom for the denominator term for the between-subjects, two-way ANOVA is degrees of freedom within, <em>df</em><sub>Within</sub>, and it will remain so across all three of the hypothesis tests. Formulas for calculating all 4 of the degrees of freedom needed to find the critical values of <em>F</em> are shown in Equation 12.2. <link href="#corty3e-ch12-fig-20">Table 12.9</link> (on page 437) shows how to calculate the other 2 degrees of freedom&#8212;between groups degrees of freedom and total degrees of freedom&#8212;that will be needed to complete the ANOVA summary table.</p>
 <p id="corty3e_page_435" block_type="page_start">435</p>
 <box title="" numbered="false" id="corty3e-ch12-bx6-2" block_type="eq-t">
 <box-metadata><box-title><phrase block_type="sec_num">Equation 12.2</phrase> <phrase block_type="sec_title">Formulas for Calculating Degrees of Freedom for Between-Subjects, Two-Way ANOVA</phrase></box-title></box-metadata>
@@ -376,7 +376,7 @@
 <li><p id="corty3e-ch12-p186" block_type="bl-last"><em>SS</em><sub>Total</sub> &#61; 6,698.00</p></li>
 </list>
 <p id="corty3e_page_438" block_type="page_start">438</p>
-<p id="corty3e-ch12-p188" block_type="txt"><link href="#corty3e-ch12-bx6-2">Equation 12.2</link> has already been used to calculate four degrees of freedom&#8212;rows, columns, interaction, and within. <link href="#corty3e-ch12-fig-20">Table 12.9</link> shows how to calculate the other two degrees of freedom&#8212;between groups and total. Between-groups variability is broken down into variability for rows, columns, and interaction, so degrees of freedom between groups, <em>df</em><sub>Between</sub>, is found by adding up <em>df</em><sub>Rows</sub>, <em>df</em><sub>Columns</sub>, and <em>df</em><sub>Interaction</sub>. For the caffeine/sleep deprivation study, this is</p>
+<p id="corty3e-ch12-p188" block_type="txt">Equation 12.2 has already been used to calculate four degrees of freedom&#8212;rows, columns, interaction, and within. <link href="#corty3e-ch12-fig-20">Table 12.9</link> shows how to calculate the other two degrees of freedom&#8212;between groups and total. Between-groups variability is broken down into variability for rows, columns, and interaction, so degrees of freedom between groups, <em>df</em><sub>Between</sub>, is found by adding up <em>df</em><sub>Rows</sub>, <em>df</em><sub>Columns</sub>, and <em>df</em><sub>Interaction</sub>. For the caffeine/sleep deprivation study, this is</p>
 <p id="corty3e-ch12-p189" block_type="eq"><em>df</em><sub>Between</sub> &#61; <em>df</em><sub>Rows</sub> &#43; <em>df</em><sub>Columns</sub> &#43; <em>df</em><sub>Interaction</sub></p>
 <p id="corty3e-ch12-p190" block_type="eq">&#61; 1 &#43; 2 &#43; 2</p>
 <p id="corty3e-ch12-p191" block_type="eq">&#61; 5</p>
@@ -457,7 +457,7 @@
 <li><p id="corty3e-ch12-p231" block_type="sr-exp-bl-mid"><em>C</em> &#61; 3 (There are three levels of parental marriage quality.)</p></li>
 <li><p id="corty3e-ch12-p232" block_type="sr-exp-bl-last"><em>N</em> &#61; 72 (Each cell has eight cases and there are nine cells: 8 &#215; 9 &#61; 72.)</p></li>
 </list>
-<p id="corty3e-ch12-p233" block_type="sr_exp_txt_ni">Using <link href="#corty3e-ch12-bx6-2">Equation 12.2</link>, Dr. Larue calculates the various degrees of freedom:</p>
+<p id="corty3e-ch12-p233" block_type="sr_exp_txt_ni">Using Equation 12.2, Dr. Larue calculates the various degrees of freedom:</p>
 <p id="corty3e-ch12-p234" block_type="sr-exp-eq"><em>df</em><sub>Rows</sub> &#61; <em>R</em> &#8211; 1</p>
 <p id="corty3e-ch12-p235" block_type="sr-exp-eq">&#61; 3 &#8211; 1</p>
 <p id="corty3e-ch12-p236" block_type="sr-exp-eq">&#61; 2</p>
@@ -589,7 +589,7 @@
 <section id="corty3e-ch12-sec2-2" block_type="h2" chapter="12" title="" numbered="false" level="2" print_page="448">
 <section-metadata><section-title>How Big Are the Effects?</section-title></section-metadata>
 <p id="corty3e-ch12-p310" block_type="txt-ni">The same measure of effect, eta squared, is used for two-way ANOVA as was used for repeated-measures ANOVA. For a two-way ANOVA, eta squared can be calculated for each main effect and for the interaction. Eta squared, like <em>r</em><sup>2</sup>, calculates the percentage of variability in the dependent variable that is explained by an explanatory variable or by the interaction of the explanatory variables.</p>
-<p id="corty3e-ch12-p311" block_type="txt">The formulas for calculating eta squared for the row main effect, the column main effect, and the interaction effect are given in <link href="#corty3e-ch12-bx6-3">Equation 12.3</link>.</p>
+<p id="corty3e-ch12-p311" block_type="txt">The formulas for calculating eta squared for the row main effect, the column main effect, and the interaction effect are given in Equation 12.3.</p>
 <box title="" numbered="false" id="corty3e-ch12-bx6-3" block_type="eq-t">
 <box-metadata><box-title><phrase block_type="sec_num">Equation 12.3</phrase> <phrase block_type="sec_title">Formulas for Calculating Eta Squared (&#951;<sup>2</sup>) for Row Main Effect, Column Main Effect, and Interaction Effect</phrase></box-title></box-metadata>
 <p id="corty3e-ch12-eqn-21" block_type="equation">
@@ -628,7 +628,7 @@
 <li><p id="corty3e-ch12-p330" block_type="bl-mid">If the column main effect is statistically significant, and if there are three or more levels of the column explanatory variable, then a post-hoc test for the column effect can be used to find which pairs of <em>column</em> means differ statistically. (If there are only two column means and the column main effect is statistically significant, then the two existing column means must differ statistically.)</p></li>
 <li><p id="corty3e-ch12-p331" block_type="bl-last">If the interaction effect was statistically significant, then a post-hoc test for the interaction effect can be used to find which pair(s) of <em>cell</em> means differ statistically.</p></li>
 </list>
-<p id="corty3e-ch12-p332" block_type="txt">The post-hoc test for the between-subjects, two-way ANOVA is the same one used for other ANOVAs, the Tukey <em>HSD.</em> <em>HSD,</em> remember, stands for &#8220;honestly significant difference.&#8221; If a pair of means differs by the <em>HSD</em> value or more than the <em>HSD</em> value, then the difference is a statistically significant one. The formulas for the calculation of <em>HSD</em> values are found in <link href="#corty3e-ch12-bx6-4">Equation 12.4</link>.</p>
+<p id="corty3e-ch12-p332" block_type="txt">The post-hoc test for the between-subjects, two-way ANOVA is the same one used for other ANOVAs, the Tukey <em>HSD.</em> <em>HSD,</em> remember, stands for &#8220;honestly significant difference.&#8221; If a pair of means differs by the <em>HSD</em> value or more than the <em>HSD</em> value, then the difference is a statistically significant one. The formulas for the calculation of <em>HSD</em> values are found in Equation 12.4.</p>
 <box title="" numbered="false" id="corty3e-ch12-bx6-4" block_type="eq-t">
 <box-metadata><box-title><phrase block_type="sec_num">Equation 12.4</phrase> <phrase block_type="sec_title">Formulas for Calculating Tukey <em>HSD</em> Values for Post-Hoc Tests for Between-Subjects, Two-Way ANOVA</phrase></box-title></box-metadata>
 <p id="corty3e-ch12-eqn-25" block_type="equation">
@@ -654,7 +654,7 @@
 <li><p id="corty3e-ch12-p349" block_type="bl-mid">From the ANOVA summary table, note that <em>MS</em><sub>Within</sub> &#61; 31.17.</p></li>
 <li><p id="corty3e-ch12-p350" block_type="bl-last">Each cell has five cases, so <em>n</em><sub>Cells</sub> &#61; 5.</p></li>
 </list>
-<p id="corty3e-ch12-p351" block_type="txt-ni">Here is <link href="#corty3e-ch12-bx6-4">Equation 12.4</link>, with those values substituted:</p>
+<p id="corty3e-ch12-p351" block_type="txt-ni">Here is Equation 12.4, with those values substituted:</p>
 <p id="corty3e-ch12-eqn-26" block_type="equation">
 <image asset-id="corty3e-ch12-img-47" alt="image" src="asset/ch12/corty3e_eqn11_451_01.jpg"/></p>
 <p id="corty3e-ch12-p352" block_type="txt">The <em>HSD</em><sub>Cells</sub> value is 10.91 and any two cell sample means that differ by that much or more have a statistically significant difference. <strong><link href="#corty3e-ch12-fig-48">Table 12.14</link></strong> contains all six cell means and there are 15 possible cell-by-cell comparisons (see <strong><link href="#corty3e-ch12-fig-48">Table 12.15</link></strong>). Note, in the points below, how Dr. Ballard approaches the comparisons in an organized fashion and indicates the directions of the difference.</p>
@@ -715,14 +715,14 @@
 <p id="corty3e-ch12-p364" block_type="txt">(By the way, the data in this example were made up. Don&#8217;t put too much faith in caffeine being an effective antidote to sleep deprivation. Sorry.)</p>
 <box title="Worked Example 12.3" numbered="false" id="corty3e-ch12-bx3-3" block_type="sr-exp-n">
 <p id="corty3e-ch12-p365" block_type="sr_exp_txt_ni">For practice in interpreting two-way ANOVA, a return to Dr. Larue&#8217;s study of factors affecting relationship satisfaction is in order. In that study, there were three levels of arguing style&#8212;positive, mixed, and negative&#8212;crossed with three different perceptions of the quality of one&#8217;s parents&#8217; marriage&#8212;good, average, and bad. The mean level of relationship satisfaction for each of the nine conditions, measured on a scale ranging from 5 (very low) to 35 (very high), is shown in <strong><link href="#corty3e-ch12-fig-51">Table 12.16</link></strong>. The apparent lack of interaction is shown graphically in <link href="#corty3e-ch12-fig-30">Figure 12.6</link>. And, <strong><link href="#corty3e-ch12-fig-50">Figure 12.8</link></strong> displays the main effects for arguing style and parental marital quality.</p>
+<figure id="corty3e-ch12-fig-51" block_type="table" numbered="true" number="12.16" mmtype="image" mmsrc="" attr="">
+<layout align="center" width="large" border="true"/>
+<image asset-id="corty3e-ch12-img-51" alt="image" src="asset/ch12/corty3e_table12_16.jpg"/>
+</figure>
 <figure id="corty3e-ch12-fig-50" block_type="figure" numbered="true" number="12.8" mmtype="image" mmsrc="" attr="">
 <layout align="center" width="medium" border="true"/>
 <image asset-id="corty3e-ch12-img-50" alt="image" src="asset/ch12/corty3e_fig12_08.jpg"/>
 <caption><strong><phrase block_type="fig_num">Figure 12.8</phrase> Main Effects of Arguing Style and Perception of Parental Marriage on Relationship Satisfaction</strong> According to this graph, it looks like there are two main effects: (1) relationship satisfaction decreases as arguing style becomes more negative; (2) relationship satisfaction decreases as perception of quality of parental marriage worsens.</caption>
-</figure>
-<figure id="corty3e-ch12-fig-51" block_type="table" numbered="true" number="12.16" mmtype="image" mmsrc="" attr="">
-<layout align="center" width="large" border="true"/>
-<image asset-id="corty3e-ch12-img-51" alt="image" src="asset/ch12/corty3e_table12_16.jpg"/>
 </figure>
 <p id="corty3e-ch12-p366" block_type="sr_exp_txt_ni">The three critical values of <em>F</em> were <em>F</em><sub>cv Rows</sub> &#61; 3.150, <em>F</em><sub>cv Columns</sub> &#61; 3.150, and <em>F</em><sub>cv Interaction</sub> &#61; 2.525. The ANOVA summary table, which makes a return appearance in <strong><link href="#corty3e-ch12-fig-52">Table 12.17</link></strong>, shows that the observed values of <em>F</em> for the three effects were <em>F</em><sub>Rows</sub> &#61; 115.05, <em>F</em><sub>Columns</sub> &#61; 26.95, and <em>F</em><sub>Interaction</sub> &#61; 0.13.</p>
 <figure id="corty3e-ch12-fig-52" block_type="table" numbered="true" number="12.17" mmtype="image" mmsrc="" attr="">
@@ -752,7 +752,7 @@
 </list></li></list>
 <p id="corty3e_page_455" block_type="page_start">455</p>
 <p id="corty3e-ch12-p382" block_type="sr_exp_txt">In the caffeine/sleep deprivation study, the interaction effect was statistically significant and, as a result, the statistically significant main effects were ignored. Now, in the relationship satisfaction study, the two main effects are statistically significant and the interaction is not. How does interpretation work with this set of results?</p>
-<p id="corty3e-ch12-p383" block_type="sr_exp_txt"><em>How big are the effects?</em> Effect size is measured by calculating eta squared (<link href="#corty3e-ch12-bx6-3">Equation 12.3</link>):</p>
+<p id="corty3e-ch12-p383" block_type="sr_exp_txt"><em>How big are the effects?</em> Effect size is measured by calculating eta squared (Equation 12.3):</p>
 <p id="corty3e-ch12-eqn-27" block_type="equation">
 <image asset-id="corty3e-ch12-img-53" alt="image" src="asset/ch12/corty3e_eqn11_455_01.jpg"/></p>
 <p id="corty3e-ch12-eqn-28" block_type="equation">
@@ -761,10 +761,10 @@
 <image asset-id="corty3e-ch12-img-55" alt="image" src="asset/ch12/corty3e_eqn11_455_03.jpg"/></p>
 <p id="corty3e-ch12-p384" block_type="sr_exp_txt">Note that eta squared for the not-statistically-significant interaction effect was calculated. Even though the interaction effect was not significant, it is possible for eta squared to be sizable. If that happened, it would serve to alert a researcher to the possibility of Type II error. In the current situation, with the percentage of variability near zero, there is nothing to make Dr. Larue think she missed finding an interaction effect that really exists. From here on out, it is safe to ignore the interaction effect.</p>
 <p id="corty3e-ch12-p385" block_type="sr_exp_txt">Eta squared for the rows effect was about 66&#37; and for the columns effect it was about 16&#37;. Both main effects have an impact on relationship satisfaction, but one more than the other. The impact of arguing style on relationship satisfaction is quite strong. The impact of perceived parental marital quality is smaller but still meaningful. These results suggest that higher levels of relationship satisfaction are associated more with being a positive arguer than with perceiving one&#8217;s parents&#8217; marriage as good, though having a good model of a marriage is associated meaningfully with relationship satisfaction.</p>
-<p id="corty3e-ch12-p386" block_type="sr_exp_txt"><em>Where are the effects, and what is their direction?</em> Now it is time to use <link href="#corty3e-ch12-bx6-4">Equation 12.4</link> to conduct some post-hoc tests and find out what is causing the statistically significant effects. Remember, only conduct a post-hoc test when the effect is statistically significant. With the current example, Dr. Larue has no need to find out what caused the interaction effect because there is no evidence that an interaction effect exists.</p>
+<p id="corty3e-ch12-p386" block_type="sr_exp_txt"><em>Where are the effects, and what is their direction?</em> Now it is time to use Equation 12.4 to conduct some post-hoc tests and find out what is causing the statistically significant effects. Remember, only conduct a post-hoc test when the effect is statistically significant. With the current example, Dr. Larue has no need to find out what caused the interaction effect because there is no evidence that an interaction effect exists.</p>
 <p id="corty3e_page_456" block_type="page_start">456</p>
-<p id="corty3e-ch12-p388" block_type="sr_exp_txt">To apply <link href="#corty3e-ch12-bx6-4">Equation 12.4</link>, first find the <em>q</em> value from <link href="corty3e_app1_1.html#corty3e-app1-fig-18">Appendix Table 5</link>. This depends on &#945; (.05), how many means are being compared, and what the degrees of freedom are. For both the row effect and column effect, there are three means, so <em>k</em> &#61; 3 in both instances. Both instances have the same degrees of freedom as well: <em>df</em><sub>Within</sub> &#61; 63. Turning to <link href="corty3e_app1_1.html#corty3e-app1-fig-18">Appendix Table 5</link>, there is a column with <em>k</em> &#61; 3, but no row for <em>df</em> &#61; 63. In these situations, apply <em>The Price Is Right</em> rule and use the <em>df</em> value that is closest to 63 without going over. Here, that is <em>df</em> &#61; 60. The <em>q</em> value, at the intersection of <em>k</em> &#61; 3 and <em>df</em> &#61; 60, is 3.40 for &#945; &#61; .05.</p>
-<p id="corty3e-ch12-p389" block_type="sr_exp_txt">To apply <link href="#corty3e-ch12-bx6-4">Equation 12.4</link>, one also needs to know <em>MS</em><sub>Within</sub>, which is 7.44, and how many cases are in a row and a column. Each row contains 24 cases, as does each column. All the values are the same for our calculations for <em>HSD</em><sub>Rows</sub> and <em>HSD</em><sub>Columns</sub>: <em>q</em> &#61; 3.40, <em>MS</em><sub>Within</sub> &#61; 7.44, and <em>n</em> &#61; 24, so both <em>HSD</em> values can be calculated in one pass:</p>
+<p id="corty3e-ch12-p388" block_type="sr_exp_txt">To apply Equation 12.4, first find the <em>q</em> value from <link href="corty3e_app1_1.html#corty3e-app1-fig-18">Appendix Table 5</link>. This depends on &#945; (.05), how many means are being compared, and what the degrees of freedom are. For both the row effect and column effect, there are three means, so <em>k</em> &#61; 3 in both instances. Both instances have the same degrees of freedom as well: <em>df</em><sub>Within</sub> &#61; 63. Turning to <link href="corty3e_app1_1.html#corty3e-app1-fig-18">Appendix Table 5</link>, there is a column with <em>k</em> &#61; 3, but no row for <em>df</em> &#61; 63. In these situations, apply <em>The Price Is Right</em> rule and use the <em>df</em> value that is closest to 63 without going over. Here, that is <em>df</em> &#61; 60. The <em>q</em> value, at the intersection of <em>k</em> &#61; 3 and <em>df</em> &#61; 60, is 3.40 for &#945; &#61; .05.</p>
+<p id="corty3e-ch12-p389" block_type="sr_exp_txt">To apply Equation 12.4, one also needs to know <em>MS</em><sub>Within</sub>, which is 7.44, and how many cases are in a row and a column. Each row contains 24 cases, as does each column. All the values are the same for our calculations for <em>HSD</em><sub>Rows</sub> and <em>HSD</em><sub>Columns</sub>: <em>q</em> &#61; 3.40, <em>MS</em><sub>Within</sub> &#61; 7.44, and <em>n</em> &#61; 24, so both <em>HSD</em> values can be calculated in one pass:</p>
 <p id="corty3e-ch12-eqn-30" block_type="equation">
 <image asset-id="corty3e-ch12-img-56" alt="image" src="asset/ch12/corty3e_eqn11_456_01.jpg"/></p>
 <p id="corty3e-ch12-p390" block_type="sr_exp_txt">With an <em>HSD</em> value of 1.89, any two row means or any two column means that differ by that amount or more are statistically significantly different.</p>
@@ -1047,7 +1047,7 @@
 </list>
 <p id="corty3e_page_460" block_type="page_start">460</p>
 <p id="corty3e-ch12-p422" block_type="sr-x-txt">With no statistically significant effect, no need exists to do any post-hoc testing. A researcher would be wise, however, to calculate eta squared in order to consider the possibility of a Type II error, the possibility of having failed to find an effect that does occur.</p>
-<p id="corty3e-ch12-p423" block_type="sr-x-txt">Applying <link href="#corty3e-ch12-bx6-3">Equation 12.3</link>, Dr. Porter finds</p>
+<p id="corty3e-ch12-p423" block_type="sr-x-txt">Applying Equation 12.3, Dr. Porter finds</p>
 <p id="corty3e-ch12-eqn-31" block_type="equation">
 <image asset-id="corty3e-ch12-img-60" alt="image" src="asset/ch12/corty3e_eqn11_460_01.jpg"/></p>
 <p id="corty3e-ch12-eqn-32" block_type="equation">
@@ -2112,17 +2112,17 @@ a.within-subjects:: ANOVA terminology for dependent samples.
 <li><p id="corty3e-ch12-p605" block_type="bx3_bl_last">The third column, &#8220;Alertness,&#8221; is the case&#8217;s score on the mental alertness task.</p></li>
 </list>
 <p id="corty3e-ch12-p606" block_type="bx3-txt">There are two menus that must be accessed to run a between-subjects, two-way ANOVA in SPSS. To start, as shown in <strong><link href="#corty3e-ch12-fig-66">Figure 12.12</link></strong>, click on &#8220;Analyze,&#8221; then &#8220;General Linear Model,&#8221; and then &#8220;Univariate. . . .&#8221;</p>
-<figure id="corty3e-ch12-fig-66" block_type="figure" numbered="true" number="12.12" mmtype="image" mmsrc="" attr="">
-<layout align="right" width="medium" border="true"/>
-<image asset-id="corty3e-ch12-img-66" alt="image" src="asset/ch12/corty3e_fig12_12.jpg"/>
-<caption><strong><phrase block_type="fig_num">Figure 12.12</phrase> Initiating a Between-Subjects, One-Way ANOVA in SPSS</strong> Between-subjects, one-way ANOVA is found under &#8220;General Linear Model&#8221; in SPSS.</caption>
-<asset_source>(Source: SPSS)</asset_source>
-</figure>
 <p id="corty3e-ch12-p607" block_type="bx3-txt">Clicking on &#8220;Univariate. . .&#8221; opens up the menu seen in <strong><link href="#corty3e-ch12-fig-67">Figure 12.13</link></strong>. Note that the arrow buttons have already been used to send &#8220;Alertness&#8221; to the dependent variable box and &#8220;Caffeine&#8221; to the fixed factors box. Once the arrow button is used to send &#8220;Sleep&#8221; to the fixed factors box, press the &#8220;Go&#8221; button at the bottom to initiate the calculations.</p>
 <figure id="corty3e-ch12-fig-67" block_type="figure" numbered="true" number="12.13" mmtype="image" mmsrc="" attr="">
-<layout align="center" width="medium" border="true"/>
+<layout align="right" width="medium" border="true"/>
 <image asset-id="corty3e-ch12-img-67" alt="image" src="asset/ch12/corty3e_fig12_13.jpg"/>
 <caption><strong><phrase block_type="fig_num">Figure 12.13</phrase> Commands to Run a Between-Subjects, One-Way ANOVA in SPSS</strong> To run a between-subjects, one-way ANOVA in SPSS, the independent variables are listed as &#8220;Fixed Factors&#8221; and the dependent variable as the &#8220;Dependent Variable.&#8221;</caption>
+<asset_source>(Source: SPSS)</asset_source>
+</figure>
+<figure id="corty3e-ch12-fig-66" block_type="figure" numbered="true" number="12.12" mmtype="image" mmsrc="" attr="">
+<layout align="left" width="medium" border="true"/>
+<image asset-id="corty3e-ch12-img-66" alt="image" src="asset/ch12/corty3e_fig12_12.jpg"/>
+<caption><strong><phrase block_type="fig_num">Figure 12.12</phrase> Initiating a Between-Subjects, One-Way ANOVA in SPSS</strong> Between-subjects, one-way ANOVA is found under &#8220;General Linear Model&#8221; in SPSS.</caption>
 <asset_source>(Source: SPSS)</asset_source>
 </figure>
 <p id="corty3e_page_472" block_type="page_start">472</p>

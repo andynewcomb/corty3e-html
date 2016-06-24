@@ -240,14 +240,6 @@ var Player_subtype = Player_manuscript_type.extend({
 	// Anything that can be done after the page displays 
 	// should be done here.
 
-        //$(window).load(function() {        
-        //   $('#supp_win > [data-type="figure"]').each(function() {
-        //     // $(this).removeAttr('data-caption-compass');
-        //     var imgwidth = $(this).find('img').width();
-        //     $(this).find('[data-type="figure_text"]').width(imgwidth);
-        //   });
-        //});
-        
         /////////////////////////////////////////////////
         // Figures
         
@@ -309,7 +301,8 @@ var Player_subtype = Player_manuscript_type.extend({
         // remove event handlers from supplemental window images
         // this prevents clicks from popping up anything further
         $('#supp_win img').unbind();
-        
+        $('#supp_win2 img').unbind();
+
         // also remove event handlers from images used for equations.
         // (also change cursor from pointer in CSS)
         $('img[src*="corty3e_eqn"]').unbind();

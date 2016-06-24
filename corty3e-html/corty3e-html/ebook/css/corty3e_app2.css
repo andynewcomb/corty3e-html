@@ -33,7 +33,7 @@
 [data-block_type="ans"] p [data-block_type="question_num"] {
   font-family: serif;
   position: absolute;
-  left: 60px;
+  left: 88px;
 }
 [data-block_type="ans-cont"] p {
   margin-left: 3em !important;
@@ -70,7 +70,7 @@
   font-family: sans-serif;
   color: #222;
   position: absolute;
-  left: 60px;
+  left: 88px;
 }
 [data-block_type="ans-h3"] p [data-block_type="h4-n-ri"] + strong {
   color: #222;

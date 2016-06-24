@@ -179,7 +179,7 @@
 <list id="corty3e-ch5-list-5" type="ordered" block_type="numbered">
 <li><p id="corty3e-ch5-p64" block_type="nl-first">If <em>N</em> is large, then the sampling distribution of the mean will be normally distributed, no matter what the shape of the population is. (In the small town IQ example, the population was flat, but the sampling distribution was starting to look normal.)</p></li>
 <li><p id="corty3e-ch5-p65" block_type="nl-mid">If <em>N</em> is large, then the mean of the sampling distribution is the same as the mean of the population from which the samples were selected. (This was true for our small town example.)</p></li>
-<li><p id="corty3e-ch5-p66" block_type="nl-last">If <em>N</em> is large, then a statistician can compute the standard error of the mean (the standard deviation of the sampling distribution) using <link href="#corty3e-ch5-bx6-1">Equation 5.1</link>.</p></li>
+<li><p id="corty3e-ch5-p66" block_type="nl-last">If <em>N</em> is large, then a statistician can compute the standard error of the mean (the standard deviation of the sampling distribution) using Equation 5.1.</p></li>
 </list>
 <box title="" numbered="false" id="corty3e-ch5-bx6-1" block_type="eq-t">
 <box-metadata><box-title><phrase block_type="sec_num">Equation 5.1</phrase> <phrase block_type="sec_title">Formula for Calculating the Standard Error of the Mean</phrase></box-title></box-metadata>
@@ -197,18 +197,18 @@
 </section>
 <section id="corty3e-ch5-sec2-5" block_type="h2" chapter="5" title="" numbered="false" level="2" print_page="154">
 <section-metadata><section-title>When &#963; Is Not Known</section-title></section-metadata>
-<p id="corty3e-ch5-p71" block_type="txt-ni">Access to the entire population is rare and it is rare that &#963;, the population standard deviation, is known. So, how can the standard error of the mean be calculated without &#963;? In such a situation, one uses the sample standard deviation <em>s,</em> an estimate of the population standard deviation, to calculate an <em>estimated</em> standard error of the mean. The formula for the estimated standard error of the mean, abbreviated <em>s<sub>M</sub>,</em> is shown in <link href="#corty3e-ch5-bx6-2">Equation 5.2</link>.</p>
+<p id="corty3e-ch5-p71" block_type="txt-ni">Access to the entire population is rare and it is rare that &#963;, the population standard deviation, is known. So, how can the standard error of the mean be calculated without &#963;? In such a situation, one uses the sample standard deviation <em>s,</em> an estimate of the population standard deviation, to calculate an <em>estimated</em> standard error of the mean. The formula for the estimated standard error of the mean, abbreviated <em>s<sub>M</sub>,</em> is shown in Equation 5.2.</p>
 <box title="" numbered="false" id="corty3e-ch5-bx6-2" block_type="eq-t">
 <box-metadata><box-title><phrase block_type="sec_num">Equation 5.2</phrase> <phrase block_type="sec_title">Formula for Estimated Standard Error of the Mean</phrase></box-title></box-metadata>
 <p id="corty3e-ch5-eqn-5" block_type="equation">
 <image asset-id="corty3e-ch5-img-14" alt="image" src="asset/ch5/corty3e_eqn05_154_03.jpg"/>
 </p>
 <p id="corty3e-ch5-p72" block_type="eq-txt-ni">where <em>s<sub>M</sub></em> &#61; the estimated standard error of the mean</p>
-<p id="corty3e-ch5-p73" block_type="eq-unl"><em>s</em> &#61; the sample standard deviation (<link href="corty3e_ch3_3.html#corty3e-ch3-bx6-7">Equation 3.7</link>)</p>
+<p id="corty3e-ch5-p73" block_type="eq-unl"><em>s</em> &#61; the sample standard deviation (Equation 3.7)</p>
 <p id="corty3e-ch5-p74" block_type="eq-unl"><em>N</em> &#61; the number of cases in the sample</p>
 </box>
 <p id="corty3e_page_155" block_type="page_start">155</p>
-<p id="corty3e-ch5-p75" block_type="txt">Suppose a nurse practitioner has taken a random sample of 83 American adults, measured their diastolic blood pressure, and calculated <em>s</em> as 11. Using <link href="#corty3e-ch5-bx6-2">Equation 5.2</link>, he would estimate the standard error of the mean as</p>
+<p id="corty3e-ch5-p75" block_type="txt">Suppose a nurse practitioner has taken a random sample of 83 American adults, measured their diastolic blood pressure, and calculated <em>s</em> as 11. Using Equation 5.2, he would estimate the standard error of the mean as</p>
 <p id="corty3e-ch5-eqn-6" block_type="equation">
 <image asset-id="corty3e-ch5-img-15" alt="image" src="asset/ch5/corty3e_eqn05_155_01.jpg"/>
 </p>
@@ -345,21 +345,21 @@
 <li><p id="corty3e-ch5-p128" block_type="bl-mid">Brackets that extend &#177;1.96 &#963;<em><sub>M</sub></em> capture &#956; for every sample mean in the shaded region.</p></li>
 <li><p id="corty3e-ch5-p129" block_type="bl-last">For any mean picked at random from the sampling distribution, there&#8217;s a 95&#37; chance that 1.96 &#963;<em><sub>M</sub></em> brackets extended symmetrically around it will capture &#956;.</p></li>
 </list>
-<p id="corty3e-ch5-p130" block_type="txt">We&#8217;ve just developed the 95&#37; confidence interval for the population mean: take a sample mean, create an interval around it that is &#177;1.96 &#963;<em><sub>M</sub></em>, and there is a 95&#37; chance that this interval captures &#956;. The formula is shown in <link href="#corty3e-ch5-bx6-3">Equation 5.3</link>.</p>
+<p id="corty3e-ch5-p130" block_type="txt">We&#8217;ve just developed the 95&#37; confidence interval for the population mean: take a sample mean, create an interval around it that is &#177;1.96 &#963;<em><sub>M</sub></em>, and there is a 95&#37; chance that this interval captures &#956;. The formula is shown in Equation 5.3.</p>
 <p id="corty3e_page_164" block_type="page_start">164</p>
 <box title="" numbered="false" id="corty3e-ch5-bx6-3" block_type="eq-t">
 <box-metadata><box-title><phrase block_type="sec_num">Equation 5.3</phrase> <phrase block_type="sec_title">Formula for 95&#37; Confidence Interval for the Population Mean</phrase></box-title></box-metadata>
 <p id="corty3e-ch5-p131" block_type="eq-unl">95&#37;CI<sub>&#956;</sub> &#61; <em>M</em> &#177; (1.96 &#215; &#963;<em><sub>M</sub></em>)</p>
 <p id="corty3e-ch5-p132" block_type="eq-txt-ni">where 95&#37;CI<sub>&#956;</sub> &#61; the 95&#37; confidence interval for thepopulation mean being calculated</p>
 <p id="corty3e-ch5-p133" block_type="eq-unl"><em>M</em> &#61; sample mean</p>
-<p id="corty3e-ch5-p134" block_type="eq-unl">&#963;<em><sub>M</sub></em> &#61; standard error of the mean (<link href="#corty3e-ch5-bx6-1">Equation 5.1</link>). [If &#963;<em><sub>M</sub></em> is unknown, substitute <em>s<sub>M</sub></em> (<link href="#corty3e-ch5-bx6-2">Equation 5.2</link>).]</p>
+<p id="corty3e-ch5-p134" block_type="eq-unl">&#963;<em><sub>M</sub></em> &#61; standard error of the mean (Equation 5.1). [If &#963;<em><sub>M</sub></em> is unknown, substitute <em>s<sub>M</sub></em> (Equation 5.2).]</p>
 </box>
 <p id="corty3e-ch5-p135" block_type="txt">Let&#8217;s put this equation into practice and use the results to think about what a 95&#37; confidence interval means. Dr. Saskia obtained a random sample of 37 students at an elite college, gave them an IQ test (&#963; &#61; 15), and found <em>M</em> &#61; 122. What can she conclude from this sample mean about the average IQ of the entire student body at that college. That is, what can she conclude about &#956;? This calls for a confidence interval.</p>
-<p id="corty3e-ch5-p136" block_type="txt">All the pieces are present that are needed to calculate a confidence interval: <em>M</em>, &#963;, and <em>N</em>. &#963; and <em>N</em> are needed to calculate &#963;<em><sub>M</sub></em> using <link href="#corty3e-ch5-bx6-1">Equation 5.1</link>:</p>
+<p id="corty3e-ch5-p136" block_type="txt">All the pieces are present that are needed to calculate a confidence interval: <em>M</em>, &#963;, and <em>N</em>. &#963; and <em>N</em> are needed to calculate &#963;<em><sub>M</sub></em> using Equation 5.1:</p>
 <p id="corty3e-ch5-eqn-8" block_type="equation">
 <image asset-id="corty3e-ch5-img-28" alt="image" src="asset/ch5/corty3e_eqn05_164_01.jpg"/>
 </p>
-<p id="corty3e-ch5-p137" block_type="txt">Now that the standard error of the mean is known, <link href="#corty3e-ch5-bx6-3">Equation 5.3</link> can be used to calculate the 95&#37; confidence interval:</p>
+<p id="corty3e-ch5-p137" block_type="txt">Now that the standard error of the mean is known, Equation 5.3 can be used to calculate the 95&#37; confidence interval:</p>
 <p id="corty3e-ch5-p138" block_type="eq">95%CI<sub>&#956;</sub> &#61; M &#177; (1.96 &#215; &#963;<em><sub>M</sub></em>)</p>
 <p id="corty3e-ch5-p139" block_type="eq">&#61; 122 &#177; (1.96 &#215; 2.4660)</p>
 <p id="corty3e-ch5-p140" block_type="eq">&#61; 122 &#177; 4.8837</p>
@@ -377,7 +377,7 @@
 </figure>
 <box title="Worked Example 5.3" numbered="false" id="corty3e-ch5-bx3-3" block_type="sr-exp-n">
 <p id="corty3e-ch5-p147" block_type="sr-ex-txt-ni">Earlier in this chapter, mention was made of a sample of 83 American adults in whom diastolic blood pressure was measured and where the standard error of the mean, <em>s<sub>M</sub></em>, was 1.21. If the mean blood pressure in the sample was 81, what can one conclude about the mean diastolic blood pressure of American adults?</p>
-<p id="corty3e-ch5-p148" block_type="sr-ex-txt">Using <link href="#corty3e-ch5-bx6-3">Equation 5.3</link> to calculate the 95&#37; confidence interval for the population mean:</p>
+<p id="corty3e-ch5-p148" block_type="sr-ex-txt">Using Equation 5.3 to calculate the 95&#37; confidence interval for the population mean:</p>
 <p id="corty3e-ch5-p149" block_type="sr-exp-eq">95&#37;CI<sub>&#956; </sub>&#61; <em>M</em> &#177; (1.96 &#215; <em>s<sub>M</sub></em>)</p>
 <p id="corty3e-ch5-p150" block_type="sr-exp-eq">&#61; 81 &#177; (1.96 &#215; 1.21)</p>
 <p id="corty3e-ch5-p151" block_type="sr-exp-eq">&#61; 81 &#177; 2.3716</p>
@@ -558,7 +558,8 @@ a.standard error of the mean:: the standard deviation of a sampling distribution
 </figure>
 <figure id="corty3e-ch5-fig-32" block_type="figure" numbered="true" number="5.19" mmtype="image" mmsrc="" attr="">
 <layout align="center" width="medium" border="true"/>
-<image asset-id="corty3e-ch5-img-33" alt="image" src="asset/ch5/corty3e_fig05_19.jpg"/>
+<image asset-id="corty3e-ch5-img-33" alt="image" src="asset/ch5/corty3e_fig05_19a.jpg"/>
+<image asset-id="corty3e-ch5-img-33" alt="image" src="asset/ch5/corty3e_fig05_19b.jpg"/>
 <caption><strong><phrase block_type="fig_num">Figure 5.19</phrase> Setting the Confidence Interval Value in SPSS.</strong></caption>
 </figure>
 </box>

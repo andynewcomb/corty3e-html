@@ -66,6 +66,8 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="ebook\asset\ch5\corty3e_fig05_19a.jpg" />
+    <Content Include="ebook\asset\ch5\corty3e_fig05_19b.jpg" />
     <Content Include="ebook\asset\ch8\corty3e_fig08_01.html" />
     <Content Include="ebook\asset\ch8\corty3e_fig08_02.html" />
     <Content Include="ebook\asset\ch8\corty3e_fig08_03.html" />
@@ -1642,8 +1644,7 @@
     <Content Include="ebook\asset\ch5\corty3e_fig05_17.jpg" />
     <Content Include="ebook\asset\ch5\corty3e_fig05_18.html" />
     <Content Include="ebook\asset\ch5\corty3e_fig05_18.jpg" />
-    <Content Include="ebook\asset\ch5\corty3e_fig05_19.html" />
-    <Content Include="ebook\asset\ch5\corty3e_fig05_19.jpg" />
+    <Content Include="ebook\asset\ch5\corty3e_fig05_19a.html" />
     <Content Include="ebook\asset\ch5\corty3e_fig05_un01.html" />
     <Content Include="ebook\asset\ch5\corty3e_fig05_un01.jpg" />
     <Content Include="ebook\asset\ch5\corty3e_fig05_un02.html" />

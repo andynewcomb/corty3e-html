@@ -211,11 +211,11 @@
 <layout align="center" width="large" border="true"/>
 <image asset-id="corty3e-ch10-img-16" alt="image" src="asset/ch10/corty3e_table10_05.jpg"/>
 </figure>
-<p id="corty3e-ch10-p87" block_type="txt">To determine the critical value of <em>F,</em> find the value at the intersection of the <em>column</em> for the degrees of freedom in the numerator and the <em>row</em> for the degrees of freedom in the denominator. <link href="#corty3e-ch10-bx6-1">Equation 10.1</link> shows how to calculate the different degrees of freedom needed for a between-subjects, one-way ANOVA. Recall the formula for <em>F</em> ratio from the previous section:</p>
+<p id="corty3e-ch10-p87" block_type="txt">To determine the critical value of <em>F,</em> find the value at the intersection of the <em>column</em> for the degrees of freedom in the numerator and the <em>row</em> for the degrees of freedom in the denominator. Equation 10.1 shows how to calculate the different degrees of freedom needed for a between-subjects, one-way ANOVA. Recall the formula for <em>F</em> ratio from the previous section:</p>
 <list id="corty3e-ch10-list-6" type="unordered" block_type="bullet">
 <li><p id="corty3e-ch10-p88" block_type="bl-first">The numerator degrees of freedom for the <em>F</em> ratio, what defines the columns in the table of critical values of <em>F,</em> are called between-groups degrees of freedom. This is abbreviated as <em>df</em><sub>Between</sub>.</p></li>
 <li><p id="corty3e-ch10-p89" block_type="bl-mid">The denominator degrees of freedom for the <em>F</em> ratio, what defines the rows in the table of critical values of <em>F,</em> are within-groups degrees of freedom. This is abbreviated as <em>df</em><sub>Within</sub>.</p></li>
-<li><p id="corty3e-ch10-p90" block_type="bl-last">The final degrees of freedom calculated in <link href="#corty3e-ch10-bx6-1">Equation 10.1</link> are total degrees of freedom. This is abbreviated as <em>df</em><sub>Total</sub> and represents the total number of degrees of freedom in the data. Note that adding together <em>df</em><sub>Between</sub> and <em>df</em><sub>Within</sub> equals <em>df</em><sub>Total</sub>.</p></li>
+<li><p id="corty3e-ch10-p90" block_type="bl-last">The final degrees of freedom calculated in Equation 10.1 are total degrees of freedom. This is abbreviated as <em>df</em><sub>Total</sub> and represents the total number of degrees of freedom in the data. Note that adding together <em>df</em><sub>Between</sub> and <em>df</em><sub>Within</sub> equals <em>df</em><sub>Total</sub>.</p></li>
 </list>
 <p id="corty3e_page_342" block_type="page_start">342</p>
 <box title="" numbered="false" id="corty3e-ch10-bx6-1" block_type="eq-t">
@@ -268,7 +268,7 @@
 </box>
 <p id="corty3e-ch10-p121" block_type="txt"><termref term="sum of squares total">Sum of squares total</termref> is calculated by treating all the cases as if they belong in one group: the grand mean, the mean of all the scores, is subtracted from each score, these deviation scores are squared, and the squared deviation scores are added up. Voil&#224;, a sum of squares, the numerator for a variance.</p>
 <p id="corty3e-ch10-p122" block_type="txt"><termref term="sum of squares between">Sum of squares between</termref> represents the variability between groups. It is calculated by subtracting the grand mean from each group mean, squaring these deviation scores, multiplying each squared deviation score by the number of cases in the group, and then adding them up. The final variance numerator, the one that represents variability within groups, <termref term="sum of squares within">sum of squares within</termref>, is calculated by taking each score, subtracting from it its group mean, squaring each deviation score, and adding them all up.</p>
-<p id="corty3e-ch10-p123" block_type="txt">The calculations just described are what are called definitional formulas because the calculations explain what the value being calculated is. Unfortunately, definitional formulas often are not straightforward mathematically. In contrast, computational formulas are designed to be easier to use. <link href="#corty3e-ch10-bx6-2">Equation 10.2</link> is a computational formula for sum of squares total.</p>
+<p id="corty3e-ch10-p123" block_type="txt">The calculations just described are what are called definitional formulas because the calculations explain what the value being calculated is. Unfortunately, definitional formulas often are not straightforward mathematically. In contrast, computational formulas are designed to be easier to use. Equation 10.2 is a computational formula for sum of squares total.</p>
 <box title="" numbered="false" id="corty3e-ch10-bx6-2" block_type="eq-t">
 <box-metadata><box-title><phrase block_type="sec_num">Equation 10.2</phrase> <phrase block_type="sec_title">Formula for Calculating Sum of Squares Total for Between-Subjects, One-Way ANOVA</phrase></box-title></box-metadata>
 <p id="corty3e-ch10-eqn-4" block_type="equation">
@@ -295,7 +295,7 @@
 <p id="corty3e-ch10-p133" block_type="txt">Finally,</p>
 <p id="corty3e-ch10-eqn-6" block_type="equation">
 <image asset-id="corty3e-ch10-img-22" alt="image" src="asset/ch10/corty3e_eqn10_345_02.jpg"/></p>
-<p id="corty3e-ch10-p134" block_type="txt-ni">Next, let&#8217;s use <link href="#corty3e-ch10-bx6-3">Equation 10.3</link> to calculate sum of squares between groups.</p>
+<p id="corty3e-ch10-p134" block_type="txt-ni">Next, let&#8217;s use Equation 10.3 to calculate sum of squares between groups.</p>
 <box title="" numbered="false" id="corty3e-ch10-bx6-3" block_type="eq-t">
 <box-metadata><box-title><phrase block_type="sec_num">Equation 10.3</phrase> <phrase block_type="sec_title">Formula for Calculating Between-Groups Sum of Squares for Between-Subjects, One-Way ANOVA</phrase></box-title></box-metadata>
 <p id="corty3e-ch10-eqn-7" block_type="equation">
@@ -322,7 +322,7 @@
 <p id="corty3e-ch10-p146" block_type="txt">Finally,</p>
 <p id="corty3e-ch10-eqn-10" block_type="equation">
 <image asset-id="corty3e-ch10-img-26" alt="image" src="asset/ch10/corty3e_eqn10_346_02.jpg"/></p>
-<p id="corty3e-ch10-p147" block_type="txt">The final sum of squares to calculate is the sum of squares within. <link href="#corty3e-ch10-bx6-4">Equation 10.4</link> covers this.</p>
+<p id="corty3e-ch10-p147" block_type="txt">The final sum of squares to calculate is the sum of squares within. Equation 10.4 covers this.</p>
 <box title="" numbered="false" id="corty3e-ch10-bx6-4" block_type="eq-t">
 <box-metadata><box-title><phrase block_type="sec_num">Equation 10.4</phrase> <phrase block_type="sec_title">Formula for Calculating Sum of Squares Within for Between-Subjects, One-Way ANOVA</phrase></box-title></box-metadata>
 <p id="corty3e-ch10-eqn-11" block_type="equation">
@@ -378,7 +378,7 @@
 <image asset-id="corty3e-ch10-img-31" alt="image" src="asset/ch10/corty3e_eqn10_348_01.jpg"/></p>
 <p id="corty3e-ch10-p171" block_type="txt-ni">The numerator in this formula is the same as the sum of squares total. And, <em>df</em><sub>Total</sub> is <em>N</em> &#8211; 1. Thus, if mean square total were calculated, it would be exactly the same as the variance for all the cases. Analysis of variance really does analyze variances.</p>
 <p id="corty3e-ch10-p172" block_type="txt">The only mean squares needed to complete a between-subjects, one-way ANOVA are between-groups mean square (<em>MS</em><sub>Between</sub>) and within-groups mean square (<em>MS</em><sub>Within</sub>). As the mean square total is not needed, the convention is not to calculate it and to leave the space blank where mean square total would go.</p>
-<p id="corty3e-ch10-p173" block_type="txt">The formula for calculating the between-groups mean square is given in <link href="#corty3e-ch10-bx6-5">Equation 10.5</link>.</p>
+<p id="corty3e-ch10-p173" block_type="txt">The formula for calculating the between-groups mean square is given in Equation 10.5.</p>
 <box title="" numbered="false" id="corty3e-ch10-bx6-5" block_type="eq-t">
 <box-metadata><box-title><phrase block_type="sec_num">Equation 10.5</phrase> <phrase block_type="sec_title">Formula for Between-Groups Mean Square, <em>MS</em><sub>Between</sub>, for Between-Subjects, One-Way ANOVA</phrase></box-title></box-metadata>
 <p id="corty3e-ch10-eqn-14" block_type="equation">
@@ -391,7 +391,7 @@
 <p id="corty3e-ch10-p177" block_type="txt">For the maze data, where <em>SS</em><sub>Between</sub> &#61; 54.00 and <em>df</em><sub>Between</sub> &#61; 2, the between-groups mean square would be calculated:</p>
 <p id="corty3e-ch10-eqn-15" block_type="equation">
 <image asset-id="corty3e-ch10-img-33" alt="image" src="asset/ch10/corty3e_eqn10_349_01.jpg"/></p>
-<p id="corty3e-ch10-p178" block_type="txt-ni"><link href="#corty3e-ch10-bx6-6">Equation 10.6</link> offers the formula for the within-groups mean square.</p>
+<p id="corty3e-ch10-p178" block_type="txt-ni">Equation 10.6 offers the formula for the within-groups mean square.</p>
 <box title="" numbered="false" id="corty3e-ch10-bx6-6" block_type="eq-t">
 <box-metadata><box-title><phrase block_type="sec_num">Equation 10.6</phrase> <phrase block_type="sec_title">Formula for Within-Groups Mean Square, <em>MS</em><sub>Within</sub>, for a Between-Subjects, One-Way ANOVA</phrase></box-title></box-metadata>
 <p id="corty3e-ch10-eqn-16" block_type="equation">
@@ -405,7 +405,7 @@
 <layout align="center" width="medium" border="true"/>
 <image asset-id="corty3e-ch10-img-35" alt="image" src="asset/ch10/corty3e_eqn10_349_03.jpg"/>
 </figure>
-<p id="corty3e-ch10-p183" block_type="txt">Once the two mean squares are calculated, it is time to calculate the <em>F</em> ratio<em>.</em> <em>F</em> is the ratio of variability due to between-group factors and individual differences divided by the variability due to individual differences. <em>F</em> is calculated as shown in <link href="#corty3e-ch10-bx6-7">Equation 10.7</link>.</p>
+<p id="corty3e-ch10-p183" block_type="txt">Once the two mean squares are calculated, it is time to calculate the <em>F</em> ratio<em>.</em> <em>F</em> is the ratio of variability due to between-group factors and individual differences divided by the variability due to individual differences. <em>F</em> is calculated as shown in Equation 10.7.</p>
 <box title="" numbered="false" id="corty3e-ch10-bx6-7" block_type="eq-t">
 <box-metadata><box-title><phrase block_type="sec_num">Equation 10.7</phrase> <phrase block_type="sec_title">Formula for Calculating <em>F</em> for a Between-Subjects, One-Way ANOVA</phrase></box-title></box-metadata>
 <p id="corty3e-ch10-eqn-17" block_type="equation">
@@ -461,7 +461,7 @@
 <p id="corty3e-ch10-p204" block_type="sr-exp-eq"><em>H</em><sub>0</sub>: &#956;<sub>1</sub> &#61; &#956;<sub>2</sub> &#61; &#956;<sub>3</sub>.</p>
 <p id="corty3e-ch10-p205" block_type="sr-exp-eq"><em>H</em><sub>1</sub>: At least one population mean is different from the others.</p>
 <p id="corty3e-ch10-p206" block_type="sr_exp_h4_txt"><phrase block_type="SR-EXP-h4-N-ni"><strong>Step 4</strong></phrase> <phrase data-block_type="SR-EXP-h4-T-ri"><strong>Set the Decision Rule</strong></phrase></p>
-<p id="corty3e-ch10-p207" block_type="sr-ex-txt-ni">In order to find the critical value of <em>F,</em> Dr. Douglas needs to know the degrees of freedom for the numerator (<em>df</em><sub>Between</sub>) and for the denominator (<em>df</em><sub>Within</sub>). To do so, she uses <link href="#corty3e-ch10-bx6-1">Equation 10.1</link>:</p>
+<p id="corty3e-ch10-p207" block_type="sr-ex-txt-ni">In order to find the critical value of <em>F,</em> Dr. Douglas needs to know the degrees of freedom for the numerator (<em>df</em><sub>Between</sub>) and for the denominator (<em>df</em><sub>Within</sub>). To do so, she uses Equation 10.1:</p>
 <p id="corty3e-ch10-p208" block_type="sr-exp-eq"><em>df</em><sub>Between</sub> &#61; <em>k</em> &#8211; 1</p>
 <p id="corty3e-ch10-p209" block_type="sr-exp-eq">&#61; 3 &#8211; 1</p>
 <p id="corty3e-ch10-p210" block_type="sr-exp-eq">&#61; 2</p>
@@ -478,13 +478,13 @@
 <li><p id="corty3e-ch10-p219" block_type="sr-exp-bl-first">If <em>F</em> &#60; 4.256, fail to reject <em>H</em><sub>0</sub>.</p></li>
 </list>
 <p id="corty3e-ch10-p220" block_type="sr_exp_h4_txt"><phrase block_type="SR-EXP-h4-N-ni"><strong>Step 5</strong></phrase> <phrase data-block_type="SR-EXP-h4-T-ri"><strong>Calculate the Test Statistic</strong></phrase></p>
-<p id="corty3e-ch10-p221" block_type="sr-ex-txt-ni">Dr. Douglas&#8217;s first step on the path to <em>F</em> is to calculate <em>SS</em><sub>Total</sub>, using <link href="#corty3e-ch10-bx6-2">Equation 10.2</link> and values from <link href="#corty3e-ch10-fig-40">Table 10.10</link>:</p>
+<p id="corty3e-ch10-p221" block_type="sr-ex-txt-ni">Dr. Douglas&#8217;s first step on the path to <em>F</em> is to calculate <em>SS</em><sub>Total</sub>, using Equation 10.2 and values from <link href="#corty3e-ch10-fig-40">Table 10.10</link>:</p>
 <p id="corty3e-ch10-eqn-19" block_type="equation">
 <image asset-id="corty3e-ch10-img-42" alt="image" src="asset/ch10/corty3e_eqn10_353_01.jpg"/></p>
-<p id="corty3e-ch10-p222" block_type="sr_exp_txt">Next, she calculates <em>SS</em><sub>Between</sub> following <link href="#corty3e-ch10-bx6-3">Equation 10.3</link>:</p>
+<p id="corty3e-ch10-p222" block_type="sr_exp_txt">Next, she calculates <em>SS</em><sub>Between</sub> following Equation 10.3:</p>
 <p id="corty3e-ch10-eqn-20" block_type="equation">
 <image asset-id="corty3e-ch10-img-43" alt="image" src="asset/ch10/corty3e_eqn10_353_02.jpg"/></p>
-<p id="corty3e-ch10-p223" block_type="sr_exp_txt">Finally, using <link href="#corty3e-ch10-bx6-4">Equation 10.4</link>, she calculates <em>SS</em><sub>Within</sub>:</p>
+<p id="corty3e-ch10-p223" block_type="sr_exp_txt">Finally, using Equation 10.4, she calculates <em>SS</em><sub>Within</sub>:</p>
 <p id="corty3e-ch10-eqn-21" block_type="equation">
 <image asset-id="corty3e-ch10-img-44" alt="image" src="asset/ch10/corty3e_eqn10_353_03.jpg"/></p>
 <p id="corty3e_page_354" block_type="page_start">354</p>
@@ -659,14 +659,14 @@
 <section id="corty3e-ch10-sec2-6" block_type="h2" chapter="10" title="" numbered="false" level="2" print_page="357">
 <section-metadata><section-title>How Big Is the Effect?</section-title></section-metadata>
 <p id="corty3e-ch10-p247" block_type="txt-ni">The second question to be addressed in interpreting an ANOVA is how big the <em>overall</em> effect is. That is, how much impact does the independent variable have on the dependent variable? For the maze data, this involves asking how much impact the three different types of food (low-, medium-, and high-calorie) have on the time it takes to run the maze.</p>
-<p id="corty3e-ch10-p248" block_type="txt">Once again, <em>r</em><sup>2</sup> will be used. <link href="#corty3e-ch10-bx6-8">Equation 10.8</link> shows how to calculate <em>r</em><sup>2</sup>, the percentage of variability in the outcome variable that is accounted for by group status.</p>
+<p id="corty3e-ch10-p248" block_type="txt">Once again, <em>r</em><sup>2</sup> will be used. Equation 10.8 shows how to calculate <em>r</em><sup>2</sup>, the percentage of variability in the outcome variable that is accounted for by group status.</p>
 <box title="" numbered="false" id="corty3e-ch10-bx6-8" block_type="eq-t">
 <box-metadata><box-title><phrase block_type="sec_num">Equation 10.8</phrase> <phrase block_type="sec_title">Formula for <em>r</em><sup>2</sup>, the Percentage of Variability in the Dependent Variable Accounted for by the Explanatory Variable</phrase></box-title></box-metadata>
 <p id="corty3e-ch10-eqn-22" block_type="equation">
 <image asset-id="corty3e-ch10-img-48" alt="image" src="asset/ch10/corty3e_eqn10_357_01.jpg"/></p>
 <p id="corty3e-ch10-p249" block_type="eq-txt-ni">where <em>r</em><sup>2</sup> &#61; the percentage of variability in the dependent variable that is accounted for by the explanatory variable</p>
-<p id="corty3e-ch10-p250" block_type="eq-unl"><em>SS</em><sub>Between</sub> &#61; between-groups sum of squares (<link href="#corty3e-ch10-bx6-3">Equation 10.3</link>)</p>
-<p id="corty3e-ch10-p251" block_type="eq-unl"><em>SS</em><sub>Total</sub> &#61; total sum of squares (<link href="#corty3e-ch10-bx6-2">Equation 10.2</link>)</p>
+<p id="corty3e-ch10-p250" block_type="eq-unl"><em>SS</em><sub>Between</sub> &#61; between-groups sum of squares (Equation 10.3)</p>
+<p id="corty3e-ch10-p251" block_type="eq-unl"><em>SS</em><sub>Total</sub> &#61; total sum of squares (Equation 10.2)</p>
 </box>
 <p id="corty3e-ch10-p252" block_type="txt">This formula says that <em>r</em><sup>2</sup> is calculated as the between-groups sum of squares divided by the total sum of squares. Then, to turn it into a percentage, the ratio is multiplied by 100. These calculations reveal the percentage of total variability in the scores that is accounted for by the treatment effect. For the maze data, these calculations would lead to the conclusion that <em>r</em><sup>2</sup> &#61; 90&#37;:</p>
 <p id="corty3e-ch10-eqn-23" block_type="equation">
@@ -696,7 +696,7 @@
 <p id="corty3e-ch10-p261" block_type="txt">There are a wide variety of post-hoc tests with cool names like the Scheff&#233;, the Newman-Keuls, and the Bonferroni-Dunn. Post-hoc tests vary in terms of what type of error they are more likely to make, a Type I error or a Type II error. No post-hoc test can guarantee avoiding a mistake. Compared to each other, some post-hoc tests are more likely to say that there is a statistically significant difference between means that don&#8217;t differ (Type I error). Other post-hoc tests are more likely to find no statistically significant difference when a difference exists (Type II error).</p>
 <p id="corty3e-ch10-p262" block_type="txt">The test taught here, the Tukey <em>HSD,</em> is the latter type, what is called a conservative test. If it finds a statistically significant difference between a pair of means, then the population means probably really are different. Which is why <em>HSD</em> stands for &#8220;honestly significant difference.&#8221; However, there is a cost to this conservatism: the <em>HSD</em> has less statistical power and so may overlook a pair of means that are different.</p>
 <p id="corty3e-ch10-p263" block_type="txt">The Tukey <em>HSD</em> works by calculating an <em>HSD</em> value, which is the minimum difference needed between two means in order for the difference to be considered statistically significant. If the observed difference between a pair of means is greater than or equal to the <em>HSD</em> value, then the researcher can conclude that there is a statistically significant difference between the two groups. For example, the mean for the low-calorie group was 31 seconds and for the medium-calorie group it was 28 seconds. There is a 3.00-second difference between the mean of these two groups. If the <em>HSD</em> value were, say, 2.50, then the difference between the mean of these two groups would be a statistically significant one. This is the case because the observed difference, 3.00, met or exceeded the <em>HSD</em> value of 2.50.</p>
-<p id="corty3e-ch10-p264" block_type="txt">The formula to calculate <em>HSD</em> is shown in <link href="#corty3e-ch10-bx6-9">Equation 10.9</link>. In order to apply that formula, one needs a value called <em>q.</em> Values of <em>q</em> can be found in <link href="corty3e_app1_1.html#corty3e-app1-fig-18">Appendix Table 5</link>, a part of which is shown in <link href="#corty3e-ch10-fig-51"><strong>Table 10.12.</strong></link></p>
+<p id="corty3e-ch10-p264" block_type="txt">The formula to calculate <em>HSD</em> is shown in Equation 10.9. In order to apply that formula, one needs a value called <em>q.</em> Values of <em>q</em> can be found in <link href="corty3e_app1_1.html#corty3e-app1-fig-18">Appendix Table 5</link>, a part of which is shown in <link href="#corty3e-ch10-fig-51"><strong>Table 10.12.</strong></link></p>
 <figure id="corty3e-ch10-fig-51" block_type="table" numbered="true" number="10.12" mmtype="image" mmsrc="" attr="">
 <layout align="center" width="large" border="true"/>
 <image asset-id="corty3e-ch10-img-51" alt="image" src="asset/ch10/corty3e_table10_12.jpg"/>
@@ -771,7 +771,7 @@
 <li><p id="corty3e-ch10-p300" block_type="sr-exp-bl-mid">The .05 is the alpha level that had been selected.</p></li>
 <li><p id="corty3e-ch10-p301" block_type="sr-exp-bl-last">The <em>p</em> > .05 means that a result like <em>F</em> &#61; 1.35 is a common one when the null hypothesis is true, as under those conditions it occurs more than 5&#37; of the time. The sensory psychologist has failed to reject the null hypothesis.</p></li>
 </list>
-<p id="corty3e-ch10-p302" block_type="sr_exp_txt"><em>How big is the effect?</em> <link href="#corty3e-ch10-bx6-5">Equation 10.5</link> is used to calculate the effect size, <em>r</em><sup>2</sup>, the percentage of variability in the dependent variable (seconds to pain threshold) that is accounted for by the independent variable (type of painkiller). To use the equation, two values, <em>SS</em><sub>Between</sub> (62.00) and <em>SS</em><sub>Total</sub> (269.00), are obtained from the ANOVA summary table:</p>
+<p id="corty3e-ch10-p302" block_type="sr_exp_txt"><em>How big is the effect?</em> Equation 10.5 is used to calculate the effect size, <em>r</em><sup>2</sup>, the percentage of variability in the dependent variable (seconds to pain threshold) that is accounted for by the independent variable (type of painkiller). To use the equation, two values, <em>SS</em><sub>Between</sub> (62.00) and <em>SS</em><sub>Total</sub> (269.00), are obtained from the ANOVA summary table:</p>
 <p id="corty3e-ch10-eqn-26" block_type="equation">
 <image asset-id="corty3e-ch10-img-56" alt="image" src="asset/ch10/corty3e_eqn10_363_01.jpg"/></p>
 <p id="corty3e-ch10-p303" block_type="sr_exp_txt">An <em>r</em><sup>2</sup> of 23&#37; is close to a large effect, according to Cohen. This gives Dr. Douglas two conflicting pieces of information:</p>
@@ -865,7 +865,7 @@
 <li><p id="corty3e-ch10-p339" block_type="sr-x-bl-first">If <em>F</em> &#8805; 3.490, reject <em>H</em><sub>0</sub>.</p></li>
 <li><p id="corty3e-ch10-p340" block_type="sr-x-bl-last">If <em>F</em> &#60; 3.490, fail to reject <em>H</em><sub>0</sub>.</p></li>
 </list>
-<p id="corty3e-ch10-p341" block_type="h4-txt-ni"><phrase block_type="h4-n-ri"><strong>Step 5</strong></phrase> <strong>Calculate the Test Statistic.</strong> Calculate the between-groups sum of squares using <link href="#corty3e-ch10-bx6-3">Equation 10.3</link>, the within-groups sum of squares using <link href="#corty3e-ch10-bx6-4">Equation 10.4</link>, and the total sum of squares using <link href="#corty3e-ch10-bx6-2">Equation 10.2</link>. To save time, these values have already been calculated:</p>
+<p id="corty3e-ch10-p341" block_type="h4-txt-ni"><phrase block_type="h4-n-ri"><strong>Step 5</strong></phrase> <strong>Calculate the Test Statistic.</strong> Calculate the between-groups sum of squares using Equation 10.3, the within-groups sum of squares using Equation 10.4, and the total sum of squares using Equation 10.2. To save time, these values have already been calculated:</p>
 <p id="corty3e-ch10-p342" block_type="sr-x-eq"><em>SS</em><sub>Between</sub> &#61; 636.41</p>
 <p id="corty3e-ch10-p343" block_type="sr-x-eq"><em>SS</em><sub>Within</sub> &#61; 723.85</p>
 <p id="corty3e-ch10-p344" block_type="sr-x-eq"><em>SS</em><sub>Total</sub> &#61; 1,360.26</p>
@@ -886,7 +886,7 @@
 <p id="corty3e-ch10-eqn-27" block_type="equation">
 <image asset-id="corty3e-ch10-img-59" alt="image" src="asset/ch10/corty3e_eqn10_367_01.jpg"/></p>
 <p id="corty3e-ch10-p352" block_type="sr-x-txt-ni">On the basis of Cohen&#8217;s criteria, the fact that region explains 46.79&#37; of the variability in salary means this is a very large effect.</p>
-<p id="corty3e-ch10-p353" block_type="sr-x-txt"><em>Where is the effect?</em> Tukey&#8217;s <em>HSD</em> will be used as a post-hoc test to find out which pair, or pairs, of means are statistically significantly different. To calculate the <em>HSD</em> value, a researcher must know <em>q,</em> <em>MS</em><sub>Within</sub>, and <em>n.</em> <em>q</em> is found in <link href="corty3e_app1_1.html#corty3e-app1-fig-18">Appendix Table 5</link> for &#945;?=?.05, in the column for <em>k</em> &#61; 4 and the row for <em>df</em><sub>Within</sub> &#61; 12. With <em>q</em> &#61; 4.20, <em>MS</em><sub>Within</sub> &#61; 60.32, and <em>n</em> &#61; 4, <link href="#corty3e-ch10-bx6-9">Equation 10.9</link> is used to calculate <em>HSD:</em></p>
+<p id="corty3e-ch10-p353" block_type="sr-x-txt"><em>Where is the effect?</em> Tukey&#8217;s <em>HSD</em> will be used as a post-hoc test to find out which pair, or pairs, of means are statistically significantly different. To calculate the <em>HSD</em> value, a researcher must know <em>q,</em> <em>MS</em><sub>Within</sub>, and <em>n.</em> <em>q</em> is found in <link href="corty3e_app1_1.html#corty3e-app1-fig-18">Appendix Table 5</link> for &#945;?=?.05, in the column for <em>k</em> &#61; 4 and the row for <em>df</em><sub>Within</sub> &#61; 12. With <em>q</em> &#61; 4.20, <em>MS</em><sub>Within</sub> &#61; 60.32, and <em>n</em> &#61; 4, Equation 10.9 is used to calculate <em>HSD:</em></p>
 <p id="corty3e-ch10-eqn-28" block_type="equation">
 <image asset-id="corty3e-ch10-img-60" alt="image" src="asset/ch10/corty3e_eqn10_367_02.jpg"/></p>
 <p id="corty3e-ch10-p354" block_type="sr-x-txt-ni">Any groups that have a mean difference greater than or equal to 16.31 points are statistically significantly different. The largest mean is the Northeast at &#36;77.73 thousand and the smallest is the South at &#36;61.37 thousand. Those two are 16.36 points apart and this difference is a statistically significant difference. All other differences are smaller than 16.31 and thus not statistically significant. The effect seems to be due to the &#36;16.36 thousand difference between the mean salaries for psychologists in the Northeast and mean salaries in the South. Salaries are statistically significantly higher in the Northeast than they are in the South.</p>
